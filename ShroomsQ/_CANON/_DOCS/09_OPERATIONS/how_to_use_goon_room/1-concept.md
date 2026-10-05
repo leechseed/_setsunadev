@@ -23,7 +23,7 @@ flowchart LR
   D --> T["Tag as the work goes"]
   T --> R["Weekly review reads the tags"]
   R -->|"tagged canon-ready"| S["Moved to _STAGED/"]
-  S --> C["Promoted to _CANON/"]
+  S -->|"Chief rules it in"| C["Promoted to _CANON/"]
   R -->|"no tag"| F["Stays in its dated file, searchable"]
 ```
 
@@ -49,4 +49,4 @@ The [reference](2-reference.md) lists every field and tag. The [how-to](3-how-to
 
 ## The long read
 
-The design trades order now for order later. A tidy workspace tempts the writer to stop and organize mid-thought. The Goon Room refuses that temptation by naming organization as something not to worry about. The tags are the only promise the writer makes, and the weekly review is the only gate. A passage without a tag is not lost; it stays in its dated file and can be searched. A passage with `#canon-ready` has declared itself a candidate, and the review decides.
+The design trades order now for order later. A tidy workspace tempts the writer to stop and organize mid-thought. The Goon Room refuses that temptation by naming organization as something not to worry about. The tags are the only promise the writer makes, and Chief's ruling on the weekly review is the only gate. A passage without a tag is not lost; it stays in its dated file and can be searched. A passage with `#canon-ready` has declared itself a candidate, and Chief decides.

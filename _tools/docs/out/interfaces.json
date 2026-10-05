@@ -1,0 +1,3098 @@
+[
+ {
+  "from_sys": "00",
+  "from": "ssot_00_base_60_number_system",
+  "to_sys": "02",
+  "to": "ssot_02_character_systems_vertical_slice",
+  "line": 12,
+  "text": "supersedes_ranges_in: [\"ssot_02_character_systems_vertical_slice\"]"
+ },
+ {
+  "from_sys": "00",
+  "from": "ssot_00_module_architecture",
+  "to_sys": "02",
+  "to": "ssot_02_character_systems_vertical_slice",
+  "line": 11,
+  "text": "dependencies: [\"ssot_00_variable_registry\", \"ssot_00_base_60_number_system\", \"ssot_02_character_systems_vertical_slice\"]"
+ },
+ {
+  "from_sys": "00",
+  "from": "ssot_00_module_architecture",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 78,
+  "text": "- A **doc module** is a sibling document in `02_CHARACTER_SYSTEMS`, stamped `module_of: ssot_02_character_systems_vertical_slice`. It holds one method: the Step 1 gate, an ingest template, the Dramatica integration, or the state architectur"
+ },
+ {
+  "from_sys": "00",
+  "from": "ssot_00_module_architecture",
+  "to_sys": "02",
+  "to": "ssot_02_character_systems_vertical_slice",
+  "line": 78,
+  "text": "- A **doc module** is a sibling document in `02_CHARACTER_SYSTEMS`, stamped `module_of: ssot_02_character_systems_vertical_slice`. It holds one method: the Step 1 gate, an ingest template, the Dramatica integration, or the state architectur"
+ },
+ {
+  "from_sys": "00",
+  "from": "ssot_00_module_registry",
+  "to_sys": "02",
+  "to": "ssot_02_character_systems_vertical_slice",
+  "line": 12,
+  "text": "dependencies: [\"ssot_00_module_architecture\", \"ssot_00_variable_registry\", \"ssot_02_character_systems_vertical_slice\"]"
+ },
+ {
+  "from_sys": "00",
+  "from": "ssot_00_module_registry",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 31,
+  "text": "This is the complete catalog of every field module that attaches to the LEECHSEED Character System. A field module is a set of variables beneath a layer. A doc module is a sibling document in `02_CHARACTER_SYSTEMS`. This registry lists fiel"
+ },
+ {
+  "from_sys": "00",
+  "from": "ssot_00_module_registry",
+  "to_sys": "02",
+  "to": "ssot_02_character_systems_vertical_slice",
+  "line": 110,
+  "text": "An absorbed module is closed. The core schema now holds its fields, so the module never builds. The tables below say where each variable went. The slice is [📐 ssot_02_character_systems_vertical_slice.md](../02_CHARACTER_SYSTEMS/📐%20ssot_02_"
+ },
+ {
+  "from_sys": "00",
+  "from": "ssot_00_module_registry",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 110,
+  "text": "An absorbed module is closed. The core schema now holds its fields, so the module never builds. The tables below say where each variable went. The slice is [📐 ssot_02_character_systems_vertical_slice.md](../02_CHARACTER_SYSTEMS/📐%20ssot_02_"
+ },
+ {
+  "from_sys": "00",
+  "from": "ssot_00_pattern_library",
+  "to_sys": "01",
+  "to": "ssot_01_scale_ladder",
+  "line": 11,
+  "text": "dependencies: [\"ssot_00_epistemology_truth_verification\", \"ssot_00_variable_registry\", \"ssot_00_module_architecture\", \"ssot_00_base_60_number_system\", \"ssot_01_scale_ladder\", \"SOP.md §1\"]"
+ },
+ {
+  "from_sys": "00",
+  "from": "ssot_00_pattern_library",
+  "to_sys": "01",
+  "to": "ssot_01_scale_ladder",
+  "line": 67,
+  "text": "- [📐 ssot_01_scale_ladder.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_scale_ladder.md): one ladder of scales that every pattern climbs."
+ },
+ {
+  "from_sys": "00",
+  "from": "ssot_00_pattern_library",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 67,
+  "text": "- [📐 ssot_01_scale_ladder.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_scale_ladder.md): one ladder of scales that every pattern climbs."
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "ssot_02_character_systems_vertical_slice",
+  "line": 4,
+  "text": "module_of: ssot_02_character_systems_vertical_slice"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "ssot_02_dramatica_integration_protocol",
+  "line": 12,
+  "text": "dependencies: [\"ssot_02_dramatica_integration_protocol\", \"ssot_02_character_astrology\", \"ssot_02_character_astrology_dai\", \"ssot_02_character_systems_vertical_slice\", \"ssot_02_character_state_architecture\", \"ssot_02_step_1_source_verificati"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "ssot_02_character_astrology",
+  "line": 12,
+  "text": "dependencies: [\"ssot_02_dramatica_integration_protocol\", \"ssot_02_character_astrology\", \"ssot_02_character_astrology_dai\", \"ssot_02_character_systems_vertical_slice\", \"ssot_02_character_state_architecture\", \"ssot_02_step_1_source_verificati"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "ssot_02_character_astrology_dai",
+  "line": 12,
+  "text": "dependencies: [\"ssot_02_dramatica_integration_protocol\", \"ssot_02_character_astrology\", \"ssot_02_character_astrology_dai\", \"ssot_02_character_systems_vertical_slice\", \"ssot_02_character_state_architecture\", \"ssot_02_step_1_source_verificati"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "ssot_02_character_systems_vertical_slice",
+  "line": 12,
+  "text": "dependencies: [\"ssot_02_dramatica_integration_protocol\", \"ssot_02_character_astrology\", \"ssot_02_character_astrology_dai\", \"ssot_02_character_systems_vertical_slice\", \"ssot_02_character_state_architecture\", \"ssot_02_step_1_source_verificati"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "ssot_02_character_state_architecture",
+  "line": 12,
+  "text": "dependencies: [\"ssot_02_dramatica_integration_protocol\", \"ssot_02_character_astrology\", \"ssot_02_character_astrology_dai\", \"ssot_02_character_systems_vertical_slice\", \"ssot_02_character_state_architecture\", \"ssot_02_step_1_source_verificati"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "ssot_02_step_1_source_verification_protocol",
+  "line": 12,
+  "text": "dependencies: [\"ssot_02_dramatica_integration_protocol\", \"ssot_02_character_astrology\", \"ssot_02_character_astrology_dai\", \"ssot_02_character_systems_vertical_slice\", \"ssot_02_character_state_architecture\", \"ssot_02_step_1_source_verificati"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "ssot_02_template_dramatica_ingest",
+  "line": 12,
+  "text": "dependencies: [\"ssot_02_dramatica_integration_protocol\", \"ssot_02_character_astrology\", \"ssot_02_character_astrology_dai\", \"ssot_02_character_systems_vertical_slice\", \"ssot_02_character_state_architecture\", \"ssot_02_step_1_source_verificati"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "ssot_02_template_astrology_ingest",
+  "line": 12,
+  "text": "dependencies: [\"ssot_02_dramatica_integration_protocol\", \"ssot_02_character_astrology\", \"ssot_02_character_astrology_dai\", \"ssot_02_character_systems_vertical_slice\", \"ssot_02_character_state_architecture\", \"ssot_02_step_1_source_verificati"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "00",
+  "to": "ssot_00_variable_registry",
+  "line": 12,
+  "text": "dependencies: [\"ssot_02_dramatica_integration_protocol\", \"ssot_02_character_astrology\", \"ssot_02_character_astrology_dai\", \"ssot_02_character_systems_vertical_slice\", \"ssot_02_character_state_architecture\", \"ssot_02_step_1_source_verificati"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "00",
+  "to": "ssot_00_base_60_number_system",
+  "line": 12,
+  "text": "dependencies: [\"ssot_02_dramatica_integration_protocol\", \"ssot_02_character_astrology\", \"ssot_02_character_astrology_dai\", \"ssot_02_character_systems_vertical_slice\", \"ssot_02_character_state_architecture\", \"ssot_02_step_1_source_verificati"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "ssot_02_character_systems_vertical_slice",
+  "line": 38,
+  "text": "This is a worked example of the 02 pipeline. The method lives in the slice ([📐 ssot_02_character_systems_vertical_slice.md](../02_CHARACTER_SYSTEMS/📐%20ssot_02_character_systems_vertical_slice.md), 3.3.1) and in its doc modules. Where the t"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 38,
+  "text": "This is a worked example of the 02 pipeline. The method lives in the slice ([📐 ssot_02_character_systems_vertical_slice.md](../02_CHARACTER_SYSTEMS/📐%20ssot_02_character_systems_vertical_slice.md), 3.3.1) and in its doc modules. Where the t"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "ssot_02_template_dramatica_ingest",
+  "line": 42,
+  "text": "|A|[📐 ssot_02_template_dramatica_ingest.md](../02_CHARACTER_SYSTEMS/📐%20ssot_02_template_dramatica_ingest.md) and [🔮 ssot_02_dramatica_integration_protocol.md](../02_CHARACTER_SYSTEMS/🔮%20ssot_02_dramatica_integration_protocol.md)|"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 42,
+  "text": "|A|[📐 ssot_02_template_dramatica_ingest.md](../02_CHARACTER_SYSTEMS/📐%20ssot_02_template_dramatica_ingest.md) and [🔮 ssot_02_dramatica_integration_protocol.md](../02_CHARACTER_SYSTEMS/🔮%20ssot_02_dramatica_integration_protocol.md)|"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "ssot_02_dramatica_integration_protocol",
+  "line": 42,
+  "text": "|A|[📐 ssot_02_template_dramatica_ingest.md](../02_CHARACTER_SYSTEMS/📐%20ssot_02_template_dramatica_ingest.md) and [🔮 ssot_02_dramatica_integration_protocol.md](../02_CHARACTER_SYSTEMS/🔮%20ssot_02_dramatica_integration_protocol.md)|"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "ssot_02_character_astrology_dai",
+  "line": 43,
+  "text": "|B|[🔮 ssot_02_character_astrology_dai.md](../02_CHARACTER_SYSTEMS/🔮ssot_02_character_astrology_dai.md) and [📐 ssot_02_template_astrology_ingest.md](../02_CHARACTER_SYSTEMS/📐%20ssot_02_template_astrology_ingest.md)|"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 43,
+  "text": "|B|[🔮 ssot_02_character_astrology_dai.md](../02_CHARACTER_SYSTEMS/🔮ssot_02_character_astrology_dai.md) and [📐 ssot_02_template_astrology_ingest.md](../02_CHARACTER_SYSTEMS/📐%20ssot_02_template_astrology_ingest.md)|"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "ssot_02_template_astrology_ingest",
+  "line": 43,
+  "text": "|B|[🔮 ssot_02_character_astrology_dai.md](../02_CHARACTER_SYSTEMS/🔮ssot_02_character_astrology_dai.md) and [📐 ssot_02_template_astrology_ingest.md](../02_CHARACTER_SYSTEMS/📐%20ssot_02_template_astrology_ingest.md)|"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "ssot_02_step_1_source_verification_protocol",
+  "line": 44,
+  "text": "|C|[🔮 ssot_02_step_1_source_verification_protocol.md](../02_CHARACTER_SYSTEMS/🔮ssot_02_step_1_source_verification_protocol.md) (the Step 1 gate)|"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 44,
+  "text": "|C|[🔮 ssot_02_step_1_source_verification_protocol.md](../02_CHARACTER_SYSTEMS/🔮ssot_02_step_1_source_verification_protocol.md) (the Step 1 gate)|"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "ssot_02_character_state_architecture",
+  "line": 45,
+  "text": "|D|[🔮 ssot_02_character_state_architecture.md](../02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md)|"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 45,
+  "text": "|D|[🔮 ssot_02_character_state_architecture.md](../02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md)|"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "ssot_02_template_dramatica_ingest",
+  "line": 128,
+  "text": "The order follows the form's own extraction priority: Section 1, then 4, then 3 and 2, then 6, 5 and 7, with Section 8 as the log. The form is [📐 ssot_02_template_dramatica_ingest.md](../02_CHARACTER_SYSTEMS/📐%20ssot_02_template_dramatica_i"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 128,
+  "text": "The order follows the form's own extraction priority: Section 1, then 4, then 3 and 2, then 6, 5 and 7, with Section 8 as the log. The form is [📐 ssot_02_template_dramatica_ingest.md](../02_CHARACTER_SYSTEMS/📐%20ssot_02_template_dramatica_i"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "ssot_02_template_astrology_ingest",
+  "line": 183,
+  "text": "Translate locked Dramatica data into astrological notation using the 18-step DAI derivation sequence. Each step produces one or more chart assignments. The form is [📐 ssot_02_template_astrology_ingest.md](../02_CHARACTER_SYSTEMS/📐%20ssot_02"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 183,
+  "text": "Translate locked Dramatica data into astrological notation using the 18-step DAI derivation sequence. Each step produces one or more chart assignments. The form is [📐 ssot_02_template_astrology_ingest.md](../02_CHARACTER_SYSTEMS/📐%20ssot_02"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 349,
+  "text": "**DP-C1: \"Gate Result?\"** — The three-component source verification from the [Step 1 protocol](../02_CHARACTER_SYSTEMS/🔮ssot_02_step_1_source_verification_protocol.md). Component 1 has seven checks, Component 2 has nine and Component 3 has "
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "ssot_02_step_1_source_verification_protocol",
+  "line": 349,
+  "text": "**DP-C1: \"Gate Result?\"** — The three-component source verification from the [Step 1 protocol](../02_CHARACTER_SYSTEMS/🔮ssot_02_step_1_source_verification_protocol.md). Component 1 has seven checks, Component 2 has nine and Component 3 has "
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "08",
+  "to": "08_tracking_systems",
+  "line": 365,
+  "text": "Produces state records that describe how a character differs from their base record at specific points in the story. A full state record is a checkpoint: a complete state at a fabula event. State diffs do not modify the base record — they o"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 365,
+  "text": "Produces state records that describe how a character differs from their base record at specific points in the story. A full state record is a checkpoint: a complete state at a fabula event. State diffs do not modify the base record — they o"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 365,
+  "text": "Produces state records that describe how a character differs from their base record at specific points in the story. A full state record is a checkpoint: a complete state at a fabula event. State diffs do not modify the base record — they o"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "ssot_02_character_state_architecture",
+  "line": 365,
+  "text": "Produces state records that describe how a character differs from their base record at specific points in the story. A full state record is a checkpoint: a complete state at a fabula event. State diffs do not modify the base record — they o"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 437,
+  "text": "A revised storyform is a new version, not an edit. The chart, the L12 block and the state diffs all hang off the old version. The cascade re-enters the flows in this order. The method is in the [integration protocol](../02_CHARACTER_SYSTEMS"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "02",
+  "to": "ssot_02_dramatica_integration_protocol",
+  "line": 437,
+  "text": "A revised storyform is a new version, not an edit. The chart, the L12 block and the state diffs all hang off the old version. The cascade re-enters the flows in this order. The method is in the [integration protocol](../02_CHARACTER_SYSTEMS"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_00_process_illustration_character_pipeline",
+  "to_sys": "00",
+  "to": "ssot_00_module_architecture",
+  "line": 449,
+  "text": "This section is about field modules (Layer-Locked Modules). A doc module, such as the Step 1 gate or the state architecture, is a step inside Flows A to D and is not activated here. See [📐 ssot_00_module_architecture.md](📐%20ssot_00_module_"
+ },
+ {
+  "from_sys": "00",
+  "from": "ssot_00_variable_registry",
+  "to_sys": "02",
+  "to": "ssot_02_character_systems_vertical_slice",
+  "line": 12,
+  "text": "dependencies: [\"ssot_00_base_60_number_system\", \"ssot_02_character_systems_vertical_slice\"]"
+ },
+ {
+  "from_sys": "00",
+  "from": "ssot_00_variable_registry",
+  "to_sys": "03",
+  "to": "ssot_03_setting_system",
+  "line": 108,
+  "text": "|Setting (03)|[📐 ssot_03_setting_system.md](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md)|The S1 to S12 layer fields, including S12 FUNCTION.|"
+ },
+ {
+  "from_sys": "00",
+  "from": "ssot_00_variable_registry",
+  "to_sys": "03",
+  "to": "03_setting_systems",
+  "line": 108,
+  "text": "|Setting (03)|[📐 ssot_03_setting_system.md](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md)|The S1 to S12 layer fields, including S12 FUNCTION.|"
+ },
+ {
+  "from_sys": "00",
+  "from": "ssot_00_variable_registry",
+  "to_sys": "04",
+  "to": "ssot_04_plot_system",
+  "line": 109,
+  "text": "|Plot (04)|[📐 ssot_04_plot_system.md](../04_PLOT_SYSTEMS/📐%20ssot_04_plot_system.md), [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md)|The P1 to P12 layer fields, including P12 FUNCTION. The fabula owns the event ids.|"
+ },
+ {
+  "from_sys": "00",
+  "from": "ssot_00_variable_registry",
+  "to_sys": "04",
+  "to": "04_plot_systems",
+  "line": 109,
+  "text": "|Plot (04)|[📐 ssot_04_plot_system.md](../04_PLOT_SYSTEMS/📐%20ssot_04_plot_system.md), [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md)|The P1 to P12 layer fields, including P12 FUNCTION. The fabula owns the event ids.|"
+ },
+ {
+  "from_sys": "00",
+  "from": "ssot_00_variable_registry",
+  "to_sys": "04",
+  "to": "ssot_04_fabula",
+  "line": 109,
+  "text": "|Plot (04)|[📐 ssot_04_plot_system.md](../04_PLOT_SYSTEMS/📐%20ssot_04_plot_system.md), [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md)|The P1 to P12 layer fields, including P12 FUNCTION. The fabula owns the event ids.|"
+ },
+ {
+  "from_sys": "00",
+  "from": "ssot_00_variable_registry",
+  "to_sys": "06",
+  "to": "ssot_06_theme_system",
+  "line": 110,
+  "text": "|Theme (07)|[📐 ssot_06_theme_system.md](../06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md)|The theme fields and the argument record.|"
+ },
+ {
+  "from_sys": "00",
+  "from": "ssot_00_variable_registry",
+  "to_sys": "06",
+  "to": "06_theme_systems",
+  "line": 110,
+  "text": "|Theme (07)|[📐 ssot_06_theme_system.md](../06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md)|The theme fields and the argument record.|"
+ },
+ {
+  "from_sys": "00",
+  "from": "ssot_00_variable_registry",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 111,
+  "text": "|Tracking (08)|[📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md)|Time codes and story points.|"
+ },
+ {
+  "from_sys": "00",
+  "from": "ssot_00_variable_registry",
+  "to_sys": "08",
+  "to": "08_tracking_systems",
+  "line": 111,
+  "text": "|Tracking (08)|[📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md)|Time codes and story points.|"
+ },
+ {
+  "from_sys": "00",
+  "from": "ssot_00_variable_registry",
+  "to_sys": "05",
+  "to": "ssot_05_worldbuilding_system",
+  "line": 112,
+  "text": "|Worldbuilding (09)|[📐 ssot_05_worldbuilding_system.md](../05_WORLDBUILDING_SYSTEMS/📐%20ssot_05_worldbuilding_system.md)|The worldbuilding fields.|"
+ },
+ {
+  "from_sys": "00",
+  "from": "ssot_00_variable_registry",
+  "to_sys": "05",
+  "to": "05_worldbuilding_systems",
+  "line": 112,
+  "text": "|Worldbuilding (09)|[📐 ssot_05_worldbuilding_system.md](../05_WORLDBUILDING_SYSTEMS/📐%20ssot_05_worldbuilding_system.md)|The worldbuilding fields.|"
+ },
+ {
+  "from_sys": "00",
+  "from": "ssot_00_variable_registry",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 114,
+  "text": "L12 FUNCTION is fed from the storyform. Its field list lives in the [Dramatica integration protocol](../02_CHARACTER_SYSTEMS/🔮%20ssot_02_dramatica_integration_protocol.md), and this registry mirrors it."
+ },
+ {
+  "from_sys": "00",
+  "from": "ssot_00_variable_registry",
+  "to_sys": "02",
+  "to": "ssot_02_dramatica_integration_protocol",
+  "line": 114,
+  "text": "L12 FUNCTION is fed from the storyform. Its field list lives in the [Dramatica integration protocol](../02_CHARACTER_SYSTEMS/🔮%20ssot_02_dramatica_integration_protocol.md), and this registry mirrors it."
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_collision_engine",
+  "to_sys": "02",
+  "to": "ssot_02_character_astrology",
+  "line": 10,
+  "text": "dependencies: [\"ssot_02_character_astrology (Cats 11–13)\", \"ssot_03_setting_system\", \"ssot_01_scale_ladder (addresses)\", \"oxo-storyform §9\", \"victoria-midnight\", \"delta-coast-ultra-school\"]"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_collision_engine",
+  "to_sys": "03",
+  "to": "ssot_03_setting_system",
+  "line": 10,
+  "text": "dependencies: [\"ssot_02_character_astrology (Cats 11–13)\", \"ssot_03_setting_system\", \"ssot_01_scale_ladder (addresses)\", \"oxo-storyform §9\", \"victoria-midnight\", \"delta-coast-ultra-school\"]"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_collision_engine",
+  "to_sys": "03",
+  "to": "03_setting_systems",
+  "line": 52,
+  "text": "Run 2026-08-26 from canon: [victoria-midnight.md](../../../../_CANON_NODES/victoria-midnight.md) (chart, gates, layer values) × the DCUS slice ([setting system](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md)). Scope: `tori × DCUS [OXO"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_collision_engine",
+  "to_sys": "03",
+  "to": "ssot_03_setting_system",
+  "line": 52,
+  "text": "Run 2026-08-26 from canon: [victoria-midnight.md](../../../../_CANON_NODES/victoria-midnight.md) (chart, gates, layer values) × the DCUS slice ([setting system](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md)). Scope: `tori × DCUS [OXO"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_genre_system",
+  "to_sys": "03",
+  "to": "ssot_03_setting_system",
+  "line": 10,
+  "text": "dependencies: [\"ssot_01_story_spine_comparative_tree\", \"ssot_01_medium_grammars\", \"ssot_01_texture_system\", \"ssot_03_setting_system\", \"ssot_04_plot_system\", \"ssot_02_character_systems_vertical_slice\"]"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_genre_system",
+  "to_sys": "04",
+  "to": "ssot_04_plot_system",
+  "line": 10,
+  "text": "dependencies: [\"ssot_01_story_spine_comparative_tree\", \"ssot_01_medium_grammars\", \"ssot_01_texture_system\", \"ssot_03_setting_system\", \"ssot_04_plot_system\", \"ssot_02_character_systems_vertical_slice\"]"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_genre_system",
+  "to_sys": "02",
+  "to": "ssot_02_character_systems_vertical_slice",
+  "line": 10,
+  "text": "dependencies: [\"ssot_01_story_spine_comparative_tree\", \"ssot_01_medium_grammars\", \"ssot_01_texture_system\", \"ssot_03_setting_system\", \"ssot_04_plot_system\", \"ssot_02_character_systems_vertical_slice\"]"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_genre_system",
+  "to_sys": "04",
+  "to": "ssot_04_plot_system",
+  "line": 201,
+  "text": "| **G3** | The weakness-need/self-revelation frame, system-as-opponent, an apparent-choice-versus-restriction world build (Truby), Coyne's obligatory scenes for the internal Worldview genre and the external Society genre, if the clover fits"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_genre_system",
+  "to_sys": "07",
+  "to": "ssot_07_1_prose_style",
+  "line": 252,
+  "text": "9. **Meta-genre, kairotic coordination and typification.** Bawarshi and Reiff's apparatus for a genre's social life beyond the contract; a style bible or a showrunner's tone memo is exactly a meta-genre, while the other two terms describe t"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_genre_system",
+  "to_sys": "03",
+  "to": "ssot_03_setting_system",
+  "line": 254,
+  "text": "11. **Truby's dystopia mechanism as a setting-touchpoint candidate.** No current field names the structural claim a genre's world makes about freedom and restriction, apparent choice over hidden restriction; P10 records which obligatory bea"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_medium_grammars",
+  "to_sys": "03",
+  "to": "ssot_03_setting_system",
+  "line": 10,
+  "text": "dependencies: [\"ssot_01_story_spine_comparative_tree\", \"ssot_01_scale_ladder\", \"ssot_01_texture_layer\", \"ssot_03_setting_system\"]"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_scale_ladder",
+  "to_sys": "02",
+  "to": "ssot_02_dramatica_integration_protocol",
+  "line": 10,
+  "text": "dependencies: [\"ssot_01_story_spine_comparative_tree\", \"ssot_02_dramatica_integration_protocol\"]"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_scale_ladder",
+  "to_sys": "03",
+  "to": "03_setting_systems",
+  "line": 128,
+  "text": "- ~~**SCENE CARD notation** — slot reserved at R2~~ ✅ delivered same session with Module 2: [../03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md)."
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_scale_ladder",
+  "to_sys": "03",
+  "to": "ssot_03_setting_system",
+  "line": 128,
+  "text": "- ~~**SCENE CARD notation** — slot reserved at R2~~ ✅ delivered same session with Module 2: [../03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md)."
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_spine_house_inventory",
+  "to_sys": "00",
+  "to": "00_epistemology",
+  "line": 24,
+  "text": "| `00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md` (the raw twin note is archived, BOLO 100 B4) | the validity layer under \"grand argument\" | — |"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_spine_house_inventory",
+  "to_sys": "00",
+  "to": "ssot epistemology truth verification",
+  "line": 24,
+  "text": "| `00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md` (the raw twin note is archived, BOLO 100 B4) | the validity layer under \"grand argument\" | — |"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_spine_house_inventory",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 31,
+  "text": "| `02_CHARACTER_SYSTEMS/🔮 ssot_02_dramatica_integration_protocol.md` | storyform→character binding, nesting Pattern 1 | L2, L5 |"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_spine_house_inventory",
+  "to_sys": "02",
+  "to": "ssot_02_dramatica_integration_protocol",
+  "line": 31,
+  "text": "| `02_CHARACTER_SYSTEMS/🔮 ssot_02_dramatica_integration_protocol.md` | storyform→character binding, nesting Pattern 1 | L2, L5 |"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_spine_house_inventory",
+  "to_sys": "03",
+  "to": "03_setting_systems",
+  "line": 43,
+  "text": "| `03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md` | S12 = Domain embodiment | L4–L7 |"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_spine_house_inventory",
+  "to_sys": "03",
+  "to": "ssot_03_setting_system",
+  "line": 43,
+  "text": "| `03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md` | S12 = Domain embodiment | L4–L7 |"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_spine_house_inventory",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 51,
+  "text": "| `02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md` | state diffs over narrative time — the house's arc mechanics | L5 |"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_spine_house_inventory",
+  "to_sys": "02",
+  "to": "ssot_02_character_state_architecture",
+  "line": 51,
+  "text": "| `02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md` | state diffs over narrative time — the house's arc mechanics | L5 |"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_spine_house_inventory",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 65,
+  "text": "Everything in `02_CHARACTER_SYSTEMS/` + the narrative-astrology pair in 01 + `📐 ssot_01_collision_engine.md` + `00_EPISTEMOLOGY` infrastructure (variable registry ×2 — **byte-identical dupe, dedupe candidate** · base-60 · module architectur"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_spine_house_inventory",
+  "to_sys": "00",
+  "to": "00_epistemology",
+  "line": 65,
+  "text": "Everything in `02_CHARACTER_SYSTEMS/` + the narrative-astrology pair in 01 + `📐 ssot_01_collision_engine.md` + `00_EPISTEMOLOGY` infrastructure (variable registry ×2 — **byte-identical dupe, dedupe candidate** · base-60 · module architectur"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_spine_house_inventory",
+  "to_sys": "04",
+  "to": "04_plot_systems",
+  "line": 87,
+  "text": "1. **⚠️ DOMAIN NUMBERING COLLISION — RULED 2026-09-16: plot is `04_PLOT_SYSTEMS/`, style guides `06_`.** `_SSOT/03_PLOT_SYSTEMS/` already exists (empty, pre-reserved) — and Setting was stood up 8/25 as `03_SETTING_SYSTEMS/`. Two 03s. `04_ST"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_spine_house_inventory",
+  "to_sys": "03",
+  "to": "03_setting_systems",
+  "line": 87,
+  "text": "1. **⚠️ DOMAIN NUMBERING COLLISION — RULED 2026-09-16: plot is `04_PLOT_SYSTEMS/`, style guides `06_`.** `_SSOT/03_PLOT_SYSTEMS/` already exists (empty, pre-reserved) — and Setting was stood up 8/25 as `03_SETTING_SYSTEMS/`. Two 03s. `04_ST"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_story_registry",
+  "to_sys": "04",
+  "to": "ssot_04_fabula",
+  "line": 10,
+  "text": "dependencies: [\"ssot_04_fabula (THE WORLD CLOCK · the universe eras)\", \"ssot_08_tracking_system (one tracking file per story)\"]"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_story_registry",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 10,
+  "text": "dependencies: [\"ssot_04_fabula (THE WORLD CLOCK · the universe eras)\", \"ssot_08_tracking_system (one tracking file per story)\"]"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_story_registry",
+  "to_sys": "04",
+  "to": "04_plot_systems",
+  "line": 19,
+  "text": "**The universe (RULED 2026-09-29):** one eon, five eras in order, moving outward from Earth, with overlap allowed at the seams: the **Skeeter Creek era** (Earth, the founding through the Red Hills century; inserted as era 1, RULED 2026-09-2"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_story_registry",
+  "to_sys": "04",
+  "to": "ssot_04_fabula",
+  "line": 19,
+  "text": "**The universe (RULED 2026-09-29):** one eon, five eras in order, moving outward from Earth, with overlap allowed at the seams: the **Skeeter Creek era** (Earth, the founding through the Red Hills century; inserted as era 1, RULED 2026-09-2"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_story_registry",
+  "to_sys": "05",
+  "to": "ssot_05_worldbuilding_system",
+  "line": 52,
+  "text": "- **Wiring:** each vignette tags the worldbuilding catalog entries it shows (`WB-<TYPE>-<nnnn>`, `ssot_05_worldbuilding_system`), so the world view can list it under each place."
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_story_registry",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 54,
+  "text": "- **Tags:** era **required** (1 Skeeter Creek · 2 DCUS · 3 LAKAD · 4 ASTRO7EX · 5 beyond); time code optional (`M2 · Q1 · S03 | bar.beat.tick`, `ssot_08_tracking_system`)."
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_story_spine_comparative_tree",
+  "to_sys": "02",
+  "to": "ssot_02_dramatica_integration_protocol",
+  "line": 10,
+  "text": "dependencies: [\"ssot_02_dramatica_integration_protocol\", \"oxo-storyform (populated instance)\"]"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_story_spine_comparative_tree",
+  "to_sys": "04",
+  "to": "04_plot_systems",
+  "line": 146,
+  "text": "Each level's first sub-layer plus its starter shelf (house holdings + library). The deepening doctrine, proven by precedent: **a branch that outgrows its shelf becomes a domain** — L5 already did (→ 02), Setting did (→ 03), and L4 Plot is n"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_story_spine_comparative_tree",
+  "to_sys": "03",
+  "to": "03_setting_systems",
+  "line": 146,
+  "text": "Each level's first sub-layer plus its starter shelf (house holdings + library). The deepening doctrine, proven by precedent: **a branch that outgrows its shelf becomes a domain** — L5 already did (→ 02), Setting did (→ 03), and L4 Plot is n"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_story_spine_comparative_tree",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 169,
+  "text": "**Branches:** → **`02_CHARACTER_SYSTEMS/` is this level's branch-down**: archetypes/64 elements · the 12-layer stack · the DAI (Dramatica→astrology derivation) · state architecture · vertical slice · collision Cat 11."
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_story_spine_comparative_tree",
+  "to_sys": "03",
+  "to": "03_setting_systems",
+  "line": 222,
+  "text": "| 2 | **THE SETTING SYSTEM** — character-grade place: taxonomy → schema → DCUS instance (B→A→instance, RULED) | [../03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md) | ✅ delivered 2026-08-2"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_story_spine_comparative_tree",
+  "to_sys": "03",
+  "to": "ssot_03_setting_system",
+  "line": 222,
+  "text": "| 2 | **THE SETTING SYSTEM** — character-grade place: taxonomy → schema → DCUS instance (B→A→instance, RULED) | [../03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md) | ✅ delivered 2026-08-2"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_texture_layer",
+  "to_sys": "03",
+  "to": "ssot_03_setting_system",
+  "line": 11,
+  "text": "dependencies: [\"ssot_01_story_spine_comparative_tree\", \"ssot_01_scale_ladder\", \"ssot_03_setting_system (scene card)\"]"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_texture_system",
+  "to_sys": "03",
+  "to": "ssot_03_setting_system",
+  "line": 10,
+  "text": "dependencies: [\"ssot_01_texture_layer\", \"ssot_01_story_spine_comparative_tree\", \"ssot_01_scale_ladder\", \"ssot_01_medium_grammars\", \"ssot_03_setting_system\", \"ssot_04_plot_system\", \"ssot_02_character_systems_vertical_slice\"]"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_texture_system",
+  "to_sys": "04",
+  "to": "ssot_04_plot_system",
+  "line": 10,
+  "text": "dependencies: [\"ssot_01_texture_layer\", \"ssot_01_story_spine_comparative_tree\", \"ssot_01_scale_ladder\", \"ssot_01_medium_grammars\", \"ssot_03_setting_system\", \"ssot_04_plot_system\", \"ssot_02_character_systems_vertical_slice\"]"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_texture_system",
+  "to_sys": "02",
+  "to": "ssot_02_character_systems_vertical_slice",
+  "line": 10,
+  "text": "dependencies: [\"ssot_01_texture_layer\", \"ssot_01_story_spine_comparative_tree\", \"ssot_01_scale_ladder\", \"ssot_01_medium_grammars\", \"ssot_03_setting_system\", \"ssot_04_plot_system\", \"ssot_02_character_systems_vertical_slice\"]"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_texture_system",
+  "to_sys": "08",
+  "to": "08_tracking_systems",
+  "line": 146,
+  "text": "- **T7 payoff ledger.** The ledger is a running list of owed payoffs. Each entry closes when the story pays it. It sits outside the twelve layers, as a reader model. The reader's trust in a character is tracked in [§9A The Reader Model](../"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_texture_system",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 146,
+  "text": "- **T7 payoff ledger.** The ledger is a running list of owed payoffs. Each entry closes when the story pays it. It sits outside the twelve layers, as a reader model. The reader's trust in a character is tracked in [§9A The Reader Model](../"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_texture_system",
+  "to_sys": "03",
+  "to": "03_setting_systems",
+  "line": 206,
+  "text": "Every value above is a proposal, grounded in what the canon docs already say: Tori as MC and the Driver ruled Action ([📐 ssot_01_story_spine_comparative_tree.md](📐%20ssot_01_story_spine_comparative_tree.md)), the six-movement descent and So"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_texture_system",
+  "to_sys": "03",
+  "to": "ssot_03_setting_system",
+  "line": 206,
+  "text": "Every value above is a proposal, grounded in what the canon docs already say: Tori as MC and the Driver ruled Action ([📐 ssot_01_story_spine_comparative_tree.md](📐%20ssot_01_story_spine_comparative_tree.md)), the six-movement descent and So"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_touchstones_register",
+  "to_sys": "00",
+  "to": "00_epistemology",
+  "line": 164,
+  "text": "- **00 Epistemology:** [the variable registry](../00_EPISTEMOLOGY/📐%20ssot_00_variable_registry.md) names every field, including `touchstone`."
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_touchstones_register",
+  "to_sys": "00",
+  "to": "ssot_00_variable_registry",
+  "line": 164,
+  "text": "- **00 Epistemology:** [the variable registry](../00_EPISTEMOLOGY/📐%20ssot_00_variable_registry.md) names every field, including `touchstone`."
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_touchstones_register",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 166,
+  "text": "- **02 Character:** [the character system](../02_CHARACTER_SYSTEMS/📐%20ssot_02_character_systems_vertical_slice.md) carries a Touchstone at L12."
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_touchstones_register",
+  "to_sys": "02",
+  "to": "ssot_02_character_systems_vertical_slice",
+  "line": 166,
+  "text": "- **02 Character:** [the character system](../02_CHARACTER_SYSTEMS/📐%20ssot_02_character_systems_vertical_slice.md) carries a Touchstone at L12."
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_touchstones_register",
+  "to_sys": "03",
+  "to": "03_setting_systems",
+  "line": 167,
+  "text": "- **03 Setting:** [the setting system](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md) carries Touchstones on the scene card."
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_touchstones_register",
+  "to_sys": "03",
+  "to": "ssot_03_setting_system",
+  "line": 167,
+  "text": "- **03 Setting:** [the setting system](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md) carries Touchstones on the scene card."
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_touchstones_register",
+  "to_sys": "04",
+  "to": "04_plot_systems",
+  "line": 168,
+  "text": "- **04 Plot:** [the plot system](../04_PLOT_SYSTEMS/📐%20ssot_04_plot_system.md) tells the argument in time."
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_touchstones_register",
+  "to_sys": "04",
+  "to": "ssot_04_plot_system",
+  "line": 168,
+  "text": "- **04 Plot:** [the plot system](../04_PLOT_SYSTEMS/📐%20ssot_04_plot_system.md) tells the argument in time."
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_touchstones_register",
+  "to_sys": "09",
+  "to": "09_operations",
+  "line": 169,
+  "text": "- **05 Operations:** [the standards ladder](../09_OPERATIONS/📐%20ssot_09_operations_standards_ladder.md) sets the rung of every document."
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_touchstones_register",
+  "to_sys": "09",
+  "to": "ssot_09_operations_standards_ladder",
+  "line": 169,
+  "text": "- **05 Operations:** [the standards ladder](../09_OPERATIONS/📐%20ssot_09_operations_standards_ladder.md) sets the rung of every document."
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_touchstones_register",
+  "to_sys": "07",
+  "to": "07_style_guides",
+  "line": 170,
+  "text": "- **06 Style guides:** [the prose style guide](../07_STYLE_GUIDES/📐%20ssot_07_1_prose_style.md) cites TS 1:1."
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_touchstones_register",
+  "to_sys": "07",
+  "to": "ssot_07_1_prose_style",
+  "line": 170,
+  "text": "- **06 Style guides:** [the prose style guide](../07_STYLE_GUIDES/📐%20ssot_07_1_prose_style.md) cites TS 1:1."
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_touchstones_register",
+  "to_sys": "06",
+  "to": "06_theme_systems",
+  "line": 171,
+  "text": "- **07 Theme:** [the theme system](../06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md) argues; Touchstones hold."
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_touchstones_register",
+  "to_sys": "06",
+  "to": "ssot_06_theme_system",
+  "line": 171,
+  "text": "- **07 Theme:** [the theme system](../06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md) argues; Touchstones hold."
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_touchstones_register",
+  "to_sys": "08",
+  "to": "08_tracking_systems",
+  "line": 172,
+  "text": "- **08 Tracking:** [the tracking system](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) tracks state."
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_touchstones_register",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 172,
+  "text": "- **08 Tracking:** [the tracking system](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) tracks state."
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_touchstones_register",
+  "to_sys": "05",
+  "to": "05_worldbuilding_systems",
+  "line": 173,
+  "text": "- **09 Worldbuilding:** [the worldbuilding system](../05_WORLDBUILDING_SYSTEMS/📐%20ssot_05_worldbuilding_system.md) holds the shared world."
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_touchstones_register",
+  "to_sys": "05",
+  "to": "ssot_05_worldbuilding_system",
+  "line": 173,
+  "text": "- **09 Worldbuilding:** [the worldbuilding system](../05_WORLDBUILDING_SYSTEMS/📐%20ssot_05_worldbuilding_system.md) holds the shared world."
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_trope_register",
+  "to_sys": "04",
+  "to": "ssot_04_trope_graph",
+  "line": 10,
+  "text": "dependencies: [\"ssot_04_trope_graph (the plot consumer)\", \"ssot_02_character_systems_vertical_slice\", \"ssot_03_setting_system\", \"ssot_01_genre_system\", \"ssot_06_theme_system\"]"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_trope_register",
+  "to_sys": "02",
+  "to": "ssot_02_character_systems_vertical_slice",
+  "line": 10,
+  "text": "dependencies: [\"ssot_04_trope_graph (the plot consumer)\", \"ssot_02_character_systems_vertical_slice\", \"ssot_03_setting_system\", \"ssot_01_genre_system\", \"ssot_06_theme_system\"]"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_trope_register",
+  "to_sys": "03",
+  "to": "ssot_03_setting_system",
+  "line": 10,
+  "text": "dependencies: [\"ssot_04_trope_graph (the plot consumer)\", \"ssot_02_character_systems_vertical_slice\", \"ssot_03_setting_system\", \"ssot_01_genre_system\", \"ssot_06_theme_system\"]"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_trope_register",
+  "to_sys": "06",
+  "to": "ssot_06_theme_system",
+  "line": 10,
+  "text": "dependencies: [\"ssot_04_trope_graph (the plot consumer)\", \"ssot_02_character_systems_vertical_slice\", \"ssot_03_setting_system\", \"ssot_01_genre_system\", \"ssot_06_theme_system\"]"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_trope_register",
+  "to_sys": "04",
+  "to": "04_plot_systems",
+  "line": 17,
+  "text": "**What this is:** the trope layer for every system, not just plot. The plot [trope graph](../04_PLOT_SYSTEMS/📐%20ssot_04_trope_graph.md) keys 1,034 tropes from TV Tropes' Plot indexes onto 135 plot nodes. This register pulls TV Tropes' char"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_trope_register",
+  "to_sys": "04",
+  "to": "ssot_04_trope_graph",
+  "line": 17,
+  "text": "**What this is:** the trope layer for every system, not just plot. The plot [trope graph](../04_PLOT_SYSTEMS/📐%20ssot_04_trope_graph.md) keys 1,034 tropes from TV Tropes' Plot indexes onto 135 plot nodes. This register pulls TV Tropes' char"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_trope_register",
+  "to_sys": "06",
+  "to": "06_theme_systems",
+  "line": 37,
+  "text": "**The keys (ruled 9/29):** character → L1–L12 · setting → S1–S12 · genre → G1–G12 · sexuality → the character layers (mostly L9 EROS) · theme → the four rails R1–R4 of the [theme system](../06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md), or "
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_trope_register",
+  "to_sys": "06",
+  "to": "ssot_06_theme_system",
+  "line": 37,
+  "text": "**The keys (ruled 9/29):** character → L1–L12 · setting → S1–S12 · genre → G1–G12 · sexuality → the character layers (mostly L9 EROS) · theme → the four rails R1–R4 of the [theme system](../06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md), or "
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_trope_register",
+  "to_sys": "08",
+  "to": "08_tracking_systems",
+  "line": 37,
+  "text": "**The keys (ruled 9/29):** character → L1–L12 · setting → S1–S12 · genre → G1–G12 · sexuality → the character layers (mostly L9 EROS) · theme → the four rails R1–R4 of the [theme system](../06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md), or "
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_trope_register",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 37,
+  "text": "**The keys (ruled 9/29):** character → L1–L12 · setting → S1–S12 · genre → G1–G12 · sexuality → the character layers (mostly L9 EROS) · theme → the four rails R1–R4 of the [theme system](../06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md), or "
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_trope_register",
+  "to_sys": "08",
+  "to": "08_tracking_systems",
+  "line": 86,
+  "text": "- **Consumer TROPES sections** — `⏸ TROPES pointer sections (phase 2)`. Each system doc gets one section pointing at its layer lists, as a call in that doc's own batch. The tracking system's story points can carry a trope id ([ssot_08](../0"
+ },
+ {
+  "from_sys": "01",
+  "from": "ssot_01_trope_register",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 86,
+  "text": "- **Consumer TROPES sections** — `⏸ TROPES pointer sections (phase 2)`. Each system doc gets one section pointing at its layer lists, as a call in that doc's own batch. The tracking system's story points can carry a trope id ([ssot_08](../0"
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_state_architecture",
+  "to_sys": "04",
+  "to": "ssot_04_fabula",
+  "line": 11,
+  "text": "dependencies: [\"ssot_02_character_systems_vertical_slice\", \"ssot_02_character_astrology\", \"ssot_04_fabula\", \"ssot_08_tracking_system\"]"
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_state_architecture",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 11,
+  "text": "dependencies: [\"ssot_02_character_systems_vertical_slice\", \"ssot_02_character_astrology\", \"ssot_04_fabula\", \"ssot_08_tracking_system\"]"
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_state_architecture",
+  "to_sys": "04",
+  "to": "ssot_04_fabula",
+  "line": 84,
+  "text": "|`origin_event`|The fabula event that produced this state (v1.1). An `event_id` from [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md), grammar `<movement>_<slug>`. `null` only for Category 5 progression overlays, which have n"
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_state_architecture",
+  "to_sys": "04",
+  "to": "04_plot_systems",
+  "line": 84,
+  "text": "|`origin_event`|The fabula event that produced this state (v1.1). An `event_id` from [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md), grammar `<movement>_<slug>`. `null` only for Category 5 progression overlays, which have n"
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_state_architecture",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 85,
+  "text": "|`told_at`|NEW (v1.2). A list of time codes — [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) §4 — marking every point the audience is shown this state on the grid. An empty list means the state is true"
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_state_architecture",
+  "to_sys": "08",
+  "to": "08_tracking_systems",
+  "line": 85,
+  "text": "|`told_at`|NEW (v1.2). A list of time codes — [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) §4 — marking every point the audience is shown this state on the grid. An empty list means the state is true"
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_state_architecture",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 88,
+  "text": "|`mc_distance_temporal`|v1.2: computed, not authored. Distance from Tori's own time code, with Tori fixed at (0,0) — see [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md)|`0` (this IS Tori)|"
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_state_architecture",
+  "to_sys": "08",
+  "to": "08_tracking_systems",
+  "line": 88,
+  "text": "|`mc_distance_temporal`|v1.2: computed, not authored. Distance from Tori's own time code, with Tori fixed at (0,0) — see [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md)|`0` (this IS Tori)|"
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_state_architecture",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 181,
+  "text": "A checkpoint is heavy: it re-derives every value, every derived statistic, every flag. That is the right weight for a fabula event, but too heavy for a single trait tick or a single flag flip between events. Those lighter, single-field chan"
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_state_architecture",
+  "to_sys": "08",
+  "to": "08_tracking_systems",
+  "line": 181,
+  "text": "A checkpoint is heavy: it re-derives every value, every derived statistic, every flag. That is the right weight for a fabula event, but too heavy for a single trait tick or a single flag flip between events. Those lighter, single-field chan"
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_state_architecture",
+  "to_sys": "03",
+  "to": "ssot_03_setting_state_architecture",
+  "line": 201,
+  "text": "**Rule 7: Backward diffs are allowed (RULED 2026-09-29, BOLO 90 step 7 trial, \"line up the recs\").** A character's base record is whatever state canon describes — not necessarily their earliest chronological state. A checkpoint dated earlie"
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_state_architecture",
+  "to_sys": "03",
+  "to": "03_setting_systems",
+  "line": 201,
+  "text": "**Rule 7: Backward diffs are allowed (RULED 2026-09-29, BOLO 90 step 7 trial, \"line up the recs\").** A character's base record is whatever state canon describes — not necessarily their earliest chronological state. A checkpoint dated earlie"
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_state_architecture",
+  "to_sys": "04",
+  "to": "ssot_04_fabula",
+  "line": 301,
+  "text": "This document defines character state tracking. It does not define story structure, scene sequencing, or narrative timeline management. Those belong to plot_systems. Since v1.1 the world timeline is [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/"
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_state_architecture",
+  "to_sys": "04",
+  "to": "04_plot_systems",
+  "line": 301,
+  "text": "This document defines character state tracking. It does not define story structure, scene sequencing, or narrative timeline management. Those belong to plot_systems. Since v1.1 the world timeline is [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/"
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_state_architecture",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 317,
+  "text": "**v1.2 (2026-09-29):** the formal timeline coordinate system is ruled, and it is provided by [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md), not by plot_systems — the time code (`M2 · Q1 · S04 | 012.3."
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_state_architecture",
+  "to_sys": "08",
+  "to": "08_tracking_systems",
+  "line": 317,
+  "text": "**v1.2 (2026-09-29):** the formal timeline coordinate system is ruled, and it is provided by [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md), not by plot_systems — the time code (`M2 · Q1 · S04 | 012.3."
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_state_architecture",
+  "to_sys": "03",
+  "to": "ssot_03_setting_state_architecture",
+  "line": 326,
+  "text": "|1.2.1|2026-09-29|RULED 2026-09-29, Chief: \"line up the recs\" (BOLO 90 step 7 trial). New Rule 7: backward diffs are allowed — a character's base record is whatever state canon describes, and a checkpoint dated earlier than it may diff back"
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_state_architecture",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 327,
+  "text": "|1.2.0|2026-09-29|BOLO 90 step 2, RULED 2026-09-29 (\"go\"): `told_at` added to Required Fields (a list of time codes; empty = true but offstage) · `narrative_moment` redefined as generated from the time code, readable label only · `mc_distan"
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_state_architecture",
+  "to_sys": "08",
+  "to": "08_tracking_systems",
+  "line": 327,
+  "text": "|1.2.0|2026-09-29|BOLO 90 step 2, RULED 2026-09-29 (\"go\"): `told_at` added to Required Fields (a list of time codes; empty = true but offstage) · `narrative_moment` redefined as generated from the time code, readable label only · `mc_distan"
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_systems_vertical_slice",
+  "to_sys": "09",
+  "to": "09_operations",
+  "line": 10,
+  "text": "dependencies: [\"[[📐_ssot_09_operations_writing_guide]]\", \"[[📐_ssot_09_operations_ai_instruction_protocol]]\", \"ssot_02_character_astrology_12_layer_mapping\", \"ssot_02_character_state_architecture\", \"ssot_02_dramatica_integration_protocol\", \""
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_systems_vertical_slice",
+  "to_sys": "04",
+  "to": "ssot_04_plot_system",
+  "line": 10,
+  "text": "dependencies: [\"[[📐_ssot_09_operations_writing_guide]]\", \"[[📐_ssot_09_operations_ai_instruction_protocol]]\", \"ssot_02_character_astrology_12_layer_mapping\", \"ssot_02_character_state_architecture\", \"ssot_02_dramatica_integration_protocol\", \""
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_systems_vertical_slice",
+  "to_sys": "03",
+  "to": "ssot_03_setting_system",
+  "line": 10,
+  "text": "dependencies: [\"[[📐_ssot_09_operations_writing_guide]]\", \"[[📐_ssot_09_operations_ai_instruction_protocol]]\", \"ssot_02_character_astrology_12_layer_mapping\", \"ssot_02_character_state_architecture\", \"ssot_02_dramatica_integration_protocol\", \""
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_systems_vertical_slice",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 20,
+  "text": "**Touchstones:** read [the Touchstones register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md) first."
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_systems_vertical_slice",
+  "to_sys": "01",
+  "to": "ssot_01_touchstones_register",
+  "line": 20,
+  "text": "**Touchstones:** read [the Touchstones register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md) first."
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_systems_vertical_slice",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 209,
+  "text": "**L9 — EROS:** Psycho-sexual conditioning. Desire structure, erotic patterning, shame architecture, body armor, satisfaction-cycle integrity, safety preconditions, and intimacy mode. Nine sub-fields added 2026-09-29 (the L9 EROS synthesis, "
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_systems_vertical_slice",
+  "to_sys": "01",
+  "to": "ssot_01_touchstones_register",
+  "line": 209,
+  "text": "**L9 — EROS:** Psycho-sexual conditioning. Desire structure, erotic patterning, shame architecture, body armor, satisfaction-cycle integrity, safety preconditions, and intimacy mode. Nine sub-fields added 2026-09-29 (the L9 EROS synthesis, "
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_systems_vertical_slice",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 1015,
+  "text": "Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the **character** domain is keyed to L1–L12 in the [trope register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md). The pull list, every layer with every trope keyed to it, is "
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_systems_vertical_slice",
+  "to_sys": "01",
+  "to": "ssot_01_trope_register",
+  "line": 1015,
+  "text": "Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the **character** domain is keyed to L1–L12 in the [trope register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md). The pull list, every layer with every trope keyed to it, is "
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_systems_vertical_slice",
+  "to_sys": "07",
+  "to": "07_style_guides",
+  "line": 1025,
+  "text": "3. **The tyranny of motive as a narration rule, not schema.** MOVED 2026-10-04 to 07.1 prose — CLOSED. It was a house writing rule for narrating character queries, not a field on any layer; it now lives in [07.1 prose](../07_STYLE_GUIDES/📐%"
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_systems_vertical_slice",
+  "to_sys": "07",
+  "to": "ssot_07_1_prose_style",
+  "line": 1025,
+  "text": "3. **The tyranny of motive as a narration rule, not schema.** MOVED 2026-10-04 to 07.1 prose — CLOSED. It was a house writing rule for narrating character queries, not a field on any layer; it now lives in [07.1 prose](../07_STYLE_GUIDES/📐%"
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_systems_vertical_slice",
+  "to_sys": "08",
+  "to": "08_tracking_systems",
+  "line": 1037,
+  "text": "9. **The audience trust ledger as a stack-external reader model.** MOVED 2026-10-04 to 08 tracking — CLOSED. It sits outside the twelve layers; it now lives in [08 tracking](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) §9A, the re"
+ },
+ {
+  "from_sys": "02",
+  "from": "ssot_02_character_systems_vertical_slice",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 1037,
+  "text": "9. **The audience trust ledger as a stack-external reader model.** MOVED 2026-10-04 to 08 tracking — CLOSED. It sits outside the twelve layers; it now lives in [08 tracking](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) §9A, the re"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "02",
+  "to": "ssot_02_character_state_architecture",
+  "line": 10,
+  "text": "purpose: \"Defines the architecture for tracking place change over narrative time without modifying the static base Setting Slice. Establishes the state diff system for places, the state record format, checkpoints and story points, state sou"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "02",
+  "to": "ssot_02_character_state_architecture",
+  "line": 11,
+  "text": "dependencies: [\"ssot_03_setting_system\", \"ssot_02_character_state_architecture\", \"ssot_08_tracking_system\", \"ssot_04_fabula\", \"delta-coast-ultra-school (first instance)\"]"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 11,
+  "text": "dependencies: [\"ssot_03_setting_system\", \"ssot_02_character_state_architecture\", \"ssot_08_tracking_system\", \"ssot_04_fabula\", \"delta-coast-ultra-school (first instance)\"]"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "04",
+  "to": "ssot_04_fabula",
+  "line": 11,
+  "text": "dependencies: [\"ssot_03_setting_system\", \"ssot_02_character_state_architecture\", \"ssot_08_tracking_system\", \"ssot_04_fabula\", \"delta-coast-ultra-school (first instance)\"]"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "02",
+  "to": "ssot_02_character_state_architecture",
+  "line": 39,
+  "text": "This is a direct mirror of [🔮 ssot_02_character_state_architecture.md](../02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md) v1.2.0. Where that document says \"character,\" read \"place.\" Where it says \"layer,\" read \"S-layer.\" The "
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 39,
+  "text": "This is a direct mirror of [🔮 ssot_02_character_state_architecture.md](../02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md) v1.2.0. Where that document says \"character,\" read \"place.\" Where it says \"layer,\" read \"S-layer.\" The "
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "04",
+  "to": "ssot_04_fabula",
+  "line": 105,
+  "text": "| `origin_event` | The fabula event that produced this state. An `event_id` from [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md), grammar `<movement>_<slug>`. `null` only for Category 5 progression overlays, which have no si"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "04",
+  "to": "04_plot_systems",
+  "line": 105,
+  "text": "| `origin_event` | The fabula event that produced this state. An `event_id` from [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md), grammar `<movement>_<slug>`. `null` only for Category 5 progression overlays, which have no si"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 106,
+  "text": "| `told_at` | A list of time codes ([📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) §4) marking every point the audience is shown this state on the grid. An empty list means the state is true but offsta"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "08",
+  "to": "08_tracking_systems",
+  "line": 106,
+  "text": "| `told_at` | A list of time codes ([📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) §4) marking every point the audience is shown this state on the grid. An empty list means the state is true but offsta"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 174,
+  "text": "Single-field changes are **story points** and do not live in this document — they live in [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) §5, `subject.kind: place`. A trait like S9 ALLURE's promise does"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "08",
+  "to": "08_tracking_systems",
+  "line": 174,
+  "text": "Single-field changes are **story points** and do not live in this document — they live in [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) §5, `subject.kind: place`. A trait like S9 ALLURE's promise does"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "02",
+  "to": "ssot_02_character_state_architecture",
+  "line": 198,
+  "text": "**Rule 7: Backward diffs are allowed (RULED 2026-09-29, BOLO 90 step 7 trial, \"line up the recs\").** A place's base slice is whatever state canon describes — not necessarily its earliest chronological state. DCUS's own base slice (§11, belo"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 198,
+  "text": "**Rule 7: Backward diffs are allowed (RULED 2026-09-29, BOLO 90 step 7 trial, \"line up the recs\").** A place's base slice is whatever state canon describes — not necessarily its earliest chronological state. DCUS's own base slice (§11, belo"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 270,
+  "text": "- **The grid, the time code, and the checkpoint/story-point split** live in [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) — exactly as they do for character state (ssot_02 v1.2, its own Boundaries sec"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "08",
+  "to": "08_tracking_systems",
+  "line": 270,
+  "text": "- **The grid, the time code, and the checkpoint/story-point split** live in [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) — exactly as they do for character state (ssot_02 v1.2, its own Boundaries sec"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "04",
+  "to": "ssot_04_fabula",
+  "line": 271,
+  "text": "- **World events** live in [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md). Every event, including a rename, is an `event_id` in the fabula's registry; a place checkpoint points to one through `origin_event`, the same field "
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "04",
+  "to": "04_plot_systems",
+  "line": 271,
+  "text": "- **World events** live in [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md). Every event, including a rename, is an `event_id` in the fabula's registry; a place checkpoint points to one through `origin_event`, the same field "
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "04",
+  "to": "ssot_04_fabula",
+  "line": 272,
+  "text": "- **The DCUS eras themselves are not re-authored here as a new timeline.** The fabula's own ruling already settled this (ssot_04_fabula.md, OPEN call 4, RULED 2026-09-24): \"the setting doc stays the one authoring surface\" for the Skeeter Cr"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "04",
+  "to": "ssot_04_fabula",
+  "line": 278,
+  "text": "The first instance of this architecture, built entirely from existing canon: [📐 ssot_03_setting_system.md](📐%20ssot_03_setting_system.md) THE INSTANCE (base slice, v1.4.1), [_CANON_NODES/delta-coast-ultra-school.md](../../../../_CANON_NODES"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "04",
+  "to": "04_plot_systems",
+  "line": 278,
+  "text": "The first instance of this architecture, built entirely from existing canon: [📐 ssot_03_setting_system.md](📐%20ssot_03_setting_system.md) THE INSTANCE (base slice, v1.4.1), [_CANON_NODES/delta-coast-ultra-school.md](../../../../_CANON_NODES"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "04",
+  "to": "ssot_04_fabula",
+  "line": 280,
+  "text": "**A note on direction.** Tori's checkpoints (ssot_04_fabula.md, THE INSTANCE) all move forward from an early moment toward story-present. DCUS's base slice (ssot_03 v1.4.1) is already written at the *current* era — its S4 LAW, S6 ECONOMY, a"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "04",
+  "to": "ssot_04_fabula",
+  "line": 282,
+  "text": "**A note on `origin_event`.** No fabula record exists for any of the three transitions. The fabula's own world clock is explicit: \"No calendar date exists in these sources for any of the three transitions; this doc records reach and extent "
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 282,
+  "text": "**A note on `origin_event`.** No fabula record exists for any of the three transitions. The fabula's own world clock is explicit: \"No calendar date exists in these sources for any of the three transitions; this doc records reach and extent "
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "08",
+  "to": "08_tracking_systems",
+  "line": 282,
+  "text": "**A note on `origin_event`.** No fabula record exists for any of the three transitions. The fabula's own world clock is explicit: \"No calendar date exists in these sources for any of the three transitions; this doc records reach and extent "
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 408,
+  "text": "**A note on `told_at` (RULED 2026-09-29, BOLO 90 step 7 trial).** The M2 grief-outburst sequence (`_tools/bolostatus/work/90/TRIAL-M2-grief.md`) is this checkpoint's first onstage attestation of the Administration's routine-diagnostic mecha"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "08",
+  "to": "08_tracking_systems",
+  "line": 408,
+  "text": "**A note on `told_at` (RULED 2026-09-29, BOLO 90 step 7 trial).** The M2 grief-outburst sequence (`_tools/bolostatus/work/90/TRIAL-M2-grief.md`) is this checkpoint's first onstage attestation of the Administration's routine-diagnostic mecha"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_state_architecture",
+  "to_sys": "02",
+  "to": "ssot_02_character_state_architecture",
+  "line": 424,
+  "text": "| 1.0.0 | 2026-09-29 | Initial document. BOLO 90 step 3, RULED 2026-09-29 (\"Recommendations\"): mirrors ssot_02_character_state_architecture v1.2.0 for places — the core principle (static base slice vs dynamic diffs), the per-S-layer static/"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_synthesis",
+  "to_sys": "01",
+  "to": "ssot_01_genre_system",
+  "line": 74,
+  "text": "8. **Adopt Ryan's nine-axis ontological scoring as the primary L7 genre-contract tool**, keeping Baur's five-lineage taxonomy as shorthand. Reason: BVX.0630's own frontmatter states it supersedes the existing tool. Recommend: yes — a straig"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_system",
+  "to_sys": "01",
+  "to": "ssot_01_story_spine_comparative_tree",
+  "line": 10,
+  "text": "dependencies: [\"ssot_01_story_spine_comparative_tree\", \"ssot_01_scale_ladder\", \"ssot_02_character_astrology_12_layer_mapping (mirrored)\", \"delta-coast-ultra-school (first instance)\"]"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_system",
+  "to_sys": "01",
+  "to": "ssot_01_scale_ladder",
+  "line": 10,
+  "text": "dependencies: [\"ssot_01_story_spine_comparative_tree\", \"ssot_01_scale_ladder\", \"ssot_02_character_astrology_12_layer_mapping (mirrored)\", \"delta-coast-ultra-school (first instance)\"]"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_system",
+  "to_sys": "02",
+  "to": "ssot_02_character_astrology_12_layer_mapping",
+  "line": 10,
+  "text": "dependencies: [\"ssot_01_story_spine_comparative_tree\", \"ssot_01_scale_ladder\", \"ssot_02_character_astrology_12_layer_mapping (mirrored)\", \"delta-coast-ultra-school (first instance)\"]"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_system",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 19,
+  "text": "**Touchstones:** read [the Touchstones register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md) first."
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_system",
+  "to_sys": "01",
+  "to": "ssot_01_touchstones_register",
+  "line": 19,
+  "text": "**Touchstones:** read [the Touchstones register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md) first."
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_system",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 119,
+  "text": "The full state architecture — base slice vs. state diffs, checkpoints and story points, the state record format, the DCUS rename lattice as the first instance — lands in [🔮 ssot_03_setting_state_architecture.md](🔮%20ssot_03_setting_state_ar"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_system",
+  "to_sys": "08",
+  "to": "08_tracking_systems",
+  "line": 119,
+  "text": "The full state architecture — base slice vs. state diffs, checkpoints and story points, the state record format, the DCUS rename lattice as the first instance — lands in [🔮 ssot_03_setting_state_architecture.md](🔮%20ssot_03_setting_state_ar"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_system",
+  "to_sys": "04",
+  "to": "ssot_04_plot_system",
+  "line": 211,
+  "text": "sequence question:  the dramatic question this run answers, usually replaced by a worse one  (Axis 1, ssot_04_plot_system.md)"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_system",
+  "to_sys": "04",
+  "to": "ssot_04_plot_system",
+  "line": 219,
+  "text": "THE SEQUENCE CARD does not carry `active strata`, `sensorium`, `function mode`, `telling`, `touchstones`, or `collision` — those stay per-scene, filled on a SCENE CARD for whichever scene-slot actually needs them. A sequence with no scene-s"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_system",
+  "to_sys": "04",
+  "to": "04_plot_systems",
+  "line": 219,
+  "text": "THE SEQUENCE CARD does not carry `active strata`, `sensorium`, `function mode`, `telling`, `touchstones`, or `collision` — those stay per-scene, filled on a SCENE CARD for whichever scene-slot actually needs them. A sequence with no scene-s"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_system",
+  "to_sys": "02",
+  "to": "ssot_02_character_systems_vertical_slice",
+  "line": 262,
+  "text": "Setting flags work like character flags. The place record computes each flag. Nobody assigns one. A flag takes one of four states: ACTIVE (condition met now), PENDING (met at a named story event), FIRED_PRE_STORY (met before story entry), I"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_system",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 385,
+  "text": "Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the **setting** domain is keyed to S1–S12 in the [trope register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md). The pull list, every layer with every trope keyed to it, is [L"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_system",
+  "to_sys": "01",
+  "to": "ssot_01_trope_register",
+  "line": 385,
+  "text": "Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the **setting** domain is keyed to S1–S12 in the [trope register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md). The pull list, every layer with every trope keyed to it, is [L"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_system",
+  "to_sys": "02",
+  "to": "ssot_02_character_state_architecture",
+  "line": 411,
+  "text": "- **1.4.2 — 2026-09-29.** BOLO 90 step 3, setting state architecture landed as its own doc: [🔮 ssot_03_setting_state_architecture.md](🔮%20ssot_03_setting_state_architecture.md) — base slice vs. state diffs mirroring `ssot_02_character_state"
+ },
+ {
+  "from_sys": "03",
+  "from": "ssot_03_setting_system",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 411,
+  "text": "- **1.4.2 — 2026-09-29.** BOLO 90 step 3, setting state architecture landed as its own doc: [🔮 ssot_03_setting_state_architecture.md](🔮%20ssot_03_setting_state_architecture.md) — base slice vs. state diffs mirroring `ssot_02_character_state"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_fabula",
+  "to_sys": "03",
+  "to": "ssot_03_setting_system",
+  "line": 10,
+  "text": "dependencies: [\"ssot_04_plot_system\", \"ssot_03_setting_system\", \"ssot_02_character_state_architecture\", \"ssot_02_character_astrology_12_layer_mapping\", \"ssot_01_scale_ladder\"]"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_fabula",
+  "to_sys": "02",
+  "to": "ssot_02_character_state_architecture",
+  "line": 10,
+  "text": "dependencies: [\"ssot_04_plot_system\", \"ssot_03_setting_system\", \"ssot_02_character_state_architecture\", \"ssot_02_character_astrology_12_layer_mapping\", \"ssot_01_scale_ladder\"]"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_fabula",
+  "to_sys": "02",
+  "to": "ssot_02_character_astrology_12_layer_mapping",
+  "line": 10,
+  "text": "dependencies: [\"ssot_04_plot_system\", \"ssot_03_setting_system\", \"ssot_02_character_state_architecture\", \"ssot_02_character_astrology_12_layer_mapping\", \"ssot_01_scale_ladder\"]"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_fabula",
+  "to_sys": "01",
+  "to": "ssot_01_scale_ladder",
+  "line": 10,
+  "text": "dependencies: [\"ssot_04_plot_system\", \"ssot_03_setting_system\", \"ssot_02_character_state_architecture\", \"ssot_02_character_astrology_12_layer_mapping\", \"ssot_01_scale_ladder\"]"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_fabula",
+  "to_sys": "03",
+  "to": "ssot_03_setting_system",
+  "line": 150,
+  "text": "**Eras.** The setting doc's own DCUS proof gives a naming lattice with three stages, stated as a chronology, not merely a scar: \"100+ years of private prestige; the founding name sanded to 'Red Hills' a century before the Bishops arrived\" ("
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_fabula",
+  "to_sys": "03",
+  "to": "03_setting_systems",
+  "line": 150,
+  "text": "**Eras.** The setting doc's own DCUS proof gives a naming lattice with three stages, stated as a chronology, not merely a scar: \"100+ years of private prestige; the founding name sanded to 'Red Hills' a century before the Bishops arrived\" ("
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_fabula",
+  "to_sys": "05",
+  "to": "05_worldbuilding_systems",
+  "line": 164,
+  "text": "**The calendar and the Moon Severance (RULED 2026-10-01, BOLO 96, Chief: \"all rec\").** OXO's present is **2199**; the **Moon Severance** is **2099**, one hundred years back, in **era 1**. The Moon colony went up in the 2050s–70s and had tur"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_fabula",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 172,
+  "text": "**Superseded, kept as history:** on 2026-02-09 Chief ruled the three \"occur simultaneously… one entire eon\" (`_CLAUDE_ARCHIVE_2026-08-15/conversations/2026-02-09_main-sonnet.md`). The eon still holds as the umbrella; its inside is now three"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_fabula",
+  "to_sys": "01",
+  "to": "ssot_01_story_registry",
+  "line": 172,
+  "text": "**Superseded, kept as history:** on 2026-02-09 Chief ruled the three \"occur simultaneously… one entire eon\" (`_CLAUDE_ARCHIVE_2026-08-15/conversations/2026-02-09_main-sonnet.md`). The eon still holds as the umbrella; its inside is now three"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_fabula",
+  "to_sys": "03",
+  "to": "ssot_03_setting_state_architecture",
+  "line": 180,
+  "text": "**Backstory events (RULED 2026-09-29, BOLO 90 step 7 trial, \"line up the recs\").** Deep past with no Mn to file under — DCUS's founding lattice is the worked case ([🔮 ssot_03_setting_state_architecture.md](../03_SETTING_SYSTEMS/🔮%20ssot_03_"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_fabula",
+  "to_sys": "03",
+  "to": "03_setting_systems",
+  "line": 180,
+  "text": "**Backstory events (RULED 2026-09-29, BOLO 90 step 7 trial, \"line up the recs\").** Deep past with no Mn to file under — DCUS's founding lattice is the worked case ([🔮 ssot_03_setting_state_architecture.md](../03_SETTING_SYSTEMS/🔮%20ssot_03_"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_fabula",
+  "to_sys": "02",
+  "to": "ssot_02_character_state_architecture",
+  "line": 222,
+  "text": "**To the state architecture.** The v1.1 gap PS2 flagged becomes a patch spec, **landed in `ssot_02_character_state_architecture.md` v1.1.0 on 2026-09-24** (OPEN call 6, ruled). As applied:"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_fabula",
+  "to_sys": "02",
+  "to": "ssot_02_character_state_architecture",
+  "line": 539,
+  "text": "6. **RULED 2026-09-24 (rec taken) · State architecture v1.1 ownership** — this doc specifies the `origin_event`, `state_diffs`, and event-id patch; does `ssot_02_character_state_architecture.md` take the version bump in the same pass or a s"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_plot_system",
+  "to_sys": "01",
+  "to": "ssot_01_story_spine_comparative_tree",
+  "line": 10,
+  "text": "dependencies: [\"ssot_01_story_spine_comparative_tree\", \"ssot_01_scale_ladder\", \"ssot_01_collision_engine\", \"ssot_03_setting_system\", \"ssot_02_dramatica_integration_protocol\", \"ssot_04_fabula\", \"ssot_04_trope_graph\"]"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_plot_system",
+  "to_sys": "01",
+  "to": "ssot_01_scale_ladder",
+  "line": 10,
+  "text": "dependencies: [\"ssot_01_story_spine_comparative_tree\", \"ssot_01_scale_ladder\", \"ssot_01_collision_engine\", \"ssot_03_setting_system\", \"ssot_02_dramatica_integration_protocol\", \"ssot_04_fabula\", \"ssot_04_trope_graph\"]"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_plot_system",
+  "to_sys": "01",
+  "to": "ssot_01_collision_engine",
+  "line": 10,
+  "text": "dependencies: [\"ssot_01_story_spine_comparative_tree\", \"ssot_01_scale_ladder\", \"ssot_01_collision_engine\", \"ssot_03_setting_system\", \"ssot_02_dramatica_integration_protocol\", \"ssot_04_fabula\", \"ssot_04_trope_graph\"]"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_plot_system",
+  "to_sys": "03",
+  "to": "ssot_03_setting_system",
+  "line": 10,
+  "text": "dependencies: [\"ssot_01_story_spine_comparative_tree\", \"ssot_01_scale_ladder\", \"ssot_01_collision_engine\", \"ssot_03_setting_system\", \"ssot_02_dramatica_integration_protocol\", \"ssot_04_fabula\", \"ssot_04_trope_graph\"]"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_plot_system",
+  "to_sys": "02",
+  "to": "ssot_02_dramatica_integration_protocol",
+  "line": 10,
+  "text": "dependencies: [\"ssot_01_story_spine_comparative_tree\", \"ssot_01_scale_ladder\", \"ssot_01_collision_engine\", \"ssot_03_setting_system\", \"ssot_02_dramatica_integration_protocol\", \"ssot_04_fabula\", \"ssot_04_trope_graph\"]"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_plot_system",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 20,
+  "text": "**Touchstones:** read [the Touchstones register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md) first."
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_plot_system",
+  "to_sys": "01",
+  "to": "ssot_01_touchstones_register",
+  "line": 20,
+  "text": "**Touchstones:** read [the Touchstones register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md) first."
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_plot_system",
+  "to_sys": "01",
+  "to": "ssot_01_story_spine_comparative_tree",
+  "line": 26,
+  "text": "**What it does not own:** world time (the fabula owns when an event happened in its own order, independent of any telling; this doc reads that doc's EVENT RECORD registry rather than re-deriving it), which moves are legal where (the trope g"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_plot_system",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 26,
+  "text": "**What it does not own:** world time (the fabula owns when an event happened in its own order, independent of any telling; this doc reads that doc's EVENT RECORD registry rather than re-deriving it), which moves are legal where (the trope g"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_plot_system",
+  "to_sys": "01",
+  "to": "ssot_01_scale_ladder",
+  "line": 103,
+  "text": "Plot units do not invent a second hierarchy: they occupy the containers already ruled in [📐 ssot_01_scale_ladder.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_scale_ladder.md). plot_systems' only addition is what happens inside a container, ne"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_plot_system",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 103,
+  "text": "Plot units do not invent a second hierarchy: they occupy the containers already ruled in [📐 ssot_01_scale_ladder.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_scale_ladder.md). plot_systems' only addition is what happens inside a container, ne"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_plot_system",
+  "to_sys": "01",
+  "to": "ssot_01_genre_system",
+  "line": 181,
+  "text": "**RULED 2026-09-29 (77-Z / 77-AC, P10 GENRE OBLIGATION for OXO, BOLO 91):** P10 reads **cultcore** (\"cultcore — the genre of the outsiders,\" Chief's Apple Notes 2026, RULED on BOLO 91) at the story level — OXO's series genre, see [📐 ssot_01"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_plot_system",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 181,
+  "text": "**RULED 2026-09-29 (77-Z / 77-AC, P10 GENRE OBLIGATION for OXO, BOLO 91):** P10 reads **cultcore** (\"cultcore — the genre of the outsiders,\" Chief's Apple Notes 2026, RULED on BOLO 91) at the story level — OXO's series genre, see [📐 ssot_01"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_plot_system",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 219,
+  "text": "**Address grammar note (RULED 2026-09-29, BOLO 90 step 7 trial, \"line up the recs\").** `address` above has used the q-scheme since this document's first instance, e.g. `OXO.primary.M2.q1.s3`; that scheme now reads as legacy. [📐 ssot_08_trac"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_plot_system",
+  "to_sys": "08",
+  "to": "08_tracking_systems",
+  "line": 219,
+  "text": "**Address grammar note (RULED 2026-09-29, BOLO 90 step 7 trial, \"line up the recs\").** `address` above has used the q-scheme since this document's first instance, e.g. `OXO.primary.M2.q1.s3`; that scheme now reads as legacy. [📐 ssot_08_trac"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_plot_system",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 243,
+  "text": "| address | `OXO.primary.M2.q1.s3` (legacy q-scheme; canonical form `M2 · Q1 · S03` per [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) §4) | same key |"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_plot_system",
+  "to_sys": "08",
+  "to": "08_tracking_systems",
+  "line": 243,
+  "text": "| address | `OXO.primary.M2.q1.s3` (legacy q-scheme; canonical form `M2 · Q1 · S03` per [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) §4) | same key |"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_plot_system",
+  "to_sys": "01",
+  "to": "ssot_01_genre_system",
+  "line": 303,
+  "text": "| **P10 GENRE OBLIGATION** | RULED 2026-09-29 (77-Z, BOLO 91): story level reads **cultcore** (\"cultcore — the genre of the outsiders,\" Chief's Apple Notes 2026), OXO's series genre; this unit's own scene-level obligation is Snyder's **Inst"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_plot_system",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 303,
+  "text": "| **P10 GENRE OBLIGATION** | RULED 2026-09-29 (77-Z, BOLO 91): story level reads **cultcore** (\"cultcore — the genre of the outsiders,\" Chief's Apple Notes 2026), OXO's series genre; this unit's own scene-level obligation is Snyder's **Inst"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_plot_system",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 391,
+  "text": "- **0.2.4 · 2026-09-29** — RULED 2026-09-29, Chief: \"line up the recs\" (BOLO 90 step 7 trial). THE PLOT CARD's `address` field gains a one-line conversion note: the q-scheme (`OXO.primary.M2.q1.s3`) reads as legacy against ssot_08_tracking_"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_trope_graph",
+  "to_sys": "02",
+  "to": "ssot_02_dramatica_integration_protocol",
+  "line": 11,
+  "text": "dependencies: [\"ssot_04_fabula\", \"ssot_04_plot_system\", \"ssot_02_dramatica_integration_protocol\", \"ssot_01_story_spine_comparative_tree\", \"ssot_01_scale_ladder\"]"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_trope_graph",
+  "to_sys": "01",
+  "to": "ssot_01_story_spine_comparative_tree",
+  "line": 11,
+  "text": "dependencies: [\"ssot_04_fabula\", \"ssot_04_plot_system\", \"ssot_02_dramatica_integration_protocol\", \"ssot_01_story_spine_comparative_tree\", \"ssot_01_scale_ladder\"]"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_trope_graph",
+  "to_sys": "01",
+  "to": "ssot_01_scale_ladder",
+  "line": 11,
+  "text": "dependencies: [\"ssot_04_fabula\", \"ssot_04_plot_system\", \"ssot_02_dramatica_integration_protocol\", \"ssot_01_story_spine_comparative_tree\", \"ssot_01_scale_ladder\"]"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_trope_graph",
+  "to_sys": "01",
+  "to": "ssot_01_story_spine_comparative_tree",
+  "line": 285,
+  "text": "| PS-R.rails.md | The storyform's fixed signpost order, OXO's eight dynamics, the twelve P-layers, six blocking gaps | quotes ssot_01_story_spine_comparative_tree, ssot_02_dramatica_integration_protocol, ssot_04_plot_system, verbatim |"
+ },
+ {
+  "from_sys": "04",
+  "from": "ssot_04_trope_graph",
+  "to_sys": "02",
+  "to": "ssot_02_dramatica_integration_protocol",
+  "line": 285,
+  "text": "| PS-R.rails.md | The storyform's fixed signpost order, OXO's eight dynamics, the twelve P-layers, six blocking gaps | quotes ssot_01_story_spine_comparative_tree, ssot_02_dramatica_integration_protocol, ssot_04_plot_system, verbatim |"
+ },
+ {
+  "from_sys": "05",
+  "from": "ssot_05_worldbuilding_system",
+  "to_sys": "03",
+  "to": "ssot_03_setting_system",
+  "line": 10,
+  "text": "dependencies: [\"ssot_03_setting_system (v1.5.0, places)\", \"ssot_02_character_systems (people)\", \"ssot_08_tracking_system (v1.0.0, state over time)\", \"ssot_04_fabula / ssot_04_plot_system (origin events)\", \"ssot_01_trope_register (BOLO 89 la"
+ },
+ {
+  "from_sys": "05",
+  "from": "ssot_05_worldbuilding_system",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 10,
+  "text": "dependencies: [\"ssot_03_setting_system (v1.5.0, places)\", \"ssot_02_character_systems (people)\", \"ssot_08_tracking_system (v1.0.0, state over time)\", \"ssot_04_fabula / ssot_04_plot_system (origin events)\", \"ssot_01_trope_register (BOLO 89 la"
+ },
+ {
+  "from_sys": "05",
+  "from": "ssot_05_worldbuilding_system",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 10,
+  "text": "dependencies: [\"ssot_03_setting_system (v1.5.0, places)\", \"ssot_02_character_systems (people)\", \"ssot_08_tracking_system (v1.0.0, state over time)\", \"ssot_04_fabula / ssot_04_plot_system (origin events)\", \"ssot_01_trope_register (BOLO 89 la"
+ },
+ {
+  "from_sys": "05",
+  "from": "ssot_05_worldbuilding_system",
+  "to_sys": "04",
+  "to": "ssot_04_fabula",
+  "line": 10,
+  "text": "dependencies: [\"ssot_03_setting_system (v1.5.0, places)\", \"ssot_02_character_systems (people)\", \"ssot_08_tracking_system (v1.0.0, state over time)\", \"ssot_04_fabula / ssot_04_plot_system (origin events)\", \"ssot_01_trope_register (BOLO 89 la"
+ },
+ {
+  "from_sys": "05",
+  "from": "ssot_05_worldbuilding_system",
+  "to_sys": "04",
+  "to": "ssot_04_plot_system",
+  "line": 10,
+  "text": "dependencies: [\"ssot_03_setting_system (v1.5.0, places)\", \"ssot_02_character_systems (people)\", \"ssot_08_tracking_system (v1.0.0, state over time)\", \"ssot_04_fabula / ssot_04_plot_system (origin events)\", \"ssot_01_trope_register (BOLO 89 la"
+ },
+ {
+  "from_sys": "05",
+  "from": "ssot_05_worldbuilding_system",
+  "to_sys": "01",
+  "to": "ssot_01_trope_register",
+  "line": 10,
+  "text": "dependencies: [\"ssot_03_setting_system (v1.5.0, places)\", \"ssot_02_character_systems (people)\", \"ssot_08_tracking_system (v1.0.0, state over time)\", \"ssot_04_fabula / ssot_04_plot_system (origin events)\", \"ssot_01_trope_register (BOLO 89 la"
+ },
+ {
+  "from_sys": "05",
+  "from": "ssot_05_worldbuilding_system",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 21,
+  "text": "**Touchstones:** read [the Touchstones register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md) first."
+ },
+ {
+  "from_sys": "05",
+  "from": "ssot_05_worldbuilding_system",
+  "to_sys": "01",
+  "to": "ssot_01_touchstones_register",
+  "line": 21,
+  "text": "**Touchstones:** read [the Touchstones register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md) first."
+ },
+ {
+  "from_sys": "05",
+  "from": "ssot_05_worldbuilding_system",
+  "to_sys": "03",
+  "to": "ssot_03_setting_system",
+  "line": 326,
+  "text": "| The Bishops (DCUS) | GRP | `ssot_03_setting_system.md` (DCUS faction cards, ruled 1.4.1) |"
+ },
+ {
+  "from_sys": "05",
+  "from": "ssot_05_worldbuilding_system",
+  "to_sys": "03",
+  "to": "ssot_03_setting_system",
+  "line": 334,
+  "text": "| Sync Cult (held) | BEL | `ssot_03_setting_system.md` (DCUS faction cards, \"held\") |"
+ },
+ {
+  "from_sys": "06",
+  "from": "ssot_06_theme_system",
+  "to_sys": "01",
+  "to": "ssot_01_story_spine_comparative_tree",
+  "line": 10,
+  "text": "dependencies: [\"oxo-storyform (Outcome/Judgment, Problem/Solution, Growth)\", \"ssot_01_story_spine_comparative_tree (L6)\", \"ssot_01_touchstones_register (BOLO 81, the handshake)\"]"
+ },
+ {
+  "from_sys": "06",
+  "from": "ssot_06_theme_system",
+  "to_sys": "01",
+  "to": "ssot_01_touchstones_register",
+  "line": 10,
+  "text": "dependencies: [\"oxo-storyform (Outcome/Judgment, Problem/Solution, Growth)\", \"ssot_01_story_spine_comparative_tree (L6)\", \"ssot_01_touchstones_register (BOLO 81, the handshake)\"]"
+ },
+ {
+  "from_sys": "06",
+  "from": "ssot_06_theme_system",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 17,
+  "text": "**Touchstones:** read [the Touchstones register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md) first."
+ },
+ {
+  "from_sys": "06",
+  "from": "ssot_06_theme_system",
+  "to_sys": "01",
+  "to": "ssot_01_touchstones_register",
+  "line": 17,
+  "text": "**Touchstones:** read [the Touchstones register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md) first."
+ },
+ {
+  "from_sys": "06",
+  "from": "ssot_06_theme_system",
+  "to_sys": "03",
+  "to": "03_setting_systems",
+  "line": 152,
+  "text": "Three tests carry \"Nobody has to be evil when everyone does their job\" down to the single scene. They ride the SCENE CARD in [ssot_03](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md) as two new fields."
+ },
+ {
+  "from_sys": "06",
+  "from": "ssot_06_theme_system",
+  "to_sys": "03",
+  "to": "ssot_03_setting_system",
+  "line": 152,
+  "text": "Three tests carry \"Nobody has to be evil when everyone does their job\" down to the single scene. They ride the SCENE CARD in [ssot_03](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md) as two new fields."
+ },
+ {
+  "from_sys": "06",
+  "from": "ssot_06_theme_system",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 161,
+  "text": "Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the **theme** domain is keyed to the four rails R1–R4 in the [trope register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md). The pull list, every layer with every trope keyed "
+ },
+ {
+  "from_sys": "06",
+  "from": "ssot_06_theme_system",
+  "to_sys": "01",
+  "to": "ssot_01_trope_register",
+  "line": 161,
+  "text": "Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the **theme** domain is keyed to the four rails R1–R4 in the [trope register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md). The pull list, every layer with every trope keyed "
+ },
+ {
+  "from_sys": "06",
+  "from": "ssot_06_theme_system",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 175,
+  "text": "Themes argue; Touchstones hold. A rail can argue both sides of its debate, scene to scene, and can pressure-test a Touchstone hard — but no scene may write past what a live Touchstone locks. Live Touchstones are listed in [the Touchstones r"
+ },
+ {
+  "from_sys": "06",
+  "from": "ssot_06_theme_system",
+  "to_sys": "01",
+  "to": "ssot_01_touchstones_register",
+  "line": 175,
+  "text": "Themes argue; Touchstones hold. A rail can argue both sides of its debate, scene to scene, and can pressure-test a Touchstone hard — but no scene may write past what a live Touchstone locks. Live Touchstones are listed in [the Touchstones r"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "ssot_01_texture_system",
+  "line": 10,
+  "text": "dependencies: [\"oxo-telling-profile\", \"ssot_01_texture_system\", \"ssot_01_texture_layer\", \"ssot_01_modern_poetics\", \"ssot_01_medium_grammars (M1 PROSE)\", \"ssot_01_touchstones_register (TS 1:1)\", \"ssot_01_genre_system (cultcore)\", \"ssot_08_tr"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "ssot_01_texture_layer",
+  "line": 10,
+  "text": "dependencies: [\"oxo-telling-profile\", \"ssot_01_texture_system\", \"ssot_01_texture_layer\", \"ssot_01_modern_poetics\", \"ssot_01_medium_grammars (M1 PROSE)\", \"ssot_01_touchstones_register (TS 1:1)\", \"ssot_01_genre_system (cultcore)\", \"ssot_08_tr"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "ssot_01_modern_poetics",
+  "line": 10,
+  "text": "dependencies: [\"oxo-telling-profile\", \"ssot_01_texture_system\", \"ssot_01_texture_layer\", \"ssot_01_modern_poetics\", \"ssot_01_medium_grammars (M1 PROSE)\", \"ssot_01_touchstones_register (TS 1:1)\", \"ssot_01_genre_system (cultcore)\", \"ssot_08_tr"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "ssot_01_medium_grammars",
+  "line": 10,
+  "text": "dependencies: [\"oxo-telling-profile\", \"ssot_01_texture_system\", \"ssot_01_texture_layer\", \"ssot_01_modern_poetics\", \"ssot_01_medium_grammars (M1 PROSE)\", \"ssot_01_touchstones_register (TS 1:1)\", \"ssot_01_genre_system (cultcore)\", \"ssot_08_tr"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "ssot_01_touchstones_register",
+  "line": 10,
+  "text": "dependencies: [\"oxo-telling-profile\", \"ssot_01_texture_system\", \"ssot_01_texture_layer\", \"ssot_01_modern_poetics\", \"ssot_01_medium_grammars (M1 PROSE)\", \"ssot_01_touchstones_register (TS 1:1)\", \"ssot_01_genre_system (cultcore)\", \"ssot_08_tr"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "ssot_01_genre_system",
+  "line": 10,
+  "text": "dependencies: [\"oxo-telling-profile\", \"ssot_01_texture_system\", \"ssot_01_texture_layer\", \"ssot_01_modern_poetics\", \"ssot_01_medium_grammars (M1 PROSE)\", \"ssot_01_touchstones_register (TS 1:1)\", \"ssot_01_genre_system (cultcore)\", \"ssot_08_tr"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 10,
+  "text": "dependencies: [\"oxo-telling-profile\", \"ssot_01_texture_system\", \"ssot_01_texture_layer\", \"ssot_01_modern_poetics\", \"ssot_01_medium_grammars (M1 PROSE)\", \"ssot_01_touchstones_register (TS 1:1)\", \"ssot_01_genre_system (cultcore)\", \"ssot_08_tr"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "ssot_01_texture_system",
+  "line": 28,
+  "text": "07.1 answers one question: what must be true of a page of LEECHSEED prose, in any IP, before it is ready to be judged on its own story's merits. It is the floor under every Telling Profile, not a replacement for one. A Telling Profile (T1–T"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 28,
+  "text": "07.1 answers one question: what must be true of a page of LEECHSEED prose, in any IP, before it is ready to be judged on its own story's merits. It is the floor under every Telling Profile, not a replacement for one. A Telling Profile (T1–T"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "ssot_01_medium_grammars",
+  "line": 32,
+  "text": "Universe-wide: OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX, and every future IP. Per-story telling profiles are **instances** of this guide, never exceptions to it — where a Telling Profile rules a question differently from this guide's defaul"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 32,
+  "text": "Universe-wide: OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX, and every future IP. Per-story telling profiles are **instances** of this guide, never exceptions to it — where a Telling Profile rules a question differently from this guide's defaul"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "ssot_01_texture_layer",
+  "line": 36,
+  "text": "T1 WHO SPEAKS separates four decisions that craft talk collapses into one: person (homodiegetic/heterodiegetic), level (extra-/intra-/metadiegetic), reliability, and time of narration (subsequent/simultaneous/prior/interpolated) — [ssot_01_"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 36,
+  "text": "T1 WHO SPEAKS separates four decisions that craft talk collapses into one: person (homodiegetic/heterodiegetic), level (extra-/intra-/metadiegetic), reliability, and time of narration (subsequent/simultaneous/prior/interpolated) — [ssot_01_"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "ssot_01_texture_system",
+  "line": 36,
+  "text": "T1 WHO SPEAKS separates four decisions that craft talk collapses into one: person (homodiegetic/heterodiegetic), level (extra-/intra-/metadiegetic), reliability, and time of narration (subsequent/simultaneous/prior/interpolated) — [ssot_01_"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "ssot_01_texture_system",
+  "line": 44,
+  "text": "T2 WHO SEES is a separate decision from T1: **who speaks is not who sees** — the texture system's one load-bearing law, converged on independently by Hühn/Schmid/Schönert's three-dimension DNS model and Bal's EF/CF split ([ssot_01_texture_s"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 44,
+  "text": "T2 WHO SEES is a separate decision from T1: **who speaks is not who sees** — the texture system's one load-bearing law, converged on independently by Hühn/Schmid/Schönert's three-dimension DNS model and Bal's EF/CF split ([ssot_01_texture_s"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "02",
+  "to": "ssot_02_character_systems_vertical_slice",
+  "line": 52,
+  "text": "**Universal rule (the tyranny of motive):** narration never states a character's motive outright. The reader infers it from what the character does, says and refuses. A line that says why a character acts, in the narrator's own voice, fails"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 52,
+  "text": "**Universal rule (the tyranny of motive):** narration never states a character's motive outright. The reader infers it from what the character does, says and refuses. A line that says why a character acts, in the narrator's own voice, fails"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "ssot_01_texture_layer",
+  "line": 56,
+  "text": "T6 IN WHAT WORDS covers diction, syntax, distance policy, and free indirect discourse ([ssot_01_texture_layer.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_texture_layer.md) T6). **Universal default is the plain register**, per the Command's o"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 56,
+  "text": "T6 IN WHAT WORDS covers diction, syntax, distance policy, and free indirect discourse ([ssot_01_texture_layer.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_texture_layer.md) T6). **Universal default is the plain register**, per the Command's o"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "03",
+  "to": "ssot_03_setting_system",
+  "line": 72,
+  "text": "Ties [ssot_03_setting_system.md]'s S3 layer (the sensorium) directly: description is T4's pause/stretch machinery meeting setting's sensory layer ([ssot_01_texture_layer.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_texture_layer.md) T4). **Un"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "ssot_01_texture_layer",
+  "line": 72,
+  "text": "Ties [ssot_03_setting_system.md]'s S3 layer (the sensorium) directly: description is T4's pause/stretch machinery meeting setting's sensory layer ([ssot_01_texture_layer.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_texture_layer.md) T4). **Un"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 72,
+  "text": "Ties [ssot_03_setting_system.md]'s S3 layer (the sensorium) directly: description is T4's pause/stretch machinery meeting setting's sensory layer ([ssot_01_texture_layer.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_texture_layer.md) T4). **Un"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "06",
+  "to": "ssot_06_theme_system",
+  "line": 76,
+  "text": "**Universal rule: sensory detail routes through the story's own motifs when it touches theme.** OXO's worked instance: the uniform and the mirror, a door she could walk out of, the Feed — three motifs that carry the controlling idea without"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "06",
+  "to": "06_theme_systems",
+  "line": 76,
+  "text": "**Universal rule: sensory detail routes through the story's own motifs when it touches theme.** OXO's worked instance: the uniform and the mirror, a door she could walk out of, the Feed — three motifs that carry the controlling idea without"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "08",
+  "to": "ssot_08_tracking_system",
+  "line": 86,
+  "text": "Ties [ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) §7 Tempo directly. T4 AT WHAT SPEED names the five speeds — scene, summary, stretch, pause, ellipsis (Genette, via [ssot_01_texture_layer.md](../01_NAR"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "08",
+  "to": "08_tracking_systems",
+  "line": 86,
+  "text": "Ties [ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) §7 Tempo directly. T4 AT WHAT SPEED names the five speeds — scene, summary, stretch, pause, ellipsis (Genette, via [ssot_01_texture_layer.md](../01_NAR"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "ssot_01_texture_layer",
+  "line": 86,
+  "text": "Ties [ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) §7 Tempo directly. T4 AT WHAT SPEED names the five speeds — scene, summary, stretch, pause, ellipsis (Genette, via [ssot_01_texture_layer.md](../01_NAR"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 86,
+  "text": "Ties [ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) §7 Tempo directly. T4 AT WHAT SPEED names the five speeds — scene, summary, stretch, pause, ellipsis (Genette, via [ssot_01_texture_layer.md](../01_NAR"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "ssot_01_touchstones_register",
+  "line": 92,
+  "text": "**Touchstone TS 1:1, \"the bounded container\"** (soft strength, RULED 2026-09-29, BOLO 91): erotic or ritual power tends to hold inside a container — a circle, a rite, an end date, a boundary — and fade or turn dangerous without one ([ssot_0"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 92,
+  "text": "**Touchstone TS 1:1, \"the bounded container\"** (soft strength, RULED 2026-09-29, BOLO 91): erotic or ritual power tends to hold inside a container — a circle, a rite, an end date, a boundary — and fade or turn dangerous without one ([ssot_0"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "ssot_01_modern_poetics",
+  "line": 100,
+  "text": "**P3 SATURATION** (Modern Poetics, [ssot_01_modern_poetics.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_modern_poetics.md)): sexuality is aesthetic, not genre — woven into the narrative's bloodstream, mastered rather than indulged, earned alw"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 100,
+  "text": "**P3 SATURATION** (Modern Poetics, [ssot_01_modern_poetics.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_modern_poetics.md)): sexuality is aesthetic, not genre — woven into the narrative's bloodstream, mastered rather than indulged, earned alw"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "ssot_01_genre_system",
+  "line": 106,
+  "text": "**G1 LABEL — cultcore**, RULED 2026-09-29 (BOLO 91, \"cultcore — the genre of the outsiders\"), is OXO's own series genre ([ssot_01_genre_system.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_genre_system.md), THE INSTANCE). Its G3 conventions, p"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_1_prose_style",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 106,
+  "text": "**G1 LABEL — cultcore**, RULED 2026-09-29 (BOLO 91, \"cultcore — the genre of the outsiders\"), is OXO's own series genre ([ssot_01_genre_system.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_genre_system.md), THE INSTANCE). Its G3 conventions, p"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_2_documents_style",
+  "to_sys": "09",
+  "to": "09_operations",
+  "line": 94,
+  "text": "| [📐 ssot_07_2a_writing_guide.md](📐%20ssot_07_2a_writing_guide.md) | SSOT documentation: the H1–H2 hierarchy, the linguistic-authority standards (no contractions, no hedging, present tense, bolded first-instance terms), the flat-syntax YAML"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_2_documents_style",
+  "to_sys": "09",
+  "to": "09_operations",
+  "line": 95,
+  "text": "| [📐 ssot_07_2b_markdown_marking.md](📐%20ssot_07_2b_markdown_marking.md) | The four inline marks (`**bold**` writer-structure, `==highlight==` reader-capture, `_italic_` captions, `[[wikilink]]` promotion) and the harvest tool. | canonical "
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_2_documents_style",
+  "to_sys": "09",
+  "to": "09_operations",
+  "line": 144,
+  "text": "4. **A stray document inside 07.2a.** Below its version history, 07.2a carries a second, unrelated file pasted in: the 2026-02 Goon Room protocol. *Rec:* split it out to its own file in `09_OPERATIONS/`, flagged as legacy, and leave 07.2a h"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_2a_writing_guide",
+  "to_sys": "09",
+  "to": "09_operations",
+  "line": 16,
+  "text": "dependencies: [\"[[♨️_template_ssot_09_operations_standard_structure_template]]\"]"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_2a_writing_guide",
+  "to_sys": "09",
+  "to": "09_operations",
+  "line": 17,
+  "text": "moved: \"2026-09-29 from 09_OPERATIONS/📐 ssot_writing_guide.md to 07_STYLE_GUIDES/📐 ssot_07_2a_writing_guide.md (BOLO 92)\""
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_2a_writing_guide",
+  "to_sys": "09",
+  "to": "ssot_writing_guide",
+  "line": 17,
+  "text": "moved: \"2026-09-29 from 09_OPERATIONS/📐 ssot_writing_guide.md to 07_STYLE_GUIDES/📐 ssot_07_2a_writing_guide.md (BOLO 92)\""
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_2a_writing_guide",
+  "to_sys": "09",
+  "to": "09_operations",
+  "line": 82,
+  "text": "| 2.2.0   | 2026-10-04 | BOLO 92 merge calls ruled: contractions allowed · frame kept, body by type · header fields added · the pasted-in Goon Room protocol split out to 09_OPERATIONS. |"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_2b_markdown_marking",
+  "to_sys": "09",
+  "to": "ssot_ssot_creation",
+  "line": 17,
+  "text": "dependencies: [\"[[📐 ssot_07_2a_writing_guide]]\", \"[[📐ssot_SSOT_CREATION]]\", \"[[📐 ssot_template_prompt_for_summarizing_novels_and_books]]\"]"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_2b_markdown_marking",
+  "to_sys": "09",
+  "to": "ssot_template_prompt_for_summarizing_novels_and_books",
+  "line": 17,
+  "text": "dependencies: [\"[[📐 ssot_07_2a_writing_guide]]\", \"[[📐ssot_SSOT_CREATION]]\", \"[[📐 ssot_template_prompt_for_summarizing_novels_and_books]]\"]"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_2b_markdown_marking",
+  "to_sys": "09",
+  "to": "09_operations",
+  "line": 21,
+  "text": "moved: \"2026-09-29 from 09_OPERATIONS/📐 ssot_09_operations_markdown_marking.md to 07_STYLE_GUIDES/📐 ssot_07_2b_markdown_marking.md (BOLO 92)\""
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_2b_markdown_marking",
+  "to_sys": "09",
+  "to": "ssot_09_operations_markdown_marking",
+  "line": 21,
+  "text": "moved: \"2026-09-29 from 09_OPERATIONS/📐 ssot_09_operations_markdown_marking.md to 07_STYLE_GUIDES/📐 ssot_07_2b_markdown_marking.md (BOLO 92)\""
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_3_pages_style",
+  "to_sys": "09",
+  "to": "ssot_00_bold_venture_design_system",
+  "line": 14,
+  "text": "dependencies: [\"[[📐 ssot_00_bold_venture_design_system]]\"]"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_3_pages_style",
+  "to_sys": "09",
+  "to": "ssot_00_bold_venture_design_system",
+  "line": 36,
+  "text": "**[📐 ssot_00_bold_venture_design_system.md](../09_OPERATIONS/📐%20ssot_00_bold_venture_design_system.md)** stays in `09_OPERATIONS` — it is not moved or duplicated here. It holds the ROSE anchor (`#8A1F44`), the FLESH ramp, the four register"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_3_pages_style",
+  "to_sys": "09",
+  "to": "09_operations",
+  "line": 36,
+  "text": "**[📐 ssot_00_bold_venture_design_system.md](../09_OPERATIONS/📐%20ssot_00_bold_venture_design_system.md)** stays in `09_OPERATIONS` — it is not moved or duplicated here. It holds the ROSE anchor (`#8A1F44`), the FLESH ramp, the four register"
+ },
+ {
+  "from_sys": "07",
+  "from": "ssot_07_3_pages_style",
+  "to_sys": "00",
+  "to": "00_epistemology",
+  "line": 80,
+  "text": "- **0.1.0 · 2026-09-29** — bootstrap: the foundation link to 00_EPISTEMOLOGY; six page rulings gathered from memory for the first time (colorway/dark-only, thin chrome, CK3 hover layer, Mermaid static DOM, the sit-rep dashboard pattern, min"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "01",
+  "to": "ssot_01_scale_ladder",
+  "line": 10,
+  "text": "dependencies: [\"ssot_01_scale_ladder\", \"ssot_02_character_state_architecture\", \"ssot_03_setting_system\", \"ssot_04_fabula\", \"ssot_04_plot_system\", \"ssot_05_worldbuilding_system\", \"ssot_01_trope_register\"]"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "02",
+  "to": "ssot_02_character_state_architecture",
+  "line": 10,
+  "text": "dependencies: [\"ssot_01_scale_ladder\", \"ssot_02_character_state_architecture\", \"ssot_03_setting_system\", \"ssot_04_fabula\", \"ssot_04_plot_system\", \"ssot_05_worldbuilding_system\", \"ssot_01_trope_register\"]"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "03",
+  "to": "ssot_03_setting_system",
+  "line": 10,
+  "text": "dependencies: [\"ssot_01_scale_ladder\", \"ssot_02_character_state_architecture\", \"ssot_03_setting_system\", \"ssot_04_fabula\", \"ssot_04_plot_system\", \"ssot_05_worldbuilding_system\", \"ssot_01_trope_register\"]"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "04",
+  "to": "ssot_04_fabula",
+  "line": 10,
+  "text": "dependencies: [\"ssot_01_scale_ladder\", \"ssot_02_character_state_architecture\", \"ssot_03_setting_system\", \"ssot_04_fabula\", \"ssot_04_plot_system\", \"ssot_05_worldbuilding_system\", \"ssot_01_trope_register\"]"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "04",
+  "to": "ssot_04_plot_system",
+  "line": 10,
+  "text": "dependencies: [\"ssot_01_scale_ladder\", \"ssot_02_character_state_architecture\", \"ssot_03_setting_system\", \"ssot_04_fabula\", \"ssot_04_plot_system\", \"ssot_05_worldbuilding_system\", \"ssot_01_trope_register\"]"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "05",
+  "to": "ssot_05_worldbuilding_system",
+  "line": 10,
+  "text": "dependencies: [\"ssot_01_scale_ladder\", \"ssot_02_character_state_architecture\", \"ssot_03_setting_system\", \"ssot_04_fabula\", \"ssot_04_plot_system\", \"ssot_05_worldbuilding_system\", \"ssot_01_trope_register\"]"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "01",
+  "to": "ssot_01_trope_register",
+  "line": 10,
+  "text": "dependencies: [\"ssot_01_scale_ladder\", \"ssot_02_character_state_architecture\", \"ssot_03_setting_system\", \"ssot_04_fabula\", \"ssot_04_plot_system\", \"ssot_05_worldbuilding_system\", \"ssot_01_trope_register\"]"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "04",
+  "to": "ssot_04_fabula",
+  "line": 46,
+  "text": "- **The world clock** is when things happened. The fabula runs on it — `M1`, `M2`… movement-relative dating, locked until something needs finer precision (DISTILL §13, Step 1 call 1; [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabu"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "04",
+  "to": "04_plot_systems",
+  "line": 46,
+  "text": "- **The world clock** is when things happened. The fabula runs on it — `M1`, `M2`… movement-relative dating, locked until something needs finer precision (DISTILL §13, Step 1 call 1; [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabu"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "03",
+  "to": "ssot_03_setting_state_architecture",
+  "line": 46,
+  "text": "- **The world clock** is when things happened. The fabula runs on it — `M1`, `M2`… movement-relative dating, locked until something needs finer precision (DISTILL §13, Step 1 call 1; [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabu"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "03",
+  "to": "03_setting_systems",
+  "line": 46,
+  "text": "- **The world clock** is when things happened. The fabula runs on it — `M1`, `M2`… movement-relative dating, locked until something needs finer precision (DISTILL §13, Step 1 call 1; [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabu"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "04",
+  "to": "ssot_04_plot_system",
+  "line": 47,
+  "text": "- **The grid** is when the audience is told. The told order runs on it — ticks, beats, bars, time signature, tempo. Every told unit already points at a fabula event ([📐 ssot_04_plot_system.md](../04_PLOT_SYSTEMS/📐%20ssot_04_plot_system.md),"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "04",
+  "to": "04_plot_systems",
+  "line": 47,
+  "text": "- **The grid** is when the audience is told. The told order runs on it — ticks, beats, bars, time signature, tempo. Every told unit already points at a fabula event ([📐 ssot_04_plot_system.md](../04_PLOT_SYSTEMS/📐%20ssot_04_plot_system.md),"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "01",
+  "to": "ssot_01_scale_ladder",
+  "line": 72,
+  "text": "- The grid belongs to the tracking system, not the scale ladder. The ladder is unchanged — BEAT stays R1 ([📐 ssot_01_scale_ladder.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_scale_ladder.md), R1 · BEAT) — the grid is the clock the ladder's c"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 72,
+  "text": "- The grid belongs to the tracking system, not the scale ladder. The ladder is unchanged — BEAT stays R1 ([📐 ssot_01_scale_ladder.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_scale_ladder.md), R1 · BEAT) — the grid is the clock the ladder's c"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "04",
+  "to": "ssot_04_plot_system",
+  "line": 88,
+  "text": "- `Q<n>` — sequence number, no padding (`Q1`, `Q12`) — the R3 SEQUENCE unit the scene sits inside (RULED 2026-09-29, closing the field trial's flagged two-grammar gap; see [📐 ssot_04_plot_system.md](../04_PLOT_SYSTEMS/📐%20ssot_04_plot_syste"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "04",
+  "to": "04_plot_systems",
+  "line": 88,
+  "text": "- `Q<n>` — sequence number, no padding (`Q1`, `Q12`) — the R3 SEQUENCE unit the scene sits inside (RULED 2026-09-29, closing the field trial's flagged two-grammar gap; see [📐 ssot_04_plot_system.md](../04_PLOT_SYSTEMS/📐%20ssot_04_plot_syste"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "04",
+  "to": "ssot_04_plot_system",
+  "line": 144,
+  "text": "**Iterative field (RULED 2026-09-29, BOLO 90 step 7 trial).** `repeat_count` and `span` are additive, optional fields for a story point whose `frequency_mode` (the syuzhet's own field, [📐 ssot_04_plot_system.md](../04_PLOT_SYSTEMS/📐%20ssot_"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "04",
+  "to": "04_plot_systems",
+  "line": 144,
+  "text": "**Iterative field (RULED 2026-09-29, BOLO 90 step 7 trial).** `repeat_count` and `span` are additive, optional fields for a story point whose `frequency_mode` (the syuzhet's own field, [📐 ssot_04_plot_system.md](../04_PLOT_SYSTEMS/📐%20ssot_"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "02",
+  "to": "ssot_02_character_state_architecture",
+  "line": 148,
+  "text": "A checkpoint keeps the shape already defined in [🔮ssot_02_character_state_architecture.md](../02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md) §State Record Format; that shape is unchanged by this document."
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 148,
+  "text": "A checkpoint keeps the shape already defined in [🔮ssot_02_character_state_architecture.md](../02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md) §State Record Format; that shape is unchanged by this document."
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "04",
+  "to": "ssot_04_fabula",
+  "line": 154,
+  "text": "A cable links a setup to its payoff (DISTILL §9 requirement 4). It rides on the fabula's `enable` edge — \"A opens the possibility B later realizes\" ([📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md), CAUSAL EDGES table) — read"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "04",
+  "to": "04_plot_systems",
+  "line": 154,
+  "text": "A cable links a setup to its payoff (DISTILL §9 requirement 4). It rides on the fabula's `enable` edge — \"A opens the possibility B later realizes\" ([📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md), CAUSAL EDGES table) — read"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "01",
+  "to": "ssot_01_scale_ladder",
+  "line": 223,
+  "text": "| **Tracks** | Threads — one lane per character, trait, trope, place, or relationship ([📐 ssot_01_scale_ladder.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_scale_ladder.md), THREADS) |"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 223,
+  "text": "| **Tracks** | Threads — one lane per character, trait, trope, place, or relationship ([📐 ssot_01_scale_ladder.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_scale_ladder.md), THREADS) |"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "02",
+  "to": "ssot_02_character_state_architecture",
+  "line": 234,
+  "text": "- **Character state** ([🔮ssot_02_character_state_architecture.md](../02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md), v1.2) — checkpoints keep their existing shape; `told_at` and `mc_distance_temporal` now read time codes fro"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 234,
+  "text": "- **Character state** ([🔮ssot_02_character_state_architecture.md](../02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md), v1.2) — checkpoints keep their existing shape; `told_at` and `mc_distance_temporal` now read time codes fro"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "03",
+  "to": "ssot_03_setting_system",
+  "line": 235,
+  "text": "- **Setting overlays (Axis 4)** ([📐 ssot_03_setting_system.md](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md)) — dated the same way fabula is, per Step 1 call 2 (DISTILL §13): the same world-clock dating this document's §2 defines."
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "03",
+  "to": "03_setting_systems",
+  "line": 235,
+  "text": "- **Setting overlays (Axis 4)** ([📐 ssot_03_setting_system.md](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md)) — dated the same way fabula is, per Step 1 call 2 (DISTILL §13): the same world-clock dating this document's §2 defines."
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "04",
+  "to": "ssot_04_fabula",
+  "line": 236,
+  "text": "- **Fabula** ([📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md)) — supplies the world clock and the `enable` edge that cables (§6) ride on."
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "04",
+  "to": "04_plot_systems",
+  "line": 236,
+  "text": "- **Fabula** ([📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md)) — supplies the world clock and the `enable` edge that cables (§6) ride on."
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "02",
+  "to": "ssot_02_character_state_architecture",
+  "line": 272,
+  "text": "- **Inspector wiring** (step 7): a tool build, not method. It connects the query-assembly protocol ([🔮ssot_02_character_state_architecture.md](../02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md) §Querying a Character at a Narr"
+ },
+ {
+  "from_sys": "08",
+  "from": "ssot_08_tracking_system",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 272,
+  "text": "- **Inspector wiring** (step 7): a tool build, not method. It connects the query-assembly protocol ([🔮ssot_02_character_state_architecture.md](../02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md) §Querying a Character at a Narr"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_09_operations_legacy_styleguide_2024",
+  "to_sys": "07",
+  "to": "07_style_guides",
+  "line": 2,
+  "text": "status: moved 2026-09-29 → 07_STYLE_GUIDES/_history/📐 ssot_06_legacy_styleguide_2024.md (BOLO 92)"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_09_operations_legacy_styleguide_2024",
+  "to_sys": "07",
+  "to": "07_style_guides",
+  "line": 8,
+  "text": "This document moved. Read it at [📐 ssot_06_legacy_styleguide_2024.md](../07_STYLE_GUIDES/_history/📐%20ssot_06_legacy_styleguide_2024.md)."
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_09_operations_markdown_marking",
+  "to_sys": "07",
+  "to": "07_style_guides",
+  "line": 2,
+  "text": "status: moved 2026-09-29 → 07_STYLE_GUIDES/📐 ssot_07_2b_markdown_marking.md (BOLO 92)"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_09_operations_markdown_marking",
+  "to_sys": "07",
+  "to": "ssot_07_2b_markdown_marking",
+  "line": 2,
+  "text": "status: moved 2026-09-29 → 07_STYLE_GUIDES/📐 ssot_07_2b_markdown_marking.md (BOLO 92)"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_09_operations_markdown_marking",
+  "to_sys": "07",
+  "to": "ssot_07_2b_markdown_marking",
+  "line": 8,
+  "text": "This document moved. Read it at [📐 ssot_07_2b_markdown_marking.md](../07_STYLE_GUIDES/📐%20ssot_07_2b_markdown_marking.md)."
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_09_operations_markdown_marking",
+  "to_sys": "07",
+  "to": "07_style_guides",
+  "line": 8,
+  "text": "This document moved. Read it at [📐 ssot_07_2b_markdown_marking.md](../07_STYLE_GUIDES/📐%20ssot_07_2b_markdown_marking.md)."
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_09_operations_pm_holdings_inventory",
+  "to_sys": "07",
+  "to": "07_style_guides",
+  "line": 72,
+  "text": "| `07_STYLE_GUIDES/_history/📐 ssot_06_legacy_styleguide_2024.md` | the 2024 ancestor style + naming guide | historical | naming section only |"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_09_operations_standards_ladder",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 23,
+  "text": "**Touchstones:** read [the Touchstones register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md) first."
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_09_operations_standards_ladder",
+  "to_sys": "01",
+  "to": "ssot_01_touchstones_register",
+  "line": 23,
+  "text": "**Touchstones:** read [the Touchstones register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md) first."
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_09_operations_standards_ladder",
+  "to_sys": "07",
+  "to": "07_style_guides",
+  "line": 61,
+  "text": "| `ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/📐 ssot_07_2b_markdown_marking.md` | procedure | stamped |"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_09_operations_standards_ladder",
+  "to_sys": "07",
+  "to": "ssot_07_2b_markdown_marking",
+  "line": 61,
+  "text": "| `ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/📐 ssot_07_2b_markdown_marking.md` | procedure | stamped |"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_09_operations_standards_ladder",
+  "to_sys": "00",
+  "to": "00_epistemology",
+  "line": 62,
+  "text": "| `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_variable_registry.md` | standard | stamped |"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_09_operations_standards_ladder",
+  "to_sys": "00",
+  "to": "ssot_00_variable_registry",
+  "line": 62,
+  "text": "| `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_variable_registry.md` | standard | stamped |"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_09_operations_standards_ladder",
+  "to_sys": "07",
+  "to": "07_style_guides",
+  "line": 77,
+  "text": "| `ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/📐 ssot_07_2a_writing_guide.md` | standard | read-only file, listed here only |"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_09_operations_standards_ladder",
+  "to_sys": "07",
+  "to": "ssot_07_2a_writing_guide",
+  "line": 77,
+  "text": "| `ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/📐 ssot_07_2a_writing_guide.md` | standard | read-only file, listed here only |"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_09_operations_standards_ladder",
+  "to_sys": "07",
+  "to": "ssot_07_2b_markdown_marking",
+  "line": 97,
+  "text": "| `📐 ssot_07_2b_markdown_marking.md` | procedure | BVX-LEARN · OVEREXITOUT · ASTRO7EX · SSOT (applies_to) | `📐 ssot_07_2a_writing_guide.md`, `📐ssot_SSOT_CREATION.md`, `📐 ssot_template_prompt_for_summarizing_novels_and_books.md` | none in th"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_09_operations_standards_ladder",
+  "to_sys": "07",
+  "to": "ssot_07_2a_writing_guide",
+  "line": 97,
+  "text": "| `📐 ssot_07_2b_markdown_marking.md` | procedure | BVX-LEARN · OVEREXITOUT · ASTRO7EX · SSOT (applies_to) | `📐 ssot_07_2a_writing_guide.md`, `📐ssot_SSOT_CREATION.md`, `📐 ssot_template_prompt_for_summarizing_novels_and_books.md` | none in th"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_09_operations_standards_ladder",
+  "to_sys": "00",
+  "to": "ssot_00_variable_registry",
+  "line": 99,
+  "text": "| `📐 ssot_00_variable_registry.md` | standard | unscoped (no applies_to given) | none | none in the register |"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_09_operations_standards_ladder",
+  "to_sys": "07",
+  "to": "ssot_07_2a_writing_guide",
+  "line": 101,
+  "text": "| `📐 ssot_07_2a_writing_guide.md` | standard | OVEREXITOUT · ASTRO7EX · LAKAD (applies_to) | `📐_ssot_09_operations_standard_structure_template.md` | none in the register |"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_09_operations_standards_ladder",
+  "to_sys": "07",
+  "to": "ssot_07_2b_markdown_marking",
+  "line": 148,
+  "text": "- 12 of the 26 filed documents carry no outside parent at all: `DOCTRINE-0-INVARIANTS.md`, `SOP.md`, `📐 ssot_09_operations_development_standard.md`, `📐 ssot_07_2b_markdown_marking.md`, `📐ssot_SSOT_CREATION.md`, `📐 ssot_00_variable_registry."
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_09_operations_standards_ladder",
+  "to_sys": "00",
+  "to": "ssot_00_variable_registry",
+  "line": 148,
+  "text": "- 12 of the 26 filed documents carry no outside parent at all: `DOCTRINE-0-INVARIANTS.md`, `SOP.md`, `📐 ssot_09_operations_development_standard.md`, `📐 ssot_07_2b_markdown_marking.md`, `📐ssot_SSOT_CREATION.md`, `📐 ssot_00_variable_registry."
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_09_operations_standards_ladder",
+  "to_sys": "07",
+  "to": "ssot_07_2a_writing_guide",
+  "line": 148,
+  "text": "- 12 of the 26 filed documents carry no outside parent at all: `DOCTRINE-0-INVARIANTS.md`, `SOP.md`, `📐 ssot_09_operations_development_standard.md`, `📐 ssot_07_2b_markdown_marking.md`, `📐ssot_SSOT_CREATION.md`, `📐 ssot_00_variable_registry."
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_ai_instruction_protocol",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 39,
+  "text": "- **type**: Must be `ssot_methodology` or specifically indexed (e.g., `ssot_01_narrative_frameworks`)."
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_ai_instruction_protocol",
+  "to_sys": "07",
+  "to": "ssot_07_2_documents_style",
+  "line": 61,
+  "text": "The 07.2 style guide ([[📐 ssot_07_2_documents_style]]) replaced the fixed eight-part skeleton (BOLO 92 merge call 2). Follow 07.2."
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_ai_instruction_protocol",
+  "to_sys": "00",
+  "to": "00_epistemology",
+  "line": 82,
+  "text": "| epistemology | `00_EPISTEMOLOGY` |"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_ai_instruction_protocol",
+  "to_sys": "01",
+  "to": "01_narrative_frameworks",
+  "line": 83,
+  "text": "| narrative_frameworks | `01_NARRATIVE_FRAMEWORKS` |"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_ai_instruction_protocol",
+  "to_sys": "02",
+  "to": "02_character_systems",
+  "line": 84,
+  "text": "| character_systems | `02_CHARACTER_SYSTEMS` |"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_ai_instruction_protocol",
+  "to_sys": "04",
+  "to": "04_plot_systems",
+  "line": 85,
+  "text": "| plot_systems | `04_PLOT_SYSTEMS` |"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_ai_instruction_protocol",
+  "to_sys": "07",
+  "to": "07_style_guides",
+  "line": 87,
+  "text": "| style_guides | `07_STYLE_GUIDES` |"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_writing_guide",
+  "to_sys": "07",
+  "to": "07_style_guides",
+  "line": 2,
+  "text": "status: moved 2026-09-29 → 07_STYLE_GUIDES/📐 ssot_07_2a_writing_guide.md (BOLO 92)"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_writing_guide",
+  "to_sys": "07",
+  "to": "ssot_07_2a_writing_guide",
+  "line": 2,
+  "text": "status: moved 2026-09-29 → 07_STYLE_GUIDES/📐 ssot_07_2a_writing_guide.md (BOLO 92)"
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_writing_guide",
+  "to_sys": "07",
+  "to": "ssot_07_2a_writing_guide",
+  "line": 8,
+  "text": "This document moved. Read it at [📐 ssot_07_2a_writing_guide.md](../07_STYLE_GUIDES/📐%20ssot_07_2a_writing_guide.md)."
+ },
+ {
+  "from_sys": "09",
+  "from": "ssot_writing_guide",
+  "to_sys": "07",
+  "to": "07_style_guides",
+  "line": 8,
+  "text": "This document moved. Read it at [📐 ssot_07_2a_writing_guide.md](../07_STYLE_GUIDES/📐%20ssot_07_2a_writing_guide.md)."
+ }
+]

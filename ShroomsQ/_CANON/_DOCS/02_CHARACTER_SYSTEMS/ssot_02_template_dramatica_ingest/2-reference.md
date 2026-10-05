@@ -14,7 +14,7 @@ source_version: 1.0.2
 
 # Dramatica ingest template: reference
 
-Why the form exists: [concept](1-concept.md). Steps: [how-to](3-how-to.md). A fill-in lesson: [tutorial](4-tutorial.md). Source: [ssot_02_template_dramatica_ingest.md](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_template_dramatica_ingest.md), version 1.0.1, status RULED, BOLO 100 C18.
+Why the form exists: [concept](1-concept.md). Steps: [how-to](3-how-to.md). A fill-in lesson: [tutorial](4-tutorial.md). Source: [ssot_02_template_dramatica_ingest.md](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_template_dramatica_ingest.md), version 1.0.2, status RULED, BOLO 100 C18.
 
 Dependencies named in the source: the Dramatica integration protocol, the Step 1 source verification protocol, the DAI doc. Applies to OVEREXITOUT, ASTRO7EX and LAKAD. Tier 3 characters only.
 

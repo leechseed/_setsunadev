@@ -38,7 +38,7 @@ The Command ruled the architecture on 2026-08-26. The engine is a layer above th
 
 ## Time keys every output
 
-Time is the substrate. The engine keys every output to a ladder address or span. A collision with no address cannot be placed in the story, so the engine refuses to produce one. The [scale ladder](../ssot_01_scale_ladder/1-concept.md) supplies those addresses.
+Time is the substrate. The engine keys every output to a ladder address or span. A collision with no address cannot be placed in the story. The [scale ladder](../ssot_01_scale_ladder/1-concept.md) supplies those addresses.
 
 ## Four pairings cover the story
 

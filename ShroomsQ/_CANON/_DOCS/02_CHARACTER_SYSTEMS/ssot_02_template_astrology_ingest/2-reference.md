@@ -14,7 +14,7 @@ source_version: 1.0.1
 
 # Astrology ingest template: reference
 
-Why the form exists: [concept](1-concept.md). Steps: [how-to](3-how-to.md). A fill-in lesson: [tutorial](4-tutorial.md). Source: [ssot_02_template_astrology_ingest.md](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_template_astrology_ingest.md), version 1.0.0, status RULED, BOLO 100 C18.
+Why the form exists: [concept](1-concept.md). Steps: [how-to](3-how-to.md). A fill-in lesson: [tutorial](4-tutorial.md). Source: [ssot_02_template_astrology_ingest.md](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_template_astrology_ingest.md), version 1.0.1, status RULED, BOLO 100 C18.
 
 The source names these dependencies: character astrology, the DAI doc and the 12-layer mapping doc. It also names the Dramatica ingest template and the Step 1 source verification protocol. Applies to OVEREXITOUT, ASTRO7EX and LAKAD.
 

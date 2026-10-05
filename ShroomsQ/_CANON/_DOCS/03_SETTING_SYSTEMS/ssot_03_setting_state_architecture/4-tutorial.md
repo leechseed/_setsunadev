@@ -24,7 +24,7 @@ You will write Checkpoint 2 of the Delta Coast Ultra School (DCUS) rename lattic
 6. **Park what the source parks.** S9 and S10 values carry the `⏸` phase 2 mark. Copy that mark, not an invented value.
 7. **Write the header diff.** Set `live_name: "Red Hills Academy"`, `aliases_active: ["Red Hills Academy", "The Academy"]` and `aliases_legacy: ["Skeeter Creek"]`.
 8. **Handle flags.** Set `MODIFIED_FLAGS: {}` after you re-evaluate each flag trigger.
-9. - **Add the note.** Write 2 to 5 sentences. The founding name is sanded a century before the Bishops arrive, and the live name flips.
+9. **Add the note.** Write 2 to 5 sentences. The founding name is sanded a century before the Bishops arrive, and the live name flips.
 10. **Query it.** Load the base, load this checkpoint, apply the diffs, and read the header. The live name is "Red Hills Academy".
 11. **Scrub it.** Move the timeline back past this checkpoint's moment. Check that the live name returns "Skeeter Creek" from Checkpoint 1, not "DCUS" from the base.
 
