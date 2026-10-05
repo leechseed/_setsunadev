@@ -20,7 +20,7 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 HERE = os.path.dirname(os.path.abspath(__file__))
 WORK = os.path.join(HERE, "work", "ifc")
 OUT = os.path.join(HERE, "out")
-NAMES = {"00": "Base", "01": "Narrative", "02": "Character", "03": "Setting", "04": "Plot",
+NAMES = {"ALL": "Every system", "00": "Base", "01": "Narrative", "02": "Character", "03": "Setting", "04": "Plot",
          "05": "Worldbuilding", "06": "Theme", "07": "Style", "08": "Tracking", "09": "Operations"}
 FIELDS = ["from_sys", "to_sys", "from_doc", "to_doc", "kind", "direction", "payload", "trigger", "where",
           "status", "evidence", "note"]
@@ -42,8 +42,12 @@ def main():
             if miss:
                 bad.append(f"{os.path.basename(f)}[{i}]: missing {miss}")
                 continue
+            if e["kind"] == "MENTION" and not e["direction"]:
+                e["direction"] = "reads"          # a citation reads; the extractors left it blank
+            if e["from_sys"] == e["to_sys"]:
+                continue                          # intra-system exchange: not a between-system interface
             if e["kind"] not in KINDS or e["direction"] not in DIRS or e["status"] not in STATUS \
-                    or e["from_sys"] not in NAMES or e["to_sys"] not in NAMES:
+                    or e["from_sys"] not in NAMES or (e["to_sys"] not in NAMES and e["to_sys"] != "ALL"):
                 bad.append(f"{os.path.basename(f)}[{i}]: bad enum ({e['kind']}/{e['direction']}/{e['status']}/{e['from_sys']}→{e['to_sys']})")
                 continue
             if e["kind"] != "MENTION" and len(e["payload"].strip()) < 8:
