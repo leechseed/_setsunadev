@@ -1,13 +1,13 @@
 ---
 type: ssot_07_style_guides
 category: prose_style
-version: 1.3.2
+version: 1.4.0
 tier: narratology
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX, all future IPs]
-status: "v1.3.1 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 style batch 1: stale OPEN marks struck, intro convention reworded. v1.3.0 2026-10-04: RULED 9/16, landed 10/4 — BOLO 100 genre cross-doc: meta-genre has its home here as the style bible (genre OPEN 9). v1.2.0 2026-10-04: RULED, Chief: \"all rec\" — BOLO 100 character batch 1: the tyranny of motive moved here from the character system (OPEN call 3) as a numbered prose rule, new check item 10. v1.1.0 2026-10-04: disclaimer wording ruled. canonical — 1.0 per BOLO 92's bar; the five OPEN calls ruled as recommended"
+status: "v1.4.0 2026-10-05: BOLO 102 stage 2 (Chief: \"My word\") — IF catalog calls 6 and 7 and 2: the five named inputs, the beat-boundary mark, the theme-test note. v1.3.1 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 style batch 1: stale OPEN marks struck, intro convention reworded. v1.3.0 2026-10-04: RULED 9/16, landed 10/4 — BOLO 100 genre cross-doc: meta-genre has its home here as the style bible (genre OPEN 9). v1.2.0 2026-10-04: RULED, Chief: \"all rec\" — BOLO 100 character batch 1: the tyranny of motive moved here from the character system (OPEN call 3) as a numbered prose rule, new check item 10. v1.1.0 2026-10-04: disclaimer wording ruled. canonical — 1.0 per BOLO 92's bar; the five OPEN calls ruled as recommended"
 purpose: "07.1 PROSE — the universe-wide prose style guide: how the LEECHSEED stories read on the page. Sibling to 07.2 Documents and 07.3 Pages under 07_STYLE_GUIDES; per-story telling profiles (OXO's, first) are instances of this guide, not replacements for it."
-dependencies: ["oxo-telling-profile", "ssot_01_texture_system", "ssot_01_texture_layer", "ssot_01_modern_poetics", "ssot_01_medium_grammars (M1 PROSE)", "ssot_01_touchstones_register (TS 1:1)", "ssot_01_genre_system (cultcore)", "ssot_08_tracking_system (tempo)"]
+dependencies: ["oxo-telling-profile", "ssot_01_texture_system", "ssot_01_texture_layer", "ssot_01_modern_poetics", "ssot_01_medium_grammars (M1 PROSE)", "ssot_01_touchstones_register (TS 1:1)", "ssot_01_genre_system (cultcore)", "ssot_08_tracking_system (tempo)", "ssot_05_worldbuilding_system (LNG entries)", "ssot_06_theme_system (THE MOTIFS)"]
 trunk: BLACK
 sources: ["_tools/bolostatus/work/92/SHELF.md — 07.1 Prose shelf, tier 1/2, held not read"]
 ---
@@ -30,6 +30,24 @@ sources: ["_tools/bolostatus/work/92/SHELF.md — 07.1 Prose shelf, tier 1/2, he
 ## Scope
 
 Universe-wide: OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX, and every future IP. Per-story telling profiles are **instances** of this guide, never exceptions to it — where a Telling Profile rules a question differently from this guide's default (as OXO's T2 rules Anna out of POV entirely), the Telling Profile wins for that IP, because M1 PROSE holds that "the Telling Profile applies verbatim" once ruled ([ssot_01_medium_grammars.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_medium_grammars.md), M1). This guide only fails a draft where no Telling Profile has ruled the question at all, or where a rule below is universe-wide and not story-specific (the paratext disclaimer, §Explicit content, is the clearest case).
+
+**Inputs and interfaces (IF catalog call 7, ruled 2026-10-05).** 07.1 reads five inputs it applies on the page. Each has a named source.
+
+1. **The medium** (IF-01-07-08). The medium grammars in 01 select this guide: M1 PROSE selects 07.1. Pages and screens select 07.3 instead.
+2. **Texture T6 values** (IF-01-07-09). The writer applies T6's `register`, `distance_policy` (cinematic, light or deep), `fid`, and barrier words per 100 words.
+3. **LNG entries** (IF-05-07-01, IF-05-07-02). Worldbuilding's LNG entries (a tongue, a naming custom, a body of terms) are the list of world words prose uses unexplained (G6).
+4. **Planned tempo** (IF-07-08-03). The tracking system's planned audience tempo, in beats per 1,000 words, is the curve the draft is checked against.
+5. **The motif list** (IF-06-07-02). Theme's `motif.<slug>` ids in THE MOTIFS are the routes sensory detail takes when it touches theme.
+
+Reads from 00 (IF-00-07-01): `T1.SOCIAL.voice_sheet` {register, dialect, native_pace, tic_with_reason, noticing_filter} supplies each speaker's voice.
+
+07.1 also gives six outputs to other systems:
+
+- **Beat-boundary mark** (call 6, IF-07-08-02). The writer opens every beat with a line holding only `<!-- beat: M2 · Q1 · S04 | 012.3 -->`, the 08 time code down to the beat. Tracking counts these marks per scene against the words between them, so measured tempo comes from the manuscript itself.
+- **Focal character** (call 6, IF-04-07-01). The writer records each scene's one internal-fixed focal character as the scene card's `focal:` field. Check item 2 reads it.
+- **Earned catalog entries** (IF-05-07-06). A catalog entry in a scene must earn its place: it exerts pressure or the writer marks it scenery (CT8 Distinctiveness, Kennedy, BVX.0349).
+- **The disclaimer container** (IF-06-07-03). The front-matter disclaimer is the container that lets theme's world scenes stay free of it.
+- **Theme tests run on the scene plan** (call 2, IF-06-07-06, IF-06-07-07). Theme's citation test and knowledge gradient run on the scene plan, not on the narrated text. The test asks whether every actor can name the rule. The page shows the answer in speech or action only. This does not clash with the tyranny of motive below: the narrator never states the rule or the motive.
 
 ## Voice & person
 
@@ -164,6 +182,7 @@ All five RULED 2026-09-29 (Chief: "all right" on all recs, BOLO 92): each *Rec* 
 
 ## Version history
 
+- **1.4.0 · 2026-10-05** — BOLO 102 stage 2 (Chief: "My word"): the five named inputs, the beat-boundary mark, `focal:`, and the scene-plan note for theme tests land in §Scope; IF-00-07-01 silent-side line added.
 - **1.3.2 · 2026-10-04** — BOLO 100 D3: Sources line added to §Meta-genre (BVX.0581).
 - **1.3.1 · 2026-10-04** — RULED, Chief ("rec"), BOLO 100 style batch 1 (Y1–Y3): the stale OPEN marks struck from the five ruled calls; intro convention reworded to "marked OPEN"; cultcore line reworded. No rule changed.
 - **1.3.0 · 2026-10-04** — RULED 9/16, landed 10/4 (BOLO 100 genre cross-doc): new section §Meta-genre: the style bible, the home ruled in genre OPEN 9. No other rule changed.

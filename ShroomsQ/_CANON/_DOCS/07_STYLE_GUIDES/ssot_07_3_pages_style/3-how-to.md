@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: "ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/📐 ssot_07_3_pages_style.md"
-source_version: "1.0.1"
+source_version: "1.1.0"
 ---
 
 **Who it's for:** a page builder doing one page task · **What it does:** gives numbered steps for each recurring 07.3 task · **Type:** how-to
@@ -44,6 +44,7 @@ Terms are defined in the [reference](2-reference.md).
 4. Wire Space to lock, Esc to close, click to pin to the rail.
 5. Make plain hover fill the fixed Info View strip. Open the nested tooltip on click or Space.
 6. Check each section has at least one hover term. A section with zero is a blocking RANGE finding.
+7. On the world view page, make every catalog type and test a hover term. On the workspace arrangement view, make tracks, the rung ruler, the playhead and cables hover terms.
 
 ## Add a Mermaid diagram
 

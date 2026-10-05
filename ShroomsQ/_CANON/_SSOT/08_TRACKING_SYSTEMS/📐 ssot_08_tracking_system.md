@@ -1,11 +1,11 @@
 ---
 type: ssot_08_tracking_systems
 category: tracking_system
-version: 1.1.1
+version: 1.2.0
 tier: fabula
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
-status: "v1.1.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 follow-up: proportion lane in §7 (act and third shares, 25/50/25 default) and a reversibility score on stakes_delta. Earlier: v1.0.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 tracking/worldbuilding batch 1: theme and trope hooks, tempo and meter shapes, time-code ordering, reader track in the map, open steps closed. Earlier: 0.3.0 reader model (9A); 0.2.0 sequence segment, iterative fields, provisional cables."
+status: "v1.2.0 2026-10-05: RULED, Chief (\"My word\") — BOLO 102 stage 2: new section 4A, The Address (the time code is the one address in every system); `subject.kind` widened; hook ledger and Touchstone breach log in 9A. Earlier: v1.1.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 follow-up: proportion lane in §7 (act and third shares, 25/50/25 default) and a reversibility score on stakes_delta. Earlier: v1.0.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 tracking/worldbuilding batch 1: theme and trope hooks, tempo and meter shapes, time-code ordering, reader track in the map, open steps closed. Earlier: 0.3.0 reader model (9A); 0.2.0 sequence segment, iterative fields, provisional cables."
 purpose: "THE TRACKING SYSTEM: the shared time grid and record model under character state, setting overlays, and world time — the grid (tick · beat · bar · time signature · tempo), the time code, checkpoints and story points, setup → payoff cables, and the Ableton-style track map. One store, many views."
 dependencies: ["ssot_01_scale_ladder", "ssot_02_character_state_architecture", "ssot_03_setting_system", "ssot_04_fabula", "ssot_04_plot_system", "ssot_05_worldbuilding_system", "ssot_01_trope_register"]
 trunk: BLACK
@@ -20,6 +20,7 @@ sources: ["_tools/bolostatus/work/90/DISTILL.md", "BVX.0236 — The Story Grid: 
 2. [The Two Rulers](#2-the-two-rulers)
 3. [The Grid](#3-the-grid)
 4. [The Time Code](#4-the-time-code)
+    - 4A. [The Address](#4a-the-address)
 5. [The Records](#5-the-records)
 6. [Cables](#6-cables)
 7. [Tempo](#7-tempo)
@@ -112,6 +113,44 @@ Every story point, cable end, and state change carries one, so any moment is add
 | Coarsest | R8 UNIVERSE | IPs lay out end to end; fabula-only, no grid |
 
 Zoomed out, story points and cables that would overlap bundle into a count badge on the containing clip. Zoomed in, they fan out to the exact tick (DISTILL §9 requirement 5).
+
+---
+
+## 4A. The Address
+
+The time code is the one address for anything dated in any system (IF catalog call 1, ruled 2026-10-05). Every system that dates a fact writes it as a time code. No system keeps a second dating scheme.
+
+**Ladder mapping.** The scale ladder's address names a unit by rung. The time code names the same unit in the same order. Each system that cites a ladder address converts it as the table shows.
+
+| Ladder address segment | Time code segment | Note |
+|---|---|---|
+| `OXO.primary` (IP · form) | none | The story is named by the track or record that holds the code, not by the code |
+| `M2` (movement) | `M2` | Same number |
+| `q3` (sequence) | `Q3` | Same number, capital letter |
+| `s12` (scene) | `S12` | Same number, zero-padded to 2 digits |
+| `b4` (beat) | `bar.beat`, for example `012.4` | The code gives the bar and the beat inside that bar; a tick may follow |
+
+So `OXO.primary.M2.q3.s12.b4` reads `M2 · Q3 · S12 | bar.beat`. Writers address a fact at the rung it lives at. A movement-level fact writes `M2`, and a scene-level fact writes through `S12`. Writers add the bar half only when the fact sits inside a scene.
+
+**Fields that carry the time code.** Each owning document holds its field. This document gives only the address, as it does for hooks in §5.
+
+| Field | Owner | What the time code replaces |
+|---|---|---|
+| `STT.narrative_moment`; `STT.movement`; `STT.mc_distance_temporal`; `STT.mc_distance_narrative` (IF-00-08-03) | 02 character state | The free-text "when". `mc_distance_temporal` already reads a time code (§9) |
+| Relationship `state_history.moment` (IF-02-08-09) | 02 character state | Movement tags such as `m1a` |
+| Fabula event `time` (IF-04-08-12) | 04 fabula | Nothing is lost. The time code sits beside the calendar year, and the world clock (§2) still sorts by `Mn` |
+| P11 `order_told` (IF-04-08-13); T3 `order_baseline` and its anachronies (IF-01-08-17); medium T3 order (IF-01-08-13) | 04 plot; 01 texture and medium grammars | A bare position in the telling. The time code is the told order, set against the fabula's `order_happened` |
+| T4 `duration_mode` and T12 `story_point` (IF-01-08-18); medium T4 speed (IF-01-08-13) | 01 texture and medium grammars | Tempo of each unit reads the §7 `tempo_point`. A T12 story point is a §5 story point |
+| Genre `contract_state` entry `from_unit` (IF-01-08-12) | 01 genre system | A bare unit name |
+| Collision records and state diffs (IF-01-08-11) | 01 collision engine | A ladder address or span. A state diff is a one-field change, so it is a §5 story point |
+| LEDGER_DUE future states | 03 setting state | A free-text due date |
+| Hook ledger and Touchstone breach log (§9A) (IF-01-08-14, IF-01-08-16) | 08 | The ladder address. Both ledgers key to time codes |
+| Catalog `narrated_in` | 05 worldbuilding | Free text |
+| CT5 bookends (IF-05-08-04) | 05 worldbuilding | The one `era` range. A founding endpoint and a current endpoint are two checkpoints, each with a time code |
+
+**Retired aliases.** Free text and movement tags retire as aliases for a time code. A record that still holds one is read as its time code, and the writer replaces it on the next edit. The `backstory` tag (§2) is not an alias. It dates events before M1 on the world clock and stays.
+
+**No SC class.** A time code takes no Base 60 SC class (IF catalog call 8, ruled 2026-10-05; IF-00-08-06). An address names a place on the grid. It is not a scale. Story-point and layer numerics in other systems keep the classes their own documents give them.
 
 ---
 

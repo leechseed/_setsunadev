@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: "ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/📐 ssot_07_1_prose_style.md"
-source_version: "1.3.2"
+source_version: "1.4.0"
 ---
 
 **Who it's for:** a reviewer or writer doing one prose task · **What it does:** gives numbered steps for each recurring 07.1 task · **Type:** how-to
@@ -19,7 +19,7 @@ Terms are defined in the [reference](2-reference.md).
 ## Check a draft against the guide
 
 1. Open the IP's Telling Profile. If T1 is not ruled, stop. The draft has not cleared the guide.
-2. Read the draft once. Mark each scene's focal character.
+2. Read the draft once. Mark each scene's focal character and record it as the scene card's `focal:` field.
 3. Run the ten questions of "The check" in order. Answer yes or no for each.
 4. For each no, note the section the question cites.
 5. Where the Telling Profile rules the question differently, the profile wins. Drop the finding.
@@ -61,7 +61,7 @@ Terms are defined in the [reference](2-reference.md).
 ## Check a draft's pace
 
 1. Open the IP's planned tempo curve in the tracking system.
-2. Measure the draft's audience tempo in beats per 1,000 words.
+2. Check that every beat opens with a `<!-- beat: M2 · Q1 · S04 | 012.3 -->` mark. Count the marks per scene and measure the audience tempo in beats per 1,000 words.
 3. Compare the measured curve to the planned one, scene by scene.
 4. Mark where the draft drags or rushes against plan.
 5. Do not compare against a universal number. None exists.

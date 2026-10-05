@@ -1,7 +1,7 @@
 ---
 type: ssot_07_style_guides
 category: style_guide
-version: 1.0.1
+version: 1.1.0
 tier: narratology
 module_of: ssot_07_1_prose_style
 last_updated: 2026-10-05
@@ -33,7 +33,9 @@ Every artifact and tool page the Command publishes answers to two layers. The **
 
 ## THE FOUNDATION
 
-**[📐 ssot_00_bold_venture_design_system.md](../00_EPISTEMOLOGY/📐%20ssot_00_bold_venture_design_system.md)** stays in `09_OPERATIONS` — it is not moved or duplicated here. It holds the ROSE anchor (`#8A1F44`), the FLESH ramp, the four registers (EMBER · PUNCH · DUST · NOIR), the Luminance Law, and the one-red ledger, ruled 2026-09-01 (v2.0.0). Read it before designing anything brand-facing or DARKROOM-facing.
+**[📐 ssot_00_bold_venture_design_system.md](../00_EPISTEMOLOGY/📐%20ssot_00_bold_venture_design_system.md)** lives in `00_EPISTEMOLOGY` (moved there under IF catalog call 9, ruled 2026-10-05) — it is not duplicated here. It holds the ROSE anchor (`#8A1F44`), the FLESH ramp, the four registers (EMBER · PUNCH · DUST · NOIR), the Luminance Law, and the one-red ledger, ruled 2026-09-01 (v2.0.0). Read it before designing anything brand-facing or DARKROOM-facing.
+
+Reads from 00 (IF-07-09-05): the design system's color tokens (`--color-*`), `.bvx-*` typography classes and voice guidelines style any rendered page or template.
 
 ## THE PAGE RULINGS
 
@@ -46,6 +48,11 @@ Every artifact and tool page the Command publishes answers to two layers. The **
 | Every sit rep — and its siblings, DOPE SHEET N and the SOI — republishes as a dashboard page to one standing URL, never a new one, in the internal working palette (CK3 information architecture × Death Stranding surface). | RULED 2026-09-10–11, BOLO 38 (memory: sitrep-front-page) |
 | Chief-facing learning material ships as the head version first — the sentence and the buttons, nothing else on the card, a score at the end. The complete, machine-facing version is offered only after, never by default. | Feedback 2026-09-06 (memory: learning-tools-minimal) |
 | Type is three faces: **Barlow Condensed** (display, headings, labels) · **Atkinson Hyperlegible** (body) · **IBM Plex Mono** (codes, counts, metadata), loaded from Google Fonts | default-colorway memory (RULED 2026-09-10/11); folded here 2026-09-29 (BOLO 92, OPEN 3 rec) |
+
+**Pages this guide rules by name (IF catalog call 7, ruled 2026-10-05).** Two Command pages now carry named rulings. Both follow the rows above.
+
+- **The compiled world view page** (IF-05-07-05, IF-05-07-07). Worldbuilding (05) compiles it as a read-only page. The builder uses the dark palette and the thin header strip. Every catalog type and test is a CK3 hover term. The page's three Mermaid diagrams are written as static markup.
+- **The story workspace arrangement view** (IF-07-08-05). Tracking (08) owns its shell; BOLO 79 names the workspace. The builder makes tracks, the rung ruler, the playhead and cables hoverable. Plain hover fills the Info View strip. The nested tooltip opens on click or Space.
 
 ## SOURCES — HELD, NOT YET DISTILLED
 
@@ -75,6 +82,7 @@ RULED 2026-09-29 (Chief: "all right" on all recs, BOLO 92): (1) the five id-less
 
 ## VERSION HISTORY
 
+- **1.1.0 · 2026-10-05** — BOLO 102 stage 2 (Chief: "My word"): the world view page and the workspace arrangement view named as pages this guide rules (call 7); IF-07-09-05 reads-from line added; stale `09_OPERATIONS` location of the design system corrected.
 - **1.0.1 · 2026-10-05** — BOLO 102 batch A (Chief: "All recs go"): front matter gains `owner: Chief`, `state: draft`, `reviewed: 2026-10-05`.
 - **1.0.0 · 2026-09-29** — all three OPEN calls RULED as recommended; the typography tokens folded in as a page ruling.
 - **0.1.0 · 2026-09-29** — bootstrap: the foundation link to 00_EPISTEMOLOGY; six page rulings gathered from memory for the first time (colorway/dark-only, thin chrome, CK3 hover layer, Mermaid static DOM, the sit-rep dashboard pattern, minimal learning tools); eleven tier-1 SOURCES from the BOLO 92 shelf (one misfit skipped); three OPEN calls.

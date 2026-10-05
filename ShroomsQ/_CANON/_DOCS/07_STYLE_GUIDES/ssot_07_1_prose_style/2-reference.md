@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: "ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/📐 ssot_07_1_prose_style.md"
-source_version: "1.3.2"
+source_version: "1.4.0"
 ---
 
 **Who it's for:** a writer or reviewer looking up one prose rule · **What it does:** lists every component of 07.1 with its rules · **Type:** reference
@@ -42,6 +42,8 @@ One entry per component of the source, in source order. T1 to T12 are the textur
 - **Rule:** a per-story Telling Profile is an instance of the guide, never an exception. Where a profile rules a question differently, the profile wins for that IP.
 - **Why:** M1 PROSE holds that "the Telling Profile applies verbatim" once ruled.
 - **Fails a draft when:** no profile has ruled the question, or the rule is universe-wide. The paratext disclaimer is the clearest universe-wide case.
+- **Inputs (IF catalog call 7, ruled 2026-10-05):** the writer reads five. The medium from 01 selects the guide: M1 PROSE selects 07.1 (IF-01-07-08). Texture T6's `register`, `distance_policy`, `fid` and barrier words per 100 words are the terms applied (IF-01-07-09). 05's LNG entries are the unexplained-word list (IF-05-07-01). 08's planned audience tempo is the pace curve (IF-07-08-03). 06's motif list routes sensory detail (IF-06-07-02).
+- **Reads from 00 (IF-00-07-01):** `T1.SOCIAL.voice_sheet` {register, dialect, native_pace, tic_with_reason, noticing_filter} supplies each speaker's voice.
 - **Connects to:** [07.2 Documents](../ssot_07_2_documents_style/2-reference.md), which governs how the Command writes its own docs and replies. The split was set by the CDR on 2026-09-29.
 
 ## Voice & person
@@ -62,6 +64,7 @@ One entry per component of the source, in source order. T1 to T12 are the textur
 - **Default:** internal fixed, one focal character per scene. Variable or multiple focalization needs an explicit license on the Telling Profile.
 - **OXO instance:** Tori fixed by default. One licensed second lens, the Feed's surveillance eye, external and never a character POV. Anna gets no POV.
 - **Distance dial:** cinematic, light, or deep. It sets how close prose sits to the focal mind. The writer records each scene's setting on its telling line (T6).
+- **Focal record (call 6, IF-04-07-01):** the writer records each scene's one focal character as the scene card's `focal:` field.
 - **Sources:** Card, *Characters and Viewpoint* (BVX.0061); Hall, *Writing Deep Point of View* (BVX.0273).
 
 ## Motive on the page
@@ -70,6 +73,7 @@ One entry per component of the source, in source order. T1 to T12 are the textur
 - **Rule:** narration never states a character's motive outright. The reader infers it from what the character does, says and refuses. A narrator line that says why a character acts fails.
 - **Where motive lives:** the character's L5 WOUND and L6 DRIVE set it. The page shows only the effects.
 - **Source:** Corbett (BVX.0196). Moved here from the character system, OPEN call 3, on 2026-10-04.
+- **Theme tests (call 2, IF-06-07-06, IF-06-07-07):** theme's citation test and knowledge gradient run on the scene plan, not the narrated text. The page shows the answer in speech or action. The tyranny of motive and the test do not clash.
 - **Check item:** 10.
 
 ## Register & diction
@@ -96,6 +100,8 @@ One entry per component of the source, in source order. T1 to T12 are the textur
 - **Test:** Bal's threefold motivation test: delimitation, motivation, rhetorical binding.
 - **Show, don't tell:** a distance dial, not a commandment (McKee, BVX.0175).
 - **Motif rule:** sensory detail routes through the story's own motifs when it touches theme. OXO's motifs are the uniform and the mirror, a door she could walk out of, and the Feed.
+- **Motif source (IF-06-07-02):** the list is 06's `motif.<slug>` ids in THE MOTIFS.
+- **Catalog entries (IF-05-07-06):** an entry in a scene exerts pressure or the writer marks it scenery (CT8 Distinctiveness).
 - **Fails when:** the description could belong to any scene.
 - **Check item:** 5.
 
@@ -112,6 +118,7 @@ One entry per component of the source, in source order. T1 to T12 are the textur
 - **What it is:** T4 AT WHAT SPEED. It names five speeds: scene, summary, stretch, pause, ellipsis.
 - **Two tempos:** story tempo (world time per beat) and audience tempo (beats per 1,000 words for prose). Both come from the tracking system §7.
 - **Rule:** the writer checks a draft's duration pattern against its own planned tempo curve before calling it done.
+- **Beat-boundary mark (call 6, IF-07-08-02):** the writer opens every beat with a line holding only `<!-- beat: M2 · Q1 · S04 | 012.3 -->`, the 08 time code down to the beat. Tracking counts the marks per scene.
 - **No universal number:** each IP sets beats per 1,000 words per movement on its own lanes.
 - **OXO instance:** the Ban is a hard cut, "a person removed mid-scene and never returned to."
 - **Check item:** 7.
@@ -125,6 +132,7 @@ One entry per component of the source, in source order. T1 to T12 are the textur
 > Fantasy, not a how-to: what happens in these pages stays in them. Reader discretion advised.
 
 - **P3 SATURATION:** sexuality is aesthetic, woven in, mastered, earned. Forbidden: working around it, spectacle without depth, refusing it outright.
+- **Container (IF-06-07-03):** the disclaimer lets theme's world scenes stay free of it.
 - **Default:** explicit is allowed, written as fantasy first. A story may dial down on its own genre contract.
 - **Check item:** 8.
 
@@ -132,7 +140,7 @@ One entry per component of the source, in source order. T1 to T12 are the textur
 
 - **G1 LABEL:** cultcore, OXO's series genre (RULED 2026-09-29).
 - **G3 conventions:** outsiders against an identity-shaping institution; the cult as container; the newcomer-versus-group induction beat. The list ends with visibility as currency and belonging and selfhood trending opposite.
-- **G6 DELIVERY:** immersive. The reader is a native. Prose never stops to explain its own world's vocabulary.
+- **G6 DELIVERY:** immersive. The reader is a native. Prose never stops to explain its own world's vocabulary. The unexplained words are 05's LNG entries (IF-05-07-01).
 - **Rule for cultcore IPs:** the institution's voice reads as a register distinct from the outsider's own. OXO's Axiom against Truth is the case.
 - **Scope:** only IPs whose G1 rules cultcore or a related institutional-dystopia label.
 - **Check item:** 9.

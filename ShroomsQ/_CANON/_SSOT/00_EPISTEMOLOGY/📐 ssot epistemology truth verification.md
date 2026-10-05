@@ -1,7 +1,7 @@
 ---
 type: ssot_methodology
 category: epistemology
-version: 1.0.3
+version: 1.1.0
 tier: foundation
 last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
@@ -298,11 +298,14 @@ The ten frameworks are the validity layer under the grand argument. Each storyte
 | Theme (06) | The argument: the story proves its premise. | Logical Reasoning (the conclusion follows from the premises), Pragmatic Theory (the premise produces the drama it claims). |
 | Tracking (08) | A record: a state, time code or story point matches the story. | Correspondence (the record matches the text), Coherence (no record contradicts another). |
 | Worldbuilding (05) | A world claim fits the rules the world sets for itself. | Coherence, Correspondence. |
+| Narrative (01) | A scale or framework fits the text it is applied to. | Correspondence (the framework matches the text), Coherence (no two frameworks applied to one text contradict). |
+| Style (07) | A voice or tone rule holds across the text. | Coherence (no passage breaks the voice rule). |
 
-Two rules apply to every row.
+Three rules apply to every row.
 
 1. A claim that one framework cannot confirm needs a second framework. Example 1 and Example 2 show the pattern.
 2. Skepticism and Critical Thinking (Framework 8) tests any claim in any row. A claim that survives it is checked. A claim that fails it stays marked open.
+3. The status (`checked` or `open`) and the framework or frameworks that checked the claim sit on the claim's own record, in the doc that owns the claim. Tracking (08) does not hold them (IF catalog call 8, ruled 2026-10-05).
 
 ---
 
@@ -387,6 +390,10 @@ Two rules apply to every row.
 ### Internal Dependencies
 This epistemological SSOT has no dependencies on other LEECHSEED SSOTs. Other SSOTs may reference this framework for truth verification protocols.
 
+### Interfaces
+
+Reads from 07 (IF-00-07-02): Style writes one per-source vocabulary page, `KNOWLEDGE_AREAS/_vocab/<ID>.vocab.md`, and one register row per term and source in `_0.1_BVX_LEARN/_meta/VOCABULARY.md`, from the reader's `==term==` marks.
+
 ### External Sources
 - Philosophical epistemology literature
 - Scientific methodology standards
@@ -403,3 +410,4 @@ This epistemological SSOT has no dependencies on other LEECHSEED SSOTs. Other SS
 | 1.0.1 | 2026-10-04 | BOLO 100 base batch 1 (B2, B11, B13, B15), RULED Chief "REC.": `trunk: BLACK` added; new section "How the Frameworks Check the Systems" ties the ten frameworks to the character, setting, plot, theme, tracking and worldbuilding systems. The raw twin note `2_on_ascertaining_truth.md` is archived to `ShroomsQ/_ARCHIVE/ssot_legacy/` (B4): this file is the one source. |
 | 1.0.2 | 2026-10-04 | BOLO 100 D3: a Sources line added to each of the ten frameworks (F3, F4: method, no source). |
 | 1.0.3 | 2026-10-05 | BOLO 102 batch C (Chief: "all recs"): C2, a cap of one or two library ids per framework Sources line and the test for a qualifying id. |
+| 1.1.0 | 2026-10-05 | BOLO 102 stage 2 (Chief: "My word"): truth table rows for Narrative (01) and Style (07) (call 7); the claim's status and checking framework kept on the owning doc's record (call 8); the Style vocabulary interface line (IF-00-07-02). |
