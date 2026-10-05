@@ -1,0 +1,142 @@
+## ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot epistemology truth verification/1-concept.md
+- The ten are Empirical Observation, Logical Reasoning, Intuition and A Priori Knowledge, Consensus, Coherence Theory, Correspondence Theory, Pragmatic Theory, Skepticism and Critical Thinking, Revelation or Faith, and Historical Method.
+- The source names five benefits of knowing the frameworks: credibility, nuanced analysis, bias mitigation, shared language across fields, and sharper critical thinking.
+- The two worked examples, an economic system and Victoria Midnight's change of belief, show a claim confirmed when three or four frameworks converge.
+## ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot epistemology truth verification/2-reference.md
+- Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md`, version 1.0.2, status canonical, trunk BLACK, tier foundation, applies to OVEREXITOUT, ASTRO7EX and LAKAD, dependencies none, last updated 2026-10-04.
+- - **Components:** deductive (general to specific; validity depends on premise truth); inductive (specific to general; probability-based, falsifiable); abductive (most likely explanation; inference to best explanation).
+- Methodology alignment has five steps: identify the nature of inquiry; select frameworks for the domain; apply several for cross-validation; assess each one's limits; document epistemological assumptions.
+## ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_base_60_number_system/1-concept.md
+- The doc names the ones that matter: 3 tiers by 20 attribute units, 5 planets by 12 layers, 12 layers by 5 variables, and 3 tiers by 4 throughlines by 5 variables.
+- A new variable takes a scale class from the doc, respects the divisibility constraints, and names its place in the lattice.
+## ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_base_60_number_system/2-reference.md
+- Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md`, version 1.0.1, status canonical, trunk BLACK, tier foundation, dependencies none, supersedes ranges in `ssot_02_character_systems_vertical_slice`.
+- - 60 is the smallest number divisible by 1, 2, 3, 4, 5 and 6, and a superior highly composite number.
+- The categories: attachment scores, emotional range, flexibility, stability, density, tendency, index scores (shame, desire), armor index (L9), resistance index, origin seeds, coherence scores, tech level.
+- - Format example: `L1 CORE: 13 (SC-20, display)`, internal 39 (13 × 3), cost 3 levels × 20 pts = 60 pts, one full base unit.
+- Example: SC-12 with even-only is {0, 2, 4, 6, 8, 10, 12}, which maps to internal {0, 10, 20, 30, 40, 50, 60}, the SC-6 grid in SC-12 notation.
+## ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_module_architecture/1-concept.md
+- The layers are L1 CORE, L2 VITAL, L3 SOCIAL, L4 WILL, L5 WOUND, L6 DRIVE, L7 ORIGIN, L8 IMPRINT, L9 EROS, L10 SHADOW, L11 DESTINY and L12 FUNCTION.
+## ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_module_architecture/2-reference.md
+- Variables `MOD.WALK.gait_type` (enum: measured, urgent, languid, predatory, bouncing, shuffling), `MOD.WALK.pace_default` (enum: slow, moderate, brisk, variable), `MOD.WALK.signature_tell` (str, freeform).
+- Every variable uses a Base 60 scale class (if numeric), declares a type from the standard set, declares its source (`authored`, `derived`, `computed`) and lists its core read dependencies.
+- Any core layer variable (T1, T2, T3); any derived statistic (DRV); any flag state (FLG); any Character Astrology variable (AST); any other module's variables (MOD), declared as a dependency.
+- State diff fields from other characters; relationship records (REL), since synastry belongs to the relationship system; raw Dramatica ingest template fields (modules read structured L12 data).
+- Core layer variables (T1, T2, T3); core derived statistics (DRV); core flags (FLG); character metadata (META); Character Astrology variables (AST); any other module's variables.
+- YAML `MODULE_DECLARATION` with fields: `module_id`, `display_name`, `version` (semver), `author`, `attachment_points` (layer codes), `tier_min` (1, 2 or 3), `depends_on` (module ids or empty), `description` (one sentence).
+- YAML `VARIABLES`, one item per variable, fields: `path` (`MOD.[CODE].[name]`), `display_name`, `type` (int, float, str, enum, array_str, array_enum, bool), `scale_class` (SC-N or N/A), `display_range`, `constraint` (divisibility or none), `default`, `source` (authored, derived, computed), `behavior` (one sentence).
+- When the user edits `T2.WOUND.wound_score` in Edit mode: the application validates the SC-12 even constraint; recomputes every DRV that uses WOUND; re-evaluates every FLG and `MOD.*.FLG.*` that references WOUND; updates the Bottom Panel; and fires a visual indicator if a flag changes state.
+- The local server watches the Obsidian vault's `_AUTHORITATIVE/` folder, loads character records from `.md` structured blocks, and saves edited records back in the canonical folder format.
+## ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_module_registry/1-concept.md
+- The build order that gives the most independence is Walk, Physical Detail, Combat, Fashion, Music, Coping, Decompensation, then the LoL taxonomy.
+## ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_module_registry/2-reference.md
+- Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_registry.md`, version 1.1.0, status canonical, trunk BLACK, tier foundation, `module_of: ssot_00_module_architecture`, last updated 2026-10-04.
+- - **Concept:** the meta-distribution of design energy across all domains: which aspects got the most authorial investment and which stayed at default.
+## ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_pattern_library/1-concept.md
+- Four existing docs already belong to it: the variable registry, module architecture, the base 60 number system and the scale ladder.
+- Pattern 1, the Command loop, is the way Chief works: speak, capture, recon, recs, one-word ruling, build, script check, publish, log.
+- On 10/4 it ran about eight times and took the ten system review pages from 1 of 10 to 10 of 10 passing.
+## ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_pattern_library/4-tutorial.md
+- On 10/4 the loop ran about eight times, and the pages went from 1 of 10 to 10 of 10 passing.
+## ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_variable_registry/1-concept.md
+- The domain says the kind: tier 1, 2 or 3 attribute, derived statistic, flag, astrology, state diff, metadata, relationship or module.
+## ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_variable_registry/2-reference.md
+- Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_variable_registry.md`, version 1.2.1, status canonical, trunk BLACK, tier foundation, rung Q, last updated 2026-10-04.
+- For every other system it holds one pointer row and never copies a field, because a field kept in two places drifts.
+- The Slice Fields section uses one table row per field with columns Canonical Path, Type, Scale Class, Tag, Source, Consumer, Values and sub-fields.
+- int, SC-20, 0–20, default `= T1.CORE.base_value`, source derived from CORE (buyable ±1-3 at 5 pts per level), tier min 2, Dynamic.
+- int, SC-12, 0–12, constraint even values only {0, 2, 4, 6, 8, 10, 12}, default 0, authored from history (not purchased), tier 2, Dynamic.
+- Display formula `T1.SOCIAL + max(0, 10 - T3.EROS.shame_index)`: slice 3.3.2 clamps the shame term at 0 on SC-12 (Chief, 10/4: Q).
+## ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_variable_registry/3-how-to.md
+- Fill every Registry Format field: path, display name, type, scale class, display range, constraint, default, source, tag, feeds, tier min, behavior.
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_collision_engine/1-concept.md
+- Row 12 of the Tori run needs no interpretation, because the storyform already binds the main character into the OS arena.
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_collision_engine/4-tutorial.md
+- You should have seven hot rows (3, 4, 5, 8, 9, 10, 11), two cold rows (1, 2), one gap, one re-derived beat (row 6) and one structural row (12).
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_genre_system/1-concept.md
+- The contract names the label a work is sold under, the family it belongs to, and the conventions it owes the reader.
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_genre_system/2-reference.md
+- Branches: the four words (Genre, Medium, Audience, Market); the Genre Slice (twelve G-layers, G12 fed from the storyform); the instruments (GENRE CARD per genre, GENRE CONTRACT per work); the library (BVX.0191, 0576, 0580, 0581, 0614, 0599, 0236, 0163, 0175); the boundaries (medium is the medium grammars doc, beats are P10 on the plot card, world is the setting slice, telling is the texture slice).
+- - **Diagram 3, the contract discharged per unit.** States: Owed, Discharged (P10 fires on a plot unit), Breached (withheld by design), Revised, then Owed again at the next unit.
+- - A critic-coined genre (film noir) is a legitimate study object when criteria are explicit and the corpus is not built backward from a canonized core.
+- The cult-as-container: power holds inside a bounded space and fades or turns dangerous once the container breaks (Touchstone TS 1:1, soft strength, BOLO 91).
+- Next candidates by name: BVX.0840 Carroll, BVX.0577 Grant, BVX.0620 Horsley, BVX.0190 Black, BVX.0232 Storr, BVX.0257 Cron, BVX.0564 Dunleavy, BVX.0642 Bould.
+- Every TV Tropes trope in the genre domain is keyed to G1 through G12 in the [trope register](../ssot_01_trope_register/2-reference.md).
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_medium_grammars/2-reference.md
+- Register vocabulary is the house register (taxonomy engine ruling 10: photo-type production, dress and expression axes shared with the shoot set).
+- **Open items the source lists:** the BOLO 16 deepening pass for M6, M7 and M8; Bongobabe grammar debt (M4's duration reading of the clicker loop, feeding registry §8 art and loop decisions); the theatre shelf grows only on demand.
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_modern_poetics/2-reference.md
+- - **Folded (9):** Architecture of Narrative Mastery plus its five pillar docs (Ascendant Second Act, Earned Climax, Payoff With Setup, Dynamic Character Arcs, Harmonized Plotlines), seated in the spine's rival map.
+- Their tool inventories (Tension Index, Setup Tracker Grid, Conflict Grid, Plotline Matrix, Beat Convergence Tracker, Scene Patterning table, climax archetypes) go to the future plot_systems shelf.
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_scale_ladder/2-reference.md
+- - **Is:** the smallest dramatic exchange: one action met by one reaction, producing one micro-shift in a value or intention (McKee's behavior-exchange unit).
+- - **Is:** a chain of scenes unified by one dramatic question or objective, raised at the head and answered at the tail.
+- Structurally, the span in which each throughline consumes one Signpost (Dramatica: 4 signposts plus 3 journeys per throughline), turned by a Driver.
+- - **Use cases:** an episode with its own argument; a movement-level mini-form; a book inside a series; a flashback story; a story a character tells.
+- **Open items the source lists:** arc-as-thread ruling; address notation; the Movement-to-Signpost table (6 movements × 4 signposts × 4 throughlines); IP-level and cross-IP meta-forms (supported, not designed).
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_spine_house_inventory/1-concept.md
+- It found a numbering collision, a distill gap, machine-readable storyform exports, a complete worked method on the INSPIRATION shelf, prior art for the TV Tropes work, and duplicate files.
+- It is the instrument that does the keying: the one-sheet template, the spec, the taxonomy, the library state reports and the repo's self-account.
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_spine_house_inventory/2-reference.md
+- Listed conversations: character DB architecture with Dramatica plus astrology (259k, 2/25); desires taxonomy; replicating Dramatica in a local client (3/27); integrating TV Tropes data (3/29, feeds BOLO 15); chess as narrative structure (6/10); MC doctrine × narrative production (6/8); emotional systems for character design (8/5); misfit-group naming; 28 female body archetypes; shooting vs reading script; novel-summarization template; BVX-LEARN taxonomy org (66k); LoL character DB schema.
+- `PROJECT-MEMORIES.md` load-bearing lines: Narrative Layer Stack 0 to 6 ruling (L20); five Layer-0 axioms (L34); GURPS plus Dramatica plus LoL foundation (L77); stated weakness, long-arc cohesion (L198); Outliers system-mapping steps (L212 to 222).
+- The one-sheet template v2 plus SPEC v3 (the distill instrument); taxonomy proposal and analysis (the subject codes); library state reports (gap, orphans, review); the summarization prompt; the writing guide (the doctrine standard); SSOT-creation protocols; `README.md`, `PROJECT_BRIEF.md`, `PROJECTS.md` (the repo's self-account).
+- **The INSPIRATION shelf is a complete worked method.** It is the L6/L7 branch's strongest native asset and proof of meta-rule IV.
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_spine_house_inventory/4-tutorial.md
+- You did it right if you can name three levels where `oxo-storyform.md` appears and say why the Also column exists.
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_story_registry/2-reference.md
+- - The Civil War jump (`⏸ fabula placements (phase 2)`, ruled 2026-09-29, Q): Q is tagged as the likely seed of the Lincoln / Underground Railroad historical fiction Chief remembers.
+- The hinge is the Deep Meridian beam: a drill probe at Deep Meridian, a geothermal front on Earth, fires the radiation beam that signals the quasar reaching Vivian's time.
+- **Open items parked by name (Chief rules each in its pass):** medium per story; genre per story (only OXO carries G1); ASTRO7EX into the SSOT systems; the hinge placements; LEECHSEED placement.
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_story_registry/4-tutorial.md
+- You did it right if every unknown field carries one of two marks, a dash or a parked marker, and no field is blank.
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_story_spine_comparative_tree/1-concept.md
+- The spine examines one problem from four seats: Overall Story (they), Main Character (I), Influence Character (you), and Relationship Story (we).
+- The spine becomes the keying structure for the library, so a book on Egri files at L0 and a book on genre files at L7.
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_story_spine_comparative_tree/2-reference.md
+- One Story Mind makes a complete argument that an approach to a problem succeeds or fails, and that it is worth it or not.
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_story_spine_comparative_tree/3-how-to.md
+- Use the touchpoint for that level: S12 at L2, S11 at L3, scene cards at L4, the collision diagonal at L5, the Argue mode at L6, a genre-setting contract at L7.
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_story_spine_comparative_tree/4-tutorial.md
+- Next, open [oxo-storyform.md](../../../../../_CANON_NODES/oxo-storyform.md) to see the full instance, and read the [how-to](3-how-to.md) to design your own.
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_texture_layer/1-concept.md
+- They ask who speaks, who sees, in what order, at what speed, how often, in what words, with what feeling, through what thresholds, breaking which frames, and to whom.
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_texture_layer/2-reference.md
+- **OPEN items in the source.** The OXO Telling Profile is unruled; it fires when OXO prose opens, or sooner on Chief's call.
+- **Version history.** 1.0.1 (2026-10-04, BOLO 100 texture batch 1): stamped `module_of: ssot_01_texture_system`, added the pointer to T11, T12 and the sub-fields, closed the naming and per-medium OPENs, no change to the ten questions.
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_texture_layer/4-tutorial.md
+- You split voice from vision, used the grid to translate three terms, and met the rule that a profile waits for ruling.
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_texture_system/1-concept.md
+- The system gives a writer a precise answer to a question craft books answer by feel: why does this scene sound the way it does?
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_texture_system/2-reference.md
+- Source: [📐 ssot_01_texture_system.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_texture_system.md), version 1.0.0, trunk BLACK, rung standard, RULED by Chief 2026-10-04 (Q, BOLO 100 texture batch 1).
+- Library (BVX.0598 the DNS, 0596 the focalizor, 0273 the distance dial, 0084 the seven functions, 0279 the mood curve, 0061 levels of penetration, 0175 show not tell, 0349 the gutter)
+- - **Diagram 2, the mediation chain and the distance dial.** Flow: Fabula → the focalizor (who sees) → the narrator (who speaks) → the words (register, distance policy, FID) → the narratee and implied reader.
+- - **Diagram 3, the telling per unit.** States: Baseline → Override (the scene card's telling line fires) → Response (focal shift, duration change, register change) → MoodCurve (interest, curiosity, anticipation, suspense, surprise) → Payoff (surprise, disappointment or relief) → Baseline.
+- **The dial.** Distance has three settings inside limited third person (BVX.0061): cinematic (camera only, no thoughts), light (the narrator dips in and out), deep (no thought tags; the character's judgment colors every clause).
+- - **T1/T2 gap flag.** `t1_t2_gap: none | flagged (note)` records the gap between a T1 reading and a T2 reading of one passage.
+- The reader's trust in a character is tracked in [§9A The Reader Model](../../../_SSOT/08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md#9a-the-reader-model), keyed by `character_id` and `shifted_at`.
+- **Deep-PoV checklist.** Hall's checklist shows T1, T2 and T6 at the strictest setting: hetero or homodiegetic voice, internal fixed focalization, one mind per scene, distance at deep (BVX.0273).
+- The values rest on canon: Tori as MC, the Driver ruled Action ([story spine](../ssot_01_story_spine_comparative_tree/2-reference.md)), the six-movement descent and Southern Gothic register on the DCUS instance, and the rename lattice (Skeeter Creek to Red Hills to DCUS) as S5 SCAR paratext ([📐 ssot_03_setting_system.md](../../../_SSOT/03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md)).
+- Next candidates: Bell's *VOICE* (BVX.0256), Block's *The Visual Story* (BVX.1103), the Routledge handbook of stylistics (BVX.0647), the *Handbook of Narratology* (BVX.0584), Thomas and Turner's *Clear and Simple as the Truth*, Landon's *Building Great Sentences*.
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_three_check_pass/1-concept.md
+- The [Touchstones register](../ssot_01_touchstones_register/1-concept.md) rules all three in as TS 2:8, TS 2:9 and TS 2:10.
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_three_check_pass/3-how-to.md
+- If the element has no sheet, leave the line in the pass and park it as ⏸ OXO element sheets (phase 2).
+- Take the next element from the expansion queue: scene cards (the 7 hot rows), the six movements, the Administration, the Diaspora, Bongobabe, or the ladder rungs.
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_three_check_pass/4-tutorial.md
+- Compare with the kept line: getting the letter from the school that eats people, being special enough that the trap wants you.
+- The honest answer is the one the pass gave: no visual tissue is authored, so you write GAP and park the sheet.
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_touchstones_register/2-reference.md
+- Source: [📐 ssot_01_touchstones_register.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md), version 1.0.0, trunk BLACK, RULED by Chief 2026-10-04 (BOLO 100 TOUCH BATCH 1, Q).
+- - **Statement:** erotic or ritual power tends to hold inside a container (a circle, a rite, an end date, a boundary) and fade or turn dangerous without one.
+- - **Chief's refinement:** the container lives outside the story, as a viewer-discretion disclaimer at the front of every book (fantasy, not a how-to).
+- The old reference shelf: [NNI-INDEX.md](../../../../../_tools/bolostatus/work/81/NNI-INDEX.md) (47 works, 188 invariants, three pushbacks quoted in full).
+- Live wires: the scale ladder's completion tests, the collision engine's L12 × S12 row, character L12 `touchstone`, setting S12, and the scene cards' `touchstones:` field.
+- **Version history.** 1.0.0 (2026-10-04, BOLO 100 TOUCH BATCH 1): schema, rules, field rename, front-door links; TS 2:1 to TS 2:10 ruled in; vetoes and instance rules parked.
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_trope_register/1-concept.md
+- A character's L5 WOUND, a place's S10 UNDERSIDE and a genre's G1 LABEL each get a pull list of known patterns.
+- A script reviewer caught broken files, misspelled slugs and illegal keys at the fan-in, and the count of findings fell to zero each time.
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_trope_register/2-reference.md
+- Source: [📐 ssot_01_trope_register.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md), version 1.0.0, trunk BLACK, RULED by Chief 2026-10-04 (Q, BOLO 100 registers batch 1).
+- - **Character piles on L12 FUNCTION (508) and L1 CORE (291).** The Characters As Device index is mostly cast roles and types.

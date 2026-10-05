@@ -50,13 +50,13 @@ The sentence, ruled 2026-09-29 by Chief from 35 candidates:
 
 > **Nobody has to be evil when everyone does their job.**
 
-It fuses two sentences the Chief short-listed: "When the rules are the problem, following them is the trap" and "Evil at scale is a working system full of ordinary people, and integrity is the refusal to be the part that fits."
+It fuses two sentences Chief short-listed: "When the rules are the problem, following them is the trap" and "Evil at scale is a working system full of ordinary people, and integrity is the refusal to be the part that fits."
 
 ### The mechanism line (how the system does it)
 
 > *It doesn't find out who you are. It trains you, measures you, then calls the result your nature.*
 
-The Chief kept it 2026-09-29 as the biopower register. Source: Foucault's biopower, distilled as MSX.36. The idea says what; the mechanism line says how.
+Chief kept it 2026-09-29 as the biopower register. Source: Foucault's biopower, distilled as MSX.36. The idea says what; the mechanism line says how.
 
 ## HOW THE SENTENCE MAPS ONTO THE LOCKED STORYFORM
 
@@ -115,7 +115,7 @@ Ruled in BOLO 93 (calls 2 Keep and 3 Split). Every civilization runs its own val
 | The Kudzu | WB-GRP-0005 | Life | A death that calls itself life |
 | The Power Line | WB-INS-0004 | Protection | A wall that calls itself a shield |
 
-The Kudzu is the idea made literal: no one in it is evil; it only grows. The plain words are drafts for the Chief to re-pick.
+The Kudzu is the idea made literal: no one in it is evil; it only grows. The plain words are drafts for Chief to re-pick.
 
 ## THE MOTIFS — three images (80-B.3, RULED 2026-09-29)
 
@@ -131,7 +131,7 @@ Motifs feed the texture system. Each appearance moves the Freedom scale. The Fee
 
 - 1.3.0 cite: CRE.06 *Thematics: New Approaches* (Bremond, Landy and Pavel, 1995) backs the latent-theme line, the two motif checks and `meets`.
 - The 9/24 verdict: Foucault supplies the mechanism. Arendt, Bauman, Milgram and Browning supply the moral claim. The ruled sentence is the moral claim.
-- The Chief's 9/24 phrasing, "the system enables evil; the person is a symptom," stays on record as the Overall Story's world-claim.
+- Chief's 9/24 phrasing, "the system enables evil; the person is a symptom," stays on record as the Overall Story's world-claim.
 - Research file: `_tools/bolostatus/work/80/RESEARCH-BIOPOWER.md`.
 
 ## RULED 2026-09-29 (Chief: "go on all those recs")

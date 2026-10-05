@@ -1,0 +1,186 @@
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_astrology/1-concept.md
+- Second, twelve schema fields added in later passes have no chart feed at all, and the authors set them from the authoritative document.
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_astrology/2-reference.md
+- The category defines what survives (stored in the 12th House), how the character is re-acquired in Movement 1 of the next cycle, and what share of entropy remains as the ghost signal.
+- It holds the five personal planets, the five structural planets, the four angles, aspects, house placements, dignities and 12th House contents.
+- A complete Tier 3 character holds both a Character Astrology Ingest Template and a 12-Layer Vertical Slice in the canonical folder.
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_astrology/3-how-to.md
+- For a partial chart that must still feed L1-L11, assign the seven core placements: Sun, Moon, Mercury, Venus, Mars, Saturn, Ascendant.
+- Find the planet's Dramatica inputs in the [reference](2-reference.md): Category 3 for inner planets, 4 for outer planets, 5 for angles.
+- Route story-level data: network and synastry to relationship tables, progressions and transits to the state overlay system, movements and reset to plot systems.
+- Sun feeds L1, Mars feeds L2, Saturn feeds L4 and L5, Moon feeds L8, Venus feeds L9, shadow aspects feed L10, and growth axis feeds L11.
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_astrology_12_layer_mapping/1-concept.md
+- When the designer assigns a value to L8 IMPRINT, the document says which chart elements the value must agree with and how to verify it.
+- Each layer's section reads like a short interpreter's note: what the layer needs, what the chart can offer, and where the interpreter should say nothing.
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_astrology_12_layer_mapping/2-reference.md
+- L1 needs a numeric value (default 10, GURPS IQ-equivalent) for cognitive and psychological mass, justified by documented mental capacity and ideological framework.
+- L8 is a stack: attachment_style (secure, anxious, avoidant, fearful_avoidant), attachment_style_score, attachment_dimensions {anxiety, avoidance}, emotional_range, conditional_patterns, imprint_flexibility, secure_base_object (renamed from `primary_attachment_object` in 2.1.0, old name a read alias), protest_behaviors, deactivating_strategies, vandalism_event, somatic_archive, sexual_script_acquisition.
+- L9 has about twenty variables: erotic_blueprint_type (with arousal_curve), desire_vector (with resolution_type), exposure_shame, role_shame (the split of `shame_index`, old name a read alias for exposure_shame), intimacy_mode, armor_index, satisfaction_cycle_truncation, erotic_safety_precondition (with scope), consent_posture, client_script, signal_fluency, disclosure_posture, template_origin, orientation_dimensions, charmed_circle_position, resonance_profile, polarity_role, love_lust_cleft.
+- - Feed scope: the chart hints at erotic_blueprint_type and desire_vector (Venus), exposure_shame and role_shame (Mars-Venus aspect), polarity_role and love_lust_cleft (check only).
+- Fields added in 2.2.0 to 2.4.0 (the L9 synthesis, wave 2 and wave 3 lists) follow the L9 and L8 notes above.
+- Run it after completing both the Character Astrology Ingest Template (blank form: [ssot_02_template_astrology_ingest.md](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_template_astrology_ingest.md)) and the Vertical Slice.
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_astrology_dai/1-concept.md
+- Because every placement cites its origin, the chart can be audited, regenerated when the storyform changes, and fed into the layers without anyone guessing.
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_astrology_dai/2-reference.md
+- Place the Moon in a different element than the Sun, unless the stress response mirrors identity (rare, and it produces self-reinforcing loops).
+- - Narrative-first override: a planet in traditional dignity may be overridden to Peregrine or Debility if the Dramatica data shows the character struggles with that function.
+- - When Mercury aspects a 12th House planet, the Hauntology Effect fires: recursive awareness, deja vu, or the sense of a pattern the character cannot name.
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_astrology_dai/3-how-to.md
+- Give Unique Ability/Critical Flaw a Conjunction if the flaw is inside the ability, or a Square if it undermines from outside.
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_state_architecture/1-concept.md
+- The architecture stores it in its own record, so an event to Character B never forces an edit to Character A's file.
+- That traceability is what lets a writer, a game designer or an AI system read one assembled record and trust it.
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_state_architecture/2-reference.md
+- A state record is a structured block describing the delta between the base record and the character at one narrative moment.
+- - A checkpoint is a complete state at a fabula event: a full state record, `state_diffs` and the three MODIFIED blocks.
+- - This doc provides to plot_systems: the state diff format, the narrative moment identification scheme, the MC-relative distance fields and the movement tagging.
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_state_architecture/4-tutorial.md
+- The source shows the arithmetic: 13 - (8/2) for damage resistance, 13 - 8 for stress threshold, (8 + 4) / 2 for collapse risk.
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_systems_vertical_slice/2-reference.md
+- - Tier 1 (CORE, VITAL, SOCIAL), Tier 2 (WILL, WOUND, DRIVE) and Tier 3 (six deep stacks) feed the seven derived statistics.
+- The L12 field list lives in one place only: the [Dramatica integration protocol](../../../_SSOT/02_CHARACTER_SYSTEMS/🔮%20ssot_02_dramatica_integration_protocol.md), version 1.2.0.
+- - Static or dynamic follows the state module's Decision Test: would the value differ if the character were frozen at two points in the narrative?
+- A character earns deeper tiers and denser Tier 3 population in proportion to the load-bearing weight the story places on them.
+- - `psychology_stack` (call 12, BVX.1123 Egri, 2.1.0): the psychology third of Egri's bone structure as an auditable text checklist: moral standards, ambition, frustrations, temperament, attitude toward life, complexes, extrovert/introvert, abilities, qualities, IQ.
+- - `assigned_labels` (3.2.0, CL5, Dynamic), under `identity_frame`: list of {label: text, by: law | medicine | church | state | buyer | family | peers, year: integer, accepted: bool}.
+- - `body_capital` (3.0.0, defined 3.2.0, CL14, Dynamic, adults only): {price_factors: list of {factor: masculinity | build | race | role, direction: up | down}, window: {curve, start_age, end_age}, venue_tier: integer, trust_signal: text, working_body_gap: text, embodied_cost: text}.
+- - `knowledge_map` (2.4.0, Sedgwick, MSX.68): per relationship, what each knows, what each knows the other knows, and who may claim not to know.
+- - `community_membership` (2.5.0): the chosen community, its places, press and codes, and the rooms he belongs in with each room's code.
+- Gains (3.2.0, CL3) form: spoken | unspoken_pretense; symmetry: symmetric | asymmetric; veto: held | given | none, plus a cost note; reopen_triggers: list of text.
+- - `pair_register` (3.2.0, CL1, Dynamic): list keyed by character_id, each {attachment_dimensions {anxiety, avoidance}, pacing: slow | goal, rules: list of {rule: text, form: spoken | tacit, status: kept | bent | broken}, rule_gap: text or null}.
+- - `civic_standing` (3.2.0, CL6, Dynamic): {category: text, rank_or_score: number or null, rights_held: list, what_can_be_taken: list, by_whom: text, exemptions: list, last_reranked: story_beat}.
+- List of {audience, concealed_trait, strategy: open | selective | covering | double_living | none, stake: text}, plus stages: list of {stage: self_recognition | circle | public, year}, cost_ledger: list of text, hiding_incentive: text or null.
+- Note (3.3.0, CH-5): where the drive is hyperfocus, record when it fades, as a state diff keyed to a checkpoint.
+- - `want_need` (3.2.0, CL16, Dynamic): {want: text, need: text, false_belief: text, need_kind: psychological | moral, cost: text, fusion_beat: story_beat or null}.
+- - Field list from BVX.1127 Levine & Heller, *Attached* (call 14, 2.1.0): `attachment_style` (four-way enum: secure, anxious, avoidant, fearful_avoidant), `attachment_dimensions` {anxiety, avoidance} beside the scalar `attachment_style_score`, `protest_behaviors`, `deactivating_strategies`.
+- - `somatic_archive` (2.3.0, Paasonen, MSX.67): what the body has learned to answer, built by habit, with no trauma story required.
+- - `charmed_circle_position` (Rubin, MSX.46): per wanted act, which side of the world's good-sex line it falls on and how the character carries it.
+- - **2.5.0 (schema pass):** `polarity_role` (top, bottom, switch, dom, sub; chosen or assigned) and `love_lust_cleft` (how he settles saintly love against sinful lust).
+- - `consent_posture` gains (CL4, all Dynamic): scope: per_act | per_scene | standing; redefended_per_scene: bool; enthusiasm_standard: required | not_required; precommitments: list of text; veto_points: list of named checkpoints; limits: {hard: list, soft: list}; recall: match | diverge.
+- - `resonance_profile` holds fantasy and practice as two registers that may differ, plus type_tags: list of text and exceeds_type: bool (CL11).
+- - `polarity_role` gains reason: proof | giving | release | rank | market; reversal_wish: text (feeds `shadow_content` as `denied_wish`); history: list of {role, when, taught_by, outcome}; stage: beginner | working | fluent (CL13).
+- Static sub-fields: signature {amplitude 0-10, areas: list, speed: slow | medium | fast, time_to_peak_min: integer, spasm_size 0-10} and climb_rule (a closing signal drops the climb one step).
+- - `attraction_channels` under `orientation_dimensions` (CL26, Dynamic): sexual, romantic, sensual, platonic, aesthetic, each integer 0-10 or null, each with its own target gender.
+- - `erotic_craft` (CH-1, Dynamic, `training` Static): {domains: list, level: novice | competent | expert | master, training: self | partner | teacher | tradition, flow_access: reliable | sometimes | blocked}.
+- - `power_exchange` (CH-2, Static, `stage` Dynamic): list keyed by `character_id`, each {scope: [physical, mental, financial], protocol: list of named rules, container: {space, ritual, time_bound}, duration: scene_bound | standing, stage: trial | trained | owned, function: free text, role_integrity: the rule against slipping out of role}.
+- Two sub-fields carry the group parts (PSY.02): `group_size` (Dynamic; 3 is a triad) and `group_position` (Dynamic) {structure: couple_plus_third | triad | group, standing: primary | equal | guest | disposable, rule_setter: character_id, motives: list of identity | novelty | partner_wish | relationship_test | power, script_followed: FFM | MMF | other | none}.
+- - `moral_incongruence` (2.4.0, Burke, MSX.84): the gap between what a character believes about his desire and what he does.
+- **Setting rule (CL30, 3.2.0):** where the setting has a matching S4, S6 or S8 entry, cite it through `setting_ref`.
+- Two 3.2.0 values come from the record: `wound_kind` is error_committed, and `civic_standing` is the Ban plus her Sync-era standing, with numbers ⏸.
+- - `DERIVED` lists seven values: 10, 8, 16, 6, 8, 18, and `expressive_range: 2` (see the OPEN note at the top).
+- Four were added in 3.0.0: `body_capital` (L2, adults only), `locus_of_control` (L4), `futurity_stance` (L6) and `minority_stress` as a trigger type under L5 `triggers`.
+- The rest are read aliases: a distill that names one maps to the field shown, so one idea keeps one name (06.2 rule 3.1).
+- Rows after BVX.1124 were added in 3.2.0 (BOLO 100 library pass): the books behind CL1-CL31 and the Cite list.
+- The next wave's top candidates: BVX.0202 (Corbett, *The Compass of Character*), BVX.0271 (Weiland, *Archetypal Arcs*), BVX.0135 (Jorstad, *Character Arcs*), BVX.0207 (Dunne, *Dramatic Writer's Companion*), BVX.0229 (Smith, *Psychology Workbook*).
+- **Also in the source: the OPEN calls.** Sixteen numbered calls, RULED 2026-09-16 (Q) and applied at 2.1.0 (2026-09-29, Q).
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_systems_vertical_slice/4-tutorial.md
+- You will take Victoria Midnight's locked layer values, compute her seven statistics, test her five flags and spot one open item.
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_dramatica_integration_protocol/1-concept.md
+- The only way to change them is to revise the storyform, and a revision counts as a new version, never as an edit.
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_dramatica_integration_protocol/3-how-to.md
+- Pick a relational role for each Tier 3 character it touches: mirror, foil, catalyst, threshold_guardian, herald, mentor, trickster, shapeshifter or anchor.
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_l9_eros_synthesis/1-concept.md
+- On 2026-09-29 the Command distilled 25 new sexuality sources in one wave: nineteen in the MSX series and six in the PSY series.
+- The wave was chosen to fill the gap that Victoria's L9 note named as its own open item: orientation and partners.
+- Chief ruled all ten on 2026-09-29 with the word Q, and the character system applied them in version 2.2.0.
+- The line it draws is this: the schema stores what is true of a character, and craft rules govern how prose narrates it.
+- The third concerns a source that argues something different in kind: Foucault's claim that naming a practice manufactures a permanent identity.
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_l9_eros_synthesis/2-reference.md
+- - L9 EROS has one authored instance: Victoria Midnight, built 2026-08-15 from PSY.01 Walker, MSX.17 Perel and PSY.04 Rehor & Schiffman.
+- - Mix: gay and male sex-work distills, bareback and pig-culture sources (MSX.24, MSX.28, MSX.35), cruising and venue ethnography (MSX.20, MSX.29, PSY.12), chemsex (PSY.08, PSY.11), sex-tourism epidemiology (MSX.34, PSY.09), craft sources (MSX.26, MSX.33), practice manuals (MSX.21, 22, 23, 25, 30, 32), and two theory texts (MSX.36 Foucault, PSY.13 Jung).
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_step_1_source_verification_protocol/1-concept.md
+- A passing character has one canonical folder holding the authoritative document, the two ingest templates and, later, the slice and its states.
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_step_1_source_verification_protocol/2-reference.md
+- - The Vertical Slice structured data block is versioned `draft` until the astrology ingest reaches full status and the Feed Validation Checklist passes.
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_template_astrology_ingest/1-concept.md
+- The form defines a minimum viable chart: sections 1 to 5 and 8 to 10, with seven planets and angles placed, at least three aspects, and houses for those seven.
+- That character gets a partial chart in a lighter record, so the form stays reserved for the characters who carry full weight.
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_template_astrology_ingest/2-reference.md
+- Dependencies named in the source: character astrology, the DAI doc, the 12-layer mapping doc, the Dramatica ingest template, the Step 1 source verification protocol.
+- It needs Sun, Moon, Mercury, Venus, Mars, Saturn and Ascendant signs, at least three aspects, and houses for those seven planets.
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_template_astrology_ingest/3-how-to.md
+- Use Opposition for Problem and Solution, Square for Focus and Direction, Conjunction or Square for Unique Ability and Critical Flaw, Trine for reinforcing quad elements.
+- Check the seven items in section 10: locked Dramatica reference, seven planets with derivations, three or more aspects, seven houses, the summary, the feed map, the Feed Validation Checklist.
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_template_astrology_ingest/4-tutorial.md
+- Use Victoria Midnight's L12 values from the [vertical slice](../ssot_02_character_systems_vertical_slice/2-reference.md) as the Dramatica input: MC Problem Equity, methodology Proaction, evaluation Result, purpose Actuality, limit Optionlock.
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_template_dramatica_ingest/1-concept.md
+- Section 8 records each Dramatica report the writer consulted, what it was used for, where it lives and when it was read.
+- The handoff checklist at the end of this form names the astrology form explicitly: once this record is locked, the astrology ingest can cite it in `dramatica_ingest_ref`.
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_template_dramatica_ingest/2-reference.md
+- Fill in the extraction-priority order: Section 1, then 4, then 3 and 2, then 6, 5 and 7, with Section 8 as the log.
+- A Tier 2 character gets an element signature and relational roles instead (integration doc, Tier 2 section) and does not use this form.
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_template_dramatica_ingest/4-tutorial.md
+- You have seen the whole path: fill in extraction order, write `⏸` for honest gaps, generate Section 10 last, and lock only when the checklist passes.
+## ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_state_architecture/1-concept.md
+- The story must know what Delta Coast Ultra School (DCUS) is at its founding as Skeeter Creek, at the Red Hills rename, and at the Bishop acquisition.
+- Look up fields in the [reference](2-reference.md), do the tasks in the [how-to](3-how-to.md), and learn by doing in the [tutorial](4-tutorial.md).
+## ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_state_architecture/2-reference.md
+- A state record is a data block holding the delta between the base slice and the place at one narrative moment.
+- - S9 (old-money prestige draw) and S10 (Skeeter Creek sinks to folk or secret) are parked for the phase 2 pass.
+## ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_state_architecture/4-tutorial.md
+- **Add the note.** Write 2 to 5 sentences: the founding name is sanded a century before the Bishops arrive, and the live name flips.
+## ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_synthesis/1-concept.md
+- Others turn tone into a rule, repeat a faction card, and keep a forward-dated ledger of what has not happened yet.
+- A writer who sees deep layers in this wave must not read that as an order to fill S1 to S11 everywhere.
+- The five contradictions in Part Five all resolve the same way: pick a direction, commit, and keep the center dense and the edges vague.
+## ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_synthesis/2-reference.md
+- Adds measured physical facts, sensory detail keyed to one character, eight presentation tables, and felt imagery matched to the setting's instruments.
+- Adds a forward scar ledger, a damage-status field, five stacked precursor falls, a foreknown doom, and a wound-plus-promise fusion with S9.
+- Adds the Q of recognized divinity, uncoerced private vision becoming myth, cult-gated options, and a deity compressed to alignment, domain and symbol.
+- - **How much a faction card holds.** Lean: the stub (founding sentence, principle, one secret) for places the story does not center.
+- Three entries: 0.1.0 (2026-09-29, first pass, 42 distills against ssot_03 v1.1.0), 0.2.0 (2026-09-29, ruled Q) and 1.0.0 (2026-10-04, ruled Q, BOLO 100 setting batch 1; stamped `module_of`, scope set to all IPs).
+## ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_system/1-concept.md
+- The system's root claim is that setting is the pressure field: the total state of the world at a story address.
+- The trade cannot supply what the slice asks for: a professional gazetteer fills BODY, LAW, ECONOMY, FOUNDING, HABIT and VECTOR richly.
+- Details are in the [reference](2-reference.md), with tasks in the [how-to](3-how-to.md) and a lesson in the [tutorial](4-tutorial.md).
+## ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_system/2-reference.md
+- Branches: Taxonomy (four axes), the Setting Slice (twelve S-layers, one per place, S12 fed from the storyform), the Scene Card (one screen, one scene, paired to the Plot Card), Library, and Boundaries.
+- **Slice header (machinery, not a layer).** Fields: `place_id`, names and aliases (the rename lattice), scale class, parent and child places, canon node link, state track, `job`, `dramatic role`, `adjacent` (neighbors with travel cost), `canon_tier` per fact (core, semi or fringe), `real_anchor` (dynamic: `{source, as_of date, categories kept}`).
+- - **S4 codex sort.** Tag each S4 rule with a modality (permitted, prohibited, obligatory, valued, known) and a stated-volume (formal, informal, unspoken).
+- - **Gauges.** A place may carry up to three gauges, each with a floor, a ceiling and an effect per rung.
+- - **Build order, premise ripple, derivation chain (1.10.0).** Fill S1 first, then S6 and S8, then S4 and S7.
+- - **1.9.0 fields:** `goal` (one line); `clock` (4 to 8 ticks, one tick per state diff); `quotable wound` (linked to an S5 entry); `claimed vs rewarded`; folk tier.
+- Header: `dcus`; names DCUS, the Ultra School, Red Hills Academy (legacy), Skeeter Creek (founding, buried), Inner Spiral Academy (pre-ruling); scale site (campus); parent the Middle Bands, Delta Coast, tri-state Spiral (FL/AL/GA).
+- Two rulings: the 42-distill synthesis ([reference](../ssot_03_setting_synthesis/2-reference.md)), and Ryan's nine-axis scoring (BVX.0630) as the primary L7 genre-contract tool, with Baur's five lineages as shorthand.
+- The source also holds OPEN (trade-gap note, parked OXO scene-card fill pass) and a version history from 1.0.0 (2026-08-25) to 1.10.2 (2026-10-04).
+## ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_fabula/2-reference.md
+- Frontmatter: category `plot_system`, tier `fabula`, trunk BLACK, rung standard, `applies_to` OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX and all future IPs, last updated 2026-09-29.
+- **Does not own:** the told order (the plot doc, P11); the pattern layer ([trope graph](../ssot_04_trope_graph/2-reference.md)); place itself (03); the static character layers (02).
+- - **Diagram 2, the handshake.** The event record feeds the syuzhet (P2, P3, P4, P5, P6, P7, P9, P11), character state (`origin_event` points back to `event_id`), and the setting (dated states, cross-referenced only).
+- **Eras.** The DCUS naming lattice read as clock eras: Skeeter Creek (founding, buried, no date), Red Hills (first rename, about a century before the Bishop acquisition), DCUS (the current era).
+- **The hinge (ruled 2026-09-29): the Deep Meridian beam.** A geothermal drill front fires a beam that punches a mile-wide hole in the sky.
+- **Fuzzy and unknown dates.** The working answer is movement-relative dating (M1, M2, M3), with reach and extent as ranges or marked unknown.
+- **To the state architecture.** Landed in `ssot_02_character_state_architecture` v1.1.0 on 2026-09-24: an `origin_event` field; `state_diffs` as a parent field; event id standardization (worked pair `m1b_crash_jebb_death` and `vm_m1b_post_crash`).
+- The source also holds OPEN (six calls, all ruled 2026-09-24: Tori-only instance, EVIL CHECK in wave 2, `<movement>_<slug>` ids, DCUS eras cross-referenced, movement-relative dates, the v1.1 patch) and a version history from 0.1.0 (2026-09-24) to 0.2.0 (2026-10-01).
+## ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_plot_system/2-reference.md
+- Branches: Taxonomy (four axes), The Told Order, The Plot Slice (twelve P-layers, P12 from the storyform), The Plot Card (paired to the Scene Card), Library (five distills), Boundaries.
+- - **Diagram 2, five sources, one engine.** A Dramatica signpost, McKee's Gap, Coyne's Five Commandments, a Truby step and a Snyder beat all feed one engine: value-in, turn, value-out.
+- - **P6 multi-POV stacking.** Where several heroes' beats stack under one manuscript, record each hero's seat as its own P6 line, keyed to that hero's throughline.
+- - **P7 hook test (1.3.0).** Every logged fabula event names one present consequence and one live hook, or it is cut.
+- The syuzhet's own record: where a fabula event surfaces in the telling, how long the telling dwells, how often it repeats.
+- - **Duration modes.** Scene (about 1:1), summary (compresses), ellipsis (told time zero), pause (told time runs, happened time holds), stretch (told time longer).
+- - **Frequency modes.** Singulative (told once, happened once), repetitive (told more than once, happened once), iterative (told once, happened many times).
+- Template fields: `plot_unit_id`, `event_id`, `order_told`, `order_happened`, `anachrony` (`type`: none, analepsis_external, analepsis_internal, analepsis_mixed, prolepsis; `reach`; `extent`), `duration_mode`, `frequency_mode`, `gap_effect` (curiosity, suspense, surprise, none).
+- - **Library follow-up (1.3.0).** BVX.1179 (hook test), BVX.1182 (cascade recipe), BVX.0343 (recurring villain goal), CRE.08 (paired entry and exit).
+- The source also holds OPEN (fifteen calls, all closed or moved to phase 2), the 1.0 bar (one filled card per movement, M1 to M6) and a version history from 0.1.0 (2026-09-16) to 1.3.2 (2026-10-04).
+## ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_trope_graph/1-concept.md
+- An edge between two nodes counts how often real TV Tropes articles link a trope keyed to one into a trope keyed to the other.
+- The workspace view draws the graph as a focus tree on the 16 by 4 rail grid, with tropes inside capped tooltips, and the free network is an opt-in toggle.
+## ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_trope_graph/2-reference.md
+- **Owns:** the 135 nodes and their `same_as` clusters; trope keying; node-to-node edges; the rail for the walk; the handshake to the fabula, the plot card and the workspace view.
+- **Does not own:** the storyform (Dramatica), world time (fabula), the told order (plot doc P11), psychology, place, and the workspace view's rendering code (BOLO 79).
+- **Root claim:** every trope sits on one of 135 fixed structural units, and every unit sits on a rail Dramatica already locked.
+- Branches: The Nodes (135, five families, 31 `same_as` edges), The Tropes (1,678 fetched, 1,034 keyed, 644 unkeyed), The Edges (`trope_link` 2,584; `same_as` 31; busiest node `tob.14` Love with 94 tropes), The Rails (16 signposts across 4 throughlines; P6 is the anchor), The Walk, Boundaries.
+- The walk feeds the fabula (a walked node proposes an event, never writes canon), the plot card (P6 is the anchor) and the workspace view (BOLO 79).
+- Tobias and Schmidt clusters: `tob.06_revenge` = `sch.05_vengeance_for_a_crime`; `tob.16_sacrifice` = `sch.39_self_sacrifice`; `tob.01_quest` = `sch.17_daring_enterprise`; `tob.03_pursuit` = `sch.09_flight` + `sch.10_pursuit`; `tob.04_rescue` = `sch.52_rescue_of_a_loved_one`.
+- - **The `alt` field.** 269 keyed tropes carry a second plausible node: 178 cross to another family, 91 stay in the same family.
+- - **What unkeyed means.** A production trope, a pure audience-reaction trope, or a pattern the taxonomy is too coarse to place.
+- **Trope record fields:** `slug`, `name`, `def` (the TV Tropes index's one-line definition only, never page body text), `indexes`, `node`, `alt`, `conf`.
+- Each time a trope keyed to node A links to a trope keyed to node B, the A-B weight rises by one.
+- - Sequenced families (Propp 31, Vogler 12, Campbell 17) sit in Acts 1 to 4 and never run backward within a family.
+- - Tobias and Schmidt ride any act, with a throughline affinity: RS 31, MC 24, OS 15, IC 4, any 1.
+- - One `same_as` pair differs by an act: Campbell's Road of Trials (Act 3) spans Vogler's Tests, Allies, Enemies (Act 2) and Approach to the Inmost Cave (Act 3).
+- **To the workspace view (BOLO 79).** From the HOI4 study's H-rules: the 16 signposts are the x-axis and the 4 throughlines are fixed lanes (H1).
+- The source also holds OPEN (six calls, all closed 2026-10-04): seating by method rule, 23 empty nodes bypassed, 352 unkeyed permanent and 292 held for `⏸ trope second keying pass (phase 2)`, the movements map, Propp's id, and the `or:` tooltip verified built at `_tools/workspace/build.py:2576-2585` and `:2445`.
+## ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_trope_graph/4-tutorial.md
+- Love and Descension both link heavily into it, so a walk that carried either earlier has real support for resolving it here.

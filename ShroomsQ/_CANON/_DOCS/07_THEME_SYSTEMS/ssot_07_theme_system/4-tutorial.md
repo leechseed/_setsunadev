@@ -20,7 +20,7 @@ You will rebuild OVEREXITOUT's theme in four steps. Keep the [reference](2-refer
 
 1. Write the form on a blank page: *[value] happens because [cause]*.
 2. Start from this: the story is about a system that trains people, scores them, then calls the score their nature.
-3. Cut it to one sentence. The Chief picked this one from 35 candidates on 2026-09-29:
+3. Cut it to one sentence. Chief picked this one from 35 candidates on 2026-09-29:
 
 > **Nobody has to be evil when everyone does their job.**
 
@@ -38,7 +38,7 @@ You will rebuild OVEREXITOUT's theme in four steps. Keep the [reference](2-refer
 3. Do Tori's pair, Interpretation versus Senses. Write it as a question.
 4. Do Anna's pair, Circumstances versus Situation.
 5. Do the relationship pair, Suspicion versus Evidence.
-6. Compare with the reference's rails table. Your wording may differ; the Chief handpicked the plain words.
+6. Compare with the reference's rails table. Your wording may differ; Chief handpicked the plain words.
 7. Read the four together. They should sum to the controlling idea: the world forecasts, Tori trusts her eyes, Anna wins as dealt, the rivalry settles whose account survives.
 
 ## Step 3: step the value scale

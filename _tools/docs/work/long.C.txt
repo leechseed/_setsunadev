@@ -1,0 +1,229 @@
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/how_to_use_goon_room/1-concept.md
+- The writer tags as the work goes, and the tag marks what the passage may become: canon, a method update, a story update, a test, or a keeper.
+- See the [reference](2-reference.md) for every field and tag, the [how-to](3-how-to.md) for the tasks, and the [tutorial](4-tutorial.md) for a first session.
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_00_bold_venture_design_system/1-concept.md
+- **What it does:** explains why one design system governs all Bold Venture output and how the Roster and the token tiers fit together
+- The **Bold Venture Design System** is the mandatory visual and interaction standard for all digital output under the Bold Venture umbrella.
+- The Astro palettes remain only as legacy infrastructure: the grey ramp for chrome, and the status system, which the source calls sacred.
+- The adhesive rule says every surface carries at least one identity element, and the rose quota says a rose-family hue holds a top-two role on every branded surface.
+- Version 1.0.0 (2026-03-09) was the wholesale Astro adaptation, with 15 hues, dark and light themes, a six-level status system, 18 typography styles, a 15-step spacing scale, and a 40-component inventory.
+- Version 2.0.1 (2026-10-04, BOLO 100) repaired the frontmatter, added `trunk: ORANGE` and the scope line, and changed no design content.
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_00_bold_venture_design_system/2-reference.md
+- **Who it's for:** a builder or designer looking up a token, color, component, status rule, or pattern in the design system
+- The purpose line: a Command-wide base tool, not part of the storytelling stack; the mandatory visual and interaction standard for all Bold Venture digital output, adapted wholesale from Astro UXDS v7 with Bold Venture naming.
+- **The adhesive rule:** every surface in every register carries at least one identity element: the mark in rose, a rose-black ground, or a flesh moment.
+- Therefore ambers and golds are legal only (a) above flesh luminance, or (b) as small source-motivated accents on dark grounds (candle, lamp, foil).
+- The light theme is the DUST register: base `#F3F4F6`, surface `#FFFFFF`, interactive rose-700 `#8A1F44`, text `#1F1B1E`, selected blush `#E5B8C2`, focus violet `#6D28D9`.
+- The upstream pipeline runs Figma design files into `tokens.json`, then **Token Transformer** into structured token sets, then **Style Dictionary** into distributable formats (CSS, SCSS, JSON, iOS Swift).
+- The Bold Venture fork replaces the reference-level palette with Bold Venture brand colors, replaces the **Roboto** typeface with a Bold Venture selection, and renames the `rux-` component prefix to `bvx-`.
+- - **Tier 1, Reference Tokens:** raw palette values with no semantic meaning; the complete color space, font size scale, spacing scale, and other primitives.
+- The **Token Naming Convention** follows up to nine levels: `[group]-[component]-[element]-[category]-[property]-[concept]-[variant]-[state]-[scale]`.
+- Light theme status (fill and required border; fills alone fail WCAG AA, so the darker border is mandatory), tokens `--status-symbol-color-fill-{level}` and `--status-symbol-color-border-{level}`: Critical `#ff2a04` / `#661102`
+- The Dark Theme is the default for all Bold Venture applications; all properties resolve to dark values when no theme class is applied.
+- The Light Theme activates with the `.light-theme` class on a wrapping element, which overrides System and Component Tokens by CSS specificity.
+- - Status flags use the status colors: ACTIVE flags show `--color-status-critical` (#ff3838), PENDING flags show `--color-status-serious` (#ffb302), FIRED_PRE_STORY flags show `--color-status-off` (#a4abb6).
+- A field that breaks a scale class constraint (an odd number where the variable needs even values) shows `--input-color-border-invalid` (#ff3838) and red error text with the constraint and the nearest valid value.
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_00_process_illustration_character_pipeline/1-concept.md
+- The rule across the flows is the same: derived statistics and flags are diagnostic, so a wrong result means wrong inputs, never a wrong flag.
+- The cascade re-runs flows A and B, then parts of C, then checks each state diff against the new base record.
+- Tier 2 and Tier 1 characters do not: a Tier 2 character gets an element signature and relational roles from the integration protocol, plus a partial chart, and the Step 1 gate checks what the tier requires.
+- The source ties each flow to a doc module: A to the Dramatica ingest template and integration protocol, B to the DAI and astrology ingest template, C to the Step 1 source verification protocol, and D to the character state architecture.
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_00_process_illustration_character_pipeline/2-reference.md
+- **Who it's for:** a narrative designer looking up a flow, step, decision point, or the next action in the character pipeline
+- The source has type `ssot_00_foundations`, category process_illustration, version 1.0.1, module of `ssot_02_character_systems_vertical_slice`, tier operations, trunk BLACK, last updated 2026-10-04.
+- - **Flow C:** Step 1 source verification gate (PASS or FAIL/BLOCKED), then Step 2 Tier 1 assignment, Step 3 Tier 2 derivation, Step 4 Tier 3 population, Step 5 derived stats, Step 6 flag evaluation, Step 7 structured data block.
+- - **Flow D:** the structured data block is the base record; a fabula event (`event_id`) and the base record compute a state diff, which yields a checkpoint (.md).
+- The order follows the form's extraction priority: Section 1, then 4, then 3 and 2, then 6, 5 and 7, with Section 8 as the log.
+- Extract 3: Character Report to Section 3 (the eight element fields and the meaning statement), then Section 2 (structural role, archetype, resolve, growth, approach, mental sex).
+- - **DP-B3: Q** The minimum viable chart is Sections 1 to 5 and 8 to 10: the Sun, Moon, Mercury, Venus, Mars, Saturn and Ascendant signs, at least three aspects, houses for those seven planets, the chart summary and the feed map.
+- It consumes both locked ingest templates plus the authoritative document and produces the complete 12-layer character record with derived statistics, flags, and a structured data block.
+- **Step 1, Source Verification:** Component 1 (authoritative doc, 7 checks), Component 2 (Dramatica ingest, 9 checks), Component 3 (astrology ingest, 8 checks).
+- **Step 4, Tier 3 population** (L7 to L12 variable stacks): mark [INFERRED] where the source is silent; cite `setting_ref` where the setting has an S4, S6 or S8 entry.
+- Yellow means Components 1 and 2 pass and Component 3 is at minimum_viable; chart-fed values carry `[ASTROLOGY_PENDING]` and the block stays draft until the chart locks and the Feed Validation Checklist passes.
+- The source's example: CORE=13, VITAL=14, SOCIAL=10 should read as Q This gate prevents downstream waste, since every later layer builds on Tier 1.
+- A positive Stress Threshold for a character who operates past their limit, or a low Truth Exposure Index for a maximally legible character, means something is wrong upstream.
+- - **DP-C4: Q** A flag that fires when it should not, or fails to fire when it should, indicates a schema inconsistency between the trigger condition and the layer values.
+- Static or dynamic follows the state architecture's Decision Test: would the value differ if the character froze at two points in the narrative?
+- Create the checkpoint: (1) set required fields (`character_id`, `state_id`, `origin_event` = the fabula `event_id`, `told_at` time codes, `base_record_version`); (2) list MODIFIED_VALUES under `state_diffs`, Dynamic fields only, only values that differ from base; (3) recompute MODIFIED_DERIVED; (4) re-evaluate MODIFIED_FLAGS; (5) write STATE_NOTE (2 to 5 sentences of justification); (6) add ASTROLOGY_OVERLAY if transits or progressions are active.
+- A doc module, such as the Step 1 gate or the state architecture, is a step inside Flows A to D and is not activated here (see `📐 ssot_00_module_architecture.md`).
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_00_process_illustration_character_pipeline/3-how-to.md
+- Fill the throughline sections the character's roles call for: OS to Section 6 (every character), IC to Section 5, RS principal to Section 7.
+- Complete Sections 1 to 5 and 8 to 10: the seven signs, at least three aspects, houses for the seven planets, the summary, and the feed map.
+- Run the Step 1 gate: seven checks on the authoritative document, nine on the Dramatica ingest, eight on the astrology ingest.
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_00_process_illustration_character_pipeline/4-tutorial.md
+- **What it does:** walks the source's own checks and examples from the Flow A gate through Flow C stats to a Flow D diff
+- Fill the header, then Section 1 from the Story Dynamics Report, Section 4 from the MC Theme Report, and Sections 3 and 2 from the Character Report.
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_05_operations_development_standard/1-concept.md
+- **Who it's for:** Chief or an agent who runs work inside a session and wants to know why the loop has its stages
+- The **Development Standard** states how one exchange between Chief and Claude becomes a built thing, from a single turn to a project.
+- The first failure is **the stall pattern**: a finished design blocked on one unanswered decision, then rebuilt from scratch later, because nobody named and dated the block.
+- The second is its cousin: work built before the order was confirmed, which spends effort on a shared image that was never shared.
+- Five outside parents describe pieces of it: the ISO/IEC/IEEE 12207 and 15288 life-cycle standards, the Agile Manifesto with Scrum's inspect-and-adapt, Deming's PDCA, Boyd's OODA, and MCDP 6.
+- The rules say: confirm the order before building, write the tasking the same turn, end a stall with a ruling, run defaults marked provisional, use one reviewer, keep the abort line, land every increment as a FRAGO, close with one word, and use the Command format on every transmission.
+- It promotes to canonical after two project uses, and any rule unused across those uses is struck at the next revision.
+- The loop is the engagement-level cycle running inside the project flow's phases, and the SOP's blocks are the loop's orient stage.
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_05_operations_development_standard/2-reference.md
+- - **ISO/IEC/IEEE 12207:2017 and 15288:** life-cycle process standards that name the iterative and incremental model as a standing process pattern.
+- - **The Agile Manifesto's principles and Scrum's inspect-and-adapt:** deliver on a short cycle, inspect, adapt; transparency, inspection, and adaptation are the three pillars.
+- The Command's three grains: the **increment** is one turn's delivery, recorded as a FRAGO onto the sheet; the **iteration** is one session, closed by Oscar Mike; the **release** is a project's gate, run inside the project flow.
+- - **Break-break / buttonhook back** parks the current stage where it stands and opens a detour; buttonhook back returns unprompted, restating where the loop was.
+- DOCTRINE 0 is the promotion mechanic: v0.1 working, promotes to canonical after two project uses, and any rule unused across those uses is struck at the next revision.
+- The board ran under the formation (BOLO 54): three specialists read disjoint sources with no cross-talk, then one script reviewer ran at the fan-in.
+- Each specialist fixed its own finding; the main line stripped one stray key by hand; the third pass cleared; the board republished to its standing page.
+- BOLO 53 was tabled 2026-09-12 and opened 2026-09-15 on the spoken word Q This document is that opening's first increment, built by one specialist (DRAFT) at gear 1, as Rule 7 requires.
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_05_operations_development_standard/3-how-to.md
+- Look for its evidence in the place the table names (transcript, BOLO.md, the sheet's Log, STATE.md, or git log).
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_05_operations_goon_room_protocol/2-reference.md
+- The version history holds two rows: 1.0.0 (2026-02-12, initial protocol) and 1.1.0 (2026-02-12, mandatory triple-dash YAML boundaries).
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_05_operations_pm_holdings_inventory/1-concept.md
+- The instruments are a charter, an assumption log, a decision ledger, a task register, a portfolio board, stage gates, a document container, and the Command style.
+- The inventory groups holdings into five kinds: PMBOK and PMI material, Marine Corps doctrine used as PM method, the Pyramid Principle and answer-first doctrine, templates and registries and gates, and the Ultrasin master registry format.
+- It flags the known gaps: the Pyramid Principle source text, seven of eleven MCDP PDFs, and the DOCTRINE-0 ratification, which later happened.
+- Section 7 says to promote the four-domains lifecycle into an SSOT, strip the charter and assumption log into blanks, generalise the gate pattern, and adopt the registry's status flags and ledger.
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_05_operations_pm_holdings_inventory/2-reference.md
+- Its shape runs: Goal Layer (gates), Systems Registry (§A to §M one-liners pointing at deep docs), Cross-System Principles, Open Decisions Ledger (`# | Decision | Blocking?`), Chat Census (distill priority H/M/L), Known Gaps, Maintenance.
+- - **Finished:** the six-phase lifecycle and gates (four-domains artifact), the PMBOK-7 mapping, the charter instance, the assumption log, the decision ledger (STATE and registry), the task register (BOLO), the portfolio board (PROJECTS), backlog discipline (oscar-mike), session handoff (Ready Rack), stage gates (lab venture), the document container (SSOT template), Command style (Marine standard and SOP §7), 11 MCDP summaries (numbering drift on 4 and 8).
+- - **Missing:** one document that says how a project runs here; blank charter, gate, and close-out templates (the charter is an instance); a project lifecycle in the repo proper; a sprint/cadence layer beyond the CDPR paragraph; the DOCTRINE-0 ratification (the promotion mechanic).
+- - **Known gaps already flagged:** the Pyramid Principle source text (BVX.1107 reserved); 7 of 11 MCDP PDFs (BOLO 1), where summaries exist for all 11 and the PDFs feed the catalog, not the method; DOCTRINE-0 unratified.
+- The path: promote the four-domains six-phase lifecycle into a `05_OPERATIONS` SSOT; strip the BVIPDS charter and assumption log into blanks; generalise the G1/G2/G3 gate pattern; adopt the registry's five-flag status and `# | Decision | Blocking?` ledger as the schema.
+- Of its six conversations, four are already in section 1 (PMBOK study guides, the BVI charter, WBS, the 3D-printing market entry) and one is covered by output (the SPINDLE master plan).
+- It is the adult-industry entry consult: creator-led economics, LTV:CAC, §2257, Visa VAMP, three capital tiers, flagship to network, with the third-party repository assessed as funnel-only.
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_05_operations_pm_holdings_inventory/3-how-to.md
+- Name the instrument you need: a charter, assumption log, decision ledger, task register, portfolio board, gate sheet, document container, or style guide.
+- Open the reference page and find the matching section: PMBOK material (1), Marine doctrine (2), answer-first (3), templates and gates (4), or the Ultrasin registry (5).
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_05_operations_pm_holdings_inventory/4-tutorial.md
+- You will repeat the move the inventory made on 2026-09-03: read the finding, pick the holdings, and arrive at the standard flow.
+- It holds a full-lifecycle doctrine: Phase 0 Problem Framing, 1 Concept and Intent, 2 Design and War-Gaming, 3 Vertical Slice, 4 Production, then close, with a decision gate at each boundary.
+- It lists four moves: promote the lifecycle into an SSOT, strip the charter and log into blanks, generalise the G1/G2/G3 gates, and adopt the registry's flags and ledger.
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_05_operations_project_flow/1-concept.md
+- It assembles instruments that already exist into one flow: the six-phase lifecycle of the Bold Venture Development Doctrine, the brief, the gate, the decision ledger, and the session protocol.
+- A HOLD names the blocking decision, the decider, and the date it converts to a call, because an unnamed hold is the stall pattern.
+- DOCTRINE 0, ratified 2026-09-03, is its promotion mechanic: it earns canonical status after two project uses, and a rule unused across two projects is struck at the next revision.
+- The flow's controlling idea comes from MCDP 6: control is the feedback returning from the action, not the orders going out.
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_05_operations_project_flow/2-reference.md
+- **Who it's for:** an agent or Chief looking up a phase, brief section, gate rule, instrument, or size in the project flow
+- MCDP 1-2 supplies the levels: **campaign = project, operation = session, engagement = task.** Every project carries one **end state** (in policy terms: what the finished thing changes in the world), one **intent** (the Q that outlasts any task), and one declared **mode**:
+- - **Erosion:** raise the value of the position over time until it yields; victory is defined by a threshold; the main effort may sit outside the build.
+- A plan without four components is not a plan (MCDP 5): **desired outcome with intent, actions, resources, a control process.** The brief carries those four across eleven sections.
+- - **Ends-means reconciliation (MCDP 1-1):** when resources fall short, cut the end state or seek more; when the position is stronger than expected, expand.
+- - **HOLD:** allowed only with the single blocking decision named, the decider named, and the date the hold converts to a call.
+- **Launch with what is in hand.** The flow runs from the current repo and kit, or it is not the flow.
+- **Run sessions under the SOP.** Sit rep opens, how copy closes orders, boresight when spoken, BOLO capture the same turn, ENDEX closes with the cache note and the STATE update.
+- **Close.** Exit criteria true, then the P6 AAR, then registries updated, the brief marked complete, and the project's cards swept from oscar-mike.
+- [date]`, then sections 1 End state and intent (End state, Intent), 2 Success criteria, 3 Scope (In, Out, Boundary rule), 4 Decomposition (workstream to work packages of one session or less), 5 Phases and gates (table M, Phase, Gate condition (event), Deliverables), 6 Sustainment line (Consumes, Runway, Attainable, Disruptions planned for: two), 7 Assumptions and risks (table A, Assumption, Category, Impact, Risk if false, Validation, Status), 8 Information line (Audiences, Narrative, Deny list, Measure), 9 Control process (Sit rep cadence, Decision points, Replan triggers), 10 Exit and termination (Complete when, Killed or parked when, Transition), 11 Authority and AI model (Commander: Chief, full.
+- The row format is `| A-00n | [statement believed true] | Business / Environmental / Process / Technical | §[brief sections] | [what breaks] | [how and when tested] | OPEN |`.
+- The flow adds what it lacked: a declared mode, a sustainment line with runway, an information line, and a hold rule with a conversion date.
+- An **L-size** venture in two modes: **annihilation** for the build (the persona, the season beat sheet, the launch library shipped complete) and **erosion** for the climb (monthly revenue gates until the exit threshold).
+- Its open decisions sit in the brief's ledger, with the boresight hold recorded as a HOLD carrying a decider and a conversion date.
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_05_operations_retrieval_dossier_protocol/1-concept.md
+- A dossier is **decision-grade** when it meets six conditions: it classifies, finds duplicates and drift, extracts recurring constraints, enumerates gaps, ranks actions with impact and complexity, and ends with directives.
+- It uses directive verbs because the reader of a dossier is an operator about to act: Consolidate, Canonicalize, Deprecate, Extract, Refactor, Archive.
+- The two examples in the source show the typical shape of a conclusion: collapse drifted copies into one canonical file, and split methodology from project application.
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_05_operations_retrieval_dossier_protocol/2-reference.md
+- A **Retrieval Dossier** is an operational analysis output that converts noisy retrieval results into structured signal, explicit risks, and prioritized operator directives.
+- The agent outputs **Document C (Dossier)**, a decision-grade dossier that answers one question: what must the operator do with this dataset.
+- The dossier concludes with directives similar to: canonicalize one prompt as v3; extract common hard rules into a standalone doctrine file; deprecate legacy copies and replace with wikilinks; add version headers to all surviving templates; create a template registry index.
+- The dossier concludes with directives similar to: split methodology (SSOT) from project application (Authoritative); merge all YAML rules into a single canonical Q file; move environment notes into operations protocols; add dependencies wikilinks across all operational documents; create a lifecycle policy of Draft, Spec, Locked, Canonical, Deprecated.
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_05_operations_retrieval_dossier_protocol/4-tutorial.md
+- You will run the protocol on the source's first example: a batch of prompt templates that repeat the same rules with minor version differences.
+- The agent groups the templates by function and finds the drift: the same rules (Q Q Q) repeated across copies with minor version differences.
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_05_operations_standards_ladder/1-concept.md
+- The Command keeps it as a tag on nodes and charters, such as the BOLO 24 charter or a persona sheet.
+- The filing table records which documents carry it, and a flat index shows where documents govern, depend, and cite outside bodies.
+- The next document written in the Command carries the tag from birth, and a document found without one is filed at the next sit rep.
+- The source's frontmatter stamps 1.0.0 on 2026-10-04 (BOLO 100, Chief: Q), while its version history stops at 0.2.2.
+- The index also names its own findings: BLACK and DARKROOM have no governing document, and twelve of the twenty-six filed documents have no outside parent.
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_05_operations_standards_ladder/2-reference.md
+- **Who it's for:** an agent or Chief looking up a rung, the deciding rule, the tag, a filed document, or an index row
+- The source has type `ssot_procedure`, category operations, frontmatter version 1.0.0 (stamped 2026-10-04, BOLO 100, Chief: Q), last updated 2026-10-04.
+- In the Command a spec is a node or a charter: the BOLO 24 charter, every canon node's invariants (Touchstones), a persona sheet.
+- The index links all 26 filed Command documents to the level or project they govern, to the filed documents they depend on, and to their outside parents in the standards register.
+- - Five of the eleven MCDP one-sheets (MIL.02, MIL.04, MIL.05, MIL.06, MIL.10) are named by no other filed document's frontmatter.
+- - The Command's generic handbook rung is empty; handbooks sit only at the project level or govern the unbuilt MCDP Doctrine Browser.
+- - Trash Land and ASTRO7EX have no named standards-body entity yet; both spec nodes record the body as a working title.
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_05_operations_standards_ladder/4-tutorial.md
+- You will classify a document the way the ladder's first filing pass did, using a document the source files: the Development Standard.
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_SSOT_CREATION/1-concept.md
+- It grew from 1.0.0 on 2026-02-10 to 1.8.0 on 2026-02-12 as the Obsidian metadata problem surfaced: 1.7.0 added metadata troubleshooting, and 1.8.0 integrated the Manual UI Kickstart Protocol.
+- The text ends with a chat-style pro-tip about the Templater plugin, which the source says could automate the dash trick, and a line asking for the next document.
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_SSOT_CREATION/2-reference.md
+- If the YAML shows as a code block instead of the Properties UI, the writer runs the Kickstart Protocol (next component).
+- The source also carries a closing Q (use the Templater plugin to automate the kickstart) and a three-row version history: 1.0.0 (initial Marine Corps standard), 1.7.0 (metadata troubleshooting), 1.8.0 (Manual UI Kickstart).
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_ai_instruction_protocol/1-concept.md
+- A later ruling, the BOLO 92 merge calls recorded in the 06.2 style guide, allowed contractions and changed the fixed skeleton.
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_ai_instruction_protocol/4-tutorial.md
+- The source holds no full worked example, so this lesson uses a made-up concept: a one-line note about how a team files its weekly summaries.
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_template_prompt_for_summarizing_novels_and_books/1-concept.md
+- The **Template Prompt for Summarizing Novels and Books** consolidates every summarization prompt pattern found across the vault into one canonical template.
+- The writer appends modular add-ons for the kind of book: a narratology deep dive, a Dramatica extension, a knowledgebase formatter, or a key-contributions extractor.
+- The document derives from batch extraction across several vaults and builds, named in its header: `.ASTRO7EX.SYNC.JOPLIN`, `OVER_EXIT_OUT_OBSIDIAN`, `_wicked_figures_dir`, `_DIRECTORY OF DIR`, Logseq journals, and RC builds.
+- Its frontmatter was stamped canonical on 2026-10-04 (BOLO 100 D6), while the body still carries Q The reference sources directive lists the lenses a summary may use: McKee, Bloom, Campbell, Lyons, Lukeman, Edgerton, Maass, Alderson and Rosenfeld, Iglesias, late-2000s sci-fi anime archetypes, and Narrative Astrology.
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_template_prompt_for_summarizing_novels_and_books/2-reference.md
+- **Who it's for:** a writer or agent looking up a rule, add-on, section, pass, or usage rule of the book-summary template
+- The body header names it a Single Source of Truth with scope Q derived from batch extraction across `.ASTRO7EX.SYNC.JOPLIN`, `OVER_EXIT_OUT_OBSIDIAN`, `_wicked_figures_dir`, `_DIRECTORY OF DIR`, Logseq journals, and RC builds.
+- It replaces the scattered Q prompt, the Q report template instructions, the wicked_figures process order, and the MCDP doctrinal summary spec.
+- For each concept, model, or framework the summarizer gives a short definition (1-2 sentences), an explanation of mechanics and internal logic, its relevance to a writer, and the lineage if the author builds on prior theorists.
+- - **Dramatica Summary:** one continuous paragraph, no bullets, mapping the material to the Overall Story, Main Character, Impact Character, and Relationship Story throughlines.
+- - **Dramatica-to-Narrative Translation Notes:** for each applicable element (Concern, Issue, Problem, Solution, Symptom, Response, Benchmark, Signpost), the note says whether the material illuminates, contradicts, or extends the current storyform.
+- - The output carries YAML front matter with `id` (auto-generate or blank), `title` (Q), `author`, `type: summary`, `source_type` (book, paper, article, or workbook), `tags`, `status: draft`, and `updated` (YYYY-MM-DD).
+- **Pass 5 — Split** (optional): if the output holds multiple discrete models or propositions, split them into individual `.md` files named `[author_last]_[model_short_name].md`.
+- When a task needs cross-referencing, the writer appends a Q block to the system prompt and edits the list per task.
+- It tells the summarizer to use the listed texts and authors as analytical lenses to reinforce, contextualize, or challenge claims, with bulleted examples.
+- The source's list: Robert McKee (*Story*); Harold Bloom (*Themes in American Literature*); Joseph Campbell (studies of myth); Jeff Lyons (*Rapid Story Development*, *Anatomy of a Premise Line*); Noah Lukeman (*The First Five Pages*); Les Edgerton (*Hooked*); Donald Maass (*The Emotional Craft of Fiction*); Martha Alderson and Jordan Rosenfeld (*Writing Deep Scenes*); Karl Iglesias (*Writing for Emotional Impact*); late 2000s sci-fi anime archetypes and tropes; Narrative Astrology (Natal Chart, Transits, Progressions).
+- **This document is the SSOT.** Nobody creates new summarization prompts elsewhere in the vault; a new pattern is added as a modular add-on in section 3.
+## ShroomsQ/_CANON/_DOCS/05_OPERATIONS/ssot_template_prompt_for_summarizing_novels_and_books/4-tutorial.md
+- You will run the template on one book from the source's own list of lenses: a screenwriting craft book such as McKee's *Story*.
+## ShroomsQ/_CANON/_DOCS/06_STYLE_GUIDES/ssot_06_1_prose_style/1-concept.md
+- 06.1 asks what must be true of a page of prose, in any IP, before anyone judges it on its own merits.
+- It draws on five rulings already made: the texture system's discourse layers, Modern Poetics, the medium grammars, the Touchstones register, and the genre system.
+## ShroomsQ/_CANON/_DOCS/06_STYLE_GUIDES/ssot_06_1_prose_style/2-reference.md
+- - **Two tempos:** story tempo (world time per beat) and audience tempo (beats per 1,000 words for prose), from the tracking system §7.
+- - **G3 conventions:** outsiders against an identity-shaping institution; the cult as container; the newcomer-versus-group induction beat; visibility as currency; belonging and selfhood trending opposite.
+## ShroomsQ/_CANON/_DOCS/06_STYLE_GUIDES/ssot_06_2_documents_style/1-concept.md
+- The naming rulings apply to every document, this one included: the plain register, the Command format, clickable file links, Touchstone, and the Command.
+- See the [reference](2-reference.md) for each rule, the [how-to](3-how-to.md) for tasks, and the [tutorial](4-tutorial.md) for a worked page.
+## ShroomsQ/_CANON/_DOCS/06_STYLE_GUIDES/ssot_06_2_documents_style/2-reference.md
+- - **Applied so far (2026-10-04):** the SOI (three passes, 46 entries rewritten), the sit rep page, and the DOPE SHEETs (header, writer briefs, a long-sentence check in the reviewer script).
+## ShroomsQ/_CANON/_DOCS/06_STYLE_GUIDES/ssot_06_2_documents_style/3-how-to.md
+- Pass two, words: for each sentence, ask who acts, whether the verb is active, whether any word can go, whether a literal reader could take the wrong branch, and whether the key word is at the end.
+## ShroomsQ/_CANON/_DOCS/06_STYLE_GUIDES/ssot_06_2_documents_style/4-tutorial.md
+- The source records one real worked case: on 2026-10-04 the writers applied the core to the SOI, the sit rep page and the DOPE SHEETs.
+## ShroomsQ/_CANON/_DOCS/06_STYLE_GUIDES/ssot_06_2a_writing_guide/1-concept.md
+- A fourth call split a stray Goon Room protocol out of this file into 05_OPERATIONS, so the guide holds one job.
+## ShroomsQ/_CANON/_DOCS/06_STYLE_GUIDES/ssot_06_2a_writing_guide/2-reference.md
+- Connects to: [06.2b markdown marking](../ssot_06_2b_markdown_marking/2-reference.md) for the reader's mark, and 06.2 rule 3.2 for the reasoning on contractions.
+## ShroomsQ/_CANON/_DOCS/06_STYLE_GUIDES/ssot_06_2b_markdown_marking/1-concept.md
+- A script reads the marks later and writes the sense into a vocabulary page, in the meaning the term has in that source.
+## ShroomsQ/_CANON/_DOCS/06_STYLE_GUIDES/ssot_06_2b_markdown_marking/2-reference.md
+- **Example 2: promotion.** The term `==commander's intent==` appears in MIL.01, MIL.08 and MIL.09 and receives its own note.
+## ShroomsQ/_CANON/_DOCS/06_STYLE_GUIDES/ssot_06_3_pages_style/1-concept.md
+- Learning pages for Chief ship as the head version: the sentence and the buttons, nothing else, and a score at the end.
+## ShroomsQ/_CANON/_DOCS/06_STYLE_GUIDES/ssot_06_3_pages_style/2-reference.md
+- - **Holds:** the ROSE anchor (`#8A1F44`), the FLESH ramp, the four registers (EMBER, PUNCH, DUST, NOIR), the Luminance Law, and the one-red ledger.
+- **Held sources.** The source also lists eleven tier-1 references from the Zotero shelf's 06.3 section, none yet read into a rule: BVX.0292, BVX.1191, BVX.0294, BVX.0295, BVX.1031, BVX.1042, BVX.1192, BVX.1047, BVX.1193, BVX.1103, BVX.0301.
+- **Pending rec (source OPEN):** when a page rule needs backing beyond memory, pull first from Harris, *Information Graphics* (BVX.1192), and Lidwell, Holden and Butler, *Universal Principles of Design* (BVX.0301).
+## ShroomsQ/_CANON/_DOCS/06_STYLE_GUIDES/ssot_06_3_pages_style/4-tutorial.md
+- Walk the seven rulings once: palette, thin chrome, hover layer, static Mermaid, standing URL, minimal learning tools (not needed here), and type.
+## ShroomsQ/_CANON/_DOCS/07_THEME_SYSTEMS/ssot_07_theme_system/1-concept.md
+- Each one is a face of the controlling idea, and each one's last step is the lie it tells about itself.
+## ShroomsQ/_CANON/_DOCS/07_THEME_SYSTEMS/ssot_07_theme_system/2-reference.md
+- **(b) The rails.** 3 to 5 debates, one per major point of view, each argued both sides across the whole story.
+- - Done-test: every scene's value turn (plot card value-in and value-out) names a step, and the steps read as a ladder.
+- - 1.3.0 cite: CRE.06 *Thematics: New Approaches* (Bremond, Landy and Pavel, 1995) backs the latent-theme line, the two motif checks and `meets`.
+- Every TV Tropes trope in the theme domain is keyed to rails R1 to R4 in the [trope register](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md).
+- **The rule:** a new Touchstone gets this row check against R1 to R4 the day it goes live, before any carded scene counts as bound by it.
+## ShroomsQ/_CANON/_DOCS/07_THEME_SYSTEMS/ssot_07_theme_system/4-tutorial.md
+- They should sum to the controlling idea: the world forecasts, Tori trusts her eyes, Anna wins as dealt, the rivalry settles whose account survives.
+## ShroomsQ/_CANON/_DOCS/08_TRACKING_SYSTEMS/ssot_08_tracking_system/1-concept.md
+- Cables gained a `provisional` orphan value for the case where both ends exist narratively but a time code is still unset.
+## ShroomsQ/_CANON/_DOCS/08_TRACKING_SYSTEMS/ssot_08_tracking_system/2-reference.md
+- - **Theme and trope hooks:** a trope is a track of `kind: trope`; its points use the trope's `id` as `subject.id`.
+## ShroomsQ/_CANON/_DOCS/09_WORLDBUILDING_SYSTEMS/ssot_09_worldbuilding_system/1-concept.md
+- None owns a clan, a style of building, a way of dressing, a vehicle, a custom or a school of thought.
+- The first catalog opens eight types, not twelve, because the fill rule says a type opens when a story needs it.
+## ShroomsQ/_CANON/_DOCS/09_WORLDBUILDING_SYSTEMS/ssot_09_worldbuilding_system/2-reference.md
+- Worldbuilding is the work of defining the shared things of a story's world (groups, styles, customs, tools, beliefs) and checking that they fit together with the places, people and events other systems hold.
+- Branches: Definition (infrastructures), Catalog (twelve type families), Lens (coherence tests), View (the world view; filters era, place, group, type), Boundary (thin by default, Kennedy counter-voice).
+- OPEN 8 closed it from BVX.0562's distill: Wolf's eight (maps, timelines, genealogies, nature, culture, language, mythology, philosophy) all land in the spine.
+- - **The lens, run 9/29:** script tests CT1, CT3, CT5, CT6, CT13 pass on the filled set; CT4 has no ruins yet; CT9 has no canon claims yet.
+- - **1.0 bar (SOP §5):** Shape, Shelf (27 books), Proof (DCUS), Ruled (OPEN 1 to 9), Wired (02, 03, 04, 08, tropes), Store (7 filled): all met.

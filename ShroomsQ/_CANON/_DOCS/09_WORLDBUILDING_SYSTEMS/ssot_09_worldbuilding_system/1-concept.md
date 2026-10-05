@@ -1,7 +1,7 @@
 ---
 title: "The worldbuilding system: concept"
 type: concept
-for: "A writer or the Chief who wants to understand why a world needs a catalog, a lens and a view"
+for: "A writer or Chief who wants to understand why a world needs a catalog, a lens and a view"
 does: "Explains why the worldbuilding system exists and how its catalog, tests and world view fit together"
 owner: Chief
 state: draft
@@ -10,7 +10,7 @@ source: ShroomsQ/_CANON/_SSOT/09_WORLDBUILDING_SYSTEMS/📐 ssot_09_worldbuildin
 source_version: 1.1.1
 ---
 
-**Who it's for:** a writer or the Chief who wants the why · **What it does:** explains why a world needs a catalog, a lens and a view · **Type:** concept
+**Who it's for:** a writer or Chief who wants the why · **What it does:** explains why a world needs a catalog, a lens and a view · **Type:** concept
 
 # The worldbuilding system: a world, defined once, built around a catalog
 
@@ -42,7 +42,7 @@ The catalog is why 09 counts as a system. Drop the catalog and 09 becomes a lens
 
 A system owns its data. A layer owns data that attaches across systems, like the trope layer. A lens owns no data. A view is a read-only arrangement of records other files own.
 
-The Chief ruled these four words on 2026-09-29. The coherence tests are a lens. The world view is a view.
+Chief ruled these four words on 2026-09-29. The coherence tests are a lens. The world view is a view.
 
 ## Ten infrastructures tell a world what it must answer for
 
@@ -74,7 +74,7 @@ Each row links to the file that owns the fact. That read-only rule keeps the vie
 
 The worldbuilding system began as the BOLO 93 first draft on 2026-09-29. It held a definition, three mind models, ten infrastructures, sixteen coherence tests, fifteen boundary warnings and a twelve-type catalog.
 
-The Chief ruled OPEN calls 1 to 7 as recommended the same day. The first catalog opens eight types, not twelve, because the fill rule says a type opens when a story needs it.
+Chief ruled OPEN calls 1 to 7 as recommended the same day. The first catalog opens eight types, not twelve, because the fill rule says a type opens when a story needs it.
 
 The DCUS proof then filled seven entries from canon. The proof found that the Tremor Cult was misfiled as a belief. It is a story, so its entry is retired and its id is never reused.
 

@@ -1,7 +1,7 @@
 ---
 title: "The theme system: concept"
 type: concept
-for: "A writer or the Chief who wants to understand why theme is built from four parts and how it holds a story's argument"
+for: "A writer or Chief who wants to understand why theme is built from four parts and how it holds a story's argument"
 does: "Explains why the theme system exists and how its four parts fit together"
 owner: Chief
 state: draft
@@ -10,7 +10,7 @@ source: ShroomsQ/_CANON/_SSOT/07_THEME_SYSTEMS/📐 ssot_07_theme_system.md
 source_version: 1.3.1
 ---
 
-**Who it's for:** a writer or the Chief who wants the why behind theme · **What it does:** explains why theme is one argument built from four parts · **Type:** concept
+**Who it's for:** a writer or Chief who wants the why behind theme · **What it does:** explains why theme is one argument built from four parts · **Type:** concept
 
 # The theme system: one argument, four parts
 
@@ -28,7 +28,7 @@ The controlling idea is one sentence: *[value] happens because [cause]*. It foll
 
 A second sentence, the mechanism line, restates the how in the story's own idiom. The claim then reads as something the world does, not an abstraction.
 
-OVEREXITOUT's idea is "Nobody has to be evil when everyone does their job." The Chief ruled it on 2026-09-29, picked from 35 candidates.
+OVEREXITOUT's idea is "Nobody has to be evil when everyone does their job." Chief ruled it on 2026-09-29, picked from 35 candidates.
 
 The mechanism line says how the system does it: "It doesn't find out who you are. It trains you, measures you, then calls the result your nature." That line is Foucault's biopower register, distilled as MSX.36.
 
@@ -84,13 +84,13 @@ The rider (Stangneth, PHI.04) limits the idea. It describes what the system allo
 
 The theme system started as a bootstrap on 2026-09-29. It held one ruled sentence, one mechanism line and a storyform map.
 
-The same day the Chief walked four debates, one value scale and three motifs. He picked each plain-word line by hand, and he amended one motif: the Feed replaced the legibility violation.
+The same day Chief walked four debates, one value scale and three motifs. He picked each plain-word line by hand, and he amended one motif: the Feed replaced the legibility violation.
 
 Version 1.0.0 added the general method ahead of any single story. OVEREXITOUT became the worked instance. The handshake with the Touchstones closed the last open call.
 
 The 9/24 research verdict still holds. Foucault supplies the mechanism: power produces the person. The moral claim that ordinary people carry out evil belongs to Arendt, Bauman, Milgram and Browning.
 
-The ruled sentence is that moral claim. The mechanism line is Foucault's. The Chief's 9/24 phrasing, "the system enables evil; the person is a symptom," stays on record as the Overall Story's world-claim.
+The ruled sentence is that moral claim. The mechanism line is Foucault's. Chief's 9/24 phrasing, "the system enables evil; the person is a symptom," stays on record as the Overall Story's world-claim.
 
 EVIL CHECK is a second story in the same universe. Its controlling idea is parked for wave 2. The method applies to it unchanged when wave 2 opens.
 

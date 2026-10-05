@@ -245,7 +245,7 @@ Marked "catalog fills (phase 2)". None is filled.
 | Tremor Cult (RETIRED 9/29; a story, not a belief) | BEL |
 | Sync Cult (held) | BEL |
 
-> **OPEN:** the seed entries and the catalog fill wait for phase 2, when the Chief orders the catalog built.
+> **OPEN:** the seed entries and the catalog fill wait for phase 2, when Chief orders the catalog built.
 
 ## THE WORLD VIEW
 
