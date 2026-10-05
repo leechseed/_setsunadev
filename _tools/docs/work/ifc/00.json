@@ -332,7 +332,7 @@
   "trigger": "when the ladder's rungs are fixed",
   "where": "Pattern Catalog: Divisor Chains",
   "status": "proposed",
-  "evidence": "Defines the maximum nesting depth for hierarchical subdivisions.",
+  "evidence": "This defines the maximum nesting depth for hierarchical subdivisions.",
   "note": "The pattern library calls base 60 'one number base reused for every scale' and the scale ladder 'one ladder of scales that every pattern climbs'. Neither doc says how the two meet."
  },
  {
@@ -472,7 +472,7 @@
   "trigger": "when the application decides whether a module applies to a character",
   "where": "What a Module Is",
   "status": "built",
-  "evidence": "A tier requirement (minimum character tier that uses this module)",
+  "evidence": "(minimum character tier that uses this module)",
   "note": "The character's tier is META.tier in the variable registry; the architecture does not name the field."
  },
  {
@@ -752,7 +752,7 @@
   "trigger": "when the registry mirrors the storyform fields",
   "where": "Ownership Rule and L12 DRAMATICA EXTENDED",
   "status": "built",
-  "evidence": "Its field list lives in the Dramatica integration protocol, and this registry mirrors it.",
+  "evidence": "L12 FUNCTION is fed from the storyform.",
   "note": ""
  },
  {
