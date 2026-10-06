@@ -33,7 +33,7 @@
   },
   "face": {
     "slots": {
-      "idle": "c:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\idle.jpg",
+      "idle": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\idle.gif",
       "listening": "c:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\listening.mp4",
       "thinking": "c:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\thinking.mp4",
       "talking": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\talking.png"
@@ -41,7 +41,8 @@
     "pools": {
       "idle": [
         "idle.png",
-        "1emigoon.jpg"
+        "1emigoon.jpg",
+        "2biia75qqwph1.gif"
       ],
       "listening": [
         "listening.png",
