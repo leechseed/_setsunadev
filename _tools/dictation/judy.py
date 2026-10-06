@@ -14,7 +14,7 @@ BOLO 56. Everything before this was a part; this is JUDY.
     python judy.py --type "text"   # skip the mic, test brain + mouth
 
 The face is a frameless always-on-top window. Drag it anywhere; it remembers where.
-Right-click it to quit.
+Shift+right-click it to quit; a plain right-click does nothing (Chief 10/6: one stray click took her down).
 
 Two triggers, either or both: the keyboard hotkey, and a MIDI pad once one has been
 learned (`python midipad.py --learn`). Both drive the same two calls.
@@ -105,7 +105,7 @@ class Face:
         self._paint("idle")
         self._place(size)
         self._drag()
-        self.root.bind("<Button-3>", lambda e: self.stop())
+        self.root.bind("<Shift-Button-3>", lambda e: self.stop())   # 10/6: plain right-click no longer quits
         self.root.after(80, self._pump)
         self.root.after(1500, self._watch)
 
@@ -598,7 +598,7 @@ class Loop:
         if self.session:
             extra += (" · talk drops the words in the box, the SEND pad sends"
                       if not (cfg().get("session") or {}).get("send_on_talk") else " · talk sends on release")
-        print(f"\n  ready · {shape}{extra} · right-click the face to quit\n")
+        print(f"\n  ready · {shape}{extra} · shift+right-click the face to quit\n")
 
 
 def main():
