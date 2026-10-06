@@ -286,3 +286,36 @@ A session that answers "sit rep" without all five has not answered it. **Under t
 | goon time · it's goon time · goontime | **"JUDY, it's goon time"** — the full-brat attitude (RULED 9/17) |
 | S-O-Y · soy · so I · S O I | **SOI** (coded 9/17 — the recognizer spells the book as the bean) |
 | year ranges spoken as "twenty twelve … two thousand five … twenty twenty too" | check against the doc that holds the range before reading a number |
+| all wreck · all wrecked · all rek | **"all rec"**: every recommendation in the last reply is ruled (coded 10/6) |
+| chat to BT · chat chit · chat GBT | **ChatGPT** (coded 10/6) |
+| Fabio · fabulous system · the Fabio | **the fabula** (coded 10/6) |
+
+---
+
+## 9 · The INTEL CYCLE: from sources to a system
+
+**RULED 2026-10-06** (BOLO 108, Chief: "all rec"; the name from the bench INTEL CYCLE · FORGE · REFINERY). Chief asked: "that … pattern of finding the books, researching it, and then … make it a system. Do we have that? What is that even called?" The INTEL CYCLE is that pattern, written once. Lineage: MCDP 2 *Intelligence*, the cycle of collection, processing, production and use. INTEL stays the product; the INTEL CYCLE is the loop that makes it.
+
+**The loop: two lanes in, one lane out.**
+
+- **Lane A, the books.** PRIMER (pull the tier-one 101 books of a field) → Chief acquires (Chief finds the PDFs; Claude never downloads books) → Zotero (the book gets its BVX id) → DIGEST → DOCTRINE.
+- **Lane B, Chief's own material.** INTAKE (the source lands in `_PRIVATE/intake/`) → CLEAN → DIGEST → DOCTRINE. This is the intake system, BOLO 107.
+- **DIGEST** (was "distill"). Lane A makes one BVX-LEARN one-sheet per book: "distill, don't summarize." Lane B makes the research packet, one plain list of nuggets per source.
+- **DOCTRINE** (was "grammar"). The digests become a system's working language: a system doc, its fields, its rules. The four steps run it (RECON · ORDER · EXECUTE · CONSOLIDATE).
+
+**CLEAN, Lane B only.** A script removes exact duplicates and merges the vaults that overlap (Obsidian carries a Joplin import). The script flags lineage words: Inner Spiral · Red Hills · Skeeter Creek · Red Stick Creek · Ariel (read as Tori). The script drops empty and junk files. Chief rules the judgment calls; the script never decides what is good.
+
+**The four bins.** A Payload Specialist reads each note and files it in one bin.
+
+- **canon:** a story fact (who, what, when, where in the world).
+- **method:** how to tell a story, or how to run the Command.
+- **inspiration:** a reference, a vibe, a source to chase.
+- **dead:** nothing to keep. The note stays on disk; the packet leaves it out.
+
+**The nugget.** One line per keeper. Each nugget names its bin, the system it feeds (00–09), its source path, and a confidence level: `direct_quote` · `inferred` · `uncertain` (the fabula's own scale). A detail from an old name is lineage, not canon, until Chief rules it in.
+
+**The order of sources (Lane B).** What is on disk first, because it waits on nothing: Obsidian · Joplin · Logseq · `_devlog`. Then the phone notes (Apple Notes, year by year; BOLO 91 did 2025). Then the ChatGPT export. Then old scripts, films and songs. Then paper and the bookshelf, from Chief's phone photos. Book spines go on the BOOK HUNT list.
+
+**The formation** (BOLO 54). A script counts and cleans (zero tokens). Payload Specialists (haiku) read batches and judge by reading, never by similarity scripts. One Mission Specialist (sonnet) writes the packet. A script proves every note was read. Chief rules nuggets in batches by one word, the Block V pattern.
+
+**Privacy.** Raw sources and packets live in `_PRIVATE/` (git-ignored). BOLO, STATE and `_CACHE` carry generic lines only: counts, stages, never content.

@@ -1156,5 +1156,19 @@
   "st": "ruled",
   "d": "Opens a goon session, the second agent on the local model. RULED 9/20 (BOLO 74); she was Naked until 05:15, and \"Naked\" still reads as her. Spoken, Claude runs goon.cmd in the background with no questions: KoboldCpp runs the model and SillyTavern runs the chat. \"Naked, out\" stops it. JUDY stays up.",
   "w": "SOP.md §5"
+ },
+ "intel-cycle": {
+  "t": "INTEL CYCLE",
+  "k": "proword",
+  "st": "ruled",
+  "d": "The loop that turns sources into a system. RULED 10/6 (BOLO 108, \"all rec\"). Lane A, the books: PRIMER, Chief acquires, Zotero, DIGEST, DOCTRINE. Lane B, Chief's own material: INTAKE, CLEAN, DIGEST, DOCTRINE. Lineage: MCDP 2's intelligence cycle.",
+  "w": "SOP.md §9"
+ },
+ "intake": {
+  "t": "the intake",
+  "k": "system",
+  "st": "ruled",
+  "d": "Lane B of the [[intel-cycle|INTEL CYCLE]]: Chief's own notes, chats, scripts, films and songs, cleaned and distilled into research packets. RULED 10/6 (BOLO 107); it gates fabula phase 2. Raw files live in _PRIVATE/intake/.",
+  "w": "SOP.md §9 · _tools/intake/"
  }
 }

@@ -1,6 +1,6 @@
 {
- "edition": "2026-10-04",
- "effective": "2026-10-04 · until superseded by the next edition",
+ "edition": "2026-10-06",
+ "effective": "2026-10-06 · until superseded by the next edition",
  "supersedes": "edition 2026-10-03. The first page reviewed to the documentation SOP (BOLO 95, 3.4): facts, words, out loud. SOP.md remains canonical on any conflict.",
  "classification": "UNCLASSIFIED · public repo · nothing sensitive rides here; the challenge and countersign are referenced, never printed",
  "prepared_by": "Claude (every session)",
@@ -153,6 +153,10 @@
   {
    "date": "2026-10-04",
    "t": "**The first SOP review pass** (BOLO 95, 3.4): 46 entries rewritten plain, with stale facts fixed (JUDY's wire built · gear 6 = 16 · OPORD and ENDEX shown as retired). Arrows and dots swept from 26 entries so JUDY reads them clean. **Sensei** added as a proword entry. Edition 2026-10-04."
+  },
+  {
+   "date": "2026-10-06",
+   "t": "**The [[intel-cycle|INTEL CYCLE]]** ruled (BOLO 108, \"all rec\"): one loop from sources to a system, two lanes in. **[[intake|The intake]]** ruled as Lane B (BOLO 107); it gates fabula phase 2. SOP §9 written. Codebook: \"all wreck\" reads as all rec, \"chat to BT\" as ChatGPT, \"Fabio\" as the fabula. Edition 2026-10-06."
   }
  ],
  "reader": "Chief, and every Claude session",
