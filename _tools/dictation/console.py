@@ -749,6 +749,36 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self):
         path = self.path.split("?")[0]
+        if path == "/traffic/send":      # BOLO 116: the deck types into the VS Code chat box like a macro pad
+            if self.client_address[0] != "127.0.0.1":
+                return self._send(403, {"error": "local only"})
+            n = int(self.headers.get("Content-Length") or 0)
+            if n <= 0 or n > 2048:
+                return self._send(413, {"error": "body must be 1..2048 bytes"})
+            try:
+                text = str(json.loads(self.rfile.read(n).decode("utf-8")).get("text", "")).strip()[:600]
+            except Exception as e:
+                return self._send(400, {"error": f"bad json: {e}"})
+            if not text:
+                return self._send(400, {"error": "empty text"})
+            now = time.time()
+            if now - getattr(Handler, "_last_send", 0) < 1.0:
+                return self._send(429, {"error": "debounced"})
+            Handler._last_send = now
+
+            def _go(phrase=text):
+                try:
+                    import chirp, focus, ptt, keyboard
+                    chirp.play("open")
+                    focus.focus_claude()
+                    ptt.type_out(phrase)
+                    time.sleep(0.15)
+                    k = focus.send_key()
+                    keyboard.send(k) if "+" in k else (keyboard.press(k), time.sleep(0.03), keyboard.release(k))
+                except Exception as e:
+                    print(f"  ! traffic send failed: {e}")
+            threading.Thread(target=_go, daemon=True).start()
+            return self._send(200, {"ok": True})
         try:
             b = self._body()
         except Exception as e:

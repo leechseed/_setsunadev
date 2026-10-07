@@ -7,7 +7,7 @@ spoken tools over the wire. This script brings the local stations up, opens the 
 boards, and prints the station poll (GO / NO-GO with an address) for the sit rep header.
 The sit rep itself runs in the formation after this (skill: launch → sitrep).
 
-Usage:  python _tools/launch/launch.py [--no-pages] [--no-darkroom] [--no-stash] [--no-judy] [--no-faces] [--no-knobs] [--no-wire] [--json]
+Usage:  python _tools/launch/launch.py [--no-pages] [--no-darkroom] [--no-stash] [--no-judy] [--no-faces] [--no-deck][--no-knobs] [--no-wire] [--json]
 
 Safe to run twice: a live DARKROOM is reported, not restarted (its single-instance guard);
 a running JUDY session voice is reported, not restarted; a standalone JUDY (no --session)
@@ -24,6 +24,7 @@ PROBE = os.path.join(ROOT, "_tools", "dictation", "wire_probe.py")
 KNOBS = os.path.join(ROOT, "_tools", "dictation", "knobs.py")   # BOLO 62: the MPK knobs as scroll + zoom
 CONSOLE = os.path.join(ROOT, "_tools", "dictation", "console.py")   # JUDY's console; serves the face deck (10/4)
 FACES_URL = "http://127.0.0.1:8787/faces"
+DECK_URL = "http://127.0.0.1:8787/traffic"
 VIEW = os.path.join(ROOT, "_tools", "pages", "view.cmd")
 STASH_EXE = os.path.join("Q:\\", "fun", ".StashApp", "stash-win.exe")          # BOLO 75: Stash is a station (9/20); shutdown leaves it running
 STASH_CFG = os.path.join("Q:\\", "fun", ".StashApp", "config.yml")
@@ -194,6 +195,24 @@ def chromium_app_exe():
     return None
 
 
+def station_deck():
+    """BOLO 116: the Traffic deck (/traffic) opens beside the face deck, same way. The console is already up after FACES."""
+    try:
+        if not ping(DECK_URL):
+            return {"station": "DECK", "go": False, "addr": DECK_URL,
+                    "note": "console has no /traffic (an old console; restart it)"}
+        app = chromium_app_exe()
+        if app:
+            subprocess.Popen([app, "--app=" + DECK_URL], cwd=ROOT, stdin=subprocess.DEVNULL,
+                             stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        else:
+            subprocess.Popen(["cmd", "/c", VIEW, DECK_URL], cwd=ROOT, stdin=subprocess.DEVNULL,
+                             stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        return {"station": "DECK", "go": True, "addr": DECK_URL, "note": "opened"}
+    except Exception as e:
+        return {"station": "DECK", "go": False, "addr": DECK_URL, "note": "failed: %s" % e}
+
+
 def station_faces():
     """Chief, 10/4: JUDY's face deck comes up at every launch. The console (:8787) serves it;
     a live console is reported, not restarted. The deck opens as an app window when the default browser is Chrome/Edge (10/4), else a tab."""
@@ -293,6 +312,7 @@ def main():
     ap.add_argument("--no-judy", action="store_true")
     ap.add_argument("--no-nahimic", action="store_true")
     ap.add_argument("--no-faces", action="store_true")
+    ap.add_argument("--no-deck", action="store_true")
     ap.add_argument("--no-wire", action="store_true")
     ap.add_argument("--no-knobs", action="store_true")
     ap.add_argument("--json", action="store_true")
@@ -308,6 +328,8 @@ def main():
         rows.append(station_judy())
     if not a.no_faces:
         rows.append(station_faces())
+    if not a.no_deck and not a.no_faces:
+        rows.append(station_deck())
     if not a.no_knobs:
         rows.append(station_knobs())
     if not a.no_wire:
