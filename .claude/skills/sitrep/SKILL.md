@@ -66,7 +66,7 @@ Writes `boards/<date>.json`, builds `SITREP.html` + the fragment (path printed),
 https://claude.ai/code/artifact/aebe5f9c-9f2c-4cb8-abbf-714a0a6ea28a
 ```
 
-Pass it as `url`; never `read` the artifact first (a read dumps the page into context). The chat reply carries the link, Block 0 in three bullets, the leverage line, and one caveat line if the reviewer left advisory findings. No preamble, no questions, no re-derivation of what the specialists wrote.
+Pass it as `url`; never `read` the artifact first (a read dumps the page into context). The chat reply opens with **Left off** (one sentence) and **Start next: BOLO N** (one row, a five-word why) — ruled 10/6 — then carries the link, Block 0 in three bullets, the leverage line, and one caveat line if the reviewer left advisory findings. No preamble, no questions, no re-derivation of what the specialists wrote.
 
 ## Cost shape (why this order)
 

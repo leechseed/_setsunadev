@@ -43,4 +43,4 @@ Run the `sitrep` skill exactly as written (prep → three specialists at gear 1 
 
 ## 3 · The reply
 
-The station poll in a fenced block first, then the sit rep reply as the sitrep skill specifies (the link, Block 0 in three bullets, the leverage line, one caveat line if any). The spoken line (SOP §7 rule 10) opens the reply and names any NO-GO.
+The station poll in a fenced block first, **then two lines before anything else (ruled 10/6, Chief: "one of the first things you'll say to me … is what we left off last time and what I think we should start on next … which BOLO"): `**Left off:**` one sentence from the last session's note (the last thing worked and where it stopped) · `**Start next:** BOLO N`, the one row you recommend starting on, with a five-word why. The spoken line says both.** Then the sit rep reply as the sitrep skill specifies (the link, Block 0 in three bullets, the leverage line, one caveat line if any). The spoken line (SOP §7 rule 10) opens the reply and names any NO-GO.
