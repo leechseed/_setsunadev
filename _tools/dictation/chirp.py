@@ -97,6 +97,8 @@ def _build(vol):
         "open": _tone(1300, 1300, 45, vol) + _tone(1900, 1900, 45, vol),
         "sent": _tone(1800, 1150, 70, vol),
         "busy": _tone(420, 420, 60, vol, square=0.5) + _gap(40) + _tone(420, 420, 60, vol, square=0.5),
+        # focus pad (Chief 10/6): a soft lock-on, an upward glide then one high tick; original, no sample
+        "focus": _tone(700, 1400, 35, vol * 0.8, square=0.1) + _gap(15) + _tone(2200, 2200, 15, vol * 0.6, square=0.0),
     }
 
 
@@ -112,18 +114,18 @@ def ensure():
         os.makedirs(SOUNDS, exist_ok=True)
         tag = f"_{int(round(vol * 100))}.wav"
         for fn in os.listdir(SOUNDS):
-            if fn.endswith(".wav") and fn.split("_")[0] in ("open", "sent", "busy", "send") and not fn.endswith(tag):
+            if fn.endswith(".wav") and fn.split("_")[0] in ("open", "sent", "busy", "send", "focus") and not fn.endswith(tag):
                 try:
                     os.remove(os.path.join(SOUNDS, fn))
                 except Exception:
                     pass
         built = None
-        for name in ("open", "sent", "busy", "send"):
+        for name in ("open", "sent", "busy", "send", "focus"):
             p = path_for(name, vol)
             if not os.path.exists(p):
                 built = built or _build(vol)
                 _write(p, built[name])
-        return {n: path_for(n, vol) for n in ("open", "sent", "busy", "send")}
+        return {n: path_for(n, vol) for n in ("open", "sent", "busy", "send", "focus")}
     except Exception:
         return {}
 

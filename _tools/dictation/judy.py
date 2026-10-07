@@ -602,7 +602,7 @@ class Loop:
             if self.session and dcfg().get("focus_note") is not None:
                 import focus
                 extra[int(dcfg()["focus_note"])] = (
-                    lambda: threading.Thread(target=focus.focus_claude, daemon=True).start(), lambda: None)
+                    lambda: (__import__('chirp').play("focus"), threading.Thread(target=focus.focus_claude, daemon=True).start()), lambda: None)
             if self.session and dcfg().get("send_note") is not None:
                 import focus
                 # the SEND pad (Chief 9/17): the pad above the talk pad — Enter on whatever is in the box

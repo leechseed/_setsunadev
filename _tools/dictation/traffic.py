@@ -226,9 +226,10 @@ main{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:16px;pad
 .net{padding:12px}.net h2{font:700 14px var(--disp);letter-spacing:.12em;text-transform:uppercase;color:var(--ink2);margin:0}
 .nh{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
 .leg{font:400 11px var(--mono);color:var(--ink3);margin-top:6px}.leg i{display:inline-block;width:9px;height:9px;border-radius:2px;margin:0 4px 0 10px}
+.cl{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:6px 0}.cl .t{flex:1 1 100%;font-size:14px}.cl input{flex:1 1 160px;min-width:0;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:4px 8px;font:400 13px var(--body)}.btn.ok{border-color:var(--green);color:var(--green)}
 .empty{color:var(--ink3);padding:16px}
 </style></head><body>
-<header><h1>Traffic <b>Panel</b></h1><span class="chip">BOLO 115</span><span class="sp"></span><span class="upd" id="upd">--</span><a href="/">console</a><a href="/faces">faces</a></header>
+<header><h1>Traffic <b>Panel</b></h1><span class="chip">BOLO 115</span><span class="sp"></span><button class="btn" id="allrec">Take all recs</button><span class="upd" id="upd">--</span><a href="/">console</a><a href="/faces">faces</a></header>
 <main>
 <section class="card"><div class="tabs" id="tabs"></div><div id="view"><div class="empty">loading</div></div></section>
 <section class="card net"><div class="nh"><h2>Net</h2><span><button class="btn on" id="s1">This session</button> <button class="btn" id="s3">3 days</button></span></div><div id="net"></div>
@@ -263,15 +264,31 @@ function label(r){var t=r.text,m=t.match(/^#{1,4}\s+(.+)$/m)||t.match(/\*\*([^*]
  var w=m[1].replace(/[*_`\[\]]/g,"").trim().split(/\s+/).slice(0,4).join(" ");return hm(r.ts)+" "+w}
 function tabsList(){var all=[],seen={};(data.replies||[]).forEach(function(r){all.push(r);seen[r.id]=1});
  var P=pins();(data.pinned||[]).forEach(function(r){if(!seen[r.id]){all.push(r);seen[r.id]=1}});return all}
-function render(){var all=tabsList(),P=pins();if(!all.length){document.getElementById("view").innerHTML='<div class="empty">no replies yet</div>';document.getElementById("tabs").innerHTML="";return}
+var lastSig="";
+function render(){var all=tabsList(),P=pins(),sig=JSON.stringify([all,P,active]);
+ if(sig===lastSig)return;lastSig=sig;
+ var ae=document.activeElement,keep=null;if(ae&&ae.tagName==="INPUT"&&ae.dataset.k!==undefined)keep={k:ae.dataset.k,v:ae.value,s:ae.selectionStart,e:ae.selectionEnd};
+ var vals={};document.querySelectorAll("#view input[data-k]").forEach(function(i){if(i.value)vals[i.dataset.k]=i.value});
+ draw(all,P);
+ document.querySelectorAll("#view input[data-k]").forEach(function(i){if(vals[i.dataset.k])i.value=vals[i.dataset.k]});
+ if(keep){var n=document.querySelector('#view input[data-k="'+keep.k+'"]');if(n){n.value=keep.v;n.focus();try{n.setSelectionRange(keep.s,keep.e)}catch(e){}}}}
+function draw(all,P){if(!all.length){document.getElementById("view").innerHTML='<div class="empty">no replies yet</div>';document.getElementById("tabs").innerHTML="";return}
  if(!all.some(function(r){return r.id===active}))active=all[0].id;
  document.getElementById("tabs").innerHTML=all.map(function(r){return '<button class="tab'+(r.id===active?" on":"")+(P.indexOf(r.id)>=0?" pin":"")+'" data-id="'+esc(r.id)+'" title="'+esc(label(r))+'">'+esc(label(r))+"</button>"}).join("");
  var r=all.filter(function(x){return x.id===active})[0],pinned=P.indexOf(r.id)>=0;
  var h='<div class="bar"><button class="btn'+(pinned?" on":"")+'" id="pin">'+(pinned?"Unpin":"Pin")+'</button>'+(r.say?'<p class="say">spoken line: '+esc(r.say)+"</p>":"")+"</div>";
- if(r.calls.length)h+='<div class="calls"><h3>Open calls</h3><ul>'+r.calls.map(function(c){return"<li>"+esc(c)+"</li>"}).join("")+"</ul></div>";
+ if(r.calls.length)h+='<div class="calls"><h3>Open calls</h3>'+r.calls.map(function(c,k){return '<div class="cl"><span class="t">'+esc(c)+'</span>'+(c.indexOf("Rec:")>=0?'<button class="btn" data-act="rec" data-k="'+k+'">Take rec</button>':"")+'<input data-k="'+k+'" placeholder="answer"><button class="btn" data-act="ans" data-k="'+k+'">Send</button></div>'}).join("")+"</div>";
  document.getElementById("view").innerHTML=h+'<div class="md">'+md(r.text)+"</div>"}
 document.getElementById("tabs").onclick=function(e){var b=e.target.closest(".tab");if(b){active=b.dataset.id;render()}};
-document.getElementById("view").onclick=function(e){if(e.target.id!=="pin")return;var P=pins(),i=P.indexOf(active);
+var busy=0;
+function send(text,btn){if(Date.now()-busy<1200)return;busy=Date.now();var o=btn.textContent;
+ fetch("/traffic/send",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({text:text})}).then(function(r){return r.json()}).then(function(d){btn.textContent=d.ok?"sent":"failed";if(d.ok)btn.classList.add("ok");setTimeout(function(){btn.textContent=o;btn.classList.remove("ok")},1500)}).catch(function(){btn.textContent="failed";setTimeout(function(){btn.textContent=o},1500)})}
+function callText(k){var r=tabsList().filter(function(x){return x.id===active})[0];return r&&r.calls[k]||""}
+document.getElementById("allrec").onclick=function(){send("take all recs",this)};
+document.getElementById("view").onclick=function(e){var b=e.target.closest("button[data-act]");
+ if(b){var k=+b.dataset.k,c=callText(k);if(b.dataset.act==="rec")send("rec: "+c.slice(0,140),b);
+  else{var i=document.querySelector('#view input[data-k="'+k+'"]'),v=i&&i.value.trim();if(!v)return;send("answer: "+c.slice(0,80)+" → "+v,b);i.value=""}return}
+ if(e.target.id!=="pin")return;var P=pins(),i=P.indexOf(active);
  if(i>=0)P.splice(i,1);else{if(P.length>=3){alert("Max 3 pins");return}P.push(active)}setPins(P);poll()};
 function color(c){return c==="orange"?"#FF5A1F":c==="green"?"#5FBF8A":"#7F786E"}
 function net(){var Ls=data.lanes||[],el=document.getElementById("net");if(!Ls.length){el.innerHTML='<div class="empty">no BOLO traffic</div>';return}
