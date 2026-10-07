@@ -53,6 +53,20 @@ MODEL_CALL = re.compile(r"^#{1,4}\s*🔴\s*MODEL CALL\s*·\s*([A-Za-z]+)", re.M)
 MODEL_RANK = {"haiku": 1, "sonnet": 2, "opus": 3, "fable": 4}
 
 
+def model_of(line):
+    """The short model name ('opus', 'fable', ...) on a main-line assistant transcript line, else None."""
+    if '"assistant"' not in line or '"model"' not in line:
+        return None
+    try:
+        d = json.loads(line)
+    except Exception:
+        return None
+    if d.get("type") != "assistant" or d.get("isSidechain"):
+        return None
+    mid = ((d.get("message") or {}).get("model") or "").lower()
+    return next((k for k in MODEL_RANK if k in mid), None)
+
+
 def scfg():
     base = {"reader": "script", "max_sentences": 12, "acks": True, "min_chars": 12}
     try:
@@ -387,7 +401,10 @@ class Reader:
         self.path = transcript
         self.pos = 0
         self.stop = threading.Event()
-        self.model = "opus"     # the model the last MODEL CALL named; Opus is the standing CDR (SOP §5)
+        self.model = "opus"     # the model the session is on now, read off every assistant line (Opus is the standing CDR)
+        self.pending = None     # a MODEL CALL not yet confirmed: the model Chief was told to switch to
+        self.check_next = False # True once Chief speaks after the call: his next reply's model is the test
+        self.nags = 0
 
     def _pick(self):
         if self.folder:
@@ -399,6 +416,8 @@ class Reader:
 
     def _handle(self, kind, text):
         if kind == "user":
+            if self.pending:
+                self.check_next = True
             self.mouth.interrupt()
             if self.face:
                 self.face.set("thinking")
@@ -422,7 +441,8 @@ class Reader:
             return
         to = m.group(1).lower()
         up = MODEL_RANK.get(to, 3) >= MODEL_RANK.get(self.model, 3)
-        self.model = to
+        if to != self.model:
+            self.pending, self.check_next, self.nags = to, False, 0
         try:
             import chirp
             p = chirp.ensure().get("escalate" if up else "deescalate")
@@ -432,6 +452,32 @@ class Reader:
             self.mouth.q.put((self.mouth.gen, p, "sfx"))
         self.mouth.speak(["Switch to %s." % to.capitalize(), "For more, call for JUDY."], "model-call")
         self.log(f"  model call > {to} ({'up' if up else 'down'})")
+
+    def reconfirm(self, now):
+        """BOLO 122 (Chief 10/6): after a MODEL CALL, the next reply after Chief speaks proves the switch.
+        On the called model: the lock tone and "Fable confirmed." Still on the old one: the burst again, twice at most."""
+        if now:
+            self.model = now
+        if not (self.pending and now and self.check_next):
+            return
+        self.check_next = False
+        import chirp
+        snd = chirp.ensure()
+        if now == self.pending:
+            self.pending = None
+            if snd.get("confirm"):
+                self.mouth.q.put((self.mouth.gen, snd["confirm"], "sfx"))
+            self.mouth.speak(["%s confirmed." % now.capitalize()], "reconfirm")
+            self.log(f"  model confirmed > {now}")
+            return
+        self.nags += 1
+        up = MODEL_RANK.get(self.pending, 3) >= MODEL_RANK.get(now, 3)
+        if snd.get("escalate" if up else "deescalate"):
+            self.mouth.q.put((self.mouth.gen, snd["escalate" if up else "deescalate"], "sfx"))
+        self.mouth.speak(["Still on %s." % now.capitalize(), "Switch to %s." % self.pending.capitalize()], "reconfirm")
+        self.log(f"  model NOT switched > still {now}, wanted {self.pending} (nag {self.nags})")
+        if self.nags >= 2:
+            self.pending = None
 
     def run(self):
         self._pick()
@@ -455,6 +501,9 @@ class Reader:
                     buf += chunk
                     while "\n" in buf:
                         line, buf = buf.split("\n", 1)
+                        mdl = model_of(line)
+                        if mdl:
+                            self.reconfirm(mdl)
                         r = parse(line)
                         if r:
                             self._handle(*r)

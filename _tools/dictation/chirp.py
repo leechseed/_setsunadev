@@ -149,6 +149,8 @@ def _build(vol):
         # the model call (BOLO 122): the critical burst; the buzz climbs going up to a stronger model, falls coming back down (the bell chime retired same night)
         "escalate": _critical(True, vol),
         "deescalate": _critical(False, vol),
+        # the reconfirm (BOLO 122, Chief 10/6: "a reconfirm ... to make sure that I did switch"): a clean two-step lock
+        "confirm": _tone(880, 880, 60, vol, square=0.1) + _gap(30) + _tone(1320, 1320, 110, vol, square=0.1),
     }
 
 
@@ -164,18 +166,18 @@ def ensure():
         os.makedirs(SOUNDS, exist_ok=True)
         tag = f"_{int(round(vol * 100))}.wav"
         for fn in os.listdir(SOUNDS):
-            if fn.endswith(".wav") and fn.split("_")[0] in ("open", "sent", "busy", "send", "focus", "escalate", "deescalate") and not fn.endswith(tag):
+            if fn.endswith(".wav") and fn.split("_")[0] in ("open", "sent", "busy", "send", "focus", "escalate", "deescalate", "confirm") and not fn.endswith(tag):
                 try:
                     os.remove(os.path.join(SOUNDS, fn))
                 except Exception:
                     pass
         built = None
-        for name in ("open", "sent", "busy", "send", "focus", "escalate", "deescalate"):
+        for name in ("open", "sent", "busy", "send", "focus", "escalate", "deescalate", "confirm"):
             p = path_for(name, vol)
             if not os.path.exists(p):
                 built = built or _build(vol)
                 _write(p, built[name])
-        return {n: path_for(n, vol) for n in ("open", "sent", "busy", "send", "focus", "escalate", "deescalate")}
+        return {n: path_for(n, vol) for n in ("open", "sent", "busy", "send", "focus", "escalate", "deescalate", "confirm")}
     except Exception:
         return {}
 
