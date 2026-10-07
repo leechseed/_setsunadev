@@ -1170,5 +1170,33 @@
   "st": "ruled",
   "d": "Lane B of the [[intel-cycle|INTEL CYCLE]]: Chief's own notes, chats, scripts, films and songs, cleaned and distilled into research packets. RULED 10/6 (BOLO 107); it gates fabula phase 2. Raw files live in _PRIVATE/intake/.",
   "w": "SOP.md §9 · _tools/intake/"
+ },
+ "glass": {
+  "t": "GLASS",
+  "k": "proword",
+  "st": "ruled",
+  "d": "Build Chief a UI: a page, a board, a console. \"Glass it\" or \"glass this for me\" fires the build. RULED 10/6 (Chief: \"I like glass it, like glassing a planet in sci-fi\"). Lineage: \"put it on glass\", the ops-center screens. DARKROOM, the boards and the Goon Log are all glass.",
+  "w": "SOP.md §1"
+ },
+ "clean-your-station": {
+  "t": "CLEAN YOUR STATION",
+  "k": "proword",
+  "st": "ruled",
+  "d": "The light data clean: pick up the trash, meaning dupes, junk and broken rows. Also \"clean up your shit\". RULED 10/6. The first of the three clean words; the INTEL CYCLE's CLEAN step runs at this level by default.",
+  "w": "SOP.md §1"
+ },
+ "deep-clean": {
+  "t": "DEEP CLEAN",
+  "k": "proword",
+  "st": "ruled",
+  "d": "The deep data clean, run as if an inspection is coming: sort, normalize formats, tag, fix every record. RULED 10/6 (Chief: \"we're going to do deep cleaning today because we got a … inspection\"). Second of the three clean words; an AUDIT follows it.",
+  "w": "SOP.md §1"
+ },
+ "audit": {
+  "t": "AUDIT",
+  "k": "proword",
+  "st": "ruled",
+  "d": "The inspection: a script checks the work against the SOP and lists every gap. RULED 10/6 (Chief: \"not white glove, but audit. Just call it what it is\"). Third of the three clean words. The standing audit lives under BOLO 51 (`_tools/audit/`).",
+  "w": "SOP.md §1"
  }
 }
