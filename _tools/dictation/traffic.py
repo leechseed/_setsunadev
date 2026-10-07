@@ -74,7 +74,38 @@ def parse_file(path):
     return turns
 
 
-def bolo_titles():
+URL_RE = re.compile(r"https?://[^\s)\]>|`]+")
+
+
+def _row(n, rest):
+    parts = rest.rsplit(" | ", 1)
+    desc, status = (parts[0], parts[1]) if len(parts) == 2 else (rest, "")
+    tm = re.match(r"\s*\*\*(.+?)\*\*\s*(?:\[([^\]]*)\])?", desc)
+    title = tm.group(1).strip() if tm else desc.strip()[:80]
+    trunk = ""
+    if tm and tm.group(2):
+        trunk = re.split(r"[;,·\s]", tm.group(2).strip(), 1)[0]
+    status = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", status.rstrip("| ").strip())
+    status = re.sub(r"\s+", " ", status)
+    links, seen = [], set()
+    for um in URL_RE.finditer(rest):
+        u = um.group(0).rstrip(".,;:")
+        if u in seen or len(links) >= 4:
+            continue
+        seen.add(u)
+        dope = "DOPE SHEET" in rest[max(0, um.start() - 90): um.start()].upper() and "claude.ai/artifact" in u
+        dom = re.sub(r"^https?://(www\.)?", "", u).split("/")[0]
+        links.append({"url": u, "label": "DOPE SHEET" if dope else dom, "sheet": bool(dope)})
+    files = []
+    for fm in re.finditer(r"\]\(([^)\s]+)\)|`([^`]+[/\\.][^`]*)`", rest):
+        f = (fm.group(1) or fm.group(2) or "").strip()
+        if f and not f.startswith(("http", "#")) and f not in files and len(f) < 120 and " " not in f:
+            files.append(f)
+    return {"n": n, "title": title[:120], "trunk": trunk, "status": status[:280],
+            "links": links, "files": files[:4]}
+
+
+def bolo_rows():
     p = os.path.join(ROOT, "BOLO.md")
     try:
         m = os.path.getmtime(p)
@@ -85,13 +116,17 @@ def bolo_titles():
     t = {}
     try:
         for line in io.open(p, encoding="utf-8", errors="replace"):
-            mm = re.match(r"\|\s*(\d+)\s*\|\s*\*\*(.+?)\*\*", line)
+            mm = re.match(r"\|\s*(\d+)\s*\|\s*(\*\*.*)$", line.rstrip("\n"))
             if mm:
-                t[int(mm.group(1))] = mm.group(2).strip()[:60]
+                t[int(mm.group(1))] = _row(int(mm.group(1)), mm.group(2))
     except Exception:
         pass
     _bolo.update(m=m, titles=t)
     return t
+
+
+def bolo_titles():
+    return {n: r["title"][:60] for n, r in bolo_rows().items()}
 
 
 def mentions(text):
@@ -179,13 +214,22 @@ def build_payload(scope="session", ids=()):
         turns.sort(key=lambda t: t["ts"])
     else:
         turns = sess
+    reps = [reply(t) for t in reversed(last5)]
+    pins_ = [reply(t) for t in pinned]
+    lanes = lanes_for(turns)
+    need = set()
+    for r in reps + pins_:
+        need |= mentions(r["text"])
+    need |= {l["n"] for l in lanes}
+    rows = bolo_rows()
     return {
+        "bolos": {str(n): rows[n] for n in sorted(need) if n in rows},
         "updated": time.strftime("%H:%M:%S"),
         "scope": scope,
         "turns": len(turns),
-        "replies": [reply(t) for t in reversed(last5)],
-        "pinned": [reply(t) for t in pinned],
-        "lanes": lanes_for(turns),
+        "replies": reps,
+        "pinned": pins_,
+        "lanes": lanes,
     }
 
 
@@ -227,6 +271,10 @@ main{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:16px;pad
 .nh{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
 .leg{font:400 11px var(--mono);color:var(--ink3);margin-top:6px}.leg i{display:inline-block;width:9px;height:9px;border-radius:2px;margin:0 4px 0 10px}
 .cl{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:6px 0}.cl .t{flex:1 1 100%;font-size:14px}.cl input{flex:1 1 160px;min-width:0;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:4px 8px;font:400 13px var(--body)}.btn.ok{border-color:var(--green);color:var(--green)}
+.bl{color:var(--acc);border-bottom:1px dotted var(--acc);cursor:pointer;font-family:var(--mono);font-size:.92em}
+#card{position:fixed;z-index:20;display:none;width:340px;max-width:92vw;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 12px;box-shadow:0 8px 28px rgba(0,0,0,.6);font-size:13px}
+#card.pin{border-color:var(--acc)}#card h4{font:700 16px var(--disp);letter-spacing:.04em;margin:0 0 4px}#card .tr{font:500 11px var(--mono);color:var(--acc);margin-bottom:4px}
+#card p{margin:4px 0;color:var(--ink2)}#card a{color:var(--acc);margin-right:10px;font-size:12px}#card .f{font:400 11px var(--mono);color:var(--ink3);overflow-wrap:anywhere}
 .empty{color:var(--ink3);padding:16px}
 </style></head><body>
 <header><h1>Traffic <b>Panel</b></h1><span class="chip">BOLO 115</span><span class="sp"></span><button class="btn" id="allrec">Take all recs</button><span class="upd" id="upd">--</span><a href="/">console</a><a href="/faces">faces</a></header>
@@ -235,6 +283,7 @@ main{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:16px;pad
 <section class="card net"><div class="nh"><h2>Net</h2><span><button class="btn on" id="s1">This session</button> <button class="btn" id="s3">3 days</button></span></div><div id="net"></div>
 <div class="leg"><i style="background:#FF5A1F"></i>waits on Chief<i style="background:#5FBF8A"></i>done<i style="background:#7F786E"></i>waits on JUDY</div></section>
 </main>
+<div id="card" role="dialog"></div>
 <script>
 var scope="session",active=null,data=null,PK="traffic.pins";
 function pins(){try{return JSON.parse(localStorage.getItem(PK)||"[]")}catch(e){return[]}}
@@ -259,12 +308,33 @@ function md(src){var L=src.replace(/\r/g,"").split("\n"),o=[],i=0,m;
   var p=[];while(i<L.length&&L[i].trim()&&!/^\s*(```|#{1,4}\s|\||([-*+]|\d+\.)\s)/.test(L[i]))p.push(L[i++]);
   if(!p.length){p.push(L[i++])}o.push("<p>"+p.map(inl).join("<br>")+"</p>")}
  return o.join("\n")}
+function lk(html){var B=(data&&data.bolos)||{};return html.split(/(<[^>]+>)/).map(function(x){if(x[0]==="<")return x;
+ return x.replace(/\b(BOLO\s*#?|go\s+)(\d{1,3})\b/gi,function(m,a,n){return B[+n]?'<span class="bl" tabindex="0" data-bolo="'+(+n)+'">'+m+"</span>":m})}).join("")}
+var card=document.getElementById("card"),cardPin=false,cardN=null;
+function showCard(n,el){var b=((data&&data.bolos)||{})[n];if(!b)return;cardN=n;
+ var h='<div class="tr">BOLO '+b.n+(b.trunk?" · "+esc(b.trunk):"")+"</div><h4>"+esc(b.title)+"</h4>"+(b.status?"<p>"+esc(b.status)+"</p>":"");
+ var sh=b.links.filter(function(l){return l.sheet})[0];
+ h+="<div>"+b.links.map(function(l){return '<a href="'+esc(l.url)+'" target="_blank" rel="noopener">'+esc(l.label)+"</a>"}).join("")+"</div>";
+ if(b.files.length)h+='<div class="f">'+b.files.map(esc).join("<br>")+"</div>";
+ if(sh)h+='<p><button class="btn" data-open="'+esc(sh.url)+'">Open sheet</button></p>';
+ card.innerHTML=h;card.style.display="block";var r=el.getBoundingClientRect(),w=card.offsetWidth,hh=card.offsetHeight;
+ card.style.left=Math.max(8,Math.min(r.left,innerWidth-w-8))+"px";card.style.top=(r.bottom+hh+12>innerHeight?Math.max(8,r.top-hh-6):r.bottom+6)+"px"}
+function hideCard(f){if(cardPin&&!f)return;cardPin=false;card.className="";card.style.display="none"}
+function pinCard(el){cardPin=true;showCard(+el.dataset.bolo,el);card.className="pin"}
+document.addEventListener("mouseover",function(e){var b=e.target.closest("[data-bolo]");if(b&&!cardPin)showCard(+b.dataset.bolo,b)});
+document.addEventListener("focusin",function(e){var b=e.target.closest&&e.target.closest("[data-bolo]");if(b&&!cardPin)showCard(+b.dataset.bolo,b)});
+document.addEventListener("mouseout",function(e){var b=e.target.closest&&e.target.closest("[data-bolo]");if(b&&!cardPin&&!(e.relatedTarget&&e.relatedTarget.closest&&e.relatedTarget.closest("#card,[data-bolo]")))hideCard()});
+card.addEventListener("mouseleave",function(){hideCard()});
+document.addEventListener("click",function(e){var o=e.target.closest("[data-open]");if(o){window.open(o.dataset.open,"_blank","noopener");return}
+ var b=e.target.closest("[data-bolo]");if(b){pinCard(b);return}
+ if(!e.target.closest("#card"))hideCard(true)});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")hideCard(true);if(e.key==="Enter"&&e.target.dataset&&e.target.dataset.bolo)pinCard(e.target)});
 function hm(ts){try{var d=new Date(ts);return ("0"+d.getHours()).slice(-2)+":"+("0"+d.getMinutes()).slice(-2)}catch(e){return"--:--"}}
 function label(r){var t=r.text,m=t.match(/^#{1,4}\s+(.+)$/m)||t.match(/\*\*([^*]+)\*\*/)||[0,t.replace(/[#*`|]/g," ").trim()];
  var w=m[1].replace(/[*_`\[\]]/g,"").trim().split(/\s+/).slice(0,4).join(" ");return hm(r.ts)+" "+w}
 function tabsList(){var all=[],seen={};(data.replies||[]).forEach(function(r){all.push(r);seen[r.id]=1});
  var P=pins();(data.pinned||[]).forEach(function(r){if(!seen[r.id]){all.push(r);seen[r.id]=1}});return all}
-var lastSig="";
+var lastSig="",lastH="";
 function render(){var all=tabsList(),P=pins(),sig=JSON.stringify([all,P,active]);
  if(sig===lastSig)return;lastSig=sig;
  var ae=document.activeElement,keep=null;if(ae&&ae.tagName==="INPUT"&&ae.dataset.k!==undefined)keep={k:ae.dataset.k,v:ae.value,s:ae.selectionStart,e:ae.selectionEnd};
@@ -278,7 +348,7 @@ function draw(all,P){if(!all.length){document.getElementById("view").innerHTML='
  var r=all.filter(function(x){return x.id===active})[0],pinned=P.indexOf(r.id)>=0;
  var h='<div class="bar"><button class="btn'+(pinned?" on":"")+'" id="pin">'+(pinned?"Unpin":"Pin")+'</button>'+(r.say?'<p class="say">spoken line: '+esc(r.say)+"</p>":"")+"</div>";
  if(r.calls.length)h+='<div class="calls"><h3>Open calls</h3>'+r.calls.map(function(c,k){return '<div class="cl"><span class="t">'+esc(c)+'</span>'+(c.indexOf("Rec:")>=0?'<button class="btn" data-act="rec" data-k="'+k+'">Take rec</button>':"")+'<input data-k="'+k+'" placeholder="answer"><button class="btn" data-act="ans" data-k="'+k+'">Send</button></div>'}).join("")+"</div>";
- document.getElementById("view").innerHTML=h+'<div class="md">'+md(r.text)+"</div>"}
+ document.getElementById("view").innerHTML=h+'<div class="md">'+lk(md(r.text))+"</div>"}
 document.getElementById("tabs").onclick=function(e){var b=e.target.closest(".tab");if(b){active=b.dataset.id;render()}};
 var busy=0;
 function send(text,btn){if(Date.now()-busy<1200)return;busy=Date.now();var o=btn.textContent;
@@ -297,13 +367,13 @@ function net(){var Ls=data.lanes||[],el=document.getElementById("net");if(!Ls.le
   var t=("BOLO "+l.n+(l.title?" "+l.title:""));if(t.length>26)t=t.slice(0,25)+"…";
   s+='<line x1="'+LW+'" x2="'+(LW+PW)+'" y1="'+(y+12)+'" y2="'+(y+12)+'" stroke="#34312C"/>';
   s+='<line x1="'+x0+'" x2="'+x1+'" y1="'+(y+12)+'" y2="'+(y+12)+'" stroke="'+c+'" stroke-width="2" opacity=".5"/>';
-  s+='<text x="0" y="'+(y+16)+'" fill="'+(l.color==="gray"?"#B7B0A5":c)+'" font-family="IBM Plex Mono,monospace" font-size="11"><title>'+esc("BOLO "+l.n+" "+l.title)+"</title>"+esc(t)+"</text>";
+  s+='<text class="bl" data-bolo="'+l.n+'" tabindex="0" x="0" y="'+(y+16)+'" fill="'+(l.color==="gray"?"#B7B0A5":c)+'" font-family="IBM Plex Mono,monospace" font-size="11" style="cursor:pointer">'+esc(t)+"</text>";
   l.ticks.forEach(function(i){s+='<rect x="'+(LW+i/N*PW-1.5)+'" y="'+(y+5)+'" width="3" height="14" fill="'+c+'"/>'})});
  el.innerHTML=s+"</svg>"}
 function poll(){var q="/traffic.json?scope="+scope+"&ids="+encodeURIComponent(pins().join(","));
- fetch(q).then(function(r){return r.json()}).then(function(d){data=d;document.getElementById("upd").textContent="updated "+d.updated;render();net()}).catch(function(){document.getElementById("upd").textContent="offline"})}
+ fetch(q).then(function(r){return r.json()}).then(function(d){document.getElementById("upd").textContent="updated "+d.updated;var h=JSON.stringify(d,function(k,v){return k==="updated"?undefined:v});if(h===lastH)return;lastH=h;data=d;lastSig="";render();net()}).catch(function(){document.getElementById("upd").textContent="offline"})}
 function sc(s){scope=s;document.getElementById("s1").className="btn"+(s==="session"?" on":"");document.getElementById("s3").className="btn"+(s==="3d"?" on":"");poll()}
 document.getElementById("s1").onclick=function(){sc("session")};document.getElementById("s3").onclick=function(){sc("3d")};
-poll();setInterval(poll,5000);
+poll();setInterval(poll,2000);
 </script></body></html>
 '''
