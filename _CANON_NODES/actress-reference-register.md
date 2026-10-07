@@ -17,6 +17,10 @@ captured: 2026-10-06
 
 **Where the scenes come from.** Chief pulls source clips under his own accounts (Mr. Skin, streaming), the same rule as the PDFs. Claude does not scrape paid sites. A card cites a scene by film, year and timestamp; the clip itself stays in Chief's library, not in this public repo.
 
+**The 18+ rule.** A card's look, build and scene citations come only from work the actress made at 18 or older. A role she played younger can be cited for personality only.
+
+**The bench.** 62 more names wait in `_PRIVATE/actress-picks.md` (pulled 10/6). Each becomes a card when Chief promotes her.
+
 **Sibling registers.** The [[performer-register]] holds adult performers (BOLO 42). This register holds mainstream actresses. One person never sits in both.
 
 ## The card (provisional)
