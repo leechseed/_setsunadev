@@ -19,7 +19,7 @@ captured: 2026-10-06
 
 **The 18+ rule.** A card's look, build and scene citations come only from work the actress made at 18 or older. A role she played younger can be cited for personality only.
 
-**The bench.** 62 more names wait in `_PRIVATE/actress-picks.md` (pulled 10/6). Each becomes a card when Chief promotes her.
+**The bench.** 63 more names wait in `_PRIVATE/actress-picks.md` (pulled 10/6). Each becomes a card when Chief promotes her.
 
 **Sibling registers.** The [[performer-register]] holds adult performers (BOLO 42). This register holds mainstream actresses. One person never sits in both.
 
