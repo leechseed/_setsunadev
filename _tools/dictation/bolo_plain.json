@@ -1,0 +1,23 @@
+{
+ "about": "Plain-word hover text for the Traffic Deck (Chief 10/6: 'more legible and in a language that I can understand'). One entry per BOLO: what it is, where it stands, what's next. JUDY keeps these current; a BOLO without an entry falls back to its cleaned-up row.",
+ "8":   {"what": "Ask GitHub to purge old data from the public repo.", "now": "Parked. Only you can file the ticket.", "next": "File it when you feel like it."},
+ "12":  {"what": "Design the room where ORANGE content gets shot.", "now": "Parked since August with a draft saved.", "next": "Waits on your review of the draft."},
+ "28":  {"what": "Make Stash your organized video library, the DARKROOM's twin.", "now": "Dupes tagged, 18% of scenes matched online; a scan is grinding through new files.", "next": "A grading pass on the 15,000 unrated scenes."},
+ "33":  {"what": "A browser for the Marine Corps doctrine books.", "now": "Done and closed.", "next": "Nothing."},
+ "42":  {"what": "One table of every adult performer you admire.", "now": "155 names in, with a status page.", "next": "Waits on your word."},
+ "60":  {"what": "Your new doctor: first visit and the physical.", "now": "Visit held 10/5. Details are private.", "next": "Follow-ups live in BOLO 106."},
+ "64":  {"what": "How the Command uses Claude Code, written as rules.", "now": "Ruled in September; the four steps are named.", "next": "Nothing open."},
+ "83":  {"what": "The Amazon job applications.", "now": "Six sent. On hold by your call.", "next": "Only when you raise it."},
+ "98":  {"what": "One dashboard for everything ORANGE.", "now": "Built 10/4 and live.", "next": "Rebuild when ORANGE rows change."},
+ "100": {"what": "Finish every story system and the full timeline before writing the pilot.", "now": "The pilot is locked behind this.", "next": "Timeline phase 2 waits on the intake (BOLO 107)."},
+ "101": {"what": "Let the story systems run like a simulator, with tabletop play on top.", "now": "Open. Aion 2's charge-and-spend loop is noted for it.", "next": "A design pass when you say go."},
+ "102": {"what": "One front door for all the Command's documentation.", "now": "Open. Most tool folders still lack a README.", "next": "The timeline waits on this too."},
+ "109": {"what": "Riley Moss, the detective girl, with Hunter S. Thompson as her inner voice.", "now": "Ruled: Anna Colson is the other girl, Vivian spans all eras, Riley's in her twenties. Dream cast: Lily-Rose and Johnny Depp.", "next": "Waits on the systems-first gate."},
+ "113": {"what": "Real actresses as looks-and-personality references for characters.", "now": "Eight cards written, 63 names on the private bench.", "next": "Say 'card' with names to promote them."},
+ "114": {"what": "Walkie-talkie sounds on your MIDI pads.", "now": "Live: do-doo on talk, click on send, lock-on on focus.", "next": "Name a pad and a sound to change one."},
+ "115": {"what": "The Traffic Deck: my last replies in tabs, open calls, the thread chart.", "now": "Live, opens at every launch, hover cards on BOLO numbers.", "next": "Tell me what reads wrong."},
+ "116": {"what": "The decision panel: click a rec or type an answer, and it lands in the chat.", "now": "Live in the deck and on the Call Sheet; pads for take-all-recs and spit.", "next": "Nothing open."},
+ "117": {"what": "Spit points: you spit, I learn what you like.", "now": "Live. Three spits logged.", "next": "The tally goes on the sit rep."},
+ "118": {"what": "Toy makers by arena: silicone, Japanese, oral training, depth, realistic.", "now": "31 entries on the Toy Makers page.", "next": "Verify the Japanese arena, or add another arena."},
+ "119": {"what": "Aion 2's charge-and-spend combat loop, as a design idea for the story systems.", "now": "Logged.", "next": "A one-page pattern card when you say go."}
+}

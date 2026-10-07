@@ -105,6 +105,14 @@ def _row(n, rest):
             "links": links, "files": files[:4]}
 
 
+def bolo_plain():
+    """Plain-word hover text (Chief 10/6: "more legible and in a language that I can understand")."""
+    try:
+        return json.load(io.open(os.path.join(HERE, "bolo_plain.json"), encoding="utf-8"))
+    except Exception:
+        return {}
+
+
 def bolo_rows():
     p = os.path.join(ROOT, "BOLO.md")
     try:
@@ -123,6 +131,11 @@ def bolo_rows():
         pass
     _bolo.update(m=m, titles=t)
     return t
+
+
+def bolo_rows_plain():
+    rows, plain = bolo_rows(), bolo_plain()
+    return {n: dict(r, plain=plain.get(str(n))) for n, r in rows.items()}
 
 
 def bolo_titles():
@@ -221,7 +234,7 @@ def build_payload(scope="session", ids=()):
     for r in reps + pins_:
         need |= mentions(r["text"])
     need |= {l["n"] for l in lanes}
-    rows = bolo_rows()
+    rows = bolo_rows_plain()
     return {
         "bolos": {str(n): rows[n] for n in sorted(need) if n in rows},
         "updated": time.strftime("%H:%M:%S"),
@@ -272,8 +285,10 @@ main{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:16px;pad
 .leg{font:400 11px var(--mono);color:var(--ink3);margin-top:6px}.leg i{display:inline-block;width:9px;height:9px;border-radius:2px;margin:0 4px 0 10px}
 .cl{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:6px 0}.cl .t{flex:1 1 100%;font-size:14px}.cl input{flex:1 1 160px;min-width:0;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:4px 8px;font:400 13px var(--body)}.btn.ok{border-color:var(--green);color:var(--green)}
 .bl{color:var(--acc);border-bottom:1px dotted var(--acc);cursor:pointer;font-family:var(--mono);font-size:.92em}
-#card{position:fixed;z-index:20;display:none;width:340px;max-width:92vw;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 12px;box-shadow:0 8px 28px rgba(0,0,0,.6);font-size:13px}
-#card.pin{border-color:var(--acc)}#card h4{font:700 16px var(--disp);letter-spacing:.04em;margin:0 0 4px}#card .tr{font:500 11px var(--mono);color:var(--acc);margin-bottom:4px}
+#card{position:fixed;z-index:20;display:none;width:400px;max-width:92vw;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:14px 16px;box-shadow:0 8px 28px rgba(0,0,0,.6);font-size:15px;line-height:1.5}
+#card .ch{display:flex;gap:8px;align-items:center;margin-bottom:6px}#card .cn{font:500 12px var(--mono);color:var(--ink3)}#card .cs{font:700 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:3px;border:1px solid var(--line)}#card .cs.ok{color:#5FBF8A;border-color:#5FBF8A}#card .cs.open{color:var(--acc);border-color:var(--acc)}#card .cs.held{color:var(--ink3)}#card .cs.hot{color:#E2677A;border-color:#E2677A}#card .ct{font:500 11px var(--mono);color:var(--ink3)}
+#card dl{margin:8px 0 4px;display:grid;gap:2px}#card dt{font:700 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);margin-top:6px}#card dd{margin:0;color:var(--ink)}#card .cl{margin-top:8px}#card details{margin-top:8px;font-size:13px;color:var(--ink3)}#card summary{cursor:pointer}
+#card.pin{border-color:var(--acc)}#card h4{font:700 20px/1.2 var(--disp);letter-spacing:.02em;margin:0 0 2px}#card .tr{font:500 11px var(--mono);color:var(--acc);margin-bottom:4px}
 #card p{margin:4px 0;color:var(--ink2)}#card a{color:var(--acc);margin-right:10px;font-size:12px}#card .f{font:400 11px var(--mono);color:var(--ink3);overflow-wrap:anywhere}
 .empty{color:var(--ink3);padding:16px}
 </style></head><body>
@@ -311,12 +326,16 @@ function md(src){var L=src.replace(/\r/g,"").split("\n"),o=[],i=0,m;
 function lk(html){var B=(data&&data.bolos)||{};return html.split(/(<[^>]+>)/).map(function(x){if(x[0]==="<")return x;
  return x.replace(/\b(BOLO\s*#?|go\s+)(\d{1,3})\b/gi,function(m,a,n){return B[+n]?'<span class="bl" tabindex="0" data-bolo="'+(+n)+'">'+m+"</span>":m})}).join("")}
 var card=document.getElementById("card"),cardPin=false,cardN=null;
-function showCard(n,el){var b=((data&&data.bolos)||{})[n];if(!b)return;cardN=n;
- var h='<div class="tr">BOLO '+b.n+(b.trunk?" · "+esc(b.trunk):"")+"</div><h4>"+esc(b.title)+"</h4>"+(b.status?"<p>"+esc(b.status)+"</p>":"");
+function stateWord(st){st=st||"";if(/✅|DONE|CLOSED/.test(st))return["Done","ok"];if(/⏸|PARKED|HELD|LATER/.test(st))return["Parked","held"];if(/➡️|FOLDED/.test(st))return["Folded","held"];if(/🟢|BUILT|LIVE|RULED/.test(st))return["Live","ok"];if(/🔴/.test(st))return["Hot","hot"];return["Open","open"]}
+function plainText(t){return String(t||"").replace(/\*\*|__|`/g,"").replace(/\[\[([^\]|]+)\|?([^\]]*)\]\]/g,function(m,a,b){return b||a}).replace(/\s+/g," ").trim()}
+function showCard(n,el){var b=((data&&data.bolos)||{})[n];if(!b)return;cardN=n;var sw=stateWord(b.status),pl=b.plain;
+ var h='<div class="ch"><span class="cn">BOLO '+b.n+'</span><span class="cs '+sw[1]+'">'+sw[0]+'</span>'+(b.trunk?'<span class="ct">'+esc(b.trunk.split(/[;,]/)[0])+'</span>':"")+'</div><h4>'+esc(plainText(b.title))+'</h4>';
+ if(pl){h+='<dl><dt>What it is</dt><dd>'+esc(pl.what)+'</dd><dt>Where it stands</dt><dd>'+esc(pl.now)+'</dd><dt>Next</dt><dd>'+esc(pl.next)+'</dd></dl>'}
+ else{var t=plainText(b.status);h+='<dl><dt>Where it stands</dt><dd>'+esc(t.length>220?t.slice(0,220)+"…":t)+'</dd></dl>'}
  var sh=b.links.filter(function(l){return l.sheet})[0];
- h+="<div>"+b.links.map(function(l){return '<a href="'+esc(l.url)+'" target="_blank" rel="noopener">'+esc(l.label)+"</a>"}).join("")+"</div>";
- if(b.files.length)h+='<div class="f">'+b.files.map(esc).join("<br>")+"</div>";
  if(sh)h+='<p><button class="btn" data-open="'+esc(sh.url)+'">Open sheet</button></p>';
+ var other=b.links.filter(function(l){return !l.sheet});if(other.length)h+='<div class="cl">'+other.map(function(l){return '<a href="'+esc(l.url)+'" target="_blank" rel="noopener">'+esc(l.label)+"</a>"}).join("")+"</div>";
+ if(pl&&b.status)h+='<details><summary>The full row</summary><p>'+esc(plainText(b.status))+'</p></details>';
  card.innerHTML=h;card.style.display="block";var r=el.getBoundingClientRect(),w=card.offsetWidth,hh=card.offsetHeight;
  card.style.left=Math.max(8,Math.min(r.left,innerWidth-w-8))+"px";card.style.top=(r.bottom+hh+12>innerHeight?Math.max(8,r.top-hh-6):r.bottom+6)+"px"}
 function hideCard(f){if(cardPin&&!f)return;cardPin=false;card.className="";card.style.display="none"}
