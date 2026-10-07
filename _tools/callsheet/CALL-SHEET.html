@@ -65,9 +65,11 @@
   const $=(id)=>document.getElementById(id);
   const esc=(s)=>String(s??"").replace(/[&<>"]/g,(c)=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
   function render(){
+    // keep the note being typed: its text, focus and cursor survive every re-render (Chief 10/6: "it keeps defocusing")
+    const a=document.activeElement; const keep=(a&&a.classList&&a.classList.contains("note"))?{id:a.id,val:a.value,s:a.selectionStart,e:a.selectionEnd,top:a.scrollTop}:null;
     const groups=[...new Set(CALLS.map(c=>c.g))];
     $("wrap").innerHTML=groups.map(g=>`<section class="group"><h2>${esc(g)}</h2><div class="cards">${
-      CALLS.filter(c=>c.g===g).map(c=>{ const p=picks[c.id]||{}; const ruled=p.choice!=null||(c.opts.length===0&&p.note);
+      CALLS.filter(c=>c.g===g).map(c=>{ const p=picks[c.id]||{}; const ruled=p.choice!=null||!!(p.note&&p.note.trim());
         return `<article class="card${ruled?" ruled":""}" data-id="${c.id}">
           <div class="q"><span class="id">${c.id}</span><h3>${esc(c.q)}</h3></div>
           <p class="ctx">${esc(c.ctx)}</p>
@@ -75,8 +77,9 @@
           ${c.note?`<textarea class="note" id="n-${c.id}" placeholder="${c.big?"One name per line":"Note (optional)"}" rows="${c.big?5:1}">${esc(p.note||"")}</textarea>`:""}
           ${ruled?`<div class="ruledline">RULED · ${esc(p.at?new Date(p.at).toLocaleString():"")}</div>`:""}
         </article>`;}).join("")}</div></section>`).join("");
-    const n=CALLS.filter(c=>{const p=picks[c.id]||{};return p.choice!=null||(c.opts.length===0&&p.note);}).length;
+    const n=CALLS.filter(c=>{const p=picks[c.id]||{};return p.choice!=null||!!(p.note&&p.note.trim());}).length;
     $("count").textContent=`${n} of ${CALLS.length} ruled`;
+    if(keep){ const t=$(keep.id); if(t){ t.value=keep.val; t.focus({preventScroll:true}); try{t.setSelectionRange(keep.s,keep.e);}catch(_){} t.scrollTop=keep.top; } }
   }
   async function save(id,patch){
     picks={...picks,[id]:{...(picks[id]||{}),...patch,at:new Date().toISOString()}}; render();
@@ -92,7 +95,7 @@
     const db=window.claude&&window.claude.use?await window.claude.use("db"):null;
     if(!db){$("msg").textContent="Storage is offline in this view, so picks won't reach JUDY.";return;}
     col=db.collection("picks");
-    col.onSnapshot((s)=>{ const next={}; s.docs.forEach(d=>{next[d.id]=d.data();}); const active=document.activeElement; if(active&&active.classList.contains("note"))return; picks=next; render(); },()=>{});
+    col.onSnapshot((s)=>{ const next={}; s.docs.forEach(d=>{next[d.id]=d.data();}); picks=next; render(); },()=>{});
   })();
 })();
 </script>

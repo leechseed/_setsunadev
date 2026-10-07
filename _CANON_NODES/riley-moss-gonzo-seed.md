@@ -4,7 +4,7 @@ entity_id: riley_moss_gonzo_seed
 kind: seed — Chief's spoken idea, not canon; waits on the systems-first gate (BOLO 100)
 ip: OVEREXITOUT (The Outliers)
 trunk: BLACK / ORANGE
-status: SEED 2026-10-06 (BOLO 109) — provisional; three questions open
+status: SEED 2026-10-06 (BOLO 109) — three calls RULED 10/6 on the Call Sheet
 links:
   - "[[voice-register]]"
 captured: 2026-10-06
@@ -24,7 +24,7 @@ captured: 2026-10-06
 Modeled on the Thompson and Steadman bar scene in the Derby piece. Riley and her illustrator partner are drunk at a table. She riffs on all the women around them. The illustrator says, in a stupor, that if Riley were a girl she'd be pretty cute. Deadpan, Riley reaches under her shirt, unstraps her binder, and slaps it on the table. Under the sheer shirt her breasts just hang there. The illustrator: "whoa." The fabric shifts and her nipples harden. In the crazy Thompson way, they're pierced.
 - **Gate:** adult only. Riley drinks in this scene, so she reads 21+. Her canon age is not on record; confirm it before any draft.
 
-## Open questions (one rec each)
-1. **The other girl.** Chief said "Vivian and God, the other girl's name." No canon file names Vivian's opposite. Rec: **Fiona** ("Fiona meets Vivian as an equal — both queens of different ruins", ASTRO7EX Joplin notes). Chief confirms or names her.
-2. **Vivian's era.** The story registry puts Vivian in ASTRO7EX, era 4, on the Moon (`ssot_01_story_registry.md:31`). Chief placed her origin before DCUS, era 2. Rec: keep era 4 and let the quasar beam (`ssot_04_fabula.md:562`) be the bridge. Riley then works across eras as the witness. Chief rules.
-3. **Riley's age.** Rec: rule her an adult (mid-20s), a press-pass witness like Thompson at the Derby.
+## Ruled 2026-10-06 (the Call Sheet, Chief's own words)
+1. **The other girl is Anna Colson** (R1: "Anna Colson"). Vivian's opposite force is the canon character in [[anna-colson-conway]]. Riley bridges Vivian and Anna.
+2. **Vivian's era:** "She is in all eras" (R2). Vivian runs through every era, not only ASTRO7EX. *How* she spans them (the quasar beam, recurrence, or something else) is open for the systems pass.
+3. **Riley's age:** "shes that 20 something age" (R3). Riley is an adult in her twenties, which clears the Derby-table scene's gate.
