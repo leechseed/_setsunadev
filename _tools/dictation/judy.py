@@ -593,7 +593,7 @@ class Loop:
                 import focus
                 # the SEND pad (Chief 9/17): the pad above the talk pad — Enter on whatever is in the box
                 extra[int(dcfg()["send_note"])] = (
-                    lambda: threading.Thread(target=focus.send_box, daemon=True).start(), lambda: None)
+                    lambda: (__import__('chirp').play('send'), threading.Thread(target=focus.send_box, daemon=True).start()), lambda: None)
             if dcfg().get("yoyo_note") is not None:
                 # the YO-YO pad (BOLO 69, Chief 9/17): top-left, far from the others; hold to box a flash
                 extra[int(dcfg()["yoyo_note"])] = (

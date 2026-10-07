@@ -62,8 +62,38 @@ def _write(path, samples):
         w.writeframes(b"".join(struct.pack("<h", int(max(-1.0, min(1.0, s)) * 32767)) for s in samples))
 
 
+def _send(vol):
+    """Dry relay click (8 ms band-passed noise) + soft two-partial sine tail, ~180 ms, no reverb."""
+    import random
+    rnd = random.Random(114)
+    nc = int(RATE * 0.008)
+    lp1 = lp2 = 0.0
+    a_hi, a_lo = 0.12, 0.55   # crude band-pass: ~0.4k..3k one-pole difference
+    click = []
+    for i in range(nc):
+        x = rnd.uniform(-1, 1)
+        lp1 += a_hi * (x - lp1)
+        lp2 += a_lo * (x - lp2)
+        click.append((lp2 - lp1) * math.exp(-5.0 * i / nc) * 1.6 * vol)
+    n = int(RATE * 0.172)
+    fade = int(RATE * 0.003)
+    tail = []
+    for i in range(n):
+        t = i / RATE
+        v = 0.6 * math.sin(2 * math.pi * 520 * t) + 0.4 * math.sin(2 * math.pi * 783 * t)
+        env = math.exp(-t / 0.045) * min(1.0, i / fade)
+        tail.append(v * env * 0.8 * vol)
+    out = [0.0] * len(tail)
+    for i, c in enumerate(click):
+        out[i] += c
+    for i in range(len(tail)):
+        out[i] += tail[i]
+    return out
+
+
 def _build(vol):
     return {
+        "send": _send(vol),
         "open": _tone(1300, 1300, 45, vol) + _tone(1900, 1900, 45, vol),
         "sent": _tone(1800, 1150, 70, vol),
         "busy": _tone(420, 420, 60, vol, square=0.5) + _gap(40) + _tone(420, 420, 60, vol, square=0.5),
@@ -82,18 +112,18 @@ def ensure():
         os.makedirs(SOUNDS, exist_ok=True)
         tag = f"_{int(round(vol * 100))}.wav"
         for fn in os.listdir(SOUNDS):
-            if fn.endswith(".wav") and fn.split("_")[0] in ("open", "sent", "busy") and not fn.endswith(tag):
+            if fn.endswith(".wav") and fn.split("_")[0] in ("open", "sent", "busy", "send") and not fn.endswith(tag):
                 try:
                     os.remove(os.path.join(SOUNDS, fn))
                 except Exception:
                     pass
         built = None
-        for name in ("open", "sent", "busy"):
+        for name in ("open", "sent", "busy", "send"):
             p = path_for(name, vol)
             if not os.path.exists(p):
                 built = built or _build(vol)
                 _write(p, built[name])
-        return {n: path_for(n, vol) for n in ("open", "sent", "busy")}
+        return {n: path_for(n, vol) for n in ("open", "sent", "busy", "send")}
     except Exception:
         return {}
 
