@@ -47,6 +47,10 @@ ACKS = os.path.join(ROOT, "_PRIVATE", "voice-acks")
 # RULED 2026-09-17 by Chief: only these prowords confirm receipt ("copy" · "good traffic, stand by").
 ACK_LINES = ["Copy.", "Good traffic, stand by."]
 SAY = re.compile(r"<!--\s*say:\s*(.*?)\s*-->", re.S | re.I)
+# BOLO 122 (Chief 10/6): the red MODEL CALL banner (SOP §7 rule 21) gets a cockpit chime and a spoken call
+# after the say-line. Only the banner heading counts, so prose that mentions the call stays quiet.
+MODEL_CALL = re.compile(r"^#{1,4}\s*🔴\s*MODEL CALL\s*·\s*([A-Za-z]+)", re.M)
+MODEL_RANK = {"haiku": 1, "sonnet": 2, "opus": 3, "fable": 4}
 
 
 def scfg():
@@ -316,6 +320,21 @@ class Mouth:
             with self.lock:
                 if g != self.gen:
                     continue
+            if tag == "sfx":         # a sound file, not a sentence: play it in turn, no synth
+                if not self.keyed:
+                    self.keyed = True
+                    squelch.key_up()
+                speak.play(s)
+                end = time.time() + wav_seconds(s)
+                while time.time() < end:
+                    with self.lock:
+                        if g != self.gen:
+                            break
+                    time.sleep(0.05)
+                if self.q.empty() and self.keyed:
+                    self.keyed = False
+                    squelch.key_down()
+                continue
             # synthesize this one; play the previous while it renders
             self.n += 1
             p = os.path.join(tmp, f"s{self.n % 8}.wav")
@@ -368,6 +387,7 @@ class Reader:
         self.path = transcript
         self.pos = 0
         self.stop = threading.Event()
+        self.model = "opus"     # the model the last MODEL CALL named; Opus is the standing CDR (SOP §5)
 
     def _pick(self):
         if self.folder:
@@ -393,6 +413,25 @@ class Reader:
             sents, tag = speech_form(text, self.cfg)
             if sents:
                 self.mouth.speak(sents, tag)
+            self.model_call(text)
+
+    def model_call(self, text):
+        """The red banner: chime up or down, then "Switch to X." and the pointer to call for JUDY."""
+        m = MODEL_CALL.search(text)
+        if not m:
+            return
+        to = m.group(1).lower()
+        up = MODEL_RANK.get(to, 3) >= MODEL_RANK.get(self.model, 3)
+        self.model = to
+        try:
+            import chirp
+            p = chirp.ensure().get("escalate" if up else "deescalate")
+        except Exception:
+            p = None
+        if p:
+            self.mouth.q.put((self.mouth.gen, p, "sfx"))
+        self.mouth.speak(["Switch to %s." % to.capitalize(), "For more, call for JUDY."], "model-call")
+        self.log(f"  model call > {to} ({'up' if up else 'down'})")
 
     def run(self):
         self._pick()
