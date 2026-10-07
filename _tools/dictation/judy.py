@@ -458,7 +458,7 @@ class Loop:
         """Macro pad: chirp, VS Code forward + cursor in the box, paste the phrase, send key."""
         try:
             import chirp, focus, ptt
-            chirp.play("send")
+            chirp.play("sent")
             focus.focus_claude()
             ptt.type_out(phrase)
             time.sleep(0.15)
@@ -607,7 +607,7 @@ class Loop:
                 import focus
                 # the SEND pad (Chief 9/17): the pad above the talk pad — Enter on whatever is in the box
                 extra[int(dcfg()["send_note"])] = (
-                    lambda: (__import__('chirp').play('send'), threading.Thread(target=focus.send_box, daemon=True).start()), lambda: None)
+                    lambda: (__import__('chirp').play('sent'), threading.Thread(target=focus.send_box, daemon=True).start()), lambda: None)
             # BOLO 114 macro pads: type a fixed phrase in the chat box and send it, with the send chirp
             mp = dcfg().get("macro_pads") or {}
             for _key, _phrase, _dflt in (("take_all_recs", "take all recs", 41), ("spit", "spit", 42)):

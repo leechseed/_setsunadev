@@ -80,7 +80,7 @@ def main():
         m = re.match(r"\| (\d+) \|", l)
         if not m: continue
         cells = l.split("|"); status = cells[-2] if len(cells) > 3 else ""
-        if re.search(r"✅|DONE|CLOSED|RETIRED|MERGED|FOLDED", status): continue
+        if re.search(r"✅|DONE|CLOSED|RETIRED|MERGED|FOLDED|PARKED", status): continue
         if not re.search(r"[🟢🟡🔴🟠⏸⚪🔵✅⛔⬜🟣]", l): F["B"].append(f"BOLO {m.group(1)} (line {n}) · no status mark")
         dates = [dt.date(2026, int(a), int(b)) for a, b in re.findall(r"\b(1[0-2]|0?[1-9])/([0-3]?\d)\b", l) if 1 <= int(b) <= 31 and int(a) >= 6]
         dates = [d for d in dates if d <= TODAY]
