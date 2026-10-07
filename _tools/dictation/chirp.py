@@ -114,6 +114,30 @@ def _chime(f1, f2, vol):
     return out
 
 
+def _buzz(f0, f1, ms, gate_hz, vol):
+    """A gated buzz: a bright saw/square carrier gliding f0->f1, chopped at gate_hz (the "BRRRT")."""
+    n = int(RATE * ms / 1000.0)
+    out, ph = [], 0.0
+    for i in range(n):
+        f = f0 + (f1 - f0) * i / max(1, n - 1)
+        ph += f / RATE
+        frac = ph % 1.0
+        saw = 2.0 * frac - 1.0
+        sq = 1.0 if frac < 0.5 else -1.0
+        gate = 1.0 if ((i / RATE) * gate_hz) % 1.0 < 0.62 else 0.08
+        env = min(1.0, i / (RATE * 0.003), (n - 1 - i) / (RATE * 0.004))
+        out.append((0.55 * saw + 0.45 * sq) * gate * env * vol * 0.75)
+    return out
+
+
+def _critical(up, vol):
+    """The critical model call (BOLO 122, Chief 10/6: "more urgent ... a critical, like a Bram-B-B-B-B-Ht"):
+    two HUD bursts, each a chopped buzz that ends in a hard high tick. Up = the buzz climbs; down = it falls."""
+    f0, f1, tick = (480, 760, 1900) if up else (760, 480, 1250)
+    burst = _buzz(f0, f1, 380, 30, vol) + _gap(28) + _tone(tick, tick, 42, vol * 0.9, square=0.7)
+    return burst + _gap(140) + burst
+
+
 def _build(vol):
     return {
         "send": _send(vol),
@@ -122,9 +146,9 @@ def _build(vol):
         "busy": _tone(420, 420, 60, vol, square=0.5) + _gap(40) + _tone(420, 420, 60, vol, square=0.5),
         # focus pad (Chief 10/6): a soft lock-on, an upward glide then one high tick; original, no sample
         "focus": _tone(700, 1400, 35, vol * 0.8, square=0.1) + _gap(15) + _tone(2200, 2200, 15, vol * 0.6, square=0.0),
-        # the model call (BOLO 122): bong-BING going up to a stronger model, BING-bong coming back down
-        "escalate": _chime(784, 1047, vol),
-        "deescalate": _chime(1047, 784, vol),
+        # the model call (BOLO 122): the critical burst; the buzz climbs going up to a stronger model, falls coming back down (the bell chime retired same night)
+        "escalate": _critical(True, vol),
+        "deescalate": _critical(False, vol),
     }
 
 
