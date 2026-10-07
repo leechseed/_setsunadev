@@ -396,3 +396,12 @@ document.getElementById("s1").onclick=function(){sc("session")};document.getElem
 poll();setInterval(poll,2000);
 </script></body></html>
 '''
+
+# the tab icon: the BoldVenture mark (Chief, 10/6), inlined so the page needs no extra route
+try:
+    import base64
+    _mark = io.open(os.path.join(ROOT, "_tools", "brand", "boldventure-mark.svg"), "rb").read()
+    PAGE = PAGE.replace("<title>Traffic</title>", '<title>Traffic</title>\n<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,'
+                        + base64.b64encode(_mark).decode("ascii") + '">', 1)
+except OSError:
+    pass
