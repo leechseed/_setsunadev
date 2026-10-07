@@ -7,7 +7,7 @@ spoken tools over the wire. This script brings the local stations up, opens the 
 boards, and prints the station poll (GO / NO-GO with an address) for the sit rep header.
 The sit rep itself runs in the formation after this (skill: launch → sitrep).
 
-Usage:  python _tools/launch/launch.py [--no-pages] [--no-darkroom] [--no-stash] [--no-judy] [--no-faces] [--no-deck][--no-knobs] [--no-wire] [--json]
+Usage:  python _tools/launch/launch.py [--no-audit] [--no-pages] [--no-darkroom] [--no-stash] [--no-judy] [--no-faces] [--no-deck][--no-knobs] [--no-wire] [--json]
 
 Safe to run twice: a live DARKROOM is reported, not restarted (its single-instance guard);
 a running JUDY session voice is reported, not restarted; a standalone JUDY (no --session)
@@ -300,12 +300,34 @@ def station_pages():
     return out
 
 
+def station_audit():
+    """Chief, 10/6: "audits to be done at the beginning of every launch, and that to be the first thing we always do."
+    Runs the SOP audit (zero tokens) and reports its counts. NO-GO only on what needs Chief's eyes: private detail
+    in a public file, BOLO hygiene, or an unflushed rack. Retired words and the tree are advisory."""
+    t0 = time.time()
+    try:
+        out = subprocess.run([PY, os.path.join(ROOT, "_tools", "audit", "sop_audit.py")], cwd=ROOT,
+                             capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=120).stdout
+    except Exception as e:
+        return {"station": "AUDIT", "go": False, "addr": "SOP audit", "note": "did not run: %s" % e}
+    counts = {}
+    for line in out.splitlines():
+        parts = line.split()
+        if len(parts) >= 2 and len(parts[0]) == 1 and parts[0] in "RPBKTA" and parts[-1].isdigit():
+            counts[parts[0]] = int(parts[-1])
+    total = sum(v for k, v in counts.items() if k != "A")
+    hot = [k for k in "PBK" if counts.get(k)]
+    note = "%d finding(s) · " % total + " · ".join("%s %d" % (k, counts.get(k, 0)) for k in "RPBKT") +            " · report _tools/audit/out/ · %.1f s" % (time.time() - t0)
+    return {"station": "AUDIT", "go": not hot, "addr": "SOP audit", "note": note}
+
+
 def main():
     try:
         sys.stdout.reconfigure(encoding="utf-8")
     except Exception:
         pass
     ap = argparse.ArgumentParser(description="the launch sequence (BOLO 58)")
+    ap.add_argument("--no-audit", action="store_true")
     ap.add_argument("--no-pages", action="store_true")
     ap.add_argument("--no-darkroom", action="store_true")
     ap.add_argument("--no-stash", action="store_true")
@@ -318,6 +340,8 @@ def main():
     ap.add_argument("--json", action="store_true")
     a = ap.parse_args()
     rows = []
+    if not a.no_audit:   # first, always (Chief 10/6): get it out of the way
+        rows.append(station_audit())
     if not a.no_darkroom:
         rows.append(station_darkroom())
     if not a.no_stash:

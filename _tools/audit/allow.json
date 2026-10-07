@@ -1,0 +1,22 @@
+{
+ "about": "Known false hits for sop_audit.py (10/6). An entry silences a hit when the file starts with `file` and the line contains `contains` (or the matched word equals `word`). Add a line, never a regex.",
+ "allow": [
+  {"file": "_CANON_NODES/", "word": "the house", "why": "a literal house in the fiction or a studio's house"},
+  {"file": "_CANON_NODES/", "word": "The house", "why": "fiction"},
+  {"file": "_CANON_NODES/", "word": "in-house", "why": "a creator-management term"},
+  {"file": "_CANON_NODES/tremor-cult-seed.md", "contains": "series title on record is *The Outliers*", "why": "lineage note"},
+  {"file": "_CANON_NODES/victoria-midnight.md", "contains": "THE OUTSIDERS SYSTEM", "why": "an archive file name"},
+  {"file": "PROJECTS.md", "contains": "THE OUTSIDERS SYSTEM", "why": "an archive file name"},
+  {"file": "SOP.md", "contains": "| The Outsiders | **The Outliers** |", "why": "the codebook's garble row"},
+  {"file": "SOP.md", "contains": "not white glove, but audit", "why": "the ruling itself"},
+  {"file": "BOLO.md", "contains": "giant white glove", "why": "the patch design"},
+  {"file": "_tools/patch/", "word": "white glove", "why": "the patch design"},
+  {"file": "_tools/renumber/renumber.py", "word": "", "why": "the renamer's own old-to-new table"},
+  {"file": "BOLO.md", "contains": "mic diagnos", "why": "a microphone diagnosis"},
+  {"file": "BOLO.md", "contains": "routine diagnostic", "why": "a story term"},
+  {"file": "BOLO.md", "contains": "MIL-STD", "why": "military standards"},
+  {"file": "STATE.md", "contains": "MIL-STD", "why": "military standards"},
+  {"file": "BOLO.md", "contains": "sex tourism & HIV", "why": "a book title in the library"},
+  {"file": "BOLO.md", "contains": "sexual health certificate", "why": "a certificate program name (BOLO 105)"}
+ ]
+}

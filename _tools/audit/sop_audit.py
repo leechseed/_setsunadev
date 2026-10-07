@@ -60,20 +60,29 @@ def lines_of(path):
         return out
     return list(enumerate(txt, 1))
 
+ALLOW = json.load(io.open(os.path.join(ROOT, "_tools", "audit", "allow.json"), encoding="utf-8"))["allow"]
+
+def allowed(path, line, word):
+    for a in ALLOW:
+        if path.startswith(a["file"]) and (("contains" in a and a["contains"] in line) or ("word" in a and (a["word"] == "" or a["word"] == word))):
+            return True
+    return False
+
 def main():
     F = {k: [] for k in "RPBKTA"}
     for p in sorted(set(LIVE)):
         if rel(p) == "_tools/audit/sop_audit.py": continue
         for n, l in lines_of(p):
             for pat, new, when in RETIRED:
-                if re.search(pat, l, re.I if pat != r"\bENDEX\b" else 0) and not ALLOWED.search(l):
+                if re.search(pat, l, re.I if pat != r"\bENDEX\b" else 0) and not ALLOWED.search(l) \
+                        and not allowed(rel(p), l, re.search(pat, l, re.I).group(0)):
                     F["R"].append(f"{rel(p)}:{n} · '{re.search(pat, l, re.I).group(0)}' → {new} (ruled {when})")
             if rel(p) not in ("BOLO.md", "STATE.md", "SOP.md", "PROJECTS.md") and not rel(p).startswith(("_CACHE", "_CANON_NODES", ".claude")):
                 continue
             for pat, fl in PRIVATE:
                 if "diagnos" in pat and rel(p).startswith("_CANON_NODES"): continue
                 m = re.search(pat, l, fl)
-                if m: F["P"].append(f"{rel(p)}:{n} · '{m.group(0)}'")
+                if m and not allowed(rel(p), l, m.group(0)): F["P"].append(f"{rel(p)}:{n} · '{m.group(0)}'")
     # B · BOLO hygiene
     bolo = io.open(os.path.join(ROOT, "BOLO.md"), encoding="utf-8").read().split("\n")
     for n, l in enumerate(bolo, 1):

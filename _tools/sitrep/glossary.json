@@ -1196,7 +1196,14 @@
   "t": "AUDIT",
   "k": "proword",
   "st": "ruled",
-  "d": "The inspection: a script checks the work against the SOP and lists every gap. RULED 10/6 (Chief: \"not white glove, but audit. Just call it what it is\"). Third of the three clean words. The standing audit lives under BOLO 51 (`_tools/audit/`).",
+  "d": "The inspection: a script checks the work against the SOP and lists every gap. RULED 10/6 (Chief: \"not white glove, but audit. Just call it what it is\"). Third of the three clean words. The standing audit lives under BOLO 51 (`_tools/audit/`). Runs first at every launch (the AUDIT station, ruled 10/6).",
+  "w": "SOP.md §1"
+ },
+ "traffic-deck": {
+  "t": "THE TRAFFIC DECK",
+  "k": "proword",
+  "st": "ruled",
+  "d": "JUDY's deck at 127.0.0.1:8787/traffic: the last five replies in tabs, each reply's open calls with Take rec and an answer box, Take all recs, and the net chart of open threads. Opens as its own window at every launch (the DECK station). RULED 10/6.",
   "w": "SOP.md §1"
  }
 }
