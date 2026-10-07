@@ -58,7 +58,7 @@ def main():
     write(os.path.join(wd, "schema.json"), json.dumps(ex, ensure_ascii=False, indent=1))
     title = re.sub(r"\*\*", "", re.search(r"^\| \d+ \| \*\*(.+?)\*\*", row).group(1)) if re.search(r"^\| \d+ \| \*\*(.+?)\*\*", row) else f"BOLO {n}"
     brief = f"""You are SHEET, the DOPE SHEET specialist for BOLO {n}. Model: sonnet.
-READ: {rel(os.path.join(wd, 'sources.md'))} (everything the house has on it) and {rel(os.path.join(wd, 'schema.json'))} (the exact JSON shape; copy keys, not content).
+READ: {rel(os.path.join(wd, 'sources.md'))} (everything the Command has on it) and {rel(os.path.join(wd, 'schema.json'))} (the exact JSON shape; copy keys, not content).
 WRITE: {rel(os.path.join(HERE, 'boards', n + '.draft.json'))} — the whole sheet in the schema's shape, filled for BOLO {n} ("{title}"):
   bolo: n · title · trunk · issued (the row's date) · asof (today) · s · status (one header line) · decider "HOTLINE ACTUAL" · feeds · related (n + why, from the rows it names) · home "BOLO.md · row {n}" · card "none" · version "v0.1 · DOPE SHEET"
   mantra: three lines (speed · focus · boldness) specific to this BOLO

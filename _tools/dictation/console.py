@@ -677,7 +677,24 @@ class Handler(BaseHTTPRequestHandler):
                 html = io.open(PAGE, encoding="utf-8").read()
             except Exception as e:
                 return self._send(500, f"console.html missing: {e}", "text/plain; charset=utf-8")
+            # BOLO 115: a nav link to the Traffic Panel, injected (console.html is not ours to edit here)
+            link = ('<a href="/traffic" target="_blank" rel="noopener" style="position:fixed;right:12px;bottom:12px;'
+                    'z-index:9;font:500 12px monospace;color:#FF5A1F;background:#1B1A18;border:1px solid #34312C;'
+                    'border-radius:6px;padding:4px 10px;text-decoration:none">Traffic panel</a>')
+            html = html.replace("</body>", link + "</body>", 1)
             return self._send(200, html, "text/html; charset=utf-8")
+
+        if path == "/traffic":
+            import traffic
+            return self._send(200, traffic.PAGE, "text/html; charset=utf-8")
+
+        if path == "/traffic.json":
+            import traffic
+            try:
+                ids = [unquote(x) for x in unquote(q.get("ids", "")).split(",") if x][:3]
+                return self._send(200, traffic.build_payload("3d" if q.get("scope") == "3d" else "session", ids))
+            except Exception as e:
+                return self._send(500, {"error": str(e)})
 
         if path == "/faces":
             try:

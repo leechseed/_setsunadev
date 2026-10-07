@@ -444,12 +444,32 @@ class Loop:
                 say(parsed["opener"])
         self.face.set("idle")
 
+    def speaking(self):
+        """True while JUDY has the carrier keyed (reader's Mouth) or her face says talking."""
+        try:
+            m = getattr(self, "mouth", None)
+            if m is not None and m.keyed:
+                return True
+            return getattr(self.face, "state", "") == "talking"
+        except Exception:
+            return False
+
+    def _chirp_down(self):
+        """BOLO 114: pad-down beep (busy if she is mid-speech), then a short lead so the mic misses it."""
+        try:
+            import chirp
+            if chirp.play("busy" if self.speaking() else "open"):
+                time.sleep(chirp.LEAD_S)
+        except Exception:
+            pass
+
     # -- the two calls every trigger uses
     def start(self, src="key"):
         if self.open or not self.busy.acquire(blocking=False):
             return
         self.open = True
         self.face.set("listening")
+        self._chirp_down()
         if self.session:
             # Chief 9/17: the pad brings VS Code forward and puts the cursor in the chat box.
             # Runs beside the recorder so the mic opens on time; the paste lands after.
@@ -471,6 +491,7 @@ class Loop:
         self.open = True
         self.yoyo = True
         self.face.set("listening")
+        self._chirp_down()
         try:
             self.rec.start()
         except Exception as e:
@@ -487,6 +508,7 @@ class Loop:
         self.open = True
         self.naked_hold = True
         self.naked.face.set("listening")
+        self._chirp_down()
         try:
             self.rec.start()
         except Exception as e:
@@ -504,6 +526,11 @@ class Loop:
         is_naked, self.naked_hold = self.naked_hold, False
         try:
             audio = self.rec.stop()
+            try:
+                import chirp
+                chirp.play("sent")   # after the mic closed: never in the recording
+            except Exception:
+                pass
             (self.naked.face if is_naked else self.face).set("thinking")
             text, meta = self.engine.transcribe(audio)
             for h, r, _n in (meta.get("hits") or []):
@@ -671,6 +698,7 @@ def main():
     if a.session:
         import reader
         rd = reader.Reader(face=face)
+        loop.mouth = rd.mouth   # BOLO 114: the chirp asks the mouth whether she is speaking
         print(f"  voice  session · reader={rd.cfg.get('reader')} · keep the chat box focused")
         threading.Thread(target=rd.run, daemon=True).start()
     face.run()

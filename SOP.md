@@ -267,7 +267,7 @@ A session that answers "sit rep" without all five has not answered it. **Under t
 | index · the index · "E N D EX" · end X · we're off · we're done | **Oscar Mike** — the close-out (ENDEX retired 9/11) |
 | Fagit · figured · got it? | **how copy?** (spoken as a tail) |
 | Fargo · Frago (spoken twice) | **FRAGO** — the update onto a DOPE SHEET |
-| Oscar Charlie · Oscar, Mike, and Oscar Charlie | the pair **Oscar Mike** (park) · **Charlie Mike** (resume); ENDEX is the third, the close-out |
+| Oscar Charlie · Oscar, Mike, and Oscar Charlie | the pair **Oscar Mike** (the close-out, ruled 9/11) · **Charlie Mike** (resume) |
 | formio tango bravo · our TB · are TB | **RTB** — Romeo Tango Bravo, return to base |
 | abort abort abort · abort the … | **ABORT** — the cancel word (RULED 9/11); the correction follows |
 | hotline · hot line · word from hotline | **HOTLINE** — the operator's callsign; formal **HOTLINE ACTUAL** (RULED 9/11) |
@@ -276,7 +276,7 @@ A session that answers "sit rep" without all five has not answered it. **Under t
 | buffalo · boat · below (with a number) | **BOLO** |
 | upward · op ord | **OPORD** (retired 9/11 → DOPE SHEET) |
 | Charlie Mike · Charley Mike · "Charlie and Mike" · CM (spoken alone) | **Charlie Mike** — continue mission, resume the parked card (RULED 9/10) |
-| Ebola · a bolo · the bolo · "below forty-five" (below + a number, 9/11) | **BOLO** — the watchlist / a BOLO row; "the BOLO status page" = **OPORD N** (provisional), its update = **FRAGO N** |
+| Ebola · a bolo · the bolo · "below forty-five" (below + a number, 9/11) | **BOLO** — the watchlist / a BOLO row; "the BOLO status page" = **DOPE SHEET N** (ruled 9/11), its update = **FRAGO N** |
 | Quinton | Quinn Bishop |
 | The Outsiders | **The Outliers** |
 | borsite · bore site · boar sight | **boresight** (coded 9/16 — first catch from the BOLO 26 tool itself) |

@@ -71,7 +71,7 @@ def main():
             if rel(p) not in ("BOLO.md", "STATE.md", "SOP.md", "PROJECTS.md") and not rel(p).startswith(("_CACHE", "_CANON_NODES", ".claude")):
                 continue
             for pat, fl in PRIVATE:
-                if pat == r"diagnos" and rel(p).startswith("_CANON_NODES"): continue
+                if "diagnos" in pat and rel(p).startswith("_CANON_NODES"): continue
                 m = re.search(pat, l, fl)
                 if m: F["P"].append(f"{rel(p)}:{n} · '{m.group(0)}'")
     # B · BOLO hygiene

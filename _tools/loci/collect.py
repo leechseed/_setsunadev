@@ -70,7 +70,7 @@ WRITE: {rel(os.path.join(wd, f'extract.{k}.json'))} — a JSON list, one object 
 RULES: extract what the page actually lists; a page that is a list of standards yields many items, a single standard yields one; never invent an id; keep notes under 20 words. Reply with the path and the item count, nothing else.
 """)
     write(os.path.join(wd, "brief.WRITE.md"), f"""You are WRITE, the register specialist for the "{name}" locus. Model: sonnet.
-READ: every {rel(wd)}/extract.*.json and the locus file {rel(src)} (for the house areas it names). Nothing else.
+READ: every {rel(wd)}/extract.*.json and the locus file {rel(src)} (for the Command's areas it names). Nothing else.
 WRITE: the register file the locus names (or {rel(os.path.join(wd, name + '.register.draft.md'))} if it does not): one table by domain (id · title · body · tier · free · maps to house area · note), then a gaps section (what no link carried), then a free-sources section. Every fetched URL appears at least once.
 RULES: nothing not in the extracts; ids verbatim; under 900 lines. Reply with the path and nothing else.
 """)

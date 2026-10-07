@@ -5,7 +5,7 @@ Reader protocol (SSOT: 09_OPERATIONS/📐 ssot_09_operations_markdown_marking):
   the reader marks a load-bearing term as ==term== while reading;
   this script pulls every mark with its section and sentence and writes
   (1) the per-source VOCAB page  KNOWLEDGE_AREAS/_vocab/<ID>.vocab.md
-  (2) new rows in the house register  _0.1_BVX_LEARN/_meta/VOCABULARY.md
+  (2) new rows in the Command register  _0.1_BVX_LEARN/_meta/VOCABULARY.md
 
 Usage:
   python _tools/vocab_harvest.py "<one-sheet.md>" [--senses senses.json]
@@ -138,7 +138,7 @@ def vocab_page(fm, sheet_name, rows, senses):
 
 REG_HEAD = [
     "---",
-    "title: VOCABULARY — the house register of load-bearing terms",
+    "title: VOCABULARY — the Command register of load-bearing terms",
     "type: register",
     "rule: one row per (term, source); rows are appended by _tools/vocab_harvest.py, never hand-typed; sense is the term's meaning IN THAT SOURCE",
     "---",

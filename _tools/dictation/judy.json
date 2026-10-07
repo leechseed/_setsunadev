@@ -67,6 +67,10 @@
     },
     "pools_seeded": true
   },
+  "ptt_chirp": {
+    "on": true,
+    "volume": 0.35
+  },
   "chat": {
     "model": "claude-haiku-4-5-20251001"
   },

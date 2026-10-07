@@ -14,7 +14,7 @@ read_first: true
 > **Countersign:** *"The Asset is acquired. The Noise is archived. The Feed is stable."*
 > → then the board. Equivalents: "sit rep" · "where did we leave off" · "the board".
 
-**Session-open reading order ([SOP.md](SOP.md) §4):** SOP.md → this file → [BOLO.md](BOLO.md) (watchlist) → `_CACHE/` (Ready Rack — flush to `_LOG/` on sit rep) → [PROJECTS.md](PROJECTS.md). All comms codes (sit rep · Oscar Mike · how copy · BOLO capture · **boresight** · break-break/buttonhook back · ivory tower · ENDEX · **RTB** · **Charlie Mike**) are canonical in SOP.md, Command format included (§7).
+**Session-open reading order ([SOP.md](SOP.md) §4):** SOP.md → this file → [BOLO.md](BOLO.md) (watchlist) → `_CACHE/` (Ready Rack — flush to `_LOG/` on sit rep) → [PROJECTS.md](PROJECTS.md). All comms codes (sit rep · Oscar Mike · how copy · BOLO capture · **boresight** · break-break/buttonhook back · ivory tower · **RTB** · **Charlie Mike**) are canonical in SOP.md, Command format included (§7).
 
 **Autosave is on.** A Stop hook (`_tools/autocommit.sh`) commits every change to git when a session ends. Local only — it never pushes. Run `git push` yourself when you mean to publish.
 

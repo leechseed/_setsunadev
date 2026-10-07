@@ -1,4 +1,4 @@
-"""SOI — the house tongue's book. Build.
+"""SOI — the lexicon's book. Build.
 
 Usage:  python _tools/soi/build.py
 

@@ -102,7 +102,7 @@ def main():
     example = rel(example[-1]) if example else "(none)"
     brief = f"""You are NOTE, the Ready Rack specialist for the close-out of {date}. Model: haiku.
 READ: {rel(os.path.join(wd, 'transcript.md'))} (the session, spoken turns only) · {rel(os.path.join(wd, 'meta.json'))} · {example} (the newest session note, for shape only){' · _CACHE/' + target + ' (the open note to finalize, keep every existing bullet)' if target in existing else ''}.
-WRITE: _CACHE/{target} — the session note in the house shape: a `# Session note — {date}: <what the session was>` title, then bullets:
+WRITE: _CACHE/{target} — the session note in the Command's shape: a `# Session note — {date}: <what the session was>` title, then bullets:
   the transmission(s) (what Chief ordered, quoted where he ruled something) · what was built or delivered (file paths) · what was ruled (RULED / provisional / tabled, with the word) ·
   what was measured (numbers only if spoken or printed) · memory written (if the transcript says so) · **Open at close:** (everything unresolved, one line) ·
   **AAR (one line):** planned = · happened = · sustain = · improve = · and a final line `- Oscar Mike.`
