@@ -454,6 +454,20 @@ class Loop:
         except Exception:
             return False
 
+    def _macro(self, phrase):
+        """Macro pad: chirp, VS Code forward + cursor in the box, paste the phrase, send key."""
+        try:
+            import chirp, focus, ptt
+            chirp.play("send")
+            focus.focus_claude()
+            ptt.type_out(phrase)
+            time.sleep(0.15)
+            import keyboard
+            k = focus.send_key()
+            keyboard.send(k) if "+" in k else (keyboard.press(k), time.sleep(0.03), keyboard.release(k))
+        except Exception as e:
+            print(f"  ! macro pad failed: {e}")
+
     def _chirp_down(self):
         """BOLO 114: pad-down beep (busy if she is mid-speech), then a short lead so the mic misses it."""
         try:
@@ -594,6 +608,13 @@ class Loop:
                 # the SEND pad (Chief 9/17): the pad above the talk pad — Enter on whatever is in the box
                 extra[int(dcfg()["send_note"])] = (
                     lambda: (__import__('chirp').play('send'), threading.Thread(target=focus.send_box, daemon=True).start()), lambda: None)
+            # BOLO 114 macro pads: type a fixed phrase in the chat box and send it, with the send chirp
+            mp = dcfg().get("macro_pads") or {}
+            for _key, _phrase, _dflt in (("take_all_recs", "take all recs", 41), ("spit", "spit", 42)):
+                _n = mp.get(_key, _dflt)
+                if self.session and _n is not None and int(_n) not in extra:
+                    extra[int(_n)] = (lambda p=_phrase: threading.Thread(
+                        target=self._macro, args=(p,), daemon=True).start(), lambda: None)
             if dcfg().get("yoyo_note") is not None:
                 # the YO-YO pad (BOLO 69, Chief 9/17): top-left, far from the others; hold to box a flash
                 extra[int(dcfg()["yoyo_note"])] = (
