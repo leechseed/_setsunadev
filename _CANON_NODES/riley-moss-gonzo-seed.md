@@ -20,6 +20,10 @@ captured: 2026-10-06
 - **POV plan:** the DCUS-era stories run in Riley's first person. Before that, Vivian's origin runs from Vivian's own perspective.
 - **The voice:** her inner monologue is Hunter S. Thompson. He is almost a second spirit inside her: her, him, and the play between them. Reference: [[voice-register]] VR-001.
 
+## Dream cast (Chief, 10/6)
+- **Riley's face: Lily-Rose Depp** ("Lily Rose Depp as Riley"), card AR-008.
+- **The Hunter inside her: Johnny Depp's voice**, from his Raoul Duke in *Fear and Loathing in Las Vegas* (VR-002). The father is the voice in the daughter's head; the casting carries the her-and-him dynamic Chief wants to play with.
+
 ## Scene seed (ORANGE) — the Derby-table beat
 Modeled on the Thompson and Steadman bar scene in the Derby piece. Riley and her illustrator partner are drunk at a table. She riffs on all the women around them. The illustrator says, in a stupor, that if Riley were a girl she'd be pretty cute. Deadpan, Riley reaches under her shirt, unstraps her binder, and slaps it on the table. Under the sheer shirt her breasts just hang there. The illustrator: "whoa." The fabric shifts and her nipples harden. In the crazy Thompson way, they're pierced.
 - **Gate:** adult only. Riley drinks in this scene, so she reads 21+. Her canon age is not on record; confirm it before any draft.

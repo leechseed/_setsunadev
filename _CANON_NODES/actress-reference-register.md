@@ -90,3 +90,9 @@ Chief's own words on each pick live in `_PRIVATE/actress-picks.md` (the repo is 
 - **look · build · scenes:** to fill
 - **feeds:** none yet
 
+### AR-008 · Lily-Rose Depp
+- **picked:** 2026-10-06 (spoken: "Lily Rose Depp as Riley")
+- **screen personality:** to fill
+- **roles that show it:** to fill
+- **look · build · scenes:** to fill
+- **feeds:** Riley Moss · borrows: look (the dream cast for Riley; see [[riley-moss-gonzo-seed]])
