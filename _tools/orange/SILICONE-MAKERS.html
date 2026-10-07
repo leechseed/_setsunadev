@@ -1,0 +1,59 @@
+<title>Silicone Makers</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* Layout: thin strip, tier chips + search, a two-column card grid of makers, the off-focus list last. Dark only, the creator-cases orange. */
+  :root{color-scheme:dark;--bg:#121110;--panel:#1B1A18;--panel-2:#24221F;--line:#34312C;--ink:#ECE7DF;--ink-2:#B7B0A5;--ink-3:#7F786E;--accent:#FF5A1F;--accent-soft:#3A1D10;--accent-ink:#FFB08F;--gold:#E8B04A;
+    --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;--body:"Atkinson Hyperlegible","Segoe UI",Verdana,sans-serif;--mono:"IBM Plex Mono",Consolas,monospace}
+  html,body{background:var(--bg);color:var(--ink)}body{font:15px/1.5 var(--body);padding-inline:16px;padding-block:0 48px}*{box-sizing:border-box}
+  button,input{font:inherit;color:inherit}:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .strip{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;align-items:center;gap:12px;flex-wrap:wrap;min-height:44px;margin-inline:-16px;padding:6px 16px;background:var(--panel);border-bottom:1px solid var(--line)}
+  .strip h1{margin:0;font:800 20px/1 var(--display);letter-spacing:.06em;text-transform:uppercase}.strip h1 b{color:var(--accent)}
+  .chip{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:4px 7px;border:1px solid var(--line);border-radius:3px;color:var(--ink-2)}
+  .chip.orange{color:var(--accent-ink);border-color:var(--accent);background:var(--accent-soft)}.spacer{flex:1}
+  .wrap{max-width:1100px;margin:0 auto;display:grid;gap:16px;padding-block:16px}
+  .bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .f{cursor:pointer;border:1px solid var(--line);background:var(--panel-2);border-radius:999px;padding:5px 12px;font-size:13px}
+  .f[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);color:var(--accent-ink)}
+  #q{flex:1;min-width:180px;background:var(--panel-2);border:1px solid var(--line);border-radius:4px;padding:6px 10px}
+  .note{font-size:13px;color:var(--ink-3);margin:0;max-width:80ch}
+  .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px 16px;display:grid;gap:8px;min-width:0}
+  .top{display:flex;gap:10px;align-items:baseline}.top h2{margin:0;font:700 21px/1.1 var(--display);letter-spacing:.03em;flex:1}
+  .star{cursor:pointer;background:none;border:0;font-size:20px;line-height:1;color:var(--ink-3)}.star[aria-pressed="true"]{color:var(--gold)}
+  .meta{display:flex;flex-wrap:wrap;gap:6px}.tag{font:500 11px var(--mono);color:var(--ink-2);border:1px solid var(--line);border-radius:3px;padding:2px 6px}
+  .tag.t{color:var(--accent-ink);border-color:var(--accent)}
+  .what{margin:0;font-size:14px;color:var(--ink-2)}
+  .links{display:flex;gap:8px}.links a{font:500 12px var(--mono);color:var(--accent-ink);text-decoration:none;border:1px solid var(--line);padding:3px 8px;border-radius:3px}.links a:hover{border-color:var(--accent)}
+  .off{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px 16px;font-size:14px;color:var(--ink-2)}.off b{color:var(--ink)}
+  @media (max-width:720px){.grid{grid-template-columns:minmax(0,1fr)}}
+</style>
+<header class="strip"><h1>Silicone <b>Makers</b></h1><span class="chip orange">ORANGE</span><span class="chip">BOLO 118</span><span class="spacer"></span><span class="chip" id="cnt"></span></header>
+<main class="wrap">
+  <div class="bar" id="bar"></div>
+  <p class="note">Premium silicone dildo makers from the 8/21 watchlist, sourced via X. Every maker here works in platinum-cure or medical-grade silicone. Star the ones you want; JUDY reads your stars. The live re-check of each maker is BOLO 118's next pass.</p>
+  <div class="grid" id="grid"></div>
+  <div class="off" id="off"></div>
+</main>
+<script>
+(function(){
+  const D={"makers": [{"name": "Fantasticocks", "tier": "artisan", "where": "Ohio, USA", "what": "Woman- and queer-owned. Handmade fantasy toys: dragon, tentacle and pegasus dildos, ovipositors. A TRANScend line for trans and non-binary users.", "model": "custom · Etsy", "site": "https://www.fantasticocks.com/", "x": "https://x.com/Fantasticocks1"}, {"name": "Uberrime", "tier": "artisan", "where": "Orlando, FL", "what": "Artist-run, made to order. Fantasy, tentacle, alien, realistic, grinders, giant variants. Sells grab bags of extra pours. Your in-state maker.", "model": "made to order", "site": "https://uberrime.com/", "x": "https://x.com/uberrimedildos"}, {"name": "Faux Phallus", "tier": "artisan", "where": "Tasmania, Australia", "what": "Husband-and-wife solar-powered workshop. One-of-a-kind botanical and creature designs, deliberately non-gender-specific.", "model": "stock drops", "site": "https://fauxphallus.com.au/", "x": "https://x.com/FauxPhallus"}, {"name": "SquarePegToys", "tier": "artisan", "where": "USA · since 1997", "what": "A veteran small shop with US-sourced silicone. Known for the SuperSoft squish tier. Dildos, plugs, harnesses, tails.", "model": "stock", "site": "https://www.squarepegtoys.com/", "x": "https://x.com/SquarePegToys"}, {"name": "Pleasure Forge", "tier": "artisan", "where": "USA", "what": "D&D-flavored designs (Ogre, Merfolk, Dwarf, Wizard), XS to XL, down to super-soft firmness, light-up variants.", "model": "limited drops", "site": "https://pleasureforge.com/collections/products", "x": "https://x.com/PleasureForge"}, {"name": "Bat Bites Art", "tier": "artisan", "where": "USA", "what": "A gender-affirming catalog: insertables, packers, grinders, strokers. Discord community.", "model": "stock + customs · drops", "site": "https://batbites.art/", "x": "https://x.com/BattyBits"}, {"name": "Something Squishy Toys", "tier": "artisan", "where": "USA", "what": "A playful range: fantasy, food, tools, animals. Near-clear and hand-painted pours.", "model": "drops + commissions", "site": "https://somethingsquishytoys.com/", "x": "https://x.com/squishy_toys"}, {"name": "Funkit Toys", "tier": "artisan", "where": "USA", "what": "Conceptual sculpture-objects plus the NoFrillDo budget line from $24. Moved to Bluesky; X likely dormant.", "model": "stock", "site": "https://www.funkittoys.com/", "x": "https://bsky.app/profile/funkittoys.bsky.social"}, {"name": "Baphomet’s Workshop", "tier": "artisan", "where": "Canada", "what": "Fantasy pours, including thermochromic silicone that shows a rainbow as it warms.", "model": "surprise drops", "site": "https://baphometsworkshop.com/", "x": "https://x.com/BWsilicone"}, {"name": "Bad Dragon", "tier": "fantasy", "where": "Phoenix, AZ · est. 2008", "what": "The company that industrialized creature toys. Per-order custom size, firmness and color.", "model": "made to order", "site": "https://bad-dragon.com/", "x": "https://x.com/bad_dragon"}, {"name": "Mr Hankey’s Toys", "tier": "fantasy", "where": "California · est. 2015", "what": "The size king: lifecasts from real models plus fantasy, XS to XXXL. Custom size, color and firmness per order.", "model": "made to order", "site": "https://www.mrhankeystoys.com/", "x": "https://x.com/hankeystoys"}, {"name": "Topped Toys", "tier": "fantasy", "where": "Vancouver, Canada", "what": "Factory-made plugs and dildos for the size and stretch market. Dishwasher-safe. The board already holds verdicts on four of them.", "model": "stock", "site": "https://toppedtoys.com/", "x": "https://x.com/ToppedToys"}, {"name": "Fun Factory", "tier": "design", "where": "Bremen, Germany · est. 1996", "what": "Design-led medical-grade silicone. Dildos, vibes, the Stronic self-thrusting pulsators. New ownership since 2024.", "model": "retail", "site": "https://www.funfactory.com/", "x": "https://x.com/funfactory_intl"}, {"name": "Doc Johnson", "tier": "mass", "where": "North Hollywood, CA · est. 1976", "what": "One of the largest makers in the world. Vac-U-Lock, Signature Cocks (molded from performers), every category.", "model": "retail", "site": "https://docjohnson.com/", "x": "https://x.com/theoriginaldoc"}, {"name": "NS Novelties", "tier": "mass", "where": "USA", "what": "Body-safe silicone and glass. The Colours dual-density dildos, the INYA Rose, Renegade.", "model": "retail", "site": "https://www.nsnovelties.com", "x": "https://x.com/NSNovelties"}, {"name": "Nasstoys", "tier": "mass", "where": "New York · 40+ years", "what": "A legacy full catalog. Wholesale for decades; direct-to-customer store since 2025.", "model": "retail", "site": "https://store.nasstoys.com/", "x": "https://x.com/Nasstoys"}, {"name": "Satisfyer", "tier": "mass", "where": "Berlin, Germany", "what": "Air-pulse pioneer with a sprawling silicone catalog, dildos included. Drugstore scale.", "model": "retail", "site": "https://us.satisfyer.com/us", "x": "https://x.com/SatisfyerCOM"}], "off": [{"name": "We-Vibe", "why": "vibrators and app control"}, {"name": "LELO", "why": "luxury vibrators"}, {"name": "Magic Wand", "why": "the wand"}, {"name": "Sybian", "why": "ride-on machine"}, {"name": "TENGA", "why": "strokers"}, {"name": "Aneros", "why": "prostate"}, {"name": "Mystim", "why": "e-stim"}, {"name": "Peepshow Toys", "why": "retailer for the indie makers"}, {"name": "Wood Rocket", "why": "novelty merch"}]};
+  const TIERS={all:"All",artisan:"Artisan indie",fantasy:"Fantasy & size houses",design:"Design house",mass:"Mass market",star:"★ Starred"};
+  let tier="all",q="",stars={},ref=null;
+  const $=(id)=>document.getElementById(id);
+  const esc=(s)=>String(s).replace(/[&<>"]/g,(c)=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  $("bar").innerHTML=Object.entries(TIERS).map(([k,v])=>`<button type="button" class="f" data-t="${k}" aria-pressed="${k==="all"}">${v}</button>`).join("")+`<input id="q" type="search" placeholder="Search: tentacle, drops, Florida" aria-label="Search makers">`;
+  function render(){
+    const list=D.makers.filter(m=>(tier==="all"||(tier==="star"?stars[m.name]:m.tier===tier))&&(!q||(m.name+" "+m.what+" "+m.where+" "+m.model).toLowerCase().includes(q)));
+    $("grid").innerHTML=list.map(m=>`<article class="card"><div class="top"><h2>${esc(m.name)}</h2><button type="button" class="star" data-n="${esc(m.name)}" aria-pressed="${!!stars[m.name]}" aria-label="Star ${esc(m.name)}">★</button></div>
+      <div class="meta"><span class="tag t">${esc(TIERS[m.tier])}</span><span class="tag">${esc(m.where)}</span><span class="tag">${esc(m.model)}</span></div>
+      <p class="what">${esc(m.what)}</p><div class="links"><a href="${esc(m.site)}" target="_blank" rel="noopener">site</a><a href="${esc(m.x)}" target="_blank" rel="noopener">${m.x.includes("bsky")?"bluesky":"x"}</a></div></article>`).join("")||'<p class="note">No maker matches.</p>';
+    $("cnt").textContent=list.length+" of "+D.makers.length;
+    $("off").innerHTML="<b>On the watchlist, not silicone-dildo makers:</b> "+D.off.map(o=>esc(o.name)+" ("+esc(o.why)+")").join(" · ");
+  }
+  $("bar").addEventListener("click",(e)=>{const b=e.target.closest(".f");if(!b)return;tier=b.dataset.t;document.querySelectorAll(".f").forEach(x=>x.setAttribute("aria-pressed",x===b));render();});
+  $("bar").addEventListener("input",(e)=>{if(e.target.id==="q"){q=e.target.value.toLowerCase().trim();render();}});
+  $("grid").addEventListener("click",(e)=>{const b=e.target.closest(".star");if(!b)return;const n=b.dataset.n;stars={...stars,[n]:!stars[n]};render();if(ref)ref.set({stars}).catch(()=>{});});
+  render();
+  (async()=>{const db=window.claude&&window.claude.use?await window.claude.use("db"):null;if(!db)return;ref=db.doc("prefs/stars");ref.onSnapshot(s=>{if(s.exists){stars={...(s.data().stars||{})};render();}},()=>{});})();
+})();
+</script>
