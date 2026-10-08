@@ -134,18 +134,6 @@
      "town": true
     },
     {
-     "no": "109",
-     "d": "Smart plug (printer power, safety)",
-     "q": 1,
-     "usd": 12,
-     "each": 12,
-     "link": "https://www.amazon.com/s?k=Kasa+smart+plug+mini",
-     "pick": null,
-     "terms": [
-      "Kasa smart plug mini"
-     ]
-    },
-    {
      "no": "110",
      "d": "Carbon filter pellets (BentoBox)",
      "q": 1,
