@@ -681,7 +681,16 @@ class Handler(BaseHTTPRequestHandler):
             link = ('<a href="/traffic" target="_blank" rel="noopener" style="position:fixed;right:12px;bottom:12px;'
                     'z-index:9;font:500 12px monospace;color:#FF5A1F;background:#1B1A18;border:1px solid #34312C;'
                     'border-radius:6px;padding:4px 10px;text-decoration:none">Traffic panel</a>')
-            html = html.replace("</body>", link + "</body>", 1)
+            # Chief, 10/8: a refresh button for JUDY herself (restart the session voice, then reload this page)
+            refresh = ('<button id="judyRefresh" title="Restart JUDY so she reloads her faces, voice and config" style="position:fixed;'
+                       'right:128px;bottom:12px;z-index:9;font:500 12px monospace;color:#121110;background:#FF5A1F;border:0;'
+                       'border-radius:6px;padding:5px 10px;cursor:pointer">&#8635; Refresh JUDY</button><script>'
+                       'document.getElementById("judyRefresh").onclick=async(e)=>{const b=e.target;b.disabled=true;'
+                       'b.textContent="refreshing… ~8 s";let ok=false;try{const r=await fetch("/api/judy/refresh",{method:"POST",'
+                       'headers:{"Content-Type":"application/json"},body:"{}"});ok=r.ok;}catch(_){}'
+                       'b.textContent=ok?"JUDY is back":"refresh failed: see the log";setTimeout(()=>location.reload(),ok?1200:4000);};'
+                       '</script>')
+            html = html.replace("</body>", link + refresh + "</body>", 1)
             html = html.replace("</title>", '</title><link rel="icon" type="image/png" href="/app/icon-192.png">', 1)
             return self._send(200, html, "text/html; charset=utf-8")
 
@@ -901,6 +910,19 @@ class Handler(BaseHTTPRequestHandler):
                 if act == "stop":
                     return self._send(200, {"ok": True, "msg": daemon_stop()})
                 raise ValueError(f"unknown action {act!r}")
+
+            if path == "/api/judy/refresh":   # Chief, 10/8: "refresh you" — restart JUDY's session voice so she reloads faces, config, voice
+                if self.client_address[0] != "127.0.0.1":
+                    return self._send(403, {"error": "local only"})
+                sys.path.insert(0, os.path.join(HERE, "..", "launch"))
+                import launch
+                for pid, cmd in launch.procs(r"judy\.py"):
+                    if "--session" in cmd:
+                        subprocess.run(["taskkill", "/PID", str(pid), "/F"], capture_output=True)
+                time.sleep(1.0)
+                r = launch.station_judy()
+                LOG.append(f"JUDY refresh: {'GO' if r['go'] else 'NO-GO'} · {r['addr']} · {r['note']}")
+                return self._send(200 if r["go"] else 500, {"ok": r["go"], "msg": r["note"], "addr": r["addr"]})
 
             if path == "/api/open":
                 target = b.get("target")
