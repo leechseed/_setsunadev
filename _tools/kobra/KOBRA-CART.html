@@ -1,7 +1,7 @@
 <title>Kobra Cart</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-  /* Layout: one thin strip with the running total, then one checklist block per phase. Dark only, the creator-cases orange. */
+  /* Layout: one thin strip with the running total, then one block per phase. Dark only, the creator-cases orange. */
   :root { color-scheme: dark;
     --bg:#121110; --panel:#1B1A18; --panel-2:#24221F; --line:#34312C; --ink:#ECE7DF; --ink-2:#B7B0A5; --ink-3:#7F786E;
     --accent:#FF5A1F; --accent-soft:#3A1D10; --accent-ink:#FFB08F; --good:#5FBF8A;
@@ -21,12 +21,21 @@
   .item{display:grid;grid-template-columns:28px 44px minmax(0,1fr) auto auto;gap:10px;align-items:center;padding:9px 14px;border-bottom:1px solid var(--line)}
   .item:last-child{border-bottom:0}
   .item input{width:20px;height:20px;accent-color:var(--accent);cursor:pointer}
-  .item .no{font:500 12px var(--mono);color:var(--ink-3)} .item .d{min-width:0;overflow-wrap:anywhere} .item .d small{color:var(--ink-3)}
-  .item .usd{font:700 16px var(--display);font-variant-numeric:tabular-nums;text-align:right;min-width:3.2em}
-  .item a{font:500 12px var(--mono);color:var(--accent-ink);text-decoration:none;border:1px solid var(--line);padding:3px 7px;border-radius:3px} .item a:hover{border-color:var(--accent)}
+  .item .no{font:500 12px var(--mono);color:var(--ink-3)} .item .d{min-width:0;overflow-wrap:anywhere} .item .d small{display:block;color:var(--ink-3);font-size:12px}
+  .item .usd{font:700 16px var(--display);font-variant-numeric:tabular-nums;text-align:right;min-width:3.2em} .item .usd.est{color:var(--ink-3)}
+  .item a{font:500 12px var(--mono);color:var(--accent-ink);text-decoration:none;border:1px solid var(--line);padding:3px 7px;border-radius:3px;white-space:nowrap} .item a:hover{border-color:var(--accent)}
+  .item a.buy{color:#121110;background:var(--accent);border-color:var(--accent);font-weight:500}
   .item.done .d{color:var(--ink-3);text-decoration:line-through} .item.done .usd{color:var(--good)}
   .note{font-size:13px;color:var(--ink-3)}
-  @media (max-width:520px){.item{grid-template-columns:24px minmax(0,1fr) auto;row-gap:4px}.item .no{display:none}.item a{grid-column:2}}
+  .inbox{background:var(--panel);border:1px solid var(--accent);border-radius:6px;padding:12px 14px;display:grid;gap:8px}
+  .inbox h2{margin:0;font:700 18px var(--display);letter-spacing:.06em;text-transform:uppercase}
+  .inbox form{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr) 90px auto;gap:8px}
+  .inbox input,.inbox select{min-width:0;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:7px 9px;font:14px var(--body)}
+  .inbox button{background:var(--accent);color:#121110;border:0;border-radius:4px;padding:7px 14px;font:700 15px var(--display);letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+  .inbox ul{margin:0;padding:0;list-style:none;display:grid;gap:4px} .inbox li{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--ink-2);overflow-wrap:anywhere}
+  .inbox li button{background:none;color:var(--ink-3);padding:0 4px;font:14px var(--mono)}
+  @media (max-width:620px){.inbox form{grid-template-columns:1fr 1fr}.inbox form input[name=url]{grid-column:1/-1}}
+  @media (max-width:520px){.item{grid-template-columns:24px minmax(0,1fr) auto;row-gap:4px}.item .no{display:none}.item a{grid-column:2;justify-self:start}}
 </style>
 <header class="strip">
   <h1>Kobra <b>Cart</b></h1><span class="chip">BOLO 112</span><span class="spacer"></span>
@@ -34,21 +43,37 @@
 </header>
 <div class="bar"><i id="bar"></i></div>
 <main class="wrap">
-  <p class="rules">1.75 mm only · plastic spools only in the ACE Pro · no matte PLA, no silk · official Anycubic hotends and plates only · TPU and CF feed direct · CF needs the hardened hotend. Prices are July estimates; each link opens an Amazon search.</p>
+  <div class="inbox" id="inbox" hidden>
+    <h2>Paste a link</h2>
+    <form id="add">
+      <input name="url" type="url" placeholder="Paste the product link" required>
+      <select name="item"><option value="">New item, or pick which one it fills</option><option value="101">101 · PLA, light gray, 1 kg</option><option value="102">102 · PLA, black, 1 kg</option><option value="103">103 · PETG, black, 1 kg</option><option value="104">104 · PETG, OD green, 1 kg</option><option value="105">105 · Glue stick 2-pack</option><option value="106">106 · IPA 91% + microfiber</option><option value="107">107 · Vacuum filament storage kit</option><option value="108">108 · Spare hotend 0.4 mm, official</option><option value="201">201 · ASA, black, 1 kg</option><option value="202">202 · ASA, OD green, 1 kg</option><option value="203">203 · Filament dryer, 70 °C (Sunlu S2 class)</option><option value="204">204 · Heat-set inserts M3, 100+</option><option value="205">205 · Heat-set tips, M3</option><option value="206">206 · M3 screw assortment</option><option value="207">207 · Hotend 0.6 mm, official</option><option value="208">208 · Super Lube 21030</option><option value="209">209 · PTFE tube + cutter + couplings</option><option value="301">301 · Hardened hotend 0.4 mm, official</option><option value="302">302 · PETG-CF, black, 1 kg</option><option value="303">303 · TPU 95A, black, 1 kg</option><option value="304">304 · Second build plate, official</option><option value="305">305 · Smart plug + smoke detector</option><option value="306">306 · Carbon filter pellets (BentoBox)</option><option value="401">401 · Digital calipers, 6 in</option><option value="402">402 · Finish kit: filler primer + matte black + red spray</option><option value="403">403 · Wet/dry sandpaper 220-2000 + sanding sponges</option><option value="404">404 · ASA, red, 1 kg (the cyberdeck accent)</option><option value="405">405 · Pinecil soldering iron (only if you have no iron)</option></select>
+      <input name="price" placeholder="$ (optional)" inputmode="decimal">
+      <button type="submit">Add</button>
+    </form>
+    <ul id="pending"></ul>
+    <p class="note">Links wait here until Claude files them: it reads the name and price, puts the link on the row, and updates Mom's order list.</p>
+  </div>
+  <p class="rules">1.75 mm only · plastic spools only in the ACE Pro · no matte PLA, no silk · official Anycubic hotends and plates only · TPU and CF feed direct · CF needs the hardened hotend. Gray prices are July estimates with a search link; orange <b>buy</b> means a real product is picked.</p>
   <div id="list"></div>
   <p class="note" id="status">Ticks save to this page.</p>
 </main>
 <script>
 (function(){
-  const PHASES = [{"name": "Phase 1 · calibration", "items": [{"no": "101", "d": "PLA, light gray, 1 kg", "q": 1, "usd": 14, "link": "https://www.amazon.com/s?k=PLA+filament+1.75mm+light+gray+1kg+plastic+spool"}, {"no": "102", "d": "PLA, black, 1 kg", "q": 1, "usd": 14, "link": "https://www.amazon.com/s?k=PLA+filament+1.75mm+black+1kg+plastic+spool"}, {"no": "103", "d": "PETG, black, 1 kg", "q": 2, "usd": 34, "link": "https://www.amazon.com/s?k=PETG+filament+1.75mm+black+1kg"}, {"no": "104", "d": "PETG, OD green, 1 kg", "q": 1, "usd": 17, "link": "https://www.amazon.com/s?k=PETG+filament+1.75mm+olive+green+1kg"}, {"no": "105", "d": "Glue stick 2-pack", "q": 1, "usd": 4, "link": "https://www.amazon.com/s?k=Elmers+purple+glue+stick+2+pack"}, {"no": "106", "d": "IPA 91% + microfiber", "q": 1, "usd": 8, "link": "https://www.amazon.com/s?k=91%25+isopropyl+alcohol+quart"}, {"no": "107", "d": "Vacuum filament storage kit", "q": 1, "usd": 28, "link": "https://www.amazon.com/s?k=filament+vacuum+storage+bags+kit+pump+hygrometer"}, {"no": "108", "d": "Spare hotend 0.4 mm, official", "q": 1, "usd": 18, "link": "https://www.amazon.com/s?k=Anycubic+Kobra+S1+hotend+0.4mm"}]}, {"name": "Phase 2 · production core", "items": [{"no": "201", "d": "ASA, black, 1 kg", "q": 1, "usd": 23, "link": "https://www.amazon.com/s?k=ASA+filament+1.75mm+black+1kg"}, {"no": "202", "d": "ASA, OD green, 1 kg", "q": 1, "usd": 23, "link": "https://www.amazon.com/s?k=ASA+filament+1.75mm+olive+green+1kg"}, {"no": "203", "d": "Filament dryer, 70 °C (Sunlu S2 class)", "q": 1, "usd": 45, "link": "https://www.amazon.com/s?k=Sunlu+FilaDryer+S2"}, {"no": "204", "d": "Heat-set inserts M3, 100+", "q": 1, "usd": 18, "link": "https://www.amazon.com/s?k=M3+heat+set+inserts+brass+5mm+x+4mm+kit"}, {"no": "205", "d": "Heat-set tips, M3", "q": 1, "usd": 12, "link": "https://www.amazon.com/s?k=heat+set+insert+tip+M3+soldering+iron"}, {"no": "206", "d": "M3 screw assortment", "q": 1, "usd": 18, "link": "https://www.amazon.com/s?k=M3+socket+button+head+screw+assortment+kit+black"}, {"no": "207", "d": "Hotend 0.6 mm, official", "q": 1, "usd": 20, "link": "https://www.amazon.com/s?k=Anycubic+Kobra+S1+hotend+0.6mm"}, {"no": "208", "d": "Super Lube 21030", "q": 1, "usd": 10, "link": "https://www.amazon.com/s?k=Super+Lube+21030"}, {"no": "209", "d": "PTFE tube + cutter + couplings", "q": 1, "usd": 15, "link": "https://www.amazon.com/s?k=Capricorn+PTFE+tube+1.9mm+cutter+PC4-M6+kit"}]}, {"name": "Phase 3 · premium (now bought up front)", "items": [{"no": "301", "d": "Hardened hotend 0.4 mm, official", "q": 1, "usd": 28, "link": "https://www.amazon.com/s?k=Anycubic+Kobra+S1+hardened+steel+hotend"}, {"no": "302", "d": "PETG-CF, black, 1 kg", "q": 1, "usd": 28, "link": "https://www.amazon.com/s?k=PETG-CF+carbon+fiber+filament+1.75mm+1kg"}, {"no": "303", "d": "TPU 95A, black, 1 kg", "q": 1, "usd": 22, "link": "https://www.amazon.com/s?k=TPU+95A+filament+1.75mm+black+1kg"}, {"no": "304", "d": "Second build plate, official", "q": 1, "usd": 28, "link": "https://www.amazon.com/s?k=Anycubic+Kobra+S1+build+plate"}, {"no": "305", "d": "Smart plug + smoke detector", "q": 1, "usd": 25, "link": "https://www.amazon.com/s?k=Kasa+smart+plug+smoke+detector"}, {"no": "306", "d": "Carbon filter pellets (BentoBox)", "q": 1, "usd": 10, "link": "https://www.amazon.com/s?k=activated+carbon+pellets+3D+printer+bentobox"}]}, {"name": "Phase 4 · the full kit (new 10/6)", "items": [{"no": "401", "d": "Digital calipers, 6 in", "q": 1, "usd": 30, "link": "https://www.amazon.com/s?k=iGaging+digital+caliper+6+inch"}, {"no": "402", "d": "Finish kit: filler primer + matte black + red spray", "q": 1, "usd": 25, "link": "https://www.amazon.com/s?k=Rust-Oleum+filler+primer+spray"}, {"no": "403", "d": "Wet/dry sandpaper 220-2000 + sanding sponges", "q": 1, "usd": 12, "link": "https://www.amazon.com/s?k=wet+dry+sandpaper+assortment+220+to+2000"}, {"no": "404", "d": "ASA, red, 1 kg (the cyberdeck accent)", "q": 1, "usd": 23, "link": "https://www.amazon.com/s?k=ASA+filament+1.75mm+red+1kg"}, {"no": "405", "d": "Pinecil soldering iron (only if you have no iron)", "q": 1, "usd": 30, "link": "https://www.amazon.com/s?k=Pinecil+V2+soldering+iron"}]}];
+  const PHASES = [{"name": "Phase 1 · calibration", "items": [{"no": "101", "d": "PLA, light gray, 1 kg", "q": 1, "usd": 14, "link": "https://www.amazon.com/s?k=PLA+filament+1.75mm+light+gray+1kg+plastic+spool", "pick": null}, {"no": "102", "d": "PLA, black, 1 kg", "q": 1, "usd": 14, "link": "https://www.amazon.com/s?k=PLA+filament+1.75mm+black+1kg+plastic+spool", "pick": null}, {"no": "103", "d": "PETG, black, 1 kg", "q": 2, "usd": 34, "link": "https://www.amazon.com/s?k=PETG+filament+1.75mm+black+1kg", "pick": null}, {"no": "104", "d": "PETG, OD green, 1 kg", "q": 1, "usd": 17, "link": "https://www.amazon.com/s?k=PETG+filament+1.75mm+olive+green+1kg", "pick": null}, {"no": "105", "d": "Glue stick 2-pack", "q": 1, "usd": 4, "link": "https://www.amazon.com/s?k=Elmers+purple+glue+stick+2+pack", "pick": null}, {"no": "106", "d": "IPA 91% + microfiber", "q": 1, "usd": 8, "link": "https://www.amazon.com/s?k=91%25+isopropyl+alcohol+quart", "pick": null}, {"no": "107", "d": "Vacuum filament storage kit", "q": 1, "usd": 28, "link": "https://www.amazon.com/s?k=filament+vacuum+storage+bags+kit+pump+hygrometer", "pick": null}, {"no": "108", "d": "Spare hotend 0.4 mm, official", "q": 1, "usd": 18, "link": "https://www.amazon.com/s?k=Anycubic+Kobra+S1+hotend+0.4mm", "pick": null}]}, {"name": "Phase 2 · production core", "items": [{"no": "201", "d": "ASA, black, 1 kg", "q": 1, "usd": 23, "link": "https://www.amazon.com/s?k=ASA+filament+1.75mm+black+1kg", "pick": null}, {"no": "202", "d": "ASA, OD green, 1 kg", "q": 1, "usd": 23, "link": "https://www.amazon.com/s?k=ASA+filament+1.75mm+olive+green+1kg", "pick": null}, {"no": "203", "d": "Filament dryer, 70 °C (Sunlu S2 class)", "q": 1, "usd": 45, "link": "https://www.amazon.com/s?k=Sunlu+FilaDryer+S2", "pick": null}, {"no": "204", "d": "Heat-set inserts M3, 100+", "q": 1, "usd": 18, "link": "https://www.amazon.com/s?k=M3+heat+set+inserts+brass+5mm+x+4mm+kit", "pick": null}, {"no": "205", "d": "Heat-set tips, M3", "q": 1, "usd": 12, "link": "https://www.amazon.com/s?k=heat+set+insert+tip+M3+soldering+iron", "pick": null}, {"no": "206", "d": "M3 screw assortment", "q": 1, "usd": 18, "link": "https://www.amazon.com/s?k=M3+socket+button+head+screw+assortment+kit+black", "pick": null}, {"no": "207", "d": "Hotend 0.6 mm, official", "q": 1, "usd": 20, "link": "https://www.amazon.com/s?k=Anycubic+Kobra+S1+hotend+0.6mm", "pick": null}, {"no": "208", "d": "Super Lube 21030", "q": 1, "usd": 10, "link": "https://www.amazon.com/s?k=Super+Lube+21030", "pick": null}, {"no": "209", "d": "PTFE tube + cutter + couplings", "q": 1, "usd": 15, "link": "https://www.amazon.com/s?k=Capricorn+PTFE+tube+1.9mm+cutter+PC4-M6+kit", "pick": null}]}, {"name": "Phase 3 · premium (now bought up front)", "items": [{"no": "301", "d": "Hardened hotend 0.4 mm, official", "q": 1, "usd": 28, "link": "https://www.amazon.com/s?k=Anycubic+Kobra+S1+hardened+steel+hotend", "pick": null}, {"no": "302", "d": "PETG-CF, black, 1 kg", "q": 1, "usd": 28, "link": "https://www.amazon.com/s?k=PETG-CF+carbon+fiber+filament+1.75mm+1kg", "pick": null}, {"no": "303", "d": "TPU 95A, black, 1 kg", "q": 1, "usd": 22, "link": "https://www.amazon.com/s?k=TPU+95A+filament+1.75mm+black+1kg", "pick": null}, {"no": "304", "d": "Second build plate, official", "q": 1, "usd": 28, "link": "https://www.amazon.com/s?k=Anycubic+Kobra+S1+build+plate", "pick": null}, {"no": "305", "d": "Smart plug + smoke detector", "q": 1, "usd": 25, "link": "https://www.amazon.com/s?k=Kasa+smart+plug+smoke+detector", "pick": null}, {"no": "306", "d": "Carbon filter pellets (BentoBox)", "q": 1, "usd": 10, "link": "https://www.amazon.com/s?k=activated+carbon+pellets+3D+printer+bentobox", "pick": null}]}, {"name": "Phase 4 · the full kit (new 10/6)", "items": [{"no": "401", "d": "Digital calipers, 6 in", "q": 1, "usd": 30, "link": "https://www.amazon.com/s?k=iGaging+digital+caliper+6+inch", "pick": null}, {"no": "402", "d": "Finish kit: filler primer + matte black + red spray", "q": 1, "usd": 25, "link": "https://www.amazon.com/s?k=Rust-Oleum+filler+primer+spray", "pick": null}, {"no": "403", "d": "Wet/dry sandpaper 220-2000 + sanding sponges", "q": 1, "usd": 12, "link": "https://www.amazon.com/s?k=wet+dry+sandpaper+assortment+220+to+2000", "pick": null}, {"no": "404", "d": "ASA, red, 1 kg (the cyberdeck accent)", "q": 1, "usd": 23, "link": "https://www.amazon.com/s?k=ASA+filament+1.75mm+red+1kg", "pick": null}, {"no": "405", "d": "Pinecil soldering iron (only if you have no iron)", "q": 1, "usd": 30, "link": "https://www.amazon.com/s?k=Pinecil+V2+soldering+iron", "pick": null}]}];
+  let checked = {}, ref=null, inboxCol=null;
+  const ROW=(it,on,what,$,est,link)=>`<label class="item${on?" done":""}" for="c${it.no}"><input type="checkbox" id="c${it.no}" data-no="${it.no}"${on?" checked":""}><span class="no">${it.no}</span><span class="d">${what}</span><span class="usd${est?" est":""}">$${$}</span>${link}</label>`;
+
   const esc=(s)=>String(s).replace(/[&<>"]/g,(c)=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-  let checked={}, ref=null, version=0;
+  const price=(it)=>it.pick&&it.pick.price!=null?it.pick.price:it.usd;
   function render(){
     let all=0,got=0,h="";
     for(const p of PHASES){
       let ps=0,pg=0,rows="";
-      for(const it of p.items){ const on=!!checked[it.no]; ps+=it.usd; if(on)pg+=it.usd;
-        rows+=`<label class="item${on?" done":""}" for="c${it.no}"><input type="checkbox" id="c${it.no}" data-no="${it.no}"${on?" checked":""}><span class="no">${it.no}</span><span class="d">${esc(it.d)}${it.q>1?" <small>× "+it.q+"</small>":""}</span><span class="usd">$${it.usd}</span><a href="${esc(it.link)}" target="_blank" rel="noopener">search</a></label>`; }
+      for(const it of p.items){ const on=!!checked[it.no], $=price(it), pk=it.pick; ps+=$; if(on)pg+=$;
+        const what=esc(it.d)+(it.q>1?" × "+it.q:"")+(pk&&pk.name?"<small>"+esc(pk.name)+"</small>":"");
+        const link=pk?`<a class="buy" href="${esc(pk.url)}" target="_blank" rel="noopener">buy</a>`:`<a href="${esc(it.link)}" target="_blank" rel="noopener">search</a>`;
+        rows+=ROW(it,on,what,$,!pk,link); }
       all+=ps; got+=pg;
       h+=`<section><h2>${esc(p.name)}<span class="s">$${pg} / $${ps}</span></h2>${rows}</section>`;
     }
@@ -57,18 +82,37 @@
     document.getElementById("bar").style.width=(all?got/all*100:0)+"%";
   }
   render();
+  const say=(t)=>{document.getElementById("status").textContent=t;};
   let saving=Promise.resolve();
   document.getElementById("list").addEventListener("change",(e)=>{
     const no=e.target.dataset&&e.target.dataset.no; if(!no)return;
     checked={...checked,[no]:e.target.checked}; render();
-    if(!ref){document.getElementById("status").textContent="Storage is offline in this view; ticks won't save.";return;}
-    saving=saving.then(()=>ref.set({checked})).catch(()=>{document.getElementById("status").textContent="Save failed. Tick it again.";});
+    if(!ref){say("Storage is offline in this view; ticks won't save.");return;}
+    saving=saving.then(()=>ref.set({checked})).catch(()=>say("Save failed. Tick it again."));
+  });
+  document.getElementById("add").addEventListener("submit",async(e)=>{
+    e.preventDefault(); if(!inboxCol)return;
+    const f=new FormData(e.target), url=String(f.get("url")||"").trim(); if(!url)return;
+    try{ await inboxCol.add({url,item:String(f.get("item")||""),price:String(f.get("price")||"").trim(),at:new Date().toISOString()}); e.target.reset(); }
+    catch(_){ say("That link didn't save. Try again."); }
+  });
+  document.getElementById("pending").addEventListener("click",async(e)=>{
+    const id=e.target.dataset&&e.target.dataset.del; if(!id||!inboxCol)return;
+    try{ await inboxCol.doc(id).delete(); }catch(_){ say("Couldn't remove that one."); }
   });
   (async()=>{
     const db=window.claude&&window.claude.use?await window.claude.use("db"):null;
-    if(!db){document.getElementById("status").textContent="Storage is offline in this view; ticks won't save.";return;}
+    if(!db){say("Storage is offline in this view; ticks and links won't save.");return;}
     ref=db.doc("cart/state");
     ref.onSnapshot((s)=>{ if(s.exists){checked={...(s.data().checked||{})}; render();} },()=>{});
+    inboxCol=db.collection("inbox");
+    document.getElementById("inbox").hidden=false;
+    inboxCol.onSnapshot((q)=>{
+      const ul=document.getElementById("pending"); ul.textContent="";
+      for(const d of q.docs){ const v=d.data()||{}; const li=document.createElement("li");
+        li.textContent="⏳ "+(v.item?v.item+" · ":"")+v.url+(v.price?" · $"+v.price:"");
+        const x=document.createElement("button"); x.textContent="×"; x.title="Remove"; x.dataset.del=d.id; li.appendChild(x); ul.appendChild(li); }
+    },()=>{});
   })();
 })();
 </script>

@@ -1,0 +1,173 @@
+"""The Kobra cart pages (BOLO 112): one source, two pages.
+
+Usage:  python _tools/kobra/build.py
+
+Reads `_tools/kobra/cart.json` (the phases, each item's pick, the ticks) and writes:
+  KOBRA-CART.html  — Chief's page: ticks and the "paste a link" inbox save to the page's db (capability db)
+  KOBRA-ORDER.html — the order list for Mom: what it is · qty · price · the link; no sign-in, no capabilities
+An item's pick ({url, name, price}) replaces its search link and July estimate. Claude files the inbox into picks,
+rebuilds and republishes both. Zero tokens.
+"""
+import io, json, os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+cart = json.load(io.open(os.path.join(HERE, "cart.json"), encoding="utf-8"))
+
+HEAD = """<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* Layout: one thin strip with the running total, then one block per phase. Dark only, the creator-cases orange. */
+  :root { color-scheme: dark;
+    --bg:#121110; --panel:#1B1A18; --panel-2:#24221F; --line:#34312C; --ink:#ECE7DF; --ink-2:#B7B0A5; --ink-3:#7F786E;
+    --accent:#FF5A1F; --accent-soft:#3A1D10; --accent-ink:#FFB08F; --good:#5FBF8A;
+    --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif; --body:"Atkinson Hyperlegible","Segoe UI",Verdana,sans-serif; --mono:"IBM Plex Mono",Consolas,monospace; }
+  html,body{background:var(--bg);color:var(--ink)} body{font:15px/1.5 var(--body);padding-inline:16px;padding-block:0 48px} *{box-sizing:border-box}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .strip{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;align-items:center;gap:12px;flex-wrap:wrap;min-height:44px;margin-inline:-16px;padding:6px 16px;background:var(--panel);border-bottom:1px solid var(--line)}
+  .strip h1{margin:0;font:800 20px/1 var(--display);letter-spacing:.06em;text-transform:uppercase} .strip h1 b{color:var(--accent)}
+  .chip{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:4px 7px;border:1px solid var(--line);border-radius:3px;color:var(--ink-2)}
+  .spacer{flex:1} .tot{font:700 18px var(--display);font-variant-numeric:tabular-nums} .tot span{color:var(--accent)}
+  .bar{height:4px;background:var(--panel-2);margin-inline:-16px} .bar i{display:block;height:100%;background:var(--accent);width:0;transition:width .3s}
+  .wrap{max-width:860px;margin:0 auto;display:grid;gap:18px;padding-block:18px}
+  .rules{font-size:13px;color:var(--ink-2);border-left:2px solid var(--accent);padding-left:10px;margin:0}
+  section{background:var(--panel);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+  section h2{margin:0;padding:10px 14px;font:700 18px var(--display);letter-spacing:.06em;text-transform:uppercase;display:flex;gap:10px;border-bottom:1px solid var(--line)}
+  section h2 .s{margin-left:auto;font:500 13px var(--mono);color:var(--ink-3);letter-spacing:0;text-transform:none}
+  .item{display:grid;grid-template-columns:28px 44px minmax(0,1fr) auto auto;gap:10px;align-items:center;padding:9px 14px;border-bottom:1px solid var(--line)}
+  .item:last-child{border-bottom:0}
+  .item input{width:20px;height:20px;accent-color:var(--accent);cursor:pointer}
+  .item .no{font:500 12px var(--mono);color:var(--ink-3)} .item .d{min-width:0;overflow-wrap:anywhere} .item .d small{display:block;color:var(--ink-3);font-size:12px}
+  .item .usd{font:700 16px var(--display);font-variant-numeric:tabular-nums;text-align:right;min-width:3.2em} .item .usd.est{color:var(--ink-3)}
+  .item a{font:500 12px var(--mono);color:var(--accent-ink);text-decoration:none;border:1px solid var(--line);padding:3px 7px;border-radius:3px;white-space:nowrap} .item a:hover{border-color:var(--accent)}
+  .item a.buy{color:#121110;background:var(--accent);border-color:var(--accent);font-weight:500}
+  .item.done .d{color:var(--ink-3);text-decoration:line-through} .item.done .usd{color:var(--good)}
+  .note{font-size:13px;color:var(--ink-3)}
+  .inbox{background:var(--panel);border:1px solid var(--accent);border-radius:6px;padding:12px 14px;display:grid;gap:8px}
+  .inbox h2{margin:0;font:700 18px var(--display);letter-spacing:.06em;text-transform:uppercase}
+  .inbox form{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr) 90px auto;gap:8px}
+  .inbox input,.inbox select{min-width:0;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:7px 9px;font:14px var(--body)}
+  .inbox button{background:var(--accent);color:#121110;border:0;border-radius:4px;padding:7px 14px;font:700 15px var(--display);letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+  .inbox ul{margin:0;padding:0;list-style:none;display:grid;gap:4px} .inbox li{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--ink-2);overflow-wrap:anywhere}
+  .inbox li button{background:none;color:var(--ink-3);padding:0 4px;font:14px var(--mono)}
+  @media (max-width:620px){.inbox form{grid-template-columns:1fr 1fr}.inbox form input[name=url]{grid-column:1/-1}}
+  @media (max-width:520px){.item{grid-template-columns:24px minmax(0,1fr) auto;row-gap:4px}.item .no{display:none}.item a{grid-column:2;justify-self:start}}
+</style>"""
+
+RENDER = """
+  const esc=(s)=>String(s).replace(/[&<>"]/g,(c)=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const price=(it)=>it.pick&&it.pick.price!=null?it.pick.price:it.usd;
+  function render(){
+    let all=0,got=0,h="";
+    for(const p of PHASES){
+      let ps=0,pg=0,rows="";
+      for(const it of p.items){ const on=!!checked[it.no], $=price(it), pk=it.pick; ps+=$; if(on)pg+=$;
+        const what=esc(it.d)+(it.q>1?" × "+it.q:"")+(pk&&pk.name?"<small>"+esc(pk.name)+"</small>":"");
+        const link=pk?`<a class="buy" href="${esc(pk.url)}" target="_blank" rel="noopener">buy</a>`:`<a href="${esc(it.link)}" target="_blank" rel="noopener">search</a>`;
+        rows+=ROW(it,on,what,$,!pk,link); }
+      all+=ps; got+=pg;
+      h+=`<section><h2>${esc(p.name)}<span class="s">$${pg} / $${ps}</span></h2>${rows}</section>`;
+    }
+    document.getElementById("list").innerHTML=h;
+    document.getElementById("got").textContent="$"+got; document.getElementById("all").textContent="$"+all;
+    document.getElementById("bar").style.width=(all?got/all*100:0)+"%";
+  }"""
+
+CHIEF = """<title>Kobra Cart</title>
+%(head)s
+<header class="strip">
+  <h1>Kobra <b>Cart</b></h1><span class="chip">BOLO 112</span><span class="spacer"></span>
+  <span class="tot"><span id="got">$0</span> of <span id="all" style="color:inherit">$0</span> bought</span>
+</header>
+<div class="bar"><i id="bar"></i></div>
+<main class="wrap">
+  <div class="inbox" id="inbox" hidden>
+    <h2>Paste a link</h2>
+    <form id="add">
+      <input name="url" type="url" placeholder="Paste the product link" required>
+      <select name="item"><option value="">New item, or pick which one it fills</option>%(options)s</select>
+      <input name="price" placeholder="$ (optional)" inputmode="decimal">
+      <button type="submit">Add</button>
+    </form>
+    <ul id="pending"></ul>
+    <p class="note">Links wait here until Claude files them: it reads the name and price, puts the link on the row, and updates Mom's order list.</p>
+  </div>
+  <p class="rules">1.75 mm only · plastic spools only in the ACE Pro · no matte PLA, no silk · official Anycubic hotends and plates only · TPU and CF feed direct · CF needs the hardened hotend. Gray prices are July estimates with a search link; orange <b>buy</b> means a real product is picked.</p>
+  <div id="list"></div>
+  <p class="note" id="status">Ticks save to this page.</p>
+</main>
+<script>
+(function(){
+  const PHASES = %(phases)s;
+  let checked = %(checked)s, ref=null, inboxCol=null;
+  const ROW=(it,on,what,$,est,link)=>`<label class="item${on?" done":""}" for="c${it.no}"><input type="checkbox" id="c${it.no}" data-no="${it.no}"${on?" checked":""}><span class="no">${it.no}</span><span class="d">${what}</span><span class="usd${est?" est":""}">$${$}</span>${link}</label>`;
+%(render)s
+  render();
+  const say=(t)=>{document.getElementById("status").textContent=t;};
+  let saving=Promise.resolve();
+  document.getElementById("list").addEventListener("change",(e)=>{
+    const no=e.target.dataset&&e.target.dataset.no; if(!no)return;
+    checked={...checked,[no]:e.target.checked}; render();
+    if(!ref){say("Storage is offline in this view; ticks won't save.");return;}
+    saving=saving.then(()=>ref.set({checked})).catch(()=>say("Save failed. Tick it again."));
+  });
+  document.getElementById("add").addEventListener("submit",async(e)=>{
+    e.preventDefault(); if(!inboxCol)return;
+    const f=new FormData(e.target), url=String(f.get("url")||"").trim(); if(!url)return;
+    try{ await inboxCol.add({url,item:String(f.get("item")||""),price:String(f.get("price")||"").trim(),at:new Date().toISOString()}); e.target.reset(); }
+    catch(_){ say("That link didn't save. Try again."); }
+  });
+  document.getElementById("pending").addEventListener("click",async(e)=>{
+    const id=e.target.dataset&&e.target.dataset.del; if(!id||!inboxCol)return;
+    try{ await inboxCol.doc(id).delete(); }catch(_){ say("Couldn't remove that one."); }
+  });
+  (async()=>{
+    const db=window.claude&&window.claude.use?await window.claude.use("db"):null;
+    if(!db){say("Storage is offline in this view; ticks and links won't save.");return;}
+    ref=db.doc("cart/state");
+    ref.onSnapshot((s)=>{ if(s.exists){checked={...(s.data().checked||{})}; render();} },()=>{});
+    inboxCol=db.collection("inbox");
+    document.getElementById("inbox").hidden=false;
+    inboxCol.onSnapshot((q)=>{
+      const ul=document.getElementById("pending"); ul.textContent="";
+      for(const d of q.docs){ const v=d.data()||{}; const li=document.createElement("li");
+        li.textContent="⏳ "+(v.item?v.item+" · ":"")+v.url+(v.price?" · $"+v.price:"");
+        const x=document.createElement("button"); x.textContent="×"; x.title="Remove"; x.dataset.del=d.id; li.appendChild(x); ul.appendChild(li); }
+    },()=>{});
+  })();
+})();
+</script>"""
+
+MOM = """<title>Printer Order List</title>
+%(head)s
+<header class="strip">
+  <h1>Printer <b>Order List</b></h1><span class="spacer"></span>
+  <span class="tot"><span id="got">$0</span> of <span id="all" style="color:inherit">$0</span> bought</span>
+</header>
+<div class="bar"><i id="bar"></i></div>
+<main class="wrap">
+  <p class="rules">Click the orange <b>buy</b> button to open the exact product. Order the amount shown after the ×. A gray price with a <b>search</b> link means no exact product is picked yet, so skip those for now. Crossed-out lines are already bought.</p>
+  <div id="list"></div>
+  <p class="note">Updated %(when)s.</p>
+</main>
+<script>
+(function(){
+  const PHASES = %(phases)s;
+  const checked = %(checked)s;
+  const ROW=(it,on,what,$,est,link)=>`<div class="item${on?" done":""}"><span>${on?"✓":""}</span><span class="no">${it.no}</span><span class="d">${what}</span><span class="usd${est?" est":""}">$${$}</span>${link}</div>`;
+%(render)s
+  render();
+})();
+</script>"""
+
+if __name__ == "__main__":
+    import time
+    phases = json.dumps(cart["phases"], ensure_ascii=False)
+    checked = json.dumps(cart.get("checked", {}))
+    options = "".join('<option value="%s">%s · %s</option>' % (it["no"], it["no"], it["d"].replace("<", "&lt;"))
+                      for p in cart["phases"] for it in p["items"])
+    args = {"head": HEAD, "phases": phases, "checked": checked, "render": RENDER, "options": options,
+            "when": time.strftime("%B %d, %Y").replace(" 0", " ")}
+    io.open(os.path.join(HERE, "KOBRA-CART.html"), "w", encoding="utf-8").write(CHIEF % args)
+    io.open(os.path.join(HERE, "KOBRA-ORDER.html"), "w", encoding="utf-8").write(MOM % args)
+    picked = sum(1 for p in cart["phases"] for it in p["items"] if it.get("pick"))
+    print("built KOBRA-CART.html + KOBRA-ORDER.html · %d items · %d picked" % (
+        sum(len(p["items"]) for p in cart["phases"]), picked))

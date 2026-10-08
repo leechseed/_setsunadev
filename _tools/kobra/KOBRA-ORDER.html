@@ -1,0 +1,75 @@
+<title>Printer Order List</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* Layout: one thin strip with the running total, then one block per phase. Dark only, the creator-cases orange. */
+  :root { color-scheme: dark;
+    --bg:#121110; --panel:#1B1A18; --panel-2:#24221F; --line:#34312C; --ink:#ECE7DF; --ink-2:#B7B0A5; --ink-3:#7F786E;
+    --accent:#FF5A1F; --accent-soft:#3A1D10; --accent-ink:#FFB08F; --good:#5FBF8A;
+    --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif; --body:"Atkinson Hyperlegible","Segoe UI",Verdana,sans-serif; --mono:"IBM Plex Mono",Consolas,monospace; }
+  html,body{background:var(--bg);color:var(--ink)} body{font:15px/1.5 var(--body);padding-inline:16px;padding-block:0 48px} *{box-sizing:border-box}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .strip{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;align-items:center;gap:12px;flex-wrap:wrap;min-height:44px;margin-inline:-16px;padding:6px 16px;background:var(--panel);border-bottom:1px solid var(--line)}
+  .strip h1{margin:0;font:800 20px/1 var(--display);letter-spacing:.06em;text-transform:uppercase} .strip h1 b{color:var(--accent)}
+  .chip{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:4px 7px;border:1px solid var(--line);border-radius:3px;color:var(--ink-2)}
+  .spacer{flex:1} .tot{font:700 18px var(--display);font-variant-numeric:tabular-nums} .tot span{color:var(--accent)}
+  .bar{height:4px;background:var(--panel-2);margin-inline:-16px} .bar i{display:block;height:100%;background:var(--accent);width:0;transition:width .3s}
+  .wrap{max-width:860px;margin:0 auto;display:grid;gap:18px;padding-block:18px}
+  .rules{font-size:13px;color:var(--ink-2);border-left:2px solid var(--accent);padding-left:10px;margin:0}
+  section{background:var(--panel);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+  section h2{margin:0;padding:10px 14px;font:700 18px var(--display);letter-spacing:.06em;text-transform:uppercase;display:flex;gap:10px;border-bottom:1px solid var(--line)}
+  section h2 .s{margin-left:auto;font:500 13px var(--mono);color:var(--ink-3);letter-spacing:0;text-transform:none}
+  .item{display:grid;grid-template-columns:28px 44px minmax(0,1fr) auto auto;gap:10px;align-items:center;padding:9px 14px;border-bottom:1px solid var(--line)}
+  .item:last-child{border-bottom:0}
+  .item input{width:20px;height:20px;accent-color:var(--accent);cursor:pointer}
+  .item .no{font:500 12px var(--mono);color:var(--ink-3)} .item .d{min-width:0;overflow-wrap:anywhere} .item .d small{display:block;color:var(--ink-3);font-size:12px}
+  .item .usd{font:700 16px var(--display);font-variant-numeric:tabular-nums;text-align:right;min-width:3.2em} .item .usd.est{color:var(--ink-3)}
+  .item a{font:500 12px var(--mono);color:var(--accent-ink);text-decoration:none;border:1px solid var(--line);padding:3px 7px;border-radius:3px;white-space:nowrap} .item a:hover{border-color:var(--accent)}
+  .item a.buy{color:#121110;background:var(--accent);border-color:var(--accent);font-weight:500}
+  .item.done .d{color:var(--ink-3);text-decoration:line-through} .item.done .usd{color:var(--good)}
+  .note{font-size:13px;color:var(--ink-3)}
+  .inbox{background:var(--panel);border:1px solid var(--accent);border-radius:6px;padding:12px 14px;display:grid;gap:8px}
+  .inbox h2{margin:0;font:700 18px var(--display);letter-spacing:.06em;text-transform:uppercase}
+  .inbox form{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr) 90px auto;gap:8px}
+  .inbox input,.inbox select{min-width:0;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:7px 9px;font:14px var(--body)}
+  .inbox button{background:var(--accent);color:#121110;border:0;border-radius:4px;padding:7px 14px;font:700 15px var(--display);letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+  .inbox ul{margin:0;padding:0;list-style:none;display:grid;gap:4px} .inbox li{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--ink-2);overflow-wrap:anywhere}
+  .inbox li button{background:none;color:var(--ink-3);padding:0 4px;font:14px var(--mono)}
+  @media (max-width:620px){.inbox form{grid-template-columns:1fr 1fr}.inbox form input[name=url]{grid-column:1/-1}}
+  @media (max-width:520px){.item{grid-template-columns:24px minmax(0,1fr) auto;row-gap:4px}.item .no{display:none}.item a{grid-column:2;justify-self:start}}
+</style>
+<header class="strip">
+  <h1>Printer <b>Order List</b></h1><span class="spacer"></span>
+  <span class="tot"><span id="got">$0</span> of <span id="all" style="color:inherit">$0</span> bought</span>
+</header>
+<div class="bar"><i id="bar"></i></div>
+<main class="wrap">
+  <p class="rules">Click the orange <b>buy</b> button to open the exact product. Order the amount shown after the ×. A gray price with a <b>search</b> link means no exact product is picked yet, so skip those for now. Crossed-out lines are already bought.</p>
+  <div id="list"></div>
+  <p class="note">Updated October 8, 2026.</p>
+</main>
+<script>
+(function(){
+  const PHASES = [{"name": "Phase 1 · calibration", "items": [{"no": "101", "d": "PLA, light gray, 1 kg", "q": 1, "usd": 14, "link": "https://www.amazon.com/s?k=PLA+filament+1.75mm+light+gray+1kg+plastic+spool", "pick": null}, {"no": "102", "d": "PLA, black, 1 kg", "q": 1, "usd": 14, "link": "https://www.amazon.com/s?k=PLA+filament+1.75mm+black+1kg+plastic+spool", "pick": null}, {"no": "103", "d": "PETG, black, 1 kg", "q": 2, "usd": 34, "link": "https://www.amazon.com/s?k=PETG+filament+1.75mm+black+1kg", "pick": null}, {"no": "104", "d": "PETG, OD green, 1 kg", "q": 1, "usd": 17, "link": "https://www.amazon.com/s?k=PETG+filament+1.75mm+olive+green+1kg", "pick": null}, {"no": "105", "d": "Glue stick 2-pack", "q": 1, "usd": 4, "link": "https://www.amazon.com/s?k=Elmers+purple+glue+stick+2+pack", "pick": null}, {"no": "106", "d": "IPA 91% + microfiber", "q": 1, "usd": 8, "link": "https://www.amazon.com/s?k=91%25+isopropyl+alcohol+quart", "pick": null}, {"no": "107", "d": "Vacuum filament storage kit", "q": 1, "usd": 28, "link": "https://www.amazon.com/s?k=filament+vacuum+storage+bags+kit+pump+hygrometer", "pick": null}, {"no": "108", "d": "Spare hotend 0.4 mm, official", "q": 1, "usd": 18, "link": "https://www.amazon.com/s?k=Anycubic+Kobra+S1+hotend+0.4mm", "pick": null}]}, {"name": "Phase 2 · production core", "items": [{"no": "201", "d": "ASA, black, 1 kg", "q": 1, "usd": 23, "link": "https://www.amazon.com/s?k=ASA+filament+1.75mm+black+1kg", "pick": null}, {"no": "202", "d": "ASA, OD green, 1 kg", "q": 1, "usd": 23, "link": "https://www.amazon.com/s?k=ASA+filament+1.75mm+olive+green+1kg", "pick": null}, {"no": "203", "d": "Filament dryer, 70 °C (Sunlu S2 class)", "q": 1, "usd": 45, "link": "https://www.amazon.com/s?k=Sunlu+FilaDryer+S2", "pick": null}, {"no": "204", "d": "Heat-set inserts M3, 100+", "q": 1, "usd": 18, "link": "https://www.amazon.com/s?k=M3+heat+set+inserts+brass+5mm+x+4mm+kit", "pick": null}, {"no": "205", "d": "Heat-set tips, M3", "q": 1, "usd": 12, "link": "https://www.amazon.com/s?k=heat+set+insert+tip+M3+soldering+iron", "pick": null}, {"no": "206", "d": "M3 screw assortment", "q": 1, "usd": 18, "link": "https://www.amazon.com/s?k=M3+socket+button+head+screw+assortment+kit+black", "pick": null}, {"no": "207", "d": "Hotend 0.6 mm, official", "q": 1, "usd": 20, "link": "https://www.amazon.com/s?k=Anycubic+Kobra+S1+hotend+0.6mm", "pick": null}, {"no": "208", "d": "Super Lube 21030", "q": 1, "usd": 10, "link": "https://www.amazon.com/s?k=Super+Lube+21030", "pick": null}, {"no": "209", "d": "PTFE tube + cutter + couplings", "q": 1, "usd": 15, "link": "https://www.amazon.com/s?k=Capricorn+PTFE+tube+1.9mm+cutter+PC4-M6+kit", "pick": null}]}, {"name": "Phase 3 · premium (now bought up front)", "items": [{"no": "301", "d": "Hardened hotend 0.4 mm, official", "q": 1, "usd": 28, "link": "https://www.amazon.com/s?k=Anycubic+Kobra+S1+hardened+steel+hotend", "pick": null}, {"no": "302", "d": "PETG-CF, black, 1 kg", "q": 1, "usd": 28, "link": "https://www.amazon.com/s?k=PETG-CF+carbon+fiber+filament+1.75mm+1kg", "pick": null}, {"no": "303", "d": "TPU 95A, black, 1 kg", "q": 1, "usd": 22, "link": "https://www.amazon.com/s?k=TPU+95A+filament+1.75mm+black+1kg", "pick": null}, {"no": "304", "d": "Second build plate, official", "q": 1, "usd": 28, "link": "https://www.amazon.com/s?k=Anycubic+Kobra+S1+build+plate", "pick": null}, {"no": "305", "d": "Smart plug + smoke detector", "q": 1, "usd": 25, "link": "https://www.amazon.com/s?k=Kasa+smart+plug+smoke+detector", "pick": null}, {"no": "306", "d": "Carbon filter pellets (BentoBox)", "q": 1, "usd": 10, "link": "https://www.amazon.com/s?k=activated+carbon+pellets+3D+printer+bentobox", "pick": null}]}, {"name": "Phase 4 · the full kit (new 10/6)", "items": [{"no": "401", "d": "Digital calipers, 6 in", "q": 1, "usd": 30, "link": "https://www.amazon.com/s?k=iGaging+digital+caliper+6+inch", "pick": null}, {"no": "402", "d": "Finish kit: filler primer + matte black + red spray", "q": 1, "usd": 25, "link": "https://www.amazon.com/s?k=Rust-Oleum+filler+primer+spray", "pick": null}, {"no": "403", "d": "Wet/dry sandpaper 220-2000 + sanding sponges", "q": 1, "usd": 12, "link": "https://www.amazon.com/s?k=wet+dry+sandpaper+assortment+220+to+2000", "pick": null}, {"no": "404", "d": "ASA, red, 1 kg (the cyberdeck accent)", "q": 1, "usd": 23, "link": "https://www.amazon.com/s?k=ASA+filament+1.75mm+red+1kg", "pick": null}, {"no": "405", "d": "Pinecil soldering iron (only if you have no iron)", "q": 1, "usd": 30, "link": "https://www.amazon.com/s?k=Pinecil+V2+soldering+iron", "pick": null}]}];
+  const checked = {};
+  const ROW=(it,on,what,$,est,link)=>`<div class="item${on?" done":""}"><span>${on?"✓":""}</span><span class="no">${it.no}</span><span class="d">${what}</span><span class="usd${est?" est":""}">$${$}</span>${link}</div>`;
+
+  const esc=(s)=>String(s).replace(/[&<>"]/g,(c)=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const price=(it)=>it.pick&&it.pick.price!=null?it.pick.price:it.usd;
+  function render(){
+    let all=0,got=0,h="";
+    for(const p of PHASES){
+      let ps=0,pg=0,rows="";
+      for(const it of p.items){ const on=!!checked[it.no], $=price(it), pk=it.pick; ps+=$; if(on)pg+=$;
+        const what=esc(it.d)+(it.q>1?" × "+it.q:"")+(pk&&pk.name?"<small>"+esc(pk.name)+"</small>":"");
+        const link=pk?`<a class="buy" href="${esc(pk.url)}" target="_blank" rel="noopener">buy</a>`:`<a href="${esc(it.link)}" target="_blank" rel="noopener">search</a>`;
+        rows+=ROW(it,on,what,$,!pk,link); }
+      all+=ps; got+=pg;
+      h+=`<section><h2>${esc(p.name)}<span class="s">$${pg} / $${ps}</span></h2>${rows}</section>`;
+    }
+    document.getElementById("list").innerHTML=h;
+    document.getElementById("got").textContent="$"+got; document.getElementById("all").textContent="$"+all;
+    document.getElementById("bar").style.width=(all?got/all*100:0)+"%";
+  }
+  render();
+})();
+</script>
