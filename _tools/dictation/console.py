@@ -44,7 +44,11 @@ ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
 SOP = os.path.join(ROOT, "SOP.md")
 CONFIG = os.path.join(HERE, "config.json")
 JUDY = os.path.join(HERE, "judy.json")
-FACES = os.path.join(HERE, "faces")
+# Chief, 10/8: the faces and the corner reel live on Q (room for big videos); the repo copy is the fallback
+QJUDY = r"Q:\fun\_JUDY"
+FACES = os.path.join(QJUDY, "faces") if os.path.isdir(os.path.join(QJUDY, "faces")) else os.path.join(HERE, "faces")
+CORNER = os.path.join(QJUDY, "corner")           # the console's corner reel: anything dropped here plays on shuffle
+CORNER_EXTS = ("mp4", "webm", "gif", "png", "jpg", "jpeg", "webp")
 PAGE = os.path.join(HERE, "console.html")
 DECK = os.path.join(HERE, "faces.html")          # the face deck (10/4)
 LIB = os.path.join(FACES, "library")             # every saved face; the slots are copies out of it
@@ -629,6 +633,26 @@ def face_shuffle(slots):
     return picks
 
 
+# ---------------------------------------------------------------- the corner reel (Chief, 10/8)
+# Everything in Q:\fun\_JUDY\corner\ plays, plus every path listed in the .m3u playlists there
+# (Claude writes those). The page shuffles the list on every load. Served by index, never by a path from the page.
+
+def corner_items():
+    os.makedirs(CORNER, exist_ok=True)
+    out = []
+    for n in sorted(os.listdir(CORNER)):
+        p = os.path.join(CORNER, n)
+        ext = n.rsplit(".", 1)[-1].lower()
+        if ext in CORNER_EXTS:
+            out.append(p)
+        elif ext == "m3u":
+            for line in io.open(p, encoding="utf-8", errors="replace"):
+                line = line.strip()
+                if line and not line.startswith("#") and line.rsplit(".", 1)[-1].lower() in CORNER_EXTS:
+                    out.append(line)
+    return out
+
+
 # ---------------------------------------------------------------- server
 
 APP_FILES = {
@@ -661,6 +685,39 @@ class Handler(BaseHTTPRequestHandler):
         except Exception:
             pass
 
+    def _send_file(self, p):
+        """Serve a file with HTTP Range support (video seeks and loops without reading the whole file)."""
+        size = os.path.getsize(p)
+        ctype = mimetypes.guess_type(p)[0] or "application/octet-stream"
+        start, end, code = 0, size - 1, 200
+        rng = self.headers.get("Range", "")
+        m = re.match(r"bytes=(\d*)-(\d*)", rng)
+        if m and size:
+            if m.group(1):
+                start = int(m.group(1)); end = int(m.group(2)) if m.group(2) else size - 1
+            elif m.group(2):
+                start = max(0, size - int(m.group(2)))
+            end = min(end, size - 1); code = 206
+        n = max(0, end - start + 1)
+        self.send_response(code)
+        self.send_header("Content-Type", ctype)
+        self.send_header("Accept-Ranges", "bytes")
+        self.send_header("Content-Length", str(n))
+        if code == 206:
+            self.send_header("Content-Range", "bytes %d-%d/%d" % (start, end, size))
+        self.end_headers()
+        try:
+            with open(p, "rb") as f:
+                f.seek(start)
+                while n > 0:
+                    chunk = f.read(min(n, 1 << 20))
+                    if not chunk:
+                        break
+                    self.wfile.write(chunk)
+                    n -= len(chunk)
+        except Exception:
+            pass
+
     def _body(self):
         n = int(self.headers.get("Content-Length") or 0)
         if not n:
@@ -681,16 +738,7 @@ class Handler(BaseHTTPRequestHandler):
             link = ('<a href="/traffic" target="_blank" rel="noopener" style="position:fixed;right:12px;bottom:12px;'
                     'z-index:9;font:500 12px monospace;color:#FF5A1F;background:#1B1A18;border:1px solid #34312C;'
                     'border-radius:6px;padding:4px 10px;text-decoration:none">Traffic panel</a>')
-            # Chief, 10/8: a refresh button for JUDY herself (restart the session voice, then reload this page)
-            refresh = ('<button id="judyRefresh" title="Restart JUDY so she reloads her faces, voice and config" style="position:fixed;'
-                       'right:128px;bottom:12px;z-index:9;font:500 12px monospace;color:#121110;background:#FF5A1F;border:0;'
-                       'border-radius:6px;padding:5px 10px;cursor:pointer">&#8635; Refresh JUDY</button><script>'
-                       'document.getElementById("judyRefresh").onclick=async(e)=>{const b=e.target;b.disabled=true;'
-                       'b.textContent="refreshing… ~8 s";let ok=false;try{const r=await fetch("/api/judy/refresh",{method:"POST",'
-                       'headers:{"Content-Type":"application/json"},body:"{}"});ok=r.ok;}catch(_){}'
-                       'b.textContent=ok?"JUDY is back":"refresh failed: see the log";setTimeout(()=>location.reload(),ok?1200:4000);};'
-                       '</script>')
-            html = html.replace("</body>", link + refresh + "</body>", 1)
+            html = html.replace("</body>", link + "</body>", 1)
             html = html.replace("</title>", '</title><link rel="icon" type="image/png" href="/app/icon-192.png">', 1)
             return self._send(200, html, "text/html; charset=utf-8")
 
@@ -726,6 +774,19 @@ class Handler(BaseHTTPRequestHandler):
 
         if path == "/api/face/library":
             return self._send(200, lib_state())
+
+        if path == "/api/corner":
+            items = corner_items()
+            return self._send(200, {"dir": CORNER, "files": [
+                {"i": i, "name": os.path.basename(p), "kind": "video" if p.lower().endswith((".mp4", ".webm")) else "image"}
+                for i, p in enumerate(items)]})
+
+        if path.startswith("/corner/"):
+            items = corner_items()
+            i = path[len("/corner/"):]
+            if not i.isdigit() or int(i) >= len(items) or not os.path.isfile(items[int(i)]):
+                return self._send(404, {"error": "no such file"})
+            return self._send_file(items[int(i)])
 
         if path.startswith("/face/library/"):
             try:

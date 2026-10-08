@@ -44,7 +44,8 @@ import speak  # noqa: E402
 
 JUDY = os.path.join(HERE, "judy.json")
 POS = os.path.join(HERE, "_facepos.json")
-LIB = os.path.join(HERE, "faces", "library")    # the face deck's library (10/4 pools read from here)
+_QFACES = r"Q:\fun\_JUDY\faces"                # Chief, 10/8: the faces moved to Q; the repo copy is the fallback
+LIB = os.path.join(_QFACES if os.path.isdir(_QFACES) else os.path.join(HERE, "faces"), "library")   # the face deck's library (10/4 pools read from here)
 STATES = ("idle", "listening", "thinking", "talking")
 
 

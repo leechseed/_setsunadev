@@ -33,10 +33,10 @@
   },
   "face": {
     "slots": {
-      "idle": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\idle.mp4",
-      "listening": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\listening.mp4",
-      "thinking": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\thinking.mp4",
-      "talking": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\talking.mp4"
+      "idle": "Q:\\fun\\_JUDY\\faces\\idle.mp4",
+      "listening": "Q:\\fun\\_JUDY\\faces\\listening.mp4",
+      "thinking": "Q:\\fun\\_JUDY\\faces\\thinking.mp4",
+      "talking": "Q:\\fun\\_JUDY\\faces\\talking.mp4"
     },
     "pools": {
       "idle": [
