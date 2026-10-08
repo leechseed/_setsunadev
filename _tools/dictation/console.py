@@ -682,6 +682,7 @@ class Handler(BaseHTTPRequestHandler):
                     'z-index:9;font:500 12px monospace;color:#FF5A1F;background:#1B1A18;border:1px solid #34312C;'
                     'border-radius:6px;padding:4px 10px;text-decoration:none">Traffic panel</a>')
             html = html.replace("</body>", link + "</body>", 1)
+            html = html.replace("</title>", '</title><link rel="icon" type="image/png" href="/app/icon-192.png">', 1)
             return self._send(200, html, "text/html; charset=utf-8")
 
         if path == "/traffic":
@@ -706,8 +707,10 @@ class Handler(BaseHTTPRequestHandler):
         # JUDY as an installable app window (10/4): manifest, worker, icons from app/
         if path in APP_FILES:
             fn, ct = APP_FILES[path]
+            # Chief's own icon (10/8) lives in _PRIVATE/brand/ when it exists; the stock one in app/ is the fallback
+            mine = os.path.join(HERE, "..", "..", "_PRIVATE", "brand", fn.replace("icon-", "judy-icon-"))
             try:
-                with open(os.path.join(HERE, "app", fn), "rb") as f:
+                with open(mine if os.path.exists(mine) else os.path.join(HERE, "app", fn), "rb") as f:
                     return self._send(200, f.read(), ct)
             except Exception as e:
                 return self._send(404, {"error": str(e)})

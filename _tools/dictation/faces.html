@@ -34,6 +34,8 @@
   header .status b{color:var(--accent);font-weight:500}
   header a{font-family:var(--mono);font-size:11.5px;color:var(--ink-2);text-decoration:none;white-space:nowrap}
   header a:hover{color:var(--accent)}
+  #update{border:1px solid var(--line-2);background:var(--panel-2);padding:5px 14px;font-family:var(--display);font-weight:800;font-size:16px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;color:var(--ink-2)}
+  #update:hover{color:var(--ink)}
   #sfw{border:1px solid var(--line-2);background:var(--panel-2);padding:5px 14px;font-family:var(--display);font-weight:800;font-size:16px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;color:var(--ink-2)}
   #sfw:hover{border-color:var(--good);color:var(--good)}
   #sfw[aria-pressed="true"]{background:var(--good);border-color:var(--good);color:var(--bg)}
@@ -109,6 +111,7 @@
 <header>
   <h1><i></i>JUDY · Face Deck</h1>
   <div class="status" id="status">JUDY picks up a swap within 2 seconds.</div>
+  <button type="button" id="update" title="Rescan the face folder and push the newest faces to JUDY now">Update</button>
   <button type="button" id="sfw" aria-pressed="false" title="JUDY shows the four original faces; slots and pools stay as they are for later">SFW</button>
   <a href="/">console →</a>
 </header>
@@ -290,6 +293,10 @@ $("#sfw").onclick=async()=>{
   const on=!S.sfw, j=await api("/api/face/sfw",{on}).catch(()=>null);
   if(j)toast(on?"SFW on · JUDY shows the original faces":"SFW off · back to your faces");
   refresh(true);
+};
+$("#update").onclick=async()=>{
+  sig=""; await refresh(true);
+  toast(`up to date · ${S.library.length} faces in the library · JUDY picks up changes within 2 seconds`);
 };
 document.addEventListener("keydown",e=>{if(e.key==="Escape"){sel=null;confirming=null;render();}});
 

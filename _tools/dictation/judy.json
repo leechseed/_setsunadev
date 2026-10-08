@@ -24,8 +24,8 @@
     "eleven_model": "eleven_turbo_v2_5",
     "eleven_settings": {
       "stability": 0.35,
-      "similarity_boost": 0.8,
-      "style": 0.55,
+      "similarity_boost": 0.5,
+      "style": 1,
       "use_speaker_boost": true,
       "speed": 1.08
     },
@@ -33,22 +33,22 @@
   },
   "face": {
     "slots": {
-      "idle": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\idle.gif",
+      "idle": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\idle.mp4",
       "listening": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\listening.mp4",
       "thinking": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\thinking.mp4",
-      "talking": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\talking.png"
+      "talking": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\talking.mp4"
     },
     "pools": {
       "idle": [
         "2biia75qqwph1.gif"
       ],
       "listening": [
-        "Mouka - Daily Emiru Face Card _ Day 20_21.mp4"
+        "Mouka - Daily Emiru Face Card _ Day 20_21.mp4",
+        "Ai Generated Cam Camgirl Celebrity Cute Dildo Hardcore Huge Dildo Suction Dildo .mp4",
+        "Flushten - _EMIRU.mp4"
       ],
       "thinking": [
-        "Ai Generated Cam Camgirl Celebrity Cute Dildo Hardcore Huge Dildo Suction Dildo .mp4",
-        "hredForMe - Emiru getting passed around so much.mp4",
-        "Flushten - _EMIRU.mp4"
+        "hredForMe - Emiru getting passed around so much.mp4"
       ],
       "talking": []
     },
