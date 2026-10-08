@@ -32,8 +32,10 @@ HEAD = """<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=
   section{background:var(--panel);border:1px solid var(--line);border-radius:6px;overflow:hidden}
   section h2{margin:0;padding:10px 14px;font:700 18px var(--display);letter-spacing:.06em;text-transform:uppercase;display:flex;gap:10px;border-bottom:1px solid var(--line)}
   section h2 .s{margin-left:auto;font:500 13px var(--mono);color:var(--ink-3);letter-spacing:0;text-transform:none}
-  .item{display:grid;grid-template-columns:28px 44px minmax(0,1fr) auto auto;gap:10px;align-items:center;padding:9px 14px;border-bottom:1px solid var(--line)}
+  .item{display:grid;grid-template-columns:28px 44px minmax(0,1fr) 2.6em 4.4em 4.8em auto;gap:10px;align-items:center;padding:9px 14px;border-bottom:1px solid var(--line)}
   .item:last-child{border-bottom:0}
+  .item .qty,.item .each{font:500 14px var(--mono);text-align:right;font-variant-numeric:tabular-nums;color:var(--ink-2)} .item .each.est{color:var(--ink-3)}
+  .item.hd{padding-block:5px;font:500 10.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)} .item.hd span:nth-child(n+4){text-align:right}
   .item input{width:20px;height:20px;accent-color:var(--accent);cursor:pointer}
   .item .no{font:500 12px var(--mono);color:var(--ink-3)} .item .d{min-width:0;overflow-wrap:anywhere} .item .d small{display:block;color:var(--ink-3);font-size:12px}
   .item .usd{font:700 16px var(--display);font-variant-numeric:tabular-nums;text-align:right;min-width:3.2em} .item .usd.est{color:var(--ink-3)}
@@ -57,29 +59,31 @@ HEAD = """<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=
   .drawer input{min-width:0;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:7px 9px;font:14px var(--body)}
   .drawer button{border:0;border-radius:4px;padding:7px 12px;font:700 14px var(--display);letter-spacing:.06em;text-transform:uppercase;cursor:pointer;background:var(--accent);color:#121110}
   .drawer button.ghost{background:none;border:1px solid var(--line);color:var(--ink-2)}
-  .wait{font:500 12px var(--mono);color:var(--accent-ink)} .item .bought{font:500 11px var(--mono);color:var(--good);text-transform:uppercase;letter-spacing:.08em}
+  .wait{font:500 12px var(--mono);color:var(--accent-ink)} .item small.save{color:var(--good);font:500 12px var(--mono)} .item .bought{font:500 11px var(--mono);color:var(--good);text-transform:uppercase;letter-spacing:.08em}
   @media (max-width:620px){.drawer{padding-left:14px}.drawer form{grid-template-columns:1fr 1fr}.drawer form input[name=url]{grid-column:1/-1}}
   @media (max-width:620px){.inbox form{grid-template-columns:1fr 1fr}.inbox form input[name=url]{grid-column:1/-1}}
-  @media (max-width:520px){.item{grid-template-columns:24px minmax(0,1fr) auto;row-gap:4px}.item .no{display:none}.item a{grid-column:2;justify-self:start}}
+  @media (max-width:520px){.item{grid-template-columns:24px minmax(0,1fr) auto;row-gap:4px}.item .no,.item .qty,.item .each,.item.hd{display:none}.item a{grid-column:2;justify-self:start}}
 </style>"""
 
 RENDER = """
   const esc=(s)=>String(s).replace(/[&<>"]/g,(c)=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-  const price=(it)=>it.pick&&it.pick.price!=null?it.pick.price:it.usd;
+  const each=(it)=>it.pick&&it.pick.price!=null?it.pick.price:(it.each!=null?it.each:it.usd/it.q);
+  const price=(it)=>each(it)*it.q;   // the line total: each × qty
+  const m=(x)=>(Math.round(x*100)/100).toString();
   function render(){
     let all=0,got=0,h="";
     for(const p of PHASES){
       let ps=0,pg=0,rows="";
       for(const it of p.items){ const on=!!checked[it.no], $=price(it), pk=it.pick; ps+=$; if(on)pg+=$;
         const terms=(it.terms||[]).map((t)=>`<button type="button" class="term" data-term="${esc(t)}" title="Click to copy">${esc(t)}</button>`).join("");
-        const what=esc(it.d)+(it.q>1?" × "+it.q:"")+(pk&&pk.name?"<small>"+esc(pk.name)+"</small>":"")+(terms?`<span class="terms">${terms}</span>`:"");
+        const what=esc(it.d)+(pk&&pk.name?"<small>"+esc(pk.name)+"</small>":"")+(pk&&pk.was!=null&&pk.price!=null?`<small class="save">was $${pk.was} → $${pk.price} · saves $${(pk.was-pk.price).toFixed(2)}</small>`:"")+(terms?`<span class="terms">${terms}</span>`:"");
         const link=pk?`<a class="buy" href="${esc(pk.url)}" target="_blank" rel="noopener">buy</a>`:`<a href="${esc(it.link)}" target="_blank" rel="noopener">search</a>`;
         rows+=ROW(it,on,what,$,!pk,link); }
       all+=ps; got+=pg;
-      h+=`<section><h2>${esc(p.name)}<span class="s">$${pg} / $${ps}</span></h2>${rows}</section>`;
+      h+=`<section><h2>${esc(p.name)}<span class="s">$${m(pg)} / $${m(ps)}</span></h2><div class="item hd"><span></span><span>№</span><span>Item</span><span>Qty</span><span>Each</span><span>Total</span><span></span></div>${rows}</section>`;
     }
     document.getElementById("list").innerHTML=h;
-    document.getElementById("got").textContent="$"+got; document.getElementById("all").textContent="$"+all;
+    document.getElementById("got").textContent="$"+m(got); document.getElementById("all").textContent="$"+m(all);
     document.getElementById("bar").style.width=(all?got/all*100:0)+"%";
   }
   document.addEventListener("click",async(e)=>{
@@ -120,7 +124,7 @@ CHIEF = """<title>Kobra Cart</title>
   const open=new Set();
   const ROW=(it,on,what,$,est,link)=>{
     const o=open.has(it.no), w=pending[it.no];
-    const row=`<div class="item${on?" done":""}"><input type="checkbox" data-open="${it.no}" aria-label="Add a link for ${esc(it.d)}"${o||w?" checked":""}><span class="no">${it.no}</span><span class="d">${what}${w?'<small class="wait">⏳ link submitted, Claude is checking it</small>':""}</span><span class="usd${est?" est":""}">$${$}</span>${on?'<span class="bought">bought</span>':link}</div>`;
+    const row=`<div class="item${on?" done":""}"><input type="checkbox" data-open="${it.no}" aria-label="Add a link for ${esc(it.d)}" title="Ticked = the right product is picked"${o||w||it.pick?" checked":""}><span class="no">${it.no}</span><span class="d">${what}${w?'<small class="wait">⏳ link submitted, Claude is checking it</small>':""}</span><span class="qty">${it.q}</span><span class="each${est?" est":""}">$${m(each(it))}</span><span class="usd${est?" est":""}">$${m($)}</span>${on?'<span class="bought">bought</span>':link}</div>`;
     if(!o) return row;
     return row+`<div class="drawer"><form data-no="${it.no}"><input name="url" type="url" placeholder="Paste the product link" required value="${esc(w?w.url:(it.pick?it.pick.url:""))}"><input name="price" placeholder="$ (optional)" inputmode="decimal" value="${esc(w&&w.price?w.price:"")}"><button type="submit">Submit</button><button type="button" class="ghost" data-bought="${it.no}">${on?"Not bought":"Mark bought"}</button></form></div>`;
   };
@@ -195,7 +199,7 @@ MOM = """<title>Printer Order List</title>
 (function(){
   const PHASES = %(phases)s;
   const checked = %(checked)s;
-  const ROW=(it,on,what,$,est,link)=>`<div class="item${on?" done":""}"><span>${on?"✓":""}</span><span class="no">${it.no}</span><span class="d">${what}</span><span class="usd${est?" est":""}">$${$}</span>${link}</div>`;
+  const ROW=(it,on,what,$,est,link)=>`<div class="item${on?" done":""}"><span>${on?"✓":""}</span><span class="no">${it.no}</span><span class="d">${what}</span><span class="qty">${it.q}</span><span class="each${est?" est":""}">$${m(each(it))}</span><span class="usd${est?" est":""}">$${m($)}</span>${link}</div>`;
 %(render)s
   render();
 })();

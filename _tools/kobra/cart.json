@@ -6,25 +6,20 @@
    "items": [
     {
      "no": "101",
-     "d": "PLA, light gray, 1 kg",
+     "d": "PLA 2-pack, black + white, 1 kg each",
      "q": 1,
-     "usd": 14,
+     "usd": 28,
      "link": "https://www.amazon.com/s?k=PLA+filament+1.75mm+light+gray+1kg",
-     "pick": null,
+     "pick": {
+      "url": "https://www.amazon.com/dp/B0C4TNQZYY?th=1",
+      "name": "Creality PLA, black & white, 2-pack (2 kg) · replaces 101 + 102 · check the spool is plastic for the ACE Pro",
+      "price": 23.99,
+      "was": 28
+     },
      "terms": [
-      "PLA filament 1.75mm light gray 1kg"
-     ]
-    },
-    {
-     "no": "102",
-     "d": "PLA, black, 1 kg",
-     "q": 1,
-     "usd": 14,
-     "link": "https://www.amazon.com/s?k=PLA+filament+1.75mm+black+1kg",
-     "pick": null,
-     "terms": [
-      "PLA filament 1.75mm black 1kg"
-     ]
+      "Creality PLA filament black white 2-pack 1.75mm"
+     ],
+     "each": 28.0
     },
     {
      "no": "103",
@@ -35,18 +30,20 @@
      "pick": null,
      "terms": [
       "PETG filament 1.75mm black 1kg"
-     ]
+     ],
+     "each": 17.0
     },
     {
      "no": "104",
-     "d": "PETG, OD green, 1 kg",
+     "d": "PETG, orange (the Command orange, #FF5A1F: pick a red-orange, not a yellow-orange), 1 kg",
      "q": 1,
      "usd": 17,
-     "link": "https://www.amazon.com/s?k=PETG+filament+1.75mm+olive+green+1kg",
+     "link": "https://www.amazon.com/s?k=PETG+filament+1.75mm+orange+1kg",
      "pick": null,
      "terms": [
-      "PETG filament 1.75mm olive green 1kg"
-     ]
+      "PETG filament 1.75mm orange 1kg"
+     ],
+     "each": 17.0
     },
     {
      "no": "105",
@@ -57,7 +54,8 @@
      "pick": null,
      "terms": [
       "Elmer's disappearing purple glue stick 2 pack"
-     ]
+     ],
+     "each": 4.0
     },
     {
      "no": "106",
@@ -69,7 +67,8 @@
      "terms": [
       "91% isopropyl alcohol 32 oz",
       "microfiber cleaning cloths"
-     ]
+     ],
+     "each": 8.0
     },
     {
      "no": "107",
@@ -81,7 +80,8 @@
      "terms": [
       "rechargeable silica gel desiccant packs",
       "2 gallon ziploc freezer bags"
-     ]
+     ],
+     "each": 10.0
     },
     {
      "no": "109",
@@ -93,7 +93,8 @@
      "terms": [
       "Kasa smart plug mini",
       "First Alert smoke detector battery powered"
-     ]
+     ],
+     "each": 25.0
     },
     {
      "no": "110",
@@ -104,7 +105,8 @@
      "pick": null,
      "terms": [
       "activated carbon pellets for 3D printer filter"
-     ]
+     ],
+     "each": 10.0
     },
     {
      "no": "111",
@@ -115,7 +117,8 @@
      "pick": null,
      "terms": [
       "HEPA air purifier with activated carbon filter for bedroom"
-     ]
+     ],
+     "each": 60.0
     }
    ]
   },
@@ -131,7 +134,8 @@
      "pick": null,
      "terms": [
       "SUNLU FilaDryer S2 filament dryer"
-     ]
+     ],
+     "each": 45.0
     },
     {
      "no": "204",
@@ -142,7 +146,8 @@
      "pick": null,
      "terms": [
       "M3 brass heat set inserts kit"
-     ]
+     ],
+     "each": 18.0
     },
     {
      "no": "205",
@@ -153,7 +158,8 @@
      "pick": null,
      "terms": [
       "M3 heat set insert soldering iron tip"
-     ]
+     ],
+     "each": 12.0
     },
     {
      "no": "206",
@@ -164,7 +170,8 @@
      "pick": null,
      "terms": [
       "M3 button head socket screw assortment kit black"
-     ]
+     ],
+     "each": 18.0
     },
     {
      "no": "208",
@@ -175,7 +182,8 @@
      "pick": null,
      "terms": [
       "Super Lube 21030 synthetic grease"
-     ]
+     ],
+     "each": 10.0
     }
    ]
   },
@@ -191,7 +199,8 @@
      "pick": null,
      "terms": [
       "iGaging digital caliper 6 inch"
-     ]
+     ],
+     "each": 30.0
     },
     {
      "no": "405",
@@ -202,7 +211,8 @@
      "pick": null,
      "terms": [
       "Pinecil V2 soldering iron"
-     ]
+     ],
+     "each": 30.0
     }
    ]
   }
