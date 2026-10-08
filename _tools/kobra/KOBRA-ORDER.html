@@ -34,6 +34,13 @@
   .inbox button{background:var(--accent);color:#121110;border:0;border-radius:4px;padding:7px 14px;font:700 15px var(--display);letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
   .inbox ul{margin:0;padding:0;list-style:none;display:grid;gap:4px} .inbox li{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--ink-2);overflow-wrap:anywhere}
   .inbox li button{background:none;color:var(--ink-3);padding:0 4px;font:14px var(--mono)}
+  .drawer{padding:10px 14px 12px 50px;border-bottom:1px solid var(--line);background:var(--panel-2);display:grid;gap:6px}
+  .drawer form{display:grid;grid-template-columns:minmax(0,1fr) 90px auto auto;gap:8px}
+  .drawer input{min-width:0;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:7px 9px;font:14px var(--body)}
+  .drawer button{border:0;border-radius:4px;padding:7px 12px;font:700 14px var(--display);letter-spacing:.06em;text-transform:uppercase;cursor:pointer;background:var(--accent);color:#121110}
+  .drawer button.ghost{background:none;border:1px solid var(--line);color:var(--ink-2)}
+  .wait{font:500 12px var(--mono);color:var(--accent-ink)} .item .bought{font:500 11px var(--mono);color:var(--good);text-transform:uppercase;letter-spacing:.08em}
+  @media (max-width:620px){.drawer{padding-left:14px}.drawer form{grid-template-columns:1fr 1fr}.drawer form input[name=url]{grid-column:1/-1}}
   @media (max-width:620px){.inbox form{grid-template-columns:1fr 1fr}.inbox form input[name=url]{grid-column:1/-1}}
   @media (max-width:520px){.item{grid-template-columns:24px minmax(0,1fr) auto;row-gap:4px}.item .no{display:none}.item a{grid-column:2;justify-self:start}}
 </style>

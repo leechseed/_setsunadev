@@ -48,6 +48,13 @@ HEAD = """<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=
   .inbox button{background:var(--accent);color:#121110;border:0;border-radius:4px;padding:7px 14px;font:700 15px var(--display);letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
   .inbox ul{margin:0;padding:0;list-style:none;display:grid;gap:4px} .inbox li{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--ink-2);overflow-wrap:anywhere}
   .inbox li button{background:none;color:var(--ink-3);padding:0 4px;font:14px var(--mono)}
+  .drawer{padding:10px 14px 12px 50px;border-bottom:1px solid var(--line);background:var(--panel-2);display:grid;gap:6px}
+  .drawer form{display:grid;grid-template-columns:minmax(0,1fr) 90px auto auto;gap:8px}
+  .drawer input{min-width:0;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:7px 9px;font:14px var(--body)}
+  .drawer button{border:0;border-radius:4px;padding:7px 12px;font:700 14px var(--display);letter-spacing:.06em;text-transform:uppercase;cursor:pointer;background:var(--accent);color:#121110}
+  .drawer button.ghost{background:none;border:1px solid var(--line);color:var(--ink-2)}
+  .wait{font:500 12px var(--mono);color:var(--accent-ink)} .item .bought{font:500 11px var(--mono);color:var(--good);text-transform:uppercase;letter-spacing:.08em}
+  @media (max-width:620px){.drawer{padding-left:14px}.drawer form{grid-template-columns:1fr 1fr}.drawer form input[name=url]{grid-column:1/-1}}
   @media (max-width:620px){.inbox form{grid-template-columns:1fr 1fr}.inbox form input[name=url]{grid-column:1/-1}}
   @media (max-width:520px){.item{grid-template-columns:24px minmax(0,1fr) auto;row-gap:4px}.item .no{display:none}.item a{grid-column:2;justify-self:start}}
 </style>"""
@@ -79,40 +86,61 @@ CHIEF = """<title>Kobra Cart</title>
 </header>
 <div class="bar"><i id="bar"></i></div>
 <main class="wrap">
+  <p class="rules">Tick an item to paste its product link, then Submit. Claude checks the link and puts the real price on the row; orange <b>buy</b> means it's done. Gray prices are July estimates. 1.75 mm only · plastic spools only in the ACE Pro · no matte PLA, no silk · official Anycubic hotends and plates only · TPU and CF feed direct · CF needs the hardened hotend.</p>
+  <div id="list"></div>
   <div class="inbox" id="inbox" hidden>
-    <h2>Paste a link</h2>
+    <h2>Something not on the list?</h2>
     <form id="add">
       <input name="url" type="url" placeholder="Paste the product link" required>
-      <select name="item"><option value="">New item, or pick which one it fills</option>%(options)s</select>
+      <input name="what" placeholder="What is it">
       <input name="price" placeholder="$ (optional)" inputmode="decimal">
-      <button type="submit">Add</button>
+      <button type="submit">Submit</button>
     </form>
     <ul id="pending"></ul>
-    <p class="note">Links wait here until Claude files them: it reads the name and price, puts the link on the row, and updates Mom's order list.</p>
   </div>
-  <p class="rules">1.75 mm only · plastic spools only in the ACE Pro · no matte PLA, no silk · official Anycubic hotends and plates only · TPU and CF feed direct · CF needs the hardened hotend. Gray prices are July estimates with a search link; orange <b>buy</b> means a real product is picked.</p>
-  <div id="list"></div>
-  <p class="note" id="status">Ticks save to this page.</p>
+  <p class="note" id="status">Links and bought marks save to this page.</p>
 </main>
 <script>
 (function(){
   const PHASES = %(phases)s;
-  let checked = %(checked)s, ref=null, inboxCol=null;
-  const ROW=(it,on,what,$,est,link)=>`<label class="item${on?" done":""}" for="c${it.no}"><input type="checkbox" id="c${it.no}" data-no="${it.no}"${on?" checked":""}><span class="no">${it.no}</span><span class="d">${what}</span><span class="usd${est?" est":""}">$${$}</span>${link}</label>`;
+  let checked = %(checked)s, ref=null, inboxCol=null, pending={}, extra=[];
+  const open=new Set();
+  const ROW=(it,on,what,$,est,link)=>{
+    const o=open.has(it.no), w=pending[it.no];
+    const row=`<div class="item${on?" done":""}"><input type="checkbox" data-open="${it.no}" aria-label="Add a link for ${esc(it.d)}"${o||w?" checked":""}><span class="no">${it.no}</span><span class="d">${what}${w?'<small class="wait">⏳ link submitted, Claude is checking it</small>':""}</span><span class="usd${est?" est":""}">$${$}</span>${on?'<span class="bought">bought</span>':link}</div>`;
+    if(!o) return row;
+    return row+`<div class="drawer"><form data-no="${it.no}"><input name="url" type="url" placeholder="Paste the product link" required value="${esc(w?w.url:(it.pick?it.pick.url:""))}"><input name="price" placeholder="$ (optional)" inputmode="decimal" value="${esc(w&&w.price?w.price:"")}"><button type="submit">Submit</button><button type="button" class="ghost" data-bought="${it.no}">${on?"Not bought":"Mark bought"}</button></form></div>`;
+  };
 %(render)s
   render();
   const say=(t)=>{document.getElementById("status").textContent=t;};
+  const list=document.getElementById("list");
+  list.addEventListener("change",(e)=>{
+    const no=e.target.dataset&&e.target.dataset.open; if(!no)return;
+    if(open.has(no)) open.delete(no); else open.add(no);
+    render();
+    const f=list.querySelector(`form[data-no="${no}"] input[name=url]`); if(f) f.focus();
+  });
   let saving=Promise.resolve();
-  document.getElementById("list").addEventListener("change",(e)=>{
-    const no=e.target.dataset&&e.target.dataset.no; if(!no)return;
-    checked={...checked,[no]:e.target.checked}; render();
-    if(!ref){say("Storage is offline in this view; ticks won't save.");return;}
-    saving=saving.then(()=>ref.set({checked})).catch(()=>say("Save failed. Tick it again."));
+  list.addEventListener("click",(e)=>{
+    const no=e.target.dataset&&e.target.dataset.bought; if(!no)return;
+    checked={...checked,[no]:!checked[no]}; render();
+    if(!ref){say("Storage is offline in this view; this won't save.");return;}
+    saving=saving.then(()=>ref.set({checked})).catch(()=>say("Save failed. Try again."));
+  });
+  list.addEventListener("submit",async(e)=>{
+    e.preventDefault(); const no=e.target.dataset.no; if(!no)return;
+    if(!inboxCol){say("Storage is offline in this view; the link won't save.");return;}
+    const f=new FormData(e.target), url=String(f.get("url")||"").trim(); if(!url)return;
+    const data={url,item:no,price:String(f.get("price")||"").trim(),at:new Date().toISOString()};
+    try{ if(pending[no]) await inboxCol.doc(pending[no].id).set(data); else await inboxCol.add(data);
+      open.delete(no); say("Link for "+no+" submitted. Claude checks it and updates the price."); }
+    catch(_){ say("That link didn't save. Try again."); }
   });
   document.getElementById("add").addEventListener("submit",async(e)=>{
     e.preventDefault(); if(!inboxCol)return;
     const f=new FormData(e.target), url=String(f.get("url")||"").trim(); if(!url)return;
-    try{ await inboxCol.add({url,item:String(f.get("item")||""),price:String(f.get("price")||"").trim(),at:new Date().toISOString()}); e.target.reset(); }
+    try{ await inboxCol.add({url,item:"",what:String(f.get("what")||"").trim(),price:String(f.get("price")||"").trim(),at:new Date().toISOString()}); e.target.reset(); }
     catch(_){ say("That link didn't save. Try again."); }
   });
   document.getElementById("pending").addEventListener("click",async(e)=>{
@@ -121,16 +149,18 @@ CHIEF = """<title>Kobra Cart</title>
   });
   (async()=>{
     const db=window.claude&&window.claude.use?await window.claude.use("db"):null;
-    if(!db){say("Storage is offline in this view; ticks and links won't save.");return;}
+    if(!db){say("Storage is offline in this view; links and bought marks won't save.");return;}
     ref=db.doc("cart/state");
     ref.onSnapshot((s)=>{ if(s.exists){checked={...(s.data().checked||{})}; render();} },()=>{});
     inboxCol=db.collection("inbox");
     document.getElementById("inbox").hidden=false;
     inboxCol.onSnapshot((q)=>{
-      const ul=document.getElementById("pending"); ul.textContent="";
-      for(const d of q.docs){ const v=d.data()||{}; const li=document.createElement("li");
-        li.textContent="⏳ "+(v.item?v.item+" · ":"")+v.url+(v.price?" · $"+v.price:"");
+      pending={}; const ul=document.getElementById("pending"); ul.textContent="";
+      for(const d of q.docs){ const v=d.data()||{};
+        if(v.item){ pending[v.item]={id:d.id,...v}; continue; }
+        const li=document.createElement("li"); li.textContent="⏳ "+(v.what?v.what+" · ":"")+v.url+(v.price?" · $"+v.price:"");
         const x=document.createElement("button"); x.textContent="×"; x.title="Remove"; x.dataset.del=d.id; li.appendChild(x); ul.appendChild(li); }
+      render();
     },()=>{});
   })();
 })();
