@@ -309,6 +309,25 @@
      "each": 30.0
     }
    ]
+  },
+  {
+   "name": "Added · from the inbox",
+   "items": [
+    {
+     "no": "501",
+     "d": "Outlet Savers",
+     "q": 1,
+     "usd": 17.99,
+     "each": 17.99,
+     "link": "https://www.amazon.com/dp/B0CMXDW9P6?th=1",
+     "pick": {
+      "url": "https://www.amazon.com/dp/B0CMXDW9P6?th=1",
+      "name": "KUNLUN 3 Prong Short Extension Cord, 8-Inch Small Extension Cord",
+      "price": 17.99
+     },
+     "terms": []
+    }
+   ]
   }
  ]
 }
