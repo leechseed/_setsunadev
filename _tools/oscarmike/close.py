@@ -107,6 +107,7 @@ WRITE: _CACHE/{target} — the session note in the Command's shape: a `# Session
   what was measured (numbers only if spoken or printed) · memory written (if the transcript says so) · **Open at close:** (everything unresolved, one line) ·
   **AAR (one line):** planned = · happened = · sustain = · improve = · and a final line `- Oscar Mike.`
 RULES: nothing not in the transcript; no praise; no summary of Claude's reasoning; file paths verbatim; Chief's words in quotes; under 2,500 characters unless the session was long.
+PRIVATE DETAIL STAYS PRIVATE (ruled 10/4): _CACHE is in the public repo. Keep sexual, health, drug and kink detail generic ("ORANGE items, detail in _PRIVATE/"): never quote Chief's sexual words, never name kinks, toys, substances, body parts or adult boards. (10/8: the first draft leaked this detail.)
 Do not read any other file. Do not edit STATE.md or the journal. Reply with the note's path and nothing else.
 """
     write(os.path.join(wd, "brief.NOTE.md"), brief)
