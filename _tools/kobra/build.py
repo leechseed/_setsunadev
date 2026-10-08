@@ -41,6 +41,10 @@ HEAD = """<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=
   .item a.buy{color:#121110;background:var(--accent);border-color:var(--accent);font-weight:500}
   .item.done .d{color:var(--ink-3);text-decoration:line-through} .item.done .usd{color:var(--good)}
   .note{font-size:13px;color:var(--ink-3)}
+  .terms{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px}
+  .term{font:500 12px var(--mono);color:var(--ink-2);background:var(--bg);border:1px dashed var(--line);border-radius:3px;padding:2px 6px;cursor:copy;text-align:left;user-select:all}
+  .term:hover{border-color:var(--accent);color:var(--ink)} .term.copied{border-style:solid;border-color:var(--good);color:var(--good)} .term.copied::after{content:" ✓ copied"}
+  .term.picked::after{content:" (selected: press Ctrl+C)";color:var(--accent-ink)}
   .inbox{background:var(--panel);border:1px solid var(--accent);border-radius:6px;padding:12px 14px;display:grid;gap:8px}
   .inbox h2{margin:0;font:700 18px var(--display);letter-spacing:.06em;text-transform:uppercase}
   .inbox form{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr) 90px auto;gap:8px}
@@ -67,7 +71,8 @@ RENDER = """
     for(const p of PHASES){
       let ps=0,pg=0,rows="";
       for(const it of p.items){ const on=!!checked[it.no], $=price(it), pk=it.pick; ps+=$; if(on)pg+=$;
-        const what=esc(it.d)+(it.q>1?" × "+it.q:"")+(pk&&pk.name?"<small>"+esc(pk.name)+"</small>":"");
+        const terms=(it.terms||[]).map((t)=>`<button type="button" class="term" data-term="${esc(t)}" title="Click to copy">${esc(t)}</button>`).join("");
+        const what=esc(it.d)+(it.q>1?" × "+it.q:"")+(pk&&pk.name?"<small>"+esc(pk.name)+"</small>":"")+(terms?`<span class="terms">${terms}</span>`:"");
         const link=pk?`<a class="buy" href="${esc(pk.url)}" target="_blank" rel="noopener">buy</a>`:`<a href="${esc(it.link)}" target="_blank" rel="noopener">search</a>`;
         rows+=ROW(it,on,what,$,!pk,link); }
       all+=ps; got+=pg;
@@ -76,7 +81,15 @@ RENDER = """
     document.getElementById("list").innerHTML=h;
     document.getElementById("got").textContent="$"+got; document.getElementById("all").textContent="$"+all;
     document.getElementById("bar").style.width=(all?got/all*100:0)+"%";
-  }"""
+  }
+  document.addEventListener("click",async(e)=>{
+    const b=e.target.closest&&e.target.closest(".term"); if(!b)return;
+    const t=b.dataset.term; let ok=false;
+    try{ await navigator.clipboard.writeText(t); ok=true; }catch(_){
+      const r=document.createRange(); r.selectNodeContents(b); const sel=getSelection(); sel.removeAllRanges(); sel.addRange(r);
+      try{ ok=document.execCommand("copy"); }catch(__){} }
+    b.classList.add(ok?"copied":"picked"); setTimeout(()=>b.classList.remove("copied","picked"),1400);
+  });"""
 
 CHIEF = """<title>Kobra Cart</title>
 %(head)s
@@ -86,7 +99,7 @@ CHIEF = """<title>Kobra Cart</title>
 </header>
 <div class="bar"><i id="bar"></i></div>
 <main class="wrap">
-  <p class="rules">Tick an item to paste its product link, then Submit. Claude checks the link and puts the real price on the row; orange <b>buy</b> means it's done. Gray prices are July estimates. PLA and PETG only indoors, with the purifier running (no ASA until a vent duct, ruled 10/8) · 1.75 mm only · plastic spools only in the ACE Pro · no matte PLA, no silk · official Anycubic hotends and plates only · TPU and CF feed direct · CF needs the hardened hotend.</p>
+  <p class="rules">Click a dashed box to copy its Amazon search words. Tick an item to paste its product link, then Submit. Claude checks the link and puts the real price on the row; orange <b>buy</b> means it's done. Gray prices are July estimates. PLA and PETG only indoors, with the purifier running (no ASA until a vent duct, ruled 10/8) · 1.75 mm only · plastic spools only in the ACE Pro · no matte PLA, no silk · official Anycubic hotends and plates only · TPU and CF feed direct · CF needs the hardened hotend.</p>
   <div id="list"></div>
   <div class="inbox" id="inbox" hidden>
     <h2>Something not on the list?</h2>
@@ -174,7 +187,7 @@ MOM = """<title>Printer Order List</title>
 </header>
 <div class="bar"><i id="bar"></i></div>
 <main class="wrap">
-  <p class="rules">Click the orange <b>buy</b> button to open the exact product. Order the amount shown after the ×. A gray price with a <b>search</b> link means no exact product is picked yet, so skip those for now. Crossed-out lines are already bought. The smoke detector and the air purifier matter most: order those first.</p>
+  <p class="rules">Click the orange <b>buy</b> button to open the exact product. Each line also has its Amazon search words in a dashed box: click the box to copy them, then paste into Amazon's search bar. Order the amount shown after the ×. A gray price with a <b>search</b> link means no exact product is picked yet, so skip those for now. Crossed-out lines are already bought. The smoke detector and the air purifier matter most: order those first.</p>
   <div id="list"></div>
   <p class="note">Updated %(when)s.</p>
 </main>
