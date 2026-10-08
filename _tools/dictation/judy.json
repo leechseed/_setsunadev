@@ -33,30 +33,24 @@
   },
   "face": {
     "slots": {
-      "idle": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\idle.png",
+      "idle": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\idle.gif",
       "listening": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\listening.mp4",
       "thinking": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\thinking.mp4",
       "talking": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\talking.png"
     },
     "pools": {
       "idle": [
-        "idle.png",
-        "1emigoon.jpg",
         "2biia75qqwph1.gif"
       ],
       "listening": [
-        "listening.png",
         "Mouka - Daily Emiru Face Card _ Day 20_21.mp4"
       ],
       "thinking": [
-        "thinking.png",
         "Ai Generated Cam Camgirl Celebrity Cute Dildo Hardcore Huge Dildo Suction Dildo .mp4",
         "hredForMe - Emiru getting passed around so much.mp4",
         "Flushten - _EMIRU.mp4"
       ],
-      "talking": [
-        "talking.png"
-      ]
+      "talking": []
     },
     "sfw": false,
     "sfw_set": {
@@ -66,10 +60,6 @@
       "talking": "talking.png"
     },
     "pools_seeded": true
-  },
-  "ptt_chirp": {
-    "on": true,
-    "volume": 0.35
   },
   "chat": {
     "model": "claude-haiku-4-5-20251001"
@@ -97,5 +87,9 @@
     "send_on_talk_note": "Chief 9/17: the talk pad only drops the words in the box; the SEND pad (config.json send_note, above the talk pad) sends. true = the old auto-send on release.",
     "speak": "say-line",
     "speak_note": "Chief 9/17: only replies that open with <!-- say: --> are spoken; everything else (agent traffic, interim turns) is silent. \"all\" = read every block."
+  },
+  "ptt_chirp": {
+    "on": true,
+    "volume": 0.35
   }
 }
