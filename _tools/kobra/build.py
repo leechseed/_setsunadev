@@ -76,7 +76,7 @@ RENDER = """
       let ps=0,pg=0,rows="";
       for(const it of p.items){ const on=!!checked[it.no], $=price(it), pk=it.pick; ps+=$; if(on)pg+=$;
         const terms=(it.terms||[]).map((t)=>`<button type="button" class="term" data-term="${esc(t)}" title="Click to copy">${esc(t)}</button>`).join("");
-        const what=esc(it.d)+(pk&&pk.name?"<small>"+esc(pk.name)+"</small>":"")+(pk&&pk.was!=null&&pk.price!=null?`<small class="save">was $${pk.was} → $${pk.price} · saves $${(pk.was-pk.price).toFixed(2)}</small>`:"")+(terms?`<span class="terms">${terms}</span>`:"");
+        const what=esc(it.d)+(pk&&pk.name?"<small>"+esc(pk.name)+"</small>":"")+(pk&&pk.was!=null&&pk.price!=null?`<small class="save">was $${pk.was} → $${pk.price} · ${pk.was>=pk.price?"saves $"+(pk.was-pk.price).toFixed(2):"$"+(pk.price-pk.was).toFixed(2)+" over the estimate"}</small>`:"")+(terms?`<span class="terms">${terms}</span>`:"");
         const link=pk?`<a class="buy" href="${esc(pk.url)}" target="_blank" rel="noopener">buy</a>`:`<a href="${esc(it.link)}" target="_blank" rel="noopener">search</a>`;
         rows+=ROW(it,on,what,$,!pk,link); }
       all+=ps; got+=pg;

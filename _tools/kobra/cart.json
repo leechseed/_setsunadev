@@ -27,7 +27,12 @@
      "q": 2,
      "usd": 34,
      "link": "https://www.amazon.com/s?k=PETG+filament+1.75mm+black+1kg",
-     "pick": null,
+     "pick": {
+      "url": "https://www.amazon.com/dp/B0DJS3PJVX?th=1",
+      "name": "SUNLU PETG, black, 1 kg · reusable plastic spool",
+      "price": 13.99,
+      "was": 17.0
+     },
      "terms": [
       "PETG filament 1.75mm black 1kg"
      ],
@@ -39,7 +44,12 @@
      "q": 1,
      "usd": 17,
      "link": "https://www.amazon.com/s?k=PETG+filament+1.75mm+orange+1kg",
-     "pick": null,
+     "pick": {
+      "url": "https://www.amazon.com/dp/B0D7QC5Y4J?th=1",
+      "name": "ELEGOO Rapid PETG, orange, 1 kg · CARDBOARD spool: the ACE Pro takes plastic spools only, so feed it direct or swap for a plastic-spool orange",
+      "price": 17.99,
+      "was": 17.0
+     },
      "terms": [
       "PETG filament 1.75mm orange 1kg"
      ],
@@ -51,7 +61,12 @@
      "q": 1,
      "usd": 4,
      "link": "https://www.amazon.com/s?k=Elmer%27s+disappearing+purple+glue+stick+2+pack",
-     "pick": null,
+     "pick": {
+      "url": "https://www.amazon.com/dp/B08PC5R5BD",
+      "name": "Elmer's Disappearing Purple glue sticks (E522)",
+      "price": 2.8,
+      "was": 4.0
+     },
      "terms": [
       "Elmer's disappearing purple glue stick 2 pack"
      ],
@@ -229,7 +244,12 @@
      "q": 1,
      "usd": 30,
      "link": "https://www.amazon.com/s?k=iGaging+digital+caliper+6+inch",
-     "pick": null,
+     "pick": {
+      "url": "https://www.amazon.com/dp/B0C34PLYND?th=1",
+      "name": "Werka digital caliper, 0-6 in, stainless",
+      "price": 35.99,
+      "was": 30.0
+     },
      "terms": [
       "iGaging digital caliper 6 inch"
      ],
