@@ -73,23 +73,6 @@
      ]
     },
     {
-     "no": "115",
-     "d": "Zip bags, Smelly Proof XXL 2-gallon, 12 x 16 in, 5 mil, triple zip, reusable, 5-pack: one 1 kg spool per bag",
-     "q": 1,
-     "usd": 9,
-     "each": 9,
-     "pick": {
-      "url": "https://www.amazon.com/dp/B08LQYQP8R?th=1",
-      "name": "Smelly Proof heavy-duty reusable XXL bags · fits a 1 kg spool (needs ~10.7 in, bag is 12 in wide, stand-up gusset adds room)",
-      "price": 17.99,
-      "was": 9
-     },
-     "link": "https://www.amazon.com/s?k=Ziploc+2+gallon+freezer+bags+double+zipper",
-     "terms": [
-      "Ziploc 2 gallon freezer bags double zipper"
-     ]
-    },
-    {
      "no": "111",
      "d": "Air purifier: Anycubic AirPure 2.0 set, Kobra S1 (replaces the Mini purifier and all the carbon filter parts)",
      "q": 1,
@@ -450,6 +433,19 @@
      },
      "terms": [
       "microfiber cleaning cloths"
+     ],
+     "town": true
+    },
+    {
+     "no": "115",
+     "d": "Ziploc 2-gallon freezer bags (13 x 15.6 in, fits a 1 kg spool) · in town",
+     "q": 1,
+     "usd": 9,
+     "each": 9,
+     "pick": null,
+     "link": "https://www.amazon.com/s?k=Ziploc+2+gallon+freezer+bags+double+zipper",
+     "terms": [
+      "Ziploc 2 gallon freezer bags double zipper"
      ],
      "town": true,
      "chg": "moved to in town"

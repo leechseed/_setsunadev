@@ -34,6 +34,13 @@ HEAD = """<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=
   section h2 .s{margin-left:auto;font:500 13px var(--mono);color:var(--ink-3);letter-spacing:0;text-transform:none}
   .item{display:grid;grid-template-columns:28px 44px minmax(0,1fr) 2.6em 4.4em 4.8em auto;gap:10px;align-items:center;padding:9px 14px;border-bottom:1px solid var(--line)}
   .item:last-child{border-bottom:0}
+  .totals{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+  .totals>div{background:var(--panel);padding:10px 14px;display:grid;gap:2px;min-width:0}
+  .totals span{font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+  .totals b{font:800 30px/1.05 var(--display);font-variant-numeric:tabular-nums}
+  .totals small{font-size:12px;color:var(--ink-3)}
+  .totals .full{background:var(--accent-soft)} .totals .full b{color:var(--accent)}
+  @media (max-width:520px){.totals{grid-template-columns:1fr}}
   .item.chg{background:color-mix(in srgb,var(--accent) 14%,var(--panel));box-shadow:inset 4px 0 0 var(--accent)}
   .chgtag{display:inline-block;margin-top:4px;font:700 11px var(--mono);color:#121110;background:var(--accent);padding:2px 7px;border-radius:2px;text-transform:uppercase;letter-spacing:.06em}
   .chgbox{background:var(--accent-soft);border:2px solid var(--accent);border-radius:6px;padding:10px 14px}
@@ -76,7 +83,7 @@ RENDER = """
   const price=(it)=>each(it)*it.q;   // the line total: each × qty
   const m=(x)=>(Math.round(x*100)/100).toString();
   function render(){
-    let all=0,got=0,h="";
+    let all=0,got=0,townT=0,h="";
     for(const p of PHASES){
       let ps=0,pg=0,rows="";
       for(const it of p.items){ const on=!!checked[it.no], $=price(it), pk=it.pick; ps+=$; if(on)pg+=$;
@@ -84,10 +91,11 @@ RENDER = """
         const what=esc(it.d)+(pk&&pk.name?"<small>"+esc(pk.name)+"</small>":"")+(pk&&pk.was!=null&&pk.price!=null?`<small class="save">was $${pk.was} → $${pk.price} · ${pk.was>=pk.price?"saves $"+(pk.was-pk.price).toFixed(2):"$"+(pk.price-pk.was).toFixed(2)+" over the estimate"}</small>`:"")+(terms?`<span class="terms">${terms}</span>`:"");
         const link=it.town?`<span class="town">in town</span>`:it.print?`<a class="buy" href="${esc(it.link)}" target="_blank" rel="noopener">print it</a>`:pk?`<a class="buy" href="${esc(pk.url)}" target="_blank" rel="noopener">buy</a>`:`<a href="${esc(it.link)}" target="_blank" rel="noopener">search</a>`;
         rows+=ROW(it,on,what+(it.chg?`<span class="chgtag">${esc(it.chg)}</span>`:""),$,!pk,link); }
-      const town=p.items.every((it)=>it.town); if(!town){all+=ps; got+=pg;}   // the in-town list stays out of the online total
+      const town=p.items.every((it)=>it.town); if(!town){all+=ps; got+=pg;} else townT+=ps;   // the in-town list stays out of the online total
       h+=`<section><h2>${esc(p.name)}<span class="s">$${m(pg)} / $${m(ps)}</span></h2><div class="item hd"><span></span><span>№</span><span>Item</span><span>Qty</span><span>Each</span><span>Total</span><span></span></div>${rows}</section>`;
     }
     document.getElementById("list").innerHTML=h;
+    document.getElementById("totals").innerHTML=`<div><span>Online order</span><b>$${m(all)}</b><small>what gets ordered online</small></div><div><span>In town</span><b>$${m(townT)}</b><small>estimates, bought locally</small></div><div class="full"><span>Full total</span><b>$${m(all+townT)}</b><small>before tax and shipping</small></div>`;
     const ch=document.getElementById("changes"), live=PHASES.flatMap((p)=>p.items.filter((it)=>it.chg));
     ch.innerHTML=(live.length||(CHANGES.removed||[]).length)?`<div class="chgbox"><h2>What changed${CHANGES.when?" · "+esc(CHANGES.when):""}</h2><ul>${
       live.map((it)=>`<li><b>${it.no}</b> ${esc(it.d.split(" · ")[0])}: <span>${esc(it.chg)}</span></li>`).join("")}${
@@ -113,6 +121,7 @@ CHIEF = """<title>Kobra Cart</title>
 <div class="bar"><i id="bar"></i></div>
 <main class="wrap">
   <p class="rules">Click a dashed box to copy its Amazon search words. Tick an item to paste its product link, then Submit. Claude checks the link and puts the real price on the row; orange <b>buy</b> means it's done. Gray prices are July estimates. PLA and PETG only indoors, with the purifier running (no ASA until a vent duct, ruled 10/8) · 1.75 mm only · plastic spools only in the ACE Pro · no matte PLA, no silk · official Anycubic hotends and plates only · TPU and CF feed direct · CF needs the hardened hotend.</p>
+  <div id="totals" class="totals"></div>
   <div id="changes"></div>
   <div id="list"></div>
   <div class="inbox" id="inbox" hidden>
@@ -203,6 +212,7 @@ MOM = """<title>Printer Order List</title>
 <div class="bar"><i id="bar"></i></div>
 <main class="wrap">
   <p class="rules">Click the orange <b>buy</b> button to open the exact product. Each line also has its Amazon search words in a dashed box: click the box to copy them, then paste into Amazon's search bar. Order the amount shown after the ×. A gray price with a <b>search</b> link means no exact product is picked yet, so skip those for now. Crossed-out lines are already bought. The smoke detector and the air purifier matter most: order those first.</p>
+  <div id="totals" class="totals"></div>
   <div id="changes"></div>
   <div id="list"></div>
   <p class="note">Updated %(when)s.</p>
