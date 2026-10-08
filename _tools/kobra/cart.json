@@ -165,8 +165,7 @@
      "terms": [
       "HEPA air purifier with activated carbon filter for bedroom"
      ],
-     "each": 49.99,
-     "chg": "Mini purifier → AirPure 2.0 · $29.99 → $49.99"
+     "each": 49.99
     }
    ]
   },
@@ -364,20 +363,6 @@
      }
     },
     {
-     "no": "602",
-     "d": "Spare spring steel magnetic plate, official S1 (the stock textured PEI wears; keep a fresh one)",
-     "q": 1,
-     "usd": 32.99,
-     "each": 32.99,
-     "link": "https://store.anycubic.com/products/magnetic-platform?variant=45163198283938",
-     "terms": [],
-     "pick": {
-      "url": "https://store.anycubic.com/products/magnetic-platform?variant=45163198283938",
-      "name": "Official Anycubic store, Kobra S1 fit · US price $32.99",
-      "price": 32.99
-     }
-    },
-    {
      "no": "611",
      "d": "ACE Pro return detection module, official (stops tangles when filament rewinds on color changes)",
      "q": 1,
@@ -406,18 +391,6 @@
      }
     },
     {
-     "no": "603",
-     "d": "Ball-bearing 5020 part-cooling fan, Kobra S1 fit (quieter and longer-lived than the stock sleeve fan)",
-     "q": 1,
-     "usd": 11,
-     "each": 11,
-     "link": "https://www.amazon.com/s?k=Kobra+S1+5020+ball+bearing+part+cooling+fan",
-     "pick": null,
-     "terms": [
-      "Kobra S1 5020 ball bearing part cooling fan"
-     ]
-    },
-    {
      "no": "604",
      "d": "Capricorn XS PTFE tubing, 1 m (smoother feed from the ACE Pro, fewer false alarms)",
      "q": 1,
@@ -427,18 +400,6 @@
      "pick": null,
      "terms": [
       "Capricorn XS PTFE tubing 1.75mm 1 meter"
-     ]
-    },
-    {
-     "no": "605",
-     "d": "Anycubic reusable plastic spools, 2-pack (respool cardboard-spool filament like the orange PETG)",
-     "q": 1,
-     "usd": 13,
-     "each": 13,
-     "link": "https://www.amazon.com/s?k=Anycubic+reusable+filament+spool",
-     "pick": null,
-     "terms": [
-      "Anycubic reusable filament spool"
      ]
     },
     {
@@ -501,12 +462,22 @@
   }
  ],
  "changes": {
-  "when": "10/08 · AirPure 2.0",
+  "when": "10/08",
   "removed": [
    {
-    "no": "613",
-    "d": "Spare air filter (official)",
-    "why": "the AirPure 2.0 replaces the carbon filter parts"
+    "no": "602",
+    "d": "Spare spring steel magnetic plate",
+    "why": "not needed"
+   },
+   {
+    "no": "603",
+    "d": "Ball-bearing 5020 part-cooling fan",
+    "why": "not needed"
+   },
+   {
+    "no": "605",
+    "d": "Anycubic reusable plastic spools",
+    "why": "not needed"
    }
   ]
  }
