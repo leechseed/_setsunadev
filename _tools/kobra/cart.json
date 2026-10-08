@@ -148,25 +148,25 @@
      "link": "https://www.amazon.com/s?k=Ziploc+2+gallon+freezer+bags+double+zipper",
      "terms": [
       "Ziploc 2 gallon freezer bags double zipper"
-     ],
-     "chg": "picked · est $9 → $17.99"
+     ]
     },
     {
      "no": "111",
-     "d": "Air purifier: Anycubic Mini, sits in the printer (keeping just this one for now)",
+     "d": "Air purifier: Anycubic AirPure 2.0 set, Kobra S1 (replaces the Mini purifier and all the carbon filter parts)",
      "q": 1,
-     "usd": 60,
-     "link": "https://www.amazon.com/s?k=HEPA+air+purifier+with+activated+carbon+filter+for+bedroom",
+     "usd": 49.99,
+     "link": "https://store.anycubic.com/products/airpure-2-0?variant=45587134382242",
      "pick": {
-      "url": "https://www.amazon.com/dp/B09QW76L33?th=1",
-      "name": "ANYCUBIC Mini Purifier 3D Printer Accessories, Lightweight Ultra Quiet Purifier with High ",
-      "price": 29.99,
-      "was": 60.0
+      "url": "https://store.anycubic.com/products/airpure-2-0?variant=45587134382242",
+      "name": "Official Anycubic store · Set / Kobra S1 / US price $49.99 (your link was the EU variant, $57.49)",
+      "price": 49.99,
+      "was": 29.99
      },
      "terms": [
       "HEPA air purifier with activated carbon filter for bedroom"
      ],
-     "each": 60.0
+     "each": 49.99,
+     "chg": "Mini purifier → AirPure 2.0 · $29.99 → $49.99"
     }
    ]
   },
@@ -328,8 +328,7 @@
       "name": "YIHUA X-4 Premium Soldering Iron Holder with Brass Wool, Cleaning Sponge and Solder Tip Sl",
       "price": 19.99
      },
-     "terms": [],
-     "chg": "new · $19.99"
+     "terms": []
     },
     {
      "no": "503",
@@ -343,8 +342,7 @@
       "name": "ALESTOR 6 Ft Surge Protector Power Strip with 12 Outlets and 4 USB Ports",
       "price": 21.99
      },
-     "terms": [],
-     "chg": "new · $21.99"
+     "terms": []
     }
    ]
   },
@@ -363,8 +361,7 @@
       "url": "https://store.anycubic.com/products/hotend-for-fdm-3d-printers?variant=46635663818914",
       "name": "Official Anycubic store, Kobra S1 fit · US price $15.99",
       "price": 15.99
-     },
-     "chg": "new · official upgrade"
+     }
     },
     {
      "no": "602",
@@ -378,8 +375,7 @@
       "url": "https://store.anycubic.com/products/magnetic-platform?variant=45163198283938",
       "name": "Official Anycubic store, Kobra S1 fit · US price $32.99",
       "price": 32.99
-     },
-     "chg": "new · official upgrade"
+     }
     },
     {
      "no": "611",
@@ -393,8 +389,7 @@
       "url": "https://store.anycubic.com/products/ace-pro-return-detection-module",
       "name": "Official Anycubic store · pick Kobra S1 in the menu · US price $15.99",
       "price": 15.99
-     },
-     "chg": "new · official upgrade"
+     }
     },
     {
      "no": "612",
@@ -408,23 +403,7 @@
       "url": "https://store.anycubic.com/products/heatbed-nozzle-wiper",
       "name": "Official Anycubic store · pick Kobra S1 in the menu · US price $9.99",
       "price": 9.99
-     },
-     "chg": "new · official upgrade"
-    },
-    {
-     "no": "613",
-     "d": "Spare air filter, official S1 (the built-in carbon filter wears out; replaces the cut carbon pellets)",
-     "q": 1,
-     "usd": 9.9,
-     "each": 9.9,
-     "link": "https://store.anycubic.com/products/air-filter",
-     "terms": [],
-     "pick": {
-      "url": "https://store.anycubic.com/products/air-filter",
-      "name": "Official Anycubic store · pick Kobra S1 in the menu · US price $9.9",
-      "price": 9.9
-     },
-     "chg": "new · official upgrade"
+     }
     },
     {
      "no": "603",
@@ -436,8 +415,7 @@
      "pick": null,
      "terms": [
       "Kobra S1 5020 ball bearing part cooling fan"
-     ],
-     "chg": "new · upgrade"
+     ]
     },
     {
      "no": "604",
@@ -449,8 +427,7 @@
      "pick": null,
      "terms": [
       "Capricorn XS PTFE tubing 1.75mm 1 meter"
-     ],
-     "chg": "new · upgrade"
+     ]
     },
     {
      "no": "605",
@@ -462,8 +439,7 @@
      "pick": null,
      "terms": [
       "Anycubic reusable filament spool"
-     ],
-     "chg": "new · upgrade"
+     ]
     },
     {
      "no": "606",
@@ -475,8 +451,7 @@
      "pick": null,
      "terms": [
       "mini digital hygrometer 4 pack"
-     ],
-     "chg": "new · upgrade"
+     ]
     },
     {
      "no": "607",
@@ -487,8 +462,7 @@
      "link": "https://www.printables.com/search/models?q=ace%20pro%20riser",
      "pick": null,
      "terms": [],
-     "print": true,
-     "chg": "new · free print"
+     "print": true
     },
     {
      "no": "608",
@@ -499,8 +473,7 @@
      "link": "https://www.printables.com/model/1657623-anycubic-ace-pro-mod-spool-holder-automatic-rewind",
      "pick": null,
      "terms": [],
-     "print": true,
-     "chg": "new · free print"
+     "print": true
     },
     {
      "no": "609",
@@ -511,8 +484,7 @@
      "link": "https://www.printables.com/model/1140105-anycubic-ace-pro-filament-saver-alignment",
      "pick": null,
      "terms": [],
-     "print": true,
-     "chg": "new · free print"
+     "print": true
     },
     {
      "no": "610",
@@ -523,14 +495,19 @@
      "link": "https://www.printables.com/search/models?q=kobra%20s1%20ptfe%20guard",
      "pick": null,
      "terms": [],
-     "print": true,
-     "chg": "new · free print"
+     "print": true
     }
    ]
   }
  ],
  "changes": {
-  "when": "10/08 · upgrades + new links",
-  "removed": []
+  "when": "10/08 · AirPure 2.0",
+  "removed": [
+   {
+    "no": "613",
+    "d": "Spare air filter (official)",
+    "why": "the AirPure 2.0 replaces the carbon filter parts"
+   }
+  ]
  }
 }
