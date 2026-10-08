@@ -63,7 +63,7 @@
     <form id="add">
       <input name="url" type="url" placeholder="Paste the product link" required>
       <input name="what" placeholder="What is it">
-      <input name="price" placeholder="$ (optional)" inputmode="decimal">
+      <input name="price" placeholder="$ (optional: Claude pulls it from the link)" inputmode="decimal">
       <button type="submit">Submit</button>
     </form>
     <ul id="pending"></ul>
@@ -79,7 +79,7 @@
     const o=open.has(it.no), w=pending[it.no];
     const row=`<div class="item${on?" done":""}"><input type="checkbox" data-open="${it.no}" aria-label="Add a link for ${esc(it.d)}" title="Ticked = the right product is picked"${o||w||it.pick?" checked":""}><span class="no">${it.no}</span><span class="d">${what}${w?'<small class="wait">⏳ link submitted, Claude is checking it</small>':""}</span><span class="qty">${it.q}</span><span class="each${est?" est":""}">$${m(each(it))}</span><span class="usd${est?" est":""}">$${m($)}</span>${on?'<span class="bought">bought</span>':link}</div>`;
     if(!o) return row;
-    return row+`<div class="drawer"><form data-no="${it.no}"><input name="url" type="url" placeholder="Paste the product link" required value="${esc(w?w.url:(it.pick?it.pick.url:""))}"><input name="price" placeholder="$ (optional)" inputmode="decimal" value="${esc(w&&w.price?w.price:"")}"><button type="submit">Submit</button><button type="button" class="ghost" data-bought="${it.no}">${on?"Not bought":"Mark bought"}</button></form></div>`;
+    return row+`<div class="drawer"><form data-no="${it.no}"><input name="url" type="url" placeholder="Paste the product link" required value="${esc(w?w.url:(it.pick?it.pick.url:""))}"><input name="price" placeholder="$ (optional: Claude pulls it from the link)" inputmode="decimal" value="${esc(w&&w.price?w.price:"")}"><button type="submit">Submit</button><button type="button" class="ghost" data-bought="${it.no}">${on?"Not bought":"Mark bought"}</button></form></div>`;
   };
 
   const esc=(s)=>String(s).replace(/[&<>"]/g,(c)=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
