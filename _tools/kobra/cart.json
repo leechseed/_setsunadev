@@ -56,36 +56,6 @@
      "each": 17.0
     },
     {
-     "no": "105",
-     "d": "Glue stick 2-pack",
-     "q": 1,
-     "usd": 4,
-     "link": "https://www.amazon.com/s?k=Elmer%27s+disappearing+purple+glue+stick+2+pack",
-     "pick": {
-      "url": "https://www.amazon.com/dp/B08PC5R5BD",
-      "name": "Elmer's Disappearing Purple glue sticks (E522)",
-      "price": 2.8,
-      "was": 4.0
-     },
-     "terms": [
-      "Elmer's disappearing purple glue stick 2 pack"
-     ],
-     "each": 4.0
-    },
-    {
-     "no": "106",
-     "d": "Isopropyl alcohol 91%, 32 oz · buying in town: easy to find and cheaper there",
-     "q": 1,
-     "usd": 5,
-     "each": 5,
-     "link": "https://www.amazon.com/s?k=91%25+isopropyl+alcohol+32+oz",
-     "pick": null,
-     "terms": [
-      "91% isopropyl alcohol 32 oz"
-     ],
-     "town": true
-    },
-    {
      "no": "112",
      "d": "Microfiber cleaning cloths",
      "q": 1,
@@ -118,20 +88,6 @@
      "terms": [
       "rechargeable silica gel desiccant packs"
      ]
-    },
-    {
-     "no": "113",
-     "d": "Airtight gasket storage bin, about 30 qt, holds 4-6 spools with the desiccant · buying in town",
-     "q": 1,
-     "usd": 28,
-     "each": 28,
-     "link": "https://www.amazon.com/s?k=IRIS+USA+WeatherPro+airtight+storage+box+gasket+latching+lid",
-     "pick": null,
-     "terms": [
-      "IRIS USA WeatherPro airtight storage box gasket latching lid",
-      "airtight filament storage box 1kg spools"
-     ],
-     "town": true
     },
     {
      "no": "115",
@@ -403,18 +359,6 @@
      ]
     },
     {
-     "no": "606",
-     "d": "Mini digital hygrometers, 4-pack (one in the ACE Pro, one in the bin)",
-     "q": 1,
-     "usd": 10,
-     "each": 10,
-     "link": "https://www.amazon.com/s?k=mini+digital+hygrometer+4+pack",
-     "pick": null,
-     "terms": [
-      "mini digital hygrometer 4 pack"
-     ]
-    },
-    {
      "no": "607",
      "d": "ACE Pro riser (lifts the ACE Pro so the lid opens easily)",
      "q": 1,
@@ -459,24 +403,67 @@
      "print": true
     }
    ]
+  },
+  {
+   "name": "In town · not on the online order",
+   "items": [
+    {
+     "no": "105",
+     "d": "Glue stick 2-pack · in town, or you may already have some",
+     "q": 1,
+     "usd": 4,
+     "link": "https://www.amazon.com/s?k=Elmer%27s+disappearing+purple+glue+stick+2+pack",
+     "pick": {
+      "url": "https://www.amazon.com/dp/B08PC5R5BD",
+      "name": "Elmer's Disappearing Purple glue sticks (E522)",
+      "price": 2.8,
+      "was": 4.0
+     },
+     "terms": [
+      "Elmer's disappearing purple glue stick 2 pack"
+     ],
+     "each": 4.0,
+     "town": true,
+     "chg": "moved to in town"
+    },
+    {
+     "no": "106",
+     "d": "Isopropyl alcohol 91%, 32 oz · buying in town: easy to find and cheaper there",
+     "q": 1,
+     "usd": 5,
+     "each": 5,
+     "link": "https://www.amazon.com/s?k=91%25+isopropyl+alcohol+32+oz",
+     "pick": null,
+     "terms": [
+      "91% isopropyl alcohol 32 oz"
+     ],
+     "town": true,
+     "chg": "moved to the in-town list"
+    },
+    {
+     "no": "113",
+     "d": "Airtight gasket storage bin, about 30 qt, holds 4-6 spools with the desiccant · buying in town",
+     "q": 1,
+     "usd": 28,
+     "each": 28,
+     "link": "https://www.amazon.com/s?k=IRIS+USA+WeatherPro+airtight+storage+box+gasket+latching+lid",
+     "pick": null,
+     "terms": [
+      "IRIS USA WeatherPro airtight storage box gasket latching lid",
+      "airtight filament storage box 1kg spools"
+     ],
+     "town": true,
+     "chg": "moved to the in-town list"
+    }
+   ]
   }
  ],
  "changes": {
   "when": "10/08",
   "removed": [
    {
-    "no": "602",
-    "d": "Spare spring steel magnetic plate",
-    "why": "not needed"
-   },
-   {
-    "no": "603",
-    "d": "Ball-bearing 5020 part-cooling fan",
-    "why": "not needed"
-   },
-   {
-    "no": "605",
-    "d": "Anycubic reusable plastic spools",
+    "no": "606",
+    "d": "Mini digital hygrometers",
     "why": "not needed"
    }
   ]

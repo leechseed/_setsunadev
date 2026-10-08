@@ -84,7 +84,7 @@ RENDER = """
         const what=esc(it.d)+(pk&&pk.name?"<small>"+esc(pk.name)+"</small>":"")+(pk&&pk.was!=null&&pk.price!=null?`<small class="save">was $${pk.was} → $${pk.price} · ${pk.was>=pk.price?"saves $"+(pk.was-pk.price).toFixed(2):"$"+(pk.price-pk.was).toFixed(2)+" over the estimate"}</small>`:"")+(terms?`<span class="terms">${terms}</span>`:"");
         const link=it.town?`<span class="town">in town</span>`:it.print?`<a class="buy" href="${esc(it.link)}" target="_blank" rel="noopener">print it</a>`:pk?`<a class="buy" href="${esc(pk.url)}" target="_blank" rel="noopener">buy</a>`:`<a href="${esc(it.link)}" target="_blank" rel="noopener">search</a>`;
         rows+=ROW(it,on,what+(it.chg?`<span class="chgtag">${esc(it.chg)}</span>`:""),$,!pk,link); }
-      all+=ps; got+=pg;
+      const town=p.items.every((it)=>it.town); if(!town){all+=ps; got+=pg;}   // the in-town list stays out of the online total
       h+=`<section><h2>${esc(p.name)}<span class="s">$${m(pg)} / $${m(ps)}</span></h2><div class="item hd"><span></span><span>№</span><span>Item</span><span>Qty</span><span>Each</span><span>Total</span><span></span></div>${rows}</section>`;
     }
     document.getElementById("list").innerHTML=h;
