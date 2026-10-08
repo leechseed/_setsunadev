@@ -73,24 +73,14 @@
     },
     {
      "no": "107",
-     "d": "Vacuum filament storage kit",
+     "d": "Desiccant packs + zip bags (filament storage)",
      "q": 1,
-     "usd": 28,
-     "link": "https://www.amazon.com/s?k=filament+vacuum+storage+bags+with+pump+and+hygrometer",
+     "usd": 10,
+     "link": "https://www.amazon.com/s?k=rechargeable+silica+gel+desiccant+packs",
      "pick": null,
      "terms": [
-      "filament vacuum storage bags with pump and hygrometer"
-     ]
-    },
-    {
-     "no": "108",
-     "d": "Spare hotend 0.4 mm, official",
-     "q": 1,
-     "usd": 18,
-     "link": "https://www.amazon.com/s?k=Anycubic+Kobra+S1+hotend+0.4mm",
-     "pick": null,
-     "terms": [
-      "Anycubic Kobra S1 hotend 0.4mm"
+      "rechargeable silica gel desiccant packs",
+      "2 gallon ziploc freezer bags"
      ]
     },
     {
@@ -177,17 +167,6 @@
      ]
     },
     {
-     "no": "207",
-     "d": "Hotend 0.6 mm, official",
-     "q": 1,
-     "usd": 20,
-     "link": "https://www.amazon.com/s?k=Anycubic+Kobra+S1+hotend+0.6mm",
-     "pick": null,
-     "terms": [
-      "Anycubic Kobra S1 hotend 0.6mm"
-     ]
-    },
-    {
      "no": "208",
      "d": "Super Lube 21030",
      "q": 1,
@@ -196,17 +175,6 @@
      "pick": null,
      "terms": [
       "Super Lube 21030 synthetic grease"
-     ]
-    },
-    {
-     "no": "209",
-     "d": "PTFE tube + cutter + couplings",
-     "q": 1,
-     "usd": 15,
-     "link": "https://www.amazon.com/s?k=Capricorn+PTFE+tubing+1.9mm+with+cutter",
-     "pick": null,
-     "terms": [
-      "Capricorn PTFE tubing 1.9mm with cutter"
      ]
     }
    ]
@@ -223,31 +191,6 @@
      "pick": null,
      "terms": [
       "iGaging digital caliper 6 inch"
-     ]
-    },
-    {
-     "no": "402",
-     "d": "Finish kit: filler primer + matte black + red spray",
-     "q": 1,
-     "usd": 25,
-     "link": "https://www.amazon.com/s?k=Rust-Oleum+filler+primer+spray",
-     "pick": null,
-     "terms": [
-      "Rust-Oleum filler primer spray",
-      "Rust-Oleum matte black spray paint",
-      "Rust-Oleum red spray paint"
-     ]
-    },
-    {
-     "no": "403",
-     "d": "Wet/dry sandpaper 220-2000 + sanding sponges",
-     "q": 1,
-     "usd": 12,
-     "link": "https://www.amazon.com/s?k=wet+dry+sandpaper+assortment+220+to+2000+grit",
-     "pick": null,
-     "terms": [
-      "wet dry sandpaper assortment 220 to 2000 grit",
-      "sanding sponges"
      ]
     },
     {
