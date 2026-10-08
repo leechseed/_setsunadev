@@ -1,5 +1,7 @@
 # THE KOBRA CART — everything, bought up front (BOLO 112, 10/6)
 
+> **Superseded 10/8:** the live list is `_tools/kobra/cart.json` (built by `_tools/kobra/build.py`). Ruled 10/8: Phase 3 premium cut except the safety items, ASA cut, a HEPA + carbon purifier added; total $467. This file is the 10/6 record.
+
 Chief, 10/6: "have the capability of using my 3D printer at its fullest accord. Let's get everything just bought for that."
 
 Source: [KOBRA-S1-BOM.md](KOBRA-S1-BOM.md) v1.1 (phases 1-3, prices from 7/15) plus Phase 4, added 10/6. Prices are estimates; check each one at checkout. Each link opens an Amazon search, not a fixed product. Official Anycubic hotends and plates may be cheaper on anycubic.com.

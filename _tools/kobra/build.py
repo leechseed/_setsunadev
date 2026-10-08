@@ -86,7 +86,7 @@ CHIEF = """<title>Kobra Cart</title>
 </header>
 <div class="bar"><i id="bar"></i></div>
 <main class="wrap">
-  <p class="rules">Tick an item to paste its product link, then Submit. Claude checks the link and puts the real price on the row; orange <b>buy</b> means it's done. Gray prices are July estimates. 1.75 mm only · plastic spools only in the ACE Pro · no matte PLA, no silk · official Anycubic hotends and plates only · TPU and CF feed direct · CF needs the hardened hotend.</p>
+  <p class="rules">Tick an item to paste its product link, then Submit. Claude checks the link and puts the real price on the row; orange <b>buy</b> means it's done. Gray prices are July estimates. PLA and PETG only indoors, with the purifier running (no ASA until a vent duct, ruled 10/8) · 1.75 mm only · plastic spools only in the ACE Pro · no matte PLA, no silk · official Anycubic hotends and plates only · TPU and CF feed direct · CF needs the hardened hotend.</p>
   <div id="list"></div>
   <div class="inbox" id="inbox" hidden>
     <h2>Something not on the list?</h2>
@@ -174,7 +174,7 @@ MOM = """<title>Printer Order List</title>
 </header>
 <div class="bar"><i id="bar"></i></div>
 <main class="wrap">
-  <p class="rules">Click the orange <b>buy</b> button to open the exact product. Order the amount shown after the ×. A gray price with a <b>search</b> link means no exact product is picked yet, so skip those for now. Crossed-out lines are already bought.</p>
+  <p class="rules">Click the orange <b>buy</b> button to open the exact product. Order the amount shown after the ×. A gray price with a <b>search</b> link means no exact product is picked yet, so skip those for now. Crossed-out lines are already bought. The smoke detector and the air purifier matter most: order those first.</p>
   <div id="list"></div>
   <p class="note">Updated %(when)s.</p>
 </main>
