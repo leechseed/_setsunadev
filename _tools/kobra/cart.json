@@ -59,42 +59,75 @@
     },
     {
      "no": "106",
-     "d": "IPA 91% + microfiber",
+     "d": "Isopropyl alcohol 91%, 32 oz",
      "q": 1,
-     "usd": 8,
+     "usd": 5,
+     "each": 5,
      "link": "https://www.amazon.com/s?k=91%25+isopropyl+alcohol+32+oz",
      "pick": null,
      "terms": [
-      "91% isopropyl alcohol 32 oz",
+      "91% isopropyl alcohol 32 oz"
+     ]
+    },
+    {
+     "no": "112",
+     "d": "Microfiber cleaning cloths",
+     "q": 1,
+     "usd": 7,
+     "each": 7,
+     "link": "https://www.amazon.com/s?k=microfiber+cleaning+cloths",
+     "pick": null,
+     "terms": [
       "microfiber cleaning cloths"
-     ],
-     "each": 8.0
+     ]
     },
     {
      "no": "107",
-     "d": "Desiccant packs + zip bags (filament storage)",
+     "d": "Desiccant packs, rechargeable silica gel",
      "q": 1,
      "usd": 10,
+     "each": 10,
      "link": "https://www.amazon.com/s?k=rechargeable+silica+gel+desiccant+packs",
      "pick": null,
      "terms": [
-      "rechargeable silica gel desiccant packs",
+      "rechargeable silica gel desiccant packs"
+     ]
+    },
+    {
+     "no": "113",
+     "d": "Zip bags, 2 gallon (filament storage)",
+     "q": 1,
+     "usd": 6,
+     "each": 6,
+     "link": "https://www.amazon.com/s?k=2+gallon+ziploc+freezer+bags",
+     "pick": null,
+     "terms": [
       "2 gallon ziploc freezer bags"
-     ],
-     "each": 10.0
+     ]
     },
     {
      "no": "109",
-     "d": "Smart plug + smoke detector (safety, arrives with the printer)",
+     "d": "Smart plug (printer power, safety)",
      "q": 1,
-     "usd": 25,
+     "usd": 12,
+     "each": 12,
      "link": "https://www.amazon.com/s?k=Kasa+smart+plug+mini",
      "pick": null,
      "terms": [
-      "Kasa smart plug mini",
+      "Kasa smart plug mini"
+     ]
+    },
+    {
+     "no": "114",
+     "d": "Smoke detector, battery (safety, arrives with the printer)",
+     "q": 1,
+     "usd": 15,
+     "each": 15,
+     "link": "https://www.amazon.com/s?k=First+Alert+smoke+detector+battery+powered",
+     "pick": null,
+     "terms": [
       "First Alert smoke detector battery powered"
-     ],
-     "each": 25.0
+     ]
     },
     {
      "no": "110",
