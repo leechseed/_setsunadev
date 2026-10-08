@@ -280,7 +280,7 @@
      "terms": [],
      "pick": {
       "url": "https://store.anycubic.com/products/hotend-for-fdm-3d-printers?variant=46635663818914",
-      "name": "Official Anycubic store, Kobra S1 fit · US price $15.99",
+      "name": "Official Anycubic store · Kobra S1 / 0.4 mm / brass · US $15.99",
       "price": 15.99
      }
     },
@@ -290,11 +290,11 @@
      "q": 1,
      "usd": 15.99,
      "each": 15.99,
-     "link": "https://store.anycubic.com/products/ace-pro-return-detection-module",
+     "link": "https://store.anycubic.com/products/ace-pro-return-detection-module?variant=45291745706146",
      "terms": [],
      "pick": {
-      "url": "https://store.anycubic.com/products/ace-pro-return-detection-module",
-      "name": "Official Anycubic store · pick Kobra S1 in the menu · US price $15.99",
+      "url": "https://store.anycubic.com/products/ace-pro-return-detection-module?variant=45291745706146",
+      "name": "Official Anycubic store · Kobra S1 / ACE Pro Return Detection Module · US $15.99",
       "price": 15.99
      }
     },
@@ -304,11 +304,11 @@
      "q": 1,
      "usd": 9.99,
      "each": 9.99,
-     "link": "https://store.anycubic.com/products/heatbed-nozzle-wiper",
+     "link": "https://store.anycubic.com/products/heatbed-nozzle-wiper?variant=45291825463458",
      "terms": [],
      "pick": {
-      "url": "https://store.anycubic.com/products/heatbed-nozzle-wiper",
-      "name": "Official Anycubic store · pick Kobra S1 in the menu · US price $9.99",
+      "url": "https://store.anycubic.com/products/heatbed-nozzle-wiper?variant=45291825463458",
+      "name": "Official Anycubic store · Kobra S1 · US $9.99",
       "price": 9.99
      }
     },
@@ -447,14 +447,13 @@
      "terms": [
       "Ziploc 2 gallon freezer bags double zipper"
      ],
-     "town": true,
-     "chg": "moved to in town"
+     "town": true
     }
    ]
   }
  ],
  "changes": {
-  "when": "10/08",
+  "when": "",
   "removed": []
  }
 }

@@ -40,6 +40,11 @@ HEAD = """<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=
   .totals b{font:800 30px/1.05 var(--display);font-variant-numeric:tabular-nums}
   .totals small{font-size:12px;color:var(--ink-3)}
   .totals .full{background:var(--accent-soft)} .totals .full b{color:var(--accent)}
+  .totals:has(.sep){grid-template-columns:repeat(4,minmax(0,1fr))} .totals .sep b{color:var(--ink-2)}
+  .buyall{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .buyall a{font:700 16px var(--display);letter-spacing:.05em;text-transform:uppercase;text-decoration:none;color:#121110;background:var(--accent);padding:10px 16px;border-radius:4px}
+  .buyall a.alt{background:var(--panel-2);color:var(--accent-ink);border:1px solid var(--accent)}
+  .buyall small{flex-basis:100%;color:var(--ink-3);font-size:12.5px}
   @media (max-width:520px){.totals{grid-template-columns:1fr}}
   .item.chg{background:color-mix(in srgb,var(--accent) 14%,var(--panel));box-shadow:inset 4px 0 0 var(--accent)}
   .chgtag{display:inline-block;margin-top:4px;font:700 11px var(--mono);color:#121110;background:var(--accent);padding:2px 7px;border-radius:2px;text-transform:uppercase;letter-spacing:.06em}
@@ -83,7 +88,7 @@ RENDER = """
   const price=(it)=>each(it)*it.q;   // the line total: each × qty
   const m=(x)=>(Math.round(x*100)/100).toString();
   function render(){
-    let all=0,got=0,townT=0,h="";
+    let all=0,got=0,townT=0,sepT=0,sepL="",h="";
     for(const p of PHASES){
       let ps=0,pg=0,rows="";
       for(const it of p.items){ const on=!!checked[it.no], $=price(it), pk=it.pick; ps+=$; if(on)pg+=$;
@@ -91,11 +96,11 @@ RENDER = """
         const what=esc(it.d)+(pk&&pk.name?"<small>"+esc(pk.name)+"</small>":"")+(pk&&pk.was!=null&&pk.price!=null?`<small class="save">was $${pk.was} → $${pk.price} · ${pk.was>=pk.price?"saves $"+(pk.was-pk.price).toFixed(2):"$"+(pk.price-pk.was).toFixed(2)+" over the estimate"}</small>`:"")+(terms?`<span class="terms">${terms}</span>`:"");
         const link=it.town?`<span class="town">in town</span>`:it.print?`<a class="buy" href="${esc(it.link)}" target="_blank" rel="noopener">print it</a>`:pk?`<a class="buy" href="${esc(pk.url)}" target="_blank" rel="noopener">buy</a>`:`<a href="${esc(it.link)}" target="_blank" rel="noopener">search</a>`;
         rows+=ROW(it,on,what+(it.chg?`<span class="chgtag">${esc(it.chg)}</span>`:""),$,!pk,link); }
-      const town=p.items.every((it)=>it.town); if(!town){all+=ps; got+=pg;} else townT+=ps;   // the in-town list stays out of the online total
+      const town=p.items.every((it)=>it.town); if(p.sep){sepT+=ps; sepL=p.name;} else if(!town){all+=ps; got+=pg;} else townT+=ps;   // the in-town list stays out of the online total
       h+=`<section><h2>${esc(p.name)}<span class="s">$${m(pg)} / $${m(ps)}</span></h2><div class="item hd"><span></span><span>№</span><span>Item</span><span>Qty</span><span>Each</span><span>Total</span><span></span></div>${rows}</section>`;
     }
     document.getElementById("list").innerHTML=h;
-    document.getElementById("totals").innerHTML=`<div><span>Online order</span><b>$${m(all)}</b><small>what gets ordered online</small></div><div><span>In town</span><b>$${m(townT)}</b><small>estimates, bought locally</small></div><div class="full"><span>Full total</span><b>$${m(all+townT)}</b><small>before tax and shipping</small></div>`;
+    document.getElementById("totals").innerHTML=`<div><span>Online order</span><b>$${m(all)}</b><small>what gets ordered online</small></div><div><span>In town</span><b>$${m(townT)}</b><small>estimates, bought locally</small></div><div class="full"><span>Full total</span><b>$${m(all+townT)}</b><small>before tax and shipping</small></div>${sepT?`<div class="sep"><span>${esc(sepL.split(" · ")[0])}</span><b>$${m(sepT)}</b><small>separate, before shipping and tax</small></div>`:""}`;
     const ch=document.getElementById("changes"), live=PHASES.flatMap((p)=>p.items.filter((it)=>it.chg));
     ch.innerHTML=(live.length||(CHANGES.removed||[]).length)?`<div class="chgbox"><h2>What changed${CHANGES.when?" · "+esc(CHANGES.when):""}</h2><ul>${
       live.map((it)=>`<li><b>${it.no}</b> ${esc(it.d.split(" · ")[0])}: <span>${esc(it.chg)}</span></li>`).join("")}${
@@ -122,6 +127,7 @@ CHIEF = """<title>Kobra Cart</title>
 <main class="wrap">
   <p class="rules">Click a dashed box to copy its Amazon search words. Tick an item to paste its product link, then Submit. Claude checks the link and puts the real price on the row; orange <b>buy</b> means it's done. Gray prices are July estimates. PLA and PETG only indoors, with the purifier running (no ASA until a vent duct, ruled 10/8) · 1.75 mm only · plastic spools only in the ACE Pro · no matte PLA, no silk · official Anycubic hotends and plates only · TPU and CF feed direct · CF needs the hardened hotend.</p>
   <div id="totals" class="totals"></div>
+  %(buyall)s
   <div id="changes"></div>
   <div id="list"></div>
   <div class="inbox" id="inbox" hidden>
@@ -213,6 +219,7 @@ MOM = """<title>Printer Order List</title>
 <main class="wrap">
   <p class="rules">Click the orange <b>buy</b> button to open the exact product. Each line also has its Amazon search words in a dashed box: click the box to copy them, then paste into Amazon's search bar. Order the amount shown after the ×. A gray price with a <b>search</b> link means no exact product is picked yet, so skip those for now. Crossed-out lines are already bought. The smoke detector and the air purifier matter most: order those first.</p>
   <div id="totals" class="totals"></div>
+  %(buyall)s
   <div id="changes"></div>
   <div id="list"></div>
   <p class="note">Updated %(when)s.</p>
@@ -236,8 +243,28 @@ if __name__ == "__main__":
                       for p in cart["phases"] for it in p["items"])
     args = {"head": HEAD, "changes": json.dumps(cart.get("changes", {}), ensure_ascii=False), "phases": phases, "checked": checked, "render": RENDER, "options": options,
             "when": time.strftime("%B %d, %Y").replace(" 0", " ")}
+    # one click per store: Amazon's cart-add link takes every ASIN and qty at once; the Anycubic store (Shopify) takes variant:qty
+    import re
+    online = [it for p in cart["phases"] for it in p["items"] if not it.get("town") and not it.get("print") and it.get("pick")]
+    asins = [(re.search(r"/dp/([A-Z0-9]{10})", it["pick"]["url"]).group(1), it["q"]) for it in online if "/dp/" in it["pick"]["url"]]
+    varis = [(re.search(r"variant=(\d+)", it["pick"]["url"]).group(1), it["q"]) for it in online if "anycubic.com" in it["pick"]["url"] and "variant=" in it["pick"]["url"]]
+    amz = "https://www.amazon.com/gp/aws/cart/add.html?" + "&".join("ASIN.%d=%s&Quantity.%d=%d" % (i + 1, a, i + 1, q) for i, (a, q) in enumerate(asins))
+    acu = "https://store.anycubic.com/cart/" + ",".join("%s:%d" % (v, q) for v, q in varis)
+    unpicked = [it["no"] for p in cart["phases"] for it in p["items"] if not it.get("town") and not it.get("print") and not it.get("pick")]
+    args["buyall"] = ('<div class="buyall"><a href="%s" target="_blank" rel="noopener">Add all %d to the Amazon cart</a>'
+                      '<a class="alt" href="%s" target="_blank" rel="noopener">Add all %d to the Anycubic cart</a>'
+                      '<small>Sign in to Amazon first. Each button puts every item, with its quantity, into that store\'s cart; review it there, then check out.%s</small></div>') % (
+        amz, len(asins), acu, len(varis), (" Not in the buttons yet (no exact product picked): " + ", ".join(unpicked) + ".") if unpicked else "")
+    mom = dict(args)
+    mom["phases"] = json.dumps([dict(p, items=[it for it in p["items"] if not it.get("print")]) for p in cart["phases"]], ensure_ascii=False)
     io.open(os.path.join(HERE, "KOBRA-CART.html"), "w", encoding="utf-8").write(CHIEF % args)
-    io.open(os.path.join(HERE, "KOBRA-ORDER.html"), "w", encoding="utf-8").write(MOM % args)
+    io.open(os.path.join(HERE, "KOBRA-ORDER.html"), "w", encoding="utf-8").write(MOM % mom)
+    # Chief's own page with the private section: built into _PRIVATE/ only, published to the cart's URL from there
+    pp = os.path.join(HERE, "..", "..", "_PRIVATE", "kobra", "private.json")
+    if os.path.exists(pp):
+        priv = dict(args)
+        priv["phases"] = json.dumps(cart["phases"] + [json.load(io.open(pp, encoding="utf-8"))], ensure_ascii=False)
+        io.open(os.path.join(os.path.dirname(pp), "KOBRA-CART.private.html"), "w", encoding="utf-8").write(CHIEF % priv)
     picked = sum(1 for p in cart["phases"] for it in p["items"] if it.get("pick"))
     print("built KOBRA-CART.html + KOBRA-ORDER.html · %d items · %d picked" % (
         sum(len(p["items"]) for p in cart["phases"]), picked))
