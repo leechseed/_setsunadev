@@ -56,23 +56,6 @@
      "each": 17.0
     },
     {
-     "no": "112",
-     "d": "Microfiber cleaning cloths",
-     "q": 1,
-     "usd": 7,
-     "each": 7,
-     "link": "https://www.amazon.com/s?k=microfiber+cleaning+cloths",
-     "pick": {
-      "url": "https://www.amazon.com/dp/B08BRJHJF9?th=1",
-      "name": "USANOOKS Microfiber Cleaning Cloth Grey - 12 Pcs (12.5\"x12.5\") - High Performance - 1200 W",
-      "price": 7.98,
-      "was": 7
-     },
-     "terms": [
-      "microfiber cleaning cloths"
-     ]
-    },
-    {
      "no": "107",
      "d": "Desiccant packs, rechargeable silica gel",
      "q": 1,
@@ -423,8 +406,7 @@
       "Elmer's disappearing purple glue stick 2 pack"
      ],
      "each": 4.0,
-     "town": true,
-     "chg": "moved to in town"
+     "town": true
     },
     {
      "no": "106",
@@ -437,8 +419,7 @@
      "terms": [
       "91% isopropyl alcohol 32 oz"
      ],
-     "town": true,
-     "chg": "moved to the in-town list"
+     "town": true
     },
     {
      "no": "113",
@@ -452,20 +433,32 @@
       "IRIS USA WeatherPro airtight storage box gasket latching lid",
       "airtight filament storage box 1kg spools"
      ],
+     "town": true
+    },
+    {
+     "no": "112",
+     "d": "Microfiber cleaning cloths · in town",
+     "q": 1,
+     "usd": 7,
+     "each": 7,
+     "link": "https://www.amazon.com/s?k=microfiber+cleaning+cloths",
+     "pick": {
+      "url": "https://www.amazon.com/dp/B08BRJHJF9?th=1",
+      "name": "USANOOKS Microfiber Cleaning Cloth Grey - 12 Pcs (12.5\"x12.5\") - High Performance - 1200 W",
+      "price": 7.98,
+      "was": 7
+     },
+     "terms": [
+      "microfiber cleaning cloths"
+     ],
      "town": true,
-     "chg": "moved to the in-town list"
+     "chg": "moved to in town"
     }
    ]
   }
  ],
  "changes": {
   "when": "10/08",
-  "removed": [
-   {
-    "no": "606",
-    "d": "Mini digital hygrometers",
-    "why": "not needed"
-   }
-  ]
+  "removed": []
  }
 }
