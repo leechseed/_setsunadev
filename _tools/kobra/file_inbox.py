@@ -92,7 +92,7 @@ def main(src):
                 added = {"name": "Added · from the inbox", "items": []}
                 cart["phases"].append(added)
             used = [int(n) for n in byno if n.isdigit()]
-            no = str(max([500] + [n for n in used if n >= 500]) + 1)
+            no = str(max([500] + [n for n in used if 500 <= n < 600]) + 1)   # 5xx = added lines; 6xx = upgrades
             it = {"no": no, "d": (v.get("what") or title or "added item")[:80], "q": 1, "usd": price or 0, "each": price or 0,
                   "link": clean, "pick": {"url": clean, "name": name, "price": price or 0}, "terms": []}
             it["chg"] = "new · $%s" % price
