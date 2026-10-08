@@ -121,7 +121,7 @@
     },
     {
      "no": "113",
-     "d": "Airtight gasket storage bin, about 30 qt, holds 4-6 spools with the desiccant (reusable, latching lid)",
+     "d": "Airtight gasket storage bin, about 30 qt, holds 4-6 spools with the desiccant · buying in town",
      "q": 1,
      "usd": 28,
      "each": 28,
@@ -130,7 +130,8 @@
      "terms": [
       "IRIS USA WeatherPro airtight storage box gasket latching lid",
       "airtight filament storage box 1kg spools"
-     ]
+     ],
+     "town": true
     },
     {
      "no": "109",
