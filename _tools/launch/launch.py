@@ -236,6 +236,9 @@ def station_faces():
         if app:   # Chrome/Edge default: an app window (own name, icon, no address bar)
             subprocess.Popen([app, "--app=" + FACES_URL], cwd=ROOT, stdin=subprocess.DEVNULL,
                              stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            # Chief, 10/8: the console itself (refresh button, corner reel) opens as its own app window too
+            subprocess.Popen([app, "--app=http://127.0.0.1:8787/"], cwd=ROOT, stdin=subprocess.DEVNULL,
+                             stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         else:
             subprocess.Popen(["cmd", "/c", VIEW, FACES_URL], cwd=ROOT, stdin=subprocess.DEVNULL,
                              stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
