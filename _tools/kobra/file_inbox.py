@@ -64,6 +64,11 @@ def main(src):
         data = d.get("data", d)
         docs.append((d.get("id") or os.path.splitext(os.path.basename(f))[0], data))
     filed = []
+    if docs:   # a new round: last round's highlights fade, this round's stand out
+        for ph in cart["phases"]:
+            for it in ph["items"]:
+                it.pop("chg", None)
+        cart["changes"] = {"when": __import__("datetime").datetime.now().strftime("%m/%d %H:%M"), "removed": []}
     for doc_id, v in docs:
         url = (v.get("url") or "").strip()
         if not url:
@@ -80,6 +85,7 @@ def main(src):
         if no in byno:
             it = byno[no]
             it["pick"] = {"url": clean, "name": name, "price": price, "was": it.get("each", it["usd"] / it["q"])}
+            it["chg"] = "picked · est $%s → $%s" % (it["pick"]["was"], price)
         else:   # not on the list: a new line in the "Added" phase
             added = next((ph for ph in cart["phases"] if ph["name"].startswith("Added")), None)
             if not added:
@@ -89,6 +95,7 @@ def main(src):
             no = str(max([500] + [n for n in used if n >= 500]) + 1)
             it = {"no": no, "d": (v.get("what") or title or "added item")[:80], "q": 1, "usd": price or 0, "each": price or 0,
                   "link": clean, "pick": {"url": clean, "name": name, "price": price or 0}, "terms": []}
+            it["chg"] = "new · $%s" % price
             added["items"].append(it)
             byno[no] = it
         filed.append(doc_id)

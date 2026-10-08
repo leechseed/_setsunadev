@@ -34,6 +34,11 @@ HEAD = """<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=
   section h2 .s{margin-left:auto;font:500 13px var(--mono);color:var(--ink-3);letter-spacing:0;text-transform:none}
   .item{display:grid;grid-template-columns:28px 44px minmax(0,1fr) 2.6em 4.4em 4.8em auto;gap:10px;align-items:center;padding:9px 14px;border-bottom:1px solid var(--line)}
   .item:last-child{border-bottom:0}
+  .item.chg{background:color-mix(in srgb,var(--accent) 14%,var(--panel));box-shadow:inset 4px 0 0 var(--accent)}
+  .chgtag{display:inline-block;margin-top:4px;font:700 11px var(--mono);color:#121110;background:var(--accent);padding:2px 7px;border-radius:2px;text-transform:uppercase;letter-spacing:.06em}
+  .chgbox{background:var(--accent-soft);border:2px solid var(--accent);border-radius:6px;padding:10px 14px}
+  .chgbox h2{margin:0 0 6px;font:800 18px var(--display);letter-spacing:.06em;text-transform:uppercase;color:var(--accent-ink)}
+  .chgbox ul{margin:0;padding-left:18px;display:grid;gap:3px;font-size:14px} .chgbox li span{color:var(--accent-ink)} .chgbox li.rm s{color:var(--ink-3)}
   .item .qty,.item .each{font:500 14px var(--mono);text-align:right;font-variant-numeric:tabular-nums;color:var(--ink-2)} .item .each.est{color:var(--ink-3)}
   .item.hd{padding-block:5px;font:500 10.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)} .item.hd span:nth-child(n+4){text-align:right}
   .item input{width:20px;height:20px;accent-color:var(--accent);cursor:pointer}
@@ -78,11 +83,15 @@ RENDER = """
         const terms=(it.terms||[]).map((t)=>`<button type="button" class="term" data-term="${esc(t)}" title="Click to copy">${esc(t)}</button>`).join("");
         const what=esc(it.d)+(pk&&pk.name?"<small>"+esc(pk.name)+"</small>":"")+(pk&&pk.was!=null&&pk.price!=null?`<small class="save">was $${pk.was} → $${pk.price} · ${pk.was>=pk.price?"saves $"+(pk.was-pk.price).toFixed(2):"$"+(pk.price-pk.was).toFixed(2)+" over the estimate"}</small>`:"")+(terms?`<span class="terms">${terms}</span>`:"");
         const link=it.town?`<span class="town">in town</span>`:pk?`<a class="buy" href="${esc(pk.url)}" target="_blank" rel="noopener">buy</a>`:`<a href="${esc(it.link)}" target="_blank" rel="noopener">search</a>`;
-        rows+=ROW(it,on,what,$,!pk,link); }
+        rows+=ROW(it,on,what+(it.chg?`<span class="chgtag">${esc(it.chg)}</span>`:""),$,!pk,link); }
       all+=ps; got+=pg;
       h+=`<section><h2>${esc(p.name)}<span class="s">$${m(pg)} / $${m(ps)}</span></h2><div class="item hd"><span></span><span>№</span><span>Item</span><span>Qty</span><span>Each</span><span>Total</span><span></span></div>${rows}</section>`;
     }
     document.getElementById("list").innerHTML=h;
+    const ch=document.getElementById("changes"), live=PHASES.flatMap((p)=>p.items.filter((it)=>it.chg));
+    ch.innerHTML=(live.length||(CHANGES.removed||[]).length)?`<div class="chgbox"><h2>What changed${CHANGES.when?" · "+esc(CHANGES.when):""}</h2><ul>${
+      live.map((it)=>`<li><b>${it.no}</b> ${esc(it.d.split(" · ")[0])}: <span>${esc(it.chg)}</span></li>`).join("")}${
+      (CHANGES.removed||[]).map((r)=>`<li class="rm"><b>${esc(r.no)}</b> <s>${esc(r.d)}</s>: <span>removed${r.why?", "+esc(r.why):""}</span></li>`).join("")}</ul></div>`:"";
     document.getElementById("got").textContent="$"+m(got); document.getElementById("all").textContent="$"+m(all);
     document.getElementById("bar").style.width=(all?got/all*100:0)+"%";
   }
@@ -104,6 +113,7 @@ CHIEF = """<title>Kobra Cart</title>
 <div class="bar"><i id="bar"></i></div>
 <main class="wrap">
   <p class="rules">Click a dashed box to copy its Amazon search words. Tick an item to paste its product link, then Submit. Claude checks the link and puts the real price on the row; orange <b>buy</b> means it's done. Gray prices are July estimates. PLA and PETG only indoors, with the purifier running (no ASA until a vent duct, ruled 10/8) · 1.75 mm only · plastic spools only in the ACE Pro · no matte PLA, no silk · official Anycubic hotends and plates only · TPU and CF feed direct · CF needs the hardened hotend.</p>
+  <div id="changes"></div>
   <div id="list"></div>
   <div class="inbox" id="inbox" hidden>
     <h2>Something not on the list?</h2>
@@ -120,11 +130,12 @@ CHIEF = """<title>Kobra Cart</title>
 <script>
 (function(){
   const PHASES = %(phases)s;
+  const CHANGES = %(changes)s;
   let checked = %(checked)s, ref=null, inboxCol=null, pending={}, extra=[];
   const open=new Set();
   const ROW=(it,on,what,$,est,link)=>{
     const o=open.has(it.no), w=pending[it.no];
-    const row=`<div class="item${on?" done":""}"><input type="checkbox" data-open="${it.no}" aria-label="Add a link for ${esc(it.d)}" title="Ticked = the right product is picked"${o||w||it.pick?" checked":""}><span class="no">${it.no}</span><span class="d">${what}${w?'<small class="wait">⏳ link submitted, Claude is checking it</small>':""}</span><span class="qty">${it.q}</span><span class="each${est?" est":""}">$${m(each(it))}</span><span class="usd${est?" est":""}">$${m($)}</span>${on?'<span class="bought">bought</span>':link}</div>`;
+    const row=`<div class="item${on?" done":""}${it.chg?" chg":""}"><input type="checkbox" data-open="${it.no}" aria-label="Add a link for ${esc(it.d)}" title="Ticked = the right product is picked"${o||w||it.pick?" checked":""}><span class="no">${it.no}</span><span class="d">${what}${w?'<small class="wait">⏳ link submitted, Claude is checking it</small>':""}</span><span class="qty">${it.q}</span><span class="each${est?" est":""}">$${m(each(it))}</span><span class="usd${est?" est":""}">$${m($)}</span>${on?'<span class="bought">bought</span>':link}</div>`;
     if(!o) return row;
     return row+`<div class="drawer"><form data-no="${it.no}"><input name="url" type="url" placeholder="Paste the product link" required value="${esc(w?w.url:(it.pick?it.pick.url:""))}"><input name="price" placeholder="$ (optional: Claude pulls it from the link)" inputmode="decimal" value="${esc(w&&w.price?w.price:"")}"><button type="submit">Submit</button><button type="button" class="ghost" data-bought="${it.no}">${on?"Not bought":"Mark bought"}</button></form></div>`;
   };
@@ -192,14 +203,16 @@ MOM = """<title>Printer Order List</title>
 <div class="bar"><i id="bar"></i></div>
 <main class="wrap">
   <p class="rules">Click the orange <b>buy</b> button to open the exact product. Each line also has its Amazon search words in a dashed box: click the box to copy them, then paste into Amazon's search bar. Order the amount shown after the ×. A gray price with a <b>search</b> link means no exact product is picked yet, so skip those for now. Crossed-out lines are already bought. The smoke detector and the air purifier matter most: order those first.</p>
+  <div id="changes"></div>
   <div id="list"></div>
   <p class="note">Updated %(when)s.</p>
 </main>
 <script>
 (function(){
   const PHASES = %(phases)s;
+  const CHANGES = %(changes)s;
   const checked = %(checked)s;
-  const ROW=(it,on,what,$,est,link)=>`<div class="item${on?" done":""}"><span>${on?"✓":""}</span><span class="no">${it.no}</span><span class="d">${what}</span><span class="qty">${it.q}</span><span class="each${est?" est":""}">$${m(each(it))}</span><span class="usd${est?" est":""}">$${m($)}</span>${link}</div>`;
+  const ROW=(it,on,what,$,est,link)=>`<div class="item${on?" done":""}${it.chg?" chg":""}"><span>${on?"✓":""}</span><span class="no">${it.no}</span><span class="d">${what}</span><span class="qty">${it.q}</span><span class="each${est?" est":""}">$${m(each(it))}</span><span class="usd${est?" est":""}">$${m($)}</span>${link}</div>`;
 %(render)s
   render();
 })();
@@ -211,7 +224,7 @@ if __name__ == "__main__":
     checked = json.dumps(cart.get("checked", {}))
     options = "".join('<option value="%s">%s · %s</option>' % (it["no"], it["no"], it["d"].replace("<", "&lt;"))
                       for p in cart["phases"] for it in p["items"])
-    args = {"head": HEAD, "phases": phases, "checked": checked, "render": RENDER, "options": options,
+    args = {"head": HEAD, "changes": json.dumps(cart.get("changes", {}), ensure_ascii=False), "phases": phases, "checked": checked, "render": RENDER, "options": options,
             "when": time.strftime("%B %d, %Y").replace(" 0", " ")}
     io.open(os.path.join(HERE, "KOBRA-CART.html"), "w", encoding="utf-8").write(CHIEF % args)
     io.open(os.path.join(HERE, "KOBRA-ORDER.html"), "w", encoding="utf-8").write(MOM % args)

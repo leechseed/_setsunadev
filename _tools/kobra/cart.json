@@ -40,7 +40,7 @@
     },
     {
      "no": "104",
-     "d": "PETG, orange (the Command orange, #FF5A1F: pick a red-orange, not a yellow-orange), 1 kg",
+     "d": "PETG, orange, 1 kg",
      "q": 1,
      "usd": 17,
      "link": "https://www.amazon.com/s?k=PETG+filament+1.75mm+orange+1kg",
@@ -83,7 +83,8 @@
      "terms": [
       "91% isopropyl alcohol 32 oz"
      ],
-     "town": true
+     "town": true,
+     "chg": "now: buy in town"
     },
     {
      "no": "112",
@@ -131,31 +132,39 @@
       "IRIS USA WeatherPro airtight storage box gasket latching lid",
       "airtight filament storage box 1kg spools"
      ],
-     "town": true
+     "town": true,
+     "chg": "now: buy in town (a gasket bin, not zip bags)"
     },
     {
-     "no": "110",
-     "d": "Carbon filter pellets (BentoBox)",
+     "no": "115",
+     "d": "Zip bags, Ziploc 2-gallon FREEZER (thick, double zipper), 13 x 15.6 in: one 1 kg spool per bag with desiccant",
      "q": 1,
-     "usd": 10,
-     "link": "https://www.amazon.com/s?k=activated+carbon+pellets+for+3D+printer+filter",
+     "usd": 9,
+     "each": 9,
      "pick": null,
+     "link": "https://www.amazon.com/s?k=Ziploc+2+gallon+freezer+bags+double+zipper",
      "terms": [
-      "activated carbon pellets for 3D printer filter"
+      "Ziploc 2 gallon freezer bags double zipper"
      ],
-     "each": 10.0
+     "chg": "new · fits one 1 kg spool, with room"
     },
     {
      "no": "111",
-     "d": "HEPA + carbon air purifier, rated for your room size, thick carbon layer",
+     "d": "Air purifier: Anycubic Mini, sits in the printer (keeping just this one for now)",
      "q": 1,
      "usd": 60,
      "link": "https://www.amazon.com/s?k=HEPA+air+purifier+with+activated+carbon+filter+for+bedroom",
-     "pick": null,
+     "pick": {
+      "url": "https://www.amazon.com/dp/B09QW76L33?th=1",
+      "name": "ANYCUBIC Mini Purifier 3D Printer Accessories, Lightweight Ultra Quiet Purifier with High ",
+      "price": 29.99,
+      "was": 60.0
+     },
      "terms": [
       "HEPA air purifier with activated carbon filter for bedroom"
      ],
-     "each": 60.0
+     "each": 60.0,
+     "chg": "Anycubic Mini · est $60 → $29.99"
     }
    ]
   },
@@ -303,9 +312,30 @@
       "name": "KUNLUN 3 Prong Short Extension Cord, 8-Inch Small Extension Cord",
       "price": 17.99
      },
-     "terms": []
+     "terms": [],
+     "chg": "new · $17.99"
     }
    ]
   }
- ]
+ ],
+ "changes": {
+  "when": "10/08",
+  "removed": [
+   {
+    "no": "110",
+    "d": "Carbon filter pellets",
+    "why": "the Anycubic purifier covers it"
+   },
+   {
+    "no": "109",
+    "d": "Smart plug",
+    "why": "not needed"
+   },
+   {
+    "no": "114",
+    "d": "Smoke detector",
+    "why": "you already have one"
+   }
+  ]
+ }
 }
