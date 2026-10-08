@@ -91,7 +91,12 @@
      "usd": 7,
      "each": 7,
      "link": "https://www.amazon.com/s?k=microfiber+cleaning+cloths",
-     "pick": null,
+     "pick": {
+      "url": "https://www.amazon.com/dp/B08BRJHJF9?th=1",
+      "name": "USANOOKS Microfiber Cleaning Cloth Grey - 12 Pcs (12.5\"x12.5\") - High Performance - 1200 W",
+      "price": 7.98,
+      "was": 7
+     },
      "terms": [
       "microfiber cleaning cloths"
      ]
@@ -103,21 +108,27 @@
      "usd": 10,
      "each": 10,
      "link": "https://www.amazon.com/s?k=rechargeable+silica+gel+desiccant+packs",
-     "pick": null,
+     "pick": {
+      "url": "https://www.amazon.com/dp/B0FMJ8YMXQ?th=1",
+      "name": "5 Pack Rechargeable Silica Gel Packets, 100g Each-Moisture Absorbers for Storage Bins, Saf",
+      "price": 7.99,
+      "was": 10
+     },
      "terms": [
       "rechargeable silica gel desiccant packs"
      ]
     },
     {
      "no": "113",
-     "d": "Zip bags, 2 gallon (filament storage)",
+     "d": "Airtight gasket storage bin, about 30 qt, holds 4-6 spools with the desiccant (reusable, latching lid)",
      "q": 1,
-     "usd": 6,
-     "each": 6,
-     "link": "https://www.amazon.com/s?k=2+gallon+ziploc+freezer+bags",
+     "usd": 28,
+     "each": 28,
+     "link": "https://www.amazon.com/s?k=IRIS+USA+WeatherPro+airtight+storage+box+gasket+latching+lid",
      "pick": null,
      "terms": [
-      "2 gallon ziploc freezer bags"
+      "IRIS USA WeatherPro airtight storage box gasket latching lid",
+      "airtight filament storage box 1kg spools"
      ]
     },
     {
@@ -179,7 +190,12 @@
      "q": 1,
      "usd": 45,
      "link": "https://www.amazon.com/s?k=SUNLU+FilaDryer+S2+filament+dryer",
-     "pick": null,
+     "pick": {
+      "url": "https://www.amazon.com/dp/B09XMT9SVX?th=1",
+      "name": "SUNLU Filament Dryer S2, Black",
+      "price": 38.24,
+      "was": 45.0
+     },
      "terms": [
       "SUNLU FilaDryer S2 filament dryer"
      ],
@@ -191,7 +207,12 @@
      "q": 1,
      "usd": 18,
      "link": "https://www.amazon.com/s?k=M3+brass+heat+set+inserts+kit",
-     "pick": null,
+     "pick": {
+      "url": "https://www.amazon.com/dp/B0FD88XTV4?th=1",
+      "name": "KADRICK 300PCS M3 Heat Set Inserts Kit,M3*(3mm-10mm)*4.5mm with Insert Tip",
+      "price": 9.99,
+      "was": 18.0
+     },
      "terms": [
       "M3 brass heat set inserts kit"
      ],
@@ -203,7 +224,12 @@
      "q": 1,
      "usd": 12,
      "link": "https://www.amazon.com/s?k=M3+heat+set+insert+soldering+iron+tip",
-     "pick": null,
+     "pick": {
+      "url": "https://www.amazon.com/dp/B0CS662NVK?th=1",
+      "name": "Heat-Set Insert Tips for Threaded Inserts M2 M2.5 M3 M4 M5 M6 M8, Soldering Iron Tips Comp",
+      "price": 12.99,
+      "was": 12.0
+     },
      "terms": [
       "M3 heat set insert soldering iron tip"
      ],
@@ -215,7 +241,12 @@
      "q": 1,
      "usd": 18,
      "link": "https://www.amazon.com/s?k=M3+button+head+socket+screw+assortment+kit+black",
-     "pick": null,
+     "pick": {
+      "url": "https://www.amazon.com/dp/B0CXT9KZGW?th=1",
+      "name": "555 Pieces M3 Screws Nuts Washers Set Black, Sutemribor M3 x 6/8/10/12/16/20/25mm Button H",
+      "price": 5.99,
+      "was": 18.0
+     },
      "terms": [
       "M3 button head socket screw assortment kit black"
      ],
@@ -227,7 +258,12 @@
      "q": 1,
      "usd": 10,
      "link": "https://www.amazon.com/s?k=Super+Lube+21030+synthetic+grease",
-     "pick": null,
+     "pick": {
+      "url": "https://www.amazon.com/dp/B000XBH9HI?th=1",
+      "name": "Super Lube Multi-Purpose Synthetic Grease w/ Syncolon - High Temperature, Water & Corrosio",
+      "price": 10.99,
+      "was": 10.0
+     },
      "terms": [
       "Super Lube 21030 synthetic grease"
      ],
@@ -261,7 +297,12 @@
      "q": 1,
      "usd": 30,
      "link": "https://www.amazon.com/s?k=Pinecil+V2+soldering+iron",
-     "pick": null,
+     "pick": {
+      "url": "https://www.amazon.com/dp/B096X6SG13?th=1",
+      "name": "PINECIL – Smart Mini Portable Soldering Iron, Small",
+      "price": 39.99,
+      "was": 30.0
+     },
      "terms": [
       "Pinecil V2 soldering iron"
      ],
