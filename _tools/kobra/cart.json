@@ -455,5 +455,10 @@
  "changes": {
   "when": "",
   "removed": []
+ },
+ "card": {
+  "label": "Chief's separate order, on his card",
+  "total": 252.95,
+  "note": "paid separately; not part of the printer order"
  }
 }

@@ -34,13 +34,13 @@ HEAD = """<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=
   section h2 .s{margin-left:auto;font:500 13px var(--mono);color:var(--ink-3);letter-spacing:0;text-transform:none}
   .item{display:grid;grid-template-columns:28px 44px minmax(0,1fr) 2.6em 4.4em 4.8em auto;gap:10px;align-items:center;padding:9px 14px;border-bottom:1px solid var(--line)}
   .item:last-child{border-bottom:0}
-  .totals{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+  .totals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden}
   .totals>div{background:var(--panel);padding:10px 14px;display:grid;gap:2px;min-width:0}
   .totals span{font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
   .totals b{font:800 30px/1.05 var(--display);font-variant-numeric:tabular-nums}
   .totals small{font-size:12px;color:var(--ink-3)}
   .totals .full{background:var(--accent-soft)} .totals .full b{color:var(--accent)}
-  .totals:has(.sep){grid-template-columns:repeat(4,minmax(0,1fr))} .totals .sep b{color:var(--ink-2)}
+  .totals:has(.sep){grid-template-columns:repeat(2,minmax(0,1fr))} .totals .sep b{color:var(--ink-2)}
   .buyall{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
   .buyall a{font:700 16px var(--display);letter-spacing:.05em;text-transform:uppercase;text-decoration:none;color:#121110;background:var(--accent);padding:10px 16px;border-radius:4px}
   .buyall a.alt{background:var(--panel-2);color:var(--accent-ink);border:1px solid var(--accent)}
@@ -100,7 +100,8 @@ RENDER = """
       h+=`<section><h2>${esc(p.name)}<span class="s">$${m(pg)} / $${m(ps)}</span></h2><div class="item hd"><span></span><span>№</span><span>Item</span><span>Qty</span><span>Each</span><span>Total</span><span></span></div>${rows}</section>`;
     }
     document.getElementById("list").innerHTML=h;
-    document.getElementById("totals").innerHTML=`<div><span>Online order</span><b>$${m(all)}</b><small>what gets ordered online</small></div><div><span>In town</span><b>$${m(townT)}</b><small>estimates, bought locally</small></div><div class="full"><span>Full total</span><b>$${m(all+townT)}</b><small>before tax and shipping</small></div>${sepT?`<div class="sep"><span>${esc(sepL.split(" · ")[0])}</span><b>$${m(sepT)}</b><small>separate, before shipping and tax</small></div>`:""}`;
+    document.getElementById("totals").innerHTML=`<div><span>Online order</span><b>$${m(all)}</b><small>what gets ordered online</small></div><div class="full"><span>Full total</span><b>$${m(all+townT)}</b><small>the printer order plus the in-town items, before tax and shipping</small></div>`;
+    document.getElementById("bottom").innerHTML=`<div><span>In town</span><b>$${m(townT)}</b><small>estimates, bought locally</small></div>${CARD&&CARD.total?`<div class="sep"><span>${esc(CARD.label)}</span><b>$${m(CARD.total)}</b><small>${esc(CARD.note||"")}</small></div>`:""}`;
     const ch=document.getElementById("changes"), live=PHASES.flatMap((p)=>p.items.filter((it)=>it.chg));
     ch.innerHTML=(live.length||(CHANGES.removed||[]).length)?`<div class="chgbox"><h2>What changed${CHANGES.when?" · "+esc(CHANGES.when):""}</h2><ul>${
       live.map((it)=>`<li><b>${it.no}</b> ${esc(it.d.split(" · ")[0])}: <span>${esc(it.chg)}</span></li>`).join("")}${
@@ -130,6 +131,7 @@ CHIEF = """<title>Kobra Cart</title>
   %(buyall)s
   <div id="changes"></div>
   <div id="list"></div>
+  <div id="bottom" class="totals"></div>
   <div class="inbox" id="inbox" hidden>
     <h2>Something not on the list?</h2>
     <form id="add">
@@ -146,6 +148,7 @@ CHIEF = """<title>Kobra Cart</title>
 (function(){
   const PHASES = %(phases)s;
   const CHANGES = %(changes)s;
+  const CARD = %(card)s;
   let checked = %(checked)s, ref=null, inboxCol=null, pending={}, extra=[];
   const open=new Set();
   const ROW=(it,on,what,$,est,link)=>{
@@ -222,12 +225,14 @@ MOM = """<title>Printer Order List</title>
   %(buyall)s
   <div id="changes"></div>
   <div id="list"></div>
+  <div id="bottom" class="totals"></div>
   <p class="note">Updated %(when)s.</p>
 </main>
 <script>
 (function(){
   const PHASES = %(phases)s;
   const CHANGES = %(changes)s;
+  const CARD = %(card)s;
   const checked = %(checked)s;
   const ROW=(it,on,what,$,est,link)=>`<div class="item${on?" done":""}${it.chg?" chg":""}"><span>${on?"✓":""}</span><span class="no">${it.no}</span><span class="d">${what}</span><span class="qty">${it.q}</span><span class="each${est?" est":""}">$${m(each(it))}</span><span class="usd${est?" est":""}">$${m($)}</span>${link}</div>`;
 %(render)s
@@ -241,7 +246,7 @@ if __name__ == "__main__":
     checked = json.dumps(cart.get("checked", {}))
     options = "".join('<option value="%s">%s · %s</option>' % (it["no"], it["no"], it["d"].replace("<", "&lt;"))
                       for p in cart["phases"] for it in p["items"])
-    args = {"head": HEAD, "changes": json.dumps(cart.get("changes", {}), ensure_ascii=False), "phases": phases, "checked": checked, "render": RENDER, "options": options,
+    args = {"card": json.dumps(cart.get("card", {}), ensure_ascii=False), "head": HEAD, "changes": json.dumps(cart.get("changes", {}), ensure_ascii=False), "phases": phases, "checked": checked, "render": RENDER, "options": options,
             "when": time.strftime("%B %d, %Y").replace(" 0", " ")}
     # one click per store: Amazon's cart-add link takes every ASIN and qty at once; the Anycubic store (Shopify) takes variant:qty
     import re
@@ -263,7 +268,9 @@ if __name__ == "__main__":
     pp = os.path.join(HERE, "..", "..", "_PRIVATE", "kobra", "private.json")
     if os.path.exists(pp):
         priv = dict(args)
-        priv["phases"] = json.dumps(cart["phases"] + [json.load(io.open(pp, encoding="utf-8"))], ensure_ascii=False)
+        pj = json.load(io.open(pp, encoding="utf-8"))
+        priv["card"] = json.dumps(pj.pop("card", {}), ensure_ascii=False)
+        priv["phases"] = json.dumps(cart["phases"] + [pj], ensure_ascii=False)
         io.open(os.path.join(os.path.dirname(pp), "KOBRA-CART.private.html"), "w", encoding="utf-8").write(CHIEF % priv)
     picked = sum(1 for p in cart["phases"] for it in p["items"] if it.get("pick"))
     print("built KOBRA-CART.html + KOBRA-ORDER.html · %d items · %d picked" % (
