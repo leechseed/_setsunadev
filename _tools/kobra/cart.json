@@ -74,7 +74,7 @@
     },
     {
      "no": "106",
-     "d": "Isopropyl alcohol 91%, 32 oz",
+     "d": "Isopropyl alcohol 91%, 32 oz · buying in town: easy to find and cheaper there",
      "q": 1,
      "usd": 5,
      "each": 5,
@@ -82,7 +82,8 @@
      "pick": null,
      "terms": [
       "91% isopropyl alcohol 32 oz"
-     ]
+     ],
+     "town": true
     },
     {
      "no": "112",
@@ -141,18 +142,6 @@
      "pick": null,
      "terms": [
       "Kasa smart plug mini"
-     ]
-    },
-    {
-     "no": "114",
-     "d": "Smoke detector, battery (safety, arrives with the printer)",
-     "q": 1,
-     "usd": 15,
-     "each": 15,
-     "link": "https://www.amazon.com/s?k=First+Alert+smoke+detector+battery+powered",
-     "pick": null,
-     "terms": [
-      "First Alert smoke detector battery powered"
      ]
     },
     {

@@ -59,7 +59,7 @@ HEAD = """<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=
   .drawer input{min-width:0;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:7px 9px;font:14px var(--body)}
   .drawer button{border:0;border-radius:4px;padding:7px 12px;font:700 14px var(--display);letter-spacing:.06em;text-transform:uppercase;cursor:pointer;background:var(--accent);color:#121110}
   .drawer button.ghost{background:none;border:1px solid var(--line);color:var(--ink-2)}
-  .wait{font:500 12px var(--mono);color:var(--accent-ink)} .item small.save{color:var(--good);font:500 12px var(--mono)} .item .bought{font:500 11px var(--mono);color:var(--good);text-transform:uppercase;letter-spacing:.08em}
+  .wait{font:500 12px var(--mono);color:var(--accent-ink)} .item small.save{color:var(--good);font:500 12px var(--mono)} .item .town{font:500 11px var(--mono);color:var(--ink-2);border:1px dashed var(--line);padding:3px 7px;border-radius:3px;text-transform:uppercase;letter-spacing:.08em;white-space:nowrap} .item .bought{font:500 11px var(--mono);color:var(--good);text-transform:uppercase;letter-spacing:.08em}
   @media (max-width:620px){.drawer{padding-left:14px}.drawer form{grid-template-columns:1fr 1fr}.drawer form input[name=url]{grid-column:1/-1}}
   @media (max-width:620px){.inbox form{grid-template-columns:1fr 1fr}.inbox form input[name=url]{grid-column:1/-1}}
   @media (max-width:520px){.item{grid-template-columns:24px minmax(0,1fr) auto;row-gap:4px}.item .no,.item .qty,.item .each,.item.hd{display:none}.item a{grid-column:2;justify-self:start}}
@@ -77,7 +77,7 @@ RENDER = """
       for(const it of p.items){ const on=!!checked[it.no], $=price(it), pk=it.pick; ps+=$; if(on)pg+=$;
         const terms=(it.terms||[]).map((t)=>`<button type="button" class="term" data-term="${esc(t)}" title="Click to copy">${esc(t)}</button>`).join("");
         const what=esc(it.d)+(pk&&pk.name?"<small>"+esc(pk.name)+"</small>":"")+(pk&&pk.was!=null&&pk.price!=null?`<small class="save">was $${pk.was} → $${pk.price} · ${pk.was>=pk.price?"saves $"+(pk.was-pk.price).toFixed(2):"$"+(pk.price-pk.was).toFixed(2)+" over the estimate"}</small>`:"")+(terms?`<span class="terms">${terms}</span>`:"");
-        const link=pk?`<a class="buy" href="${esc(pk.url)}" target="_blank" rel="noopener">buy</a>`:`<a href="${esc(it.link)}" target="_blank" rel="noopener">search</a>`;
+        const link=it.town?`<span class="town">in town</span>`:pk?`<a class="buy" href="${esc(pk.url)}" target="_blank" rel="noopener">buy</a>`:`<a href="${esc(it.link)}" target="_blank" rel="noopener">search</a>`;
         rows+=ROW(it,on,what,$,!pk,link); }
       all+=ps; got+=pg;
       h+=`<section><h2>${esc(p.name)}<span class="s">$${m(pg)} / $${m(ps)}</span></h2><div class="item hd"><span></span><span>№</span><span>Item</span><span>Qty</span><span>Each</span><span>Total</span><span></span></div>${rows}</section>`;
