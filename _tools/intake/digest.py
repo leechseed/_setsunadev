@@ -1,6 +1,6 @@
 """The packet digest: every judged intake note flattened to one line per nugget, grouped by bin and system (BOLO 107).
 
-Usage: python _tools/intake/digest.py
+Usage: python _tools/intake/digest.py [--only obsidian,logseq,devlog]   (default: every vault and the pilot)
 Zero tokens. Reads _PRIVATE/intake/pilot/batch_A,B.json and _PRIVATE/intake/joplin/batch_*.json; writes
 _PRIVATE/intake/packet/digest.md (what the packet writer reads, instead of the raw batches) and prints the counts.
 """
@@ -17,7 +17,9 @@ SYSTEMS = {"00": "EPISTEMOLOGY", "01": "NARRATIVE FRAMEWORKS", "02": "CHARACTER"
 
 
 def main():
-    files = sorted(glob.glob(os.path.join(INTAKE, "pilot", "batch_*.json"))) + sorted(glob.glob(os.path.join(INTAKE, "joplin", "batch_*.json")))
+    only = sys.argv[sys.argv.index("--only") + 1].split(",") if "--only" in sys.argv else ["pilot", "joplin", "obsidian", "logseq", "devlog"]
+    out = os.path.join(INTAKE, "packet", "digest.%s.md" % "-".join(only)) if "--only" in sys.argv else OUT
+    files = sorted(f for v in only for f in glob.glob(os.path.join(INTAKE, v, "batch_*.json")))
     notes = []
     for f in files:
         notes += json.load(io.open(f, encoding="utf-8"))
@@ -41,8 +43,8 @@ def main():
             if g.get("verbatim"):
                 line += '\n  > "%s"' % g["verbatim"].strip()
             by[(n.get("bin"), str(g.get("system", "??")))].append(line)
-    os.makedirs(os.path.dirname(OUT), exist_ok=True)
-    w = io.open(OUT, "w", encoding="utf-8")
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    w = io.open(out, "w", encoding="utf-8")
     w.write("# Intake digest (BOLO 107) · %d notes · %d nuggets\n\n" % (len(notes), sum(conf.values())))
     w.write("bins: %s\n\nconf: %s\n\nera: %s\n\nauthor: %s\n\n" % (dict(bins), dict(conf), dict(eras), dict(authors)))
     for b in ("canon", "method", "inspiration"):
@@ -54,7 +56,7 @@ def main():
     w.write("\n# NOTE INDEX (live notes)\n\n" + "\n".join(titles) + "\n")
     w.close()
     print("DIGEST: %d notes · %d nuggets · %s · %d KB -> %s" % (len(notes), sum(conf.values()), dict(bins),
-                                                            os.path.getsize(OUT) // 1024, OUT))
+                                                            os.path.getsize(out) // 1024, out))
 
 
 if __name__ == "__main__":
