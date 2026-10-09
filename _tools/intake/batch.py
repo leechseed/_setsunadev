@@ -55,8 +55,10 @@ def ledger():
 def make(letters, vault="joplin"):
     inv = json.load(io.open(os.path.join(INTAKE, "inventory.json"), encoding="utf-8"))["notes"]
     read = ledger()
+    dd = os.path.join(INTAKE, "dedupe.json")      # dedupe.py: copies by text and Lane A research are not read again
+    skip = json.load(io.open(dd, encoding="utf-8")) if os.path.exists(dd) else {}
     todo = sorted((r for r in inv if r["vault"] == vault and not r["empty"] and not r.get("dupe_of")
-                   and not r["book"] and r["path"] not in read), key=lambda r: r["path"])
+                   and not r["book"] and r["path"] not in read and r["path"] not in skip), key=lambda r: r["path"])
     out_dir = os.path.join(INTAKE, vault)
     os.makedirs(out_dir, exist_ok=True)
     for L in letters:
