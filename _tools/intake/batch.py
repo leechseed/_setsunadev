@@ -5,7 +5,7 @@ Usage:
   python _tools/intake/batch.py range C D E       # RANGE: prove every note was read and the fields are legal
   python _tools/intake/batch.py demote C D E      # a verbatim not found word for word: direct_quote -> inferred, verbatim null
   python _tools/intake/batch.py make --vault logseq LA LB   # the other vaults (obsidian · logseq · devlog), two-letter batch names;
-                                                            # batches stop at 50 notes or 280k chars, a note over 60k is cut to its head
+                                                            # batches stop at 50 notes or 120k chars, a note over 30k is cut to its head
 
 Zero tokens. `make` writes, per batch, `_PRIVATE/intake/joplin/batch_<L>.txt` (the note bodies, chrome removed,
 one block per note) and `batch_<L>.list` (id · path). The read ledger `_PRIVATE/intake/read.json` records every
@@ -22,8 +22,8 @@ INTAKE = os.path.join(ROOT, "_PRIVATE", "intake")
 OUT = os.path.join(INTAKE, "joplin")
 LEDGER = os.path.join(INTAKE, "read.json")
 SIZE = 50                                   # ruled 10/8, pilot call 5
-BUDGET = 280000                             # chars per batch: a Logseq note runs ~12k chars, four times a Joplin one (10/9)
-CAP = 60000                                 # a longer note is cut to its head; the reader judges from that
+BUDGET = 120000                             # chars per batch (10/9: at 280k three readers stopped short, 23 notes unread)
+CAP = 30000                                 # a longer note is cut to its head; the reader judges from that
 VAULTS = ("joplin", "obsidian", "logseq", "devlog")
 
 
