@@ -54,3 +54,6 @@ _tools/dictation/_facepos.json
 _tools/dictation/_stashplay_*
 _tools/dictation/_stashgrade_*
 _tools/workspace/out/edits_dump/
+
+# agent scratch files (10/8: a reader agent left note bodies here and the autosave committed them)
+scratchpad/

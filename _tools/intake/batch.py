@@ -3,6 +3,7 @@
 Usage:
   python _tools/intake/batch.py make C D E        # cut batches C, D, E from the unread live Joplin notes
   python _tools/intake/batch.py range C D E       # RANGE: prove every note was read and the fields are legal
+  python _tools/intake/batch.py demote C D E      # a verbatim not found word for word: direct_quote -> inferred, verbatim null
 
 Zero tokens. `make` writes, per batch, `_PRIVATE/intake/joplin/batch_<L>.txt` (the note bodies, chrome removed,
 one block per note) and `batch_<L>.list` (id · path). The read ledger `_PRIVATE/intake/read.json` records every
@@ -109,6 +110,30 @@ def check(L):
     return bad, stats
 
 
+def demote(letters):
+    """A direct_quote whose verbatim is not in the note becomes inferred with verbatim null (the brief's own rule).
+    The nugget stays; only the claim that it is word for word goes (10/8 RUN 2: 43/72 found on the first wave)."""
+    for L in letters:
+        lst = [l.split("\t") for l in io.open(os.path.join(OUT, "batch_%s.list" % L), encoding="utf-8").read().splitlines() if l]
+        paths = dict(lst)
+        out = os.path.join(OUT, "batch_%s.json" % L)
+        recs = json.load(io.open(out, encoding="utf-8"))
+        n = 0
+        for r in recs:
+            if r.get("id") not in paths:
+                continue
+            body = norm(body_of("joplin", io.open(os.path.join(ROOT, paths[r["id"]]), encoding="utf-8", errors="replace").read())[0])
+            for g in r.get("nuggets", []):
+                v = g.get("verbatim") or ""
+                if g.get("conf") == "direct_quote" and not (v and norm(v) in body):
+                    g["conf"], g["verbatim"] = "inferred", None
+                    n += 1
+        with io.open(out, "w", encoding="utf-8") as f:
+            json.dump(recs, f, indent=1, ensure_ascii=False)
+        print("DEMOTE batch %s: %d quote(s) not found word for word -> inferred" % (L, n))
+    return 0
+
+
 def rangecheck(letters):
     total = {"notes": 0, "nuggets": 0, "quotes": 0, "found": 0, "bins": {}}
     allbad = []
@@ -130,4 +155,4 @@ def rangecheck(letters):
 if __name__ == "__main__":
     sys.stdout.reconfigure(encoding="utf-8")
     cmd, letters = sys.argv[1], [a.upper() for a in sys.argv[2:]]
-    sys.exit(make(letters) if cmd == "make" else rangecheck(letters))
+    sys.exit(make(letters) if cmd == "make" else demote(letters) if cmd == "demote" else rangecheck(letters))
