@@ -4,6 +4,8 @@ Usage:
   python _tools/intake/batch.py make C D E        # cut batches C, D, E from the unread live Joplin notes
   python _tools/intake/batch.py range C D E       # RANGE: prove every note was read and the fields are legal
   python _tools/intake/batch.py demote C D E      # a verbatim not found word for word: direct_quote -> inferred, verbatim null
+  python _tools/intake/batch.py make --vault logseq LA LB   # the other vaults (obsidian · logseq · devlog), two-letter batch names;
+                                                            # batches stop at 50 notes or 280k chars, a note over 60k is cut to its head
 
 Zero tokens. `make` writes, per batch, `_PRIVATE/intake/joplin/batch_<L>.txt` (the note bodies, chrome removed,
 one block per note) and `batch_<L>.list` (id · path). The read ledger `_PRIVATE/intake/read.json` records every
@@ -20,6 +22,18 @@ INTAKE = os.path.join(ROOT, "_PRIVATE", "intake")
 OUT = os.path.join(INTAKE, "joplin")
 LEDGER = os.path.join(INTAKE, "read.json")
 SIZE = 50                                   # ruled 10/8, pilot call 5
+BUDGET = 280000                             # chars per batch: a Logseq note runs ~12k chars, four times a Joplin one (10/9)
+CAP = 60000                                 # a longer note is cut to its head; the reader judges from that
+VAULTS = ("joplin", "obsidian", "logseq", "devlog")
+
+
+def where(L):
+    """The vault folder that holds batch L (Joplin batches are single letters; the other vaults use two, e.g. LA)."""
+    for v in VAULTS:
+        d = os.path.join(INTAKE, v)
+        if os.path.exists(os.path.join(d, "batch_%s.list" % L)):
+            return v, d
+    return "joplin", OUT
 BINS = {"canon", "method", "inspiration", "dead"}
 CONF = {"direct_quote", "inferred", "uncertain"}
 AUTHOR = {"chief", "report", "other", "unknown"}
@@ -38,14 +52,21 @@ def ledger():
     return {r["path"]: "pilot" for r in pilot}
 
 
-def make(letters):
+def make(letters, vault="joplin"):
     inv = json.load(io.open(os.path.join(INTAKE, "inventory.json"), encoding="utf-8"))["notes"]
     read = ledger()
-    todo = sorted((r for r in inv if r["vault"] == "joplin" and not r["empty"] and not r.get("dupe_of")
+    todo = sorted((r for r in inv if r["vault"] == vault and not r["empty"] and not r.get("dupe_of")
                    and not r["book"] and r["path"] not in read), key=lambda r: r["path"])
-    os.makedirs(OUT, exist_ok=True)
+    out_dir = os.path.join(INTAKE, vault)
+    os.makedirs(out_dir, exist_ok=True)
     for L in letters:
-        take, todo = todo[:SIZE], todo[SIZE:]
+        take, size = [], 0
+        while todo and len(take) < SIZE:
+            c = min(todo[0]["chars"], CAP)
+            if take and size + c > BUDGET:
+                break
+            take.append(todo.pop(0))
+            size += c
         if not take:
             print("batch %s: nothing left to read" % L)
             break
@@ -53,22 +74,26 @@ def make(letters):
         for n, r in enumerate(take, 1):
             nid = "%s%02d" % (L, n)
             raw = io.open(os.path.join(ROOT, r["path"]), encoding="utf-8", errors="replace").read()
-            body, _ = body_of("joplin", raw)
+            body, _ = body_of(vault, raw)
+            body = body.strip()
+            if len(body) > CAP:
+                body = body[:CAP] + "\n[cut here: %s more chars not shown; judge from the part above]" % format(len(body) - CAP, ",")
             txt.append("===== %s · %s · year %s · %d chars · lineage: %s\n%s\n" % (
-                nid, r["path"], r["year"], r["chars"], ", ".join(r["lineage"]) or "none", body.strip()))
+                nid, r["path"], r["year"], r["chars"], ", ".join(r["lineage"]) or "none", body))
             lst.append("%s\t%s" % (nid, r["path"]))
             read[r["path"]] = L
-        io.open(os.path.join(OUT, "batch_%s.txt" % L), "w", encoding="utf-8").write("\n".join(txt))
-        io.open(os.path.join(OUT, "batch_%s.list" % L), "w", encoding="utf-8").write("\n".join(lst) + "\n")
-        print("batch %s: %d notes · %s chars" % (L, len(take), format(sum(r["chars"] for r in take), ",")))
+        io.open(os.path.join(out_dir, "batch_%s.txt" % L), "w", encoding="utf-8").write("\n".join(txt))
+        io.open(os.path.join(out_dir, "batch_%s.list" % L), "w", encoding="utf-8").write("\n".join(lst) + "\n")
+        print("batch %s: %d notes · %s chars" % (L, len(take), format(size, ",")))
     io.open(LEDGER, "w", encoding="utf-8").write(json.dumps(read, ensure_ascii=False, indent=0))
-    print("unread live Joplin notes after this cut: %d" % len(todo))
+    print("unread live %s notes after this cut: %d" % (vault, len(todo)))
 
 
 def check(L):
-    lst = [l.split("\t") for l in io.open(os.path.join(OUT, "batch_%s.list" % L), encoding="utf-8").read().splitlines() if l]
+    vault, d = where(L)
+    lst = [l.split("\t") for l in io.open(os.path.join(d, "batch_%s.list" % L), encoding="utf-8").read().splitlines() if l]
     paths = dict(lst)
-    out = os.path.join(OUT, "batch_%s.json" % L)
+    out = os.path.join(d, "batch_%s.json" % L)
     if not os.path.exists(out):
         return ["batch %s: no output file" % L], {}
     try:
@@ -90,7 +115,7 @@ def check(L):
         for k, legal in (("bin", BINS), ("author", AUTHOR), ("era", ERA)):
             if str(r.get(k)) not in legal:
                 bad.append("%s: %s %r not legal" % (i, k, r.get(k)))
-        body = norm(body_of("joplin", io.open(os.path.join(ROOT, paths[i]), encoding="utf-8", errors="replace").read())[0])
+        body = norm(body_of(vault, io.open(os.path.join(ROOT, paths[i]), encoding="utf-8", errors="replace").read())[0])
         for g in r.get("nuggets", []):
             stats["nuggets"] += 1
             if not re.fullmatch(r"0\d", str(g.get("system", ""))):
@@ -114,15 +139,16 @@ def demote(letters):
     """A direct_quote whose verbatim is not in the note becomes inferred with verbatim null (the brief's own rule).
     The nugget stays; only the claim that it is word for word goes (10/8 RUN 2: 43/72 found on the first wave)."""
     for L in letters:
-        lst = [l.split("\t") for l in io.open(os.path.join(OUT, "batch_%s.list" % L), encoding="utf-8").read().splitlines() if l]
+        vault, d = where(L)
+        lst = [l.split("\t") for l in io.open(os.path.join(d, "batch_%s.list" % L), encoding="utf-8").read().splitlines() if l]
         paths = dict(lst)
-        out = os.path.join(OUT, "batch_%s.json" % L)
+        out = os.path.join(d, "batch_%s.json" % L)
         recs = json.load(io.open(out, encoding="utf-8"))
         n = 0
         for r in recs:
             if r.get("id") not in paths:
                 continue
-            body = norm(body_of("joplin", io.open(os.path.join(ROOT, paths[r["id"]]), encoding="utf-8", errors="replace").read())[0])
+            body = norm(body_of(vault, io.open(os.path.join(ROOT, paths[r["id"]]), encoding="utf-8", errors="replace").read())[0])
             for g in r.get("nuggets", []):
                 v = g.get("verbatim") or ""
                 if g.get("conf") == "direct_quote" and not (v and norm(v) in body):
@@ -154,5 +180,11 @@ def rangecheck(letters):
 
 if __name__ == "__main__":
     sys.stdout.reconfigure(encoding="utf-8")
-    cmd, letters = sys.argv[1], [a.upper() for a in sys.argv[2:]]
-    sys.exit(make(letters) if cmd == "make" else demote(letters) if cmd == "demote" else rangecheck(letters))
+    args = sys.argv[2:]
+    vault = "joplin"
+    if "--vault" in args:
+        i = args.index("--vault")
+        vault = args[i + 1]
+        del args[i:i + 2]
+    cmd, letters = sys.argv[1], [a.upper() for a in args]
+    sys.exit(make(letters, vault) if cmd == "make" else demote(letters) if cmd == "demote" else rangecheck(letters))
