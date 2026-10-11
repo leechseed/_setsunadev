@@ -7,7 +7,7 @@ founded: "backstory"
 current: "M2"
 places: []
 groups: ["WB-CUS-0003"]
-origin: "backstory_moon_severance"
+origin: "skeeter_creek_backstory_moon_severance"
 state: "creature:mother"
 tropes: []
 one_line: "A kombucha-like culture locked to one diver's genome: a radiation-eating film over a broth of her own stem cells, which quickens into a fetus if unspent and is burned for her repair in the heat."

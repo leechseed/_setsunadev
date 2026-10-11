@@ -7,7 +7,7 @@ founded: "backstory"
 current: "M2"
 places: []
 groups: ["WB-INS-0004"]
-origin: "backstory_moon_severance"
+origin: "skeeter_creek_backstory_moon_severance"
 state: "custom:divers"
 tropes: []
 one_line: "A few Outliers wear the rig into the hottest craters of the Power Line and bring out Moon material, the fallen wreck Earth's grid runs on; Tori is one."

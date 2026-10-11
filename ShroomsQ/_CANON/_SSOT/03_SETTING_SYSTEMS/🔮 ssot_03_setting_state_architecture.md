@@ -103,7 +103,7 @@ A state record is a structured data block that describes the delta between the b
 |---|---|---|
 | `place_id` | Place this state belongs to | `dcus` |
 | `state_id` | Unique identifier for this state | `dcus_red_hills_rename` |
-| `origin_event` | The fabula event that produced this state. An `event_id` from [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md), grammar `<movement>_<slug>`. `null` only for Category 5 progression overlays, which have no single event. If no fabula record exists, write the `backstory_<slug>` id with `⏸ <pass name> (phase 2)`. The field is never left blank or invented as canon — see §11 | `backstory_red_hills_rename ⏸ DCUS rename lattice fill pass (phase 2)` |
+| `origin_event` | The fabula event that produced this state. An `event_id` from [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md), grammar `<movement>_<slug>`. `null` only for Category 5 progression overlays, which have no single event. If no fabula record exists, write the `backstory_<slug>` id with `⏸ <pass name> (phase 2)`. The field is never left blank or invented as canon — see §11 | `skeeter_creek_backstory_red_hills_rename ⏸ DCUS rename lattice fill pass (phase 2)` |
 | `told_at` | A list of time codes ([📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) §4) marking every point the audience is shown this state on the grid. An empty list means the state is true but offstage | `["M3 · S06 \| 021.1.1"]` or `[]` |
 | `narrative_moment` | Generated from the time code, not authored. A readable label only, produced from `origin_event` and `told_at` so it can never drift from the real coordinate | `The first erasure — Skeeter Creek sanded to Red Hills` |
 | `movement` | Which movement this state falls in, where one applies. Deep past with no Mn to file under carries the ruled `backstory` tag (RULED 2026-09-29, BOLO 90 step 7 trial) — see §11 | `backstory` |
@@ -291,7 +291,7 @@ The first instance of this architecture, built entirely from existing canon: [�
 ```yaml
 place_id: dcus
 state_id: dcus_skeeter_creek_founding
-origin_event: "backstory_skeeter_creek_founding ⏸ DCUS rename lattice fill pass (phase 2)"   # no fabula record exists yet
+origin_event: "skeeter_creek_backstory_skeeter_creek_founding ⏸ DCUS rename lattice fill pass (phase 2)"   # no fabula record exists yet
 told_at: []   # true but offstage; no scene card exists yet to log a time code
 narrative_moment: "The founding — before either erasure"
 movement: "backstory"   # ruled tag for deep pre-story history with no Mn (RULED 2026-09-29) — see note above
@@ -325,7 +325,7 @@ STATE_NOTE: >
 ```yaml
 place_id: dcus
 state_id: dcus_red_hills_rename
-origin_event: "backstory_red_hills_rename ⏸ DCUS rename lattice fill pass (phase 2)"   # no fabula record exists yet
+origin_event: "skeeter_creek_backstory_red_hills_rename ⏸ DCUS rename lattice fill pass (phase 2)"   # no fabula record exists yet
 told_at: []   # true but offstage; Movement 3's forensic mode is expected to surface this
               # (ssot_03 §S10 UNDERSIDE: "the first name under the second") but no scene card
               # exists yet, so no time code can be logged

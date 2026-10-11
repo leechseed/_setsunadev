@@ -390,7 +390,7 @@ The catalog proved itself on DCUS the way 03 did: filled from canon on the first
 | WB-INS-0001 The Administration | INS | backstory → M4 | backstory_dcus_rebrand (inferred) | nation-state (inferred) |
 | WB-GRP-0001 The Bishops | GRP | backstory → M4 | backstory_dcus_rebrand | locality |
 | WB-INS-0002 Delta Coast Ultra School (institution) | INS | backstory → M4 | backstory_dcus_rebrand | locality |
-| WB-ARC-0001 Southern Gothic prestige brick | ARC | backstory → M4 | backstory_skeeter_creek_founding | locality |
+| WB-ARC-0001 Southern Gothic prestige brick | ARC | backstory → M4 | skeeter_creek_backstory_skeeter_creek_founding | locality |
 | WB-CUS-0001 The Star-Rating (ritual life) | CUS | M2 → M4 | backstory_dcus_rebrand (inferred) | locality |
 | WB-TEC-0001 The Feed (DCUS) | TEC | M2 → M4 | backstory_dcus_rebrand (inferred) | locality |
 | WB-WDR-0001 Feed-linked clothing | WDR | M2 → M4 | none in canon | locality |

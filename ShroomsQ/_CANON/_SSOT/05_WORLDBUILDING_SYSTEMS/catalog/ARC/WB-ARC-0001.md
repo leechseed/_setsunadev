@@ -7,7 +7,7 @@ founded: "backstory"
 current: "M4"
 places: ["dcus"]
 groups: ["WB-INS-0002"]
-origin: "backstory_skeeter_creek_founding"
+origin: "skeeter_creek_backstory_skeeter_creek_founding"
 state: "architecture:dcus_campus_style"
 tropes: ["SouthernGothic"]
 one_line: "The campus building style: century brick and moss carrying a Feed retrofit."

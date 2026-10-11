@@ -7,7 +7,7 @@ founded: "backstory"
 current: "M2"
 places: []
 groups: ["WB-CUS-0003", "WB-INS-0004"]
-origin: "backstory_moon_severance"
+origin: "skeeter_creek_backstory_moon_severance"
 state: "tech:dive_rig"
 tropes: []
 one_line: "An umbilical seated along a diver's spine and in both calves, run a quarter mile back to an autonomous crawler that carries her Mother; it resupplies her body while the heat burns it down."

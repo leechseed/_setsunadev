@@ -7,7 +7,7 @@ founded: "backstory"
 current: "M6"
 places: []
 groups: ["WB-INS-0002"]
-origin: "backstory_moon_severance"
+origin: "skeeter_creek_backstory_moon_severance"
 state: "group:power_line"
 tropes: []
 one_line: "The Delta Coast's shield: a man-made range of trash, toxins and space junk that walls the Coast off from the Kudzu and splits Providence from the Real Cartel. Named like a utility; it guards the Coast's power."

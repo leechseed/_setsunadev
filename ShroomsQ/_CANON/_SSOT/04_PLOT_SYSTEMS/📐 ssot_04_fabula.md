@@ -1,15 +1,15 @@
 ---
 type: ssot_04_fabula
 category: plot_system
-version: 1.0.0
+version: 1.0.1
 tier: fabula
 last_updated: 2026-10-11
 applies_to: [OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX, all future IPs]
-status: "v1.0.0 2026-10-11, batch 1 F1-F12 ruled ('Take all recs'): stories values, era-prefixed ids, location rule, 2099/2199 held as lineage, Severance after the beam, two Severances kept apart, the removal event, the Feed event, long actor names. v0.3.0 2026-10-05, BOLO 102 stage 2 (Chief: \"My word\"): the event record gains `source_kind`, `canon_source`, `produces`, `scheduled` and the 08 time code beside the calendar year; the no-calendar line is corrected. v0.1.7 2026-09-29, BOLO 91 rulings: Anna Colson's origin fabula-filled (ice-skating death → the scientist's rebuild → the scientist's attachment → the father's reclaim → the scientist's own kept copy, a second Colson with her own origin node); Tori's family origin (the trash-zone delta, not Bikini Atoll) added as L7 ORIGIN context, the car crash confirmed as her WOUND. v0.1.4 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — THE WORLD CLOCK gets the `backstory` movement tag for deep pre-M1 history, `event_id` grammar `backstory_<slug>`. v0.1.3 2026-09-24: BOLO 77 wave 3, plot doc OPEN call 12 executed — sixth event record `m2_first_sync_verified` added (row 9's rating-system / 'Verified' / reach-vs-pull-out moment), sourced from oxo-scene-card-M2-row9.md rather than victoria-midnight.md; ssot_04_plot_system.md's row-9 P2/P3/P5/P9 now read it. v0.1.1 2026-09-24: all six OPEN calls RULED (Chief: \"go on all recommendations\"); the v1.1 patch landed in the state architecture. v0.1.0 draft — BOLO 77 wave 1, \"go 77\" ruled 2026-09-24; Tori-only instance, EVIL CHECK events reserved for wave 2, state architecture v1.1 patch spec ships inside this doc"
+status: "v1.0.1 2026-10-11, F2 and F10 carried through (ids and prose). v1.0.0 2026-10-11, batch 1 F1-F12 ruled ('Take all recs'): stories values, era-prefixed ids, location rule, 2099/2199 held as lineage, Severance after the beam, two Severances kept apart, the removal event, the Feed event, long actor names. v0.3.0 2026-10-05, BOLO 102 stage 2 (Chief: \"My word\"): the event record gains `source_kind`, `canon_source`, `produces`, `scheduled` and the 08 time code beside the calendar year; the no-calendar line is corrected. v0.1.7 2026-09-29, BOLO 91 rulings: Anna Colson's origin fabula-filled (ice-skating death → the scientist's rebuild → the scientist's attachment → the father's reclaim → the scientist's own kept copy, a second Colson with her own origin node); Tori's family origin (the trash-zone delta, not Bikini Atoll) added as L7 ORIGIN context, the car crash confirmed as her WOUND. v0.1.4 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — THE WORLD CLOCK gets the `backstory` movement tag for deep pre-M1 history, `event_id` grammar `backstory_<slug>`. v0.1.3 2026-09-24: BOLO 77 wave 3, plot doc OPEN call 12 executed — sixth event record `m2_first_sync_verified` added (row 9's rating-system / 'Verified' / reach-vs-pull-out moment), sourced from oxo-scene-card-M2-row9.md rather than victoria-midnight.md; ssot_04_plot_system.md's row-9 P2/P3/P5/P9 now read it. v0.1.1 2026-09-24: all six OPEN calls RULED (Chief: \"go on all recommendations\"); the v1.1 patch landed in the state architecture. v0.1.0 draft — BOLO 77 wave 1, \"go 77\" ruled 2026-09-24; Tori-only instance, EVIL CHECK events reserved for wave 2, state architecture v1.1 patch spec ships inside this doc"
 rung: standard
 dependencies: ["ssot_04_plot_system", "ssot_03_setting_system", "ssot_02_character_state_architecture", "ssot_02_character_astrology_12_layer_mapping", "ssot_01_scale_ladder"]
 trunk: BLACK
-sources: [BVX.0591, BVX.0167, BVX.0562, "_PRIVATE/notes/apple-notes-2026.digest.md (BOLO 91, Anna Colson's origin)", "_PRIVATE/notes/phone-notes-2022-2023.digest.md (BOLO 91, Tori's family origin)"]
+sources: [BVX.0591, BVX.0167, BVX.0562, "_PRIVATE/notes/apple-notes-2026.digest.md (BOLO 91, Anna Colson Conway's origin)", "_PRIVATE/notes/phone-notes-2022-2023.digest.md (BOLO 91, Tori's family origin)"]
 purpose: "THE FABULA, v0.1: the universe-level world-time layer beneath 04's syuzhet doc, one shared timeline for OXO and EVIL CHECK, the EVENT RECORD schema, typed CAUSAL EDGES, THE WORLD CLOCK, the ORIGIN MOMENTS rule for the twelve character layers, the Tori-only instance, and the state architecture v1.1 patch spec."
 ---
 
@@ -161,7 +161,7 @@ Bal's process model behind `cause`, `enable`, `embed`, and `specify`: three phas
 
 | Era | Story | Where | Status on this clock |
 |---|---|---|---|
-| **1 · the Skeeter Creek era** (RULED 2026-09-29) | ⧗ no story yet | Earth, the Delta Coast before the school was DCUS | from `backstory_skeeter_creek_founding` through the Red Hills century (`backstory_red_hills_rename`); ends at the Bishops' rebrand. **The Narco Republic rises here** ⧗ (Chief, 2026-09-29: "back it up one era"; see below) |
+| **1 · the Skeeter Creek era** (RULED 2026-09-29) | ⧗ no story yet | Earth, the Delta Coast before the school was DCUS | from `skeeter_creek_backstory_skeeter_creek_founding` through the Red Hills century (`skeeter_creek_backstory_red_hills_rename`); ends at the Bishops' rebrand. **The Narco Republic rises here** ⧗ (Chief, 2026-09-29: "back it up one era"; see below) |
 | **2 · the DCUS era** | OVEREXITOUT (*The Outliers*) · EVIL CHECK · TREMOR CULT | Earth, the Delta Coast | opens at `backstory_dcus_rebrand`; the only era with story event records (THE INSTANCE) |
 | **3 · the LAKAD era** | LAKAD (codename) | cislunar space | band only; no events on record |
 | **4 · the ASTRO7EX era** | ASTRO7EX | the Moon | band only; its backstory's own events are not yet loaded |
@@ -169,7 +169,7 @@ Bal's process model behind `cause`, `enable`, `embed`, and `specify`: three phas
 
 **Era 1 inserted (RULED 2026-09-29, Chief: "era one will be the Skeeter Creek … it'll stay the same after"; Red Hills placed in era 1 on the same ruling).** Every later era moves down one number; their order is unchanged. The seam between 1 and 2 is the Bishops' rebrand of Red Hills Academy as DCUS.
 
-**The calendar and the Moon Severance (RULED 2026-10-01, BOLO 96, Chief: "all rec"; held as lineage, F4 ruled 2026-10-11).** OXO's present is **2199**; the **Moon Severance** is **2099**, one hundred years back, in **era 1**. Both years stay on the Outliers clock only, flagged lineage. No ASTRO7EX event carries a `calendar_year`, so Vivian's 2091 stands alone. One note says the Kessler storm has stood fifty years; the 2099 to 2199 span is one hundred. That note is held as lineage, part of the PSP Fella opening (F6). The Moon colony went up in the 2050s–70s and had turned hell by the 2090s; unable to leave any other way, **the Moon cut itself off on purpose**: it detonated nukes in orbit and set off a Kessler cascade that walls Earth off from space. The wreck has been falling ever since, onto the Power Line ([WB-INS-0004](../05_WORLDBUILDING_SYSTEMS/catalog/INS/WB-INS-0004.md)). Some of the Moon's people came back down before the wall closed; their descendants survived in the trash pit and are **the Outliers**, carrying Moon-engineered radiation resistance and a sleeper mission in their blood they don't know they carry: take Earth so the Moon can come home (lineage ⧗; what the DNA does is Chief's to voice). The early Moon colony is era 1's buried secret; **ASTRO7EX (era 4) is Earth's return to the Moon**. Id: `backstory_moon_severance`. Ruled 2026-10-11 (F5): the beam comes first, then the Severance. ASTRO7EX's own "Moon Severance" (its Dramatica reports) is a separate event with its own id, `astro7ex_backstory_moon_severance`, until Chief voices a link. Source: `_CANON_NODES/outliers-moon-origin-seed.md`.
+**The calendar and the Moon Severance (RULED 2026-10-01, BOLO 96, Chief: "all rec"; held as lineage, F4 ruled 2026-10-11).** OXO's present is **2199**; the **Moon Severance** is **2099**, one hundred years back, in **era 1**. Both years stay on the Outliers clock only, flagged lineage. No ASTRO7EX event carries a `calendar_year`, so Vivian's 2091 stands alone. One note says the Kessler storm has stood fifty years; the 2099 to 2199 span is one hundred. That note is held as lineage, part of the PSP Fella opening (F6). The Moon colony went up in the 2050s–70s and had turned hell by the 2090s; unable to leave any other way, **the Moon cut itself off on purpose**: it detonated nukes in orbit and set off a Kessler cascade that walls Earth off from space. The wreck has been falling ever since, onto the Power Line ([WB-INS-0004](../05_WORLDBUILDING_SYSTEMS/catalog/INS/WB-INS-0004.md)). Some of the Moon's people came back down before the wall closed; their descendants survived in the trash pit and are **the Outliers**, carrying Moon-engineered radiation resistance and a sleeper mission in their blood they don't know they carry: take Earth so the Moon can come home (lineage ⧗; what the DNA does is Chief's to voice). The early Moon colony is era 1's buried secret; **ASTRO7EX (era 4) is Earth's return to the Moon**. Id: `skeeter_creek_backstory_moon_severance`. Ruled 2026-10-11 (F5): the beam comes first, then the Severance. ASTRO7EX's own "Moon Severance" (its Dramatica reports) is a separate event with its own id, `astro7ex_backstory_moon_severance`, until Chief voices a link. Source: `_CANON_NODES/outliers-moon-origin-seed.md`.
 
 **The Narco Republic on this clock ⧗** (five scraps in the 2025 notes; nothing else is canon yet): it rises in **era 1** as one of the four regions of the Americas (the 6/20/2025 world dump: Antebellum South · Deepstate North · Outlaw West · Narco Republic; seed "the rise of the Narco Republic"), stands through **era 2** as a region on OXO's map, and by **era 4** is a mature vice economy over Central and South America (ASTRO7EX "Backdrop & Context", 5/11/2025). Era 3 is silent. Its names (Apple Notes 2025: Cartel Federal · Real Federale · Pax Cartel) and its flag (9/8/2025: the diving gold eagle, the rattlesnake on cacao, Mexican red and gold, CONSEQUENTIA REAL) wait on Chief's calls.
 
@@ -241,7 +241,7 @@ PS2's wave-1 extraction reads all twelve character layers against "What Is Stati
 
 ## THE INSTANCE
 
-**Scope note:** per the ruled default on DOPE SHEET 77 (Chief's silence read as "all recs"), this wave's instance fills Tori (Victoria Midnight) only. Anna Colson carries zero dated past events in current canon — her own node marks L7 ORIGIN, L8 IMPRINT, and the Jebb Midnight relation as author-pending (Open Questions #3, #4, #9) — so no event record is filled for her this wave; that gap is OPEN call 1 (77-C), not an omission.
+**Scope note:** per the ruled default on DOPE SHEET 77 (Chief's silence read as "all recs"), this wave's instance fills Tori Midnight (alias Victoria) only. Anna Colson Conway carries zero dated past events in current canon — her own node marks L7 ORIGIN, L8 IMPRINT, and the Jebb Midnight relation as author-pending (Open Questions #3, #4, #9) — so no event record is filled for her this wave; that gap is OPEN call 1 (77-C), not an omission.
 
 The fabula's Movement 1 is the Delta Coast racing run. The PSP Fella salvage flotilla is held as lineage (F7, ruled 2026-10-11).
 
@@ -480,7 +480,7 @@ causal_edges: []
 
 ## ANNA COLSON'S ORIGIN (BOLO 91, RULED 2026-09-29)
 
-**Scope note.** THE INSTANCE above scoped wave 1 to Tori only, leaving Anna Colson's L7 ORIGIN and L8 IMPRINT author-pending (OPEN call 1, 77-C). Chief's 2026-09-29 ruling fills that gap: a dated (fuzzily-dated, pre-story) origin chain, sourced from `_PRIVATE/notes/apple-notes-2026.digest.md` §1 OXO, quoting Chief's own note verbatim: *"Colson dies in a freak ice-skating accident. Her father seeks out a scientist who says she can build her back, but better. The scientist grows too close to Colson, so the father steals her back — but what the father doesn't know is that she's made her own copy of Colson."* Five backstory events follow, using the `backstory_<slug>` grammar (v0.1.4, BOLO 90 step 7). **The copy is not a state diff on Anna Colson** — per Chief's ruling it "gets her own fabula node, separate from Colson" — so the fifth event below doubles as the copy's own L7 ORIGIN moment, a distinct actor from the original.
+**Scope note.** THE INSTANCE above scoped wave 1 to Tori only, leaving Anna Colson Conway's L7 ORIGIN and L8 IMPRINT author-pending (OPEN call 1, 77-C). Chief's 2026-09-29 ruling fills that gap: a dated (fuzzily-dated, pre-story) origin chain, sourced from `_PRIVATE/notes/apple-notes-2026.digest.md` §1 OXO, quoting Chief's own note verbatim: *"Colson dies in a freak ice-skating accident. Her father seeks out a scientist who says she can build her back, but better. The scientist grows too close to Colson, so the father steals her back — but what the father doesn't know is that she's made her own copy of Colson."* Five backstory events follow, using the `backstory_<slug>` grammar (v0.1.4, BOLO 90 step 7). **The copy is not a state diff on Anna Colson Conway** — per Chief's ruling it "gets her own fabula node, separate from Colson" — so the fifth event below doubles as the copy's own L7 ORIGIN moment, a distinct actor from the original.
 
 ```yaml
 event_id: "backstory_colson_skating_death"
@@ -498,7 +498,7 @@ repeat: false
 location: GAP
 stories: [OXO]
 provenance:
-  source: "_PRIVATE/notes/apple-notes-2026.digest.md, §1 OXO — Anna Colson's origin"
+  source: "_PRIVATE/notes/apple-notes-2026.digest.md, §1 OXO — Anna Colson Conway's origin"
   confidence: direct_quote
 causal_edges:
   - type: cause
@@ -525,7 +525,7 @@ repeat: false
 location: GAP
 stories: [OXO]
 provenance:
-  source: "_PRIVATE/notes/apple-notes-2026.digest.md, §1 OXO — Anna Colson's origin"
+  source: "_PRIVATE/notes/apple-notes-2026.digest.md, §1 OXO — Anna Colson Conway's origin"
   confidence: direct_quote
 causal_edges:
   - type: enable
@@ -550,7 +550,7 @@ repeat: false
 location: GAP
 stories: [OXO]
 provenance:
-  source: "_PRIVATE/notes/apple-notes-2026.digest.md, §1 OXO — Anna Colson's origin"
+  source: "_PRIVATE/notes/apple-notes-2026.digest.md, §1 OXO — Anna Colson Conway's origin"
   confidence: direct_quote
 causal_edges:
   - type: cause
@@ -577,7 +577,7 @@ repeat: false
 location: GAP
 stories: [OXO]
 provenance:
-  source: "_PRIVATE/notes/apple-notes-2026.digest.md, §1 OXO — Anna Colson's origin"
+  source: "_PRIVATE/notes/apple-notes-2026.digest.md, §1 OXO — Anna Colson Conway's origin"
   confidence: direct_quote
 causal_edges:
   - type: simultaneous
@@ -590,7 +590,7 @@ transition: "one Colson exists -> the scientist secretly keeps her own copy of C
 actors:
   - actor: "the scientist"
     actant_role: subject
-  - actor: "Anna Colson Conway (the copy)"   # NOTE: a distinct actor from "Anna Colson" above — her own fabula node per Chief's ruling, not a state diff on the original
+  - actor: "Anna Colson Conway (the copy)"   # NOTE: a distinct actor from "Anna Colson Conway" above — her own fabula node per Chief's ruling, not a state diff on the original
     actant_role: object
 kernel_satellite: kernel   # this event is ALSO the copy's own L7 ORIGIN moment — she begins existing here; her own 02 character record points its L7 `origin_event` here (IF catalog call 5)
 time:
@@ -602,14 +602,14 @@ repeat: false
 location: GAP
 stories: [OXO]
 provenance:
-  source: "_PRIVATE/notes/apple-notes-2026.digest.md, §1 OXO — Anna Colson's origin"
+  source: "_PRIVATE/notes/apple-notes-2026.digest.md, §1 OXO — Anna Colson Conway's origin"
   confidence: direct_quote
 causal_edges: []   # downstream events for the copy are not yet on record — open for a future wave
 ```
 
-**The copy's own record (IF catalog call 5, ruled 2026-10-05; IF-02-04-17).** "Anna Colson (the copy)" gets her own 02 character record, apart from `_CANON_NODES/anna-colson-conway.md`. That record's L7 ORIGIN names `backstory_colson_copy_made` as its `origin_event`. The five Colson events feed L7 only.
+**The copy's own record (IF catalog call 5, ruled 2026-10-05; IF-02-04-17).** "Anna Colson Conway (the copy)" gets her own 02 character record, apart from `_CANON_NODES/anna-colson-conway.md`. That record's L7 ORIGIN names `backstory_colson_copy_made` as its `origin_event`. The five Colson events feed L7 only.
 
-**What this does and does not settle.** This fills L7 ORIGIN's dated antecedent for Anna Colson (and gives "Anna Colson (the copy)" her own L7 ORIGIN event, distinct from the original). It does **not** fill L8 IMPRINT, L9 EROS, or L10 SHADOW for either Colson — those stay author-pending per the original node's Open Questions #3, #4, #9 — and it does not place either Colson's post-origin events (what either of them does afterward) on the fabula. That is future wave work, not this ruling.
+**What this does and does not settle.** This fills L7 ORIGIN's dated antecedent for Anna Colson Conway (and gives "Anna Colson Conway (the copy)" her own L7 ORIGIN event, distinct from the original). It does **not** fill L8 IMPRINT, L9 EROS, or L10 SHADOW for either Colson — those stay author-pending per the original node's Open Questions #3, #4, #9 — and it does not place either Colson's post-origin events (what either of them does afterward) on the fabula. That is future wave work, not this ruling.
 
 ---
 
@@ -630,7 +630,7 @@ causal_edges: []   # downstream events for the copy are not yet on record — op
 ## OPEN
 **All six ruled 2026-09-24, Chief: "go on all recommendations."** Each rec below is now the rule, provisional a week like every ruling.
 
-1. **RULED 2026-09-24 (rec taken) · 77-C — Tori-only instance** — does wave 1's filled instance stay Tori-only, leaving Anna Colson's layer origins open per her own node's Open Questions? Rec: yes, matches Chief's silence-ruling on DOPE SHEET 77 and Anna Colson's own node marks L7 and L8 as author-pending.
+1. **RULED 2026-09-24 (rec taken) · 77-C — Tori-only instance** — does wave 1's filled instance stay Tori-only, leaving Anna Colson Conway's layer origins open per her own node's Open Questions? Rec: yes, matches Chief's silence-ruling on DOPE SHEET 77 and Anna Colson Conway's own node marks L7 and L8 as author-pending.
 2. **RULED 2026-09-24 (rec taken) · 77-D — EVIL CHECK wave 2** — when does EVIL CHECK's own event set enter this registry, given the `stories:` field is reserved but empty for it now? Rec: wave 2, once an EVIL CHECK-side extraction exists to source-check its events the way PS2 did for Tori.
 3. **RULED 2026-09-24 (rec taken) · Event ID scheme** — the digests give one worked example, `m1b_crash_jebb_death`, but no formal grammar for `event_id`; what characters and length does the state doc's v1.1 field expect? Rec: adopt `<movement>_<slug>` as the working grammar until the state doc's owner rules otherwise.
 4. **RULED 2026-09-24 (rec taken) · DCUS eras vs setting arc** — should THE WORLD CLOCK re-author the Skeeter Creek to Red Hills to DCUS lattice as its own filled event rows, or only cross-reference S5, S7, and S11? Rec: cross-reference only; the setting doc stays the one authoring surface for those dated states.
@@ -642,9 +642,10 @@ causal_edges: []   # downstream events for the copy are not yet on record — op
 ## Version history
 
 - 10/11 · batch 1 F1–F12 ruled ('Take all recs')
+- **1.0.1 — 2026-10-11** · F2 and F10 carried through (ids and prose)
 - **1.0.0 — 2026-10-11.** `stories` gains ASTRO7EX, TREMOR_CULT, LAKAD (F1). Era prefix on every `event_id` outside era 2 (F2). `location` holds a 03 address or GAP (F3). 2099 and 2199 held as lineage on the Outliers clock only (F4). Beam first, then the Severance; two Severance ids (F5). Kessler age held as lineage (F6). Delta Coast racing run is M1 (F7). Removal event added (F8). The Feed's record is its own event (F9). Actor names use the ruled long forms (F10). Eras 1, 3 and 5 stay band-only (F11). Method done; instance ⧗ marks stay as marked gaps (F12).
 - **0.3.0 — 2026-10-05.** BOLO 102 stage 2 (Chief: "My word"): the event record gains `source_kind`, `canon_source`, `produces` and `scheduled` (call 5); `time` carries the 08 time code and the calendar year, and the "no calendar layer" line is corrected (call 1); `story_beat` and flag `event_id` stated; the copy's 02 record named; two reader lines added (IF-01-04-06, IF-04-05-01).
-- **0.2.0 — 2026-10-01 (BOLO 96, "all rec").** THE WORLD CLOCK gains its first calendar years: OXO's present **2199**, the **Moon Severance 2099** (era 1): the Moon nukes orbit into a Kessler cascade on purpose; the Outliers descend from Moon people who came back down; ASTRO7EX is Earth's return. Event `backstory_moon_severance`. Its order against the Deep Meridian beam stays open.
+- **0.2.0 — 2026-10-01 (BOLO 96, "all rec").** THE WORLD CLOCK gains its first calendar years: OXO's present **2199**, the **Moon Severance 2099** (era 1): the Moon nukes orbit into a Kessler cascade on purpose; the Outliers descend from Moon people who came back down; ASTRO7EX is Earth's return. Event `skeeter_creek_backstory_moon_severance`. Its order against the Deep Meridian beam stays open.
 - **0.1.9 — 2026-09-29.** THE WORLD CLOCK gains a new era 1, **Skeeter Creek** (Chief: "era one will be the Skeeter Creek … it'll stay the same after"): the founding through the Red Hills century, ending at the Bishops' rebrand; DCUS → 2, LAKAD → 3, ASTRO7EX → 4, beyond → 5. The Narco Republic placed on the clock ⧗: rises in era 1.
 - **0.1.8 — 2026-09-29.** THE WORLD CLOCK gains era 4, **beyond** (past the Moon, ⧗ unnamed), after DCUS → LAKAD (cislunar) → ASTRO7EX (the Moon); Chief: "after DCUS, there's the cislunar space, and then the moon, and then beyond."
 - **0.1.7 — 2026-09-29 (BOLO 91 rulings).** Anna Colson's origin fabula-filled: five `backstory_<slug>` event records (ice-skating death → father seeks the scientist → the scientist's attachment → the father's reclaim → the scientist's own kept copy); "Anna Colson (the copy)" given her own fabula node and L7 ORIGIN moment, distinct from the original. Tori's family origin ruled the trash-zone delta, not Bikini Atoll (superseding the earlier phone-notes draft); the car crash (`m1b_crash_jebb_death`) confirmed unchanged as her L5 WOUND.
