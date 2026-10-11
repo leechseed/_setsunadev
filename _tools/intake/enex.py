@@ -138,6 +138,8 @@ def index():
             held += 1
             continue
         body = io.open(os.path.join(ROOT, r["path"]), encoding="utf-8").read()
+        plain = re.sub(r"\[(image|voice memo|pdf|attachment)[^\]]*\]", "", body.split("\n", 3)[-1]).strip()
+        r["hash"] = hashlib.md5(re.sub(r"\s+", " ", plain).lower().encode()).hexdigest()[:16]   # after transcripts land
         rec = {"vault": "evernote", "path": r["path"], "chars": r["chars"], "year": r["year"], "hash": r["hash"],
                "empty": r["text_chars"] < 20 and not r["files"], "title": r["title"], "book": False,
                "lineage": [w for w in LINEAGE if re.search(r"\b%s\b" % re.escape(w), body, re.I)]}
