@@ -24,7 +24,7 @@ LEDGER = os.path.join(INTAKE, "read.json")
 SIZE = 50                                   # ruled 10/8, pilot call 5
 BUDGET = 120000                             # chars per batch (10/9: at 280k three readers stopped short, 23 notes unread)
 CAP = 30000                                 # a longer note is cut to its head; the reader judges from that
-VAULTS = ("joplin", "obsidian", "logseq", "devlog")
+VAULTS = ("joplin", "obsidian", "logseq", "devlog", "evernote")
 
 
 def where(L):
