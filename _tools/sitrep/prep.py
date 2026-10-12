@@ -258,9 +258,9 @@ def main():
             f"the last session(s) were.\n{CONTRACT}"),
         "INDEX": (
             f"You are INDEX, the STATE specialist for the sit rep of {date}. Model: sonnet.\n"
-            f"READ: {p('state.blocked.md')} · {p('state.live.md')} · {p('state.moved.md')} · {p('git.log')} · and the previous fragments "
-            f"{p('prev', 'I.json')} · {p('prev', 'II.json')} · {p('prev', 'V.json')}.\n"
-            f"WRITE three files:\n"
+            f"READ: {p('state.blocked.md')} · {p('state.live.md')} · {p('state.moved.md')} · {p('git.log')} · PROJECTS.md · and the previous fragments "
+            f"{p('prev', 'I.json')} · {p('prev', 'II.json')} · {p('prev', 'III.json')} · {p('prev', 'V.json')}.\n"
+            f"WRITE four files:\n"
             f"  {p('frag', 'I.json')}  — Block I \"The Fresh Ten\": the ten items touched most recently, newest first, "
             f"from the Moved sections (state.moved.md — what each session actually moved, the fold the close-out writes) "
             f"and the Live tables, dated by the named commits and the autosave FOOTPRINT windows in git.log; each with when · trunk · the one next step. "
@@ -270,7 +270,9 @@ def main():
             f"  {p('frag', 'II.json')} — Block II \"The Ancients\": the same groups as before (true ancients · three weeks "
             f"or more · two to three weeks · a week or less); what each is waiting on.\n"
             f"  {p('frag', 'V.json')}  — Block V \"Blocked on you\": every numbered row of the Blocked table, in table "
-            f"order, one item each, with what it unblocks.\n{CONTRACT}"),
+            f"order, one item each, with what it unblocks.\n"
+            f"  {p('frag', 'III.json')} — Block III \"The Deep Stacks\" (BOLO 86): rebuild it from PROJECTS.md in the same shape as "
+            f"{p('prev', 'III.json')}. If you cannot, write nothing; prep's carried copy stays as the fallback.\n{CONTRACT}"),
         "WATCH": (
             f"You are WATCH, the BOLO specialist for the sit rep of {date}. Model: haiku.\n"
             f"READ: BOLO.md (the whole file) and {p('prev', 'IV.json')} (the previous Block IV, for shape only).\n"

@@ -43,6 +43,7 @@ def main():
     wd = os.path.join(WORK, date)
     fd = os.path.join(wd, "frag")
     findings, blocks = [], []
+    iii_src = "carried"
 
     meta = jload(os.path.join(wd, "meta.json"))
     pp = os.path.join(wd, "meta.patch.json")
@@ -68,6 +69,8 @@ def main():
         if os.path.getmtime(p) < prep_time and bid not in ("III", "VII"):
             findings.append(f"{bid} is older than prep — a stale fragment?")
         b = jload(p)
+        if bid == "III" and "_carried" not in b and os.path.getmtime(p) >= prep_time:
+            iii_src = "INDEX"   # BOLO 86: INDEX rebuilt III from PROJECTS.md; prep's carried copy always has _carried
         b.pop("_carried", None)
         if b.get("id") != bid:
             findings.append(f"{bid}: fragment id says {b.get('id')!r}")
@@ -146,6 +149,16 @@ def main():
                 "Keep all facts, numbers, keys, [[key|label]] links, trunks, s, when and the JSON shape exactly. Text inside quotation marks is Chief's and stays verbatim. "
                 "Count the words yourself before you finish.\nReply in one line.\n")
             print(f"RERUN {role} ({model}) · brief {os.path.relpath(rp, ROOT)}")
+
+    # BOLO 122: one ledger line per board; append-only, never read here, never allowed to break the board
+    try:
+        reruns = sorted(f[len('rerun.'):-3] for f in os.listdir(wd) if f.startswith('rerun.') and f.endswith('.md'))
+        import datetime
+        with io.open(os.path.join(HERE, 'judge_ledger.jsonl'), 'a', encoding='utf-8', newline='\n') as lf:
+            lf.write(json.dumps({'ts': datetime.datetime.now().isoformat(timespec='seconds'), 'date': date, 'src': 'assemble', 'reruns': reruns,
+                                 'findings': len(findings), 'long_sentence_blocks': longs, 'iii': iii_src}, ensure_ascii=False) + '\n')
+    except Exception:
+        pass
 
     # the digest: what changed vs the previous board
     prev_dir = os.path.join(wd, "prev")

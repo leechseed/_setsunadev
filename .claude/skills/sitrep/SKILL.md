@@ -35,7 +35,7 @@ Launch all three in the same message, `run_in_background: false` is not needed; 
 | Role | Model | Reads | Writes |
 |---|---|---|---|
 | **RACK** | haiku | `_CACHE/*.session.md` + `prev/0.json` | `frag/0.json` (Block 0) |
-| **INDEX** | sonnet | `state.blocked.md` · `state.live.md` · `git.log` + `prev/{I,II,V}.json` | `frag/I.json` · `frag/II.json` · `frag/V.json` |
+| **INDEX** | sonnet | `state.blocked.md` · `state.live.md` · `git.log` · `PROJECTS.md` + `prev/{I,II,III,V}.json` | `frag/I.json` · `frag/II.json` · `frag/V.json` · `frag/III.json` (BOLO 86; if INDEX writes none, the carried III stands) |
 | **WATCH** | haiku | `BOLO.md` + `prev/IV.json` | `frag/IV.json` (Block IV + pmcs) |
 
 Model rule is the gearbox's (SOP §1): PS (haiku) extract, MS (sonnet) writes, CDR (Fable) on the main line only. A gear shift never adds a fourth specialist to the sit rep; it is not a bigger job.
