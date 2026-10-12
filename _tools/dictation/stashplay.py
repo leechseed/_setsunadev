@@ -94,24 +94,24 @@ def stop():
     return "stopped"
 
 
-def _right_monitor():
-    """The rightmost monitor's rect (left, top, right, bottom)."""
+def _monitor(side="right"):
+    """The rightmost (or leftmost) monitor's rect (left, top, right, bottom)."""
     import ctypes
     from ctypes import wintypes
     rects = []
     cb = ctypes.WINFUNCTYPE(ctypes.c_int, wintypes.HMONITOR, wintypes.HDC, ctypes.POINTER(wintypes.RECT), wintypes.LPARAM)
     ctypes.windll.user32.EnumDisplayMonitors(None, None, cb(lambda h, d, r, l: rects.append((r.contents.left, r.contents.top, r.contents.right, r.contents.bottom)) or 1), 0)
-    return max(rects, key=lambda r: r[0])
+    return (max if side == "right" else min)(rects, key=lambda r: r[0])
 
 
-def _pin_right(pid, wait=15):
+def _pin(pid, side="right", wait=15):
     """Chief 10/12: VLC's own fullscreen snaps to the left screen no matter what. So: find the VLC window,
     strip its frame, and lay it over the whole right screen (borderless, same look as fullscreen)."""
     import ctypes
     import time
     from ctypes import wintypes
     u = ctypes.windll.user32
-    x0, y0, x1, y1 = _right_monitor()
+    x0, y0, x1, y1 = _monitor(side)
     found = []
     cb = ctypes.WINFUNCTYPE(ctypes.c_bool, wintypes.HWND, wintypes.LPARAM)
 
@@ -132,12 +132,13 @@ def _pin_right(pid, wait=15):
     return bool(found)
 
 
-def launch(target):
-    """Open VLC on the right screen: minimal view, no autoresize, then pinned borderless over that monitor."""
-    p = subprocess.Popen([VLC, "--qt-minimal-view", "--no-qt-video-autoresize", "--no-qt-fs-controller", "--play-and-exit",
+def launch(target, side="right"):
+    """Open VLC on one screen (right by default; Chief 10/12 two sets: "left" for the second): minimal view,
+    no autoresize, then pinned borderless over that monitor. --no-one-instance lets both screens run at once."""
+    p = subprocess.Popen([VLC, "--no-one-instance", "--qt-minimal-view", "--no-qt-video-autoresize", "--no-qt-fs-controller", "--play-and-exit",
                           "--no-video-title-show", target],
                          stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-    return _pin_right(p.pid)
+    return _pin(p.pid, side)
 
 
 def play(sc):
