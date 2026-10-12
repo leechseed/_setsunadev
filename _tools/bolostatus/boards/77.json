@@ -4,7 +4,7 @@
   "title": "The plot system, expanded on rails — fabula · trope graph · syuzhet",
   "trunk": "BLACK",
   "issued": "2026-09-23",
-  "asof": "2026-09-29",
+  "asof": "2026-10-12",
   "s": "open",
   "status": "🟢 **PLOT 1.0.1 (9/29)** — 77-AD to 77-AJ ruled \"all recs\" and folded into the cards: P10 varies by movement (opening · Institutionalized · reversal · war) · the arrest sits before the crash · the cyborg turn runs parallel · erasure reads both ways · QB's coup is a world event. Anna's M4–M6 pass tasked. Three facts only Chief has: 77-AG · 77-AK · 77-AL.",
   "decider": "HOTLINE ACTUAL",
@@ -41,7 +41,7 @@
   ],
   "home": "BOLO.md · row 77",
   "card": "none",
-  "version": "v0.16 · DOPE SHEET"
+  "version": "v0.17 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -372,7 +372,7 @@
    {
     "q": "77-AM · M4: Anna inside the rank/Sync ceremony",
     "s": "ruled",
-     "ruling": "RULED 2026-10-12, Chief: \"take all recs\" (rec: take).",
+    "ruling": "RULED 2026-10-12, Chief: \"take all recs\" (rec: take).",
     "options": [
      "take: composed, rising, intercut with Tori's reclassification (IC Contemplation · RS Doing)",
      "other"
@@ -382,7 +382,7 @@
    {
     "q": "77-AN · M5: the Feed broadcasts Anna's ascent",
     "s": "ruled",
-     "ruling": "RULED 2026-10-12, Chief: \"take all recs\" (rec: take).",
+    "ruling": "RULED 2026-10-12, Chief: \"take all recs\" (rec: take).",
     "options": [
      "take: the system's counter-message as the Diaspora forms",
      "other"
@@ -392,7 +392,7 @@
    {
     "q": "77-AO · M6: the collapse exposes Anna's origin file",
     "s": "ruled",
-     "ruling": "RULED 2026-10-12, Chief: \"take all recs\" (rec: take).",
+    "ruling": "RULED 2026-10-12, Chief: \"take all recs\" (rec: take).",
     "options": [
      "take: Tori and the Diaspora gather the rebuild record, closing the rivalry (IC Memories · RS Gathering Information)",
      "other"
@@ -402,7 +402,7 @@
    {
     "q": "77-AP · the copy of Colson in M6",
     "s": "ruled",
-     "ruling": "RULED 2026-10-12, Chief: \"take all recs\" (rec: hold).",
+    "ruling": "RULED 2026-10-12, Chief: \"take all recs\" (rec: hold).",
     "options": [
      "hold: nothing on record; the records collapse could surface her, decide later",
      "place her now"
@@ -1121,6 +1121,11 @@
      "when": "9/29",
      "who": "Claude",
      "t": "Pass landed: one candidate per movement, cited to canon; four calls out, 77-AM to 77-AP."
+    },
+    {
+     "when": "10/12",
+     "who": "Claude",
+     "t": "Launch refresh: reopened from the 2026-10-12-3.session.md close-out."
     }
    ]
   }

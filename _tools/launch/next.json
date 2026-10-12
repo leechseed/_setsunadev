@@ -31,5 +31,9 @@
   "BOLO 123 held behind BOLO 100",
   "ORANGE items, detail in `_PRIVATE/`."
  ],
- "note": "2026-10-12-3.session.md"
+ "note": "2026-10-12-3.session.md",
+ "frago_done": [
+  77,
+  121
+ ]
 }

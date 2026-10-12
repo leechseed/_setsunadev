@@ -21,7 +21,7 @@
   ],
   "home": "BOLO.md · row 121",
   "card": "none",
-  "version": "v0.1 · DOPE SHEET"
+  "version": "v0.2 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -347,6 +347,11 @@
      "when": "10/11",
      "who": "Claude",
      "t": "Re-pull round 2 landed. Five boards loaded 627 new images. One board came back empty and one stayed dead. Claude recommends dropping both."
+    },
+    {
+     "when": "10/12",
+     "who": "Claude",
+     "t": "Launch refresh: reopened from the 2026-10-12-3.session.md close-out."
     }
    ]
   }
