@@ -2,11 +2,11 @@
 type: ssot_02_character_systems
 category: field_module
 module_of: ssot_00_module_architecture
-version: 0.1.0
+version: 1.0.0
 tier: standard
 last_updated: 2026-10-12
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
-status: DRAFT (provisional, for Chief's ruling)
+status: "v1.0.0 2026-10-12 RULED (Chief: 'All recommendations … Go layers'): tier 2 floor, L2 VITAL attachment, the static/dynamic split, the one-at-a-time accept rule, the new part and hair keys on the shared rail. Overlap with MOD.PHYS and MOD.FASHION is OPEN (call 6). v0.1.0 2026-10-12 draft."
 trunk: BLACK
 purpose: "Defines LOOK, the field module that holds a character's appearance as six layers of label keys, and the two-way sync between those keys and the private reference-image database."
 dependencies: ["ssot_00_module_architecture", "ssot_00_module_registry", "ssot_02_character_state_architecture", "ssot_02_character_astrology_12_layer_mapping"]
@@ -43,16 +43,16 @@ Chief, 10/12: "the first layer would be bodies. So all body parts. The second la
 MODULE_DECLARATION:
   module_id: LOOK
   display_name: Appearance
-  version: 0.1.0
+  version: 1.0.0
   author: LEECHSEED
-  attachment_points: [L2.VITAL]
+  attachment_points: [VITAL]
   tier_min: 2
   depends_on: []
   description: Holds a character's appearance as six layers of shared label keys that sync both ways with the private reference database.
 ```
 
-- **Attachment point.** LOOK attaches to L2 VITAL. L2 covers physical presence, and the Ascendant sets how the body reads in space.
-- **Tier requirement.** Tier 2 and up. Rec: a background character needs no appearance record. Chief rules the floor.
+- **Attachment point (RULED 2026-10-12).** LOOK attaches to L2 VITAL alone. L2 covers physical presence, and the Ascendant sets how the body reads in space.
+- **Tier requirement (RULED 2026-10-12).** Tier 2 and up. A background character needs no appearance record.
 - **Dependencies.** None. LOOK reads core layers L2 and L7 but needs no other module.
 - **READS.** `T1.VITAL.base_value` (layer 1 feed) and the L7 ORIGIN heritage fields (layer 2 suggestions).
 - **WRITES.** Own variables only: `MOD.LOOK.*`.
@@ -64,7 +64,7 @@ MODULE_DECLARATION:
 
 The six layers follow the order of a character creator. Layer 1 comes first and layer 6 last. A layer is a group of variables, not a core layer.
 
-All variables are `authored`, default `[UNASSIGNED]`, scale class N/A. Static or Dynamic tags are recs. Chief rules them.
+All variables are `authored`, default `[UNASSIGNED]`, scale class N/A. The Static and Dynamic tags are RULED (2026-10-12, "All recommendations"): static holds build, height, skin tone, eye color, face shape and focus; dynamic holds age read, hair, wardrobe, pose, scene and vibe.
 
 ### Layer 1: Body
 
@@ -195,19 +195,19 @@ Overlay resolution follows the state architecture. The base record supplies ever
 
 ---
 
-## Registry entry (to add on ruling)
+## Registry entry (added 2026-10-12)
 
-Add one row to the Registry Overview table and one entry under Planned Modules. The module is `draft` while Chief rules.
+The Registry Overview table and the Active Modules section carry this entry since the ruling (registry 1.3.0).
 
 |Module ID|Display Name|Attachment|Tier|Status|Variables|Derived|Flags|
 |---|---|---|---|---|---|---|---|
-|`LOOK`|Appearance|L2 VITAL|2|**draft**|16|No|No|
+|`LOOK`|Appearance|L2 VITAL|2|**active** (1.0.0)|16|No|No|
 
 ```yaml
 MODULE_DECLARATION:
   module_id: LOOK
   display_name: Appearance
-  version: 0.1.0
+  version: 1.0.0
   author: LEECHSEED
   attachment_points: [VITAL]
   tier_min: 2
@@ -219,13 +219,19 @@ Full variable declarations live in [📐 ssot_02_module_look.md](📐%20ssot_02_
 
 ---
 
-## OPEN calls for Chief
+## Calls
 
-1. **Tier floor.** Should LOOK start at Tier 2? Rec: yes. Tip: Tier 2 skips extras who never appear on a page.
-2. **Attachment point.** Should LOOK attach to L2 VITAL alone? Rec: yes. Tip: one point keeps the module simple; L3 can join later if wardrobe needs it.
-3. **Static or dynamic.** Do you accept the static calls (build, height, skin tone, eye color, face shape, focus) and dynamic calls (age read, hair, wardrobe, pose, scene, vibe)? Rec: accept all. Tip: static fields never clutter a state diff.
-4. **Accept rule.** Should the author accept every proposed value one at a time, with no accept-all button? Rec: yes. Tip: one-at-a-time keeps a reference from silently rewriting a character.
-5. **New body, face, and hair keys.** Should the new descriptors join the shared vocabulary in `vocab.json` now? Rec: yes, after you read the lists. Tip: the reference database can tag images by them only once they join.
+RULED 2026-10-12 (Chief: "All recommendations, and the fable switch is done. Go layers."), recs taken as written:
+
+1. **Tier floor.** LOOK starts at Tier 2. Tip: Tier 2 skips extras who never appear on a page.
+2. **Attachment point.** LOOK attaches to L2 VITAL alone. Tip: one point keeps the module simple; L3 can join later if wardrobe needs it.
+3. **Static or dynamic.** Static: build, height, skin tone, eye color, face shape, focus. Dynamic: age read, hair, wardrobe, pose, scene, vibe. Tip: static fields never clutter a state diff.
+4. **Accept rule.** The author accepts every proposed value one at a time; there is no accept-all. Tip: one-at-a-time keeps a reference from silently rewriting a character.
+5. **New body, face, and hair keys.** The new descriptors joined the shared vocabulary the same day, as two rail axes: `part` (the body focus, keyed to the part names the reference boards use) and `hair` (color). Provisional until Chief reads the lists. Tip: the reference database tags images by them from the next automatic pass on.
+
+OPEN:
+
+6. **Overlap with MOD.PHYS and MOD.FASHION.** PHYS's `body_type` and `age_presentation` now have homes in LOOK layers 1 and 2, and FASHION's `body_display` sits inside LOOK's wardrobe `dress`. Rec: PHYS stays planned for what LOOK does not hold (`physicality_source`, `distinguishing_marks`, `beauty_read`, `physical_confidence`); FASHION stays planned for the social-signal fields and drops `body_display` to LOOK. Tip: a field lives in one module, so the registry's audit table records where each moved.
 
 ---
 
@@ -233,4 +239,5 @@ Full variable declarations live in [📐 ssot_02_module_look.md](📐%20ssot_02_
 
 |Version|Date|Changes|
 |---|---|---|
+|1.0.0|2026-10-12|RULED, Chief ("All recommendations … Go layers"): calls 1 to 5 taken as recommended. `attachment_points` written `[VITAL]` to match the registry. The `part` and `hair` axes joined the shared vocabulary (private rail file) the same day. Registry 1.3.0 carries the entry. Call 6 (PHYS and FASHION overlap) opened.|
 |0.1.0|2026-10-12|Draft. Six layers in character-creator order, 16 variables, two-way sync contract, feeds from L2 VITAL and L7 ORIGIN, state-diff example. Awaiting Chief's ruling on five OPEN calls.|

@@ -2,9 +2,9 @@
 type: ssot_00_foundations
 category: module_registry
 module_of: ssot_00_module_architecture
-version: 1.2.0
+version: 1.3.0
 tier: foundation
-last_updated: 2026-10-05
+last_updated: 2026-10-12
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: canonical
 trunk: BLACK
@@ -38,6 +38,7 @@ This is the complete catalog of every field module that attaches to the LEECHSEE
 |Module ID|Display Name|Attachment|Tier|Status|Variables|Derived|Flags|
 |---|---|---|---|---|---|---|---|
 |`DUALISM`|Dualism Charge System|All layers|3|**active**|12+|Yes|Yes|
+|`LOOK`|Appearance|L2 VITAL|2|**active** (1.0.0, ruled 2026-10-12)|16|No|No|
 |`LOL_TAX`|LoL Character Taxonomy|Multiple|3|**planned**|70+|Yes|No|
 |`WALK`|Walking Style|L2 VITAL|3|**planned**|3|No|No|
 |`COMBAT`|Combat Archetype|L2, L4|3|**planned**|5|Yes|No|
@@ -105,6 +106,24 @@ MOD.DUALISM.FLG.transcendent_outlier:
 ```
 
 **Notes:** This module is the only module that attaches to ALL 12 layers. It is architecturally unique because it adds a parallel dimension to every layer rather than extending a single layer. The -30/+30 range is already base-60 native (60-unit total span). The snap boundaries at ±60 use the full SC-60 extended range.
+
+---
+
+### MOD.LOOK — Appearance
+
+```yaml
+MODULE_DECLARATION:
+  module_id: LOOK
+  display_name: Appearance
+  version: 1.0.0
+  author: LEECHSEED
+  attachment_points: [VITAL]
+  tier_min: 2
+  depends_on: []
+  description: Holds a character's appearance as six layers of shared label keys that sync both ways with the private reference database.
+```
+
+RULED 2026-10-12 (Chief: "All recommendations … Go layers"). Six layers in character-creator order: body · face and hair · wardrobe · pose and framing · scene · vibe. Sixteen variables; static holds build, height, skin tone, eye color, face shape and focus, dynamic holds age read, hair, wardrobe, pose, scene and vibe. Reads `T1.VITAL.base_value` and the L7 ORIGIN heritage fields; writes `MOD.LOOK.*` only. The full declaration lives in [📐 ssot_02_module_look.md](../02_CHARACTER_SYSTEMS/📐%20ssot_02_module_look.md). Overlap with PHYS and FASHION is OPEN there (call 6).
 
 ---
 
@@ -402,6 +421,7 @@ MODULE_DECLARATION:
 |`COPING`|L4 `coping_strategy` holds the strategy.|Still planned, narrowed to the two scores.|
 |`DECOMP`|L5 `wound_work` covers how a wound is worked, not the breakdown pattern.|Still planned. Depends on COPING.|
 |`PHYS`|L2 `physiology_stack` is a text checklist. The typed fields here go beyond it.|Still planned. Reads `physiology_stack`.|
+|`LOOK` vs `PHYS`, `FASHION` (2026-10-12)|LOOK layer 1 holds `body_type` and layer 2 holds `age_presentation`; LOOK wardrobe `dress` holds `body_display`.|OPEN (LOOK call 6). Rec: PHYS keeps `physicality_source`, `distinguishing_marks`, `beauty_read`, `physical_confidence`; FASHION keeps the social-signal fields and drops `body_display`.|
 
 An MS reads the vertical slice and reports one verdict per module. Chief rules the verdict: absorbed, retired, or still planned. The author then records where each variable went in the Absorbed Modules table.
 
@@ -449,7 +469,7 @@ These modules have been identified as potential extensions but do not yet have v
 
 ```
 Independent (no dependencies):
-  WALK, COMBAT, MUSIC, FASHION, COPING, PHYS, DUALISM
+  WALK, COMBAT, MUSIC, FASHION, COPING, PHYS, DUALISM, LOOK (active 1.0.0)
 
 Single dependency:
   DECOMP → COPING
@@ -477,3 +497,4 @@ Build order for maximum independence: WALK → PHYS → COMBAT → FASHION → M
 |1.1.1|2026-10-05|BOLO 102 batch A (Chief: "All recs go"): DESIGN and LOL_TAX counts set to 12 to match the 12-row mapping table.|
 |1.1.2|2026-10-05|BOLO 102 batch C (Chief: "all recs"): C11, who reports and who rules an audit verdict (absorbed, retired, still planned).|
 |1.2.0|2026-10-05|BOLO 102 stage 2 (Chief: "My word"): call 4, the DUALISM variables carry the `Static` or `Dynamic` tag the module architecture now requires.|
+|1.3.0|2026-10-12|BOLO 121 layers (Chief: "All recommendations … Go layers"): MOD.LOOK registered active at 1.0.0, tier 2, L2 VITAL, 16 variables; overview row, Active Modules entry, dependency map. Audit row opened for the LOOK vs PHYS and FASHION overlap (LOOK call 6).|
