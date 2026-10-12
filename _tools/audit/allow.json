@@ -17,6 +17,7 @@
   {"file": "BOLO.md", "contains": "MIL-STD", "why": "military standards"},
   {"file": "STATE.md", "contains": "MIL-STD", "why": "military standards"},
   {"file": "BOLO.md", "contains": "sex tourism & HIV", "why": "a book title in the library"},
-  {"file": "BOLO.md", "contains": "sexual health certificate", "why": "a certificate program name (BOLO 105)"}
+  {"file": "BOLO.md", "contains": "sexual health certificate", "why": "a certificate program name (BOLO 105)"},
+  {"file": "BOLO.md", "contains": "THE HOUSE NET", "why": "Chief's literal house, whole-house headset coverage (BOLO 126)"}
  ]
 }
