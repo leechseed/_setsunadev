@@ -1,0 +1,373 @@
+{
+ "bolo": {
+  "n": 121,
+  "title": "REVERSE THE HARVEST: top posts per board become labeled examples, and the engine learns to tag the whole corpus",
+  "trunk": "ORANGE",
+  "issued": "2026-10-06",
+  "asof": "2026-10-12",
+  "s": "open",
+  "status": "🟢 **Re-pull round 2 landed 10/11** · 627 new images loaded into the DARKROOM · the board-as-label matcher is still the build.",
+  "decider": "HOTLINE ACTUAL",
+  "feeds": "the DARKROOM taxonomy engine (`_PRIVATE/taxonomy_engine/`) · the girl lane",
+  "related": [
+   {
+    "n": 44,
+    "why": "BOLO 44 built the tag rail and zero-shot tagging. This row adds board labels and example images to that rail."
+   },
+   {
+    "n": 28,
+    "why": "BOLO 28 names the DARKROOM method that this row extends, as the row itself states."
+   }
+  ],
+  "home": "BOLO.md · row 121",
+  "card": "none",
+  "version": "v0.1 · DOPE SHEET"
+ },
+ "mantra": [
+  {
+   "k": "speed",
+   "w": "Speed",
+   "line": "The pull and load scripts already run, and round 2 loaded 627 more images on 10/11."
+  },
+  {
+   "k": "focus",
+   "w": "Focus",
+   "line": "Each board is one label. Its top posts are that label's examples. The matcher is the one open build."
+  },
+  {
+   "k": "boldness",
+   "w": "Boldness",
+   "line": "Chief's corrections feed back as new examples, so the engine's accuracy climbs with use."
+  }
+ ],
+ "paragraphs": [
+  {
+   "id": "S",
+   "name": "Situation",
+   "kind": "list",
+   "plain": "Where this came from: what Chief said, what already exists, and what the record shows now.",
+   "strand": {
+    "last": "BOLO 44 built the tag rail and zero-shot tagging. The DARKROOM already tags the corpus, but only from text prompts.",
+    "plan": "Pull the top posts per board and use them as labeled examples. The engine then tags every image in the corpus.",
+    "you": "You spoke this on 10/6 and ruled \"all recs\". The taxonomy ruling 7 is lifted, with limits.",
+    "next": "Claude builds the board-as-label matcher. Claude drafts the body-part board list and checks each board against the archive."
+   },
+   "groups": [
+    {
+     "label": "The transmission · verbatim",
+     "items": [
+      {
+       "t": "\"how we used Reddit as a reference for body parts to get the … pictures that I scanned before … we reverse engineer it … pull … top … images per board and then reference them under the … body part … the AI engine uses that as a way to then feed into coding in everything else that I already pulled … I'll be also adding updates to that library … it can automate the accuracy\"",
+       "s": "done",
+       "when": "10/6"
+      },
+      {
+       "t": "\"getting those images from Reddit … for the girls\"",
+       "s": "done",
+       "when": "10/8"
+      }
+     ]
+    },
+    {
+     "label": "What exists already",
+     "items": [
+      {
+       "t": "The scripts `ref_pull.py` and `ref_load.py` pull and load the images. Claude built both on 10/6.",
+       "s": "done"
+      },
+      {
+       "t": "The script `embed_pass.py` makes image embeddings. Each label's examples become a reference point.",
+       "s": "done"
+      },
+      {
+       "t": "BOLO 44 gave the DARKROOM its tag rail and zero-shot tagging.",
+       "s": "done"
+      }
+     ]
+    },
+    {
+     "label": "What the record says",
+     "items": [
+      {
+       "t": "Chief ruled \"all recs\" on 10/6. Taxonomy ruling 7 is lifted: private labeled examples only, never reposted.",
+       "s": "done",
+       "when": "10/6"
+      },
+      {
+       "t": "By 10/7 the pull held 18 boards and about 6,270 images on `Q:un\\_REDDIT\\`. The DARKROOM has straight and gay modes.",
+       "s": "done",
+       "when": "10/7"
+      },
+      {
+       "t": "Six girl boards came back thin at the 1,000 floor, with 1 to 68 images each. The second archive, Arctic Shift, answered 422 \"slow down\".",
+       "s": "done",
+       "when": "10/8"
+      },
+      {
+       "t": "The re-pull finished on 10/9. The six girl boards went from 162 images to 1,198. One board stayed dead at 4 images.",
+       "s": "done",
+       "when": "10/9"
+      },
+      {
+       "t": "Re-pull round 2 landed on 10/11. Five boards loaded 627 images. One board came back empty and one stayed dead. Claude recommends dropping both.",
+       "s": "done",
+       "when": "10/11"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "M",
+   "name": "Mission",
+   "kind": "mission",
+   "plain": "A mission is a task plus the reason for it. This one's reason is that the Reddit boards already sort images by body part, so each board can teach the engine a label.",
+   "strand": {
+    "last": "Round 2 of the re-pull landed on 10/11. Five boards loaded 627 new images into the DARKROOM.",
+    "plan": "Claude turns each board into a label and its top posts into that label's examples. Then the engine tags the whole corpus.",
+    "you": "You ruled \"all recs\" on 10/6. Your DARKROOM corrections become new examples.",
+    "next": "You say go, and Claude builds the board-as-label matcher."
+   },
+   "task": "Turn every pulled Reddit board into a label, with its top posts as that label's examples,",
+   "intent": "in order to let the DARKROOM engine tag the whole corpus by body part, and get more accurate as you correct it.",
+   "spoken": "\"we reverse engineer it … pull … top … images per board and then reference them under the … body part … the AI engine uses that as a way to then feed into coding in everything else that I already pulled … it can automate the accuracy\"",
+   "endstate": [
+    "Every pulled board maps to one label on the tag rail.",
+    "The engine tags every corpus image by its nearest board examples.",
+    "Your DARKROOM corrections feed back in as new examples.",
+    "The dead and empty boards are dropped, and the video-heavy boards have a video step."
+   ]
+  },
+  {
+   "id": "E",
+   "name": "Execution",
+   "kind": "phases",
+   "plain": "What happened between the order and today, and what is left to build.",
+   "strand": {
+    "last": "The pull and load scripts work. Round 2 added 627 images on 10/11.",
+    "plan": "Claude builds the board-as-label matcher. Then each corpus image gets tagged by its nearest reference points.",
+    "you": "You ruled \"all recs\" on 10/6. Your DARKROOM corrections become new examples.",
+    "next": "Claude drafts the body-part board list. Claude checks each board against the archive."
+   },
+   "main_effort": "Build the board-as-label matcher, so each board becomes a label and its top posts become that label's examples.",
+   "phases": [
+    {
+     "n": 0,
+     "t": "**Pull and load built.** Claude wrote `ref_pull.py` and `ref_load.py`. Six boards pulled first, 300 posts each at 1,000+.",
+     "s": "done",
+     "when": "10/6"
+    },
+    {
+     "n": 1,
+     "t": "**First wave landed.** The pull held 18 boards and about 6,270 images on `Q:un\\_REDDIT\\`, with straight and gay modes.",
+     "s": "done",
+     "when": "10/7"
+    },
+    {
+     "n": 2,
+     "t": "**Tier-2 pass re-tagged the corpus** with the V set in.",
+     "s": "done",
+     "when": "10/7"
+    },
+    {
+     "n": 3,
+     "t": "**Girl lane re-pull.** Six girl boards re-pulled at a 250 floor (provisional). The six boards went from 162 images to 1,198. 1,036 loaded into the DARKROOM.",
+     "s": "done",
+     "when": "10/9"
+    },
+    {
+     "n": 4,
+     "t": "**Re-pull round 2.** The script `run_repull2.sh` lowered the floors on the thin boards. Five boards loaded 627 new images.",
+     "s": "done",
+     "when": "10/11"
+    },
+    {
+     "n": 5,
+     "t": "**Board-as-label matcher.** Claude builds the first step on go: map the original boards to the tag rail's labels.",
+     "s": "open"
+    },
+    {
+     "n": 6,
+     "t": "**Body-part board list.** Claude drafts the list and checks each board against the archive.",
+     "s": "open"
+    },
+    {
+     "n": 7,
+     "t": "**Video step.** The video-heavy boards need a video step before they can load.",
+     "s": "open"
+    }
+   ],
+   "coord": [],
+   "running": [],
+   "groups": []
+  },
+  {
+   "id": "A",
+   "name": "Admin & Logistics",
+   "kind": "files",
+   "plain": "Where this row's files live and what it costs.",
+   "strand": {
+    "last": "Round 2 wrote its log to `_PRIVATE/reference/repull2.log`.",
+    "plan": "Claude keeps the examples private and never redistributes them. The engine keeps embeddings and thumbnails and can drop the full images.",
+    "you": "You spent nothing on this row. The guard is adult boards only.",
+    "next": "The matcher build adds no new files yet."
+   },
+   "files": [
+    {
+     "path": "BOLO.md",
+     "what": "row 121, the order spoken 10/6",
+     "s": "done"
+    },
+    {
+     "path": "_PRIVATE/reference/queue.txt",
+     "what": "the board list for the pull",
+     "s": "done"
+    },
+    {
+     "path": "_PRIVATE/reference/run_repull.sh",
+     "what": "the girl-lane re-pull script, 250 floor",
+     "s": "done"
+    },
+    {
+     "path": "_PRIVATE/reference/run_repull2.sh",
+     "what": "the round 2 re-pull script, lower floors",
+     "s": "done"
+    },
+    {
+     "path": "_PRIVATE/reference/repull2.log",
+     "what": "the round 2 detail",
+     "s": "done"
+    },
+    {
+     "path": "_PRIVATE/taxonomy_engine/",
+     "what": "the DARKROOM taxonomy engine, home of `embed_pass.py`",
+     "s": "open"
+    },
+    {
+     "path": "Q:un\\_REDDIT\\",
+     "what": "the pulled images, about 6,270 by 10/7",
+     "s": "done"
+    }
+   ],
+   "cost": [
+    {
+     "k": "images",
+     "v": "about 6,270 by 10/7 · +1,036 girl lane 10/9 · +627 round 2 10/11"
+    },
+    {
+     "k": "money",
+     "v": "none spent in the sources"
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "name": "Command & Signal",
+   "kind": "list",
+   "plain": "Who calls what. The pulls are done; the matcher waits on one word from you.",
+   "strand": {
+    "last": "The pulls finished on 10/11. Every board that answered is loaded.",
+    "plan": "Claude builds the matcher, then drafts the body-part board list.",
+    "you": "You give the go on the matcher and rule the two dropped boards.",
+    "next": "Say \"go 121\" and the matcher build starts."
+   },
+   "groups": [
+    {
+     "label": "Who decides",
+     "items": [
+      {
+       "t": "**ACTUAL**: which boards stay, the go on each build, and every DARKROOM correction. **Claude**: the pulls, the loads, the matcher, and the board list.",
+       "s": "held"
+      }
+     ]
+    },
+    {
+     "label": "The gate",
+     "items": [
+      {
+       "t": "**Waiting on go.** The matcher is the next build. Nothing else blocks it.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "Signal",
+     "items": [
+      {
+       "t": "Private detail lives in `_PRIVATE/reference/`. This sheet carries generic lines only.",
+       "s": "ruled"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "name": "Log",
+   "kind": "log",
+   "plain": "Every transmission on this row, in order.",
+   "strand": {
+    "last": "Claude's round 2 re-pull landed on 10/11, the newest entry.",
+    "plan": "The next entry lands when the matcher is built.",
+    "you": "You spoke the order on 10/6, then the girl lane on 10/8.",
+    "next": "Your word on the body-part board list."
+   },
+   "entries": [
+    {
+     "when": "10/6",
+     "who": "Chief",
+     "t": "\"how we used Reddit as a reference for body parts to get the … pictures that I scanned before … we reverse engineer it … pull … top … images per board and then reference them under the … body part … the AI engine uses that as a way to then feed into coding in everything else that I already pulled … I'll be also adding updates to that library … it can automate the accuracy\""
+    },
+    {
+     "when": "10/6",
+     "who": "Chief",
+     "t": "\"all recs\" — taxonomy ruling 7 lifted with limits; the first wave of six boards pulled."
+    },
+    {
+     "when": "10/7",
+     "who": "Claude",
+     "t": "18 boards, about 6,270 images on `Q:un\\_REDDIT\\`, straight and gay modes in the DARKROOM. The tier-2 pass re-tagged the corpus."
+    },
+    {
+     "when": "10/8",
+     "who": "Chief",
+     "t": "\"getting those images from Reddit … for the girls\""
+    },
+    {
+     "when": "10/8",
+     "who": "Claude",
+     "t": "Six girl boards came back thin. The pull script now waits out the 422 errors and pages slower. The six boards re-pull at a 250 floor."
+    },
+    {
+     "when": "10/9",
+     "who": "Claude",
+     "t": "Re-pull done. The six girl boards went from 162 images to 1,198. 1,036 loaded into the DARKROOM. One board stayed dead."
+    },
+    {
+     "when": "10/11",
+     "who": "Claude",
+     "t": "Re-pull round 2 landed. Five boards loaded 627 new images. One board came back empty and one stayed dead. Claude recommends dropping both."
+    }
+   ]
+  }
+ ],
+ "frago": {
+  "mission": "Turn every pulled Reddit board into a label, with its top posts as that label's examples, in order to let the DARKROOM engine tag the whole corpus by body part, and get more accurate as you correct it.",
+  "order": "**Say \"go 121\": Claude builds the board-as-label matcher, mapping each board to the tag rail's labels.**",
+  "default": "Silence: the 627 new images sit in the DARKROOM, and the matcher waits.",
+  "calls": [
+   {
+    "q": "The two dead boards from round 2 (one empty, one stuck on the same 3 posts)",
+    "options": "DROP both (rec) · keep and retry later",
+    "default": "DROP (rec)",
+    "s": "open"
+   },
+   {
+    "q": "What builds first after the matcher?",
+    "options": "The body-part board list (rec) · the video step for video-heavy boards",
+    "default": "Board list (rec)",
+    "s": "open"
+   }
+  ]
+ }
+}

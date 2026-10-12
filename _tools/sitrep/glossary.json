@@ -1205,5 +1205,12 @@
   "st": "ruled",
   "d": "JUDY's deck at 127.0.0.1:8787/traffic: the last five replies in tabs, each reply's open calls with Take rec and an answer box, Take all recs, and the net chart of open threads. Opens as its own window at every launch (the DECK station). RULED 10/6.",
   "w": "SOP.md §1"
+ },
+ "bolo121": {
+  "t": "BOLO 121",
+  "k": "bolo",
+  "d": "REVERSE THE HARVEST: top posts per board become labeled examples, and the engine learns to tag the whole corpus.",
+  "w": "https://claude.ai/artifact/JB5Xw7BwCCpB4XeqzpjoXg",
+  "st": "open"
  }
 }
