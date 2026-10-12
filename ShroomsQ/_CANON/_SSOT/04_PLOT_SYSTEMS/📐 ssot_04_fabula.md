@@ -1,11 +1,11 @@
 ---
 type: ssot_04_fabula
 category: plot_system
-version: 1.0.1
+version: 1.1.0
 tier: fabula
-last_updated: 2026-10-11
+last_updated: 2026-10-12
 applies_to: [OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX, all future IPs]
-status: "v1.0.1 2026-10-11, F2 and F10 carried through (ids and prose). v1.0.0 2026-10-11, batch 1 F1-F12 ruled ('Take all recs'): stories values, era-prefixed ids, location rule, 2099/2199 held as lineage, Severance after the beam, two Severances kept apart, the removal event, the Feed event, long actor names. v0.3.0 2026-10-05, BOLO 102 stage 2 (Chief: \"My word\"): the event record gains `source_kind`, `canon_source`, `produces`, `scheduled` and the 08 time code beside the calendar year; the no-calendar line is corrected. v0.1.7 2026-09-29, BOLO 91 rulings: Anna Colson's origin fabula-filled (ice-skating death → the scientist's rebuild → the scientist's attachment → the father's reclaim → the scientist's own kept copy, a second Colson with her own origin node); Tori's family origin (the trash-zone delta, not Bikini Atoll) added as L7 ORIGIN context, the car crash confirmed as her WOUND. v0.1.4 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — THE WORLD CLOCK gets the `backstory` movement tag for deep pre-M1 history, `event_id` grammar `backstory_<slug>`. v0.1.3 2026-09-24: BOLO 77 wave 3, plot doc OPEN call 12 executed — sixth event record `m2_first_sync_verified` added (row 9's rating-system / 'Verified' / reach-vs-pull-out moment), sourced from oxo-scene-card-M2-row9.md rather than victoria-midnight.md; ssot_04_plot_system.md's row-9 P2/P3/P5/P9 now read it. v0.1.1 2026-09-24: all six OPEN calls RULED (Chief: \"go on all recommendations\"); the v1.1 patch landed in the state architecture. v0.1.0 draft — BOLO 77 wave 1, \"go 77\" ruled 2026-09-24; Tori-only instance, EVIL CHECK events reserved for wave 2, state architecture v1.1 patch spec ships inside this doc"
+status: "v1.1.0 2026-10-12, batch 2 recs ruled ('All recommendations'): the unplaced_ id prefix, the removal's inferred cause edge, places before events in eras 1, 3 and 5, A Land Remembered as era 1's skeleton (L1-L4), the era 5 exodus note held as lineage. v1.0.1 2026-10-11, F2 and F10 carried through (ids and prose). v1.0.0 2026-10-11, batch 1 F1-F12 ruled ('Take all recs'): stories values, era-prefixed ids, location rule, 2099/2199 held as lineage, Severance after the beam, two Severances kept apart, the removal event, the Feed event, long actor names. v0.3.0 2026-10-05, BOLO 102 stage 2 (Chief: \"My word\"): the event record gains `source_kind`, `canon_source`, `produces`, `scheduled` and the 08 time code beside the calendar year; the no-calendar line is corrected. v0.1.7 2026-09-29, BOLO 91 rulings: Anna Colson's origin fabula-filled (ice-skating death → the scientist's rebuild → the scientist's attachment → the father's reclaim → the scientist's own kept copy, a second Colson with her own origin node); Tori's family origin (the trash-zone delta, not Bikini Atoll) added as L7 ORIGIN context, the car crash confirmed as her WOUND. v0.1.4 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — THE WORLD CLOCK gets the `backstory` movement tag for deep pre-M1 history, `event_id` grammar `backstory_<slug>`. v0.1.3 2026-09-24: BOLO 77 wave 3, plot doc OPEN call 12 executed — sixth event record `m2_first_sync_verified` added (row 9's rating-system / 'Verified' / reach-vs-pull-out moment), sourced from oxo-scene-card-M2-row9.md rather than victoria-midnight.md; ssot_04_plot_system.md's row-9 P2/P3/P5/P9 now read it. v0.1.1 2026-09-24: all six OPEN calls RULED (Chief: \"go on all recommendations\"); the v1.1 patch landed in the state architecture. v0.1.0 draft — BOLO 77 wave 1, \"go 77\" ruled 2026-09-24; Tori-only instance, EVIL CHECK events reserved for wave 2, state architecture v1.1 patch spec ships inside this doc"
 rung: standard
 dependencies: ["ssot_04_plot_system", "ssot_03_setting_system", "ssot_02_character_state_architecture", "ssot_02_character_astrology_12_layer_mapping", "ssot_01_scale_ladder"]
 trunk: BLACK
@@ -165,9 +165,11 @@ Bal's process model behind `cause`, `enable`, `embed`, and `specify`: three phas
 | **2 · the DCUS era** | OVEREXITOUT (*The Outliers*) · EVIL CHECK · TREMOR CULT | Earth, the Delta Coast | opens at `backstory_dcus_rebrand`; the only era with story event records (THE INSTANCE) |
 | **3 · the LAKAD era** | LAKAD (codename) | cislunar space | band only; no events on record |
 | **4 · the ASTRO7EX era** | ASTRO7EX | the Moon | band only; its backstory's own events are not yet loaded |
-| **5 · the beyond era** ⧗ | ⧗ none yet | past the Moon | band only; named "beyond" (Chief, 2026-09-29 session 4); no story or events yet |
+| **5 · the beyond era** ⧗ | ⧗ none yet | past the Moon | band only; named "beyond" (Chief, 2026-09-29 session 4); no story or events yet. Lineage candidate ⧗ (G11, 2026-10-12): a Red Hills-tagged note holds a space-exodus premise, one ship reaching a planet after 1000 years (digest.md:680); held, not canon, until Chief rules whether era 5 means a landfall |
 
 **Era 1 inserted (RULED 2026-09-29, Chief: "era one will be the Skeeter Creek … it'll stay the same after"; Red Hills placed in era 1 on the same ruling).** Every later era moves down one number; their order is unchanged. The seam between 1 and 2 is the Bishops' rebrand of Red Hills Academy as DCUS.
+
+**A Land Remembered is era 1's skeleton (RULED 2026-10-12, Chief: "i want skeeter creek to be heavilly bsed on the book A Land Remembered by Patrick Smith"; L1-L4 "All recommendations").** Patrick D. Smith's novel (1984) follows three generations of one Florida family, 1858-1968: survive the frontier, build the cattle fortune, sell the land and regret it. **L1 · translate, don't transplant:** the Delta Coast stays; the book's scrub, cattle, hurricanes and land boom become Delta Coast equivalents. **L2 · three generations span era 1:** the founding generation (survival), the Red Hills generation (the fortune), the generation that sells the land that becomes DCUS. **L3 · the skeleton, not the cast:** names and people are original; the generational arc, the frontier, the allies and the price of progress carry over. **L4 · the ending is the hinge into era 2** (provisional): the last generation's regret over the sold land is what DCUS is built on. Chief's own breakdown of the book sits in the vault (packet note M32).
 
 **The calendar and the Moon Severance (RULED 2026-10-01, BOLO 96, Chief: "all rec"; held as lineage, F4 ruled 2026-10-11).** OXO's present is **2199**; the **Moon Severance** is **2099**, one hundred years back, in **era 1**. Both years stay on the Outliers clock only, flagged lineage. No ASTRO7EX event carries a `calendar_year`, so Vivian's 2091 stands alone. One note says the Kessler storm has stood fifty years; the 2099 to 2199 span is one hundred. That note is held as lineage, part of the PSP Fella opening (F6). The Moon colony went up in the 2050s–70s and had turned hell by the 2090s; unable to leave any other way, **the Moon cut itself off on purpose**: it detonated nukes in orbit and set off a Kessler cascade that walls Earth off from space. The wreck has been falling ever since, onto the Power Line ([WB-INS-0004](../05_WORLDBUILDING_SYSTEMS/catalog/INS/WB-INS-0004.md)). Some of the Moon's people came back down before the wall closed; their descendants survived in the trash pit and are **the Outliers**, carrying Moon-engineered radiation resistance and a sleeper mission in their blood they don't know they carry: take Earth so the Moon can come home (lineage ⧗; what the DNA does is Chief's to voice). The early Moon colony is era 1's buried secret; **ASTRO7EX (era 4) is Earth's return to the Moon**. Id: `skeeter_creek_backstory_moon_severance`. Ruled 2026-10-11 (F5): the beam comes first, then the Severance. ASTRO7EX's own "Moon Severance" (its Dramatica reports) is a separate event with its own id, `astro7ex_backstory_moon_severance`, until Chief voices a link. Source: `_CANON_NODES/outliers-moon-origin-seed.md`.
 
@@ -177,7 +179,7 @@ Bal's process model behind `cause`, `enable`, `embed`, and `specify`: three phas
 
 **The hinge (RULED 2026-09-29, Chief: "number two, yes"): the Deep Meridian beam.** At **Deep Meridian**, a geothermal drill front at a caldera run like a navy (its crews, the Drill Rangers, seal themselves behind rock on suicide missions), a needle probe into "the old city", a pressurized hot-water chamber, loses control and fires **a beam of radiation that punches a hole a mile wide into the sky. The beam signals the quasar that reaches the time of Vivian** (ASTRO7EX), "a century or two after" on the surface. **The Moon Severance** follows it (F5, ruled 2026-10-11). **The AI Collapse** (ASTRO7EX's Dramatica reports, `.ASTRO7EX.SYNC.JOPLIN/`) also follows it ⧗ (order and mechanism not yet placed). In-world holidays: **Laser Core Admissions Day**, the day after **Space Laser Repentance Day**. Source: Chief's Apple Notes 2025 (BOLO 91). Ids (F2, ruled 2026-10-11): `skeeter_creek_deep_meridian_beam`, `astro7ex_backstory_moon_severance`, `astro7ex_backstory_ai_collapse`.
 
-**Superseded, kept as history:** on 2026-02-09 Chief ruled the three "occur simultaneously… one entire eon" (`_CLAUDE_ARCHIVE_2026-08-15/conversations/2026-02-09_main-sonnet.md`). The eon still holds as the umbrella; its inside is now three eras in order. Each era's movements keep their own `Mn` dating; an era prefix (`era: skeeter_creek | dcus | lakad | astro7ex | beyond`) is read when the clock spans stories. Every `event_id` outside era 2 leads with its era prefix, like `astro7ex_<slug>` (F2, ruled 2026-10-11). Eras 1, 3 and 5 stay band-only for 1.0.0, each ⧗ stays marked, and Chief fills them by hand (F11). The story list lives in the [story registry](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_story_registry.md) (BOLO 82).
+**Superseded, kept as history:** on 2026-02-09 Chief ruled the three "occur simultaneously… one entire eon" (`_CLAUDE_ARCHIVE_2026-08-15/conversations/2026-02-09_main-sonnet.md`). The eon still holds as the umbrella; its inside is now three eras in order. Each era's movements keep their own `Mn` dating; an era prefix (`era: skeeter_creek | dcus | lakad | astro7ex | beyond`) is read when the clock spans stories. Every `event_id` outside era 2 leads with its era prefix, like `astro7ex_<slug>` (F2, ruled 2026-10-11). Eras 1, 3 and 5 stay band-only for 1.0.0, each ⧗ stays marked, and Chief fills them by hand (F11). **Batch 2 (RULED 2026-10-12, Chief: "All recommendations").** `unplaced_<slug>` is a legal id prefix for an event with no movement yet (G1). Places come before events in eras 1, 3 and 5: Chief hand-builds one place per era before any event record enters it (G3). No event enters those eras until G4, G6, G7 and G11 have Chief's answers (G12). The era 1 to 2 seam stays the Bishops' rebrand, and `backstory_dcus_rebrand` carries no era prefix because it opens era 2 (G5). The two Severance ids stay apart (G9). The story list lives in the [story registry](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_story_registry.md) (BOLO 82).
 
 **Fuzzy and unknown dates.** None of the core narratology sources gives a formal null-value convention for an unknown date (a gap in the theory canon itself, not just this search); this doc's working answer is movement-relative dating — `M1`, `M2`, `M3`… — carried in each event's `time.movement` field, reach and extent filled as ranges or marked unknown rather than left blank. A calendar layer now sits beside it (IF catalog call 1, ruled 2026-10-05): `time.calendar_year` holds the year where canon gives one (OXO's present 2199, the Moon Severance 2099), and `time.time_code` holds the 08 grid coordinate. Both stay null where canon is silent, and this doc never invents either.
 
@@ -411,13 +413,16 @@ stories: [OXO]
 provenance:
   source: "series bible note OB35"
   confidence: inferred
-causal_edges: []   # the link to m1b_crash_jebb_death is not voiced; the crash stays the believed cause
+causal_edges:
+  - type: cause
+    to: "m1b_crash_jebb_death"
+    confidence: inferred   # G2, ruled 2026-10-12; OB35: "a punitive removal, a functional act" (packet.md:1064, 1067); the crash stays the believed cause
 ```
 
-**The Feed's version of an event (F9, ruled 2026-10-11).** The fabula records the true event. The Feed's account is a separate event with `source_kind: institutional`. The two do not conflict. The Miracle Glitch is the worked case, and it is not placed on a movement in canon yet.
+**The Feed's version of an event (F9, ruled 2026-10-11).** The fabula records the true event. The Feed's account is a separate event with `source_kind: institutional`. The two do not conflict. The Miracle Glitch is the worked case, and it is not placed on a movement in canon yet. Its two ids carry the `unplaced_` prefix until Chief places the event; the prefix then becomes the era's (G1, ruled 2026-10-12).
 
 ```yaml
-event_id: "miracle_glitch_destruction"
+event_id: "unplaced_miracle_glitch_destruction"
 transition: "Quinn Bishop and Riley Moss alive -> destroyed"
 actors:
   - actor: "Quinn Bishop"
@@ -441,11 +446,11 @@ provenance:
   confidence: inferred
 causal_edges:
   - type: cause
-    to: "miracle_glitch_feed_record"
+    to: "unplaced_miracle_glitch_feed_record"
 ```
 
 ```yaml
-event_id: "miracle_glitch_feed_record"
+event_id: "unplaced_miracle_glitch_feed_record"
 transition: "no record -> the Feed shows Quinn Bishop and Riley Moss surviving, with a Medal of Honor"
 actors:
   - actor: "the Feed (DCUS Sync system)"
@@ -456,7 +461,7 @@ actors:
     actant_role: object
 kernel_satellite: satellite   # the official telling, not the world's truth
 time:
-  movement: null   # follows miracle_glitch_destruction
+  movement: null   # follows unplaced_miracle_glitch_destruction
   time_code: null
   calendar_year: null
   reach: "unspecified"
@@ -642,6 +647,7 @@ causal_edges: []   # downstream events for the copy are not yet on record — op
 ## Version history
 
 - 10/11 · batch 1 F1–F12 ruled ('Take all recs')
+- **1.1.0 — 2026-10-12.** Batch 2 ruled ('All recommendations'). `unplaced_` id prefix; the Miracle Glitch ids renamed (G1). The removal gets an inferred cause edge to the crash (G2). Places before events in eras 1, 3 and 5 (G3, G12). Seam and Severance ids kept (G5, G9). Era 5 exodus note held as lineage (G11). A Land Remembered is era 1's skeleton (L1-L4, L4 provisional). Hand-build calls G4, G6, G7, G8, G10 and G11's landfall question stay open for Chief.
 - **1.0.1 — 2026-10-11** · F2 and F10 carried through (ids and prose)
 - **1.0.0 — 2026-10-11.** `stories` gains ASTRO7EX, TREMOR_CULT, LAKAD (F1). Era prefix on every `event_id` outside era 2 (F2). `location` holds a 03 address or GAP (F3). 2099 and 2199 held as lineage on the Outliers clock only (F4). Beam first, then the Severance; two Severance ids (F5). Kessler age held as lineage (F6). Delta Coast racing run is M1 (F7). Removal event added (F8). The Feed's record is its own event (F9). Actor names use the ruled long forms (F10). Eras 1, 3 and 5 stay band-only (F11). Method done; instance ⧗ marks stay as marked gaps (F12).
 - **0.3.0 — 2026-10-05.** BOLO 102 stage 2 (Chief: "My word"): the event record gains `source_kind`, `canon_source`, `produces` and `scheduled` (call 5); `time` carries the 08 time code and the calendar year, and the "no calendar layer" line is corrected (call 1); `story_beat` and flag `event_id` stated; the copy's 02 record named; two reader lines added (IF-01-04-06, IF-04-05-01).
