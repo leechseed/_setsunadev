@@ -1243,6 +1243,7 @@ Legacy one-sheets (🧬 MSX · PSY · PHI · MIL, 41 files) predate the spine ke
 | `BVX.1120` | `MIL` | BLACK | MCDP 7 Learning (2020) | U.S. Marine Corps | 81 |
 | `BVX.1121` | `MIL` | BLACK | MCDP 8 Information (2022) | U.S. Marine Corps | 126 |
 | `BVX.1122` | `GAM` | BLACK | GURPS Hot Spots: Renaissance Venice (a worked setting; the first sourcebook distilled as a SETTING-SLICE instance) | Riggsby / Steve Jackson Games | 40 |
+| `BVX.1276` | `LIT` `SET` | BLACK | A Land Remembered (a worked three-generation saga; the era 1 / Skeeter Creek skeleton) | Smith |  |
 
 **Ancients intake 2026-09-03 (`BVX.1108`–`1110`):** web essays, not books — `source_type: article`; Oxman and Ito are CC-BY (JoDS), ParadoxPairs is paradoxpairs.com/kcc. Markdown copies held at `_ARCHIVE/_broodengine/` (`krebs.cycle.of.creativity.md` · `brood.theory.design.and.science.md` · `brood.theory.bermuda.quadrilateral.md`). Distill one-sheets not yet written; `feeds:` pending. The trio is the source of the README's "Bermuda Quadrilateral / Krebs Cycle of Creativity" meta-framework.
 
