@@ -20,7 +20,10 @@ def key(f):   # 2026-10-12.session.md < 2026-10-12-2.session.md < ...-3
 
 def main():
     out = {"staged": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"), "leverage": {}, "sheets": [], "open_at_close": [], "note": ""}
-    boards = sorted(glob.glob(os.path.join(ROOT, "_tools", "sitrep", "boards", "*.json")))
+    def bkey(p):   # 10/12: plain sort put 2026-10-12.json after 2026-10-12-2.json; suffix -N sorts after the bare date
+        m = re.match(r"(\d{4}-\d{2}-\d{2})(?:-(\d+))?\.json$", os.path.basename(p))
+        return (m.group(1), int(m.group(2) or 1)) if m else (os.path.basename(p), 0)
+    boards = sorted(glob.glob(os.path.join(ROOT, "_tools", "sitrep", "boards", "*.json")), key=bkey)
     if boards:
         b = json.load(io.open(boards[-1], encoding="utf-8"))
         vi = next((x for x in b["blocks"] if x["id"] == "VI"), {})
