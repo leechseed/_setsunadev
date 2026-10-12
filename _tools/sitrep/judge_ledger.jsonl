@@ -1,2 +1,4 @@
 {"ts": "2026-10-12T11:35:56", "date": "2026-10-12-3", "src": "assemble", "reruns": ["RACK"], "findings": 2, "long_sentence_blocks": {"0": 1}, "iii": "INDEX"}
 {"ts": "2026-10-12T11:36:52", "date": "2026-10-12-3", "src": "assemble", "reruns": ["RACK"], "findings": 0, "long_sentence_blocks": {}, "iii": "INDEX"}
+{"ts": "2026-10-12T15:03:34", "date": "2026-10-12-4", "src": "assemble", "reruns": ["INDEX", "RACK"], "findings": 2, "long_sentence_blocks": {"0": 1, "I": 1}, "iii": "INDEX"}
+{"ts": "2026-10-12T15:04:39", "date": "2026-10-12-4", "src": "assemble", "reruns": ["INDEX", "RACK"], "findings": 0, "long_sentence_blocks": {}, "iii": "INDEX"}
