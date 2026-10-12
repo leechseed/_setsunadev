@@ -2,7 +2,7 @@
 type: ssot_02_character_systems
 category: field_module
 module_of: ssot_00_module_architecture
-version: 1.0.0
+version: 1.0.1
 tier: standard
 last_updated: 2026-10-12
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
@@ -229,9 +229,9 @@ RULED 2026-10-12 (Chief: "All recommendations, and the fable switch is done. Go 
 4. **Accept rule.** The author accepts every proposed value one at a time; there is no accept-all. Tip: one-at-a-time keeps a reference from silently rewriting a character.
 5. **New body, face, and hair keys.** The new descriptors joined the shared vocabulary the same day, as two rail axes: `part` (the body focus, keyed to the part names the reference boards use) and `hair` (color). Provisional until Chief reads the lists. Tip: the reference database tags images by them from the next automatic pass on.
 
-OPEN:
+RULED 2026-10-12 (Chief: "All recommendations", second pass):
 
-6. **Overlap with MOD.PHYS and MOD.FASHION.** PHYS's `body_type` and `age_presentation` now have homes in LOOK layers 1 and 2, and FASHION's `body_display` sits inside LOOK's wardrobe `dress`. Rec: PHYS stays planned for what LOOK does not hold (`physicality_source`, `distinguishing_marks`, `beauty_read`, `physical_confidence`); FASHION stays planned for the social-signal fields and drops `body_display` to LOOK. Tip: a field lives in one module, so the registry's audit table records where each moved.
+6. **Overlap with MOD.PHYS and MOD.FASHION.** PHYS's `body_type` and `age_presentation` now have homes in LOOK layers 1 and 2, and FASHION's `body_display` sits inside LOOK's wardrobe `dress`. RULED (rec taken): PHYS stays planned for what LOOK does not hold (`physicality_source`, `distinguishing_marks`, `beauty_read`, `physical_confidence`); FASHION stays planned for the social-signal fields and drops `body_display` to LOOK. The registry (1.3.1) records the moves. Tip: a field lives in one module, so the registry's audit table records where each moved.
 
 ---
 
@@ -239,5 +239,6 @@ OPEN:
 
 |Version|Date|Changes|
 |---|---|---|
+|1.0.1|2026-10-12|Call 6 RULED ("All recommendations"): `body_type` and `age_presentation` move from PHYS to LOOK; `body_display` moves from FASHION to LOOK.|
 |1.0.0|2026-10-12|RULED, Chief ("All recommendations … Go layers"): calls 1 to 5 taken as recommended. `attachment_points` written `[VITAL]` to match the registry. The `part` and `hair` axes joined the shared vocabulary (private rail file) the same day. Registry 1.3.0 carries the entry. Call 6 (PHYS and FASHION overlap) opened.|
 |0.1.0|2026-10-12|Draft. Six layers in character-creator order, 16 variables, two-way sync contract, feeds from L2 VITAL and L7 ORIGIN, state-diff example. Awaiting Chief's ruling on five OPEN calls.|

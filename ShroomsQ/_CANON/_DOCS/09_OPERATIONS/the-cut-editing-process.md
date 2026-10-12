@@ -1,9 +1,9 @@
 ---
 type: process_doc
 bolo: 136
-version: 0.1.0
+version: 0.2.0
 date: 2026-10-12
-status: DRAFT (for Chief's ruling)
+status: "RULED 2026-10-12 (Chief: 'All recommendations'): calls 1 to 5; call 2 changed by the pmv:ref breakdown, 16:9 master first"
 trunk: ORANGE / BLACK
 ---
 
@@ -189,6 +189,8 @@ A montage cut to a track needs the track's structure before any footage.
 
 ## 4. The vertical variant (9:16)
 
+The vertical cut is the promo version, cut down from the 16:9 master (call 2).
+
 1. **Create the timeline at 9:16.** Start at 1080 by 1920 pixels. Check in Resolve for timeline resolution settings.
 2. **Reframe wide footage.** Try Smart Reframe, an automatic tool. Check in Resolve whether the free version has it.
 3. **Reframe by hand if needed.** Set keyframes on Position and Zoom, one at the start and one at the end of the move.
@@ -245,14 +247,15 @@ Ten references the process leans on. Chief reads them in the order the stations 
 | Color Correction Handbook | Alexis Van Hurkman | 2nd ed., 2013 | 7 | Scopes, grading steps and look-building, in depth. |
 | The Beginner's Guide to DaVinci Resolve 19 | Blackmagic Design | 2024 | All Resolve pages | Where each tool lives. **Free official PDF from Blackmagic's site.** |
 
-## 8. Calls for Chief
+## 8. Calls (RULED 2026-10-12, Chief: "All recommendations")
 
-1. **Folder root.** Rec: `Q:\EDITS\` with one subfolder per job code. Tip: a short fixed root keeps paths short and backups simple.
-2. **Default aspect ratios.** Rec: 9:16 as the default, with 16:9 as the second master on request. Tip: vertical is where short clips are posted.
-3. **Proxies for iPhone footage.** Rec: proxies on for any clip over 1080p or 60 fps. Tip: iPhone files are heavy to decode, and proxies keep playback smooth on most machines.
-4. **Loudness target.** Rec: about -14 LUFS integrated with peaks under -1 dB. Tip: check each platform's current spec before delivery, because these numbers change.
-5. **Client intake.** Rec: no work starts until the 18+ confirmation, the records confirmation and payment are on file. Tip: put these three lines at the top of the brief template so they cannot be missed.
+1. **Folder root.** RULED (rec taken): `Q:\EDITS\` with one subfolder per job code. Tip: a short fixed root keeps paths short and backups simple.
+2. **Default aspect ratios.** RULED: 16:9 is the master; 9:16 is the cut-down for promo posts. The draft rec said 9:16 first; the pmv:ref breakdown (38 of 42 favorites at 16:9, 3 at 9:16) changed it. Tip: deliver the format the buyers watch; cut the vertical for the feed.
+3. **Proxies for iPhone footage.** RULED (rec taken): proxies on for any clip over 1080p or 60 fps. Tip: iPhone files are heavy to decode, and proxies keep playback smooth on most machines.
+4. **Loudness target.** RULED (rec taken): about -14 LUFS integrated with peaks under -1 dB. Tip: check each platform's current spec before delivery, because these numbers change.
+5. **Client intake.** RULED (rec taken): no work starts until the 18+ confirmation, the records confirmation and payment are on file. Tip: put these three lines at the top of the brief template so they cannot be missed.
 
 ## 9. Version history
 
+- 0.2.0, 2026-10-12: RULED, Chief ("All recommendations"). Calls 1, 3, 4, 5 as recommended; call 2 flipped to a 16:9 master on the pmv:ref breakdown. The breakdown's style sheets (rapid · middle · long hold) live in the private deconstruction folder.
 - 0.1.0, 2026-10-12: draft.

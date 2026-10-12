@@ -2,7 +2,7 @@
 type: ssot_00_foundations
 category: module_registry
 module_of: ssot_00_module_architecture
-version: 1.3.0
+version: 1.3.1
 tier: foundation
 last_updated: 2026-10-12
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
@@ -45,10 +45,10 @@ This is the complete catalog of every field module that attaches to the LEECHSEE
 |`SEX_PROF`|Sexuality Profile|L9 EROS|3|**absorbed**|0 (was 5)|No|No|
 |`MUSIC`|Music Interests|L8 IMPRINT|3|**planned**|4|No|No|
 |`VOICE`|Vocal Signature|L2, L3|3|**absorbed**|0 (was 4)|No|No|
-|`FASHION`|Fashion/Aesthetic Profile|L3 SOCIAL|3|**planned**|5|No|No|
+|`FASHION`|Fashion/Aesthetic Profile|L3 SOCIAL|3|**planned**|4 (was 5)|No|No|
 |`COPING`|Coping Mechanism Catalog|L4 WILL|3|**planned** (narrowed)|2 (was 4)|Yes|Yes|
 |`DECOMP`|Decompensation Profile|L5 WOUND|3|**planned**|4|No|Yes|
-|`PHYS`|Physical Detail|L2 VITAL|3|**planned**|6|No|No|
+|`PHYS`|Physical Detail|L2 VITAL|3|**planned**|4 (was 6)|No|No|
 |`CULTURE`|Cultural Conditioning|L7, L8|3|**conceptual**|⏸|⏸|⏸|
 |`SPIRIT`|Spiritual Framework|L11 DESTINY|3|**conceptual**|⏸|⏸|⏸|
 |`DESIGN`|Design Focus Power Board|Meta|3|**conceptual**|12|Yes|No|
@@ -303,7 +303,6 @@ MODULE_DECLARATION:
 |`MOD.FASHION.signal_intent`|`enum`|`{invisible, functional, aspirational, defiant, seductive, institutional}`|
 |`MOD.FASHION.grooming_level`|`int` SC-12|0 = completely unmanaged; 12 = meticulously curated.|
 |`MOD.FASHION.brand_relationship`|`enum`|`{indifferent, hostile, strategic, devotional, aspirational}`|
-|`MOD.FASHION.body_display`|`enum`|`{concealed, functional, highlighted, weaponized, neutral}`|
 
 **Reads:** `T1.SOCIAL.base_value`, `T3.EROS.shame_index`
 
@@ -398,11 +397,9 @@ MODULE_DECLARATION:
 
 |Path|Type|Behavior|
 |---|---|---|
-|`MOD.PHYS.body_type`|`enum`|`{lean, athletic, heavy, wiry, compact, imposing, fragile, unremarkable}`|
 |`MOD.PHYS.physicality_source`|`enum`|`{labor, sport, military, dance, martial_art, genetic, neglect, institutional}`|
 |`MOD.PHYS.distinguishing_marks`|`array_str`|Scars, tattoos, physical tells|
 |`MOD.PHYS.beauty_read`|`str`|How the character's appearance is received — "striking but nonconforming", "invisible", "threatening"|
-|`MOD.PHYS.age_presentation`|`enum`|`{younger_than_actual, accurate, older_than_actual, ambiguous}`|
 |`MOD.PHYS.physical_confidence`|`int` SC-12|0 = disconnected from body; 12 = body is primary instrument of identity.|
 
 **Reads:** `T1.VITAL.base_value`
@@ -421,7 +418,7 @@ MODULE_DECLARATION:
 |`COPING`|L4 `coping_strategy` holds the strategy.|Still planned, narrowed to the two scores.|
 |`DECOMP`|L5 `wound_work` covers how a wound is worked, not the breakdown pattern.|Still planned. Depends on COPING.|
 |`PHYS`|L2 `physiology_stack` is a text checklist. The typed fields here go beyond it.|Still planned. Reads `physiology_stack`.|
-|`LOOK` vs `PHYS`, `FASHION` (2026-10-12)|LOOK layer 1 holds `body_type` and layer 2 holds `age_presentation`; LOOK wardrobe `dress` holds `body_display`.|OPEN (LOOK call 6). Rec: PHYS keeps `physicality_source`, `distinguishing_marks`, `beauty_read`, `physical_confidence`; FASHION keeps the social-signal fields and drops `body_display`.|
+|`LOOK` vs `PHYS`, `FASHION` (2026-10-12)|LOOK layer 1 holds `body_type` and layer 2 holds `age_presentation`; LOOK wardrobe `dress` holds `body_display`.|RULED 2026-10-12 (LOOK call 6, rec taken): moved to LOOK. PHYS keeps `physicality_source`, `distinguishing_marks`, `beauty_read`, `physical_confidence`; FASHION keeps the social-signal fields and drops `body_display`.|
 
 An MS reads the vertical slice and reports one verdict per module. Chief rules the verdict: absorbed, retired, or still planned. The author then records where each variable went in the Absorbed Modules table.
 
@@ -497,4 +494,5 @@ Build order for maximum independence: WALK → PHYS → COMBAT → FASHION → M
 |1.1.1|2026-10-05|BOLO 102 batch A (Chief: "All recs go"): DESIGN and LOL_TAX counts set to 12 to match the 12-row mapping table.|
 |1.1.2|2026-10-05|BOLO 102 batch C (Chief: "all recs"): C11, who reports and who rules an audit verdict (absorbed, retired, still planned).|
 |1.2.0|2026-10-05|BOLO 102 stage 2 (Chief: "My word"): call 4, the DUALISM variables carry the `Static` or `Dynamic` tag the module architecture now requires.|
+|1.3.1|2026-10-12|LOOK call 6 RULED ("All recommendations"): `MOD.PHYS.body_type` and `MOD.PHYS.age_presentation` move to LOOK layers 1 and 2; `MOD.FASHION.body_display` moves to LOOK wardrobe. PHYS 6 → 4 variables, FASHION 5 → 4.|
 |1.3.0|2026-10-12|BOLO 121 layers (Chief: "All recommendations … Go layers"): MOD.LOOK registered active at 1.0.0, tier 2, L2 VITAL, 16 variables; overview row, Active Modules entry, dependency map. Audit row opened for the LOOK vs PHYS and FASHION overlap (LOOK call 6).|
