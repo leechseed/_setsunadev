@@ -4,7 +4,7 @@ title: "BVX-LEARN master index"
 type: index
 status: complete
 created: 2026-08-15
-next_id: BVX.1275
+next_id: BVX.1277   # 1276 minted 10/12 for A Land Remembered (1275 already used elsewhere; the index lagged)
 ---
 
 # BVX-LEARN — master index
