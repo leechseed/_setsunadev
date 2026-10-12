@@ -1,0 +1,138 @@
+<title>The Crew Roster</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&display=swap">
+<style>
+/* layout: a 44px strip; the four seats as a band; then every console as a card (who · reads · writes · rules · the dials) grouped by procedure */
+:root{--bg:#141016;--panel:#1d1720;--panel2:#271f2b;--line:#3a2f3d;--ink:#efe6ee;--ink2:#b9aab8;--ink3:#857684;--accent:#ff5a1f;
+ --cdr:#ff5a1f;--ms:#7fd1b9;--ps:#6fa8ff;--range:#f2b134;
+ --display:"Barlow Condensed",system-ui,sans-serif;--body:system-ui,-apple-system,"Segoe UI",sans-serif;--mono:ui-monospace,Consolas,monospace;color-scheme:dark}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--body)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;height:44px;display:flex;align-items:center;gap:12px;padding:0 16px;background:var(--panel);border-bottom:1px solid var(--line)}
+header b{font:800 18px var(--display);letter-spacing:.06em;color:var(--accent);text-transform:uppercase}
+header span{margin-left:auto;color:var(--ink3);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+main{max-width:1040px;margin:0 auto;padding-block:16px 60px;padding-inline:16px}
+.lead{color:var(--ink2);max-width:76ch}
+.seats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:12px 0 6px}
+.seat{background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--c);border-radius:8px;padding:10px 12px;min-width:0}
+.seat h3{margin:0;font:800 22px var(--display);color:var(--c)}.seat .m{font-size:12px;color:var(--ink3);letter-spacing:.06em;text-transform:uppercase}
+.seat p{margin:6px 0 0;font-size:14px;color:var(--ink2)}
+h2{font:800 24px var(--display);text-transform:uppercase;color:var(--accent);margin:30px 0 4px}
+.proc{color:var(--ink3);font-size:13px;margin:0 0 8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:10px}
+.card{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--c);border-radius:8px;padding:10px 12px;min-width:0}
+.card .top{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.card h4{margin:0;font:800 21px var(--display);letter-spacing:.03em}
+.badge{font:700 11px var(--body);letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:999px;background:var(--panel2);color:var(--c)}
+.who{color:var(--ink2);font-size:14px;margin:4px 0 6px;font-style:italic}
+.k{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-top:8px}
+ul{margin:2px 0 0;padding-left:18px;font-size:13.5px}li{margin:1px 0;overflow-wrap:anywhere}
+code{font:12.5px var(--mono);color:var(--ink)}
+details.dial{margin-top:10px;border-top:1px dashed var(--line);padding-top:6px}
+details.dial summary{cursor:pointer;font:700 13px var(--display);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+details.dial summary .set{color:var(--ms);font:600 11px var(--body);text-transform:none;letter-spacing:0;margin-left:6px}
+label{display:block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);margin-top:6px}
+textarea{width:100%;min-width:0;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:6px 8px;font:13px var(--body);resize:vertical}
+textarea:focus,button:focus{outline:2px solid var(--accent);outline-offset:1px}
+button{margin-top:6px;background:var(--accent);color:#1a0d14;border:0;border-radius:6px;padding:6px 12px;font:700 13px var(--display);letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+.msg{font-size:12px;color:var(--ink3);margin-left:8px}
+.rules{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 14px;margin-top:8px}
+.rules li{font-size:14px;margin:4px 0}
+</style>
+<header><b>The Crew Roster</b><span>every agent the Command flies · 2026-10-12</span></header>
+<main>
+<p class="lead">Who each agent is, what it reads, what it writes, and the rules it flies under. Every console has a <b>Dial</b>: tell it to read more, read less, or sound different. Dials save here; say <b>"fold the dials"</b> and the CDR writes them into that console's brief, so the next run carries them.</p>
+
+<div class="seats" id="seats"></div>
+
+<h2>The rules every agent flies under</h2>
+<ul class="rules">
+<li><b>Hub and spoke (BOLO 54).</b> Specialists work on separate inputs. They never read each other's work. They meet only at named handoffs.</li>
+<li><b>One reviewer at the fan-in, and it is a script (RANGE).</b> No agent checks another agent.</li>
+<li><b>Read only what the brief lists.</b> Every brief names its files; anything else is off limits.</li>
+<li><b>The plain register (9/17).</b> Name first, number second. One idea per sentence, 20 words at most. Every sentence names who does what.</li>
+<li><b>Chief's words stay verbatim.</b> Quotes are never smoothed.</li>
+<li><b>Private stays private (10/4).</b> Health, sexual and provider detail only under <code>_PRIVATE/</code>; the repo is public.</li>
+<li><b>The model sits in the seat, not the name (9/16).</b> MS is a writer, PS is a fetcher; nobody is "the sonnet specialist".</li>
+</ul>
+
+<div id="consoles"></div>
+</main>
+<script>
+const SEATS = [
+ {g:"CDR", c:"--cdr", name:"Commander", model:"Opus 5.5 · Fable 5.1 on design days", job:"The main line: this conversation. Breaks the work up, writes every brief, rules what comes back, talks to Chief. Never hands its judgment to an agent."},
+ {g:"MS", c:"--ms", name:"Mission Specialist", model:"Sonnet", job:"The writer. Drafts pages, reports, specs and fragments from the files its brief lists. One writer per page, so each page has one voice."},
+ {g:"PS", c:"--ps", name:"Payload Specialist", model:"Haiku", job:"The fetcher. Reads a narrow slice and extracts facts in a fixed shape. Judges by reading, never by a similarity script (9/24)."},
+ {g:"RANGE", c:"--range", name:"Range safety", model:"a script, no model", job:"The reviewer at the fan-in. Checks shape, counts, keys and rules, and holds the abort. Never flies, never writes prose."}
+];
+const CONSOLES = [
+ {proc:"Sit rep", note:"skill sitrep · prep.py writes the briefs · assemble.py is RANGE", list:[
+  {id:"RACK", g:"PS", who:"The Block 0 specialist: what the last session moved, ruled, opened and closed.", reads:["_CACHE/*.session.md (every staged note)","work/<date>/prev/0.json (shape only)"], writes:["work/<date>/frag/0.json"], src:"_tools/sitrep/prep.py"},
+  {id:"INDEX", g:"MS", who:"The STATE specialist: the Fresh Ten, the Ancients, Blocked on you.", reads:["state.blocked.md · state.live.md · state.moved.md","git.log (dates only; an autosave is never an item)","prev/I.json · prev/II.json · prev/V.json"], writes:["frag/I.json","frag/II.json","frag/V.json"], src:"_tools/sitrep/prep.py"},
+  {id:"WATCH", g:"PS", who:"The BOLO specialist: every active BOLO placed in one of five groups, plus the PMCS list.", reads:["BOLO.md (whole)","prev/IV.json (shape only)"], writes:["frag/IV.json"], src:"_tools/sitrep/prep.py"},
+  {id:"RANGE · assemble", g:"RANGE", who:"Checks eight blocks in order, legal trunks, glossary keys, every BOLO placed once; orders one rerun for long sentences.", reads:["work/<date>/frag/*.json","glossary.json"], writes:["boards/<date>.json","SITREP.html"], src:"_tools/sitrep/assemble.py"}]},
+ {proc:"DOPE SHEET", note:"skill dope-sheet · the CDR writes Mission, Command & Signal and the order", list:[
+  {id:"SHEET", g:"MS", who:"The DOPE SHEET specialist: Situation, Execution, Admin and Log for one BOLO.", reads:["work/N/sources.md (the row, rows it names, STATE and note mentions)","work/N/schema.json (shape only)"], writes:["boards/N.draft.json"], src:"_tools/bolostatus/prep.py"},
+  {id:"RANGE · check", g:"RANGE", who:"Paragraph order, header keys, glossary keys, sentence length.", reads:["boards/N.draft.json"], writes:["boards/N.json (promoted)"], src:"_tools/bolostatus/check.py"}]},
+ {proc:"Oscar Mike", note:"skill oscar-mike · the close-out", list:[
+  {id:"NOTE", g:"PS", who:"The Ready Rack specialist: the session note in the Command shape, ending in the AAR.", reads:["work/<date>/transcript.md (Chief's turns whole, replies trimmed)"], writes:["_CACHE/<date>.session.md"], src:"_tools/oscarmike/close.py"}]},
+ {proc:"RTB", note:"skill rtb · clearing old cards", list:[
+  {id:"DISPO", g:"PS", who:"Proposes PROMOTE, DELETE or KEEP for every open card, one clause of why. Edits nothing.", reads:["work/rtb/cards.md"], writes:["dispositions.md"], src:"_tools/oscarmike/rtb_prep.py"}]},
+ {proc:"Collect", note:"skill collect · link-harvest research", list:[
+  {id:"EXTRACT-k", g:"PS", who:"One batch of fetched links, facts out in a fixed shape. Three at a time at gear 1.", reads:["the batch's fetched text only"], writes:["extract.k.json"], src:"_tools/loci/collect.py"},
+  {id:"WRITE", g:"MS", who:"The register specialist: one table from every extract, in one voice.", reads:["every extract.*.json","the locus file"], writes:["the register the locus names"], src:"_tools/loci/collect.py"},
+  {id:"RANGE · coverage", g:"RANGE", who:"Proves every link is covered.", reads:["the register","the link list"], writes:["the coverage report"], src:"_tools/loci/collect.py"}]},
+ {proc:"Creator cases", note:"BOLO 24 · one case file per creator", list:[
+  {id:"EXTRACT", g:"PS", who:"The facts specialist for one creator case.", reads:["the creator's fetched pages"], writes:["the facts file"], src:"_tools/creator-cases/fetch.py"},
+  {id:"WRITE", g:"MS", who:"The case-file specialist.", reads:["the facts file"], writes:["_CANON_NODES/creator-case-<handle>.md"], src:"_tools/creator-cases/fetch.py"}]},
+ {proc:"Ad hoc crews flown 10/12", note:"no standing brief file: the CDR wrote each brief in the moment. Dial one and it becomes a standing console.", list:[
+  {id:"LANE A–D", g:"MS", who:"Four research lanes for the Creator Income Report: platforms, demand, hard truths, adjacent money.", reads:["the open web (WebSearch, WebFetch); never downloads books"], writes:["_PRIVATE/bolo135-creator-income/lanes/*.md"], src:"BOLO 135"},
+  {id:"REPORT", g:"MS", who:"The report writer: one honest verdict from four lanes.", reads:["the four lane files","the BOLO 24 creator syntheses","ULTRADARK-funnel.md"], writes:["REPORT.md (handed back as text)"], src:"BOLO 135"},
+  {id:"FABULA", g:"MS", who:"Drafts fabula batches as calls with recs; no invention.", reads:["ssot_04_fabula.md","the intake packets","the batch file before it","the book distill"], writes:["_PRIVATE/intake/FABULA-BATCH-N.md"], src:"BOLO 100"},
+  {id:"SPEC", g:"MS", who:"Drafts LEECHSEED module specs (LOOK, 10/12).", reads:["module architecture + registry","state architecture","the 12-layer mapping","vocab.json"], writes:["ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/*"], src:"BOLO 121"},
+  {id:"CUT", g:"MS", who:"Writes THE CUT editing process.", reads:["its brief only (the ten-book shelf named in it)"], writes:["_DOCS/09_OPERATIONS/the-cut-editing-process.md"], src:"BOLO 136"},
+  {id:"SWEEP", g:"PS", who:"Three world sweepers: every world fact in a slice of the notes, by era and topic.", reads:["packet.md + packet.evernote.md","digest.md lines 1–2340","digest.md lines 2341–end"], writes:["_PRIVATE/intake/world-first/*.jsonl"], src:"BOLO 100 world first"},
+  {id:"PLACER", g:"MS", who:"Proposes an era for each unplaced fact, with the clue and how sure.", reads:["UNPLACED.jsonl","PLACED-examples.jsonl","the fabula's World Clock"], writes:["PLACE-proposals.jsonl"], src:"BOLO 100 world first"},
+  {id:"SCOUT", g:"MS", who:"The research-list writer (the LAKAD station's post-apocalyptic shelf).", reads:["the open web"], writes:["_DOCS/03_SETTING_SYSTEMS/lakad-station-postapoc-reading-list.md"], src:"BOLO 100"}]}
+];
+const COL = {CDR:"--cdr", MS:"--ms", PS:"--ps", RANGE:"--range"};
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const key = (proc, id) => (proc + "--" + id).replace(/[^A-Za-z0-9_\-]/g, "_");
+let dials = {}, db = null, canWrite = false;
+document.getElementById("seats").innerHTML = SEATS.map(s => `<div class="seat" style="--c:var(${s.c})"><h3>${s.g}</h3><div class="m">${esc(s.name)} · ${esc(s.model)}</div><p>${esc(s.job)}</p></div>`).join("");
+function render(){
+  const open = new Set([...document.querySelectorAll("details.dial[open] button[data-k], details.dial[open] textarea")].map(e => e.dataset.k || e.id.replace(/^(add|drop|voice|notes)-/, "")));
+  document.getElementById("consoles").innerHTML = CONSOLES.map(p => `<h2>${esc(p.proc)}</h2><p class="proc">${esc(p.note)}</p><div class="grid">` + p.list.map(a => {
+    const k = key(p.proc, a.id), d = dials[k] || {};
+    const set = (d.add || d.drop || d.voice || d.notes) ? `<span class="set">dialed${d.at ? " " + esc(d.at.slice(0,10)) : ""}</span>` : "";
+    const dial = a.g === "RANGE" ? "" : `<details class="dial"><summary>Dial ${set}</summary>
+      <label for="add-${k}">Also read (one per line)</label><textarea id="add-${k}" rows="2">${esc(d.add)}</textarea>
+      <label for="drop-${k}">Never read</label><textarea id="drop-${k}" rows="2">${esc(d.drop)}</textarea>
+      <label for="voice-${k}">Who they are · how they sound</label><textarea id="voice-${k}" rows="2">${esc(d.voice)}</textarea>
+      <label for="notes-${k}">Notes for the CDR</label><textarea id="notes-${k}" rows="2">${esc(d.notes)}</textarea>
+      ${canWrite ? `<button data-k="${k}">Save dial</button><span class="msg" id="m-${k}"></span>` : `<span class="msg">read-only view</span>`}</details>`;
+    return `<div class="card" style="--c:var(${COL[a.g]})"><div class="top"><h4>${esc(a.id)}</h4><span class="badge">${a.g}</span></div>
+      <div class="who">${esc(a.who)}</div>
+      <div class="k">Reads</div><ul>${a.reads.map(r => `<li><code>${esc(r)}</code></li>`).join("")}</ul>
+      <div class="k">Writes</div><ul>${a.writes.map(r => `<li><code>${esc(r)}</code></li>`).join("")}</ul>
+      <div class="k">Brief lives in</div><ul><li><code>${esc(a.src)}</code></li></ul>${dial}</div>`;
+  }).join("") + `</div>`).join("");
+  document.querySelectorAll("button[data-k]").forEach(b => b.onclick = () => save(b.dataset.k));
+  open.forEach(k => { const t = document.getElementById("add-" + k); if (t) t.closest("details").open = true; });
+}
+async function save(k){
+  const v = id => document.getElementById(id + "-" + k).value.trim();
+  const body = {add: v("add"), drop: v("drop"), voice: v("voice"), notes: v("notes"), at: new Date().toISOString(), folded: false};
+  const m = document.getElementById("m-" + k);
+  try { await db.collection("dials").doc(k).set(body); m.textContent = "Saved. Say \"fold the dials\"."; }
+  catch (e) { m.textContent = "Not saved: " + (e.code || "error"); }
+}
+async function start(){
+  render();
+  db = await claude.use("db");
+  const user = await claude.use("user");
+  canWrite = !!(db && user && user.canEdit());
+  if (!db) return;
+  db.collection("dials").onSnapshot(q => { dials = {}; q.docs.forEach(d => dials[d.id] = d.data()); render(); }, () => {});
+  render();
+}
+start();
+</script>
