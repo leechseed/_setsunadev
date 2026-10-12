@@ -1,11 +1,11 @@
 ---
 type: ssot_04_fabula
 category: plot_system
-version: 1.2.2
+version: 1.3.0
 tier: fabula
 last_updated: 2026-10-12
 applies_to: [OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX, all future IPs]
-status: "v1.2.2 2026-10-12, H6 revised by Chief: the land sale comes right after the 2099 Moon Severance, not before. v1.2.1 2026-10-12, Chief hand-built H4 and H6: the second generation's heir renames the place Red Hills; the land sale comes before the 2099 Moon Severance. v1.2.0 2026-10-12, batch 3 recs taken ('take all recs'): the first event records in eras 1, 3 and 5 (THE ERA SPINES); H2 H3 H4 H6 H10 and the era 5 ship held for Chief. v1.1.3 2026-10-12, recs taken ('all recommendations'): Cartel Federal is the Narco Republic's middle stage; the AI Collapse sits in era 4. v1.1.2 2026-10-12, G4 and G7 hand-built: the scrub homestead is era 1's first place; the rocket is boarded and its crew taken prisoner aboard a station made of three or four stations. v1.1.1 2026-10-12, Chief hand-built G6 G8 G10 G11: the Narco Republic's first and last names, the rocket launch opens LAKAD, the AI Collapse on the Moon, era 5 as the generation ship. v1.1.0 2026-10-12, batch 2 recs ruled ('All recommendations'): the unplaced_ id prefix, the removal's inferred cause edge, places before events in eras 1, 3 and 5, A Land Remembered as era 1's skeleton (L1-L4), the era 5 exodus note held as lineage. v1.0.1 2026-10-11, F2 and F10 carried through (ids and prose). v1.0.0 2026-10-11, batch 1 F1-F12 ruled ('Take all recs'): stories values, era-prefixed ids, location rule, 2099/2199 held as lineage, Severance after the beam, two Severances kept apart, the removal event, the Feed event, long actor names. v0.3.0 2026-10-05, BOLO 102 stage 2 (Chief: \"My word\"): the event record gains `source_kind`, `canon_source`, `produces`, `scheduled` and the 08 time code beside the calendar year; the no-calendar line is corrected. v0.1.7 2026-09-29, BOLO 91 rulings: Anna Colson's origin fabula-filled (ice-skating death → the scientist's rebuild → the scientist's attachment → the father's reclaim → the scientist's own kept copy, a second Colson with her own origin node); Tori's family origin (the trash-zone delta, not Bikini Atoll) added as L7 ORIGIN context, the car crash confirmed as her WOUND. v0.1.4 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — THE WORLD CLOCK gets the `backstory` movement tag for deep pre-M1 history, `event_id` grammar `backstory_<slug>`. v0.1.3 2026-09-24: BOLO 77 wave 3, plot doc OPEN call 12 executed — sixth event record `m2_first_sync_verified` added (row 9's rating-system / 'Verified' / reach-vs-pull-out moment), sourced from oxo-scene-card-M2-row9.md rather than victoria-midnight.md; ssot_04_plot_system.md's row-9 P2/P3/P5/P9 now read it. v0.1.1 2026-09-24: all six OPEN calls RULED (Chief: \"go on all recommendations\"); the v1.1 patch landed in the state architecture. v0.1.0 draft — BOLO 77 wave 1, \"go 77\" ruled 2026-09-24; Tori-only instance, EVIL CHECK events reserved for wave 2, state architecture v1.1 patch spec ships inside this doc"
+status: "v1.3.0 2026-10-12, batch 3 closed ('take all recs'): the failed first attempt and the first-comer allies open era 1 (provisional); the era 5 ship leaves the Moon (provisional); H10 held for the research list. v1.2.2 2026-10-12, H6 revised by Chief: the land sale comes right after the 2099 Moon Severance, not before. v1.2.1 2026-10-12, Chief hand-built H4 and H6: the second generation's heir renames the place Red Hills; the land sale comes before the 2099 Moon Severance. v1.2.0 2026-10-12, batch 3 recs taken ('take all recs'): the first event records in eras 1, 3 and 5 (THE ERA SPINES); H2 H3 H4 H6 H10 and the era 5 ship held for Chief. v1.1.3 2026-10-12, recs taken ('all recommendations'): Cartel Federal is the Narco Republic's middle stage; the AI Collapse sits in era 4. v1.1.2 2026-10-12, G4 and G7 hand-built: the scrub homestead is era 1's first place; the rocket is boarded and its crew taken prisoner aboard a station made of three or four stations. v1.1.1 2026-10-12, Chief hand-built G6 G8 G10 G11: the Narco Republic's first and last names, the rocket launch opens LAKAD, the AI Collapse on the Moon, era 5 as the generation ship. v1.1.0 2026-10-12, batch 2 recs ruled ('All recommendations'): the unplaced_ id prefix, the removal's inferred cause edge, places before events in eras 1, 3 and 5, A Land Remembered as era 1's skeleton (L1-L4), the era 5 exodus note held as lineage. v1.0.1 2026-10-11, F2 and F10 carried through (ids and prose). v1.0.0 2026-10-11, batch 1 F1-F12 ruled ('Take all recs'): stories values, era-prefixed ids, location rule, 2099/2199 held as lineage, Severance after the beam, two Severances kept apart, the removal event, the Feed event, long actor names. v0.3.0 2026-10-05, BOLO 102 stage 2 (Chief: \"My word\"): the event record gains `source_kind`, `canon_source`, `produces`, `scheduled` and the 08 time code beside the calendar year; the no-calendar line is corrected. v0.1.7 2026-09-29, BOLO 91 rulings: Anna Colson's origin fabula-filled (ice-skating death → the scientist's rebuild → the scientist's attachment → the father's reclaim → the scientist's own kept copy, a second Colson with her own origin node); Tori's family origin (the trash-zone delta, not Bikini Atoll) added as L7 ORIGIN context, the car crash confirmed as her WOUND. v0.1.4 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — THE WORLD CLOCK gets the `backstory` movement tag for deep pre-M1 history, `event_id` grammar `backstory_<slug>`. v0.1.3 2026-09-24: BOLO 77 wave 3, plot doc OPEN call 12 executed — sixth event record `m2_first_sync_verified` added (row 9's rating-system / 'Verified' / reach-vs-pull-out moment), sourced from oxo-scene-card-M2-row9.md rather than victoria-midnight.md; ssot_04_plot_system.md's row-9 P2/P3/P5/P9 now read it. v0.1.1 2026-09-24: all six OPEN calls RULED (Chief: \"go on all recommendations\"); the v1.1 patch landed in the state architecture. v0.1.0 draft — BOLO 77 wave 1, \"go 77\" ruled 2026-09-24; Tori-only instance, EVIL CHECK events reserved for wave 2, state architecture v1.1 patch spec ships inside this doc"
 rung: standard
 dependencies: ["ssot_04_plot_system", "ssot_03_setting_system", "ssot_02_character_state_architecture", "ssot_02_character_astrology_12_layer_mapping", "ssot_01_scale_ladder"]
 trunk: BLACK
@@ -622,9 +622,67 @@ causal_edges: []   # downstream events for the copy are not yet on record — op
 
 Batch 3 puts the first event records into eras 1, 3 and 5. Every place gate is met (G4, G7, G11). Every `location` stays GAP until 03 gives the homestead and the station an address. No record names a person, because no source names one yet (L3). Records marked provisional rest on a provisional ruling and rise to canon on one word.
 
-Still with Chief (batch 3, held): H2 the founding family's first loss · H3 the people on the Delta Coast before the founders · H10 the station's name and owner · the ship and the port that start era 5.
+Batch 3 is closed (10/12, 'take all recs'). Still ⧗, by ruling: H10 the station's name and owner, held until the post-apocalyptic research list returns · what the first attempt loses · the first-comer people's name and customs · the ship itself.
 
-**Era 1 · Skeeter Creek.** The founding opens the era. The three Narco Republic stages follow in their ruled order; which generation sees each stage is open. The heir of the Red Hills generation renames the place Red Hills (H4). The sale of the land comes right after the 2099 Moon Severance (H6), so the family sells into the diving economy that mines the falling wreck; it closes the family's hold and enables the rebrand.
+**Era 1 · Skeeter Creek.** The first attempt fails (H2), and a first-comer people helps the founders survive (H3). The founding on the homestead follows. The three Narco Republic stages follow in their ruled order; which generation sees each stage is open. The heir of the Red Hills generation renames the place Red Hills (H4). The sale of the land comes right after the 2099 Moon Severance (H6), so the family sells into the diving economy that mines the falling wreck; it closes the family's hold and enables the rebrand.
+
+```yaml
+event_id: "skeeter_creek_backstory_first_attempt_lost"   # PROVISIONAL (H2 rec taken 10/12); what is lost ⧗
+transition: "the founders hold a first holding -> the first holding is lost, and the founders start over"
+actors:
+  - actor: "the founding generation"   # no name yet; Chief hand-builds the people (L3)
+    actant_role: subject
+kernel_satellite: kernel
+time:
+  movement: "backstory"
+  time_code: null
+  calendar_year: null
+  reach: "the founding years"
+  extent: "point"
+gap_type: logged
+repeat: false
+source_kind: ownership
+canon_source: "H2 rec taken 10/12 ('take all recs'): A Land Remembered opens on 'a failed first attempt with a clear loss' (BVX.1276 line 180); the loss itself is Chief's"
+produces: []
+scheduled: null
+location: GAP
+stories: [backstory_only]
+provenance:
+  source: "_PRIVATE/intake/FABULA-BATCH-3.md"
+  confidence: inferred
+causal_edges:
+  - type: precede
+    to: "skeeter_creek_backstory_skeeter_creek_founding"
+```
+
+```yaml
+event_id: "skeeter_creek_backstory_first_comers_ally"   # PROVISIONAL (H3 rec taken 10/12); the people's name and customs ⧗
+transition: "the founders alone on the Delta Coast -> a first-comer people helps them survive"
+actors:
+  - actor: "the first-comer people of the Delta Coast"   # no name yet; Chief hand-builds the people (L3)
+    actant_role: subject
+kernel_satellite: kernel
+time:
+  movement: "backstory"
+  time_code: null
+  calendar_year: null
+  reach: "the founding years"
+  extent: "point"
+gap_type: logged
+repeat: false
+source_kind: character
+canon_source: "H3 rec taken 10/12 ('take all recs'): after the book's Seminole allies (BVX.1276 lines 169, 208, 278), translated, not transplanted (L1, L3); lineage note: Red Stick Creek, Native North Florida (digest.md:678)"
+produces: []
+scheduled: null
+location: GAP
+stories: [backstory_only]
+provenance:
+  source: "_PRIVATE/intake/FABULA-BATCH-3.md"
+  confidence: inferred
+causal_edges:
+  - type: enable
+    to: "skeeter_creek_backstory_skeeter_creek_founding"
+```
 
 ```yaml
 event_id: "skeeter_creek_backstory_skeeter_creek_founding"   # PROVISIONAL (G4)
@@ -845,8 +903,8 @@ causal_edges: []
 **Era 5 · beyond.** A voyage needs a departure before an arrival, so the departure opens the era (G11). The exodus note's five ship stages (digest.md:680-681) stay lineage, as G11 ruled; they are candidates, not canon.
 
 ```yaml
-event_id: "beyond_exodus_departure"   # PROVISIONAL (G11); the ship and the port ⧗
-transition: "no voyage -> a generation ship leaves for a new planet"
+event_id: "beyond_exodus_departure"   # PROVISIONAL (G11); the ship ⧗; the port is the Moon (rec taken 10/12)
+transition: "no voyage -> a generation ship leaves the Moon for a new planet"
 actors: []   # no source names the people yet; Chief hand-builds them (L3)
 kernel_satellite: kernel
 time:
@@ -861,7 +919,7 @@ source_kind: character
 canon_source: "G11 (provisional): 'the journey to a new planet, like a generational ship'"
 produces: []
 scheduled: null
-location: GAP
+location: GAP   # departs from the Moon (rec taken 10/12, provisional); the Moon's 03 address ⧗
 stories: [backstory_only]
 provenance:
   source: "_PRIVATE/intake/FABULA-BATCH-3.md"
@@ -900,6 +958,7 @@ causal_edges: []
 ## Version history
 
 - 10/11 · batch 1 F1–F12 ruled ('Take all recs')
+- **1.3.0 — 2026-10-12.** Batch 3 closed ('take all recs'). H2: `skeeter_creek_backstory_first_attempt_lost` (provisional). H3: `skeeter_creek_backstory_first_comers_ally`, after the book's Seminole allies, name ⧗ (provisional). The era 5 ship departs the Moon (provisional). H10 held until the post-apocalyptic research list returns. Eleven era spine records.
 - **1.2.2 — 2026-10-12.** H6 revised (Chief: "it would probably be better after the 2099 shit happens.....right after"): the land sale follows the 2099 Moon Severance; its precede edge to the Severance is removed, and the Severance now comes first.
 - **1.2.1 — 2026-10-12.** Chief hand-built H4 ('Its heir'): `skeeter_creek_backstory_red_hills_rename` enters, the Red Hills generation's heir renames. H6 ('before'): the land sale precedes the 2099 Moon Severance. Nine era spine records.
 - **1.2.0 — 2026-10-12.** Batch 3 recs taken ('take all recs'). THE ERA SPINES adds eight records: era 1's founding (provisional, G4), the three Narco Republic stages, the land sale (regret provisional, L4); era 3's first launch and the boarding (provisional, G7); era 5's departure (provisional, G11). Every location GAP. H2, H3, H4, H6, H10 and the era 5 ship stay with Chief.
