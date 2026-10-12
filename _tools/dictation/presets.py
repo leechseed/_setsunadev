@@ -102,7 +102,20 @@ def apply(key):
     per["say"] = p["say"]
     j.setdefault("voice", {}).setdefault("eleven_settings", {})["speed"] = p["speed"]
     save(j)
+    face_for(key)
     return key, derived(p)
+
+
+def face_for(key):
+    """10/12: an attitude can name a face profile (the face deck sets it); the console switches it. Fail-soft."""
+    import urllib.request
+    try:
+        req = urllib.request.Request("http://127.0.0.1:8787/api/face/profile",
+                                     json.dumps({"action": "attitude", "preset": key}).encode(),
+                                     {"Content-Type": "application/json"})
+        urllib.request.urlopen(req, timeout=5).read()
+    except Exception:
+        pass
 
 
 def show():

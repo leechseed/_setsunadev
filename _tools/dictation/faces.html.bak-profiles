@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JUDY</title>
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" type="image/png" href="/app/icon-192.png">
+<link rel="apple-touch-icon" href="/app/icon-192.png">
+<meta name="theme-color" content="#141210">
+<script>if("serviceWorker" in navigator)navigator.serviceWorker.register("/sw.js",{scope:"/"}).catch(function(){});</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* the face deck (10/4) · DARK is the only theme (RULED 9/11) · served by console.py at /faces */
+  :root{
+    --bg:#141210; --panel:#1c1916; --panel-2:#24201c; --line:#2e2925; --line-2:#3d3631;
+    --ink:#e8e2db; --ink-2:#b3aaa0; --ink-3:#857b71;
+    --accent:#FF5A1F; --accent-soft:#3a1d10; --good:#5CC48A; --bad:#E9788A; --bad-soft:#3A1B20;
+    --display:"Barlow Condensed","Arial Narrow",sans-serif;
+    --body:"Atkinson Hyperlegible","Segoe UI",sans-serif;
+    --mono:"IBM Plex Mono",Consolas,monospace;
+    color-scheme:dark;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.45;-webkit-font-smoothing:antialiased}
+  button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+  button:focus-visible,input:focus-visible,label:focus-within{outline:2px solid var(--accent);outline-offset:2px}
+
+  header{height:44px;display:flex;align-items:center;gap:16px;padding:0 16px;border-bottom:1px solid var(--line);
+    background:var(--panel);position:sticky;top:0;z-index:5}
+  header h1{margin:0;font-family:var(--display);font-weight:800;font-size:22px;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
+  header h1 i{display:inline-block;width:9px;height:9px;background:var(--accent);margin-right:9px;transform:translateY(-2px)}
+  header .status{flex:1;min-width:0;font-family:var(--mono);font-size:11.5px;color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  header .status b{color:var(--accent);font-weight:500}
+  header a{font-family:var(--mono);font-size:11.5px;color:var(--ink-2);text-decoration:none;white-space:nowrap}
+  header a:hover{color:var(--accent)}
+  #update{border:1px solid var(--line-2);background:var(--panel-2);padding:5px 14px;font-family:var(--display);font-weight:800;font-size:16px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;color:var(--ink-2)}
+  #update:hover{color:var(--ink)}
+  #sfw{border:1px solid var(--line-2);background:var(--panel-2);padding:5px 14px;font-family:var(--display);font-weight:800;font-size:16px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;color:var(--ink-2)}
+  #sfw:hover{border-color:var(--good);color:var(--good)}
+  #sfw[aria-pressed="true"]{background:var(--good);border-color:var(--good);color:var(--bg)}
+  .sfwnote{border:1px solid var(--good);background:var(--good-soft);color:var(--good);padding:16px;font-family:var(--mono);font-size:12px}
+  body.sfw .k, body.sfw #shuffle, body.sfw .dropzone{pointer-events:none;opacity:.35}
+
+  main{max-width:1500px;margin:0 auto;padding:18px 16px 60px}
+  .bar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 12px}
+  .bar h2{margin:0;font-family:var(--display);font-weight:700;font-size:20px;letter-spacing:.06em;text-transform:uppercase}
+  .bar .sp{flex:1}
+  .lbl{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+  .btn{border:1px solid var(--line-2);background:var(--panel-2);padding:6px 14px;font-family:var(--display);font-weight:700;
+    font-size:16px;letter-spacing:.06em;text-transform:uppercase}
+  .btn:hover{border-color:var(--accent);color:var(--accent)}
+  .btn.hot{background:var(--accent);border-color:var(--accent);color:#141210}
+  .btn.hot:hover{filter:brightness(1.1);color:#141210}
+
+  /* the four slots */
+  .slots{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:30px}
+  @media (max-width:1000px){.slots{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media (max-width:520px){.slots{grid-template-columns:1fr}}
+  .slot{border:1px solid var(--line);background:var(--panel);padding:12px;display:flex;flex-direction:column;gap:8px;transition:border-color .12s}
+  .slot.drop,.slot.armed:hover{border-color:var(--accent);background:var(--accent-soft)}
+  .slot.armed{cursor:copy;border-style:dashed;border-color:var(--line-2)}
+  .slot .top{display:flex;align-items:baseline;gap:8px}
+  .slot h3{margin:0;font-family:var(--display);font-weight:800;font-size:22px;text-transform:uppercase;letter-spacing:.03em}
+  .slot h3 em{font-style:normal;color:var(--accent)}
+  .slot .note{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);flex:1}
+  .slot label{display:flex;align-items:center;gap:5px;font-family:var(--mono);font-size:10.5px;color:var(--ink-2);cursor:pointer;user-select:none}
+  .slot label input{accent-color:var(--accent);margin:0}
+  .well{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:var(--panel-2);border:1px solid var(--line);overflow:hidden}
+  .well img,.well video{max-width:100%;max-height:100%;object-fit:contain}
+  .well span{font-family:var(--mono);font-size:11px;color:var(--ink-3);text-align:center;padding:12px}
+  .slot .file{font-family:var(--mono);font-size:11.5px;color:var(--ink-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .slot .file b{color:var(--ink);font-weight:500}
+  .slot .pool{font-family:var(--mono);font-size:10.5px;color:var(--ink-3)}
+  .slot .pool b{color:var(--accent);font-weight:500;margin-right:4px}
+  .slot .pool em{font-style:normal;color:var(--ink-2)}
+
+  /* the library */
+  .dropzone{border:1.5px dashed var(--line-2);background:var(--panel);padding:22px 16px;text-align:center;margin-bottom:14px;cursor:pointer;transition:border-color .12s}
+  .dropzone.drop,.dropzone:hover{border-color:var(--accent);background:var(--accent-soft)}
+  .dropzone b{font-family:var(--display);font-weight:700;font-size:20px;letter-spacing:.05em;text-transform:uppercase;display:block}
+  .dropzone span{font-family:var(--mono);font-size:11px;color:var(--ink-3)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px}
+  .tile{border:1px solid var(--line);background:var(--panel);display:flex;flex-direction:column;cursor:pointer;position:relative}
+  .tile:hover{border-color:var(--line-2)}
+  .tile.sel{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+  .tile .well{border:0;border-bottom:1px solid var(--line)}
+  .tile .meta{padding:7px 9px 4px;font-family:var(--mono);font-size:11px;min-width:0}
+  .tile .meta div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .tile .meta small{color:var(--ink-3);font-size:10.5px}
+  .tile .acts{display:flex;gap:4px;padding:4px 9px 9px;align-items:center}
+  .tile .acts button.k{width:26px;height:24px;border:1px solid var(--line-2);font-family:var(--mono);font-size:11px;color:var(--ink-2)}
+  .tile .acts button.k:hover{border-color:var(--accent);color:var(--accent)}
+  .tile .acts button.k.on{background:var(--accent);border-color:var(--accent);color:#141210}
+  .tile .acts .sp{flex:1}
+  .tile .acts button.del{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);padding:3px 4px}
+  .tile .acts button.del:hover{color:var(--bad)}
+  .confirm{position:absolute;inset:auto 0 0 0;background:var(--bad-soft);border-top:1px solid var(--bad);padding:8px 9px;
+    font-family:var(--mono);font-size:11px;display:flex;align-items:center;gap:6px}
+  .confirm span{flex:1}
+  .confirm button{border:1px solid var(--line-2);padding:2px 8px;font-size:11px}
+  .confirm button.yes{border-color:var(--bad);color:var(--bad)}
+  .empty{font-family:var(--mono);font-size:12px;color:var(--ink-3);padding:20px 0}
+
+  #toast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);background:var(--panel-2);border:1px solid var(--line-2);
+    padding:8px 16px;font-family:var(--mono);font-size:12px;opacity:0;transition:opacity .15s;pointer-events:none;max-width:calc(100vw - 32px)}
+  #toast.on{opacity:1} #toast.bad{border-color:var(--bad);color:var(--bad)}
+</style>
+</head>
+<body>
+<header>
+  <h1><img src="/app/icon-192.png" alt="" style="width:26px;height:26px;vertical-align:-5px;margin-right:8px">JUDY · Face Deck</h1>
+  <div class="status" id="status">JUDY picks up a swap within 2 seconds.</div>
+  <button type="button" id="update" title="Rescan the face folder and push the newest faces to JUDY now">Update</button>
+  <button type="button" id="sfw" aria-pressed="false" title="JUDY shows the four original faces; slots and pools stay as they are for later">SFW</button>
+  <a href="/">console →</a>
+</header>
+<main>
+  <div class="bar">
+    <h2>The four states</h2>
+    <span class="lbl">drop a file on a slot · or toggle a tile's state buttons to build each state's pool</span>
+    <span class="sp"></span>
+    <button class="btn hot" id="shuffle" title="A random library face onto every checked slot">Shuffle</button>
+  </div>
+  <div class="slots" id="slots"></div>
+
+  <div class="bar">
+    <h2>The library</h2>
+    <span class="lbl" id="libCount"></span>
+  </div>
+  <div class="dropzone" id="libDrop" tabindex="0" role="button">
+    <b>Add faces to the library</b>
+    <span>drop PNG · JPG · GIF · WebP · MP4 here, as many as you like, or click to pick · 50 MB each · nothing gets assigned</span>
+    <input type="file" id="picker" multiple accept=".png,.gif,.jpg,.jpeg,.webp,.mp4" hidden>
+  </div>
+  <div class="grid" id="grid"></div>
+</main>
+<div id="toast"></div>
+
+<script>
+const STATES=["idle","listening","thinking","talking"];
+const KEY={idle:"I",listening:"L",thinking:"T",talking:"K"};
+const NOTE={idle:"resting",listening:"hotkey down",thinking:"transcribing · waiting",talking:"speaking back"};
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+let S={library:[],slots:{}}, sel=null, confirming=null, sig="";
+
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const mb=n=>n>=1048576?(n/1048576).toFixed(1)+" MB":Math.max(1,Math.round(n/1024))+" KB";
+let tt; function toast(msg,bad){const t=$("#toast");t.textContent=msg;t.className="on"+(bad?" bad":"");clearTimeout(tt);tt=setTimeout(()=>t.className="",bad?5000:2200);}
+
+async function api(path,body){
+  const r=await fetch(path,body?{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)}:{});
+  const j=await r.json().catch(()=>({error:"bad reply"}));
+  if(!r.ok||j.error){toast(j.error||("HTTP "+r.status),true);throw new Error(j.error);}
+  return j;
+}
+const readFile=f=>new Promise((ok,no)=>{const fr=new FileReader();fr.onload=()=>ok(fr.result);fr.onerror=no;fr.readAsDataURL(f);});
+
+/* one file per request keeps each body under ~67 MB */
+async function upload(files){
+  const saved=[], errs=[];
+  for(const f of files){
+    if(f.size>50*1048576){errs.push(f.name+": over 50 MB");continue;}
+    try{const j=await api("/api/face/library",{files:[{name:f.name,data:await readFile(f)}]});saved.push(...j.saved);}
+    catch(e){errs.push(e.message);}
+  }
+  if(errs.length) toast(errs.join(" · "),true);
+  return saved;
+}
+
+let shuffleOn={idle:true,listening:true,thinking:true,talking:true};
+try{shuffleOn={...shuffleOn,...JSON.parse(localStorage.getItem("faceDeck.shuffle")||"{}")};}catch(_){}
+
+const isVid=n=>/\.mp4$/i.test(n||"");
+const isGif=n=>/\.gif$/i.test(n||"");
+const media=(url,name,alt)=>isVid(name)?`<video src="${url}" autoplay loop muted playsinline></video>`:`<img src="${url}" alt="${alt}"${alt?"":" loading=\"lazy\""}>`;
+/* library tiles hold still until hovered: a video shows its first frame, a GIF a frozen first frame */
+const stillMedia=(url,name)=>isVid(name)?`<video src="${url}#t=0.1" muted loop playsinline preload="metadata" data-hover></video>`
+  :isGif(name)?`<img data-gif="${url}" alt="" data-hover>`:media(url,name,"");
+const frozen=new Map();
+function freeze(img){
+  const url=img.dataset.gif;
+  if(frozen.has(url)){img.src=frozen.get(url);return;}
+  const src=new Image();
+  src.onload=()=>{try{const c=document.createElement("canvas");c.width=src.naturalWidth;c.height=src.naturalHeight;
+      c.getContext("2d").drawImage(src,0,0);frozen.set(url,c.toDataURL());}catch(_){frozen.set(url,url);}
+    $$(`img[data-gif="${CSS.escape(url)}"]`).forEach(i=>{if(!i.matches(":hover"))i.src=frozen.get(url);});};
+  src.src=url;
+}
+function wireHover(tile){
+  const m=tile.querySelector("[data-hover]"); if(!m)return;
+  if(m.tagName==="IMG")freeze(m);
+  tile.addEventListener("mouseenter",()=>{if(m.tagName==="VIDEO")m.play().catch(()=>{});else m.src=m.dataset.gif;});
+  tile.addEventListener("mouseleave",()=>{if(m.tagName==="VIDEO"){m.pause();m.currentTime=0.1;}else if(frozen.has(m.dataset.gif))m.src=frozen.get(m.dataset.gif);});
+}
+
+function renderSlots(){
+  $("#slots").innerHTML=STATES.map(s=>{const v=S.slots[s]||{};
+    return `<div class="slot${sel?" armed":""}" data-slot="${s}">
+      <div class="top"><h3><em>${KEY[s]}</em> ${s}</h3><span class="note">${NOTE[s]}</span>
+        <label title="include in Shuffle"><input type="checkbox" data-sh="${s}" ${shuffleOn[s]?"checked":""}>shuffle</label></div>
+      <div class="well">${S.sfw&&v.sfw?media(v.sfw.url,v.sfw.file,`${s} face`):v.url?media(v.url,v.file,`${s} face`):`<span>empty · drop a file here</span>`}</div>
+      <div class="file">${v.pick?`<b>${esc(v.pick)}</b>`:v.file?`<b>${esc(v.file)}</b> <span style="color:var(--ink-3)">· not in library</span>`:"—"}</div>
+      <div class="pool">${(v.pool||[]).length>1?`<b>pool · ${v.pool.length}</b> JUDY picks one each time she goes ${s}`:`pool · ${(v.pool||[]).length} · add more with the <em>${KEY[s]}</em> button on a tile`}</div>
+    </div>`;}).join("");
+  $$(".slot").forEach(el=>{
+    const slot=el.dataset.slot;
+    el.addEventListener("dragover",e=>{e.preventDefault();el.classList.add("drop");});
+    el.addEventListener("dragleave",()=>el.classList.remove("drop"));
+    el.addEventListener("drop",async e=>{
+      e.preventDefault();el.classList.remove("drop");
+      const f=e.dataTransfer.files[0]; if(!f)return;
+      const saved=await upload([f]); if(!saved.length)return;
+      await api("/api/face/assign",{slot,name:saved[0]}); toast(`${slot} ← ${saved[0]}`); refresh(true);
+    });
+    el.addEventListener("click",async e=>{
+      if(e.target.closest("label")||!sel)return;
+      const name=sel; sel=null;
+      if(await api("/api/face/assign",{slot,name}).catch(()=>null))toast(`${slot} ← ${name}`); refresh(true);
+    });
+  });
+  $$("[data-sh]").forEach(c=>c.onchange=()=>{shuffleOn[c.dataset.sh]=c.checked;
+    try{localStorage.setItem("faceDeck.shuffle",JSON.stringify(shuffleOn));}catch(_){}});
+}
+
+function renderLib(){
+  const L=S.library;
+  if(S.sfw){$("#libCount").textContent="hidden";$("#grid").innerHTML=`<div class="sfwnote">SFW is on. JUDY shows the four original faces. The library, slots and pools are untouched; press SFW again to bring them back.</div>`;return;}
+  $("#libCount").textContent=`${L.length} face${L.length===1?"":"s"} · ${mb(L.reduce((a,i)=>a+i.size,0))}`;
+  if(!L.length){$("#grid").innerHTML=`<div class="empty">The library is empty. Drop some faces above.</div>`;return;}
+  $("#grid").innerHTML=L.map(i=>`<div class="tile${sel===i.name?" sel":""}" data-name="${esc(i.name)}" title="click, then click a slot">
+    <div class="well">${stillMedia(i.url,i.name)}</div>
+    <div class="meta"><div>${esc(i.name)}</div><small>${mb(i.size)}${i.slots.length?" · on "+i.slots.join(", "):""}</small></div>
+    <div class="acts">${STATES.map(s=>`<button class="k${(i.pools||[]).includes(s)?" on":""}" data-k="${s}" title="${(i.pools||[]).includes(s)?"take out of":"add to"} the ${s} pool">${KEY[s]}</button>`).join("")}
+      <span class="sp"></span><button class="del" data-del>delete</button></div>
+    ${confirming===i.name?`<div class="confirm"><span>${i.slots.length?"on "+i.slots.join(", ")+" · swap off first":"delete for good?"}</span>
+      ${i.slots.length?"":`<button class="yes" data-yes>delete</button>`}<button data-no>keep</button></div>`:""}
+  </div>`).join("");
+  $$(".tile").forEach(t=>{
+    const name=t.dataset.name;
+    wireHover(t);
+    t.addEventListener("click",async e=>{
+      const k=e.target.closest("[data-k]");
+      if(k){e.stopPropagation();const s=k.dataset.k,on=!k.classList.contains("on");
+        if(await api("/api/face/pool",{slot:s,name,on}).catch(()=>null))toast(on?`${name} → ${s} pool`:`${name} out of the ${s} pool`);return refresh(true);}
+      if(e.target.closest("[data-del]")){confirming=name;return renderLib();}
+      if(e.target.closest("[data-no]")){confirming=null;return renderLib();}
+      if(e.target.closest("[data-yes]")){confirming=null;if(sel===name)sel=null;
+        await api("/api/face/delete",{name}).then(()=>toast("deleted "+name)).catch(()=>null);return refresh(true);}
+      sel=sel===name?null:name; render();
+      if(sel) $("#status").innerHTML=`<b>${esc(sel)}</b> picked · click a slot to put it there · Esc to drop it`;
+    });
+  });
+}
+
+function render(){
+  document.body.classList.toggle("sfw",!!S.sfw);
+  $("#sfw").setAttribute("aria-pressed",S.sfw?"true":"false");
+  renderSlots(); renderLib();
+  if(!sel) $("#status").textContent="JUDY picks up a swap within 2 seconds.";
+}
+
+async function refresh(force){
+  let j; try{j=await (await fetch("/api/face/library")).json();}catch(_){return;}
+  const s=JSON.stringify(j);
+  if(!force&&s===sig)return;
+  sig=s; S=j;
+  if(sel&&!S.library.some(i=>i.name===sel))sel=null;
+  render();
+}
+
+/* the library drop zone + picker */
+const dz=$("#libDrop"), pk=$("#picker");
+dz.onclick=()=>pk.click();
+dz.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();pk.click();}};
+pk.onchange=async()=>{const n=(await upload([...pk.files])).length;pk.value="";if(n)toast(`${n} added to the library`);refresh(true);};
+dz.addEventListener("dragover",e=>{e.preventDefault();dz.classList.add("drop");});
+dz.addEventListener("dragleave",()=>dz.classList.remove("drop"));
+dz.addEventListener("drop",async e=>{e.preventDefault();dz.classList.remove("drop");
+  const n=(await upload([...e.dataTransfer.files])).length;if(n)toast(`${n} added to the library`);refresh(true);});
+/* a stray drop elsewhere must not navigate the tab away */
+window.addEventListener("dragover",e=>e.preventDefault());
+window.addEventListener("drop",e=>e.preventDefault());
+
+$("#shuffle").onclick=async()=>{
+  const slots=STATES.filter(s=>shuffleOn[s]);
+  if(!slots.length)return toast("no slot is checked for shuffle",true);
+  const j=await api("/api/face/shuffle",{slots}).catch(()=>null);
+  if(j)toast("shuffled · "+Object.entries(j.picks).map(([s,n])=>KEY[s]+" "+n).join(" · "));
+  refresh(true);
+};
+$("#sfw").onclick=async()=>{
+  const on=!S.sfw, j=await api("/api/face/sfw",{on}).catch(()=>null);
+  if(j)toast(on?"SFW on · JUDY shows the original faces":"SFW off · back to your faces");
+  refresh(true);
+};
+$("#update").onclick=async()=>{
+  sig=""; await refresh(true);
+  toast(`up to date · ${S.library.length} faces in the library · JUDY picks up changes within 2 seconds`);
+};
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){sel=null;confirming=null;render();}});
+
+refresh(true);
+setInterval(()=>refresh(false),3000);   /* picks up swaps made from the console or another tab */
+</script>
+</body>
+</html>

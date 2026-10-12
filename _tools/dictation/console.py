@@ -83,7 +83,10 @@ JUDY_DEFAULTS = {
     "face": {"slots": {s: None for s in STATES},
              "pools": {s: [] for s in STATES},    # 10/4: library names per state; JUDY picks one on each entry
              "sfw": False,                         # 10/4: SFW on = JUDY shows the original four faces, nothing else
-             "sfw_set": {s: f"{s}.png" for s in STATES}},
+             "sfw_set": {s: f"{s}.png" for s in STATES},
+             "profiles": {},                       # 10/12: name -> {pools}; a profile is a named set of the four pools
+             "profile": None,                      # the active profile; face.pools always mirrors it
+             "profile_for": {}},                   # 10/12: attitude preset key -> profile name (presets.py switches it)
     "chat": {"model": "claude-haiku-4-5-20251001"},
     "wire": {"mode": "mcp", "server": "_tools/dictation/wire.py"},
     "session": {"reader": "script", "max_sentences": 12, "acks": True},
@@ -482,6 +485,109 @@ def pools_seed(judy, names, paths):
     return judy
 
 
+# ---------------------------------------------------------------- face profiles (Chief, 10/12)
+# "can I create another profile … a specific set of pictures that I can choose per person, per personality?"
+# A profile is a named copy of the four pools. face.pools is always the active profile's pools (judy.py reads
+# only face.pools), and every pool edit is mirrored back into the active profile. The library stays shared.
+
+def profiles_seed(judy):
+    """First run: the faces JUDY has now become the first profile, so nothing changes on screen."""
+    f = judy["face"]
+    f.setdefault("profiles", {})
+    f.setdefault("profile_for", {})
+    if not f.get("profile") or f["profile"] not in f["profiles"]:
+        name = f.get("profile") or "Emiru"
+        f["profiles"].setdefault(name, {"pools": {s: list(f["pools"].get(s, [])) for s in STATES}})
+        f["profile"] = name
+        return True
+    return False
+
+
+def profile_mirror(judy):
+    """Copy face.pools into the active profile. Call inside FACE_LOCK, before write_json."""
+    f = judy["face"]
+    profiles_seed(judy)
+    f["profiles"][f["profile"]] = {"pools": {s: list(f["pools"].get(s, [])) for s in STATES}}
+
+
+BAD_NAME = set('/\\<>"' + "'")
+
+
+def profile_clean(name):
+    name = " ".join(str(name or "").split())[:40]
+    if not name or any(c in BAD_NAME for c in name):
+        raise ValueError("a profile name needs letters, 40 at most, no slashes or quotes")
+    return name
+
+
+def profile_switch(name):
+    """Make a profile active: its pools become face.pools and each slot shows the first face of its pool."""
+    with FACE_LOCK:
+        judy = read_json(JUDY, JUDY_DEFAULTS)
+        profiles_seed(judy)
+        f = judy["face"]
+        if name not in f["profiles"]:
+            raise ValueError(f"no profile named {name!r}")
+        profile_mirror(judy)                       # keep the one we are leaving
+        f["profile"] = name
+        f["pools"] = {s: list(f["profiles"][name]["pools"].get(s, [])) for s in STATES}
+        write_json(JUDY, judy)
+        firsts = {s: f["pools"][s][0] for s in STATES if f["pools"][s]}
+    for s, n in firsts.items():
+        try:
+            face_assign(s, n, pool=False)
+        except ValueError:
+            pass                                   # a face gone from the library: the slot keeps what it shows
+    LOG.append(f"— face profile → {name}")
+    return name
+
+
+def profile_new(name, copy=False):
+    name = profile_clean(name)
+    with FACE_LOCK:
+        judy = read_json(JUDY, JUDY_DEFAULTS)
+        profiles_seed(judy)
+        f = judy["face"]
+        if name in f["profiles"]:
+            raise ValueError(f"there is already a profile named {name!r}")
+        profile_mirror(judy)
+        f["profiles"][name] = {"pools": {s: (list(f["pools"].get(s, [])) if copy else []) for s in STATES}}
+        write_json(JUDY, judy)
+    LOG.append(f"— face profile + {name}")
+    return profile_switch(name)
+
+
+def profile_delete(name):
+    with FACE_LOCK:
+        judy = read_json(JUDY, JUDY_DEFAULTS)
+        profiles_seed(judy)
+        f = judy["face"]
+        if name not in f["profiles"]:
+            raise ValueError(f"no profile named {name!r}")
+        if name == f["profile"]:
+            raise ValueError("switch to another profile before deleting this one")
+        del f["profiles"][name]
+        f["profile_for"] = {k: v for k, v in f["profile_for"].items() if v != name}
+        write_json(JUDY, judy)
+    LOG.append(f"— face profile - {name}")
+
+
+def profile_for(preset, name):
+    """Tie an attitude to a profile (empty name unties it)."""
+    with FACE_LOCK:
+        judy = read_json(JUDY, JUDY_DEFAULTS)
+        profiles_seed(judy)
+        f = judy["face"]
+        if name and name not in f["profiles"]:
+            raise ValueError(f"no profile named {name!r}")
+        if name:
+            f["profile_for"][preset] = name
+        else:
+            f["profile_for"].pop(preset, None)
+        write_json(JUDY, judy)
+    LOG.append(f"— face profile for {preset}: {name or 'none'}")
+
+
 def lib_state():
     lib_seed()
     judy = read_json(JUDY, JUDY_DEFAULTS)
@@ -489,6 +595,8 @@ def lib_state():
     names = sorted(n for n in os.listdir(LIB) if n.rsplit(".", 1)[-1].lower() in FACE_EXTS)
     with FACE_LOCK:
         judy = pools_seed(judy, names, paths)
+        if profiles_seed(judy):
+            write_json(JUDY, judy)
     pools = {s: [n for n in judy["face"]["pools"][s] if n in names] for s in STATES}
     items = []
     for e in sorted(os.scandir(LIB), key=lambda e: e.name.lower()):
@@ -508,7 +616,10 @@ def lib_state():
                     "sfw": {"file": os.path.basename(sp), "url": f"/face/library/{quote(os.path.basename(sp))}?v={os.stat(sp).st_mtime_ns}"} if sp else None,
                     "pick": next((i["name"] for i in items if s in i["slots"]), None),
                     "pool": pools[s]}
-    return {"library": items, "slots": slots, "states": STATES, "sfw": sfw}
+    f = judy["face"]
+    return {"library": items, "slots": slots, "states": STATES, "sfw": sfw,
+            "profile": f.get("profile"), "profiles": sorted(f.get("profiles", {}), key=str.lower),
+            "profile_for": f.get("profile_for", {})}
 
 
 def face_sfw(on):
@@ -569,6 +680,7 @@ def face_assign(slot, name, pool=True):
         judy["face"]["slots"][slot] = dst
         if pool and name not in judy["face"]["pools"][slot]:
             judy["face"]["pools"][slot].append(name)
+        profile_mirror(judy)
         write_json(JUDY, judy)
         for other in FACE_EXTS:           # one file per slot: drop the other-extension siblings
             sib = os.path.join(FACES, f"{slot}.{other}")
@@ -592,6 +704,7 @@ def face_pool(slot, name, on):
         judy = read_json(JUDY, JUDY_DEFAULTS)
         pool = [n for n in judy["face"]["pools"][slot] if n != name]
         judy["face"]["pools"][slot] = pool
+        profile_mirror(judy)
         write_json(JUDY, judy)
     LOG.append(f"— face pool[{slot}] -{name}")
     cur = slot_path(judy, slot)
@@ -611,6 +724,10 @@ def face_delete(name):
         judy = read_json(JUDY, JUDY_DEFAULTS)
         for s in STATES:
             judy["face"]["pools"][s] = [n for n in judy["face"]["pools"][s] if n != name]
+        profile_mirror(judy)
+        for prof in judy["face"].get("profiles", {}).values():       # a deleted face leaves every profile
+            for s in STATES:
+                prof["pools"][s] = [n for n in prof["pools"].get(s, []) if n != name]
         write_json(JUDY, judy)
     LOG.append(f"— face library -{name}")
 
@@ -950,6 +1067,26 @@ class Handler(BaseHTTPRequestHandler):
 
             if path == "/api/face/delete":
                 face_delete(b.get("name"))
+                return self._send(200, {"ok": True})
+
+            if path == "/api/face/profile":
+                act = b.get("action")
+                if act == "switch":
+                    profile_switch(b.get("name"))
+                elif act == "new":
+                    profile_new(b.get("name"), bool(b.get("copy")))
+                elif act == "delete":
+                    profile_delete(b.get("name"))
+                elif act == "for":
+                    profile_for(b.get("preset"), b.get("name") or "")
+                elif act == "attitude":                    # presets.py calls this on an attitude switch
+                    judy = read_json(JUDY, JUDY_DEFAULTS)
+                    name = ((judy.get("face") or {}).get("profile_for") or {}).get(b.get("preset"))
+                    if name and name != judy["face"].get("profile"):
+                        profile_switch(name)
+                    return self._send(200, {"ok": True, "profile": name})
+                else:
+                    raise ValueError("action is one of switch · new · delete · for · attitude")
                 return self._send(200, {"ok": True})
 
             if path == "/api/face/shuffle":

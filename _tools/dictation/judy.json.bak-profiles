@@ -1,0 +1,95 @@
+{
+  "persona": {
+    "humor": 80,
+    "honesty": 50,
+    "brat": 100,
+    "brevity": 15,
+    "dials": {
+      "brat": "ElevenLabs stability 0.75-0.5b · style 0.15+0.5b",
+      "brevity": "sentence cap 20-0.115v",
+      "humor": "reserved for the Haiku rewrite",
+      "honesty": "reserved for the Haiku rewrite"
+    },
+    "preset": "liberty",
+    "prompt": "You are JUDY off the clock and fully aware of it: a brat with a clearance, talking to the Chief. Tease him, needle him about what he is really after, lean into the goon of it, playful and knowing, innuendo welcome, never cruel, never coy about the facts. Keep every fact, drop formatting, paths and URLs. Four sentences, loose rhythm, the last line a jab.",
+    "say": "teasing, knowing, innuendo allowed; facts intact; four sentences, last line a jab"
+  },
+  "voice": {
+    "engine": "elevenlabs",
+    "piper_voice": "en_GB-jenny_dioco-medium",
+    "name": "",
+    "rate": 0,
+    "volume": 100,
+    "eleven_voice_id": "exsUS4vynmxd379XN4yO",
+    "eleven_model": "eleven_turbo_v2_5",
+    "eleven_settings": {
+      "stability": 0.35,
+      "similarity_boost": 0.5,
+      "style": 1,
+      "use_speaker_boost": true,
+      "speed": 1.08
+    },
+    "dials_from_persona": true
+  },
+  "face": {
+    "slots": {
+      "idle": "Q:\\fun\\_JUDY\\faces\\idle.mp4",
+      "listening": "Q:\\fun\\_JUDY\\faces\\listening.mp4",
+      "thinking": "Q:\\fun\\_JUDY\\faces\\thinking.mp4",
+      "talking": "Q:\\fun\\_JUDY\\faces\\talking.mp4"
+    },
+    "pools": {
+      "idle": [
+        "2biia75qqwph1.gif"
+      ],
+      "listening": [
+        "Mouka - Daily Emiru Face Card _ Day 20_21.mp4",
+        "Ai Generated Cam Camgirl Celebrity Cute Dildo Hardcore Huge Dildo Suction Dildo .mp4",
+        "Flushten - _EMIRU.mp4"
+      ],
+      "thinking": [
+        "hredForMe - Emiru getting passed around so much.mp4"
+      ],
+      "talking": []
+    },
+    "sfw": false,
+    "sfw_set": {
+      "idle": "idle.png",
+      "listening": "listening.png",
+      "thinking": "thinking.png",
+      "talking": "talking.png"
+    },
+    "pools_seeded": true
+  },
+  "chat": {
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "wire": {
+    "mode": "mcp",
+    "server": "_tools/dictation/wire.py",
+    "registered": ".mcp.json",
+    "built": "2026-09-17"
+  },
+  "session": {
+    "reader": "script",
+    "max_sentences": 12,
+    "acks": true,
+    "built": "2026-09-17",
+    "squelch": {
+      "enabled": true,
+      "up": "",
+      "down": "",
+      "note": "empty paths = sfx/key-up.wav · sfx/key-down.wav; drop your own files there"
+    },
+    "cap_from_persona": true,
+    "focus_on_talk": "never",
+    "send_on_talk": false,
+    "send_on_talk_note": "Chief 9/17: the talk pad only drops the words in the box; the SEND pad (config.json send_note, above the talk pad) sends. true = the old auto-send on release.",
+    "speak": "say-line",
+    "speak_note": "Chief 9/17: only replies that open with <!-- say: --> are spoken; everything else (agent traffic, interim turns) is silent. \"all\" = read every block."
+  },
+  "ptt_chirp": {
+    "on": true,
+    "volume": 0.35
+  }
+}

@@ -36,6 +36,16 @@
   header a:hover{color:var(--accent)}
   #update{border:1px solid var(--line-2);background:var(--panel-2);padding:5px 14px;font-family:var(--display);font-weight:800;font-size:16px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;color:var(--ink-2)}
   #update:hover{color:var(--ink)}
+  /* face profiles (10/12): a named set of the four pools; the library stays shared */
+  .profiles{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 16px;border-bottom:1px solid var(--line);background:var(--panel-2)}
+  .profiles .lbl{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.06em}
+  .profiles select,.profiles input{background:var(--bg);color:var(--ink);border:1px solid var(--line-2);padding:5px 8px;font:14px var(--body);min-width:0}
+  .profiles #profile{font-family:var(--display);font-weight:800;font-size:18px;letter-spacing:.04em;color:var(--accent)}
+  .profiles .pbtn{border:1px solid var(--line-2);padding:5px 12px;font-family:var(--display);font-weight:800;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+  .profiles .pbtn:hover{color:var(--ink);border-color:var(--accent)}
+  .profiles .att{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+  .profiles .att label{font-family:var(--mono);font-size:11.5px;color:var(--ink-2)}
+  .profiles .sp{flex:1}
   #sfw{border:1px solid var(--line-2);background:var(--panel-2);padding:5px 14px;font-family:var(--display);font-weight:800;font-size:16px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;color:var(--ink-2)}
   #sfw:hover{border-color:var(--good);color:var(--good)}
   #sfw[aria-pressed="true"]{background:var(--good);border-color:var(--good);color:var(--bg)}
@@ -115,6 +125,16 @@
   <button type="button" id="sfw" aria-pressed="false" title="JUDY shows the four original faces; slots and pools stay as they are for later">SFW</button>
   <a href="/">console →</a>
 </header>
+<div class="profiles" id="profiles">
+  <span class="lbl">Profile</span>
+  <select id="profile" aria-label="Active face profile"></select>
+  <button type="button" class="pbtn" id="pNew" title="A new, empty profile; then toggle library faces into its pools">+ New</button>
+  <button type="button" class="pbtn" id="pCopy" title="A new profile that starts as a copy of this one">Copy</button>
+  <button type="button" class="pbtn" id="pDel" title="Delete a profile that is not active">Delete…</button>
+  <span class="sp"></span>
+  <span class="lbl">Attitude → profile</span>
+  <span class="att" id="att"></span>
+</div>
 <main>
   <div class="bar">
     <h2>The four states</h2>
@@ -253,7 +273,51 @@ function renderLib(){
   });
 }
 
+const ATTS=[["strac","lock in"],["at-ease","fries in the bag"],["liberty","goon time"]];
+function renderProfiles(){
+  const ps=S.profiles||[], cur=S.profile||"";
+  $("#profile").innerHTML=ps.map(n=>`<option value="${esc(n)}"${n===cur?" selected":""}>${esc(n)}</option>`).join("");
+  const pf=S.profile_for||{};
+  $("#att").innerHTML=ATTS.map(([k,l])=>`<label for="att-${k}">${esc(l)}</label><select id="att-${k}" data-att="${k}"><option value="">(no change)</option>${ps.map(n=>`<option value="${esc(n)}"${pf[k]===n?" selected":""}>${esc(n)}</option>`).join("")}</select>`).join("");
+  $$("#att select").forEach(el=>el.onchange=async()=>{
+    if(await api("/api/face/profile",{action:"for",preset:el.dataset.att,name:el.value}).catch(()=>null))
+      toast(el.value?`"${ATTS.find(a=>a[0]===el.dataset.att)[1]}" now shows ${el.value}`:"attitude untied");
+    refresh(true);});
+}
+$("#profile").onchange=async()=>{
+  const name=$("#profile").value;
+  if(await api("/api/face/profile",{action:"switch",name}).catch(()=>null))toast(`profile → ${name} · JUDY switches within 2 seconds`);
+  refresh(true);
+};
+$("#pNew").onclick=()=>askName(false);
+$("#pCopy").onclick=()=>askName(true);
+function askName(copy){
+  const bar=$("#profiles");
+  let box=$("#pAsk");
+  if(!box){box=document.createElement("span");box.id="pAsk";box.className="att";bar.insertBefore(box,bar.querySelector(".sp"));}
+  box.innerHTML=`<input id="pName" maxlength="40" placeholder="${copy?"name for the copy":"e.g. Smeeps"}" aria-label="New profile name"><button type="button" class="pbtn" id="pOk">${copy?"Copy":"Create"}</button><button type="button" class="pbtn" id="pX">×</button>`;
+  $("#pName").focus();
+  const go=async()=>{const name=$("#pName").value.trim();if(!name)return;
+    if(await api("/api/face/profile",{action:"new",name,copy}).catch(()=>null)){toast(copy?`copied to ${name}`:`${name} created · toggle library faces into its pools`);box.remove();}
+    refresh(true);};
+  $("#pOk").onclick=go; $("#pName").onkeydown=e=>{if(e.key==="Enter")go();if(e.key==="Escape")box.remove();};
+  $("#pX").onclick=()=>box.remove();
+}
+$("#pDel").onclick=()=>{
+  const others=(S.profiles||[]).filter(n=>n!==S.profile);
+  if(!others.length)return toast("the active profile is the only one; switch first to delete another",true);
+  const bar=$("#profiles");
+  let box=$("#pAsk");
+  if(!box){box=document.createElement("span");box.id="pAsk";box.className="att";bar.insertBefore(box,bar.querySelector(".sp"));}
+  box.innerHTML=`<select id="pDelName" aria-label="Profile to delete">${others.map(n=>`<option>${esc(n)}</option>`).join("")}</select><button type="button" class="pbtn" id="pDelOk">Delete it</button><button type="button" class="pbtn" id="pX">×</button>`;
+  $("#pDelOk").onclick=async()=>{const name=$("#pDelName").value;
+    if(await api("/api/face/profile",{action:"delete",name}).catch(()=>null)){toast(`deleted profile ${name} · its faces stay in the library`);box.remove();}
+    refresh(true);};
+  $("#pX").onclick=()=>box.remove();
+};
+
 function render(){
+  renderProfiles();
   document.body.classList.toggle("sfw",!!S.sfw);
   $("#sfw").setAttribute("aria-pressed",S.sfw?"true":"false");
   renderSlots(); renderLib();
