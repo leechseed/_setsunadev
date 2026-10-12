@@ -349,6 +349,8 @@ def station_pull():
     lines = [l for l in r.stdout.splitlines() if l.strip()]
     waves = [l for l in lines if l.startswith("wave ")]
     stalled = [l.split(":")[0] for l in waves if "STALLED" in l]
+    if any("LOW:" in l for l in lines):
+        stalled.append("Q disk low")
     if r.returncode or g.returncode:
         return {"station": "PULL", "go": False, "addr": "pull glass", "note": (r.stderr or g.stderr).strip().splitlines()[-1:]}
     live = "; ".join(l.split(" · 429s")[0] for l in waves) or "no wave running"
