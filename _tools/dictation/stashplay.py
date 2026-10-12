@@ -94,14 +94,59 @@ def stop():
     return "stopped"
 
 
+def _right_monitor():
+    """The rightmost monitor's rect (left, top, right, bottom)."""
+    import ctypes
+    from ctypes import wintypes
+    rects = []
+    cb = ctypes.WINFUNCTYPE(ctypes.c_int, wintypes.HMONITOR, wintypes.HDC, ctypes.POINTER(wintypes.RECT), wintypes.LPARAM)
+    ctypes.windll.user32.EnumDisplayMonitors(None, None, cb(lambda h, d, r, l: rects.append((r.contents.left, r.contents.top, r.contents.right, r.contents.bottom)) or 1), 0)
+    return max(rects, key=lambda r: r[0])
+
+
+def _pin_right(pid, wait=15):
+    """Chief 10/12: VLC's own fullscreen snaps to the left screen no matter what. So: find the VLC window,
+    strip its frame, and lay it over the whole right screen (borderless, same look as fullscreen)."""
+    import ctypes
+    import time
+    from ctypes import wintypes
+    u = ctypes.windll.user32
+    x0, y0, x1, y1 = _right_monitor()
+    found = []
+    cb = ctypes.WINFUNCTYPE(ctypes.c_bool, wintypes.HWND, wintypes.LPARAM)
+
+    def each(h, _):
+        p = wintypes.DWORD()
+        u.GetWindowThreadProcessId(h, ctypes.byref(p))
+        if p.value == pid and u.IsWindowVisible(h) and u.GetWindowTextLengthW(h):
+            found.append(h)
+        return True
+    end = time.time() + wait
+    while time.time() < end and not found:
+        time.sleep(0.3)
+        u.EnumWindows(cb(each), 0)
+    for h in found:
+        style = u.GetWindowLongW(h, -16) & ~(0x00C00000 | 0x00040000)   # GWL_STYLE minus WS_CAPTION, WS_THICKFRAME
+        u.SetWindowLongW(h, -16, style)
+        u.SetWindowPos(h, 0, x0, y0, x1 - x0, y1 - y0, 0x0020 | 0x0040)   # SWP_FRAMECHANGED | SWP_SHOWWINDOW
+    return bool(found)
+
+
+def launch(target):
+    """Open VLC on the right screen: minimal view, no autoresize, then pinned borderless over that monitor."""
+    p = subprocess.Popen([VLC, "--qt-minimal-view", "--no-qt-video-autoresize", "--no-qt-fs-controller", "--play-and-exit",
+                          "--no-video-title-show", target],
+                         stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    return _pin_right(p.pid)
+
+
 def play(sc):
     if not sc or not sc.get("files"):
         return None
     path = sc["files"][0]["path"]
     stop()
     if VLC:
-        subprocess.Popen([VLC, "--fullscreen", "--play-and-exit", "--no-video-title-show", path],
-                         stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        launch(path)
     else:
         os.startfile(STASH + "/scenes/" + sc["id"])   # no VLC: Stash's own player in the browser
     try:
@@ -153,8 +198,7 @@ def queue(minutes=30, q=None, max_clip=300):
     io.open(m3u, "w", encoding="utf-8").write("#EXTM3U\n" + "".join("#EXTINF:%d,%s\n%s\n" % (s["files"][0]["duration"], label(s), s["files"][0]["path"]) for s in picked))
     stop()
     if VLC:
-        subprocess.Popen([VLC, "--fullscreen", "--play-and-exit", "--no-video-title-show", m3u],
-                         stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        launch(m3u)
     try:
         io.open(LAST, "w", encoding="utf-8").write(json.dumps({"queue": [label(s) for s in picked], "minutes": round(total / 60, 1)}))
     except Exception:
