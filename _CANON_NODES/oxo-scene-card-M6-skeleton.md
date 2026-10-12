@@ -22,7 +22,7 @@ links:
 
 # SCENE CARD · M6 · "the Fault Line" · skeleton
 
-**What this card is.** Last of four movement-grain skeletons ordered on BOLO 77 call 77-AB, and the series' own ending movement: "The Pacific — War / Attrition. The Fault Line. Failure + Good: total destruction that yields meaning" ([[victoria-midnight]], Where she appears, M6 row) — the storyform's own locked ending shape (oxo-storyform.md §1: Outcome **Failure**, Judgment **Good**, "Failure/Good, personal triumph"; [📐 ssot_04_trope_graph.md](../ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐%20ssot_04_trope_graph.md), THE RAILS, same reading). No idea from Chief's read notes names an M6-specific beat; every specific beyond the storyform's own locked shape is ⧗, offered as interpretation, not invention. **RULED 2026-09-29 (77-AD, rec taken):** P10's scene-level genre obligation for M6 reads as war/attrition, matching the movement's own name. **RULED 2026-09-29 (77-AE):** pass landed 2026-09-29; candidates ⧗ await Chief (`_tools/bolostatus/work/77/ANNA-M4-M6.md` §M6). Still open, Chief's fact, open: 77-AL, the fault-line collapse mechanism.
+**What this card is.** Last of four movement-grain skeletons ordered on BOLO 77 call 77-AB, and the series' own ending movement: "The Pacific — War / Attrition. The Fault Line. Failure + Good: total destruction that yields meaning" ([[victoria-midnight]], Where she appears, M6 row) — the storyform's own locked ending shape (oxo-storyform.md §1: Outcome **Failure**, Judgment **Good**, "Failure/Good, personal triumph"; [📐 ssot_04_trope_graph.md](../ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐%20ssot_04_trope_graph.md), THE RAILS, same reading). No idea from Chief's read notes names an M6-specific beat; every specific beyond the storyform's own locked shape is ⧗, offered as interpretation, not invention. **RULED 2026-09-29 (77-AD, rec taken):** P10's scene-level genre obligation for M6 reads as war/attrition, matching the movement's own name. **RULED 2026-09-29 (77-AE):** pass landed 2026-09-29; RULED 2026-10-12 (Chief: 'take all recs'): 77-AO taken; copy of Colson held (77-AP, rec hold) (`_tools/bolostatus/work/77/ANNA-M4-M6.md` §M6). Still open, Chief's fact, open: 77-AL, the fault-line collapse mechanism.
 
 ---
 
@@ -49,7 +49,7 @@ signpost seat:  Act 4 (M6 alone), per the trope graph's ruled movements map — 
                 OS (the Factions) Changing One's Nature · IC (Anna) Memories · RS (Tori↔Anna) Gathering
                 Information (ssot_04_trope_graph.md, THE RAILS, "The movements map"). Anna Colson is
                 "⧗ not documented" in M6 either ([[anna-colson-conway]], Where she appears, M6 row) —
-                RULED 2026-09-29 (77-AE): pass landed 2026-09-29; candidates ⧗ await Chief (see
+                RULED 2026-09-29 (77-AE): pass landed 2026-09-29; RULED 2026-10-12 (Chief: 'take all recs'): 77-AO taken; copy of Colson held (77-AP, rec hold) (see
                 `ANNA-M4-M6.md` §M6), though the IC's own signpost here, Memories, is thematically
                 loaded: it is also the OS Cost, Memories (oxo-storyform.md §5), landing on the IC's own
                 act at the same moment it lands on the story's ending — ⧗ interpretive convergence, see
@@ -82,8 +82,8 @@ function:       discharges the full storyform at R5 STORY grain — "all four th
 |---|---|---|---|
 | MC (Tori) | **The Future** | Yes — this card proves it | ssot_04_trope_graph.md, movements map |
 | OS (the Factions) | Changing One's Nature | ⧗ interpretive — the system's own final form, whatever survives the Fault Line | ssot_04_trope_graph.md |
-| IC (Anna Colson) | Memories | **⧗ proposed** — pass landed 2026-09-29 (77-AE): the Fault Line's collapse breaks open the Administration's records, exposing Anna's own origin file (the rebuild, "but better") — Memories as exposure, not sentiment, mirroring the OS Cost line at this same movement. Candidate, not canon; awaits Chief. See `_tools/bolostatus/work/77/ANNA-M4-M6.md` §M6(c) | anna-colson-conway.md, Where she appears, M6 row; ANNA-M4-M6.md |
-| RS (Tori↔Anna) | Gathering Information | **⧗ proposed** — same pass: Tori or the Diaspora obtains that exposed record, closing the rivalry on whoever controls Anna's own history. Candidate, not canon; awaits Chief. See `_tools/bolostatus/work/77/ANNA-M4-M6.md` §M6(c) | anna-colson-conway.md, Where she appears, M6 row; ANNA-M4-M6.md |
+| IC (Anna Colson) | Memories | **RULED 2026-10-12 (Chief: 'take all recs'), 77-AO** — pass landed 2026-09-29 (77-AE): the Fault Line's collapse breaks open the Administration's records, exposing Anna's own origin file (the rebuild, "but better") — Memories as exposure, not sentiment, mirroring the OS Cost line at this same movement. Provisional, a week like every ruling. See `_tools/bolostatus/work/77/ANNA-M4-M6.md` §M6(c) | anna-colson-conway.md, Where she appears, M6 row; ANNA-M4-M6.md |
+| RS (Tori↔Anna) | Gathering Information | **RULED 2026-10-12 (Chief: 'take all recs'), 77-AO** — same pass: Tori or the Diaspora obtains that exposed record, closing the rivalry on whoever controls Anna's own history. Provisional, a week like every ruling. See `_tools/bolostatus/work/77/ANNA-M4-M6.md` §M6(c) | anna-colson-conway.md, Where she appears, M6 row; ANNA-M4-M6.md |
 
 ---
 
@@ -124,7 +124,7 @@ gap_effect: ⧗ open
 ## CANON GAPS THIS CARD HIT
 
 - **The Fault Line's mechanism.** Canon gives the name and the outcome-shape only — Chief's fact, open (77-AL).
-- **Anna's total absence** from M4 through M6 (all three "⧗ not documented" per her own node) — RULED 2026-09-29 (77-AE): pass landed 2026-09-29; candidates ⧗ await Chief (see `ANNA-M4-M6.md`) — the IC throughline's back half is now formally seated with a proposed presence at each movement, not yet ruled.
+- **Anna's total absence** from M4 through M6 (all three "⧗ not documented" per her own node) — RULED 2026-09-29 (77-AE): pass landed 2026-09-29; RULED 2026-10-12 (Chief: 'take all recs'): 77-AO taken; copy of Colson held (77-AP, rec hold) (see `ANNA-M4-M6.md`) — the IC throughline's back half is now formally seated with a proposed presence at each movement, not yet ruled.
 - **No collision-engine row**, no address, no duration/frequency mode.
 - **Ladder rung ambiguity** — this is the one card of the four that plausibly closes at R5 STORY rather than R4 MOVEMENT.
 
@@ -137,6 +137,7 @@ gap_effect: ⧗ open
 5. **P8 collision row, P1 address** — unassigned, same recurring gap as the other three skeletons.
 
 ## Version history
+- **0.1.3 · 2026-10-12.** RULED 2026-10-12 (Chief: 'take all recs'): 77-AO taken, Anna's M6 presence is now the ruled provisional candidate (see ANNA-M4-M6.md §M6); 77-AP held, so the copy of Colson stays off-page through M6. Table rows and Open question updated.
 - **0.1.2 · 2026-09-29.** 77-AE pass landed: `_tools/bolostatus/work/77/ANNA-M4-M6.md` §M6 proposes the Fault Line's records-collapse exposing Anna's origin file (IC Memories) with Tori/the Diaspora gathering it (RS Gathering Information) — ⧗ candidate, awaits Chief; flags the copy of Colson as a possible-but-unplaced role at this movement, held for Chief's call rather than invented.
 - **0.1.1 · 2026-09-29.** RULED 2026-09-29 (BOLO 77 calls 77-AD and 77-AE, "all recs"). 77-AD: P10 for M6 = war/attrition, matching the movement's own name. 77-AE: an Anna M4-M6 presence pass is tasked, not done; IC/RS marked accordingly on the signpost table and P6. 77-AL (the fault-line collapse mechanism) stays open, Chief's fact. Closes Open questions 1 and 2.
 - **0.1.0 ⧗ · 2026-09-29.** First skeleton card for Movement 6, BOLO 77 call 77-AB (Chief: "1.0") — the last of the four movements ordered with none. No fabula event exists yet for M6; proposes `m6_fault_line_collapse` ⧗ as the working id. No Chief's-notes candidate was available for this movement in the read sources; every specific beyond the storyform's own locked Failure/Good ending shape is ⧗. Five open questions for Chief.

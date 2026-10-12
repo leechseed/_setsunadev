@@ -151,9 +151,9 @@ Every entry below states where Anna and Tori collide or mirror on the RS axis (F
 | 1 | Delta Coast — Southern Gothic Racing | **⧗ not documented.** No source places Anna in M1; proposed reading: she is absent — M1 is Tori-and-Jebb territory, pre-institution |
 | 2 | Year 1 School — Sync Cult, FLCL | **Ruled off-screen.** [[oxo-scene-card-M2-row9]]: "Anna off-screen, no node... the rs thread is untouched by design." She is not yet at the top of the board |
 | 3 | Year 2 School — Gooner-Noir | **Her ascent begins.** Canon: [[BVX.0064]] Application section, cross-cited in [[victoria-midnight]]'s Relationships table ("M3 = her ascent") |
-| 4 | Bourne — Espionage / Body Horror | ⧗ not documented |
-| 5 | Fight Club — Radicalization | ⧗ not documented |
-| 6 | The Pacific — War / Attrition | ⧗ not documented |
+| 4 | Bourne — Espionage / Body Horror | **RULED 2026-10-12 (Chief: 'take all recs'), 77-AM, provisional.** Anna sits composed inside the Feed's rank/Sync ceremony, intercut with Tori's reclassification. IC Contemplation, RS Doing. Source: `_tools/bolostatus/work/77/ANNA-M4-M6.md` §M4 |
+| 5 | Fight Club — Radicalization | **RULED 2026-10-12 (Chief: 'take all recs'), 77-AN, provisional.** The Feed broadcasts Anna's ascent as the system's counter-message while the Diaspora forms. She needs no scene with Tori. Source: `ANNA-M4-M6.md` §M5 |
+| 6 | The Pacific — War / Attrition | **RULED 2026-10-12 (Chief: 'take all recs'), 77-AO, provisional.** The Fault Line's collapse exposes her origin file (the rebuild, "but better"). Tori and the Diaspora gather it. IC Memories, RS Gathering Information. The copy of Colson stays off-page (77-AP, hold). Source: `ANNA-M4-M6.md` §M6 |
 
 ---
 

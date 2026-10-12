@@ -176,10 +176,14 @@ def main():
     if "--flush" in flags:
         cache, logd = os.path.join(ROOT, "_CACHE"), os.path.join(ROOT, "_LOG")
         moved = []
-        for f in sorted(os.listdir(cache)):
-            if f.endswith(".session.md") and not f.startswith(date[:10]):
-                shutil.move(os.path.join(cache, f), os.path.join(logd, f)); moved.append(f)
-        print("flushed → _LOG/: " + (", ".join(moved) or "nothing (today's own note stays staged)"))
+        import re as _re
+        def _nk(f):   # BOLO 86: natural order, so -2 follows the plain note
+            m = _re.match(r"(\d{4}-\d{2}-\d{2})(?:-(\d+))?\.session\.md$", f)
+            return (m.group(1), int(m.group(2) or 1)) if m else ("", 0)
+        notes = sorted([f for f in os.listdir(cache) if f.endswith(".session.md")], key=_nk)
+        for f in notes[:-1]:   # keep only the newest note (BOLO 86 rec 3)
+            shutil.move(os.path.join(cache, f), os.path.join(logd, f)); moved.append(f)
+        print("flushed → _LOG/: " + (", ".join(moved) or "nothing (the newest note stays staged)"))
 
 if __name__ == "__main__":
     try: sys.stdout.reconfigure(encoding="utf-8", errors="replace")

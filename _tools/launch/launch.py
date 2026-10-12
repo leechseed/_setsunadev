@@ -283,6 +283,36 @@ def station_wire():
             "note": ("probe ok · %.1f s" % (time.time() - t0)) if ok else tail}
 
 
+def station_frago():
+    """BOLO 86: Oscar Mike staged _tools/launch/next.json; FRAGO every DOPE SHEET it names before the boards open.
+    Zero tokens: the patch is one log line plus the version bump and today's asof. Built locally; the publish is the main line's."""
+    nj = os.path.join(ROOT, "_tools", "launch", "next.json")
+    if not os.path.exists(nj):
+        return {"station": "FRAGO", "go": True, "addr": "next.json", "note": "nothing staged"}
+    try:
+        nxt = json.load(io.open(nj, encoding="utf-8"))
+    except Exception as e:
+        return {"station": "FRAGO", "go": False, "addr": "next.json", "note": "unreadable: %s" % e}
+    sheets, done = nxt.get("sheets", []), nxt.get("frago_done", [])
+    todo = [n for n in sheets if n not in done]
+    if not todo:
+        return {"station": "FRAGO", "go": True, "addr": "next.json", "note": "no sheet to refresh" if not sheets else "already refreshed"}
+    frago = os.path.join(ROOT, "_tools", "bolostatus", "frago.py")
+    patch = os.path.join(os.path.dirname(nj), "frago.patch.json")
+    bad = []
+    for n in todo:
+        io.open(patch, "w", encoding="utf-8").write(json.dumps({"log": [{"who": "Claude", "t": "Launch refresh: reopened from the %s close-out." % nxt.get("note", "last")}]}))
+        r = subprocess.run([PY, frago, str(n), patch, "--build"], cwd=ROOT, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=120)
+        if r.returncode:
+            bad.append(str(n))
+        else:
+            done.append(n)
+    nxt["frago_done"] = done
+    io.open(nj, "w", encoding="utf-8", newline="\n").write(json.dumps(nxt, ensure_ascii=False, indent=1))
+    return {"station": "FRAGO", "go": not bad, "addr": "next.json",
+            "note": ("refreshed %s locally (republish owed)" % [n for n in todo if str(n) not in bad]) + ((" - failed %s" % bad) if bad else "")}
+
+
 def station_pages():
     out = []
     try:
@@ -332,6 +362,7 @@ def main():
     ap = argparse.ArgumentParser(description="the launch sequence (BOLO 58)")
     ap.add_argument("--no-audit", action="store_true")
     ap.add_argument("--no-pages", action="store_true")
+    ap.add_argument("--no-frago", action="store_true")
     ap.add_argument("--no-darkroom", action="store_true")
     ap.add_argument("--no-stash", action="store_true")
     ap.add_argument("--no-judy", action="store_true")
@@ -361,6 +392,8 @@ def main():
         rows.append(station_knobs())
     if not a.no_wire:
         rows.append(station_wire())
+    if not a.no_frago:
+        rows.append(station_frago())   # BOLO 86: every staged sheet is FRAGO'd before the boards open
     if not a.no_pages:
         rows += station_pages()
     stamp = dt.datetime.now().strftime("%Y-%m-%d %H:%M")

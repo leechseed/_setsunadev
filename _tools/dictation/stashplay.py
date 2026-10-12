@@ -23,7 +23,7 @@ VLC = next((p for p in (r"C:\Program Files\VideoLAN\VLC\vlc.exe", r"C:\Program F
             if os.path.exists(p)), None)
 LAST = os.path.join(os.path.dirname(os.path.abspath(__file__)), "_stashplay_last.json")
 
-FIELDS = "id title rating100 date files { path basename duration } performers { name } studio { name } tags { name }"
+FIELDS = "id title rating100 date files { path basename duration } performers { name gender } studio { name } tags { name }"
 
 
 def gql(query, variables=None):
@@ -157,34 +157,55 @@ def play(sc):
     return label(sc)
 
 
-def _fill(want, q=None, max_clip=300, seen=()):
-    """Clips adding up to about `want` seconds: search hits for q, or random pool scenes."""
+BAD_TITLE = ("wife", "cuckold", "cuck", "hotwife")
+
+
+def _gay_ok(sc):
+    """BOLO 76 (9/24 evidence): the `gay` tag carries straight scenes. Out: the `straight` tag, any female
+    performer, wife/cuckold titles."""
+    if any((t.get("name") or "").lower() == "straight" for t in sc.get("tags") or []):
+        return False
+    if any((p.get("gender") or "").upper() in ("FEMALE", "TRANSGENDER_FEMALE") for p in sc.get("performers") or []):
+        return False
+    title = (sc.get("title") or "").lower()
+    return not any(w in title for w in BAD_TITLE)
+
+
+def _fill(want, q=None, max_clip=120, seen=(), long_every=5, long_max=360):
+    """BOLO 76 set list: clips adding up to about `want` seconds, each under `max_clip` (two minutes), with one
+    longer clip (up to `long_max`) in every `long_every`. Search hits for q, or random pool scenes. A `gay` theme
+    runs through the straight filter."""
     if q:
-        d = gql('query($q:String){ findScenes(filter:{q:$q, per_page:80, sort:"rating", direction:DESC}) { scenes { %s } } }' % FIELDS, {"q": q})
+        d = gql('query($q:String){ findScenes(filter:{q:$q, per_page:200, sort:"rating", direction:DESC}) { scenes { %s } } }' % FIELDS, {"q": q})
     else:
         seed = rnd.randint(1, 10**9)
-        d = gql('query($f:SceneFilterType,$s:String){ findScenes(scene_filter:$f, filter:{per_page:80, sort:$s}) { scenes { %s } } }' % FIELDS,
+        d = gql('query($f:SceneFilterType,$s:String){ findScenes(scene_filter:$f, filter:{per_page:200, sort:$s}) { scenes { %s } } }' % FIELDS,
                 {"f": _ud_filter(), "s": "random_%d" % seed})
     pool = [s for s in d["findScenes"]["scenes"] if s.get("files") and (s["files"][0].get("duration") or 0) > 5 and s["id"] not in seen]
+    if q and "gay" in q.lower():
+        pool = [s for s in pool if _gay_ok(s)]
     rnd.shuffle(pool)
-    short = [s for s in pool if s["files"][0]["duration"] <= max_clip]
+    dur_of = lambda s: s["files"][0]["duration"]
+    short = [s for s in pool if dur_of(s) <= max_clip]
+    longs = [s for s in pool if max_clip < dur_of(s) <= long_max]
     if not short:   # nothing short enough: take the shortest few rather than nothing
-        short = sorted(pool, key=lambda s: s["files"][0]["duration"])[:3]
-    picked, total = [], 0.0
-    for s in short:
-        dur = s["files"][0]["duration"]
-        if total > 0 and total + dur > want * 1.25:   # would overshoot by more than a quarter: look for a shorter one
+        short = sorted(pool, key=dur_of)[:3]
+    picked, total, n = [], 0.0, 0
+    while (short or longs) and total < want:
+        n += 1
+        src = longs if (n % long_every == 0 and longs) else (short or longs)
+        s = src.pop()
+        if total > 0 and total + dur_of(s) > want * 1.25:   # would overshoot by more than a quarter: skip it
             continue
         picked.append(s)
-        total += dur
-        if total >= want:
-            break
+        total += dur_of(s)
     return picked, total
 
 
-def queue(minutes=30, q=None, max_clip=300):
-    """A playlist about `minutes` long. q = None for the pool, words for a theme, or "a, b, c" for themes in order,
-    each getting an equal share of the time (Chief 9/20: "lesbians, then gay, then group"). Plays back to back, fullscreen."""
+def queue(minutes=60, q=None, max_clip=120):
+    """A playlist about `minutes` long (default 60, BOLO 76). Clips under two minutes, one longer in five.
+    q = None for the pool, words for a theme, or "a, b, c" for themes in order, each getting an equal share of
+    the time (Chief 9/20). Plays back to back, fullscreen."""
     want = int(minutes) * 60
     themes = [t.strip() for t in q.split(",")] if q and "," in q else [q]
     picked, total, seen = [], 0.0, set()
@@ -219,7 +240,7 @@ def act(action):
         import re
         mq = re.match(r"^(queue|set|playlist)\b\s*:?\s*(\d+)?\s*(?:min(?:ute)?s?)?\s*(.*)$", a, re.I)
         if mq:
-            minutes = int(mq.group(2) or 30)
+            minutes = int(mq.group(2) or 60)
             words = (mq.group(3) or "").strip()
             picked, total = queue(minutes, words or None)
             if not picked:

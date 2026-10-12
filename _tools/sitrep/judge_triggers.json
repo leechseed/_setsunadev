@@ -1,0 +1,12 @@
+{
+ "bolo": 122,
+ "built": "2026-10-12",
+ "note": "Step one of the Escalation Judge: the triggers, counted in the last ten session notes (_LOG, 10/4 to 10/10). Next step: assemble.py writes one ledger line per trigger, then the judge reads the ledger and prints the MODEL CALL banner.",
+ "triggers": [
+  {"id": "rerun", "meaning": "a specialist rerun after RANGE rejected its output", "seen_in_notes": 4, "sessions": ["10-04-5", "10-05-2", "10-05-3", "10-06"], "action": "a second rerun that still fails moves the piece up one grade (PS to MS to CDR)"},
+  {"id": "fable-job", "meaning": "a design or writing job tagged for Fable (fabula, worldbuilding, design days)", "seen_in_notes": 4, "sessions": ["10-05", "10-05-2", "10-05-3", "10-08"], "action": "print the red MODEL CALL banner before the work starts"},
+  {"id": "gear-above-2", "meaning": "a gear shift above 2", "seen_in_notes": 0, "sessions": [], "action": "banner; no note records the gear, so assemble.py must log it"},
+  {"id": "two-failed-fixes", "meaning": "two failed attempts at one fix", "seen_in_notes": 0, "sessions": [], "action": "banner; notes do not record attempts, so a ledger line is needed"}
+ ],
+ "gap": "Only reruns and Fable jobs leave a trace in the notes. Gear and failed-fix triggers need a ledger that assemble.py writes."
+}

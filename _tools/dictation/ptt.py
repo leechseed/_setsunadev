@@ -187,11 +187,23 @@ class Engine:
             beam_size=5,
             condition_on_previous_text=False,
         )
-        raw = " ".join(s.text.strip() for s in segments).strip()
+        # BOLO 63 hallucination gate: drop segments Whisper itself doubts (its own
+        # no-speech + low-confidence rule) or that loop (high compression ratio).
+        g = self.cfg.get("gate") or {}
+        kept, dropped = [], []
+        for s in segments:
+            bad = (g.get("enabled", True) and (
+                (getattr(s, "no_speech_prob", 0) > g.get("no_speech", 0.6)
+                 and getattr(s, "avg_logprob", 0) < g.get("logprob", -1.0))
+                or getattr(s, "compression_ratio", 0) > g.get("compression", 2.4)))
+            (dropped if bad else kept).append(s.text.strip())
+        if dropped:
+            print(f"  gate     dropped {len(dropped)} doubtful segment(s): {dropped}")
+        raw = " ".join(kept).strip()
         fixed, hits = codebook.apply(raw, aggressive=self.cfg["aggressive"])
         return fixed, {
             "raw": raw, "hits": hits, "peak": peak,
-            "secs": len(audio) / SR, "took": time.time() - t0,
+            "secs": len(audio) / SR, "gated": dropped, "took": time.time() - t0,
         }
 
 

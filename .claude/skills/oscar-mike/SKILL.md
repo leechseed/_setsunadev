@@ -43,6 +43,14 @@ python _tools/oscarmike/journal.py
 
 Appends the note's bullets under a timed header to `_devlog/_devlog_docs/_devlog_journals/MMDDYYYY.journal.md` (idempotent per note). The reply carries the STATIONS DOWN block, then ends with the OUT block (SOP §7 rule 9) and nothing after it. Autocommit fires on stop.
 
+## H4 · Stage the next launch (BOLO 86, ruled 10/12, provisional)
+
+```
+python _tools/oscarmike/stage_next.py
+```
+
+Writes `_tools/launch/next.json`: the leverage line from the newest board, every DOPE SHEET touched today, and the note's Open-at-close bullets. `launch.py` reads it and FRAGOs each named sheet before the boards open. Run it after H3, before the OUT block.
+
 ## Rules
 
 - The note is the wire, STATE is the index: detail goes in the note, the index line goes in STATE.

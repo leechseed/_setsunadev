@@ -231,7 +231,8 @@ def main():
             iii["_carried"] = "PROJECTS.md changed since the last board; main line to check"
             iii_flag = "FLAG: PROJECTS.md moved"
         else:
-            iii["_carried"] = "carried; PROJECTS.md unchanged"
+            iii["_carried"] = "REBUILD (BOLO 86, provisional): the main line checks III against PROJECTS.md; do not carry it forward unread"
+            iii_flag = "FLAG: rebuild III (BOLO 86)"
         dump(os.path.join(wd, "frag", "III.json"), iii)
     npro = 0
     if "VII" in prev_blocks:

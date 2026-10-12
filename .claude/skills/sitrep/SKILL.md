@@ -11,6 +11,8 @@ description: Deliver the sit rep (the board + the SITREP page) in the formation 
 
 Canonical protocol: SOP.md §1 (the command) · §2 (the blocks) · §3 (the flush). This skill is the procedure.
 
+**Alternative path (BOLO 68, provisional 10/12, untested):** [.claude/workflows/sitrep.js](../../workflows/sitrep.js) runs H0 to H2 as a Workflow script; this skill stays the canonical procedure.
+
 ## H0 · Prep (zero tokens)
 
 ```
@@ -52,7 +54,7 @@ Then the main line does the only judgment work in the run, off the digest alone:
 
 1. Write `work/<date>/frag/VI.json` — the leverage line (`line` · `why` · `plain` · `strand`), same shape as `prev/VI.json`.
 2. Write `work/<date>/meta.patch.json` — `when` · `trigger` · `countersign` · `main_effort` · `stats` as a **list of "label: value" strings**, never a dict (a dict blanked the board twice on 10/4; assemble.py now coerces it) (blocked count · main-effort idle days · agents deployed · anything measured) · `build.calls`/`rounds`. Anything not in the patch keeps prep's value.
-3. If prep flagged III (PROJECTS.md moved), edit `frag/III.json` by hand; otherwise leave it.
+3. Block III is rebuilt by default now (BOLO 86, provisional 10/12): prep flags it every run; edit `frag/III.json` against PROJECTS.md. Block VII's prowords refresh from the register.
 
 ## H3 · Build, flush, publish
 
@@ -60,7 +62,7 @@ Then the main line does the only judgment work in the run, off the digest alone:
 python _tools/sitrep/assemble.py <date> --build --flush
 ```
 
-Writes `boards/<date>.json`, builds `SITREP.html` + the fragment (path printed), then moves every cache note except today's into `_LOG/` (the flush, SOP §3; an empty rack is the proof). Publish the fragment with the Artifact tool to the standing URL:
+Writes `boards/<date>.json`, builds `SITREP.html` + the fragment (path printed), then moves every cache note except the newest into `_LOG/` (the flush, SOP §3; BOLO 86 ruled 10/12: one note stays). Publish the fragment with the Artifact tool to the standing URL:
 
 ```
 https://claude.ai/code/artifact/aebe5f9c-9f2c-4cb8-abbf-714a0a6ea28a

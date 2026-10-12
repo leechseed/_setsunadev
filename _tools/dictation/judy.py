@@ -385,7 +385,7 @@ class Loop:
             # holds of the talk pad pile up in the box; the trailing space joins them.
             # judy.json session.send_on_talk = true restores the old auto-send.
             import ptt
-            ptt.type_out(heard + " ")
+            ptt.type_out(heard + ((" " + self._vtag) if getattr(self, "_vtag", "") else "") + " ")
             if (cfg().get("session") or {}).get("send_on_talk"):
                 import keyboard
                 import focus
@@ -485,6 +485,14 @@ class Loop:
         self.open = True
         self.face.set("listening")
         self._chirp_down()
+        # BOLO 63 hush on key-down: her voice must not reach the mic. Session voice only.
+        if self.session and (cfg().get("session") or {}).get("hush_on_down", True):
+            try:
+                m = getattr(self, "mouth", None)
+                if m is not None:
+                    m.interrupt()
+            except Exception:
+                pass
         if self.session:
             # Chief 9/17: the pad brings VS Code forward and puts the cursor in the chat box.
             # Runs beside the recorder so the mic opens on time; the paste lands after.
@@ -550,6 +558,12 @@ class Loop:
             text, meta = self.engine.transcribe(audio)
             for h, r, _n in (meta.get("hits") or []):
                 print(f"         §8 {h!r} -> {r!r}")
+            self._vtag = ""
+            if self.session and not is_naked and not is_yoyo and text and (cfg().get("session") or {}).get("voice_read"):
+                import voiceread   # BOLO 124: how he said it, against his baseline
+                self._vtag = voiceread.read(audio, text)
+                if self._vtag:
+                    print(f"         {self._vtag}")
             if is_naked:
                 self.naked.turn(text)
             elif is_yoyo:
