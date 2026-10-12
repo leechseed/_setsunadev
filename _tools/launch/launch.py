@@ -31,7 +31,7 @@ STASH_CFG = os.path.join("Q:\\", "fun", ".StashApp", "config.yml")
 STASH_URL = "http://127.0.0.1:9999/"
 DECK = os.path.join(ROOT, "_PRIVATE", "stash_deck", "index.html")   # the Stash deck, opened in the default browser
 PAGES = os.path.join(ROOT, "_tools", "pages", "pages.json")
-BOARDS = ["sitrep", "soi"]           # RULED 9/17: the board · the SOI · zero DOPE SHEETs
+BOARDS = ["sitrep", "soi", "pullglass"]   # RULED 9/17: the board · the SOI · zero DOPE SHEETs; + the pull glass (Chief 10/12, BOLO 137)
 TOOLS = ("blocked", "bolo", "box", "effort", "help", "pmcs", "time")
 
 
@@ -333,6 +333,31 @@ def station_pages():
     return out
 
 
+def station_pull():
+    """BOLO 137, Chief 10/12: "run the process at the beginning with the glass whenever we run the launch sequence".
+    Zero tokens: builds the pull glass from the queue + the wave logs and reports the waves. NO-GO only on a stalled
+    wave. The publish to pages.json "pullglass" and the hourly update are the main line's (the launch skill)."""
+    t0 = time.time()
+    te = os.path.join(ROOT, "_PRIVATE", "taxonomy_engine")
+    try:
+        r = subprocess.run([PY, os.path.join(te, "pull_queue.py"), "report"], cwd=te, capture_output=True, text=True,
+                           encoding="utf-8", errors="replace", timeout=60, env=dict(os.environ, PYTHONIOENCODING="utf-8"))
+        g = subprocess.run([PY, os.path.join(te, "pull_glass.py")], cwd=te, capture_output=True, text=True,
+                           encoding="utf-8", errors="replace", timeout=60, env=dict(os.environ, PYTHONIOENCODING="utf-8"))
+    except Exception as e:
+        return {"station": "PULL", "go": False, "addr": "pull glass", "note": "did not run: %s" % e}
+    lines = [l for l in r.stdout.splitlines() if l.strip()]
+    waves = [l for l in lines if l.startswith("wave ")]
+    stalled = [l.split(":")[0] for l in waves if "STALLED" in l]
+    if r.returncode or g.returncode:
+        return {"station": "PULL", "go": False, "addr": "pull glass", "note": (r.stderr or g.stderr).strip().splitlines()[-1:]}
+    live = "; ".join(l.split(" · 429s")[0] for l in waves) or "no wave running"
+    note = "%s · %s · glass built, republish owed · %.1f s" % (live, lines[-1] if lines else "", time.time() - t0)
+    if stalled:
+        note = "STALLED: %s · " % ", ".join(stalled) + note
+    return {"station": "PULL", "go": not stalled, "addr": "pull glass", "note": note}
+
+
 def station_audit():
     """Chief, 10/6: "audits to be done at the beginning of every launch, and that to be the first thing we always do."
     Runs the SOP audit (zero tokens) and reports its counts. NO-GO only on what needs Chief's eyes: private detail
@@ -361,6 +386,7 @@ def main():
         pass
     ap = argparse.ArgumentParser(description="the launch sequence (BOLO 58)")
     ap.add_argument("--no-audit", action="store_true")
+    ap.add_argument("--no-pull", action="store_true")
     ap.add_argument("--no-pages", action="store_true")
     ap.add_argument("--no-frago", action="store_true")
     ap.add_argument("--no-darkroom", action="store_true")
@@ -376,6 +402,8 @@ def main():
     rows = []
     if not a.no_audit:   # first, always (Chief 10/6): get it out of the way
         rows.append(station_audit())
+    if not a.no_pull:    # right after the audit (Chief 10/12): the pull waves and their glass
+        rows.append(station_pull())
     if not a.no_darkroom:
         rows.append(station_darkroom())
     if not a.no_stash:

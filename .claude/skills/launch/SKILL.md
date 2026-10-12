@@ -37,7 +37,7 @@ STATIONS · 2026-09-17 04:20
 
 Keep the poll verbatim. A NO-GO is reported, never retried in a loop; the sit rep still runs.
 
-**PULL UPDATES (BOLO 137, Chief 10/12: "give me regular updates please have that be part of the process"):** run `python _PRIVATE/taxonomy_engine/pull_queue.py report`. If any wave is live, arm one hourly CronCreate (minute 7) whose prompt runs the report and posts it as a short update; the poll gets a PULL line with the report's wave lines. Any turn that starts a wave arms the same job if none is armed (CronList first). The job deletes itself when the pull goes idle.
+**PULL + THE GLASS (BOLO 137, Chief 10/12: "give me regular updates please have that be part of the process" · "run the process at the beginning with the glass whenever we run the launch sequence"):** `launch.py` runs station **PULL** right after AUDIT (zero tokens): `pull_queue.py report` for the wave lines, then `pull_glass.py` builds the glass at `_PRIVATE/reference/pullqueue/pull-queue.html`; NO-GO only on a stalled wave. The main line then (1) publishes that file to the standing URL `pages.json` "pullglass" (https://claude.ai/artifact/Lg323uYY1oB2HCfgHFDFQ6; in a new session pass it as `url`, and the first publish may be refused unread — the glass is generated, so a refused publish is resent once the saved copy is acknowledged), and the pages station opens it as a tab; (2) if any wave is live, arms ONE hourly CronCreate (minute 7; CronList first) whose prompt runs the report, rebuilds the glass, republishes it, and posts a short update. Any turn that starts a wave arms the same job. The job deletes itself when the pull goes idle; it never starts or kills a wave.
 
 ## 2 · The sit rep
 
