@@ -1,39 +1,19 @@
 {
- "staged": "2026-10-12 11:24",
+ "staged": "2026-10-12 15:02",
  "leverage": {
-  "line": "Rule fabula batch 4 against I4: era 4's events open on the queenpin's Moon, beside The Outliers' 2199.",
-  "why": "I4 is ruled and batch 4's other 13 calls wait on a re-read. Batch 4 is the next BOLO 100 step.",
-  "board": "main line, Oscar Mike 10/12 11:23 (supersedes the board's line, now done)"
+  "line": "Rule fabula batch 4's 14 calls with 'take all recs': it frees the next stretch of BOLO 100.",
+  "why": "Batch 4 is drafted and waiting. The calls are the only gate. One phrase rules them all.",
+  "board": "2026-10-12-3.json"
  },
  "sheets": [
   77,
   121
  ],
  "open_at_close": [
-  "batch 4's other 13 calls, re-read against I4 (I8 void)",
-  "the queenpin's name",
-  "the 2090s births (ancestors or a century later)",
-  "H10 station name",
-  "era 5 ship (Moon rec, Chief to shape)",
-  "Export on the review page (125) and the Stash sample (28); \"exported\" not yet said",
-  "pull queue wave 1 running (about 30 min a board, lands ~05:00–06:00 10/13; it runs from this session's shell, so a closed window stops it and \"wave 1\" resumes, skipping finished boards), then waves 2–70 (\"wave 2\")",
-  "crew dials unset",
-  "Smeeps profile needs images",
-  "JUDY changes await next launch",
-  "untested: BOLO 86 pipeline, judge ledger, sitrep.js",
-  "BOLO 69 \"the wind\" not ordered",
-  "BOLO 65 capstone labels (about 5 edits)",
-  "BOLO 127 order and relaxed-fit swap",
-  "BOLO 135 ORANGE day one (tomorrow) checklist unset",
-  "BOLO 136 THE CUT",
-  "expression library route (no Blender)",
-  "drive purchase and core backup (offered, not chosen)",
-  "BOLO 123 held behind BOLO 100",
-  "ORANGE items, detail in `_PRIVATE/`."
+  "Story calls with recs, \"take all recs\" rules them: S1 the queenpin's name (bench on 48) · S2 the 2090s births (rec: ancestors) · S3 I1 first place (rec: Aldrin Sector) · S4 I5 colonization (rec: two ids, one edge) · S5 I10 (rec: purge first) · S6 I12 (rec: the AI Collapse seen from the Moon) · S7 Myrtle (rec: after the heist).",
+  "No rec: H10 station name and owner (waits on research) · batch 3 leftovers (the first attempt's loss, the first-comer people, the ship).",
+  "Ops: O1 the BOLO 137 pull queue stopped with the last session's window, say \"wave 1\" · O2 crew dials on `_tools/crew/CREW.html` · O3 BOLO 135 day-one checklist · O4 \"exported\" on 125 and 28 · O5 republish DOPE SHEETs 77 and 121 · O6 core backup before the drive buy · O7 BOLO 65 labels · O8 BOLO 127 order · O9 BOLO 69 wind (rec: hold) · O10 expression library route · O11 Smeeps images.",
+  "The board shows BOLO 34 held; it was ruled 10/12 (WATCH read a stale line)."
  ],
- "note": "2026-10-12-3.session.md",
- "frago_done": [
-  77,
-  121
- ]
+ "note": "2026-10-12-4.session.md"
 }
