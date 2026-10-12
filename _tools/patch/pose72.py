@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""BOLO 72 · the pose reference — comp 01 THE MARIONETTE, stood up in the Blender studio (BOLO 24's rig).
+"""BOLO 72 · the pose reference — comp 01 THE MARIONETTE or comp 07 THE RIDE (--comp), stood up in the Blender studio (BOLO 24's rig).
 
 Run headless:
   blender --background --python _tools/patch/pose72.py -- [--smoke] [--render] [--comp 01] [--out Q:/fun/_BOLO24/renders/patch72]
@@ -24,7 +24,7 @@ argv = sys.argv[sys.argv.index("--") + 1:] if "--" in sys.argv else []
 ap = argparse.ArgumentParser()
 ap.add_argument("--smoke", action="store_true")
 ap.add_argument("--render", action="store_true")
-ap.add_argument("--comp", default="01")
+ap.add_argument("--comp", default="01")        # 01 THE MARIONETTE · 07 THE RIDE (see COMPS below)
 ap.add_argument("--out", default=r"Q:/fun/_BOLO24/renders/patch72")
 ap.add_argument("--hdri", default=r"Q:/fun/_BOLO24/hdri/studio_small_09_2k.hdr")
 ap.add_argument("--samples", type=int, default=256)
@@ -38,7 +38,7 @@ HAND_LEN = HER_HEIGHT * PHI          # cuff to middle fingertip, metres
 
 # ---- comp 01 THE MARIONETTE · joint targets in metres (x right · y away from camera · z up) ----
 # She hangs from two strings by the fists, arms up, back arched, head thrown back, legs kicked up behind.
-TARGETS = {
+TARGETS_01 = {
     "T_wrist_L":    (0.06, 0.05, 2.05),
     "T_wrist_R":    (0.22, -0.02, 2.02),
     "T_elbow_L":    (-0.02, 0.06, 1.78),
@@ -53,6 +53,48 @@ TARGETS = {
     "T_ankle_R":    (0.48, 0.26, 1.22),
 }
 STRINGS = (("index", "T_wrist_L"), ("middle", "T_wrist_R"))
+
+# ---- comp 07 THE RIDE · joint targets in metres, read off comps.py comp_ride() ----
+# Scale: 200 px = 1 m on the 1000-px comp sheet; x = (px-500)/200, z = (690-py)/200 (ground at py 690), depth y set below.
+# She rides bareback at a gallop moving +x (screen right), leaning back off the hips, face to the sky,
+# bolas arm up and forward, the other hand down between the thighs.
+def _m(px, py, y=0.0):
+    return ((px - 500) / 200.0, y, (690 - py) / 200.0)
+
+TARGETS_07 = {
+    "T_wrist_L":    _m(506, 296, -0.10),   # the fist with the bolas
+    "T_wrist_R":    _m(478, 494, 0.05),    # the other hand, down between the thighs
+    "T_elbow_L":    _m(448, 346, -0.14),
+    "T_elbow_R":    _m(468, 446, 0.14),
+    "T_shoulder_L": _m(402, 404, -0.15),
+    "T_shoulder_R": _m(432, 396, 0.15),
+    "T_head":       _m(402, 356, 0.0),     # face to the sky
+    "T_hips":       _m(452, 478, 0.0),
+    "T_knee_L":     _m(528, 524, -0.30),   # provisional: legs grip the barrel, knees out to each side
+    "T_knee_R":     _m(508, 540, 0.30),
+    "T_ankle_L":    _m(520, 592, -0.34),
+    "T_ankle_R":    _m(496, 604, 0.34),
+}
+BOLAS_FIST = TARGETS_07["T_wrist_L"]
+BOLAS_R = 0.475                            # 95 px
+
+
+def _bolas_ball(i, a):
+    return (BOLAS_FIST[0] + BOLAS_R * math.cos(math.radians(a)), BOLAS_FIST[1], BOLAS_FIST[2] - BOLAS_R * math.sin(math.radians(a)))
+
+# per-comp config: targets, whether the Hand + strings exist, extra props, camera
+COMPS = {
+    "01": dict(name="THE MARIONETTE", targets=TARGETS_01, hand=True, props=None,
+               cam=dict(loc=(-1.1, -7.2, 2.0), aim=(0.45, 0.1, 2.0))),
+    # camera: side-on (she travels screen-right), 50 mm; frame ~3.2 m wide centred on her  # provisional
+    "07": dict(name="THE RIDE", targets=TARGETS_07, hand=False, props="ride",
+               cam=dict(loc=(0.0, -4.8, 1.15), aim=(0.0, 0.0, 1.15))),
+}
+if A.comp not in COMPS:
+    sys.stderr.write("[72] unknown --comp %r; known: %s" % (A.comp, ", ".join(sorted(COMPS))) + chr(10))
+    sys.exit(2)
+CFG = COMPS[A.comp]
+TARGETS = CFG["targets"]
 
 
 def clear_scene():
@@ -184,6 +226,41 @@ def make_strings(tip_world):
         s = bpy.context.active_object; s.name = "string_" + finger; s.data.materials.append(m)
 
 
+# ---- comp 07 props: the horse (proxy) and the bolas ----------------------------------------------
+def make_ride_props():
+    """Horse proxy from primitives, facing +x at a gallop, black; bolas: gold balls on black cords from the fist. # provisional"""
+    blk = mat("horse_black", (0.012, 0.010, 0.012, 1), 0.55)
+    gold = mat("bolas_gold", (0.85, 0.62, 0.12, 1), 0.35)
+    parts = []
+
+    def prim(kind, loc, scale=(1, 1, 1), rot=(0, 0, 0), m=blk, **kw):
+        getattr(bpy.ops.mesh, "primitive_%s_add" % kind)(location=loc, rotation=rot, **kw)
+        o = bpy.context.active_object; o.scale = scale; o.data.materials.append(m)
+        bpy.ops.object.shade_smooth(); parts.append(o); return o
+    # barrel: back at ~0.95 m under her hips
+    prim("uv_sphere", (-0.05, 0, 0.62), (0.95, 0.30, 0.34), segments=48, ring_count=24).name = "horse_barrel"
+    # neck + head, rising forward and out (head extended, ears pinned back)
+    prim("cylinder", (0.80, 0, 0.98), rot=(0, math.radians(50), 0), radius=0.14, depth=0.75, vertices=32).name = "horse_neck"
+    prim("uv_sphere", (1.20, 0, 1.18), (0.30, 0.12, 0.13), rot=(0, math.radians(25), 0), segments=32, ring_count=16).name = "horse_head"
+    prim("cone", (1.08, 0, 1.36), rot=(0, math.radians(-70), 0), radius1=0.04, depth=0.16, vertices=16).name = "horse_ear"
+    # four legs flung out at full gallop: fore pair reaching forward, hind pair pushing back
+    legs = {"fore_a": (0.70, -0.10, 0.5), "fore_b": (0.62, 0.10, 0.3), "hind_a": (-0.75, -0.10, -0.45), "hind_b": (-0.70, 0.10, -0.25)}
+    for n, (x, y, lean) in legs.items():
+        prim("cylinder", (x + lean * 0.35, y, 0.30), rot=(0, math.radians(-math.degrees(math.atan2(lean * 0.7, 0.6))), 0),
+             radius=0.055, depth=0.66, vertices=24).name = "horse_leg_" + n
+    # tail streaming back
+    prim("cylinder", (-1.12, 0, 0.78), rot=(0, math.radians(-75), 0), radius=0.05, depth=0.5, vertices=16).name = "horse_tail"
+    # bolas: three balls on cords
+    cord = mat("cord_black", (0.01, 0.01, 0.01, 1), 0.6)
+    f = BOLAS_FIST
+    for i, a in enumerate((-70, -35, 0)):
+        b = _bolas_ball(i, a)
+        prim("uv_sphere", b, radius=0.065, m=gold, segments=32, ring_count=16).name = "bolas_ball_%d" % i
+        dx, dz = b[0] - f[0], b[2] - f[2]; L = math.hypot(dx, dz)
+        c = prim("cylinder", ((f[0] + b[0]) / 2, f[1], (f[2] + b[2]) / 2), m=cord, radius=0.008, depth=L, vertices=8,
+                 rot=(0, math.atan2(dx, dz), 0)); c.name = "bolas_cord_%d" % i
+
+
 # ---- field · light · camera · render --------------------------------------------------------
 def make_field():
     bpy.ops.mesh.primitive_plane_add(size=14, location=(0, 4.0, 2.0), rotation=(math.radians(90), 0, 0))
@@ -219,8 +296,8 @@ def make_lights(hdri):
 def make_camera():
     cam_data = bpy.data.cameras.new("CAM_72"); cam = bpy.data.objects.new("CAM_72", cam_data)
     bpy.context.scene.collection.objects.link(cam)
-    cam.location = (-1.1, -7.2, 2.0)
-    aim = bpy.data.objects.new("CAM_72_aim", None); aim.location = (0.45, 0.1, 2.0)
+    cam.location = CFG["cam"]["loc"]
+    aim = bpy.data.objects.new("CAM_72_aim", None); aim.location = CFG["cam"]["aim"]
     bpy.context.scene.collection.objects.link(aim)
     c = cam.constraints.new("TRACK_TO"); c.target = aim; c.track_axis = "TRACK_NEGATIVE_Z"; c.up_axis = "UP_Y"
     cam_data.lens = 50; cam_data.sensor_width = 36
@@ -256,12 +333,15 @@ def build():
     clear_scene()
     subject, kind = make_subject()
     make_targets()
-    root, tips = make_hand()
-    make_strings(tips)
+    if CFG["hand"]:
+        root, tips = make_hand()
+        make_strings(tips)
+    if CFG["props"] == "ride":
+        make_ride_props()
     make_field(); make_lights(A.hdri); make_camera(); render_settings(A.smoke)
     blend = os.path.join(A.out, "patch72_comp%s.blend" % A.comp)
     bpy.ops.wm.save_as_mainfile(filepath=blend)
-    print("[72] comp %s · subject=%s · hand %.2f m · saved %s" % (A.comp, kind, HAND_LEN, blend))
+    print("[72] comp %s %s · subject=%s · hand %.2f m · saved %s" % (A.comp, CFG["name"], kind, HAND_LEN if CFG["hand"] else 0, blend))
     return blend
 
 

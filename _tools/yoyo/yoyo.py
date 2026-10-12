@@ -144,7 +144,48 @@ PEPPER = (
 )
 
 
-def run_haiku(text, timeout=60):
+FOLLOWUPS = (
+    "You are Pepper, the debrief officer in Q Division: by the book, sharp-angled, precise. "
+    "The Chief boxed an idea in his yo-yo. Below is the idea, refined. Give him the three follow-ups "
+    "BOLO 69 promises. He never has to answer them; the yo-yo is already closed.\n\n"
+    "Return ONLY a JSON object with three string fields, each one or two plain sentences, no lists, no markdown:\n"
+    "  \"fit\": (1) where this idea fits in a production workflow (concept, prep, shoot, edit, grade, deliver, "
+    "publish): name the stage and say what it feeds or needs;\n"
+    "  \"method\": (2) one question put by a method. The Chief has not named his method yet, so use the "
+    "five whys: ask the one 'why' that digs under the idea's stated reason;\n"
+    "  \"yesand\": (3) a 'yes, and' that adds one new angle and keeps the exploration open. Start it with 'Yes, and'.\n\n"
+    "The refined idea:\n\n"
+)
+
+
+def followups(n):
+    """Trick 2 of EXPLORE: read yo-yo n, append the three follow-ups, bump tricks to 2. Returns (path, parsed, meta)."""
+    path = next((p for p in files() if int(os.path.basename(p)[:4]) == int(n)), None)
+    if not path:
+        return None, None, {"error": "no such yo-yo"}
+    txt = io.open(path, encoding="utf-8", newline="").read()
+    if "## Follow-ups" in txt:
+        return path, None, {"error": "this yo-yo already has its follow-ups"}
+    m = re.search(r"## Refined\s*\n+(.+?)\n\s*\n", txt, re.S) or re.search(r"## Heard\s*\n+(.+?)\n\s*\n", txt, re.S)
+    if not m:
+        return path, None, {"error": "nothing to follow up on"}
+    parsed, meta = run_haiku(m.group(1).strip(), timeout=int(cfg()["timeout"]), prompt=FOLLOWUPS)
+    if not parsed or not all(parsed.get(k) for k in ("fit", "method", "yesand")):
+        return path, None, dict(meta or {}, error=(meta or {}).get("error") or "no follow-ups came back")
+    nl = "\r\n" if "\r\n" in txt else "\n"
+    block = ["## Follow-ups", "",
+             "1. **Where it fits.** " + parsed["fit"].strip(),
+             "2. **A question by a method (five whys, until Chief names his).** " + parsed["method"].strip(),
+             "3. **Yes, and.** " + parsed["yesand"].strip(), ""]
+    txt = re.sub(r"^tricks: \d+", "tricks: 2", txt, count=1, flags=re.M)
+    txt = txt.rstrip() + nl + nl + nl.join(block)
+    txt = re.sub(r"^(run_cost_usd: .*)$", lambda mm: mm.group(1) + nl + "followups_took: %.1f" % meta.get("took", 0)
+                 + nl + "followups_cost_usd: %s" % meta.get("cost"), txt, count=1, flags=re.M)
+    io.open(path, "w", encoding="utf-8", newline="").write(txt)
+    return path, parsed, meta
+
+
+def run_haiku(text, timeout=60, prompt=None):
     exe = claude_exe()
     if not exe:
         return None, {"error": "no claude.exe found (set CLAUDE_EXE)"}
@@ -154,7 +195,7 @@ def run_haiku(text, timeout=60):
     env["MAX_THINKING_TOKENS"] = "0"
     t0 = time.time()
     try:
-        r = subprocess.run([exe, "-p", PEPPER + text[:8000], "--model", cfg()["model"],
+        r = subprocess.run([exe, "-p", (prompt or PEPPER) + text[:8000], "--model", cfg()["model"],
                             "--effort", "low", "--output-format", "json",
                             "--no-session-persistence", "--tools", ""],
                            capture_output=True, text=True, timeout=timeout, env=env,
@@ -244,7 +285,7 @@ def main():
     except Exception:
         pass
     ap = argparse.ArgumentParser(description="the yo-yo (BOLO 69)")
-    ap.add_argument("cmd", nargs="?", choices=["trick", "count", "show"])
+    ap.add_argument("cmd", nargs="?", choices=["trick", "count", "show", "followups"])
     ap.add_argument("text", nargs="?")
     ap.add_argument("--file", help="a wav to run through the ears instead of text")
     ap.add_argument("--say", action="store_true", help="speak the ack and the opener (JUDY's mouth until Pepper has hers)")
@@ -272,6 +313,19 @@ def main():
                 print(io.open(p, encoding="utf-8").read())
                 return
         print("  no such yo-yo")
+        return
+
+    if a.cmd == "followups":
+        path, parsed, meta = followups(a.text or 0)
+        print(f"  file   {os.path.relpath(path, ROOT) if path else '-'}")
+        if meta.get("error"):
+            print(f"  !      {meta['error']}")
+        if parsed:
+            for k in ("fit", "method", "yesand"):
+                print(f"  {k:7}{parsed[k]}")
+        if meta.get("took") is not None:
+            print(f"  run    {meta.get('took', 0):.1f}s · in {meta.get('in')} · cache_create {meta.get('cache_create')}"
+                  f" · cache_read {meta.get('cache_read')} · out {meta.get('out')} · ${meta.get('cost')}")
         return
 
     if a.cmd == "trick":
