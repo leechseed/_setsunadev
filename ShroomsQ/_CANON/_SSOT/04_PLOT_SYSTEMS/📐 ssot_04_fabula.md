@@ -1,11 +1,11 @@
 ---
 type: ssot_04_fabula
 category: plot_system
-version: 1.4.0
+version: 1.5.0
 tier: fabula
 last_updated: 2026-10-12
 applies_to: [OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX, all future IPs]
-status: "v1.4.0 2026-10-12, I4 ruled: era 4 runs alongside era 2 on the shared 2199 clock; Vivian's story ends at the LAKAD jump; the queenpin is a separate Moon character and holds the 2091 birth. v1.3.0 2026-10-12, batch 3 closed ('take all recs'): the failed first attempt and the first-comer allies open era 1 (provisional); the era 5 ship leaves the Moon (provisional); H10 held for the research list. v1.2.2 2026-10-12, H6 revised by Chief: the land sale comes right after the 2099 Moon Severance, not before. v1.2.1 2026-10-12, Chief hand-built H4 and H6: the second generation's heir renames the place Red Hills; the land sale comes before the 2099 Moon Severance. v1.2.0 2026-10-12, batch 3 recs taken ('take all recs'): the first event records in eras 1, 3 and 5 (THE ERA SPINES); H2 H3 H4 H6 H10 and the era 5 ship held for Chief. v1.1.3 2026-10-12, recs taken ('all recommendations'): Cartel Federal is the Narco Republic's middle stage; the AI Collapse sits in era 4. v1.1.2 2026-10-12, G4 and G7 hand-built: the scrub homestead is era 1's first place; the rocket is boarded and its crew taken prisoner aboard a station made of three or four stations. v1.1.1 2026-10-12, Chief hand-built G6 G8 G10 G11: the Narco Republic's first and last names, the rocket launch opens LAKAD, the AI Collapse on the Moon, era 5 as the generation ship. v1.1.0 2026-10-12, batch 2 recs ruled ('All recommendations'): the unplaced_ id prefix, the removal's inferred cause edge, places before events in eras 1, 3 and 5, A Land Remembered as era 1's skeleton (L1-L4), the era 5 exodus note held as lineage. v1.0.1 2026-10-11, F2 and F10 carried through (ids and prose). v1.0.0 2026-10-11, batch 1 F1-F12 ruled ('Take all recs'): stories values, era-prefixed ids, location rule, 2099/2199 held as lineage, Severance after the beam, two Severances kept apart, the removal event, the Feed event, long actor names. v0.3.0 2026-10-05, BOLO 102 stage 2 (Chief: \"My word\"): the event record gains `source_kind`, `canon_source`, `produces`, `scheduled` and the 08 time code beside the calendar year; the no-calendar line is corrected. v0.1.7 2026-09-29, BOLO 91 rulings: Anna Colson's origin fabula-filled (ice-skating death → the scientist's rebuild → the scientist's attachment → the father's reclaim → the scientist's own kept copy, a second Colson with her own origin node); Tori's family origin (the trash-zone delta, not Bikini Atoll) added as L7 ORIGIN context, the car crash confirmed as her WOUND. v0.1.4 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — THE WORLD CLOCK gets the `backstory` movement tag for deep pre-M1 history, `event_id` grammar `backstory_<slug>`. v0.1.3 2026-09-24: BOLO 77 wave 3, plot doc OPEN call 12 executed — sixth event record `m2_first_sync_verified` added (row 9's rating-system / 'Verified' / reach-vs-pull-out moment), sourced from oxo-scene-card-M2-row9.md rather than victoria-midnight.md; ssot_04_plot_system.md's row-9 P2/P3/P5/P9 now read it. v0.1.1 2026-09-24: all six OPEN calls RULED (Chief: \"go on all recommendations\"); the v1.1 patch landed in the state architecture. v0.1.0 draft — BOLO 77 wave 1, \"go 77\" ruled 2026-09-24; Tori-only instance, EVIL CHECK events reserved for wave 2, state architecture v1.1 patch spec ships inside this doc"
+status: "v1.5.0 2026-10-12, batch 4 recs taken ('take all recs', re-read against I4): era 4's first four records (AN7L's fracture, the MAXWING program, the AI Collapse, the queenpin's heist) and four Moon place stubs, all provisional; I1 I5 I10 I12, the Myrtle order and the 2090s births held for Chief; I8 void. v1.4.0 2026-10-12, I4 ruled: era 4 runs alongside era 2 on the shared 2199 clock; Vivian's story ends at the LAKAD jump; the queenpin is a separate Moon character and holds the 2091 birth. v1.3.0 2026-10-12, batch 3 closed ('take all recs'): the failed first attempt and the first-comer allies open era 1 (provisional); the era 5 ship leaves the Moon (provisional); H10 held for the research list. v1.2.2 2026-10-12, H6 revised by Chief: the land sale comes right after the 2099 Moon Severance, not before. v1.2.1 2026-10-12, Chief hand-built H4 and H6: the second generation's heir renames the place Red Hills; the land sale comes before the 2099 Moon Severance. v1.2.0 2026-10-12, batch 3 recs taken ('take all recs'): the first event records in eras 1, 3 and 5 (THE ERA SPINES); H2 H3 H4 H6 H10 and the era 5 ship held for Chief. v1.1.3 2026-10-12, recs taken ('all recommendations'): Cartel Federal is the Narco Republic's middle stage; the AI Collapse sits in era 4. v1.1.2 2026-10-12, G4 and G7 hand-built: the scrub homestead is era 1's first place; the rocket is boarded and its crew taken prisoner aboard a station made of three or four stations. v1.1.1 2026-10-12, Chief hand-built G6 G8 G10 G11: the Narco Republic's first and last names, the rocket launch opens LAKAD, the AI Collapse on the Moon, era 5 as the generation ship. v1.1.0 2026-10-12, batch 2 recs ruled ('All recommendations'): the unplaced_ id prefix, the removal's inferred cause edge, places before events in eras 1, 3 and 5, A Land Remembered as era 1's skeleton (L1-L4), the era 5 exodus note held as lineage. v1.0.1 2026-10-11, F2 and F10 carried through (ids and prose). v1.0.0 2026-10-11, batch 1 F1-F12 ruled ('Take all recs'): stories values, era-prefixed ids, location rule, 2099/2199 held as lineage, Severance after the beam, two Severances kept apart, the removal event, the Feed event, long actor names. v0.3.0 2026-10-05, BOLO 102 stage 2 (Chief: \"My word\"): the event record gains `source_kind`, `canon_source`, `produces`, `scheduled` and the 08 time code beside the calendar year; the no-calendar line is corrected. v0.1.7 2026-09-29, BOLO 91 rulings: Anna Colson's origin fabula-filled (ice-skating death → the scientist's rebuild → the scientist's attachment → the father's reclaim → the scientist's own kept copy, a second Colson with her own origin node); Tori's family origin (the trash-zone delta, not Bikini Atoll) added as L7 ORIGIN context, the car crash confirmed as her WOUND. v0.1.4 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — THE WORLD CLOCK gets the `backstory` movement tag for deep pre-M1 history, `event_id` grammar `backstory_<slug>`. v0.1.3 2026-09-24: BOLO 77 wave 3, plot doc OPEN call 12 executed — sixth event record `m2_first_sync_verified` added (row 9's rating-system / 'Verified' / reach-vs-pull-out moment), sourced from oxo-scene-card-M2-row9.md rather than victoria-midnight.md; ssot_04_plot_system.md's row-9 P2/P3/P5/P9 now read it. v0.1.1 2026-09-24: all six OPEN calls RULED (Chief: \"go on all recommendations\"); the v1.1 patch landed in the state architecture. v0.1.0 draft — BOLO 77 wave 1, \"go 77\" ruled 2026-09-24; Tori-only instance, EVIL CHECK events reserved for wave 2, state architecture v1.1 patch spec ships inside this doc"
 rung: standard
 dependencies: ["ssot_04_plot_system", "ssot_03_setting_system", "ssot_02_character_state_architecture", "ssot_02_character_astrology_12_layer_mapping", "ssot_01_scale_ladder"]
 trunk: BLACK
@@ -927,6 +927,128 @@ provenance:
 causal_edges: []
 ```
 
+**Era 4 · ASTRO7EX (batch 4, RULED 2026-10-12, Chief: "take all recs", each rec re-read against I4).** Era 4 runs beside era 2 on the shared 2199 clock (I4), so no record below carries a `calendar_year`. The MAXWING survivor, the heist and the queenpin belong to the separate Moon character (name ⧗), not to Vivian. Every record is provisional, and every `location` stays GAP: the 03 doc holds no Moon address yet.
+
+Place stubs for the 03 pass (I2, I3; provisional, `location: GAP`, described only as the sources say): **the Aldrin Sector** (the 2091 birth's place, now the queenpin's) · **the Babylon Strip** (Fiona's birthplace) · **Cradle Halo** (where Fiona is raised, among "transient scientists and visiting corporate executives") · **the AN7L lab ruins** (a burned-out lab in the lunar ruinscape, "a graveyard of unfinished futures").
+
+Held for Chief, by the re-read: I1 which place opens era 4 · I5 the colonization as one shared event or two ids · I10 the purge against the AI Collapse, which comes first · I12 what the ASTRO7EX Severance is · the Myrtle find, before or after the heist · I9 Fiona's 2095 birth, held with the 2090s births (I4) · the queenpin's name. I8 (Vivian's 2091 birth) is void, because I4 gave the 2091 birth to the queenpin.
+
+```yaml
+event_id: "astro7ex_backstory_an7l_fractured"   # PROVISIONAL (I6 rec taken 10/12); cause open against C15
+transition: "AN7L governs as one AI -> AN7L splits into fragments, and MORN weaponizes them as the MODS"
+actors:
+  - actor: "AN7L"
+    actant_role: subject
+  - actor: "MORN"
+    actant_role: subject
+kernel_satellite: kernel
+time:
+  movement: "backstory"
+  time_code: null
+  calendar_year: null
+  reach: "unknown"
+  extent: "span"
+gap_type: logged
+repeat: false
+source_kind: construction
+canon_source: "I6 rec taken 10/12 ('take all recs'): 'AN7L fractures into conflicting subroutines', and MORN's weaponized fragments birth the MODS (packet.md:431; digest.md:656); rival origin open: John Smith 'created the MODS as apostles' (C15, packet.md:648-653)"
+produces: []
+scheduled: null
+location: GAP
+stories: [ASTRO7EX]
+provenance:
+  source: "_PRIVATE/intake/FABULA-BATCH-4.md"
+  confidence: inferred
+causal_edges:
+  - type: precede
+    to: "astro7ex_backstory_bitcoin_moon_heist"
+```
+
+```yaml
+event_id: "astro7ex_backstory_maxwing_program"   # PROVISIONAL (I7 rec taken 10/12, re-read against I4); site and director ⧗
+transition: "children live in the colony -> MAXWING takes children and conditions them"
+actors:
+  - actor: "the MAXWING program"
+    actant_role: subject
+  - actor: "the MAXWING children"   # the one survivor the sources follow is the queenpin (I4), name ⧗
+    actant_role: object
+kernel_satellite: kernel
+time:
+  movement: "backstory"
+  time_code: null
+  calendar_year: null
+  reach: "before the AI Collapse"
+  extent: "span"   # the start enters now; the end comes later
+gap_type: logged
+repeat: false
+source_kind: character
+canon_source: "I7 rec taken 10/12 ('take all recs'): MAXWING is Phase III; it takes children for 'psychic conditioning, physical augmentations, and ideological indoctrination' (packet.md:201, 433)"
+produces: []
+scheduled: null
+location: GAP
+stories: [ASTRO7EX]
+provenance:
+  source: "_PRIVATE/intake/FABULA-BATCH-4.md"
+  confidence: inferred
+causal_edges:
+  - type: precede
+    to: "astro7ex_backstory_bitcoin_moon_heist"
+```
+
+```yaml
+event_id: "astro7ex_backstory_ai_collapse"   # PROVISIONAL (I11 rec taken 10/12, G10); cause open between two readings (C15)
+transition: "Moon and Earth linked by the recursion chain -> the chain is cut, and the Moon people turn aggressive"
+actors: []   # the cause is open: John's deployment of the MAXWING children, or the world's 'refusal to change'
+kernel_satellite: kernel
+time:
+  movement: "backstory"
+  time_code: null
+  calendar_year: null
+  reach: "after the Deep Meridian beam"
+  extent: "point"   # G10: 'it happens everywhere all at once'
+gap_type: logged
+repeat: false
+source_kind: character
+canon_source: "G10 (Chief 10/12) and I11 rec taken 10/12 ('take all recs'): on the Moon, everywhere all at once; reading 1, John 'deployed MAXWING children as encryption bombs to cut the recursion chain' (packet.md:435); reading 2, the world 'collapses not from an attack but from its refusal to change' (digest.md:652); the beam precedes it (the hinge)"
+produces: []
+scheduled: null
+location: GAP
+stories: [ASTRO7EX]
+provenance:
+  source: "_PRIVATE/intake/FABULA-BATCH-4.md"
+  confidence: inferred
+causal_edges: []   # its order against the MAXWING purge is I10, held for Chief
+```
+
+```yaml
+event_id: "astro7ex_backstory_bitcoin_moon_heist"   # PROVISIONAL (I13 rec taken 10/12, re-read against I4); the Myrtle order ⧗
+transition: "the cold wallet sits with MORN -> the queenpin steals it and becomes the lunar queenpin"
+actors:
+  - actor: "the queenpin"   # the separate Moon character (I4), name ⧗
+    actant_role: subject
+  - actor: "MORN"
+    actant_role: opponent
+kernel_satellite: kernel
+time:
+  movement: "backstory"
+  time_code: null
+  calendar_year: null
+  reach: "five years before Fiona's jaded present"
+  extent: "point"
+gap_type: logged
+repeat: false
+source_kind: character
+canon_source: "I13 rec taken 10/12 ('take all recs'): 'pulls the Bitcoin Moon heist, and becomes lunar queenpin' (packet.md:203; digest.md:298); 'steals the cold bitcoin wallet as an act of ultimate rebellion against MORN and MODS' (digest.md:884); 'five years after the heist' (packet.md:187); I4 moves the heist to the queenpin"
+produces: []
+scheduled: null
+location: GAP
+stories: [ASTRO7EX]
+provenance:
+  source: "_PRIVATE/intake/FABULA-BATCH-4.md"
+  confidence: inferred
+causal_edges: []
+```
+
 ---
 
 ## FABULA × LIBRARY
@@ -958,6 +1080,7 @@ causal_edges: []
 ## Version history
 
 - 10/11 · batch 1 F1–F12 ruled ('Take all recs')
+- **1.5.0 — 2026-10-12.** Batch 4 recs taken ('take all recs'), each re-read against I4. Era 4 gets its first four records, all provisional: `astro7ex_backstory_an7l_fractured` (I6, cause open on C15), `astro7ex_backstory_maxwing_program` (I7, no child named), `astro7ex_backstory_ai_collapse` (I11, cause open), `astro7ex_backstory_bitcoin_moon_heist` (I13, moved to the queenpin). Four Moon place stubs for the 03 pass: the Aldrin Sector, the Babylon Strip, Cradle Halo, the AN7L lab ruins (I2, I3). Held for Chief: I1, I5, I10, I12, the Myrtle order, I9 with the 2090s births, the queenpin's name. I8 void.
 - **1.4.0 — 2026-10-12.** I4 ruled (Chief's words + "take both"): era 4 (ASTRO7EX) runs at the same time as era 2, sharing 2199; the seam-only overlap rule gains that exception. Vivian's story ends at the jump to LAKAD. The MAXWING survivor, heist and queenpin are a separate Moon character (name ⧗) and take the 2091 Aldrin birth. The 2090s births are held ⧗ (ancestors or a century later).
 - **1.3.0 — 2026-10-12.** Batch 3 closed ('take all recs'). H2: `skeeter_creek_backstory_first_attempt_lost` (provisional). H3: `skeeter_creek_backstory_first_comers_ally`, after the book's Seminole allies, name ⧗ (provisional). The era 5 ship departs the Moon (provisional). H10 held until the post-apocalyptic research list returns. Eleven era spine records.
 - **1.2.2 — 2026-10-12.** H6 revised (Chief: "it would probably be better after the 2099 shit happens.....right after"): the land sale follows the 2099 Moon Severance; its precede edge to the Severance is removed, and the Severance now comes first.
