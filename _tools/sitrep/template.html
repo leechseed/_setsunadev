@@ -15,6 +15,10 @@
     --grid: color-mix(in srgb, var(--ink) 8%, transparent);
     --bar: color-mix(in srgb, var(--ink) 30%, transparent);
     --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+    --bar-retired: repeating-linear-gradient(135deg, transparent 0 4px, color-mix(in srgb, var(--ink) 22%, transparent) 4px 6px);
+    --display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    --body: "Atkinson Hyperlegible", "Segoe UI", Verdana, sans-serif;
+    --mono: "IBM Plex Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
     color-scheme: dark;
   }
 
@@ -90,8 +94,20 @@
   .effort > span { flex: 0 0 auto; }
   .effort b { color: var(--bad); font-weight: 500; }
   .effort .k { color: var(--ink-3); letter-spacing: .1em; text-transform: uppercase; font-size: 10.5px; margin-right: 6px; }
-  header.head { flex-wrap: wrap; flex: 0 0 auto; max-height: 118px; overflow: hidden; }
-  header.head > .row { display: flex; flex: 1 0 100%; align-items: stretch; height: 82px; min-width: 0; }
+  /* thin chrome (ruled 9/24): one 44px strip; the stats, box lights and effort rows live behind Meta */
+  header.head { position: relative; z-index: 30; flex-wrap: nowrap; align-items: center; gap: 12px; height: 44px; padding: 0 18px; overflow: visible; }
+  header.head h1 { margin: 0; font-family: var(--display); font-weight: 800; font-size: 24px; line-height: 1; letter-spacing: .02em; text-transform: uppercase; }
+  header.head h1 i { display: inline-block; width: 9px; height: 9px; background: var(--accent); margin-right: 8px; transform: translateY(-2px); }
+  .chip { font: 500 11px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; padding: 4px 7px; border: 1px solid var(--line-2); border-radius: 3px; color: var(--ink-2); white-space: nowrap; }
+  .spacer { flex: 1; }
+  details.about summary { cursor: pointer; font: 500 11px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); list-style: none; padding: 4px 9px; border: 1px solid var(--line-2); border-radius: 3px; }
+  details.about summary::-webkit-details-marker { display: none; }
+  details.about[open] summary { border-color: var(--accent); color: var(--ink); }
+  details.about .meta { position: absolute; right: 18px; top: 44px; width: min(760px, calc(100vw - 36px)); max-height: calc(100vh - 60px); overflow: auto; background: var(--panel-2); border: 1px solid var(--line-2); border-radius: 4px; box-shadow: var(--shadow); }
+  details.about .sub { font-family: var(--mono); font-size: 12px; color: var(--ink-2); padding: 10px 14px; border-bottom: 1px solid var(--line); }
+  details.about .stats { flex-wrap: wrap; overflow: visible; }
+  details.about .box { padding: 10px 14px; flex-wrap: wrap; border-left: 0; border-bottom: 1px solid var(--line); white-space: normal; }
+  details.about .effort { height: auto; padding: 10px 14px; flex-wrap: wrap; white-space: normal; overflow: visible; }
 
   /* ---- outliner · the strand (CK3 R12) ---- */
   nav.ol { grid-area: ol; border-right: 1px solid var(--line-2); padding: 18px 0 18px 0; overflow-y: auto; position: relative; background: color-mix(in srgb, var(--panel) 55%, transparent); }
@@ -290,8 +306,6 @@
     .frame::before, .frame::after { display: none; }
     aside.rail { border-left: 0; border-top: 1px solid var(--line-2); }
     .brand { min-width: 0; }
-    header.head { max-height: none; }
-    header.head > .row { height: auto; flex-wrap: wrap; }
     .effort { height: auto; flex-wrap: wrap; white-space: normal; overflow: visible; padding: 6px 18px; }
     .bar-row { grid-template-columns: 30px 1fr 60px; }
     .bar-row .tr, .bar-row .track, .bar-row .c, .bar-row .s { display: none; }
@@ -301,15 +315,17 @@
 
 <div class="app" id="app">
   <header class="head">
-    <div class="row">
-      <div class="brand">
-        <h1><i></i>Sitrep</h1>
+    <h1><i></i>Sitrep</h1>
+    <span class="chip" id="chipDate"></span><span class="chip" id="chipVer"></span>
+    <span class="spacer"></span>
+    <details class="about"><summary>Meta</summary>
+      <div class="meta">
         <div class="sub" id="brandSub"></div>
+        <div class="stats" id="stats"></div>
+        <div class="box" id="box"></div>
+        <div class="effort" id="effort"></div>
       </div>
-      <div class="stats" id="stats"></div>
-      <div class="box" id="box"></div>
-    </div>
-    <div class="effort" id="effort"></div>
+    </details>
   </header>
 
   <nav class="ol" id="ol" aria-label="Blocks">
@@ -373,6 +389,7 @@ function trunk(t) {
 
 /* ---- header ---- */
 const M = B.meta;
+$('#chipDate').textContent = M.date; $('#chipVer').textContent = M.version;
 $('#brandSub').textContent = `Reference · for Chief, at session start · where everything stands and what's next · ${M.date}`;  // BOLO 95 SOP 2.1: type · who it's for · what it does, up top
 $('#brandSub').title = `owner: Chief; Claude builds it · state: ruled · reviewed: ${M.date} ${M.when} · ${M.version}`;  // SOP 2.2-2.3: the trust three one hover away
 const splitStat = v => {
@@ -639,8 +656,6 @@ $('#glCats').addEventListener('click', e => { const b = e.target.closest('button
 $('#glList').addEventListener('click', e => { const b = e.target.closest('button'); if (b) glShow(b.dataset.k); });
 $('#glHist').addEventListener('click', e => { if (e.target.id === 'glBack') { glHist.pop(); const k = glHist.pop(); if (k) glShow(k); else { $('#glDetail').hidden = true; glRender(); } } });
 
-/* ---- theme: auto → light → dark ---- */
-/* theme toggle removed 9/11: dark only */
 
 /* ---- keys ---- */
 document.addEventListener('keydown', e => {

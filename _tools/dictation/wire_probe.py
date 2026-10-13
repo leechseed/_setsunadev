@@ -69,7 +69,7 @@ async def main():
                 dt = (time.perf_counter() - t1) * 1000
                 ok = not getattr(r, "isError", False)
                 bad += 0 if ok else 1
-                label = name + (f"({args['n']})" if args else "")
+                label = name + (f"({next(iter(args.values()))})" if args else "")
                 print(f"  {'ok ' if ok else 'ERR'} {label:12s} {dt:6.0f} ms  {text_of(r)[:110]}")
             return 1 if bad else 0
 

@@ -111,19 +111,19 @@ def stash_find(name: str) -> str:
         if c is None:
             return NO_COPY
         try:
-            like = "%" + text.lower().replace("\\", "\\\\").replace("%", "\%").replace("_", "\_") + "%"
+            like = "%" + text.lower().replace("!", "!!").replace("%", "!%").replace("_", "!_") + "%"
             perf = c.execute(
                 "SELECT p.name, COUNT(ps.scene_id) FROM performers p "
                 "LEFT JOIN performers_scenes ps ON ps.performer_id = p.id "
-                "WHERE lower(p.name) LIKE ? ESCAPE '\' GROUP BY p.id ORDER BY 2 DESC LIMIT 10", (like,)).fetchall()
+                "WHERE lower(p.name) LIKE ? ESCAPE '!' GROUP BY p.id ORDER BY 2 DESC LIMIT 10", (like,)).fetchall()
             stud = c.execute(
                 "SELECT s.name, COUNT(sc.id) FROM studios s "
                 "LEFT JOIN scenes sc ON sc.studio_id = s.id "
-                "WHERE lower(s.name) LIKE ? ESCAPE '\' GROUP BY s.id ORDER BY 2 DESC LIMIT 10", (like,)).fetchall()
+                "WHERE lower(s.name) LIKE ? ESCAPE '!' GROUP BY s.id ORDER BY 2 DESC LIMIT 10", (like,)).fetchall()
             tags = c.execute(
                 "SELECT t.name, COUNT(st.scene_id) FROM tags t "
                 "LEFT JOIN scenes_tags st ON st.tag_id = t.id "
-                "WHERE lower(t.name) LIKE ? ESCAPE '\' GROUP BY t.id ORDER BY 2 DESC LIMIT 10", (like,)).fetchall()
+                "WHERE lower(t.name) LIKE ? ESCAPE '!' GROUP BY t.id ORDER BY 2 DESC LIMIT 10", (like,)).fetchall()
         finally:
             c.close()
     except sqlite3.Error as e:
