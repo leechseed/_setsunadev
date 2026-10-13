@@ -1,0 +1,99 @@
+# BOLO check recs, 10/13 (CDR, Opus). One line per open BOLO: n | live or cosmo or - (no rec) | why, ten words or fewer.
+3|cosmo|Waiting on your fill-ins since 8/19.
+4|cosmo|Gated on a proword ruling since 8/21.
+5|cosmo|BOLOs 51 and 64 carry this work now.
+6|cosmo|Hunt closed 10/4; distills are banked.
+8|live|One form only you can file.
+9|live|Rides right behind BOLO 8.
+10|live|Art pipeline ruled 10/12; momentum is fresh.
+11|cosmo|Parked since 8/25.
+12|cosmo|Parked 10/6 on the Call Sheet.
+14|live|Stage 2 feeds the DARKROOM the pull is filling.
+16|cosmo|Parked 10/6 on the Call Sheet.
+18|cosmo|Research side; the systems are past it.
+20|cosmo|Parked 10/6; a game tracker.
+24|cosmo|Blender is out, so no render route yet.
+27|live|The first-dollar lane.
+28|live|The tagger dry run is in flight.
+29|cosmo|You ruled it leftover evenings only.
+34|cosmo|The desk (141) carries the palette now.
+35|cosmo|Delivered and banked.
+44|live|Calibration pass is next; 16,511 rulings banked.
+45|cosmo|Parked 10/6; waits on token budget.
+46|cosmo|Waits on BOLO 100, which carries it.
+48|cosmo|Two words left; low stakes.
+51|live|Runs at every launch.
+56|live|JUDY is daily use.
+57|live|An income lane; Day 1 recording is yours.
+63|live|The 10/19 re-check decides the model swap.
+64|cosmo|Doctrine is in; one chore left.
+65|cosmo|Naming flavor, no output rides on it.
+66|cosmo|The repo intake (140) covers it.
+68|live|One dry run at the next sit rep.
+69|live|Cheap, and it catches ideas.
+70|cosmo|Rules applied; second pass is optional.
+71|cosmo|A full page redesign; the desk goes first.
+72|live|The studio mark is one step from done.
+73|cosmo|Another box; the fix runs there.
+76|live|Goes live at the next JUDY launch.
+77|live|Story core; feeds the fabula.
+78|cosmo|July 2028.
+79|cosmo|BOLO 90 carries the workspace now.
+82|cosmo|Built 1.0.0; BOLO 100 maintains it.
+83|-|Your call, on your word.
+85|cosmo|Waits on you saving five pages.
+86|live|The next launch tests it.
+87|cosmo|Hunt closed; setting reached v1.6.0.
+88|cosmo|Distilled and written as character v2.5.0.
+89|live|1,018 trope definitions still owed.
+90|live|A system under BOLO 100.
+91|cosmo|Passive; takes more years as they come.
+92|cosmo|At 1.0.0; done for now.
+93|live|A system under BOLO 100.
+94|cosmo|You put it on the back burner.
+96|cosmo|Built; two calls can wait.
+97|cosmo|Waits on you finding the books.
+98|live|One view of the money trunk.
+99|cosmo|Held on two naming calls.
+100|live|The main effort.
+101|cosmo|Comes after the fabula.
+102|cosmo|Waits on fabula phase 2.
+105|cosmo|Long horizon.
+106|live|Two follow-ups still open.
+107|cosmo|Waits on the document scanner.
+108|cosmo|Written as SOP section 9.
+109|cosmo|Story detail; BOLO 100 carries it.
+110|cosmo|You set it aside; printer first.
+111|cosmo|Built; runs on 'log it'.
+112|live|Two calls left, then it ships.
+113|cosmo|Waits on your picks.
+114|cosmo|Built.
+115|cosmo|One small hover card left.
+116|cosmo|Built.
+117|cosmo|Standing system; runs itself.
+118|cosmo|Shopping research; no deadline.
+119|cosmo|Tied to CYBERBUNK, which is parked.
+121|live|Feeds the pull and the DARKROOM.
+122|live|The next board tests it.
+123|cosmo|Waits on BOLO 100.
+124|cosmo|Nice to have; fires on go.
+125|live|Your accept and reject calls come next.
+126|cosmo|Nothing built; a test comes first.
+127|cosmo|Shopping; no deadline.
+128|cosmo|Six calls, none urgent.
+129|cosmo|Venture riff; parked behind the money lane.
+130|cosmo|Venture riff; parked behind the money lane.
+131|cosmo|Venture riff; parked behind the money lane.
+132|cosmo|Venture riff; parked behind the money lane.
+133|cosmo|You parked it 10/12.
+134|cosmo|No render route yet.
+135|live|The 90-day plan; one lane to try.
+136|live|The editing process the content runs on.
+137|live|Running now.
+138|cosmo|Boresight only; no build.
+139|cosmo|The repo intake (140) absorbed it.
+140|live|The langextract trial is in flight.
+141|live|Built this morning; still moving.
+142|cosmo|You parked it 10/13.
+143|live|One word and the repo gets tidy.
+144|cosmo|The rec is against running it.

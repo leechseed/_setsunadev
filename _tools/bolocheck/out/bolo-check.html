@@ -1,0 +1,1412 @@
+<title>BOLO Check</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* the Command look, DARK only (ruled 9/11): one strip, a filter row, then every open BOLO as a row with ✓ and ✗ */
+  :root { color-scheme: dark;
+    --bg:#121110; --panel:#1B1A18; --panel-2:#24221F; --line:#34312C; --ink:#ECE7DF; --ink-2:#B7B0A5; --ink-3:#7F786E;
+    --accent:#FF5A1F; --accent-soft:#3A1D10; --accent-ink:#FFB08F; --good:#5FBF8A; --good-soft:#16301F; --cosmo:#C9A35A; --cosmo-soft:#2E2614; --warn:#E3B341;
+    --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif; --body:"Atkinson Hyperlegible","Segoe UI",Verdana,sans-serif; --mono:"IBM Plex Mono",Consolas,monospace; }
+  *{box-sizing:border-box} html,body{background:var(--bg);color:var(--ink)}
+  body{font:15px/1.5 var(--body);padding-inline:16px;padding-block:0 64px}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .strip{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;align-items:center;gap:12px;flex-wrap:wrap;min-height:44px;margin-inline:-16px;padding:6px 16px;background:var(--panel);border-bottom:1px solid var(--line)}
+  .strip h1{margin:0;font:800 20px/1 var(--display);letter-spacing:.06em;text-transform:uppercase} .strip h1 b{color:var(--accent)}
+  .spacer{flex:1}
+  .tot{font:700 18px var(--display);font-variant-numeric:tabular-nums;white-space:nowrap;letter-spacing:.03em} .tot .l{color:var(--good)} .tot .c{color:var(--cosmo)} .tot .o{color:var(--ink-2)}
+  #saveState{font:500 11px var(--mono);color:var(--ink-3)}
+  .act{font:700 13px var(--display);letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border:1px solid var(--accent);background:var(--accent-soft);color:var(--accent-ink);border-radius:3px;cursor:pointer}
+  .act:hover{background:var(--accent);color:#1B0A03}
+  details.about summary{cursor:pointer;font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);list-style:none;padding:4px 7px;border:1px solid var(--line);border-radius:3px}
+  details.about[open] div{position:absolute;right:16px;top:48px;width:min(460px,calc(100vw - 32px));background:var(--panel-2);border:1px solid var(--line);border-radius:4px;padding:10px 12px;font-size:14px;color:var(--ink-2);z-index:30}
+  details.about div p{margin:0 0 8px} details.about div p:last-child{margin:0}
+  .bar{height:4px;background:var(--panel-2);margin-inline:-16px;display:flex} .bar i{display:block;height:100%} .bar .l{background:var(--good)} .bar .c{background:var(--cosmo)}
+  .wrap{max-width:960px;margin:0 auto;display:grid;gap:12px;padding-block:16px}
+  .lede{margin:0;color:var(--ink-2);max-width:68ch}
+  .filters{display:flex;flex-wrap:wrap;gap:6px}
+  .filters button{font:500 12px var(--mono);padding:5px 9px;border:1px solid var(--line);border-radius:3px;background:var(--panel);color:var(--ink-2);cursor:pointer}
+  .filters button[aria-pressed="true"]{border-color:var(--accent);color:var(--ink);background:var(--accent-soft)}
+  .list{display:grid;gap:6px}
+  .b{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:12px;align-items:start;padding:10px 12px;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--line);border-radius:4px}
+  .b.live{border-left-color:var(--good);background:linear-gradient(90deg,var(--good-soft),var(--panel) 40%)}
+  .b.cosmo{border-left-color:var(--cosmo);opacity:.72}
+  .b .num{font:800 24px/1 var(--display);color:var(--accent);font-variant-numeric:tabular-nums;padding-top:2px}
+  .b .main{min-width:0}
+  .b h3{margin:0;font:700 19px/1.15 var(--display);letter-spacing:.02em;text-wrap:balance}
+  .meta{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center;margin:4px 0 6px;font:12px var(--mono);color:var(--ink-3)}
+  .pill{font:500 10.5px/1 var(--mono);letter-spacing:.1em;padding:3px 6px;border-radius:3px;border:0}
+  .g-hot{background:var(--accent-soft);color:var(--accent-ink)} .g-held{background:#2E2A10;color:var(--warn)} .g-gated{background:#14262E;color:#7FC4D8} .g-open{background:var(--panel-2);color:var(--ink-2)}
+  .b p{margin:0 0 6px;max-width:72ch;overflow-wrap:anywhere}
+  .why{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;font-size:14px;color:var(--ink-2)}
+  .rec{font:500 11px var(--mono);letter-spacing:.06em;padding:1px 6px;border-radius:3px;white-space:nowrap}
+  .rec.live{color:var(--good);border:1px solid var(--good)} .rec.cosmo{color:var(--cosmo);border:1px solid var(--cosmo)} .rec.none{color:var(--ink-3);border:1px dashed var(--line)}
+  .yn{display:flex;gap:4px}
+  .yn button{width:44px;height:40px;font:700 20px/1 var(--body);border:1px solid var(--line);border-radius:4px;background:var(--panel-2);color:var(--ink-3);cursor:pointer}
+  .yn .y:hover{border-color:var(--good);color:var(--good)} .yn .x:hover{border-color:var(--cosmo);color:var(--cosmo)}
+  .yn .y[aria-pressed="true"]{background:var(--good);border-color:var(--good);color:#0B1F14}
+  .yn .x[aria-pressed="true"]{background:var(--cosmo);border-color:var(--cosmo);color:#221A06}
+  .t{position:relative;font:inherit;color:inherit;letter-spacing:inherit;background:none;border:0;padding:0;border-bottom:1px dotted var(--accent);cursor:help}
+  .pill.t{border-bottom:0}
+  .tip{display:none;position:absolute;left:0;top:calc(100% + 6px);z-index:20;width:min(320px,78vw);padding:8px 10px;background:var(--panel-2);border:1px solid var(--accent);border-radius:4px;font:400 13px/1.45 var(--body);color:var(--ink);text-transform:none;letter-spacing:0;text-align:left;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+  .tip b{display:block;font:700 15px var(--display);text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px}
+  .t:hover .tip,.t:focus-visible .tip,.t.pin .tip{display:block}
+  #noDb{margin:0;padding:8px 12px;border:1px solid var(--warn);border-radius:4px;color:var(--warn);font-size:14px}
+  .empty{padding:14px;border:1px dashed var(--line);color:var(--ink-3);border-radius:4px}
+  @media (max-width:620px){.b{grid-template-columns:34px minmax(0,1fr)} .yn{grid-column:2}}
+</style>
+<header class="strip">
+  <h1><b>BOLO</b> Check</h1>
+  <span class="tot"><span class="l" id="nLive">0</span> live · <span class="c" id="nCosmo">0</span> cosmoline · <span class="o" id="nOpen">98</span> to call</span>
+  <span class="spacer"></span>
+  <span id="saveState">connecting…</span>
+  <button type="button" class="act" id="takeRecs">Take all recs</button>
+  <details class="about"><summary>About</summary><div>
+    <p><b>✓ LIVE BOLO.</b> In the rotation. "What next" pulls only from these.</p>
+    <p><b>✗ COSMOLINE</b> (provisional). Packed for storage the way Marines pack a rifle in cosmoline grease: out of the rotation, kept whole, ready to unpack. It stays on BOLO.md; it just stops coming up.</p>
+    <p>Bench for the X word: COSMOLINE (rec) · MOTHBALL · FOOTLOCKER · DEADLINE. Say the one you want.</p>
+    <p>Built Oct 13, 5:30 AM from the 10/13 sit rep's BOLO board. 33 of 98 recs say live.</p>
+  </div></details>
+</header>
+<div class="bar"><i class="l" id="barL" style="width:0%"></i><i class="c" id="barC" style="width:0%"></i></div>
+<main class="wrap">
+  <p class="lede">Every open BOLO, 98 of them. Each row says where it stands and what it waits on, then my rec. Press ✓ to keep it <button type='button' class='t'>live<span class='tip' role='tooltip'><b>Live BOLO</b>In the rotation. When we pick what to work on next, we pick from the live list only.</span></button> or ✗ to <button type='button' class='t'>cosmoline<span class='tip' role='tooltip'><b>Cosmoline</b>Out of the rotation and in storage. Still on BOLO.md, still whole, back on your word.</span></button> it. Press it again to undo. <b>Take all recs</b> fills every row you have not called; BOLO 83 has no rec and stays yours.</p>
+  <p id="noDb" hidden>Calls are not saving: the page could not reach its store. Your clicks show here but will not reach the CDR.</p>
+  <div class="filters" role="group" aria-label="Show">
+    <button type="button" data-f="all" aria-pressed="true">All 98</button>
+    <button type="button" data-f="todo" aria-pressed="false">To call</button>
+    <button type="button" data-f="live" aria-pressed="false">✓ Live</button>
+    <button type="button" data-f="cosmo" aria-pressed="false">✗ Cosmoline</button>
+    <button type="button" data-f="hot" aria-pressed="false">Hot</button>
+    <button type="button" data-f="slow" aria-pressed="false">Held · gated · slow</button>
+  </div>
+  <div class="list" id="list">
+    <article class="b" data-n="3" data-g="open" data-rec="cosmo">
+      <div class="num">3</div>
+      <div class="main">
+        <h3>BBRT profile fill-ins (QoS bracket +</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK/ORANGE</span><span>2026-08-19</span></div>
+        <p>BBRT profile fill-ins: the QoS bracket and the [Blunt Plug] and [taper] confirms. Chief supplies them; Claude waits.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Waiting on your fill-ins since 8/19.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 3">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="4" data-g="gated" data-rec="cosmo">
+      <div class="num">4</div>
+      <div class="main">
+        <h3>Focus doctrine</h3>
+        <div class="meta"><button type="button" class="t pill g-gated">GATED<span class="tip" role="tooltip">Fires on Chief&#x27;s go word, or when another BOLO lands.</span></button><span>BLACK/ORANGE</span><span>2026-08-21</span></div>
+        <p>fires once the proword ruling lands. Chief gives the go word, and Claude builds the walkthrough.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Gated on a proword ruling since 8/21.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 4">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="5" data-g="open" data-rec="cosmo">
+      <div class="num">5</div>
+      <div class="main">
+        <h3>Optimize the Chief↔Claude interface</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK</span><span>2026-08-21</span></div>
+        <p>Claude writes docs for its own retrieval, not for Chief&#x27;s reading. Speed comes first.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>BOLOs 51 and 64 carry this work now.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 5">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="6" data-g="open" data-rec="cosmo">
+      <div class="num">6</div>
+      <div class="main">
+        <h3>Transmission pedagogy</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK</span><span>10/4</span></div>
+        <p>rules 13 to 20 are ruled. Claude closed the hunt on 10/4 and holds eight distills for the tutoring lane. Mayer stays partial.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Hunt closed 10/4; distills are banked.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 6">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="8" data-g="open" data-rec="live">
+      <div class="num">8</div>
+      <div class="main">
+        <h3>GitHub Support purge ticket</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK/ORANGE</span><span>10/6</span></div>
+        <p>The GitHub Support purge ticket: parked 10/6 on the Call Sheet. Chief files it, since only the account owner can.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>One form only you can file.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 8">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="9" data-g="open" data-rec="live">
+      <div class="num">9</div>
+      <div class="main">
+        <h3>Google outdated-content removal</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK/ORANGE</span><span>2026-08-24</span></div>
+        <p>open. Chief runs the removal after BOLO 8.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>Rides right behind BOLO 8.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 9">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="10" data-g="hot" data-rec="live">
+      <div class="num">10</div>
+      <div class="main">
+        <h3>Bongobabe v0 build</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK/ORANGE</span><span>10/12</span></div>
+        <p>Bongobabe v0: Claude built the art-style test, one flat doll with three swappable layers. Chief ruled hand-drawn flat SVG as the art pipeline on 10/12.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>Art pipeline ruled 10/12; momentum is fresh.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 10">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="11" data-g="open" data-rec="cosmo">
+      <div class="num">11</div>
+      <div class="main">
+        <h3>The GBD Plan</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE/OPERATOR</span><span>2026-08-25</span></div>
+        <p>parked on the 8/25 Oscar Mike. Claude saved the draft; it resumes on Chief&#x27;s review and &#x27;log it&#x27;.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Parked since 8/25.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 11">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="12" data-g="open" data-rec="cosmo">
+      <div class="num">12</div>
+      <div class="main">
+        <h3>The shoot set</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE</span><span>10/6</span></div>
+        <p>parked 10/6 on the Call Sheet. Claude resumes it on Chief&#x27;s §B ruling and a review.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Parked 10/6 on the Call Sheet.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 12">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="14" data-g="open" data-rec="live">
+      <div class="num">14</div>
+      <div class="main">
+        <h3>The taxonomy engine — build</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE</span><span>2026-08-25</span></div>
+        <p>The taxonomy engine: Claude completed Stage 1 with 58,421 normalized images. Claude runs Stage 2 and the verdict pass next.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>Stage 2 feeds the DARKROOM the pull is filling.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 14">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="16" data-g="open" data-rec="cosmo">
+      <div class="num">16</div>
+      <div class="main">
+        <h3>Music-video + short-form grammar research pass</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK/ORANGE</span><span>10/6</span></div>
+        <p>The music-video and short-form grammar pass: Chief parked it 10/6 on the Call Sheet. Claude sources the grammar when it resumes.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Parked 10/6 on the Call Sheet.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 16">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="18" data-g="open" data-rec="cosmo">
+      <div class="num">18</div>
+      <div class="main">
+        <h3>The two-stage spine sweep</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK</span><span>10/12</span></div>
+        <p>Claude finished stage 1. Stage 2 is open; Chief rules the bulk intake and the four re-acquisitions.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Research side; the systems are past it.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 18">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="20" data-g="open" data-rec="cosmo">
+      <div class="num">20</div>
+      <div class="main">
+        <h3>Forza wheelspin tracker — owned-car callout</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>OPERATOR</span><span>10/6</span></div>
+        <p>Forza wheelspin tracker: Chief parked it 10/6. Claude counts 37 owned and 67 needed; Chief&#x27;s next callout resumes it.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Parked 10/6; a game tracker.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 20">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="24" data-g="hot" data-rec="cosmo">
+      <div class="num">24</div>
+      <div class="main">
+        <h3>Zero-budget ORANGE launch — 3D erotica stills in Blender, DARKROOM-fed</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE</span><span>10/5</span></div>
+        <p><button type="button" class="t">zero-budget ORANGE launch<span class="tip" role="tooltip"><b>BOLO 24</b>The zero-budget ORANGE launch: 3D erotica stills in Blender, DARKROOM-fed, Ultrasin as the studio, a first signing with an arc. Charter in _PRIVATE/. Gated by D-9; the next proposed gate is R9.</span></button>: Claude plans the launch for February 2027. Chief&#x27;s Gate 3 holds the whole schedule, with 0 of 15 to 20 evenings done.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Blender is out, so no render route yet.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 24">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="27" data-g="hot" data-rec="live">
+      <div class="num">27</div>
+      <div class="main">
+        <h3>The gooner curation account - compare against BOLO 24</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE</span><span>9/16</span></div>
+        <p><button type="button" class="t">ULTRA DARK + video engine<span class="tip" role="tooltip"><b>ULTRA DARK</b>BOLO 27: the curation imprint under Ultrasin. A rating scale plus a written line on every post; commissioned edits as the first-dollar line. A funnel, never the asset.</span></button>: Claude staged the curation account. Chief&#x27;s edit pass queues the first posts. Chief&#x27;s commissioned edits are the first-dollar line.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>The first-dollar lane.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 27">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="28" data-g="hot" data-rec="live">
+      <div class="num">28</div>
+      <div class="main">
+        <h3>The video engine - Stash as the DARKROOM twin</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE/BLACK</span><span>10/12</span></div>
+        <p>The Stash video engine: Claude runs the text auto-tagger as a dry run. Chief checks a 50-scene sample page; Claude writes no tags until the wrong rate is under 10 percent.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>The tagger dry run is in flight.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 28">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="29" data-g="held" data-rec="cosmo">
+      <div class="num">29</div>
+      <div class="main">
+        <h3>The SFW TikTok channel - Fortnite skin dance edits</h3>
+        <div class="meta"><button type="button" class="t pill g-held">HELD<span class="tip" role="tooltip">Waiting on one ruling from Chief.</span></button><span>BLACK</span><span>9/23</span></div>
+        <p>The SFW TikTok channel (Fortnite skin dance edits): Claude banked the research. Chief ruled 9/23 it is the side lane on leftover evenings only.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>You ruled it leftover evenings only.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 29">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="34" data-g="open" data-rec="cosmo">
+      <div class="num">34</div>
+      <div class="main">
+        <h3>The long-watch UI palette - CIC-grade color, theme, and design for hours at a monitor</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK</span><span>10/12</span></div>
+        <p>The long-watch UI palette: Chief ruled the retune on 10/12, dark only. Claude retunes WARROOM and uses the register rules as checks.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>The desk (141) carries the palette now.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 34">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="35" data-g="held" data-rec="cosmo">
+      <div class="num">35</div>
+      <div class="main">
+        <h3>The timeline grammar loci are delivered and banked. The story-timeline half waits on Chief&#x27;s word. Claude folded BOLO 36 into BOLO 108 on 10/6</h3>
+        <div class="meta"><button type="button" class="t pill g-held">HELD<span class="tip" role="tooltip">Waiting on one ruling from Chief.</span></button><span>BLACK/OPERATOR</span><span>9/23</span></div>
+        <p></p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Delivered and banked.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 35">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="44" data-g="hot" data-rec="live">
+      <div class="num">44</div>
+      <div class="main">
+        <h3>The tag rail + Tier 1 zero-shot tagging</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE</span><span>9/16</span></div>
+        <p><button type="button" class="t">tag rail + Tier 1 &amp; 2 tagging<span class="tip" role="tooltip"><b>BOLO 44</b>The tag rail and zero-shot tagging in DARKROOM. Six axes, 48 values, 16,496 judged records. Tier 2 probes now make the proposals.</span></button>: Claude built the tag rail and the probes in DARKROOM. Chief has banked 16,511 rulings; Claude runs the calibration pass next.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>Calibration pass is next; 16,511 rulings banked.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 44">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="45" data-g="open" data-rec="cosmo">
+      <div class="num">45</div>
+      <div class="main">
+        <h3>The creator-case sweep + the manager path</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE</span><span>10/6</span></div>
+        <p><button type="button" class="t">creator sweep + manager path<span class="tip" role="tooltip"><b>BOLO 45</b>The creator-case sweep and the manager path. Ruled 9/10: Natasha Teen is the referent; everything public unless you specify; the management recon ordered. Its three files never landed; relaunched this evening.</span></button>: Chief parked it 10/6 on the Call Sheet. Claude waits on the token budget before wave two.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Parked 10/6; waits on token budget.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 45">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="46" data-g="hot" data-rec="cosmo">
+      <div class="num">46</div>
+      <div class="main">
+        <h3>The OXO series follow-through — the Telling Profile&#x27;s 12 rulings · Anna&#x27;s node · the pilot&#x27;s page one</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>9/23</span></div>
+        <p><button type="button" class="t">OXO series Telling Profile + Anna node<span class="tip" role="tooltip"><b>BOLO 46</b>The OXO series follow-through: the Telling Profile&#x27;s 12 rulings, Anna&#x27;s node, the pilot&#x27;s page one. Captured 9/11 at priority one on Chief&#x27;s word; it had no BOLO before.</span></button>: Chief ruled the twelve Telling Profile calls and Anna&#x27;s twelve. Claude waits on BOLO 100 before it writes the 14 Movement-1 questions.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Waits on BOLO 100, which carries it.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 46">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="48" data-g="open" data-rec="cosmo">
+      <div class="num">48</div>
+      <div class="main">
+        <h3>The name bench — every unruled word on one sheet</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK/OPERATOR</span><span>9/11</span></div>
+        <p>The name bench: ABORT, BREVITY and HOTLINE are ruled. Chief rules READYROOM and MINT; Claude waits on his word.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Two words left; low stakes.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 48">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="51" data-g="hot" data-rec="live">
+      <div class="num">51</div>
+      <div class="main">
+        <h3>The logistics front — the standing audit, quality, and improvement function, and the token offload</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>OPERATOR</span><span>10/6</span></div>
+        <p><button type="button" class="t">logistics front<span class="tip" role="tooltip"><b>BOLO 51</b>The logistics front: one standing audit, quality, and improvement function over every system in daily use, plus the token offload onto hooks, skills, subagents, routines, and the design canvas. Standards pulled from BOLO 50&#x27;s register. Opened 9/12.</span></button>: Claude runs the audit script first at every launch. Claude keeps the audit rows and token offload phases moving.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>Runs at every launch.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 51">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="56" data-g="hot" data-rec="live">
+      <div class="num">56</div>
+      <div class="main">
+        <h3>JUDY — the voice loop (name RULED 9/16 by Chief, spelled out J-U-D-Y; supersedes the provisional &quot;THE HANDLER&quot;</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>OPERATOR</span><span>10/12</span></div>
+        <p>JUDY, the voice loop: the console on :8787 holds the face deck and the face profiles. Claude built the profiles on 10/12. Restarting the console loads them.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>JUDY is daily use.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 56">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="57" data-g="hot" data-rec="live">
+      <div class="num">57</div>
+      <div class="main">
+        <h3>Voice work as income — Chief can build voices in ElevenLabs</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE</span><span>9/24</span></div>
+        <p>Voice work as income: Chief would sell voices in the ElevenLabs Voice Library, ranked second in the four-way. Claude built the kit; Chief records Day 1 and Day 2 next.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>An income lane; Day 1 recording is yours.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 57">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="63" data-g="hot" data-rec="live">
+      <div class="num">63</div>
+      <div class="main">
+        <h3>JUDY&#x27;s ears — hush on key-up · the hallucination gate · the bigger model</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>OPERATOR/BLACK</span><span>10/12</span></div>
+        <p>JUDY&#x27;s ears: Claude built the hallucination gate in ptt.py on Chief&#x27;s go. Claude swaps the turbo model only after the re-check on 10/19.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>The 10/19 re-check decides the model swap.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 63">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="64" data-g="hot" data-rec="cosmo">
+      <div class="num">64</div>
+      <div class="main">
+        <h3>The Claude Code doctrine — best practices folded into the Command</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>9/23</span></div>
+        <p>The Claude Code doctrine: Chief ruled the four steps, and Claude ran five fixes on 9/23. Chief runs the allowlist skill himself; the Bash allowlist stays open.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Doctrine is in; one chore left.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 64">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="65" data-g="hot" data-rec="cosmo">
+      <div class="num">65</div>
+      <div class="main">
+        <h3>The lineage question — NASA against Space Force · Air Force · SpaceX open doctrine</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK/OPERATOR</span><span>10/12</span></div>
+        <p>The lineage question: Claude wrote a one-page tier proposal on Chief&#x27;s go. Chief rules on it first; Claude makes no SOP edits until then.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Naming flavor, no output rides on it.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 65">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="66" data-g="open" data-rec="cosmo">
+      <div class="num">66</div>
+      <div class="main">
+        <h3>The GitHub field survey — Claude Code workflow, hook, and MD-documentation repos</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK/OPERATOR</span><span>10/12</span></div>
+        <p>The GitHub field survey: Claude harvests nothing yet; it waits on the seed links Chief is reading. The 10/12 RTB pass parked it, provisional.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>The repo intake (140) covers it.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 66">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="68" data-g="hot" data-rec="live">
+      <div class="num">68</div>
+      <div class="main">
+        <h3>The workflows — the formation as scripts, not prose</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>10/12</span></div>
+        <p>The workflows: Claude wrote sitrep.js on Chief&#x27;s go, not yet run. Chief ruled one side-by-side dry run at the next sit rep.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>One dry run at the next sit rep.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 68">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="69" data-g="hot" data-rec="live">
+      <div class="num">69</div>
+      <div class="main">
+        <h3>The yo-yo — the inbox for the idea that springs</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>OPERATOR/BLACK</span><span>10/12</span></div>
+        <p>The yo-yo inbox: Claude built the follow-up questions on 10/12. Claude has not built the wind yet; Chief&#x27;s use of the pad is the proof.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>Cheap, and it catches ideas.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 69">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="70" data-g="hot" data-rec="cosmo">
+      <div class="num">70</div>
+      <div class="main">
+        <h3>The affiliate register — how the listicle sites explain hard things in plain words</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>10/12</span></div>
+        <p>The affiliate register: Claude applies rules 1 to 6 now. Chief saves three full affiliate pages into the private folder for the second pass.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Rules applied; second pass is optional.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 70">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="71" data-g="gated" data-rec="cosmo">
+      <div class="num">71</div>
+      <div class="main">
+        <h3>The look — off the slop</h3>
+        <div class="meta"><button type="button" class="t pill g-gated">GATED<span class="tip" role="tooltip">Fires on Chief&#x27;s go word, or when another BOLO lands.</span></button><span>BLACK</span><span>10/12</span></div>
+        <p>The look, off the slop: Chief ruled the broadsheet look on 10/12. Claude redesigns each page when Chief says go.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>A full page redesign; the desk goes first.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 71">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="72" data-g="hot" data-rec="live">
+      <div class="num">72</div>
+      <div class="main">
+        <h3>The Bold Venture patch — the bunny with the bolas</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>10/12</span></div>
+        <p>The Bold Venture patch: Chief confirmed comp 07 THE RIDE. Chief dropped Blender on 10/12, so Claude plans no pose scenes and no Blender step.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>The studio mark is one step from done.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 72">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="73" data-g="open" data-rec="cosmo">
+      <div class="num">73</div>
+      <div class="main">
+        <h3>The driver resets — Warframe and Phasmophobia kick the GPU on XELLA-PC</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK</span><span>10/12</span></div>
+        <p>The driver resets: the GPU kicks on XELLA-PC. Claude delivered the read. The fix runs on that box, by whoever owns it, on &#x27;go 73&#x27;.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Another box; the fix runs there.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 73">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="76" data-g="hot" data-rec="live">
+      <div class="num">76</div>
+      <div class="main">
+        <h3>Sensei&#x27;s set list — she talks too much and does not queue the playlists</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE</span><span>10/12</span></div>
+        <p>Sensei&#x27;s set list: Claude built it in code. stashplay.py defaults to 60 minutes of short clips with the gay filter. The set goes live at the next JUDY launch.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>Goes live at the next JUDY launch.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 76">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="77" data-g="hot" data-rec="live">
+      <div class="num">77</div>
+      <div class="main">
+        <h3>The plot system, expanded on rails — fabula · trope graph · syuzhet</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>10/12</span></div>
+        <p>The plot system on rails: Chief ruled the Anna M4 to M6 calls on 10/12. Claude updated the M4 to M6 cards and the Anna node.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>Story core; feeds the fabula.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 77">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="78" data-g="open" data-rec="cosmo">
+      <div class="num">78</div>
+      <div class="main">
+        <h3>The victory lap — 21 days in Berlin, July 2028 (was: the size map; Gran Canaria dropped 9/24)</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE</span><span>9/24</span></div>
+        <p>The victory lap: Chief parked it at the bottom of the priority list. Chief ruled step 1: July 2028, Berlin only, budget $20k.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>July 2028.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 78">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="79" data-g="hot" data-rec="cosmo">
+      <div class="num">79</div>
+      <div class="main">
+        <h3>The story workspace — the UI/UX for the plot system, built as the template for every story</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>9/29</span></div>
+        <p>The story workspace UI: the timeline is the map, in CK3-style nested windows. Claude published workspace v8 on 9/29; newer versions sit under BOLO 90.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>BOLO 90 carries the workspace now.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 79">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="82" data-g="hot" data-rec="cosmo">
+      <div class="num">82</div>
+      <div class="main">
+        <h3>The story registry — one place that lists every story in the universe</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>10/4</span></div>
+        <p>The story registry: one file, one row per story. Claude built registry 1.0.0 on 10/4 and seeded Tremor Cult there.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Built 1.0.0; BOLO 100 maintains it.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 82">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="83" data-g="held" data-rec="-">
+      <div class="num">83</div>
+      <div class="main">
+        <h3>The Amazon applications</h3>
+        <div class="meta"><button type="button" class="t pill g-held">HELD<span class="tip" role="tooltip">Waiting on one ruling from Chief.</span></button><span>OPERATOR</span><span>9/29</span></div>
+        <p>Chief submitted six of eight on 9/24. Chief holds the last two on his word and fires them only when he asks.</p>
+        <div class="why"><span class="rec none">no rec</span><span>Your call, on your word.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 83">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="85" data-g="gated" data-rec="cosmo">
+      <div class="num">85</div>
+      <div class="main">
+        <h3>Learn Unreal through UEFN — Fortnite&#x27;s editor as the way into Unreal Engine</h3>
+        <div class="meta"><button type="button" class="t pill g-gated">GATED<span class="tip" role="tooltip">Fires on Chief&#x27;s go word, or when another BOLO lands.</span></button><span>ORANGE</span><span>9/24</span></div>
+        <p>Learn Unreal through UEFN: the course is picked, four stages. Chief saves five Epic pages as PDFs; Claude builds DOPE SHEET 85 from them.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Waits on you saving five pages.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 85">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="86" data-g="hot" data-rec="live">
+      <div class="num">86</div>
+      <div class="main">
+        <h3>The loop closes itself — Oscar Mike stages the next launch, the launch refreshes everything</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>10/12</span></div>
+        <p>The loop closes itself: Claude built the four recs on Chief&#x27;s go 10/12. Claude has not tested them end to end; the next launch tests them.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>The next launch tests it.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 86">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="87" data-g="hot" data-rec="cosmo">
+      <div class="num">87</div>
+      <div class="main">
+        <h3>The setting shelf: what we hold, what to get, TTRPG first</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>10/4</span></div>
+        <p>The setting shelf: Claude judged the 1,537 held items; 29 are to get. Chief closed the hunt on 10/4, and setting 03 reached v1.6.0.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Hunt closed; setting reached v1.6.0.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 87">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="88" data-g="hot" data-rec="cosmo">
+      <div class="num">88</div>
+      <div class="main">
+        <h3>The sexuality shelf: grow MSX to the setting shelf&#x27;s size</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE</span><span>10/4</span></div>
+        <p>The sexuality shelf: the drop is fully distilled, 82 books. Chief ruled the schema pass on 10/4, and Claude wrote it as character v2.5.0.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Distilled and written as character v2.5.0.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 88">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="89" data-g="hot" data-rec="live">
+      <div class="num">89</div>
+      <div class="main">
+        <h3>The trope system: one trope layer across every system, not just plot</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>10/3</span></div>
+        <p>The trope system: one trope layer across every system. Claude keyed 8,700 tropes in register v0.5.0. Claude still owes definitions for 1,018 tropes.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>1,018 trope definitions still owed.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 89">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="90" data-g="hot" data-rec="live">
+      <div class="num">90</div>
+      <div class="main">
+        <h3>The tracking system: state over time, as its own full system</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>10/3</span></div>
+        <p>The tracking system: state over time as a full system. Chief locked seven story beats on 10/3, and Claude took the workspace to v13.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>A system under BOLO 100.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 90">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="91" data-g="hot" data-rec="cosmo">
+      <div class="num">91</div>
+      <div class="main">
+        <h3>The Apple Notes intake: 2025 parsed, more years to come</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK/OPERATOR</span><span>9/29</span></div>
+        <p>The Apple Notes intake: Claude parsed the 2025 and 2026 notes, and Chief ruled their calls. Claude takes more years as they come in.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Passive; takes more years as they come.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 91">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="92" data-g="hot" data-rec="cosmo">
+      <div class="num">92</div>
+      <div class="main">
+        <h3>The style guide system (06): prose · documents · pages</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>10/4</span></div>
+        <p>The style guide system (07): prose, documents and pages are at 1.0.0. Claude folds the later BOLO 6 rules when they land.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>At 1.0.0; done for now.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 92">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="93" data-g="hot" data-rec="live">
+      <div class="num">93</div>
+      <div class="main">
+        <h3>The worldbuilding system (09) and the catalog: the world as one system, the things in it as one store</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>10/4</span></div>
+        <p>The worldbuilding system (05) and the catalog: the world as one system. Chief ruled the Tori calls on 10/4; the non-DCUS stubs wait for Chief&#x27;s word.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>A system under BOLO 100.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 93">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="94" data-g="open" data-rec="cosmo">
+      <div class="num">94</div>
+      <div class="main">
+        <h3>CYBERBUNK (working title, spoken 9/29 late): the roguelite, a Megabonk-style survivors loop, cyberpunk, Risk o</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE</span><span>10/4</span></div>
+        <p>CYBERBUNK: Chief put it on the back burner on 10/4. Claude builds nothing until Chief brings it back; the seven first calls stay ruled.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>You put it on the back burner.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 94">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="96" data-g="hot" data-rec="cosmo">
+      <div class="num">96</div>
+      <div class="main">
+        <h3>Vignettes: short world pieces as their own category, and the actor lane in the performer register</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>10/1</span></div>
+        <p>Vignettes as their own category, plus the actor lane. Chief ruled all five calls on 10/1, and Claude built both. Chief rules the sleeper DNA mechanism and the calf genre name.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Built; two calls can wait.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 96">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="97" data-g="hot" data-rec="cosmo">
+      <div class="num">97</div>
+      <div class="main">
+        <h3>The FagMasterPDX shelf: get his other book(s), distill them beside MSX.11–13</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE</span><span>10/4</span></div>
+        <p>The FagMasterPDX shelf: Claude landed MSX.SET.01 Progression on 10/4. Chief finds his other books and drops them in the PDF drop.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Waits on you finding the books.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 97">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="98" data-g="hot" data-rec="live">
+      <div class="num">98</div>
+      <div class="main">
+        <h3>The ORANGE board: one dashboard and system for the whole ORANGE trunk</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE</span><span>10/4</span></div>
+        <p>The ORANGE board: one dashboard for the ORANGE trunk in six lanes. Claude&#x27;s build.py reads BOLO.md to make it.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>One view of the money trunk.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 98">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="99" data-g="held" data-rec="cosmo">
+      <div class="num">99</div>
+      <div class="main">
+        <h3>The advice voice: Chief as an Outliers character answering women&#x27;s questions, horoscope-flavored, voice + subt</h3>
+        <div class="meta"><button type="button" class="t pill g-held">HELD<span class="tip" role="tooltip">Waiting on one ruling from Chief.</span></button><span>ORANGE</span><span>10/4</span></div>
+        <p>The advice voice: Claude landed pilot 01 to 10 on 10/4. Chief rules the name and the sign-off; the question bank waits on those two calls.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Held on two naming calls.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 99">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="100" data-g="gated" data-rec="live">
+      <div class="num">100</div>
+      <div class="main">
+        <h3>SYSTEMS FIRST: every system done and the whole fabula built, beginning of time to end of time, before any pilo</h3>
+        <div class="meta"><button type="button" class="t pill g-gated">GATED<span class="tip" role="tooltip">Fires on Chief&#x27;s go word, or when another BOLO lands.</span></button><span>BLACK</span><span>10/12</span></div>
+        <p>Systems first: the storytelling systems closed 10/4. Chief ruled batch 2 on 10/12; batch 3 fires on Chief&#x27;s go. Absorbs BOLO 30.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>The main effort.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 100">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="101" data-g="open" data-rec="cosmo">
+      <div class="num">101</div>
+      <div class="main">
+        <h3>EMERGENCE: make the systems run as a simulator, so the world emerges from rules (Wolfram, cellular automata),</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK</span><span>10/6</span></div>
+        <p>EMERGENCE: run the systems as a simulator, so the world emerges from rules. Claude waits on Chief&#x27;s word; no engine, one rule at a time.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Comes after the fabula.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 101">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="102" data-g="held" data-rec="cosmo">
+      <div class="num">102</div>
+      <div class="main">
+        <h3>ONE ACCESS POINT: all documentation for everything, done and reachable from one place, before the fabula</h3>
+        <div class="meta"><button type="button" class="t pill g-held">HELD<span class="tip" role="tooltip">Waiting on one ruling from Chief.</span></button><span>BLACK</span><span>10/5</span></div>
+        <p>The doc suite and interface catalog: Claude completed stages 1 and 2. Claude waits to write the sixteen interface rows until fabula phase 2.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Waits on fabula phase 2.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 102">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="105" data-g="open" data-rec="cosmo">
+      <div class="num">105</div>
+      <div class="main">
+        <h3>Sexology certs for ORANGE color</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE</span><span>10/5</span></div>
+        <p>Claude&#x27;s register found 81 programs, and the depth path is set. Chief rules the open call on the AASECT capstone.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Long horizon.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 105">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="106" data-g="open" data-rec="live">
+      <div class="num">106</div>
+      <div class="main">
+        <h3>Health follow-ups from the 10/5 visit</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE</span><span>10/6</span></div>
+        <p>two are open. Claude keeps the detail in the private file; this row stays generic.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>Two follow-ups still open.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 106">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="107" data-g="hot" data-rec="cosmo">
+      <div class="num">107</div>
+      <div class="main">
+        <h3>THE INTAKE SYSTEM: Chief&#x27;s own life data as fabula source</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK/ORANGE</span><span>10/12</span></div>
+        <p>The notes source is complete; Claude waits on Chief&#x27;s document scanner for the paper scans.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Waits on the document scanner.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 107">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="108" data-g="hot" data-rec="cosmo">
+      <div class="num">108</div>
+      <div class="main">
+        <h3>THE RESEARCH LOOP: one SOP, one name, for books → research → a system, and the cleanup method for Chief&#x27;s own</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>10/6</span></div>
+        <p>The research loop: Claude wrote the loop as SOP §9, named INTEL CYCLE. Two lanes feed one loop. Claude folds BOLOs 36, 40 and 41 into it.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Written as SOP section 9.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 108">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="109" data-g="open" data-rec="cosmo">
+      <div class="num">109</div>
+      <div class="main">
+        <h3>The Gonzo Voice</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK/ORANGE</span><span>10/6</span></div>
+        <p>Hunter S. Thompson as Riley Moss&#x27;s inner voice. Chief ruled Anna Colson as the other girl on 10/6.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Story detail; BOLO 100 carries it.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 109">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="110" data-g="held" data-rec="cosmo">
+      <div class="num">110</div>
+      <div class="main">
+        <h3>The Cyberdeck</h3>
+        <div class="meta"><button type="button" class="t pill g-held">HELD<span class="tip" role="tooltip">Waiting on one ruling from Chief.</span></button><span>OPERATOR</span><span>10/6</span></div>
+        <p>JUDY on the move, off the PC. Chief put the deck aside on 10/6; the printer comes first (BOLO 112).</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>You set it aside; printer first.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 110">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="111" data-g="open" data-rec="cosmo">
+      <div class="num">111</div>
+      <div class="main">
+        <h3>The Goon Log</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE</span><span>10/6</span></div>
+        <p>a private session calendar. Claude built it on 10/6 with a log form and a JUDY-lift chart. JUDY adds a line on &#x27;log it&#x27;.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Built; runs on &#x27;log it&#x27;.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 111">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="112" data-g="hot" data-rec="live">
+      <div class="num">112</div>
+      <div class="main">
+        <h3>The Kobra Full Kit</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>OPERATOR</span><span>10/8</span></div>
+        <p>Claude FRAGO&#x27;d the cart to $332.89. Chief still owes two calls: the power strip link and the spare hotend.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>Two calls left, then it ships.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 112">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="113" data-g="open" data-rec="cosmo">
+      <div class="num">113</div>
+      <div class="main">
+        <h3>The Actress Reference Lane</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK/ORANGE</span><span>10/6</span></div>
+        <p>one reference card per actress Chief picks. Claude wrote seven cards; a bench of 62 names waits for Chief&#x27;s picks.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Waits on your picks.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 113">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="114" data-g="hot" data-rec="cosmo">
+      <div class="num">114</div>
+      <div class="main">
+        <h3>The PTT chirp</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>OPERATOR</span><span>10/6</span></div>
+        <p>a walkie-talkie sound on JUDY&#x27;s talk pad, built 10/6 in chirp.py. Talk press plays do-doo; SEND plays a click.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Built.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 114">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="115" data-g="hot" data-rec="cosmo">
+      <div class="num">115</div>
+      <div class="main">
+        <h3>The Traffic Panel</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>OPERATOR</span><span>10/6</span></div>
+        <p>JUDY&#x27;s last transmissions in tabs, with a net chart of open threads. Claude is adding a hover card per BOLO.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>One small hover card left.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 115">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="116" data-g="hot" data-rec="cosmo">
+      <div class="num">116</div>
+      <div class="main">
+        <h3>The Call Sheet</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>OPERATOR</span><span>10/6</span></div>
+        <p>the standing decision panel. Claude built the deck; each open call has Take rec and Send.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Built.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 116">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="117" data-g="hot" data-rec="cosmo">
+      <div class="num">117</div>
+      <div class="main">
+        <h3>Spit Points</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>OPERATOR</span><span>10/6</span></div>
+        <p>Chief&#x27;s reinforcement signal. Claude writes a feedback memory on the first spit; the third promotes an SOP rule candidate.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Standing system; runs itself.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 117">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="118" data-g="hot" data-rec="cosmo">
+      <div class="num">118</div>
+      <div class="main">
+        <h3>Toy Makers by Arena</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE</span><span>10/6</span></div>
+        <p>premium silicone first, then Japanese imports and more arenas. Claude verifies the Japanese arena next.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Shopping research; no deadline.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 118">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="119" data-g="open" data-rec="cosmo">
+      <div class="num">119</div>
+      <div class="main">
+        <h3>Charge and Spend</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK</span><span>10/6</span></div>
+        <p>the Aion 2 combat loop as a design pattern. Claude writes a one-page pattern card on Chief&#x27;s go.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Tied to CYBERBUNK, which is parked.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 119">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="121" data-g="hot" data-rec="live">
+      <div class="num">121</div>
+      <div class="main">
+        <h3>Reverse the Harvest</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE</span><span>10/12</span></div>
+        <p>top posts per board become labeled examples. Claude wired the rail; the boards are balanced as of 10/12.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>Feeds the pull and the DARKROOM.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 121">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="122" data-g="hot" data-rec="live">
+      <div class="num">122</div>
+      <div class="main">
+        <h3>The Escalation Judge</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>OPERATOR</span><span>10/12</span></div>
+        <p>Claude built the trigger list and the ledger. Nobody has tested the judge yet; the next board tests it.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>The next board tests it.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 122">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="123" data-g="gated" data-rec="cosmo">
+      <div class="num">123</div>
+      <div class="main">
+        <h3>A New Outliers Faction</h3>
+        <div class="meta"><button type="button" class="t pill g-gated">GATED<span class="tip" role="tooltip">Fires on Chief&#x27;s go word, or when another BOLO lands.</span></button><span>BLACK/ORANGE</span><span>10/12</span></div>
+        <p>an adult monastic order. Chief ruled the name and era on 10/12; Claude&#x27;s seed waits on BOLO 100.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Waits on BOLO 100.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 123">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="124" data-g="gated" data-rec="cosmo">
+      <div class="num">124</div>
+      <div class="main">
+        <h3>Session Mode</h3>
+        <div class="meta"><button type="button" class="t pill g-gated">GATED<span class="tip" role="tooltip">Fires on Chief&#x27;s go word, or when another BOLO lands.</span></button><span>ORANGE</span><span>10/12</span></div>
+        <p>one switch brings a private session up as a dashboard. Claude&#x27;s timer is live and voice read is on; the dashboard fires on go.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Nice to have; fires on go.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 124">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="125" data-g="hot" data-rec="live">
+      <div class="num">125</div>
+      <div class="main">
+        <h3>The Review Desk</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>OPERATOR</span><span>10/12</span></div>
+        <p>Claude built the review page. Chief&#x27;s accept and reject calls on DOCTRINE 0 come next.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>Your accept and reject calls come next.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 125">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="126" data-g="open" data-rec="cosmo">
+      <div class="num">126</div>
+      <div class="main">
+        <h3>The House Net</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>OPERATOR</span><span>10/7</span></div>
+        <p>the wireless headset reaches every room. Claude gave the boresight; nothing is built yet. The first step is Chief&#x27;s far-room test of Remote Control.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Nothing built; a test comes first.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 126">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="127" data-g="open" data-rec="cosmo">
+      <div class="num">127</div>
+      <div class="main">
+        <h3>Workwear</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>OPERATOR</span><span>10/12</span></div>
+        <p>a shortlist and a first order of about $97 sit in private notes. Chief&#x27;s fit, style and budget set the sizing.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Shopping; no deadline.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 127">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="128" data-g="open" data-rec="cosmo">
+      <div class="num">128</div>
+      <div class="main">
+        <h3>The Assistant</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>OPERATOR/ORANGE</span><span>10/8</span></div>
+        <p>a confidential executive and personal assistant. Chief ruled call 1 with no budget cap. Claude has six open calls, each with a rec.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Six calls, none urgent.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 128">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="129" data-g="open" data-rec="cosmo">
+      <div class="num">129</div>
+      <div class="main">
+        <h3>The nacho cart</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE</span><span>10/9</span></div>
+        <p>pick a menu build, then a starch. Chief&#x27;s calls on format, chip method and menu size come next.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Venture riff; parked behind the money lane.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 129">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="130" data-g="open" data-rec="cosmo">
+      <div class="num">130</div>
+      <div class="main">
+        <h3>The rotisserie truck</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE</span><span>10/9</span></div>
+        <p>rotisserie chicken with loaded plates. Chief ruled the concept. Next, Chief calls the oven, pilot order and pricing.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Venture riff; parked behind the money lane.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 130">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="131" data-g="open" data-rec="cosmo">
+      <div class="num">131</div>
+      <div class="main">
+        <h3>The fry shop</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE</span><span>10/9</span></div>
+        <p>fries plus a wall of sauces. The fryer is the deciding call; Chief&#x27;s calls come next.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Venture riff; parked behind the money lane.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 131">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="132" data-g="open" data-rec="cosmo">
+      <div class="num">132</div>
+      <div class="main">
+        <h3>The halal cart</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE</span><span>10/9</span></div>
+        <p>halal platters over rice, in the New York cart style. Claude read the menu from the photo; no build yet.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Venture riff; parked behind the money lane.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 132">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="133" data-g="open" data-rec="cosmo">
+      <div class="num">133</div>
+      <div class="main">
+        <h3>The silicone shop</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE</span><span>10/12</span></div>
+        <p>an Ultrasin line of high-grade silicone novelty shapes. Chief parked it 10/12: &#x27;wrap this up … we&#x27;ll come look at this later&#x27;.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>You parked it 10/12.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 133">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="134" data-g="hot" data-rec="cosmo">
+      <div class="num">134</div>
+      <div class="main">
+        <h3>The expression library</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE/BLACK</span><span>10/12</span></div>
+        <p>Claude drafted the label set on Chief&#x27;s go. Daz and Blender are both out, so the render route is still open.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>No render route yet.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 134">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="135" data-g="hot" data-rec="live">
+      <div class="num">135</div>
+      <div class="main">
+        <h3>THE CREATOR INCOME REPORT: an honest read of the adult-creator market and the one lane to try</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE</span><span>10/12</span></div>
+        <p>The creator income report: the honest market read, with one lane to try. Chief ruled all recs on 10/12, and Claude published the 90-day plan page.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>The 90-day plan; one lane to try.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 135">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="136" data-g="hot" data-rec="live">
+      <div class="num">136</div>
+      <div class="main">
+        <h3>THE CUT: one editing process, concept to export, and the editing shelf</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE/BLACK</span><span>10/12</span></div>
+        <p>The Cut: one editing process from concept to export, plus the editing shelf. Chief ruled the templates and process doc 0.2.0 on 10/12.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>The editing process the content runs on.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 136">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="137" data-g="hot" data-rec="live">
+      <div class="num">137</div>
+      <div class="main">
+        <h3>The pull queue</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE</span><span>10/12</span></div>
+        <p>every subreddit board the DARKROOM still needs, pulled 40 at a time. Wave 1 started 10/12; a checklist ticks off each board.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>Running now.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 137">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="138" data-g="open" data-rec="cosmo">
+      <div class="num">138</div>
+      <div class="main">
+        <h3>The productized offer</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE/OPERATOR</span><span>10/12</span></div>
+        <p>package what the Command knows as a sold framework. Claude gave the boresight on 10/12. The build waits on Chief&#x27;s go.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>Boresight only; no build.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 138">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="139" data-g="open" data-rec="cosmo">
+      <div class="num">139</div>
+      <div class="main">
+        <h3>The ECC cherry-pick</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>OPERATOR</span><span>10/12</span></div>
+        <p>take a few helpful agents, skills, and hooks from Everything Claude Code. Claude gave the boresight on 10/12. The build waits on Chief&#x27;s go.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>The repo intake (140) absorbed it.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 139">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="140" data-g="hot" data-rec="live">
+      <div class="num">140</div>
+      <div class="main">
+        <h3>The repo intake</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>OPERATOR</span><span>10/12</span></div>
+        <p>one scan, judge, pick, and adopt process for every GitHub repo Chief brings. Claude built the scan on 10/12 and staged the 15-item queue.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>The langextract trial is in flight.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 140">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="141" data-g="hot" data-rec="live">
+      <div class="num">141</div>
+      <div class="main">
+        <h3>The Command desk</h3>
+        <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>OPERATOR</span><span>10/13</span></div>
+        <p>an animated front page. Live tiles show stations, pull waves, open calls, JUDY&#x27;s last replies. Claude wired real data into the desk on 10/13. The stations fill once launch.py writes the poll.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>Built this morning; still moving.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 141">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="142" data-g="open" data-rec="cosmo">
+      <div class="num">142</div>
+      <div class="main">
+        <h3>The Character MUD</h3>
+        <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK</span><span>10/13</span></div>
+        <p>a tiny text world where a character is built room by room. Chief parked it 10/13: &#x27;Let&#x27;s not prioritize the mudlet.&#x27;</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>You parked it 10/13.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 142">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="143" data-g="held" data-rec="live">
+      <div class="num">143</div>
+      <div class="main">
+        <h3>The clean tree</h3>
+        <div class="meta"><button type="button" class="t pill g-held">HELD<span class="tip" role="tooltip">Waiting on one ruling from Chief.</span></button><span>OPERATOR</span><span>10/12</span></div>
+        <p>a 12-entry root and a staged cleanup of the repo. Claude moves nothing until Chief says &#x27;go stage 1&#x27; or &#x27;hold&#x27;. Claude would run stages 2 and 3 after the pull lands, about 10/21.</p>
+        <div class="why"><span class="rec live">✓ rec</span><span>One word and the repo gets tidy.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 143">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+    <article class="b" data-n="144" data-g="held" data-rec="cosmo">
+      <div class="num">144</div>
+      <div class="main">
+        <h3>The ClawTeam trial</h3>
+        <div class="meta"><button type="button" class="t pill g-held">HELD<span class="tip" role="tooltip">Waiting on one ruling from Chief.</span></button><span>OPERATOR</span><span>10/13</span></div>
+        <p>Claude advises against running ClawTeam as-is and names three ideas to copy. Chief holds it on the board for now.</p>
+        <div class="why"><span class="rec cosmo">✗ rec</span><span>The rec is against running it.</span></div>
+      </div>
+      <div class="yn" role="group" aria-label="BOLO 144">
+        <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
+        <button type="button" class="x" data-p="cosmo" aria-pressed="false" title="COSMOLINE">✗</button>
+      </div>
+    </article>
+  </div>
+  <div class="empty" id="none" hidden>Nothing matches this filter.</div>
+</main>
+<script>
+  let db = null, filter = "all"; const picks = {};
+  const rows = Array.from(document.querySelectorAll(".b"));
+  function render() {
+    let l = 0, c = 0, shown = 0;
+    for (const el of rows) {
+      const p = (picks["b" + el.dataset.n] || {}).pick || "";
+      el.classList.toggle("live", p === "live"); el.classList.toggle("cosmo", p === "cosmo");
+      el.querySelector(".y").setAttribute("aria-pressed", p === "live"); el.querySelector(".x").setAttribute("aria-pressed", p === "cosmo");
+      if (p === "live") l++; else if (p === "cosmo") c++;
+      const g = el.dataset.g;
+      const vis = filter === "all" || (filter === "todo" && !p) || filter === p || (filter === "hot" && g === "hot") || (filter === "slow" && g !== "hot");
+      el.hidden = !vis; if (vis) shown++;
+    }
+    document.getElementById("nLive").textContent = l; document.getElementById("nCosmo").textContent = c; document.getElementById("nOpen").textContent = rows.length - l - c;
+    document.getElementById("barL").style.width = (100 * l / rows.length) + "%"; document.getElementById("barC").style.width = (100 * c / rows.length) + "%";
+    document.getElementById("none").hidden = shown > 0;
+  }
+  async function save(n, pick) {
+    const id = "b" + n, cur = (picks[id] || {}).pick;
+    picks[id] = { n: +n, pick: cur === pick ? "" : pick };
+    render();
+    if (!db) return;
+    const st = document.getElementById("saveState"); st.textContent = "saving…";
+    try { await db.collection("picks").doc(id).set(picks[id]); st.textContent = "saved"; }
+    catch (e) { st.textContent = "not saved: " + (e && e.code || "error"); }
+  }
+  document.addEventListener("click", async (ev) => {
+    const t = ev.target.closest(".t");
+    document.querySelectorAll(".t.pin").forEach((x) => { if (x !== t) x.classList.remove("pin"); });
+    if (t) t.classList.toggle("pin");
+    const b = ev.target.closest(".yn button");
+    if (b) save(b.closest(".b").dataset.n, b.dataset.p);
+    const f = ev.target.closest(".filters button");
+    if (f) { filter = f.dataset.f; document.querySelectorAll(".filters button").forEach((x) => x.setAttribute("aria-pressed", x === f)); render(); }
+    if (ev.target.id === "takeRecs") {
+      const st = document.getElementById("saveState");
+      for (const el of rows) { const r = el.dataset.rec, id = "b" + el.dataset.n;
+        if ((r === "live" || r === "cosmo") && !(picks[id] && picks[id].pick)) await save(el.dataset.n, r); }
+      st.textContent = "recs taken";
+    }
+  });
+  document.addEventListener("keydown", (ev) => { if (ev.key === "Escape") document.querySelectorAll(".t.pin").forEach((x) => x.classList.remove("pin")); });
+  render();
+  (async () => {
+    db = window.claude && window.claude.use ? await window.claude.use("db") : null;
+    const st = document.getElementById("saveState");
+    if (!db) { document.getElementById("noDb").hidden = false; st.textContent = "view only"; return; }
+    db.collection("picks").onSnapshot((snap) => {
+      for (const d of snap.docs) picks[d.id] = d.data();
+      st.textContent = "calls loaded"; render();
+    }, () => { st.textContent = "calls unavailable"; });
+  })();
+</script>
