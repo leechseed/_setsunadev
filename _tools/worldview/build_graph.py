@@ -99,6 +99,7 @@ const links=DATA.links.map(d=>({source:d.a,target:d.b,kind:d.kind,w:d.w,src:d.sr
 const nb=new Map(nodes.map(d=>[d.id,new Set()]));
 links.forEach(l=>{nb.get(l.source).add(l.target);nb.get(l.target).add(l.source)});
 nodes.forEach(d=>d.deg=nb.get(d.id).size);
+const sid=x=>typeof x==='object'?x.id:x;
 const eraName=id=>id?(byId.get(id)||{}).label:'';
 const fmtSrc=d=>d.source?d.source+':'+d.line:'(no source)';
 const matches=d=>!query||(d.label+' '+(d.desc||'')).toLowerCase().includes(query);
@@ -106,7 +107,7 @@ const vis=d=>on.has(d.type)&&matches(d);
 // ---- highlight path: a character's events, in year then clock order
 function pathList(cid){
   if(!cid)return[];
-  const ev=links.filter(l=>l.kind==='involves'&&(l.target===cid||l.source===cid)).map(l=>byId.get(l.target===cid?l.source:l.target)).filter(n=>n&&n.type==='event');
+  const ev=links.filter(l=>l.kind==='involves'&&(sid(l.target)===cid||sid(l.source)===cid)).map(l=>byId.get(sid(l.target)===cid?sid(l.source):sid(l.target))).filter(n=>n&&n.type==='event');
   const u=[...new Map(ev.map(n=>[n.id,n])).values()];
   u.sort((a,b)=>(a.year??1e9)-(b.year??1e9)||(a.ord??0)-(b.ord??0));
   return[byId.get(cid),...u];
@@ -117,7 +118,6 @@ const bar=document.getElementById('types');
 TYPES.forEach(t=>{const b=document.createElement('button');b.className='chip';b.style.setProperty('--c',COL(t));b.setAttribute('aria-pressed','true');
  b.innerHTML='<i></i>'+t+' '+nodes.filter(n=>n.type===t).length;b.onclick=()=>{on.has(t)?on.delete(t):on.add(t);b.setAttribute('aria-pressed',on.has(t));refresh()};bar.appendChild(b)});
 const ps=document.getElementById('path');
-ps.innerHTML='<option value="">Path: none</option>'+nodes.filter(n=>n.type==='character').map(n=>'<option value="'+n.id+'">Path: '+esc(n.label)+' ('+pathList(n.id).length-1+')</option>'.replace('+pathList','')).join('');
 ps.innerHTML='<option value="">Path: none</option>'+nodes.filter(n=>n.type==='character').map(n=>'<option value="'+n.id+'">Path: '+esc(n.label)+' ('+(pathList(n.id).length-1)+')</option>').join('');
 ps.onchange=()=>setPath(ps.value||null);
 function setPath(id){pathChar=id;ps.value=id||'';P=pathList(id);PS=new Set(P.map(n=>n.id));refresh()}
@@ -139,7 +139,7 @@ function select(id){sel=id;refresh()}
 function drawSide(){
   if(!sel){side.style.display='none';return}
   const d=lookup(sel);if(!d){side.style.display='none';return}
-  const rel=links.filter(l=>l.source===sel||l.target===sel).map(l=>{const o=byId.get(l.source===sel?l.target:l.source);return '<li><a data-id="'+o.id+'" tabindex="0">'+esc(o.label)+'</a> <small>'+o.type+' · '+esc(l.kind)+'</small></li>'});
+  const rel=links.filter(l=>sid(l.source)===sel||sid(l.target)===sel).map(l=>{const o=byId.get(sid(l.source)===sel?sid(l.target):sid(l.source));return '<li><a data-id="'+o.id+'" tabindex="0">'+esc(o.label)+'</a> <small>'+o.type+' · '+esc(l.kind)+'</small></li>'});
   const f=(k,v,c)=>v==null||v===''?'':'<dt>'+k+'</dt><dd class="'+(c||'')+'">'+v+'</dd>';
   side.innerHTML='<button class="x" aria-label="Close">×</button><small style="color:'+COL(d.type)+';font:11px IBM Plex Mono,monospace">'+d.type+'</small><h2>'+esc(d.label)+'</h2><dl>'+
    f('id',esc(d.id),'mono')+f('era',esc(eraName(d.era)))+f('year',d.year)+f('source',esc(fmtSrc(d)),'mono')+f('about',esc(d.desc))+'</dl>'+
@@ -216,19 +216,19 @@ let root3=null;
 function buildTree(){
   const T=DATA.tree,rootN=byId.get(T.root);
   const kids=T.groups.map(gr=>({name:gr.label,type:'group',children:gr.ids.filter(i=>i!==T.root&&byId.get(i)).map(i=>({name:byId.get(i).label,id:i,type:byId.get(i).type}))}));
-  kids.push({name:'Setting layers S1-S12',type:'group',_children:DATA.layers.map(l=>({name:l.label,id:l.id,type:'layer'}))});
-  return d3.hierarchy({name:rootN.label,id:T.root,type:rootN.type,children:kids});
+  kids.push({name:'Setting layers S1-S12',type:'group',children:DATA.layers.map(l=>({name:l.label,id:l.id,type:'layer'}))});
+  const h=d3.hierarchy({name:rootN.label,id:T.root,type:rootN.type,children:kids});
+  h.children[h.children.length-1]._children=h.children[h.children.length-1].children;h.children[h.children.length-1].children=null;
+  return h;
 }
 function drawTree(){
-  if(!root3){root3=buildTree();root3.each(n=>{if(n.data._children){n._children=n.children||null;n.children=null;n.children=n.data._children.map(c=>{const h=d3.hierarchy(c);h.parent=n;h.depth=n.depth+1;return h});n._children=n.children;n.children=null}})}
+  if(!root3)root3=buildTree();
   g3.selectAll('*').remove();
   d3.tree().nodeSize([26,250])(root3);
   g3.append('g').selectAll('path').data(root3.links()).join('path').attr('class','tl').attr('d',d3.linkHorizontal().x(d=>d.y).y(d=>d.x));
   const n=g3.append('g').selectAll('g').data(root3.descendants()).join('g').attr('class','nd tg').attr('transform',d=>'translate('+d.y+','+d.x+')').attr('tabindex',0);
   n.append('circle').attr('class','sh').attr('r',d=>d.data.type==='group'?5:6).attr('fill',d=>d.data.type==='group'?'#34312d':COL(d.data.type)).attr('stroke',d=>d._children?'var(--acc)':'var(--bg)');
   n.append('text').attr('x',11).attr('y',4).text(d=>d.data.name+(d._children?' (+'+d._children.length+')':''));
-  const act=(e,d)=>{e.stopPropagation();if(d.children||d._children){d.children=d.children?null:d._children;if(d.children)d._children=d.children;else d._children=d._children;}
-    if(d.data.id)sel=d.data.id;drawTree();refresh()};
   n.on('click',(e,d)=>{e.stopPropagation();if(d.data.type==='group'||d.depth===0){if(d.children){d._children=d.children;d.children=null}else if(d._children){d.children=d._children;d._children=null}}
     if(d.data.id)sel=d.data.id;drawTree();refresh()})
    .on('keydown',(e,d)=>{if(e.key==='Enter')n.on('click')(e,d)})
