@@ -86,6 +86,7 @@ def main() -> int:
         <div class="meta"><button type="button" class="t pill g-{r['g']}">{g}<span class="tip" role="tooltip">{esc(gtip)}</span></button><span>{esc(r['trunk'])}</span><span>{esc(r.get('when') or r.get('issued') or '')}</span></div>
         {three(r['n']) or f'<p>{linkify(body)}</p>'}
         <div class="why">{mark}<span>{esc(why)}</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-{r['n']}" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO {r['n']}">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -141,6 +142,11 @@ def main() -> int:
   .why{{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;font-size:14px;color:var(--ink-2)}}
   .rec{{font:500 11px var(--mono);letter-spacing:.06em;padding:1px 6px;border-radius:3px;white-space:nowrap}}
   .rec.live{{color:var(--good);border:1px solid var(--good)}} .rec.cosmo{{color:var(--cosmo);border:1px solid var(--cosmo)}} .rec.none{{color:var(--ink-3);border:1px dashed var(--line)}}
+  .bnote{{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px;align-items:start;margin-top:8px;max-width:74ch}}
+  .bnote span{{font:500 10.5px/2.2 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}}
+  .bnote textarea{{width:100%;min-height:30px;resize:vertical;font:14px/1.45 var(--body);color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:3px;padding:5px 8px}}
+  .bnote textarea:focus{{border-color:var(--accent);outline:none}}
+  .bnote textarea.has{{border-color:var(--accent-ink)}}
   .yn{{display:flex;gap:4px}}
   .yn button{{width:44px;height:40px;font:700 20px/1 var(--body);border:1px solid var(--line);border-radius:4px;background:var(--panel-2);color:var(--ink-3);cursor:pointer}}
   .yn .y:hover{{border-color:var(--good);color:var(--good)}} .yn .x:hover{{border-color:var(--cosmo);color:var(--cosmo)}}
@@ -170,7 +176,7 @@ def main() -> int:
 </header>
 <div class="bar"><i class="l" id="barL" style="width:0%"></i><i class="c" id="barC" style="width:0%"></i></div>
 <main class="wrap">
-  <p class="lede">Every open BOLO, {len(items)} of them. Each row gives the mission, where it stands and the next step, then my rec. Press ✓ to keep it {"<button type='button' class='t'>live<span class='tip' role='tooltip'><b>Live BOLO</b>In the rotation. When we pick what to work on next, we pick from the live list only.</span></button>"} or ✗ to {"<button type='button' class='t'>cosmoline<span class='tip' role='tooltip'><b>Cosmoline</b>Out of the rotation and in storage. Still on BOLO.md, still whole, back on your word.</span></button>"} it. Press it again to undo. <b>Take all recs</b> fills every row you have not called; BOLO 83 has no rec and stays yours.</p>
+  <p class="lede">Every open BOLO, {len(items)} of them. Each row gives the mission, where it stands and the next step, then my rec. Press ✓ to keep it {"<button type='button' class='t'>live<span class='tip' role='tooltip'><b>Live BOLO</b>In the rotation. When we pick what to work on next, we pick from the live list only.</span></button>"} or ✗ to {"<button type='button' class='t'>cosmoline<span class='tip' role='tooltip'><b>Cosmoline</b>Out of the rotation and in storage. Still on BOLO.md, still whole, back on your word.</span></button>"} it. Press it again to undo. Add a note to any row: type it, or click the box and hold JUDY's talk key, and your words land there. <b>Take all recs</b> fills every row you have not called; BOLO 83 has no rec and stays yours.</p>
   <p id="noDb" hidden>Calls are not saving: the page could not reach its store. Your clicks show here but will not reach the CDR.</p>
   <div class="filters" role="group" aria-label="Show">
     <button type="button" data-f="all" aria-pressed="true">All {len(items)}</button>
@@ -193,6 +199,8 @@ def main() -> int:
       const p = (picks["b" + el.dataset.n] || {{}}).pick || "";
       el.classList.toggle("live", p === "live"); el.classList.toggle("cosmo", p === "cosmo");
       el.querySelector(".y").setAttribute("aria-pressed", p === "live"); el.querySelector(".x").setAttribute("aria-pressed", p === "cosmo");
+      const ta = el.querySelector(".bnote textarea"), nt = (picks["b" + el.dataset.n] || {{}}).note || "";
+      if (ta && document.activeElement !== ta && ta.value !== nt) {{ ta.value = nt; ta.classList.toggle("has", !!nt.trim()); ta.style.height = "auto"; ta.style.height = (ta.scrollHeight || 30) + "px"; }}
       if (p === "live") l++; else if (p === "cosmo") c++;
       const g = el.dataset.g;
       const vis = filter === "all" || (filter === "todo" && !p) || filter === p || (filter === "hot" && g === "hot") || (filter === "slow" && g !== "hot");
@@ -202,15 +210,26 @@ def main() -> int:
     document.getElementById("barL").style.width = (100 * l / rows.length) + "%"; document.getElementById("barC").style.width = (100 * c / rows.length) + "%";
     document.getElementById("none").hidden = shown > 0;
   }}
-  async function save(n, pick) {{
-    const id = "b" + n, cur = (picks[id] || {{}}).pick;
-    picks[id] = {{ n: +n, pick: cur === pick ? "" : pick }};
+  async function put(n, patch) {{
+    const id = "b" + n;
+    picks[id] = Object.assign({{ n: +n, pick: "", note: "" }}, picks[id] || {{}}, patch);
     render();
     if (!db) return;
     const st = document.getElementById("saveState"); st.textContent = "saving…";
     try {{ await db.collection("picks").doc(id).set(picks[id]); st.textContent = "saved"; }}
     catch (e) {{ st.textContent = "not saved: " + (e && e.code || "error"); }}
   }}
+  async function save(n, pick) {{ const cur = (picks["b" + n] || {{}}).pick; return put(n, {{ pick: cur === pick ? "" : pick }}); }}
+  /* notes (10/13, Chief: "be able to add notes to it ... my voice notes"): typed, or JUDY's dictation pasted into the
+     focused box; saved a moment after the typing or the paste stops */
+  const timers = {{}};
+  document.addEventListener("input", (ev) => {{
+    const ta = ev.target.closest(".bnote textarea"); if (!ta) return;
+    const n = ta.closest(".b").dataset.n;
+    ta.classList.toggle("has", !!ta.value.trim());
+    ta.style.height = "auto"; ta.style.height = ta.scrollHeight + "px";
+    clearTimeout(timers[n]); timers[n] = setTimeout(() => put(n, {{ note: ta.value }}), 700);
+  }});
   document.addEventListener("click", async (ev) => {{
     const t = ev.target.closest(".t");
     document.querySelectorAll(".t.pin").forEach((x) => {{ if (x !== t) x.classList.remove("pin"); }});

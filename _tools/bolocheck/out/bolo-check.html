@@ -44,6 +44,11 @@
   .why{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;font-size:14px;color:var(--ink-2)}
   .rec{font:500 11px var(--mono);letter-spacing:.06em;padding:1px 6px;border-radius:3px;white-space:nowrap}
   .rec.live{color:var(--good);border:1px solid var(--good)} .rec.cosmo{color:var(--cosmo);border:1px solid var(--cosmo)} .rec.none{color:var(--ink-3);border:1px dashed var(--line)}
+  .bnote{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px;align-items:start;margin-top:8px;max-width:74ch}
+  .bnote span{font:500 10.5px/2.2 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+  .bnote textarea{width:100%;min-height:30px;resize:vertical;font:14px/1.45 var(--body);color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:3px;padding:5px 8px}
+  .bnote textarea:focus{border-color:var(--accent);outline:none}
+  .bnote textarea.has{border-color:var(--accent-ink)}
   .yn{display:flex;gap:4px}
   .yn button{width:44px;height:40px;font:700 20px/1 var(--body);border:1px solid var(--line);border-radius:4px;background:var(--panel-2);color:var(--ink-3);cursor:pointer}
   .yn .y:hover{border-color:var(--good);color:var(--good)} .yn .x:hover{border-color:var(--cosmo);color:var(--cosmo)}
@@ -68,12 +73,12 @@
     <p><b>✓ LIVE BOLO.</b> In the rotation. "What next" pulls only from these.</p>
     <p><b>✗ COSMOLINE</b> (provisional). Packed for storage the way Marines pack a rifle in cosmoline grease: out of the rotation, kept whole, ready to unpack. It stays on BOLO.md; it just stops coming up.</p>
     <p>Bench for the X word: COSMOLINE (rec) · MOTHBALL · FOOTLOCKER · DEADLINE. Say the one you want.</p>
-    <p>Built Oct 13, 5:32 AM from the 10/13 sit rep's BOLO board. 33 of 98 recs say live.</p>
+    <p>Built Oct 13, 7:27 AM from the 10/13 sit rep's BOLO board. 33 of 98 recs say live.</p>
   </div></details>
 </header>
 <div class="bar"><i class="l" id="barL" style="width:0%"></i><i class="c" id="barC" style="width:0%"></i></div>
 <main class="wrap">
-  <p class="lede">Every open BOLO, 98 of them. Each row gives the mission, where it stands and the next step, then my rec. Press ✓ to keep it <button type='button' class='t'>live<span class='tip' role='tooltip'><b>Live BOLO</b>In the rotation. When we pick what to work on next, we pick from the live list only.</span></button> or ✗ to <button type='button' class='t'>cosmoline<span class='tip' role='tooltip'><b>Cosmoline</b>Out of the rotation and in storage. Still on BOLO.md, still whole, back on your word.</span></button> it. Press it again to undo. <b>Take all recs</b> fills every row you have not called; BOLO 83 has no rec and stays yours.</p>
+  <p class="lede">Every open BOLO, 98 of them. Each row gives the mission, where it stands and the next step, then my rec. Press ✓ to keep it <button type='button' class='t'>live<span class='tip' role='tooltip'><b>Live BOLO</b>In the rotation. When we pick what to work on next, we pick from the live list only.</span></button> or ✗ to <button type='button' class='t'>cosmoline<span class='tip' role='tooltip'><b>Cosmoline</b>Out of the rotation and in storage. Still on BOLO.md, still whole, back on your word.</span></button> it. Press it again to undo. Add a note to any row: type it, or click the box and hold JUDY's talk key, and your words land there. <b>Take all recs</b> fills every row you have not called; BOLO 83 has no rec and stays yours.</p>
   <p id="noDb" hidden>Calls are not saving: the page could not reach its store. Your clicks show here but will not reach the CDR.</p>
   <div class="filters" role="group" aria-label="Show">
     <button type="button" data-f="all" aria-pressed="true">All 98</button>
@@ -91,6 +96,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK/ORANGE</span><span>2026-08-19</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a set of profile entries completed so each has its quality bracket and its open product confirmations filled in.</li><li><span class="lb">Where it stands</span>The status shows only that this item is open, issued 2026-08-19. No fill-ins are recorded as done.</li><li><span class="lb">Next step</span>Claude fills the quality bracket and asks Chief to confirm the two open product entries, which would close the profile.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Waiting on your fill-ins since 8/19.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-3" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 3">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -104,6 +110,7 @@
         <div class="meta"><button type="button" class="t pill g-gated">GATED<span class="tip" role="tooltip">Fires on Chief&#x27;s go word, or when another BOLO lands.</span></button><span>BLACK/ORANGE</span><span>2026-08-21</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a learnable guide to focus and flow: what they are, how to snap into focus on command, and how to train it.</li><li><span class="lb">Where it stands</span>The form is ruled (2026-08-21): a spoken walkthrough first, then a document for Claude to retrieve. The guide itself is staged, not written.</li><li><span class="lb">Next step</span>Chief rules the open proword, then says go, and Claude writes the walkthrough and the document.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Gated on a proword ruling since 8/21.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-4" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 4">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -117,6 +124,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK</span><span>2026-08-21</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants conversation to be his main way of working with Claude, with documents kept for Claude to look things up.</li><li><span class="lb">Where it stands</span>The rule is stated, but the status shows it open. No build or trusted-recall system is recorded yet.</li><li><span class="lb">Next step</span>Claude builds toward one-pass recall and writing documents while replying, putting speed first, once Chief gives the order.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>BOLOs 51 and 64 carry this work now.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-5" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 5">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -130,6 +138,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK</span><span>10/4</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants Claude to teach in chat the way learning science says works best, tuned to how Chief likes to learn.</li><li><span class="lb">Where it stands</span>Teaching rules 13 to 20 are ruled (10/4) and the format is live. The full method is open, and the Mayer book and six other titles are still missing.</li><li><span class="lb">Next step</span>Chief finds the missing book PDFs for the hunt list, and Claude then writes the remaining tutoring and multimedia distills.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Hunt closed 10/4; distills are banked.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-6" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 6">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -143,6 +152,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK/ORANGE</span><span>10/6</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants GitHub to purge old cached copies of the repo&#x27;s pre-cleanup history so removed material is gone for good.</li><li><span class="lb">Where it stands</span>The ticket text is ready in the order and the leftover items are ruled acceptable. The item was parked on 10/6 and is not filed.</li><li><span class="lb">Next step</span>Chief files the support ticket from the account owner&#x27;s login, because only the owner can do it.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>One form only you can file.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-8" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 8">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -156,6 +166,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK/ORANGE</span><span>2026-08-24</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants Google to drop cached snippets of the repo&#x27;s old pages so they stop showing in search.</li><li><span class="lb">Where it stands</span>The status shows only that this is open. No removal requests are recorded as sent.</li><li><span class="lb">Next step</span>Chief runs the removed and changed repo links through Google&#x27;s outdated-content removal tool in Search Console.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>Rides right behind BOLO 8.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-9" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 9">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -169,6 +180,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK/ORANGE</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a small clicker game in one HTML file with a single paper-doll character, built as an adult-content venture.</li><li><span class="lb">Where it stands</span>On 10/12 Claude built the art-style test: one flat doll, three swappable layers, and a blinking click. Chief ruled hand-drawn flat SVG as the art method.</li><li><span class="lb">Next step</span>Claude builds the next piece of the game on that art method, which would move it from test toward the first playable version.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>Art pipeline ruled 10/12; momentum is fresh.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-10" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 10">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -182,6 +194,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE/OPERATOR</span><span>2026-08-25</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants one schedule that combines all his body and training programs, aiming for his best physique by July 2028.</li><li><span class="lb">Where it stands</span>A draft plan is saved on the Desktop (parked 8/25). Chief set the July 2028 target on 9/24. The plan is not final.</li><li><span class="lb">Next step</span>Chief reviews the draft and says &quot;log it&quot;, and Claude then writes the final plan once his open questions are answered.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Parked since 8/25.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-11" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 11">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -195,6 +208,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE</span><span>10/6</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a designed content-production room: layout, lighting, cameras and build order, with a bratty-themed look.</li><li><span class="lb">Where it stands</span>The full design was delivered in chat on 8/25 and a draft is saved. The item was parked on 10/6 pending one style ruling.</li><li><span class="lb">Next step</span>Chief rules on the locked-aesthetic question, which would let Claude log the design and unblock buying a camera.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Parked 10/6 on the Call Sheet.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-12" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 12">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -208,6 +222,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE</span><span>2026-08-25</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants his large image library cleaned, sorted and tagged so it can feed the venture&#x27;s image pipeline.</li><li><span class="lb">Where it stands</span>Stage 1 cleanup is done (8/31): 58,421 images normalized, and 55,841 remain as girls-only after the 9/1 cast pass. The DARKROOM browser was stamped 1.0 on 2026-09-06.</li><li><span class="lb">Next step</span>Claude derives the tag lattice (stage 2) and then runs tagging, with Chief rating images in DARKROOM as the next human step.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>Stage 2 feeds the DARKROOM the pull is filling.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-14" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 14">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -221,6 +236,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK/ORANGE</span><span>10/6</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants research, not purchases, to fill the gaps in the guide to music-video and short-form video style.</li><li><span class="lb">Where it stands</span>A first version of the mediums module was delivered 8/26 with three scaffold sections. The item was parked on 10/6.</li><li><span class="lb">Next step</span>Claude deepens those three sections with sourced research, using the Vernallis book as the anchor, when Chief unparks it.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Parked 10/6 on the Call Sheet.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-16" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 16">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -234,6 +250,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants the repo&#x27;s story material and his whole reading library tagged to a single story framework so everything can be found by address.</li><li><span class="lb">Where it stands</span>Stage 1 is done (8/26). The gate closed 9/16, and the character system reached version 2.2.0 by 9/29. The 353-source sweep remains.</li><li><span class="lb">Next step</span>Chief decides how to handle the bulk of about 6,700 dropped PDFs, and Claude then runs the sweep over the library.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Research side; the systems are past it.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-18" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 18">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -247,6 +264,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>OPERATOR</span><span>10/6</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants to track which of 104 special Forza cars he owns so the list shows only what he still needs.</li><li><span class="lb">Where it stands</span>After his 9/11 callout the count is 37 owned and 67 needed. The item has been parked since 10/6.</li><li><span class="lb">Next step</span>Chief calls out more owned cars, and Claude strikes them and regenerates the needed list. One car name still needs confirming.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Parked 10/6; a game tracker.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-20" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 20">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -260,6 +278,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE</span><span>10/5</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a paying adult-content creative operation built from what he already has, so a studio can sustain itself with or without a job.</li><li><span class="lb">Where it stands</span>Every call on the planning sheet is ruled (9/23), and launch is set for February 2027. On 10/12 he dropped Blender and the render route is open.</li><li><span class="lb">Next step</span>Chief picks the new render route, and Claude then restarts the production evenings, which stand at zero of fifteen to twenty.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Blender is out, so no render route yet.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-24" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 24">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -273,6 +292,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE</span><span>9/16</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a curation account for adult clips and images as a second venture and a way to build an audience.</li><li><span class="lb">Where it stands</span>Name ULTRA DARK is ruled, and on 10/3 gay and straight content share one account. The account has no audience yet and production is early.</li><li><span class="lb">Next step</span>Chief marks his source clips in Stash, and Claude then builds the first short edits for the account.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>The first-dollar lane.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-27" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 27">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -286,6 +306,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE/BLACK</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants his large clip library in Stash tagged, rated and filtered so the curation account can pick and post content.</li><li><span class="lb">Where it stands</span>Duplicates and studio content were flagged on 9/4, and a grading playlist was built 9/24. On 10/12 Claude built an auto-tagger as a dry run with no tags written.</li><li><span class="lb">Next step</span>Chief hand-checks the 50-scene sample page, and Claude writes tags only if fewer than about 10 percent are wrong.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>The tagger dry run is in flight.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-28" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 28">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -299,6 +320,7 @@
         <div class="meta"><button type="button" class="t pill g-held">HELD<span class="tip" role="tooltip">Waiting on one ruling from Chief.</span></button><span>BLACK</span><span>9/23</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants to test a clean, faceless TikTok channel of Fortnite skin dance edits as a safer income option.</li><li><span class="lb">Where it stands</span>Research was banked on 9/4. On 9/23 Chief ruled this a side project for leftover evenings, otherwise parked. No page is built.</li><li><span class="lb">Next step</span>Chief decides whether to give it spare evenings, and Claude then starts the first dance edit.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>You ruled it leftover evenings only.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-29" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 29">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -312,6 +334,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants the WARROOM screen colors and layout set by real long-watch standards, so hours at a monitor cause less eye strain.</li><li><span class="lb">Where it stands</span>Research was delivered 9/6 and applied to WARROOM version 1.1. On 10/12 Chief ruled a dark-only retune, keeping the standards as checks.</li><li><span class="lb">Next step</span>Claude applies the retune rules to WARROOM, and Chief decides later whether DARKROOM gets the same treatment.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>The desk (141) carries the palette now.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-34" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 34">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -325,6 +348,7 @@
         <div class="meta"><button type="button" class="t pill g-held">HELD<span class="tip" role="tooltip">Waiting on one ruling from Chief.</span></button><span>BLACK/OPERATOR</span><span>9/23</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants the story-timeline tool to draw its theory from electronic music synthesis and classical music theory.</li><li><span class="lb">Where it stands</span>On 9/23 Claude delivered three reference pages and a music syllabus. The finding: structure sits on a score layer and tension on a patch layer. Nothing is built.</li><li><span class="lb">Next step</span>Chief says go on BOLO 36, the follow-on, and Claude then starts its unit set and intake.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Delivered and banked.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-35" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 35">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -338,6 +362,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE</span><span>9/16</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants every image in the library tagged by setting, styling, mood and similar traits, mostly by machine with Chief correcting.</li><li><span class="lb">Where it stands</span>A tag rail and a first machine pass shipped, and a second pass won on every trait. On 9/16 about 16,500 images were ruled.</li><li><span class="lb">Next step</span>Chief tags 300 calibration images in DARKROOM, then Claude retrains the tagger on them.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>Calibration pass is next; 16,511 rulings banked.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-44" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 44">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -351,6 +376,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE</span><span>10/6</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants research on how people become agency managers for online creators, plus case studies and lessons from many creators.</li><li><span class="lb">Where it stands</span>Seven or more case files exist and the list reached 155 names. On 9/11 Chief paused the work to save tokens, and five files are missing.</li><li><span class="lb">Next step</span>Claude re-runs the five missing case files, then the rest of the list, once Chief lifts the pause.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Parked 10/6; waits on token budget.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-45" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 45">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -364,6 +390,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>9/23</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants the story series&#x27; next steps finished: the profile rulings, a second character&#x27;s file, and the pilot&#x27;s first page.</li><li><span class="lb">Where it stands</span>On 9/23 Chief ruled the profile&#x27;s twelve points and Anna Colson&#x27;s twelve calls, and her character file was built. On 10/4 it was gated behind BOLO 100.</li><li><span class="lb">Next step</span>Chief says go 46 after the systems are done, and Claude then asks his fourteen opening-movement questions.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Waits on BOLO 100, which carries it.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-46" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 46">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -377,6 +404,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK/OPERATOR</span><span>9/11</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants every unnamed word in the Command settled on one sheet so the vocabulary stays consistent.</li><li><span class="lb">Where it stands</span>Chief ruled several words by 9/11: ADORNED, ABORT, BREVITY, HOTLINE and Oscar Mike as the close-out. Four benches remain open, including a name for the era 4 queenpin.</li><li><span class="lb">Next step</span>Chief picks from the candidates on the open benches, and Claude applies each ruled word to the rules and glossary.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Two words left; low stakes.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-48" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 48">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -390,6 +418,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>OPERATOR</span><span>10/6</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a standing audit and improvement function that also moves routine work onto scripts, so each session costs fewer tokens.</li><li><span class="lb">Where it stands</span>All eight offload phases were built on 9/12. On 10/6 the rules audit became a script, and it now runs first at every launch.</li><li><span class="lb">Next step</span>Claude works through the audit&#x27;s open findings and rows, which would keep the Command&#x27;s tools and pages clean.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>Runs at every launch.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-51" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 51">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -403,6 +432,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>OPERATOR</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants JUDY, a fast spoken assistant on the cheap Haiku model that talks to him while the main session stays on Opus.</li><li><span class="lb">Where it stands</span>JUDY is running and has a face deck page. On 10/13 about 3:55 AM faces were changed to play only on click, after Chief reported crashes.</li><li><span class="lb">Next step</span>Chief reloads the face deck and relaunches JUDY, and Claude checks that the click-to-play fix holds.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>JUDY is daily use.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-56" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 56">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -416,6 +446,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE</span><span>9/24</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants to earn income by building voices in ElevenLabs, a tool he already knows, and by selling them in its Voice Library.</li><li><span class="lb">Where it stands</span>Chief ruled this venture second of four on 9/23 and picked the Voice Library as the place to sell on 9/24. Claude built a recording kit of about 25,600 words and a checklist page, and Fiverr is parked.</li><li><span class="lb">Next step</span>Chief records Day 1 and Day 2 of the kit within 48 hours, which gets the first voice ready to upload.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>An income lane; Day 1 recording is yours.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-57" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 57">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -429,6 +460,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>OPERATOR/BLACK</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants JUDY, the voice assistant, to hear him cleanly, so her own voice and Whisper&#x27;s invented words stop polluting what she transcribes.</li><li><span class="lb">Where it stands</span>Claude built the fix for invented words and the fix that silences her reader when the pad goes down on 10/12. Chief ruled the bigger model swap waits a week.</li><li><span class="lb">Next step</span>Claude re-checks on 10/19 whether the bigger Whisper model should replace the current one, which would improve how well JUDY hears Chief.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>The 10/19 re-check decides the model swap.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-63" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 63">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -442,6 +474,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>9/23</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants the best practices from the Claude Code docs folded into the Command&#x27;s own rules, skills and hooks.</li><li><span class="lb">Where it stands</span>Claude read the docs against the SOP and Chief ruled all four calls on 9/23. The four steps are named RECON, ORDER, EXECUTE and CONSOLIDATE, and the fixes are built except one.</li><li><span class="lb">Next step</span>Chief runs the /fewer-permission-prompts command himself, because the harness will not let Claude run it, which cuts the number of permission prompts.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Doctrine is in; one chore left.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-64" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 64">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -455,6 +488,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK/OPERATOR</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants to know whether the Command should keep NASA naming or borrow from Space Force, Air Force and SpaceX doctrine.</li><li><span class="lb">Where it stands</span>Claude&#x27;s first read on 10/12 says to stay with NASA names. Claude then wrote a one-page proposal that maps four tiers onto the Command&#x27;s files, with no SOP edits.</li><li><span class="lb">Next step</span>Claude labels the top two tiers of files first, which shows Chief which files are the capstone and keystone.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Naming flavor, no output rides on it.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-65" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 65">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -468,6 +502,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK/OPERATOR</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a survey of GitHub repos about Claude Code workflows, hooks and documentation, to feed the Claude Code doctrine work.</li><li><span class="lb">Where it stands</span>Nothing is harvested yet. The row has been parked since 10/12, and Chief is still reading and collecting links himself.</li><li><span class="lb">Next step</span>Chief hands Claude the seed links he finds, which lets Claude run the collect pass and write a register.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>The repo intake (140) covers it.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-66" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 66">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -481,6 +516,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants the Command&#x27;s procedures to run as saved scripts that fan agents out the same way every time, not as prose instructions.</li><li><span class="lb">Where it stands</span>Claude wrote the sit rep workflow file on 10/12 but has not run it. Chief ruled on 10/12 that one side-by-side dry run comes next.</li><li><span class="lb">Next step</span>Claude runs the new workflow beside the current sit rep at the next sit rep, which shows whether the script matches the prose version.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>One dry run at the next sit rep.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-68" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 68">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -494,6 +530,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>OPERATOR/BLACK</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a fast inbox, called the yo-yo, where he speaks a flash idea, walks away, and an agent files and refines it for him.</li><li><span class="lb">Where it stands</span>The first run and the follow-up step work by text, built 10/12 for under two cents each. Chief has not yet tried the pad by hand, and the wind step is still open.</li><li><span class="lb">Next step</span>Chief tries the pad with his own voice, which tests the whole loop and shows what the wind step must do.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>Cheap, and it catches ideas.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-69" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 69">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -507,6 +544,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants the Command&#x27;s pages to explain hard things in plain words, the way affiliate listicle sites and the Claude Code docs do.</li><li><span class="lb">Where it stands</span>Claude&#x27;s first pass on 10/12 found 13 formatting rules, and Chief ruled that rules 1 to 6 are in use now. The top sites were blocked.</li><li><span class="lb">Next step</span>Chief saves three full affiliate pages into his private folder, which lets Claude run the second pass and test the rules.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Rules applied; second pass is optional.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-70" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 70">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -520,6 +558,7 @@
         <div class="meta"><button type="button" class="t pill g-gated">GATED<span class="tip" role="tooltip">Fires on Chief&#x27;s go word, or when another BOLO lands.</span></button><span>BLACK</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants the Command&#x27;s boards and pages to stop looking like generic AI dashboards and reach a distinct, higher-quality look.</li><li><span class="lb">Where it stands</span>Chief ruled the broadsheet look on 10/12, meaning dense columns, rules instead of cards, and orange as the one spot colour on dark. No page is redesigned yet.</li><li><span class="lb">Next step</span>Chief says go on the first page to redo, and Claude then redesigns it in the broadsheet look.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>A full page redesign; the desk goes first.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-71" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 71">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -533,6 +572,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a military-style patch logo for Bold Venture, built from his own mix of references and his own sense of humour.</li><li><span class="lb">Where it stands</span>Claude drew a composition sheet where comp 07, The Ride, is confirmed. Chief dropped Blender on 10/12, so no 3D pose scenes will be built.</li><li><span class="lb">Next step</span>Chief and Claude choose a new route to a finished patch image that does not use Blender, which would get the logo drawn.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>The studio mark is one step from done.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-72" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 72">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -546,6 +586,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants to understand why games like Warframe and Phasmophobia make the graphics card reset on the computer called XELLA-PC.</li><li><span class="lb">Where it stands</span>Claude delivered a read of the Event Viewer error on 9/19, and nothing is fixed. Chief said that machine is not his, so the row has been parked since 10/12.</li><li><span class="lb">Next step</span>Whoever owns XELLA-PC checks temperatures under load first, which would show whether heat causes the resets.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Another box; the fix runs there.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-73" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 73">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -559,6 +600,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants Sensei, the goon-session helper, to talk less and to queue a full hour of short clips on his word.</li><li><span class="lb">Where it stands</span>Claude put the set list in code on 10/12, with a 60-minute default, short clips and the gay filter. It goes live at the next JUDY launch.</li><li><span class="lb">Next step</span>Chief launches JUDY, which turns on the new set list; the leftover tag clean-up and Sensei&#x27;s card wording are still open.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>Goes live at the next JUDY launch.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-76" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 76">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -572,6 +614,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a plot system as large as the character system but on rails, with a world timeline, a trope graph and a told order.</li><li><span class="lb">Where it stands</span>Plot 1.0 landed 9/29, and Chief ruled the last open calls, 77-AM to 77-AP, on 10/12. Chief&#x27;s own facts on 77-AG, 77-AK and 77-AL are still open.</li><li><span class="lb">Next step</span>Chief answers the three open fact questions, which lets Claude fold them into the plot cards and the Anna node.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>Story core; feeds the fabula.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-77" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 77">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -585,6 +628,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE</span><span>9/24</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a 21-day Berlin trip in July 2028 as a victory lap, funded from his venture income.</li><li><span class="lb">Where it stands</span>Chief ruled on 9/24 for a solo trip, Berlin only, with a $20k budget. The row is parked at the bottom of the priority list.</li><li><span class="lb">Next step</span>Claude does step 4, flights, when Chief lifts the parking, which would fix the dates and the trip cost.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>July 2028.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-78" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 78">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -598,6 +642,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>9/29</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants one story workspace app that shows the plot system&#x27;s timeline, trope graph and told order, usable as a template for every story.</li><li><span class="lb">Where it stands</span>Claude published workspace version 8 on 9/29, with The Arrangement as the Told lens read from a tracking file. Chief ruled all six calls that day.</li><li><span class="lb">Next step</span>Chief tries the workspace and reports what is wrong, which shows Claude what to fix; BOLO 90 later built v13.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>BOLO 90 carries the workspace now.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-79" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 79">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -611,6 +656,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>10/4</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants one registry file that lists every story in his universe, so nothing is known only in passing.</li><li><span class="lb">Where it stands</span>Claude built the registry on 9/29, listing OXO, EVIL CHECK, LAKAD, ASTRO7EX and Tremor Cult, with the eras ruled in sequence. Chief ruled all three era calls.</li><li><span class="lb">Next step</span>Claude answers the open calls on Tremor Cult and keeps adding story rows as Chief names them, which keeps the registry current.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Built 1.0.0; BOLO 100 maintains it.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-82" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 82">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -624,6 +670,7 @@
         <div class="meta"><button type="button" class="t pill g-held">HELD<span class="tip" role="tooltip">Waiting on one ruling from Chief.</span></button><span>OPERATOR</span><span>9/29</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a tailored job application for each posting he cares about, filed in his private folder.</li><li><span class="lb">Where it stands</span>Six of eight applications were submitted on 9/24. Chief put the whole row on hold on 9/29, and applications are on hold.</li><li><span class="lb">Next step</span>Chief says when he wants it back, and until then Claude leaves it off every list and rec.</li></ul>
         <div class="why"><span class="rec none">no rec</span><span>Your call, on your word.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-83" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 83">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -637,6 +684,7 @@
         <div class="meta"><button type="button" class="t pill g-gated">GATED<span class="tip" role="tooltip">Fires on Chief&#x27;s go word, or when another BOLO lands.</span></button><span>ORANGE</span><span>9/24</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants to learn Unreal Engine by starting in UEFN, Fortnite&#x27;s editor, following Epic&#x27;s own guides at his own pace.</li><li><span class="lb">Where it stands</span>Chief picked Epic&#x27;s four-stage Player to Creator course on 9/24. Claude cannot read Epic&#x27;s pages, so nothing is built yet.</li><li><span class="lb">Next step</span>Chief saves the five course pages as PDFs into the drop folder, which lets Claude build DOPE SHEET 85 from them.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Waits on you saving five pages.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-85" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 85">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -650,6 +698,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants the Command&#x27;s loop to close itself, so Oscar Mike stages the next launch and the launch refreshes every sheet.</li><li><span class="lb">Where it stands</span>Claude built all four recs on 10/12, and Chief ruled that PROJECTS.md feeds the INDEX. None of it is tested end to end.</li><li><span class="lb">Next step</span>Claude watches the next board and launch to test it, which would show whether the loop really closes itself.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>The next launch tests it.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-86" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 86">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -663,6 +712,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>10/4</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants to know which setting and tabletop-RPG books the library holds, which to get, and what each teaches the setting system.</li><li><span class="lb">Where it stands</span>The book hunt closed 10/4 with the find list at zero. Setting is at version 1.6.0, dozens of books are distilled, and the DCUS faction cards were drafted and ruled.</li><li><span class="lb">Next step</span>Claude keeps distilling new setting books as Chief adds them, and Chief grabs the free titles into the drop folder.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Hunt closed; setting reached v1.6.0.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-87" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 87">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -676,6 +726,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE</span><span>10/4</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants the sexuality reading shelf grown to the size of the setting shelf and distilled into the LEECHSEED character system.</li><li><span class="lb">Where it stands</span>As of 10/4, the drop is fully distilled, 82 books. Chief ruled the schema pass for character system version 2.5.0, and wave 3 added 30 more distills.</li><li><span class="lb">Next step</span>Chief finds text copies of the image-only scans and the missing trans, nonbinary and ace books, which closes the gaps Claude flagged.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Distilled and written as character v2.5.0.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-88" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 88">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -689,6 +740,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>10/3</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants one trope register that covers every system, not just plot, built from TV Tropes names and short definitions.</li><li><span class="lb">Where it stands</span>The register reached version 0.5.0 on 10/3, with 8,700 tropes all keyed. About 1,018 tropes still have no definition.</li><li><span class="lb">Next step</span>Claude runs the definitions pass and the low-confidence re-key, which fills in the missing definitions and firms up the weak keys.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>1,018 trope definitions still owed.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-89" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 89">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -702,6 +754,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>10/3</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants tracking, meaning state over time, built as its own full system with a timeline interface like Premiere or Ableton.</li><li><span class="lb">Where it stands</span>All seven build steps were done by 9/29 and the whole arc was loaded. Chief locked seven story beats on 10/3 and the workspace is at version 13.</li><li><span class="lb">Next step</span>Chief tests the workspace in a live browser, since it is untested there, and Claude writes bar lengths once scenes exist.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>A system under BOLO 100.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-90" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 90">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -715,6 +768,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK/OPERATOR</span><span>9/29</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants his old Apple Notes and other note exports read and sorted into the story universe without losing ideas.</li><li><span class="lb">Where it stands</span>The 2025 and 2026 notes were parsed on 9/29, and the Android-era notes were found. Chief ruled all 13 calls from the notes that day.</li><li><span class="lb">Next step</span>Claude digests the two Android-era note files, which brings the oldest ideas into the same review.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Passive; takes more years as they come.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-91" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 91">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -728,6 +782,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>10/4</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants one style guide system for prose, documents and pages, so every piece of writing follows the same written rules.</li><li><span class="lb">Where it stands</span>The style guides reached version 1.0 on 9/29. On 10/4 Chief ruled the disclaimer wording and the merge calls; the BVX ids are done.</li><li><span class="lb">Next step</span>Claude folds the remaining BOLO 6 rules into the guides once BOLO 6 moves past version 0.1, which finishes this row.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>At 1.0.0; done for now.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-92" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 92">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -741,6 +796,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>10/4</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants the world of The Outliers built as one worldbuilding system, with one catalog holding every thing in it.</li><li><span class="lb">Where it stands</span>Claude wrote the worldbuilding system (v0.1.0, 9/29), and Chief ruled its open calls with &quot;all recommended&quot;. On 10/4 Chief also ruled the intake calls, including who the Outliers are.</li><li><span class="lb">Next step</span>Claude scores the Feed on the nine axes, or fills the non-DCUS stubs, whichever Chief picks.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>A system under BOLO 100.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-93" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 93">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -754,6 +810,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE</span><span>10/4</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants to design CYBERBUNK, a cyberpunk survivors-style roguelite game with a femme cast and an edge.</li><li><span class="lb">Where it stands</span>Chief ruled seven first design calls on 10/3, including the Unreal engine and the tilt-shift camera. On 10/4 Chief put the game on the back burner.</li><li><span class="lb">Next step</span>Chief decides when to bring the game back; until then Claude builds nothing.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>You put it on the back burner.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-94" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 94">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -767,6 +824,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>10/1</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants short world pieces called vignettes kept as their own category, and wants actors noted as inspirations for characters.</li><li><span class="lb">Where it stands</span>Claude built the vignette section in the story registry and the actor lane on 10/1, and Chief ruled all five calls. Claude then filed Chief&#x27;s first spoken world material.</li><li><span class="lb">Next step</span>Chief rules the open questions, such as how the sleeper DNA works, so Claude can finish those entries.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Built; two calls can wait.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-96" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 96">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -780,6 +838,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE</span><span>10/4</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants every book by the author FagMasterPDX distilled, so his whole teaching sits beside the three books already done.</li><li><span class="lb">Where it stands</span>Claude merged the three distilled books into one combined progression, MSX.SET.01, on 10/4. Chief&#x27;s other book or books are not found yet.</li><li><span class="lb">Next step</span>Chief finds the missing PDF and drops it in the PDF drop folder, then Claude distills it.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Waits on you finding the books.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-97" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 97">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -793,6 +852,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE</span><span>10/4</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants one dashboard that pulls every ORANGE-trunk BOLO row into a single board.</li><li><span class="lb">Where it stands</span>Claude built the ORANGE board on 10/4, and one script rebuilds it from BOLO.md. It sorts 29 rows into six lanes.</li><li><span class="lb">Next step</span>Chief tells Claude where the bimbo and sex-toy threads belong, so Claude can add those rows to the board.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>One view of the money trunk.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-98" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 98">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -806,6 +866,7 @@
         <div class="meta"><button type="button" class="t pill g-held">HELD<span class="tip" role="tooltip">Waiting on one ruling from Chief.</span></button><span>ORANGE</span><span>10/4</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants to voice an astrology-flavored advice character for women, using only his voice and burned-in subtitles.</li><li><span class="lb">Where it stands</span>Chief ruled the format and audience on 10/4, and Claude wrote a ten-script pilot and a sixty-question bank. The character&#x27;s name and voice path are still open.</li><li><span class="lb">Next step</span>Chief rules the character&#x27;s name and sign-off and records Pilot 01, so the series can start.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Held on two naming calls.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-99" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 99">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -819,6 +880,7 @@
         <div class="meta"><button type="button" class="t pill g-gated">GATED<span class="tip" role="tooltip">Fires on Chief&#x27;s go word, or when another BOLO lands.</span></button><span>BLACK</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants every story system finished and the whole fabula built, beginning to end of time, before any pilot writing starts.</li><li><span class="lb">Where it stands</span>As of 10/12, the fabula document is at version 1.6.0 after Chief ruled batches 2 to 4 with &quot;take all recs&quot;. Some hand-build calls and one research item (H10) are still open.</li><li><span class="lb">Next step</span>Chief rules the remaining hand-build calls, so Claude can close the fabula and move on to the other systems.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>The main effort.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-100" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 100">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -832,6 +894,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK</span><span>10/6</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants the systems to run as a simulator, so the world emerges from simple rules and tabletop role-play can sit on top.</li><li><span class="lb">Where it stands</span>Claude gave a recommendation on 10/4 and 10/6: start with a thin tick layer, one rule at a time. Chief has not said go, so nothing is built.</li><li><span class="lb">Next step</span>Chief says go, and Claude then writes a first script with one rule and one tick.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Comes after the fabula.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-101" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 101">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -845,6 +908,7 @@
         <div class="meta"><button type="button" class="t pill g-held">HELD<span class="tip" role="tooltip">Waiting on one ruling from Chief.</span></button><span>BLACK</span><span>10/5</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants all documentation for everything finished and reachable from one place before the fabula work continues.</li><li><span class="lb">Where it stands</span>Stages 1 and 2 are complete as of 10/5: 220 documentation pages for 58 core docs, and an interface catalog. Claude published the Command Reference at version 10, and 51 gaps are still open.</li><li><span class="lb">Next step</span>Chief rules the open documentation gaps, and Claude then folds the 16 unruled interface rows into the fabula&#x27;s second phase.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Waits on fabula phase 2.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-102" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 102">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -858,6 +922,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE</span><span>10/5</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a set of sexology credentials from the American Board of Sexology, for color on the ORANGE side.</li><li><span class="lb">Where it stands</span>Claude finished the research on 10/5 and wrote a register of 81 programs. Chief said he wants the most benefit, not the quickest route.</li><li><span class="lb">Next step</span>Chief picks which path to start, and Claude then confirms the cheapest qualifying course with the board.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Long horizon.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-105" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 105">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -871,6 +936,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE</span><span>10/6</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants one place that tracks the follow-up tasks from a recent health visit.</li><li><span class="lb">Where it stands</span>Two follow-ups were logged on 10/6, due 10/7. Details live only in a private file.</li><li><span class="lb">Next step</span>Chief does the two follow-ups and tells Claude when they are done.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>Two follow-ups still open.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-106" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 106">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -884,6 +950,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK/ORANGE</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants his own notes, voice memos, films and online history turned into source material for the fabula.</li><li><span class="lb">Where it stands</span>Claude finished the notes source by 10/9 and the Evernote and voice memo run by 10/11, and Chief ruled all calls. Paper scans are held until Chief buys a document scanner.</li><li><span class="lb">Next step</span>Chief gets the document scanner, and Claude then ingests the paper scans from the paper drop folder.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Waits on the document scanner.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-107" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 107">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -897,6 +964,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>BLACK</span><span>10/6</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants one named procedure for turning books and his own data into research and then into a system.</li><li><span class="lb">Where it stands</span>Chief ruled the name INTEL CYCLE on 10/6, and Claude wrote it as SOP section 9. It also absorbed BOLOs 36, 40 and 41.</li><li><span class="lb">Next step</span>Claude runs the next books or Chief-data job through the INTEL CYCLE, as Chief orders.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Written as SOP section 9.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-108" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 108">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -910,6 +978,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK/ORANGE</span><span>10/6</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants Hunter S. Thompson&#x27;s voice logged as a style reference, and used as the inner voice of the character Riley Moss.</li><li><span class="lb">Where it stands</span>Claude logged a voice register and a Riley Moss seed on 10/6. Chief ruled the other girl is Anna Colson and that Vivian appears in all eras.</li><li><span class="lb">Next step</span>Chief finds The Great Shark Hunt for the book list, and rules how Vivian spans the eras.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Story detail; BOLO 100 carries it.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-109" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 109">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -923,6 +992,7 @@
         <div class="meta"><button type="button" class="t pill g-held">HELD<span class="tip" role="tooltip">Waiting on one ruling from Chief.</span></button><span>OPERATOR</span><span>10/6</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a portable cyberdeck so JUDY can go with him off the PC, and so he can study life near the trash line.</li><li><span class="lb">Where it stands</span>Claude wrote a blue-sky design called THE HOTLINE on 10/6, with three open calls. Chief put the deck on hold that day so the 3D printer comes first.</li><li><span class="lb">Next step</span>Chief says go on 110 when he returns to it, and Claude then runs a boresight.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>You set it aside; printer first.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-110" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 110">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -936,6 +1006,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE</span><span>10/6</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a private calendar that tracks his sessions and how much JUDY helps.</li><li><span class="lb">Where it stands</span>Claude built the Goon Log page on 10/6, with a calendar, stats and a log form. Detail stays in a private folder.</li><li><span class="lb">Next step</span>Chief tells JUDY &quot;log it&quot; after sessions, and Claude adds any changes he asks for.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Built; runs on &#x27;log it&#x27;.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-111" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 111">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -949,6 +1020,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>OPERATOR</span><span>10/8</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants everything bought up front so his 3D printer works at full capability.</li><li><span class="lb">Where it stands</span>Claude built the cart and Mom&#x27;s order list by 10/8, and filed links with live prices. The cart stands at $332.89 with 15 of 18 items picked.</li><li><span class="lb">Next step</span>Chief resubmits the power strip link and rules on the spare hotend, then buys the cart.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>Two calls left, then it ships.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-112" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 112">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -962,6 +1034,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK/ORANGE</span><span>10/6</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants real actresses kept as looks and personality references that LEECHSEED characters can point to.</li><li><span class="lb">Where it stands</span>Claude drafted the card format and wrote seven cards on 10/6. A bench of 62 more names is kept in a private file.</li><li><span class="lb">Next step</span>Chief picks more actresses, and Claude writes a reference card for each pick.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Waits on your picks.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-113" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 113">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -975,6 +1048,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>OPERATOR</span><span>10/6</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a walkie-talkie style chirp on JUDY&#x27;s talk pad, so he knows when the channel is clear.</li><li><span class="lb">Where it stands</span>Claude built the chirp on 10/6, with open, sent and busy sounds, then added a send click and a focus sound.</li><li><span class="lb">Next step</span>Chief tries the sounds and tells Claude if any need changing.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Built.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-114" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 114">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -988,6 +1062,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>OPERATOR</span><span>10/6</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a panel showing JUDY&#x27;s recent replies in tabs, plus a chart of the open threads.</li><li><span class="lb">Where it stands</span>Claude built the Traffic Panel on 10/6 and wrote it into the SOP. On that night Claude started adding hover cards for each BOLO number.</li><li><span class="lb">Next step</span>Claude finishes the BOLO hover cards, and Chief checks they show the right links.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>One small hover card left.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-115" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 115">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1001,6 +1076,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>OPERATOR</span><span>10/6</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants every reply&#x27;s open decisions to land on one panel he can pick from by click or by voice.</li><li><span class="lb">Where it stands</span>The Call Sheet went live on 10/6, and the local deck now takes clicks and sends them to the chat. Two pads on the MPK send &quot;take all recs&quot; and &quot;spit&quot;.</li><li><span class="lb">Next step</span>Claude writes each reply&#x27;s open calls to the sheet, and Chief reports whether voice picks work.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Built.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-116" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 116">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1014,6 +1090,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>OPERATOR</span><span>10/6</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a way to signal &quot;I like that&quot;, so JUDY learns his preferences over time.</li><li><span class="lb">Where it stands</span>Version 1 went live on 10/6. Saying &quot;spit&quot; logs the last thing JUDY did, and the third spit on a pattern becomes an SOP rule candidate.</li><li><span class="lb">Next step</span>Claude adds the spit tally to the sit rep.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Standing system; runs itself.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-117" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 117">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1027,6 +1104,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE</span><span>10/6</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a researched list of toy makers, grouped by arena, starting with premium silicone.</li><li><span class="lb">Where it stands</span>Claude published the Toy Makers page on 10/6, with arenas for silicone, Japanese imports, oral training, size and realistic. Chief also wants a collection ledger, built on his go.</li><li><span class="lb">Next step</span>Claude verifies the Japanese arena and adds the next arena when Chief names it.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Shopping research; no deadline.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-118" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 118">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1040,6 +1118,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK</span><span>10/6</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants the Aion 2 charge-and-spend combat loop captured as a design pattern for his systems.</li><li><span class="lb">Where it stands</span>Claude logged the idea on 10/6 with three places it could live. Nothing is built yet.</li><li><span class="lb">Next step</span>Claude writes a one-page pattern card when Chief says go.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Tied to CYBERBUNK, which is parked.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-119" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 119">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1053,6 +1132,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants top posts from Reddit boards turned into labeled examples, so the engine can tag his whole image corpus.</li><li><span class="lb">Where it stands</span>As of 10/12, Claude wired the board tags onto the rail, tagging 5,001 images. The LOOK module and six layers are also built, and Chief ruled them with &quot;All recommendations&quot;.</li><li><span class="lb">Next step</span>Claude balances the boards, since one big fashion board catches about 43 percent of the corpus.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>Feeds the pull and the DARKROOM.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-121" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 121">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1066,6 +1146,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>OPERATOR</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a judge that watches a job and calls when to move up to a stronger model or agent.</li><li><span class="lb">Where it stands</span>Claude built the two-tone chime and the spoken model-switch call on 10/6. On 10/12 Claude wired a ledger into the sit rep board script and wrote the trigger list; it is untested until the next board.</li><li><span class="lb">Next step</span>Claude runs the next board to test the ledger, which shows whether the judge logs real triggers.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>The next board tests it.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-122" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 122">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1079,6 +1160,7 @@
         <div class="meta"><button type="button" class="t pill g-gated">GATED<span class="tip" role="tooltip">Fires on Chief&#x27;s go word, or when another BOLO lands.</span></button><span>BLACK/ORANGE</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a new adult monastic order in the Outliers story, built on real-world ethnographic lore.</li><li><span class="lb">Where it stands</span>The name and era were ruled on 10/12 using Claude&#x27;s recommendations, and a rule-of-life draft sits in the private seed file. The work stays held until the fabula (BOLO 100) opens.</li><li><span class="lb">Next step</span>Chief answers the four open calls in the draft, which lets Claude finish the second pass once the fabula opens.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Waits on BOLO 100.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-123" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 123">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1092,6 +1174,7 @@
         <div class="meta"><button type="button" class="t pill g-gated">GATED<span class="tip" role="tooltip">Fires on Chief&#x27;s go word, or when another BOLO lands.</span></button><span>ORANGE</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants one switch that starts a whole private session at once, shown on a dashboard.</li><li><span class="lb">Where it stands</span>The timer is live. On 10/12 Claude built the voice read, which tags how Chief speaks, and Chief ruled it on, live at the next JUDY launch. The dashboard page is not built.</li><li><span class="lb">Next step</span>Chief says go on the dashboard, and Claude builds it with stop controls folded into the Sensei launch, about 45 minutes.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Nice to have; fires on go.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-124" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 124">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1105,6 +1188,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>OPERATOR</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a Word-style review desk for Command documents: highlights, comments, suggested edits and voice notes, all sent back to Claude.</li><li><span class="lb">Where it stands</span>On 10/12 Claude made a first comment pass on DOCTRINE 0 with 11 comments and built the review page. Accepted edits go to a copy, never the original.</li><li><span class="lb">Next step</span>Chief accepts or rejects the comments on the DOCTRINE 0 review page, which lets Claude apply the edits to a copy.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>Your accept and reject calls come next.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-125" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 125">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1118,6 +1202,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>OPERATOR</span><span>10/7</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants his wireless headset to reach every room of the house and to become the first cyberdeck.</li><li><span class="lb">Where it stands</span>Nothing is built. On 10/7 Claude gave advice in chat: move the headset base to a central spot, and use the Claude app&#x27;s Remote Control for the deck.</li><li><span class="lb">Next step</span>Chief gives the headset model and says go, then Claude tests Remote Control from the far room.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Nothing built; a test comes first.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-126" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 126">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1131,6 +1216,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>OPERATOR</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a short list of workwear brands worth buying for everyday clothes and actual work.</li><li><span class="lb">Where it stands</span>On 10/12 Chief ruled relaxed fit, plain black, tan or navy, and about $100 for the first order. Claude drafted a shortlist of about $97 in the private research folder.</li><li><span class="lb">Next step</span>Chief decides whether to swap the straight-fit pants for a relaxed pair, and Claude then finalizes the first order.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Shopping; no deadline.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-127" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 127">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1144,6 +1230,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>OPERATOR/ORANGE</span><span>10/8</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a confidential executive and personal assistant who helps run the business.</li><li><span class="lb">Where it stands</span>On 10/8 Claude gave the boresight, meaning the first rough survey, and Chief ruled call 1: no budget cap, as a hypothetical. Six of seven calls are still open.</li><li><span class="lb">Next step</span>Chief says go, and Claude researches current rates and drafts the job posting.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Six calls, none urgent.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-128" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 128">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1157,6 +1244,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE</span><span>10/9</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a nacho spot where customers pick a menu build and then pick tortilla chips or house-made potato chips.</li><li><span class="lb">Where it stands</span>On 10/9 Claude gave the boresight in chat. Chief added Filipino empanadas without raisins, and the starches are now tortilla chips and baked potato chips. Nothing is built.</li><li><span class="lb">Next step</span>Chief rules the format, the chip method and the menu size, which lets Claude firm up the concept.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Venture riff; parked behind the money lane.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-129" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 129">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1170,6 +1258,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE</span><span>10/9</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a rotisserie chicken food truck, a better Boston Market, with big loaded plates and strong sides.</li><li><span class="lb">Where it stands</span>Chief ruled the concept on 10/9: Pollo Tropical crossed with California Chicken Grill, chicken as the only protein, and juicy over crispy. The Halal Guys joined the references.</li><li><span class="lb">Next step</span>Chief rules the pilot order, oven type, sides list and pricing, which closes the concept.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Venture riff; parked behind the money lane.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-130" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 130">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1183,6 +1272,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE</span><span>10/9</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a fries-only spot in the Korean street food style, with a wall of sauces and seasonings.</li><li><span class="lb">Where it stands</span>On 10/9 Claude gave the boresight in chat, naming the fryer as the deciding call. Nothing else is ruled or built.</li><li><span class="lb">Next step</span>Chief answers the open calls, starting with the fryer, which lets Claude shape the menu.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Venture riff; parked behind the money lane.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-131" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 131">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1196,6 +1286,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE</span><span>10/9</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a halal food concept with platters over rice in the New York cart style.</li><li><span class="lb">Where it stands</span>On 10/9 Claude logged it and read the menu from the reference cart photo. Chief also wants these food concepts used as places in the story world. Nothing is built.</li><li><span class="lb">Next step</span>Chief says what to do with it next, since no call is open yet; the story setting waits on the fabula.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Venture riff; parked behind the money lane.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-132" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 132">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1209,6 +1300,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants an Ultrasin product line of high-grade silicone shapes cast from 3D-printed masters.</li><li><span class="lb">Where it stands</span>On 10/12 Claude set the mold method, built a mold-box printer, and ran the credit read. Chief ruled Florida and the Ultrasin name, then parked the plan piece by piece.</li><li><span class="lb">Next step</span>Chief says Charlie Mike 133, then Claude resumes with the family pitch or the rehab call sheet.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>You parked it 10/12.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-133" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 133">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1222,6 +1314,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE/BLACK</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a set of facial emotion references to use when making AI images.</li><li><span class="lb">Where it stands</span>Claude drafted the label set and folder plan on 10/12. The Daz license bars using Daz content as AI input, and Chief dropped the Blender route.</li><li><span class="lb">Next step</span>Chief picks a new way to make the expression sheet, which lets Claude restart the build.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>No render route yet.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-134" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 134">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1235,6 +1328,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants an honest read of the adult-creator market and one income lane to try, with a hard stop.</li><li><span class="lb">Where it stands</span>Claude delivered the report on 10/12. Chief ruled all recommendations: the start date is Monday 10/13, with a 90-day clock and a $1,000 go or no-go gate.</li><li><span class="lb">Next step</span>Chief starts the clock on 10/13 and logs weekly, so the first gate on day 14 shows if the lane works.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>The 90-day plan; one lane to try.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-135" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 135">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1248,6 +1342,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE/BLACK</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants one video editing process from concept to export, plus a shelf of ten reference books.</li><li><span class="lb">Where it stands</span>On 10/12 Claude ruled process doc 0.2.0, split three style templates, and built the video deconstruction tool. The shelf has 4 books held and 6 to find.</li><li><span class="lb">Next step</span>Chief finds the six missing book PDFs and attaches them in Zotero, so Claude can add them to the shelf.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>The editing process the content runs on.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-136" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 136">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1261,6 +1356,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>ORANGE</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants every subreddit board the DARKROOM still needs pulled 40 at a time, with a checklist.</li><li><span class="lb">Where it stands</span>Claude built the pull queue with 2,791 boards in 70 waves, and a faster dump route went live on 10/12. At 9:16 PM both runners moved to Task Scheduler after a restart killed them.</li><li><span class="lb">Next step</span>Claude checks the two scheduled runners are pulling and reports regularly, which keeps the estimated finish near 10/24.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>Running now.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-137" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 137">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1274,6 +1370,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>ORANGE/OPERATOR</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants to package what the Command knows into a sold framework, proven by selling before building.</li><li><span class="lb">Where it stands</span>On 10/12 Claude gave the boresight: the playbook&#x27;s pre-sell steps are sound, but its numbers are marketing. Nothing is built.</li><li><span class="lb">Next step</span>Chief says go, and Claude runs step 1, a 48-hour recon of three candidate niches.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>Boresight only; no build.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-138" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 138">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1287,6 +1384,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>OPERATOR</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants to copy the useful agents, skills and rules from Everything Claude Code without installing the whole kit.</li><li><span class="lb">Where it stands</span>On 10/12 Claude made the Roster live with 22 agents and copied 4 skills. Claude also rewrote SOP section 7 as rule plus scenario.</li><li><span class="lb">Next step</span>Chief names further items to cherry-pick, or leaves it as done; Claude adds only what Chief picks.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>The repo intake (140) absorbed it.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-139" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 139">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1300,6 +1398,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>OPERATOR</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants every GitHub repo he brings put through one scan, judge, pick and adopt process, so Claude thinks less.</li><li><span class="lb">Where it stands</span>The intake process was built on 10/12, and the first run covered 15 items with 180 picks. Claude adopted 7 agents and 6 scripts. A language-extraction trial was scoring 20 notes on 10/13.</li><li><span class="lb">Next step</span>Chief marks Right or Wrong on the scorer rows, and the 70 percent line decides whether the trial is kept.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>The langextract trial is in flight.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-140" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 140">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1313,6 +1412,7 @@
         <div class="meta"><button type="button" class="t pill g-hot">HOT<span class="tip" role="tooltip">Moving now, or one step from moving.</span></button><span>OPERATOR</span><span>10/13</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants one animated front page for the Command, showing stations, pull waves, open calls and JUDY&#x27;s replies.</li><li><span class="lb">Where it stands</span>Claude published version 2 on 10/13 at 5:25 AM as a terminal-style roguelike page with live data. The station tiles stay empty until the launch script writes its poll file.</li><li><span class="lb">Next step</span>Claude makes the launch script write the poll file, which fills the station tiles with live status.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>Built this morning; still moving.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-141" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 141">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1326,6 +1426,7 @@
         <div class="meta"><button type="button" class="t pill g-open">SLOW<span class="tip" role="tooltip">Open but slow: parked, waiting on a thing, or idle.</span></button><span>BLACK</span><span>10/13</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants a small text world where a LEECHSEED character is built room by room.</li><li><span class="lb">Where it stands</span>Claude drafted the concept on 10/12, with rooms for each layer. On 10/13 at 12:35 AM Chief parked it: &quot;Let&#x27;s not prioritize the mudlet&quot;.</li><li><span class="lb">Next step</span>Chief says go on stage 1 when ready, and Claude builds the first three rooms; until then it stays parked.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>You parked it 10/13.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-142" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 142">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1339,6 +1440,7 @@
         <div class="meta"><button type="button" class="t pill g-held">HELD<span class="tip" role="tooltip">Waiting on one ruling from Chief.</span></button><span>OPERATOR</span><span>10/12</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants the repo root cut to 12 entries through a staged cleanup, with nothing moved until ruled.</li><li><span class="lb">Where it stands</span>On 10/13 at 1:15 AM Chief approved the 12-entry target. Claude&#x27;s plan has three stages; nothing has moved yet.</li><li><span class="lb">Next step</span>Chief says go stage 1 or hold, and Claude then archives the loose root files.</li></ul>
         <div class="why"><span class="rec live">✓ rec</span><span>One word and the repo gets tidy.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-143" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 143">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1352,6 +1454,7 @@
         <div class="meta"><button type="button" class="t pill g-held">HELD<span class="tip" role="tooltip">Waiting on one ruling from Chief.</span></button><span>OPERATOR</span><span>10/13</span></div>
         <ul class="three"><li><span class="lb">Mission</span>Chief wants Claude to understand the ClawTeam tool and decide what the Command runs or copies.</li><li><span class="lb">Where it stands</span>Chief held it open on 10/13. Claude&#x27;s read says not to run it as-is, and names three ideas worth copying.</li><li><span class="lb">Next step</span>Chief says trial ClawTeam or copy the chains, then Claude runs the scratch trial or builds the batch chains.</li></ul>
         <div class="why"><span class="rec cosmo">✗ rec</span><span>The rec is against running it.</span></div>
+        <label class="bnote"><span>Note</span><textarea id="note-144" rows="1" placeholder="type, or click here and hold JUDY's talk key"></textarea></label>
       </div>
       <div class="yn" role="group" aria-label="BOLO 144">
         <button type="button" class="y" data-p="live" aria-pressed="false" title="LIVE BOLO">✓</button>
@@ -1370,6 +1473,8 @@
       const p = (picks["b" + el.dataset.n] || {}).pick || "";
       el.classList.toggle("live", p === "live"); el.classList.toggle("cosmo", p === "cosmo");
       el.querySelector(".y").setAttribute("aria-pressed", p === "live"); el.querySelector(".x").setAttribute("aria-pressed", p === "cosmo");
+      const ta = el.querySelector(".bnote textarea"), nt = (picks["b" + el.dataset.n] || {}).note || "";
+      if (ta && document.activeElement !== ta && ta.value !== nt) { ta.value = nt; ta.classList.toggle("has", !!nt.trim()); ta.style.height = "auto"; ta.style.height = (ta.scrollHeight || 30) + "px"; }
       if (p === "live") l++; else if (p === "cosmo") c++;
       const g = el.dataset.g;
       const vis = filter === "all" || (filter === "todo" && !p) || filter === p || (filter === "hot" && g === "hot") || (filter === "slow" && g !== "hot");
@@ -1379,15 +1484,26 @@
     document.getElementById("barL").style.width = (100 * l / rows.length) + "%"; document.getElementById("barC").style.width = (100 * c / rows.length) + "%";
     document.getElementById("none").hidden = shown > 0;
   }
-  async function save(n, pick) {
-    const id = "b" + n, cur = (picks[id] || {}).pick;
-    picks[id] = { n: +n, pick: cur === pick ? "" : pick };
+  async function put(n, patch) {
+    const id = "b" + n;
+    picks[id] = Object.assign({ n: +n, pick: "", note: "" }, picks[id] || {}, patch);
     render();
     if (!db) return;
     const st = document.getElementById("saveState"); st.textContent = "saving…";
     try { await db.collection("picks").doc(id).set(picks[id]); st.textContent = "saved"; }
     catch (e) { st.textContent = "not saved: " + (e && e.code || "error"); }
   }
+  async function save(n, pick) { const cur = (picks["b" + n] || {}).pick; return put(n, { pick: cur === pick ? "" : pick }); }
+  /* notes (10/13, Chief: "be able to add notes to it ... my voice notes"): typed, or JUDY's dictation pasted into the
+     focused box; saved a moment after the typing or the paste stops */
+  const timers = {};
+  document.addEventListener("input", (ev) => {
+    const ta = ev.target.closest(".bnote textarea"); if (!ta) return;
+    const n = ta.closest(".b").dataset.n;
+    ta.classList.toggle("has", !!ta.value.trim());
+    ta.style.height = "auto"; ta.style.height = ta.scrollHeight + "px";
+    clearTimeout(timers[n]); timers[n] = setTimeout(() => put(n, { note: ta.value }), 700);
+  });
   document.addEventListener("click", async (ev) => {
     const t = ev.target.closest(".t");
     document.querySelectorAll(".t.pin").forEach((x) => { if (x !== t) x.classList.remove("pin"); });
