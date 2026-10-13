@@ -54,8 +54,8 @@ def stations():
             tiles = "".join('<div class="tile st" data-go="%d" title="%s"><span class="dot%s"></span><div><b>%s</b><small>%s</small></div></div>'
                             % (1 if r.get("go") else 0, E(r.get("detail", "")), "" if r.get("go") else " no", E(r.get("name", "?")),
                                "GO" if r.get("go") else "NO-GO") for r in rows)
-            chip = '<span class="chip%s">%s</span>' % (" stale" if stale else "", "stale · " if stale else "")
-            head = '<div class="mono poll">Polled %d/%d %s%s</div>' % (when.month, when.day, t12(when), " " + chip.replace("</span>", "stale</span>").replace("stale · ", "") if stale else "")
+            chip = '<span class="chip">stale</span>' if stale else ""
+            head = '<div class="mono poll">Polled %d/%d %s%s</div>' % (when.month, when.day, t12(when), chip)
             return head + '<div class="grid">%s</div>' % tiles, 1
     except Exception:
         pass

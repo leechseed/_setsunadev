@@ -1,0 +1,74 @@
+{
+ "1.1": {
+  "step": 0,
+  "next": "2026-10-01",
+  "title": "The rule and the two kinds of job",
+  "say": "The rule: every document the Command writes does one job. A page that tries to do two becomes two pages."
+ },
+ "1.2": {
+  "step": 0,
+  "next": "2026-10-04",
+  "title": "The four types",
+  "say": "Tutorial: a lesson; the reader learns by doing it start to finish."
+ },
+ "1.3": {
+  "step": 0,
+  "next": "2026-10-04",
+  "title": "The writing order",
+  "say": ""
+ },
+ "2.1": {
+  "step": 0,
+  "next": "2026-10-04",
+  "title": "Name three things first",
+  "say": "Who it's for: the reader, and the situation they open it in (\"Chief, mid-session\" · \"a new writer on OXO\")."
+ },
+ "2.2": {
+  "step": 0,
+  "next": "2026-10-04",
+  "title": "Owner, state, reviewed date",
+  "say": "Owner: who decides what the page says."
+ },
+ "2.3": {
+  "step": 0,
+  "next": "2026-10-04",
+  "title": "Where the header sits",
+  "say": "The 2.1 three show up top, in the one thin strip at the head of the page: who it's for · what it does · which type."
+ },
+ "3.1": {
+  "step": 0,
+  "next": "2026-10-04",
+  "title": "One term per thing",
+  "say": "One word for each thing, and only that word. If it's the \"register,\" it is never also \"the list\" or \"the catalog.\""
+ },
+ "3.2": {
+  "step": 0,
+  "next": "2026-10-04",
+  "title": "Short sentences, someone doing something",
+  "say": "One idea per sentence. A sentence that needs \"and\" twice splits."
+ },
+ "3.4": {
+  "step": 0,
+  "next": "2026-10-04",
+  "title": "Review in passes",
+  "say": "Separate reads, one job each: (1) facts: true and current? (2) words: one term per thing (3.1), short sentences (3.2)? (3) out loud: does it read clean spoken?"
+ },
+ "4.1": {
+  "step": 0,
+  "next": "2026-10-04",
+  "title": "The troubleshooting page",
+  "say": "Start from what the reader sees: the error or the problem, not how the system works."
+ },
+ "4.2": {
+  "step": 0,
+  "next": "2026-10-04",
+  "title": "The glossary page",
+  "say": "One entry per term, in alphabetical order."
+ },
+ "4.3": {
+  "step": 0,
+  "next": "2026-10-04",
+  "title": "The decision record",
+  "say": "One decision per page, dated, with who ruled it."
+ }
+}
