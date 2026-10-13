@@ -1,23 +1,23 @@
 {
- "staged": "2026-10-12 23:20",
- "leverage": "Run the intake queue (BOLO 140) on Fable: 15 items in _tools/intake/TODO-next-session.md, context and agents first.",
- "sheets": [
-  77,
-  121
- ],
+ "staged": "2026-10-13 03:03",
+ "leverage": {
+  "line": "Say 'intake': the 15-repo queue was compiled for this session, and nothing else waits on you.",
+  "why": "The waves need no hand. Fabula batch 4 is ruled. The intake is the only built thing still unjudged.",
+  "board": "2026-10-12-5.json"
+ },
+ "sheets": [],
  "open_at_close": [
-  "waves 1 and 2 land about 12:50 AM / 1:20 AM, then the runners chain on",
-  "rerun `gif_purge.py` once (tiktokporn and squirting started on the old code)",
-  "re-measure the finish date (was 10/24)",
-  "the 30-min update cron dies with this session; the launch re-arms it",
-  "RTB not run (22 cards parked, so Charlie Mike and RTB stay)",
-  "BOLO 138 offer and BOLO 24 render route unruled",
-  "the PC build cart page not glassed",
-  "**the 15-item intake queue for the Fable session**."
+  "Ollama holds no model; pull qwen2.5:14b (about 9 GB) on Chief's word.",
+  "Ralph loop needs one permission to run for real; first trial is skill lint to zero under a token budget.",
+  "The Relay proword takes effect at JUDY's next restart.",
+  "Pull: wave 2 lands about 2:13 AM, wave 3 about 6:23 AM, queue empties around 10/20; the next update was due 2:37 AM.",
+  "Fabula Graph v2 was not opened in a browser by its builder; Chief to check the three views, the sidebar and path mode. 14 of 87 nodes carry a year. The continuity check found one conflict at line 1248 (2199 named with era 1) and a noisy unknown-names list.",
+  "The two hook entries (order_hint · precompact_backup) and the portable-paths block in `_tools/hooks/settings.proposed.json` wait for Chief's paste; the harness refuses the CDR's own settings edits.",
+  "page_check on SITREP.html: 2 fails (first-paint, headings), not fixed.",
+  "lookalike.py: expired-certificate error on docs.claude.com and code.claude.com; no curl fallback yet, not run.",
+  "The Playbook PDF (OneRedOak) was not read.",
+  "Face deck: Chief to reload the Faces tab and check it; the builder did not load the page.",
+  "Docs mirror (18 pages) diffs only on Chief's word."
  ],
- "note": "2026-10-12-5.session.md",
- "frago_done": [
-  77,
-  121
- ]
+ "note": "2026-10-13.session.md"
 }
