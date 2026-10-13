@@ -135,13 +135,20 @@ def run(note: Path, model_id: str, passes: int, model_url: str) -> Path:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("note", nargs="+")
+    ap.add_argument("note", nargs="*")
+    ap.add_argument("--queue", help="a file with one note path per line (CRLF tolerated)")
     ap.add_argument("--model", default="qwen2.5:14b")
     ap.add_argument("--passes", type=int, default=2)
     ap.add_argument("--url", default="http://localhost:11434")
     a = ap.parse_args()
-    for n in a.note:
-        run(Path(n), a.model, a.passes, a.url)
+    notes = list(a.note)
+    if a.queue:
+        notes += [ln.strip() for ln in Path(a.queue).read_text(encoding="utf-8").splitlines() if ln.strip()]
+    for n in notes:
+        try:
+            run(Path(n), a.model, a.passes, a.url)
+        except Exception as e:          # one bad note never stops the queue; the log says which
+            print(f"{n}: FAILED · {type(e).__name__}: {e}")
     return 0
 
 

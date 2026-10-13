@@ -1,0 +1,3 @@
+{"class": "event", "text": "core field renamed `mc_problem_element`", "start": 12440, "end": 12479, "align": "MATCH_EXACT", "who": "unknown", "what": "rename core field", "when": "unknown", "where": "unknown", "era": "unknown"}
+{"class": "event", "text": "quad primary relocated to `L12_DRAMATICA_EXTENDED.motivation_quad`", "start": 12512, "end": 12578, "align": "MATCH_EXACT", "who": "unknown", "what": "relocate quad primary", "when": "unknown", "where": "unknown", "era": "unknown"}
+{"class": "event", "text": "TRUTH_VULNERABILITY now fires off `mc_problem_element`", "start": 12695, "end": 12749, "align": "MATCH_EXACT", "who": "unknown", "what": "TRUTH_VULNERABILITY fires off `mc_problem_element`", "when": "unknown", "where": "unknown", "era": "unknown"}

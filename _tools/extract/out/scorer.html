@@ -1,0 +1,416 @@
+<title>Event Scorer</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* the Command look, DARK only (ruled 9/11): one strip, then one section per note, one row per event, Right or Wrong */
+  :root { color-scheme: dark;
+    --bg:#121110; --panel:#1B1A18; --panel-2:#24221F; --line:#34312C; --ink:#ECE7DF; --ink-2:#B7B0A5; --ink-3:#7F786E;
+    --accent:#FF5A1F; --accent-soft:#3A1D10; --accent-ink:#FFB08F; --good:#5FBF8A; --good-soft:#16301F; --bad:#E9788A; --bad-soft:#3A1B20;
+    --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif; --body:"Atkinson Hyperlegible","Segoe UI",Verdana,sans-serif; --mono:"IBM Plex Mono",Consolas,monospace; }
+  *{box-sizing:border-box} html,body{background:var(--bg);color:var(--ink)}
+  body{font:15px/1.5 var(--body);padding-inline:16px;padding-block:0 64px}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .strip{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;align-items:center;gap:12px;flex-wrap:wrap;min-height:44px;margin-inline:-16px;padding:6px 16px;background:var(--panel);border-bottom:1px solid var(--line)}
+  .strip h1{margin:0;font:800 20px/1 var(--display);letter-spacing:.06em;text-transform:uppercase} .strip h1 b{color:var(--accent)}
+  .chipx{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:4px 7px;border:1px solid var(--line);border-radius:3px;color:var(--ink-2)}
+  .spacer{flex:1}
+  .tot{font:700 18px var(--display);font-variant-numeric:tabular-nums;white-space:nowrap} .tot span{color:var(--accent)} .tot .g{color:var(--good)} .tot .b{color:var(--bad)}
+  #saveState{font:500 11px var(--mono);color:var(--ink-3)}
+  .bar{height:4px;background:var(--panel-2);margin-inline:-16px;display:flex} .bar i{display:block;height:100%} .bar .g{background:var(--good)} .bar .b{background:var(--bad)}
+  .wrap{max-width:900px;margin:0 auto;display:grid;gap:18px;padding-block:18px}
+  .lede{margin:0;color:var(--ink-2);max-width:66ch}
+  section.note{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:0 0 10px;min-width:0}
+  section.note h2{margin:0;padding:10px 14px;font:700 18px var(--display);letter-spacing:.04em;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+  section.note h2 .s{margin-left:auto;font:400 12px var(--mono);color:var(--ink-2);letter-spacing:0} section.note h2 .cnt{color:var(--ink)}
+  .path{margin:6px 14px 4px;font:12px var(--mono);color:var(--ink-3);overflow-wrap:anywhere}
+  .row{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:10px;align-items:start;padding:10px 14px;border-top:1px solid var(--line)}
+  .row.right{background:var(--good-soft)} .row.wrong{background:var(--bad-soft)}
+  .row .n{font:700 16px var(--display);color:var(--ink-3);font-variant-numeric:tabular-nums;padding-top:2px}
+  .row .body{min-width:0}
+  .q{margin:0 0 6px;font-size:14px;line-height:1.5;max-width:70ch} .q .pre,.q .post{color:var(--ink-3)}
+  .q mark{background:var(--accent-soft);color:var(--ink);padding:1px 3px;border-radius:2px;font-weight:700}
+  .chips{display:flex;flex-wrap:wrap;gap:4px}
+  .chip{font:12px var(--mono);padding:2px 6px;border:1px solid var(--line);border-radius:3px;color:var(--ink-2);max-width:100%;overflow-wrap:anywhere} .chip b{color:var(--ink-3);font-weight:500;margin-right:4px}
+  .chip.pos{color:var(--ink-3)}
+  .yn{display:flex;gap:4px}
+  .yn button{font:700 13px var(--display);letter-spacing:.06em;text-transform:uppercase;padding:6px 10px;border:1px solid var(--line);border-radius:3px;background:var(--panel-2);color:var(--ink-2);cursor:pointer}
+  .yn button:hover{border-color:var(--ink-3);color:var(--ink)}
+  .yn .y[aria-pressed="true"]{background:var(--good);border-color:var(--good);color:#0B1F14}
+  .yn .w[aria-pressed="true"]{background:var(--bad);border-color:var(--bad);color:#2A0A10}
+  .none{margin:10px 14px 0;color:var(--ink-3);font-size:14px}
+  .t{position:relative;font:inherit;color:inherit;letter-spacing:inherit;text-transform:inherit;background:none;border:0;padding:0;border-bottom:1px dotted var(--accent);cursor:help}
+  .tip{display:none;position:absolute;left:0;top:calc(100% + 6px);z-index:20;width:min(300px,80vw);padding:8px 10px;background:var(--panel-2);border:1px solid var(--accent);border-radius:4px;font:400 13px/1.45 var(--body);color:var(--ink);text-transform:none;letter-spacing:0;text-align:left;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+  .t:hover .tip,.t:focus-visible .tip,.t.pin .tip{display:block}
+  #noDb{margin:0;padding:8px 12px;border:1px solid var(--bad);border-radius:4px;color:var(--bad);font-size:14px}
+  @media (max-width:640px){.row{grid-template-columns:24px minmax(0,1fr)} .yn{grid-column:2}}
+</style>
+<header class="strip">
+  <h1><b>Event</b> Scorer</h1><span class="chipx">BOLO 140 · langextract step 2</span>
+  <span class="spacer"></span>
+  <span class="tot"><span class="g" id="nRight">0</span> right · <span class="b" id="nWrong">0</span> wrong · <span id="nOpen">26</span> open</span>
+  <span class="tot"><span id="pct">—</span></span>
+  <span id="saveState">connecting…</span>
+</header>
+<div class="bar"><i class="g" id="barG" style="width:0%"></i><i class="b" id="barB" style="width:0%"></i></div>
+<main class="wrap">
+  <p class="lede">qwen2.5:14b read 20 lineage notes and pulled 26 <button type="button" class="t" aria-describedby="g-ev">events<span class="tip" role="tooltip" id="g-ev">A thing that happens in the story world: a founding, a crash, a rename, a rise. The model was told to skip ideas, theory and notes about writing.</span></button>.
+  Every row is <button type="button" class="t" aria-describedby="g-gr">grounded<span class="tip" role="tooltip" id="g-gr">The quote sits at a known offset in the source text (the small number on each row). Rows the model could not place were dropped before this page was built.</span></button>: the highlighted words are the model's quote, the grey words around it are the note.
+  Score each row Right or Wrong. The <button type="button" class="t" aria-describedby="g-70">70% line<span class="tip" role="tooltip" id="g-70">The intake verdict (lx-01): if at least 70% of rows are right, the trial becomes a tool at _tools/extract/, feeding a review file, never canon.</span></button> decides whether this becomes a tool. Built Oct 13, 4:43 AM.</p>
+  <p id="noDb" hidden>Scores are not saving: the page could not reach its store. Your clicks show here but will not reach the CDR.</p>
+  
+    <section class="note" id="00_START_HERE">
+      <h2><span class="name">00_START_HERE.md</span><span class="s"><span class="cnt" data-cnt="00_START_HERE">0 / 12 scored</span> · 12 rows · 61 s</span></h2>
+      <p class="path">_OXO_SCHOOL_HANDOFF/00_START_HERE.md</p>
+      
+      <article class="row" data-id="00_START_HERE__1" data-note="00_START_HERE">
+        <div class="n">1</div>
+        <div class="body">
+          <p class="q"><span class="pre">document**: | Working name | Reality | |---|---| | &quot;UltraSchool&quot; | Did not exist in any *pre-ruling* source doc. **Superseded 2026-08-24: &quot;</span><mark>Ultra School is renamed to UltraSchool</mark><span class="post">&quot; (two words) is now canon by deliberate ruling — see the DCUS banner below.** | | &quot;Quinton&quot; | No such character. The real character is **Qu</span></p>
+          <div class="chips"><span class="chip"><b>who</b> unknown</span><span class="chip"><b>what</b> rename Ultra School to UltraSchool</span><span class="chip"><b>when</b> 2026-08-24</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> unknown</span><span class="chip pos">813–825</span></div>
+        </div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+      </article>
+      <article class="row" data-id="00_START_HERE__2" data-note="00_START_HERE">
+        <div class="n">2</div>
+        <div class="body">
+          <p class="q"><span class="pre">ol&quot; (two words) is now canon by deliberate ruling — see the DCUS banner below.** | | &quot;Quinton&quot; | No such character. The real character is **</span><mark>Quinn Bishop replaces Quinton</mark><span class="post">**. | | &quot;Barnes&quot; | No such character anywhere. (All hits were &quot;Barnes &amp; Noble&quot; in an unrelated publishing note.) The canonical surname paire</span></p>
+          <div class="chips"><span class="chip"><b>who</b> unknown</span><span class="chip"><b>what</b> replace Quinton with Quinn Bishop</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> unknown</span><span class="chip pos">963–975</span></div>
+        </div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+      </article>
+      <article class="row" data-id="00_START_HERE__3" data-note="00_START_HERE">
+        <div class="n">3</div>
+        <div class="body">
+          <p class="q"><span class="pre">ar richer institutional detail. **The task: fuse these two lineages.** Section 4 explains why they fuse cleanly. &gt; ✅ **RULED 2026-08-24 — </span><mark>the fused school&#x27;s name: the Delta Coast Ultra School (&quot;DCUS&quot;)</mark><span class="post">.** Chosen from an 8-name Ultra bench on Chief&#x27;s directive that &quot;Ultra School&quot; carry the title, Southern Gothic register. Recommended connec</span></p>
+          <div class="chips"><span class="chip"><b>who</b> unknown</span><span class="chip"><b>what</b> the fused school&#x27;s name is DCUS</span><span class="chip"><b>when</b> 2026-08-24</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">2043–2105</span></div>
+        </div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+      </article>
+      <article class="row" data-id="00_START_HERE__4" data-note="00_START_HERE">
+        <div class="n">4</div>
+        <div class="body">
+          <p class="q"><span class="pre">er&quot; the Feed.** They possess the &quot;User Manual&quot; for the system&#x27;s indoctrination protocols. - **THE DRESS CODE BREACH — the breaking point:** </span><mark>the collective act of defiance began when they simply stopped wearing the &#x27;Verified&#x27; uniforms or grooming to elite norms</mark><span class="post"> **stopped wearing the &quot;Verified&quot; uniforms** or grooming to elite norms. Breaking dress code was the first step in exiting the system&#x27;s &quot;Leg</span></p>
+          <div class="chips"><span class="chip"><b>who</b> they</span><span class="chip"><b>what</b> stop wearing &#x27;Verified&#x27; uniforms or grooming to elite norms</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">9738–9791</span></div>
+        </div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+      </article>
+      <article class="row" data-id="00_START_HERE__5" data-note="00_START_HERE">
+        <div class="n">5</div>
+        <div class="body">
+          <p class="q"><span class="pre">ihood&quot;** - **Devious Students with Alumni Family** — &quot;Loyalty is Default Settled By Devious Students&quot; **THE STATUS QUO IS DISRUPTED BY** - </span><mark>The Arrival of Tori</mark><span class="post"> - The Arrival of Riley - **The Student Body President Initiation of Colson** - Incident: Murder/Suicide of Cain **COLLAPSE INITIATED BY**</span></p>
+          <div class="chips"><span class="chip"><b>who</b> Tori</span><span class="chip"><b>what</b> arrives</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">12641–12660</span></div>
+        </div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+      </article>
+      <article class="row" data-id="00_START_HERE__6" data-note="00_START_HERE">
+        <div class="n">6</div>
+        <div class="body">
+          <p class="q"><span class="pre">tudents with Alumni Family** — &quot;Loyalty is Default Settled By Devious Students&quot; **THE STATUS QUO IS DISRUPTED BY** - The Arrival of Tori - </span><mark>The Arrival of Riley</mark><span class="post"> - **The Student Body President Initiation of Colson** - Incident: Murder/Suicide of Cain **COLLAPSE INITIATED BY** - Whistleblowing of Cov</span></p>
+          <div class="chips"><span class="chip"><b>who</b> Riley</span><span class="chip"><b>what</b> arrives</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">12663–12683</span></div>
+        </div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+      </article>
+      <article class="row" data-id="00_START_HERE__7" data-note="00_START_HERE">
+        <div class="n">7</div>
+        <div class="body">
+          <p class="q"><span class="pre">y** — &quot;Loyalty is Default Settled By Devious Students&quot; **THE STATUS QUO IS DISRUPTED BY** - The Arrival of Tori - The Arrival of Riley - **</span><mark>The Student Body President Initiation of Colson</mark><span class="post">** - Incident: Murder/Suicide of Cain **COLLAPSE INITIATED BY** - Whistleblowing of Coverup (Riley) - Vengeance and Violence of Troupe (Tor</span></p>
+          <div class="chips"><span class="chip"><b>who</b> Colson</span><span class="chip"><b>what</b> initiated as Student Body President</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">12688–12735</span></div>
+        </div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+      </article>
+      <article class="row" data-id="00_START_HERE__8" data-note="00_START_HERE">
+        <div class="n">8</div>
+        <div class="body">
+          <p class="q"><span class="pre">s&quot; **THE STATUS QUO IS DISRUPTED BY** - The Arrival of Tori - The Arrival of Riley - **The Student Body President Initiation of Colson** - </span><mark>Incident: Murder/Suicide of Cain</mark><span class="post"> **COLLAPSE INITIATED BY** - Whistleblowing of Coverup (Riley) - Vengeance and Violence of Troupe (Tori) - **Conspiracy and Campus Takeover</span></p>
+          <div class="chips"><span class="chip"><b>who</b> Cain</span><span class="chip"><b>what</b> murder/suicide</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">12740–12772</span></div>
+        </div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+      </article>
+      <article class="row" data-id="00_START_HERE__9" data-note="00_START_HERE">
+        <div class="n">9</div>
+        <div class="body">
+          <p class="q"><span class="pre">The Arrival of Riley - **The Student Body President Initiation of Colson** - Incident: Murder/Suicide of Cain **COLLAPSE INITIATED BY** - </span><mark>Whistleblowing of Coverup (Riley)</mark><span class="post"> - Vengeance and Violence of Troupe (Tori) - **Conspiracy and Campus Takeover (Colson)** ### What each lineage contributes to the fusion |</span></p>
+          <div class="chips"><span class="chip"><b>who</b> Riley</span><span class="chip"><b>what</b> whistleblows coverup</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">12802–12835</span></div>
+        </div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+      </article>
+      <article class="row" data-id="00_START_HERE__10" data-note="00_START_HERE">
+        <div class="n">10</div>
+        <div class="body">
+          <p class="q"><span class="pre">t Body President Initiation of Colson** - Incident: Murder/Suicide of Cain **COLLAPSE INITIATED BY** - Whistleblowing of Coverup (Riley) - </span><mark>Vengeance and Violence of Troupe (Tori)</mark><span class="post"> - **Conspiracy and Campus Takeover (Colson)** ### What each lineage contributes to the fusion | Red Hills gives you | Inner Spiral gives</span></p>
+          <div class="chips"><span class="chip"><b>who</b> Tori</span><span class="chip"><b>what</b> vengeance and violence</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">12838–12877</span></div>
+        </div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+      </article>
+      <article class="row" data-id="00_START_HERE__11" data-note="00_START_HERE">
+        <div class="n">11</div>
+        <div class="body">
+          <p class="q"><span class="pre">cident: Murder/Suicide of Cain **COLLAPSE INITIATED BY** - Whistleblowing of Coverup (Riley) - Vengeance and Violence of Troupe (Tori) - **</span><mark>Conspiracy and Campus Takeover (Colson)</mark><span class="post">** ### What each lineage contributes to the fusion | Red Hills gives you | Inner Spiral gives you | |---|---| | Human faculty with careers</span></p>
+          <div class="chips"><span class="chip"><b>who</b> Colson</span><span class="chip"><b>what</b> conspiracy and campus takeover</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">12882–12921</span></div>
+        </div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+      </article>
+      <article class="row" data-id="00_START_HERE__12" data-note="00_START_HERE">
+        <div class="n">12</div>
+        <div class="body">
+          <p class="q"><span class="pre">the source documents don&#x27;t yet have.)* --- ## 5. WHAT TO WORK ON — open problems 1. ~~**Name the fused school.**~~ ✅ **RULED 2026-08-24: </span><mark>the Delta Coast Ultra School is named</mark><span class="post"> (&quot;DCUS&quot;).** The renaming-event mechanism (Red Hills → DCUS on Bishop acquisition) is the recommended tissue, unruled; *Red Stick Creek* rem</span></p>
+          <div class="chips"><span class="chip"><b>who</b> unknown</span><span class="chip"><b>what</b> name the fused school as Delta Coast Ultra School (DCUS)</span><span class="chip"><b>when</b> 2026-08-24</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">14369–14397</span></div>
+        </div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+      </article>
+    </section>
+    <section class="note" id="delta-coast-ultra-school">
+      <h2><span class="name">delta-coast-ultra-school.md</span><span class="s"><span class="cnt" data-cnt="delta-coast-ultra-school">0 / 7 scored</span> · 7 rows · 23 s</span></h2>
+      <p class="path">_CANON_NODES/delta-coast-ultra-school.md</p>
+      
+      <article class="row" data-id="delta-coast-ultra-school__1" data-note="delta-coast-ultra-school">
+        <div class="n">1</div>
+        <div class="body">
+          <p class="q"><span class="pre">he Ultra School&quot;, &quot;Inner Spiral Academy (pre-ruling canon name)&quot;, &quot;Red Hills Academy (legacy lineage)&quot;, &quot;Skeeter Creek (legacy variant; was </span><mark>Skeeter Creek, renamed 2026-09-24</mark><span class="post">)&quot;, &quot;The Academy&quot;] links: - &quot;[[victoria-midnight]]&quot; - &quot;[[quinn-bishop]]&quot; - &quot;[[riley-moss]]&quot; - &quot;[[anna-colson-conway]]&quot; - &quot;[[the-ad</span></p>
+          <div class="chips"><span class="chip"><b>who</b> Skeeter Creek</span><span class="chip"><b>what</b> renamed</span><span class="chip"><b>when</b> 2026-09-24</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">513–546</span></div>
+        </div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+      </article>
+      <article class="row" data-id="delta-coast-ultra-school__2" data-note="delta-coast-ultra-school">
+        <div class="n">2</div>
+        <div class="body">
+          <p class="q"><span class="pre">S&quot; &gt; **A hundred years of Red Hills prestige, acquired, rebooted, and rebranded with a product word.** --- ## THE RULING — 2026-08-24 **</span><mark>RENAMED 2026-09-24, Chief: the founding stratum is Skeeter Creek (was *Red Stick Creek*)</mark><span class="post">** the founding stratum is **Skeeter Creek** (was *Red Stick Creek*). The lattice now reads Skeeter Creek → Red Hills → DCUS. Search the old</span></p>
+          <div class="chips"><span class="chip"><b>who</b> Chief</span><span class="chip"><b>what</b> rename founding stratum</span><span class="chip"><b>when</b> 2026-09-24</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">1056–1082</span></div>
+        </div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+      </article>
+      <article class="row" data-id="delta-coast-ultra-school__3" data-note="delta-coast-ultra-school">
+        <div class="n">3</div>
+        <div class="body">
+          <p class="q"><span class="pre">eeter Creek** (was *Red Stick Creek*). The lattice now reads Skeeter Creek → Red Hills → DCUS. Search the old name in pre-9/24 material. **</span><mark>The fused school&#x27;s name is the Delta Coast Ultra School (&#x27;DCUS&#x27;)</mark><span class="post">&quot;DCUS&quot;).** Chief&#x27;s directive: &quot;Ultra School&quot; carries the title, Southern Gothic register. The Delta Coast pick ties the name to canon geogra</span></p>
+          <div class="chips"><span class="chip"><b>who</b> Chief</span><span class="chip"><b>what</b> name the fused school</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">1253–1310</span></div>
+        </div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+      </article>
+      <article class="row" data-id="delta-coast-ultra-school__4" data-note="delta-coast-ultra-school">
+        <div class="n">4</div>
+        <div class="body">
+          <p class="q"><span class="pre">ed OS · the six-movement descent (clean → NEON-ROT → hunt) | ## PROVISIONAL TISSUE — recommended, unruled - **The rename is the fusion:** </span><mark>Red Hills Academy → DCUS on Bishop acquisition</mark><span class="post"> (the son sold for spoils *to the Bishops*). A rebrand is a Boot Sequence at institutional scale — the world&#x27;s core overwrite mechanism done</span></p>
+          <div class="chips"><span class="chip"><b>who</b> the Bishops</span><span class="chip"><b>what</b> rename Red Hills Academy to DCUS</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> Red Hills Academy</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">2406–2452</span></div>
+        </div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+      </article>
+      <article class="row" data-id="delta-coast-ultra-school__5" data-note="delta-coast-ultra-school">
+        <div class="n">5</div>
+        <div class="body">
+          <p class="q"><span class="pre">spoils *to the Bishops*). A rebrand is a Boot Sequence at institutional scale — the world&#x27;s core overwrite mechanism done to a campus. - **</span><mark>&quot;Inner Spiral&quot; reverts to geography</mark><span class="post">** — the school&#x27;s Middle-Bands address, retconning the Master System Bible&#x27;s single mention (&quot;the Ultra School in the Inner Spiral&quot;). - **&quot;U</span></p>
+          <div class="chips"><span class="chip"><b>who</b> unknown</span><span class="chip"><b>what</b> reverts name to geography</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">2610–2645</span></div>
+        </div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+      </article>
+      <article class="row" data-id="delta-coast-ultra-school__6" data-note="delta-coast-ultra-school">
+        <div class="n">6</div>
+        <div class="body">
+          <p class="q"><span class="pre">titutional class** — the Bishops run Ultra Schools the way a chain runs franchises; DCUS is the flagship. - **The Skeeter Creek stratum** — </span><mark>the founding name sanded to &#x27;Red Hills&#x27;</mark><span class="post">&quot; a century before the Bishops arrived: the erasure already happened once. Movement 3&#x27;s forensic mode can find the first name under the seco</span></p>
+          <div class="chips"><span class="chip"><b>who</b> unknown</span><span class="chip"><b>what</b> founding name sanded to &#x27;Red Hills&#x27;</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 1 Skeeter Creek</span><span class="chip pos">2944–2982</span></div>
+        </div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+      </article>
+      <article class="row" data-id="delta-coast-ultra-school__7" data-note="delta-coast-ultra-school">
+        <div class="n">7</div>
+        <div class="body">
+          <p class="q"><span class="pre">retconning the Master System Bible&#x27;s single mention (&quot;the Ultra School in the Inner Spiral&quot;). - **&quot;Ultra School&quot; as institutional class** — </span><mark>the Bishops run Ultra Schools the way a chain runs franchises</mark><span class="post">; DCUS is the flagship. - **The Skeeter Creek stratum** — the founding name sanded to &quot;Red Hills&quot; a century before the Bishops arrived: the</span></p>
+          <div class="chips"><span class="chip"><b>who</b> the Bishops</span><span class="chip"><b>what</b> run Ultra Schools the way a chain runs franchises</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">2825–2886</span></div>
+        </div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+      </article>
+    </section>
+    <section class="note" id="anna-colson-conway">
+      <h2><span class="name">anna-colson-conway.md</span><span class="s"><span class="cnt" data-cnt="anna-colson-conway">0 / 0 scored</span> · 0 rows</span></h2>
+      <p class="path">_CANON_NODES/anna-colson-conway.md</p>
+      <p class="none">The model found no event in this note.</p>
+    </section>
+    <section class="note" id="victoria-midnight">
+      <h2><span class="name">victoria-midnight.md</span><span class="s"><span class="cnt" data-cnt="victoria-midnight">0 / 0 scored</span> · 0 rows</span></h2>
+      <p class="path">_CANON_NODES/victoria-midnight.md</p>
+      <p class="none">The model found no event in this note.</p>
+    </section>
+    <section class="note" id="dcus-standards-body">
+      <h2><span class="name">dcus-standards-body.md</span><span class="s"><span class="cnt" data-cnt="dcus-standards-body">0 / 0 scored</span> · 0 rows</span></h2>
+      <p class="path">_CANON_NODES/dcus-standards-body.md</p>
+      <p class="none">The model found no event in this note.</p>
+    </section>
+    <section class="note" id="📐_Authoritative_OVEREXITOUT_DRAMATICA_The_Administration">
+      <h2><span class="name">📐 Authoritative OVEREXITOUT DRAMATICA The Administration.md</span><span class="s"><span class="cnt" data-cnt="📐_Authoritative_OVEREXITOUT_DRAMATICA_The_Administration">0 / 0 scored</span> · 0 rows</span></h2>
+      <p class="path">OVER_EXIT_OUT_OBSIDIAN/OVEREXITOUT/00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT DRAMATICA The Administration.md</p>
+      <p class="none">The model found no event in this note.</p>
+    </section>
+    <section class="note" id="oxo-scene-card-M4-skeleton">
+      <h2><span class="name">oxo-scene-card-M4-skeleton.md</span><span class="s"><span class="cnt" data-cnt="oxo-scene-card-M4-skeleton">0 / 0 scored</span> · 0 rows</span></h2>
+      <p class="path">_CANON_NODES/oxo-scene-card-M4-skeleton.md</p>
+      <p class="none">The model found no event in this note.</p>
+    </section>
+    <section class="note" id="oxo-trash-land-seed">
+      <h2><span class="name">oxo-trash-land-seed.md</span><span class="s"><span class="cnt" data-cnt="oxo-trash-land-seed">0 / 0 scored</span> · 0 rows</span></h2>
+      <p class="path">_CANON_NODES/oxo-trash-land-seed.md</p>
+      <p class="none">The model found no event in this note.</p>
+    </section>
+    <section class="note" id="oxo-scene-card-M5-skeleton">
+      <h2><span class="name">oxo-scene-card-M5-skeleton.md</span><span class="s"><span class="cnt" data-cnt="oxo-scene-card-M5-skeleton">0 / 0 scored</span> · 0 rows</span></h2>
+      <p class="path">_CANON_NODES/oxo-scene-card-M5-skeleton.md</p>
+      <p class="none">The model found no event in this note.</p>
+    </section>
+    <section class="note" id="📐_Authoritative_OVEREXITOUT_DRAMATICA_Quinn_Bishop">
+      <h2><span class="name">📐 Authoritative OVEREXITOUT DRAMATICA Quinn Bishop.md</span><span class="s"><span class="cnt" data-cnt="📐_Authoritative_OVEREXITOUT_DRAMATICA_Quinn_Bishop">0 / 0 scored</span> · 0 rows</span></h2>
+      <p class="path">OVER_EXIT_OUT_OBSIDIAN/OVEREXITOUT/00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT DRAMATICA Quinn Bishop.md</p>
+      <p class="none">The model found no event in this note.</p>
+    </section>
+    <section class="note" id="📘_KB_S1_Character_Invariant_Narrative_Astrology">
+      <h2><span class="name">📘 KB_S1_Character_Invariant_Narrative Astrology.md</span><span class="s"><span class="cnt" data-cnt="📘_KB_S1_Character_Invariant_Narrative_Astrology">0 / 0 scored</span> · 0 rows</span></h2>
+      <p class="path">OVER_EXIT_OUT_OBSIDIAN/OVEREXITOUT/00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_Character_Invariant_Narrative Astrology.md</p>
+      <p class="none">The model found no event in this note.</p>
+    </section>
+    <section class="note" id="oxo-storyform">
+      <h2><span class="name">oxo-storyform.md</span><span class="s"><span class="cnt" data-cnt="oxo-storyform">0 / 0 scored</span> · 0 rows</span></h2>
+      <p class="path">_CANON_NODES/oxo-storyform.md</p>
+      <p class="none">The model found no event in this note.</p>
+    </section>
+    <section class="note" id="oxo-scene-card-M2-row9">
+      <h2><span class="name">oxo-scene-card-M2-row9.md</span><span class="s"><span class="cnt" data-cnt="oxo-scene-card-M2-row9">0 / 0 scored</span> · 0 rows</span></h2>
+      <p class="path">_CANON_NODES/oxo-scene-card-M2-row9.md</p>
+      <p class="none">The model found no event in this note.</p>
+    </section>
+    <section class="note" id="📘_KB_S1_North_Star_Architecture_of_Erasure">
+      <h2><span class="name">📘 KB_S1_North_Star_Architecture_of_Erasure.md</span><span class="s"><span class="cnt" data-cnt="📘_KB_S1_North_Star_Architecture_of_Erasure">0 / 0 scored</span> · 0 rows</span></h2>
+      <p class="path">OVER_EXIT_OUT_OBSIDIAN/OVEREXITOUT/00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_North_Star_Architecture_of_Erasure.md</p>
+      <p class="none">The model found no event in this note.</p>
+    </section>
+    <section class="note" id="📘_KB_S1_Character_Invariant_Pillars">
+      <h2><span class="name">📘 KB_S1_Character_Invariant_Pillars.md</span><span class="s"><span class="cnt" data-cnt="📘_KB_S1_Character_Invariant_Pillars">0 / 0 scored</span> · 0 rows</span></h2>
+      <p class="path">OVER_EXIT_OUT_OBSIDIAN/OVEREXITOUT/00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_Character_Invariant_Pillars.md</p>
+      <p class="none">The model found no event in this note.</p>
+    </section>
+    <section class="note" id="📐_Authoritative_OVEREXITOUT_DRAMATICA_Riley_Moss">
+      <h2><span class="name">📐 Authoritative OVEREXITOUT DRAMATICA Riley Moss.md</span><span class="s"><span class="cnt" data-cnt="📐_Authoritative_OVEREXITOUT_DRAMATICA_Riley_Moss">0 / 0 scored</span> · 0 rows</span></h2>
+      <p class="path">OVER_EXIT_OUT_OBSIDIAN/OVEREXITOUT/00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT DRAMATICA Riley Moss.md</p>
+      <p class="none">The model found no event in this note.</p>
+    </section>
+    <section class="note" id="📐_Authoritative_OVEREXITOUT_DRAMATICA_Shane_Doucet">
+      <h2><span class="name">📐 Authoritative OVEREXITOUT DRAMATICA Shane Doucet.md</span><span class="s"><span class="cnt" data-cnt="📐_Authoritative_OVEREXITOUT_DRAMATICA_Shane_Doucet">0 / 0 scored</span> · 0 rows</span></h2>
+      <p class="path">OVER_EXIT_OUT_OBSIDIAN/OVEREXITOUT/00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT DRAMATICA Shane Doucet.md</p>
+      <p class="none">The model found no event in this note.</p>
+    </section>
+    <section class="note" id="📐_Authoritative_OVEREXITOUT_DRAMATICA_Anna_Colson_Conway">
+      <h2><span class="name">📐 Authoritative OVEREXITOUT DRAMATICA Anna Colson Conway.md</span><span class="s"><span class="cnt" data-cnt="📐_Authoritative_OVEREXITOUT_DRAMATICA_Anna_Colson_Conway">0 / 0 scored</span> · 0 rows</span></h2>
+      <p class="path">OVER_EXIT_OUT_OBSIDIAN/OVEREXITOUT/00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT DRAMATICA Anna Colson Conway.md</p>
+      <p class="none">The model found no event in this note.</p>
+    </section>
+    <section class="note" id="📘_KB_S1_Master_Structural_Engine">
+      <h2><span class="name">📘 KB_S1_Master_Structural_Engine.md</span><span class="s"><span class="cnt" data-cnt="📘_KB_S1_Master_Structural_Engine">0 / 0 scored</span> · 0 rows</span></h2>
+      <p class="path">OVER_EXIT_OUT_OBSIDIAN/OVEREXITOUT/00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_Master_Structural_Engine.md</p>
+      <p class="none">The model found no event in this note.</p>
+    </section>
+    <section class="note" id="2022_12_23">
+      <h2><span class="name">2022_12_23.md</span><span class="s"><span class="cnt" data-cnt="2022_12_23">0 / 7 scored</span> · 7 rows · 111 s</span></h2>
+      <p class="path">logseq_2023_journals_notes/LOGSEQ BUILD/journals/2022_12_23.md</p>
+      
+      <article class="row" data-id="2022_12_23__1" data-note="2022_12_23">
+        <div class="n">1</div>
+        <div class="body">
+          <p class="q"><span class="pre">cally this staccatto style tacticool-esque form of communication that the Space Force uses. - Minecraft/Survival Gameplay/Battle Royale - </span><mark>some cosmic ultra-god somehow scrambles the giant flotilla of human canned meat through time and space</mark><span class="post">. - Time skip. - Either 1000 years later or, maybe even further. - Its now the time hayday of native American tribes. - They&#x27;re on some</span></p>
+          <div class="chips"><span class="chip"><b>who</b> some cosmic ultra-god</span><span class="chip"><b>what</b> scrambles the giant flotilla of human canned meat through time and space</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> unknown</span><span class="chip pos">2176–2278</span></div>
+        </div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+      </article>
+      <article class="row" data-id="2022_12_23__2" data-note="2022_12_23">
+        <div class="n">2</div>
+        <div class="body">
+          <p class="q"><span class="pre">rambles the giant flotilla of human canned meat through time and space. - Time skip. - Either 1000 years later or, maybe even further. - </span><mark>Its now the time hayday of native American tribes</mark><span class="post">. - They&#x27;re on some new planet, and they seem have set a foothold. - However, in the 1000 years that they&#x27;ve been there, they are the only</span></p>
+          <div class="chips"><span class="chip"><b>who</b> native American tribes</span><span class="chip"><b>what</b> hayday</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 5 beyond</span><span class="chip pos">2348–2397</span></div>
+        </div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+      </article>
+      <article class="row" data-id="2022_12_23__3" data-note="2022_12_23">
+        <div class="n">3</div>
+        <div class="body">
+          <p class="q"><span class="pre">h time and space. - Time skip. - Either 1000 years later or, maybe even further. - Its now the time hayday of native American tribes. - </span><mark>They&#x27;re on some new planet, and they seem have set a foothold</mark><span class="post">. - However, in the 1000 years that they&#x27;ve been there, they are the only ship that seems to have made it to the final planet. - Only a ha</span></p>
+          <div class="chips"><span class="chip"><b>who</b> they</span><span class="chip"><b>what</b> set a foothold on a new planet</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> a new planet</span><span class="chip"><b>era</b> 5 beyond</span><span class="chip pos">2402–2463</span></div>
+        </div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+      </article>
+      <article class="row" data-id="2022_12_23__4" data-note="2022_12_23">
+        <div class="n">4</div>
+        <div class="body">
+          <p class="q"><span class="pre">foothold. - However, in the 1000 years that they&#x27;ve been there, they are the only ship that seems to have made it to the final planet. - </span><mark>Only a handful of humans are left from the great exodus</mark><span class="post">. - The few who are left are like unnaturally old, perhaps they&#x27;re some sort of super-human from the old earth, ones that were alive for th</span></p>
+          <div class="chips"><span class="chip"><b>who</b> humans</span><span class="chip"><b>what</b> left from the great exodus</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 5 beyond</span><span class="chip pos">2594–2649</span></div>
+        </div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+      </article>
+      <article class="row" data-id="2022_12_23__5" data-note="2022_12_23">
+        <div class="n">5</div>
+        <div class="body">
+          <p class="q"><span class="pre">here, they are the only ship that seems to have made it to the final planet. - Only a handful of humans are left from the great exodus. - </span><mark>The few who are left are like unnaturally old</mark><span class="post">, perhaps they&#x27;re some sort of super-human from the old earth, ones that were alive for the whole damn thing...only just now are their syste</span></p>
+          <div class="chips"><span class="chip"><b>who</b> the few who are left</span><span class="chip"><b>what</b> are unnaturally old</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 5 beyond</span><span class="chip pos">2654–2699</span></div>
+        </div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+      </article>
+      <article class="row" data-id="2022_12_23__6" data-note="2022_12_23">
+        <div class="n">6</div>
+        <div class="body">
+          <p class="q"><span class="pre">me sort of super-human from the old earth, ones that were alive for the whole damn thing...only just now are their systems begin fading. - </span><mark>The true origin of humanity&#x27;s history in the heavens above will die with them</mark><span class="post">. - The exodus simply fades into million myths of where humans first arrived. - ==by using us history as a backdrop, and science-fiction a</span></p>
+          <div class="chips"><span class="chip"><b>who</b> the true origin of humanity&#x27;s history in the heavens above</span><span class="chip"><b>what</b> will die with them</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 5 beyond</span><span class="chip pos">2859–2936</span></div>
+        </div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+      </article>
+      <article class="row" data-id="2022_12_23__7" data-note="2022_12_23">
+        <div class="n">7</div>
+        <div class="body">
+          <p class="q"><span class="pre">= - &gt; ==The complex politic and factional warfare on the planet itself, Native American History. **START ???/Classical stage**== - &gt; ==</span><mark>The arrival of Conquistadors</mark><span class="post">. **START Age of Discovery/Post-Classical stage**== - ### Review - So I had some trouble trying to figure out temporal space and how ti</span></p>
+          <div class="chips"><span class="chip"><b>who</b> Conquistadors</span><span class="chip"><b>what</b> arrive</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> unknown</span><span class="chip pos">3949–3977</span></div>
+        </div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+      </article>
+    </section>
+</main>
+<script>
+  let db = null; const scores = {};
+  const rows = Array.from(document.querySelectorAll(".row"));
+  function render() {
+    let r = 0, w = 0; const per = {};
+    for (const el of rows) {
+      const s = (scores[el.dataset.id] || {}).score || "";
+      el.classList.toggle("right", s === "right"); el.classList.toggle("wrong", s === "wrong");
+      el.querySelector(".y").setAttribute("aria-pressed", s === "right"); el.querySelector(".w").setAttribute("aria-pressed", s === "wrong");
+      if (s === "right") r++; else if (s === "wrong") w++;
+      const n = el.dataset.note; per[n] = per[n] || [0, 0]; per[n][1]++; if (s) per[n][0]++;
+    }
+    const open = rows.length - r - w;
+    document.getElementById("nRight").textContent = r; document.getElementById("nWrong").textContent = w; document.getElementById("nOpen").textContent = open;
+    document.getElementById("pct").textContent = (r + w) ? Math.round(100 * r / (r + w)) + "% right" : "—";
+    document.getElementById("barG").style.width = (rows.length ? 100 * r / rows.length : 0) + "%";
+    document.getElementById("barB").style.width = (rows.length ? 100 * w / rows.length : 0) + "%";
+    for (const [n, [a, b]] of Object.entries(per)) { const c = document.querySelector(`[data-cnt="${CSS.escape(n)}"]`); if (c) c.textContent = a + " / " + b + " scored"; }
+  }
+  async function save(id, score) {
+    const el = rows.find((x) => x.dataset.id === id);
+    const cur = (scores[id] || {}).score;
+    scores[id] = { note: el.dataset.note, quote: el.querySelector("mark").textContent, score: cur === score ? "" : score };
+    render();
+    if (!db) return;
+    const st = document.getElementById("saveState"); st.textContent = "saving…";
+    try { await db.collection("scores").doc(id).set(scores[id]); st.textContent = "saved"; }
+    catch (e) { st.textContent = "not saved: " + (e && e.code || "error"); }
+  }
+  document.addEventListener("click", (ev) => {
+    const t = ev.target.closest(".t");
+    document.querySelectorAll(".t.pin").forEach((x) => { if (x !== t) x.classList.remove("pin"); });
+    if (t) t.classList.toggle("pin");
+    const k = ev.target.closest(".yn button");
+    if (k) save(k.closest(".row").dataset.id, k.dataset.s);
+  });
+  document.addEventListener("keydown", (ev) => { if (ev.key === "Escape") document.querySelectorAll(".t.pin").forEach((x) => x.classList.remove("pin")); });
+  render();
+  (async () => {
+    db = window.claude && window.claude.use ? await window.claude.use("db") : null;
+    const st = document.getElementById("saveState");
+    if (!db) { document.getElementById("noDb").hidden = false; st.textContent = "view only"; return; }
+    db.collection("scores").onSnapshot((snap) => {
+      for (const d of snap.docs) scores[d.id] = d.data();
+      st.textContent = "scores loaded"; render();
+    }, () => { st.textContent = "scores unavailable"; });
+  })();
+</script>
