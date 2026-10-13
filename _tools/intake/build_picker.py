@@ -44,12 +44,32 @@ LABELS = {
     "articles/multi-agent-research": ("Multi-agent research (Anthropic)", "What we change in collect and the research loop."),
     "articles/steering": ("Steering Claude Code (article)", "The intent parser in front of the work."),
     "articles/mcp-addons": ("MCP add-ons", "The plain guide and the servers worth adding."),
+    "console": ("THE CONSOLE (ruflo SVG)", "One program on the box, the Caves of Qud look; the shell rec and the mock."),
+    "mehdibha__dotUI": ("dotUI", "UI component ideas for a ui-builder seat; React, ideas only."),
+    "d3__d3": ("d3", "Visualize the fabula and the systems; the force graph."),
+    "google__langextract": ("langextract", "Structure the scanned notes with Ollama at zero cost."),
+    "lutzroeder__netron": ("netron", "A model viewer to open on call."),
+    "chartdb__chartdb": ("chartdb", "Reference only; the ERD glasses are ours."),
+    "rougier__scientific-visualization-book": ("sci-vis book", "Chart rules into the taste guide."),
+    "cathrynlavery__diagram-design": ("diagram-design", "Editorial, layered diagrams for a reader who was not there."),
+    "gotalab__cc-sdd": ("cc-sdd", "Steering files and a tasks checklist so agents go by SOP."),
+    "danielrosehill__Claude-Code-Projects-Index": ("Projects Index", "Administration apart from development; maps onto the ruled tree."),
+    "sickn33__agentic-awesome-skills": ("agentic-awesome-skills", "Skill catalog with a stable manifest."),
+    "addyosmani__agent-skills": ("agent-skills (addyosmani)", "Development skills catalog."),
+    "ComposioHQ__awesome-claude-skills": ("awesome-claude-skills (Composio)", "Skill catalog placed against our processes."),
+    "yingpengma__Awesome-Story-Generation": ("Awesome-Story-Generation", "The writing department as seats; gated behind systems first."),
+    "tjboudreaux__cc-thinking-skills": ("cc-thinking-skills", "Thinking moves for research briefs."),
+    "morluto__rea": ("rea", "Binary reverse engineering; not a design copier."),
+    "blader__humanizer": ("humanizer", "Phrase lists to merge into the prose lint."),
+    "articles/building-effective-agents": ("Building Effective Agents (Anthropic)", "The formation checked against the patterns."),
 }
 
 
-def load_picks():
+def load_picks(only=None):
     rows, findings, groups = [], [], {}
     files = sorted(SRC.rglob("picks.json"))
+    if only:
+        files = [f for f in files if f.parent.relative_to(SRC).as_posix() in only]
     for f in files:
         key = f.parent.relative_to(SRC).as_posix()
         try:
@@ -65,6 +85,11 @@ def load_picks():
         label, line = LABELS.get(key, (key, ""))
         groups[key] = (label, line)
         for i, r in enumerate(data):
+            if not isinstance(r, dict) or not str(r.get("plain", r.get("id", ""))).strip():
+                findings.append(f"{key} row {i}: not a pick row, skipped")
+                continue
+            rec_raw = str(r.get("rec", "")).lower().strip()
+            r["rec"] = {"keep": "yes", "adopt": "yes", "skip": "no", "reject": "no", "later": "maybe", "hold": "maybe", "trial": "maybe"}.get(rec_raw, rec_raw)
             missing = [k for k in FIELDS if k not in r]
             if missing:
                 findings.append(f"{key} row {i}: missing {', '.join(missing)}")
@@ -91,18 +116,21 @@ def load_picks():
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=str(SRC / "intake-picker.html"))
+    ap.add_argument("--only", default="", help="comma list of folder keys (a batch)")
+    ap.add_argument("--title", default="Intake Picks")
     a = ap.parse_args()
-    rows, groups, findings = load_picks()
+    only = [k.strip() for k in a.only.split(",") if k.strip()] or None
+    rows, groups, findings = load_picks(only)
     recrank = {"yes": 0, "maybe": 1, "no": 2}
     rows.sort(key=lambda r: (list(groups).index(r["group"]), recrank[r["rec"]], r["id"]))
     seats = SEATS + sorted({r["replaces"] for r in rows if r["replaces"] not in SEATS})
 
     page = TPL.read_text(encoding="utf-8")
-    page = page.replace("<title>Agent Roster Picks</title>", "<title>Intake Picks</title>")
+    page = page.replace("<title>Agent Roster Picks</title>", f"<title>{a.title}</title>")
     page = page.replace("<h1><b>Agent</b> Roster Picks</h1><span class=\"chip\">BOLO 139</span>",
                         "<h1><b>Intake</b> Picks</h1><span class=\"chip\">BOLO 140</span>")
     page = page.replace("Every <span class=\"t\" tabindex=\"0\">agent<span class=\"tip\">A helper with one job and its own instructions. Claude hands it a task, it works in its own space, then reports back. Like calling in a specialist.</span></span> in ECC, in plain words,",
-                        "Every pick from the 15 intake items (11 repos, 4 articles), in plain words,")
+                        f"Every pick from the {len(groups)} intake items, in plain words,")
     page = page.replace("I read your picks to build the roster file.", "I read your picks and adopt each kept one the BOLO 139 way: read in full, strip hooks and installers, add the Command rules.")
     filters = ['<button type="button" data-f="all" aria-pressed="true">All %d</button>' % len(rows)]
     for k, (label, _) in groups.items():

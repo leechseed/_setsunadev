@@ -51,5 +51,11 @@
  "command-desk-mock": "https://claude.ai/artifact/FkU6JbH3budAabZs1a6ork",
  "intake-report-2026-10-12": "https://claude.ai/artifact/VxRXvaD4vKTJqV7DzyVYFt",
  "command-desk": "https://claude.ai/artifact/4GbbNyNVEnGHwQUcce7BgG",
- "waste": "https://claude.ai/artifact/KokCyEZAJwDPahY1pA7EGs"
+ "waste": "https://claude.ai/artifact/KokCyEZAJwDPahY1pA7EGs",
+ "intake-2": "https://claude.ai/artifact/H274SDWuSoggkn1mX6hrny",
+ "intake-report-2": "https://claude.ai/artifact/Ggbzzk5j5USvPPBSrLBMpi",
+ "fabula-graph": "https://claude.ai/artifact/3Cd3k14qcRHJBZ8Zee5z5c",
+ "console-mock": "https://claude.ai/artifact/V8XFc98p1ypiNvFtqTd156",
+ "stash-erd": "https://claude.ai/artifact/N2KwhGcqsL2iTTKJsUeSrr",
+ "zotero-erd": "https://claude.ai/artifact/N1ULxW7F7HLMSiFzWsaTrx"
 }

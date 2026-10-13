@@ -151,9 +151,15 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=str(SRC / "intake-report.html"))
     ap.add_argument("--picker", default="")
+    ap.add_argument("--only", default="", help="comma list of folder keys (a batch), in order")
+    ap.add_argument("--title", default="Intake Report")
     a = ap.parse_args()
-    keys = [k for k in ORDER if (SRC / k / "note.md").exists()]
-    keys += sorted(p.parent.relative_to(SRC).as_posix() for p in SRC.rglob("note.md") if p.parent.relative_to(SRC).as_posix() not in keys)
+    only = [k.strip() for k in a.only.split(",") if k.strip()]
+    if only:
+        keys = [k for k in only if (SRC / k / "note.md").exists()]
+    else:
+        keys = [k for k in ORDER if (SRC / k / "note.md").exists()]
+        keys += sorted(p.parent.relative_to(SRC).as_posix() for p in SRC.rglob("note.md") if p.parent.relative_to(SRC).as_posix() not in keys)
     nav, secs = [], []
     for n, k in enumerate(keys, 1):
         label, line = LABELS.get(k, (k, ""))
@@ -166,10 +172,10 @@ def main():
         secs.append(f'<section id="{sid}"><h2>{n:02d} · {html.escape(label)}<span class="s">{html.escape(c)} {repo}</span></h2>'
                     f'<p class="chip" style="display:inline-block;margin:0 0 8px">{html.escape(line)}</p><div class="body">{body}</div></section>')
     picker = f' · <a href="{a.picker}" target="_blank" rel="noopener">the picker</a>' if a.picker else ""
-    page = f"""<title>Intake Report</title>
+    page = f"""<title>{a.title}</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>{CSS}</style>
-<header class="strip"><h1><b>Intake</b> Report</h1><span class="chip">BOLO 140</span><span class="spacer"></span>
+<header class="strip"><h1><b>{a.title.split()[0]}</b> {" ".join(a.title.split()[1:])}</h1><span class="chip">BOLO 140</span><span class="spacer"></span>
 <span class="chip">{len(keys)} items · 10/12</span><span class="chip">15 specialists, one each{picker}</span></header>
 <div class="wrap"><nav aria-label="Items">{''.join(nav)}</nav><main>{''.join(secs)}</main></div>
 <script>
