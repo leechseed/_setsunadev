@@ -165,6 +165,24 @@
   .card .used a { margin-right: 10px; }
   .hist { display: flex; gap: 8px; align-items: center; font-family: var(--mono); font-size: 11px; color: var(--ink-3); flex-wrap: wrap; }
   .hist button { color: var(--link); }
+  /* ---- the detail pane's tabs (10/13): WEB (the CK3 layer, default) · INFO (the card) ---- */
+  .rtitle { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .rtitle h5 { margin: 0; font-family: var(--display); font-size: 26px; font-weight: 700; text-transform: uppercase; line-height: 1; }
+  .rtabs { display: flex; gap: 2px; border-bottom: 1px solid var(--line-2); }
+  .rtabs button { font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); padding: 7px 12px 6px; border: 1px solid transparent; border-bottom: 0; margin-bottom: -1px; background: none; cursor: pointer; }
+  .rtabs button small { color: var(--accent-ink); letter-spacing: 0; margin-left: 4px; }
+  .rtabs button[aria-selected="true"] { color: var(--ink); background: var(--panel); border-color: var(--line-2); border-top: 2px solid var(--accent); }
+  .rtabs button:hover { color: var(--ink); }
+  .rpane { display: grid; gap: 14px; }
+  .rpane .gist { margin: 0; font-size: 15px; line-height: 1.5; color: var(--ink-2); }
+  .ring .lbl { display: block; margin-bottom: 6px; color: var(--accent-ink); }
+  .ring ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+  .ring li { padding-left: 12px; border-left: 2px solid var(--line-2); }
+  .ring li > .t { font-weight: 700; margin-right: 6px; }
+  .ring .sub { margin-top: 2px; font-size: 13px; color: var(--ink-3); line-height: 1.6; }
+  .ring .sub .dot { margin: 0 6px; color: var(--line-2); }
+  .rpane .none { margin: 0; color: var(--ink-3); font-size: 14px; }
+  .rpane .hint { font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); letter-spacing: .06em; }
 
   /* ---- footer ---- */
   footer.foot { grid-area: foot; border-top: 1px solid var(--line-2); padding: 8px 18px; display: flex; gap: 18px; flex-wrap: wrap; align-items: center; font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); background: color-mix(in srgb, var(--panel) 80%, transparent); }
@@ -206,7 +224,7 @@
 <div class="app" id="app">
   <header class="head">
     <div class="brand"><h1><i></i>SOI</h1><span class="sub" id="brandSub" title="Signal Operating Instructions"></span></div>
-    <div class="hsearch"><input id="q" type="search" placeholder="Search the tongue…  ( / )" autocomplete="off"><span class="cnt" id="qCnt"></span></div>
+    <div class="hsearch"><input id="q" type="search" placeholder="Search the lexicon…  ( / )" autocomplete="off"><span class="cnt" id="qCnt"></span></div>
     <div class="stats" id="stats"></div>
     <div class="box"><button class="edbtn" id="edBtn" title="E · the edition block">Ed. <span id="edNo"></span></button><a class="back" id="backLink" href="#" target="_blank" rel="noopener">← board</a></div>
   </header>
@@ -337,20 +355,53 @@ let hist = [];
 function railRest() {
   $('#railBody').innerHTML = `<h4>What this is</h4><div class="ctx">
     <div class="c"><span class="lbl">The book</span><p>Signal Operating Instructions: the booklet a radio operator carries with the call signs, the frequencies, and the prowords. This is the Command's. SOP.md §0 is its pocket extract.</p></div>
-    <div class="c"><span class="lbl">How to browse</span><p>Search in the top bar (/), go by letter on the A to Z rail, or by section on the left. Every blue term is live: hover, hold to lock, click to open its card here.</p></div>
+    <div class="c"><span class="lbl">How to browse</span><p>Search in the top bar (/), go by letter on the A to Z rail, or by section on the left. Every blue term is live: hover, hold to lock, click to open it here. The pane opens on Web, what it links to and what uses it; Info holds the full card (W · I).</p></div>
     <div class="c"><span class="lbl">What you did</span><p>Ruled the words marked RULED, one by one since 8/21; on 9/10 ruled that the book is a page of its own; on 9/16 named the whole operation the Command and seated the crew by grade.</p></div>
     <div class="c"><span class="lbl">What's next</span><p>BOLO 37 moves proword rulings into a daily selection loop; the benched words wait in it. Name the loop and the bench empties. The crew grades are provisional until they survive a week.</p></div></div>`;
 }
-function openTerm(k) {
+/* 10/13 (Chief: "can there be two tabs on it … I already know what it is … the main tab … the Crusader Kings 3 thing"):
+   the detail pane opens on WEB, the CK3 layer: what the term links to and what links to it, each a live hover term
+   with its own links one ring further out, so the nesting starts in the pane. INFO holds the card as it was. */
+const linksOf = k => [...new Set(((G[k] || {}).d || '').match(/\[\[([^\]|]+)/g) || [])].map(m => m.slice(2)).filter(x => G[x] && x !== k);
+const tLink = x => `<a class="t" data-t="${x}" tabindex="0">${esc(G[x].t)}</a>`;
+const gist = d => { const s = d.replace(/^(.{40,}?[.!?])\s.*$/s, '$1'); return s.length < d.length ? s : d; };
+function ring(list) {
+  return list.map(x => { const sub = linksOf(x).slice(0, 6);
+    return `<li>${tLink(x)}${stChip(G[x].st)}${sub.length ? `<div class="sub">${sub.map(tLink).join('<span class="dot">·</span>')}</div>` : ''}</li>`; }).join('');
+}
+let railTab = 'web';
+function openTerm(k, tab) {
   const g = G[k]; if (!g) return; closeTips(1);
   if (hist[hist.length - 1] !== k) hist.push(k);
-  const used = (usedIn[k] || []).filter(x => G[x]);
+  railTab = tab || 'web';
+  const used = (usedIn[k] || []).filter(x => G[x] && x !== k);
+  const out = linksOf(k);
+  const web = `<p class="gist">${md(gist(g.d))}</p>
+    ${out.length ? `<div class="ring"><span class="lbl">Links to · ${out.length}</span><ul>${ring(out)}</ul></div>` : ''}
+    ${used.length ? `<div class="ring"><span class="lbl">Used by · ${used.length}</span><ul>${ring(used)}</ul></div>` : ''}
+    ${!out.length && !used.length ? `<p class="none">No other term links to this one yet.</p>` : ''}
+    <div class="hint">hover a term · <kbd>Space</kbd> lock · click to open it here</div>`;
+  const info = `<div class="card"><h5>${esc(g.t)}</h5><div class="meta">${stChip(g.st)}<span class="chip" style="color:var(--ink-3)">${esc(g.k)}</span></div><p>${md(g.d)}</p><div class="w">${esc(g.w || '')}</div></div>`;
   $('#railBody').innerHTML = `<div class="hist">${hist.length > 1 ? `<button id="railBack">← back (B)</button>` : ''}<button id="railHome">explainer</button><span>item ${esc(itemNo[k] || '—')}</span></div>
-    <div class="card"><h5>${esc(g.t)}</h5><div class="meta">${stChip(g.st)}<span class="chip" style="color:var(--ink-3)">${esc(g.k)}</span></div><p>${md(g.d)}</p><div class="w">${esc(g.w || '')}</div>
-    ${used.length ? `<div class="used"><span class="lbl">Used in</span>${used.map(x => `<a class="t" data-t="${x}" tabindex="0">${esc(G[x].t)}</a>`).join('')}</div>` : ''}</div>`;
+    <div class="rtitle"><h5>${esc(g.t)}</h5>${stChip(g.st)}</div>
+    <div class="rtabs" role="tablist" aria-label="Term views">
+      <button role="tab" id="tabWeb" aria-selected="${railTab === 'web'}" aria-controls="paneWeb" title="W">Web <small>${out.length + used.length}</small></button>
+      <button role="tab" id="tabInfo" aria-selected="${railTab === 'info'}" aria-controls="paneInfo" title="I">Info</button>
+    </div>
+    <div class="rpane" role="tabpanel" id="paneWeb" aria-labelledby="tabWeb" ${railTab === 'web' ? '' : 'hidden'}>${web}</div>
+    <div class="rpane" role="tabpanel" id="paneInfo" aria-labelledby="tabInfo" ${railTab === 'info' ? '' : 'hidden'}>${info}</div>`;
   const el = document.querySelector(`.ent[data-k="${k}"]`); if (el && !el.hidden) el.scrollIntoView({ block: 'center' });
 }
-$('#railBody').addEventListener('click', e => { if (e.target.id === 'railBack') { hist.pop(); const k = hist.pop(); if (k) openTerm(k); else railRest(); } if (e.target.id === 'railHome') { hist = []; railRest(); } });
+function setRailTab(t) {
+  if (!$('#tabWeb')) return; railTab = t;
+  $('#tabWeb').setAttribute('aria-selected', t === 'web'); $('#tabInfo').setAttribute('aria-selected', t === 'info');
+  $('#paneWeb').hidden = t !== 'web'; $('#paneInfo').hidden = t !== 'info';
+}
+$('#railBody').addEventListener('click', e => {
+  if (e.target.id === 'railBack') { hist.pop(); const k = hist.pop(); if (k) openTerm(k); else railRest(); }
+  if (e.target.id === 'railHome') { hist = []; railRest(); }
+  const tb = e.target.closest('[role="tab"]'); if (tb) setRailTab(tb.id === 'tabInfo' ? 'info' : 'web');
+});
 
 /* ---- tooltips: hover → open · 1.5 s or Space → lock · nested to depth 3 · Esc closes ---- */
 let tips = [], openTimer = null, closeTimer = null;
@@ -393,6 +444,8 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') { if (tips.length) closeTips(1); else { hist = []; railRest(); } return; }
   if (e.key === ' ' && tips.length) { e.preventDefault(); lock(tips[tips.length - 1]); return; }
   if ((e.key === 'b' || e.key === 'B')) { const bb = $('#railBack'); if (bb) bb.click(); return; }
+  if (e.key === 'w' || e.key === 'W') { setRailTab('web'); return; }
+  if (e.key === 'i' || e.key === 'I') { setRailTab('info'); return; }
   if (e.key === 'e' || e.key === 'E') { showEdition(); return; }
 });
 function showEdition() { const on = $('#edBtn').classList.toggle('on'); if (on) { $('#railBody').innerHTML = IDENT_HTML; } else { railRest(); } }

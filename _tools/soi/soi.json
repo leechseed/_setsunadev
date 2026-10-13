@@ -175,6 +175,10 @@
   {
    "date": "2026-10-13",
    "t": "**Retired terms** split out (Chief: \"we don't need to keep them in the fucking list\"): every retired word leaves its section and the A–Z list and sits in one section at the bottom."
+  },
+  {
+   "date": "2026-10-13",
+   "t": "**The detail pane gets two tabs** (Chief: \"I already know what it is … the main tab … the Crusader Kings 3 thing\"): it opens on **Web**, the term's links out and links in, each a live hover term with its own links one ring further, and **Info** holds the full card. Keys W and I switch. The search bar says lexicon, not the retired tongue."
   }
  ],
  "reader": "Chief, and every Claude session",
