@@ -21,7 +21,7 @@
   ],
   "home": "BOLO.md · row 121",
   "card": "none",
-  "version": "v0.2 · DOPE SHEET"
+  "version": "v0.3 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -352,6 +352,11 @@
      "when": "10/12",
      "who": "Claude",
      "t": "Launch refresh: reopened from the 2026-10-12-3.session.md close-out."
+    },
+    {
+     "when": "10/12",
+     "who": "Claude",
+     "t": "Launch refresh: reopened from the 2026-10-12-5.session.md close-out."
     }
    ]
   }
