@@ -339,6 +339,16 @@ def station_pull():
     wave. The publish to pages.json "pullglass" and the hourly update are the main line's (the launch skill)."""
     t0 = time.time()
     te = os.path.join(ROOT, "_PRIVATE", "taxonomy_engine")
+    # standing order (Chief 10/12): the waves run until the queue is empty; a stopped runner is started here
+    started = []
+    for task in ("PullRunnerA", "PullRunnerB"):
+        try:
+            q = subprocess.run(["schtasks", "/Query", "/TN", task, "/FO", "LIST"], capture_output=True, text=True, timeout=30).stdout
+            if "Running" not in q:
+                subprocess.run(["schtasks", "/Run", "/TN", task], capture_output=True, timeout=30)
+                started.append(task[-1])
+        except Exception:
+            pass
     try:
         r = subprocess.run([PY, os.path.join(te, "pull_queue.py"), "report"], cwd=te, capture_output=True, text=True,
                            encoding="utf-8", errors="replace", timeout=60, env=dict(os.environ, PYTHONIOENCODING="utf-8"))
@@ -355,6 +365,8 @@ def station_pull():
         return {"station": "PULL", "go": False, "addr": "pull glass", "note": (r.stderr or g.stderr).strip().splitlines()[-1:]}
     live = "; ".join(l.split(" · 429s")[0] for l in waves) or "no wave running"
     note = "%s · %s · glass built, republish owed · %.1f s" % (live, lines[-1] if lines else "", time.time() - t0)
+    if started:
+        note = "runner %s started · " % "+".join(started) + note
     if stalled:
         note = "STALLED: %s · " % ", ".join(stalled) + note
     return {"station": "PULL", "go": not stalled, "addr": "pull glass", "note": note}
