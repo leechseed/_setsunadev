@@ -78,6 +78,8 @@
   .slot label input{accent-color:var(--accent);margin:0}
   .well{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:var(--panel-2);border:1px solid var(--line);overflow:hidden}
   .well img,.well video{max-width:100%;max-height:100%;object-fit:contain}
+  .well [data-hover]{cursor:pointer}
+  .well.playing{box-shadow:inset 0 0 0 2px var(--accent)}
   .well span{font-family:var(--mono);font-size:11px;color:var(--ink-3);text-align:center;padding:12px}
   .slot .file{font-family:var(--mono);font-size:11.5px;color:var(--ink-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .slot .file b{color:var(--ink);font-weight:500}
@@ -214,12 +216,15 @@ async function upload(files){
 let shuffleOn={idle:true,listening:true,thinking:true,talking:true};
 try{shuffleOn={...shuffleOn,...JSON.parse(localStorage.getItem("faceDeck.shuffle")||"{}")};}catch(_){}
 
-const isVid=n=>/\.mp4$/i.test(n||"");
+const isVid=n=>/\.(mp4|webm)$/i.test(n||"");
 const isGif=n=>/\.gif$/i.test(n||"");
-const media=(url,name,alt)=>isVid(name)?`<video src="${url}" autoplay loop muted playsinline></video>`:`<img src="${url}" alt="${alt}"${alt?"":" loading=\"lazy\""}>`;
-/* library tiles hold still until hovered: a video shows its first frame, a GIF a frozen first frame */
-const stillMedia=(url,name)=>isVid(name)?`<video src="${url}#t=0.1" muted loop playsinline preload="metadata" data-hover></video>`
-  :isGif(name)?`<img data-gif="${url}" alt="" data-hover>`:media(url,name,"");
+/* 10/13 (Chief: "unless I focus or click on the image … it doesn't play"): nothing plays on its own, slots included.
+   A video shows its first frame, a GIF a frozen frame. Click or focus plays it; click again or blur stops it.
+   One thing plays at a time, so a wall of faces never holds a wall of decoders (the crash). */
+const media=(url,name,alt)=>isVid(name)?`<video src="${url}#t=0.1" muted loop playsinline preload="metadata" data-hover tabindex="0" aria-label="${esc(alt||name)} · click to play"></video>`
+  :isGif(name)?`<img data-gif="${url}" alt="${esc(alt)}" data-hover tabindex="0" title="click to play">`
+  :`<img src="${url}" alt="${esc(alt)}" loading="lazy">`;
+const stillMedia=(url,name)=>media(url,name,"");
 const frozen=new Map();
 function freeze(img){
   const url=img.dataset.gif;
@@ -230,12 +235,30 @@ function freeze(img){
     $$(`img[data-gif="${CSS.escape(url)}"]`).forEach(i=>{if(!i.matches(":hover"))i.src=frozen.get(url);});};
   src.src=url;
 }
-function wireHover(tile){
-  const m=tile.querySelector("[data-hover]"); if(!m)return;
-  if(m.tagName==="IMG")freeze(m);
-  tile.addEventListener("mouseenter",()=>{if(m.tagName==="VIDEO")m.play().catch(()=>{});else m.src=m.dataset.gif;});
-  tile.addEventListener("mouseleave",()=>{if(m.tagName==="VIDEO"){m.pause();m.currentTime=0.1;}else if(frozen.has(m.dataset.gif))m.src=frozen.get(m.dataset.gif);});
+let playing=null;                       /* the one element playing right now */
+const mediaKey=m=>m.dataset.gif||m.getAttribute("src")||"";
+function stopPlaying(){
+  const m=playing; if(!m)return; playing=null;
+  if(m.tagName==="VIDEO"){m.pause();try{m.currentTime=0.1;}catch(_){}}
+  else if(frozen.has(m.dataset.gif))m.src=frozen.get(m.dataset.gif);
+  const w=m.closest(".well"); if(w)w.classList.remove("playing");
 }
+function startPlaying(m){
+  if(playing===m)return; stopPlaying(); playing=m;
+  if(m.tagName==="VIDEO")m.play().catch(()=>{}); else m.src=m.dataset.gif;
+  const w=m.closest(".well"); if(w)w.classList.add("playing");
+}
+function wirePlay(root){
+  root.querySelectorAll("[data-hover]").forEach(m=>{
+    if(m.tagName==="IMG")freeze(m);
+    m.addEventListener("click",()=>{playing===m?stopPlaying():startPlaying(m);});
+    m.addEventListener("focus",()=>startPlaying(m));
+    m.addEventListener("blur",()=>{if(playing===m)stopPlaying();});
+    m.addEventListener("keydown",e=>{if(e.key===" "||e.key==="Enter"){e.preventDefault();e.stopPropagation();playing===m?stopPlaying():startPlaying(m);}});
+  });
+}
+/* the tab in the background plays nothing */
+document.addEventListener("visibilitychange",()=>{if(document.hidden)stopPlaying();});
 
 function renderSlots(){
   $("#slots").innerHTML=STATES.map(s=>{const v=S.slots[s]||{};
@@ -251,6 +274,7 @@ function renderSlots(){
     </div>`;}).join("");
   $$(".slot").forEach(el=>{
     const slot=el.dataset.slot;
+    wirePlay(el);
     el.addEventListener("dragover",e=>{e.preventDefault();el.classList.add("drop");});
     el.addEventListener("dragleave",()=>el.classList.remove("drop"));
     el.addEventListener("drop",async e=>{
@@ -294,7 +318,7 @@ function renderLib(){
   </div>`).join("");
   $$(".tile").forEach(t=>{
     const name=t.dataset.name;
-    wireHover(t);
+    wirePlay(t);
     t.addEventListener("click",async e=>{
       const k=e.target.closest("[data-k]");
       if(k){e.stopPropagation();const s=k.dataset.k,on=!k.classList.contains("on");
@@ -363,7 +387,9 @@ function render(){
   renderProfiles();
   document.body.classList.toggle("sfw",!!S.sfw);
   $("#sfw").setAttribute("aria-pressed",S.sfw?"true":"false");
+  const was=playing?mediaKey(playing):null; playing=null;   /* the old elements are gone with the re-render */
   renderSlots(); renderLib();
+  if(was){const m=$$("[data-hover]").find(x=>mediaKey(x)===was); if(m)startPlaying(m);}
   if(!sel) $("#status").textContent="JUDY picks up a swap within 2 seconds.";
 }
 

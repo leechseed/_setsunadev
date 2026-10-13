@@ -906,8 +906,7 @@ class Handler(BaseHTTPRequestHandler):
                 p = lib_file(unquote(path[len("/face/library/"):]))
             except ValueError as e:
                 return self._send(404, {"error": str(e)})
-            with open(p, "rb") as f:
-                return self._send(200, f.read(), mimetypes.guess_type(p)[0] or "image/png")
+            return self._send_file(p)      # 10/13: Range support, so a first-frame seek never reads a whole mp4
 
         if path == "/api/state":
             return self._send(200, build_state())
@@ -927,9 +926,7 @@ class Handler(BaseHTTPRequestHandler):
             p = (judy.get("face", {}).get("slots", {}) or {}).get(slot)
             if not p or not os.path.exists(p):
                 return self._send(404, b"", "image/png")
-            ctype = mimetypes.guess_type(p)[0] or "image/png"
-            with open(p, "rb") as f:
-                return self._send(200, f.read(), ctype)
+            return self._send_file(p)      # 10/13: Range support for the slot videos too
 
         return self._send(404, {"error": "no such route"})
 
