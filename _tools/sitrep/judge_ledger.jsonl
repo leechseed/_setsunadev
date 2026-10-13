@@ -5,3 +5,5 @@
 {"ts": "2026-10-12T23:25:46", "date": "2026-10-12-5", "src": "assemble", "reruns": ["INDEX", "RACK", "WATCH"], "findings": 1, "long_sentence_blocks": {"0": 2, "I": 3, "IV": 1}, "iii": "INDEX"}
 {"ts": "2026-10-12T23:26:27", "date": "2026-10-12-5", "src": "assemble", "reruns": ["INDEX", "RACK", "WATCH"], "findings": 0, "long_sentence_blocks": {}, "iii": "INDEX"}
 {"ts": "2026-10-13T00:39:31", "date": "2026-10-12-5", "src": "assemble", "reruns": ["INDEX", "RACK", "WATCH"], "findings": 1, "long_sentence_blocks": {}, "iii": "INDEX"}
+{"ts": "2026-10-13T03:16:26", "date": "2026-10-13", "src": "assemble", "reruns": ["WATCH"], "findings": 1, "long_sentence_blocks": {"IV": 2, "VI": 1}, "iii": "INDEX"}
+{"ts": "2026-10-13T03:17:51", "date": "2026-10-13", "src": "assemble", "reruns": ["WATCH"], "findings": 0, "long_sentence_blocks": {}, "iii": "INDEX"}

@@ -33,7 +33,7 @@
   },
   "face": {
     "slots": {
-      "idle": "Q:\\fun\\_JUDY\\faces\\idle.mp4",
+      "idle": "Q:\\fun\\_JUDY\\faces\\idle.gif",
       "listening": "Q:\\fun\\_JUDY\\faces\\listening.mp4",
       "thinking": "Q:\\fun\\_JUDY\\faces\\thinking.gif",
       "talking": "Q:\\fun\\_JUDY\\faces\\talking.gif"
@@ -88,6 +88,14 @@
             "emiru-eat-emiru.gif",
             "emiru-emi.gif"
           ]
+        }
+      },
+      "mIKAA": {
+        "pools": {
+          "idle": [],
+          "listening": [],
+          "thinking": [],
+          "talking": []
         }
       }
     },
