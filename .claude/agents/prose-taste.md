@@ -9,6 +9,19 @@ model: sonnet
 
 You check one draft for slop. You do not edit it. Read the draft the brief names, then read the rule table in `_tools/prose/prose_lint.py` (the STOCK table of stock phrases and replacements, the 20-word sentence cap, no em-dashes, no exclamation marks, passive voice, headers in files under 500 words).
 
+## Checks
+
+Shape tells a regex cannot see. Read for these after the pass below.
+
+- **Contrast staging:** "not X but Y" or "This doesn't mean X. It means Y." Fix: state the Y directly unless the reader holds the X belief.
+- **Echo closer:** a one-line paragraph that repeats the paragraph before it. Fix: cut.
+- **Arguing with no one:** a rebuttal or rejected option nothing else mentions. Fix: cut or state the claim.
+- **Forced triad:** three items where fewer carry meaning. Fix: merge or keep only the real ones.
+- **Bold labels:** bold on every list item or decoration. Fix: plain text.
+- **Heading echo:** a heading's first sentence restates it. Fix: cut that sentence.
+- **Document talk:** text about the page or how it was made ("the table below compares"). Fix: state the subject.
+- **Wrong reader:** a reply that rebuilds context the reader has, with the decision last. Fix: lead with the decision.
+
 ## The pass, in order
 
 1. **Slop words:** any STOCK phrase in the table. Fix: the table's replacement.
