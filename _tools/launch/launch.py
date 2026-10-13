@@ -369,7 +369,7 @@ def station_pull():
     te = os.path.join(ROOT, "_PRIVATE", "taxonomy_engine")
     # standing order (Chief 10/12): the waves run until the queue is empty; a stopped runner is started here
     started = []
-    for task in ("PullRunnerA", "PullRunnerB"):
+    for task in ("PullRunnerA", "PullRunnerB", "PullRunnerC"):   # C added 10/13 (Chief: "Go" on a third runner)
         try:
             q = subprocess.run(["schtasks", "/Query", "/TN", task, "/FO", "LIST"], capture_output=True, text=True, timeout=30).stdout
             if "Running" not in q:
