@@ -26,7 +26,7 @@ NODES = ROOT / "_CANON_NODES"
 TRACK = ROOT / "ShroomsQ/_CANON/_TRACKING/oxo.yaml"
 
 RETIRED = [
-    (r"\bOutsiders\b", "series is 'The Outliers', never 'The Outsiders' (standing ruling)"),
+    (r"\bOutsiders\b", "series is 'The Outliers', never 'The Out' + 'siders' (standing ruling)"),
     (r"\bAriel\b", "Ariel is Tori's earlier name: lineage, not canon (ruled 9/29); use Tori / Victoria Midnight"),
     (r"\bBarnes\b", "no character named Barnes exists (standing ruling)"),
     (r"\bRed Stick Creek\b", "renamed Skeeter Creek (era 1; legacy vocab, 2022-23 lineage)"),

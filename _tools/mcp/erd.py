@@ -1,4 +1,4 @@
-"""erd.py - build an ERD glass from a SQLite COPY (BOLO 140).
+"""erd.py v2 (cdb-03 right rail: tables list + relationships list; cdb-04 one metadata query) - build an ERD glass from a SQLite COPY (BOLO 140).
 
 Usage: python -X utf8 _tools/mcp/erd.py stash [zotero ...]
 Reads _PRIVATE/dbcopies/<db>.sqlite read-only (mode=ro, query_only). Row counts only,
@@ -23,18 +23,31 @@ def read(db):
     path = os.path.join(COPIES, db + ".sqlite")
     c = sqlite3.connect("file:" + path.replace("\\", "/") + "?mode=ro", uri=True)
     c.execute("PRAGMA query_only=1")
-    names = [r[0] for r in c.execute(
-        "SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%' ORDER BY name")]
     tabs, fks = {}, []
-    for n in names:
-        cols = c.execute("PRAGMA table_info(%s)" % q(n)).fetchall()
+    META = ("SELECT 'c', m.name, p.cid, p.name, p.type, p.pk FROM sqlite_master m, pragma_table_info(m.name) p "
+            "WHERE m.type='table' AND m.name NOT LIKE 'sqlite_%' "
+            "UNION ALL SELECT 'f', m.name, f.id, f.\"from\", f.\"table\", f.\"to\" FROM sqlite_master m, "
+            "pragma_foreign_key_list(m.name) f WHERE m.type='table' AND m.name NOT LIKE 'sqlite_%' ORDER BY 2, 1, 3")
+    try:  # cdb-04: one metadata query for the whole database
+        for kind, t, _i, a, b, c5 in c.execute(META):
+            tabs.setdefault(t, {"rows": None, "cols": []})
+            if kind == "c":
+                tabs[t]["cols"].append((a, b or "", c5 > 0))
+            else:
+                fks.append((t, a, b, c5))
+        tabs = {n: tabs[n] for n in sorted(tabs)}
+    except sqlite3.Error:  # fallback: per-table pragmas (older SQLite or a virtual table that will not load)
+        tabs, fks = {}, []
+        for n in [r[0] for r in c.execute(
+                "SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%' ORDER BY name")]:
+            tabs[n] = {"rows": None, "cols": [(r[1], r[2] or "", r[5] > 0) for r in c.execute("PRAGMA table_info(%s)" % q(n))]}
+            for r in c.execute("PRAGMA foreign_key_list(%s)" % q(n)):
+                fks.append((n, r[3], r[2], r[4]))
+    for n in tabs:
         try:
-            cnt = c.execute("SELECT COUNT(*) FROM %s" % q(n)).fetchone()[0]
+            tabs[n]["rows"] = c.execute("SELECT COUNT(*) FROM %s" % q(n)).fetchone()[0]
         except sqlite3.Error:
-            cnt = None  # virtual table whose module is missing
-        tabs[n] = {"rows": cnt, "cols": [(r[1], r[2] or "", r[5] > 0) for r in cols]}
-        for r in c.execute("PRAGMA foreign_key_list(%s)" % q(n)).fetchall():
-            fks.append((n, r[3], r[2], r[4]))  # from table, from col, to table, to col
+            pass  # virtual table whose module is missing
     c.close()
     return tabs, [f for f in fks if f[2] in tabs]
 
@@ -98,10 +111,15 @@ def build(db):
         lines.append('<g class="fk" data-a="%s" data-b="%s"><path class="hit" d="%s" data-t="%s"/><path class="ln" d="%s"/></g>'
                      % (html.escape(a.lower()), html.escape(b.lower()), d, html.escape(tip), d))
 
+    tl = "".join('<li data-n="%s"><span>%s</span><em>%s</em></li>' % (html.escape(n.lower()), html.escape(n),
+                 "?" if tabs[n]["rows"] is None else "{:,}".format(tabs[n]["rows"])) for n in sorted(tabs))
+    rl = "".join('<li data-a="%s" data-b="%s"><span>%s.%s</span> &rarr; <span>%s.%s</span></li>'
+                 % (html.escape(a.lower()), html.escape(b.lower()), html.escape(a), html.escape(ac), html.escape(b), html.escape(bc or "pk"))
+                 for a, ac, b, bc in fks) or "<li><em>no foreign keys declared</em></li>"
     title = db.capitalize() + " ERD"
     page = (PAGE.replace("{{TITLE}}", title).replace("{{W}}", str(width)).replace("{{H}}", str(height))
             .replace("{{CARDS}}", "".join(cards)).replace("{{LINES}}", "".join(lines))
-            .replace("{{NT}}", str(len(tabs))).replace("{{NF}}", str(len(fks))))
+            .replace("{{TL}}", tl).replace("{{RL}}", rl).replace("{{NT}}", str(len(tabs))).replace("{{NF}}", str(len(fks))))
     os.makedirs(OUT, exist_ok=True)
     p = os.path.join(OUT, db + "-erd.html")
     with open(p, "w", encoding="utf-8") as f:
@@ -120,7 +138,12 @@ header h1{margin:0;font:700 20px 'Barlow Condensed',sans-serif;letter-spacing:.0
 header span{font:12px 'IBM Plex Mono',monospace;color:var(--mu)}
 input{margin-left:auto;width:min(260px,40vw);background:var(--bg);color:var(--tx);border:1px solid var(--ln);border-radius:4px;padding:5px 8px;font:13px 'IBM Plex Mono',monospace}
 input:focus{outline:2px solid var(--ac)}
-#wrap{overflow:auto;height:calc(100vh - 44px)}
+main{display:flex;height:calc(100vh - 44px)}#wrap{flex:1;overflow:auto}
+aside{width:300px;flex:none;overflow:auto;background:var(--pan);border-left:1px solid var(--ln);padding:8px 0}
+aside h2{margin:8px 12px 4px;font:700 14px 'Barlow Condensed',sans-serif;letter-spacing:.08em;color:var(--ac);text-transform:uppercase}
+aside ul{list-style:none;margin:0 0 8px;padding:0}aside li{display:flex;justify-content:space-between;gap:8px;padding:3px 12px;font:12px 'IBM Plex Mono',monospace;cursor:pointer}
+aside li:hover{background:var(--ln)}aside li em{color:var(--mu);font-style:normal}.sel{outline:2px solid var(--ac)}
+@media(max-width:700px){main{flex-direction:column;height:auto}aside{width:auto;max-height:40vh}#wrap{height:60vh}}
 #cv{position:relative;width:{{W}}px;height:{{H}}px}
 svg{position:absolute;left:0;top:0}
 .card{position:absolute;background:var(--pan);border:1px solid var(--ln);border-radius:6px;overflow:hidden;transition:opacity .15s}
@@ -136,13 +159,18 @@ g.fk:hover .ln{stroke:var(--ac);stroke-width:2.4}
 #tip{position:fixed;display:none;z-index:9;background:var(--pan);border:1px solid var(--ac);padding:4px 8px;border-radius:4px;font:12px 'IBM Plex Mono',monospace;pointer-events:none}
 </style></head><body>
 <header><h1>{{TITLE}}</h1><span>{{NT}} tables &middot; {{NF}} foreign keys</span><input id="q" type="search" placeholder="search tables" aria-label="Search tables"></header>
-<div id="wrap"><div id="cv"><svg width="{{W}}" height="{{H}}">{{LINES}}</svg>{{CARDS}}</div></div>
+<main><div id="wrap"><div id="cv"><svg width="{{W}}" height="{{H}}">{{LINES}}</svg>{{CARDS}}</div></div>
+<aside><h2>Tables</h2><ul id="tl">{{TL}}</ul><h2>Relationships</h2><ul id="rl">{{RL}}</ul></aside></main>
 <div id="tip"></div>
 <script>
 var q=document.getElementById('q'),cs=[].slice.call(document.querySelectorAll('.card')),gs=[].slice.call(document.querySelectorAll('g.fk'));
 q.addEventListener('input',function(){var v=q.value.trim().toLowerCase(),on={};
 cs.forEach(function(c){var m=!v||c.dataset.n.indexOf(v)>-1;on[c.dataset.n]=m;c.classList.toggle('dim',!m)});
 gs.forEach(function(g){g.style.opacity=(!v||on[g.dataset.a]||on[g.dataset.b])?1:.08})});
+var wrap=document.getElementById('wrap');
+function pick(n){cs.forEach(function(c){c.classList.remove('sel');if(c.dataset.n===n){c.classList.add('sel');wrap.scrollTo({left:c.offsetLeft-20,top:c.offsetTop-20,behavior:'smooth'})}})}
+document.querySelectorAll('#tl li').forEach(function(li){li.addEventListener('click',function(){pick(li.dataset.n)})});
+document.querySelectorAll('#rl li').forEach(function(li){li.addEventListener('click',function(){pick(li.dataset.a)})});
 var t=document.getElementById('tip');
 document.querySelectorAll('.hit').forEach(function(h){h.addEventListener('mousemove',function(e){t.textContent=h.dataset.t;t.style.display='block';t.style.left=(e.clientX+12)+'px';t.style.top=(e.clientY+12)+'px'});h.addEventListener('mouseleave',function(){t.style.display='none'})});
 </script></body></html>"""

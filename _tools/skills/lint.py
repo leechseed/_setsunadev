@@ -25,6 +25,7 @@ AGENT_KEYS = {
     "name", "description", "tools", "disallowedTools", "model", "color",
     "permissionMode", "maxTurns", "skills", "mcpServers", "hooks", "memory",
     "effort", "background", "isolation", "initialPrompt",
+    "profile",  # the agent profile block (BOLO 140, distilly idea, 10/13)
 }
 KEBAB = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 VAGUE_NAMES = {"helper", "helpers", "utils", "util", "tools", "misc", "stuff", "thing", "tool", "data"}
@@ -182,7 +183,10 @@ def lint_file(path, kind, expect_name, root, out):
             if len([t for t in tools.split(",") if t.strip()]) >= 6 and "Bash" in tools:
                 add("WARN", "tools-broad", "6+ tools including Bash; confirm it is needed")
             if "Agent" in tools or "Task" in tools:
-                add("ERROR", "tools-agent", "agents must not launch agents")
+                if "depth 2" in text.lower() or "depth-2" in text.lower():
+                    add("WARN", "tools-agent-lead", "a depth-2 lead: may launch PS only (SOP 1.17, ruled 10/13)")
+                else:
+                    add("ERROR", "tools-agent", "agents must not launch agents (depth 2 leads name it in the body)")
         if RULES_PHRASE not in text:
             add("ERROR", "command-rules", "Command rules block missing")
         if "model" not in fm:
