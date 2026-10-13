@@ -132,14 +132,18 @@ def _pin(pid, side="right", wait=15):
     return bool(found)
 
 
-def launch(target, side="right"):
+def launch(target, side="right", pin=False):
     """Open VLC on one screen (right by default; Chief 10/12 two sets: "left" for the second): minimal view,
     no autoresize, then pinned borderless over that monitor. --no-one-instance lets both screens run at once."""
-    p = subprocess.Popen([VLC, "--no-one-instance", "--qt-minimal-view", "--no-qt-video-autoresize", "--no-qt-fs-controller", "--play-and-exit",
-                          "--no-video-title-show", target],
+    # 10/13 (Chief: "run the VLC in a window so I can move it around"): a normal framed window by default;
+    # pin=True brings back the borderless lay-over on one screen (10/12)
+    args = [VLC, "--no-one-instance", "--no-qt-video-autoresize", "--play-and-exit", "--no-video-title-show", target]
+    if pin:
+        args[2:2] = ["--qt-minimal-view", "--no-qt-fs-controller"]
+    p = subprocess.Popen(args,
                          stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, close_fds=True,
                          creationflags=subprocess.DETACHED_PROCESS | subprocess.CREATE_NEW_PROCESS_GROUP)   # 10/13: VLC never rides on the caller's shell
-    return _pin(p.pid, side)
+    return _pin(p.pid, side) if pin else True
 
 
 def play(sc):
