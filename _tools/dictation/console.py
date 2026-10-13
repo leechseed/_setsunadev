@@ -23,6 +23,7 @@ The console edits both; ptt.py only ever reads the first.
 import argparse
 import base64
 import filecmp
+import hashlib
 import io
 import json
 import mimetypes
@@ -588,6 +589,26 @@ def profile_for(preset, name):
     LOG.append(f"— face profile for {preset}: {name or 'none'}")
 
 
+_HASHES = {}   # path -> (size, mtime_ns, sha1); the deck polls every 3 s, so a file is hashed once until it changes
+
+
+def face_hash(path, st):
+    """SHA-1 of a library file, cached by size + mtime (10/13: duplicate detection in the face deck)."""
+    key = (st.st_size, st.st_mtime_ns)
+    hit = _HASHES.get(path)
+    if hit and hit[:2] == key:
+        return hit[2]
+    h = hashlib.sha1()
+    try:
+        with open(path, "rb") as f:
+            for chunk in iter(lambda: f.read(1 << 20), b""):
+                h.update(chunk)
+    except OSError:
+        return ""
+    _HASHES[path] = key + (h.hexdigest(),)
+    return h.hexdigest()
+
+
 def lib_state():
     lib_seed()
     judy = read_json(JUDY, JUDY_DEFAULTS)
@@ -604,7 +625,7 @@ def lib_state():
             continue
         st = e.stat()
         added = getattr(st, "st_birthtime", None) or st.st_ctime   # Windows: creation time = when it landed in the library (10/13)
-        items.append({"name": e.name, "size": st.st_size, "mtime": int(st.st_mtime), "added": int(added),
+        items.append({"name": e.name, "size": st.st_size, "mtime": int(st.st_mtime), "added": int(added), "sha1": face_hash(e.path, st),
                       "url": f"/face/library/{quote(e.name)}?v={st.st_mtime_ns}",
                       "slots": [s for s, p in paths.items() if p and _same(p, e.path)],
                       "pools": [s for s in STATES if e.name in pools[s]]})

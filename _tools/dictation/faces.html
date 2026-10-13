@@ -116,6 +116,21 @@
   .twiddle:hover h2{color:var(--accent)}
   .sortsel{font-family:var(--mono);font-size:11.5px;background:var(--panel);color:var(--ink);border:1px solid var(--line-2);padding:3px 6px}
   @media (prefers-reduced-motion:reduce){.twiddle .tw{transition:none}}
+  /* duplicates (10/13, Chief: "detect duplicates and put up a dialog window") */
+  dialog#dupDlg{width:min(560px,calc(100vw - 32px));max-height:80vh;overflow:auto;background:var(--panel);color:var(--ink);border:1px solid var(--line-2);border-top:3px solid var(--accent);padding:16px 18px}
+  dialog#dupDlg::backdrop{background:rgba(0,0,0,.6)}
+  #dupDlg h3{margin:0 0 8px;font-family:var(--display);font-size:22px;letter-spacing:.05em;text-transform:uppercase}
+  #dupDlg p{margin:0 0 10px;color:var(--ink-2);font-size:14px}
+  #dupDlg .grp{border:1px solid var(--line);padding:8px 10px;margin-bottom:8px}
+  #dupDlg .row{display:flex;align-items:center;gap:10px;padding:3px 0;font-family:var(--mono);font-size:12px}
+  #dupDlg .row .nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  #dupDlg .row small{color:var(--ink-3)}
+  #dupDlg .row button{font-family:var(--mono);font-size:11px;padding:2px 8px;border:1px solid var(--line-2);background:var(--panel-2);color:var(--ink-2);cursor:pointer}
+  #dupDlg .row button:hover{border-color:var(--bad);color:var(--bad)} #dupDlg .row button:disabled{opacity:.4;cursor:default}
+  #dupDlg .dacts{display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap;margin-top:12px}
+  #dupDlg .dacts button{font-family:var(--display);font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;padding:6px 14px;border:1px solid var(--line-2);background:var(--panel-2);color:var(--ink);cursor:pointer}
+  #dupDlg .dacts button.go{background:var(--accent);border-color:var(--accent);color:#141210}
+  .tile .dup{margin-left:4px;padding:0 4px;border:1px solid var(--warn,#E3B341);color:var(--warn,#E3B341);font-size:9.5px;letter-spacing:.08em}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px}
   .tile{border:1px solid var(--line);background:var(--panel);display:flex;flex-direction:column;cursor:pointer;position:relative}
   .tile:hover{border-color:var(--line-2)}
@@ -176,6 +191,7 @@
     <button type="button" class="twiddle" id="libToggle" aria-expanded="true" aria-controls="libBody" title="L · open or close the library"><span class="tw" aria-hidden="true">▾</span><h2>The library</h2></button>
     <span class="lbl" id="libCount"></span>
     <span class="sp"></span>
+    <button type="button" class="btn" id="findDups" title="D · find the same file twice in the library">Find duplicates</button>
     <label class="lbl" for="libSort">sort</label>
     <select id="libSort" class="sortsel" aria-label="Sort the library">
       <option value="new">Newest added first</option>
@@ -193,6 +209,11 @@
   </div>
 </main>
 <div id="toast"></div>
+<dialog id="dupDlg" aria-labelledby="dupTitle">
+  <h3 id="dupTitle">Duplicates</h3>
+  <div id="dupBody"></div>
+  <div class="dacts" id="dupActs"></div>
+</dialog>
 
 <script>
 const STATES=["idle","listening","thinking","talking"];
@@ -218,7 +239,46 @@ async function api(path,body){
 const readFile=f=>new Promise((ok,no)=>{const fr=new FileReader();fr.onload=()=>ok(fr.result);fr.onerror=no;fr.readAsDataURL(f);});
 
 /* one file per request keeps each body under ~67 MB */
+/* duplicates: SHA-1 in the browser, matched against the library's hashes from the server */
+async function sha1(f){const b=await crypto.subtle.digest("SHA-1",await f.arrayBuffer());return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,"0")).join("");}
+function dupDialog(title,intro,bodyHTML,buttons){
+  return new Promise(res=>{const d=$("#dupDlg");$("#dupTitle").textContent=title;
+    $("#dupBody").innerHTML=(intro?`<p>${intro}</p>`:"")+bodyHTML;
+    $("#dupActs").innerHTML=buttons.map(([v,l,go])=>`<button type="button" data-v="${v}"${go?' class="go"':""}>${l}</button>`).join("");
+    const done=v=>{d.close();res(v);};
+    $("#dupActs").onclick=e=>{const b=e.target.closest("[data-v]");if(b)done(b.dataset.v);};
+    d.oncancel=e=>{e.preventDefault();done("cancel");};
+    d.showModal();const g=d.querySelector(".dacts .go");if(g)g.focus();});
+}
+async function checkDups(files){
+  if(!(window.crypto&&crypto.subtle))return files;
+  const have=new Map(S.library.filter(i=>i.sha1).map(i=>[i.sha1,i.name])), seen=new Map(), dup=[];
+  for(const f of files){ if(f.size>50*1048576)continue; let h; try{h=await sha1(f);}catch(_){continue;}
+    const hit=have.get(h)||seen.get(h); if(hit)dup.push([f,hit]); else seen.set(h,f.name); }
+  if(!dup.length)return files;
+  const rows=dup.map(([f,hit])=>`<div class="row"><span class="nm">${esc(f.name)}</span><small>same file as</small><span class="nm">${esc(hit)}</span></div>`).join("");
+  const v=await dupDialog(dup.length===1?"Already in the library":`${dup.length} already in the library`,
+    "These are byte-for-byte the same as a face you already have.",`<div class="grp">${rows}</div>`,
+    [["cancel","Cancel"],["all","Add them anyway"],["skip","Skip duplicates",true]]);
+  if(v==="cancel")return [];
+  if(v==="all")return files;
+  const skip=new Set(dup.map(d=>d[0])); return files.filter(f=>!skip.has(f));
+}
+async function findDups(){
+  const by={}; S.library.forEach(i=>{if(i.sha1)(by[i.sha1]=by[i.sha1]||[]).push(i);});
+  const groups=Object.values(by).filter(g=>g.length>1);
+  if(!groups.length){toast(`no duplicates · ${S.library.length} faces checked`);return;}
+  const body=groups.map(g=>`<div class="grp">${g.map((i,n)=>`<div class="row"><span class="nm" title="${esc(i.name)}">${esc(i.name)}</span><small>${mb(i.size)}${i.slots.length?" · on "+i.slots.join(", "):""}</small>
+    <button type="button" data-del="${esc(i.name)}" ${i.slots.length?'disabled title="on a slot · swap it off first"':""}>delete</button></div>`).join("")}</div>`).join("");
+  $("#dupBody").onclick=async e=>{const b=e.target.closest("[data-del]");if(!b||b.disabled)return;
+    b.disabled=true;b.textContent="deleting…";
+    if(await api("/api/face/delete",{name:b.dataset.del}).catch(()=>null)){b.textContent="deleted";b.closest(".row").style.opacity=.4;}else b.textContent="failed";};
+  await dupDialog(`${groups.length} duplicate set${groups.length===1?"":"s"}`,"Each box holds copies of the same file. Delete the extras; keep one.",body,[["done","Done",true]]);
+  $("#dupBody").onclick=null; refresh(true);
+}
+
 async function upload(files){
+  files=await checkDups([...files]);
   const saved=[], errs=[];
   for(const f of files){
     if(f.size>50*1048576){errs.push(f.name+": over 50 MB");continue;}
@@ -332,12 +392,14 @@ function renderLib(){
   $("#libSort").value=libSort; $("#libToggle").setAttribute("aria-expanded",libOpen?"true":"false"); $("#libBody").hidden=!libOpen;
   const L=[...S.library].sort(SORTS[libSort]||SORTS.new);
   if(S.sfw){$("#libCount").textContent="hidden";$("#grid").innerHTML=`<div class="sfwnote">SFW is on. JUDY shows the four original faces. The library, slots and pools are untouched; press SFW again to bring them back.</div>`;return;}
-  $("#libCount").textContent=`${L.length} face${L.length===1?"":"s"} · ${mb(L.reduce((a,i)=>a+i.size,0))}`;
+  const hc={}; L.forEach(i=>{if(i.sha1)hc[i.sha1]=(hc[i.sha1]||0)+1;});
+  const nd=L.filter(i=>hc[i.sha1]>1).length;
+  $("#libCount").textContent=`${L.length} face${L.length===1?"":"s"} · ${mb(L.reduce((a,i)=>a+i.size,0))}${nd?` · ${nd} are duplicates`:""}`;
   if(!libOpen){$("#grid").innerHTML="";return;}   /* closed: no tiles, no decoders */
   if(!L.length){$("#grid").innerHTML=`<div class="empty">The library is empty. Drop some faces above.</div>`;return;}
   $("#grid").innerHTML=L.map(i=>`<div class="tile${sel===i.name?" sel":""}" data-name="${esc(i.name)}" title="click the picture to play it · click the name to pick it, then click a slot">
     <div class="well">${stillMedia(i.url,i.name)}</div>
-    <div class="meta"><div>${esc(i.name)}</div><small>${mb(i.size)}${i.slots.length?" · on "+i.slots.join(", "):""}</small></div>
+    <div class="meta"><div>${esc(i.name)}</div><small>${mb(i.size)}${i.slots.length?" · on "+i.slots.join(", "):""}${hc[i.sha1]>1?'<span class="dup" title="the same file is in the library more than once">DUP</span>':""}</small></div>
     <div class="acts">${STATES.map(s=>`<button class="k${(i.pools||[]).includes(s)?" on":""}" data-k="${s}" title="${(i.pools||[]).includes(s)?"take out of":"add to"} the ${s} pool">${KEY[s]}</button>`).join("")}
       <span class="sp"></span><button class="del" data-del>delete</button></div>
     ${confirming===i.name?`<div class="confirm"><span>${i.slots.length?"on "+i.slots.join(", ")+" · swap off first":"delete for good?"}</span>
@@ -461,6 +523,8 @@ $("#update").onclick=async()=>{
 document.addEventListener("keydown",e=>{if(e.key==="Escape"){sel=null;armPool=null;confirming=null;render();}
   if((e.key==="l"||e.key==="L")&&!e.ctrlKey&&!e.metaKey&&!e.altKey&&!/INPUT|SELECT|TEXTAREA/.test(e.target.tagName))setLibOpen(!libOpen);});
 $("#libToggle").onclick=()=>setLibOpen(!libOpen);
+$("#findDups").onclick=()=>findDups();
+document.addEventListener("keydown",e=>{if((e.key==="d"||e.key==="D")&&!e.ctrlKey&&!e.metaKey&&!e.altKey&&!/INPUT|SELECT|TEXTAREA/.test(e.target.tagName)&&!$("#dupDlg").open)findDups();});
 $("#libSort").onchange=()=>{libSort=$("#libSort").value;try{localStorage.setItem("faceDeck.libSort",libSort);}catch(_){}renderLib();};
 
 refresh(true);
