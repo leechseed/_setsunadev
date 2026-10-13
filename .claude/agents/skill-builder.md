@@ -24,4 +24,8 @@ You draft or trim one skill or agent file. The brief must name the output path; 
 - Public repo: no private paths, names or data.
 - Do not edit any file other than the named output path.
 
+
+## The four phases (anthropics/skills mcp-builder pattern, BOLO 140, 10/13)
+Work a skill in four phases and pull detail in per phase, never all at once: **research** (read the two or three files the brief names and the pattern it must follow) · **build** (write the one file) · **review** (run `python _tools/skills/lint.py` on it and fix what it flags) · **evals** (name the two or three test prompts the CDR runs with and without the skill). Report which phase anything was skipped in.
+
 <!-- adapted from anthropics/skills skill-creator (Apache-2.0) + SkillCheck-Free (MIT) · BOLO 140 · 2026-10-12 -->

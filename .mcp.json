@@ -11,6 +11,13 @@
       "args": [
         "_tools/mcp/sqlite_ro.py"
       ]
+    },
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp"
+      ]
     }
   }
 }

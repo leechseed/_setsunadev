@@ -9,3 +9,5 @@ This repo is the operating record of one person's operation ("the Command"). The
 **Hooks** (`.claude/settings.local.json`): SessionStart → the digest · Stop → local autocommit (never pushes) · PreToolUse → the no-probing guard (`_tools/hooks/no_probe.py`).
 
 **Two standing rules that bite:** never scan the box (processes, logs, network, configs) unless the order names it; launch stations from the Bash tool, never PowerShell. The rest is in SOP.
+
+**Context (BOLO 140, 10/13):** read digests first; open a big file by section, never whole; a brief passes paths, not pasted text (SOP §1.24).
