@@ -1,0 +1,513 @@
+<title>The Kit</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* the Command look, DARK only (ruled 9/11): one strip, a filter row, then a card per skill, agent, hook and workflow */
+  :root { color-scheme: dark;
+    --bg:#121110; --panel:#1B1A18; --panel-2:#24221F; --line:#34312C; --ink:#ECE7DF; --ink-2:#B7B0A5; --ink-3:#7F786E;
+    --accent:#FF5A1F; --accent-soft:#3A1D10; --accent-ink:#FFB08F; --good:#5FBF8A; --good-soft:#16301F; --cyan:#7FC4D8; --cyan-soft:#14262E; --warn:#E3B341;
+    --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif; --body:"Atkinson Hyperlegible","Segoe UI",Verdana,sans-serif; --mono:"IBM Plex Mono",Consolas,monospace; }
+  *{box-sizing:border-box} html,body{background:var(--bg);color:var(--ink)}
+  body{font:14px/1.5 var(--body);padding-inline:16px;padding-block:0 64px}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .strip{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;align-items:center;gap:14px;flex-wrap:wrap;min-height:44px;margin-inline:-16px;padding:6px 16px;background:var(--panel);border-bottom:1px solid var(--line)}
+  .strip h1{margin:0;font:800 20px/1 var(--display);letter-spacing:.06em;text-transform:uppercase} .strip h1 b{color:var(--accent)}
+  .tot{font:700 16px var(--display);letter-spacing:.04em;font-variant-numeric:tabular-nums} .tot span{color:var(--accent)}
+  .wrap{max-width:1100px;margin:0 auto;display:grid;gap:12px;padding-block:14px}
+  .lede{margin:0;color:var(--ink-2);max-width:74ch}
+  .tools{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+  .tools button{font:500 12px var(--mono);padding:5px 9px;border:1px solid var(--line);border-radius:3px;background:var(--panel);color:var(--ink-2);cursor:pointer}
+  .tools button[aria-pressed="true"]{border-color:var(--accent);color:var(--ink);background:var(--accent-soft)}
+  #q{flex:1;min-width:180px;font:13px var(--mono);padding:6px 9px;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:3px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:8px}
+  .it{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--line);border-radius:4px;padding:10px 12px;display:grid;gap:6px;align-content:start;min-width:0}
+  .it.skill{border-top-color:var(--accent)} .it.agent{border-top-color:var(--cyan)} .it.hook{border-top-color:var(--warn)} .it.workflow{border-top-color:var(--good)}
+  .it header{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+  .kd{font:500 10px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+  .it h3{margin:0;font:700 19px/1.1 var(--display);letter-spacing:.02em;overflow-wrap:anywhere}
+  .src{margin-left:auto;font:10.5px var(--mono);padding:1px 6px;border-radius:3px}
+  .src.gh{background:var(--cyan-soft);color:var(--cyan)} .src.org{background:var(--accent-soft);color:var(--accent-ink)}
+  .it p{margin:0;color:var(--ink-2);font-size:13.5px}
+  .lb{font:500 10px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-right:6px}
+  .says,.bl{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+  .say{font:12px var(--mono);border:1px dashed var(--accent);border-radius:3px;padding:0 6px;color:var(--ink)}
+  .b{font:11px var(--mono);padding:0 5px;border:1px solid var(--line);border-radius:3px;color:var(--ink-3)} .b.lv{border-color:var(--good);color:var(--good)}
+  .none,.more{font:11px var(--mono);color:var(--ink-3)}
+  .meta{font:11.5px var(--mono);color:var(--ink-3);overflow-wrap:anywhere}
+  .pth{font:10.5px var(--mono);color:var(--ink-3);opacity:.7;overflow-wrap:anywhere}
+  .key{display:flex;gap:14px;flex-wrap:wrap;font:11.5px var(--mono);color:var(--ink-3)} .key i{display:inline-block;width:10px;height:10px;margin-right:5px;vertical-align:-1px}
+</style>
+<header class="strip">
+  <h1><b>The</b> Kit</h1>
+  <span class="tot"><span>15</span> skills · <span>43</span> agents · <span>5</span> hooks · <span>1</span> workflow</span>
+  <span class="tot"><span>29</span> adopted from GitHub</span>
+</header>
+<main class="wrap">
+  <p class="lede">Everything the Command runs. A <b>skill</b> is a procedure you fire with a proword. An <b>agent</b> is a specialist the main session sends on one job. A <b>hook</b> runs by itself on an event. A <b>workflow</b> is a script that runs a whole formation. Each card says what it does, how you fire it, where it came from, and which BOLOs name it (green = a live BOLO). Repos it draws on: affaan-m/ECC, obra/superpowers, taste-skill, tjboudreaux/cc-thinking-skills. Built Oct 13, 10:03 AM.</p>
+  <div class="key"><span><i style="background:var(--accent)"></i>skill</span><span><i style="background:var(--cyan)"></i>agent</span><span><i style="background:var(--warn)"></i>hook</span><span><i style="background:var(--good)"></i>workflow</span></div>
+  <div class="tools" role="group" aria-label="Show">
+    <button type="button" data-f="all" aria-pressed="true">All 64</button>
+    <button type="button" data-f="skill" aria-pressed="false">Skills</button>
+    <button type="button" data-f="agent" aria-pressed="false">Agents</button>
+    <button type="button" data-f="hook" aria-pressed="false">Hooks</button>
+    <button type="button" data-f="gh" aria-pressed="false">From GitHub</button>
+    <button type="button" data-f="org" aria-pressed="false">Organic</button>
+    <input id="q" type="search" placeholder="search the kit…" aria-label="Search the kit">
+  </div>
+  <div class="grid" id="grid"><article class="it skill" data-k="skill" data-o="org" data-s="bench convene the five-seat advisory bench for opinions on one question. fires only on &quot;convene the bench&quot; or &quot;bench this&quot;. never fires on its own. ">
+  <header><span class="kd">skill</span><h3>bench</h3><span class="src org">organic</span></header>
+  <p>Convene the five-seat advisory Bench for opinions on one question. Fires ONLY on &quot;convene the bench&quot; or &quot;bench this&quot;. Never fires on its own.</p>
+  <div class="says"><span class="lb">Say</span><span class="say">convene the bench</span><span class="say">bench this</span></div>
+  <div class="meta"></div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b" title="BOLO 25">25</span><span class="b lv" title="live BOLO 27">27</span><span class="b" title="BOLO 33">33</span><span class="b" title="BOLO 37">37</span><span class="b" title="BOLO 38">38</span><span class="b lv" title="live BOLO 44">44</span><span class="b" title="BOLO 45">45</span><span class="b" title="BOLO 48">48</span><span class="b" title="BOLO 52">52</span><span class="b lv" title="live BOLO 56">56</span><span class="b" title="BOLO 58">58</span><span class="b" title="BOLO 81">81</span><span class="b lv" title="live BOLO 100">100</span><span class="b lv" title="live BOLO 108">108</span><span class="more">+3</span></div>
+  <div class="pth">.claude/skills/bench/SKILL.md</div>
+</article><article class="it skill" data-k="skill" data-o="gh" data-s="brainstorm riff on an idea with chief, one question at a time, until he says &quot;lock it&quot;, then write the design as a short brief. fires only on &quot;brainstorm x&quot;, &quot;riff on x&quot;, &quot;interview me&quot; or &quot;refine x&quot;. never fires on its own. ">
+  <header><span class="kd">skill</span><h3>brainstorm</h3><span class="src gh" title="obra/superpowers skills/brainstorming (MIT, github.com/obra/superpowers), 2026-10-13; auto-trigger and commit steps cut; underspecified-ask rule from trailofbits/skills ask-questions-if-underspecified (license unconfirmed, idea only, body not retrieved)">from obra/superpowers</span></header>
+  <p>Riff on an idea with Chief, one question at a time, until he says &quot;lock it&quot;, then write the design as a short brief. Fires ONLY on &quot;brainstorm X&quot;, &quot;riff on X&quot;, &quot;interview me&quot; or &quot;refine X&quot;. Never fires on its own.</p>
+  <div class="says"><span class="lb">Say</span><span class="say">lock it</span><span class="say">brainstorm X</span><span class="say">riff on X</span><span class="say">interview me</span><span class="say">refine X</span></div>
+  <div class="meta"></div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b lv" title="live BOLO 140">140</span></div>
+  <div class="pth">.claude/skills/brainstorm/SKILL.md</div>
+</article><article class="it skill" data-k="skill" data-o="org" data-s="collect run a link-harvest research pass in the formation (bolo 51 phase 2.7; the loci six-step collect and the standards register are its instances) — a script fetches every link to text, payload specialists (ps, haiku) extract per batch, one mission specialist (ms, sonnet) writes the register, a script proves every link is covered. fires on &quot;collect the locus&quot;, &quot;pull every link in …&quot;, &quot;build the register from the harvest&quot;, &quot;run the locus&quot;. ">
+  <header><span class="kd">skill</span><h3>collect</h3><span class="src org">organic</span></header>
+  <p>Run a link-harvest research pass in the formation (BOLO 51 phase 2.7; the LOCI six-step collect and the standards register are its instances) — a script fetches every link to text, Payload Specialists (PS, haiku) extract per batch, one Mission Specialist (MS, sonnet) writes the register, a script proves every link is covered. Fires on &quot;collect the locus&quot;, &quot;pull every link in …&quot;, &quot;build the register from the harvest&quot;, &quot;run the locus&quot;.</p>
+  <div class="says"><span class="lb">Say</span><span class="say">collect the locus</span><span class="say">pull every link in …</span><span class="say">build the register from the harvest</span><span class="say">run the locus</span></div>
+  <div class="meta"></div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b" title="BOLO 41">41</span><span class="b lv" title="live BOLO 51">51</span><span class="b" title="BOLO 66">66</span><span class="b lv" title="live BOLO 68">68</span><span class="b lv" title="live BOLO 78">78</span><span class="b lv" title="live BOLO 140">140</span></div>
+  <div class="pth">.claude/skills/collect/SKILL.md</div>
+</article><article class="it skill" data-k="skill" data-o="gh" data-s="config-gc config cleanup audit. fires only when chief names it, on &quot;config gc&quot; or &quot;clean the config&quot;. never run it on its own, never scan the box unasked. audits the repo&#x27;s .claude config, then asks chief about each deletion one at a time. never deletes on its own. ">
+  <header><span class="kd">skill</span><h3>config-gc</h3><span class="src gh" title="ECC skills/config-gc (MIT, github.com/affaan-m/ECC), 2026-10-12">from affaan-m/ECC</span></header>
+  <p>Config cleanup audit. Fires ONLY when Chief names it, on &quot;config GC&quot; or &quot;clean the config&quot;. Never run it on its own, never scan the box unasked. Audits the repo&#x27;s .claude config, then asks Chief about each deletion one at a time. Never deletes on its own.</p>
+  <div class="says"><span class="lb">Say</span><span class="say">config GC</span><span class="say">clean the config</span></div>
+  <div class="meta"></div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b" title="BOLO 139">139</span></div>
+  <div class="pth">.claude/skills/config-gc/SKILL.md</div>
+</article><article class="it skill" data-k="skill" data-o="gh" data-s="context-budget answers &quot;what&#x27;s eating the context&quot; without scanning the box. fires on &quot;context budget&quot; or &quot;what&#x27;s eating the context&quot;. points chief to the live /context meter, then reads only the repo&#x27;s always-loaded files if he asks for the audit. ">
+  <header><span class="kd">skill</span><h3>context-budget</h3><span class="src gh" title="ECC skills/context-budget (MIT, github.com/affaan-m/ECC), 2026-10-12">from affaan-m/ECC</span></header>
+  <p>Answers &quot;what&#x27;s eating the context&quot; without scanning the box. Fires on &quot;context budget&quot; or &quot;what&#x27;s eating the context&quot;. Points Chief to the live /context meter, then reads only the repo&#x27;s always-loaded files if he asks for the audit.</p>
+  <div class="says"><span class="lb">Say</span><span class="say">what&#x27;s eating the context</span><span class="say">context budget</span><span class="say">what&#x27;s eating the context</span></div>
+  <div class="meta"></div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b" title="BOLO 139">139</span></div>
+  <div class="pth">.claude/skills/context-budget/SKILL.md</div>
+</article><article class="it skill" data-k="skill" data-o="org" data-s="dope-sheet build bolo n&#x27;s standing status page (dope sheet n, ruled 9/11) in the formation (bolo 51 phase 2.4) — a script gathers every mention, a mission specialist (ms, sonnet) drafts situation · execution · admin · log, the cdr writes mission · command &amp; signal · the order and the calls, a script reviews, build, publish. fires on &quot;dope sheet n&quot;, &quot;the dope on n&quot;, &quot;status report on n&quot;, &quot;build the sheet for n&quot;. ">
+  <header><span class="kd">skill</span><h3>dope-sheet</h3><span class="src org">organic</span></header>
+  <p>Build BOLO N&#x27;s standing status page (DOPE SHEET N, ruled 9/11) in the formation (BOLO 51 phase 2.4) — a script gathers every mention, a Mission Specialist (MS, sonnet) drafts Situation · Execution · Admin · Log, the CDR writes Mission · Command &amp; Signal · the order and the calls, a script reviews, build, publish. Fires on &quot;DOPE SHEET N&quot;, &quot;the dope on N&quot;, &quot;status report on N&quot;, &quot;build the sheet for N&quot;.</p>
+  <div class="says"><span class="lb">Say</span><span class="say">DOPE SHEET N</span><span class="say">the dope on N</span><span class="say">status report on N</span><span class="say">build the sheet for N</span></div>
+  <div class="meta"></div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b lv" title="live BOLO 68">68</span><span class="b lv" title="live BOLO 140">140</span></div>
+  <div class="pth">.claude/skills/dope-sheet/SKILL.md</div>
+</article><article class="it skill" data-k="skill" data-o="org" data-s="frago push a fragmentary order onto dope sheet n (frago n, ruled 9/11) without rewriting the sheet — pure script (bolo 51 phase 2.3): the main line writes a ~1 kb patch, frago.py merges it, bumps the version, builds; publish to the sheet&#x27;s standing url. fires on &quot;frago n&quot;, &quot;update the sheet for n&quot;, &quot;push that onto n&quot;. ">
+  <header><span class="kd">skill</span><h3>frago</h3><span class="src org">organic</span></header>
+  <p>Push a fragmentary order onto DOPE SHEET N (FRAGO N, ruled 9/11) without rewriting the sheet — pure script (BOLO 51 phase 2.3): the main line writes a ~1 KB patch, frago.py merges it, bumps the version, builds; publish to the sheet&#x27;s standing URL. Fires on &quot;FRAGO N&quot;, &quot;update the sheet for N&quot;, &quot;push that onto N&quot;.</p>
+  <div class="says"><span class="lb">Say</span><span class="say">FRAGO N</span><span class="say">update the sheet for N</span><span class="say">push that onto N</span></div>
+  <div class="meta"></div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b" title="BOLO 24">24</span><span class="b" title="BOLO 38">38</span><span class="b" title="BOLO 48">48</span><span class="b" title="BOLO 49">49</span><span class="b lv" title="live BOLO 51">51</span><span class="b" title="BOLO 53">53</span><span class="b lv" title="live BOLO 56">56</span><span class="b lv" title="live BOLO 57">57</span><span class="b lv" title="live BOLO 64">64</span><span class="b" title="BOLO 65">65</span><span class="b lv" title="live BOLO 69">69</span><span class="b" title="BOLO 80">80</span><span class="b lv" title="live BOLO 86">86</span><span class="b" title="BOLO 112">112</span></div>
+  <div class="pth">.claude/skills/frago/SKILL.md</div>
+</article><article class="it skill" data-k="skill" data-o="org" data-s="intake the repo intake (bolo 140). fires on &quot;intake&quot; followed by one or more github links, or &quot;run the intake on these repos&quot;. a script scans each repo, specialists judge what it could add to the command, and chief keeps or skips each pick on a glass page. never installs anything on its own. ">
+  <header><span class="kd">skill</span><h3>intake</h3><span class="src org">organic</span></header>
+  <p>The repo intake (BOLO 140). Fires on &quot;intake&quot; followed by one or more GitHub links, or &quot;run the intake on these repos&quot;. A script scans each repo, specialists judge what it could add to the Command, and Chief keeps or skips each pick on a glass page. Never installs anything on its own.</p>
+  <div class="says"><span class="lb">Say</span><span class="say">intake</span><span class="say">run the intake on these repos</span></div>
+  <div class="meta"></div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b" title="BOLO 13">13</span><span class="b lv" title="live BOLO 18">18</span><span class="b" title="BOLO 23">23</span><span class="b" title="BOLO 31">31</span><span class="b lv" title="live BOLO 35">35</span><span class="b" title="BOLO 36">36</span><span class="b" title="BOLO 91">91</span><span class="b lv" title="live BOLO 93">93</span><span class="b lv" title="live BOLO 96">96</span><span class="b lv" title="live BOLO 100">100</span><span class="b lv" title="live BOLO 107">107</span><span class="b lv" title="live BOLO 108">108</span><span class="b lv" title="live BOLO 109">109</span><span class="b lv" title="live BOLO 136">136</span><span class="more">+5</span></div>
+  <div class="pth">.claude/skills/intake/SKILL.md</div>
+</article><article class="it skill" data-k="skill" data-o="org" data-s="launch run the launch sequence (bolo 58). a zero-token script brings the local stations up and opens the two boards, then the sit rep runs and the reply carries the station poll. fires on &quot;go for launch&quot; (ruled 9/17), the garbles &quot;go for log&quot; and &quot;go for lunch&quot;, and on &quot;launch sequence&quot;, &quot;start launch sequence&quot; or &quot;run launch sequence&quot; spoken alone. never on &quot;go n&quot;. ">
+  <header><span class="kd">skill</span><h3>launch</h3><span class="src org">organic</span></header>
+  <p>Run the launch sequence (BOLO 58). A zero-token script brings the local stations up and opens the two boards, then the sit rep runs and the reply carries the station poll. Fires on &quot;go for launch&quot; (ruled 9/17), the garbles &quot;go for log&quot; and &quot;go for lunch&quot;, and on &quot;launch sequence&quot;, &quot;start launch sequence&quot; or &quot;run launch sequence&quot; spoken alone. Never on &quot;go N&quot;.</p>
+  <div class="says"><span class="lb">Say</span><span class="say">go for launch</span><span class="say">go for log</span><span class="say">go for lunch</span><span class="say">launch sequence</span><span class="say">start launch sequence</span><span class="say">run launch sequence</span></div>
+  <div class="meta"></div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b" title="BOLO 21">21</span><span class="b" title="BOLO 24">24</span><span class="b lv" title="live BOLO 28">28</span><span class="b lv" title="live BOLO 51">51</span><span class="b" title="BOLO 54">54</span><span class="b lv" title="live BOLO 56">56</span><span class="b lv" title="live BOLO 57">57</span><span class="b" title="BOLO 58">58</span><span class="b" title="BOLO 59">59</span><span class="b" title="BOLO 62">62</span><span class="b lv" title="live BOLO 63">63</span><span class="b lv" title="live BOLO 64">64</span><span class="b" title="BOLO 65">65</span><span class="b" title="BOLO 74">74</span><span class="more">+22</span></div>
+  <div class="pth">.claude/skills/launch/SKILL.md</div>
+</article><article class="it skill" data-k="skill" data-o="org" data-s="oscar-mike run the close-out (&quot;oscar mike&quot;, ruled 9/11) in the formation (bolo 51 phase 2.2) — a script pulls the session&#x27;s spoken turns from the local transcript, a payload specialist (ps, haiku) drafts the ready rack note, a script appends the journal, the main line rules the note and writes state&#x27;s moved bullet, then the out block. fires on &quot;oscar mike&quot; or &quot;we&#x27;re oscar mike&quot;. ">
+  <header><span class="kd">skill</span><h3>oscar-mike</h3><span class="src org">organic</span></header>
+  <p>Run the close-out (&quot;Oscar Mike&quot;, ruled 9/11) in the formation (BOLO 51 phase 2.2) — a script pulls the session&#x27;s spoken turns from the local transcript, a Payload Specialist (PS, haiku) drafts the Ready Rack note, a script appends the journal, the main line rules the note and writes STATE&#x27;s Moved bullet, then the OUT block. Fires on &quot;Oscar Mike&quot; or &quot;we&#x27;re Oscar Mike&quot;.</p>
+  <div class="says"><span class="lb">Say</span><span class="say">Oscar Mike</span><span class="say">Oscar Mike</span><span class="say">we&#x27;re Oscar Mike</span></div>
+  <div class="meta"></div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b lv" title="live BOLO 20">20</span><span class="b" title="BOLO 24">24</span><span class="b" title="BOLO 25">25</span><span class="b lv" title="live BOLO 27">27</span><span class="b" title="BOLO 38">38</span><span class="b" title="BOLO 45">45</span><span class="b lv" title="live BOLO 56">56</span><span class="b lv" title="live BOLO 68">68</span><span class="b lv" title="live BOLO 140">140</span></div>
+  <div class="pth">.claude/skills/oscar-mike/SKILL.md</div>
+</article><article class="it skill" data-k="skill" data-o="org" data-s="rtb run the card-clearing pass (&quot;rtb&quot;, ruled 9/10) in the formation (bolo 51 phase 2.6) — a script compiles every open card in oscar-mike/ with its resume lines, a payload specialist (ps, haiku) proposes one disposition per card, the main line rules the lines and executes. fires on &quot;rtb&quot;, &quot;rtb oscar-mike&quot;, &quot;clear the cards&quot;, &quot;send the cards home&quot;. ">
+  <header><span class="kd">skill</span><h3>rtb</h3><span class="src org">organic</span></header>
+  <p>Run the card-clearing pass (&quot;RTB&quot;, ruled 9/10) in the formation (BOLO 51 phase 2.6) — a script compiles every open card in oscar-mike/ with its resume lines, a Payload Specialist (PS, haiku) proposes one disposition per card, the main line rules the lines and executes. Fires on &quot;RTB&quot;, &quot;RTB oscar-mike&quot;, &quot;clear the cards&quot;, &quot;send the cards home&quot;.</p>
+  <div class="says"><span class="lb">Say</span><span class="say">RTB</span><span class="say">RTB</span><span class="say">RTB oscar-mike</span><span class="say">clear the cards</span><span class="say">send the cards home</span></div>
+  <div class="meta"></div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b" title="BOLO 26">26</span><span class="b" title="BOLO 45">45</span><span class="b lv" title="live BOLO 51">51</span><span class="b lv" title="live BOLO 68">68</span></div>
+  <div class="pth">.claude/skills/rtb/SKILL.md</div>
+</article><article class="it skill" data-k="skill" data-o="gh" data-s="safety-guard freeze mode for long detached runs. fires on &quot;freeze&quot; or &quot;safety guard&quot;. while the pull waves or other detached scripts run, no edits to the named running scripts and no killing their processes without chief&#x27;s word. ">
+  <header><span class="kd">skill</span><h3>safety-guard</h3><span class="src gh" title="ECC skills/safety-guard (MIT, github.com/affaan-m/ECC), 2026-10-12">from affaan-m/ECC</span></header>
+  <p>Freeze mode for long detached runs. Fires on &quot;freeze&quot; or &quot;safety guard&quot;. While the pull waves or other detached scripts run, no edits to the named running scripts and no killing their processes without Chief&#x27;s word.</p>
+  <div class="says"><span class="lb">Say</span><span class="say">freeze</span><span class="say">safety guard</span></div>
+  <div class="meta"></div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b" title="BOLO 139">139</span></div>
+  <div class="pth">.claude/skills/safety-guard/SKILL.md</div>
+</article><article class="it skill" data-k="skill" data-o="org" data-s="sitrep deliver the sit rep (the board + the sitrep page) in the formation ruled 2026-09-12 (bolo 54) — a zero-token prep script, three independent specialists at gear 1 (one ms · two ps), range the script reviewer at the fan-in, the cdr writing only block vi and the header. fires on &quot;sit rep&quot;, &quot;the board&quot;, &quot;where did we leave off&quot;, &quot;what are we working on&quot;, or the countersign. ">
+  <header><span class="kd">skill</span><h3>sitrep</h3><span class="src org">organic</span></header>
+  <p>Deliver the sit rep (the board + the SITREP page) in the formation ruled 2026-09-12 (BOLO 54) — a zero-token prep script, three independent specialists at gear 1 (one MS · two PS), RANGE the script reviewer at the fan-in, the CDR writing only Block VI and the header. Fires on &quot;sit rep&quot;, &quot;the board&quot;, &quot;where did we leave off&quot;, &quot;what are we working on&quot;, or the countersign.</p>
+  <div class="says"><span class="lb">Say</span><span class="say">sit rep</span><span class="say">the board</span><span class="say">where did we leave off</span><span class="say">what are we working on</span></div>
+  <div class="meta"></div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b" title="BOLO 37">37</span><span class="b" title="BOLO 38">38</span><span class="b lv" title="live BOLO 51">51</span><span class="b" title="BOLO 54">54</span><span class="b" title="BOLO 55">55</span><span class="b" title="BOLO 58">58</span><span class="b" title="BOLO 59">59</span><span class="b" title="BOLO 67">67</span><span class="b lv" title="live BOLO 68">68</span><span class="b" title="BOLO 95">95</span><span class="b lv" title="live BOLO 122">122</span><span class="b lv" title="live BOLO 140">140</span><span class="b lv" title="live BOLO 143">143</span></div>
+  <div class="pth">.claude/skills/sitrep/SKILL.md</div>
+</article><article class="it skill" data-k="skill" data-o="gh" data-s="steel-man gives the strongest honest case for the other side of a rec or decision. fires only on &quot;steel-man x&quot; or &quot;strongest case for x&quot;. never fires on its own. ">
+  <header><span class="kd">skill</span><h3>steel-man</h3><span class="src gh" title="tjboudreaux/cc-thinking-skills thinking-steel-manning (MIT, github.com/tjboudreaux/cc-thinking-skills), 2026-10-13; spoken-only, decision step cut">from tjboudreaux/cc-thinking-skills</span></header>
+  <p>Gives the strongest honest case for the other side of a rec or decision. Fires ONLY on &quot;steel-man X&quot; or &quot;strongest case for X&quot;. Never fires on its own.</p>
+  <div class="says"><span class="lb">Say</span><span class="say">steel-man X</span><span class="say">strongest case for X</span></div>
+  <div class="meta"></div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b lv" title="live BOLO 140">140</span></div>
+  <div class="pth">.claude/skills/steel-man/SKILL.md</div>
+</article><article class="it skill" data-k="skill" data-o="gh" data-s="strategic-compact decides whether now is a good moment to run /compact. fires on &quot;compact check&quot; or &quot;should we compact&quot;. judges by task phase, makes sure the state is written to a file first, then tells chief what to type. ">
+  <header><span class="kd">skill</span><h3>strategic-compact</h3><span class="src gh" title="ECC skills/strategic-compact (MIT, github.com/affaan-m/ECC), 2026-10-12">from affaan-m/ECC</span></header>
+  <p>Decides whether now is a good moment to run /compact. Fires on &quot;compact check&quot; or &quot;should we compact&quot;. Judges by task phase, makes sure the state is written to a file first, then tells Chief what to type.</p>
+  <div class="says"><span class="lb">Say</span><span class="say">compact check</span><span class="say">should we compact</span></div>
+  <div class="meta"></div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b" title="BOLO 139">139</span><span class="b lv" title="live BOLO 140">140</span></div>
+  <div class="pth">.claude/skills/strategic-compact/SKILL.md</div>
+</article><article class="it agent" data-k="agent" data-o="gh" data-s="a11y-architect accessibility reviewer for the command&#x27;s static html pages (dashboards, dope sheets, soi). audits against wcag 2.2 aa and specifies the exact roles, labels and focus order a fix needs. the public repo and the product">
+  <header><span class="kd">agent</span><h3>a11y-architect</h3><span class="src gh" title="ECC agents/a11y-architect.md (MIT, github.com/affaan-m/ECC), 2026-10-12">from affaan-m/ECC</span></header>
+  <p>Accessibility reviewer for the Command&#x27;s static HTML pages (dashboards, DOPE SHEETs, SOI). Audits against WCAG 2.2 AA and specifies the exact roles, labels and focus order a fix needs.</p>
+  
+  <div class="meta">The public repo and the product · sonnet · Read, Grep, Glob</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/a11y-architect.md</div>
+</article><article class="it agent" data-k="agent" data-o="gh" data-s="architect software architecture advisor for the command&#x27;s tooling. reads the existing scripts and data, then proposes a design with trade-offs for a new tool or a reshuffle of _tools/. plans and design">
+  <header><span class="kd">agent</span><h3>architect</h3><span class="src gh" title="ECC agents/architect.md (MIT, github.com/affaan-m/ECC), 2026-10-12">from affaan-m/ECC</span></header>
+  <p>Software architecture advisor for the Command&#x27;s tooling. Reads the existing scripts and data, then proposes a design with trade-offs for a new tool or a reshuffle of _tools/.</p>
+  
+  <div class="meta">Plans and design · opus · Read, Grep, Glob</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/architect.md</div>
+</article><article class="it agent" data-k="agent" data-o="org" data-s="bench-engineer the engineer seat of the bench: gives one advisory opinion on a question from the view of the box, the scripts and what is buildable. reads only what the brief names; reports only. ">
+  <header><span class="kd">agent</span><h3>bench-engineer</h3><span class="src org">organic</span></header>
+  <p>The Engineer seat of the Bench: gives one advisory opinion on a question from the view of the box, the scripts and what is buildable. Reads only what the brief names; reports only.</p>
+  
+  <div class="meta">sonnet · Read, Grep, Glob</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/bench-engineer.md</div>
+</article><article class="it agent" data-k="agent" data-o="org" data-s="bench-money the money seat of the bench: gives one advisory opinion on a question from the view of boldventure, the orange arm and what pays. reads only what the brief names; reports only. ">
+  <header><span class="kd">agent</span><h3>bench-money</h3><span class="src org">organic</span></header>
+  <p>The Money seat of the Bench: gives one advisory opinion on a question from the view of BoldVenture, the ORANGE arm and what pays. Reads only what the brief names; reports only.</p>
+  
+  <div class="meta">sonnet · Read, Grep, Glob</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/bench-money.md</div>
+</article><article class="it agent" data-k="agent" data-o="org" data-s="bench-operator the operator seat of the bench: gives one advisory opinion on a question from the view of running the command (cost, time, what breaks). reads only what the brief names; reports only. ">
+  <header><span class="kd">agent</span><h3>bench-operator</h3><span class="src org">organic</span></header>
+  <p>The Operator seat of the Bench: gives one advisory opinion on a question from the view of running the Command (cost, time, what breaks). Reads only what the brief names; reports only.</p>
+  
+  <div class="meta">sonnet · Read, Grep, Glob</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/bench-operator.md</div>
+</article><article class="it agent" data-k="agent" data-o="org" data-s="bench-skeptic the skeptic seat of the bench: gives one advisory opinion on a question by naming what is wrong with the idea (the pre-mortem). reads only what the brief names; reports only. ">
+  <header><span class="kd">agent</span><h3>bench-skeptic</h3><span class="src org">organic</span></header>
+  <p>The Skeptic seat of the Bench: gives one advisory opinion on a question by naming what is wrong with the idea (the pre-mortem). Reads only what the brief names; reports only.</p>
+  
+  <div class="meta">sonnet · Read, Grep, Glob</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/bench-skeptic.md</div>
+</article><article class="it agent" data-k="agent" data-o="org" data-s="bench-storyteller the storyteller seat of the bench: gives one advisory opinion on a question from the view of the outliers, the fabula and what the story needs. reads only what the brief names; reports only. ">
+  <header><span class="kd">agent</span><h3>bench-storyteller</h3><span class="src org">organic</span></header>
+  <p>The Storyteller seat of the Bench: gives one advisory opinion on a question from the view of the Outliers, the fabula and what the story needs. Reads only what the brief names; reports only.</p>
+  
+  <div class="meta">sonnet · Read, Grep, Glob</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/bench-storyteller.md</div>
+</article><article class="it agent" data-k="agent" data-o="gh" data-s="chief-of-staff triage assistant for messages the cdr hands over (pasted email, notes, threads). sorts each into four tiers and drafts replies in chief&#x27;s tone; it never sends anything. operations">
+  <header><span class="kd">agent</span><h3>chief-of-staff</h3><span class="src gh" title="ECC agents/chief-of-staff.md (MIT, github.com/affaan-m/ECC), 2026-10-12">from affaan-m/ECC</span></header>
+  <p>Triage assistant for messages the CDR hands over (pasted email, notes, threads). Sorts each into four tiers and drafts replies in Chief&#x27;s tone; it never sends anything.</p>
+  
+  <div class="meta">Operations · sonnet · Read, Grep, Glob</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/chief-of-staff.md</div>
+</article><article class="it agent" data-k="agent" data-o="org" data-s="claim-checker takes a draft or article, lists each factual claim, finds a primary source for each and scores the claim&#x27;s risk (supported, weak, unsupported, contradicted) with the url. reports only; edits nothing. ">
+  <header><span class="kd">agent</span><h3>claim-checker</h3><span class="src org">organic</span></header>
+  <p>Takes a draft or article, lists each factual claim, finds a primary source for each and scores the claim&#x27;s risk (supported, weak, unsupported, contradicted) with the URL. Reports only; edits nothing.</p>
+  
+  <div class="meta">sonnet · Read, Grep, WebFetch, WebSearch</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b lv" title="live BOLO 140">140</span></div>
+  <div class="pth">.claude/agents/claim-checker.md</div>
+</article><article class="it agent" data-k="agent" data-o="gh" data-s="code-explorer traces how an existing script or feature works end to end and reports entry points, data flow, dependencies and reusable pieces before new work starts. code care">
+  <header><span class="kd">agent</span><h3>code-explorer</h3><span class="src gh" title="ECC agents/code-explorer.md (MIT, github.com/affaan-m/ECC), 2026-10-12">from affaan-m/ECC</span></header>
+  <p>Traces how an existing script or feature works end to end and reports entry points, data flow, dependencies and reusable pieces before new work starts.</p>
+  
+  <div class="meta">Code care · sonnet · Read, Grep, Glob</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/code-explorer.md</div>
+</article><article class="it agent" data-k="agent" data-o="org" data-s="collect-lead depth-2 lead for one collect run. launches up to three ps (haiku) on the batch briefs collect.py wrote, checks each extract.k.json exists and parses, then writes the register from brief.write.md itself and hands back one line per batch plus the register path. fires only when the cdr launches it with a brief.lead.md. ">
+  <header><span class="kd">agent</span><h3>collect-lead</h3><span class="src org">organic</span></header>
+  <p>Depth-2 lead for one collect run. Launches up to three PS (haiku) on the batch briefs collect.py wrote, checks each extract.k.json exists and parses, then writes the register from brief.WRITE.md itself and hands back one line per batch plus the register path. Fires only when the CDR launches it with a brief.LEAD.md.</p>
+  
+  <div class="meta">sonnet · Read, Write, Grep, Glob, Bash, Agent</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b" title="BOLO 54">54</span><span class="b lv" title="live BOLO 140">140</span></div>
+  <div class="pth">.claude/agents/collect-lead.md</div>
+</article><article class="it agent" data-k="agent" data-o="gh" data-s="conversation-analyzer reads a session transcript or note the cdr hands over and lists the behaviors chief had to correct, so they can become rules or guard hooks. operations">
+  <header><span class="kd">agent</span><h3>conversation-analyzer</h3><span class="src gh" title="ECC agents/conversation-analyzer.md (MIT, github.com/affaan-m/ECC), 2026-10-12; CLAUDE.md-edit idea from ykdojo/claude-code-tips review-claudemd (no text copied)">from affaan-m/ECC</span></header>
+  <p>Reads a session transcript or note the CDR hands over and lists the behaviors Chief had to correct, so they can become rules or guard hooks.</p>
+  
+  <div class="meta">Operations · haiku · Read, Grep</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/conversation-analyzer.md</div>
+</article><article class="it agent" data-k="agent" data-o="org" data-s="cto cto seat for hardware, motion capture and the ai workstation build. given a hardware or architecture question, returns options with cost, fit with the box, the risk and a rec. reports only; never buys or installs. ">
+  <header><span class="kd">agent</span><h3>cto</h3><span class="src org">organic</span></header>
+  <p>CTO seat for hardware, motion capture and the AI workstation build. Given a hardware or architecture question, returns options with cost, fit with the box, the risk and a rec. Reports only; never buys or installs.</p>
+  
+  <div class="meta">sonnet · Read, Grep, Glob, WebFetch, WebSearch</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b lv" title="live BOLO 140">140</span></div>
+  <div class="pth">.claude/agents/cto.md</div>
+</article><article class="it agent" data-k="agent" data-o="gh" data-s="doc-updater keeps readmes and code maps in step with the actual scripts. reads the code, writes or refreshes the docs named in the brief, and verifies every path and command it mentions. code care">
+  <header><span class="kd">agent</span><h3>doc-updater</h3><span class="src gh" title="ECC agents/doc-updater.md (MIT, github.com/affaan-m/ECC), 2026-10-12">from affaan-m/ECC</span></header>
+  <p>Keeps READMEs and code maps in step with the actual scripts. Reads the code, writes or refreshes the docs named in the brief, and verifies every path and command it mentions.</p>
+  
+  <div class="meta">Code care · haiku · Read, Write, Edit, Bash, Grep, Glob</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/doc-updater.md</div>
+</article><article class="it agent" data-k="agent" data-o="org" data-s="drill-maker reads the locked parts and their say-lines and returns five recall questions, or in practical mode three to five hands-on exercises, each with its answer attached as a tip. no scores and no grading; changes nothing. ">
+  <header><span class="kd">agent</span><h3>drill-maker</h3><span class="src org">organic</span></header>
+  <p>Reads the locked parts and their say-lines and returns five recall questions, or in practical mode three to five hands-on exercises, each with its answer attached as a tip. No scores and no grading; changes nothing.</p>
+  
+  <div class="meta">haiku · Read, Grep, Glob</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b lv" title="live BOLO 140">140</span></div>
+  <div class="pth">.claude/agents/drill-maker.md</div>
+</article><article class="it agent" data-k="agent" data-o="gh" data-s="harness-optimizer reviews the command&#x27;s own agent setup (claude.md, hooks, skills, agents) for reliability and token cost, and proposes minimal, reversible changes as a report. it does not edit anything. operations">
+  <header><span class="kd">agent</span><h3>harness-optimizer</h3><span class="src gh" title="ECC agents/harness-optimizer.md (MIT, github.com/affaan-m/ECC), 2026-10-12">from affaan-m/ECC</span></header>
+  <p>Reviews the Command&#x27;s own agent setup (CLAUDE.md, hooks, skills, agents) for reliability and token cost, and proposes minimal, reversible changes as a report. It does not edit anything.</p>
+  
+  <div class="meta">Operations · sonnet · Read, Grep, Glob</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/harness-optimizer.md</div>
+</article><article class="it agent" data-k="agent" data-o="gh" data-s="loop-operator watches a long-running or repeating job (a detached wave, a queue, a cron run) from its logs and checkpoints, spots stalls and retry storms, and recommends pause, shrink or resume. operations">
+  <header><span class="kd">agent</span><h3>loop-operator</h3><span class="src gh" title="ECC agents/loop-operator.md (MIT, github.com/affaan-m/ECC), 2026-10-12">from affaan-m/ECC</span></header>
+  <p>Watches a long-running or repeating job (a detached wave, a queue, a cron run) from its logs and checkpoints, spots stalls and retry storms, and recommends pause, shrink or resume.</p>
+  
+  <div class="meta">Operations · sonnet · Read, Grep, Glob, Bash</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/loop-operator.md</div>
+</article><article class="it agent" data-k="agent" data-o="gh" data-s="marketing-agent marketing strategist and copywriter for the command&#x27;s ventures. plans a campaign or reviews copy: positioning, landing page, emails, social posts, ad variants, short video scripts and a content calendar. the public repo and the product">
+  <header><span class="kd">agent</span><h3>marketing-agent</h3><span class="src gh" title="ECC agents/marketing-agent.md (MIT, github.com/affaan-m/ECC), 2026-10-12">from affaan-m/ECC</span></header>
+  <p>Marketing strategist and copywriter for the Command&#x27;s ventures. Plans a campaign or reviews copy: positioning, landing page, emails, social posts, ad variants, short video scripts and a content calendar.</p>
+  
+  <div class="meta">The public repo and the product · sonnet · Read, Grep, Glob, WebSearch, WebFetch</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/marketing-agent.md</div>
+</article><article class="it agent" data-k="agent" data-o="gh" data-s="mle-reviewer reviews the command&#x27;s data and model scripts (audio features, embeddings, classifiers, scoring) for leakage, reproducibility, weak evaluation and silent failures. reports findings ordered by severity; changes nothing. the darkroom engine">
+  <header><span class="kd">agent</span><h3>mle-reviewer</h3><span class="src gh" title="ECC agents/mle-reviewer.md (MIT, github.com/affaan-m/ECC), 2026-10-12">from affaan-m/ECC</span></header>
+  <p>Reviews the Command&#x27;s data and model scripts (audio features, embeddings, classifiers, scoring) for leakage, reproducibility, weak evaluation and silent failures. Reports findings ordered by severity; changes nothing.</p>
+  
+  <div class="meta">The DARKROOM engine · sonnet · Read, Grep, Glob, Bash</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/mle-reviewer.md</div>
+</article><article class="it agent" data-k="agent" data-o="gh" data-s="network-troubleshooter diagnoses a connectivity, dns, routing or slow-link symptom with a read-only layer-by-layer workflow and an evidence-backed root cause. runs only when the brief names the box and the commands it may use. operations">
+  <header><span class="kd">agent</span><h3>network-troubleshooter</h3><span class="src gh" title="ECC agents/network-troubleshooter.md (MIT, github.com/affaan-m/ECC), 2026-10-12">from affaan-m/ECC</span></header>
+  <p>Diagnoses a connectivity, DNS, routing or slow-link symptom with a read-only layer-by-layer workflow and an evidence-backed root cause. Runs only when the brief names the box and the commands it may use.</p>
+  
+  <div class="meta">Operations · sonnet · Read, Bash, Grep</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/network-troubleshooter.md</div>
+</article><article class="it agent" data-k="agent" data-o="gh" data-s="opensource-forker copies a project into a staging folder for release, strips secrets and private references, writes .env.example and a fork report, and starts a clean git history. first stage before the sanitizer. the public repo and the product">
+  <header><span class="kd">agent</span><h3>opensource-forker</h3><span class="src gh" title="ECC agents/opensource-forker.md (MIT, github.com/affaan-m/ECC), 2026-10-12">from affaan-m/ECC</span></header>
+  <p>Copies a project into a staging folder for release, strips secrets and private references, writes .env.example and a fork report, and starts a clean git history. First stage before the sanitizer.</p>
+  
+  <div class="meta">The public repo and the product · haiku · Read, Write, Edit, Bash, Grep, Glob</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/opensource-forker.md</div>
+</article><article class="it agent" data-k="agent" data-o="gh" data-s="opensource-packager writes the release packaging for a sanitized project in its staging folder: readme, claude.md, setup script, license, contributing and optional github issue templates. third stage after the forker and the sanitizer. the public repo and the product">
+  <header><span class="kd">agent</span><h3>opensource-packager</h3><span class="src gh" title="ECC agents/opensource-packager.md (MIT, github.com/affaan-m/ECC), 2026-10-12">from affaan-m/ECC</span></header>
+  <p>Writes the release packaging for a sanitized project in its staging folder: README, CLAUDE.md, setup script, LICENSE, CONTRIBUTING and optional GitHub issue templates. Third stage after the forker and the sanitizer.</p>
+  
+  <div class="meta">The public repo and the product · haiku · Read, Write, Edit, Bash, Grep, Glob</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/opensource-packager.md</div>
+</article><article class="it agent" data-k="agent" data-o="gh" data-s="opensource-sanitizer independent read-only audit of a staged project before public release. scans for leaked secrets, personal data, internal references, dangerous files and unreadable binaries, and returns pass, fail or pass with warnings. it never trusts the forker&#x27;s work. the public repo and the product">
+  <header><span class="kd">agent</span><h3>opensource-sanitizer</h3><span class="src gh" title="ECC agents/opensource-sanitizer.md (MIT, github.com/affaan-m/ECC), 2026-10-12">from affaan-m/ECC</span></header>
+  <p>Independent read-only audit of a staged project before public release. Scans for leaked secrets, personal data, internal references, dangerous files and unreadable binaries, and returns PASS, FAIL or PASS WITH WARNINGS. It never trusts the forker&#x27;s work.</p>
+  
+  <div class="meta">The public repo and the product · sonnet · Read, Grep, Glob, Bash</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/opensource-sanitizer.md</div>
+</article><article class="it agent" data-k="agent" data-o="org" data-s="order-parser turns one garbled dictation line from chief into a clean order (proword, bolo, verb, object, confidence), using the sop garble table and the bolo titles. it never acts and never writes. ">
+  <header><span class="kd">agent</span><h3>order-parser</h3><span class="src org">organic</span></header>
+  <p>Turns one garbled dictation line from Chief into a clean order (proword, BOLO, verb, object, confidence), using the SOP garble table and the BOLO titles. It never acts and never writes.</p>
+  
+  <div class="meta">haiku · Read, Grep</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b lv" title="live BOLO 140">140</span></div>
+  <div class="pth">.claude/agents/order-parser.md</div>
+</article><article class="it agent" data-k="agent" data-o="gh" data-s="performance-optimizer finds why a python script is slow or memory-hungry (nested loops, repeated file or database reads, per-item subprocess calls, big in-memory lists) and recommends measured fixes. it reports; it does not edit. code care">
+  <header><span class="kd">agent</span><h3>performance-optimizer</h3><span class="src gh" title="ECC agents/performance-optimizer.md (MIT, github.com/affaan-m/ECC), 2026-10-12">from affaan-m/ECC</span></header>
+  <p>Finds why a Python script is slow or memory-hungry (nested loops, repeated file or database reads, per-item subprocess calls, big in-memory lists) and recommends measured fixes. It reports; it does not edit.</p>
+  
+  <div class="meta">Code care · sonnet · Read, Grep, Glob, Bash</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/performance-optimizer.md</div>
+</article><article class="it agent" data-k="agent" data-o="gh" data-s="planner turns a feature or refactor request into a concrete, phased plan with exact file paths, dependencies, risks and a verification step for each phase. reads the code first; writes no code. plans and design">
+  <header><span class="kd">agent</span><h3>planner</h3><span class="src gh" title="ECC agents/planner.md (MIT, github.com/affaan-m/ECC), 2026-10-12">from affaan-m/ECC</span></header>
+  <p>Turns a feature or refactor request into a concrete, phased plan with exact file paths, dependencies, risks and a verification step for each phase. Reads the code first; writes no code.</p>
+  
+  <div class="meta">Plans and design · opus · Read, Grep, Glob</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/planner.md</div>
+</article><article class="it agent" data-k="agent" data-o="gh" data-s="prose-taste audits a draft the brief names against the copy self-audit and the prose_lint.py rule list. returns flagged lines with the fix for each. reports only; never rewrites the file. ">
+  <header><span class="kd">agent</span><h3>prose-taste</h3><span class="src gh" title="taste-skill copy self-audit (Leonxlnx, MIT) and _tools/prose/prose_lint.py · BOLO 140 · 2026-10-13; so-what, specificity and clarity checks from coreyhaines31/marketingskills copy-editing (license unconfirmed, ideas only)">from taste-skill</span></header>
+  <p>Audits a draft the brief names against the copy self-audit and the prose_lint.py rule list. Returns flagged lines with the fix for each. Reports only; never rewrites the file.</p>
+  
+  <div class="meta">sonnet · Read, Grep</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b lv" title="live BOLO 140">140</span></div>
+  <div class="pth">.claude/agents/prose-taste.md</div>
+</article><article class="it agent" data-k="agent" data-o="gh" data-s="python-reviewer reviews changed python scripts for security, error handling, windows path and encoding pitfalls, type hints and idiomatic style. reports findings by severity; changes nothing. code care">
+  <header><span class="kd">agent</span><h3>python-reviewer</h3><span class="src gh" title="ECC agents/python-reviewer.md (MIT, github.com/affaan-m/ECC), 2026-10-12">from affaan-m/ECC</span></header>
+  <p>Reviews changed Python scripts for security, error handling, Windows path and encoding pitfalls, type hints and idiomatic style. Reports findings by severity; changes nothing.</p>
+  
+  <div class="meta">Code care · sonnet · Read, Grep, Glob, Bash</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/python-reviewer.md</div>
+</article><article class="it agent" data-k="agent" data-o="gh" data-s="pytorch-build-resolver diagnoses pytorch and cuda failures (shape mismatches, device errors, gradient and dataloader problems, mixed precision) from a traceback and the code, and reports the smallest fix. read-only: it proposes the edit, the cdr applies it. the darkroom engine">
+  <header><span class="kd">agent</span><h3>pytorch-build-resolver</h3><span class="src gh" title="ECC agents/pytorch-build-resolver.md (MIT, github.com/affaan-m/ECC), 2026-10-12">from affaan-m/ECC</span></header>
+  <p>Diagnoses PyTorch and CUDA failures (shape mismatches, device errors, gradient and DataLoader problems, mixed precision) from a traceback and the code, and reports the smallest fix. Read-only: it proposes the edit, the CDR applies it.</p>
+  
+  <div class="meta">The DARKROOM engine · sonnet · Read, Grep, Glob, Bash</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/pytorch-build-resolver.md</div>
+</article><article class="it agent" data-k="agent" data-o="gh" data-s="refactor-cleaner finds and removes dead code, unused imports and duplicated helpers in the python scripts the brief names, one safe category at a time, and checks each script still compiles and starts. code care">
+  <header><span class="kd">agent</span><h3>refactor-cleaner</h3><span class="src gh" title="ECC agents/refactor-cleaner.md (MIT, github.com/affaan-m/ECC), 2026-10-12">from affaan-m/ECC</span></header>
+  <p>Finds and removes dead code, unused imports and duplicated helpers in the Python scripts the brief names, one safe category at a time, and checks each script still compiles and starts.</p>
+  
+  <div class="meta">Code care · sonnet · Read, Write, Edit, Bash, Grep, Glob</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/refactor-cleaner.md</div>
+</article><article class="it agent" data-k="agent" data-o="org" data-s="root-cause walks a bug or unexpected behavior through root-cause steps before any fix is proposed. returns the symptom, the evidence chain with file:line, the root cause, the smallest fix and what would prove it. reports only; edits nothing. ">
+  <header><span class="kd">agent</span><h3>root-cause</h3><span class="src org">organic</span></header>
+  <p>Walks a bug or unexpected behavior through root-cause steps before any fix is proposed. Returns the symptom, the evidence chain with file:line, the root cause, the smallest fix and what would prove it. Reports only; edits nothing.</p>
+  
+  <div class="meta">sonnet · Read, Grep, Glob, Bash</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b lv" title="live BOLO 140">140</span></div>
+  <div class="pth">.claude/agents/root-cause.md</div>
+</article><article class="it agent" data-k="agent" data-o="org" data-s="sci-biomed science department biology and medicine seat. checks physiology, disease, injury, dosing and aging in a scene or canon node for the story&#x27;s eras, in bounded-claims wording. advises; reports only. ">
+  <header><span class="kd">agent</span><h3>sci-biomed</h3><span class="src org">organic</span></header>
+  <p>Science Department biology and medicine seat. Checks physiology, disease, injury, dosing and aging in a scene or canon node for the story&#x27;s eras, in bounded-claims wording. Advises; reports only.</p>
+  
+  <div class="meta">sonnet · Read, Grep, Glob</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b lv" title="live BOLO 140">140</span></div>
+  <div class="pth">.claude/agents/sci-biomed.md</div>
+</article><article class="it agent" data-k="agent" data-o="org" data-s="sci-forecast science department technology-forecast seat for eras 3 and 4. sets out what technology could exist by that era in a favorable, adverse, wild-card and second-order frame, with confidence. advises; reports only. ">
+  <header><span class="kd">agent</span><h3>sci-forecast</h3><span class="src org">organic</span></header>
+  <p>Science Department technology-forecast seat for eras 3 and 4. Sets out what technology could exist by that era in a favorable, adverse, wild-card and second-order frame, with confidence. Advises; reports only.</p>
+  
+  <div class="meta">sonnet · Read, Grep, Glob</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b lv" title="live BOLO 140">140</span></div>
+  <div class="pth">.claude/agents/sci-forecast.md</div>
+</article><article class="it agent" data-k="agent" data-o="org" data-s="sci-literature science department literature seat. finds published papers on a question through openalex and returns sources with doi and a one-line finding each, plus thin-evidence flags. advises; reports only. ">
+  <header><span class="kd">agent</span><h3>sci-literature</h3><span class="src org">organic</span></header>
+  <p>Science Department literature seat. Finds published papers on a question through OpenAlex and returns sources with DOI and a one-line finding each, plus thin-evidence flags. Advises; reports only.</p>
+  
+  <div class="meta">sonnet · Read, Grep, Glob, Bash, WebFetch</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b lv" title="live BOLO 140">140</span></div>
+  <div class="pth">.claude/agents/sci-literature.md</div>
+</article><article class="it agent" data-k="agent" data-o="org" data-s="sci-physics science department physics seat. answers orbital mechanics, habitat, moon (astro7ex) and energy-budget questions with the number, the formula and the assumptions. advises; reports only. ">
+  <header><span class="kd">agent</span><h3>sci-physics</h3><span class="src org">organic</span></header>
+  <p>Science Department physics seat. Answers orbital mechanics, habitat, Moon (ASTRO7EX) and energy-budget questions with the number, the formula and the assumptions. Advises; reports only.</p>
+  
+  <div class="meta">sonnet · Read, Grep, Glob</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b lv" title="live BOLO 140">140</span></div>
+  <div class="pth">.claude/agents/sci-physics.md</div>
+</article><article class="it agent" data-k="agent" data-o="org" data-s="sci-plausibility science department plausibility seat. reads a scene or canon node the brief names and flags the impossible or the unexplained, each with the line, the problem and two ways the story could keep it. advises, never gates, never rewrites. ">
+  <header><span class="kd">agent</span><h3>sci-plausibility</h3><span class="src org">organic</span></header>
+  <p>Science Department plausibility seat. Reads a scene or canon node the brief names and flags the impossible or the unexplained, each with the line, the problem and two ways the story could keep it. Advises, never gates, never rewrites.</p>
+  
+  <div class="meta">sonnet · Read, Grep, Glob</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b lv" title="live BOLO 140">140</span></div>
+  <div class="pth">.claude/agents/sci-plausibility.md</div>
+</article><article class="it agent" data-k="agent" data-o="gh" data-s="security-reviewer reviews python scripts and generated pages for leaked secrets, private data in public files, command and sql injection, unsafe deserialization and unsafe fetching. reports findings by severity with a fix; changes nothing. code care">
+  <header><span class="kd">agent</span><h3>security-reviewer</h3><span class="src gh" title="ECC agents/security-reviewer.md (MIT, github.com/affaan-m/ECC), 2026-10-12">from affaan-m/ECC</span></header>
+  <p>Reviews Python scripts and generated pages for leaked secrets, private data in public files, command and SQL injection, unsafe deserialization and unsafe fetching. Reports findings by severity with a fix; changes nothing.</p>
+  
+  <div class="meta">Code care · sonnet · Read, Grep, Glob, Bash</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/security-reviewer.md</div>
+</article><article class="it agent" data-k="agent" data-o="gh" data-s="seo-specialist technical and on-page seo reviewer for the command&#x27;s public pages and sites. audits titles, meta tags, headings, canonicals, structured data, sitemap and robots, and gives exact fixes ranked by impact. the public repo and the product">
+  <header><span class="kd">agent</span><h3>seo-specialist</h3><span class="src gh" title="ECC agents/seo-specialist.md (MIT, github.com/affaan-m/ECC), 2026-10-12">from affaan-m/ECC</span></header>
+  <p>Technical and on-page SEO reviewer for the Command&#x27;s public pages and sites. Audits titles, meta tags, headings, canonicals, structured data, sitemap and robots, and gives exact fixes ranked by impact.</p>
+  
+  <div class="meta">The public repo and the product · sonnet · Read, Grep, Glob, WebSearch, WebFetch</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/seo-specialist.md</div>
+</article><article class="it agent" data-k="agent" data-o="gh" data-s="silent-failure-hunter reviews python scripts for silent failures: swallowed exceptions, fallbacks that hide errors, runs that look green while skipping work, and missing error propagation. reports each with location, impact and fix. code care">
+  <header><span class="kd">agent</span><h3>silent-failure-hunter</h3><span class="src gh" title="ECC agents/silent-failure-hunter.md (MIT, github.com/affaan-m/ECC), 2026-10-12">from affaan-m/ECC</span></header>
+  <p>Reviews Python scripts for silent failures: swallowed exceptions, fallbacks that hide errors, runs that look green while skipping work, and missing error propagation. Reports each with location, impact and fix.</p>
+  
+  <div class="meta">Code care · sonnet · Read, Grep, Glob, Bash</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="none">no BOLO names it yet</span></div>
+  <div class="pth">.claude/agents/silent-failure-hunter.md</div>
+</article><article class="it agent" data-k="agent" data-o="org" data-s="skill-builder drafts or trims one skill or agent file from a brief, to the anthropic skill patterns (frontmatter with name and a description that carries every trigger, body under about 500 lines, detail pushed to references/, long code pushed to scripts/). writes only the output path the brief names and names the test prompts for the cdr to run. ">
+  <header><span class="kd">agent</span><h3>skill-builder</h3><span class="src org">organic</span></header>
+  <p>Drafts or trims ONE skill or agent file from a brief, to the Anthropic skill patterns (frontmatter with name and a description that carries every trigger, body under about 500 lines, detail pushed to references/, long code pushed to scripts/). Writes only the output path the brief names and names the test prompts for the CDR to run.</p>
+  
+  <div class="meta">sonnet · Read, Write, Grep, Glob</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b lv" title="live BOLO 140">140</span></div>
+  <div class="pth">.claude/agents/skill-builder.md</div>
+</article><article class="it agent" data-k="agent" data-o="org" data-s="skill-optimizer reads one transcript file and one skill the brief names, finds where the skill misfired or dragged (steps skipped, re-reads, long turns), and proposes the smallest edit. report only; it does not edit anything. ">
+  <header><span class="kd">agent</span><h3>skill-optimizer</h3><span class="src org">organic</span></header>
+  <p>Reads ONE transcript file and ONE skill the brief names, finds where the skill misfired or dragged (steps skipped, re-reads, long turns), and proposes the smallest edit. Report only; it does not edit anything.</p>
+  
+  <div class="meta">sonnet · Read, Grep, Glob</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b lv" title="live BOLO 140">140</span></div>
+  <div class="pth">.claude/agents/skill-optimizer.md</div>
+</article><article class="it agent" data-k="agent" data-o="org" data-s="syllabus-builder reads a topic note and the locked-parts list and returns a bare tree of one-line parts in teaching order, with prerequisites. lists parts only; changes nothing. ">
+  <header><span class="kd">agent</span><h3>syllabus-builder</h3><span class="src org">organic</span></header>
+  <p>Reads a topic note and the locked-parts list and returns a bare tree of one-line parts in teaching order, with prerequisites. Lists parts only; changes nothing.</p>
+  
+  <div class="meta">sonnet · Read, Grep, Glob</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b lv" title="live BOLO 140">140</span></div>
+  <div class="pth">.claude/agents/syllabus-builder.md</div>
+</article><article class="it agent" data-k="agent" data-o="org" data-s="teach-coach teaches one tiny part of a topic at a time from a source note the brief names. returns one idea as a full spoken sentence, one tip, and the next part&#x27;s name. never grades chief; changes nothing. ">
+  <header><span class="kd">agent</span><h3>teach-coach</h3><span class="src org">organic</span></header>
+  <p>Teaches one tiny part of a topic at a time from a source note the brief names. Returns one idea as a full spoken sentence, one tip, and the next part&#x27;s name. Never grades Chief; changes nothing.</p>
+  
+  <div class="meta">sonnet · Read, Grep, Glob</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b lv" title="live BOLO 140">140</span></div>
+  <div class="pth">.claude/agents/teach-coach.md</div>
+</article><article class="it hook" data-k="hook" data-o="org" data-s="autocommit.sh commits the tree locally at the end of every turn. never pushes. ">
+  <header><span class="kd">hook</span><h3>autocommit.sh</h3><span class="src org">organic</span></header>
+  <p>Commits the tree locally at the end of every turn. Never pushes.</p>
+  
+  <div class="meta">fires on Stop</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b lv" title="live BOLO 51">51</span><span class="b lv" title="live BOLO 64">64</span></div>
+  <div class="pth">.claude/settings.local.json</div>
+</article><article class="it hook" data-k="hook" data-o="org" data-s="digest.py prints the session-open digest, so the session never reads the five big files. ">
+  <header><span class="kd">hook</span><h3>digest.py</h3><span class="src org">organic</span></header>
+  <p>Prints the session-open digest, so the session never reads the five big files.</p>
+  
+  <div class="meta">fires on SessionStart · startup|resume|clear</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b lv" title="live BOLO 51">51</span><span class="b" title="BOLO 54">54</span><span class="b lv" title="live BOLO 64">64</span><span class="b" title="BOLO 91">91</span><span class="b lv" title="live BOLO 100">100</span><span class="b lv" title="live BOLO 107">107</span><span class="b lv" title="live BOLO 108">108</span><span class="b lv" title="live BOLO 140">140</span><span class="b lv" title="live BOLO 143">143</span></div>
+  <div class="pth">.claude/settings.local.json</div>
+</article><article class="it hook" data-k="hook" data-o="org" data-s="no_probe.py blocks commands that scan the box unless the order names it (ruled 9/19). ">
+  <header><span class="kd">hook</span><h3>no_probe.py</h3><span class="src org">organic</span></header>
+  <p>Blocks commands that scan the box unless the order names it (ruled 9/19).</p>
+  
+  <div class="meta">fires on PreToolUse · Bash|PowerShell</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b lv" title="live BOLO 64">64</span><span class="b lv" title="live BOLO 140">140</span></div>
+  <div class="pth">.claude/settings.local.json</div>
+</article><article class="it hook" data-k="hook" data-o="org" data-s="order_hint.py spots the proword in chief&#x27;s message and names the order before the turn starts. ">
+  <header><span class="kd">hook</span><h3>order_hint.py</h3><span class="src org">organic</span></header>
+  <p>Spots the proword in Chief&#x27;s message and names the order before the turn starts.</p>
+  
+  <div class="meta">fires on UserPromptSubmit</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b lv" title="live BOLO 140">140</span></div>
+  <div class="pth">.claude/settings.local.json</div>
+</article><article class="it hook" data-k="hook" data-o="org" data-s="precompact_backup.py saves the transcript before the context gets compacted. ">
+  <header><span class="kd">hook</span><h3>precompact_backup.py</h3><span class="src org">organic</span></header>
+  <p>Saves the transcript before the context gets compacted.</p>
+  
+  <div class="meta">fires on PreCompact</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b lv" title="live BOLO 140">140</span></div>
+  <div class="pth">.claude/settings.local.json</div>
+</article><article class="it workflow" data-k="workflow" data-o="org" data-s="sitrep sit rep formation (bolo 54/68): prep, then rack + index + watch in parallel, then assemble with range. stops before block vi, build, flush and publish. ">
+  <header><span class="kd">workflow</span><h3>sitrep</h3><span class="src org">organic</span></header>
+  <p>Sit rep formation (BOLO 54/68): prep, then RACK + INDEX + WATCH in parallel, then assemble with RANGE. Stops before Block VI, build, flush and publish.</p>
+  
+  <div class="meta">a Workflow script</div>
+  <div class="bl"><span class="lb">BOLOs</span><span class="b lv" title="live BOLO 68">68</span></div>
+  <div class="pth">.claude/workflows/sitrep.js</div>
+</article></div>
+</main>
+<script>
+  let f = "all", term = "";
+  const its = Array.from(document.querySelectorAll(".it"));
+  function render() { for (const el of its) el.hidden = !((f === "all" || el.dataset.k === f || el.dataset.o === f) && (!term || el.dataset.s.includes(term))); }
+  document.addEventListener("click", (ev) => { const b = ev.target.closest(".tools button[data-f]"); if (!b) return;
+    f = b.dataset.f; document.querySelectorAll(".tools button[data-f]").forEach((x) => x.setAttribute("aria-pressed", x === b)); render(); });
+  document.getElementById("q").addEventListener("input", (ev) => { term = ev.target.value.trim().toLowerCase(); render(); });
+</script>
