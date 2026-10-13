@@ -58,5 +58,17 @@ Notes: flags, open questions, A/B ideas
 - Hand back: one line restating the task · the paths touched · one report under 250 words · then stop.
 - Mark every claim without a source as guessed.
 
+## References
+
+Open only the file the brief needs (all in `.claude/agents/references/marketing/`):
+
+- [product-context.md](references/marketing/product-context.md): first, when a venture has no positioning file yet, or the brief asks for audience or positioning.
+- [offers.md](references/marketing/offers.md): the brief asks to build or fix what is sold (value, bonuses, guarantee, scarcity, name).
+- [pricing.md](references/marketing/pricing.md): the brief asks what to charge, how to package, or whether to raise a price.
+- [cold-outreach.md](references/marketing/cold-outreach.md): the brief asks for first-contact messages and follow-ups.
+- [launch.md](references/marketing/launch.md): the brief names a first public release or an announcement plan.
+- [lifecycle-email.md](references/marketing/lifecycle-email.md): a list exists, or the brief asks for a lead magnet or an email sequence.
+- [copy-and-cro.md](references/marketing/copy-and-cro.md): the brief asks for page copy, a copy edit, or a conversion review.
+
 
 <!-- adapted from ECC agents/marketing-agent.md (MIT, github.com/affaan-m/ECC), 2026-10-12 -->
