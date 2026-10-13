@@ -267,7 +267,9 @@ function startPlaying(m){
 function wirePlay(root){
   root.querySelectorAll("[data-hover]").forEach(m=>{
     if(m.tagName==="IMG")freeze(m);
-    m.addEventListener("click",()=>{playing===m?stopPlaying():startPlaying(m);});
+    /* 10/13: a click on the picture only plays or stops it; picking the face is a click on its name or the tile's edge.
+       In pool-arming mode the click still goes to the tile, so building a pool works as before. */
+    m.addEventListener("click",e=>{if(armPool)return;e.stopPropagation();playing===m?stopPlaying():startPlaying(m);});
     m.addEventListener("focus",()=>startPlaying(m));
     m.addEventListener("blur",()=>{if(playing===m)stopPlaying();});
     m.addEventListener("keydown",e=>{if(e.key===" "||e.key==="Enter"){e.preventDefault();e.stopPropagation();playing===m?stopPlaying():startPlaying(m);}});
@@ -333,7 +335,7 @@ function renderLib(){
   $("#libCount").textContent=`${L.length} face${L.length===1?"":"s"} · ${mb(L.reduce((a,i)=>a+i.size,0))}`;
   if(!libOpen){$("#grid").innerHTML="";return;}   /* closed: no tiles, no decoders */
   if(!L.length){$("#grid").innerHTML=`<div class="empty">The library is empty. Drop some faces above.</div>`;return;}
-  $("#grid").innerHTML=L.map(i=>`<div class="tile${sel===i.name?" sel":""}" data-name="${esc(i.name)}" title="click, then click a slot">
+  $("#grid").innerHTML=L.map(i=>`<div class="tile${sel===i.name?" sel":""}" data-name="${esc(i.name)}" title="click the picture to play it · click the name to pick it, then click a slot">
     <div class="well">${stillMedia(i.url,i.name)}</div>
     <div class="meta"><div>${esc(i.name)}</div><small>${mb(i.size)}${i.slots.length?" · on "+i.slots.join(", "):""}</small></div>
     <div class="acts">${STATES.map(s=>`<button class="k${(i.pools||[]).includes(s)?" on":""}" data-k="${s}" title="${(i.pools||[]).includes(s)?"take out of":"add to"} the ${s} pool">${KEY[s]}</button>`).join("")}
