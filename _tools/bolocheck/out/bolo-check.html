@@ -36,6 +36,11 @@
   .pill{font:500 10.5px/1 var(--mono);letter-spacing:.1em;padding:3px 6px;border-radius:3px;border:0}
   .g-hot{background:var(--accent-soft);color:var(--accent-ink)} .g-held{background:#2E2A10;color:var(--warn)} .g-gated{background:#14262E;color:#7FC4D8} .g-open{background:var(--panel-2);color:var(--ink-2)}
   .b p{margin:0 0 6px;max-width:72ch;overflow-wrap:anywhere}
+  .three{list-style:none;margin:0 0 8px;padding:0;display:grid;gap:4px;max-width:74ch}
+  .three li{display:grid;grid-template-columns:120px minmax(0,1fr);gap:10px;padding-left:10px;border-left:2px solid var(--line)}
+  .three li:first-child{border-left-color:var(--accent)}
+  .three .lb{font:500 10.5px/1.9 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+  @media (max-width:620px){.three li{grid-template-columns:minmax(0,1fr);gap:0}}
   .why{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;font-size:14px;color:var(--ink-2)}
   .rec{font:500 11px var(--mono);letter-spacing:.06em;padding:1px 6px;border-radius:3px;white-space:nowrap}
   .rec.live{color:var(--good);border:1px solid var(--good)} .rec.cosmo{color:var(--cosmo);border:1px solid var(--cosmo)} .rec.none{color:var(--ink-3);border:1px dashed var(--line)}
@@ -63,12 +68,12 @@
     <p><b>✓ LIVE BOLO.</b> In the rotation. "What next" pulls only from these.</p>
     <p><b>✗ COSMOLINE</b> (provisional). Packed for storage the way Marines pack a rifle in cosmoline grease: out of the rotation, kept whole, ready to unpack. It stays on BOLO.md; it just stops coming up.</p>
     <p>Bench for the X word: COSMOLINE (rec) · MOTHBALL · FOOTLOCKER · DEADLINE. Say the one you want.</p>
-    <p>Built Oct 13, 5:30 AM from the 10/13 sit rep's BOLO board. 33 of 98 recs say live.</p>
+    <p>Built Oct 13, 5:32 AM from the 10/13 sit rep's BOLO board. 33 of 98 recs say live.</p>
   </div></details>
 </header>
 <div class="bar"><i class="l" id="barL" style="width:0%"></i><i class="c" id="barC" style="width:0%"></i></div>
 <main class="wrap">
-  <p class="lede">Every open BOLO, 98 of them. Each row says where it stands and what it waits on, then my rec. Press ✓ to keep it <button type='button' class='t'>live<span class='tip' role='tooltip'><b>Live BOLO</b>In the rotation. When we pick what to work on next, we pick from the live list only.</span></button> or ✗ to <button type='button' class='t'>cosmoline<span class='tip' role='tooltip'><b>Cosmoline</b>Out of the rotation and in storage. Still on BOLO.md, still whole, back on your word.</span></button> it. Press it again to undo. <b>Take all recs</b> fills every row you have not called; BOLO 83 has no rec and stays yours.</p>
+  <p class="lede">Every open BOLO, 98 of them. Each row gives the mission, where it stands and the next step, then my rec. Press ✓ to keep it <button type='button' class='t'>live<span class='tip' role='tooltip'><b>Live BOLO</b>In the rotation. When we pick what to work on next, we pick from the live list only.</span></button> or ✗ to <button type='button' class='t'>cosmoline<span class='tip' role='tooltip'><b>Cosmoline</b>Out of the rotation and in storage. Still on BOLO.md, still whole, back on your word.</span></button> it. Press it again to undo. <b>Take all recs</b> fills every row you have not called; BOLO 83 has no rec and stays yours.</p>
   <p id="noDb" hidden>Calls are not saving: the page could not reach its store. Your clicks show here but will not reach the CDR.</p>
   <div class="filters" role="group" aria-label="Show">
     <button type="button" data-f="all" aria-pressed="true">All 98</button>

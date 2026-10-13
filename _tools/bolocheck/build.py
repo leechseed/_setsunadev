@@ -40,6 +40,9 @@ def main() -> int:
             n, r, why = ln.split("|", 2)
             recs[int(n)] = (r.strip(), why.strip())
     glossary = json.loads((ROOT / "_tools/sitrep/glossary.json").read_text(encoding="utf-8"))
+    ctx = {}                        # 10/13 (Chief: "one bullet ... the mission ... how far we are ... what the next step would do")
+    for f in sorted((HERE / "work").glob("out*.json")):
+        ctx.update({int(k): v for k, v in json.loads(f.read_text(encoding="utf-8")).items()})
     missing = [r["n"] for r in rows if r["n"] not in recs]
     assert not missing, f"no rec for BOLO {missing}"
 
@@ -58,6 +61,13 @@ def main() -> int:
         out.append(esc(t[last:]))
         return re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", "".join(out))
 
+    def three(n: int) -> str:
+        c = ctx.get(n)
+        if not c:
+            return ""
+        li = "".join(f'<li><span class="lb">{lab}</span>{esc(c.get(key, ""))}</li>' for key, lab in (("mission", "Mission"), ("progress", "Where it stands"), ("next", "Next step")))
+        return f'<ul class="three">{li}</ul>'
+
     items = []
     for r in sorted(rows, key=lambda r: r["n"]):
         title = r["title"] if r["title"] not in ("?", "") and not r["title"].startswith("🟢") else r["t"].split(":")[0]
@@ -74,7 +84,7 @@ def main() -> int:
       <div class="main">
         <h3>{esc(title)}</h3>
         <div class="meta"><button type="button" class="t pill g-{r['g']}">{g}<span class="tip" role="tooltip">{esc(gtip)}</span></button><span>{esc(r['trunk'])}</span><span>{esc(r.get('when') or r.get('issued') or '')}</span></div>
-        <p>{linkify(body)}</p>
+        {three(r['n']) or f'<p>{linkify(body)}</p>'}
         <div class="why">{mark}<span>{esc(why)}</span></div>
       </div>
       <div class="yn" role="group" aria-label="BOLO {r['n']}">
@@ -123,6 +133,11 @@ def main() -> int:
   .pill{{font:500 10.5px/1 var(--mono);letter-spacing:.1em;padding:3px 6px;border-radius:3px;border:0}}
   .g-hot{{background:var(--accent-soft);color:var(--accent-ink)}} .g-held{{background:#2E2A10;color:var(--warn)}} .g-gated{{background:#14262E;color:#7FC4D8}} .g-open{{background:var(--panel-2);color:var(--ink-2)}}
   .b p{{margin:0 0 6px;max-width:72ch;overflow-wrap:anywhere}}
+  .three{{list-style:none;margin:0 0 8px;padding:0;display:grid;gap:4px;max-width:74ch}}
+  .three li{{display:grid;grid-template-columns:120px minmax(0,1fr);gap:10px;padding-left:10px;border-left:2px solid var(--line)}}
+  .three li:first-child{{border-left-color:var(--accent)}}
+  .three .lb{{font:500 10.5px/1.9 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}}
+  @media (max-width:620px){{.three li{{grid-template-columns:minmax(0,1fr);gap:0}}}}
   .why{{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;font-size:14px;color:var(--ink-2)}}
   .rec{{font:500 11px var(--mono);letter-spacing:.06em;padding:1px 6px;border-radius:3px;white-space:nowrap}}
   .rec.live{{color:var(--good);border:1px solid var(--good)}} .rec.cosmo{{color:var(--cosmo);border:1px solid var(--cosmo)}} .rec.none{{color:var(--ink-3);border:1px dashed var(--line)}}
@@ -155,7 +170,7 @@ def main() -> int:
 </header>
 <div class="bar"><i class="l" id="barL" style="width:0%"></i><i class="c" id="barC" style="width:0%"></i></div>
 <main class="wrap">
-  <p class="lede">Every open BOLO, {len(items)} of them. Each row says where it stands and what it waits on, then my rec. Press ✓ to keep it {"<button type='button' class='t'>live<span class='tip' role='tooltip'><b>Live BOLO</b>In the rotation. When we pick what to work on next, we pick from the live list only.</span></button>"} or ✗ to {"<button type='button' class='t'>cosmoline<span class='tip' role='tooltip'><b>Cosmoline</b>Out of the rotation and in storage. Still on BOLO.md, still whole, back on your word.</span></button>"} it. Press it again to undo. <b>Take all recs</b> fills every row you have not called; BOLO 83 has no rec and stays yours.</p>
+  <p class="lede">Every open BOLO, {len(items)} of them. Each row gives the mission, where it stands and the next step, then my rec. Press ✓ to keep it {"<button type='button' class='t'>live<span class='tip' role='tooltip'><b>Live BOLO</b>In the rotation. When we pick what to work on next, we pick from the live list only.</span></button>"} or ✗ to {"<button type='button' class='t'>cosmoline<span class='tip' role='tooltip'><b>Cosmoline</b>Out of the rotation and in storage. Still on BOLO.md, still whole, back on your word.</span></button>"} it. Press it again to undo. <b>Take all recs</b> fills every row you have not called; BOLO 83 has no rec and stays yours.</p>
   <p id="noDb" hidden>Calls are not saving: the page could not reach its store. Your clicks show here but will not reach the CDR.</p>
   <div class="filters" role="group" aria-label="Show">
     <button type="button" data-f="all" aria-pressed="true">All {len(items)}</button>
