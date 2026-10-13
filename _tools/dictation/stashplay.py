@@ -137,7 +137,8 @@ def launch(target, side="right"):
     no autoresize, then pinned borderless over that monitor. --no-one-instance lets both screens run at once."""
     p = subprocess.Popen([VLC, "--no-one-instance", "--qt-minimal-view", "--no-qt-video-autoresize", "--no-qt-fs-controller", "--play-and-exit",
                           "--no-video-title-show", target],
-                         stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                         stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, close_fds=True,
+                         creationflags=subprocess.DETACHED_PROCESS | subprocess.CREATE_NEW_PROCESS_GROUP)   # 10/13: VLC never rides on the caller's shell
     return _pin(p.pid, side)
 
 
