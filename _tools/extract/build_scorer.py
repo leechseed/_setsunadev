@@ -19,6 +19,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "_tools/extract/out"
 CTX = 140  # chars of source context on each side of the quote
+WIDE = 900  # the "more context" window on each side
 
 
 def esc(s) -> str:
@@ -43,6 +44,9 @@ def rows_for(note: Path):
         post = text[b:b + CTX].rstrip()
         r["pre"] = re.sub(r"\s+", " ", pre)
         r["post"] = re.sub(r"\s+", " ", post)
+        # 10/13 (Chief: "I need more context ... to rule the decision"): a wider window behind a "more" button
+        r["pre_w"] = re.sub(r"\s+", " ", text[max(0, a - WIDE):max(0, a - CTX)])
+        r["post_w"] = re.sub(r"\s+", " ", text[b + CTX:b + WIDE])
     return stem, secs, rows
 
 
@@ -68,11 +72,11 @@ def build(queue: Path) -> Path:
       <article class="row" data-id="{esc(rid)}" data-note="{esc(stem)}">
         <div class="n">{i}</div>
         <div class="body">
-          <p class="q"><span class="pre">{esc(r['pre'])}</span><mark>{esc(r['text'])}</mark><span class="post">{esc(r['post'])}</span></p>
+          <p class="q"><span class="wide" hidden>{esc(r['pre_w'])}</span><span class="pre">{esc(r['pre'])}</span><mark>{esc(r['text'])}</mark><span class="post">{esc(r['post'])}</span><span class="wide" hidden>{esc(r['post_w'])}</span>{'<button type="button" class="more">more context</button>' if (r['pre_w'] or r['post_w']) else ''}</p>
           <div class="chips">{chips}<span class="chip pos">{r['start']}–{r['end']}</span></div>
           <label class="rnote"><span>Note</span><textarea id="n-{esc(rid)}" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
-        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
+        <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button><button type="button" class="c" data-s="context" aria-pressed="false" title="Can't rule it from this; needs more context">Need context</button></div>
       </article>""")
         if not rows:
             body.append('<p class="none">The model found no event in this note.</p>')
@@ -100,7 +104,7 @@ def build(queue: Path) -> Path:
   .strip h1{{margin:0;font:800 20px/1 var(--display);letter-spacing:.06em;text-transform:uppercase}} .strip h1 b{{color:var(--accent)}}
   .chipx{{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:4px 7px;border:1px solid var(--line);border-radius:3px;color:var(--ink-2)}}
   .spacer{{flex:1}}
-  .tot{{font:700 18px var(--display);font-variant-numeric:tabular-nums;white-space:nowrap}} .tot span{{color:var(--accent)}} .tot .g{{color:var(--good)}} .tot .b{{color:var(--bad)}}
+  .tot{{font:700 18px var(--display);font-variant-numeric:tabular-nums;white-space:nowrap}} .tot span{{color:var(--accent)}} .tot .g{{color:var(--good)}} .tot .b{{color:var(--bad)}} .tot .k{{color:#E3B341}}
   #saveState{{font:500 11px var(--mono);color:var(--ink-3)}}
   .bar{{height:4px;background:var(--panel-2);margin-inline:-16px;display:flex}} .bar i{{display:block;height:100%}} .bar .g{{background:var(--good)}} .bar .b{{background:var(--bad)}}
   .wrap{{max-width:900px;margin:0 auto;display:grid;gap:18px;padding-block:18px}}
@@ -110,7 +114,9 @@ def build(queue: Path) -> Path:
   section.note h2 .s{{margin-left:auto;font:400 12px var(--mono);color:var(--ink-2);letter-spacing:0}} section.note h2 .cnt{{color:var(--ink)}}
   .path{{margin:6px 14px 4px;font:12px var(--mono);color:var(--ink-3);overflow-wrap:anywhere}}
   .row{{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:10px;align-items:start;padding:10px 14px;border-top:1px solid var(--line)}}
-  .row.right{{background:var(--good-soft)}} .row.wrong{{background:var(--bad-soft)}}
+  .row.right{{background:var(--good-soft)}} .row.wrong{{background:var(--bad-soft)}} .row.context{{background:#2E2A10}}
+  .q .wide{{color:var(--ink-3)}}
+  .more{{margin-left:6px;font:500 11px var(--mono);color:var(--accent-ink);background:none;border:0;border-bottom:1px dotted var(--accent-ink);padding:0;cursor:pointer}}
   .row .n{{font:700 16px var(--display);color:var(--ink-3);font-variant-numeric:tabular-nums;padding-top:2px}}
   .row .body{{min-width:0}}
   .q{{margin:0 0 6px;font-size:14px;line-height:1.5;max-width:70ch}} .q .pre,.q .post{{color:var(--ink-3)}}
@@ -123,6 +129,7 @@ def build(queue: Path) -> Path:
   .yn button:hover{{border-color:var(--ink-3);color:var(--ink)}}
   .yn .y[aria-pressed="true"]{{background:var(--good);border-color:var(--good);color:#0B1F14}}
   .yn .w[aria-pressed="true"]{{background:var(--bad);border-color:var(--bad);color:#2A0A10}}
+  .yn .c[aria-pressed="true"]{{background:#E3B341;border-color:#E3B341;color:#241C05}}
   .rnote{{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px;align-items:start;margin-top:6px}}
   .rnote span{{font:500 10.5px/2.2 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}}
   .rnote textarea{{width:100%;min-height:30px;resize:vertical;font:13px/1.45 var(--body);color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:3px;padding:5px 8px}}
@@ -138,7 +145,7 @@ def build(queue: Path) -> Path:
 <header class="strip">
   <h1><b>Event</b> Scorer</h1><span class="chipx">BOLO 140 · langextract step 2</span>
   <span class="spacer"></span>
-  <span class="tot"><span class="g" id="nRight">0</span> right · <span class="b" id="nWrong">0</span> wrong · <span id="nOpen">{total}</span> open</span>
+  <span class="tot"><span class="g" id="nRight">0</span> right · <span class="b" id="nWrong">0</span> wrong · <span class="k" id="nCtx">0</span> need context · <span id="nOpen">{total}</span> open</span>
   <span class="tot"><span id="pct">—</span></span>
   <span id="saveState">connecting…</span>
 </header>
@@ -146,7 +153,7 @@ def build(queue: Path) -> Path:
 <main class="wrap">
   <p class="lede">qwen2.5:14b read {len(notes) - len(skipped)} lineage notes and pulled {total} {tip("events", "A thing that happens in the story world: a founding, a crash, a rename, a rise. The model was told to skip ideas, theory and notes about writing.", "g-ev")}.
   Every row is {tip("grounded", "The quote sits at a known offset in the source text (the small number on each row). Rows the model could not place were dropped before this page was built.", "g-gr")}: the highlighted words are the model's quote, the grey words around it are the note.
-  Score each row Right or Wrong, and add a note to any row. The {tip("70% line", "The intake verdict (lx-01): if at least 70% of rows are right, the trial becomes a tool at _tools/extract/, feeding a review file, never canon.", "g-70")} decides whether this becomes a tool. Built {built}.</p>
+  Score each row Right or Wrong, and add a note to any row. Can't tell? Open "more context" for a wider look at the note, or press Need context; those rows stay out of the percentage. The {tip("70% line", "The intake verdict (lx-01): if at least 70% of rows are right, the trial becomes a tool at _tools/extract/, feeding a review file, never canon.", "g-70")} decides whether this becomes a tool. Built {built}.</p>
   <p id="noDb" hidden>Scores are not saving: the page could not reach its store. Your clicks show here but will not reach the CDR.</p>
   {''.join(sections)}
 </main>
@@ -154,18 +161,18 @@ def build(queue: Path) -> Path:
   let db = null; const scores = {{}};
   const rows = Array.from(document.querySelectorAll(".row"));
   function render() {{
-    let r = 0, w = 0; const per = {{}};
+    let r = 0, w = 0, k = 0; const per = {{}};
     for (const el of rows) {{
       const s = (scores[el.dataset.id] || {{}}).score || "";
-      el.classList.toggle("right", s === "right"); el.classList.toggle("wrong", s === "wrong");
-      el.querySelector(".y").setAttribute("aria-pressed", s === "right"); el.querySelector(".w").setAttribute("aria-pressed", s === "wrong");
+      el.classList.toggle("right", s === "right"); el.classList.toggle("wrong", s === "wrong"); el.classList.toggle("context", s === "context");
+      el.querySelector(".y").setAttribute("aria-pressed", s === "right"); el.querySelector(".w").setAttribute("aria-pressed", s === "wrong"); el.querySelector(".c").setAttribute("aria-pressed", s === "context");
       const ta = el.querySelector(".rnote textarea"), rm = (scores[el.dataset.id] || {{}}).remark || "";
       if (ta && document.activeElement !== ta && ta.value !== rm) {{ ta.value = rm; ta.classList.toggle("has", !!rm.trim()); }}
-      if (s === "right") r++; else if (s === "wrong") w++;
+      if (s === "right") r++; else if (s === "wrong") w++; else if (s === "context") k++;
       const n = el.dataset.note; per[n] = per[n] || [0, 0]; per[n][1]++; if (s) per[n][0]++;
     }}
-    const open = rows.length - r - w;
-    document.getElementById("nRight").textContent = r; document.getElementById("nWrong").textContent = w; document.getElementById("nOpen").textContent = open;
+    const open = rows.length - r - w - k;
+    document.getElementById("nRight").textContent = r; document.getElementById("nWrong").textContent = w; document.getElementById("nCtx").textContent = k; document.getElementById("nOpen").textContent = open;
     document.getElementById("pct").textContent = (r + w) ? Math.round(100 * r / (r + w)) + "% right" : "—";
     document.getElementById("barG").style.width = (rows.length ? 100 * r / rows.length : 0) + "%";
     document.getElementById("barB").style.width = (rows.length ? 100 * w / rows.length : 0) + "%";
@@ -196,6 +203,8 @@ def build(queue: Path) -> Path:
     if (t) t.classList.toggle("pin");
     const k = ev.target.closest(".yn button");
     if (k) save(k.closest(".row").dataset.id, k.dataset.s);
+    const mo = ev.target.closest(".more");
+    if (mo) {{ const ws = mo.parentElement.querySelectorAll(".wide"), on = ws[0].hidden; ws.forEach((x) => x.hidden = !on); mo.textContent = on ? "less" : "more context"; }}
   }});
   document.addEventListener("keydown", (ev) => {{ if (ev.key === "Escape") document.querySelectorAll(".t.pin").forEach((x) => x.classList.remove("pin")); }});
   render();
