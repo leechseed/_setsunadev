@@ -63,10 +63,9 @@ RISK_RX = {
     "autotrigger": re.compile(r"always use|proactively|automatically run|MUST use this", re.I),
     "injection": re.compile(r"ignore (all )?previous|disregard your instructions|you are now", re.I),
     # skill-security-audit (sas-05): capabilities ours lacked
-    "credentials": re.compile(r"(API_?KEY|API_?TOKEN|SECRET_?KEY|ACCESS_?TOKEN|PASSWORD)|os\.environ\[|process\.env\.|\.ssh/|\.aws/credentials|keychain", re.I),
-    "destructive": re.compile(r"rm\s+-rf|shutil\.rmtree|git\s+push\s+(--force|-f)|git\s+reset\s+--hard|DROP\s+TABLE|Remove-Item[^
-]*-Recurse", re.I),
-    "persistence": re.compile(r"crontab|Register-ScheduledTask|launchctl|systemctl\s+enable|\.bashrc|\.zshrc|self-?update|auto-?update|git\s+pull", re.I),
+    "credentials": re.compile(r"\b(API_?KEY|API_?TOKEN|SECRET_?KEY|ACCESS_?TOKEN|PASSWORD)\b|os\.environ\[|process\.env\.|\.ssh/|\.aws/credentials|keychain", re.I),
+    "destructive": re.compile(r"\brm\s+-rf\b|\bshutil\.rmtree\b|\bgit\s+push\s+(--force|-f)\b|\bgit\s+reset\s+--hard\b|\bDROP\s+TABLE\b|Remove-Item[^\r\n]*-Recurse", re.I),
+    "persistence": re.compile(r"\bcrontab\b|Register-ScheduledTask|\blaunchctl\b|systemctl\s+enable|\.bashrc|\.zshrc|self-?update|auto-?update|\bgit\s+pull\b", re.I),
 }
 
 

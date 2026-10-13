@@ -37,6 +37,8 @@ EXEC = re.compile(r"(\beval\(|\bexec\(|pickle\.loads|shell\s*=\s*True|curl[^\n|]
 DESTRUCT = re.compile(r"(rm\s+-rf|git\s+push\s+--force|git\s+push\s+-f\b)")
 SAFEOFF = re.compile(r"(--no-verify|--no-gpg-sign)")
 UNCAPPED = re.compile(r"\b(retry until|loop until|repeat until)\b", re.I)
+HARDPATH = re.compile(r"(?:[A-Za-z]:\\Users\\|/Users/\w+|/home/\w+)")
+PLATITUDE = re.compile(r"\b(remember that|it is important to|it's important to|always strive|best practices? (?:are|is)|high[- ]quality code|be careful to)\b", re.I)
 RULES_PHRASE = "Command rules"
 
 
@@ -146,6 +148,12 @@ def lint_file(path, kind, expect_name, root, out):
         add("WARN", "stale-date", f"hardcoded year phrase: '{DATE.search(body).group(0)}'")
     if AMBIGUOUS.search(body):
         add("WARN", "ambiguous-term", f"vague term '{AMBIGUOUS.search(body).group(0)}'")
+    if HARDPATH.search(body):
+        add("WARN", "hardcoded-path", f"user-specific path '{HARDPATH.search(body).group(0)}' (use a repo-relative path)")
+    if PLATITUDE.search(nofence):
+        add("WARN", "platitude", f"generic advice '{PLATITUDE.search(nofence).group(0)}' (state a concrete directive)")
+    if kind == "skill" and not re.search(r"\b(output|reply|prints?|writes?|returns?|report|hand[- ]?back)\b", body, re.I):
+        add("WARN", "no-output-format", "body never says what the skill produces")
     if INVISIBLE.search(text):
         add("ERROR", "invisible-chars", "zero-width / bidi / tag characters present")
     if UNPINNED.search(text):
@@ -210,3 +218,4 @@ if __name__ == "__main__":
     main()
 
 # adapted from anthropics/skills skill-creator (Apache-2.0) + SkillCheck-Free (MIT) · BOLO 140 · 2026-10-12
+# hardcoded-path, platitude, no-output-format added from skill-check (SkillCheck-Free, MIT, via sickn33/agentic-awesome-skills skills/skill-check) · BOLO 140 · 2026-10-13

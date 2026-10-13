@@ -75,6 +75,15 @@ def main():
         if not urls: unsourced.append((i + 1, st)); continue
         for u in urls:
             if norm(u) not in known: bad.append((i + 1, u))
+    # sas-11: provenance columns. If the register table header names any of them, it must name all three.
+    prov = ("source url", "fetched at", "quality")
+    for ln in lines:
+        low = ln.lower()
+        if ln.strip().startswith("|") and any(c in low for c in prov):
+            gone = [c for c in prov if c not in low]
+            if gone:
+                print("  ERROR   provenance header missing column(s): " + ", ".join(gone)); bad.append((0, "provenance"))
+            break
     print(f"  claims · {claims} claim line(s) · {len(bad)} URL(s) not in the manifest (error) · {len(unsourced)} unsourced line(s) (advisory)")
     for n, u in bad: print(f"  ERROR   line {n}: URL not in manifest: {u}")
     if unsourced:
@@ -85,3 +94,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+# provenance columns idea from wiki-builder (dair-ai/dair-academy-plugins, MIT, via sickn33/agentic-awesome-skills) · BOLO 140 · 2026-10-13
