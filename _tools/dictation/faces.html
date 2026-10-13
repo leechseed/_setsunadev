@@ -85,6 +85,23 @@
   .slot .pool b{color:var(--accent);font-weight:500;margin-right:4px}
   .slot .pool em{font-style:normal;color:var(--ink-2)}
 
+  /* pool strip (10/13): every pool member for the active profile, under each well */
+  .pstrip{display:flex;flex-wrap:wrap;gap:6px}
+  .pthumb{position:relative;width:56px;height:56px;border:1px solid var(--line-2);background:var(--panel-2);padding:0;overflow:hidden;cursor:pointer}
+  .pthumb img,.pthumb video{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
+  .pthumb:hover{border-color:var(--ink-3)}
+  .pthumb.cur{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+  .pthumb .x{position:absolute;top:0;right:0;width:20px;height:20px;line-height:18px;text-align:center;background:var(--bad-soft);color:var(--bad);
+    border-left:1px solid var(--bad);border-bottom:1px solid var(--bad);font-family:var(--mono);font-size:13px;opacity:0;transition:opacity .1s}
+  .pthumb:hover .x,.pthumb:focus-within .x{opacity:1}
+  .pthumb.gone{width:auto;padding:0 6px;font-family:var(--mono);font-size:10px;color:var(--ink-3)}
+  .padd{width:56px;height:56px;border:1px dashed var(--line-2);font-family:var(--mono);font-size:11px;color:var(--ink-2)}
+  .padd:hover,.padd.on{border-color:var(--accent);color:var(--accent)}
+  .padd.on{background:var(--accent-soft)}
+  .pbtn.save{border-color:var(--accent);color:var(--ink)}
+  #saveChip{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);white-space:nowrap}
+  #saveChip.ok{color:var(--good)}
+
   /* the library */
   .dropzone{border:1.5px dashed var(--line-2);background:var(--panel);padding:22px 16px;text-align:center;margin-bottom:14px;cursor:pointer;transition:border-color .12s}
   .dropzone.drop,.dropzone:hover{border-color:var(--accent);background:var(--accent-soft)}
@@ -134,6 +151,8 @@
   <span class="sp"></span>
   <span class="lbl">Attitude → profile</span>
   <span class="att" id="att"></span>
+  <button type="button" class="pbtn save" id="pSave" title="Everything saves as you click; this flushes the profile and tells JUDY to reload now.">Save</button>
+  <span id="saveChip" aria-live="polite"></span>
 </div>
 <main>
   <div class="bar">
@@ -166,12 +185,16 @@ let S={library:[],slots:{}}, sel=null, confirming=null, sig="";
 
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const mb=n=>n>=1048576?(n/1048576).toFixed(1)+" MB":Math.max(1,Math.round(n/1024))+" KB";
+const clock=()=>new Date().toLocaleTimeString("en-US",{hour:"numeric",minute:"2-digit"});
+function chip(kind){const c=$("#saveChip");if(!c)return;c.textContent=`${kind} · ${clock()}`;c.className=kind==="saved"?"ok":"";}
+let armPool=null;   /* the state whose pool the next library-tile click toggles */
 let tt; function toast(msg,bad){const t=$("#toast");t.textContent=msg;t.className="on"+(bad?" bad":"");clearTimeout(tt);tt=setTimeout(()=>t.className="",bad?5000:2200);}
 
 async function api(path,body){
   const r=await fetch(path,body?{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)}:{});
   const j=await r.json().catch(()=>({error:"bad reply"}));
   if(!r.ok||j.error){toast(j.error||("HTTP "+r.status),true);throw new Error(j.error);}
+  if(body&&/^\/api\/face\/(pool|assign)$/.test(path))chip("autosaved");
   return j;
 }
 const readFile=f=>new Promise((ok,no)=>{const fr=new FileReader();fr.onload=()=>ok(fr.result);fr.onerror=no;fr.readAsDataURL(f);});
@@ -221,6 +244,9 @@ function renderSlots(){
         <label title="include in Shuffle"><input type="checkbox" data-sh="${s}" ${shuffleOn[s]?"checked":""}>shuffle</label></div>
       <div class="well">${S.sfw&&v.sfw?media(v.sfw.url,v.sfw.file,`${s} face`):v.url?media(v.url,v.file,`${s} face`):`<span>empty · drop a file here</span>`}</div>
       <div class="file">${v.pick?`<b>${esc(v.pick)}</b>`:v.file?`<b>${esc(v.file)}</b> <span style="color:var(--ink-3)">· not in library</span>`:"—"}</div>
+      <div class="pstrip">${(v.pool||[]).map(n=>{const e=S.library.find(i=>i.name===n);
+        return e?`<div class="pthumb${v.pick===n?" cur":""}" data-pn="${esc(n)}" role="button" tabindex="0" title="${esc(n)} · click to show it now"><div style="width:100%;height:100%">${isVid(n)?`<video src="${e.url}#t=0.1" muted playsinline preload="metadata"></video>`:`<img src="${e.url}" alt="" loading="lazy">`}</div><span class="x" data-px="${esc(n)}" title="take out of the ${s} pool">×</span></div>`
+          :`<div class="pthumb gone" data-pn="${esc(n)}" title="${esc(n)} is not in the library">?<span class="x" data-px="${esc(n)}">×</span></div>`;}).join("")}<button type="button" class="padd${armPool===s?" on":""}" data-padd="${s}" title="${armPool===s?"armed: click library faces to add or remove them":"add faces to the "+s+" pool from the library"}">${armPool===s?"done":"+ add"}</button></div>
       <div class="pool">${(v.pool||[]).length>1?`<b>pool · ${v.pool.length}</b> JUDY picks one each time she goes ${s}`:`pool · ${(v.pool||[]).length} · add more with the <em>${KEY[s]}</em> button on a tile`}</div>
     </div>`;}).join("");
   $$(".slot").forEach(el=>{
@@ -234,6 +260,15 @@ function renderSlots(){
       await api("/api/face/assign",{slot,name:saved[0]}); toast(`${slot} ← ${saved[0]}`); refresh(true);
     });
     el.addEventListener("click",async e=>{
+      const px=e.target.closest("[data-px]"), pn=e.target.closest("[data-pn]"), pa=e.target.closest("[data-padd]");
+      if(px){e.stopPropagation();const name=px.dataset.px;
+        if(await api("/api/face/pool",{slot,name,on:false}).catch(()=>null))toast(`${name} out of the ${slot} pool`); return refresh(true);}
+      if(pn){e.stopPropagation();const name=pn.dataset.pn;
+        if(!S.library.some(i=>i.name===name))return;
+        if(await api("/api/face/assign",{slot,name}).catch(()=>null))toast(`${slot} ← ${name}`); return refresh(true);}
+      if(pa){e.stopPropagation();armPool=armPool===slot?null:slot;
+        $("#status").innerHTML=armPool?`<b>${slot}</b> pool armed · click library faces to add or remove them`:"JUDY picks up a swap within 2 seconds.";
+        return render();}
       if(e.target.closest("label")||!sel)return;
       const name=sel; sel=null;
       if(await api("/api/face/assign",{slot,name}).catch(()=>null))toast(`${slot} ← ${name}`); refresh(true);
@@ -243,6 +278,7 @@ function renderSlots(){
     try{localStorage.setItem("faceDeck.shuffle",JSON.stringify(shuffleOn));}catch(_){}});
 }
 
+const i_pools=n=>((S.library.find(i=>i.name===n)||{}).pools||[]);
 function renderLib(){
   const L=S.library;
   if(S.sfw){$("#libCount").textContent="hidden";$("#grid").innerHTML=`<div class="sfwnote">SFW is on. JUDY shows the four original faces. The library, slots and pools are untouched; press SFW again to bring them back.</div>`;return;}
@@ -262,6 +298,8 @@ function renderLib(){
     t.addEventListener("click",async e=>{
       const k=e.target.closest("[data-k]");
       if(k){e.stopPropagation();const s=k.dataset.k,on=!k.classList.contains("on");
+        if(await api("/api/face/pool",{slot:s,name,on}).catch(()=>null))toast(on?`${name} → ${s} pool`:`${name} out of the ${s} pool`);return refresh(true);}
+      if(armPool&&!e.target.closest("[data-del],[data-no],[data-yes]")){const s=armPool,on=!(i_pools(name).includes(s));
         if(await api("/api/face/pool",{slot:s,name,on}).catch(()=>null))toast(on?`${name} → ${s} pool`:`${name} out of the ${s} pool`);return refresh(true);}
       if(e.target.closest("[data-del]")){confirming=name;return renderLib();}
       if(e.target.closest("[data-no]")){confirming=null;return renderLib();}
@@ -287,6 +325,11 @@ function renderProfiles(){
 $("#profile").onchange=async()=>{
   const name=$("#profile").value;
   if(await api("/api/face/profile",{action:"switch",name}).catch(()=>null))toast(`profile → ${name} · JUDY switches within 2 seconds`);
+  refresh(true);
+};
+$("#pSave").onclick=async()=>{
+  const name=S.profile||$("#profile").value; if(!name)return;
+  if(await api("/api/face/profile",{action:"switch",name}).catch(()=>null)){chip("saved");toast(`saved · ${name} · JUDY reloads within 2 seconds`);}
   refresh(true);
 };
 $("#pNew").onclick=()=>askName(false);
@@ -362,7 +405,7 @@ $("#update").onclick=async()=>{
   sig=""; await refresh(true);
   toast(`up to date · ${S.library.length} faces in the library · JUDY picks up changes within 2 seconds`);
 };
-document.addEventListener("keydown",e=>{if(e.key==="Escape"){sel=null;confirming=null;render();}});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){sel=null;armPool=null;confirming=null;render();}});
 
 refresh(true);
 setInterval(()=>refresh(false),3000);   /* picks up swaps made from the console or another tab */
