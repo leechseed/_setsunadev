@@ -132,18 +132,50 @@ def _pin(pid, side="right", wait=15):
     return bool(found)
 
 
+def _place(pid, side="right", frac=0.5, wait=15):
+    """10/13 (Chief: "maybe a quarter size of my actual monitor so I can drag it around"): a normal framed window,
+    half the monitor's width and height (a quarter of its area), centered on that screen and brought to the front."""
+    import ctypes
+    import time
+    from ctypes import wintypes
+    u = ctypes.windll.user32
+    x0, y0, x1, y1 = _monitor(side)
+    w, h = int((x1 - x0) * frac), int((y1 - y0) * frac)
+    x, y = x0 + ((x1 - x0) - w) // 2, y0 + ((y1 - y0) - h) // 2
+    found = []
+    cb = ctypes.WINFUNCTYPE(ctypes.c_bool, wintypes.HWND, wintypes.LPARAM)
+
+    def each(hh, _):
+        q = wintypes.DWORD()
+        u.GetWindowThreadProcessId(hh, ctypes.byref(q))
+        if q.value == pid and u.IsWindowVisible(hh) and u.GetWindowTextLengthW(hh):
+            found.append(hh)
+        return True
+    end = time.time() + wait
+    while time.time() < end and not found:
+        time.sleep(0.3)
+        u.EnumWindows(cb(each), 0)
+    for hh in found:
+        u.ShowWindow(hh, 9)                                  # SW_RESTORE: out of any maximized state
+        u.SetWindowPos(hh, 0, x, y, w, h, 0x0040)            # SWP_SHOWWINDOW
+        u.SetForegroundWindow(hh)
+    return bool(found)
+
+
 def launch(target, side="right", pin=False):
     """Open VLC on one screen (right by default; Chief 10/12 two sets: "left" for the second): minimal view,
     no autoresize, then pinned borderless over that monitor. --no-one-instance lets both screens run at once."""
     # 10/13 (Chief: "run the VLC in a window so I can move it around"): a normal framed window by default;
     # pin=True brings back the borderless lay-over on one screen (10/12)
-    args = [VLC, "--no-one-instance", "--no-qt-video-autoresize", "--play-and-exit", "--no-video-title-show", target]
+    # 10/13 (Chief: "played in order and not repeated"): VLC's saved prefs carry random=1 and loop=1; override both
+    args = [VLC, "--no-one-instance", "--no-qt-video-autoresize", "--play-and-exit", "--no-video-title-show",
+            "--no-random", "--no-loop", "--no-repeat", target]
     if pin:
         args[2:2] = ["--qt-minimal-view", "--no-qt-fs-controller"]
     p = subprocess.Popen(args,
                          stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, close_fds=True,
                          creationflags=subprocess.DETACHED_PROCESS | subprocess.CREATE_NEW_PROCESS_GROUP)   # 10/13: VLC never rides on the caller's shell
-    return _pin(p.pid, side) if pin else True
+    return _pin(p.pid, side) if pin else _place(p.pid, side)
 
 
 def play(sc):
