@@ -274,7 +274,8 @@ $('#footR').textContent = `SOI · edition ${S.edition} · SOP.md is canonical on
 
 /* ---- numbering: section.index, alphabetical within section ---- */
 const bySec = {};
-S.sections.forEach(sec => { bySec[sec.n] = entries.filter(([k, g]) => g.k === sec.kind).sort((a, b) => a[1].t.localeCompare(b[1].t)); });
+/* 10/13 (Chief: "take all the retired … pro words … have it be a separate section … retired terms"): retired words leave their sections and sit together at the bottom */
+S.sections.forEach(sec => { bySec[sec.n] = entries.filter(([k, g]) => sec.kind === 'retired' ? g.st === 'retired' : (g.k === sec.kind && g.st !== 'retired')).sort((a, b) => a[1].t.localeCompare(b[1].t)); });
 const itemNo = {};
 S.sections.forEach(sec => (bySec[sec.n] || []).forEach(([k], i) => { itemNo[k] = `${sec.n}.${String(i + 1).padStart(2, '0')}`; }));
 const usedIn = {};
@@ -284,7 +285,7 @@ const firstLetter = t => { const c = t.replace(/^(the|a|an)\s+/i, '').trim()[0].
 /* ---- left rail ---- */
 $('#olRows').innerHTML = S.sections.map(sec => { const n = sec.kind === 'auth' ? S.auth.length : sec.kind === 'codebook' ? S.codebook.length : sec.kind === 'changes' ? S.changes.length : (bySec[sec.n] || []).length;
   return `<button class="ol-row" data-n="${sec.n}"><span class="name">${esc(sec.name)}</span><span class="cnt num">${n}</span></button>`; }).join('');
-$('#olFoot').innerHTML = `A ruled word is law.<br>Provisional: in use, unruled.<br>Benched: waits in the loop.<br>Retired: stays listed, struck.`;
+$('#olFoot').innerHTML = `A ruled word is law.<br>Provisional: in use, unruled.<br>Benched: waits in the loop.<br>Retired: moved to Retired terms, at the bottom.`;
 
 /* ---- entries ---- */
 function entHTML(k, g, showSec) {
@@ -303,9 +304,11 @@ let mode = 'sec';
 function renderBody() {
   if (mode === 'sec') $('#body').innerHTML = S.sections.map(secHTML).join('');
   else {
-    const all = entries.slice().sort((a, b) => a[1].t.replace(/^(the|a|an)\s+/i, '').localeCompare(b[1].t.replace(/^(the|a|an)\s+/i, '')));
+    const all = entries.filter(([k, g]) => g.st !== 'retired').sort((a, b) => a[1].t.replace(/^(the|a|an)\s+/i, '').localeCompare(b[1].t.replace(/^(the|a|an)\s+/i, '')));
     let out = '', last = '';
     all.forEach(([k, g]) => { const L = firstLetter(g.t); if (L !== last) { out += `<div class="letter" id="L-${L === '#' ? 'hash' : L}">${L}</div>`; last = L; } out += entHTML(k, g, true); });
+    const rsec = S.sections.find(x => x.kind === 'retired');
+    if (rsec && (bySec[rsec.n] || []).length) out += secHTML(rsec);
     $('#body').innerHTML = out;
   }
   const letters = new Set([...document.querySelectorAll('.ent')].map(e => e.dataset.letter));

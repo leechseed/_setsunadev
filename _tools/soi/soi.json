@@ -60,6 +60,12 @@
    "kind": "changes",
    "name": "Changes",
    "plain": "Every ruling that changed BREVITY, by date. This page deletes nothing; superseded words stay listed as retired."
+  },
+  {
+   "n": 10,
+   "kind": "retired",
+   "name": "Retired terms",
+   "plain": "Words the Command used and then dropped. Each one names what replaced it. They stay here so an old note still reads; nobody says them now."
   }
  ],
  "auth": [
@@ -165,6 +171,10 @@
   {
    "date": "2026-10-06",
    "t": "**[[traffic-deck|The Traffic Deck]]** ruled and put on the launch pad (the DECK station). **[[audit|AUDIT]]** now runs first at every launch (the AUDIT station)."
+  },
+  {
+   "date": "2026-10-13",
+   "t": "**Retired terms** split out (Chief: \"we don't need to keep them in the fucking list\"): every retired word leaves its section and the A–Z list and sits in one section at the bottom."
   }
  ],
  "reader": "Chief, and every Claude session",
