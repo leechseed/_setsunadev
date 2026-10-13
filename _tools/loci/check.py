@@ -21,24 +21,15 @@ def stamp_locus(name, wd, t0):
         if not loc.lower().endswith(".md") or not os.path.exists(loc): return
         tokens = run["batches"] * COST["ps_tokens_per_batch"] + COST["ms_tokens_per_register"]
         line = f"run: {datetime.date.today().isoformat()} · agents {run['agents']} · batches {run['batches']} · links {run['links']} · dead {run['dead']} · ~tokens {tokens}"
-        txt = io.open(loc, encoding="utf-8").read()
-        m = re.match(r"\A---?
-(.*?)?
----[ 	]*(?
-|\Z)", txt, re.S)
+        txt = io.open(loc, encoding="utf-8", newline="").read()
+        nl = "\r\n" if "\r\n" in txt else "\n"
+        m = re.match(r"\A---\r?\n(.*?)\r?\n---[ \t]*(\r?\n|\Z)", txt, re.S)
         if m:
             fm = m.group(1)
-            fm = re.sub(r"(?m)^run:.*$", lambda _: line, fm) if re.search(r"(?m)^run:", fm) else fm + "
-" + line
-            txt = "---
-" + fm + "
----" + m.group(2) + txt[m.end():]
+            fm = re.sub(r"(?m)^run:.*$", lambda _: line, fm) if re.search(r"(?m)^run:", fm) else fm + nl + line
+            txt = "---" + nl + fm + nl + "---" + m.group(2) + txt[m.end():]
         else:
-            txt = f"---
-{line}
----
-
-" + txt
+            txt = "---" + nl + line + nl + "---" + nl + nl + txt
         with io.open(loc, "w", encoding="utf-8", newline="") as f: f.write(txt)
         trace(wd, "check", run["batches"], run["links"], 1, time.time() - t0)
         print("  frontmatter · " + line)
