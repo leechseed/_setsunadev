@@ -20,6 +20,8 @@ Spec shape, plan phases with a check each, and the one-working-slice-at-a-time r
 
 ## Plan format
 
+For anything over three tasks, use `.claude/agents/references/plan-template.md` (Global Constraints, an Interfaces block per task, the proportion check).
+
 ```markdown
 # Plan: [name]
 ## Overview (2-3 sentences)
