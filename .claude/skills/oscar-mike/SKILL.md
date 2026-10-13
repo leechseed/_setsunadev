@@ -51,6 +51,14 @@ python _tools/oscarmike/stage_next.py
 
 Writes `_tools/launch/next.json`: the leverage line from the newest board, every DOPE SHEET touched today, and the note's Open-at-close bullets. `launch.py` reads it and FRAGOs each named sheet before the boards open. Run it after H3, before the OUT block.
 
+## Verify before done
+
+The close claims only what a fresh command proved this turn. Before the OUT block, run the proving command for each claim (the file exists, the journal line is there, the commit landed, lint reads 0 errors), read its output, then write the claim. A claim with no command run this turn is left out or marked unchecked.
+
+## Lessons
+
+One bullet per correction Chief made this session, written into the note under its own heading. Each bullet: what I did, what he corrected, the rule in one line. Three or more of the same kind become a memory or SOP candidate (SOP spit rule).
+
 ## Rules
 
 - The note is the wire, STATE is the index: detail goes in the note, the index line goes in STATE.

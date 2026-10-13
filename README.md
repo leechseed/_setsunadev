@@ -35,7 +35,7 @@ The ruled 12-entry root (BOLO 143, approved 10/13). "Today" says what exists now
 - Theory lives in `ShroomsQ/_CANON/_SSOT/`; the 2024 vault is archived at `_ARCHIVE/_broodengine/`.
 - Maintenance schedule: whenever I feel like it. Issues: disabled. Pull requests: you're kidding, right?
 
-The full pre-map README is in git history (the commit before this one) and at [README.old.md](README.old.md).
+The full pre-map README is in git history (the commit before the map).
 
 ## License
 

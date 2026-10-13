@@ -21,6 +21,9 @@ Shape tells a regex cannot see. Read for these after the pass below.
 - **Heading echo:** a heading's first sentence restates it. Fix: cut that sentence.
 - **Document talk:** text about the page or how it was made ("the table below compares"). Fix: state the subject.
 - **Wrong reader:** a reply that rebuilds context the reader has, with the decision last. Fix: lead with the decision.
+- **So what:** a claim with no consequence for the reader. Fix: add what it means for them, or cut.
+- **Vague noun:** "solution", "insights", "streamline" where a concrete thing exists. Fix: name the thing.
+- **Loose pronoun:** "it", "this" or "they" with two possible referents. Fix: repeat the noun.
 
 ## The pass, in order
 
@@ -41,4 +44,4 @@ One line per flag: `line N · rule · quoted text · fix`. End with the count pe
 - Mark every claim without a source as guessed.
 
 
-<!-- adapted from taste-skill copy self-audit (Leonxlnx, MIT) and _tools/prose/prose_lint.py · BOLO 140 · 2026-10-13 -->
+<!-- adapted from taste-skill copy self-audit (Leonxlnx, MIT) and _tools/prose/prose_lint.py · BOLO 140 · 2026-10-13; so-what, specificity and clarity checks from coreyhaines31/marketingskills copy-editing (license unconfirmed, ideas only) -->

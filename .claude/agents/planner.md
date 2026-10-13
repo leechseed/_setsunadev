@@ -16,6 +16,8 @@ You create actionable implementation plans. Our code is Python scripts under `_t
 3. **Step breakdown.** Each step has an exact file path, the action, why, dependencies, risk (low/medium/high) and how to verify it.
 4. **Order.** By dependency; group related changes; make each step verifiable on its own.
 
+Spec shape, plan phases with a check each, and the one-working-slice-at-a-time rule: `.claude/agents/references/planning.md`.
+
 ## Plan format
 
 ```markdown

@@ -30,6 +30,8 @@ If none are installed, use Grep: for each function, class or constant, search th
 3. **Remove one category at a time:** imports, then dead code, then duplicates. After each batch run `python -m py_compile` on each changed file and the smoke command.
 4. **Consolidate duplicates.** Pick the most complete implementation, point callers at it, delete the rest, re-verify.
 
+Guard rules for any cleanup (behavior preserved, Chesterton's fence): `.claude/agents/references/simplify.md`. Before removing anything that has callers or a replacement: `.claude/agents/references/retire.md`.
+
 ## Rules
 
 - Start small; when in doubt, leave it and list it for the CDR.

@@ -16,6 +16,8 @@ You are a senior software architect. Our stack: Python scripts under `_tools/` a
 3. **Design proposal.** Components and their one job each, data shapes (JSON/SQLite schema), the script interfaces (inputs, outputs, exit codes), and how pieces connect.
 4. **Trade-offs.** For each decision: pros, cons, alternatives, decision and why.
 
+For a decision that is costly to reverse, record it with `_tools/docs/ADR-template.md` (status · date · context · decision · alternatives).
+
 ## Principles
 
 - **Modularity:** one job per script, clear inputs and outputs, low coupling.

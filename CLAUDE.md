@@ -10,4 +10,4 @@ This repo is the operating record of one person's operation ("the Command"). The
 
 **Two standing rules that bite:** never scan the box (processes, logs, network, configs) unless the order names it; launch stations from the Bash tool, never PowerShell. The rest is in SOP.
 
-**Context (BOLO 140, 10/13):** read digests first; open a big file by section, never whole; a brief passes paths, not pasted text (SOP §1.24).
+**Context (BOLO 140, 10/13):** read digests first; open a big file by section, never whole; a brief passes paths, not pasted text (SOP §1.24). Context layers and restartable boundaries: `.claude/agents/references/context-layers.md`.

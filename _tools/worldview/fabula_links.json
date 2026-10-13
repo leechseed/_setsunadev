@@ -1,0 +1,1464 @@
+{
+ "note": "Hand-kept. Edit freely: nodes (non-event), links, years, tree. Events come from the fabula doc and oxo.yaml world clock. Regenerate fabula.json with fabula_json.py.",
+ "nodes": [
+  {
+   "id": "era1",
+   "type": "era",
+   "label": "1 Skeeter Creek",
+   "desc": "Earth, the Delta Coast before the school was DCUS. No story yet. Skeeter Creek, Red Hills, Moon Severance (2099), Narco Republic. Logged world facts: 30.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_fabula.md",
+     "^\\| \\*\\*1 · "
+    ]
+   ]
+  },
+  {
+   "id": "era2",
+   "type": "era",
+   "label": "2 DCUS",
+   "desc": "Earth, the Delta Coast. OVEREXITOUT (The Outliers), EVIL CHECK, TREMOR CULT. Opens at the DCUS rebrand. Only era with event records. Logged world facts: 88.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_fabula.md",
+     "^\\| \\*\\*2 · "
+    ]
+   ]
+  },
+  {
+   "id": "era3",
+   "type": "era",
+   "label": "3 LAKAD",
+   "desc": "Cislunar space. Opens when the characters take a rocket up: a hard break from era 2. Logged world facts: 3.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_fabula.md",
+     "^\\| \\*\\*3 · "
+    ]
+   ]
+  },
+  {
+   "id": "era4",
+   "type": "era",
+   "label": "4 ASTRO7EX",
+   "desc": "The Moon. Runs at the same time as era 2 (ruled 10/12). Logged world facts: 128.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_fabula.md",
+     "^\\| \\*\\*4 · "
+    ]
+   ]
+  },
+  {
+   "id": "era5",
+   "type": "era",
+   "label": "5 Beyond",
+   "desc": "Past the Moon. A band only: the journey, not the landfall. Provisional. Logged world facts: 18.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_fabula.md",
+     "^\\| \\*\\*5 · "
+    ]
+   ]
+  },
+  {
+   "id": "s00",
+   "type": "system",
+   "label": "00 Epistemology",
+   "desc": "Truth, verification, registries, the design system.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_registry.md",
+     "^# "
+    ]
+   ]
+  },
+  {
+   "id": "s01",
+   "type": "system",
+   "label": "01 Narrative Frameworks",
+   "desc": "Genre, texture, tropes, Touchstones, story registry, scale ladder.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_story_registry.md",
+     "^# "
+    ]
+   ]
+  },
+  {
+   "id": "s02",
+   "type": "system",
+   "label": "02 Character Systems",
+   "desc": "LEECHSEED: the twelve-layer character system.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md",
+     "^# "
+    ]
+   ]
+  },
+  {
+   "id": "s03",
+   "type": "system",
+   "label": "03 Setting Systems",
+   "desc": "Places at character grade: twelve S-layers, factions, state architecture.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md",
+     "^# "
+    ]
+   ]
+  },
+  {
+   "id": "s04",
+   "type": "system",
+   "label": "04 Plot Systems",
+   "desc": "The fabula (world time), the plot system, the trope graph.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_plot_system.md",
+     "^# "
+    ]
+   ]
+  },
+  {
+   "id": "s05",
+   "type": "system",
+   "label": "05 Worldbuilding",
+   "desc": "Catalog of arcs, groups, institutions, technology, creatures.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/📐 ssot_05_worldbuilding_system.md",
+     "^# "
+    ]
+   ]
+  },
+  {
+   "id": "s06",
+   "type": "system",
+   "label": "06 Theme Systems",
+   "desc": "Rails and value scales.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/06_THEME_SYSTEMS/📐 ssot_06_theme_system.md",
+     "^# "
+    ]
+   ]
+  },
+  {
+   "id": "s07",
+   "type": "system",
+   "label": "07 Style Guides",
+   "desc": "Prose, documents and pages style.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/📐 ssot_07_1_prose_style.md",
+     "^# "
+    ]
+   ]
+  },
+  {
+   "id": "s08",
+   "type": "system",
+   "label": "08 Tracking Systems",
+   "desc": "Scenes, story points, cables, tempo: the oxo.yaml format.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/08_TRACKING_SYSTEMS/📐 ssot_08_tracking_system.md",
+     "^# "
+    ]
+   ]
+  },
+  {
+   "id": "s09",
+   "type": "system",
+   "label": "09 Operations",
+   "desc": "Standards, project flow, retrieval protocol.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_09_operations_project_flow.md",
+     "^# "
+    ]
+   ]
+  },
+  {
+   "id": "fab",
+   "type": "system",
+   "label": "The Fabula",
+   "desc": "World time: events, causal edges, the world clock, the era spines.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_fabula.md",
+     "^# "
+    ]
+   ]
+  },
+  {
+   "id": "trg",
+   "type": "system",
+   "label": "Trope Graph",
+   "desc": "Seats the throughline walk (P6). The fabula supplies only the event time.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_trope_graph.md",
+     "^# "
+    ]
+   ]
+  },
+  {
+   "id": "sta",
+   "type": "system",
+   "label": "Setting State Architecture",
+   "desc": "Checkpoint names for DCUS (Skeeter Creek, Red Hills Academy, DCUS).",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/🔮 ssot_03_setting_state_architecture.md",
+     "^# "
+    ]
+   ]
+  },
+  {
+   "id": "dra",
+   "type": "system",
+   "label": "Dramatica storyform",
+   "desc": "The Command's ruled story spine: four throughlines.",
+   "find": [
+    [
+     "_CANON_NODES/oxo-storyform.md",
+     "^# "
+    ]
+   ]
+  },
+  {
+   "id": "pMC",
+   "type": "perspective",
+   "label": "MC throughline",
+   "desc": "Main Character: Tori Midnight. Domain Activity, concern Understanding.",
+   "find": [
+    [
+     "_CANON_NODES/oxo-storyform.md",
+     "^## 3 "
+    ]
+   ]
+  },
+  {
+   "id": "pIC",
+   "type": "perspective",
+   "label": "IC throughline",
+   "desc": "Impact Character: Anna Colson Conway. Domain Manipulation, concern Developing a Plan.",
+   "find": [
+    [
+     "_CANON_NODES/oxo-storyform.md",
+     "^## 4 "
+    ]
+   ]
+  },
+  {
+   "id": "pOS",
+   "type": "perspective",
+   "label": "OS throughline",
+   "desc": "Overall Story: the Factions. Domain Situation, concern The Past.",
+   "find": [
+    [
+     "_CANON_NODES/oxo-storyform.md",
+     "^## 5 "
+    ]
+   ]
+  },
+  {
+   "id": "pRS",
+   "type": "perspective",
+   "label": "RS throughline",
+   "desc": "Relationship Story: Tori and Anna. Domain Fixed Attitude, concern Memories.",
+   "find": [
+    [
+     "_CANON_NODES/oxo-storyform.md",
+     "^## 6 "
+    ]
+   ]
+  },
+  {
+   "id": "cTori",
+   "type": "character",
+   "label": "Tori Midnight",
+   "desc": "Victoria Midnight; MC. Earlier name in old notes: Ariel. Wound: Jebb's crash. Resolve: I will become untouchable.",
+   "find": [
+    [
+     "_CANON_NODES/victoria-midnight.md",
+     "^# "
+    ]
+   ]
+  },
+  {
+   "id": "cAnna",
+   "type": "character",
+   "label": "Anna Colson Conway",
+   "desc": "Impact Character. Verified, ascending. Canon presence begins at M3.",
+   "find": [
+    [
+     "_CANON_NODES/anna-colson-conway.md",
+     "^# "
+    ]
+   ]
+  },
+  {
+   "id": "cJebb",
+   "type": "character",
+   "label": "Jebb Midnight",
+   "desc": "Pre-story. Dies in the M1 crash. OS-level bond to Tori.",
+   "find": [
+    [
+     "_CANON_NODES/victoria-midnight.md",
+     "Jebb"
+    ],
+    [
+     "_CANON_NODES/anna-colson-conway.md",
+     "Jebb"
+    ]
+   ]
+  },
+  {
+   "id": "cQuinn",
+   "type": "character",
+   "label": "Quinn Bishop",
+   "desc": "A Bishop. Runs Administrative Fixes for the Administration. Legibility axis.",
+   "find": [
+    [
+     "_CANON_NODES/anna-colson-conway.md",
+     "Quinn Bishop"
+    ],
+    [
+     "_CANON_NODES/victoria-midnight.md",
+     "Quinn Bishop"
+    ]
+   ]
+  },
+  {
+   "id": "cRiley",
+   "type": "character",
+   "label": "Riley Moss",
+   "desc": "Truth axis: the Witness and Propagandist. Undocumented peer.",
+   "find": [
+    [
+     "_CANON_NODES/riley-moss-gonzo-seed.md",
+     "^# "
+    ],
+    [
+     "_CANON_NODES/anna-colson-conway.md",
+     "Riley Moss"
+    ]
+   ]
+  },
+  {
+   "id": "cViv",
+   "type": "character",
+   "label": "Vivian",
+   "desc": "Born in Aldrin Sector on the Moon, 2091-10-10 (ASTRO7EX notes).",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_fabula.md",
+     "Vivian"
+    ],
+    [
+     "_CANON_NODES/riley-moss-gonzo-seed.md",
+     "Vivian"
+    ]
+   ]
+  },
+  {
+   "id": "pDC",
+   "type": "place",
+   "label": "DCUS",
+   "desc": "Delta Coast Ultra School. Scale: site (campus). Fused from Red Hills Academy (2022-23 lineage) and Inner Spiral (2025-26). Also: the Ultra School.",
+   "find": [
+    [
+     "_CANON_NODES/delta-coast-ultra-school.md",
+     "^# "
+    ]
+   ]
+  },
+  {
+   "id": "pCoast",
+   "type": "place",
+   "label": "Delta Coast",
+   "desc": "Earth region; the racing run of Movement 1 and the school's home.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md",
+     "Delta Coast"
+    ]
+   ]
+  },
+  {
+   "id": "pSC",
+   "type": "place",
+   "label": "Skeeter Creek",
+   "desc": "The founding name, buried under Red Hills. Erasure done twice.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md",
+     "Skeeter Creek"
+    ]
+   ]
+  },
+  {
+   "id": "pRH",
+   "type": "place",
+   "label": "Red Hills Academy",
+   "desc": "Century of private prestige; sold by the son to the Bishops.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md",
+     "Red Hills Academy"
+    ]
+   ]
+  },
+  {
+   "id": "pMid",
+   "type": "place",
+   "label": "Middle Bands",
+   "desc": "DCUS parent geography; Inner Spiral reverts to a place name.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md",
+     "Middle Bands"
+    ]
+   ]
+  },
+  {
+   "id": "pDM",
+   "type": "place",
+   "label": "Deep Meridian",
+   "desc": "Geothermal drill front; the hinge: the Deep Meridian beam.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_fabula.md",
+     "Deep Meridian"
+    ]
+   ]
+  },
+  {
+   "id": "pAld",
+   "type": "place",
+   "label": "Aldrin Sector",
+   "desc": "On the Moon (ASTRO7EX).",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_fabula.md",
+     "Aldrin Sector"
+    ]
+   ]
+  },
+  {
+   "id": "pNarco",
+   "type": "place",
+   "label": "Narco Republic",
+   "desc": "One of four regions of the Americas. Rises in era 1. Unruled.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_fabula.md",
+     "Narco Republic"
+    ]
+   ]
+  },
+  {
+   "id": "pAtl",
+   "type": "place",
+   "label": "Atlantic nexus",
+   "desc": "Ocean 3rd impact, paired with the south pole. Unruled.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_fabula.md",
+     "Atlantic nexus"
+    ]
+   ]
+  },
+  {
+   "id": "fAdm",
+   "type": "faction",
+   "label": "The Administration",
+   "desc": "Depersonalized OS; legitimacy is issued, not earned. The Silent Hand acts through the Bishops.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md",
+     "Administration"
+    ]
+   ]
+  },
+  {
+   "id": "fBis",
+   "type": "faction",
+   "label": "The Bishops",
+   "desc": "Bought Red Hills and rebranded it DCUS; run Ultra Schools like a chain.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md",
+     "Bishops"
+    ]
+   ]
+  },
+  {
+   "id": "fAlum",
+   "type": "faction",
+   "label": "Alumni-legacy bloc",
+   "desc": "Descends from Red Hills' century of students; says Red Hills, a small violation each time.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md",
+     "[Aa]lumni"
+    ]
+   ]
+  },
+  {
+   "id": "fFac",
+   "type": "faction",
+   "label": "Faculty split",
+   "desc": "Legacy old guard versus Sync-era hires.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md",
+     "[Ff]aculty"
+    ]
+   ]
+  },
+  {
+   "id": "fSync",
+   "type": "faction",
+   "label": "Sync Cult",
+   "desc": "Held until it has its own canon node.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md",
+     "Sync Cult"
+    ]
+   ]
+  },
+  {
+   "id": "fFeed",
+   "type": "faction",
+   "label": "The Feed and Star-Rating",
+   "desc": "Feed-linked clothing, Star-Rating tiers: enforced legibility.",
+   "find": [
+    [
+     "ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md",
+     "Star-Rating"
+    ]
+   ]
+  }
+ ],
+ "links": [
+  {
+   "a": "era1",
+   "b": "era2",
+   "kind": "ref",
+   "w": "era 2 opens at the DCUS rebrand",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "era2",
+   "b": "era3",
+   "kind": "ref",
+   "w": "the rocket launch is the hard break",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "era3",
+   "b": "era5",
+   "kind": "ref",
+   "w": "the journey runs on from the Moon",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "era4",
+   "b": "era2",
+   "kind": "ref",
+   "w": "era 4 runs alongside era 2",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "s04",
+   "b": "fab",
+   "kind": "ref",
+   "w": "the fabula lives in the plot shelf",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "s04",
+   "b": "trg",
+   "kind": "ref",
+   "w": "the trope graph lives in the plot shelf",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "s03",
+   "b": "sta",
+   "kind": "ref",
+   "w": "state architecture belongs to the setting shelf",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "s01",
+   "b": "dra",
+   "kind": "ref",
+   "w": "narrative frameworks hold the storyform spine",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "s02",
+   "b": "s03",
+   "kind": "ref",
+   "w": "setting mirrors the character stack, layer for layer",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "s08",
+   "b": "fab",
+   "kind": "ref",
+   "w": "tracking cables ride the fabula's enable edges",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "s08",
+   "b": "s06",
+   "kind": "ref",
+   "w": "tracking carries the theme value scale",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "fab",
+   "b": "trg",
+   "kind": "ref",
+   "w": "the walk, not the fabula, seats P6",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "s05",
+   "b": "s03",
+   "kind": "ref",
+   "w": "worldbuilding catalog feeds the setting system",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "s02",
+   "b": "s04",
+   "kind": "ref",
+   "w": "origin moments: five character layers need a fabula event",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "s00",
+   "b": "s01",
+   "kind": "ref",
+   "w": "epistemology gates the frameworks",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "s07",
+   "b": "s08",
+   "kind": "ref",
+   "w": "style rules govern the tracking pages",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "s09",
+   "b": "s00",
+   "kind": "ref",
+   "w": "operations standards govern the registries",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "fab",
+   "b": "era1",
+   "kind": "ref",
+   "w": "the world clock sets the eras",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "fab",
+   "b": "era2",
+   "kind": "ref",
+   "w": "the world clock sets the eras",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "fab",
+   "b": "era3",
+   "kind": "ref",
+   "w": "the world clock sets the eras",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "fab",
+   "b": "era4",
+   "kind": "ref",
+   "w": "the world clock sets the eras",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "fab",
+   "b": "era5",
+   "kind": "ref",
+   "w": "the world clock sets the eras",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "dra",
+   "b": "pMC",
+   "kind": "ref",
+   "w": "one of the four throughlines",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "pMC",
+   "b": "era2",
+   "kind": "ref",
+   "w": "all four are told in era 2 (OXO)",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "dra",
+   "b": "pIC",
+   "kind": "ref",
+   "w": "one of the four throughlines",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "pIC",
+   "b": "era2",
+   "kind": "ref",
+   "w": "all four are told in era 2 (OXO)",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "dra",
+   "b": "pOS",
+   "kind": "ref",
+   "w": "one of the four throughlines",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "pOS",
+   "b": "era2",
+   "kind": "ref",
+   "w": "all four are told in era 2 (OXO)",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "dra",
+   "b": "pRS",
+   "kind": "ref",
+   "w": "one of the four throughlines",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "pRS",
+   "b": "era2",
+   "kind": "ref",
+   "w": "all four are told in era 2 (OXO)",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "s02",
+   "b": "cTori",
+   "kind": "ref",
+   "w": "LEECHSEED vertical slice character",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "cTori",
+   "b": "pMC",
+   "kind": "ref",
+   "w": "she is the MC",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "cAnna",
+   "b": "pIC",
+   "kind": "ref",
+   "w": "she is the IC",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "cTori",
+   "b": "pRS",
+   "kind": "ref",
+   "w": "RS pair",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "cAnna",
+   "b": "pRS",
+   "kind": "ref",
+   "w": "RS pair",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "cJebb",
+   "b": "cTori",
+   "kind": "ref",
+   "w": "pre-story bond; dies in the crash",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "cQuinn",
+   "b": "pOS",
+   "kind": "ref",
+   "w": "a Bishop inside the Factions",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "cRiley",
+   "b": "cAnna",
+   "kind": "ref",
+   "w": "considered for IC, wrong axis",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "cViv",
+   "b": "era4",
+   "kind": "ref",
+   "w": "born on the Moon",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "s03",
+   "b": "pDC",
+   "kind": "ref",
+   "w": "worked example: DCUS starter slice",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "pDC",
+   "b": "pCoast",
+   "kind": "ref",
+   "w": "sits on the Delta Coast",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "pDC",
+   "b": "pMid",
+   "kind": "ref",
+   "w": "address in the Middle Bands",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "pSC",
+   "b": "pRH",
+   "kind": "ref",
+   "w": "renamed Red Hills, a century before the Bishops",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "pRH",
+   "b": "pDC",
+   "kind": "ref",
+   "w": "rebranded DCUS by the Bishops",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "sta",
+   "b": "pSC",
+   "kind": "ref",
+   "w": "checkpoint name",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "sta",
+   "b": "pRH",
+   "kind": "ref",
+   "w": "checkpoint name",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "sta",
+   "b": "pDC",
+   "kind": "ref",
+   "w": "checkpoint name",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "pSC",
+   "b": "era1",
+   "kind": "ref",
+   "w": "founded in era 1",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "pRH",
+   "b": "era1",
+   "kind": "ref",
+   "w": "renamed in era 1",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "pDC",
+   "b": "era2",
+   "kind": "ref",
+   "w": "era 2 opens at the rebrand",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "pNarco",
+   "b": "era1",
+   "kind": "ref",
+   "w": "rises in era 1",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "pAtl",
+   "b": "era2",
+   "kind": "ref",
+   "w": "ocean 3rd impact",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "pDM",
+   "b": "era2",
+   "kind": "ref",
+   "w": "the hinge beam",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "pAld",
+   "b": "era4",
+   "kind": "ref",
+   "w": "Moon sector",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "pCoast",
+   "b": "era1",
+   "kind": "ref",
+   "w": "before the school was DCUS",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "cTori",
+   "b": "pDC",
+   "kind": "ref",
+   "w": "student; her premise is the meritocratic promise",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "cAnna",
+   "b": "pDC",
+   "kind": "ref",
+   "w": "student, ascending",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "cTori",
+   "b": "pCoast",
+   "kind": "ref",
+   "w": "Movement 1 racing run",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "pOS",
+   "b": "pDC",
+   "kind": "ref",
+   "w": "the Factions run the campus",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "fAdm",
+   "b": "pDC",
+   "kind": "part_of",
+   "w": "part of what DCUS consists of",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "fBis",
+   "b": "pDC",
+   "kind": "part_of",
+   "w": "part of what DCUS consists of",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "fAlum",
+   "b": "pDC",
+   "kind": "part_of",
+   "w": "part of what DCUS consists of",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "fFac",
+   "b": "pDC",
+   "kind": "part_of",
+   "w": "part of what DCUS consists of",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "fSync",
+   "b": "pDC",
+   "kind": "part_of",
+   "w": "part of what DCUS consists of",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "fFeed",
+   "b": "pDC",
+   "kind": "part_of",
+   "w": "part of what DCUS consists of",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "fAdm",
+   "b": "pOS",
+   "kind": "ref",
+   "w": "the Factions",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "fBis",
+   "b": "pOS",
+   "kind": "ref",
+   "w": "the Factions",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "fAdm",
+   "b": "fBis",
+   "kind": "ref",
+   "w": "the Administration acts through the Bishops",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "cQuinn",
+   "b": "fBis",
+   "kind": "ref",
+   "w": "a Bishop",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "fSync",
+   "b": "fFeed",
+   "kind": "ref",
+   "w": "Sync scores ride the Feed",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "fAlum",
+   "b": "pRH",
+   "kind": "ref",
+   "w": "carry the old name",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "cTori",
+   "b": "fFeed",
+   "kind": "ref",
+   "w": "filed downward by the Feed's classification",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "cAnna",
+   "b": "fFeed",
+   "kind": "ref",
+   "w": "filed upward by the Feed",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "skeeter_creek_backstory_skeeter_creek_founding",
+   "b": "era1",
+   "kind": "placed",
+   "w": "placed on the world clock",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "skeeter_creek_backstory_skeeter_creek_founding",
+   "b": "pSC",
+   "kind": "involves",
+   "w": "involves",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "skeeter_creek_backstory_red_hills_rename",
+   "b": "era1",
+   "kind": "placed",
+   "w": "placed on the world clock",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "skeeter_creek_backstory_red_hills_rename",
+   "b": "pRH",
+   "kind": "involves",
+   "w": "involves",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "backstory_moon_severance",
+   "b": "era1",
+   "kind": "placed",
+   "w": "placed on the world clock",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "backstory_narco_republic_rises",
+   "b": "era1",
+   "kind": "placed",
+   "w": "placed on the world clock",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "backstory_narco_republic_rises",
+   "b": "pNarco",
+   "kind": "involves",
+   "w": "involves",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "backstory_dcus_rebrand",
+   "b": "era2",
+   "kind": "placed",
+   "w": "placed on the world clock",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "backstory_dcus_rebrand",
+   "b": "pDC",
+   "kind": "involves",
+   "w": "involves",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "backstory_dcus_rebrand",
+   "b": "fBis",
+   "kind": "involves",
+   "w": "involves",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "backstory_south_pole_third_impact",
+   "b": "era2",
+   "kind": "placed",
+   "w": "placed on the world clock",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "backstory_ocean_third_impact",
+   "b": "era2",
+   "kind": "placed",
+   "w": "placed on the world clock",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "backstory_ocean_third_impact",
+   "b": "pAtl",
+   "kind": "involves",
+   "w": "involves",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m1b_race_arrest",
+   "b": "era2",
+   "kind": "placed",
+   "w": "placed on the world clock",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m1b_race_arrest",
+   "b": "cTori",
+   "kind": "involves",
+   "w": "involves",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m1b_crash_jebb_death",
+   "b": "era2",
+   "kind": "placed",
+   "w": "placed on the world clock",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m1b_crash_jebb_death",
+   "b": "cTori",
+   "kind": "involves",
+   "w": "involves",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m1b_crash_jebb_death",
+   "b": "cJebb",
+   "kind": "involves",
+   "w": "involves",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m2_grief_outbursts",
+   "b": "era2",
+   "kind": "placed",
+   "w": "placed on the world clock",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m2_grief_outbursts",
+   "b": "cTori",
+   "kind": "involves",
+   "w": "involves",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m2_grief_outbursts",
+   "b": "pDC",
+   "kind": "involves",
+   "w": "involves",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m2_first_sync_verified",
+   "b": "era2",
+   "kind": "placed",
+   "w": "placed on the world clock",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m2_first_sync_verified",
+   "b": "cTori",
+   "kind": "involves",
+   "w": "involves",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m2_first_sync_verified",
+   "b": "fSync",
+   "kind": "involves",
+   "w": "involves",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m3_underground_search",
+   "b": "era2",
+   "kind": "placed",
+   "w": "placed on the world clock",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m3_underground_search",
+   "b": "cTori",
+   "kind": "involves",
+   "w": "involves",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m3_underground_search",
+   "b": "pDC",
+   "kind": "involves",
+   "w": "involves",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m4_critical_error_reclassification",
+   "b": "era2",
+   "kind": "placed",
+   "w": "placed on the world clock",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m4_critical_error_reclassification",
+   "b": "cTori",
+   "kind": "involves",
+   "w": "involves",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m5_diaspora_forms",
+   "b": "era2",
+   "kind": "placed",
+   "w": "placed on the world clock",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m5_diaspora_forms",
+   "b": "cTori",
+   "kind": "involves",
+   "w": "involves",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m6_fault_line_collapse",
+   "b": "era2",
+   "kind": "placed",
+   "w": "placed on the world clock",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m6_fault_line_collapse",
+   "b": "cTori",
+   "kind": "involves",
+   "w": "involves",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m6_fault_line_collapse",
+   "b": "pDC",
+   "kind": "involves",
+   "w": "involves",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "skeeter_creek_backstory_skeeter_creek_founding",
+   "b": "skeeter_creek_backstory_red_hills_rename",
+   "kind": "then",
+   "w": "then",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "skeeter_creek_backstory_red_hills_rename",
+   "b": "backstory_dcus_rebrand",
+   "kind": "then",
+   "w": "then",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m1b_race_arrest",
+   "b": "m1b_crash_jebb_death",
+   "kind": "then",
+   "w": "then",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m1b_crash_jebb_death",
+   "b": "m2_grief_outbursts",
+   "kind": "then",
+   "w": "then",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m2_grief_outbursts",
+   "b": "m2_first_sync_verified",
+   "kind": "then",
+   "w": "then",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m2_first_sync_verified",
+   "b": "m3_underground_search",
+   "kind": "then",
+   "w": "then",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m3_underground_search",
+   "b": "m4_critical_error_reclassification",
+   "kind": "then",
+   "w": "then",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m4_critical_error_reclassification",
+   "b": "m5_diaspora_forms",
+   "kind": "then",
+   "w": "then",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m5_diaspora_forms",
+   "b": "m6_fault_line_collapse",
+   "kind": "then",
+   "w": "then",
+   "src": "hand-read, v1 10/13"
+  },
+  {
+   "a": "m1b_untouchable_resolve",
+   "b": "cTori",
+   "kind": "involves",
+   "w": "involves",
+   "src": "added at adoption 10/13, from the event record actors"
+  },
+  {
+   "a": "m2_recruited",
+   "b": "cTori",
+   "kind": "involves",
+   "w": "involves",
+   "src": "added at adoption 10/13, from the event record actors"
+  },
+  {
+   "a": "m1b_system_removes_jebb",
+   "b": "cJebb",
+   "kind": "involves",
+   "w": "involves",
+   "src": "added at adoption 10/13, from the event record actors"
+  },
+  {
+   "a": "m1b_system_removes_jebb",
+   "b": "cTori",
+   "kind": "involves",
+   "w": "involves",
+   "src": "added at adoption 10/13, from the event record actors"
+  },
+  {
+   "a": "backstory_colson_skating_death",
+   "b": "cAnna",
+   "kind": "involves",
+   "w": "Anna's origin (fabula, BOLO 91)",
+   "src": "added at adoption 10/13"
+  },
+  {
+   "a": "backstory_colson_father_seeks_scientist",
+   "b": "cAnna",
+   "kind": "involves",
+   "w": "Anna's origin (fabula, BOLO 91)",
+   "src": "added at adoption 10/13"
+  },
+  {
+   "a": "backstory_colson_scientist_attachment",
+   "b": "cAnna",
+   "kind": "involves",
+   "w": "Anna's origin (fabula, BOLO 91)",
+   "src": "added at adoption 10/13"
+  },
+  {
+   "a": "backstory_colson_father_reclaims",
+   "b": "cAnna",
+   "kind": "involves",
+   "w": "Anna's origin (fabula, BOLO 91)",
+   "src": "added at adoption 10/13"
+  },
+  {
+   "a": "backstory_colson_copy_made",
+   "b": "cAnna",
+   "kind": "involves",
+   "w": "Anna's origin (fabula, BOLO 91)",
+   "src": "added at adoption 10/13"
+  }
+ ],
+ "years": {
+  "m1_to_m6": [
+   2199,
+   "OXO present = 2199 (fabula, calendar section)"
+  ]
+ },
+ "tree": {
+  "root": "pDC",
+  "groups": [
+   {
+    "label": "Factions",
+    "ids": [
+     "fAdm",
+     "fBis",
+     "fAlum",
+     "fFac",
+     "fSync",
+     "fFeed"
+    ]
+   },
+   {
+    "label": "Name lattice",
+    "ids": [
+     "pSC",
+     "pRH",
+     "pDC"
+    ]
+   },
+   {
+    "label": "Governing systems",
+    "ids": [
+     "s03",
+     "sta",
+     "pOS"
+    ]
+   }
+  ]
+ }
+}

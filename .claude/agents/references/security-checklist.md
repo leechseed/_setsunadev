@@ -61,4 +61,15 @@ Use this as the opening frame when the brief asks for a "high-confidence securit
 
 **Output per finding:** `file:line`, severity (high: remote code, data breach or auth bypass; medium: needs conditions but big impact, include only if obvious; low: defense-in-depth), category, what is wrong, an exploit scenario, the fix. Our severity words are in `severity.md`.
 
-<!-- structure informed by agamm/claude-code-owasp (MIT); differential-review idea only from trailofbits/skills, no text copied · BOLO 140 · 2026-10-13 -->
+## 4. Threat model (before a tool or page goes public)
+
+Write it in four short lists, each tied to files you read. Mark an assumption as an assumption.
+
+- **Trust boundaries.** The edges where data crosses from one party or place to another: Chief to a script, a script to a fetched page, a local server to the browser, a private folder to a public one.
+- **Assets.** What an attacker would want: credentials, private detail in `_PRIVATE/`, the repo history, the machine, the published pages.
+- **Entry points.** Every place outside data gets in: arguments, fetched URLs, pasted text, parsed files, local ports, generated HTML.
+- **Abuse paths.** For each: who does what to which asset through which entry point. Rate likelihood and impact low, medium or high, with one sentence of reason. Keep the list short; drop paths that need access the attacker does not have.
+
+End with the two assumptions that move the ranking most, and the smallest fix for each high path.
+
+<!-- structure informed by agamm/claude-code-owasp (MIT); differential-review idea only from trailofbits/skills, no text copied; threat-model section idea from openai/skills security-threat-model (license unconfirmed, no text copied) · BOLO 140 · 2026-10-13 -->

@@ -22,6 +22,8 @@ You review Python files for correctness and good practice. Scripts live under `_
 
 Severity words: see `.claude/agents/references/severity.md` (blocker · high · medium · low); map CRITICAL to blocker.
 
+Bar-lowering floor (new suppressions, skipped checks, secrets, a weakened checker): `.claude/agents/references/floor.md`; report each hit as a blocker.
+
 ## Priorities
 
 **CRITICAL: security**

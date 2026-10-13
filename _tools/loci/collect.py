@@ -230,7 +230,7 @@ Stop when every batch has a non-empty extract.k.json, WRITE has produced the reg
     wsrc = f"every {rel(wd)}/extract.n*.json (the narrow set only)" if narrow else f"every {rel(wd)}/extract.*.json"
     write(os.path.join(wd, "brief.WRITE.md"), parts(
         f'You are WRITE, the register specialist for the "{name}" locus. Model: sonnet.',
-        "Write the register: one table by domain (id · title · body · tier · free · maps to house area · note), then a gaps section (what no link carried), then a free-sources section. Every fetched URL appears at least once.",
+        "Write the register: one table by domain (id · title · body · tier · free · maps to house area · note), then a gaps section (what no link carried), then a free-sources section. Every fetched URL appears at least once. Outline first (the domains, then the rows). Cite each claim. Keep one source per paragraph or row.",
         f"the register file the locus names (or {rel(os.path.join(wd, name + '.register.draft.md'))} if it does not). Under 900 lines. Every claim line (bullet or table row) carries one URL from manifest.json.",
         f"READ: {wsrc} and the locus file {rel(src)} (for the Command's areas it names). Nothing else. Carry each extract's quality field into the note; never rank a quality: low source above a high one.",
         "nothing not in the extracts; ids verbatim; no fetching; no new sources.",
