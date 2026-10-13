@@ -603,7 +603,8 @@ def lib_state():
         if not e.is_file() or e.name.rsplit(".", 1)[-1].lower() not in FACE_EXTS:
             continue
         st = e.stat()
-        items.append({"name": e.name, "size": st.st_size, "mtime": int(st.st_mtime),
+        added = getattr(st, "st_birthtime", None) or st.st_ctime   # Windows: creation time = when it landed in the library (10/13)
+        items.append({"name": e.name, "size": st.st_size, "mtime": int(st.st_mtime), "added": int(added),
                       "url": f"/face/library/{quote(e.name)}?v={st.st_mtime_ns}",
                       "slots": [s for s, p in paths.items() if p and _same(p, e.path)],
                       "pools": [s for s in STATES if e.name in pools[s]]})

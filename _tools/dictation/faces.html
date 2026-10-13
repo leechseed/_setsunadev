@@ -109,6 +109,13 @@
   .dropzone.drop,.dropzone:hover{border-color:var(--accent);background:var(--accent-soft)}
   .dropzone b{font-family:var(--display);font-weight:700;font-size:20px;letter-spacing:.05em;text-transform:uppercase;display:block}
   .dropzone span{font-family:var(--mono);font-size:11px;color:var(--ink-3)}
+  /* 10/13 (Chief: "sort by ... date added, the most recent first" · "a twiddle down ... close that section of all the photos") */
+  .twiddle{display:flex;align-items:center;gap:8px;background:none;border:0;padding:0;color:inherit;cursor:pointer}
+  .twiddle .tw{display:inline-block;width:14px;font-size:14px;color:var(--accent);transition:transform .12s}
+  .twiddle[aria-expanded="false"] .tw{transform:rotate(-90deg)}
+  .twiddle:hover h2{color:var(--accent)}
+  .sortsel{font-family:var(--mono);font-size:11.5px;background:var(--panel);color:var(--ink);border:1px solid var(--line-2);padding:3px 6px}
+  @media (prefers-reduced-motion:reduce){.twiddle .tw{transition:none}}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px}
   .tile{border:1px solid var(--line);background:var(--panel);display:flex;flex-direction:column;cursor:pointer;position:relative}
   .tile:hover{border-color:var(--line-2)}
@@ -166,15 +173,24 @@
   <div class="slots" id="slots"></div>
 
   <div class="bar">
-    <h2>The library</h2>
+    <button type="button" class="twiddle" id="libToggle" aria-expanded="true" aria-controls="libBody" title="L · open or close the library"><span class="tw" aria-hidden="true">▾</span><h2>The library</h2></button>
     <span class="lbl" id="libCount"></span>
+    <span class="sp"></span>
+    <label class="lbl" for="libSort">sort</label>
+    <select id="libSort" class="sortsel" aria-label="Sort the library">
+      <option value="new">Newest added first</option>
+      <option value="old">Oldest added first</option>
+      <option value="name">Name A to Z</option>
+    </select>
   </div>
+  <div id="libBody">
   <div class="dropzone" id="libDrop" tabindex="0" role="button">
     <b>Add faces to the library</b>
     <span>drop PNG · JPG · GIF · WebP · MP4 here, as many as you like, or click to pick · 50 MB each · nothing gets assigned</span>
     <input type="file" id="picker" multiple accept=".png,.gif,.jpg,.jpeg,.webp,.mp4" hidden>
   </div>
   <div class="grid" id="grid"></div>
+  </div>
 </main>
 <div id="toast"></div>
 
@@ -303,10 +319,19 @@ function renderSlots(){
 }
 
 const i_pools=n=>((S.library.find(i=>i.name===n)||{}).pools||[]);
+let libOpen=true, libSort="new";
+try{libOpen=localStorage.getItem("faceDeck.libOpen")!=="0";libSort=localStorage.getItem("faceDeck.libSort")||"new";}catch(_){}
+const SORTS={new:(a,b)=>(b.added||b.mtime||0)-(a.added||a.mtime||0)||a.name.localeCompare(b.name),
+  old:(a,b)=>(a.added||a.mtime||0)-(b.added||b.mtime||0)||a.name.localeCompare(b.name),
+  name:(a,b)=>a.name.toLowerCase().localeCompare(b.name.toLowerCase())};
+function setLibOpen(on){libOpen=on;try{localStorage.setItem("faceDeck.libOpen",on?"1":"0");}catch(_){}
+  $("#libToggle").setAttribute("aria-expanded",on?"true":"false");$("#libBody").hidden=!on;if(!on)stopPlaying();renderLib();}
 function renderLib(){
-  const L=S.library;
+  $("#libSort").value=libSort; $("#libToggle").setAttribute("aria-expanded",libOpen?"true":"false"); $("#libBody").hidden=!libOpen;
+  const L=[...S.library].sort(SORTS[libSort]||SORTS.new);
   if(S.sfw){$("#libCount").textContent="hidden";$("#grid").innerHTML=`<div class="sfwnote">SFW is on. JUDY shows the four original faces. The library, slots and pools are untouched; press SFW again to bring them back.</div>`;return;}
   $("#libCount").textContent=`${L.length} face${L.length===1?"":"s"} · ${mb(L.reduce((a,i)=>a+i.size,0))}`;
+  if(!libOpen){$("#grid").innerHTML="";return;}   /* closed: no tiles, no decoders */
   if(!L.length){$("#grid").innerHTML=`<div class="empty">The library is empty. Drop some faces above.</div>`;return;}
   $("#grid").innerHTML=L.map(i=>`<div class="tile${sel===i.name?" sel":""}" data-name="${esc(i.name)}" title="click, then click a slot">
     <div class="well">${stillMedia(i.url,i.name)}</div>
@@ -431,7 +456,10 @@ $("#update").onclick=async()=>{
   sig=""; await refresh(true);
   toast(`up to date · ${S.library.length} faces in the library · JUDY picks up changes within 2 seconds`);
 };
-document.addEventListener("keydown",e=>{if(e.key==="Escape"){sel=null;armPool=null;confirming=null;render();}});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){sel=null;armPool=null;confirming=null;render();}
+  if((e.key==="l"||e.key==="L")&&!e.ctrlKey&&!e.metaKey&&!e.altKey&&!/INPUT|SELECT|TEXTAREA/.test(e.target.tagName))setLibOpen(!libOpen);});
+$("#libToggle").onclick=()=>setLibOpen(!libOpen);
+$("#libSort").onchange=()=>{libSort=$("#libSort").value;try{localStorage.setItem("faceDeck.libSort",libSort);}catch(_){}renderLib();};
 
 refresh(true);
 setInterval(()=>refresh(false),3000);   /* picks up swaps made from the console or another tab */
