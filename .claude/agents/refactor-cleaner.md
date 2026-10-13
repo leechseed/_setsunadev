@@ -1,6 +1,6 @@
 ---
 name: refactor-cleaner
-description: Finds and removes dead code, unused imports and duplicated helpers in the Python scripts the brief names, one safe category at a time, and checks each script still compiles and starts.
+description: Finds and removes dead code, unused imports and duplicated helpers in the Python scripts the brief names, one safe category at a time, and checks each script still compiles and starts. Use when the CDR needs this: finds and removes dead code, unused imports and duplicated helpers in the Python scripts the brief names, one safe category at a time, and checks each script still compiles and starts.
 tools: Read, Write, Edit, Bash, Grep, Glob
 model: sonnet
 ---
@@ -41,5 +41,12 @@ If none are installed, use Grep: for each function, class or constant, search th
 ## Report
 
 Per batch: files changed, items removed (count and names), the verification command and result, and the RISKY items left alone.
+
+## Hand-back (SOP §1.24)
+
+- Turn cap: 25 turns.
+- Hand back: one line restating the task · the paths touched · one report under 250 words · then stop.
+- Mark every claim without a source as guessed.
+
 
 <!-- adapted from ECC agents/refactor-cleaner.md (MIT, github.com/affaan-m/ECC), 2026-10-12 -->

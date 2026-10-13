@@ -1,6 +1,6 @@
 ---
 name: pytorch-build-resolver
-description: Diagnoses PyTorch and CUDA failures (shape mismatches, device errors, gradient and DataLoader problems, mixed precision) from a traceback and the code, and reports the smallest fix. Read-only: it proposes the edit, the CDR applies it.
+description: Diagnoses PyTorch and CUDA failures (shape mismatches, device errors, gradient and DataLoader problems, mixed precision) from a traceback and the code, and reports the smallest fix. Read-only: it proposes the edit, the CDR applies it. Use when the CDR needs this: diagnoses PyTorch and CUDA failures (shape mismatches, device errors, gradient and DataLoader problems, mixed precision) from a traceback and the code, and reports the smallest fix.
 tools: Read, Grep, Glob, Bash
 model: sonnet
 ---
@@ -61,5 +61,12 @@ Verify: how to confirm
 ```
 
 Final: `Status: FIX FOUND / NEEDS INFO | Files to change: list`
+
+## Hand-back (SOP §1.24)
+
+- Turn cap: 15 turns.
+- Hand back: one line restating the task · the paths touched · one report under 250 words · then stop.
+- Mark every claim without a source as guessed.
+
 
 <!-- adapted from ECC agents/pytorch-build-resolver.md (MIT, github.com/affaan-m/ECC), 2026-10-12 -->

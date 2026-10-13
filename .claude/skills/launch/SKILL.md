@@ -17,7 +17,7 @@ python _tools/launch/launch.py
 
 **Run it from the Bash tool, never the PowerShell tool** (confirmed 9/20). PowerShell-tool children sit in a job object, and JUDY's paste into the VS Code box stops landing. The same goes for any JUDY relaunch.
 
-**AUDIT first (ruled 10/6, Chief: "audits to be done at the beginning of every launch, and that to be the first thing we always do"):** the script runs `_tools/audit/sop_audit.py` and reports its counts.
+**AUDIT first (ruled 10/6, Chief: "audits to be done at the beginning of every launch, and that to be the first thing we always do"):** the script runs `_tools/audit/sop_audit.py` and reports its counts. mirror.py --check runs on Chief's word, never on its own; a page with changed headings is a call for Chief before any skill or hook edit (ruled 10/13).
 - NO-GO when a public file carries private detail, a BOLO row is stale or unmarked, or the rack holds an old note.
 - Retired words and the tree are advisory.
 - Put a NO-GO AUDIT line in the reply's caveat, with the fix offered as "clean your station".

@@ -93,6 +93,7 @@ A spoken tasking is BOLO capture. Claude writes it into [BOLO.md](BOLO.md) in th
 ### 1.13 · "Ivory tower" ("what's the ivory tower on this?")
 Ivory tower is academic mode: Claude answers from the published literature only. Every claim carries its source inline: researcher, year, field. Peer-reviewed beats books beats everything else, and pop-sci is flagged as pop-sci. Claude marks each claim established, emerging or contested, and names the controlling field. The reply still follows Command format (§7).
 - **WHEN** Chief asks "what's the ivory tower on this?" **THEN** every claim carries researcher, year, field and an established/emerging/contested mark.
+- **WHEN** the ivory tower needs more than literature **THEN** the CDR convenes the Science Department seats (sci-*) on the question; they advise, the story wins (ruled 2026-10-13).
 <sub>Coded 2026-08-21</sub>
 
 ### 1.14 · "Break-break" → "buttonhook back"
@@ -113,8 +114,10 @@ Abort cancels the immediately preceding order, and the correction follows in the
 ### 1.17 · "Gear N"
 Gear N sets the agent ceiling for the current task. Silence means gear 1. The ceiling is 1 = 3 agents · 2 = 6 · 3 = 9 · 4 = 12 · 5 = 15 · 6 = 16 (the top of the scale). A gear is a ceiling, never a quota. Claude takes gear 6 only when the job splits into that many disjoint inputs. A sixteen-agent run spent half a week's usage in one session, and the cost note rides with gear 6. A shift lasts one task, then returns to gear 1. At every gear the crew grades apply (provisional). PS (Payload Specialist, Haiku) fetches and extracts. MS (Mission Specialist, Sonnet) writes. CDR (Commander: Fable on design days, Opus otherwise, per §5 MODEL SWITCH) sits on the main line only. RANGE (the script reviewer) sits at the fan-in. The system is the gearbox (provisional, BOLO 52): the gears, the gauge (`_tools/usage/usage_by_day.py N`) and the weekly budget.
 The formation rule (provisional, BOLO 54): at every gear the layout is hub and spoke. The main line decomposes into pieces that share no state. Specialists run independently on disjoint inputs and sync only at named handoff points. One reviewer, a script wherever a script can do it, sits at the fan-in. There are no peer cross-checks, ever. If the pieces need each other mid-run, the job was not decomposable, and fewer agents in sequence is cheaper. The gear test (provisional 10/12, BOLO 140): read-heavy parallel work suits specialists; write-heavy work suits one agent in sequence. Anthropic measured about fifteen times the tokens for a multi-agent research run against one agent.
+Depth 2 (ruled 2026-10-13, BOLO 140 → BOLO 54): a lead MS may launch up to three PS on disjoint inputs inside its own turn and token cap, when its brief says so. The lead writes their briefs in the §1.24 shape and hands back one file. No agent at any depth reviews another agent's work; the script at the fan-in stays the only reviewer. Depth 3 does not exist. The CDR names the lead in the brief and the budget it carries.
 - **WHEN** Chief says "gear 3" **THEN** Claude may run up to 9 agents on that one task, then returns to gear 1.
-<sub>Provisional 2026-09-12 (BOLO 52, BOLO 54) · gear 6 unlocked 2026-09-23 · Chief: "unlock the amount of agents you can use up to 16, so we can speed it up" · crew grades ruled 2026-09-16</sub>
+- **WHEN** a brief names an MS as lead with a PS budget **THEN** that MS may launch up to three PS once, on disjoint inputs, and hands back one file.
+<sub>Provisional 2026-09-12 (BOLO 52, BOLO 54) · gear 6 unlocked 2026-09-23 · Chief: "unlock the amount of agents you can use up to 16, so we can speed it up" · crew grades ruled 2026-09-16 · depth 2 ruled 2026-10-13</sub>
 
 ### 1.18 · "ENDEX" (retired)
 ENDEX is retired and folded into Oscar Mike (1.3). Claude treats it as Oscar Mike only if it appears in a garble.
@@ -439,6 +442,11 @@ Deliverables carry no placeholders and no truncation. Replies stay under the Spa
 - **WHEN** Claude hands over a deliverable (file, page, script, spec) **THEN** it contains no "TODO", "rest of code", "for brevity" or "..." standing in for content, and every requested item is built in full.
 - **WHEN** Claude writes a reply to Chief **THEN** the Spartan dial governs and this rule does not apply.
 <sub>Ruled 2026-10-13 · provisional · BOLO 140 (taste-05, taste-17)</sub>
+
+### 7.26 · A done claim carries its evidence
+A claim that work is done, passing, fixed or built carries the fresh evidence line that proves it, from a command run in the same turn. An earlier run, "should pass" and an agent's report do not count.
+- **WHEN** Claude says work is done, passing, fixed or built **THEN** the same reply shows the command it ran this turn and the one output line that confirms it (or states the actual status if the line does not confirm).
+<sub>Ruled 2026-10-13 · provisional · BOLO 140 (sas-10)</sub>
 
 ---
 

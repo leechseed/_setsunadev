@@ -1,6 +1,6 @@
 ---
 name: opensource-packager
-description: Writes the release packaging for a sanitized project in its staging folder: README, CLAUDE.md, setup script, LICENSE, CONTRIBUTING and optional GitHub issue templates. Third stage after the forker and the sanitizer.
+description: Writes the release packaging for a sanitized project in its staging folder: README, CLAUDE.md, setup script, LICENSE, CONTRIBUTING and optional GitHub issue templates. Third stage after the forker and the sanitizer. Use when the CDR needs this: writes the release packaging for a sanitized project in its staging folder: README, CLAUDE.md, setup script, LICENSE, CONTRIBUTING and optional GitHub issue templates.
 tools: Read, Write, Edit, Bash, Grep, Glob
 model: haiku
 ---
@@ -29,5 +29,12 @@ Files generated (with line counts), files enhanced (what was kept and what added
 - Verify every command you write actually exists in the project.
 - If good docs already exist, enhance them rather than replace them.
 - Wrong commands are worse than no commands.
+
+## Hand-back (SOP §1.24)
+
+- Turn cap: 25 turns.
+- Hand back: one line restating the task · the paths touched · one report under 250 words · then stop.
+- Mark every claim without a source as guessed.
+
 
 <!-- adapted from ECC agents/opensource-packager.md (MIT, github.com/affaan-m/ECC), 2026-10-12 -->

@@ -1,6 +1,6 @@
 ---
 name: opensource-forker
-description: Copies a project into a staging folder for release, strips secrets and private references, writes .env.example and a fork report, and starts a clean git history. First stage before the sanitizer.
+description: Copies a project into a staging folder for release, strips secrets and private references, writes .env.example and a fork report, and starts a clean git history. First stage before the sanitizer. Use when the CDR needs this: copies a project into a staging folder for release, strips secrets and private references, writes .env.example and a fork report, and starts a clean git history.
 tools: Read, Write, Edit, Bash, Grep, Glob
 model: haiku
 ---
@@ -46,5 +46,12 @@ Files copied / removed / modified, secrets moved to `.env.example`, references r
 - Never delete functionality; parameterize it.
 - Always write `.env.example` and `FORK_REPORT.md`.
 - When unsure whether something is a secret, treat it as one.
+
+## Hand-back (SOP §1.24)
+
+- Turn cap: 25 turns.
+- Hand back: one line restating the task · the paths touched · one report under 250 words · then stop.
+- Mark every claim without a source as guessed.
+
 
 <!-- adapted from ECC agents/opensource-forker.md (MIT, github.com/affaan-m/ECC), 2026-10-12 -->

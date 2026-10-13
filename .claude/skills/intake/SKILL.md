@@ -39,3 +39,5 @@ Build the picker from all `picks.json` files with the roster-picker template (`_
 Read the picks back (`ArtifactData list picks`). For each kept item, adapt it the BOLO 139 way: read in full, strip hooks / installers / auto-triggers / outside calls, add the Command rules block to agents, least tools, write it into `.claude/agents/`, `.claude/skills/` or `_tools/`. Rebuild the Roster (`python _tools/roster/build.py`) when agents changed. Log the adoption on BOLO 140, the source repo and license in a comment line at the bottom of each adopted file.
 
 **Never:** run a repo's installer or plugin, add its hooks, or wire an MCP server without Chief naming it.
+
+The scanner may consult `_tools/intake/known_skills.json` (name, url, license for 2,687 skills from sickn33/agentic-awesome-skills `skills_index.json`; a lookup list, not an install list).

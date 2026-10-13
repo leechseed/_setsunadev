@@ -31,6 +31,8 @@ Every URL fetched over curl (the box's python cert store is stale) to `_tools/lo
 
 Launch **EXTRACT-1 … EXTRACT-k** (haiku) in one message, each with its brief verbatim. The effort table sets the count; the gear caps it. Never one agent per link.
 
+With `--lead`, collect.py prints one brief for collect-lead instead of three PS briefs (it writes `brief.LEAD.md`). The CDR launches the lead alone; the lead launches the PS and writes the register (depth 2, SOP §1.17).
+
 After a failure, rerun with `--resume`. It refetches nothing, skips every batch whose extract is present and non-empty, and prints what it skipped. Launch only the briefs it names. Each writes `extract.k.json` and reads nothing else. If any batch extract is still missing or empty, `--resume` prints the pending batches and exits 2 without writing the register brief (aas-06).
 
 ## H2 · Fan in
@@ -41,8 +43,12 @@ Launch **WRITE** (sonnet) with `brief.WRITE.md`. It reads every `extract.*.json`
 python _tools/loci/check.py <name> <register.md>
 ```
 
-Every fetched URL must appear in the register (by URL or title); the dead ones are listed for the gaps section. Claim lines (bullets and table rows) with a URL missing from the manifest are errors (mar-04). Lines with no URL are listed as "unsourced lines", an advisory count. `check.py` also stamps one line in the locus frontmatter, `run: <date> · agents N · batches N · links N · dead N · ~tokens N`, adding a minimal frontmatter if the locus has none (mar-07). A MISSING line means one extract was skipped: rerun WRITE with the finding under its brief, not a new reviewer.
+Every fetched URL must appear in the register (by URL or title); the dead ones are listed for the gaps section. Claim lines (bullets and table rows) with a URL missing from the manifest are errors (mar-04). Lines with no URL are listed as "unsourced lines", an advisory count. `check.py` also stamps one line in the locus frontmatter, `run: <date> · agents N · batches N · links N · dead N · ~tokens N`, adding a minimal frontmatter if the locus has none (mar-07). **Provenance columns (sas-11).** The register table carries three columns per link: `source url` · `fetched at` (the manifest date) · `quality` (high, medium or low, from the extract). `check.py` requires all three in the register header when the header names any of them. A MISSING line means one extract was skipped: rerun WRITE with the finding under its brief, not a new reviewer.
 
 ## H3 · The main line
 
 Read the check output and the register's gaps section only. Record the run in the locus frontmatter (`status:`), the BOLO row, and the session note. The reply: counts (fetched · dead · items), the register path, the three most useful findings in Chief's terms.
+
+Frames for the register and the briefs (source tiers, two-source rule, conclusion first, the one-paragraph brief): `references/research-frames.md`.
+
+<sub>Provenance idea: sickn33/agentic-awesome-skills skills/wiki-builder (dair-ai/dair-academy-plugins), MIT. BOLO 140.</sub>

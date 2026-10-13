@@ -56,3 +56,17 @@ Writes `_tools/launch/next.json`: the leverage line from the newest board, every
 - The note is the wire, STATE is the index: detail goes in the note, the index line goes in STATE.
 - No second specialist. The journal is a script. The Moved bullet is yours.
 - If the transcript is enormous, the prep script keeps the tail; the head is in the earlier notes already.
+
+## The handoff shape
+
+What a note must carry so the next session resumes cold (the note stays the wire, STATE the index):
+
+1. **Ground in the repo, not the chat.** Read `git status -s` and `git diff --stat` before writing; list files touched from that output.
+2. **Goal in one sentence, then verified versus partial.** A thing is verified only if a command ran this session and passed; anything else is marked `[UNVERIFIED]`.
+3. **Decisions and dead ends.** Each ruling with its reason, plus every approach tried and dropped, so nobody retries it.
+4. **Open loops with an owner and a check.** Each names Chief or an agent and the command or file that shows it closed.
+5. **One next action.** The exact file or command to start on, never "continue the work".
+
+Never paste the transcript into the note.
+
+<sub>Source: sickn33/agentic-awesome-skills skills/session-handoff (alapha888/session-handoff-kit), MIT. Adapted in our words, BOLO 140.</sub>

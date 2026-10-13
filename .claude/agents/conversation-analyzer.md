@@ -1,6 +1,6 @@
 ---
 name: conversation-analyzer
-description: Reads a session transcript or note the CDR hands over and lists the behaviors Chief had to correct, so they can become rules or guard hooks.
+description: Reads a session transcript or note the CDR hands over and lists the behaviors Chief had to correct, so they can become rules or guard hooks. Use when the CDR needs this: reads a session transcript or note the CDR hands over and lists the behaviors Chief had to correct, so they can become rules or guard hooks.
 tools: Read, Grep
 model: haiku
 ---
@@ -31,5 +31,12 @@ suggested_rule: "one sentence rule, and the tool/event a guard hook would match"
 For each behavior, also propose the CLAUDE.md or SOP line edit (file, old line or "add", new line) that would prevent it.
 
 Order by frequency, then severity. Propose rules only; do not write hooks or edit any config.
+
+## Hand-back (SOP §1.24)
+
+- Turn cap: 15 turns.
+- Hand back: one line restating the task · the paths touched · one report under 250 words · then stop.
+- Mark every claim without a source as guessed.
+
 
 <!-- adapted from ECC agents/conversation-analyzer.md (MIT, github.com/affaan-m/ECC), 2026-10-12; CLAUDE.md-edit idea from ykdojo/claude-code-tips review-claudemd (no text copied) -->

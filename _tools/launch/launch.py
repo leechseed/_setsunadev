@@ -213,6 +213,34 @@ def station_deck():
         return {"station": "DECK", "go": False, "addr": DECK_URL, "note": "failed: %s" % e}
 
 
+def station_console():
+    """BOLO 141/142: the Console (:8795), one app window around our pages. Started detached if down; never fatal."""
+    url = "http://127.0.0.1:8795/"
+    try:
+        was_up = ping(url)
+        if not was_up:
+            script = os.path.join(ROOT, "_tools", "console", "console.py")
+            if not os.path.exists(script):
+                return {"station": "CONSOLE", "go": False, "addr": url, "note": "console.py missing"}
+            spawn_console([PY, "-u", script])
+            for _ in range(20):
+                time.sleep(0.5)
+                if ping(url):
+                    break
+            else:
+                return {"station": "CONSOLE", "go": False, "addr": url, "note": "no answer after 10 s"}
+        app = chromium_app_exe()
+        if app:
+            subprocess.Popen([app, "--app=" + url, "--window-size=1500,950"], cwd=ROOT, stdin=subprocess.DEVNULL,
+                             stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        else:
+            subprocess.Popen(["cmd", "/c", VIEW, url], cwd=ROOT, stdin=subprocess.DEVNULL,
+                             stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        return {"station": "CONSOLE", "go": True, "addr": url, "note": ("already live" if was_up else "started") + " · opened"}
+    except Exception as e:
+        return {"station": "CONSOLE", "go": False, "addr": url, "note": "failed: %s" % e}
+
+
 def station_faces():
     """Chief, 10/4: JUDY's face deck comes up at every launch. The console (:8787) serves it;
     a live console is reported, not restarted. The deck opens as an app window when the default browser is Chrome/Edge (10/4), else a tab."""
@@ -409,6 +437,7 @@ def main():
     ap.add_argument("--no-nahimic", action="store_true")
     ap.add_argument("--no-faces", action="store_true")
     ap.add_argument("--no-deck", action="store_true")
+    ap.add_argument("--no-console", action="store_true")
     ap.add_argument("--no-wire", action="store_true")
     ap.add_argument("--no-knobs", action="store_true")
     ap.add_argument("--json", action="store_true")
@@ -430,6 +459,8 @@ def main():
         rows.append(station_faces())
     if not a.no_deck and not a.no_faces:
         rows.append(station_deck())
+    if not a.no_console:
+        rows.append(station_console())
     if not a.no_knobs:
         rows.append(station_knobs())
     if not a.no_wire:

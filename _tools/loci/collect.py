@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
 """LOCI collect — the script half of a link-harvest research run (BOLO 51 phase 7, the formation).
 
-Usage:  python _tools/loci/collect.py <locus.md or links.txt> [--limit N] [--batch N] [--gear N] [--resume] [--check] [--wide] [--narrow 3,7,12]
+Usage:  python _tools/loci/collect.py <locus.md or links.txt> [--limit N] [--batch N] [--gear N] [--resume] [--check] [--wide] [--narrow 3,7,12] [--lead]
         Effort table (mar-02): 12 links or fewer = 1 PS; 13-36 = up to 3 PS; more = "gear call needed: N links" and stop unless --gear N.
         --batch N overrides the batch size. --resume reuses the fetch and writes briefs only for batches whose extract is missing or empty.
         --resume gate (aas-06): if any batch extract is missing or empty, print the pending batches and exit 2 before writing the register brief.
         --check (aas-07): validate the file, count links, print the effort row and a cost floor from the COST dict, exit without fetching.
         --wide (mar-08): PS extract only title, one-line abstract and source quality per link -> wide.k.json. Rerun --wide after they land to print the numbered list and stop.
         --narrow 3,7,12 (mar-08): reuse the fetch, rerun the full extract on only those link numbers (extract.nK.json), then write the register brief.
+        --lead (BOLO 54 depth 2): also write brief.LEAD.md (work folder, batch list, budget, register brief path) for collect-lead and print it.
         Every real run appends one JSON line per step to work/<name>/trace.jsonl and writes run.json (check.py stamps the locus frontmatter from it, mar-07).
 
 Reads   every http(s) URL in the file (order kept)
@@ -82,7 +83,7 @@ def main():
     if not a or a[0] in ("-h", "--help"): print(__doc__); sys.exit(0 if a else 2)
     opt = lambda f: int(a[a.index(f) + 1]) if f in a else 0
     src = a[0]; limit = opt("--limit"); batch_arg = opt("--batch"); gear = opt("--gear"); resume = "--resume" in a
-    check = "--check" in a; wide = "--wide" in a
+    check = "--check" in a; wide = "--wide" in a; lead = "--lead" in a
     narrow = []
     if "--narrow" in a:
         try: narrow = sorted({int(x) for x in a[a.index("--narrow") + 1].split(",") if x.strip()})
@@ -239,6 +240,20 @@ Stop when every batch has a non-empty extract.k.json, WRITE has produced the reg
     print(f"COLLECT · {name} · {len(ok)}/{len(urls)} fetched · effort: {eff[0]} · {k} extract batch(es) of {batch} · {rel(wd)}")
     if resume:
         print(f"resume: skipped batch(es) {skipped or 'none'} (extract present and non-empty); briefs rewritten for {todo or 'none'}")
+    if lead and not narrow and not (todo and resume):
+        NL = chr(10)
+        lp = os.path.join(wd, "brief.LEAD.md")
+        blist = NL.join(f"- batch {j}: {rel(os.path.join(wd, f'brief.EXTRACT.{j}.md'))} -> {rel(os.path.join(wd, f'extract.{j}.json'))}" for j in todo)
+        lead_txt = parts(
+            f'You are collect-lead for the "{name}" locus. Model: sonnet. Depth 2 (SOP 1.17).',
+            "Launch one PS (haiku, general-purpose) per batch below, all in one message, each with its brief verbatim; wait; check each extract.k.json exists and parses to a non-empty JSON list (script check, no judging); then write the register from the WRITE brief yourself.",
+            f"the register file named in {rel(os.path.join(wd, 'brief.WRITE.md'))}; hand back one line per batch plus the register path.",
+            f"READ: {rel(plan_p)} and the briefs below. Work folder: {rel(wd)}. Batches:{NL}{blist}{NL}Register brief: {rel(os.path.join(wd, 'brief.WRITE.md'))}",
+            "budget: at most 3 PS, one launch round, no relaunch, no reviewer, no depth 3; write only the register.",
+            "25 turns.", "One line per batch, then the register path.")
+        write(lp, lead_txt)
+        print(f"LEAD brief written: {rel(lp)}"); print(lead_txt)
+        sys.exit(0)
     print(f"next: launch EXTRACT-{', '.join(map(str, todo)) if todo else '(none needed)'} (haiku, one message, gear permitting) → WRITE (sonnet) → python _tools/loci/check.py {name} <register.md>")
 
 if __name__ == "__main__":

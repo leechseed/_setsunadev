@@ -1,6 +1,6 @@
 ---
 name: syllabus-builder
-description: Reads a topic note and the locked-parts list and returns a bare tree of one-line parts in teaching order, with prerequisites. Lists parts only; changes nothing.
+description: Reads a topic note and the locked-parts list and returns a bare tree of one-line parts in teaching order, with prerequisites. Lists parts only; changes nothing. Use when the CDR needs this: reads a topic note and the locked-parts list and returns a bare tree of one-line parts in teaching order, with prerequisites.
 tools: Read, Grep, Glob
 model: sonnet
 ---
@@ -40,5 +40,12 @@ Source: [file:line]
 ```
 
 No time estimates, no weekly rhythm, no projects. If the note is too thin to map, say what is missing.
+
+## Hand-back (SOP §1.24)
+
+- Turn cap: 15 turns.
+- Hand back: one line restating the task · the paths touched · one report under 250 words · then stop.
+- Mark every claim without a source as guessed.
+
 
 <!-- adapted from hluaguo/learn-faster-kit (MIT) · BOLO 140 · 2026-10-12 -->

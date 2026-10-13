@@ -1,6 +1,6 @@
 ---
 name: code-explorer
-description: Traces how an existing script or feature works end to end and reports entry points, data flow, dependencies and reusable pieces before new work starts.
+description: Traces how an existing script or feature works end to end and reports entry points, data flow, dependencies and reusable pieces before new work starts. Use when the CDR needs this: traces how an existing script or feature works end to end and reports entry points, data flow, dependencies and reusable pieces before new work starts.
 tools: Read, Grep, Glob
 model: sonnet
 ---
@@ -36,5 +36,12 @@ You analyze existing code to understand how a feature works before new work begi
 ```
 
 Cite file:line for every claim.
+
+## Hand-back (SOP §1.24)
+
+- Turn cap: 15 turns.
+- Hand back: one line restating the task · the paths touched · one report under 250 words · then stop.
+- Mark every claim without a source as guessed.
+
 
 <!-- adapted from ECC agents/code-explorer.md (MIT, github.com/affaan-m/ECC), 2026-10-12 -->

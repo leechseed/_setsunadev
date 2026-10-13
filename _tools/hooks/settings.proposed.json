@@ -1,0 +1,19 @@
+{
+  "hooks": {
+    "Stop": [
+      { "hooks": [ { "type": "command", "command": "bash \"$CLAUDE_PROJECT_DIR/_tools/autocommit.sh\"", "timeout": 30, "statusMessage": "Autosaving to git…" } ] }
+    ],
+    "SessionStart": [
+      { "matcher": "startup|resume|clear", "hooks": [ { "type": "command", "command": "python \"$CLAUDE_PROJECT_DIR/_tools/sitrep/digest.py\"", "timeout": 20, "statusMessage": "Reading the digest…" } ] }
+    ],
+    "PreToolUse": [
+      { "matcher": "Bash|PowerShell", "hooks": [ { "type": "command", "command": "python \"$CLAUDE_PROJECT_DIR/_tools/hooks/no_probe.py\"", "timeout": 10, "statusMessage": "The no-probing guard…" } ] }
+    ],
+    "UserPromptSubmit": [
+      { "hooks": [ { "type": "command", "command": "python \"$CLAUDE_PROJECT_DIR/_tools/hooks/order_hint.py\"", "timeout": 5, "statusMessage": "Reading the order…" } ] }
+    ],
+    "PreCompact": [
+      { "hooks": [ { "type": "command", "command": "python \"$CLAUDE_PROJECT_DIR/_tools/hooks/precompact_backup.py\"", "timeout": 10, "statusMessage": "Backing up the transcript…" } ] }
+    ]
+  }
+}

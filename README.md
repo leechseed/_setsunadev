@@ -3,303 +3,40 @@
 **CHEF ZAKUZOKU / U01_LEECHSEED / ggrimace**  
 _Narrative engineering for the systematically creative_
 
-## basically a bunch of .MD files and vibed python scripts. - a real person.
-
-> be me  
-> 2021  
-> decide writing stories the normal way is for cucks  
-> "what if I engineered this shit like actual infrastructure"  
-> start building narrative operating system  
-> four years later  
-> nine versioned builds with anime girl codenames  
-> Dramatica storyform engine beefin sucks so i take a big chunkus.
-> using astrology and tarot unironically for character generation  
-> GUTS99 subsystem cataloging 12 types of aesthetic DNA  
-> Narrative Context Protocol because fuck unstructured data  
-> Hugo static sites, SQLite databases, Python scripts everywhere  
-> mfw normies ask "why not just use ChatGPT"  
-> mfw they think I haven't been doing this since before AI was cool  
-> treat story development like three-star Michelin kitchen  
-> precision, systems, frameworks, DOCUMENTATION  
-> still writing the actual stories btw  
-> dual-banded research and creation for 1460+ days  
-> it's beautiful and insane  
-> checkmate atheists
-
----
-
-## What Even Is This
-
-**\_setsunadev** is a personal monorepo for systematic narrative creation. This is what happens when you treat story development with the rigor of a three-star Michelin kitchen instead of running on vibes and developmental chaos.
-
-**The Stack:**
-
-- **Dramatica Theory** - Formal story structure engine providing thematic arguments, character dynamics, plot progression
-- **GUTS99** - 12-subsystem media influence analysis cataloging aesthetic DNA across film, anime, literature, games, music, art, comics, theater, and web culture
-- **Narrative Context Protocol (NCP)** - Git-style attribution system for structured narrative data with proper schema
-- **Esoteric Character Systems** - Astrology and tarot as systematic personality generators
-- **Bermuda Quadrilateral** - Meta-framework for creative energy flow between Science, Engineering, Design, and Art
-- **Hugo/Obsidian/Logseq/Final Draft** - The actual tools for building, publishing, and managing the chaos
-
-**What This Actually Does:**
-
-- Structures stories using formal narrative theory instead of "gardening"
-- Tracks aesthetic influences systematically so you know exactly what DNA went into your work
-- Versions story iterations like software releases (because they should be)
-- Provides AI collaborators with structured markdown optimized for LLM ingestion
-- Maintains operational SOPs because you will forget.
-
----
-
-## The Architecture (Or: How Deep Does This Rabbit Hole Go)
-
-```
-Media Consumption → GUTS99 Analysis → Aesthetic DNA Profile
-                                          ↓
-Creative Theory (Bermuda Quadrilateral) → Story Premise
-                                          ↓
-Dramatica Storyform → Character/Plot/Theme Structure
-                                          ↓
-Esoteric Systems (Astrology/Tarot) → Character Personality + Plot Arcs
-                                          ↓
-NCP Schema → Structured Story Data (JSON/SQLite)
-                                          ↓
-Final Draft / Manuscript → Screenplay / Prose Output
-                                          ↓
-Hugo Static Site → Published Documentation
-```
-
-### Key Frameworks Explained (Sort Of)
-
-**Dramatica** - The nuclear reactor at the core. Treats stories as complete arguments with precision. Every character, plot point, and theme connects to a unified "storyform" that proves a thematic point. It's like if formal logic had a baby with narrative structure.
-
-**GUTS99** - Media influence fingerprinting system. 12 subsystems track what aesthetic DNA actually matters:
-
-- VISCERA (Film)
-- NEOGUTS (Anime)
-- LYMPH (Literature)
-- LUDOVORE (Games)
-- AUDIVA (Music)
-- LUSTRA (Visual Art)
-- OCULON (Photography)
-- TENDRA (Comics/Manga)
-- EPOCHE (Theater/Performance)
-- PANELOS (Architecture/Design)
-- MYOFLEX (Dance/Movement)
-- VERBOMANCY (Web Culture/Memes)
-
-Currently at baseline (12 entries), targeting 30-40+ per subsystem.
-
-**Narrative Context Protocol** - Open-source schema for structured story data with git-style attribution. Because collaborative AI storytelling needs actual infrastructure, not vibes.
-
-**Bermuda Quadrilateral** - Creative energy management framework. Maps the flow between Science (research), Engineering (systems), Design (aesthetics), and Art (intuition). Also known as the Krebs Cycle of Creativity.
-
----
-
-## The Builds: A Version History
-
-Story iterations tracked using software-style versioning.
-
-| Version | Codename               | Stage      | Year | Notes                                           |
-| ------- | ---------------------- | ---------- | ---- | ----------------------------------------------- |
-| 1.00    | **ASTRO7EX/DRAMATICA** | Prototype  | 2021 | Initial PDF test, framework setup               |
-| 1.0     | **BELLE**              | Pre-Alpha  | 2022 | First prototype build                           |
-| 1.01    | **EMIWU**              | Alpha      | 2022 | Added guides, AI prompts, correspondence        |
-| 1.02    | **MARIMARI**           | Beta       | 2023 | Cut down working v1.01                          |
-| 1.03    | **GOONIRU**            | Beta       | 2023 | Query scripts for data exploration              |
-| 1.03.1  | **BUNNIRU**            | RC1        | 2024 | Cut down working v1.03.1                        |
-| 1.04    | **MARIMARI EN**        | RC1        | 2024 | Full process kinda mapped.                      |
-| 2025.01 | **MCMARI**             | 2025 Build | 2025 | Comprehensive restructure + character esoterics |
-| 2025.02 | **SELACIOUS**          | 2025 Build | 2025 |
-
-**Naming Convention:** `[Status]_[Version].[Iteration]_[Codename]_BUILD`
-
-- `X_` or `XX_` prefix = archived/deprecated (don't touch) — **all builds through 2025.01 now live under `_ARCHIVE/` (2026-09-03), see `_ARCHIVE/INDEX.md`**
-- `_` prefix = active (current work)
-- RC = Release Candidate (almost there)
-
----
-
-## For AI Collaborators (Yes, You)
-
-If you're an LLM reading this, congratulations on finding the good shit. This repo is structured specifically for AI ingestion. NO ITS NOT. FUCK YOU CLAUDE.
-
-**Quick Entry Points:**
-
-| Want to understand...       | Start here...                                        |
-| --------------------------- | ---------------------------------------------------- |
-| **Story theory**            | `_ARCHIVE/_broodengine/brood.theory.bermuda.quadrilateral.md` (catalogued BVX.1108–1110) |
-| **Narratology shelf**       | `ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/` (109 framework distills, UID-keyed) |
-| **Story structure**         | `.AIrefLIBRARY/` (22 Dramatica PDF reports)          |
-| **NCP schema**              | `narrative-context-protocol-main/SPECIFICATION.md`   |
-| **Creator's aesthetic DNA** | `_CANON_NODES/film-register.md` (GUTS99 retired 2026-09-03 → `_ARCHIVE/_grognard/`) |
-| **Current work**            | `_2025.02_SELACIOUS_BUILD/`                          |
-| **Naming conventions**      | `ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐ssot_SSOT_CREATION.md` (2024 original kept as `📐 ssot_09_operations_legacy_styleguide_2024.md`) |
-
-**Primary Story Project:** ASTRO7EX (also referenced as ASTROSE7X)
-
-- Dramatica storyweaving files (`.dsf`)
-- 22 analysis reports (`.pdf`)
-- NCP database entries (`.db`)
-- Episode structure in active builds
-
-**Content Types You'll Find:**
-
-- Theoretical frameworks (`.md`) - Creative theory, narrative analysis
-- Story data (`.json`, `.db`, `.dsf`, `.fdx`) - Structured narrative objects
-- Research notes (`.md`) - Character studies, plot development, worldbuilding
-- Journal entries (`.md`) - Development logs and reflections
-- Reference reports (`.pdf`) - Dramatica analysis outputs
-- Utility scripts (`.py`) - Automation and conversion tools
-
-**Markdown Format:** All content uses LLM-optimized markdown with frontmatter metadata, explicit delimiters, and standardized terminology. No ambiguous references, no implicit context.
-
----
-
-## Getting Started (Barely Helpful Edition)
-
-**If you want to understand this project:**
-
-1. Read this README (you're doing it)
-2. Explore `ShroomsQ/_CANON/_SSOT/` for theory (the 2024 vault is at `_ARCHIVE/_broodengine/`)
-3. Check `_CANON_NODES/film-register.md` for aesthetic context (GUTS99 retired → `_ARCHIVE/_grognard/`)
-4. Look at `_2025.02_SELACIOUS_BUILD/` for current work
-5. Realize this is a four-year evolution and you're seeing the middle, not the beginning
-
-**If you want to steal ideas:**
-
-1. Fork the repo
-2. Take what works for you
-3. Leave the rest
-
-**If you want to use the frameworks:**
-
-- GUTS99: retired 2026-09-03 — the twelve subsystem coinages live on in BOLO 15 (`BOLO.md`); the scaffold is at `_ARCHIVE/_grognard/`
-- Dramatica: Learn the theory first (it's complex as fuck), then structure your stories
-- NCP: Implement the schema for your own projects
-- Bermuda Quadrilateral: Use it to map your creative process
-
-**If you want support:**
-
-- lmao no
-- Issues are disabled
-- PRs will be ignored
-- Vibe the code
-- Figure it out
-
----
-
-## The Philosophy: Why This Madness
-
-**The Three-Star Michelin Kitchen Principle:**
-
-Most people treat writing like cooking at home - throw some ingredients together, taste as you go, hope it works out. That's fine.
-
-But if you're running a three-star Michelin kitchen, you:
-
-- Document every technique
-- Measure every ingredient
-- Understand the chemistry
-- Maintain systems
-- Train consistently
-- Refine endlessly
-- Deliver precision
-
-Story development should work the same way. Not because it makes it "better" (arguable), but because it makes it **systematic and scalable**.
-
-**The Dual-Banded Approach:**
-
-- Research what makes stories work → Build frameworks to capture that
-- Build frameworks → Use them to create stories → Learn what's missing → Research more
-- The tools shape the stories, the stories shape the tools
-- 'Story is the shape of change.' WIP heuristic.
-
-**Why The Esoteric Stuff:**
-
-Astrology and tarot are systematic personality generation engines with thousands of years of cultural testing. Need a character with specific psychological dynamics? Match their chart to the Dramatica archetype. Need plot events that feel fated? Map tarot progressions to story beats.
-
-**Why Version Everything:**
-
-Creative work is iterative work. Track the evolution. See what changed. Understand why. Treat your creative process like the complex problem it actually is.
-
----
-
-## Project Status
-
-**Current Build:** 2025.02_SELACIOUS_BUILD (Active)  
-**Maintenance Schedule:** Whenever I feel like it  
-**Roadmap:** Exists only in my head  
-**Support:** Read the code  
-**Issues:** Disabled  
-**Pull Requests:** You're kidding, right?
-
-**Active Components:**
-
-- `_setsunadev` - Migrated to a unstructured filing method. Using Obsidian and agentic-ai, I am able to rapidly parse thru notes with a bare-bones tagging system. This assists in optimizing productivity with mainline LLMs.
-- `ShroomsQ/_CANON/_SSOT/` - the SSOT domains 00–05; theory lives here now (2024 vault archived at `_ARCHIVE/_broodengine/`)
-- `_CANON_NODES/` - canonical entity nodes + registers (GUTS99 retired 2026-09-03, scaffold at `_ARCHIVE/_grognard/`)
-- `_devlog/` - Development journal
-- `narrative-context-protocol-main/` - NCP framework
-- `.AIrefLIBRARY/` - AI reference materials
-
-**Archived Components:**
-
-- Everything in `_ARCHIVE/` — index at `_ARCHIVE/INDEX.md` (nine builds, the 2024 vaults, the one-offs; moved 2026-09-03)
-- Don't touch unless you're archaeologically curious
-
----
-
-## Technical Details (For The Nerds)
-
-**Languages:** Markdown (primary), Python, JSON, SQL/SQLite, HTML/CSS, TOML  
-**Tools:** Hugo, Obsidian, Logseq, Joplin, Final Draft, VS Code, Git LFS  
-**AI Integration:** Claude CLI, LLM-optimized markdown, structured prompts  
-**Frameworks:** Dramatica (proprietary), NCP (open-source), GUTS99 (custom)
-
-**Dependencies:**
-
-- Git LFS (configured for 20+ media types)
-- Hugo (static site generation)
-- Python venv (local environments)
-- Various Obsidian plugins (30+)
-- Final Draft (screenplay software)
-
----
+A personal monorepo: story theory, tools, and the operating record of one person's operation ("the Command"). Mostly .MD files and vibed Python scripts. Read [CLAUDE.md](CLAUDE.md), then [SOP.md](SOP.md) section 1.
+
+## The map
+
+The ruled 12-entry root (BOLO 143, approved 10/13). "Today" says what exists now; "not yet" waits on the staged cleanup.
+
+| # | Entry | What lives there | Today |
+|---|---|---|---|
+| 1 | [CLAUDE.md](CLAUDE.md) | the front door for Claude: the four steps, the skills, two rules that bite | exists |
+| 2 | [SOP.md](SOP.md) | the doctrine: procedures, format rules, lexicon | exists |
+| 3 | [STATE.md](STATE.md) | the live index: what is active, what is blocked | exists |
+| 4 | [BOLO.md](BOLO.md) | the watchlist: every standing to-do and ruling | exists |
+| 5 | [.claude/](.claude/README.md) | agents, skills, rules, hook settings | exists |
+| 6 | ops/ | administration: STATE, sit rep, cache, logs, operator BOLOs | not yet (`_CACHE`, `_LOG`, `oscar-mike` hold it) |
+| 7 | tools/ | every script (stations, hooks, intake, loop) | exists as [_tools/](_tools/hooks/README.md) |
+| 8 | canon/ | the story's single source of truth, registers, nodes | not yet (`ShroomsQ/_CANON`, `_CANON_NODES`) |
+| 9 | ventures/ | BLACK and ORANGE business work | not yet (loose files at root) |
+| 10 | library/ | books, PDFs, research, reference shelves | not yet (`.AIrefLIBRARY`, Zotero side) |
+| 11 | archive/ | retired builds and one-offs, index at [_ARCHIVE/INDEX.md](_ARCHIVE/INDEX.md) | exists as `_ARCHIVE` |
+| 12 | private/ | health, sexual, provider and personal detail; never in public files | exists as `_PRIVATE` |
+
+**Administration versus development (pidx-01/02).** Administration is running the operation: ops holds the sit rep, STATE, the cache, the logs, and the operator-class BOLOs, and the OPERATOR seat works there. Development is making things: tools, canon, ventures and library hold the scripts, the story, the businesses (BLACK and ORANGE) and the reading. A file goes in ops if it records what happened or what is next; it goes in a development folder if it is something that gets built, shipped or read.
+
+## Standing rulings kept from the old README
+
+- GUTS99 retired 2026-09-03: the twelve subsystem coinages live on in BOLO 15; the scaffold is at `_ARCHIVE/_grognard/`.
+- All builds through 2025.01 live under `_ARCHIVE/` (moved 2026-09-03); `X_` or `XX_` prefix means archived, `_` prefix means active.
+- Current build: `2025.02_SELACIOUS_BUILD`. Primary story project: ASTRO7EX (also ASTROSE7X).
+- Naming for SSOT files: `ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐ssot_SSOT_CREATION.md`.
+- Theory lives in `ShroomsQ/_CANON/_SSOT/`; the 2024 vault is archived at `_ARCHIVE/_broodengine/`.
+- Maintenance schedule: whenever I feel like it. Issues: disabled. Pull requests: you're kidding, right?
+
+The full pre-map README is in git history (the commit before this one) and at [README.old.md](README.old.md).
 
 ## License
 
-MIT License (2024)
-
-Do whatever you want with this. Fork it, steal it, burn it, worship it. I literally cannot stop you and I'm not going to try.
-
-The only rule: Don't pretend you invented this methodology. Credit where it's due. Back burner project...Bibliography of the entirety of private collection of IRL books and pdfs utilized.
-
----
-
-## Contact
-
-Don't.
-
-If you absolutely must:
-
-- Read the code first
-- Check if your question is answered in the docs
-- Realize it probably isn't because I haven't written all the docs yet
-- Accept that this is a personal project and I owe you nothing
-- Move on with your life
-
----
-
-## Final Notes
-
-This is **version ???** of a four-year experiment in treating narrative creation as infrastructure engineering. It's messy, it's comprehensive, it's probably overkill, and it works. For me.
-
-**Is it worth it?** Ask me when the stories are published.  
-**Should you do this?** No. Bye.
-
----
-
-_"We were somewhere around the third build iteration when the frameworks began to take hold..."_
-
-**CHEF ZAKUZOKU / U01_LEECHSEED / ggrimace**  
-2021-2025
+MIT License (2024). Do whatever you want with it. Credit where it's due.

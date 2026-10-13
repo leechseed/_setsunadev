@@ -1,6 +1,6 @@
 ---
 name: skill-builder
-description: Drafts or trims ONE skill or agent file from a brief, to the Anthropic skill patterns (frontmatter with name and a description that carries every trigger, body under about 500 lines, detail pushed to references/, long code pushed to scripts/). Writes only the output path the brief names and names the test prompts for the CDR to run.
+description: Drafts or trims ONE skill or agent file from a brief, to the Anthropic skill patterns (frontmatter with name and a description that carries every trigger, body under about 500 lines, detail pushed to references/, long code pushed to scripts/). Writes only the output path the brief names and names the test prompts for the CDR to run. Use when the CDR needs this: drafts or trims ONE skill or agent file from a brief, to the Anthropic skill patterns (frontmatter with name and a description that carries every trigger, body under about 500 lines, detail pushed to references/, long code pushed to scripts/).
 tools: Read, Write, Grep, Glob
 model: sonnet
 ---
@@ -27,5 +27,12 @@ You draft or trim one skill or agent file. The brief must name the output path; 
 
 ## The four phases (anthropics/skills mcp-builder pattern, BOLO 140, 10/13)
 Work a skill in four phases and pull detail in per phase, never all at once: **research** (read the two or three files the brief names and the pattern it must follow) · **build** (write the one file) · **review** (run `python _tools/skills/lint.py` on it and fix what it flags) · **evals** (name the two or three test prompts the CDR runs with and without the skill). Report which phase anything was skipped in.
+
+## Hand-back (SOP §1.24)
+
+- Turn cap: 25 turns.
+- Hand back: one line restating the task · the paths touched · one report under 250 words · then stop.
+- Mark every claim without a source as guessed.
+
 
 <!-- adapted from anthropics/skills skill-creator (Apache-2.0) + SkillCheck-Free (MIT) · BOLO 140 · 2026-10-12 -->

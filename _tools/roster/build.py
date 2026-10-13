@@ -62,11 +62,35 @@ def agents():
             continue
         t = open(f, encoding="utf-8").read()
         m = re.match(r"^---\n(.*?)\n---", t, re.S)
-        fm = dict((k.strip(), v.strip()) for k, _, v in (l.partition(":") for l in m.group(1).splitlines()) if v) if m else {}
+        fm = {}
+        prof = {}
+        if m:
+            cur = None
+            for l in m.group(1).splitlines():
+                if l.startswith((" ", "	")) and cur == "profile":
+                    k, _, v = l.strip().partition(":")
+                    prof[k.strip()] = v.strip()
+                elif ":" in l:
+                    k, _, v = l.partition(":")
+                    cur = k.strip()
+                    if v.strip():
+                        fm[cur] = v.strip()
+        fm["_profile"] = prof
         name = fm.get("name") or os.path.basename(f)[:-3]
         tools = fm.get("tools", "")
-        out[name] = {"model": fm.get("model", "default"), "writes": any(w in tools for w in ("Edit", "Write")), "tools": tools}
+        out[name] = {"model": fm.get("model", "default"), "writes": any(w in tools for w in ("Edit", "Write")), "tools": tools, "profile": fm["_profile"]}
     return out
+
+
+def tip(name, prof):
+    """The agent name, with an optional profile: block as a hover tip (voice, weakness, last jobs, cost)."""
+    if not prof:
+        return f"<code>{e(name)}</code>"
+    jobs = prof.get("last_jobs", "").strip("[]")
+    jobs = "; ".join(j.strip().strip('"') for j in jobs.split(",") if j.strip())
+    parts = [("Voice", prof.get("voice")), ("Weakness", prof.get("weakness")), ("Last jobs", jobs), ("Cost", prof.get("cost"))]
+    body = "".join(f"<b>{k}:</b> {e(v)}<br>" for k, v in parts if v)
+    return f'<button class="t" type="button"><code>{e(name)}</code><span class="tip">{body}</span></button>'
 
 
 def e(s):
@@ -85,14 +109,14 @@ def build():
                 continue
             placed.add(n)
             a = A[n]
-            rows.append(f'<tr><td><code>{e(n)}</code></td><td><span class="m {e(a["model"])}">{e(a["model"])}</span></td>'
+            rows.append(f'<tr><td>{tip(n, a["profile"])}</td><td><span class="m {e(a["model"])}">{e(a["model"])}</span></td>'
                         f'<td><span class="rw {"w" if a["writes"] else "r"}">{"writes files" if a["writes"] else "read-only"}</span></td>'
                         f'<td>{e(PLAIN.get(n, ""))}</td></tr>')
         if rows:
             groups.append(f'<section><h2>{e(title)} <small>{e(why)}</small></h2><div class="tw"><table><thead><tr><th>Agent</th><th>Model</th><th>Touches</th><th>Job</th></tr></thead><tbody>{"".join(rows)}</tbody></table></div></section>')
     extra = sorted(set(A) - placed)
     if extra:
-        groups.append('<section><h2>Unsorted</h2><p>' + ", ".join(f"<code>{e(n)}</code>" for n in extra) + "</p></section>")
+        groups.append('<section><h2>Unsorted</h2><p>' + ", ".join(tip(n, A[n]["profile"]) for n in extra) + "</p></section>")
     page = PAGE.replace("{{SEATS}}", seats).replace("{{GROUPS}}", "".join(groups)).replace("{{N}}", str(len(A)))
     open(OUT, "w", encoding="utf-8", newline="\n").write(page)
     return OUT

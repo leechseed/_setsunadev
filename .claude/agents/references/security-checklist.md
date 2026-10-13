@@ -43,4 +43,22 @@ Flag any of these as shipped, not as configurable:
 
 Skip clearly marked placeholders in `.env.example` and test values.
 
+## 4. Review prompt (confidence-gated pass)
+
+Use this as the opening frame when the brief asks for a "high-confidence security review" of a diff. Rewritten in our words from the Anthropic `/security-review` prompt (OneRedOak/claude-code-workflows, MIT, Patrick Ellis). Source: https://raw.githubusercontent.com/OneRedOak/claude-code-workflows/main/security-review/security-review-slash-command.md
+
+**Goal.** Find vulnerabilities the diff newly adds that someone could really exploit. This is not a general code review: ignore style, and ignore old problems the diff did not touch.
+
+**Confidence bar.** Report a finding only if you are over 80% sure it can be exploited. Score each 1-10; drop anything below 8 on a second look. Skip theoretical, low-impact and style items. A local-network-only hole can still be high severity.
+
+**Do not report:** denial of service or resource exhaustion; rate limiting; secrets that are already stored safely on disk (this repo's separate rule still applies: no secrets in tracked files); missing hardening with no concrete hole; theoretical races; outdated libraries; memory-safety talk in memory-safe languages; test-only files; markdown docs; log spoofing; regex injection or regex slowness; SSRF where only the path is controlled (host or scheme must be); missing audit logs; open redirects, tabnabbing and similar low-impact web items unless certain.
+
+**Trusted inputs.** Environment variables and command-line flags are trusted. UUIDs are unguessable. Client-side code needs no auth checks; the server does. Shell scripts rarely take untrusted input: report only with a concrete attack path.
+
+**Look for:** command, SQL, template and path-traversal injection; auth bypass and privilege escalation; hardcoded keys, weak crypto, certificate checks turned off; unsafe deserialization (pickle, yaml.load), eval, XSS; secrets or personal data in logs, errors or API output.
+
+**Method.** (1) Learn the repo's existing safe patterns. (2) Compare the diff against them and flag departures and new attack surface. (3) Trace each input to each sensitive operation.
+
+**Output per finding:** `file:line`, severity (high: remote code, data breach or auth bypass; medium: needs conditions but big impact, include only if obvious; low: defense-in-depth), category, what is wrong, an exploit scenario, the fix. Our severity words are in `severity.md`.
+
 <!-- structure informed by agamm/claude-code-owasp (MIT); differential-review idea only from trailofbits/skills, no text copied · BOLO 140 · 2026-10-13 -->

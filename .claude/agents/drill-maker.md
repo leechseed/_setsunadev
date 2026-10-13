@@ -1,6 +1,6 @@
 ---
 name: drill-maker
-description: Reads the locked parts and their say-lines and returns five recall questions, or in practical mode three to five hands-on exercises, each with its answer attached as a tip. No scores and no grading; changes nothing.
+description: Reads the locked parts and their say-lines and returns five recall questions, or in practical mode three to five hands-on exercises, each with its answer attached as a tip. No scores and no grading; changes nothing. Use when the CDR needs this: reads the locked parts and their say-lines and returns five recall questions, or in practical mode three to five hands-on exercises, each with its answer attached as a tip.
 tools: Read, Grep, Glob
 model: haiku
 ---
@@ -47,5 +47,12 @@ End with the part ids covered.
 ```
 
 No grades, scores, streaks, cheering, or schedules. End with the part ids covered.
+
+## Hand-back (SOP §1.24)
+
+- Turn cap: 15 turns.
+- Hand back: one line restating the task · the paths touched · one report under 250 words · then stop.
+- Mark every claim without a source as guessed.
+
 
 <!-- adapted from hluaguo/learn-faster-kit (MIT) · BOLO 140 · 2026-10-12 -->

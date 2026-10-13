@@ -1,0 +1,8 @@
+{
+  "prompt_file": "_tools/loop/jobs/lint-zero.prompt.md",
+  "done_cmd": "python -X utf8 _tools/skills/lint.py",
+  "max_iterations": 3,
+  "token_budget": 60000,
+  "stop_file": "_tools/loop/ABORT",
+  "allowed_paths": [".claude/skills/**", ".claude/agents/**"]
+}
