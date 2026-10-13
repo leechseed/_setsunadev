@@ -70,6 +70,7 @@ def build(queue: Path) -> Path:
         <div class="body">
           <p class="q"><span class="pre">{esc(r['pre'])}</span><mark>{esc(r['text'])}</mark><span class="post">{esc(r['post'])}</span></p>
           <div class="chips">{chips}<span class="chip pos">{r['start']}–{r['end']}</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-{esc(rid)}" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>""")
@@ -122,6 +123,11 @@ def build(queue: Path) -> Path:
   .yn button:hover{{border-color:var(--ink-3);color:var(--ink)}}
   .yn .y[aria-pressed="true"]{{background:var(--good);border-color:var(--good);color:#0B1F14}}
   .yn .w[aria-pressed="true"]{{background:var(--bad);border-color:var(--bad);color:#2A0A10}}
+  .rnote{{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px;align-items:start;margin-top:6px}}
+  .rnote span{{font:500 10.5px/2.2 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}}
+  .rnote textarea{{width:100%;min-height:30px;resize:vertical;font:13px/1.45 var(--body);color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:3px;padding:5px 8px}}
+  .rnote textarea:focus{{border-color:var(--accent);outline:none}}
+  .rnote textarea.has{{border-color:var(--accent-ink)}}
   .none{{margin:10px 14px 0;color:var(--ink-3);font-size:14px}}
   .t{{position:relative;font:inherit;color:inherit;letter-spacing:inherit;text-transform:inherit;background:none;border:0;padding:0;border-bottom:1px dotted var(--accent);cursor:help}}
   .tip{{display:none;position:absolute;left:0;top:calc(100% + 6px);z-index:20;width:min(300px,80vw);padding:8px 10px;background:var(--panel-2);border:1px solid var(--accent);border-radius:4px;font:400 13px/1.45 var(--body);color:var(--ink);text-transform:none;letter-spacing:0;text-align:left;box-shadow:0 8px 24px rgba(0,0,0,.5)}}
@@ -140,7 +146,7 @@ def build(queue: Path) -> Path:
 <main class="wrap">
   <p class="lede">qwen2.5:14b read {len(notes) - len(skipped)} lineage notes and pulled {total} {tip("events", "A thing that happens in the story world: a founding, a crash, a rename, a rise. The model was told to skip ideas, theory and notes about writing.", "g-ev")}.
   Every row is {tip("grounded", "The quote sits at a known offset in the source text (the small number on each row). Rows the model could not place were dropped before this page was built.", "g-gr")}: the highlighted words are the model's quote, the grey words around it are the note.
-  Score each row Right or Wrong. The {tip("70% line", "The intake verdict (lx-01): if at least 70% of rows are right, the trial becomes a tool at _tools/extract/, feeding a review file, never canon.", "g-70")} decides whether this becomes a tool. Built {built}.</p>
+  Score each row Right or Wrong, and add a note to any row. The {tip("70% line", "The intake verdict (lx-01): if at least 70% of rows are right, the trial becomes a tool at _tools/extract/, feeding a review file, never canon.", "g-70")} decides whether this becomes a tool. Built {built}.</p>
   <p id="noDb" hidden>Scores are not saving: the page could not reach its store. Your clicks show here but will not reach the CDR.</p>
   {''.join(sections)}
 </main>
@@ -153,6 +159,8 @@ def build(queue: Path) -> Path:
       const s = (scores[el.dataset.id] || {{}}).score || "";
       el.classList.toggle("right", s === "right"); el.classList.toggle("wrong", s === "wrong");
       el.querySelector(".y").setAttribute("aria-pressed", s === "right"); el.querySelector(".w").setAttribute("aria-pressed", s === "wrong");
+      const ta = el.querySelector(".rnote textarea"), rm = (scores[el.dataset.id] || {{}}).remark || "";
+      if (ta && document.activeElement !== ta && ta.value !== rm) {{ ta.value = rm; ta.classList.toggle("has", !!rm.trim()); }}
       if (s === "right") r++; else if (s === "wrong") w++;
       const n = el.dataset.note; per[n] = per[n] || [0, 0]; per[n][1]++; if (s) per[n][0]++;
     }}
@@ -163,16 +171,25 @@ def build(queue: Path) -> Path:
     document.getElementById("barB").style.width = (rows.length ? 100 * w / rows.length : 0) + "%";
     for (const [n, [a, b]] of Object.entries(per)) {{ const c = document.querySelector(`[data-cnt="${{CSS.escape(n)}}"]`); if (c) c.textContent = a + " / " + b + " scored"; }}
   }}
-  async function save(id, score) {{
+  async function put(id, patch) {{
     const el = rows.find((x) => x.dataset.id === id);
-    const cur = (scores[id] || {{}}).score;
-    scores[id] = {{ note: el.dataset.note, quote: el.querySelector("mark").textContent, score: cur === score ? "" : score }};
+    scores[id] = Object.assign({{ note: el.dataset.note, quote: el.querySelector("mark").textContent, score: "", remark: "" }}, scores[id] || {{}}, patch);
     render();
     if (!db) return;
     const st = document.getElementById("saveState"); st.textContent = "saving…";
     try {{ await db.collection("scores").doc(id).set(scores[id]); st.textContent = "saved"; }}
     catch (e) {{ st.textContent = "not saved: " + (e && e.code || "error"); }}
   }}
+  async function save(id, score) {{ const cur = (scores[id] || {{}}).score; return put(id, {{ score: cur === score ? "" : score }}); }}
+  /* notes (10/13, Chief: "a section to where I can add notes to each one"): saved a moment after you stop typing */
+  const timers = {{}};
+  document.addEventListener("input", (ev) => {{
+    const ta = ev.target.closest(".rnote textarea"); if (!ta) return;
+    const id = ta.closest(".row").dataset.id;
+    ta.classList.toggle("has", !!ta.value.trim());
+    ta.style.height = "auto"; ta.style.height = ta.scrollHeight + "px";
+    clearTimeout(timers[id]); timers[id] = setTimeout(() => put(id, {{ remark: ta.value }}), 700);
+  }});
   document.addEventListener("click", (ev) => {{
     const t = ev.target.closest(".t");
     document.querySelectorAll(".t.pin").forEach((x) => {{ if (x !== t) x.classList.remove("pin"); }});

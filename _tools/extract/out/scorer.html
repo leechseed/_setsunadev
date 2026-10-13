@@ -36,6 +36,11 @@
   .yn button:hover{border-color:var(--ink-3);color:var(--ink)}
   .yn .y[aria-pressed="true"]{background:var(--good);border-color:var(--good);color:#0B1F14}
   .yn .w[aria-pressed="true"]{background:var(--bad);border-color:var(--bad);color:#2A0A10}
+  .rnote{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px;align-items:start;margin-top:6px}
+  .rnote span{font:500 10.5px/2.2 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+  .rnote textarea{width:100%;min-height:30px;resize:vertical;font:13px/1.45 var(--body);color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:3px;padding:5px 8px}
+  .rnote textarea:focus{border-color:var(--accent);outline:none}
+  .rnote textarea.has{border-color:var(--accent-ink)}
   .none{margin:10px 14px 0;color:var(--ink-3);font-size:14px}
   .t{position:relative;font:inherit;color:inherit;letter-spacing:inherit;text-transform:inherit;background:none;border:0;padding:0;border-bottom:1px dotted var(--accent);cursor:help}
   .tip{display:none;position:absolute;left:0;top:calc(100% + 6px);z-index:20;width:min(300px,80vw);padding:8px 10px;background:var(--panel-2);border:1px solid var(--accent);border-radius:4px;font:400 13px/1.45 var(--body);color:var(--ink);text-transform:none;letter-spacing:0;text-align:left;box-shadow:0 8px 24px rgba(0,0,0,.5)}
@@ -54,7 +59,7 @@
 <main class="wrap">
   <p class="lede">qwen2.5:14b read 20 lineage notes and pulled 75 <button type="button" class="t" aria-describedby="g-ev">events<span class="tip" role="tooltip" id="g-ev">A thing that happens in the story world: a founding, a crash, a rename, a rise. The model was told to skip ideas, theory and notes about writing.</span></button>.
   Every row is <button type="button" class="t" aria-describedby="g-gr">grounded<span class="tip" role="tooltip" id="g-gr">The quote sits at a known offset in the source text (the small number on each row). Rows the model could not place were dropped before this page was built.</span></button>: the highlighted words are the model's quote, the grey words around it are the note.
-  Score each row Right or Wrong. The <button type="button" class="t" aria-describedby="g-70">70% line<span class="tip" role="tooltip" id="g-70">The intake verdict (lx-01): if at least 70% of rows are right, the trial becomes a tool at _tools/extract/, feeding a review file, never canon.</span></button> decides whether this becomes a tool. Built Oct 13, 4:49 AM.</p>
+  Score each row Right or Wrong, and add a note to any row. The <button type="button" class="t" aria-describedby="g-70">70% line<span class="tip" role="tooltip" id="g-70">The intake verdict (lx-01): if at least 70% of rows are right, the trial becomes a tool at _tools/extract/, feeding a review file, never canon.</span></button> decides whether this becomes a tool. Built Oct 13, 7:25 AM.</p>
   <p id="noDb" hidden>Scores are not saving: the page could not reach its store. Your clicks show here but will not reach the CDR.</p>
   
     <section class="note" id="00_START_HERE">
@@ -66,6 +71,7 @@
         <div class="body">
           <p class="q"><span class="pre">document**: | Working name | Reality | |---|---| | &quot;UltraSchool&quot; | Did not exist in any *pre-ruling* source doc. **Superseded 2026-08-24: &quot;</span><mark>Ultra School is renamed to UltraSchool</mark><span class="post">&quot; (two words) is now canon by deliberate ruling — see the DCUS banner below.** | | &quot;Quinton&quot; | No such character. The real character is **Qu</span></p>
           <div class="chips"><span class="chip"><b>who</b> unknown</span><span class="chip"><b>what</b> rename Ultra School to UltraSchool</span><span class="chip"><b>when</b> 2026-08-24</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> unknown</span><span class="chip pos">813–825</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-00_START_HERE__1" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -74,6 +80,7 @@
         <div class="body">
           <p class="q"><span class="pre">ol&quot; (two words) is now canon by deliberate ruling — see the DCUS banner below.** | | &quot;Quinton&quot; | No such character. The real character is **</span><mark>Quinn Bishop replaces Quinton</mark><span class="post">**. | | &quot;Barnes&quot; | No such character anywhere. (All hits were &quot;Barnes &amp; Noble&quot; in an unrelated publishing note.) The canonical surname paire</span></p>
           <div class="chips"><span class="chip"><b>who</b> unknown</span><span class="chip"><b>what</b> replace Quinton with Quinn Bishop</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> unknown</span><span class="chip pos">963–975</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-00_START_HERE__2" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -82,6 +89,7 @@
         <div class="body">
           <p class="q"><span class="pre">ar richer institutional detail. **The task: fuse these two lineages.** Section 4 explains why they fuse cleanly. &gt; ✅ **RULED 2026-08-24 — </span><mark>the fused school&#x27;s name: the Delta Coast Ultra School (&quot;DCUS&quot;)</mark><span class="post">.** Chosen from an 8-name Ultra bench on Chief&#x27;s directive that &quot;Ultra School&quot; carry the title, Southern Gothic register. Recommended connec</span></p>
           <div class="chips"><span class="chip"><b>who</b> unknown</span><span class="chip"><b>what</b> the fused school&#x27;s name is DCUS</span><span class="chip"><b>when</b> 2026-08-24</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">2043–2105</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-00_START_HERE__3" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -90,6 +98,7 @@
         <div class="body">
           <p class="q"><span class="pre">er&quot; the Feed.** They possess the &quot;User Manual&quot; for the system&#x27;s indoctrination protocols. - **THE DRESS CODE BREACH — the breaking point:** </span><mark>the collective act of defiance began when they simply stopped wearing the &#x27;Verified&#x27; uniforms or grooming to elite norms</mark><span class="post"> **stopped wearing the &quot;Verified&quot; uniforms** or grooming to elite norms. Breaking dress code was the first step in exiting the system&#x27;s &quot;Leg</span></p>
           <div class="chips"><span class="chip"><b>who</b> they</span><span class="chip"><b>what</b> stop wearing &#x27;Verified&#x27; uniforms or grooming to elite norms</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">9738–9791</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-00_START_HERE__4" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -98,6 +107,7 @@
         <div class="body">
           <p class="q"><span class="pre">ihood&quot;** - **Devious Students with Alumni Family** — &quot;Loyalty is Default Settled By Devious Students&quot; **THE STATUS QUO IS DISRUPTED BY** - </span><mark>The Arrival of Tori</mark><span class="post"> - The Arrival of Riley - **The Student Body President Initiation of Colson** - Incident: Murder/Suicide of Cain **COLLAPSE INITIATED BY**</span></p>
           <div class="chips"><span class="chip"><b>who</b> Tori</span><span class="chip"><b>what</b> arrives</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">12641–12660</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-00_START_HERE__5" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -106,6 +116,7 @@
         <div class="body">
           <p class="q"><span class="pre">tudents with Alumni Family** — &quot;Loyalty is Default Settled By Devious Students&quot; **THE STATUS QUO IS DISRUPTED BY** - The Arrival of Tori - </span><mark>The Arrival of Riley</mark><span class="post"> - **The Student Body President Initiation of Colson** - Incident: Murder/Suicide of Cain **COLLAPSE INITIATED BY** - Whistleblowing of Cov</span></p>
           <div class="chips"><span class="chip"><b>who</b> Riley</span><span class="chip"><b>what</b> arrives</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">12663–12683</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-00_START_HERE__6" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -114,6 +125,7 @@
         <div class="body">
           <p class="q"><span class="pre">y** — &quot;Loyalty is Default Settled By Devious Students&quot; **THE STATUS QUO IS DISRUPTED BY** - The Arrival of Tori - The Arrival of Riley - **</span><mark>The Student Body President Initiation of Colson</mark><span class="post">** - Incident: Murder/Suicide of Cain **COLLAPSE INITIATED BY** - Whistleblowing of Coverup (Riley) - Vengeance and Violence of Troupe (Tor</span></p>
           <div class="chips"><span class="chip"><b>who</b> Colson</span><span class="chip"><b>what</b> initiated as Student Body President</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">12688–12735</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-00_START_HERE__7" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -122,6 +134,7 @@
         <div class="body">
           <p class="q"><span class="pre">s&quot; **THE STATUS QUO IS DISRUPTED BY** - The Arrival of Tori - The Arrival of Riley - **The Student Body President Initiation of Colson** - </span><mark>Incident: Murder/Suicide of Cain</mark><span class="post"> **COLLAPSE INITIATED BY** - Whistleblowing of Coverup (Riley) - Vengeance and Violence of Troupe (Tori) - **Conspiracy and Campus Takeover</span></p>
           <div class="chips"><span class="chip"><b>who</b> Cain</span><span class="chip"><b>what</b> murder/suicide</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">12740–12772</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-00_START_HERE__8" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -130,6 +143,7 @@
         <div class="body">
           <p class="q"><span class="pre">The Arrival of Riley - **The Student Body President Initiation of Colson** - Incident: Murder/Suicide of Cain **COLLAPSE INITIATED BY** - </span><mark>Whistleblowing of Coverup (Riley)</mark><span class="post"> - Vengeance and Violence of Troupe (Tori) - **Conspiracy and Campus Takeover (Colson)** ### What each lineage contributes to the fusion |</span></p>
           <div class="chips"><span class="chip"><b>who</b> Riley</span><span class="chip"><b>what</b> whistleblows coverup</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">12802–12835</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-00_START_HERE__9" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -138,6 +152,7 @@
         <div class="body">
           <p class="q"><span class="pre">t Body President Initiation of Colson** - Incident: Murder/Suicide of Cain **COLLAPSE INITIATED BY** - Whistleblowing of Coverup (Riley) - </span><mark>Vengeance and Violence of Troupe (Tori)</mark><span class="post"> - **Conspiracy and Campus Takeover (Colson)** ### What each lineage contributes to the fusion | Red Hills gives you | Inner Spiral gives</span></p>
           <div class="chips"><span class="chip"><b>who</b> Tori</span><span class="chip"><b>what</b> vengeance and violence</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">12838–12877</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-00_START_HERE__10" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -146,6 +161,7 @@
         <div class="body">
           <p class="q"><span class="pre">cident: Murder/Suicide of Cain **COLLAPSE INITIATED BY** - Whistleblowing of Coverup (Riley) - Vengeance and Violence of Troupe (Tori) - **</span><mark>Conspiracy and Campus Takeover (Colson)</mark><span class="post">** ### What each lineage contributes to the fusion | Red Hills gives you | Inner Spiral gives you | |---|---| | Human faculty with careers</span></p>
           <div class="chips"><span class="chip"><b>who</b> Colson</span><span class="chip"><b>what</b> conspiracy and campus takeover</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">12882–12921</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-00_START_HERE__11" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -154,6 +170,7 @@
         <div class="body">
           <p class="q"><span class="pre">the source documents don&#x27;t yet have.)* --- ## 5. WHAT TO WORK ON — open problems 1. ~~**Name the fused school.**~~ ✅ **RULED 2026-08-24: </span><mark>the Delta Coast Ultra School is named</mark><span class="post"> (&quot;DCUS&quot;).** The renaming-event mechanism (Red Hills → DCUS on Bishop acquisition) is the recommended tissue, unruled; *Red Stick Creek* rem</span></p>
           <div class="chips"><span class="chip"><b>who</b> unknown</span><span class="chip"><b>what</b> name the fused school as Delta Coast Ultra School (DCUS)</span><span class="chip"><b>when</b> 2026-08-24</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">14369–14397</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-00_START_HERE__12" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -167,6 +184,7 @@
         <div class="body">
           <p class="q"><span class="pre">he Ultra School&quot;, &quot;Inner Spiral Academy (pre-ruling canon name)&quot;, &quot;Red Hills Academy (legacy lineage)&quot;, &quot;Skeeter Creek (legacy variant; was </span><mark>Skeeter Creek, renamed 2026-09-24</mark><span class="post">)&quot;, &quot;The Academy&quot;] links: - &quot;[[victoria-midnight]]&quot; - &quot;[[quinn-bishop]]&quot; - &quot;[[riley-moss]]&quot; - &quot;[[anna-colson-conway]]&quot; - &quot;[[the-ad</span></p>
           <div class="chips"><span class="chip"><b>who</b> Skeeter Creek</span><span class="chip"><b>what</b> renamed</span><span class="chip"><b>when</b> 2026-09-24</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">513–546</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-delta-coast-ultra-school__1" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -175,6 +193,7 @@
         <div class="body">
           <p class="q"><span class="pre">S&quot; &gt; **A hundred years of Red Hills prestige, acquired, rebooted, and rebranded with a product word.** --- ## THE RULING — 2026-08-24 **</span><mark>RENAMED 2026-09-24, Chief: the founding stratum is Skeeter Creek (was *Red Stick Creek*)</mark><span class="post">** the founding stratum is **Skeeter Creek** (was *Red Stick Creek*). The lattice now reads Skeeter Creek → Red Hills → DCUS. Search the old</span></p>
           <div class="chips"><span class="chip"><b>who</b> Chief</span><span class="chip"><b>what</b> rename founding stratum</span><span class="chip"><b>when</b> 2026-09-24</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">1056–1082</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-delta-coast-ultra-school__2" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -183,6 +202,7 @@
         <div class="body">
           <p class="q"><span class="pre">eeter Creek** (was *Red Stick Creek*). The lattice now reads Skeeter Creek → Red Hills → DCUS. Search the old name in pre-9/24 material. **</span><mark>The fused school&#x27;s name is the Delta Coast Ultra School (&#x27;DCUS&#x27;)</mark><span class="post">&quot;DCUS&quot;).** Chief&#x27;s directive: &quot;Ultra School&quot; carries the title, Southern Gothic register. The Delta Coast pick ties the name to canon geogra</span></p>
           <div class="chips"><span class="chip"><b>who</b> Chief</span><span class="chip"><b>what</b> name the fused school</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">1253–1310</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-delta-coast-ultra-school__3" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -191,6 +211,7 @@
         <div class="body">
           <p class="q"><span class="pre">ed OS · the six-movement descent (clean → NEON-ROT → hunt) | ## PROVISIONAL TISSUE — recommended, unruled - **The rename is the fusion:** </span><mark>Red Hills Academy → DCUS on Bishop acquisition</mark><span class="post"> (the son sold for spoils *to the Bishops*). A rebrand is a Boot Sequence at institutional scale — the world&#x27;s core overwrite mechanism done</span></p>
           <div class="chips"><span class="chip"><b>who</b> the Bishops</span><span class="chip"><b>what</b> rename Red Hills Academy to DCUS</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> Red Hills Academy</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">2406–2452</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-delta-coast-ultra-school__4" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -199,6 +220,7 @@
         <div class="body">
           <p class="q"><span class="pre">spoils *to the Bishops*). A rebrand is a Boot Sequence at institutional scale — the world&#x27;s core overwrite mechanism done to a campus. - **</span><mark>&quot;Inner Spiral&quot; reverts to geography</mark><span class="post">** — the school&#x27;s Middle-Bands address, retconning the Master System Bible&#x27;s single mention (&quot;the Ultra School in the Inner Spiral&quot;). - **&quot;U</span></p>
           <div class="chips"><span class="chip"><b>who</b> unknown</span><span class="chip"><b>what</b> reverts name to geography</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">2610–2645</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-delta-coast-ultra-school__5" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -207,6 +229,7 @@
         <div class="body">
           <p class="q"><span class="pre">titutional class** — the Bishops run Ultra Schools the way a chain runs franchises; DCUS is the flagship. - **The Skeeter Creek stratum** — </span><mark>the founding name sanded to &#x27;Red Hills&#x27;</mark><span class="post">&quot; a century before the Bishops arrived: the erasure already happened once. Movement 3&#x27;s forensic mode can find the first name under the seco</span></p>
           <div class="chips"><span class="chip"><b>who</b> unknown</span><span class="chip"><b>what</b> founding name sanded to &#x27;Red Hills&#x27;</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 1 Skeeter Creek</span><span class="chip pos">2944–2982</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-delta-coast-ultra-school__6" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -215,6 +238,7 @@
         <div class="body">
           <p class="q"><span class="pre">retconning the Master System Bible&#x27;s single mention (&quot;the Ultra School in the Inner Spiral&quot;). - **&quot;Ultra School&quot; as institutional class** — </span><mark>the Bishops run Ultra Schools the way a chain runs franchises</mark><span class="post">; DCUS is the flagship. - **The Skeeter Creek stratum** — the founding name sanded to &quot;Red Hills&quot; a century before the Bishops arrived: the</span></p>
           <div class="chips"><span class="chip"><b>who</b> the Bishops</span><span class="chip"><b>what</b> run Ultra Schools the way a chain runs franchises</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">2825–2886</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-delta-coast-ultra-school__7" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -228,6 +252,7 @@
         <div class="body">
           <p class="q"><span class="pre">ostatus/work/77/ANNA-M4-M6.md` §M4 | | 5 | Fight Club — Radicalization | **RULED 2026-10-12 (Chief: &#x27;take all recs&#x27;), 77-AN, provisional.** </span><mark>The Feed broadcasts Anna&#x27;s ascent as the system&#x27;s counter-message</mark><span class="post"> while the Diaspora forms. She needs no scene with Tori. Source: `ANNA-M4-M6.md` §M5 | | 6 | The Pacific — War / Attrition | **RULED 2026-10</span></p>
           <div class="chips"><span class="chip"><b>who</b> The Feed</span><span class="chip"><b>what</b> broadcasts Anna&#x27;s ascent</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">14167–14232</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-anna-colson-conway__1" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -236,6 +261,7 @@
         <div class="body">
           <p class="q"><span class="pre">**RULED 2026-10-12 (Chief: &#x27;take all recs&#x27;), 77-AN, provisional.** The Feed broadcasts Anna&#x27;s ascent as the system&#x27;s counter-message while </span><mark>the Diaspora forms</mark><span class="post">. She needs no scene with Tori. Source: `ANNA-M4-M6.md` §M5 | | 6 | The Pacific — War / Attrition | **RULED 2026-10-12 (Chief: &#x27;take all rec</span></p>
           <div class="chips"><span class="chip"><b>who</b> the Diaspora</span><span class="chip"><b>what</b> forms</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">14239–14257</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-anna-colson-conway__2" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -244,6 +270,7 @@
         <div class="body">
           <p class="q"><span class="pre">ori. Source: `ANNA-M4-M6.md` §M5 | | 6 | The Pacific — War / Attrition | **RULED 2026-10-12 (Chief: &#x27;take all recs&#x27;), 77-AO, provisional.** </span><mark>The Fault Line&#x27;s collapse exposes her origin file</mark><span class="post"> (the rebuild, &quot;but better&quot;). Tori and the Diaspora gather it. IC Memories, RS Gathering Information. The copy of Colson stays off-page (77-</span></p>
           <div class="chips"><span class="chip"><b>who</b> The Fault Line</span><span class="chip"><b>what</b> collapses</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">14424–14473</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-anna-colson-conway__3" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -252,6 +279,7 @@
         <div class="body">
           <p class="q"><span class="pre">D 2026-10-12 (Chief: &#x27;take all recs&#x27;), 77-AO, provisional.** The Fault Line&#x27;s collapse exposes her origin file (the rebuild, &quot;but better&quot;). </span><mark>Tori and the Diaspora gather it</mark><span class="post">. IC Memories, RS Gathering Information. The copy of Colson stays off-page (77-AP, hold). Source: `ANNA-M4-M6.md` §M6 | --- ## State of pl</span></p>
           <div class="chips"><span class="chip"><b>who</b> Tori and the Diaspora</span><span class="chip"><b>what</b> gather the origin file</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">14503–14534</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-anna-colson-conway__4" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -260,6 +288,7 @@
         <div class="body">
           <p class="q"><span class="pre">, 3, 4, 8 (McKee, *Character*, distilled from the Introduction, Ch.9 &quot;The Dimensional Character,&quot; and Ch.17 &quot;Cast Design&quot;) --- ## Naming </span><mark>Her name is ruled: **Anna Colson Conway**</mark><span class="post">. Legacy identity: &quot;Colson,&quot; Student Body President, per [[BVX.0064]]&#x27;s Application section and [[victoria-midnight]]&#x27;s Relationships table</span></p>
           <div class="chips"><span class="chip"><b>who</b> Her</span><span class="chip"><b>what</b> name is ruled</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> unknown</span><span class="chip pos">18251–18292</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-anna-colson-conway__5" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -273,6 +302,7 @@
         <div class="body">
           <p class="q"><span class="pre">your ruling before the 17 IC fields get filled.** 3. ~~**Resolve `motivation_element`.**~~ **RESOLVED 2026-08-24** — #4 ruled, #3 executed: </span><mark>core field renamed `mc_problem_element`</mark><span class="post"> (holds the MC Problem, Equity); quad primary relocated to `L12_DRAMATICA_EXTENDED.motivation_quad`. Propagated: vertical slice · integratio</span></p>
           <div class="chips"><span class="chip"><b>who</b> unknown</span><span class="chip"><b>what</b> rename core field</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> unknown</span><span class="chip pos">12440–12479</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-victoria-midnight__1" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -281,6 +311,7 @@
         <div class="body">
           <p class="q"><span class="pre">tion_element`.**~~ **RESOLVED 2026-08-24** — #4 ruled, #3 executed: core field renamed `mc_problem_element` (holds the MC Problem, Equity); </span><mark>quad primary relocated to `L12_DRAMATICA_EXTENDED.motivation_quad`</mark><span class="post">. Propagated: vertical slice · integration protocol · ingest template (both variable registries already carried it). TRUTH_VULNERABILITY now</span></p>
           <div class="chips"><span class="chip"><b>who</b> unknown</span><span class="chip"><b>what</b> relocate quad primary</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> unknown</span><span class="chip pos">12512–12578</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-victoria-midnight__2" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -289,6 +320,7 @@
         <div class="body">
           <p class="q"><span class="pre">TENDED.motivation_quad`. Propagated: vertical slice · integration protocol · ingest template (both variable registries already carried it). </span><mark>TRUTH_VULNERABILITY now fires off `mc_problem_element`</mark><span class="post">. 4. **Tori ↔ Quinn.** Both are Outliers; the Bishops rule the Core; Quinn is &quot;The Reason Instrument.&quot; No documented relation. Given Quinn&#x27;s</span></p>
           <div class="chips"><span class="chip"><b>who</b> unknown</span><span class="chip"><b>what</b> TRUTH_VULNERABILITY fires off `mc_problem_element`</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> unknown</span><span class="chip pos">12695–12749</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-victoria-midnight__3" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -302,6 +334,7 @@
         <div class="body">
           <p class="q"><span class="pre">- &quot;[[victoria-midnight]]&quot; captured: 2026-09-15 bolo: 50 --- # The Administration as a Standards Body — DCUS **The one-line read (⧗):** </span><mark>The Administration issues the rating that decides who stays legible at DCUS</mark><span class="post">, and the price of every rise is a piece of the past. --- ## Canon — what is already ruled - **The name.** &quot;The fused school&#x27;s name is th</span></p>
           <div class="chips"><span class="chip"><b>who</b> The Administration</span><span class="chip"><b>what</b> issues the rating</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> DCUS</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">896–971</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-dcus-standards-body__1" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -310,6 +343,7 @@
         <div class="body">
           <p class="q"><span class="pre">ishops are the ownership layer above it. Only one has a written canon name. | Role | Who | Canon or ⧗ | |---|---|---| | Owns the charter | </span><mark>the Bishops, post-acquisition</mark><span class="post"> (&quot;sold for spoils to the Bishops&quot;) | canon (DCUS node) | | Issues the running standard | **The Administration**, &quot;a depersonalized OS&quot; | ca</span></p>
           <div class="chips"><span class="chip"><b>who</b> the Bishops</span><span class="chip"><b>what</b> acquire the charter</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">3496–3525</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-dcus-standards-body__2" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -318,6 +352,7 @@
         <div class="body">
           <p class="q"><span class="pre">Owns the charter | the Bishops, post-acquisition (&quot;sold for spoils to the Bishops&quot;) | canon (DCUS node) | | Issues the running standard | **</span><mark>The Administration, a depersonalized OS</mark><span class="post">**, &quot;a depersonalized OS&quot; | canon (S4 LAW) | | Enforces it day to day | Star-Rating · Sync Cult mechanics · Feed-linked clothing as legibili</span></p>
           <div class="chips"><span class="chip"><b>who</b> The Administration</span><span class="chip"><b>what</b> issues the running standard</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">3617–3635</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-dcus-standards-body__3" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -326,6 +361,7 @@
         <div class="body">
           <p class="q"><span class="pre">rter / mission mandate | | Legacy Handbook | handbook | nothing (guidance only) | the alumni-legacy bloc | student-orientation handbook | | </span><mark>Rename Directive</mark><span class="post"> ⧗ | procedure | speaking the pre-acquisition name in official channels | staff, records | records-retention / name-change rule | The last</span></p>
           <div class="chips"><span class="chip"><b>who</b> unknown</span><span class="chip"><b>what</b> Rename Directive</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">5734–5750</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-dcus-standards-body__4" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -334,6 +370,7 @@
         <div class="body">
           <p class="q"><span class="pre">mise at all… and it works&quot; (IC ruling) | none paid by Anna; the absence of a cost is itself the pressure the ruling names on Victoria | | **</span><mark>the alumni-legacy bloc say &#x27;Red Hills&#x27; anyway</mark><span class="post">** ⧗ | Rename Directive (legibility over the old name) | the freedom to name their own institutional history | say &quot;Red Hills&quot; anyway | &quot;a s</span></p>
           <div class="chips"><span class="chip"><b>who</b> the alumni-legacy bloc</span><span class="chip"><b>what</b> say &#x27;Red Hills&#x27; anyway</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">7070–7092</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-dcus-standards-body__5" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -352,6 +389,7 @@
         <div class="body">
           <p class="q"><span class="pre">act stays ⧗, Chief&#x27;s fact, open (77-AG, not yet ruled) — see Open question 1 · RULED 2026-09-29 (77-AH, rec taken): </span><mark>Quinn Bishop and Riley Moss both become cyborgs at the same time</mark><span class="post"> &quot;both become cyborgs at the same time&quot; (Chief&#x27;s Apple Notes 2026, §1 OXO) is a PARALLEL Body-Horror thread crossing</span></p>
           <div class="chips"><span class="chip"><b>who</b> Quinn Bishop and Riley Moss</span><span class="chip"><b>what</b> become cyborgs</span><span class="chip"><b>when</b> 2026</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">3702–3729</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-scene-card-M4-skeleton__1" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -360,6 +398,7 @@
         <div class="body">
           <p class="q"><span class="pre">**RULED 2026-10-12 (Chief: &#x27;take all recs&#x27;), 77-AM** — same pass: the ranking apparatus itself (rank, Sync scores, the ascent) carries both </span><mark>Anna&#x27;s rise and Tori&#x27;s fall</mark><span class="post"> on one ledger, satisfying Doing directly. Provisional, a week like every ruling. See `_tools/bolostatus/work/77/ANNA-M4-M6.md` §M4(c) | ann</span></p>
           <div class="chips"><span class="chip"><b>who</b> Anna and Tori</span><span class="chip"><b>what</b> rise and fall</span><span class="chip"><b>when</b> 2026-10-12</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">9076–9103</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-scene-card-M4-skeleton__2" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -373,6 +412,7 @@
         <div class="body">
           <p class="q"><span class="pre">is like **The Line** Saudi Arabia is building, a linear city, &quot;except terrible trash.&quot; **RULED 2026-09-29 (Chief: &quot;go recommendations&quot;):** </span><mark>the belt is named the Power Line</mark><span class="post"> **the Power Line**: officially a utility line, really the line that guards the Delta Coast&#x27;s power. Local names: the Outliers call it **the</span></p>
           <div class="chips"><span class="chip"><b>who</b> the Chief</span><span class="chip"><b>what</b> names the belt the Power Line</span><span class="chip"><b>when</b> 2026-09-29</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">2476–2493</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-trash-land-seed__1" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -381,6 +421,7 @@
         <div class="body">
           <p class="q"><span class="pre">recommendations&quot;):** the belt is named **the Power Line**: officially a utility line, really the line that guards the Delta Coast&#x27;s power. </span><mark>Local names: the Outliers call it the Zona</mark><span class="post"> **the Zona**; Coast church folk pray for **the Hedge**. &quot;Trash Land&quot; is retired to an alias. Its gauge is **Protection** (07). The belt-to-</span></p>
           <div class="chips"><span class="chip"><b>who</b> the Outliers</span><span class="chip"><b>what</b> call the belt the Zona</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">2594–2627</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-trash-land-seed__2" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -389,6 +430,7 @@
         <div class="body">
           <p class="q"><span class="pre">wer Line**: officially a utility line, really the line that guards the Delta Coast&#x27;s power. Local names: the Outliers call it **the Zona**; </span><mark>Coast church folk pray for the Hedge</mark><span class="post"> **the Hedge**. &quot;Trash Land&quot; is retired to an alias. Its gauge is **Protection** (07). The belt-to-DCUS intake is filed as [WB-CUS-0002](../</span></p>
           <div class="chips"><span class="chip"><b>who</b> Coast church folk</span><span class="chip"><b>what</b> pray for the Hedge</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">2642–2668</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-trash-land-seed__3" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -397,6 +439,7 @@
         <div class="body">
           <p class="q"><span class="pre">of the Outer Band terminate at its toe | | **S2 WEATHER** | Makes its own weather like any range: rain shadow to the south, methane haze, **</span><mark>fires that have burned underground for decades</mark><span class="post">** (Centralia register), decomposition heat rising off the faces at dawn, gull weather. The smell rides the north wind into the Spiral — the</span></p>
           <div class="chips"><span class="chip"><b>who</b> unknown</span><span class="chip"><b>what</b> fires burn underground</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> Trash Land</span><span class="chip"><b>era</b> unknown</span><span class="chip pos">5545–5591</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-trash-land-seed__4" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -405,6 +448,7 @@
         <div class="body">
           <p class="q"><span class="pre">ides that took whole picker camps), the burned cuts | | **S6 ECONOMY** | **The haul economy.** The Spiral throws everything away northward; </span><mark>the syndicates run the haul routes and the picking rights</mark><span class="post"> (the Fowlers, the Montgomerys — Outer Band operators) run the haul routes and the picking rights. **Movement 1&#x27;s salvage economy (M1A) is t</span></p>
           <div class="chips"><span class="chip"><b>who</b> the syndicates (the Fowlers, the Montgomerys — Outer Band operators)</span><span class="chip"><b>what</b> run the haul routes and the picking rights</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> unknown</span><span class="chip pos">6732–6746</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-trash-land-seed__5" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -413,6 +457,7 @@
         <div class="body">
           <p class="q"><span class="pre">erything away northward; the syndicates (the Fowlers, the Montgomerys — Outer Band operators) run the haul routes and the picking rights. **</span><mark>Movement 1&#x27;s salvage economy (M1A) is the range&#x27;s downstream</mark><span class="post">** — Victoria&#x27;s first world is fed by it | | **S7 FOUNDING** | ⚠️ **the central open ruling.** Three candidate origins in the OPEN block bel</span></p>
           <div class="chips"><span class="chip"><b>who</b> Movement 1</span><span class="chip"><b>what</b> salvage economy (M1A) is the range&#x27;s downstream</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> unknown</span><span class="chip pos">6847–6907</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-trash-land-seed__6" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -421,6 +466,7 @@
         <div class="body">
           <p class="q"><span class="pre">routes and the picking rights. **Movement 1&#x27;s salvage economy (M1A) is the range&#x27;s downstream** — Victoria&#x27;s first world is fed by it | | **</span><mark>S7 FOUNDING</mark><span class="post">** | ⚠️ **the central open ruling.** Three candidate origins in the OPEN block below. Common floor: it was economics before it was a border</span></p>
           <div class="chips"><span class="chip"><b>who</b> unknown</span><span class="chip"><b>what</b> central open ruling</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> unknown</span><span class="chip pos">6954–6965</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-trash-land-seed__7" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -429,6 +475,7 @@
         <div class="body">
           <p class="q"><span class="pre">w. Common floor: it was economics before it was a border — dumping first, wall second. Nobody built it on purpose; everybody built it | | **</span><mark>S8 HABIT</mark><span class="post">** | The pickers (range-born, insider gradient by how deep you&#x27;ll dig); the crossing rituals at the cuts; **Spiral folk do not look north**</span></p>
           <div class="chips"><span class="chip"><b>who</b> unknown</span><span class="chip"><b>what</b> crossing rituals at the cuts</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> unknown</span><span class="chip pos">7188–7196</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-trash-land-seed__8" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -437,6 +484,7 @@
         <div class="body">
           <p class="q"><span class="pre">sing rituals at the cuts; **Spiral folk do not look north** — the etiquette of not-seeing, the campus scream-etiquette at world scale | | **</span><mark>S9 ALLURE</mark><span class="post">** | **What was deleted can be found.** The Feed deletes cleanly; matter does not. Everything the Spiral discarded is physically retrievable</span></p>
           <div class="chips"><span class="chip"><b>who</b> unknown</span><span class="chip"><b>what</b> What was deleted can be found</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> unknown</span><span class="chip pos">7416–7425</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-trash-land-seed__9" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -445,6 +493,7 @@
         <div class="body">
           <p class="q"><span class="pre">neration of discarded people, echoing the first*. The range is where the first generation went. That proposal now has a place to stand. - **</span><mark>M1A salvage economy gets a source</mark><span class="post">.** Victoria&#x27;s opening world runs on salvage; canon never said salvage from where. - **The countersign lands.** *&quot;The Asset is acquired. The</span></p>
           <div class="chips"><span class="chip"><b>who</b> M1A salvage economy</span><span class="chip"><b>what</b> gets a source</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 5 beyond</span><span class="chip pos">9845–9878</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-trash-land-seed__10" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -453,6 +502,7 @@
         <div class="body">
           <p class="q"><span class="pre">place to stand. - **M1A salvage economy gets a source.** Victoria&#x27;s opening world runs on salvage; canon never said salvage from where. - **</span><mark>The countersign lands</mark><span class="post">.** *&quot;The Asset is acquired. The Noise is archived. The Feed is stable.&quot;* Trash Land is the archive of Noise. - **Movements 5 and 6 get terr</span></p>
           <div class="chips"><span class="chip"><b>who</b> unknown</span><span class="chip"><b>what</b> countersign lands</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 5 beyond</span><span class="chip pos">9965–9986</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-trash-land-seed__11" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -461,6 +511,7 @@
         <div class="body">
           <p class="q"><span class="pre">- **The countersign lands.** *&quot;The Asset is acquired. The Noise is archived. The Feed is stable.&quot;* Trash Land is the archive of Noise. - **</span><mark>Movements 5 and 6 get terrain</mark><span class="post">.** Fight Club&#x27;s low-tech guerrilla underground and The Pacific&#x27;s war of attrition both want a lawless, unmapped, resource-rich no-man&#x27;s-lan</span></p>
           <div class="chips"><span class="chip"><b>who</b> Movements 5 and 6</span><span class="chip"><b>what</b> get terrain</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 5 beyond</span><span class="chip pos">10100–10129</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-trash-land-seed__12" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -469,6 +520,7 @@
         <div class="body">
           <p class="q"><span class="pre">Drop | ## OPEN — all unruled 1. **The name.** Placeholder stands; bench above. 2. **Who built it, and why** (S7). Three candidates: **(a) </span><mark>the North dumped south and the pile became the wall the South then claimed as its border</mark><span class="post">** and the pile became the wall the South then claimed as its border · **(b) the Bishops built it** to seal the Spiral — legibility requires</span></p>
           <div class="chips"><span class="chip"><b>who</b> the North</span><span class="chip"><b>what</b> dumped south</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> unknown</span><span class="chip pos">11319–11341</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-trash-land-seed__13" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -477,6 +529,7 @@
         <div class="body">
           <p class="q"><span class="pre">and why** (S7). Three candidates: **(a) the North dumped south** and the pile became the wall the South then claimed as its border · **(b) </span><mark>the Bishops built it to seal the Spiral</mark><span class="post">** to seal the Spiral — legibility requires a closed system, and a wall of the Spiral&#x27;s own waste is the cheapest wall there is · **(c) trea</span></p>
           <div class="chips"><span class="chip"><b>who</b> the Bishops</span><span class="chip"><b>what</b> built it to seal the Spiral</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> unknown</span><span class="chip pos">11418–11438</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-trash-land-seed__14" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -485,6 +538,7 @@
         <div class="body">
           <p class="q"><span class="pre">piral — legibility requires a closed system, and a wall of the Spiral&#x27;s own waste is the cheapest wall there is · **(c) treaty landfill** — </span><mark>both sides dumped toward each other by agreement and the DMZ was the result</mark><span class="post">. Recommend (b) *as the official story* with (a) *as the truth under it* — a founding lie, like every other founding in this world. 3. **The</span></p>
           <div class="chips"><span class="chip"><b>who</b> both sides</span><span class="chip"><b>what</b> dumped toward each other by agreement</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> unknown</span><span class="chip pos">11594–11669</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-trash-land-seed__15" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -498,6 +552,7 @@
         <div class="body">
           <p class="q"><span class="pre">ver: Action — OXO&#x27;s ruled story-level Driver (ssot_04_plot_system.md Axis 4) · RULED 2026-09-29 (77-AJ, rec taken): </span><mark>Quinn Bishop&#x27;s coup at a Nuremberg-style parade ground</mark><span class="post">, &quot;the first coup company does the opposite [of the ruled salute], facing the king&quot; (Chief&#x27;s Apple Notes 202</span></p>
           <div class="chips"><span class="chip"><b>who</b> Quinn Bishop</span><span class="chip"><b>what</b> coup</span><span class="chip"><b>when</b> 2026-09-29</span><span class="chip"><b>where</b> a Nuremberg-style parade ground</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">2304–2358</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-scene-card-M5-skeleton__1" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -506,6 +561,7 @@
         <div class="body">
           <p class="q"><span class="pre">``yaml event_id: &quot;m5_qb_coup_parade&quot; # ⧗ proposed id; content RULED 77-AJ as a world event, Chief&#x27;s Apple Notes 2026, §1 OXO transition: &quot;</span><mark>the ruled salute (right hand, facing away from the king) -&gt; the first coup company faces the king instead</mark><span class="post">&quot; kernel_satellite: kernel ⧗ # proposed; a Choice-criterion event if it fires as staged time: movement: &quot;M5 ⧗&quot; reach: &quot;unspecified&quot;</span></p>
           <div class="chips"><span class="chip"><b>who</b> the ruled, the first coup company</span><span class="chip"><b>what</b> change in salute direction</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> a military parade ground</span><span class="chip"><b>era</b> unknown</span><span class="chip pos">9337–9455</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-scene-card-M5-skeleton__2" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -514,6 +570,7 @@
         <div class="body">
           <p class="q"><span class="pre">4-M6.md` §M5). - **No collision-engine row**, no address, no duration/frequency mode. ## OPEN 1. **RULED 2026-09-29 (77-AJ, rec taken).** </span><mark>QB&#x27;s coup at the parade is a WORLD EVENT the Diaspora answers</mark><span class="post">; Tori&#x27;s own signpost scene is her choice to lead, not the coup&#x27;s own combat, since no canon line places her at the parade. See P2/P6. 2. **</span></p>
           <div class="chips"><span class="chip"><b>who</b> QB</span><span class="chip"><b>what</b> coup at the parade</span><span class="chip"><b>when</b> 2026-09-29</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">12117–12178</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-scene-card-M5-skeleton__3" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -522,6 +579,7 @@
         <div class="body">
           <p class="q"><span class="pre">vel genre obligation now varies by movement; M5 = reversal. Full per-movement table in ssot_04_plot_system.md&#x27;s P10 layer description. 3. **</span><mark>The Diaspora&#x27;s first named act of resistance</mark><span class="post"> — Chief&#x27;s fact, open (77-AK).** Canon gives only the fact of formation. *Rec: card this next, once Chief rules one.* 4. **P8 collision row,</span></p>
           <div class="chips"><span class="chip"><b>who</b> The Diaspora</span><span class="chip"><b>what</b> first named act of resistance</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">12511–12555</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-scene-card-M5-skeleton__4" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -545,6 +603,7 @@
         <div class="body">
           <p class="q"><span class="pre">e | — | ENGINE | | rs_benchmark / signposts 1–4 | — | ENGINE | ## 7 · L12 Core Block — schema RULED (STATE #4 closed) **RULED 2026-08-24: </span><mark>the L12 core field is renamed `mc_problem_element`</mark><span class="post"> and holds the MC Problem (Equity).** `Consider` (Motivation quad primary) moves to the `L12_DRAMATICA_EXTENDED` sub-table as `motivation_qu</span></p>
           <div class="chips"><span class="chip"><b>who</b> unknown</span><span class="chip"><b>what</b> rename `mc_problem_element`</span><span class="chip"><b>when</b> 2026-08-24</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> unknown</span><span class="chip pos">7828–7878</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-storyform__1" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -553,6 +612,7 @@
         <div class="body">
           <p class="q"><span class="pre">ation_quad: Consider # relocated here — RULED 2026-08-24 ``` ## 8 · The verify pass — BOLO 7, the residue Every decision is made. </span><mark>What remains is data entry: open Dramatica, answer the eight dynamics + the domain/concern/issue/problem assignments above, confirm the engine resolves to one storyform, then transcribe into this doc&#x27;s VERIFY and ENGINE cells: benchmarks, all sixteen signposts, the plot-appreciation table, and the OS/IC/RS deep cells.</mark><span class="post"> **one storyform**, then transcribe into this doc&#x27;s VERIFY and ENGINE cells: benchmarks, all sixteen signposts, the plot-appreciation table,</span></p>
           <div class="chips"><span class="chip"><b>who</b> the author</span><span class="chip"><b>what</b> data entry and confirmation of storyform</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> unknown</span><span class="chip pos">8742–8896</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-storyform__2" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -561,6 +621,7 @@
         <div class="body">
           <p class="q"><span class="pre">ets a dated correction here — the RULED and LOCKED cells are not negotiable inputs, they are the constraints the storyform must satisfy. **</span><mark>Pass run 2026-08-24 — result in §9.</mark><span class="post">** One storyform reached; perspective-rotation conflict flagged there, open. --- ## 9 · ENGINE PASS — 2026-08-24, the form as entered (BOL</span></p>
           <div class="chips"><span class="chip"><b>who</b> the author</span><span class="chip"><b>what</b> pass run</span><span class="chip"><b>when</b> 2026-08-24</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> unknown</span><span class="chip pos">9310–9345</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-storyform__3" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -569,6 +630,7 @@
         <div class="body">
           <p class="q"><span class="pre">toryform reached; perspective-rotation conflict flagged there, open. --- ## 9 · ENGINE PASS — 2026-08-24, the form as entered (BOLO 7) **</span><mark>The engine resolved to ONE storyform.</mark><span class="post">** Entered live by Chief in Dramatica Pro, transcribed same session. Files, this folder: `oxo-storyform-engine.dsf` (exact engine state) · `</span></p>
           <div class="chips"><span class="chip"><b>who</b> the engine</span><span class="chip"><b>what</b> resolved to one storyform</span><span class="chip"><b>when</b> 2026-08-24</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> unknown</span><span class="chip pos">9493–9530</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-storyform__4" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -582,6 +644,7 @@
         <div class="body">
           <p class="q"><span class="pre">hen a rhythm Tori knows from the passenger seat: pace-note grammar with the human noise stripped out ⧗ commandments: II · Rating: floor. </span><mark>The Feed opens Tori&#x27;s first Sync session</mark><span class="post"> and offers her a cadence to mirror (canon mechanic: &quot;ranked by how well they mirror the Bishop Faction&#x27;s ideals&quot;) ⧗ TP · t</span></p>
           <div class="chips"><span class="chip"><b>who</b> The Feed</span><span class="chip"><b>what</b> opens Tori&#x27;s first Sync session</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">2600–2640</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-scene-card-M2-row9__1" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -590,6 +653,7 @@
         <div class="body">
           <p class="q"><span class="pre">ype B notes = technical + human noise; the system &quot;cannot process and therefore erases&quot; the noise). Her body answers before she decides to. </span><mark>Digital Puberty glitch fires mid-sync</mark><span class="post"> (canon: FLCL element) ⧗ CR · best-bad choice: pull out (keep the armor, stay grey, stay alone, keep control-as-safety) or</span></p>
           <div class="chips"><span class="chip"><b>who</b> Digital Puberty</span><span class="chip"><b>what</b> glitch fires</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">2983–3020</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-scene-card-M2-row9__2" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -598,6 +662,7 @@
         <div class="body">
           <p class="q"><span class="pre">y) or reach (take the counterfeit wholeness and be seen doing it). P7 dilemma: control vs the only wholeness on offer CL · </span><mark>she reaches</mark><span class="post">. She says the missing human line into the gap herself (&quot;breathe&quot; ⧗). The Feed: &quot;Unrecognized input. Archived.&quot; The rating climbs anyway</span></p>
           <div class="chips"><span class="chip"><b>who</b> she</span><span class="chip"><b>what</b> reaches</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">3294–3305</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-scene-card-M2-row9__3" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -606,6 +671,7 @@
         <div class="body">
           <p class="q"><span class="pre">ntrol vs the only wholeness on offer CL · she reaches. She says the missing human line into the gap herself (&quot;breathe&quot; ⧗). </span><mark>The Feed: &#x27;Unrecognized input. Archived.&#x27;</mark><span class="post"> &quot;Unrecognized input. Archived.&quot; The rating climbs anyway RES · the uniform lights neon blue. &quot;Verified.&quot; The hall turns to</span></p>
           <div class="chips"><span class="chip"><b>who</b> The Feed</span><span class="chip"><b>what</b> archives unrecognized input</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">3375–3384</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-scene-card-M2-row9__4" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -614,6 +680,7 @@
         <div class="body">
           <p class="q"><span class="pre">CL · she reaches. She says the missing human line into the gap herself (&quot;breathe&quot; ⧗). The Feed: &quot;Unrecognized input. Archived.&quot; </span><mark>The rating climbs anyway</mark><span class="post"> RES · the uniform lights neon blue. &quot;Verified.&quot; The hall turns to look. She likes it. Exit value turn: whole − → + for</span></p>
           <div class="chips"><span class="chip"><b>who</b> the rating</span><span class="chip"><b>what</b> climbs</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">3417–3441</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-scene-card-M2-row9__5" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -622,6 +689,7 @@
         <div class="body">
           <p class="q"><span class="pre">ing human line into the gap herself (&quot;breathe&quot; ⧗). The Feed: &quot;Unrecognized input. Archived.&quot; The rating climbs anyway RES · </span><mark>the uniform lights neon blue</mark><span class="post">. &quot;Verified.&quot; The hall turns to look. She likes it. Exit value turn: whole − → + for Tori · owned + → − underneath (McKee ironic charge:</span></p>
           <div class="chips"><span class="chip"><b>who</b> the uniform</span><span class="chip"><b>what</b> lights neon blue</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">3464–3492</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-scene-card-M2-row9__6" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -630,6 +698,7 @@
         <div class="body">
           <p class="q"><span class="pre">the&quot; ⧗). The Feed: &quot;Unrecognized input. Archived.&quot; The rating climbs anyway RES · the uniform lights neon blue. &quot;Verified.&quot; </span><mark>The hall turns to look</mark><span class="post">. She likes it. Exit value turn: whole − → + for Tori · owned + → − underneath (McKee ironic charge: she reads the hook as the win; the</span></p>
           <div class="chips"><span class="chip"><b>who</b> the hall</span><span class="chip"><b>what</b> turns to look</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">3506–3528</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-scene-card-M2-row9__7" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -638,6 +707,7 @@
         <div class="body">
           <p class="q"><span class="pre">cognized input. Archived.&quot; The rating climbs anyway RES · the uniform lights neon blue. &quot;Verified.&quot; The hall turns to look. </span><mark>She likes it</mark><span class="post">. Exit value turn: whole − → + for Tori · owned + → − underneath (McKee ironic charge: she reads the hook as the win; the audience reads</span></p>
           <div class="chips"><span class="chip"><b>who</b> she</span><span class="chip"><b>what</b> likes it</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">3530–3542</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-oxo-scene-card-M2-row9__8" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -666,6 +736,7 @@
         <div class="body">
           <p class="q"><span class="pre">y of the Bishops. --- ## 3. Movement 1 Origin Commitments (LOCKED) ### System Function (The Legacy Filter) - **The King of the Scene:** </span><mark>Shane is the undisputed authority of the &#x27;Banned&#x27; underground scene before the Bishops arrive</mark><span class="post"> &quot;Banned&quot; underground scene before the Bishops arrive. - **The Marrow:** He represents the raw, unrefined grit of the Delta Coast—the s</span></p>
           <div class="chips"><span class="chip"><b>who</b> Shane</span><span class="chip"><b>what</b> is the undisputed authority of the &#x27;Banned&#x27; underground scene</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">3143–3183</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-📐_Authoritative_OVEREXITOUT_DRAMATICA_Shane_Doucet__1" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -674,6 +745,7 @@
         <div class="body">
           <p class="q"><span class="pre">orthodox Physicality.&quot; ### Core Vulnerability - **Dominant:** Analog Pride. - **The Screwdriver Glitch:** The &quot;Breaking Point.&quot; </span><mark>Shane throws away a disposable, proprietary screwdriver required for a crucial engine component</mark><span class="post">. This sets off a quest that strips him of his dignity as he digs through trash, ultimately realizing that his skills are being rendered obs</span></p>
           <div class="chips"><span class="chip"><b>who</b> Shane</span><span class="chip"><b>what</b> throws away a disposable, proprietary screwdriver</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">3486–3581</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-📐_Authoritative_OVEREXITOUT_DRAMATICA_Shane_Doucet__2" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -682,6 +754,7 @@
         <div class="body">
           <p class="q"><span class="pre">y a disposable, proprietary screwdriver required for a crucial engine component. This sets off a quest that strips him of his dignity as he </span><mark>Shane digs through trash</mark><span class="post">, ultimately realizing that his skills are being rendered obsolete by &quot;Disposable&quot; tech. ### System’s Interest in Him - Shane is **No</span></p>
           <div class="chips"><span class="chip"><b>who</b> Shane</span><span class="chip"><b>what</b> digs through trash</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 2 DCUS</span><span class="chip pos">3642–3660</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-📐_Authoritative_OVEREXITOUT_DRAMATICA_Shane_Doucet__3" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -705,6 +778,7 @@
         <div class="body">
           <p class="q"><span class="pre">cally this staccatto style tacticool-esque form of communication that the Space Force uses. - Minecraft/Survival Gameplay/Battle Royale - </span><mark>some cosmic ultra-god somehow scrambles the giant flotilla of human canned meat through time and space</mark><span class="post">. - Time skip. - Either 1000 years later or, maybe even further. - Its now the time hayday of native American tribes. - They&#x27;re on some</span></p>
           <div class="chips"><span class="chip"><b>who</b> some cosmic ultra-god</span><span class="chip"><b>what</b> scrambles the giant flotilla of human canned meat through time and space</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> unknown</span><span class="chip pos">2176–2278</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-2022_12_23__1" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -713,6 +787,7 @@
         <div class="body">
           <p class="q"><span class="pre">rambles the giant flotilla of human canned meat through time and space. - Time skip. - Either 1000 years later or, maybe even further. - </span><mark>Its now the time hayday of native American tribes</mark><span class="post">. - They&#x27;re on some new planet, and they seem have set a foothold. - However, in the 1000 years that they&#x27;ve been there, they are the only</span></p>
           <div class="chips"><span class="chip"><b>who</b> native American tribes</span><span class="chip"><b>what</b> hayday</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 5 beyond</span><span class="chip pos">2348–2397</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-2022_12_23__2" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -721,6 +796,7 @@
         <div class="body">
           <p class="q"><span class="pre">h time and space. - Time skip. - Either 1000 years later or, maybe even further. - Its now the time hayday of native American tribes. - </span><mark>They&#x27;re on some new planet, and they seem have set a foothold</mark><span class="post">. - However, in the 1000 years that they&#x27;ve been there, they are the only ship that seems to have made it to the final planet. - Only a ha</span></p>
           <div class="chips"><span class="chip"><b>who</b> they</span><span class="chip"><b>what</b> set a foothold on a new planet</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> a new planet</span><span class="chip"><b>era</b> 5 beyond</span><span class="chip pos">2402–2463</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-2022_12_23__3" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -729,6 +805,7 @@
         <div class="body">
           <p class="q"><span class="pre">foothold. - However, in the 1000 years that they&#x27;ve been there, they are the only ship that seems to have made it to the final planet. - </span><mark>Only a handful of humans are left from the great exodus</mark><span class="post">. - The few who are left are like unnaturally old, perhaps they&#x27;re some sort of super-human from the old earth, ones that were alive for th</span></p>
           <div class="chips"><span class="chip"><b>who</b> humans</span><span class="chip"><b>what</b> left from the great exodus</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 5 beyond</span><span class="chip pos">2594–2649</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-2022_12_23__4" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -737,6 +814,7 @@
         <div class="body">
           <p class="q"><span class="pre">here, they are the only ship that seems to have made it to the final planet. - Only a handful of humans are left from the great exodus. - </span><mark>The few who are left are like unnaturally old</mark><span class="post">, perhaps they&#x27;re some sort of super-human from the old earth, ones that were alive for the whole damn thing...only just now are their syste</span></p>
           <div class="chips"><span class="chip"><b>who</b> the few who are left</span><span class="chip"><b>what</b> are unnaturally old</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 5 beyond</span><span class="chip pos">2654–2699</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-2022_12_23__5" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -745,6 +823,7 @@
         <div class="body">
           <p class="q"><span class="pre">me sort of super-human from the old earth, ones that were alive for the whole damn thing...only just now are their systems begin fading. - </span><mark>The true origin of humanity&#x27;s history in the heavens above will die with them</mark><span class="post">. - The exodus simply fades into million myths of where humans first arrived. - ==by using us history as a backdrop, and science-fiction a</span></p>
           <div class="chips"><span class="chip"><b>who</b> the true origin of humanity&#x27;s history</span><span class="chip"><b>what</b> will die with them</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> 5 beyond</span><span class="chip pos">2859–2936</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-2022_12_23__6" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -753,6 +832,7 @@
         <div class="body">
           <p class="q"><span class="pre">= - &gt; ==The complex politic and factional warfare on the planet itself, Native American History. **START ???/Classical stage**== - &gt; ==</span><mark>The arrival of Conquistadors</mark><span class="post">. **START Age of Discovery/Post-Classical stage**== - ### Review - So I had some trouble trying to figure out temporal space and how ti</span></p>
           <div class="chips"><span class="chip"><b>who</b> Conquistadors</span><span class="chip"><b>what</b> arrive</span><span class="chip"><b>when</b> unknown</span><span class="chip"><b>where</b> unknown</span><span class="chip"><b>era</b> unknown</span><span class="chip pos">3949–3977</span></div>
+          <label class="rnote"><span>Note</span><textarea id="n-2022_12_23__7" rows="1" placeholder="why it's wrong, the right era, a better quote…"></textarea></label>
         </div>
         <div class="yn"><button type="button" class="y" data-s="right" aria-pressed="false">Right</button><button type="button" class="w" data-s="wrong" aria-pressed="false">Wrong</button></div>
       </article>
@@ -767,6 +847,8 @@
       const s = (scores[el.dataset.id] || {}).score || "";
       el.classList.toggle("right", s === "right"); el.classList.toggle("wrong", s === "wrong");
       el.querySelector(".y").setAttribute("aria-pressed", s === "right"); el.querySelector(".w").setAttribute("aria-pressed", s === "wrong");
+      const ta = el.querySelector(".rnote textarea"), rm = (scores[el.dataset.id] || {}).remark || "";
+      if (ta && document.activeElement !== ta && ta.value !== rm) { ta.value = rm; ta.classList.toggle("has", !!rm.trim()); }
       if (s === "right") r++; else if (s === "wrong") w++;
       const n = el.dataset.note; per[n] = per[n] || [0, 0]; per[n][1]++; if (s) per[n][0]++;
     }
@@ -777,16 +859,25 @@
     document.getElementById("barB").style.width = (rows.length ? 100 * w / rows.length : 0) + "%";
     for (const [n, [a, b]] of Object.entries(per)) { const c = document.querySelector(`[data-cnt="${CSS.escape(n)}"]`); if (c) c.textContent = a + " / " + b + " scored"; }
   }
-  async function save(id, score) {
+  async function put(id, patch) {
     const el = rows.find((x) => x.dataset.id === id);
-    const cur = (scores[id] || {}).score;
-    scores[id] = { note: el.dataset.note, quote: el.querySelector("mark").textContent, score: cur === score ? "" : score };
+    scores[id] = Object.assign({ note: el.dataset.note, quote: el.querySelector("mark").textContent, score: "", remark: "" }, scores[id] || {}, patch);
     render();
     if (!db) return;
     const st = document.getElementById("saveState"); st.textContent = "saving…";
     try { await db.collection("scores").doc(id).set(scores[id]); st.textContent = "saved"; }
     catch (e) { st.textContent = "not saved: " + (e && e.code || "error"); }
   }
+  async function save(id, score) { const cur = (scores[id] || {}).score; return put(id, { score: cur === score ? "" : score }); }
+  /* notes (10/13, Chief: "a section to where I can add notes to each one"): saved a moment after you stop typing */
+  const timers = {};
+  document.addEventListener("input", (ev) => {
+    const ta = ev.target.closest(".rnote textarea"); if (!ta) return;
+    const id = ta.closest(".row").dataset.id;
+    ta.classList.toggle("has", !!ta.value.trim());
+    ta.style.height = "auto"; ta.style.height = ta.scrollHeight + "px";
+    clearTimeout(timers[id]); timers[id] = setTimeout(() => put(id, { remark: ta.value }), 700);
+  });
   document.addEventListener("click", (ev) => {
     const t = ev.target.closest(".t");
     document.querySelectorAll(".t.pin").forEach((x) => { if (x !== t) x.classList.remove("pin"); });
