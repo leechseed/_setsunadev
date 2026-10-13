@@ -438,7 +438,9 @@ def main():
         rows.append(station_frago())   # BOLO 86: every staged sheet is FRAGO'd before the boards open
     if not a.no_pages:
         rows += station_pages()
-    stamp = dt.datetime.now().strftime("%Y-%m-%d %H:%M")
+    try: subprocess.run([sys.executable, "-X", "utf8", os.path.join(ROOT, "_tools", "desk", "build_desk.py")], capture_output=True, timeout=90)   # BOLO 141: rebuild the Command Desk; never fatal
+    except Exception: pass
+    stamp =dt.datetime.now().strftime("%Y-%m-%d %H:%M")
     if a.json:
         print(json.dumps({"when": stamp, "stations": rows}, ensure_ascii=False, indent=1))
         return

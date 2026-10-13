@@ -13,6 +13,11 @@ import json
 import os
 import re
 import sys
+
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+except Exception:  # noqa: BLE001
+    pass
 import urllib.parse
 import urllib.request
 
