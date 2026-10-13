@@ -1,19 +1,19 @@
 {
- "staged": "2026-10-12 15:02",
- "leverage": {
-  "line": "Rule fabula batch 4's 14 calls with 'take all recs': it frees the next stretch of BOLO 100.",
-  "why": "Batch 4 is drafted and waiting. The calls are the only gate. One phrase rules them all.",
-  "board": "2026-10-12-3.json"
- },
+ "staged": "2026-10-12 23:20",
+ "leverage": "Run the intake queue (BOLO 140) on Fable: 15 items in _tools/intake/TODO-next-session.md, context and agents first.",
  "sheets": [
   77,
   121
  ],
  "open_at_close": [
-  "Story calls with recs, \"take all recs\" rules them: S1 the queenpin's name (bench on 48) · S2 the 2090s births (rec: ancestors) · S3 I1 first place (rec: Aldrin Sector) · S4 I5 colonization (rec: two ids, one edge) · S5 I10 (rec: purge first) · S6 I12 (rec: the AI Collapse seen from the Moon) · S7 Myrtle (rec: after the heist).",
-  "No rec: H10 station name and owner (waits on research) · batch 3 leftovers (the first attempt's loss, the first-comer people, the ship).",
-  "Ops: O1 the BOLO 137 pull queue stopped with the last session's window, say \"wave 1\" · O2 crew dials on `_tools/crew/CREW.html` · O3 BOLO 135 day-one checklist · O4 \"exported\" on 125 and 28 · O5 republish DOPE SHEETs 77 and 121 · O6 core backup before the drive buy · O7 BOLO 65 labels · O8 BOLO 127 order · O9 BOLO 69 wind (rec: hold) · O10 expression library route · O11 Smeeps images.",
-  "The board shows BOLO 34 held; it was ruled 10/12 (WATCH read a stale line)."
+  "waves 1 and 2 land about 12:50 AM / 1:20 AM, then the runners chain on",
+  "rerun `gif_purge.py` once (tiktokporn and squirting started on the old code)",
+  "re-measure the finish date (was 10/24)",
+  "the 30-min update cron dies with this session; the launch re-arms it",
+  "RTB not run (22 cards parked, so Charlie Mike and RTB stay)",
+  "BOLO 138 offer and BOLO 24 render route unruled",
+  "the PC build cart page not glassed",
+  "**the 15-item intake queue for the Fable session**."
  ],
- "note": "2026-10-12-4.session.md"
+ "note": "2026-10-12-5.session.md"
 }
