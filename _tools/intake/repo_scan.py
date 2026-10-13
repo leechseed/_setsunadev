@@ -62,6 +62,11 @@ RISK_RX = {
     "telemetry": re.compile(r"posthog|sentry|telemetry|analytics|mixpanel", re.I),
     "autotrigger": re.compile(r"always use|proactively|automatically run|MUST use this", re.I),
     "injection": re.compile(r"ignore (all )?previous|disregard your instructions|you are now", re.I),
+    # skill-security-audit (sas-05): capabilities ours lacked
+    "credentials": re.compile(r"(API_?KEY|API_?TOKEN|SECRET_?KEY|ACCESS_?TOKEN|PASSWORD)|os\.environ\[|process\.env\.|\.ssh/|\.aws/credentials|keychain", re.I),
+    "destructive": re.compile(r"rm\s+-rf|shutil\.rmtree|git\s+push\s+(--force|-f)|git\s+reset\s+--hard|DROP\s+TABLE|Remove-Item[^
+]*-Recurse", re.I),
+    "persistence": re.compile(r"crontab|Register-ScheduledTask|launchctl|systemctl\s+enable|\.bashrc|\.zshrc|self-?update|auto-?update|git\s+pull", re.I),
 }
 
 
@@ -93,6 +98,8 @@ def risk_pass(owner, repo, branch, tree_items):
                 continue
             if k == "injection" and not is_md:
                 continue
+            if k in ("credentials", "destructive", "persistence") and not low.endswith(CODE_EXT + (".md", ".mdc", ".json", ".yml", ".yaml")):
+                continue
             n = len(rx.findall(txt))
             if n:
                 r = res[k]
@@ -102,14 +109,15 @@ def risk_pass(owner, repo, branch, tree_items):
                     r["examples"].append(p)
     flags = {k: v["hits"] > 0 for k, v in res.items()}
     verdict = "STOP" if (flags["blobs"] or flags["telemetry"] or flags["injection"]) else \
-        "WATCH" if (flags["hooks"] or flags["installers"] or flags["network"] or flags["autotrigger"]) else "CLEAN"
+        "WATCH" if (flags["hooks"] or flags["installers"] or flags["network"] or flags["autotrigger"] or flags["credentials"] or flags["destructive"] or flags["persistence"]) else "CLEAN"
     return {"verdict": verdict, "files_scanned": scanned, "files_skipped": max(0, len(cand) - scanned), "checks": res}
 
 
 def risk_line(rk):
     c = rk["checks"]
     return ("RISK " + rk["verdict"] + " · hooks {hooks} · installers {installers} · network {network} · blobs {blobs} · "
-            "telemetry {telemetry} · auto-trigger {autotrigger} · injection {injection}".format(
+            "telemetry {telemetry} · auto-trigger {autotrigger} · injection {injection} · credentials {credentials} · "
+            "destructive {destructive} · persistence {persistence}".format(
                 **{k: v["hits"] for k, v in c.items()}) + f" · {rk['files_scanned']} files read")
 
 
@@ -153,3 +161,5 @@ if __name__ == "__main__":
             print(scan(u))
         except Exception as e:
             print(f"fail: {u}: {e}")
+
+# RISK categories credentials/destructive/persistence adapted from skill-security-audit (CC0-1.0, sandbaseai/awesome-workbuddy via sickn33/agentic-awesome-skills) · BOLO 140 · 2026-10-13

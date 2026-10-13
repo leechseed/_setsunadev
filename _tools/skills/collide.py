@@ -33,7 +33,7 @@ def words(text):
 
 
 def sentences(text):
-    return [s.strip().lower() for s in re.split(r"(?<=[.;:])\s+", text) if len(s.strip()) > 25]
+    return [s.strip().lower() for s in re.split(r"(?<=[.;:])\s+", text) if len(s.strip()) > 60]
 
 
 def main():
