@@ -5,7 +5,7 @@ Reads .claude/skills/*/SKILL.md and .claude/agents/*.md, scores every pair on sh
 trigger words (Jaccard over content words) and near-duplicate sentences, prints pairs
 at or above the threshold, highest first.
 
-Usage: python _tools/skills/collide.py [--min 0.25] [repo_root]
+Usage: python _tools/skills/collide.py [--min 0.4] [repo_root]
 Output: score | a | b | shared words. Exit 0 always (a triage list, not a gate).
 """
 import re
@@ -38,7 +38,7 @@ def sentences(text):
 
 def main():
     args = sys.argv[1:]
-    thr = 0.25
+    thr = 0.4
     if "--min" in args:
         i = args.index("--min")
         thr = float(args[i + 1])
@@ -59,7 +59,7 @@ def main():
             union = a[2] | b[2]
             jac = len(shared) / len(union) if union else 0.0
             dup = max((SequenceMatcher(None, x, y).ratio() for x in a[3] for y in b[3]), default=0.0)
-            dup = dup if dup >= 0.8 else 0.0
+            dup = dup if dup >= 0.9 else 0.0
             score = max(jac, dup)
             if score >= thr:
                 rows.append((score, a[0], b[0], sorted(shared)[:8], dup > 0))
