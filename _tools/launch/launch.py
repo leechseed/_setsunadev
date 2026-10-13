@@ -31,7 +31,7 @@ STASH_CFG = os.path.join("Q:\\", "fun", ".StashApp", "config.yml")
 STASH_URL = "http://127.0.0.1:9999/"
 DECK = os.path.join(ROOT, "_PRIVATE", "stash_deck", "index.html")   # the Stash deck, opened in the default browser
 PAGES = os.path.join(ROOT, "_tools", "pages", "pages.json")
-BOARDS = ["sitrep", "soi", "pullglass"]   # RULED 9/17: the board · the SOI · zero DOPE SHEETs; + the pull glass (Chief 10/12, BOLO 137)
+BOARDS = ["sitrep", "soi", "pullglass", "roster"]   # RULED 9/17: the board · the SOI · zero DOPE SHEETs; + the pull glass (Chief 10/12, BOLO 137) + the Roster (BOLO 139)
 TOOLS = ("blocked", "bolo", "box", "effort", "help", "pmcs", "time")
 
 
