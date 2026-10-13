@@ -1,6 +1,6 @@
 ---
 name: drill-maker
-description: Reads the locked parts and their say-lines and returns five recall questions, or in "mode: practical" three to five hands-on exercises, each with its answer attached as a tip. No scores and no grading; changes nothing.
+description: Reads the locked parts and their say-lines and returns five recall questions, or in practical mode three to five hands-on exercises, each with its answer attached as a tip. No scores and no grading; changes nothing.
 tools: Read, Grep, Glob
 model: haiku
 ---

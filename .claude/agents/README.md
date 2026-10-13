@@ -1,6 +1,6 @@
 # Agent roster
 
-25 specialist agents: 22 adapted from the ECC repo (MIT, github.com/affaan-m/ECC) on 10/12, plus the BOLO 140 intake agents (each file names its source and license at the bottom). Seats: haiku = PS (fetch/extract), sonnet = MS (write/review), opus = planning and architecture only. The CDR decides when to call each one.
+26 specialist agents: 22 adapted from the ECC repo (MIT, github.com/affaan-m/ECC) on 10/12, plus the BOLO 140 intake agents (each file names its source and license at the bottom). Seats: haiku = PS (fetch/extract), sonnet = MS (write/review), opus = planning and architecture only. The CDR decides when to call each one.
 
 | Name | Model | Job in plain words | Access |
 |---|---|---|---|
@@ -22,6 +22,7 @@
 | order-parser | haiku | Turns a garbled dictation line into a clean order (proword, BOLO, verb, object, confidence); never acts | read-only |
 | performance-optimizer | sonnet | Finds why a script is slow or heavy and recommends measured fixes | read-only (Bash for timing) |
 | planner | opus | Turns a request into a phased plan with files, risks and verification | read-only |
+| prose-taste | sonnet | Flags slop words, filler openers, fake precision and unsourced claims in a draft, with the fix; never rewrites | read-only |
 | python-reviewer | sonnet | Reviews Python for security, error handling, Windows pitfalls, style | read-only (Bash read-only) |
 | pytorch-build-resolver | sonnet | Diagnoses PyTorch/CUDA errors and proposes the smallest fix | read-only (Bash) |
 | refactor-cleaner | sonnet | Removes dead code and duplicates from named scripts, with checks | writes |
