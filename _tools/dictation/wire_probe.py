@@ -18,7 +18,8 @@ from mcp.client.stdio import StdioServerParameters, stdio_client
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
-EXPECTED = ["blocked", "bolo", "pmcs", "effort", "box", "time", "help"]
+EXPECTED = ["blocked", "bolo", "pmcs", "effort", "box", "time", "help",
+            "stash_find", "stash_counts"]
 CALLS = [
     ("blocked", {}),
     ("bolo", {"n": 56}),
@@ -28,6 +29,8 @@ CALLS = [
     ("box", {}),
     ("time", {}),
     ("help", {}),
+    ("stash_counts", {}),
+    ("stash_find", {"name": "a"}),
 ]
 
 

@@ -21,6 +21,7 @@ sentences, no markdown — so the session can read it, or hand it to speak.py.
 """
 
 import os
+import sqlite3
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -77,6 +78,74 @@ def time_() -> str:
 @server.tool(name="help", description="What JUDY can answer, in her own words.")
 def help_() -> str:
     return brain.t_help()
+
+
+STASH_COPY = os.path.abspath(os.path.join(HERE, "..", "..", "_PRIVATE", "dbcopies", "stash.sqlite"))
+NO_COPY = "No Stash copy; run _tools/mcp/db_copy.py."
+
+
+def _stash():
+    """Read-only handle on the SQLite copy (never the live DB), or None if missing."""
+    if not os.path.isfile(STASH_COPY):
+        return None
+    uri = "file:" + STASH_COPY.replace("\\", "/").replace("?", "%3f").replace("#", "%23") + "?mode=ro"
+    c = sqlite3.connect(uri, uri=True)
+    c.execute("PRAGMA query_only=1")
+    return c
+
+
+def _spoken(label, rows):
+    if not rows:
+        return f"No {label} match."
+    parts = [f"{n}, {k} scene{'' if k == 1 else 's'}" for n, k in rows]
+    return f"{len(rows)} {label}: " + "; ".join(parts) + "."
+
+
+@server.tool(name="stash_find", description="Stash performers, studios and tags whose name contains the text (case-insensitive, up to 10 each) with scene counts. Read-only, from the local copy.")
+def stash_find(name: str) -> str:
+    text = (name or "").strip()
+    if not text:
+        return "Say a name to look for."
+    try:
+        c = _stash()
+        if c is None:
+            return NO_COPY
+        try:
+            like = "%" + text.lower().replace("\\", "\\\\").replace("%", "\%").replace("_", "\_") + "%"
+            perf = c.execute(
+                "SELECT p.name, COUNT(ps.scene_id) FROM performers p "
+                "LEFT JOIN performers_scenes ps ON ps.performer_id = p.id "
+                "WHERE lower(p.name) LIKE ? ESCAPE '\' GROUP BY p.id ORDER BY 2 DESC LIMIT 10", (like,)).fetchall()
+            stud = c.execute(
+                "SELECT s.name, COUNT(sc.id) FROM studios s "
+                "LEFT JOIN scenes sc ON sc.studio_id = s.id "
+                "WHERE lower(s.name) LIKE ? ESCAPE '\' GROUP BY s.id ORDER BY 2 DESC LIMIT 10", (like,)).fetchall()
+            tags = c.execute(
+                "SELECT t.name, COUNT(st.scene_id) FROM tags t "
+                "LEFT JOIN scenes_tags st ON st.tag_id = t.id "
+                "WHERE lower(t.name) LIKE ? ESCAPE '\' GROUP BY t.id ORDER BY 2 DESC LIMIT 10", (like,)).fetchall()
+        finally:
+            c.close()
+    except sqlite3.Error as e:
+        return f"Stash copy would not open: {e}."
+    return " ".join([_spoken("performers", perf), _spoken("studios", stud), _spoken("tags", tags)])
+
+
+@server.tool(name="stash_counts", description="Stash library totals: scenes, images, performers, studios, tags. Read-only, from the local copy.")
+def stash_counts() -> str:
+    try:
+        c = _stash()
+        if c is None:
+            return NO_COPY
+        try:
+            n = {t: c.execute(f"SELECT COUNT(*) FROM {t}").fetchone()[0]
+                 for t in ("scenes", "images", "performers", "studios", "tags")}
+        finally:
+            c.close()
+    except sqlite3.Error as e:
+        return f"Stash copy would not open: {e}."
+    return (f"Stash holds {n['scenes']} scenes, {n['images']} images, {n['performers']} performers, "
+            f"{n['studios']} studios and {n['tags']} tags.")
 
 
 if __name__ == "__main__":

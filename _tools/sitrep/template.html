@@ -2,24 +2,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
   /* ---- the BRIEF colorway (working name) · RULED 2026-09-10: the creator-cases explainer's palette is the default for the boards we keep using; ROSE/WATCH stays with DARKROOM + public-facing work ---- */
-  :root {
-    --bg: #D8D8D2; --panel: #E4E4DE; --panel-2: #CBCBC4;
-    --ink: #1B1B19; --ink-2: #44453F; --ink-3: #6B6C65;
-    --accent: #E04E18; --accent-ink: #A83409; --accent-soft: #E9D5CA;
-    --link: #A83409; --good: #1F6B45; --good-soft: #CFE0D3; --warn: #5E4F22; --warn-soft: #E2D9BE; --bad: #962C37; --bad-soft: #E6CCCF; --help: #44453F;
-    --mark: #E2D9BE;
-    --orange: #A83409; --orange-soft: #E9D5CA;
-    --line: #B5B5AE;
-    --line-2: #97978F;
-    --grid: color-mix(in srgb, var(--ink) 6%, transparent);
-    --bar: color-mix(in srgb, var(--ink) 22%, transparent);
-    --bar-retired: repeating-linear-gradient(135deg, transparent 0 4px, color-mix(in srgb, var(--ink) 22%, transparent) 4px 6px);
-    --shadow: 0 1px 2px rgba(0,0,0,.08), 0 8px 24px rgba(0,0,0,.10);
-    --display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
-    --body: "Atkinson Hyperlegible", "Segoe UI", Verdana, sans-serif;
-    --mono: "IBM Plex Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-    color-scheme: light; /* E-INK: the light face, provisional 9/11 — Kindle gray, never white; shown only when the viewer forces light */
-  }
   /* DARK is the only theme (RULED 9/11: "there's only one theme, and that's dark"); the toggle is gone */
   :root {
     --bg: #0F1216; --panel: #171B21; --panel-2: #1F242C;
@@ -34,32 +16,6 @@
     --bar: color-mix(in srgb, var(--ink) 30%, transparent);
     --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
     color-scheme: dark;
-  }
-  :root[data-theme="light"] {
-    --bg: #D8D8D2;
-    --panel: #E4E4DE;
-    --panel-2: #CBCBC4;
-    --ink: #1B1B19;
-    --ink-2: #44453F;
-    --ink-3: #6B6C65;
-    --accent: #E04E18;
-    --accent-ink: #A83409;
-    --accent-soft: #E9D5CA;
-    --link: #A83409;
-    --good: #1F6B45;
-    --good-soft: #CFE0D3;
-    --warn: #5E4F22;
-    --warn-soft: #E2D9BE;
-    --bad: #962C37;
-    --bad-soft: #E6CCCF;
-    --help: #44453F;
-    --mark: #E2D9BE;
-    --orange: #A83409;
-    --orange-soft: #E9D5CA;
-    --line: #B5B5AE;
-    --line-2: #97978F;
-    --shadow: 0 1px 2px rgba(0,0,0,.08), 0 8px 24px rgba(0,0,0,.10);
-    color-scheme: light;
   }
 
   * { box-sizing: border-box; }
