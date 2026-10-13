@@ -68,3 +68,25 @@ The kit's own baselines (8, 6, 4) are rejected; our settings are in the table.
 ## Source
 
 taste-skill, brutalist-skill and output-skill by Leonxlnx, MIT: https://github.com/Leonxlnx/taste-skill/tree/main/skills/ . Fetched 2026-10-13 through a summarizing fetch tool, not verbatim; check the repo before quoting. Adopted 2026-10-13, provisional, BOLO 140.
+
+## 6 · Charts and diagrams (BOLO 140, 10/13)
+
+Sources: **SVB** = scientific-visualization-book by Rougier (CC-BY-NC-SA; ideas only, no text or figures copied). **DD** = diagram-design by Cathryn Lavery (MIT). **Ours** = already our rule, restated for charts. The palette stays as in section 1.
+
+1. **One message per chart, decided first.** If you cannot say it in one sentence, split the chart. (SVB)
+2. **The title states the finding.** "Sets doubled after 9/20" beats "Sets per day"; the reader gets the answer before the data. (SVB, Ours)
+3. **Label lines and bars directly; skip the legend.** The eye should not travel between key and mark. (SVB)
+4. **Accent orange for the one thing that matters, gray for the rest.** Two or more accents erase the signal. (SVB, DD)
+5. **No 3D, no shadows, no gradients on data.** Depth distorts the values and adds nothing. (SVB)
+6. **No dual axes.** Two scales let the author choose the story; draw two small charts instead. (SVB)
+7. **Bars start at zero.** A cut bar lies about the ratio; lines may start elsewhere if the axis says so. (SVB)
+8. **Numbers in IBM Plex Mono, tabular, right-aligned.** Digits line up so columns compare at a glance. (Ours, SVB)
+9. **Source and date on every chart.** The caption carries what, from where, as of when; without it the chart cannot be trusted or refreshed. (SVB)
+10. **Time axes read in 12-hour AM/PM.** Chief reads them; logs keep 24-hour. (Ours)
+11. **Layered editorial diagram: background context, the system, the one highlighted path.** Context sits in muted gray, the system in clean outlines, and orange traces the single path the reader should follow. (DD)
+12. **Draw for a reader who was not there.** Plain words, define on first use, no insider shorthand in labels. (DD, SVB "know your audience")
+13. **Delete until nothing can go.** Cap about 9 nodes and 2 accent items; more means two diagrams. Every line must carry information. (DD)
+14. **Right-angle connectors, labels on opaque masks, hairline borders, 4px grid.** Straight lines read faster and never cross behind a box. (DD)
+
+Not taken: DD's fonts (Instrument Serif, Geist), its light paper default, its coral accent and its brand-onboarding gate. Ours replace them.
+Source: https://github.com/rougier/scientific-visualization-book (rules-chapter ideas, read via summary) and https://github.com/cathrynlavery/diagram-design (SKILL.md, README). Adopted 10/13, provisional.
