@@ -73,8 +73,21 @@ def build_header(text):
         lines[3] = lines[3][:-12].rstrip(" ,")
     return _wrap(lines)
 
+PRIVATE_RE = re.compile(r"\[private\].*?\[/private\]|<!--\s*private\s*-->.*?<!--\s*/private\s*-->", re.S | re.I)
+
+def strip_private(path):
+    """claude-mem-05: cut private spans out of the note, keep them in _PRIVATE/notes-private/<id>.md."""
+    t = io.open(path, encoding="utf-8").read()
+    spans = [m.group(0) for m in PRIVATE_RE.finditer(t)]
+    if not spans: return
+    nid = os.path.basename(path)[:-len(".session.md")] if path.endswith(".session.md") else os.path.splitext(os.path.basename(path))[0]
+    write(os.path.join(ROOT, "_PRIVATE", "notes-private", nid + ".md"), (NL * 2).join(spans) + NL)
+    write(path, PRIVATE_RE.sub("", t))
+    print(f"private spans stripped: {len(spans)} -> _PRIVATE/notes-private/{nid}.md")
+
 def add_header(path):
     """Insert (or replace) the resume header under the H1 of a drafted note. Run after the PS draft."""
+    strip_private(path)
     t = io.open(path, encoding="utf-8").read()
     t = re.sub(r"\A(# [^\n]*\n)\n?" + FENCE + r"resume\n.*?\n" + FENCE + r"\n", lambda m: m.group(1), t, flags=re.S)
     h, _, rest = t.partition(NL)
@@ -147,6 +160,7 @@ WRITE: _CACHE/{target} — the session note in the Command's shape: a `# Session
   what was measured (numbers only if spoken or printed) · memory written (if the transcript says so) · **Open at close:** (everything unresolved, one line) ·
   **AAR (one line):** planned = · happened = · sustain = · improve = · and a final line `- Oscar Mike.`
 RULES: nothing not in the transcript; no praise; no summary of Claude's reasoning; file paths verbatim; Chief's words in quotes; under 2,500 characters unless the session was long.
+Text between [private] and [/private] (or <!-- private --> and <!-- /private -->) is cut from the note by close.py --header and kept in _PRIVATE/notes-private/.
 PRIVATE DETAIL STAYS PRIVATE (ruled 10/4): _CACHE is in the public repo. Keep sexual, health, drug and kink detail generic ("ORANGE items, detail in _PRIVATE/"): never quote Chief's sexual words, never name kinks, toys, substances, body parts or adult boards. (10/8: the first draft leaked this detail.)
 After the note is drafted the main line runs `python _tools/oscarmike/close.py --header _CACHE/{target}` (it adds the resume header under the H1; do not write one yourself).
 Do not read any other file. Do not edit STATE.md or the journal. Reply with the note's path and nothing else.

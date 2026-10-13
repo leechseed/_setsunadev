@@ -449,6 +449,12 @@ def main():
         print("  %-9s %-6s %s  (%s)" % (r["station"], "GO" if r["go"] else "NO-GO", r["addr"], r["note"]))
     nogo = [r["station"] for r in rows if not r["go"]]
     print("  ALL GO" if not nogo else "  NO-GO: " + ", ".join(nogo))
+    try:   # BOLO 141: last_poll.json feeds the Command Desk; never fatal
+        io.open(os.path.join(ROOT, "_tools", "launch", "last_poll.json"), "w", encoding="utf-8").write(json.dumps(
+            {"time": dt.datetime.now().isoformat(timespec="seconds"), "all_go": not nogo,
+             "stations": [{"name": r["station"], "go": bool(r["go"]), "detail": "%s (%s)" % (r["addr"], r["note"])} for r in rows]},
+            ensure_ascii=False, indent=1))
+    except Exception: pass
     sys.exit(0 if not nogo else 1)
 
 

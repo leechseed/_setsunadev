@@ -10,6 +10,8 @@ import io, os, re, socket, subprocess, sys, datetime
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+PRIVATE_RE = re.compile(r"\[private\].*?\[/private\]|<!--\s*private\s*-->.*?<!--\s*/private\s*-->", re.S | re.I)
+
 def load(p):
     try:
         with io.open(os.path.join(ROOT, p), encoding="utf-8") as f:
@@ -49,7 +51,7 @@ def main():
     out.append(f"RACK · {len(notes)} note(s) staged" + ("" if notes else " (empty)"))
     for i, nf in enumerate(notes):
         fp = os.path.join(cache, nf)
-        txt = load(os.path.join("_CACHE", nf))
+        txt = PRIVATE_RE.sub("", load(os.path.join("_CACHE", nf)))
         m = re.search(r"^# (.+)$", txt, re.M)
         title = re.sub(r"^Session note\s*[—-]\s*", "", m.group(1)) if m else nf
         title = re.sub(r"\s*\(session .*$", "", title)[:70]

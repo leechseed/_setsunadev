@@ -28,6 +28,8 @@ severity: high|medium|low
 suggested_rule: "one sentence rule, and the tool/event a guard hook would match"
 ```
 
+For each behavior, also propose the CLAUDE.md or SOP line edit (file, old line or "add", new line) that would prevent it.
+
 Order by frequency, then severity. Propose rules only; do not write hooks or edit any config.
 
-<!-- adapted from ECC agents/conversation-analyzer.md (MIT, github.com/affaan-m/ECC), 2026-10-12 -->
+<!-- adapted from ECC agents/conversation-analyzer.md (MIT, github.com/affaan-m/ECC), 2026-10-12; CLAUDE.md-edit idea from ykdojo/claude-code-tips review-claudemd (no text copied) -->

@@ -32,6 +32,8 @@
 | syllabus-builder | sonnet | Maps a topic into a bare tree of one-line parts in teaching order | read-only |
 | teach-coach | sonnet | Teaches one tiny part at a time as a spoken sentence plus one tip | read-only |
 | skill-builder | sonnet | Drafts or trims one skill or agent file to the Anthropic skill patterns; names test prompts | writes (one named file) |
+| claim-checker | sonnet | Lists a draft's factual claims, finds primary sources and scores each (supported, weak, unsupported, contradicted) | read-only (web) |
+| skill-optimizer | sonnet | Reads one transcript and one skill, finds where the skill misfired or dragged, proposes the smallest edit | read-only |
 
 ## The Command rules
 

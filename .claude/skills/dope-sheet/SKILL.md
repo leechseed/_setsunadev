@@ -44,3 +44,7 @@ python _tools/bolostatus/build.py N
 ```
 
 Publish the printed fragment with the Artifact tool (new page: favicon + one-line description; the title is `DOPE SHEET N`). Then record the URL in three places: the BOLO row's status cell (`**DOPE SHEET N:** <url>`), `_tools/pages/pages.json` (`"N": "<url>"`), and the glossary `boloN` entry's `w`. The reply carries the link and the order line.
+
+## The three-file habit (BOLO 140, 10/13)
+
+Every long build keeps three things in its work folder, as three named sections or three files: a **plan**, a **decisions-and-files list**, and a **task checklist**. A context reset then loses nothing, because the next session reads those three and carries on. The sheet names where they live: the plan and checklist in Execution, the decisions-and-files list in Admin, and each tick-off as a line in the Log.

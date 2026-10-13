@@ -13,7 +13,7 @@ PAGES = os.path.join(ROOT, "_tools", "pages", "pages.json")
 STATE = os.path.join(ROOT, "STATE.md")
 TRAFFIC = os.path.join(ROOT, "TRAFFIC.md")
 JLOG = os.path.join(ROOT, "_tools", "dictation", "judy.session.log")
-LAUNCH_POLL = os.path.join(ROOT, "_tools", "launch", "last_poll.json")  # optional; launch.py writes none today
+LAUNCH_POLL = os.path.join(ROOT, "_tools", "launch", "last_poll.json")  # optional; launch.py writes it after the poll
 
 E = html.escape
 EMPTY = '<div class="empty">%s</div>'
@@ -47,16 +47,21 @@ def rd(p):
 def stations():
     try:
         d = json.load(io.open(LAUNCH_POLL, encoding="utf-8"))
-        tiles = "".join('<div class="tile"><span class="dot%s"></span><div><b>%s</b><small>%s</small></div></div>'
-                        % ("" if r.get("go") else " no", E(r.get("station", "?")), "GO" if r.get("go") else "NO-GO")
-                        for r in d.get("stations", []))
-        if tiles:
-            return '<div class="grid">%s</div>' % tiles, 1
+        rows = d.get("stations", [])
+        if rows:
+            when = dt.datetime.fromisoformat(d.get("time", ""))
+            stale = (dt.datetime.now() - when).total_seconds() > 6 * 3600
+            tiles = "".join('<div class="tile st" data-go="%d" title="%s"><span class="dot%s"></span><div><b>%s</b><small>%s</small></div></div>'
+                            % (1 if r.get("go") else 0, E(r.get("detail", "")), "" if r.get("go") else " no", E(r.get("name", "?")),
+                               "GO" if r.get("go") else "NO-GO") for r in rows)
+            chip = '<span class="chip%s">%s</span>' % (" stale" if stale else "", "stale · " if stale else "")
+            head = '<div class="mono poll">Polled %d/%d %s%s</div>' % (when.month, when.day, t12(when), " " + chip.replace("</span>", "stale</span>").replace("stale · ", "") if stale else "")
+            return head + '<div class="grid">%s</div>' % tiles, 1
     except Exception:
         pass
     try:
         m = dt.datetime.fromtimestamp(os.path.getmtime(JLOG))
-        return EMPTY % ("Last launch: see the JUDY session log (log updated %d/%d %s). launch.py records no poll file."
+        return EMPTY % ("Last launch: see the JUDY session log (log updated %d/%d %s). No poll file yet; the next launch writes one."
                         % (m.month, m.day, t12(m))), 0
     except Exception:
         return EMPTY % "No station poll recorded yet.", 0
@@ -97,6 +102,10 @@ def calls():
         cards.append(("Next pick", clean(nx["leverage"]), "staged " + stamp12(nx.get("staged", ""))))
     for it in nx.get("open_at_close", []):
         cards.append(("Open at close", clean(it), "from the last Oscar Mike"))
+    try:
+        pg = json.load(io.open(PAGES, encoding="utf-8"))
+    except Exception:
+        pg = {}
     on = False
     for ln in rd(STATE).splitlines():
         if ln.startswith("## ") and "Blocked" in ln:
@@ -108,7 +117,18 @@ def calls():
             c = [x.strip() for x in ln.strip("|").split("|")]
             if len(c) >= 2 and c[0]:
                 cards.insert(0, ("Blocked #" + clean(c[0], 10), clean(c[1]), "unblocks: " + clean(c[2] if len(c) > 2 else "", 60)))
-    h = "".join('<div class="card"><b>%s</b><div>%s</div><small class="mono">%s</small></div>' % (E(a), E(b), E(c)) for a, b, c in cards)
+    def crumb(a, b):
+        m = re.search(r"#(\d+)", a) or re.search(r"BOLO\s*(\d+)", b, re.I)
+        if not m:
+            return ""
+        n = m.group(1)
+        sheet = pg.get(n)
+        url = sheet or pg.get("sitrep")
+        if not url:
+            return ""
+        return '<a class="crumb mono" href="%s" target="_blank" rel="noopener">Desk › BOLO %s › %s</a>' % (
+            E(url), n, "DOPE SHEET" if sheet else "sit rep")
+    h = "".join('<div class="card"><b>%s</b><div>%s</div><small class="mono">%s</small>%s</div>' % (E(a), E(b), E(c), crumb(a, b)) for a, b, c in cards)
     return ('<div class="cards">%s</div>' % h if h else EMPTY % "No open calls."), len(cards)
 
 
@@ -142,6 +162,39 @@ def boards():
     return (('<div class="grid">%s</div>' % "".join(t)) if t else EMPTY % "No boards in pages.json."), len(t)
 
 
+EXTRA_CSS = """
+.poll{color:var(--mut);margin-bottom:10px}
+.chip{display:inline-block;border:1px solid var(--or);color:var(--or);border-radius:10px;padding:0 8px;margin-left:6px;font-size:12px}
+.crumb{display:block;margin-top:6px;color:var(--or);text-decoration:none}
+.crumb:hover,.crumb:focus-visible{text-decoration:underline;outline:none}
+nav a small{display:block;font:11px "IBM Plex Mono",monospace;color:var(--or)}
+section.hit{border-color:var(--or)}
+.tile.st.boot .dot{background:var(--line);animation:none}
+"""
+
+JS = """
+var mb=document.getElementById("mb");
+mb.onclick=function(){var m=document.getElementById("meta").classList.toggle("on");mb.setAttribute("aria-expanded",m)};
+var KEYS={"1":"stations","2":"waves","3":"calls","4":"boards"};
+document.addEventListener("keydown",function(e){
+ if(e.ctrlKey||e.metaKey||e.altKey||/INPUT|TEXTAREA|SELECT/.test((e.target.tagName||""))||!KEYS[e.key])return;
+ var s=document.getElementById(KEYS[e.key]);if(!s)return;
+ var o=document.querySelector("section.hit");if(o)o.classList.remove("hit");
+ s.classList.add("hit");s.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"start"});
+});
+(function(){
+ var done=false;try{done=sessionStorage.getItem("deskBoot")}catch(x){}
+ if(done||matchMedia("(prefers-reduced-motion:reduce)").matches)return;
+ try{sessionStorage.setItem("deskBoot","1")}catch(x){}
+ var t=[].slice.call(document.querySelectorAll(".tile.st"));if(!t.length)return;
+ var step=Math.min(250,1600/t.length);
+ t.forEach(function(el,i){var d=el.querySelector(".dot");el.classList.add("boot");
+  var sm=el.querySelector("small"),w=sm.textContent;sm.textContent="checking";
+  setTimeout(function(){el.classList.remove("boot");sm.textContent=w},(i+1)*step)});
+})();
+"""
+
+
 def main():
     try:
         sys.stdout.reconfigure(encoding="utf-8")
@@ -152,6 +205,7 @@ def main():
         print("mock missing: " + MOCK)
         sys.exit(1)
     css = re.search(r"<style>.*?</style>", src, re.S).group(0)
+    css = css.replace("</style>", EXTRA_CSS + "</style>")
     stn, ns = stations()
     wv, nw = waves()
     cl, nc = calls()
@@ -179,7 +233,7 @@ def main():
 <div id="meta" class="mono">%s</div>
 <div class="wrap">
 <nav aria-label="Sections">
-<a href="#stations">STN</a><a href="#waves">WAVE</a><a href="#calls">CALL</a><a href="#says">SAY</a><a href="#boards">BRD</a>
+<a href="#stations" title="Key 1">STN<small>1</small></a><a href="#waves" title="Key 2">WAVE<small>2</small></a><a href="#calls" title="Key 3">CALL<small>3</small></a><a href="#says">SAY</a><a href="#boards" title="Key 4">BRD<small>4</small></a>
 </nav>
 <main>
 <section id="stations"><h2>Stations</h2>%s</section>
@@ -189,13 +243,10 @@ def main():
 <section id="boards"><h2>Boards</h2>%s</section>
 </main>
 </div>
-<script>
-var mb=document.getElementById("mb");
-mb.onclick=function(){var m=document.getElementById("meta").classList.toggle("on");mb.setAttribute("aria-expanded",m)};
-</script>
+<script>%s</script>
 </body>
 </html>
-""" % (css, t12(now), E(meta), stn, wv, cl, sy, bd)
+""" % (css, t12(now), E(meta), stn, wv, cl, sy, bd, JS)
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     io.open(OUT, "w", encoding="utf-8", newline="\n").write(page)
     print("desk built: %d bytes -> %s" % (len(page.encode("utf-8")), OUT))
