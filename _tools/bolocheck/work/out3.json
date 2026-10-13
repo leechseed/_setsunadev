@@ -1,0 +1,127 @@
+{
+"93": {
+"mission": "Chief wants the world of The Outliers built as one worldbuilding system, with one catalog holding every thing in it.",
+"progress": "Claude wrote the worldbuilding system (v0.1.0, 9/29), and Chief ruled its open calls with \"all recommended\". On 10/4 Chief also ruled the intake calls, including who the Outliers are.",
+"next": "Claude scores the Feed on the nine axes, or fills the non-DCUS stubs, whichever Chief picks."
+},
+"94": {
+"mission": "Chief wants to design CYBERBUNK, a cyberpunk survivors-style roguelite game with a femme cast and an edge.",
+"progress": "Chief ruled seven first design calls on 10/3, including the Unreal engine and the tilt-shift camera. On 10/4 Chief put the game on the back burner.",
+"next": "Chief decides when to bring the game back; until then Claude builds nothing."
+},
+"96": {
+"mission": "Chief wants short world pieces called vignettes kept as their own category, and wants actors noted as inspirations for characters.",
+"progress": "Claude built the vignette section in the story registry and the actor lane on 10/1, and Chief ruled all five calls. Claude then filed Chief's first spoken world material.",
+"next": "Chief rules the open questions, such as how the sleeper DNA works, so Claude can finish those entries."
+},
+"97": {
+"mission": "Chief wants every book by the author FagMasterPDX distilled, so his whole teaching sits beside the three books already done.",
+"progress": "Claude merged the three distilled books into one combined progression, MSX.SET.01, on 10/4. Chief's other book or books are not found yet.",
+"next": "Chief finds the missing PDF and drops it in the PDF drop folder, then Claude distills it."
+},
+"98": {
+"mission": "Chief wants one dashboard that pulls every ORANGE-trunk BOLO row into a single board.",
+"progress": "Claude built the ORANGE board on 10/4, and one script rebuilds it from BOLO.md. It sorts 29 rows into six lanes.",
+"next": "Chief tells Claude where the bimbo and sex-toy threads belong, so Claude can add those rows to the board."
+},
+"99": {
+"mission": "Chief wants to voice an astrology-flavored advice character for women, using only his voice and burned-in subtitles.",
+"progress": "Chief ruled the format and audience on 10/4, and Claude wrote a ten-script pilot and a sixty-question bank. The character's name and voice path are still open.",
+"next": "Chief rules the character's name and sign-off and records Pilot 01, so the series can start."
+},
+"100": {
+"mission": "Chief wants every story system finished and the whole fabula built, beginning to end of time, before any pilot writing starts.",
+"progress": "As of 10/12, the fabula document is at version 1.6.0 after Chief ruled batches 2 to 4 with \"take all recs\". Some hand-build calls and one research item (H10) are still open.",
+"next": "Chief rules the remaining hand-build calls, so Claude can close the fabula and move on to the other systems."
+},
+"101": {
+"mission": "Chief wants the systems to run as a simulator, so the world emerges from simple rules and tabletop role-play can sit on top.",
+"progress": "Claude gave a recommendation on 10/4 and 10/6: start with a thin tick layer, one rule at a time. Chief has not said go, so nothing is built.",
+"next": "Chief says go, and Claude then writes a first script with one rule and one tick."
+},
+"102": {
+"mission": "Chief wants all documentation for everything finished and reachable from one place before the fabula work continues.",
+"progress": "Stages 1 and 2 are complete as of 10/5: 220 documentation pages for 58 core docs, and an interface catalog. Claude published the Command Reference at version 10, and 51 gaps are still open.",
+"next": "Chief rules the open documentation gaps, and Claude then folds the 16 unruled interface rows into the fabula's second phase."
+},
+"105": {
+"mission": "Chief wants a set of sexology credentials from the American Board of Sexology, for color on the ORANGE side.",
+"progress": "Claude finished the research on 10/5 and wrote a register of 81 programs. Chief said he wants the most benefit, not the quickest route.",
+"next": "Chief picks which path to start, and Claude then confirms the cheapest qualifying course with the board."
+},
+"106": {
+"mission": "Chief wants one place that tracks the follow-up tasks from a recent health visit.",
+"progress": "Two follow-ups were logged on 10/6, due 10/7. Details live only in a private file.",
+"next": "Chief does the two follow-ups and tells Claude when they are done."
+},
+"107": {
+"mission": "Chief wants his own notes, voice memos, films and online history turned into source material for the fabula.",
+"progress": "Claude finished the notes source by 10/9 and the Evernote and voice memo run by 10/11, and Chief ruled all calls. Paper scans are held until Chief buys a document scanner.",
+"next": "Chief gets the document scanner, and Claude then ingests the paper scans from the paper drop folder."
+},
+"108": {
+"mission": "Chief wants one named procedure for turning books and his own data into research and then into a system.",
+"progress": "Chief ruled the name INTEL CYCLE on 10/6, and Claude wrote it as SOP section 9. It also absorbed BOLOs 36, 40 and 41.",
+"next": "Claude runs the next books or Chief-data job through the INTEL CYCLE, as Chief orders."
+},
+"109": {
+"mission": "Chief wants Hunter S. Thompson's voice logged as a style reference, and used as the inner voice of the character Riley Moss.",
+"progress": "Claude logged a voice register and a Riley Moss seed on 10/6. Chief ruled the other girl is Anna Colson and that Vivian appears in all eras.",
+"next": "Chief finds The Great Shark Hunt for the book list, and rules how Vivian spans the eras."
+},
+"110": {
+"mission": "Chief wants a portable cyberdeck so JUDY can go with him off the PC, and so he can study life near the trash line.",
+"progress": "Claude wrote a blue-sky design called THE HOTLINE on 10/6, with three open calls. Chief put the deck on hold that day so the 3D printer comes first.",
+"next": "Chief says go on 110 when he returns to it, and Claude then runs a boresight."
+},
+"111": {
+"mission": "Chief wants a private calendar that tracks his sessions and how much JUDY helps.",
+"progress": "Claude built the Goon Log page on 10/6, with a calendar, stats and a log form. Detail stays in a private folder.",
+"next": "Chief tells JUDY \"log it\" after sessions, and Claude adds any changes he asks for."
+},
+"112": {
+"mission": "Chief wants everything bought up front so his 3D printer works at full capability.",
+"progress": "Claude built the cart and Mom's order list by 10/8, and filed links with live prices. The cart stands at $332.89 with 15 of 18 items picked.",
+"next": "Chief resubmits the power strip link and rules on the spare hotend, then buys the cart."
+},
+"113": {
+"mission": "Chief wants real actresses kept as looks and personality references that LEECHSEED characters can point to.",
+"progress": "Claude drafted the card format and wrote seven cards on 10/6. A bench of 62 more names is kept in a private file.",
+"next": "Chief picks more actresses, and Claude writes a reference card for each pick."
+},
+"114": {
+"mission": "Chief wants a walkie-talkie style chirp on JUDY's talk pad, so he knows when the channel is clear.",
+"progress": "Claude built the chirp on 10/6, with open, sent and busy sounds, then added a send click and a focus sound.",
+"next": "Chief tries the sounds and tells Claude if any need changing."
+},
+"115": {
+"mission": "Chief wants a panel showing JUDY's recent replies in tabs, plus a chart of the open threads.",
+"progress": "Claude built the Traffic Panel on 10/6 and wrote it into the SOP. On that night Claude started adding hover cards for each BOLO number.",
+"next": "Claude finishes the BOLO hover cards, and Chief checks they show the right links."
+},
+"116": {
+"mission": "Chief wants every reply's open decisions to land on one panel he can pick from by click or by voice.",
+"progress": "The Call Sheet went live on 10/6, and the local deck now takes clicks and sends them to the chat. Two pads on the MPK send \"take all recs\" and \"spit\".",
+"next": "Claude writes each reply's open calls to the sheet, and Chief reports whether voice picks work."
+},
+"117": {
+"mission": "Chief wants a way to signal \"I like that\", so JUDY learns his preferences over time.",
+"progress": "Version 1 went live on 10/6. Saying \"spit\" logs the last thing JUDY did, and the third spit on a pattern becomes an SOP rule candidate.",
+"next": "Claude adds the spit tally to the sit rep."
+},
+"118": {
+"mission": "Chief wants a researched list of toy makers, grouped by arena, starting with premium silicone.",
+"progress": "Claude published the Toy Makers page on 10/6, with arenas for silicone, Japanese imports, oral training, size and realistic. Chief also wants a collection ledger, built on his go.",
+"next": "Claude verifies the Japanese arena and adds the next arena when Chief names it."
+},
+"119": {
+"mission": "Chief wants the Aion 2 charge-and-spend combat loop captured as a design pattern for his systems.",
+"progress": "Claude logged the idea on 10/6 with three places it could live. Nothing is built yet.",
+"next": "Claude writes a one-page pattern card when Chief says go."
+},
+"121": {
+"mission": "Chief wants top posts from Reddit boards turned into labeled examples, so the engine can tag his whole image corpus.",
+"progress": "As of 10/12, Claude wired the board tags onto the rail, tagging 5,001 images. The LOOK module and six layers are also built, and Chief ruled them with \"All recommendations\".",
+"next": "Claude balances the boards, since one big fashion board catches about 43 percent of the corpus."
+}
+}

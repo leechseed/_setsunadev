@@ -1,0 +1,127 @@
+{
+"57": {
+"mission": "Chief wants to earn income by building voices in ElevenLabs, a tool he already knows, and by selling them in its Voice Library.",
+"progress": "Chief ruled this venture second of four on 9/23 and picked the Voice Library as the place to sell on 9/24. Claude built a recording kit of about 25,600 words and a checklist page, and Fiverr is parked.",
+"next": "Chief records Day 1 and Day 2 of the kit within 48 hours, which gets the first voice ready to upload."
+},
+"63": {
+"mission": "Chief wants JUDY, the voice assistant, to hear him cleanly, so her own voice and Whisper's invented words stop polluting what she transcribes.",
+"progress": "Claude built the fix for invented words and the fix that silences her reader when the pad goes down on 10/12. Chief ruled the bigger model swap waits a week.",
+"next": "Claude re-checks on 10/19 whether the bigger Whisper model should replace the current one, which would improve how well JUDY hears Chief."
+},
+"64": {
+"mission": "Chief wants the best practices from the Claude Code docs folded into the Command's own rules, skills and hooks.",
+"progress": "Claude read the docs against the SOP and Chief ruled all four calls on 9/23. The four steps are named RECON, ORDER, EXECUTE and CONSOLIDATE, and the fixes are built except one.",
+"next": "Chief runs the /fewer-permission-prompts command himself, because the harness will not let Claude run it, which cuts the number of permission prompts."
+},
+"65": {
+"mission": "Chief wants to know whether the Command should keep NASA naming or borrow from Space Force, Air Force and SpaceX doctrine.",
+"progress": "Claude's first read on 10/12 says to stay with NASA names. Claude then wrote a one-page proposal that maps four tiers onto the Command's files, with no SOP edits.",
+"next": "Claude labels the top two tiers of files first, which shows Chief which files are the capstone and keystone."
+},
+"66": {
+"mission": "Chief wants a survey of GitHub repos about Claude Code workflows, hooks and documentation, to feed the Claude Code doctrine work.",
+"progress": "Nothing is harvested yet. The row has been parked since 10/12, and Chief is still reading and collecting links himself.",
+"next": "Chief hands Claude the seed links he finds, which lets Claude run the collect pass and write a register."
+},
+"68": {
+"mission": "Chief wants the Command's procedures to run as saved scripts that fan agents out the same way every time, not as prose instructions.",
+"progress": "Claude wrote the sit rep workflow file on 10/12 but has not run it. Chief ruled on 10/12 that one side-by-side dry run comes next.",
+"next": "Claude runs the new workflow beside the current sit rep at the next sit rep, which shows whether the script matches the prose version."
+},
+"69": {
+"mission": "Chief wants a fast inbox, called the yo-yo, where he speaks a flash idea, walks away, and an agent files and refines it for him.",
+"progress": "The first run and the follow-up step work by text, built 10/12 for under two cents each. Chief has not yet tried the pad by hand, and the wind step is still open.",
+"next": "Chief tries the pad with his own voice, which tests the whole loop and shows what the wind step must do."
+},
+"70": {
+"mission": "Chief wants the Command's pages to explain hard things in plain words, the way affiliate listicle sites and the Claude Code docs do.",
+"progress": "Claude's first pass on 10/12 found 13 formatting rules, and Chief ruled that rules 1 to 6 are in use now. The top sites were blocked.",
+"next": "Chief saves three full affiliate pages into his private folder, which lets Claude run the second pass and test the rules."
+},
+"71": {
+"mission": "Chief wants the Command's boards and pages to stop looking like generic AI dashboards and reach a distinct, higher-quality look.",
+"progress": "Chief ruled the broadsheet look on 10/12, meaning dense columns, rules instead of cards, and orange as the one spot colour on dark. No page is redesigned yet.",
+"next": "Chief says go on the first page to redo, and Claude then redesigns it in the broadsheet look."
+},
+"72": {
+"mission": "Chief wants a military-style patch logo for Bold Venture, built from his own mix of references and his own sense of humour.",
+"progress": "Claude drew a composition sheet where comp 07, The Ride, is confirmed. Chief dropped Blender on 10/12, so no 3D pose scenes will be built.",
+"next": "Chief and Claude choose a new route to a finished patch image that does not use Blender, which would get the logo drawn."
+},
+"73": {
+"mission": "Chief wants to understand why games like Warframe and Phasmophobia make the graphics card reset on the computer called XELLA-PC.",
+"progress": "Claude delivered a read of the Event Viewer error on 9/19, and nothing is fixed. Chief said that machine is not his, so the row has been parked since 10/12.",
+"next": "Whoever owns XELLA-PC checks temperatures under load first, which would show whether heat causes the resets."
+},
+"76": {
+"mission": "Chief wants Sensei, the goon-session helper, to talk less and to queue a full hour of short clips on his word.",
+"progress": "Claude put the set list in code on 10/12, with a 60-minute default, short clips and the gay filter. It goes live at the next JUDY launch.",
+"next": "Chief launches JUDY, which turns on the new set list; the leftover tag clean-up and Sensei's card wording are still open."
+},
+"77": {
+"mission": "Chief wants a plot system as large as the character system but on rails, with a world timeline, a trope graph and a told order.",
+"progress": "Plot 1.0 landed 9/29, and Chief ruled the last open calls, 77-AM to 77-AP, on 10/12. Chief's own facts on 77-AG, 77-AK and 77-AL are still open.",
+"next": "Chief answers the three open fact questions, which lets Claude fold them into the plot cards and the Anna node."
+},
+"78": {
+"mission": "Chief wants a 21-day Berlin trip in July 2028 as a victory lap, funded from his venture income.",
+"progress": "Chief ruled on 9/24 for a solo trip, Berlin only, with a $20k budget. The row is parked at the bottom of the priority list.",
+"next": "Claude does step 4, flights, when Chief lifts the parking, which would fix the dates and the trip cost."
+},
+"79": {
+"mission": "Chief wants one story workspace app that shows the plot system's timeline, trope graph and told order, usable as a template for every story.",
+"progress": "Claude published workspace version 8 on 9/29, with The Arrangement as the Told lens read from a tracking file. Chief ruled all six calls that day.",
+"next": "Chief tries the workspace and reports what is wrong, which shows Claude what to fix; BOLO 90 later built v13."
+},
+"82": {
+"mission": "Chief wants one registry file that lists every story in his universe, so nothing is known only in passing.",
+"progress": "Claude built the registry on 9/29, listing OXO, EVIL CHECK, LAKAD, ASTRO7EX and Tremor Cult, with the eras ruled in sequence. Chief ruled all three era calls.",
+"next": "Claude answers the open calls on Tremor Cult and keeps adding story rows as Chief names them, which keeps the registry current."
+},
+"83": {
+"mission": "Chief wants a tailored job application for each posting he cares about, filed in his private folder.",
+"progress": "Six of eight applications were submitted on 9/24. Chief put the whole row on hold on 9/29, and applications are on hold.",
+"next": "Chief says when he wants it back, and until then Claude leaves it off every list and rec."
+},
+"85": {
+"mission": "Chief wants to learn Unreal Engine by starting in UEFN, Fortnite's editor, following Epic's own guides at his own pace.",
+"progress": "Chief picked Epic's four-stage Player to Creator course on 9/24. Claude cannot read Epic's pages, so nothing is built yet.",
+"next": "Chief saves the five course pages as PDFs into the drop folder, which lets Claude build DOPE SHEET 85 from them."
+},
+"86": {
+"mission": "Chief wants the Command's loop to close itself, so Oscar Mike stages the next launch and the launch refreshes every sheet.",
+"progress": "Claude built all four recs on 10/12, and Chief ruled that PROJECTS.md feeds the INDEX. None of it is tested end to end.",
+"next": "Claude watches the next board and launch to test it, which would show whether the loop really closes itself."
+},
+"87": {
+"mission": "Chief wants to know which setting and tabletop-RPG books the library holds, which to get, and what each teaches the setting system.",
+"progress": "The book hunt closed 10/4 with the find list at zero. Setting is at version 1.6.0, dozens of books are distilled, and the DCUS faction cards were drafted and ruled.",
+"next": "Claude keeps distilling new setting books as Chief adds them, and Chief grabs the free titles into the drop folder."
+},
+"88": {
+"mission": "Chief wants the sexuality reading shelf grown to the size of the setting shelf and distilled into the LEECHSEED character system.",
+"progress": "As of 10/4, the drop is fully distilled, 82 books. Chief ruled the schema pass for character system version 2.5.0, and wave 3 added 30 more distills.",
+"next": "Chief finds text copies of the image-only scans and the missing trans, nonbinary and ace books, which closes the gaps Claude flagged."
+},
+"89": {
+"mission": "Chief wants one trope register that covers every system, not just plot, built from TV Tropes names and short definitions.",
+"progress": "The register reached version 0.5.0 on 10/3, with 8,700 tropes all keyed. About 1,018 tropes still have no definition.",
+"next": "Claude runs the definitions pass and the low-confidence re-key, which fills in the missing definitions and firms up the weak keys."
+},
+"90": {
+"mission": "Chief wants tracking, meaning state over time, built as its own full system with a timeline interface like Premiere or Ableton.",
+"progress": "All seven build steps were done by 9/29 and the whole arc was loaded. Chief locked seven story beats on 10/3 and the workspace is at version 13.",
+"next": "Chief tests the workspace in a live browser, since it is untested there, and Claude writes bar lengths once scenes exist."
+},
+"91": {
+"mission": "Chief wants his old Apple Notes and other note exports read and sorted into the story universe without losing ideas.",
+"progress": "The 2025 and 2026 notes were parsed on 9/29, and the Android-era notes were found. Chief ruled all 13 calls from the notes that day.",
+"next": "Claude digests the two Android-era note files, which brings the oldest ideas into the same review."
+},
+"92": {
+"mission": "Chief wants one style guide system for prose, documents and pages, so every piece of writing follows the same written rules.",
+"progress": "The style guides reached version 1.0 on 9/29. On 10/4 Chief ruled the disclaimer wording and the merge calls; the BVX ids are done.",
+"next": "Claude folds the remaining BOLO 6 rules into the guides once BOLO 6 moves past version 0.1, which finishes this row."
+}
+}
