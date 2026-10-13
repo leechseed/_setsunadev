@@ -9,6 +9,9 @@ try:
     import re
     prompt = re.sub(r"<ide_[a-z_]+>.*?</ide_[a-z_]+>", " ", prompt, flags=re.S)  # the editor's file tags are not Chief's words
     prompt = re.sub(r"<[^>]{1,40}>", " ", prompt)
+    prompt = re.sub(r"https?://\S+|[A-Za-z]:[\/]\S+|\S+[\/]\S+", " ", prompt)  # links and paths are not spoken words
+    if len(prompt) > 400:  # a long dump is not a bare order; the CDR reads it itself
+        sys.exit(0)
     sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "soi"))
     import garble
     table = garble.load_table()

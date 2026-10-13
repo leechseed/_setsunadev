@@ -52,7 +52,7 @@
       ],
       "talking": []
     },
-    "sfw": true,
+    "sfw": false,
     "sfw_set": {
       "idle": "idle.png",
       "listening": "listening.png",
