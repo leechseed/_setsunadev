@@ -62,6 +62,23 @@ LABELS = {
     "morluto__rea": ("rea", "Binary reverse engineering; not a design copier."),
     "blader__humanizer": ("humanizer", "Phrase lists to merge into the prose lint."),
     "articles/building-effective-agents": ("Building Effective Agents (Anthropic)", "The formation checked against the patterns."),
+    "Piebald-AI__claude-code-system-prompts": ("claude-code-system-prompts", "What the harness tells itself; agents that interface with the system."),
+    "costiash__claude-code-docs": ("claude-code-docs", "Not a mirror; our own mirror.py with a diff and Chief's change-review rule."),
+    "K-Dense-AI__scientific-agent-skills": ("scientific-agent-skills", "The Science Department: six seats, the plausibility seat first."),
+    "conorbronsdon__avoid-ai-writing": ("avoid-ai-writing", "Merged into prose_lint; no prose team."),
+    "OneRedOak__claude-code-workflows": ("OneRedOak workflows", "Three pieces into existing seats; the Action rejected."),
+    "ClaytonFarr__ralph-playbook": ("the Ralph loop (4 repos)", "Our own bounded loop script; install none."),
+    "diet103__claude-code-infrastructure-showcase": ("infrastructure-showcase", "Ours wins on hooks and skills; theirs on layout and onboarding."),
+    "obra__superpowers": ("superpowers", "Four patterns to adopt, four to skip."),
+    "NeoLabHQ__context-engineering-kit": ("context-engineering-kit", "GPL: two ideas, one warning about judge loops."),
+    "coreyhaines31__marketingskills": ("marketingskills", "Three references into the marketing agent; no new seat."),
+    "VoltAgent__awesome-agent-skills": ("awesome-agent-skills (VoltAgent)", "Thin under the rate limit; mostly repeats."),
+    "titanwings__distilly": ("distilly", "Skip the tool, take the profile block."),
+    "citrolabs__ego-lite": ("ego-lite + brag", "ego-lite macOS only; brag once for a pitch; the translation path is organic."),
+    "latent-spaces__brag": ("brag", "Launch videos; Node; one public pitch."),
+    "0xNyk__council-of-high-intelligence": ("the leadership seats (4 repos)", "A five-seat advisory bench; the CDR stays chief of staff; CTO waits."),
+    "pytorch__rl": ("pytorch/rl", "What RL is; a 50-line bandit for the fresh hour; TorchRL waits."),
+    "apache__superset": ("superset", "Skip the server; one query to one chart instead."),
 }
 
 

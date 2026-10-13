@@ -46,6 +46,10 @@ JUDY = os.path.join(HERE, "judy.json")
 ACKS = os.path.join(ROOT, "_PRIVATE", "voice-acks")
 # RULED 2026-09-17 by Chief: only these prowords confirm receipt ("copy" · "good traffic, stand by").
 ACK_LINES = ["Copy.", "Good traffic, stand by."]
+# RULED 2026-10-13 by Chief ("a different proword when you're getting data from other agents and not me ... good traffic
+# all the time is annoying"): a specialist's hand-back or a harness notice gets one quiet word, never Chief's ack.
+RELAY_LINES = ["Relay."]
+RELAY_MARKS = ("[Subagent hand-back]", "<agent-message", "agent-message from", "[SYSTEM NOTIFICATION", "<task-notification", "task-notification>")
 SAY = re.compile(r"<!--\s*say:\s*(.*?)\s*-->", re.S | re.I)
 # BOLO 122 (Chief 10/6): the red MODEL CALL banner (SOP §7 rule 21) gets a cockpit chime and a spoken call
 # after the say-line. Only the banner heading counts, so prose that mentions the call stays quiet.
@@ -125,12 +129,18 @@ def parse(line):
             return ("assistant", "\n\n".join(texts))
     if t == "user" and d.get("promptSource"):
         # a real prompt from Chief; injected skill text and tool results carry no promptSource
+        text = None
         if isinstance(c, str):
-            return ("user", c)
-        if isinstance(c, list):
+            text = c
+        elif isinstance(c, list):
             texts = [b.get("text", "") for b in c if b.get("type") == "text"]
             if texts and not any(b.get("type") == "tool_result" for b in c):
-                return ("user", "\n".join(texts))
+                text = "\n".join(texts)
+        if text is not None:
+            # an agent's hand-back or a harness notice rides in as a user turn, but it is not Chief talking (10/13)
+            if any(mk in text for mk in RELAY_MARKS):
+                return ("relay", text)
+            return ("user", text)
     return None
 
 
@@ -266,14 +276,14 @@ def purge():
         pass
 
 
-def ensure_acks():
+def ensure_acks(kind="ack"):
     os.makedirs(ACKS, exist_ok=True)
-    have = glob.glob(os.path.join(ACKS, "*.wav"))
+    have = glob.glob(os.path.join(ACKS, f"{kind}*.wav"))
     if have:
         return have
     out = []
-    for i, line in enumerate(ACK_LINES):
-        p = os.path.join(ACKS, f"ack{i}.wav")
+    for i, line in enumerate(RELAY_LINES if kind == "relay" else ACK_LINES):
+        p = os.path.join(ACKS, f"{kind}{i}.wav")
         try:
             synth(line, p)
             out.append(p)
@@ -316,8 +326,8 @@ class Mouth:
             self.keyed = False
             squelch.key_down()
 
-    def ack(self):
-        acks = ensure_acks()
+    def ack(self, kind="ack"):
+        acks = ensure_acks(kind)
         if acks:
             p = random.choice(acks)
             squelch.key_up()
@@ -425,6 +435,11 @@ class Reader:
             if self.cfg.get("acks", True):
                 self.mouth.ack()
             self.log(f"\n  you  > {text[:100]}")
+        elif kind == "relay":
+            # a specialist reported in: one word, no interrupt, no face change (Chief, 10/13)
+            if self.cfg.get("acks", True):
+                self.mouth.ack("relay")
+            self.log(f"\n  relay> {text[:80]}")
         elif kind == "assistant":
             if len(text.strip()) < int(self.cfg.get("min_chars", 12)):
                 return
