@@ -43,16 +43,26 @@ def main():
     out.append(f"SESSION-OPEN DIGEST · {today.isoformat()} · read this, not the five files (SOP §4 under the formation, BOLO 54)")
     out.append("gear 1 in force (3 agents; PS fetch · MS write · CDR main; RANGE = the script reviewer). Skills: sitrep · oscar-mike · dope-sheet · frago · collect · rtb.")
 
-    # the rack
+    # the rack: an index row per note (id · time · type · title · ~tokens) + path; newest note's resume header
     cache = os.path.join(ROOT, "_CACHE")
     notes = sorted(f for f in os.listdir(cache) if f.endswith(".session.md")) if os.path.isdir(cache) else []
-    out.append(f"RACK · {len(notes)} note(s) staged" + (": " + ", ".join(notes) if notes else " (empty)"))
-    if notes:
-        last = load(os.path.join("_CACHE", notes[-1]))
-        m = re.search(r"^# (.+)$", last, re.M)
-        if m: out.append("  last note: " + m.group(1)[:120])
-        m = re.search(r"\*\*Open at (?:this point|close)[^*]*\*\*(.+)", last)
-        if m: out.append("  open at close: " + m.group(1).strip()[:200])
+    out.append(f"RACK · {len(notes)} note(s) staged" + ("" if notes else " (empty)"))
+    for i, nf in enumerate(notes):
+        fp = os.path.join(cache, nf)
+        txt = load(os.path.join("_CACHE", nf))
+        m = re.search(r"^# (.+)$", txt, re.M)
+        title = re.sub(r"^Session note\s*[—-]\s*", "", m.group(1)) if m else nf
+        title = re.sub(r"\s*\(session .*$", "", title)[:70]
+        hm = datetime.datetime.fromtimestamp(os.path.getmtime(fp)).strftime("%H:%M")
+        out.append(f"  {nf[:-len('.session.md')]} · {hm} · session · {title} · ~{os.path.getsize(fp) // 4} tok")
+        out.append(f"    _CACHE/{nf}")
+        if i == len(notes) - 1:
+            h = re.search(r"^```resume\n(.*?)\n```", txt, re.M | re.S)
+            if h:
+                out.extend("    " + ln for ln in h.group(1).splitlines())
+            else:
+                m = re.search(r"\*\*Open at (?:this point|close)[^*]*\*\*(.+)", txt)
+                if m: out.append("    open at close: " + m.group(1).strip()[:200])
 
     # blocked on you
     blocked = state.split("## 🔴 Blocked on you")[-1].split("\n## ")[0] if "## 🔴 Blocked on you" in state else ""
@@ -65,8 +75,10 @@ def main():
     brows = re.findall(r"^\| (\d+) \| (.+?) \| (\d{4}-\d{2}-\d{2}) \| (.+?) \|$", bolo, re.M)
     brows.sort(key=lambda r: int(r[0]))
     out.append(f"BOLO · {len(brows)} active row(s); newest:")
+    bstart = len(out)
     for n, t, d, s in brows[-6:]:
         out.append(f"  {n} {first_bold(t)[:80]} · {s.strip()[:60]}")
+    bend = len(out)
     reds = [n for n, t, d, s in brows if "🔴" in s and "done" not in s.lower()]
     if reds: out.append("  red: " + " · ".join(reds))
     pm = bolo.split("## PMCS")[-1].split("## Done")[0] if "## PMCS" in bolo else ""
@@ -91,7 +103,7 @@ def main():
         except Exception:
             pass
     sizes = {f: os.path.getsize(os.path.join(ROOT, f)) // 1024 for f in ("SOP.md", "STATE.md", "BOLO.md", "PROJECTS.md") if os.path.exists(os.path.join(ROOT, f))}
-    out.append("ON DISK KB · " + " · ".join(f"{k} {v}" for k, v in sizes.items()) + " · open them on demand only; 'sit rep' runs the formation.")
+    out.append("ON DISK KB · " + " · ".join(f"{k} {v} (./{k})" for k, v in sizes.items()) + " · open them on demand only; 'sit rep' runs the formation.")
     print("\n".join(out))
 
 if __name__ == "__main__":

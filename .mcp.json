@@ -2,7 +2,15 @@
   "mcpServers": {
     "judy": {
       "command": "python",
-      "args": ["_tools/dictation/wire.py"]
+      "args": [
+        "_tools/dictation/wire.py"
+      ]
+    },
+    "sqlite_ro": {
+      "command": "python",
+      "args": [
+        "_tools/mcp/sqlite_ro.py"
+      ]
     }
   }
 }

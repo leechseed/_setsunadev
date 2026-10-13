@@ -43,7 +43,47 @@ def texts(content):
         if isinstance(c, dict) and c.get("type") == "text": out.append(c.get("text", ""))
     return out
 
+def _sec(text, label):
+    m = re.search(r"\*\*" + label + r"[^*]*\*\*:?\s*(.+)", text)
+    return m.group(1).strip() if m else ""
+
+def _heads(sec, n=8, w=40):
+    parts = [re.sub(r"[`*]", "", x).strip() for x in re.split(r"\s+·\s+|;\s+", sec) if x.strip()]
+    return ", ".join(x[:w].rstrip(" ,.") for x in parts[:n])
+
+NL = chr(10)
+FENCE = "`" * 3
+
+def _wrap(lines):
+    return FENCE + "resume" + NL + NL.join(lines) + NL + FENCE
+
+def build_header(text):
+    """Resume header (ctx-03): fenced block, <=600 bytes, built from the drafted note's own sections."""
+    aar = _sec(text, "AAR")
+    opn, rul = _sec(text, "Open at (?:this point|close)"), _sec(text, "Ruled")
+    hap = re.search(r"happened\s*=\s*([^·]+)", aar)
+    if not (hap and opn):
+        return _wrap(["left-off: see note"])
+    first = re.split(r"\s+·\s+", opn)[0]
+    lines = ["left-off: " + hap.group(1).strip().rstrip(".")[:160] + ".",
+             "next: " + re.sub(r"[`*]", "", first).strip().rstrip(".")[:120] + ".",
+             "open: " + _heads(opn, 6, 36),
+             "rulings: " + _heads(rul, 6, 36)]
+    while len(_wrap(lines).encode("utf-8")) > 600 and len(lines[3]) > 12:
+        lines[3] = lines[3][:-12].rstrip(" ,")
+    return _wrap(lines)
+
+def add_header(path):
+    """Insert (or replace) the resume header under the H1 of a drafted note. Run after the PS draft."""
+    t = io.open(path, encoding="utf-8").read()
+    t = re.sub(r"\A(# [^\n]*\n)\n?" + FENCE + r"resume\n.*?\n" + FENCE + r"\n", lambda m: m.group(1), t, flags=re.S)
+    h, _, rest = t.partition(NL)
+    write(path, h + NL + NL + build_header(t) + NL + rest)
+    print("resume header written:", rel(path))
+
 def main():
+    if "--header" in sys.argv:
+        add_header(os.path.abspath(sys.argv[sys.argv.index("--header") + 1])); return
     files = sorted(glob.glob(os.path.join(CLAUDE, "*.jsonl")), key=os.path.getmtime)
     if len(sys.argv) > 1:
         files = [f for f in files if os.path.basename(f).startswith(sys.argv[1])]
@@ -108,6 +148,7 @@ WRITE: _CACHE/{target} — the session note in the Command's shape: a `# Session
   **AAR (one line):** planned = · happened = · sustain = · improve = · and a final line `- Oscar Mike.`
 RULES: nothing not in the transcript; no praise; no summary of Claude's reasoning; file paths verbatim; Chief's words in quotes; under 2,500 characters unless the session was long.
 PRIVATE DETAIL STAYS PRIVATE (ruled 10/4): _CACHE is in the public repo. Keep sexual, health, drug and kink detail generic ("ORANGE items, detail in _PRIVATE/"): never quote Chief's sexual words, never name kinks, toys, substances, body parts or adult boards. (10/8: the first draft leaked this detail.)
+After the note is drafted the main line runs `python _tools/oscarmike/close.py --header _CACHE/{target}` (it adds the resume header under the H1; do not write one yourself).
 Do not read any other file. Do not edit STATE.md or the journal. Reply with the note's path and nothing else.
 """
     write(os.path.join(wd, "brief.NOTE.md"), brief)
@@ -116,7 +157,7 @@ Do not read any other file. Do not edit STATE.md or the journal. Reply with the 
     print(f"commits this session: {len(meta['commits_this_session'])} · dirty: {len(meta['dirty'])}")
     print(f"note target: _CACHE/{target} ({'finalize' if target in existing else 'new'})")
     print(f"brief: {rel(os.path.join(wd, 'brief.NOTE.md'))}")
-    print("next: launch NOTE (haiku) with the brief → read the note → rule it → STATE Moved bullet → python _tools/oscarmike/journal.py → OUT block")
+    print("next: launch NOTE (haiku) with the brief → close.py --header <note> → read the note → rule it → STATE Moved bullet → python _tools/oscarmike/journal.py → OUT block")
 
 if __name__ == "__main__":
     main()

@@ -12,14 +12,22 @@ Use when a file holds a list of links (a locus, a harvest, a syllabus) and the j
 ## H0 · Fetch (zero tokens)
 
 ```
-python _tools/loci/collect.py <locus.md> [--limit N] [--batch 12]
+python _tools/loci/collect.py <locus.md> [--limit N] [--batch N] [--gear N] [--resume]
 ```
 
 Every URL fetched over curl (the box's python cert store is stale) to `_tools/loci/work/<name>/<nnn>.txt` (tags stripped, capped 120 KB), plus `manifest.json` and the briefs. Dead links (403, 0) are reported, not retried by agents. If most links die behind a bot wall, stop and say so; do not send agents to fetch what the script could not.
 
+**Effort table (mar-02).** 12 links or fewer: one PS, no fan-out. 13 to 36: up to three PS. More: the script prints "gear call needed: N links" and stops. Pass `--gear N` once Chief rules it. The digest line names the chosen effort.
+
+**Plan file (mar-03).** The script writes `plan.md` in the work folder: the question, the batch split, the stop rule, the time. On a rerun it prints "resuming plan from <time>".
+
+**Briefs (mar-01, mar-05).** Every brief has four parts: OBJECTIVE, OUTPUT, SOURCES AND TOOLS, BOUNDARY. Each also carries a turn cap and a hand-back cap (150 words). The PS brief prefers primary sources and marks SEO farms, listicles and reposts `quality: low`.
+
 ## H1 · Fan out
 
-Launch **EXTRACT-1 … EXTRACT-k** (haiku) in one message, each with its brief verbatim. The gear caps the count: at gear 1 launch three, then the next three when they return; never one agent per link. Each writes `extract.k.json` and reads nothing else.
+Launch **EXTRACT-1 … EXTRACT-k** (haiku) in one message, each with its brief verbatim. The effort table sets the count; the gear caps it. Never one agent per link.
+
+After a failure, rerun with `--resume`. It refetches nothing, skips every batch whose extract is present and non-empty, and prints what it skipped. Launch only the briefs it names. Each writes `extract.k.json` and reads nothing else.
 
 ## H2 · Fan in
 
@@ -29,7 +37,7 @@ Launch **WRITE** (sonnet) with `brief.WRITE.md`. It reads every `extract.*.json`
 python _tools/loci/check.py <name> <register.md>
 ```
 
-Every fetched URL must appear in the register (by URL or title); the dead ones are listed for the gaps section. A MISSING line means one extract was skipped: rerun WRITE with the finding under its brief, not a new reviewer.
+Every fetched URL must appear in the register (by URL or title); the dead ones are listed for the gaps section. Claim lines (bullets and table rows) with a URL missing from the manifest are errors (mar-04). Lines with no URL are listed as "unsourced lines", an advisory count. A MISSING line means one extract was skipped: rerun WRITE with the finding under its brief, not a new reviewer.
 
 ## H3 · The main line
 
