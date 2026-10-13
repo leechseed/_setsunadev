@@ -385,11 +385,11 @@ def station_audit():
     counts = {}
     for line in out.splitlines():
         parts = line.split()
-        if len(parts) >= 2 and len(parts[0]) == 1 and parts[0] in "RPBKTA" and parts[-1].isdigit():
+        if len(parts) >= 2 and len(parts[0]) == 1 and parts[0] in "RPBKTAS" and parts[-1].isdigit():
             counts[parts[0]] = int(parts[-1])
     total = sum(v for k, v in counts.items() if k != "A")
     hot = [k for k in "PBK" if counts.get(k)]
-    note = "%d finding(s) · " % total + " · ".join("%s %d" % (k, counts.get(k, 0)) for k in "RPBKT") +            " · report _tools/audit/out/ · %.1f s" % (time.time() - t0)
+    note = "%d finding(s) · " % total + " · ".join("%s %d" % (k, counts.get(k, 0)) for k in "RPBKTS") +            " · report _tools/audit/out/ · %.1f s" % (time.time() - t0)
     return {"station": "AUDIT", "go": not hot, "addr": "SOP audit", "note": note}
 
 

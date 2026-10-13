@@ -69,7 +69,7 @@ def allowed(path, line, word):
     return False
 
 def main():
-    F = {k: [] for k in "RPBKTA"}
+    F = {k: [] for k in "RPBKTAS"}
     for p in sorted(set(LIVE)):
         if rel(p) == "_tools/audit/sop_audit.py": continue
         for n, l in lines_of(p):
@@ -105,6 +105,15 @@ def main():
     st = subprocess.run(["git", "status", "--short"], cwd=ROOT, capture_output=True, text=True, encoding="utf-8").stdout.split("\n")
     dirty = [s for s in st if s.strip() and "judy.session.log" not in s]
     if dirty: F["T"].append(f"{len(dirty)} uncommitted: " + ", ".join(s[3:] for s in dirty[:8]))
+    # S · rules without a scenario (OpenSpec trial, 10/12): every "### N.n" rule in SOP.md carries a WHEN/THEN line
+    sop = io.open(os.path.join(ROOT, "SOP.md"), encoding="utf-8").read().splitlines()
+    rule, has = None, False
+    for n, l in enumerate(sop + ["### end"], 1):
+        if re.match(r"### \d+\.\d+", l) or l.startswith("## ") or l == "### end":
+            if rule and not has: F["S"].append(f"SOP.md:{rule[0]} · {rule[1]} has no WHEN/THEN scenario")
+            rule, has = ((n, l[4:].strip()) if re.match(r"### \d+\.\d+", l) else None), False
+        elif rule and "**WHEN**" in l and "**THEN**" in l:
+            has = True
     # A · the practice rows
     rows = json.load(io.open(os.path.join(ROOT, "_tools", "audit", "rows.json"), encoding="utf-8"))["rows"]
     op = [r for r in rows if not r["closed"]]
@@ -112,10 +121,10 @@ def main():
     F["A"].append(f"{len(op)} of {len(rows)} practice rows open · {sum(r['status']=='GAP' for r in op)} GAP, {sum(r['status']=='PARTIAL' for r in op)} PARTIAL · last pass {added:%m/%d} ({(TODAY-added).days} days)")
 
     names = {"R": "Retired words in live files", "P": "Private detail in public files", "B": "BOLO hygiene",
-             "K": "The rack", "T": "The tree", "A": "Claude Code practice rows (BOLO 51)"}
+             "K": "The rack", "T": "The tree", "A": "Claude Code practice rows (BOLO 51)", "S": "SOP rules without a scenario"}
     out = [f"# SOP AUDIT · {TODAY:%Y-%m-%d}", "", f"{sum(len(v) for k, v in F.items() if k != 'A')} findings across {len(set(LIVE))} live files.", ""]
     print(out[0]); print(out[2])
-    for k in "RPBKTA":
+    for k in "RPBKTSA":
         out += [f"## {k} · {names[k]} ({len(F[k])})", ""] + [f"- {x}" for x in F[k]] + ([] if F[k] else ["- clean"]) + [""]
         print(f"  {k}  {names[k]:<38} {len(F[k])}")
     os.makedirs(os.path.join(ROOT, "_tools", "audit", "out"), exist_ok=True)
