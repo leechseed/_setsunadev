@@ -151,6 +151,10 @@ def _build(vol):
         "deescalate": _critical(False, vol),
         # the reconfirm (BOLO 122, Chief 10/6: "a reconfirm ... to make sure that I did switch"): a clean two-step lock
         "confirm": _tone(880, 880, 60, vol, square=0.1) + _gap(30) + _tone(1320, 1320, 110, vol, square=0.1),
+        # the relay (Chief 10/13: "instead of the word relay ... a fucking UI sound"): an agent or the harness reported in.
+        # A data-packet blip: three soft rising ticks, quieter than the pad chirps, ~120 ms; original, no sample.
+        "relay": _tone(1400, 1400, 18, vol * 0.55, square=0.0) + _gap(22) + _tone(1750, 1750, 18, vol * 0.55, square=0.0)
+                 + _gap(22) + _tone(2100, 2350, 30, vol * 0.5, square=0.0),
     }
 
 
@@ -166,18 +170,18 @@ def ensure():
         os.makedirs(SOUNDS, exist_ok=True)
         tag = f"_{int(round(vol * 100))}.wav"
         for fn in os.listdir(SOUNDS):
-            if fn.endswith(".wav") and fn.split("_")[0] in ("open", "sent", "busy", "send", "focus", "escalate", "deescalate", "confirm") and not fn.endswith(tag):
+            if fn.endswith(".wav") and fn.split("_")[0] in ("open", "sent", "busy", "send", "focus", "escalate", "deescalate", "confirm", "relay") and not fn.endswith(tag):
                 try:
                     os.remove(os.path.join(SOUNDS, fn))
                 except Exception:
                     pass
         built = None
-        for name in ("open", "sent", "busy", "send", "focus", "escalate", "deescalate", "confirm"):
+        for name in ("open", "sent", "busy", "send", "focus", "escalate", "deescalate", "confirm", "relay"):
             p = path_for(name, vol)
             if not os.path.exists(p):
                 built = built or _build(vol)
                 _write(p, built[name])
-        return {n: path_for(n, vol) for n in ("open", "sent", "busy", "send", "focus", "escalate", "deescalate", "confirm")}
+        return {n: path_for(n, vol) for n in ("open", "sent", "busy", "send", "focus", "escalate", "deescalate", "confirm", "relay")}
     except Exception:
         return {}
 

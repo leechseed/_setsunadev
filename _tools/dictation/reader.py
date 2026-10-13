@@ -327,6 +327,18 @@ class Mouth:
             squelch.key_down()
 
     def ack(self, kind="ack"):
+        if kind == "relay":   # 10/13: the relay is a UI sound now, not the spoken word (Chief: "a fucking UI sound")
+            try:
+                import chirp
+                p = chirp.ensure().get("relay")
+            except Exception:
+                p = None
+            if p:
+                squelch.key_up()
+                speak.play(p)
+                time.sleep(wav_seconds(p))
+                squelch.key_down()
+            return
         acks = ensure_acks(kind)
         if acks:
             p = random.choice(acks)
