@@ -4,11 +4,46 @@
 Usage:  python _tools/loci/check.py <name> <register.md>
 Proves (1) every fetched link is covered; (2) every claim line (a bullet or table row) with a URL cites one that exists in the manifest (else ERROR);
 a claim line with no URL is listed under "unsourced lines" (advisory count, does not fail the run).
+Then (mar-07) stamps one `run:` line in the locus frontmatter from work/<name>/run.json and the COST token estimate; after a --narrow run, only the narrow link set must be covered.
 """
-import io, json, os, re, sys
+import io, json, os, re, sys, time, datetime
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from collect import COST, trace
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
+
+def stamp_locus(name, wd, t0):
+    """mar-07: write or update one `run:` line in the locus frontmatter (adds a minimal frontmatter if none)."""
+    try:
+        run = json.load(io.open(os.path.join(wd, "run.json"), encoding="utf-8"))
+        loc = run["src"]
+        if not loc.lower().endswith(".md") or not os.path.exists(loc): return
+        tokens = run["batches"] * COST["ps_tokens_per_batch"] + COST["ms_tokens_per_register"]
+        line = f"run: {datetime.date.today().isoformat()} · agents {run['agents']} · batches {run['batches']} · links {run['links']} · dead {run['dead']} · ~tokens {tokens}"
+        txt = io.open(loc, encoding="utf-8").read()
+        m = re.match(r"\A---?
+(.*?)?
+---[ 	]*(?
+|\Z)", txt, re.S)
+        if m:
+            fm = m.group(1)
+            fm = re.sub(r"(?m)^run:.*$", lambda _: line, fm) if re.search(r"(?m)^run:", fm) else fm + "
+" + line
+            txt = "---
+" + fm + "
+---" + m.group(2) + txt[m.end():]
+        else:
+            txt = f"---
+{line}
+---
+
+" + txt
+        with io.open(loc, "w", encoding="utf-8", newline="") as f: f.write(txt)
+        trace(wd, "check", run["batches"], run["links"], 1, time.time() - t0)
+        print("  frontmatter · " + line)
+    except Exception as e:
+        print(f"  note  frontmatter not stamped: {e}")
 
 def main():
     try: sys.stdout.reconfigure(encoding="utf-8")
@@ -21,6 +56,10 @@ def main():
     norm = lambda u: re.sub(r"^https?://(www\.)?", "", u).rstrip("/").lower()
     body = norm(text)
     fetched = [m for m in man if m["status"] == 200]
+    t0 = time.time(); wd = os.path.join(HERE, "work", name)
+    try: nar = json.load(io.open(os.path.join(wd, "narrow.json"), encoding="utf-8"))
+    except Exception: nar = []
+    if nar: fetched = [m for m in fetched if m["n"] in nar]  # a narrow run covers only its picked links
     missing = [m["url"] for m in fetched if norm(m["url"]) not in body and (m["title"] and m["title"].lower()[:40] not in body)]
     dead = [m["url"] for m in man if m["status"] != 200]
     ext = sorted(f for f in os.listdir(os.path.join(HERE, "work", name)) if f.startswith("extract.") and f.endswith(".json"))
@@ -50,6 +89,7 @@ def main():
     if unsourced:
         print("  unsourced lines:")
         for n, t in unsourced: print(f"    line {n}: {t[:90]}")
+    stamp_locus(name, wd, t0)
     sys.exit(1 if (missing or bad) else 0)
 
 if __name__ == "__main__":
