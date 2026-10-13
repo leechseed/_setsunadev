@@ -1,0 +1,86 @@
+{
+ "time": "2026-10-13T03:11:05",
+ "all_go": false,
+ "stations": [
+  {
+   "name": "AUDIT",
+   "go": false,
+   "detail": "SOP audit (1 finding(s) · R 0 · P 0 · B 0 · K 1 · T 0 · S 0 · report _tools/audit/out/ · 3.8 s)"
+  },
+  {
+   "name": "PULL",
+   "go": true,
+   "detail": "pull glass (wave 2: 40/40 boards (2 empty) · 9,006 images · LANDED · 10 min/board · ETA -; wave 3: 15/40 boards (1 empty) · 2,764 images · on threesome · 7 min/board · ETA 6:12 AM; wave 4: 6/40 boards (0 empty) · 1,529 images · on cumshots · 10 min/board · ETA 8:33 AM · disk: Q free 3,536 GB · glass built, republish owed · 0.4 s)"
+  },
+  {
+   "name": "DARKROOM",
+   "go": true,
+   "detail": "http://127.0.0.1:8484/ (started · 3.0 s)"
+  },
+  {
+   "name": "STASH",
+   "go": true,
+   "detail": "http://127.0.0.1:9999/ (already live · deck opened)"
+  },
+  {
+   "name": "NAHIMIC",
+   "go": true,
+   "detail": "audio guard (service + tasks disabled · 1.6 s)"
+  },
+  {
+   "name": "JUDY",
+   "go": true,
+   "detail": "session voice · pid 3328 (started · 7 s · hold the hotkey with the chat box focused)"
+  },
+  {
+   "name": "FACES",
+   "go": true,
+   "detail": "http://127.0.0.1:8787/faces (already live · opened)"
+  },
+  {
+   "name": "DECK",
+   "go": true,
+   "detail": "http://127.0.0.1:8787/traffic (opened)"
+  },
+  {
+   "name": "CONSOLE",
+   "go": true,
+   "detail": "http://127.0.0.1:8795/ (already live · opened)"
+  },
+  {
+   "name": "KNOBS",
+   "go": true,
+   "detail": "MPK knobs · pid 35512 (already running)"
+  },
+  {
+   "name": "WIRE",
+   "go": true,
+   "detail": "server judy · 7/7 tools (probe ok · 5.3 s)"
+  },
+  {
+   "name": "FRAGO",
+   "go": true,
+   "detail": "next.json (no sheet to refresh)"
+  },
+  {
+   "name": "SITREP",
+   "go": true,
+   "detail": "https://claude.ai/code/artifact/aebe5f9c-9f2c-4cb8-abbf-714a0a6ea28a (opened)"
+  },
+  {
+   "name": "SOI",
+   "go": true,
+   "detail": "https://claude.ai/code/artifact/4c2fc9c7-e0d2-4626-8142-9740ff8ee0e5 (opened)"
+  },
+  {
+   "name": "PULLGLASS",
+   "go": true,
+   "detail": "https://claude.ai/artifact/Lg323uYY1oB2HCfgHFDFQ6 (opened)"
+  },
+  {
+   "name": "ROSTER",
+   "go": true,
+   "detail": "https://claude.ai/artifact/TwEqZQ8DN1z1Vu8HWX7e5H (opened)"
+  }
+ ]
+}
