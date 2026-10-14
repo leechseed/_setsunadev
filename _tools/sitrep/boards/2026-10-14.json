@@ -33,7 +33,7 @@
    "pull: 374 / 1,777 boards · waves 7 and 8 ETA 2:33 AM and 3:09 AM",
    "commits since last board: 117"
   ],
-  "main_effort": "Say 'go' for qwen2.5:14b: the langextract trial is built and waits on that one word.",
+  "main_effort": "Say 'go' for runner error logging: runner B died silently once, and the restart alone won't tell us why.",
   "build": {
    "calls": "~14",
    "rounds": "4"
@@ -1456,15 +1456,15 @@
    "id": "VI",
    "name": "The leverage line",
    "kind": "line",
-   "plain": "The pull runs itself: waves 7 and 8 land before dawn, and runner B restarted wave 9. The intake is ruled. The one thing waiting on Chief is one word: the Ollama model for the langextract trial.",
+   "plain": "The langextract trial already ran on 10/13 and scored 58%, under the 70% line. Runner B restarted wave 9 at launch. The pull runs itself.",
    "strand": {
-    "last": "Chief ruled 442 intake picks across three batches. The Roster grew from 22 to 43 agents. The Console v1 opened.",
-    "plan": "BOLO 140 turns the adopted picks into trials. The langextract trial needs a local model name first.",
-    "you": "Chief names the Ollama model, or says 'go' to take the rec, qwen2.5:14b.",
-    "next": "The script pulls the model and the langextract trial runs on one source. The Ralph lint trial waits for a terminal."
+    "last": "Chief scored the trial: 21 right, 15 wrong, 36 need context. The launch restarted runner B on wave 9.",
+    "plan": "Runner B died once with no reason in its log. The rec was to restart it and add error logging.",
+    "you": "Chief says 'go' to add error logging to the pull runners.",
+    "next": "The script logs every runner crash with its reason. The four check-page recs still wait on a go."
    },
-   "line": "Say 'go' for qwen2.5:14b: the langextract trial is built and waits on that one word.",
-   "why": "The waves need no hand. The intake is ruled. The model name is still the only unlock on the board."
+   "line": "Say 'go' for runner error logging: runner B died silently once, and the restart alone won't tell us why.",
+   "why": "The trial is scored. Wave 9 moves again. A silent crash is the one risk left on the pull."
   },
   {
    "id": "VII",
