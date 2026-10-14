@@ -1,0 +1,3582 @@
+[
+ {
+  "repo": "0xNyk/council-of-high-intelligence",
+  "url": "https://github.com/0xNyk/council-of-high-intelligence",
+  "what": "The playbook's useful rules give a department lead agent three jobs the CDR does by hand today:",
+  "intro": "Four repos, one item. Licenses: council MIT; managers-playbook CC BY 4.0 (cite it); awesome-ceo and awesome-cto CC0. `repo_scan.py` failed on all four (GitHub 403 rate limit), so no scan.json; I read the raw READMEs. The council's run protocol comes from its README only; its SKILL.md was not read.",
+  "license": "MIT",
+  "picks": [
+   {
+    "id": "lead-01",
+    "kind": "agent",
+    "plain": "The Council as a standing bench of 3 to 5 named advisory seats, each giving one opinion in parallel, no debate; the CDR lays them side by side.",
+    "rec": "yes",
+    "replaces": "Chief asking the CDR alone, or running ad hoc 'what would X think' prompts",
+    "risk": "Low if kept to one round. Full mode (blind round, cross-exam, final stance, synthesis) is peer review and costs many times more."
+   },
+   {
+    "id": "lead-02",
+    "kind": "doc",
+    "plain": "The seat contract: grounding protocol, method, known blind spots and a structured response shape per member (agents/ folder).",
+    "rec": "yes",
+    "replaces": "Free-form persona prompts",
+    "risk": "Low. MIT. Ideas and format only; no plugin install."
+   },
+   {
+    "id": "lead-03",
+    "kind": "doc",
+    "plain": "Evidence labels FACT, INFERENCE, ASSUMPTION, UNKNOWN on every claim in an opinion.",
+    "rec": "yes",
+    "replaces": "Unlabeled advisory prose",
+    "risk": "Low."
+   },
+   {
+    "id": "lead-04",
+    "kind": "process",
+    "plain": "Outcome ledger: record prediction, owner, review date, then mark confirmed, revised, reversed or inconclusive.",
+    "rec": "maybe",
+    "replaces": "Nothing yet; decisions are not tracked after the fact",
+    "risk": "Low; one more file to keep."
+   },
+   {
+    "id": "lead-05",
+    "kind": "skill",
+    "plain": "Full /council protocol: 18 historical personas, cross-examination, weighted tally, multi-provider routing, installer, plugin.",
+    "rec": "skip",
+    "replaces": "n/a",
+    "risk": "High cost per run; installer and plugin touch the host config. Never run the installer."
+   },
+   {
+    "id": "lead-06",
+    "kind": "doc",
+    "plain": "Manager heuristics: brief the report, one-on-one health check on a 1 to 10 scale, escalation, what a manager does not do on the critical path.",
+    "rec": "yes",
+    "replaces": "No written rules for what a lead agent does versus its specialists",
+    "risk": "Low. CC BY 4.0: attribution required. Written for human teams; translate, do not paste."
+   },
+   {
+    "id": "lead-07",
+    "kind": "process",
+    "plain": "Rule: a manager with many reports stays off the critical path (reviews, covers, does not author the feature).",
+    "rec": "yes",
+    "replaces": "The CDR doing every hand-off itself",
+    "risk": "Low."
+   },
+   {
+    "id": "lead-08",
+    "kind": "doc",
+    "plain": "Making decisions, thinking strategically and managing-up sections: reversible vs irreversible calls, writing a decision down, giving the boss options with a rec.",
+    "rec": "maybe",
+    "replaces": "Nothing",
+    "risk": "Low."
+   },
+   {
+    "id": "lead-09",
+    "kind": "doc",
+    "plain": "Awesome CEO reading list: fundraising, product, sales, marketing, management, finance, books. Opinionated links for startup founders.",
+    "rec": "maybe",
+    "replaces": "Chief-of-staff reading only triage tiers",
+    "risk": "Low. CC0. Most links are external pages we have not read; fetch on demand, never in bulk."
+   },
+   {
+    "id": "lead-10",
+    "kind": "doc",
+    "plain": "Awesome CTO reading list: CTO role, architecture, development process, technologies, due diligence, money.",
+    "rec": "maybe",
+    "replaces": "The architect agent answering hardware questions it has no brief for",
+    "risk": "Low. CC0. Written for software startups; has little on hardware, so it needs an added hardware list."
+   },
+   {
+    "id": "lead-11",
+    "kind": "agent",
+    "plain": "Chief-of-staff seat that advises: reads the board, BOLO reds and PMCS each session and says what to do first.",
+    "rec": "no",
+    "replaces": "n/a",
+    "risk": "Duplicate of the CDR; two voices on priorities."
+   },
+   {
+    "id": "lead-12",
+    "kind": "agent",
+    "plain": "CTO seat for hardware, motion capture and the AI workstation build.",
+    "rec": "later",
+    "replaces": "The architect answering hardware questions",
+    "risk": "Low now; a seat with no work is bloat."
+   }
+  ]
+ },
+ {
+  "repo": "BehiSecc/awesome-claude-skills",
+  "url": "https://github.com/BehiSecc/awesome-claude-skills",
+  "what": "",
+  "intro": "",
+  "license": "",
+  "picks": [
+   {
+    "id": "acs-01",
+    "kind": "agent",
+    "plain": "Walks a bug through root-cause steps before any fix is proposed, as a read-only seat.",
+    "rec": "yes",
+    "replaces": "none",
+    "risk": "MIT; text only, no hooks. Strip any auto-trigger wording."
+   },
+   {
+    "id": "acs-02",
+    "kind": "skill",
+    "plain": "Turns a rough idea into a design by asking one question at a time and offering alternatives.",
+    "rec": "maybe",
+    "replaces": "planner (partly)",
+    "risk": "MIT; text only. Its auto-trigger and commit steps must be cut."
+   },
+   {
+    "id": "acs-03",
+    "kind": "agent",
+    "plain": "Reviews our SKILL.md files against 30+ checks and reports defects without editing.",
+    "rec": "yes",
+    "replaces": "harness-optimizer (skill checks)",
+    "risk": "MIT; check whether it ships scripts or hooks before adopting, take only the checklist."
+   },
+   {
+    "id": "acs-04",
+    "kind": "agent",
+    "plain": "Diagnoses a weak skill from session data and static checks and proposes the fix.",
+    "rec": "maybe",
+    "replaces": "harness-optimizer",
+    "risk": "MIT; reads session transcripts; run only on a transcript Chief hands over."
+   },
+   {
+    "id": "acs-05",
+    "kind": "idea",
+    "plain": "Reviews a conversation and suggests edits to CLAUDE.md, matching our correction-to-rule loop.",
+    "rec": "maybe",
+    "replaces": "conversation-analyzer",
+    "risk": "License NOASSERTION (unclear); read the idea, do not copy text."
+   },
+   {
+    "id": "acs-06",
+    "kind": "skill",
+    "plain": "Finds and rewrites stock AI-sounding phrases using a replacement table.",
+    "rec": "yes",
+    "replaces": "none",
+    "risk": "MIT; text only."
+   },
+   {
+    "id": "acs-07",
+    "kind": "agent",
+    "plain": "Checks claims in a PDF or article against sources and scores how risky each is.",
+    "rec": "maybe",
+    "replaces": "none",
+    "risk": "MIT; network lookups for verification; confirm domains before use."
+   },
+   {
+    "id": "acs-08",
+    "kind": "script",
+    "plain": "Searches academic papers by title or DOI through OpenAlex with no API key.",
+    "rec": "yes",
+    "replaces": "none",
+    "risk": "MIT; network calls to OpenAlex only; metadata only, no PDF downloads."
+   },
+   {
+    "id": "acs-09",
+    "kind": "idea",
+    "plain": "Keeps a plain Markdown wiki built from raw sources, with an ingest and a lint pass.",
+    "rec": "maybe",
+    "replaces": "none",
+    "risk": "MIT; text only."
+   },
+   {
+    "id": "acs-10",
+    "kind": "agent",
+    "plain": "Checks code against the OWASP checklist and reports findings by severity.",
+    "rec": "maybe",
+    "replaces": "security-reviewer (checklist)",
+    "risk": "MIT; text only; some forms ship an installer, skip it."
+   },
+   {
+    "id": "acs-11",
+    "kind": "idea",
+    "plain": "Redacts personal data in text across 15 categories, run locally.",
+    "rec": "maybe",
+    "replaces": "_tools/scan_sensitive.py",
+    "risk": "License not checked for this subfolder; read for ideas, copy nothing until verified."
+   },
+   {
+    "id": "acs-12",
+    "kind": "idea",
+    "plain": "Keeps a Kanban board as plain Markdown cards with no database.",
+    "rec": "no",
+    "replaces": "BOLO.md",
+    "risk": "Apache-2.0; none."
+   },
+   {
+    "id": "acs-13",
+    "kind": "skill",
+    "plain": "Explores the code, asks questions, and writes a Markdown plan another agent can run.",
+    "rec": "no",
+    "replaces": "planner",
+    "risk": "MIT; may ship install steps; not needed."
+   },
+   {
+    "id": "acs-14",
+    "kind": "idea",
+    "plain": "Audits an AI session for cost, failures and latency.",
+    "rec": "no",
+    "replaces": "_tools/usage",
+    "risk": "MIT; external CLI install and possible telemetry; skip."
+   },
+   {
+    "id": "acs-15",
+    "kind": "idea",
+    "plain": "Lints agent config files with 156 rules.",
+    "rec": "no",
+    "replaces": "harness-optimizer",
+    "risk": "License unclear (repo moved); installer and editor server; skip."
+   },
+   {
+    "id": "acs-16",
+    "kind": "idea",
+    "plain": "Fetches the clean text of a web article.",
+    "rec": "no",
+    "replaces": "collect",
+    "risk": "License not found; skip."
+   }
+  ]
+ },
+ {
+  "repo": "ClaytonFarr/ralph-playbook",
+  "url": "https://github.com/ClaytonFarr/ralph-playbook",
+  "what": "**Scan note.** repo_scan.py hit the GitHub rate limit (403) on all three repos, so I read each README by web fetch instead. No scan.json exists; the RISK column comes from the READMEs, not the scanner.",
+  "intro": "**Scan note.** repo_scan.py hit the GitHub rate limit (403) on all three repos, so I read each README by web fetch instead. No scan.json exists; the RISK column comes from the READMEs, not the scanner.",
+  "license": "MIT",
+  "picks": [
+   {
+    "id": "ralph-001",
+    "kind": "script",
+    "plain": "Build our own small loop script: run claude -p with one fixed prompt file, check a done-script after each pass, stop at a cap or a stop file.",
+    "rec": "yes",
+    "replaces": "new script",
+    "risk": "Runs claude with permissions skipped, so only on a bounded job inside a git branch; MIT idea, we copy nothing"
+   },
+   {
+    "id": "ralph-002",
+    "kind": "idea",
+    "plain": "Done is a script that exits 0, never the agent saying it is done.",
+    "rec": "yes",
+    "replaces": "RANGE script reviewer",
+    "risk": "None; an idea"
+   },
+   {
+    "id": "ralph-003",
+    "kind": "idea",
+    "plain": "Each pass starts fresh and picks one task from a plan file on disk; the file is the memory.",
+    "rec": "yes",
+    "replaces": "dope-sheet",
+    "risk": "None; an idea"
+   },
+   {
+    "id": "ralph-004",
+    "kind": "idea",
+    "plain": "Circuit breaker: stop after 3 passes with no file changes or 5 with the same error.",
+    "rec": "yes",
+    "replaces": "new script",
+    "risk": "MIT; copy the rule only"
+   },
+   {
+    "id": "ralph-005",
+    "kind": "tool",
+    "plain": "Install Frank's ralph-claude-code (global bash commands, tmux dashboard, GitHub issue queue).",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "MIT; install.sh changes PATH; broad Bash allow-list; issue text can inject prompts; Windows Git Bash fit untested"
+   },
+   {
+    "id": "ralph-006",
+    "kind": "tool",
+    "plain": "Install Ralph Orchestrator (Rust/npm, many backends, hats, Telegram, web dashboard).",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "MIT; curl-pipe installer; alpha dashboard; Telegram token in config"
+   },
+   {
+    "id": "ralph-007",
+    "kind": "tool",
+    "plain": "Use the official ralph-wiggum plugin (/ralph-loop, /cancel-ralph) inside the current session.",
+    "rec": "maybe",
+    "replaces": "none",
+    "risk": "License not on the README page (repo carries Anthropic terms, verify); a Stop hook that blocks exit; always set --max-iterations"
+   },
+   {
+    "id": "ralph-008",
+    "kind": "idea",
+    "plain": "Keep a short AGENTS.md of build and test commands the loop reads each pass.",
+    "rec": "maybe",
+    "replaces": "none",
+    "risk": "None; an idea"
+   }
+  ]
+ },
+ {
+  "repo": "ComposioHQ/awesome-claude-skills",
+  "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+  "what": "**Verdict: mostly skip.** It is a 77k-star link list (about 30 own skills, rest are links) that mostly repeats what we have. Scan RISK was STOP: one installer script, telemetry hits in the Composio connect skills, README install steps. Repo license is null; each folder has its own LICENSE.txt, unread. I read 16 SKILL.md files (two links 404'd, marked unread). 26 rows: 2 yes, 6 maybe, 18 no.",
+  "intro": "**Verdict: mostly skip.** It is a 77k-star link list (about 30 own skills, rest are links) that mostly repeats what we have. Scan RISK was STOP: one installer script, telemetry hits in the Composio connect skills, README install steps. Repo license is null; each folder has its own LICENSE.txt, unread. I read 16 SKILL.md files (two links 404'd, marked unread). 26 rows: 2 yes, 6 maybe, 18 no.",
+  "license": "MIT",
+  "picks": [
+   {
+    "id": "cho-01",
+    "kind": "skill",
+    "plain": "brainstorming (obra): Adds a read-back and a size check before the brief is written; fits the stop-at-lock rule.",
+    "rec": "yes",
+    "replaces": "brainstorm · ORDER (borrow 'play it back' and 'size the work' into our skill; keep one question at a time)",
+    "risk": "MIT (obra/superpowers, from memory; verify). Its 'MUST use' trigger is an auto-trigger: do NOT copy that line."
+   },
+   {
+    "id": "cho-02",
+    "kind": "skill",
+    "plain": "prompt-engineering (CEK): Every formation run starts with a brief; a short checklist cuts re-runs. 17 KB, so pull only 10 lines.",
+    "rec": "yes",
+    "replaces": "SOP 1.24 brief · ORDER (checklist for every MS/PS brief: instruction hierarchy, few-shot, progressive disclosure)",
+    "risk": "License unread (CEK repo); description has an auto-trigger, strip it."
+   },
+   {
+    "id": "cho-03",
+    "kind": "skill",
+    "plain": "subagent-driven-development (CEK): We already run this; take only the plan-load and mark-complete loop. Its review-agent step breaks our no-checker rule.",
+    "rec": "maybe",
+    "replaces": "intake / collect · EXECUTE (task-by-task handoff with a fresh specialist)",
+    "risk": "License unread; review step conflicts with doctrine."
+   },
+   {
+    "id": "cho-04",
+    "kind": "skill",
+    "plain": "test-driven-development (obra): Our scripts get no tests; RANGE only checks outputs. Use on the next new prep script, not as a rule.",
+    "rec": "maybe",
+    "replaces": "_tools scripts · EXECUTE (write the failing check first for new prep scripts)",
+    "risk": "MIT (verify)."
+   },
+   {
+    "id": "cho-05",
+    "kind": "skill",
+    "plain": "webapp-testing: Pages ship without a render check. Needs Playwright (install) so it is a decision for Chief.",
+    "rec": "maybe",
+    "replaces": "sitrep / dope-sheet · CONSOLIDATE (open the built page headless, confirm hover layer and no console errors)",
+    "risk": "Apache-2.0 likely (LICENSE.txt in folder, unread); installs playwright."
+   },
+   {
+    "id": "cho-06",
+    "kind": "skill",
+    "plain": "content-research-writer: Gives the register writer a section loop with citations; our register already has a link-coverage script.",
+    "rec": "maybe",
+    "replaces": "collect · EXECUTE (MS register writer: outline, cite each claim, per-section feedback)",
+    "risk": "per-skill LICENSE.txt (repo has none); text unread, check before copying"
+   },
+   {
+    "id": "cho-07",
+    "kind": "skill",
+    "plain": "article-extractor: Our fetch script may lack a readability fallback. Option 1 and 2 are installers; use only the curl fallback.",
+    "rec": "maybe",
+    "replaces": "collect · RECON (fallback chain reader > trafilatura > curl for the link-to-text script)",
+    "risk": "License unread; installers named inside."
+   },
+   {
+    "id": "cho-08",
+    "kind": "skill",
+    "plain": "changelog-generator: Autosave messages are file counts only, so the git log says little. Low return.",
+    "rec": "maybe",
+    "replaces": "oscar-mike · CONSOLIDATE (STATE Moved bullet from the day's commits)",
+    "risk": "per-skill LICENSE.txt (repo has none); text unread, check before copying"
+   },
+   {
+    "id": "cho-09",
+    "kind": "skill",
+    "plain": "skill-creator: Duplicates the installed anthropic-skills:skill-creator and our skill-builder agent.",
+    "rec": "no",
+    "replaces": "intake / skill-builder agent · ORDER",
+    "risk": "per-skill LICENSE.txt (repo has none); text unread, check before copying"
+   },
+   {
+    "id": "cho-10",
+    "kind": "skill",
+    "plain": "finishing-a-development-branch: Merge/PR/cleanup menu. We work on main with local autocommit that never pushes.",
+    "rec": "no",
+    "replaces": "oscar-mike · CONSOLIDATE",
+    "risk": "MIT (verify)."
+   },
+   {
+    "id": "cho-11",
+    "kind": "skill",
+    "plain": "using-git-worktrees: Agent tool already has isolation: worktree; we run one repo.",
+    "rec": "no",
+    "replaces": "EXECUTE (parallel sessions)",
+    "risk": "MIT (verify)."
+   },
+   {
+    "id": "cho-12",
+    "kind": "skill",
+    "plain": "file-organizer: Scans the whole box; violates the no-probing rule.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "per-skill LICENSE.txt (repo has none); text unread, check before copying"
+   },
+   {
+    "id": "cho-13",
+    "kind": "skill",
+    "plain": "developer-growth-analysis: Reads chat history and posts to Slack with telemetry hits; conversation-analyzer covers the useful part.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "per-skill LICENSE.txt (repo has none); text unread, check before copying; external send"
+   },
+   {
+    "id": "cho-14",
+    "kind": "skill",
+    "plain": "meeting-insights-analyzer: Behavior profiling of speakers; our close-out note and conversation-analyzer cover it. Private-detail risk.",
+    "rec": "no",
+    "replaces": "oscar-mike · EXECUTE",
+    "risk": "per-skill LICENSE.txt (repo has none); text unread, check before copying"
+   },
+   {
+    "id": "cho-15",
+    "kind": "skill",
+    "plain": "internal-comms: Company-format templates; SOP 7 already sets our format.",
+    "rec": "no",
+    "replaces": "sitrep · EXECUTE",
+    "risk": "per-skill LICENSE.txt (repo has none); text unread, check before copying"
+   },
+   {
+    "id": "cho-16",
+    "kind": "skill",
+    "plain": "langsmith-fetch: LangChain traces; we use none. Needs env keys and installer.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "MIT; installer"
+   },
+   {
+    "id": "cho-17",
+    "kind": "skill",
+    "plain": "theme-factory: Palette is fixed (dark, orange).",
+    "rec": "no",
+    "replaces": "dope-sheet · CONSOLIDATE",
+    "risk": "per-skill LICENSE.txt (repo has none); text unread, check before copying"
+   },
+   {
+    "id": "cho-18",
+    "kind": "skill",
+    "plain": "mcp-builder: We build no MCP servers now; .mcp.json is stable.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "per-skill LICENSE.txt (repo has none); text unread, check before copying"
+   },
+   {
+    "id": "cho-19",
+    "kind": "skill",
+    "plain": "invoice-organizer: Personal finance files on the box; out of scope.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "per-skill LICENSE.txt (repo has none); text unread, check before copying"
+   },
+   {
+    "id": "cho-20",
+    "kind": "skill",
+    "plain": "domain-name-brainstormer: Thin; brainstorm covers it.",
+    "rec": "no",
+    "replaces": "brainstorm · EXECUTE (venture naming)",
+    "risk": "per-skill LICENSE.txt (repo has none); text unread, check before copying"
+   },
+   {
+    "id": "cho-21",
+    "kind": "skill",
+    "plain": "recursive-research (Anjos2): Checkpoint idea fits long runs and session-children-die. Raw SKILL.md path 404'd, so unread; verify first.",
+    "rec": "maybe",
+    "replaces": "collect · EXECUTE (disk checkpoint so a run survives compaction)",
+    "risk": "License unread; unread file."
+   },
+   {
+    "id": "cho-22",
+    "kind": "skill",
+    "plain": "root-cause-tracing (obra): Raw path 404'd (moved); we have the root-cause agent.",
+    "rec": "no",
+    "replaces": "EXECUTE (debugging)",
+    "risk": "unread"
+   },
+   {
+    "id": "cho-23",
+    "kind": "skill",
+    "plain": "Skill Seekers: Tool that converts docs sites to skills; installer, unattended generation.",
+    "rec": "no",
+    "replaces": "intake",
+    "risk": "installer; unread"
+   },
+   {
+    "id": "cho-24",
+    "kind": "skill",
+    "plain": "lean-ctx: MCP server plus init command; token savings overlap context-budget; installer.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "installer; unread"
+   },
+   {
+    "id": "cho-25",
+    "kind": "skill",
+    "plain": "reddit-fetch: Routes around blocked sites via Gemini CLI; Reddit is blocked by rule.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "unread"
+   },
+   {
+    "id": "cho-26",
+    "kind": "skill",
+    "plain": "Septim Agents Pack: We have 31 agents; vendor link with tracking.",
+    "rec": "no",
+    "replaces": "agents roster",
+    "risk": "unread; vendor"
+   }
+  ]
+ },
+ {
+  "repo": "Fission-AI/OpenSpec",
+  "url": "https://github.com/Fission-AI/OpenSpec",
+  "what": "",
+  "intro": "",
+  "license": "",
+  "picks": []
+ },
+ {
+  "repo": "HKUDS/ClawTeam",
+  "url": "https://github.com/HKUDS/ClawTeam",
+  "what": "ClawTeam is a free Python tool (MIT) that lets one AI agent run a team of other agents. You give a leader agent a goal. The leader runs `clawteam spawn` to start workers. Each worker gets its own git branch, its own tmux window and a shared task list. Workers message each other through file inboxes. A board shows progress. It works with Claude Code, Codex and other command-line agents. Its showcase is eight agents running 2,430 training experiments on eight H100 GPUs.",
+  "intro": "ClawTeam is a free Python tool (MIT) that lets one AI agent run a team of other agents. You give a leader agent a goal. The leader runs `clawteam spawn` to start workers. Each worker gets its own git branch, its own tmux window and a shared task list. Workers message each other through file inboxes. A board shows progress. It works with Claude Code, Codex and other command-line agents. Its showcase is eight agents running 2,430 training experiments on eight H100 GPUs.",
+  "license": "MIT",
+  "picks": [
+   {
+    "id": "claw-01",
+    "kind": "idea",
+    "plain": "Use ClawTeam as a swarm runner: a leader agent spawns workers, each in its own git worktree.",
+    "rec": "no",
+    "replaces": "nothing; overlaps the CDR hub-and-spoke formation",
+    "risk": "Defaults skip_permissions to true, so every worker auto-approves its tools. Needs tmux, which Windows 11 lacks natively."
+   },
+   {
+    "id": "claw-02",
+    "kind": "idea",
+    "plain": "Steal the task list with blocked-by chains that unblock on completion.",
+    "rec": "maybe",
+    "replaces": "hand-ordered steps in DOPE SHEETs",
+    "risk": "Low as an idea; copying code needs a python-reviewer pass."
+   },
+   {
+    "id": "claw-03",
+    "kind": "idea",
+    "plain": "Steal the plan-approval step: a worker submits a plan and the leader approves or rejects before it runs.",
+    "rec": "maybe",
+    "replaces": "verbal readback before execute",
+    "risk": "Low."
+   },
+   {
+    "id": "claw-04",
+    "kind": "script",
+    "plain": "Per-agent git worktrees so parallel writers never touch the same files.",
+    "rec": "maybe",
+    "replaces": "disjoint-input briefs",
+    "risk": "Worktrees multiply folders in a public repo; keep them outside the repo."
+   },
+   {
+    "id": "claw-05",
+    "kind": "idea",
+    "plain": "TOML team templates (roles, tasks, prompts, one launch command).",
+    "rec": "maybe",
+    "replaces": ".claude/skills crew definitions",
+    "risk": "Two sources of truth."
+   },
+   {
+    "id": "claw-06",
+    "kind": "script",
+    "plain": "Cost tracker per agent (token spend by team).",
+    "rec": "maybe",
+    "replaces": "none today",
+    "risk": "Low."
+   },
+   {
+    "id": "claw-07",
+    "kind": "idea",
+    "plain": "The auto-injected coordination prompt that teaches every worker the same check-in commands.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "Peer chatter between agents breaks the hub-and-spoke rule."
+   },
+   {
+    "id": "claw-08",
+    "kind": "idea",
+    "plain": "Web board for watching the swarm (clawteam board serve, port 8080).",
+    "rec": "no",
+    "replaces": "SITREP page",
+    "risk": "Opens a local port."
+   }
+  ]
+ },
+ {
+  "repo": "K-Dense-AI/scientific-agent-skills",
+  "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+  "what": "**Verdict: take the method, install nothing.** The repo is MIT (K-Dense Inc., 2026) with 177 skills, but each skill sets its own license. The README warns that skills run code, install packages and make network calls. The GitHub API scan hit a rate limit (403), so I read the README, docs/skills.md and ten SKILL.md files over raw URLs. Skill folders sit under `skills/<name>/`.",
+  "intro": "**Verdict: take the method, install nothing.** The repo is MIT (K-Dense Inc., 2026) with 177 skills, but each skill sets its own license. The README warns that skills run code, install packages and make network calls. The GitHub API scan hit a rate limit (403), so I read the README, docs/skills.md and ten SKILL.md files over raw URLs. Skill folders sit under `skills/<name>/`.",
+  "license": "MIT",
+  "picks": [
+   {
+    "id": "sci-01",
+    "kind": "agent",
+    "plain": "Literature seat: reads papers through paper_search.py (OpenAlex) and adapts the paper-lookup source list and the literature-review coverage log.",
+    "rec": "yes",
+    "replaces": "nothing (new: .claude/agents/sci-literature.md)",
+    "risk": "low: MIT; text method only. literature-review wants Pandoc/XeLaTeX and an OpenRouter key for schematics, so skip those parts."
+   },
+   {
+    "id": "sci-02",
+    "kind": "agent",
+    "plain": "Plausibility-check seat: flags impossible physics in a scene as a report, never rewrites. Adapts uncertainty-and-units (order-of-magnitude checks).",
+    "rec": "yes",
+    "replaces": "nothing (new: .claude/agents/sci-plausibility.md)",
+    "risk": "low: MIT. Numeric CLIs need pint, NumPy, SciPy, so hold those."
+   },
+   {
+    "id": "sci-03",
+    "kind": "agent",
+    "plain": "Physics and astronomy seat: orbital mechanics, habitats, the Moon for ASTRO7EX. Adapts astropy plus sympy as reference, no installs.",
+    "rec": "yes",
+    "replaces": "nothing (new: .claude/agents/sci-physics.md)",
+    "risk": "low as text: BSD-3-Clause. Some features need network (name resolution, IERS)."
+   },
+   {
+    "id": "sci-04",
+    "kind": "agent",
+    "plain": "Biology and medicine seat: adapts the bounded-claims wording of clinical-reports and pkpd-modeling and the biopython overview as reference only.",
+    "rec": "maybe",
+    "replaces": "nothing (new: .claude/agents/sci-biomed.md)",
+    "risk": "medium: biopython carries its own Biopython license; clinical skills are research-only. Take text, no installs."
+   },
+   {
+    "id": "sci-05",
+    "kind": "agent",
+    "plain": "Technology-forecast seat for eras 3 and 4. Adapts what-if-oracle's favorable/adverse/wild-card/second-order scenario frame.",
+    "rec": "hold",
+    "replaces": "nothing (new: .claude/agents/sci-forecast.md)",
+    "risk": "medium: license blocks reuse of wording. Its output is explicitly not a calibrated forecast."
+   },
+   {
+    "id": "sci-06",
+    "kind": "agent",
+    "plain": "Dean (ivory tower): routes a question to the seats and merges one cited, established/emerging/contested report. Adapts scientific-brainstorming's decision log and adversarial review.",
+    "rec": "yes",
+    "replaces": "nothing (new: .claude/agents/sci-dean.md)",
+    "risk": "low: MIT, text only."
+   },
+   {
+    "id": "sci-07",
+    "kind": "skill",
+    "plain": "Hypothesis generation and peer review as method text for the dean's contested-claim pass.",
+    "rec": "maybe",
+    "replaces": "nothing",
+    "risk": "low: MIT, no network."
+   },
+   {
+    "id": "sci-08",
+    "kind": "skill",
+    "plain": "Statistical analysis, experimental design, scientific writing, and the bio/chem/lab-platform catalog (Benchling, Modal, Ginkgo, Fictiv).",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "high if installed whole: executes code, installs packages, makes network calls; the README itself warns to review each skill."
+   }
+  ]
+ },
+ {
+  "repo": "Leonxlnx/taste-skill",
+  "url": "https://github.com/Leonxlnx/taste-skill",
+  "what": "Copy these. They match our rules or sharpen them. - Content density. Headline of 8 words, sub of 25 words, one visual or one CTA. Long lists get grouping, not hairlines. - Copy self-audit. Re-read every visible string before ship. Rewrite broken or cute lines plainly. - Fake-precision ban. Invented numbers such as 92% get cut or marked mock. - One register per page. Technical, editorial and punchy copy do not mix.",
+  "intro": "Taste-skill (MIT, 13 skills) fights AI slop in pages. Its copy rules also fit our writing.",
+  "license": "MIT",
+  "picks": [
+   {
+    "id": "taste-01",
+    "kind": "skill",
+    "plain": "taste-skill: the main anti-slop frontend rules, three dials, copy self-audit.",
+    "rec": "maybe",
+    "replaces": "nothing",
+    "risk": "Large file; auto-style would override our palette."
+   },
+   {
+    "id": "taste-02",
+    "kind": "skill",
+    "plain": "taste-skill-v1: the older version of the main skill.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "Stale duplicate."
+   },
+   {
+    "id": "taste-03",
+    "kind": "skill",
+    "plain": "soft-skill: agency look with double-bezel cards and heavy motion.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "Style conflict."
+   },
+   {
+    "id": "taste-04",
+    "kind": "skill",
+    "plain": "minimalist-skill: warm monochrome editorial look.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "Palette conflict."
+   },
+   {
+    "id": "taste-05",
+    "kind": "skill",
+    "plain": "brutalist-skill: Swiss print and tactical terminal look.",
+    "rec": "maybe",
+    "replaces": "nothing",
+    "risk": "Palette differs from orange."
+   },
+   {
+    "id": "taste-06",
+    "kind": "skill",
+    "plain": "redesign-skill: audit existing pages for AI-generic patterns.",
+    "rec": "yes",
+    "replaces": "nothing",
+    "risk": "Skill tells agent to edit; use audit half only."
+   },
+   {
+    "id": "taste-07",
+    "kind": "skill",
+    "plain": "output-skill: bans placeholders and truncation in output.",
+    "rec": "maybe",
+    "replaces": "nothing",
+    "risk": "Could bloat replies against Spartan dial."
+   },
+   {
+    "id": "taste-08",
+    "kind": "skill",
+    "plain": "brandkit: image-generation prompts for brand boards.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "None."
+   },
+   {
+    "id": "taste-09",
+    "kind": "skill",
+    "plain": "gpt-tasteskill: GPT-tuned variant.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "None."
+   },
+   {
+    "id": "taste-10",
+    "kind": "skill",
+    "plain": "image-to-code-skill: build pages from reference images.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "None."
+   },
+   {
+    "id": "taste-11",
+    "kind": "skill",
+    "plain": "imagegen-frontend-mobile: mobile mock prompts.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "None."
+   },
+   {
+    "id": "taste-12",
+    "kind": "skill",
+    "plain": "imagegen-frontend-web: web mock prompts.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "None."
+   },
+   {
+    "id": "taste-13",
+    "kind": "skill",
+    "plain": "stitch-skill: Google Stitch design-doc format.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "None."
+   },
+   {
+    "id": "taste-14",
+    "kind": "script",
+    "plain": "glass-lint.py: zero-token script that checks built pages for banned patterns (light theme, stray palette, dense chrome, missing hover terms).",
+    "rec": "yes",
+    "replaces": "nothing",
+    "risk": "Needs new script in _tools/pages; no installer."
+   },
+   {
+    "id": "taste-15",
+    "kind": "script",
+    "plain": "prose-lint.py: zero-token script that flags slop words, em-dash flourishes, exclamation marks, passive 'was done' and over-20-word sentences.",
+    "rec": "yes",
+    "replaces": "nothing",
+    "risk": "False positives; report only, never rewrite."
+   },
+   {
+    "id": "taste-16",
+    "kind": "agent",
+    "plain": "prose-taste: read-only reviewer (Read, Grep) that applies the copy self-audit to a draft and returns flagged lines.",
+    "rec": "maybe",
+    "replaces": "nothing",
+    "risk": "Must be on-call, no auto-trigger."
+   },
+   {
+    "id": "taste-17",
+    "kind": "idea",
+    "plain": "Fold the copy self-audit and fake-precision rule into SOP §7 as numbered rules.",
+    "rec": "maybe",
+    "replaces": "nothing",
+    "risk": "Rule creep."
+   }
+  ]
+ },
+ {
+  "repo": "LukeRenton/explore-claude-code",
+  "url": "https://github.com/LukeRenton/explore-claude-code",
+  "what": "| Folder | Files | Size | What it is | |---|---|---|---| | `_PRIVATE` | 6,671 | 884 MB | private work, 45 subfolders, 42 loose files | | `_2025.02_SELACIOUS_BUILD` | 3,173 | 49 MB | old build | | `_tools` | 2,486 | 268 MB | scripts, 46 subfolders (sitrep 1,521; bolostatus 526) | | `_ARCHIVE` | 2,203 | 39 MB | archive | | `.ASTRO7EX.SYNC.JOPLIN` | 1,277 | 18 MB | sync copy | | `OVER_EXIT_OUT_OBSIDIAN` | 955 | 21 MB | vault | | `ShroomsQ` | 555 | 27 MB | canon (`_CANON` 489) | | `_CLAUDE_ARCHIVE_2026-08-15` | 517 | 12 MB | old Claude config | | `_devlog` | 495 | 589 MB | dev logs | | `_0.1_BVX_LEARN` | 391 | 18 MB | BVX learning | | `leechseed-explorer` | 248 | 24 MB | explorer | | `_LOG` | 80 | 1.7 MB | journals (80 files) | | `.AIrefLIBRARY`, `sherlock`, `narrative-context-protocol-main`, `_CANON_NODES`, `SFMono...` | 34 to 73 each | 3 to 261 MB | references, fonts | | `logseq_2023_journals_notes` | 18,982 | n/a | old notes | | 25 small folders | under 25 each | small | misc |",
+  "intro": "- Its root has about 12 entries: `.claude/`, `.github/`, `scripts/`, `site/`, three dotfiles, four caps-named docs, two images.",
+  "license": "",
+  "picks": [
+   {
+    "id": "tree-01",
+    "kind": "idea",
+    "plain": "Root holds only config dot-folders, a few caps-named docs (README, CLAUDE, LICENSE) and about four real folders.",
+    "rec": "yes",
+    "replaces": "Loose root files (KOBRA-*, ULTRASIN-*, trope scripts, txt dumps)",
+    "risk": "Moving files breaks links and hooks; needs the renumber script and a link check."
+   },
+   {
+    "id": "tree-02",
+    "kind": "idea",
+    "plain": "Every folder is one lowercase word; multi-word names use hyphens.",
+    "rec": "yes",
+    "replaces": "Mixed-case, underscore and dot-prefix folder names",
+    "risk": "Rename touches many links; do it in the same stage as the moves."
+   },
+   {
+    "id": "tree-03",
+    "kind": "idea",
+    "plain": "One folder per kind of thing: scripts/ for code, site/ for the product, .claude/ for config.",
+    "rec": "yes",
+    "replaces": "Root .py files and trope_keyer scripts",
+    "risk": "Low if root scripts are unreferenced; grep first."
+   },
+   {
+    "id": "tree-04",
+    "kind": "idea",
+    "plain": "A one-line purpose for each top-level entry, kept in README.",
+    "rec": "yes",
+    "replaces": "README.old.md and the sprawl of index files",
+    "risk": "Low."
+   },
+   {
+    "id": "tree-05",
+    "kind": "idea",
+    "plain": "Keep heavy and generated data out of the tree root; ignore or archive it.",
+    "rec": "maybe",
+    "replaces": "Large folders at root",
+    "risk": "Some data feeds running tools; check paths before moving."
+   }
+  ]
+ },
+ {
+  "repo": "Mudlet/Mudlet",
+  "url": "https://github.com/Mudlet/Mudlet",
+  "what": "**License.** Mudlet is GPL-3.0. We take ideas only and copy no code.",
+  "intro": "**License.** Mudlet is GPL-3.0. We take ideas only and copy no code.",
+  "license": "GPL-3.0",
+  "picks": [
+   {
+    "id": "mud-01",
+    "kind": "idea",
+    "plain": "Build the character-creation MUD as a tiny Python telnet server of our own, not a fork of Mudlet.",
+    "rec": "yes",
+    "replaces": "The chat window as the place where a character gets built.",
+    "risk": "GPL-3.0: take the idea only, copy no Mudlet code or scripts."
+   },
+   {
+    "id": "mud-02",
+    "kind": "idea",
+    "plain": "Use rooms as the questionnaire: one room per LEECHSEED layer, L1 CORE to L12 FUNCTION, with an NPC who asks that layer's question.",
+    "rec": "yes",
+    "replaces": "A flat questionnaire in chat.",
+    "risk": "GPL-3.0: we copy the map idea, not the mapper code or its file format."
+   },
+   {
+    "id": "mud-03",
+    "kind": "idea",
+    "plain": "Send the character record as a structured side channel (GMCP style) next to the story text, so the record updates live as Chief answers.",
+    "rec": "yes",
+    "replaces": "Copying values out of chat by hand.",
+    "risk": "GPL-3.0: the GMCP protocol is an open spec, but copy no Mudlet implementation code."
+   },
+   {
+    "id": "mud-04",
+    "kind": "idea",
+    "plain": "Run event handlers on the record: when a field changes, a small rule checks consistency (for example armor_index scale, Protagonist needs a storyform).",
+    "rec": "maybe",
+    "replaces": "Finding schema errors at review time.",
+    "risk": "GPL-3.0: ideas only; write our own handler in Python."
+   },
+   {
+    "id": "mud-05",
+    "kind": "idea",
+    "plain": "Use any existing MUD client (or a web terminal page) as the window, and keep Mudlet optional.",
+    "rec": "yes",
+    "replaces": "Building a custom client.",
+    "risk": "GPL-3.0: Mudlet is fine to run as a separate program; do not bundle or modify it."
+   },
+   {
+    "id": "mud-06",
+    "kind": "idea",
+    "plain": "Make aliases into verbs: 'edit L5', 'show record', 'undo', 'save' typed in any room.",
+    "rec": "yes",
+    "replaces": "Re-running the whole questionnaire to change one field.",
+    "risk": "GPL-3.0: idea only."
+   },
+   {
+    "id": "mud-07",
+    "kind": "idea",
+    "plain": "Use timers as session pacing: a room can nudge Chief after silence, and the server autosaves on a timer.",
+    "rec": "maybe",
+    "replaces": "Manual saves.",
+    "risk": "GPL-3.0: idea only."
+   },
+   {
+    "id": "mud-08",
+    "kind": "idea",
+    "plain": "Treat Mudlet's own agent skills and session-start hook as a model for a LEECHSEED builder skill.",
+    "rec": "no",
+    "replaces": "Nothing.",
+    "risk": "GPL-3.0: do not copy; skip."
+   },
+   {
+    "id": "mud-09",
+    "kind": "idea",
+    "plain": "Gate adult layers: the L9 EROS room only opens after Chief says the character is an adult and wants that layer.",
+    "rec": "yes",
+    "replaces": "A note in the docs that people forget.",
+    "risk": "GPL-3.0: general MUD design, no Mudlet code involved."
+   }
+  ]
+ },
+ {
+  "repo": "NeoLabHQ/context-engineering-kit",
+  "url": "https://github.com/NeoLabHQ/context-engineering-kit",
+  "what": "Scan caveat: repo_scan.py failed (GitHub API 403, rate limit). I read the README from the raw file instead; no per-agent files were read, so agent roles below come from the README only. License is GPL-3.0 (README badge). Ideas only; nothing copied.",
+  "intro": "Scan caveat: repo_scan.py failed (GitHub API 403, rate limit). I read the README from the raw file instead; no per-agent files were read, so agent roles below come from the README only. License is GPL-3.0 (README badge). Ideas only; nothing copied.",
+  "license": "GPL-3.0",
+  "picks": [
+   {
+    "id": "cek-001",
+    "kind": "idea",
+    "plain": "Reflect, then memorize: after a task the agent lists repeat mistakes and writes only those lessons to a small standing file.",
+    "rec": "yes",
+    "replaces": "Adds a lessons step to _tools/oscarmike/close.py; feeds the memory topics file",
+    "risk": "GPL-3.0 license; ideas only, copy no text or code; scan not run (GitHub API rate limit 403), README read via raw file"
+   },
+   {
+    "id": "cek-002",
+    "kind": "idea",
+    "plain": "Run the work in fresh sub-agents per task or file group, with a judge agent checking each before the next starts.",
+    "rec": "maybe",
+    "replaces": "Nothing; BOLO 54 formation doctrine already covers it",
+    "risk": "GPL-3.0 license; ideas only, copy no text or code; token overhead 1.5x-5x by their own table"
+   },
+   {
+    "id": "cek-003",
+    "kind": "idea",
+    "plain": "Plan and implement through a written spec with parallel judge agents scoring it on the fly.",
+    "rec": "skip",
+    "replaces": "Nothing; DOPE SHEET already is the spec",
+    "risk": "GPL-3.0 license; ideas only, copy no text or code; heavy token cost"
+   },
+   {
+    "id": "cek-004",
+    "kind": "idea",
+    "plain": "Auto-inject language rules when the agent reads or writes a matching file type, so rules load just in time.",
+    "rec": "yes",
+    "replaces": "New _tools/hooks/path_rules.py beside no_probe.py",
+    "risk": "GPL-3.0 license; ideas only, copy no text or code; hook runs on every tool call so it must stay silent on no match"
+   },
+   {
+    "id": "cek-005",
+    "kind": "idea",
+    "plain": "Triage a large change set down to the top files a human must read, ranked by impact and confidence.",
+    "rec": "maybe",
+    "replaces": "Option for _tools/intake/build_report.py ordering",
+    "risk": "GPL-3.0 license; ideas only, copy no text or code"
+   },
+   {
+    "id": "cek-006",
+    "kind": "idea",
+    "plain": "Install many plugins that each load their own commands, skills and agents into the window.",
+    "rec": "skip",
+    "replaces": "Nothing; install nothing",
+    "risk": "GPL-3.0 license; installing would also pull GPL text into the repo; token tax grows per plugin"
+   }
+  ]
+ },
+ {
+  "repo": "OneRedOak/claude-code-workflows",
+  "url": "https://github.com/OneRedOak/claude-code-workflows",
+  "what": "**Scan note:** repo_scan.py failed (GitHub API rate limit, 403). I read the files through raw.githubusercontent.com instead; scan.json was not written. The tree listing was also blocked, so I fetched the files the README links. License: MIT (Patrick Ellis). No installer in the repo.",
+  "intro": "**Scan note:** repo_scan.py failed (GitHub API rate limit, 403). I read the files through raw.githubusercontent.com instead; scan.json was not written. The tree listing was also blocked, so I fetched the files the README links. License: MIT (Patrick Ellis). No installer in the repo.",
+  "license": "MIT",
+  "picks": [
+   {
+    "id": "oro-security-review-cmd",
+    "kind": "skill",
+    "plain": "A high-confidence security review prompt (over 80% sure, no style noise, skip DoS) that we run on our Python scripts and pages.",
+    "rec": "yes",
+    "replaces": "joins the security-reviewer agent as its checklist",
+    "risk": "MIT; no installer; allowed-tools is git diff/status/log read-only; its Task tool would spawn a sub-agent, drop it"
+   },
+   {
+    "id": "oro-pragmatic-review",
+    "kind": "idea",
+    "plain": "The Pragmatic Quality rubric (ranked findings: blocker, high, medium, nit; reason for each) becomes the grading text for our script-side review of changed scripts.",
+    "rec": "yes",
+    "replaces": "none (feeds python-reviewer severity wording)",
+    "risk": "MIT; agent asks for Edit/Write/Playwright/context7 tools and opus; we would not copy the tool list"
+   },
+   {
+    "id": "oro-design-review-phases",
+    "kind": "idea",
+    "plain": "The seven design-review phases (flow, 3 viewports, polish, WCAG, robustness, code health) become a fixed check list for our static pages.",
+    "rec": "yes",
+    "replaces": "joins a11y-architect",
+    "risk": "MIT; needs Playwright MCP (an install) and a live preview: skip those, use the list only"
+   },
+   {
+    "id": "oro-code-review-action",
+    "kind": "hook",
+    "plain": "A GitHub Action that has Claude comment on every pull request.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "auto-trigger on PR events; needs CLAUDE_CODE_OAUTH_TOKEN secret; runs third-party action anthropics/claude-code-action@v1; telemetry unknown"
+   },
+   {
+    "id": "oro-design-claude-md-snippet",
+    "kind": "hook",
+    "plain": "A CLAUDE.md paragraph telling Claude to call the design-review agent after UI work.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "auto-trigger by instruction; MIT"
+   },
+   {
+    "id": "oro-orchestration-playbook",
+    "kind": "idea",
+    "plain": "A 16-page PDF on context, tools, workflows and verification around coding agents.",
+    "rec": "maybe",
+    "replaces": "none",
+    "risk": "newsletter link in README; PDF unread"
+   }
+  ]
+ },
+ {
+  "repo": "Piebald-AI/claude-code-system-prompts",
+  "url": "https://github.com/Piebald-AI/claude-code-system-prompts",
+  "what": "What the harness already gives an agent: a generic base prompt (general-purpose: \"complete the task fully, don't gold-plate, report concisely to the caller\"), CLAUDE.md, the environment, and only the tools in its list. Explore is read-only by prompt text plus a missing Edit tool. A forked worker restates its task in one line, does one directive, reports once, and cannot spawn agents.",
+  "intro": "The scan hit GitHub's rate limit (403), so no scan.json or RISK pass exists. I read both READMEs and the key prompt files by raw URL. Both licenses: MIT.",
+  "license": "MIT",
+  "picks": [
+   {
+    "id": "csp-01",
+    "kind": "reference",
+    "plain": "Keep the extracted Claude Code prompts as our look-up for how the harness briefs an agent (Explore, general purpose, worker fork). Read a file when we write or fix an agent; do not copy the repo.",
+    "rec": "yes",
+    "replaces": "guessing what the harness tells a subagent",
+    "risk": "low: text only; MIT; the prompts are Anthropic's, quote sparingly. The scan hit the GitHub rate limit, so the RISK pass did not run; README and files were read by raw URL."
+   },
+   {
+    "id": "csp-02",
+    "kind": "edit",
+    "plain": "Cut the 80-word 'Command rules' block at line 8 of 31 agent files down to one line that points at SOP.",
+    "rec": "yes",
+    "replaces": "the pasted preamble in .claude/agents/*.md",
+    "risk": "low: a rule that lives only in the preamble (no probing, private stays private) must first be confirmed in CLAUDE.md or SOP."
+   },
+   {
+    "id": "csp-03",
+    "kind": "edit",
+    "plain": "Rewrite each agent description to say when to call it ('Use when ...'), since the parent picks an agent from that line alone.",
+    "rec": "yes",
+    "replaces": "descriptions that only say what the agent is",
+    "risk": "medium: a proactive trigger makes Claude delegate more; keep triggers narrow so BOLO 54 hub-and-spoke holds."
+   },
+   {
+    "id": "csp-04",
+    "kind": "edit",
+    "plain": "Add a turn cap and a hand-back shape to each agent: one line restating the task, the paths touched, one report, then stop.",
+    "rec": "maybe",
+    "replaces": "'under 250 words' as the only output rule",
+    "risk": "low"
+   },
+   {
+    "id": "csp-05",
+    "kind": "reference",
+    "plain": "Use the Explore prompt as the model for our read-only agents: ban list first, name the allowed shell commands, say 'report as a message, do not write files'.",
+    "rec": "yes",
+    "replaces": "nothing (style)",
+    "risk": "low"
+   },
+   {
+    "id": "csp-06",
+    "kind": "tool",
+    "plain": "Do not install tweakcc (it patches the Claude Code install with edited prompts).",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "high: patches the local install and breaks on update."
+   },
+   {
+    "id": "csp-07",
+    "kind": "reference",
+    "plain": "Read the CHANGELOG when Claude Code updates, to see which prompts moved (hook, skill and agent text).",
+    "rec": "maybe",
+    "replaces": "nothing",
+    "risk": "low"
+   }
+  ]
+ },
+ {
+  "repo": "ThibautMelen/agentic-ai-systems",
+  "url": "https://github.com/ThibautMelen/agentic-ai-systems",
+  "what": "License: the repo is MIT (Thibaut Melen). The pattern book states no license on its front page. I read only its section titles, so treat it as reference, not source text.",
+  "intro": "License: the repo is MIT (Thibaut Melen). The pattern book states no license on its front page. I read only its section titles, so treat it as reference, not source text.",
+  "license": "MIT",
+  "picks": [
+   {
+    "id": "aas-01",
+    "kind": "idea",
+    "plain": "Orchestrator-workers: the main agent splits a task at run time and hands pieces to specialist subagents.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "none"
+   },
+   {
+    "id": "aas-02",
+    "kind": "idea",
+    "plain": "Subagents cannot spawn subagents; results flow up only.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "none"
+   },
+   {
+    "id": "aas-03",
+    "kind": "idea",
+    "plain": "Evaluator-optimizer: a second model scores the first one's output and sends feedback until it passes.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "Unbounded loops burn tokens."
+   },
+   {
+    "id": "aas-04",
+    "kind": "idea",
+    "plain": "Keep the evaluator, but make it a script with a hard retry cap of two or three passes.",
+    "rec": "maybe",
+    "replaces": "one-shot RANGE verdicts on tests-style jobs",
+    "risk": "Low. Needs a clear metric first."
+   },
+   {
+    "id": "aas-05",
+    "kind": "idea",
+    "plain": "Multi-window checkpoint: a JSON file holds progress, pending tasks and a resume point so the next session continues.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "none"
+   },
+   {
+    "id": "aas-06",
+    "kind": "idea",
+    "plain": "On resume, check that each pending task's dependencies are done before running it.",
+    "rec": "maybe",
+    "replaces": "trusting the resume order as written",
+    "risk": "Low."
+   },
+   {
+    "id": "aas-07",
+    "kind": "idea",
+    "plain": "Check before, trace after: validate the workflow file and its cost floor before any tokens are spent, then keep a trace of the run.",
+    "rec": "maybe",
+    "replaces": "gear choice by feel",
+    "risk": "Low. Build ourselves; do not adopt nika."
+   },
+   {
+    "id": "aas-08",
+    "kind": "script",
+    "plain": "Nika, the single-binary runner that checks and runs pattern files.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "Installer, unvetted binary, new dependency."
+   },
+   {
+    "id": "aas-09",
+    "kind": "idea",
+    "plain": "Pair autonomy with budgets: max turns, tokens and cost per run.",
+    "rec": "yes",
+    "replaces": "briefs with no turn limit",
+    "risk": "Low. Too tight a cap truncates work; set per job."
+   },
+   {
+    "id": "aas-10",
+    "kind": "idea",
+    "plain": "Subagents suit read-heavy parallel work; a single agent suits write-heavy work. Anthropic measured about 15 times the tokens for multi-agent research.",
+    "rec": "yes",
+    "replaces": "nothing; sharpens the gear rule",
+    "risk": "Low. Cite the original Anthropic post before quoting the 15x figure."
+   },
+   {
+    "id": "aas-11",
+    "kind": "idea",
+    "plain": "Routing: classify the input, send it to one handler.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "none"
+   },
+   {
+    "id": "aas-12",
+    "kind": "idea",
+    "plain": "Autonomous agent: the model picks its own steps with no fixed plan.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "Scope creep, cost."
+   },
+   {
+    "id": "aas-13",
+    "kind": "idea",
+    "plain": "Observability without evals is only watching; add checks, not just logs.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "none"
+   },
+   {
+    "id": "aas-14",
+    "kind": "idea",
+    "plain": "The pattern book's Agent Governance and Feedback section (32 entries: bounded autonomy, human in the loop).",
+    "rec": "maybe",
+    "replaces": "nothing yet",
+    "risk": "License unknown. Do not copy."
+   },
+   {
+    "id": "aas-15",
+    "kind": "idea",
+    "plain": "The repo's chicken metaphors, emoji standards and Obsidian config.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "none"
+   }
+  ]
+ },
+ {
+  "repo": "VoltAgent/awesome-agent-skills",
+  "url": "https://github.com/VoltAgent/awesome-agent-skills",
+  "what": "",
+  "intro": "",
+  "license": "",
+  "picks": [
+   {
+    "id": "volt-01",
+    "kind": "skill",
+    "plain": "Before work on a vague order, ask 1 to 5 multiple-choice questions with a default each, then wait.",
+    "rec": "yes",
+    "replaces": "Joins .claude/skills/brainstorm (pre-build question step) and the CDR's order readback",
+    "risk": "Index repo; scan hit GitHub rate limit (403) so no scan.json; license of index not confirmed; summary read only (SKILL.md body not retrieved), Trail of Bits, license unconfirmed; copy the idea only, install nothing (skip npx)"
+   },
+   {
+    "id": "volt-02",
+    "kind": "skill",
+    "plain": "Doc co-authoring in three stages: gather context, build section by section, then test the doc on a fresh reader with only the doc.",
+    "rec": "yes",
+    "replaces": "Joins the MS writer seat: one reader-test step before a DOPE SHEET or report publishes (no checker agent; CDR asks the questions)",
+    "risk": "Index repo; scan hit GitHub rate limit (403) so no scan.json; license of index not confirmed; summary read only (SKILL.md body not retrieved), Anthropic skills repo; frontmatter shows no license field, repo license unconfirmed; copy the idea only, install nothing (skip npx)"
+   },
+   {
+    "id": "volt-03",
+    "kind": "skill",
+    "plain": "Copy-editing passes for clarity and impact on existing copy.",
+    "rec": "maybe",
+    "replaces": "Would join .claude/agents/prose-taste",
+    "risk": "Index repo; scan hit GitHub rate limit (403) so no scan.json; license of index not confirmed; summary read only (SKILL.md body not retrieved), marketingskills repo, license unconfirmed; copy the idea only, install nothing (skip npx)"
+   },
+   {
+    "id": "volt-04",
+    "kind": "skill",
+    "plain": "Threat model a repo: trust boundaries, assets, entry points, abuse paths with likelihood and impact.",
+    "rec": "maybe",
+    "replaces": "Would join .claude/agents/security-reviewer (report section)",
+    "risk": "Index repo; scan hit GitHub rate limit (403) so no scan.json; license of index not confirmed; summary read only (SKILL.md body not retrieved), OpenAI skills, license unconfirmed; copy the idea only, install nothing (skip npx)"
+   },
+   {
+    "id": "volt-05",
+    "kind": "skill",
+    "plain": "Differential security review of a diff with blast radius and coverage gaps.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "Index repo; scan hit GitHub rate limit (403) so no scan.json; license of index not confirmed; summary read only (SKILL.md body not retrieved), Trail of Bits, license unconfirmed; copy the idea only, install nothing (skip npx)"
+   },
+   {
+    "id": "volt-06",
+    "kind": "skill",
+    "plain": "Find hardcoded secrets, default credentials and weak crypto.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "Index repo; scan hit GitHub rate limit (403) so no scan.json; license of index not confirmed; summary read only (SKILL.md body not retrieved), Trail of Bits, license unconfirmed; copy the idea only, install nothing (skip npx)"
+   },
+   {
+    "id": "volt-07",
+    "kind": "skill",
+    "plain": "Fix failing GitHub Actions from logs with the gh CLI.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "Index repo; scan hit GitHub rate limit (403) so no scan.json; license of index not confirmed; summary read only (SKILL.md body not retrieved), OpenAI skills, license unconfirmed; copy the idea only, install nothing (skip npx)"
+   },
+   {
+    "id": "volt-08",
+    "kind": "skill",
+    "plain": "Fetch any URL as clean Markdown via the Crawlbase MCP server.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "Index repo; scan hit GitHub rate limit (403) so no scan.json; license of index not confirmed; summary read only (SKILL.md body not retrieved), Crawlbase, license unconfirmed; installs an MCP server; copy the idea only, install nothing (skip npx)"
+   },
+   {
+    "id": "volt-09",
+    "kind": "skill",
+    "plain": "Transcribe audio with optional speaker separation.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "Index repo; scan hit GitHub rate limit (403) so no scan.json; license of index not confirmed; summary read only (SKILL.md body not retrieved), OpenAI skills, license unconfirmed; copy the idea only, install nothing (skip npx)"
+   },
+   {
+    "id": "volt-10",
+    "kind": "skill",
+    "plain": "Test local web apps with Playwright.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "Index repo; scan hit GitHub rate limit (403) so no scan.json; license of index not confirmed; summary read only (SKILL.md body not retrieved), Anthropic skills repo; copy the idea only, install nothing (skip npx)"
+   },
+   {
+    "id": "volt-11",
+    "kind": "skill",
+    "plain": "Skill-creator for building skills.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "Index repo; scan hit GitHub rate limit (403) so no scan.json; license of index not confirmed; summary read only (SKILL.md body not retrieved), Anthropic skills repo; copy the idea only, install nothing (skip npx)"
+   },
+   {
+    "id": "volt-12",
+    "kind": "skill",
+    "plain": "Draft status reports, newsletters and FAQs in house formats.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "Index repo; scan hit GitHub rate limit (403) so no scan.json; license of index not confirmed; summary read only (SKILL.md body not retrieved), Anthropic skills repo; copy the idea only, install nothing (skip npx)"
+   },
+   {
+    "id": "volt-13",
+    "kind": "skill",
+    "plain": "Generate pytest tests with fixtures and mocking.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "Index repo; scan hit GitHub rate limit (403) so no scan.json; license of index not confirmed; summary read only (SKILL.md body not retrieved), LambdaTest, license unconfirmed; copy the idea only, install nothing (skip npx)"
+   },
+   {
+    "id": "volt-14",
+    "kind": "skill",
+    "plain": "Run in-process SQL over local files with chdb.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "Index repo; scan hit GitHub rate limit (403) so no scan.json; license of index not confirmed; summary read only (SKILL.md body not retrieved), ClickHouse, license unconfirmed; installer; copy the idea only, install nothing (skip npx)"
+   },
+   {
+    "id": "volt-15",
+    "kind": "skill",
+    "plain": "Generate and edit images through the OpenAI Image API.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "Index repo; scan hit GitHub rate limit (403) so no scan.json; license of index not confirmed; summary read only (SKILL.md body not retrieved), OpenAI skills, license unconfirmed; copy the idea only, install nothing (skip npx)"
+   },
+   {
+    "id": "volt-16",
+    "kind": "skill",
+    "plain": "Manage calendar, tasks and Sheets through Google Workspace CLI.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "Index repo; scan hit GitHub rate limit (403) so no scan.json; license of index not confirmed; summary read only (SKILL.md body not retrieved), Google, license unconfirmed; installer; copy the idea only, install nothing (skip npx)"
+   }
+  ]
+ },
+ {
+  "repo": "addyosmani/agent-skills",
+  "url": "https://github.com/addyosmani/agent-skills",
+  "what": "",
+  "intro": "",
+  "license": "",
+  "picks": [
+   {
+    "id": "ao-001",
+    "kind": "skill",
+    "plain": "Interview one question at a time, each with your guess attached and a confidence number, stop at 95 percent.",
+    "rec": "yes",
+    "replaces": "Joins .claude/skills/brainstorm (adds the guess line, the confidence number and the stop rule)",
+    "risk": "MIT license; repo scan verdict STOP (installer/hook/telemetry strings are mostly docs and eval fixtures); copy the idea or text only, install nothing"
+   },
+   {
+    "id": "ao-002",
+    "kind": "skill",
+    "plain": "Refine a vague idea: divergent options, then converge, ending in a short page with Not Doing and Open Questions.",
+    "rec": "yes",
+    "replaces": "Joins .claude/skills/brainstorm output template (the lock-it brief)",
+    "risk": "MIT license; repo scan verdict STOP (installer/hook/telemetry strings are mostly docs and eval fixtures); copy the idea or text only, install nothing"
+   },
+   {
+    "id": "ao-003",
+    "kind": "skill",
+    "plain": "Write a spec before building: objective, commands, boundaries, success criteria, open questions.",
+    "rec": "yes",
+    "replaces": "Joins .claude/skills/dope-sheet (Mission and order section checklist)",
+    "risk": "MIT license; repo scan verdict STOP (installer/hook/telemetry strings are mostly docs and eval fixtures); copy the idea or text only, install nothing"
+   },
+   {
+    "id": "ao-004",
+    "kind": "skill",
+    "plain": "Break work into vertical slices with a dependency graph and a checkpoint after every few tasks.",
+    "rec": "yes",
+    "replaces": "Joins the planner agent (.claude/agents/planner.md) as its task-sizing and checkpoint rules",
+    "risk": "MIT license; repo scan verdict STOP (installer/hook/telemetry strings are mostly docs and eval fixtures); copy the idea or text only, install nothing"
+   },
+   {
+    "id": "ao-005",
+    "kind": "skill",
+    "plain": "Ship in thin slices that each leave the script runnable; rule 0.5: no scope creep.",
+    "rec": "yes",
+    "replaces": "Joins the MS builder brief template in .claude/skills/intake and collect (EXECUTE step)",
+    "risk": "MIT license; repo scan verdict STOP (installer/hook/telemetry strings are mostly docs and eval fixtures); copy the idea or text only, install nothing"
+   },
+   {
+    "id": "ao-006",
+    "kind": "skill",
+    "plain": "Debug by stopping the line: reproduce, localize, reduce, fix the root cause, guard, verify.",
+    "rec": "maybe",
+    "replaces": "Fold two lines into .claude/agents/root-cause.md; no new seat",
+    "risk": "MIT license; repo scan verdict STOP (installer/hook/telemetry strings are mostly docs and eval fixtures); copy the idea or text only, install nothing"
+   },
+   {
+    "id": "ao-007",
+    "kind": "skill",
+    "plain": "Simplify code without changing behavior; read why it exists first (Chesterton's fence).",
+    "rec": "yes",
+    "replaces": "Joins .claude/agents/refactor-cleaner.md as its guard rules",
+    "risk": "MIT license; repo scan verdict STOP (installer/hook/telemetry strings are mostly docs and eval fixtures); copy the idea or text only, install nothing"
+   },
+   {
+    "id": "ao-008",
+    "kind": "skill",
+    "plain": "Write a bar-lowering floor: no new suppressions, no skipped tests, no secrets, and the file itself never weakened.",
+    "rec": "maybe",
+    "replaces": "Candidate rule list for _tools/review/touchstone_check.py; skip the tsc/biome installs",
+    "risk": "MIT license; repo scan verdict STOP (installer/hook/telemetry strings are mostly docs and eval fixtures); copy the idea or text only, install nothing"
+   },
+   {
+    "id": "ao-009",
+    "kind": "skill",
+    "plain": "Keep session context in layers: rules file, spec, relevant source, error output, then restartable boundaries.",
+    "rec": "maybe",
+    "replaces": "Fold the Restartable Session Boundaries section into .claude/skills/strategic-compact",
+    "risk": "MIT license; repo scan verdict STOP (installer/hook/telemetry strings are mostly docs and eval fixtures); copy the idea or text only, install nothing"
+   },
+   {
+    "id": "ao-010",
+    "kind": "skill",
+    "plain": "Ground every build choice in official docs and cite the source.",
+    "rec": "yes",
+    "replaces": "Joins the PS fetcher brief and the architect agent (cite-the-doc rule)",
+    "risk": "MIT license; repo scan verdict STOP (installer/hook/telemetry strings are mostly docs and eval fixtures); copy the idea or text only, install nothing"
+   },
+   {
+    "id": "ao-011",
+    "kind": "skill",
+    "plain": "Cross-examine a non-trivial decision by handing a fresh reviewer the artifact and contract, not your conclusion.",
+    "rec": "maybe",
+    "replaces": "Joins the CDR's own pre-commit habit; Step 3 replaced by the RANGE script reviewer",
+    "risk": "MIT license; repo scan verdict STOP (installer/hook/telemetry strings are mostly docs and eval fixtures); copy the idea or text only, install nothing"
+   },
+   {
+    "id": "ao-012",
+    "kind": "skill",
+    "plain": "Record big decisions as short ADRs: status, date, context, decision, alternatives.",
+    "rec": "maybe",
+    "replaces": "Optional template for architect agent output in _tools/docs",
+    "risk": "MIT license; repo scan verdict STOP (installer/hook/telemetry strings are mostly docs and eval fixtures); copy the idea or text only, install nothing"
+   },
+   {
+    "id": "ao-013",
+    "kind": "skill",
+    "plain": "Retire old code safely: decide if it is worth keeping, migrate in steps, then remove.",
+    "rec": "maybe",
+    "replaces": "Reference for refactor-cleaner when a _tools script is retired",
+    "risk": "MIT license; repo scan verdict STOP (installer/hook/telemetry strings are mostly docs and eval fixtures); copy the idea or text only, install nothing"
+   },
+   {
+    "id": "ao-014",
+    "kind": "agent",
+    "plain": "Senior code reviewer scoring correctness, readability, architecture, security, performance with categorized findings.",
+    "rec": "no",
+    "replaces": "Already covered by .claude/agents/python-reviewer.md",
+    "risk": "MIT license; repo scan verdict STOP (installer/hook/telemetry strings are mostly docs and eval fixtures); copy the idea or text only, install nothing"
+   },
+   {
+    "id": "ao-015",
+    "kind": "agent",
+    "plain": "Security auditor checklist: input, auth, data protection, infrastructure.",
+    "rec": "no",
+    "replaces": "Already covered by .claude/agents/security-reviewer.md",
+    "risk": "MIT license; repo scan verdict STOP (installer/hook/telemetry strings are mostly docs and eval fixtures); copy the idea or text only, install nothing"
+   },
+   {
+    "id": "ao-016",
+    "kind": "agent",
+    "plain": "Test engineer that designs test cases.",
+    "rec": "no",
+    "replaces": "None",
+    "risk": "MIT license; repo scan verdict STOP (installer/hook/telemetry strings are mostly docs and eval fixtures); copy the idea or text only, install nothing"
+   },
+   {
+    "id": "ao-017",
+    "kind": "skill",
+    "plain": "Git workflow: atomic commits, save points, worktrees, splitting a messy tree into clean commits.",
+    "rec": "no",
+    "replaces": "None",
+    "risk": "MIT license; repo scan verdict STOP (installer/hook/telemetry strings are mostly docs and eval fixtures); copy the idea or text only, install nothing"
+   }
+  ]
+ },
+ {
+  "repo": "anthropics/skills",
+  "url": "https://github.com/anthropics/skills",
+  "what": "- Seat: MS (sonnet). Tools: Read, Write, Grep, Glob. No Bash, no Agent tool. - Reads: the CDR's brief, the target skill or agent file, `.claude/agents/README.md`, and the Command rules block. - Writes: one file, the path the brief names. It never edits another. - Patterns it enforces: - Frontmatter holds only name, description and, if needed, tools. - The description says what the skill does and when it fires, in under 1,024 characters. - The body stays under 500 lines; detail moves to `references/`, code to `scripts/`. - Each instruction gives its reason, not a bare ALWAYS. - No hooks, installers, outside calls or auto-triggers.",
+  "intro": "**Licence.** The repo root states none (scan: null). Each skill folder carries its own LICENSE.txt; skill-creator is Apache 2.0. Apache 2.0 allows copying and changing if we keep the notice and mark our changes. The README says the docx, pdf, pptx and xlsx skills are source-available, not open source. We do not copy those.",
+  "license": "Apache 2.0",
+  "picks": [
+   {
+    "id": "ask-01",
+    "kind": "skill",
+    "plain": "Copy the skill-creator method: write a skill, run 2-3 test prompts with and without it, compare, then tighten the description.",
+    "rec": "yes",
+    "replaces": "nothing (new: .claude/skills/skill-forge/)",
+    "risk": "low: text only; its spawn-and-grade loop must be run by the CDR, not by an agent."
+   },
+   {
+    "id": "ask-02",
+    "kind": "script",
+    "plain": "Adapt quick_validate.py into a skill linter: allowed keys, kebab-case name under 65 chars, description under 1025 chars, no angle brackets.",
+    "rec": "yes",
+    "replaces": "nothing (new: _tools/skills/lint.py, read the file in full before copying)",
+    "risk": "low: Apache 2.0, keep attribution; it only reads files."
+   },
+   {
+    "id": "ask-03",
+    "kind": "agent",
+    "plain": "A builder agent that drafts or trims a skill or agent file from a brief, to the Anthropic patterns, under our Command rules block.",
+    "rec": "yes",
+    "replaces": "joins harness-optimizer (which only proposes); no overlap with doc-updater",
+    "risk": "medium: it writes; limit tools to Read, Write, Grep, Glob and name the output path in every brief."
+   },
+   {
+    "id": "ask-04",
+    "kind": "idea",
+    "plain": "Progressive disclosure: keep SKILL.md under about 500 lines, move detail to references/ and long code to scripts/, load only on need.",
+    "rec": "yes",
+    "replaces": "inline history in launch, sitrep, oscar-mike, frago",
+    "risk": "low: a move, not a rewrite; keep a pointer line in each skill."
+   },
+   {
+    "id": "ask-05",
+    "kind": "idea",
+    "plain": "Put every trigger in the description, and keep the body free of when-to-use text.",
+    "rec": "yes",
+    "replaces": "formation prose in descriptions",
+    "risk": "low. Ignore the advice to make descriptions pushy: our rule is no auto-triggers."
+   },
+   {
+    "id": "ask-06",
+    "kind": "skill",
+    "plain": "mcp-builder pattern: four phases (research, build, review, evals), with detail pulled in per phase.",
+    "rec": "maybe",
+    "replaces": "nothing",
+    "risk": "low: it tells Claude to fetch outside docs and run npm; strip both."
+   },
+   {
+    "id": "ask-07",
+    "kind": "agent",
+    "plain": "The grader, comparator and analyzer agents from skill-creator.",
+    "rec": "no",
+    "replaces": "n/a",
+    "risk": "breaks BOLO 54 formation."
+   },
+   {
+    "id": "ask-08",
+    "kind": "script",
+    "plain": "run_loop.py and improve_description.py: auto-tune a skill description by repeated model calls.",
+    "rec": "no",
+    "replaces": "n/a",
+    "risk": "cost; auto-trigger drift."
+   },
+   {
+    "id": "ask-09",
+    "kind": "skill",
+    "plain": "docx, pdf, pptx, xlsx document skills.",
+    "rec": "no",
+    "replaces": "n/a",
+    "risk": "licence: reuse barred."
+   },
+   {
+    "id": "ask-10",
+    "kind": "idea",
+    "plain": "Delete the stray sitrep/SKILL.md.bak and keep one copy of each skill.",
+    "rec": "yes",
+    "replaces": ".claude/skills/sitrep/SKILL.md.bak",
+    "risk": "low: it is in git history."
+   }
+  ]
+ },
+ {
+  "repo": "apache/superset",
+  "url": "https://github.com/apache/superset",
+  "what": "Scan note: repo_scan.py hit a GitHub 403 rate limit, so no scan.json. This is from the README and the docs links. Re-run the scan later if Chief wants the risk strings checked.",
+  "intro": "Scan note: repo_scan.py hit a GitHub 403 rate limit, so no scan.json. This is from the README and the docs links. Re-run the scan later if Chief wants the risk strings checked.",
+  "license": "Apache-2.0",
+  "picks": [
+   {
+    "id": "sst-001",
+    "kind": "tool",
+    "plain": "Run Superset, a dashboard server, over the Stash, Zotero and pull copies so Chief can click through charts.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "Apache-2.0. Scan did not run (GitHub rate limit 403), judged from the README only. Huge repo, heavy upkeep, install nothing."
+   },
+   {
+    "id": "sst-002",
+    "kind": "tool",
+    "plain": "A script, _tools/mcp/explore.py, that takes one SQL query against a read-only copy and writes a DARK chart page.",
+    "rec": "yes",
+    "replaces": "Joins _tools/pages (new script; Superset not adopted)",
+    "risk": "Our own code. Open the copies read-only, SELECT only, and keep row contents off public pages."
+   },
+   {
+    "id": "sst-003",
+    "kind": "idea",
+    "plain": "Borrow Superset's chart-types list as a menu for explore.py: bar, line, heatmap, treemap, table.",
+    "rec": "maybe",
+    "replaces": "none",
+    "risk": "Idea only, no code copied."
+   }
+  ]
+ },
+ {
+  "repo": "blader/humanizer",
+  "url": "https://github.com/blader/humanizer",
+  "what": "**License and risk.** MIT. The scan reads WATCH: 6 installer-word hits in the README, AGENTS.md and a workflow file. These are install instructions. It has no hooks, network calls, telemetry, injection or auto-trigger. We copy wording only and install nothing.",
+  "intro": "**License and risk.** MIT. The scan reads WATCH: 6 installer-word hits in the README, AGENTS.md and a workflow file. These are install instructions. It has no hooks, network calls, telemetry, injection or auto-trigger. We copy wording only and install nothing.",
+  "license": "MIT",
+  "picks": [
+   {
+    "id": "hum-01",
+    "kind": "skill",
+    "plain": "Adds about 60 stock phrases and the not-X-but-Y regex family to prose_lint's table.",
+    "rec": "yes",
+    "replaces": "none (extends prose_lint STOCK)",
+    "risk": "MIT; copy phrases only, no code run."
+   },
+   {
+    "id": "hum-02",
+    "kind": "agent",
+    "plain": "Adds six shape checks to prose-taste: contrast, closer, saying, run-up, no-one argument, wrong reader.",
+    "rec": "yes",
+    "replaces": "none (extends prose-taste)",
+    "risk": "MIT; wording only."
+   },
+   {
+    "id": "hum-03",
+    "kind": "skill",
+    "plain": "Install the whole humanizer as a rewrite skill.",
+    "rec": "skip",
+    "replaces": "none",
+    "risk": "MIT; 6 installer-word hits are README install steps; no hooks, network, or auto-trigger."
+   }
+  ]
+ },
+ {
+  "repo": "cathrynlavery/diagram-design",
+  "url": "https://github.com/cathrynlavery/diagram-design",
+  "what": "**What the layered editorial diagram is.** One picture with three layers. The back layer is context: the surroundings, drawn small and in muted gray. The middle layer is the system itself: a few boxes (about 9 at most) in clean hairline outlines. The front layer is one highlighted path in the accent color, so a reader who was not there sees where to look first. The repo's rules back this: one or two accent items, every node earns its place, every line carries information, right-angle connectors only. Caveat: its README does not describe the hero image's layers, and its \"Layer stack\" type is related but separate. This reading comes from the written rules, not the picture.",
+  "intro": "**What the layered editorial diagram is.** One picture with three layers. The back layer is context: the surroundings, drawn small and in muted gray. The middle layer is the system itself: a few boxes (about 9 at most) in clean hairline outlines. The front layer is one highlighted path in the accent color, so a reader who was not there sees where to look first. The repo's rules back this: one or two accent items, every node earns its place, every line carries information, right-angle connectors only. Caveat: its README does not describe the hero image's layers, and its \"Layer stack\" type is related but separate. This reading comes from the written rules, not the picture.",
+  "license": "",
+  "picks": [
+   {
+    "id": "dd-01",
+    "kind": "skill",
+    "plain": "SKILL.md: philosophy, 4/10 density, one-accent focal rule, taste gate.",
+    "rec": "yes",
+    "replaces": "nothing",
+    "risk": "MIT. Installing it would override our palette; take the rules only."
+   },
+   {
+    "id": "dd-02",
+    "kind": "references",
+    "plain": "Layer stack and nested type references.",
+    "rec": "yes",
+    "replaces": "nothing",
+    "risk": "Refs use Geist and coral placeholders; swap to ours."
+   },
+   {
+    "id": "dd-03",
+    "kind": "references",
+    "plain": "Connector rules: orthogonal, label masks, 12px offsets, 4px grid.",
+    "rec": "yes",
+    "replaces": "nothing",
+    "risk": "Low."
+   },
+   {
+    "id": "dd-04",
+    "kind": "scripts",
+    "plain": "self_check.py: lints a diagram's connectors and budgets.",
+    "rec": "maybe",
+    "replaces": "nothing",
+    "risk": "Python that reads untrusted HTML; read before running."
+   },
+   {
+    "id": "dd-05",
+    "kind": "skill",
+    "plain": "Install the whole skill with npx.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "RISK STOP: installers 30, network 129, telemetry 62, auto-trigger 2."
+   },
+   {
+    "id": "dd-06",
+    "kind": "scripts",
+    "plain": "draw.io, Mermaid and Excalidraw extractors.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "Parses untrusted files."
+   },
+   {
+    "id": "dd-07",
+    "kind": "assets",
+    "plain": "Live gallery of 44 diagram types.",
+    "rec": "maybe",
+    "replaces": "nothing",
+    "risk": "Light paper styling; ideas only."
+   },
+   {
+    "id": "dd-08",
+    "kind": "references",
+    "plain": "Brand onboarding: scrape a site for palette and fonts.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "Fetches third-party sites."
+   }
+  ]
+ },
+ {
+  "repo": "chartdb/chartdb",
+  "url": "https://github.com/chartdb/chartdb",
+  "what": "**Netron: keep as a tool on call, no agent.**",
+  "intro": "**Netron: keep as a tool on call, no agent.**",
+  "license": "MIT",
+  "picks": [
+   {
+    "id": "cdb-01",
+    "kind": "tool",
+    "plain": "Run ChartDB itself (web app or Docker) on our databases.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "AGPL-3.0; telemetry 14 hits; OpenAI key path; Docker/npm installers; scan verdict STOP"
+   },
+   {
+    "id": "cdb-02",
+    "kind": "idea",
+    "plain": "Build our own ERD glass: tables as cards with row count, columns, PK marks, FK lines between cards, search that dims the rest.",
+    "rec": "yes",
+    "replaces": "none (new _tools/mcp/erd.py)",
+    "risk": "none; reads copies, counts only"
+   },
+   {
+    "id": "cdb-03",
+    "kind": "idea",
+    "plain": "Steal the area layout: one diagram per database, plus a tables list and a relationships list beside it.",
+    "rec": "maybe",
+    "replaces": "none",
+    "risk": "none"
+   },
+   {
+    "id": "cdb-04",
+    "kind": "idea",
+    "plain": "Steal the import-by-one-query idea: a single metadata query per dialect gives the whole schema.",
+    "rec": "maybe",
+    "replaces": "none",
+    "risk": "none; read for the idea only, AGPL code is not copied"
+   }
+  ]
+ },
+ {
+  "repo": "citrolabs/ego-lite",
+  "url": "https://github.com/citrolabs/ego-lite",
+  "what": "Both licenses are MIT. The scan script hit GitHub's rate limit, so I read the raw READMEs, LICENSE files and two skill files instead; no scan.json exists for either.",
+  "intro": "Both licenses are MIT. The scan script hit GitHub's rate limit, so I read the raw READMEs, LICENSE files and two skill files instead; no scan.json exists for either.",
+  "license": "MIT",
+  "picks": [
+   {
+    "id": "ego-01",
+    "kind": "avoid",
+    "plain": "Use ego lite as the interim browser that opens Command pages.",
+    "rec": "no",
+    "replaces": "Firefox default for opening pages",
+    "risk": "No Windows build; the app downloads from cdn.ego.app and imports Chrome logins."
+   },
+   {
+    "id": "ego-02",
+    "kind": "watch",
+    "plain": "Revisit when the Windows build ships, as a browser an agent can drive in its own Space.",
+    "rec": "maybe",
+    "replaces": "nothing yet",
+    "risk": "Closed beta; browser holds all logins; MIT license is fine."
+   }
+  ]
+ },
+ {
+  "repo": "conorbronsdon/avoid-ai-writing",
+  "url": "https://github.com/conorbronsdon/avoid-ai-writing",
+  "what": "**License and risk.** MIT. The GitHub API rate-limited the scan script (HTTP 403), so I read the raw files instead: README, SKILL.md and references/patterns.md. I saw no hooks or network calls. It is a rewrite skill. We install nothing.",
+  "intro": "**License and risk.** MIT. The GitHub API rate-limited the scan script (HTTP 403), so I read the raw files instead: README, SKILL.md and references/patterns.md. I saw no hooks or network calls. It is a rewrite skill. We install nothing.",
+  "license": "MIT",
+  "picks": [
+   {
+    "id": "aaw-01",
+    "kind": "skill",
+    "plain": "Merges about 100 more stock phrases and the contrast, fake-number and hedge patterns into prose_lint.",
+    "rec": "yes",
+    "replaces": "none (extends prose_lint STOCK)",
+    "risk": "MIT; wording only, no code run."
+   },
+   {
+    "id": "aaw-02",
+    "kind": "skill",
+    "plain": "Adds a --families line to prose_lint: counts per pattern family.",
+    "rec": "yes",
+    "replaces": "none",
+    "risk": "Our own code; MIT patterns only."
+   },
+   {
+    "id": "aaw-03",
+    "kind": "agent",
+    "plain": "Adds eight shape checks to the prose-taste agent.",
+    "rec": "yes",
+    "replaces": "none (extends prose-taste)",
+    "risk": "MIT; wording only."
+   },
+   {
+    "id": "aaw-04",
+    "kind": "skill",
+    "plain": "Install the whole skill and its rewrite modes.",
+    "rec": "skip",
+    "replaces": "none",
+    "risk": "MIT; installs a rewrite pipeline we do not want."
+   },
+   {
+    "id": "aaw-05",
+    "kind": "agent",
+    "plain": "Stand up a team of prose agents (detector, editor, scorer).",
+    "rec": "skip",
+    "replaces": "none",
+    "risk": "Token cost with no gain."
+   },
+   {
+    "id": "aaw-06",
+    "kind": "skill",
+    "plain": "Copy its tier-3 density rule (flag a common word only when it repeats 3% of the text).",
+    "rec": "skip",
+    "replaces": "none",
+    "risk": "MIT; low value."
+   },
+   {
+    "id": "aaw-07",
+    "kind": "skill",
+    "plain": "Copy its hashtag-stuffing and title-case heading checks.",
+    "rec": "skip",
+    "replaces": "none",
+    "risk": "MIT; not our register."
+   },
+   {
+    "id": "aaw-08",
+    "kind": "skill",
+    "plain": "Copy its fake-casual props list (\"checks notes\", \"hot take\").",
+    "rec": "yes",
+    "replaces": "none (extends prose_lint STOCK)",
+    "risk": "MIT; wording only."
+   }
+  ]
+ },
+ {
+  "repo": "coreyhaines31/marketingskills",
+  "url": "https://github.com/coreyhaines31/marketingskills",
+  "what": "**Verdict: take three skills as references, no new seat, leave the rest.** The repo scan script hit the GitHub API rate limit, so I shallow-cloned the repo and judged from all 53 skill descriptions plus a full read of `offers`, `cold-email` and the heads of `pricing` and `launch`. The other skills were judged from descriptions and headings, not line by line, so treat mkt-04 to mkt-09 as provisional.",
+  "intro": "**Verdict: take three skills as references, no new seat, leave the rest.** The repo scan script hit the GitHub API rate limit, so I shallow-cloned the repo and judged from all 53 skill descriptions plus a full read of `offers`, `cold-email` and the heads of `pricing` and `launch`. The other skills were judged from descriptions and headings, not line by line, so treat mkt-04 to mkt-09 as provisional.",
+  "license": "MIT",
+  "picks": [
+   {
+    "id": "mkt-01",
+    "kind": "reference",
+    "plain": "offers: design the thing you sell (value equation, bonus stack, guarantee, honest scarcity, naming, payment). Becomes a marketing-agent reference for BOLO 138's productized offer.",
+    "rec": "yes",
+    "replaces": "none",
+    "risk": "MIT. Hormozi-style bonus stacking can read hypey; keep the skill's own no-fake-urgency rule. Becomes .claude/agents/references/marketing/offers.md"
+   },
+   {
+    "id": "mkt-02",
+    "kind": "reference",
+    "plain": "product-marketing: one context document (product, audience, positioning, voice) that every other skill reads first. Becomes the shared brief the agent loads per venture.",
+    "rec": "yes",
+    "replaces": "none",
+    "risk": "MIT. Context files must stay generic for any public venture; per-venture files go in _PRIVATE. Becomes .claude/agents/references/marketing/product-context.md"
+   },
+   {
+    "id": "mkt-03",
+    "kind": "reference",
+    "plain": "cold-email + prospecting: outreach that reads like a peer, one low-friction ask, personalization tied to the problem, follow-ups, reply handling, compliance notes.",
+    "rec": "yes",
+    "replaces": "none",
+    "risk": "MIT. B2B/SaaS skew; sending setup and list-building parts need legal care (CAN-SPAM, platform rules). Chief sends; the agent only drafts. Becomes .claude/agents/references/marketing/cold-outreach.md"
+   },
+   {
+    "id": "mkt-04",
+    "kind": "reference",
+    "plain": "pricing: packaging, value metric, tiers, anchoring, price tests.",
+    "rec": "maybe",
+    "replaces": "none",
+    "risk": "MIT. Skews to subscription SaaS. Would become .claude/agents/references/marketing/pricing.md"
+   },
+   {
+    "id": "mkt-05",
+    "kind": "reference",
+    "plain": "launch: ORB channel framework, readiness gate, five-phase launch, post-launch actions.",
+    "rec": "maybe",
+    "replaces": "none",
+    "risk": "MIT. Product Hunt content is SaaS-specific; skip it. Would become .claude/agents/references/marketing/launch.md"
+   },
+   {
+    "id": "mkt-06",
+    "kind": "reference",
+    "plain": "emails (lifecycle sequences) plus lead-magnets: welcome, nurture and re-engagement flows; the free report as an email-capture hook.",
+    "rec": "maybe",
+    "replaces": "none",
+    "risk": "MIT. Needs an email platform we do not run. Would become .claude/agents/references/marketing/lifecycle-email.md"
+   },
+   {
+    "id": "mkt-07",
+    "kind": "reference",
+    "plain": "copywriting + copy-editing + cro: page copy rules, an edit pass, and a conversion review of a landing page.",
+    "rec": "maybe",
+    "replaces": "marketing-agent copy review (partly)",
+    "risk": "MIT. Duplicates existing coverage."
+   },
+   {
+    "id": "mkt-08",
+    "kind": "idea",
+    "plain": "seo-audit, schema, ai-seo, programmatic-seo, site-architecture: the SEO set.",
+    "rec": "no",
+    "replaces": "seo-specialist",
+    "risk": "Duplicates a seat; large files (18-34 KB each) cost tokens."
+   },
+   {
+    "id": "mkt-09",
+    "kind": "idea",
+    "plain": "The SaaS and ad-platform skills: ab-testing, ads, ad-creative, aso, paywalls, popups, signup, onboarding, churn-prevention, referrals, revops, attribution, analytics, sms, events, PR, sales-enablement, directory-submissions, image, video.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "MIT. About 700 KB of mostly irrelevant text; load none of it."
+   },
+   {
+    "id": "mkt-10",
+    "kind": "idea",
+    "plain": "Do not install the repo as a plugin or pull tools/ and the partner integrations (Converly, Ploy, AIsa, sponsored README links).",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "Sponsored content; keep it out of the agent's context."
+   }
+  ]
+ },
+ {
+  "repo": "costiash/claude-code-docs",
+  "url": "https://github.com/costiash/claude-code-docs",
+  "what": "",
+  "intro": "",
+  "license": "",
+  "picks": [
+   {
+    "id": "ccd-01",
+    "kind": "reference",
+    "plain": "Use Anthropic's own docs as a read-only reference, kept as a local copy in _PRIVATE/reference/claude-code-docs/ and refreshed by our script on Chief's word.",
+    "rec": "yes",
+    "replaces": "answering hooks, skills and settings questions from memory",
+    "risk": "low: _PRIVATE is gitignored and the repo is public, so the copy must stay out of git (the pages are Anthropic's, not ours to republish)."
+   },
+   {
+    "id": "ccd-02",
+    "kind": "script",
+    "plain": "Write our own mirror script: read llms.txt, fetch each page, save it with a sha256 in a manifest, and list added, removed and changed pages against the last copy.",
+    "rec": "yes",
+    "replaces": "nothing (new: _tools/docs/mirror.py)",
+    "risk": "low: fetch only code.claude.com and platform.claude.com over HTTPS, as the repo does."
+   },
+   {
+    "id": "ccd-03",
+    "kind": "rule",
+    "plain": "Rule: the CDR brings any big docs change to Chief before editing a skill or hook. Big = 5 or more changed pages, or any change under hooks, skills, sub-agents, settings or permissions.",
+    "rec": "yes",
+    "replaces": "nothing (new line in SOP)",
+    "risk": "low"
+   },
+   {
+    "id": "ccd-04",
+    "kind": "tool",
+    "plain": "Do not install the plugin or run install.sh.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "high: network hook on every session start; platform mismatch."
+   },
+   {
+    "id": "ccd-05",
+    "kind": "reference",
+    "plain": "Note: this repo is not a mirror. It holds only a manifest and a prose-free index (about 3 MB) and fetches pages from Anthropic on demand.",
+    "rec": "yes",
+    "replaces": "the assumption that it contains the docs",
+    "risk": "low"
+   },
+   {
+    "id": "ccd-06",
+    "kind": "skill",
+    "plain": "Skip the /docs course generator and the changelog HTML reports.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "low"
+   }
+  ]
+ },
+ {
+  "repo": "d3/d3",
+  "url": "https://github.com/d3/d3",
+  "what": "**Verdict:** keep, as a CDN script only. Repo scan says RISK STOP (one installer, network and telemetry calls in the docs tooling). We never clone or run it. One `<script>` line from cdnjs, version 7.9.0, pinned.",
+  "intro": "**Verdict:** keep, as a CDN script only. Repo scan says RISK STOP (one installer, network and telemetry calls in the docs tooling). We never clone or run it. One `<script>` line from cdnjs, version 7.9.0, pinned.",
+  "license": "",
+  "picks": [
+   {
+    "id": "d3-001",
+    "kind": "library",
+    "plain": "Load d3 v7.9.0 from the cdnjs link inside single-file pages. No install, no repo clone.",
+    "rec": "keep",
+    "replaces": "hand-drawn SVG and Mermaid for any chart where position or links come from data",
+    "risk": "low: CDN script only; pin the version; the repo's own STOP flag covers its build tooling, which we never run"
+   },
+   {
+    "id": "d3-002",
+    "kind": "chart-type",
+    "plain": "Force graph of systems, eras, characters, perspectives, places. Built as fabula-graph.html from real files.",
+    "rec": "keep",
+    "replaces": "Mermaid flowcharts of the same links, which cannot filter or pin",
+    "risk": "low: links are hand-read from the SSOT; refresh needed when canon moves"
+   },
+   {
+    "id": "d3-003",
+    "kind": "chart-type",
+    "plain": "Collapsible tree of what DCUS consists of: twelve S-layers, factions, name lattice.",
+    "rec": "keep",
+    "replaces": "the long markdown table in ssot_03 as the only view",
+    "risk": "low: needs a small structured file of the S-layers first"
+   },
+   {
+    "id": "d3-004",
+    "kind": "chart-type",
+    "plain": "Timeline of the five eras with era 4 overlapping era 2, and fabula events as ticks.",
+    "rec": "keep",
+    "replaces": "the era table in the fabula doc as the only picture",
+    "risk": "low: era dates are mostly unset, so the axis is ordinal, not calendar"
+   },
+   {
+    "id": "d3-005",
+    "kind": "data-step",
+    "plain": "Write one data file, fabula.graph.json, that pages read instead of inline arrays.",
+    "rec": "keep",
+    "replaces": "per-page hand-copied data",
+    "risk": "medium: needs a chosen home (_tools/tm or a new folder); Chief rules"
+   },
+   {
+    "id": "d3-006",
+    "kind": "reference",
+    "plain": "Use the d3 gallery as a pattern library (chord, sunburst, arc diagram). Read only.",
+    "rec": "skip",
+    "replaces": "nothing yet",
+    "risk": "low"
+   },
+   {
+    "id": "d3-007",
+    "kind": "tooling",
+    "plain": "Clone the repo and run its npm build or docs site.",
+    "rec": "skip",
+    "replaces": "nothing",
+    "risk": "RISK STOP: read before trusting, never run"
+   }
+  ]
+ },
+ {
+  "repo": "danielrosehill/Claude-Code-Projects-Index",
+  "url": "https://github.com/danielrosehill/Claude-Code-Projects-Index",
+  "what": "",
+  "intro": "",
+  "license": "",
+  "picks": [
+   {
+    "id": "pidx-01",
+    "kind": "idea",
+    "plain": "Treat a repo as a workspace for non-code work: top-level folders for inputs and outputs, a CLAUDE.md, slash commands, subagents.",
+    "rec": "yes",
+    "replaces": "nothing; confirms the ruled tree",
+    "risk": "Idea only."
+   },
+   {
+    "id": "pidx-02",
+    "kind": "idea",
+    "plain": "Keep sysadmin and day-to-day administration in its own index, 'as distinct from development-related projects'.",
+    "rec": "yes",
+    "replaces": "a mixed root where BOLO, STATE and canon sit side by side",
+    "risk": "Idea only."
+   },
+   {
+    "id": "pidx-03",
+    "kind": "idea",
+    "plain": "One category file per domain, merged into an index by a build script, with a format rubric note.",
+    "rec": "maybe",
+    "replaces": "nothing",
+    "risk": "Python and Astro site build; read only."
+   },
+   {
+    "id": "pidx-04",
+    "kind": "idea",
+    "plain": "Cluster plugins that ship commands, skills and agents once and scaffold a workspace on demand.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "STOP verdict: network fetches in scripts (16 hits), telemetry mentions in 10 files, no license file."
+   }
+  ]
+ },
+ {
+  "repo": "diet103/claude-code-infrastructure-showcase",
+  "url": "https://github.com/diet103/claude-code-infrastructure-showcase",
+  "what": "Read from a shallow clone. The scan script hit the GitHub rate limit (403), so there is no scan.json. Read in full: README, settings.json, hooks README, agents README, commands, skill-rules.json head, dev README.",
+  "intro": "Read from a shallow clone. The scan script hit the GitHub rate limit (403), so there is no scan.json. Read in full: README, settings.json, hooks README, agents README, commands, skill-rules.json head, dev README.",
+  "license": "MIT",
+  "picks": [
+   {
+    "id": "infra-01",
+    "kind": "idea",
+    "plain": "Root README opens as a short map: what to read first, then one line per folder.",
+    "rec": "yes",
+    "replaces": "README.md body (README.old.md stays as archive)",
+    "risk": "Low; text only. Keep it to 12 lines or it becomes another sprawl."
+   },
+   {
+    "id": "infra-02",
+    "kind": "idea",
+    "plain": "A hooks README with one table: hook, event, what it does, whether it can block.",
+    "rec": "yes",
+    "replaces": "Nothing; new _tools/hooks/README.md",
+    "risk": "Low; goes stale if a hook is added without a row."
+   },
+   {
+    "id": "infra-03",
+    "kind": "idea",
+    "plain": "A skills README with one table: skill, proword, one-line job, line count.",
+    "rec": "yes",
+    "replaces": "Nothing; new .claude/skills/README.md",
+    "risk": "Low; keep one source of truth so descriptions do not drift from SKILL.md."
+   },
+   {
+    "id": "infra-04",
+    "kind": "idea",
+    "plain": "A 15-line .claude/README that defines skill, hook, agent in one sentence each and links the three tables.",
+    "rec": "yes",
+    "replaces": "Nothing; new .claude/README.md",
+    "risk": "Low; keep plain register, define on first use."
+   },
+   {
+    "id": "infra-05",
+    "kind": "idea",
+    "plain": "Hook commands use $CLAUDE_PROJECT_DIR instead of an absolute C:/Users path.",
+    "rec": "yes",
+    "replaces": "Absolute paths in .claude/settings.local.json hook commands",
+    "risk": "Medium; a wrong path silently disables a guard. Test each hook once after the change; edit needs Chief's word."
+   },
+   {
+    "id": "infra-06",
+    "kind": "idea",
+    "plain": "One check script that confirms hook paths exist, skills have frontmatter and agents appear in the roster.",
+    "rec": "maybe",
+    "replaces": "Nothing; extends _tools/skills/lint.py",
+    "risk": "Low; must be read-only and run only on Chief's word."
+   },
+   {
+    "id": "infra-07",
+    "kind": "tool",
+    "plain": "skill-activation-prompt: UserPromptSubmit hook that injects mandatory skill activation from regex or AI matching.",
+    "rec": "no",
+    "replaces": "Nothing; prowords stay the only triggers",
+    "risk": "High; hidden instructions in every order, private text leaves the box."
+   },
+   {
+    "id": "infra-08",
+    "kind": "tool",
+    "plain": "skill-verification-guard blocks Edit/Write until a skill is loaded; session-doc-updater makes LLM writes on Stop.",
+    "rec": "no",
+    "replaces": "Nothing",
+    "risk": "High; stalls work on a regex match; unreviewed LLM writes."
+   },
+   {
+    "id": "infra-09",
+    "kind": "tool",
+    "plain": "Node/tsx hook stack, setup.ts wizard and the duplicated .agents/skills tree.",
+    "rec": "no",
+    "replaces": "Nothing",
+    "risk": "Medium; a second runtime to maintain."
+   }
+  ]
+ },
+ {
+  "repo": "google/langextract",
+  "url": "https://github.com/google/langextract",
+  "what": "**Verdict: trial.** Yes to Chief's question, with one correction. It is a library, not an agent. It reads text you give it and returns records. It will not wander the box.",
+  "intro": "**Verdict: trial.** Yes to Chief's question, with one correction. It is a library, not an agent. It reads text you give it and returns records. It will not wander the box.",
+  "license": "Apache-2.0",
+  "picks": [
+   {
+    "id": "lx-01",
+    "kind": "tool",
+    "plain": "Python library that pulls structured records out of long text using an LLM, with each record tied to its exact spot in the source.",
+    "rec": "yes",
+    "replaces": "hand-reading and ad-hoc regex over Zotero notes and PDF text (the _tools/ingest folder is video-only, so nothing there is replaced)",
+    "risk": "Apache-2.0; scan WATCH is CI scripts only, 0 telemetry hits; cloud providers receive the text sent, Ollama keeps it on the box."
+   },
+   {
+    "id": "lx-02",
+    "kind": "schema",
+    "plain": "Fabula-event extraction class: who, what, when, where, era, with the quoted source span.",
+    "rec": "yes",
+    "replaces": "manual event lists",
+    "risk": "Small local models may guess eras; keep only grounded rows and mark the rest provisional."
+   },
+   {
+    "id": "lx-03",
+    "kind": "schema",
+    "plain": "LEECHSEED character-field extraction: layer-tagged attributes (CORE, SOCIAL, WILL, WOUND, DRIVE, FUNCTION) with the quoted evidence line.",
+    "rec": "maybe",
+    "replaces": "manual field-filling from old notes",
+    "risk": "Wrong fields look confident; the source-span check is the guard."
+   }
+  ]
+ },
+ {
+  "repo": "gotalab/cc-sdd",
+  "url": "https://github.com/gotalab/cc-sdd",
+  "what": "We took from OpenSpec the change folder and the WHEN/THEN rule shape (`_sop/`). cc-sdd adds: - Three phases with approval. Requirements, design, tasks, each approved before the next. We already have RECON, ORDER, EXECUTE and ruled \"named, not gated\", so skip the gates. - Steering files. Short project-memory files (product, tech, structure, plus custom ones for testing, security and so on). The rule: 100 to 200 lines, one topic, patterns not file lists, \"if new code follows the pattern, the file needs no update\". - A tasks checklist. Checkboxes with an observable completion line, `_Boundary:_` and `_Depends:_` tags, a parallel mark, and notes carried forward so a run resumes after a crash. - Boundary-first discipline. The spec is the contract; design is free space inside it. Review checks for boundary violations. - A per-task reviewer prompt: \"the implementer's report is context, not evidence\". It belongs to a checker-agent pattern we ruled out; keep only that sentence.",
+  "intro": "Read from the scans, the READMEs and the template files. Nothing was installed. Both repos scan as STOP (cc-sdd: npm installer and 8 auto-trigger skills; Projects-Index: network scripts, no license), so this is ideas only, hand-copied.",
+  "license": "cc-sdd",
+  "picks": [
+   {
+    "id": "sdd-01",
+    "kind": "idea",
+    "plain": "Per-skill steering files: short, single-topic memory files that every brief quotes, kept to 100-200 lines, with the rule that if new work follows the pattern the file needs no update.",
+    "rec": "yes",
+    "replaces": "rulings recalled from memory notes at brief time",
+    "risk": "Copy the idea only. Files are plain markdown, no code."
+   },
+   {
+    "id": "sdd-02",
+    "kind": "idea",
+    "plain": "A tasks checklist with checkboxes, each task carrying an observable completion line plus Boundary and Depends tags; a script ticks a box only when its check passes.",
+    "rec": "yes",
+    "replaces": "free-text order lists in briefs",
+    "risk": "Copy the format only."
+   },
+   {
+    "id": "sdd-03",
+    "kind": "idea",
+    "plain": "Requirements, design, tasks as three approved phases, with a human gate between each.",
+    "rec": "no",
+    "replaces": "nothing; overlaps RECON/ORDER/EXECUTE",
+    "risk": "None, not adopted."
+   },
+   {
+    "id": "sdd-04",
+    "kind": "idea",
+    "plain": "A reviewer prompt per task that treats the implementer's report as context, not evidence, and returns APPROVED or REJECTED with remediation.",
+    "rec": "maybe",
+    "replaces": "nothing",
+    "risk": "A reviewer agent per task breaks the formation doctrine (never a checker agent)."
+   },
+   {
+    "id": "sdd-05",
+    "kind": "install",
+    "plain": "Run npx cc-sdd to install the 17-skill kiro workflow.",
+    "rec": "no",
+    "replaces": "our own skills",
+    "risk": "STOP verdict: npm installer, 8 auto-trigger skills, telemetry mentions in 4 files, GitHub workflows that call Claude."
+   }
+  ]
+ },
+ {
+  "repo": "hesreallyhim/awesome-claude-code",
+  "url": "https://github.com/hesreallyhim/awesome-claude-code",
+  "what": "",
+  "intro": "",
+  "license": "",
+  "picks": [
+   {
+    "id": "acc-01",
+    "kind": "skill",
+    "plain": "Checks every incoming skill or plugin for prompt injection and exfiltration patterns before we read it.",
+    "rec": "maybe",
+    "replaces": "none",
+    "risk": "Apache-2.0; LLM analysis on by default sends file contents out, OSV.dev always queried; uv installer; list license CC BY-NC-ND 4.0 (no derivatives, non-commercial; link only, never copy list text)"
+   },
+   {
+    "id": "acc-02",
+    "kind": "hook",
+    "plain": "Blocks destructive git and filesystem commands and secret-file reads before they run, telling the agent why.",
+    "rec": "maybe",
+    "replaces": "_tools/hooks/no_probe.py",
+    "risk": "MIT; Node 18+ npx installer plus PreToolUse hook; telemetry not stated; list license CC BY-NC-ND 4.0 (no derivatives, non-commercial; link only, never copy list text)"
+   },
+   {
+    "id": "acc-03",
+    "kind": "hook",
+    "plain": "Parses bash commands with a pure-Python parser to auto-approve read-only ones and prompt on destructive ones.",
+    "rec": "maybe",
+    "replaces": "none",
+    "risk": "MIT; PreToolUse hook on every Bash call; telemetry not stated; list license CC BY-NC-ND 4.0 (no derivatives, non-commercial; link only, never copy list text)"
+   },
+   {
+    "id": "acc-04",
+    "kind": "script",
+    "plain": "Measures the token cost of everything sent before the first prompt (skills, agents, memory, hooks) and flags what we never use.",
+    "rec": "maybe",
+    "replaces": "context-budget skill",
+    "risk": "MIT; npx, starts configured MCP servers to measure; no telemetry claimed; its fix mode edits settings; list license CC BY-NC-ND 4.0 (no derivatives, non-commercial; link only, never copy list text)"
+   },
+   {
+    "id": "acc-05",
+    "kind": "script",
+    "plain": "Local PR-style page for uncommitted changes where Chief comments on lines and Claude gets the batch back; one stdlib Python file on 127.0.0.1.",
+    "rec": "yes",
+    "replaces": "none",
+    "risk": "MIT; marketplace plugin install (skip it, read the file by hand); localhost only; writes ~/.claude/reviews/; list license CC BY-NC-ND 4.0 (no derivatives, non-commercial; link only, never copy list text)"
+   },
+   {
+    "id": "acc-06",
+    "kind": "script",
+    "plain": "Reads session transcripts and draws a project's history as sittings, tasks and prompts, priced at API rates, offline.",
+    "rec": "maybe",
+    "replaces": "_tools/usage",
+    "risk": "MIT; irm|iex and curl installers not allowed; sends nothing, localhost view; list license CC BY-NC-ND 4.0 (no derivatives, non-commercial; link only, never copy list text)"
+   },
+   {
+    "id": "acc-07",
+    "kind": "script",
+    "plain": "Finds session waste: repeated file reads, oversized CLAUDE.md, unused MCP servers, skills and agents, sessions over twice the average cost.",
+    "rec": "yes",
+    "replaces": "_tools/usage",
+    "risk": "MIT; Node 22 install; desktop apps may send opt-in anonymous reports, CLI sends nothing; list license CC BY-NC-ND 4.0 (no derivatives, non-commercial; link only, never copy list text)"
+   },
+   {
+    "id": "acc-08",
+    "kind": "idea",
+    "plain": "Waste-check script: one Python pass over our local transcripts counting repeated reads and never-fired skills and agents, output as a glass page.",
+    "rec": "yes",
+    "replaces": "none",
+    "risk": "none (our own code, idea only); list license CC BY-NC-ND 4.0 (no derivatives, non-commercial; link only, never copy list text)"
+   },
+   {
+    "id": "acc-09",
+    "kind": "idea",
+    "plain": "Intake-pick glass page: each repo pick shows the file, plain sentence, risk line and Keep or Skip, fed from picks.json.",
+    "rec": "yes",
+    "replaces": "intake skill output",
+    "risk": "none; list license CC BY-NC-ND 4.0 (no derivatives, non-commercial; link only, never copy list text)"
+   },
+   {
+    "id": "acc-10",
+    "kind": "idea",
+    "plain": "Skill intake scanner: a stdlib Python script that greps a downloaded skill for hooks, installers, network calls and base64 before any seat reads it.",
+    "rec": "yes",
+    "replaces": "none",
+    "risk": "none (our own code); list license CC BY-NC-ND 4.0 (no derivatives, non-commercial; link only, never copy list text)"
+   },
+   {
+    "id": "acc-11",
+    "kind": "idea",
+    "plain": "Three-file notes for long builds (plan, key decisions and files, task checklist) so a context reset loses nothing.",
+    "rec": "maybe",
+    "replaces": "dope-sheet skill",
+    "risk": "MIT; its skill-activation hook is an auto-trigger (rejected) and needs Node 18; list license CC BY-NC-ND 4.0 (no derivatives, non-commercial; link only, never copy list text)"
+   },
+   {
+    "id": "acc-12",
+    "kind": "idea",
+    "plain": "Command guard v2: extend no_probe.py with a destructive-command list (reset --hard, rm -rf, force push) after reading the Safety Net rules.",
+    "rec": "maybe",
+    "replaces": "_tools/hooks/no_probe.py",
+    "risk": "MIT source, we copy no code; list license CC BY-NC-ND 4.0 (no derivatives, non-commercial; link only, never copy list text)"
+   },
+   {
+    "id": "acc-13",
+    "kind": "skill",
+    "plain": "Verification-before-completion and systematic-debugging skills: no claiming a fix works until the check ran.",
+    "rec": "maybe",
+    "replaces": "none",
+    "risk": "MIT; plugin install plus SessionStart bootstrap hook (reject); list license CC BY-NC-ND 4.0 (no derivatives, non-commercial; link only, never copy list text)"
+   },
+   {
+    "id": "acc-14",
+    "kind": "skill",
+    "plain": "Differential-review and insecure-defaults skills from Trail of Bits: review a diff for what it newly exposes.",
+    "rec": "maybe",
+    "replaces": "security-reviewer agent",
+    "risk": "CC-BY-SA-4.0 on the skills (share-alike); marketplace install, skip; list license CC BY-NC-ND 4.0 (no derivatives, non-commercial; link only, never copy list text)"
+   },
+   {
+    "id": "acc-15",
+    "kind": "idea",
+    "plain": "Judge-before-accept loop: a task runs, an independent judge verifies, retry until it passes.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "GPL-3.0 copyleft; reflect hook needs bun and fires on a keyword; list license CC BY-NC-ND 4.0 (no derivatives, non-commercial; link only, never copy list text)"
+   },
+   {
+    "id": "acc-16",
+    "kind": "skill",
+    "plain": "Anthropic's official skills repo: the SKILL.md template and example skills as the reference for writing ours.",
+    "rec": "yes",
+    "replaces": "none",
+    "risk": "per-skill licenses vary, check each; nothing to install to read; list license CC BY-NC-ND 4.0 (no derivatives, non-commercial; link only, never copy list text)"
+   },
+   {
+    "id": "acc-17",
+    "kind": "idea",
+    "plain": "Fold the compaction and just-in-time retrieval rules from Anthropic's context-engineering article into our SOP notes.",
+    "rec": "yes",
+    "replaces": "strategic-compact skill",
+    "risk": "none (reading only); list license CC BY-NC-ND 4.0 (no derivatives, non-commercial; link only, never copy list text)"
+   },
+   {
+    "id": "acc-18",
+    "kind": "idea",
+    "plain": "Use Anthropic's Steering Claude Code article to settle skill versus hook versus subagent for each new feature.",
+    "rec": "yes",
+    "replaces": "none",
+    "risk": "none (reading only); list license CC BY-NC-ND 4.0 (no derivatives, non-commercial; link only, never copy list text)"
+   },
+   {
+    "id": "acc-19",
+    "kind": "idea",
+    "plain": "Cross-check our hub-and-spoke formation against Anthropic's Building Effective Agents patterns.",
+    "rec": "maybe",
+    "replaces": "agent formation doctrine",
+    "risk": "none (reading only); list license CC BY-NC-ND 4.0 (no derivatives, non-commercial; link only, never copy list text)"
+   },
+   {
+    "id": "acc-20",
+    "kind": "script",
+    "plain": "Records an agent run through a local proxy and replays it offline or on another model.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "Apache-2.0; npm global install, local proxy, optional TLS-interception CA; list license CC BY-NC-ND 4.0 (no derivatives, non-commercial; link only, never copy list text)"
+   },
+   {
+    "id": "acc-21",
+    "kind": "idea",
+    "plain": "Skill-pinning check: hash each SKILL.md and agent file and flag any change since the last Oscar Mike.",
+    "rec": "maybe",
+    "replaces": "config-gc skill",
+    "risk": "unread beyond list blurb; idea only, no install; list license CC BY-NC-ND 4.0 (no derivatives, non-commercial; link only, never copy list text)"
+   },
+   {
+    "id": "acc-22",
+    "kind": "skill",
+    "plain": "Caveman plugin that compresses replies into fragments to save tokens.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "plugin install, hooks not checked; list license CC BY-NC-ND 4.0 (no derivatives, non-commercial; link only, never copy list text)"
+   }
+  ]
+ },
+ {
+  "repo": "hluaguo/learn-faster-kit",
+  "url": "https://github.com/hluaguo/learn-faster-kit",
+  "what": "License is MIT, so we may adapt it. The kit installs through uv, a launcher and a system-prompt swap. We run none of that. We take ideas only.",
+  "intro": "License is MIT, so we may adapt it. The kit installs through uv, a launcher and a system-prompt swap. We run none of that. We take ideas only.",
+  "license": "MIT",
+  "picks": [
+   {
+    "id": "lfk-01",
+    "kind": "agent",
+    "plain": "practice-creator (balanced): makes 5-10 mixed recall questions with an answer key.",
+    "rec": "yes",
+    "replaces": "Hand-coding a question set each time",
+    "risk": "Low. Kit gives it Write and Edit; ours returns a report only."
+   },
+   {
+    "id": "lfk-02",
+    "kind": "agent",
+    "plain": "practice-creator (practical): 3-5 hands-on exercises with expected outcomes and solution notes.",
+    "rec": "maybe",
+    "replaces": "Ad hoc exercise writing",
+    "risk": "Low. Exercise lists can read as noise."
+   },
+   {
+    "id": "lfk-03",
+    "kind": "agent",
+    "plain": "practice-creator (programming): builds project scaffolds with TODO files and test checklists.",
+    "rec": "no",
+    "replaces": "Nothing",
+    "risk": "Scope creep into build-outs."
+   },
+   {
+    "id": "lfk-04",
+    "kind": "agent",
+    "plain": "exam-generator: searches the web for real exams, writes a printable paper and key, converts to PDF.",
+    "rec": "no",
+    "replaces": "Nothing",
+    "risk": "Wide tool set, runs Bash, web fetches."
+   },
+   {
+    "id": "lfk-05",
+    "kind": "command",
+    "plain": "learn (balanced): asks level and focus, builds a 3-4 phase syllabus with checkboxes.",
+    "rec": "yes",
+    "replaces": "Coding a topic tree each time",
+    "risk": "Syllabus grows too large; cap it."
+   },
+   {
+    "id": "lfk-06",
+    "kind": "command",
+    "plain": "progress (balanced): reads topic files and prints a progress report with milestones and streaks.",
+    "rec": "maybe",
+    "replaces": "Nothing yet",
+    "risk": "Low. Cheerleading text."
+   },
+   {
+    "id": "lfk-07",
+    "kind": "command",
+    "plain": "review (balanced): asks for a concept from memory, grades it, reschedules misses for tomorrow.",
+    "rec": "yes",
+    "replaces": "Manual cold re-check bookkeeping",
+    "risk": "Grading by an agent conflicts with the no-checker rule; use the say-line match instead."
+   },
+   {
+    "id": "lfk-08",
+    "kind": "command",
+    "plain": "generate-exam: gathers topic state and calls exam-generator.",
+    "rec": "no",
+    "replaces": "Nothing",
+    "risk": "Pulls in PDF and web tooling."
+   },
+   {
+    "id": "lfk-09",
+    "kind": "command",
+    "plain": "learn (exam): searches the web for an exam blueprint and builds a study schedule with mock tests.",
+    "rec": "no",
+    "replaces": "Nothing",
+    "risk": "Runs a shell line on load."
+   },
+   {
+    "id": "lfk-10",
+    "kind": "command",
+    "plain": "progress (exam): same progress report with exam-score framing.",
+    "rec": "no",
+    "replaces": "Nothing",
+    "risk": "None."
+   },
+   {
+    "id": "lfk-11",
+    "kind": "command",
+    "plain": "review (exam): same recall review, exam flavored.",
+    "rec": "no",
+    "replaces": "Nothing",
+    "risk": "None."
+   },
+   {
+    "id": "lfk-12",
+    "kind": "command",
+    "plain": "learn (practical): project-based syllabus with micro, mini and real projects.",
+    "rec": "no",
+    "replaces": "Nothing",
+    "risk": "Build-out pressure."
+   },
+   {
+    "id": "lfk-13",
+    "kind": "command",
+    "plain": "progress (practical): same progress report.",
+    "rec": "no",
+    "replaces": "Nothing",
+    "risk": "None."
+   },
+   {
+    "id": "lfk-14",
+    "kind": "command",
+    "plain": "review (practical): same recall review.",
+    "rec": "no",
+    "replaces": "Nothing",
+    "risk": "None."
+   },
+   {
+    "id": "lfk-15",
+    "kind": "command",
+    "plain": "learn (programming): project-based coding syllabus, tracks projects.md and ideas.md.",
+    "rec": "no",
+    "replaces": "Nothing",
+    "risk": "None."
+   },
+   {
+    "id": "lfk-16",
+    "kind": "command",
+    "plain": "learn (theory): concept syllabus with five-part sessions ending in a 10-minute teach-back, plus a one-sentence core idea prompt.",
+    "rec": "yes",
+    "replaces": "Re-explaining the method each session",
+    "risk": "A 60-minute five-step session breaks one-part-per-reply; use only the order of ideas."
+   },
+   {
+    "id": "lfk-17",
+    "kind": "command",
+    "plain": "progress (theory): same progress report.",
+    "rec": "no",
+    "replaces": "Nothing",
+    "risk": "None."
+   },
+   {
+    "id": "lfk-18",
+    "kind": "command",
+    "plain": "review (theory): same recall review.",
+    "rec": "no",
+    "replaces": "Nothing",
+    "risk": "None."
+   },
+   {
+    "id": "lfk-19",
+    "kind": "script",
+    "plain": "review_scheduler.py: a spaced-repetition scheduler script (listed in the file tree, not read).",
+    "rec": "maybe",
+    "replaces": "Hand-kept re-check dates",
+    "risk": "Unread; the installer and launcher are never run."
+   }
+  ]
+ },
+ {
+  "repo": "latent-spaces/brag",
+  "url": "https://github.com/latent-spaces/brag",
+  "what": "",
+  "intro": "",
+  "license": "",
+  "picks": [
+   {
+    "id": "brag-01",
+    "kind": "build",
+    "plain": "Use /brag-slim once to make a 20-second pitch video of the Command from its public pages.",
+    "rec": "yes",
+    "replaces": "explaining the Command out loud",
+    "risk": "Needs Node 22 and ffmpeg; the plain brag path needs Hyperframes via npx, against our no-Node rule; point it only at public pages."
+   },
+   {
+    "id": "brag-02",
+    "kind": "avoid",
+    "plain": "Use letsbrag.app, the hosted version.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "Content leaves the box."
+   },
+   {
+    "id": "brag-03",
+    "kind": "avoid",
+    "plain": "Use brag to translate non-English Stash videos.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "Wrong tool."
+   }
+  ]
+ },
+ {
+  "repo": "lutzroeder/netron",
+  "url": "https://github.com/lutzroeder/netron",
+  "what": "",
+  "intro": "",
+  "license": "",
+  "picks": [
+   {
+    "id": "netron-01",
+    "kind": "tool",
+    "plain": "Open Netron on call (desktop app or the browser build) to look at a DARKROOM model file's layers and shapes.",
+    "rec": "yes",
+    "replaces": "none",
+    "risk": "MIT; installers 29, telemetry 192 hits are mostly model-format code and the Electron shell; use the desktop release or pip run on demand, nothing installed by us"
+   },
+   {
+    "id": "netron-02",
+    "kind": "step",
+    "plain": "Add one line to the pytorch-build-resolver agent: when a shape mismatch hides in a saved model, tell Chief to open the file in Netron and read the layer sizes.",
+    "rec": "maybe",
+    "replaces": "none (extends .claude/agents/pytorch-build-resolver.md)",
+    "risk": "none"
+   },
+   {
+    "id": "netron-03",
+    "kind": "skip",
+    "plain": "Build a Netron agent or MCP server that renders model graphs for Claude.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "would add a Node app and Electron dependency"
+   },
+   {
+    "id": "netron-04",
+    "kind": "idea",
+    "plain": "Steal the look: layered graph with a click-to-open properties sidebar for one node.",
+    "rec": "maybe",
+    "replaces": "none",
+    "risk": "none"
+   }
+  ]
+ },
+ {
+  "repo": "mehdibha/dotUI",
+  "url": "https://github.com/mehdibha/dotUI",
+  "what": "",
+  "intro": "",
+  "license": "",
+  "picks": [
+   {
+    "id": "dotui-01",
+    "kind": "idea",
+    "plain": "Hand the ui-builder agent dotUI's design-token approach: one token file for color, type, density and radius.",
+    "rec": "yes",
+    "replaces": "scattered per-page CSS colors",
+    "risk": "None as an idea."
+   },
+   {
+    "id": "dotui-02",
+    "kind": "idea",
+    "plain": "Borrow the live-preview loop: change a token, see all components update at once.",
+    "rec": "maybe",
+    "replaces": "nothing",
+    "risk": "Low."
+   },
+   {
+    "id": "dotui-03",
+    "kind": "code",
+    "plain": "Install dotUI or its shadcn components into the Command.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "STOP: installers 24, telemetry 3, network 7, auto-trigger 2."
+   },
+   {
+    "id": "dotui-04",
+    "kind": "idea",
+    "plain": "Use the repo's .claude skills list as a model for a UI-builder agent file.",
+    "rec": "maybe",
+    "replaces": "nothing",
+    "risk": "Hooks and auto-trigger flags; read only."
+   }
+  ]
+ },
+ {
+  "repo": "morluto/rea",
+  "url": "https://github.com/morluto/rea",
+  "what": "**What it is.** rea (\"Reverse Engineer Anything\") is an MCP server, a plug-in that lets an AI agent take apart other software. It reads native programs, Electron apps, .NET files, Android apps, network captures, firmware and websites. You run `npx rea-agents setup`; it edits your agent's config (with backups) and can install Hopper, a disassembler. It needs Node 22+, and Ghidra, IDA or Hopper for native work. License is MIT. It says analysis runs locally; the agent's model provider still sees the results.",
+  "intro": "**What it is.** rea (\"Reverse Engineer Anything\") is an MCP server, a plug-in that lets an AI agent take apart other software. It reads native programs, Electron apps, .NET files, Android apps, network captures, firmware and websites. You run `npx rea-agents setup`; it edits your agent's config (with backups) and can install Hopper, a disassembler. It needs Node 22+, and Ghidra, IDA or Hopper for native work. License is MIT. It says analysis runs locally; the agent's model provider still sees the results.",
+  "license": "MIT",
+  "picks": [
+   {
+    "id": "rea-01",
+    "kind": "tool",
+    "plain": "Install rea as our reverse-engineering tool (npx rea-agents setup).",
+    "rec": "skip",
+    "replaces": "nothing",
+    "risk": "high: scan verdict STOP; setup edits agent config and can install Hopper; 256 installer hits, 74 network hits; needs Node 22+"
+   },
+   {
+    "id": "rea-02",
+    "kind": "script",
+    "plain": "Write our own small layout-reader: give it a page URL, get back a layout.json (section order, grid, colors, fonts, spacing) we can rebuild in our glass.",
+    "rec": "yes",
+    "replaces": "nothing (new: _tools/intake/lookalike.py)",
+    "risk": "low: stage 1 is plain urllib fetch; copy structure and ideas only, never text, images or brand"
+   },
+   {
+    "id": "rea-03",
+    "kind": "method",
+    "plain": "Borrow the disclaimer habit: every copy job records the source URL, the date, and what was taken (structure) versus left (text, images, brand).",
+    "rec": "yes",
+    "replaces": "nothing",
+    "risk": "low: text only"
+   }
+  ]
+ },
+ {
+  "repo": "obra/superpowers",
+  "url": "https://github.com/obra/superpowers",
+  "what": "A skills framework is a folder of short instruction files that an agent loads only when the job calls for them. Each skill is one SKILL.md with a name and a one-line description. The agent sees only the descriptions all the time. It opens the full file when a description matches the task.",
+  "intro": "Read from a shallow clone (the GitHub API scan hit its rate limit, so scan.json was not written). MIT, Jesse Vincent. 15 skills, one SessionStart hook.",
+  "license": "MIT",
+  "picks": [
+   {
+    "id": "sp-01",
+    "kind": "idea",
+    "plain": "Write each skill description as when-to-fire only, never what the skill does.",
+    "rec": "yes",
+    "replaces": "formation summaries in 13 SKILL.md descriptions; adds a rule to skill-builder",
+    "risk": "Low. Keep every proword so triggers do not change; check the digest still lists them."
+   },
+   {
+    "id": "sp-02",
+    "kind": "idea",
+    "plain": "Test a skill before shipping: run the task with no skill, record how the agent fails, write the skill against those failures, re-run.",
+    "rec": "yes",
+    "replaces": "nothing; new skill skill-test",
+    "risk": "Costs a few agent runs per skill; the pressure scenarios must be written by hand."
+   },
+   {
+    "id": "sp-03",
+    "kind": "idea",
+    "plain": "Keep a ledger file for every long run: first line names the order, one line per finished step, trust it over memory after a reset.",
+    "rec": "yes",
+    "replaces": "ad-hoc cron reports and STATE bullets for runs",
+    "risk": "Low; must stay in _CACHE, which is public, so no private detail."
+   },
+   {
+    "id": "sp-04",
+    "kind": "skill",
+    "plain": "Verify before you say done: run the proving command in this turn, read its output, then make the claim.",
+    "rec": "yes",
+    "replaces": "nothing; new skill verify",
+    "risk": "Low; keep it short (their own target is under 200 words)."
+   },
+   {
+    "id": "sp-05",
+    "kind": "idea",
+    "plain": "Plan template with an Interfaces block per task, a Global Constraints section, and a proportion check (a plan longer than the code is a transcript).",
+    "rec": "maybe",
+    "replaces": "planner's free-form phases",
+    "risk": "Low; skip their commit steps and test-first steps, which do not fit our script work."
+   },
+   {
+    "id": "sp-06",
+    "kind": "idea",
+    "plain": "Record every judgment call as a Ruling line: what, why, cost if wrong; stop only for four named reasons.",
+    "rec": "maybe",
+    "replaces": "nothing; adds to the ledger",
+    "risk": "Clashes with 'go is the order, not the build-out' if applied to every go. Scope it to named runs."
+   },
+   {
+    "id": "sp-07",
+    "kind": "idea",
+    "plain": "Name the model on every dispatch and use the least capable that fits; batch small same-shape edits into one brief.",
+    "rec": "maybe",
+    "replaces": "nothing; one paragraph in agents/README.md",
+    "risk": "Low."
+   },
+   {
+    "id": "sp-08",
+    "kind": "idea",
+    "plain": "When relaying a reviewer's findings: restate, check against the code and the day's rulings, then act; no performative praise.",
+    "rec": "maybe",
+    "replaces": "nothing; one SOP line next to 1.24",
+    "risk": "Low."
+   },
+   {
+    "id": "sp-09",
+    "kind": "idea",
+    "plain": "A session-misfire diagnosis skill that reads the transcript and reports what went wrong with line evidence.",
+    "rec": "maybe",
+    "replaces": "nothing; overlaps skill-optimizer",
+    "risk": "Reads transcripts, so only on an order that names the transcript (no-probing rule)."
+   },
+   {
+    "id": "sp-10",
+    "kind": "idea",
+    "plain": "Auto-trigger bootstrap: 'if 1% chance a skill applies, you must invoke it' loaded every session.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "High clash with CLAUDE.md and SOP skill rules."
+   },
+   {
+    "id": "sp-11",
+    "kind": "idea",
+    "plain": "Per-task reviewer subagent plus up to five fix rounds, then a whole-branch review agent.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "High clash with BOLO 54 and the roster rule."
+   },
+   {
+    "id": "sp-12",
+    "kind": "idea",
+    "plain": "Finishing-a-branch menu (merge, push and PR, keep, discard) and git worktree isolation.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "Pushing would make private work public (repo is public)."
+   },
+   {
+    "id": "sp-13",
+    "kind": "idea",
+    "plain": "TDD iron law: no production code without a failing test first; delete code written before the test.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "Low risk to skip; revisit if a script grows a test suite."
+   }
+  ]
+ },
+ {
+  "repo": "pytorch/rl",
+  "url": "https://github.com/pytorch/rl",
+  "what": "Scan note: the GitHub API was rate-limited, so the scan did not run. README and license (MIT, Meta) were read from the raw files. Stars and last push are unchecked.",
+  "intro": "Scan note: the GitHub API was rate-limited, so the scan did not run. README and license (MIT, Meta) were read from the raw files. Stars and last push are unchecked.",
+  "license": "MIT",
+  "picks": [
+   {
+    "id": "rl-01",
+    "kind": "concept",
+    "plain": "Reinforcement learning is a program (the agent) that tries actions in a world, gets a reward score, and slowly learns which actions pay.",
+    "rec": "yes",
+    "replaces": "none",
+    "risk": "Concept only; no install, no cost."
+   },
+   {
+    "id": "rl-02",
+    "kind": "script",
+    "plain": "A 50-line bandit that learns which fresh-hour sets Chief keeps, from the played ledger, and picks the next hour with a bit of controlled randomness.",
+    "rec": "yes",
+    "replaces": "the plain shuffle in the fresh-hour picker",
+    "risk": "Private ledger detail stays in _PRIVATE; the script must not write set names into public files."
+   },
+   {
+    "id": "rl-03",
+    "kind": "experiment",
+    "plain": "Agents in the fabula world learn behaviour from rules and rewards, so story events emerge instead of being written.",
+    "rec": "maybe",
+    "replaces": "hand-scripted event lists",
+    "risk": "Weeks of design; multi-agent RL is hard to steer and the agents may learn exploits, not drama."
+   },
+   {
+    "id": "rl-04",
+    "kind": "library",
+    "plain": "TorchRL, Meta's MIT-licensed PyTorch toolkit for RL: environments, policies, replay buffers, collectors, ready-made algorithms.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "MIT; heavy install (torch, tensordict), steep learning curve; revisit when BOLO 101 has a world to plug in. The scan was rate-limited, so stars and push date are unchecked."
+   }
+  ]
+ },
+ {
+  "repo": "rougier/scientific-visualization-book",
+  "url": "https://github.com/rougier/scientific-visualization-book",
+  "what": "",
+  "intro": "",
+  "license": "",
+  "picks": [
+   {
+    "id": "svb-01",
+    "kind": "rules",
+    "plain": "The ten-simple-rules idea set: message, audience, caption, no chartjunk.",
+    "rec": "yes",
+    "replaces": "nothing",
+    "risk": "CC-BY-NC-SA: ideas only, copy no text or figures."
+   },
+   {
+    "id": "svb-02",
+    "kind": "rules",
+    "plain": "Anatomy of a figure: the parts of a plot and how to size them.",
+    "rec": "maybe",
+    "replaces": "nothing",
+    "risk": "Python code; only useful if we draw PNG charts."
+   },
+   {
+    "id": "svb-03",
+    "kind": "rules",
+    "plain": "Colors chapter: palettes, alpha, color for emphasis.",
+    "rec": "maybe",
+    "replaces": "nothing",
+    "risk": "No palette change allowed."
+   },
+   {
+    "id": "svb-04",
+    "kind": "rules",
+    "plain": "Typography chapter: sizes, weights, tick labels.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "Style conflict."
+   },
+   {
+    "id": "svb-05",
+    "kind": "code",
+    "plain": "Matplotlib recipes for figure types.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "Scan: installers 2, network 42."
+   },
+   {
+    "id": "svb-06",
+    "kind": "book",
+    "plain": "The full PDF as a reading reference.",
+    "rec": "maybe",
+    "replaces": "nothing",
+    "risk": "Large repo (~290 MB); never copy into ours."
+   },
+   {
+    "id": "svb-07",
+    "kind": "rules",
+    "plain": "3D, animation and optimization parts.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "Conflicts with the no-3D rule."
+   },
+   {
+    "id": "svb-08",
+    "kind": "showcase",
+    "plain": "Part IV showcase figures.",
+    "rec": "no",
+    "replaces": "nothing",
+    "risk": "CC-BY-NC-SA figures."
+   }
+  ]
+ },
+ {
+  "repo": "ruvnet/ruflo",
+  "url": "https://github.com/ruvnet/ruflo",
+  "what": "",
+  "intro": "",
+  "license": "",
+  "picks": [
+   {
+    "id": "ruflo-01",
+    "kind": "idea",
+    "plain": "One Command Desk page as the front page: stations, waves, calls, replies, boards on a single screen.",
+    "rec": "yes",
+    "replaces": "Opening the sit rep, SOI, Pull Queue glass and Traffic Deck one by one",
+    "risk": "low; static page, placeholder-first"
+   },
+   {
+    "id": "ruflo-02",
+    "kind": "idea",
+    "plain": "Left icon rail that switches sections (Stations, Waves, Calls, Boards), collapsing to icons on phone width.",
+    "rec": "yes",
+    "replaces": "Scrolling one long page",
+    "risk": "low"
+   },
+   {
+    "id": "ruflo-03",
+    "kind": "idea",
+    "plain": "Live tiles with a pulsing GO / NO-GO dot per station.",
+    "rec": "yes",
+    "replaces": "The station poll text above the sit rep board",
+    "risk": "low; real data needs a status endpoint later"
+   },
+   {
+    "id": "ruflo-04",
+    "kind": "idea",
+    "plain": "Animated progress bars for running pull waves, with a shimmer while loading.",
+    "rec": "yes",
+    "replaces": "Reading pull_queue.py report text",
+    "risk": "low"
+   },
+   {
+    "id": "ruflo-05",
+    "kind": "idea",
+    "plain": "Metric cards row with numbers that count up when values change.",
+    "rec": "maybe",
+    "replaces": "Plain counts",
+    "risk": "low"
+   },
+   {
+    "id": "ruflo-06",
+    "kind": "idea",
+    "plain": "Breadcrumb drill-down (Desk > BOLO > its DOPE SHEET).",
+    "rec": "maybe",
+    "replaces": "Hunting the page registry",
+    "risk": "low"
+   },
+   {
+    "id": "ruflo-07",
+    "kind": "idea",
+    "plain": "Boot-check animation on first load (stations tick GO one by one).",
+    "rec": "maybe",
+    "replaces": "Nothing",
+    "risk": "low; keep under 2 seconds"
+   },
+   {
+    "id": "ruflo-08",
+    "kind": "idea",
+    "plain": "Empty states as dashed boxes with a hint line.",
+    "rec": "yes",
+    "replaces": "Blank panels",
+    "risk": "low"
+   },
+   {
+    "id": "ruflo-09",
+    "kind": "idea",
+    "plain": "Keyboard shortcuts 1-4 to switch desk sections.",
+    "rec": "maybe",
+    "replaces": "Mouse clicks",
+    "risk": "low"
+   },
+   {
+    "id": "ruflo-10",
+    "kind": "idea",
+    "plain": "Switchable color palettes (Theme Studio).",
+    "rec": "no",
+    "replaces": "Nothing",
+    "risk": "conflicts with default-colorway ruling"
+   },
+   {
+    "id": "ruflo-11",
+    "kind": "hook",
+    "plain": "Any of the 817 hook files / helpers.",
+    "rec": "no",
+    "replaces": "Nothing",
+    "risk": "high; untrusted code"
+   },
+   {
+    "id": "ruflo-12",
+    "kind": "script",
+    "plain": "npx ruflo tui and the 57 installers.",
+    "rec": "no",
+    "replaces": "Nothing",
+    "risk": "high"
+   }
+  ]
+ },
+ {
+  "repo": "sickn33/agentic-awesome-skills",
+  "url": "https://github.com/sickn33/agentic-awesome-skills",
+  "what": "",
+  "intro": "",
+  "license": "",
+  "picks": [
+   {
+    "id": "sas-01",
+    "kind": "skill",
+    "plain": "Session handoff: a 6-step snapshot (git status first, goal vs verified state, decisions, next steps) before a reset.",
+    "rec": "yes",
+    "replaces": "oscar-mike: add the git-grounded verified-vs-partial section to the Ready Rack note script",
+    "risk": "MIT (alapha888/session-handoff-kit). Read-only, no installer, no auto-trigger."
+   },
+   {
+    "id": "sas-02",
+    "kind": "skill",
+    "plain": "Avoid AI Writing: 21 pattern categories and a 43-entry word swap table (leverage to use).",
+    "rec": "yes",
+    "replaces": "writing: extend prose_lint.py word table; feeds the prose-taste agent",
+    "risk": "Source conorbronsdon/avoid-ai-writing; no per-skill license field in frontmatter, repo MIT; verify upstream before copying table text. No installer."
+   },
+   {
+    "id": "sas-03",
+    "kind": "skill",
+    "plain": "Deep Research Report Framework: define the question, tier the sources, mark unknowns.",
+    "rec": "yes",
+    "replaces": "collect: add source-tier and unknowns lines to the MS writer brief",
+    "risk": "MIT (alapha888/agent-skills-en). Prompt-only."
+   },
+   {
+    "id": "sas-04",
+    "kind": "skill",
+    "plain": "Research Prompt: turn a vague need into one self-contained paragraph.",
+    "rec": "yes",
+    "replaces": "collect: opening line of each PS/MS batch brief; also intake brief template",
+    "risk": "MIT (davidondrej/skills). Prompt-only."
+   },
+   {
+    "id": "sas-05",
+    "kind": "skill",
+    "plain": "Skill Security Audit: read-only review of a third-party skill, MCP server or extension before install.",
+    "rec": "yes",
+    "replaces": "intake: judging checklist for the specialist who reads each pick",
+    "risk": "CC0-1.0 (sandbaseai/awesome-workbuddy). Read-only by design."
+   },
+   {
+    "id": "sas-06",
+    "kind": "skill",
+    "plain": "SkillCheck: validates SKILL.md files against the agentskills spec; allowed-tools Read Glob.",
+    "rec": "yes",
+    "replaces": "the Roster: checklist for skill-builder output, run by a RANGE script",
+    "risk": "MIT (olgasafonova/SkillCheck-Free). Mentions http links; no installer."
+   },
+   {
+    "id": "sas-07",
+    "kind": "skill",
+    "plain": "Skill Issue: grades each skill A-F on activation and finds descriptions that shadow each other.",
+    "rec": "later",
+    "replaces": "the Roster: description-collision script",
+    "risk": "MIT (mishanefedov/skill-issue). Installs via npm/brew: no installers rule."
+   },
+   {
+    "id": "sas-08",
+    "kind": "skill",
+    "plain": "Skill Optimizer: audits skills against real session data, 8 dimensions, read-only.",
+    "rec": "no",
+    "replaces": "the Roster (already covered)",
+    "risk": "MIT (hqhq1025/skill-optimizer). Reads session transcripts: private-detail risk."
+   },
+   {
+    "id": "sas-09",
+    "kind": "skill",
+    "plain": "Handoff (Matt Pocock): one-paragraph handoff doc; disable-model-invocation set.",
+    "rec": "no",
+    "replaces": "oscar-mike (already covered)",
+    "risk": "MIT (mattpocock/skills)."
+   },
+   {
+    "id": "sas-10",
+    "kind": "skill",
+    "plain": "Verification Before Completion: no done-claims without fresh evidence run in the same message.",
+    "rec": "later",
+    "replaces": "the Roster: SOP wording for CDR close claims",
+    "risk": "Frontmatter says risk critical, no license field, source community. Check upstream license first."
+   },
+   {
+    "id": "sas-11",
+    "kind": "skill",
+    "plain": "Wiki Builder: configurable research wikis with source provenance.",
+    "rec": "later",
+    "replaces": "collect: provenance columns for the register",
+    "risk": "MIT (dair-ai). Writes to home folder by default."
+   },
+   {
+    "id": "sas-12",
+    "kind": "skill",
+    "plain": "Agent Memory Discipline: standing rules for when to recall and when to write memory.",
+    "rec": "no",
+    "replaces": "sitrep (not needed)",
+    "risk": "CC0-1.0 (mnemoverse). Pairs with a memory MCP; mentions several URLs."
+   },
+   {
+    "id": "sas-13",
+    "kind": "skill",
+    "plain": "LintLang Audit: checks agent instruction files for ambiguity and conflicts.",
+    "rec": "no",
+    "replaces": "the Roster (already covered)",
+    "risk": "Apache-2.0 (hermes-labs-ai/lintlang). Installer needed."
+   },
+   {
+    "id": "sas-14",
+    "kind": "skill",
+    "plain": "Skill Suggester: mines prompt history for repeated workflows.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "MIT (mskadu). Reads prompt history: private-detail risk."
+   },
+   {
+    "id": "sas-15",
+    "kind": "skill",
+    "plain": "Audio Transcriber: Whisper transcription with diarization and minutes.",
+    "rec": "no",
+    "replaces": "the DARKROOM (not needed)",
+    "risk": "Frontmatter lacks a license field; repo MIT. Installs packages."
+   },
+   {
+    "id": "sas-16",
+    "kind": "skill",
+    "plain": "PDF Conversion Router: picks a tool to convert PDF to Markdown or HTML.",
+    "rec": "later",
+    "replaces": "the pull (fallback for bad PDFs)",
+    "risk": "Not read in full; license unconfirmed. Pulls converter tools."
+   },
+   {
+    "id": "sas-17",
+    "kind": "skill",
+    "plain": "Context Degradation: how model quality drops as context fills.",
+    "rec": "later",
+    "replaces": "sitrep (reference only)",
+    "risk": "Not read in full; community, no installer seen."
+   },
+   {
+    "id": "sas-18",
+    "kind": "catalog",
+    "plain": "skills_index.json: the Stable Skills Manifest v1, 2,687 skills with id, category, risk, source.",
+    "rec": "yes",
+    "replaces": "intake: lookup list when Chief names a gap",
+    "risk": "Repo MIT; LICENSE-CONTENT exists for content, read it. Per-skill licenses vary; 'critical' risk tags on many. Data file only."
+   },
+   {
+    "id": "sas-19",
+    "kind": "tool",
+    "plain": "AAS Core: local MCP, CLI, stack manifests, plugin installer, Workbench.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "MIT. Scan RISK STOP; no installers rule."
+   },
+   {
+    "id": "sas-20",
+    "kind": "bundle",
+    "plain": "Claude plugin bundles (plugins/agentic-awesome-skills-claude, 2,400+ skills).",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "MIT repo; per-skill licenses mixed. No installers rule."
+   }
+  ]
+ },
+ {
+  "repo": "thedotmack/claude-mem",
+  "url": "https://github.com/thedotmack/claude-mem",
+  "what": "**Verdict: borrow two ideas, skip the plugin.**",
+  "intro": "**Verdict: borrow two ideas, skip the plugin.**",
+  "license": "Apache-2.0",
+  "picks": [
+   {
+    "id": "claude-mem-01",
+    "kind": "hook",
+    "plain": "Install the whole claude-mem plugin so every tool call is recorded, compressed by an AI, and fed back at session start.",
+    "rec": "no",
+    "replaces": "SessionStart digest hook + _CACHE session notes + auto-memory",
+    "risk": "9 hook entries incl. PostToolUse on every tool; npx/Bun/uv auto-installers; PostHog telemetry on by default; optional cloud sign-in; Apache-2.0"
+   },
+   {
+    "id": "claude-mem-02",
+    "kind": "idea",
+    "plain": "Steal the compact index shape: one table row per past note with id, time, type icon, short title and token cost, so the session reads titles first and fetches bodies only on demand.",
+    "rec": "yes",
+    "replaces": "none (extends _tools/sitrep/digest.py)",
+    "risk": "none"
+   },
+   {
+    "id": "claude-mem-03",
+    "kind": "idea",
+    "plain": "Steal the three-step lookup: search returns ids and titles, timeline adds neighbors, a fetch pulls full text for chosen ids only.",
+    "rec": "maybe",
+    "replaces": "none",
+    "risk": "none"
+   },
+   {
+    "id": "claude-mem-04",
+    "kind": "idea",
+    "plain": "Treat recalled memory as evidence, not orders: stored text from old sessions never counts as an instruction.",
+    "rec": "yes",
+    "replaces": "none",
+    "risk": "none"
+   },
+   {
+    "id": "claude-mem-05",
+    "kind": "idea",
+    "plain": "Wrap private text in a private tag so the capture step skips it.",
+    "rec": "maybe",
+    "replaces": "none (_PRIVATE/ folder rule)",
+    "risk": "none; not read in full"
+   },
+   {
+    "id": "claude-mem-06",
+    "kind": "hook",
+    "plain": "PreToolUse file-context hook that gates large file reads and injects past notes about that file instead.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "PreToolUse on 4 tools, 15 s timeout; not read in full"
+   },
+   {
+    "id": "claude-mem-07",
+    "kind": "skill",
+    "plain": "Agent-cost-report skill that rolls up token cost per session from transcripts.",
+    "rec": "maybe",
+    "replaces": "_tools/usage",
+    "risk": "has sync.py (network unknown); not read; check before any use"
+   }
+  ]
+ },
+ {
+  "repo": "titanwings/distilly",
+  "url": "https://github.com/titanwings/distilly",
+  "what": "**What it is.** A Claude Code skill (MIT) that builds a \"Person Profile\" of a real person: a colleague who left, an ex, a mentor, a celebrity, or you. A profile has two parts. Part A, the Work Skill, holds systems, standards and workflows. Part B, the Persona, holds five layers: hard rules, identity, expression, decisions, interpersonal. At run time the profile decides the attitude, then the work half does the task, and the output comes in that person's voice. Chief types `/slug` to call it.",
+  "intro": "**What it is.** A Claude Code skill (MIT) that builds a \"Person Profile\" of a real person: a colleague who left, an ex, a mentor, a celebrity, or you. A profile has two parts. Part A, the Work Skill, holds systems, standards and workflows. Part B, the Persona, holds five layers: hard rules, identity, expression, decisions, interpersonal. At run time the profile decides the attitude, then the work half does the task, and the output comes in that person's voice. Chief types `/slug` to call it.",
+  "license": "MIT",
+  "picks": [
+   {
+    "id": "dst-01",
+    "kind": "idea",
+    "plain": "Give each agent a short profile block: a voice line, a known-weakness line, last three jobs, a cost record.",
+    "rec": "yes",
+    "replaces": "none (extends Roster page)",
+    "risk": "MIT; idea only, no code run. Profile must hold no private detail."
+   },
+   {
+    "id": "dst-02",
+    "kind": "idea",
+    "plain": "Fold a correction into the profile the same turn (Distilly's correction layer): 'he wouldn't do that' becomes a standing line.",
+    "rec": "maybe",
+    "replaces": "none (extends dst-01)",
+    "risk": "MIT; idea only."
+   },
+   {
+    "id": "dst-03",
+    "kind": "skill",
+    "plain": "Install Distilly itself to turn chat logs into persona skills.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "MIT, but bundled collectors take app tokens and read chat history. Do not install."
+   }
+  ]
+ },
+ {
+  "repo": "tjboudreaux/cc-thinking-skills",
+  "url": "https://github.com/tjboudreaux/cc-thinking-skills",
+  "what": "**Verdict.** Keep three ideas; install nothing. MIT, 28 text-only skills, all manual-only (`disable-model-invocation`). The repo's own audit says zero measured benefit worth claiming (best row +4.0 points, below its own +5 bar; two eval runs made no model calls). So these are well-written procedures, not proven ones. Each skill has a \"When NOT to use\" guard, which is the good part.",
+  "intro": "**Verdict.** Keep three ideas; install nothing. MIT, 28 text-only skills, all manual-only (`disable-model-invocation`). The repo's own audit says zero measured benefit worth claiming (best row +4.0 points, below its own +5 bar; two eval runs made no model calls). So these are well-written procedures, not proven ones. Each skill has a \"When NOT to use\" guard, which is the good part.",
+  "license": "cc-thinking-skills",
+  "picks": [
+   {
+    "id": "think-pre-mortem",
+    "kind": "idea",
+    "plain": "Before a plan runs, assume it already failed and write the concrete reasons; each top reason becomes a gate or a plan change.",
+    "rec": "yes",
+    "replaces": "none",
+    "risk": "none; MIT, text only, manual-only (disable-model-invocation)"
+   },
+   {
+    "id": "think-circle-of-competence",
+    "kind": "idea",
+    "plain": "Before a writer states a fact, it marks the claim grounded, partial or ungrounded, then fetches, hedges or abstains.",
+    "rec": "yes",
+    "replaces": "none",
+    "risk": "none; MIT, text only"
+   },
+   {
+    "id": "think-steel-man",
+    "kind": "skill",
+    "plain": "On a spoken word, the CDR builds the strongest honest case against the rec Chief is about to take, names what would flip it, then keeps or changes the rec.",
+    "rec": "yes",
+    "replaces": "none",
+    "risk": "none; MIT, text only; must stay spoken-only"
+   },
+   {
+    "id": "think-first-principles",
+    "kind": "idea",
+    "plain": "List the limits a brief treats as fixed, tag each as physics, contract, measured or just convention, and drop the convention ones.",
+    "rec": "maybe",
+    "replaces": "none",
+    "risk": "none; MIT"
+   },
+   {
+    "id": "think-five-whys-plus",
+    "kind": "idea",
+    "plain": "After a failure is located, keep asking why until a system cause shows, not a person or a symptom.",
+    "rec": "no",
+    "replaces": "root-cause agent",
+    "risk": "none; MIT"
+   },
+   {
+    "id": "think-red-team",
+    "kind": "idea",
+    "plain": "Review authorized attack paths with reproducible findings.",
+    "rec": "no",
+    "replaces": "security-reviewer agent",
+    "risk": "none; MIT"
+   },
+   {
+    "id": "think-model-router",
+    "kind": "skill",
+    "plain": "A router that picks one to three of 28 thinking frames for a problem.",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "none; MIT; the plugin route needs /plugin install, never run it"
+   },
+   {
+    "id": "think-catalog-rest",
+    "kind": "idea",
+    "plain": "The other 20 frames (OODA, TRIZ, Cynefin, Lindy, JTBD, effectuation, and so on).",
+    "rec": "no",
+    "replaces": "none",
+    "risk": "none; MIT; Node validators and evals not needed"
+   }
+  ]
+ },
+ {
+  "repo": "yingpengma/Awesome-Story-Generation",
+  "url": "https://github.com/yingpengma/Awesome-Story-Generation",
+  "what": "**Verdict:** keep as a reading map. CC-BY-4.0 (cite it), 665 stars, pushed 10/12. Scan flag WATCH is only its citation-refresh script; no code taken. It is a paper list. I read its one-line summaries of the planning, coherence, character, benchmark and screenplay papers (about 12), not the full PDFs.",
+  "intro": "**Verdict:** keep as a reading map. CC-BY-4.0 (cite it), 665 stars, pushed 10/12. Scan flag WATCH is only its citation-refresh script; no code taken. It is a paper list. I read its one-line summaries of the planning, coherence, character, benchmark and screenplay papers (about 12), not the full PDFs.",
+  "license": "CC-BY-4.0",
+  "picks": [
+   {
+    "id": "story-01",
+    "kind": "idea",
+    "plain": "Split fiction writing into specialist agents (planner, writer, reviser) instead of one model, as Agents' Room does.",
+    "rec": "yes",
+    "replaces": "nothing (new: writing department design)",
+    "risk": "low: ideas only; CC-BY-4.0 list, cite the paper."
+   },
+   {
+    "id": "story-02",
+    "kind": "idea",
+    "plain": "Outliner builds a detailed hierarchical outline, and a check keeps each drafted passage matched to it (DOC, DOME).",
+    "rec": "yes",
+    "replaces": "nothing (new seat: outliner)",
+    "risk": "low"
+   },
+   {
+    "id": "story-03",
+    "kind": "script",
+    "plain": "Continuity keeper as a script: store facts with start and end dates and flag contradictions (FACTTRACK, ConWriter, SCORE).",
+    "rec": "yes",
+    "replaces": "nothing (new: _tools/continuity/ check script)",
+    "risk": "low: build later, after the fabula is whole."
+   },
+   {
+    "id": "story-04",
+    "kind": "agent",
+    "plain": "One critique agent allowed in the writing department only: reads a draft against the outline and LEECHSEED and reports contradictions and weak beats.",
+    "rec": "hold",
+    "replaces": "nothing (new: story-critic)",
+    "risk": "medium: model judging a model; pair with the script."
+   },
+   {
+    "id": "story-05",
+    "kind": "idea",
+    "plain": "Character voice seats read LEECHSEED and keep only what that character knows (perspective-bounded memory, Codified Decision Trees).",
+    "rec": "yes",
+    "replaces": "nothing (new seat: dialogue and voice)",
+    "risk": "low"
+   },
+   {
+    "id": "story-06",
+    "kind": "idea",
+    "plain": "Director steers actor agents toward plot goals (IBSEN, HoLLMwood Writer/Editor/Actor roles).",
+    "rec": "maybe",
+    "replaces": "nothing",
+    "risk": "low"
+   },
+   {
+    "id": "story-07",
+    "kind": "idea",
+    "plain": "Plan-execute-verify-revise loop checked against explicit rules (MUSE; PLOTTER Evaluate-Plan-Revise on event and character graphs).",
+    "rec": "yes",
+    "replaces": "nothing (new seat: reviser)",
+    "risk": "low"
+   },
+   {
+    "id": "story-08",
+    "kind": "idea",
+    "plain": "Write the climax first and expand the plot outward both ways (BiT-MCTS).",
+    "rec": "maybe",
+    "replaces": "nothing",
+    "risk": "low"
+   },
+   {
+    "id": "story-09",
+    "kind": "idea",
+    "plain": "Use the contradiction types from Lost in Stories (ConStory-Bench) as the starting check list for the continuity script.",
+    "rec": "yes",
+    "replaces": "nothing",
+    "risk": "low"
+   }
+  ]
+ }
+]

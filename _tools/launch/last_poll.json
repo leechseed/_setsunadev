@@ -1,16 +1,16 @@
 {
- "time": "2026-10-14T00:32:38",
+ "time": "2026-10-14T05:12:03",
  "all_go": false,
  "stations": [
   {
    "name": "AUDIT",
    "go": false,
-   "detail": "SOP audit (1 finding(s) · R 0 · P 0 · B 0 · K 1 · T 0 · S 0 · report _tools/audit/out/ · 2.8 s)"
+   "detail": "SOP audit (1 finding(s) · R 0 · P 0 · B 0 · K 1 · T 0 · S 0 · report _tools/audit/out/ · 5.0 s)"
   },
   {
    "name": "PULL",
    "go": false,
-   "detail": "pull glass (STALLED: wave 9 · runner B started · wave 7: 86/100 boards (5 empty) · 21,563 images · on yogapants · 9 min/board · ETA 2:33 AM; wave 8: 80/100 boards (6 empty) · 17,952 images · on 18f · 8 min/board · ETA 3:09 AM; wave 9: 1/100 boards (0 empty) · 302 images · STALLED? log quiet 730 min · 10 min/board · ETA 5:02 PM · disk: Q free 3,454 GB · glass built, republish owed · 0.4 s)"
+   "detail": "pull glass (STALLED: wave 7, wave 8, wave 9 · wave 7: 95/100 boards (6 empty) · 23,334 images · STALLED? log quiet 195 min · 9 min/board · ETA 5:55 AM; wave 8: 91/100 boards (8 empty) · 20,372 images · STALLED? log quiet 198 min · 8 min/board · ETA 6:20 AM; wave 9: 6/100 boards (0 empty) · 3,421 images · STALLED? log quiet 211 min · 16 min/board · ETA 5:38 AM; wave 10: 21/100 boards (3 empty) · 4,797 images · on hugeasses · 9 min/board · ETA 4:42 PM; wave 11: 20/100 boards (1 empty) · 4,814 images · on girlfriendsnsfw · 9 min/board · ETA 5:01 PM; wave 12: 21/100 boards (4 empty) · 4,901 images · on sfwnextdoorgirls · 7 min/board · ETA 2:54 PM · disk: Q free 3,422 GB · glass built, republish owed · 0.4 s)"
   },
   {
    "name": "DARKROOM",
@@ -20,22 +20,22 @@
   {
    "name": "STASH",
    "go": true,
-   "detail": "http://127.0.0.1:9999/ (already live · deck opened)"
+   "detail": "http://127.0.0.1:9999/ (started · 5 s · deck opened)"
   },
   {
    "name": "NAHIMIC",
    "go": true,
-   "detail": "audio guard (service + tasks disabled · 2.2 s)"
+   "detail": "audio guard (service + tasks disabled · 5.8 s)"
   },
   {
    "name": "JUDY",
    "go": true,
-   "detail": "session voice · pid 45124 (started · 7 s · hold the hotkey with the chat box focused)"
+   "detail": "session voice · pid 28272 (already running)"
   },
   {
    "name": "FACES",
    "go": true,
-   "detail": "http://127.0.0.1:8787/faces (already live · opened)"
+   "detail": "http://127.0.0.1:8787/faces (started · 1.6 s · opened)"
   },
   {
    "name": "DECK",
@@ -45,17 +45,17 @@
   {
    "name": "CONSOLE",
    "go": true,
-   "detail": "http://127.0.0.1:8795/ (already live · opened)"
+   "detail": "http://127.0.0.1:8795/ (started · opened)"
   },
   {
    "name": "KNOBS",
    "go": true,
-   "detail": "MPK knobs · pid 35512 (already running)"
+   "detail": "MPK knobs · pid 6120 (started · 3.0 s · scroll Y · scroll X · zoom)"
   },
   {
    "name": "WIRE",
    "go": true,
-   "detail": "server judy · 7/7 tools (probe ok · 3.9 s)"
+   "detail": "server judy · 7/7 tools (probe ok · 3.3 s)"
   },
   {
    "name": "FRAGO",

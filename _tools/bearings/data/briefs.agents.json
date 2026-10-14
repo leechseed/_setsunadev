@@ -1,0 +1,303 @@
+{
+ "a11y-architect": {
+  "does": "Audits the Command's static HTML pages against WCAG 2.2 AA and specifies each fix.",
+  "fires": "The CDR calls it when a dashboard, DOPE SHEET or SOI page needs an accessibility check.",
+  "gives": "Findings with file:line, what a screen reader says now, the fix and the criterion.",
+  "steps": "Read the page -> map keyboard focus flow -> check targets and contrast -> specify exact markup fixes.",
+  "weak": "Never launched."
+ },
+ "architect": {
+  "does": "Proposes a design for a new tool or a reshuffle of _tools/, with trade-offs.",
+  "fires": "The CDR calls it before building a new tool or restructuring scripts.",
+  "gives": "A design with components, data shapes, script interfaces, trade-offs and sometimes an ADR.",
+  "steps": "Read current scripts -> list requirements -> propose components -> weigh trade-offs.",
+  "weak": "Overlaps with planner. Never launched."
+ },
+ "bench-engineer": {
+  "does": "Gives the Engineer's opinion on what breaks and the smallest build.",
+  "fires": "The CDR calls it when Chief says convene the bench; the other four seats run alongside.",
+  "gives": "One opinion under 150 words: position, three reasons, one risk, evidence label, confidence.",
+  "steps": "Read the question and three files at most -> judge from its own view -> state position and risk -> stop.",
+  "weak": "Never launched. Overlaps with the Operator seat on what breaks."
+ },
+ "bench-money": {
+  "does": "Gives the Money seat's opinion on cost, return and who would pay.",
+  "fires": "The CDR calls it when Chief says convene the bench; the other four seats run alongside.",
+  "gives": "One opinion under 150 words: position, three reasons, one risk, evidence label, confidence.",
+  "steps": "Read the question and three files at most -> judge from its own view -> state position and risk -> stop.",
+  "weak": "Never launched."
+ },
+ "bench-operator": {
+  "does": "Gives the Operator's opinion on cost, time and what breaks when Chief is away.",
+  "fires": "The CDR calls it when Chief says convene the bench; the other four seats run alongside.",
+  "gives": "One opinion under 150 words: position, three reasons, one risk, evidence label, confidence.",
+  "steps": "Read the question and three files at most -> judge from its own view -> state position and risk -> stop.",
+  "weak": "Never launched. Overlaps with the Engineer seat on what breaks."
+ },
+ "bench-skeptic": {
+  "does": "Runs a pre-mortem and names the hidden assumption in an idea.",
+  "fires": "The CDR calls it when Chief says convene the bench; the other four seats run alongside.",
+  "gives": "One opinion under 150 words: position, three reasons, one risk, evidence label, confidence.",
+  "steps": "Read the question and three files at most -> judge from its own view -> state position and risk -> stop.",
+  "weak": "Never launched."
+ },
+ "bench-storyteller": {
+  "does": "Gives the Storyteller's opinion on whether an idea serves the Outliers and the fabula.",
+  "fires": "The CDR calls it when Chief says convene the bench; the other four seats run alongside.",
+  "gives": "One opinion under 150 words: position, three reasons, one risk, evidence label, confidence.",
+  "steps": "Read the question and three files at most -> judge from its own view -> state position and risk -> stop.",
+  "weak": "Never launched."
+ },
+ "chief-of-staff": {
+  "does": "Sorts messages Chief pastes into four tiers and drafts replies in his tone.",
+  "fires": "The CDR calls it when Chief hands over email, notes or threads.",
+  "gives": "A briefing: skipped count, info items, meetings, action items with draft replies.",
+  "steps": "Read the text -> assign one of four tiers -> draft replies -> list what Chief must do by hand.",
+  "weak": "Never launched."
+ },
+ "claim-checker": {
+  "does": "Checks each factual claim in a draft against a primary source.",
+  "fires": "The CDR calls it before publishing an article or draft.",
+  "gives": "A table of claims with score, URL and note, plus smallest rewrites for bad claims.",
+  "steps": "List claims -> find primary sources -> compare -> score supported, weak, unsupported or contradicted.",
+  "weak": "Never launched."
+ },
+ "code-explorer": {
+  "does": "Traces how an existing script or feature works from start to finish.",
+  "fires": "The CDR calls it before new work on a script it has not read.",
+  "gives": "Entry points, execution flow, key files, dependencies and advice for new work.",
+  "steps": "Find entry points -> follow the call chain -> note patterns -> list dependencies.",
+  "weak": "Overlaps with the built-in Explore agent. Never launched."
+ },
+ "collect-lead": {
+  "does": "Leads one collect run: launches haiku extractors and writes the register.",
+  "fires": "The collect skill launches it when the CDR hands it brief.LEAD.md.",
+  "gives": "One line per batch plus the register path.",
+  "steps": "Read brief and plan -> launch one PS per batch -> check extract files parse -> write the register.",
+  "weak": "Never launched."
+ },
+ "conversation-analyzer": {
+  "does": "Reads a transcript and lists behaviors Chief had to correct.",
+  "fires": "The CDR calls it when Chief wants repeat mistakes turned into rules.",
+  "gives": "Behaviors with evidence, frequency, severity and a one-line suggested rule.",
+  "steps": "Read the transcript -> find corrections and repeats -> rate severity -> propose rule lines.",
+  "weak": "Overlaps with skill-optimizer on reading transcripts. Never launched."
+ },
+ "cto": {
+  "does": "Answers hardware and workstation questions with options, cost and a recommendation.",
+  "fires": "The CDR calls it for mocap gear, GPU or storage buying questions.",
+  "gives": "Two to four options with cost, fit with the box, risk and one rec.",
+  "steps": "Restate the question -> list options -> check fit with the RTX 3090 box -> recommend buy, wait or build.",
+  "weak": "Never launched."
+ },
+ "doc-updater": {
+  "does": "Keeps READMEs and code maps matching the actual scripts.",
+  "fires": "The CDR calls it when scripts changed and docs may be stale.",
+  "gives": "Refreshed doc files whose paths and commands it checked.",
+  "steps": "List the directory -> read entry points -> write the named docs -> verify every path.",
+  "weak": "Never launched."
+ },
+ "drill-maker": {
+  "does": "Writes five recall questions, or practical exercises, from Chief's locked parts.",
+  "fires": "The CDR calls it during the teach-back loop for a drill.",
+  "gives": "Five explain-it questions, each with its answer as a tip; no scores.",
+  "steps": "Read locked parts and say-lines -> write one question per part -> attach a tip to each.",
+  "weak": "Never launched."
+ },
+ "harness-optimizer": {
+  "does": "Reviews the Command's hooks, skills, agents and CLAUDE.md for reliability and token cost.",
+  "fires": "The CDR calls it when session cost or setup reliability needs a review.",
+  "gives": "A harness report with proposals, undo steps, grades and a READY or BLOCKED status.",
+  "steps": "Read the baseline -> define checks -> propose small reversible edits -> grade each.",
+  "weak": "Overlaps with skill-optimizer on skill quality. Never launched."
+ },
+ "loop-operator": {
+  "does": "Watches a long detached run from its logs and recommends continue, pause or stop.",
+  "fires": "The CDR calls it during pull waves or queue runs.",
+  "gives": "A state (progressing, stalled, failing), evidence and a recommendation.",
+  "steps": "Read checkpoint and log -> count done and failed -> spot stalls and retries -> recommend.",
+  "weak": "Never launched."
+ },
+ "marketing-agent": {
+  "does": "Plans campaigns and writes copy for the Command's ventures.",
+  "fires": "The CDR calls it for landing pages, emails, ads or social posts.",
+  "gives": "Copy as text: positioning, landing page, emails, posts, ads, scripts, calendar.",
+  "steps": "Scope the job -> research audience and rivals -> lock positioning -> write and review copy.",
+  "weak": "Never launched."
+ },
+ "mle-reviewer": {
+  "does": "Reviews data and model scripts for leakage, weak evaluation and silent failures.",
+  "fires": "The CDR calls it after audio feature, embedding or scoring scripts change.",
+  "gives": "Findings with file:line, most severe first.",
+  "steps": "Read the diff -> pick the stage -> check against the leakage and reproducibility list.",
+  "weak": "Overlaps with silent-failure-hunter. Never launched."
+ },
+ "network-troubleshooter": {
+  "does": "Diagnoses connectivity, DNS or slow-link problems with read-only checks.",
+  "fires": "The CDR calls it only when the order names the box and allowed commands.",
+  "gives": "A root cause backed by evidence.",
+  "steps": "Read the symptom -> test layer by layer -> find the failing layer -> report the cause.",
+  "weak": "Never launched. Clashes with the no-probing rule unless the order names the box."
+ },
+ "opensource-forker": {
+  "does": "Copies a project to a staging folder and strips secrets for release.",
+  "fires": "The CDR calls it as stage one of a public release.",
+  "gives": "A clean staged copy, .env.example, a fork report and fresh git history.",
+  "steps": "Copy to staging -> strip secrets and private references -> write .env.example -> start clean git.",
+  "weak": "Never launched."
+ },
+ "opensource-packager": {
+  "does": "Writes README, license, setup script and other release files for a sanitized project.",
+  "fires": "The CDR calls it as stage three, after the sanitizer passes.",
+  "gives": "Packaging files in the staging folder.",
+  "steps": "Read the staged project -> write README and CLAUDE.md -> add setup script and LICENSE.",
+  "weak": "Never launched."
+ },
+ "opensource-sanitizer": {
+  "does": "Audits a staged project for leaked secrets and private data before release.",
+  "fires": "The CDR calls it as stage two, after the forker.",
+  "gives": "PASS, FAIL or PASS WITH WARNINGS with findings.",
+  "steps": "Scan for secrets -> scan for personal data -> check dangerous files -> give a verdict.",
+  "weak": "Overlaps with security-reviewer. Never launched."
+ },
+ "order-parser": {
+  "does": "Turns one garbled dictation line into a clean order.",
+  "fires": "The CDR calls it when Chief's dictation line is unclear.",
+  "gives": "Proword, BOLO, verb, object and confidence.",
+  "steps": "Read the line -> check the SOP garble table -> match BOLO titles -> return the likely order.",
+  "weak": "Never launched. It guesses on short garbles."
+ },
+ "performance-optimizer": {
+  "does": "Finds why a Python script is slow or uses too much memory.",
+  "fires": "The CDR calls it when a script runs slow.",
+  "gives": "Measured fix recommendations; it edits nothing.",
+  "steps": "Read the script -> find loops, repeated reads and subprocess calls -> measure -> recommend.",
+  "weak": "Never launched."
+ },
+ "planner": {
+  "does": "Turns a feature request into a phased plan with file paths and checks.",
+  "fires": "The CDR calls it before building anything over three tasks.",
+  "gives": "A phased plan with risks and a verification per step.",
+  "steps": "Restate requirements -> read the code -> break into steps -> order by dependency.",
+  "weak": "Overlaps with architect. Never launched."
+ },
+ "prose-taste": {
+  "does": "Audits a draft against the copy self-audit and prose_lint.py rules.",
+  "fires": "The CDR calls it on a draft before publishing.",
+  "gives": "Flagged lines, each with a fix.",
+  "steps": "Read the draft -> check against the rule list -> flag lines -> give a fix for each.",
+  "weak": "Never launched."
+ },
+ "python-reviewer": {
+  "does": "Reviews changed Python scripts for security, errors, Windows pitfalls and style.",
+  "fires": "The CDR calls it after scripts change.",
+  "gives": "Findings by severity.",
+  "steps": "Read the diff -> check security and errors -> check Windows paths and encoding -> rank findings.",
+  "weak": "Overlaps with security-reviewer and silent-failure-hunter. Never launched."
+ },
+ "pytorch-build-resolver": {
+  "does": "Diagnoses PyTorch and CUDA failures from a traceback.",
+  "fires": "The CDR calls it when a model script crashes.",
+  "gives": "The smallest fix, proposed but not applied.",
+  "steps": "Read the traceback -> read the code -> find the shape or device cause -> propose a fix.",
+  "weak": "Never launched."
+ },
+ "refactor-cleaner": {
+  "does": "Removes dead code, unused imports and duplicate helpers from named scripts.",
+  "fires": "The CDR calls it when scripts need cleanup.",
+  "gives": "Cleaned scripts, each checked to compile and start.",
+  "steps": "Find one safe category -> remove it -> compile and start the script -> repeat.",
+  "weak": "Never launched."
+ },
+ "root-cause": {
+  "does": "Walks a bug through root-cause steps before any fix.",
+  "fires": "The CDR calls it when something behaves wrongly.",
+  "gives": "Symptom, evidence chain with file:line, root cause, smallest fix, proof.",
+  "steps": "State the symptom -> gather evidence -> find the cause -> propose the smallest fix.",
+  "weak": "Never launched."
+ },
+ "sci-biomed": {
+  "does": "Checks biology and medicine in a scene for plausibility in the story's eras.",
+  "fires": "The CDR calls it for scenes with injury, disease or dosing.",
+  "gives": "Bounded-claims notes; advice only.",
+  "steps": "Read the scene -> check physiology -> word findings with limits.",
+  "weak": "Overlaps with sci-plausibility. Never launched."
+ },
+ "sci-forecast": {
+  "does": "Sets out what technology could exist in eras 3 and 4.",
+  "fires": "The CDR calls it for future-tech worldbuilding questions.",
+  "gives": "Favorable, adverse, wild-card and second-order cases with confidence.",
+  "steps": "Take the era -> frame four cases -> rate confidence.",
+  "weak": "Never launched."
+ },
+ "sci-literature": {
+  "does": "Finds published papers on a question through OpenAlex.",
+  "fires": "The CDR calls it when a story or canon question needs sources.",
+  "gives": "Sources with DOI, one-line findings and thin-evidence flags.",
+  "steps": "Search OpenAlex -> read abstracts -> list DOI and finding -> flag thin evidence.",
+  "weak": "Never launched."
+ },
+ "sci-physics": {
+  "does": "Answers orbital, habitat, Moon and energy questions with numbers.",
+  "fires": "The CDR calls it for ASTRO7EX and space physics questions.",
+  "gives": "The number, the formula and the assumptions.",
+  "steps": "Restate the question -> pick the formula -> compute -> list assumptions.",
+  "weak": "Never launched."
+ },
+ "sci-plausibility": {
+  "does": "Flags impossible or unexplained points in a scene or canon node.",
+  "fires": "The CDR calls it on scenes before they lock.",
+  "gives": "Each issue with the line, the problem and two ways to keep it.",
+  "steps": "Read the scene -> flag the impossible -> offer two fixes each.",
+  "weak": "Overlaps with the other sci seats. Never launched."
+ },
+ "security-reviewer": {
+  "does": "Reviews scripts and pages for leaked secrets, private data and injection.",
+  "fires": "The CDR calls it before pushing public pages or scripts.",
+  "gives": "Findings by severity with a fix.",
+  "steps": "Scan for secrets -> check private data in public files -> check injection and unsafe fetches.",
+  "weak": "Overlaps with opensource-sanitizer. Never launched."
+ },
+ "seo-specialist": {
+  "does": "Reviews public pages for titles, meta tags, structured data and sitemap.",
+  "fires": "The CDR calls it for public sites.",
+  "gives": "Exact fixes ranked by impact.",
+  "steps": "Read the page -> check titles and headings -> check meta and structured data -> rank fixes.",
+  "weak": "Never launched."
+ },
+ "silent-failure-hunter": {
+  "does": "Finds swallowed errors and green runs that skipped work.",
+  "fires": "The CDR calls it on scripts that report success too easily.",
+  "gives": "Each failure with location, impact and fix.",
+  "steps": "Read the script -> find broad excepts and fallbacks -> judge impact -> give a fix.",
+  "weak": "Overlaps with python-reviewer. Never launched."
+ },
+ "skill-builder": {
+  "does": "Drafts or trims one skill or agent file from a brief.",
+  "fires": "The CDR calls it when a new skill or agent file is needed.",
+  "gives": "The one file the brief names, plus test prompts.",
+  "steps": "Read the brief -> draft frontmatter and body -> push detail to references -> name test prompts.",
+  "weak": "Launched only twice, both on 10/12."
+ },
+ "skill-optimizer": {
+  "does": "Finds where one skill misfired or dragged in one transcript.",
+  "fires": "The CDR calls it when a skill felt slow or wrong.",
+  "gives": "The smallest edit to the skill; it edits nothing.",
+  "steps": "Read transcript and skill -> check trigger and skipped steps -> find re-reads -> propose an edit.",
+  "weak": "Overlaps with conversation-analyzer. Never launched."
+ },
+ "syllabus-builder": {
+  "does": "Maps a topic into a bare tree of parts in teaching order.",
+  "fires": "The CDR calls it when Chief starts learning a new topic.",
+  "gives": "A bare tree of one-line parts with prerequisites.",
+  "steps": "Read the topic note and locked parts -> list parts -> order by prerequisite.",
+  "weak": "Never launched."
+ },
+ "teach-coach": {
+  "does": "Teaches one tiny part of a topic from a source note.",
+  "fires": "The CDR calls it for each step of the teach-back loop.",
+  "gives": "One spoken sentence, one tip and the next part's name.",
+  "steps": "Read the note and locked parts -> pick the next part -> say the idea -> add a tip.",
+  "weak": "Never launched. It will not fill gaps the note leaves."
+ }
+}

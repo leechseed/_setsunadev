@@ -1,0 +1,290 @@
+{
+"by_kit": {
+"bench": [
+ {"repo":"0xNyk/council-of-high-intelligence","fit":"same","how":"Runs a standing bench of named advisory seats, one opinion each, laid side by side."},
+ {"repo":"tjboudreaux/cc-thinking-skills","fit":"feeds","how":"Pre-mortem and circle-of-competence frames could sharpen the Skeptic seat and the evidence labels."},
+ {"repo":"addyosmani/agent-skills","fit":"idea","how":"Hands a fresh reviewer the artifact and contract, not your conclusion, before a big decision."}
+],
+"brainstorm": [
+ {"repo":"addyosmani/agent-skills","fit":"feeds","how":"Adds a guess and confidence number per question, plus a Not Doing section in the brief."},
+ {"repo":"VoltAgent/awesome-agent-skills","fit":"feeds","how":"Asks one to five multiple-choice questions with defaults before work on a vague order."},
+ {"repo":"ComposioHQ/awesome-claude-skills","fit":"feeds","how":"Borrow the play-it-back and size-the-work steps before the brief is written."},
+ {"repo":"BehiSecc/awesome-claude-skills","fit":"same","how":"Lists a skill that turns a rough idea into a design, one question at a time."}
+],
+"collect": [
+ {"repo":"sickn33/agentic-awesome-skills","fit":"feeds","how":"Source tiers, unknowns lines, and a one-paragraph research prompt for each batch brief."},
+ {"repo":"google/langextract","fit":"feeds","how":"Pulls structured records from long text with each record tied to its exact source span."},
+ {"repo":"ComposioHQ/awesome-claude-skills","fit":"idea","how":"Offers a readability fallback chain for the link-to-text step and a citation loop for the writer."}
+],
+"config-gc": [
+ {"repo":"hesreallyhim/awesome-claude-code","fit":"idea","how":"Hash each skill and agent file and flag changes since the last close-out."},
+ {"repo":"diet103/claude-code-infrastructure-showcase","fit":"feeds","how":"One check script confirms hook paths exist and every skill has frontmatter."}
+],
+"context-budget": [
+ {"repo":"hesreallyhim/awesome-claude-code","fit":"same","how":"Scripts that measure token cost before the first prompt and flag skills and agents never used."},
+ {"repo":"thedotmack/claude-mem","fit":"idea","how":"Compact index rows with token cost let a session read titles before opening full notes."},
+ {"repo":"NeoLabHQ/context-engineering-kit","fit":"idea","how":"Load language rules just in time, only when a matching file type is touched."}
+],
+"dope-sheet": [
+ {"repo":"addyosmani/agent-skills","fit":"feeds","how":"Spec checklist: objective, commands, boundaries, success criteria, open questions for the Mission section."},
+ {"repo":"gotalab/cc-sdd","fit":"feeds","how":"Task checklist where each box carries an observable done line, boundary and dependency tags."},
+ {"repo":"ClaytonFarr/ralph-playbook","fit":"idea","how":"A plan file on disk is the memory; each fresh pass picks one task."},
+ {"repo":"HKUDS/ClawTeam","fit":"idea","how":"Task lists with blocked-by chains that unblock when the earlier step completes."}
+],
+"frago": [
+ {"repo":"gotalab/cc-sdd","fit":"idea","how":"A script ticks a task box only when its completion line is observed."}
+],
+"intake": [
+ {"repo":"hesreallyhim/awesome-claude-code","fit":"feeds","how":"A stdlib scanner greps a downloaded skill for hooks, installers, network calls and base64."},
+ {"repo":"sickn33/agentic-awesome-skills","fit":"feeds","how":"Skill security audit checklist for the specialist who reads each pick; plus a 2,687-skill lookup index."},
+ {"repo":"VoltAgent/awesome-agent-skills","fit":"idea","how":"A curated skill list to search when Chief names a gap."},
+ {"repo":"BehiSecc/awesome-claude-skills","fit":"idea","how":"Another curated skill list, with picks the intake already judged."}
+],
+"launch": [
+ {"repo":"ruvnet/ruflo","fit":"feeds","how":"Live station tiles with a pulsing GO or NO-GO dot, and a front-page desk layout."}
+],
+"oscar-mike": [
+ {"repo":"sickn33/agentic-awesome-skills","fit":"feeds","how":"Session handoff snapshot grounded in git status, separating verified work from partial work."},
+ {"repo":"NeoLabHQ/context-engineering-kit","fit":"feeds","how":"A reflect-then-memorize step writes only the repeat-mistake lessons to a small file."},
+ {"repo":"thedotmack/claude-mem","fit":"idea","how":"Treat recalled old notes as evidence, never as orders."}
+],
+"rtb": [
+ {"repo":"ThibautMelen/agentic-ai-systems","fit":"idea","how":"On resume, check that each pending task's dependencies are done before running it."}
+],
+"safety-guard": [
+ {"repo":"ClaytonFarr/ralph-playbook","fit":"idea","how":"Circuit breaker stops a run after repeated passes with no file change or the same error."}
+],
+"sitrep": [
+ {"repo":"ruvnet/ruflo","fit":"feeds","how":"Icon rail, progress bars, metric cards and empty-state boxes for the front-page board."},
+ {"repo":"ComposioHQ/awesome-claude-skills","fit":"idea","how":"Open the built page headless and confirm no console errors before publish."},
+ {"repo":"apache/superset","fit":"idea","how":"Chart-type menu for turning one query into a dark chart page."}
+],
+"steel-man": [
+ {"repo":"tjboudreaux/cc-thinking-skills","fit":"same","how":"A steel-man skill builds the strongest honest case against the rec and names what would flip it."},
+ {"repo":"0xNyk/council-of-high-intelligence","fit":"idea","how":"Evidence labels FACT, INFERENCE, ASSUMPTION, UNKNOWN make each side's claims checkable."}
+],
+"strategic-compact": [
+ {"repo":"hesreallyhim/awesome-claude-code","fit":"feeds","how":"Anthropic's compaction and just-in-time retrieval rules fold straight into the SOP notes."},
+ {"repo":"addyosmani/agent-skills","fit":"feeds","how":"Restartable session boundaries and context layers: rules file, spec, source, error output."},
+ {"repo":"sickn33/agentic-awesome-skills","fit":"idea","how":"Reference on how model quality drops as the context fills."}
+],
+"a11y-architect": [
+ {"repo":"OneRedOak/claude-code-workflows","fit":"feeds","how":"Seven design-review phases become a fixed check list for the static pages."}
+],
+"architect": [
+ {"repo":"addyosmani/agent-skills","fit":"feeds","how":"Short decision records and a cite-the-official-docs rule for architecture proposals."},
+ {"repo":"0xNyk/council-of-high-intelligence","fit":"idea","how":"Awesome-CTO reading list gives the architect a brief for questions it has none for."},
+ {"repo":"LukeRenton/explore-claude-code","fit":"idea","how":"A clean repo layout model: few root entries, one folder per kind of thing."}
+],
+"bench-engineer": [
+ {"repo":"0xNyk/council-of-high-intelligence","fit":"same","how":"Seat contract with grounding, method, blind spots and a structured response shape."}
+],
+"bench-money": [
+ {"repo":"0xNyk/council-of-high-intelligence","fit":"same","how":"Seat contract and evidence labels apply to every advisory seat."},
+ {"repo":"coreyhaines31/marketingskills","fit":"idea","how":"Offer design and pricing references give the Money seat concrete frames."}
+],
+"bench-operator": [
+ {"repo":"0xNyk/council-of-high-intelligence","fit":"same","how":"Manager heuristics and an outcome ledger track whether the Operator's calls held up."}
+],
+"bench-skeptic": [
+ {"repo":"tjboudreaux/cc-thinking-skills","fit":"feeds","how":"Pre-mortem: assume the plan already failed and write the concrete reasons."},
+ {"repo":"0xNyk/council-of-high-intelligence","fit":"same","how":"Contract for a dissenting advisory seat that gives one opinion in one round."}
+],
+"bench-storyteller": [
+ {"repo":"0xNyk/council-of-high-intelligence","fit":"same","how":"Same seat contract; the Storyteller keeps its own view and evidence labels."}
+],
+"chief-of-staff": [
+ {"repo":"0xNyk/council-of-high-intelligence","fit":"idea","how":"Managing-up notes on giving the boss options with a rec."}
+],
+"claim-checker": [
+ {"repo":"BehiSecc/awesome-claude-skills","fit":"same","how":"Checks claims in a PDF or article against sources and scores how risky each is."},
+ {"repo":"tjboudreaux/cc-thinking-skills","fit":"feeds","how":"Mark each claim grounded, partial or ungrounded, then fetch, hedge or abstain."}
+],
+"code-explorer": [],
+"collect-lead": [
+ {"repo":"HKUDS/ClawTeam","fit":"idea","how":"A leader agent spawns workers and tracks them on a shared task list."}
+],
+"conversation-analyzer": [
+ {"repo":"BehiSecc/awesome-claude-skills","fit":"same","how":"Reviews a conversation and suggests rule edits, matching the correction-to-rule loop."},
+ {"repo":"NeoLabHQ/context-engineering-kit","fit":"feeds","how":"Reflect step lists repeat mistakes and keeps only those lessons."}
+],
+"cto": [
+ {"repo":"0xNyk/council-of-high-intelligence","fit":"feeds","how":"CTO reading list and a CTO seat contract; needs an added hardware list."}
+],
+"doc-updater": [
+ {"repo":"diet103/claude-code-infrastructure-showcase","fit":"feeds","how":"README map, hooks table and skills table patterns to keep docs in step."},
+ {"repo":"costiash/claude-code-docs","fit":"idea","how":"Mirror script lists added, removed and changed docs pages against a manifest."}
+],
+"drill-maker": [
+ {"repo":"hluaguo/learn-faster-kit","fit":"same","how":"Practice-creator makes mixed recall questions or hands-on exercises with an answer key."}
+],
+"harness-optimizer": [
+ {"repo":"BehiSecc/awesome-claude-skills","fit":"same","how":"Reviews SKILL.md files against 30-plus checks and reports defects without editing."},
+ {"repo":"hesreallyhim/awesome-claude-code","fit":"same","how":"Finds session waste: repeated reads, oversized CLAUDE.md, unused skills, agents and MCP servers."},
+ {"repo":"Piebald-AI/claude-code-system-prompts","fit":"feeds","how":"Cut the pasted rules block from agent files; write descriptions as when-to-call."},
+ {"repo":"diet103/claude-code-infrastructure-showcase","fit":"feeds","how":"Use $CLAUDE_PROJECT_DIR instead of absolute paths in hook commands."}
+],
+"loop-operator": [
+ {"repo":"ClaytonFarr/ralph-playbook","fit":"feeds","how":"Circuit breaker rule: stop after 3 no-change passes or 5 of the same error."},
+ {"repo":"ThibautMelen/agentic-ai-systems","fit":"feeds","how":"Pair autonomy with budgets: max turns, tokens and cost per run."},
+ {"repo":"obra/superpowers","fit":"idea","how":"Ledger file per long run, trusted over memory after a reset."}
+],
+"marketing-agent": [
+ {"repo":"coreyhaines31/marketingskills","fit":"feeds","how":"Offers, product-marketing context and cold-email references to add to the agent."},
+ {"repo":"Leonxlnx/taste-skill","fit":"idea","how":"Content density and one-register-per-page rules for landing copy."}
+],
+"mle-reviewer": [],
+"network-troubleshooter": [],
+"opensource-forker": [],
+"opensource-packager": [
+ {"repo":"diet103/claude-code-infrastructure-showcase","fit":"idea","how":"Root README as a short map with one line per folder."}
+],
+"opensource-sanitizer": [
+ {"repo":"hesreallyhim/awesome-claude-code","fit":"idea","how":"A stdlib scan for hooks, installers, network calls and base64 in downloaded files."},
+ {"repo":"BehiSecc/awesome-claude-skills","fit":"idea","how":"Redacts personal data across 15 categories, run locally."}
+],
+"order-parser": [],
+"performance-optimizer": [],
+"planner": [
+ {"repo":"addyosmani/agent-skills","fit":"feeds","how":"Vertical slices with a dependency graph and a checkpoint every few tasks."},
+ {"repo":"obra/superpowers","fit":"feeds","how":"Plan template with Interfaces block, global constraints and a plan-length proportion check."},
+ {"repo":"gotalab/cc-sdd","fit":"idea","how":"Tasks with observable done lines, boundary and depends tags."},
+ {"repo":"BehiSecc/awesome-claude-skills","fit":"same","how":"Explores code, asks questions, writes a Markdown plan another agent can run."}
+],
+"prose-taste": [
+ {"repo":"blader/humanizer","fit":"feeds","how":"About 60 stock phrases plus six shape checks: contrast, closer, saying, run-up."},
+ {"repo":"conorbronsdon/avoid-ai-writing","fit":"feeds","how":"About 100 more stock phrases, fake-casual props and eight shape checks."},
+ {"repo":"Leonxlnx/taste-skill","fit":"same","how":"Copy self-audit and fake-precision ban, with a read-only prose reviewer idea."},
+ {"repo":"sickn33/agentic-awesome-skills","fit":"feeds","how":"21 pattern categories and a 43-entry word swap table."}
+],
+"python-reviewer": [
+ {"repo":"OneRedOak/claude-code-workflows","fit":"feeds","how":"Ranked findings rubric: blocker, high, medium, nit, with a reason each."},
+ {"repo":"addyosmani/agent-skills","fit":"same","how":"Senior reviewer scoring correctness, readability, architecture, security, performance."}
+],
+"pytorch-build-resolver": [
+ {"repo":"lutzroeder/netron","fit":"feeds","how":"Open the saved model in Netron to see layer shapes behind a mismatch."}
+],
+"refactor-cleaner": [
+ {"repo":"addyosmani/agent-skills","fit":"feeds","how":"Chesterton's fence guard rules and a safe path for retiring old scripts."}
+],
+"root-cause": [
+ {"repo":"BehiSecc/awesome-claude-skills","fit":"same","how":"Walks a bug through root-cause steps before any fix, as a read-only seat."},
+ {"repo":"addyosmani/agent-skills","fit":"feeds","how":"Reproduce, localize, reduce, fix root cause, guard, verify: two lines to fold in."},
+ {"repo":"hesreallyhim/awesome-claude-code","fit":"idea","how":"No claiming a fix works until the check has run."},
+ {"repo":"tjboudreaux/cc-thinking-skills","fit":"idea","how":"Keep asking why after the failure is located until a system cause shows."}
+],
+"sci-biomed": [
+ {"repo":"K-Dense-AI/scientific-agent-skills","fit":"same","how":"Source of the bounded-claims wording for clinical and dosing statements."}
+],
+"sci-forecast": [
+ {"repo":"K-Dense-AI/scientific-agent-skills","fit":"same","how":"Source of the favorable, adverse, wild-card, second-order scenario frame."}
+],
+"sci-literature": [
+ {"repo":"K-Dense-AI/scientific-agent-skills","fit":"same","how":"Source of the paper-lookup list and the literature-review coverage log."},
+ {"repo":"BehiSecc/awesome-claude-skills","fit":"feeds","how":"Script searches papers by title or DOI through OpenAlex with no key."}
+],
+"sci-physics": [
+ {"repo":"K-Dense-AI/scientific-agent-skills","fit":"same","how":"Source of the astronomy and orbital-mechanics reference method."}
+],
+"sci-plausibility": [
+ {"repo":"K-Dense-AI/scientific-agent-skills","fit":"same","how":"Source of the order-of-magnitude and units checks."},
+ {"repo":"yingpengma/Awesome-Story-Generation","fit":"idea","how":"Contradiction types from story benchmarks give a starting check list."}
+],
+"security-reviewer": [
+ {"repo":"OneRedOak/claude-code-workflows","fit":"feeds","how":"High-confidence security review prompt: over 80 percent sure, no style noise."},
+ {"repo":"VoltAgent/awesome-agent-skills","fit":"feeds","how":"Threat-model section: trust boundaries, assets, entry points, abuse paths."},
+ {"repo":"BehiSecc/awesome-claude-skills","fit":"same","how":"Checks code against the OWASP checklist and reports by severity."},
+ {"repo":"hesreallyhim/awesome-claude-code","fit":"idea","how":"Differential review: what a diff newly exposes."}
+],
+"seo-specialist": [
+ {"repo":"coreyhaines31/marketingskills","fit":"same","how":"Ships an SEO skill set: audit, schema, programmatic SEO, site architecture."}
+],
+"silent-failure-hunter": [],
+"skill-builder": [
+ {"repo":"anthropics/skills","fit":"same","how":"Skill-creator method and patterns this builder is written to; also a skill linter."},
+ {"repo":"obra/superpowers","fit":"feeds","how":"Description says when to fire only; test a skill against failures without it first."},
+ {"repo":"sickn33/agentic-awesome-skills","fit":"feeds","how":"SkillCheck validates SKILL.md files against the spec as a script checklist."},
+ {"repo":"ComposioHQ/awesome-claude-skills","fit":"same","how":"Lists its own skill-creator, a duplicate of what we already run."}
+],
+"skill-optimizer": [
+ {"repo":"BehiSecc/awesome-claude-skills","fit":"same","how":"Diagnoses a weak skill from session data and static checks, then proposes the fix."},
+ {"repo":"sickn33/agentic-awesome-skills","fit":"same","how":"Audits skills against real session data, read-only, on eight dimensions."},
+ {"repo":"obra/superpowers","fit":"same","how":"Session-misfire diagnosis that reads a transcript and reports what went wrong."}
+],
+"syllabus-builder": [
+ {"repo":"hluaguo/learn-faster-kit","fit":"same","how":"Learn command builds a three to four phase syllabus with checkboxes."}
+],
+"teach-coach": [
+ {"repo":"hluaguo/learn-faster-kit","fit":"same","how":"Theory learn command: five-part sessions ending in a teach-back."}
+],
+"autocommit.sh": [
+ {"repo":"addyosmani/agent-skills","fit":"idea","how":"Atomic commits and save points; useful only if autosave messages ever need meaning."}
+],
+"digest.py": [
+ {"repo":"thedotmack/claude-mem","fit":"feeds","how":"Compact index shape: id, time, short title and token cost per past note."}
+],
+"no_probe.py": [
+ {"repo":"hesreallyhim/awesome-claude-code","fit":"feeds","how":"Command guard blocks destructive git and filesystem commands and secret-file reads, with reasons."},
+ {"repo":"NeoLabHQ/context-engineering-kit","fit":"idea","how":"A path-rules hook beside this guard injects language rules just in time."}
+],
+"order_hint.py": [
+ {"repo":"diet103/claude-code-infrastructure-showcase","fit":"same","how":"A skill-activation hook injects skill hints by regex; we use prowords only."}
+],
+"precompact_backup.py": [
+ {"repo":"ThibautMelen/agentic-ai-systems","fit":"idea","how":"A JSON checkpoint holds progress and a resume point for the next session."},
+ {"repo":"sickn33/agentic-awesome-skills","fit":"idea","how":"A six-step handoff snapshot before a reset."}
+],
+"sitrep workflow": [
+ {"repo":"ruvnet/ruflo","fit":"feeds","how":"Front-page desk tiles and progress bars show the formation stages live."},
+ {"repo":"ThibautMelen/agentic-ai-systems","fit":"idea","how":"Check the workflow file and cost floor before spending tokens, then keep a trace."},
+ {"repo":"HKUDS/ClawTeam","fit":"idea","how":"Leader and workers on a shared task list, much like the parallel RACK, INDEX, WATCH step."}
+]
+},
+"by_repo": {
+"0xNyk/council-of-high-intelligence": {"gist":"Gives BoldVenture a standing bench of advisory seats and evidence labels for big money calls.","kit":["bench","bench-engineer","bench-money","bench-operator","bench-skeptic","bench-storyteller","steel-man","architect","cto","chief-of-staff"],"gap":"An outcome ledger that tracks decisions after the fact; the Command has no piece for it."},
+"BehiSecc/awesome-claude-skills": {"gist":"A skill list with checkers for claims, skills and root causes, worth mining for review seats.","kit":["root-cause","claim-checker","skill-optimizer","harness-optimizer","conversation-analyzer","security-reviewer","brainstorm","planner","intake"],"gap":""},
+"ClaytonFarr/ralph-playbook": {"gist":"Shows a bounded overnight loop with a done-script and circuit breaker for long BoldVenture builds.","kit":["loop-operator","dope-sheet","safety-guard"],"gap":"A small loop script that reruns one fixed prompt until a check passes; the Command has none."},
+"ComposioHQ/awesome-claude-skills": {"gist":"A big link list that mostly repeats our kit; a few brief and test ideas are worth taking.","kit":["brainstorm","collect","sitrep","skill-builder"],"gap":""},
+"Fission-AI/OpenSpec": {"gist":"A spec-first change folder with WHEN/THEN rules; the Command already took its shape for the SOP.","kit":["dope-sheet"],"gap":"Change-folder specs for rule changes; only partly covered by the SOP folder."},
+"HKUDS/ClawTeam": {"gist":"A swarm runner for many agents; not for BoldVenture, but its blocked-by task lists are worth stealing.","kit":["dope-sheet","collect-lead","sitrep workflow"],"gap":"Per-agent cost tracking by team; the Command only has the usage script."},
+"K-Dense-AI/scientific-agent-skills": {"gist":"Science method text that backs the story's physics, biology and literature seats, with nothing installed.","kit":["sci-biomed","sci-forecast","sci-literature","sci-physics","sci-plausibility"],"gap":""},
+"Leonxlnx/taste-skill": {"gist":"Anti-slop page and copy rules; its lint scripts would check BoldVenture pages before they ship.","kit":["prose-taste","marketing-agent"],"gap":"A glass-lint script that checks built pages for theme, palette and hover-term rules."},
+"LukeRenton/explore-claude-code": {"gist":"A model of a clean repo root, useful if the Command's sprawling tree is ever reshuffled.","kit":["architect"],"gap":"A tidy root layout with a purpose line per top-level entry; the Command has none."},
+"Mudlet/Mudlet": {"gist":"Inspires a text-world character builder where each LEECHSEED layer is a room; ideas only, GPL.","kit":[],"gap":"A MUD-style character-creation tool for LEECHSEED; the Command has no interactive builder."},
+"NeoLabHQ/context-engineering-kit": {"gist":"Ideas for lessons capture and just-in-time rules; GPL, so ideas only.","kit":["oscar-mike","conversation-analyzer","no_probe.py","context-budget"],"gap":"A path-rules hook that injects language rules when a matching file is touched."},
+"OneRedOak/claude-code-workflows": {"gist":"Review rubrics for security, Python and page design that sharpen BoldVenture's existing reviewer seats.","kit":["security-reviewer","python-reviewer","a11y-architect"],"gap":""},
+"Piebald-AI/claude-code-system-prompts": {"gist":"A look-up for how the harness briefs agents, used to trim and fix our agent files.","kit":["harness-optimizer"],"gap":""},
+"ThibautMelen/agentic-ai-systems": {"gist":"A pattern book that sharpens run budgets, resume checks and when multi-agent work pays off.","kit":["loop-operator","rtb","precompact_backup.py","sitrep workflow"],"gap":""},
+"VoltAgent/awesome-agent-skills": {"gist":"A skill catalog; take the question-first and reader-test steps, skip the rest.","kit":["brainstorm","security-reviewer","intake"],"gap":""},
+"addyosmani/agent-skills": {"gist":"Planning, spec and debugging habits that tighten how BoldVenture builds get ordered and sliced.","kit":["brainstorm","dope-sheet","planner","root-cause","refactor-cleaner","architect","strategic-compact","python-reviewer"],"gap":""},
+"anthropics/skills": {"gist":"The official skill patterns and linter, the reference for writing and trimming our own skills.","kit":["skill-builder"],"gap":"A skill linter script; the Command has no automatic check on skill files."},
+"apache/superset": {"gist":"A dashboard server we skip, but its chart menu guides a small query-to-chart page script.","kit":["sitrep"],"gap":"Turning one SQL query into a dark chart page; the Command has no such tool."},
+"blader/humanizer": {"gist":"Adds stock phrases and shape checks so BoldVenture copy stops sounding machine-made.","kit":["prose-taste"],"gap":""},
+"cathrynlavery/diagram-design": {"gist":"Layered diagram rules that would make BoldVenture system pictures cleaner and consistent.","kit":[],"gap":"Rules for drawing system diagrams; the Command has no diagram standard."},
+"chartdb/chartdb": {"gist":"A database diagram tool; we copy the look to build our own table-relationship page.","kit":[],"gap":"A schema diagram page for the Command's databases."},
+"citrolabs/ego-lite": {"gist":"An agent-drivable browser not yet on Windows; only worth a revisit later.","kit":[],"gap":"A browser an agent can drive in its own space."},
+"conorbronsdon/avoid-ai-writing": {"gist":"More stock phrases and pattern-family counts to strengthen the prose lint and prose reviewer.","kit":["prose-taste"],"gap":""},
+"coreyhaines31/marketingskills": {"gist":"Marketing references for offers, pricing and cold email that BoldVenture's venture planning can use.","kit":["marketing-agent","seo-specialist","bench-money"],"gap":""},
+"costiash/claude-code-docs": {"gist":"A way to keep a local mirror of Anthropic's docs so hook and skill answers are current.","kit":["doc-updater"],"gap":"A docs mirror script with a manifest; the Command answers from memory today."},
+"d3/d3": {"gist":"Chart library loaded from a CDN for fabula graphs, trees and timelines in single-file pages.","kit":[],"gap":"Interactive force graphs, trees and timelines for the story world."},
+"danielrosehill/Claude-Code-Projects-Index": {"gist":"Confirms a non-code repo layout with inputs, outputs and an index; little new for BoldVenture.","kit":[],"gap":"A separate index for admin work apart from development."},
+"diet103/claude-code-infrastructure-showcase": {"gist":"README tables for hooks, skills and agents that make the Command's config legible at a glance.","kit":["doc-updater","harness-optimizer","config-gc","order_hint.py","opensource-packager"],"gap":"A hooks README and a skills README; the Command has neither."},
+"google/langextract": {"gist":"Extracts structured story events and character fields from long notes, each with its source line.","kit":["collect"],"gap":"Structured record extraction with source spans, for fabula events and LEECHSEED fields."},
+"gotalab/cc-sdd": {"gist":"Task checklists with done lines and steering files that make DOPE SHEET orders checkable.","kit":["dope-sheet","frago","planner"],"gap":"Short per-skill steering files that every brief quotes."},
+"hesreallyhim/awesome-claude-code": {"gist":"Waste-finding, scanning and command-guard scripts that protect the Command's tokens and files.","kit":["context-budget","harness-optimizer","intake","no_probe.py","config-gc","strategic-compact","opensource-sanitizer","root-cause","security-reviewer"],"gap":"A local PR-style page where Chief comments on lines of uncommitted changes."},
+"hluaguo/learn-faster-kit": {"gist":"A learning kit for syllabi, drills and teach-backs that matches the Command's teaching loop.","kit":["drill-maker","syllabus-builder","teach-coach"],"gap":"A spaced-repetition scheduler for cold re-checks."},
+"latent-spaces/brag": {"gist":"Makes a 20-second pitch video of BoldVenture from its public pages, run once.","kit":[],"gap":"A short pitch video of the Command; nothing in the kit makes video."},
+"lutzroeder/netron": {"gist":"A viewer for DARKROOM model files that shows layers and shapes during build failures.","kit":["pytorch-build-resolver"],"gap":"A model graph viewer on call."},
+"mehdibha/dotUI": {"gist":"Design-token approach that would unify page colors and spacing across BoldVenture glass pages.","kit":[],"gap":"One token file for color, type, density and radius across pages."},
+"morluto/rea": {"gist":"Inspires a layout-reader that records how a site is built, so BoldVenture can rebuild the structure.","kit":[],"gap":"A tool that reads a page's layout into a file; the Command has none."},
+"obra/superpowers": {"gist":"Skill-writing and verify-before-done habits that tighten how BoldVenture builds are checked.","kit":["skill-builder","skill-optimizer","planner","loop-operator"],"gap":"A verify skill: run the proving command, then claim done."},
+"pytorch/rl": {"gist":"Reinforcement learning basics; a tiny bandit could pick the next fresh-hour set from the ledger.","kit":[],"gap":"A learned picker for fresh-hour sets instead of a plain shuffle."},
+"rougier/scientific-visualization-book": {"gist":"Chart design rules for clear figures; reference only for BoldVenture reports.","kit":[],"gap":"Figure and chart design rules."},
+"ruvnet/ruflo": {"gist":"Gives a front-page Command Desk design: tiles, icon rail and progress bars for the boards.","kit":["launch","sitrep","sitrep workflow"],"gap":"One desk page that gathers stations, waves, calls and boards."},
+"sickn33/agentic-awesome-skills": {"gist":"A large skill catalog; handoff, research and skill-audit items fit the close-out and intake.","kit":["oscar-mike","collect","intake","skill-builder","skill-optimizer","prose-taste","strategic-compact","precompact_backup.py"],"gap":""},
+"thedotmack/claude-mem": {"gist":"Compact index and lookup ideas for session memory; the plugin itself is skipped.","kit":["digest.py","oscar-mike","context-budget"],"gap":"A tag that keeps private text out of captured notes."},
+"titanwings/distilly": {"gist":"Gives each agent a short profile block with a voice line, weakness line and cost record.","kit":[],"gap":"Per-agent profile blocks on the Roster page."},
+"tjboudreaux/cc-thinking-skills": {"gist":"Thinking frames like pre-mortem and steel-man that sharpen BoldVenture decisions before money is spent.","kit":["steel-man","bench-skeptic","claim-checker","root-cause","bench"],"gap":"A pre-mortem step before a plan runs."},
+"yingpengma/Awesome-Story-Generation": {"gist":"A reading map for story-writing agents, continuity checks and outlines for the Outliers.","kit":["sci-plausibility"],"gap":"A writing department: outliner, voice seats, continuity-check script and reviser."}
+}
+}

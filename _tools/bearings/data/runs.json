@@ -1,0 +1,226 @@
+{
+ "sop:1.1": {
+  "runs": 29,
+  "first": "2026-09-15",
+  "last": "2026-10-13 09:59",
+  "last7": 3,
+  "sessions": 20,
+  "median_min": 4.4
+ },
+ "skill:sitrep": {
+  "runs": 58,
+  "first": "2026-09-15",
+  "last": "2026-10-14 00:32",
+  "last7": 11,
+  "sessions": 58,
+  "median_min": 12.8
+ },
+ "agent:general-purpose": {
+  "runs": 1038,
+  "first": "2026-09-15",
+  "last": "2026-10-14 05:12",
+  "last7": 289,
+  "sessions": 64,
+  "median_min": 9.7
+ },
+ "skill:dope-sheet": {
+  "runs": 12,
+  "first": "2026-09-15",
+  "last": "2026-10-12 05:08",
+  "last7": 1,
+  "sessions": 12,
+  "median_min": 6.5
+ },
+ "sop:1.3": {
+  "runs": 48,
+  "first": "2026-09-15",
+  "last": "2026-10-14 00:09",
+  "last7": 13,
+  "sessions": 42,
+  "median_min": 5.9
+ },
+ "skill:oscar-mike": {
+  "runs": 55,
+  "first": "2026-09-15",
+  "last": "2026-10-13 21:54",
+  "last7": 11,
+  "sessions": 55,
+  "median_min": 134.8
+ },
+ "skill:frago": {
+  "runs": 11,
+  "first": "2026-09-17",
+  "last": "2026-10-08 08:16",
+  "last7": 1,
+  "sessions": 11,
+  "median_min": 5.8
+ },
+ "skill:launch": {
+  "runs": 49,
+  "first": "2026-09-17",
+  "last": "2026-10-14 00:32",
+  "last7": 11,
+  "sessions": 49,
+  "median_min": 12.6
+ },
+ "sop:1.6": {
+  "runs": 127,
+  "first": "2026-09-15",
+  "last": "2026-10-14 05:11",
+  "last7": 34,
+  "sessions": 46,
+  "median_min": 3.9
+ },
+ "sop:1.20": {
+  "runs": 54,
+  "first": "2026-09-17",
+  "last": "2026-10-14 05:11",
+  "last7": 14,
+  "sessions": 45,
+  "median_min": 12.0
+ },
+ "skill:claude-api": {
+  "runs": 3,
+  "first": "2026-09-16",
+  "last": "2026-10-05 01:18",
+  "last7": 0,
+  "sessions": 3,
+  "median_min": 3.8
+ },
+ "sop:1.8": {
+  "runs": 5,
+  "first": "2026-09-16",
+  "last": "2026-10-06 20:31",
+  "last7": 0,
+  "sessions": 3,
+  "median_min": 5.1
+ },
+ "skill:artifact-design": {
+  "runs": 9,
+  "first": "2026-09-12",
+  "last": "2026-10-13 04:41",
+  "last7": 2,
+  "sessions": 9,
+  "median_min": 6.5
+ },
+ "sop:1.19": {
+  "runs": 17,
+  "first": "2026-09-20",
+  "last": "2026-10-13 17:44",
+  "last7": 3,
+  "sessions": 6,
+  "median_min": 1.8
+ },
+ "agent:Explore": {
+  "runs": 2,
+  "first": "2026-09-24",
+  "last": "2026-10-06 17:20",
+  "last7": 0,
+  "sessions": 2,
+  "median_min": 35.7
+ },
+ "skill:intake": {
+  "runs": 1,
+  "first": "2026-10-12",
+  "last": "2026-10-12 23:28",
+  "last7": 1,
+  "sessions": 1,
+  "median_min": 28.5
+ },
+ "skill:artifact-capabilities": {
+  "runs": 11,
+  "first": "2026-09-23",
+  "last": "2026-10-13 04:40",
+  "last7": 6,
+  "sessions": 11,
+  "median_min": 6.2
+ },
+ "agent:skill-builder": {
+  "runs": 2,
+  "first": "2026-10-12",
+  "last": "2026-10-12 23:58",
+  "last7": 2,
+  "sessions": 1,
+  "median_min": 30.1
+ },
+ "sop:1.10": {
+  "runs": 4,
+  "first": "2026-09-17",
+  "last": "2026-10-12 02:19",
+  "last7": 1,
+  "sessions": 3,
+  "median_min": 2.3
+ },
+ "sop:1.14": {
+  "runs": 2,
+  "first": "2026-09-24",
+  "last": "2026-10-12 02:27",
+  "last7": 1,
+  "sessions": 2,
+  "median_min": 54.5
+ },
+ "sop:1.7": {
+  "runs": 3,
+  "first": "2026-10-06",
+  "last": "2026-10-12 02:39",
+  "last7": 1,
+  "sessions": 2,
+  "median_min": 5.3
+ },
+ "sop:1.11": {
+  "runs": 11,
+  "first": "2026-09-17",
+  "last": "2026-10-04 06:33",
+  "last7": 0,
+  "sessions": 10,
+  "median_min": 3.9
+ },
+ "sop:1.21": {
+  "runs": 7,
+  "first": "2026-09-17",
+  "last": "2026-10-09 09:58",
+  "last7": 2,
+  "sessions": 6,
+  "median_min": 1.5
+ },
+ "skill:update-config": {
+  "runs": 1,
+  "first": "2026-09-12",
+  "last": "2026-09-12 04:07",
+  "last7": 0,
+  "sessions": 1,
+  "median_min": null
+ },
+ "sop:1.4": {
+  "runs": 1,
+  "first": "2026-09-17",
+  "last": "2026-09-17 02:48",
+  "last7": 0,
+  "sessions": 1,
+  "median_min": 20.1
+ },
+ "skill:fewer-permission-prompts": {
+  "runs": 2,
+  "first": "2026-09-23",
+  "last": "2026-09-23 06:14",
+  "last7": 0,
+  "sessions": 2,
+  "median_min": 16.1
+ },
+ "skill:deep-research": {
+  "runs": 1,
+  "first": "2026-10-12",
+  "last": "2026-10-12 22:17",
+  "last7": 1,
+  "sessions": 1,
+  "median_min": 13.0
+ },
+ "agent:claude-code-guide": {
+  "runs": 2,
+  "first": "2026-09-20",
+  "last": "2026-10-13 12:06",
+  "last7": 1,
+  "sessions": 2,
+  "median_min": 12.8
+ }
+}

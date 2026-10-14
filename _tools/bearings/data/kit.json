@@ -1,0 +1,514 @@
+[
+ {
+  "kind": "skill",
+  "name": "bench",
+  "desc": "Convene the five-seat advisory Bench for opinions on one question. Fires ONLY on \"convene the bench\" or \"bench this\". Never fires on its own.",
+  "repo": "",
+  "model": "",
+  "path": ".claude/skills/bench/SKILL.md"
+ },
+ {
+  "kind": "skill",
+  "name": "brainstorm",
+  "desc": "Riff on an idea with Chief, one question at a time, until he says \"lock it\", then write the design as a short brief. Fires ONLY on \"brainstorm X\", \"riff on X\", \"interview me\" or \"refine X\". Never fires on its own.",
+  "repo": "obra/superpowers",
+  "model": "",
+  "path": ".claude/skills/brainstorm/SKILL.md"
+ },
+ {
+  "kind": "skill",
+  "name": "collect",
+  "desc": "Run a link-harvest research pass in the formation (BOLO 51 phase 2.7; the LOCI six-step collect and the standards register are its instances) — a script fetches every link to text, Payload Specialists (PS, haiku) extract per batch, one Mission Specialist (MS, sonnet) writes the register, a script proves every link is covered. Fires on \"collect the locus\", \"pull every link in …\", \"build the register from the harvest\", \"run the locus\".",
+  "repo": "",
+  "model": "",
+  "path": ".claude/skills/collect/SKILL.md"
+ },
+ {
+  "kind": "skill",
+  "name": "config-gc",
+  "desc": "Config cleanup audit. Fires ONLY when Chief names it, on \"config GC\" or \"clean the config\". Never run it on its own, never scan the box unasked. Audits the repo's .claude config, then asks Chief about each deletion one at a time. Never deletes on its own.",
+  "repo": "affaan-m/ECC",
+  "model": "",
+  "path": ".claude/skills/config-gc/SKILL.md"
+ },
+ {
+  "kind": "skill",
+  "name": "context-budget",
+  "desc": "Answers \"what's eating the context\" without scanning the box. Fires on \"context budget\" or \"what's eating the context\". Points Chief to the live /context meter, then reads only the repo's always-loaded files if he asks for the audit.",
+  "repo": "affaan-m/ECC",
+  "model": "",
+  "path": ".claude/skills/context-budget/SKILL.md"
+ },
+ {
+  "kind": "skill",
+  "name": "dope-sheet",
+  "desc": "Build BOLO N's standing status page (DOPE SHEET N, ruled 9/11) in the formation (BOLO 51 phase 2.4) — a script gathers every mention, a Mission Specialist (MS, sonnet) drafts Situation · Execution · Admin · Log, the CDR writes Mission · Command & Signal · the order and the calls, a script reviews, build, publish. Fires on \"DOPE SHEET N\", \"the dope on N\", \"status report on N\", \"build the sheet for N\".",
+  "repo": "",
+  "model": "",
+  "path": ".claude/skills/dope-sheet/SKILL.md"
+ },
+ {
+  "kind": "skill",
+  "name": "frago",
+  "desc": "Push a fragmentary order onto DOPE SHEET N (FRAGO N, ruled 9/11) without rewriting the sheet — pure script (BOLO 51 phase 2.3): the main line writes a ~1 KB patch, frago.py merges it, bumps the version, builds; publish to the sheet's standing URL. Fires on \"FRAGO N\", \"update the sheet for N\", \"push that onto N\".",
+  "repo": "",
+  "model": "",
+  "path": ".claude/skills/frago/SKILL.md"
+ },
+ {
+  "kind": "skill",
+  "name": "intake",
+  "desc": "The repo intake (BOLO 140). Fires on \"intake\" followed by one or more GitHub links, or \"run the intake on these repos\". A script scans each repo, specialists judge what it could add to the Command, and Chief keeps or skips each pick on a glass page. Never installs anything on its own.",
+  "repo": "",
+  "model": "",
+  "path": ".claude/skills/intake/SKILL.md"
+ },
+ {
+  "kind": "skill",
+  "name": "launch",
+  "desc": "Run the launch sequence (BOLO 58). A zero-token script brings the local stations up and opens the two boards, then the sit rep runs and the reply carries the station poll. Fires on \"go for launch\" (ruled 9/17), the garbles \"go for log\" and \"go for lunch\", and on \"launch sequence\", \"start launch sequence\" or \"run launch sequence\" spoken alone. Never on \"go N\".",
+  "repo": "",
+  "model": "",
+  "path": ".claude/skills/launch/SKILL.md"
+ },
+ {
+  "kind": "skill",
+  "name": "oscar-mike",
+  "desc": "Run the close-out (\"Oscar Mike\", ruled 9/11) in the formation (BOLO 51 phase 2.2) — a script pulls the session's spoken turns from the local transcript, a Payload Specialist (PS, haiku) drafts the Ready Rack note, a script appends the journal, the main line rules the note and writes STATE's Moved bullet, then the OUT block. Fires on \"Oscar Mike\" or \"we're Oscar Mike\".",
+  "repo": "",
+  "model": "",
+  "path": ".claude/skills/oscar-mike/SKILL.md"
+ },
+ {
+  "kind": "skill",
+  "name": "rtb",
+  "desc": "Run the card-clearing pass (\"RTB\", ruled 9/10) in the formation (BOLO 51 phase 2.6) — a script compiles every open card in oscar-mike/ with its resume lines, a Payload Specialist (PS, haiku) proposes one disposition per card, the main line rules the lines and executes. Fires on \"RTB\", \"RTB oscar-mike\", \"clear the cards\", \"send the cards home\".",
+  "repo": "",
+  "model": "",
+  "path": ".claude/skills/rtb/SKILL.md"
+ },
+ {
+  "kind": "skill",
+  "name": "safety-guard",
+  "desc": "Freeze mode for long detached runs. Fires on \"freeze\" or \"safety guard\". While the pull waves or other detached scripts run, no edits to the named running scripts and no killing their processes without Chief's word.",
+  "repo": "affaan-m/ECC",
+  "model": "",
+  "path": ".claude/skills/safety-guard/SKILL.md"
+ },
+ {
+  "kind": "skill",
+  "name": "sitrep",
+  "desc": "Deliver the sit rep (the board + the SITREP page) in the formation ruled 2026-09-12 (BOLO 54) — a zero-token prep script, three independent specialists at gear 1 (one MS · two PS), RANGE the script reviewer at the fan-in, the CDR writing only Block VI and the header. Fires on \"sit rep\", \"the board\", \"where did we leave off\", \"what are we working on\", or the countersign.",
+  "repo": "",
+  "model": "",
+  "path": ".claude/skills/sitrep/SKILL.md"
+ },
+ {
+  "kind": "skill",
+  "name": "steel-man",
+  "desc": "Gives the strongest honest case for the other side of a rec or decision. Fires ONLY on \"steel-man X\" or \"strongest case for X\". Never fires on its own.",
+  "repo": "tjboudreaux/cc-thinking-skills",
+  "model": "",
+  "path": ".claude/skills/steel-man/SKILL.md"
+ },
+ {
+  "kind": "skill",
+  "name": "strategic-compact",
+  "desc": "Decides whether now is a good moment to run /compact. Fires on \"compact check\" or \"should we compact\". Judges by task phase, makes sure the state is written to a file first, then tells Chief what to type.",
+  "repo": "affaan-m/ECC",
+  "model": "",
+  "path": ".claude/skills/strategic-compact/SKILL.md"
+ },
+ {
+  "kind": "agent",
+  "name": "a11y-architect",
+  "desc": "Accessibility reviewer for the Command's static HTML pages (dashboards, DOPE SHEETs, SOI). Audits against WCAG 2.2 AA and specifies the exact roles, labels and focus order a fix needs.",
+  "repo": "affaan-m/ECC",
+  "model": "sonnet",
+  "path": ".claude/agents/a11y-architect.md"
+ },
+ {
+  "kind": "agent",
+  "name": "architect",
+  "desc": "Software architecture advisor for the Command's tooling. Reads the existing scripts and data, then proposes a design with trade-offs for a new tool or a reshuffle of _tools/.",
+  "repo": "affaan-m/ECC",
+  "model": "opus",
+  "path": ".claude/agents/architect.md"
+ },
+ {
+  "kind": "agent",
+  "name": "bench-engineer",
+  "desc": "The Engineer seat of the Bench: gives one advisory opinion on a question from the view of the box, the scripts and what is buildable. Reads only what the brief names; reports only.",
+  "repo": "",
+  "model": "sonnet",
+  "path": ".claude/agents/bench-engineer.md"
+ },
+ {
+  "kind": "agent",
+  "name": "bench-money",
+  "desc": "The Money seat of the Bench: gives one advisory opinion on a question from the view of BoldVenture, the ORANGE arm and what pays. Reads only what the brief names; reports only.",
+  "repo": "",
+  "model": "sonnet",
+  "path": ".claude/agents/bench-money.md"
+ },
+ {
+  "kind": "agent",
+  "name": "bench-operator",
+  "desc": "The Operator seat of the Bench: gives one advisory opinion on a question from the view of running the Command (cost, time, what breaks). Reads only what the brief names; reports only.",
+  "repo": "",
+  "model": "sonnet",
+  "path": ".claude/agents/bench-operator.md"
+ },
+ {
+  "kind": "agent",
+  "name": "bench-skeptic",
+  "desc": "The Skeptic seat of the Bench: gives one advisory opinion on a question by naming what is wrong with the idea (the pre-mortem). Reads only what the brief names; reports only.",
+  "repo": "",
+  "model": "sonnet",
+  "path": ".claude/agents/bench-skeptic.md"
+ },
+ {
+  "kind": "agent",
+  "name": "bench-storyteller",
+  "desc": "The Storyteller seat of the Bench: gives one advisory opinion on a question from the view of the Outliers, the fabula and what the story needs. Reads only what the brief names; reports only.",
+  "repo": "",
+  "model": "sonnet",
+  "path": ".claude/agents/bench-storyteller.md"
+ },
+ {
+  "kind": "agent",
+  "name": "chief-of-staff",
+  "desc": "Triage assistant for messages the CDR hands over (pasted email, notes, threads). Sorts each into four tiers and drafts replies in Chief's tone; it never sends anything.",
+  "repo": "affaan-m/ECC",
+  "model": "sonnet",
+  "path": ".claude/agents/chief-of-staff.md"
+ },
+ {
+  "kind": "agent",
+  "name": "claim-checker",
+  "desc": "Takes a draft or article, lists each factual claim, finds a primary source for each and scores the claim's risk (supported, weak, unsupported, contradicted) with the URL. Reports only; edits nothing.",
+  "repo": "",
+  "model": "sonnet",
+  "path": ".claude/agents/claim-checker.md"
+ },
+ {
+  "kind": "agent",
+  "name": "code-explorer",
+  "desc": "Traces how an existing script or feature works end to end and reports entry points, data flow, dependencies and reusable pieces before new work starts.",
+  "repo": "affaan-m/ECC",
+  "model": "sonnet",
+  "path": ".claude/agents/code-explorer.md"
+ },
+ {
+  "kind": "agent",
+  "name": "collect-lead",
+  "desc": "Depth-2 lead for one collect run. Launches up to three PS (haiku) on the batch briefs collect.py wrote, checks each extract.k.json exists and parses, then writes the register from brief.WRITE.md itself and hands back one line per batch plus the register path. Fires only when the CDR launches it with a brief.LEAD.md.",
+  "repo": "",
+  "model": "sonnet",
+  "path": ".claude/agents/collect-lead.md"
+ },
+ {
+  "kind": "agent",
+  "name": "conversation-analyzer",
+  "desc": "Reads a session transcript or note the CDR hands over and lists the behaviors Chief had to correct, so they can become rules or guard hooks.",
+  "repo": "affaan-m/ECC",
+  "model": "haiku",
+  "path": ".claude/agents/conversation-analyzer.md"
+ },
+ {
+  "kind": "agent",
+  "name": "cto",
+  "desc": "CTO seat for hardware, motion capture and the AI workstation build. Given a hardware or architecture question, returns options with cost, fit with the box, the risk and a rec. Reports only; never buys or installs.",
+  "repo": "",
+  "model": "sonnet",
+  "path": ".claude/agents/cto.md"
+ },
+ {
+  "kind": "agent",
+  "name": "doc-updater",
+  "desc": "Keeps READMEs and code maps in step with the actual scripts. Reads the code, writes or refreshes the docs named in the brief, and verifies every path and command it mentions.",
+  "repo": "affaan-m/ECC",
+  "model": "haiku",
+  "path": ".claude/agents/doc-updater.md"
+ },
+ {
+  "kind": "agent",
+  "name": "drill-maker",
+  "desc": "Reads the locked parts and their say-lines and returns five recall questions, or in practical mode three to five hands-on exercises, each with its answer attached as a tip. No scores and no grading; changes nothing.",
+  "repo": "",
+  "model": "haiku",
+  "path": ".claude/agents/drill-maker.md"
+ },
+ {
+  "kind": "agent",
+  "name": "harness-optimizer",
+  "desc": "Reviews the Command's own agent setup (CLAUDE.md, hooks, skills, agents) for reliability and token cost, and proposes minimal, reversible changes as a report. It does not edit anything.",
+  "repo": "affaan-m/ECC",
+  "model": "sonnet",
+  "path": ".claude/agents/harness-optimizer.md"
+ },
+ {
+  "kind": "agent",
+  "name": "loop-operator",
+  "desc": "Watches a long-running or repeating job (a detached wave, a queue, a cron run) from its logs and checkpoints, spots stalls and retry storms, and recommends pause, shrink or resume.",
+  "repo": "affaan-m/ECC",
+  "model": "sonnet",
+  "path": ".claude/agents/loop-operator.md"
+ },
+ {
+  "kind": "agent",
+  "name": "marketing-agent",
+  "desc": "Marketing strategist and copywriter for the Command's ventures. Plans a campaign or reviews copy: positioning, landing page, emails, social posts, ad variants, short video scripts and a content calendar.",
+  "repo": "affaan-m/ECC",
+  "model": "sonnet",
+  "path": ".claude/agents/marketing-agent.md"
+ },
+ {
+  "kind": "agent",
+  "name": "mle-reviewer",
+  "desc": "Reviews the Command's data and model scripts (audio features, embeddings, classifiers, scoring) for leakage, reproducibility, weak evaluation and silent failures. Reports findings ordered by severity; changes nothing.",
+  "repo": "affaan-m/ECC",
+  "model": "sonnet",
+  "path": ".claude/agents/mle-reviewer.md"
+ },
+ {
+  "kind": "agent",
+  "name": "network-troubleshooter",
+  "desc": "Diagnoses a connectivity, DNS, routing or slow-link symptom with a read-only layer-by-layer workflow and an evidence-backed root cause. Runs only when the brief names the box and the commands it may use.",
+  "repo": "affaan-m/ECC",
+  "model": "sonnet",
+  "path": ".claude/agents/network-troubleshooter.md"
+ },
+ {
+  "kind": "agent",
+  "name": "opensource-forker",
+  "desc": "Copies a project into a staging folder for release, strips secrets and private references, writes .env.example and a fork report, and starts a clean git history. First stage before the sanitizer.",
+  "repo": "affaan-m/ECC",
+  "model": "haiku",
+  "path": ".claude/agents/opensource-forker.md"
+ },
+ {
+  "kind": "agent",
+  "name": "opensource-packager",
+  "desc": "Writes the release packaging for a sanitized project in its staging folder: README, CLAUDE.md, setup script, LICENSE, CONTRIBUTING and optional GitHub issue templates. Third stage after the forker and the sanitizer.",
+  "repo": "affaan-m/ECC",
+  "model": "haiku",
+  "path": ".claude/agents/opensource-packager.md"
+ },
+ {
+  "kind": "agent",
+  "name": "opensource-sanitizer",
+  "desc": "Independent read-only audit of a staged project before public release. Scans for leaked secrets, personal data, internal references, dangerous files and unreadable binaries, and returns PASS, FAIL or PASS WITH WARNINGS. It never trusts the forker's work.",
+  "repo": "affaan-m/ECC",
+  "model": "sonnet",
+  "path": ".claude/agents/opensource-sanitizer.md"
+ },
+ {
+  "kind": "agent",
+  "name": "order-parser",
+  "desc": "Turns one garbled dictation line from Chief into a clean order (proword, BOLO, verb, object, confidence), using the SOP garble table and the BOLO titles. It never acts and never writes.",
+  "repo": "",
+  "model": "haiku",
+  "path": ".claude/agents/order-parser.md"
+ },
+ {
+  "kind": "agent",
+  "name": "performance-optimizer",
+  "desc": "Finds why a Python script is slow or memory-hungry (nested loops, repeated file or database reads, per-item subprocess calls, big in-memory lists) and recommends measured fixes. It reports; it does not edit.",
+  "repo": "affaan-m/ECC",
+  "model": "sonnet",
+  "path": ".claude/agents/performance-optimizer.md"
+ },
+ {
+  "kind": "agent",
+  "name": "planner",
+  "desc": "Turns a feature or refactor request into a concrete, phased plan with exact file paths, dependencies, risks and a verification step for each phase. Reads the code first; writes no code.",
+  "repo": "affaan-m/ECC",
+  "model": "opus",
+  "path": ".claude/agents/planner.md"
+ },
+ {
+  "kind": "agent",
+  "name": "prose-taste",
+  "desc": "Audits a draft the brief names against the copy self-audit and the prose_lint.py rule list. Returns flagged lines with the fix for each. Reports only; never rewrites the file.",
+  "repo": "taste-skill",
+  "model": "sonnet",
+  "path": ".claude/agents/prose-taste.md"
+ },
+ {
+  "kind": "agent",
+  "name": "python-reviewer",
+  "desc": "Reviews changed Python scripts for security, error handling, Windows path and encoding pitfalls, type hints and idiomatic style. Reports findings by severity; changes nothing.",
+  "repo": "affaan-m/ECC",
+  "model": "sonnet",
+  "path": ".claude/agents/python-reviewer.md"
+ },
+ {
+  "kind": "agent",
+  "name": "pytorch-build-resolver",
+  "desc": "Diagnoses PyTorch and CUDA failures (shape mismatches, device errors, gradient and DataLoader problems, mixed precision) from a traceback and the code, and reports the smallest fix. Read-only: it proposes the edit, the CDR applies it.",
+  "repo": "affaan-m/ECC",
+  "model": "sonnet",
+  "path": ".claude/agents/pytorch-build-resolver.md"
+ },
+ {
+  "kind": "agent",
+  "name": "refactor-cleaner",
+  "desc": "Finds and removes dead code, unused imports and duplicated helpers in the Python scripts the brief names, one safe category at a time, and checks each script still compiles and starts.",
+  "repo": "affaan-m/ECC",
+  "model": "sonnet",
+  "path": ".claude/agents/refactor-cleaner.md"
+ },
+ {
+  "kind": "agent",
+  "name": "root-cause",
+  "desc": "Walks a bug or unexpected behavior through root-cause steps before any fix is proposed. Returns the symptom, the evidence chain with file:line, the root cause, the smallest fix and what would prove it. Reports only; edits nothing.",
+  "repo": "",
+  "model": "sonnet",
+  "path": ".claude/agents/root-cause.md"
+ },
+ {
+  "kind": "agent",
+  "name": "sci-biomed",
+  "desc": "Science Department biology and medicine seat. Checks physiology, disease, injury, dosing and aging in a scene or canon node for the story's eras, in bounded-claims wording. Advises; reports only.",
+  "repo": "",
+  "model": "sonnet",
+  "path": ".claude/agents/sci-biomed.md"
+ },
+ {
+  "kind": "agent",
+  "name": "sci-forecast",
+  "desc": "Science Department technology-forecast seat for eras 3 and 4. Sets out what technology could exist by that era in a favorable, adverse, wild-card and second-order frame, with confidence. Advises; reports only.",
+  "repo": "",
+  "model": "sonnet",
+  "path": ".claude/agents/sci-forecast.md"
+ },
+ {
+  "kind": "agent",
+  "name": "sci-literature",
+  "desc": "Science Department literature seat. Finds published papers on a question through OpenAlex and returns sources with DOI and a one-line finding each, plus thin-evidence flags. Advises; reports only.",
+  "repo": "",
+  "model": "sonnet",
+  "path": ".claude/agents/sci-literature.md"
+ },
+ {
+  "kind": "agent",
+  "name": "sci-physics",
+  "desc": "Science Department physics seat. Answers orbital mechanics, habitat, Moon (ASTRO7EX) and energy-budget questions with the number, the formula and the assumptions. Advises; reports only.",
+  "repo": "",
+  "model": "sonnet",
+  "path": ".claude/agents/sci-physics.md"
+ },
+ {
+  "kind": "agent",
+  "name": "sci-plausibility",
+  "desc": "Science Department plausibility seat. Reads a scene or canon node the brief names and flags the impossible or the unexplained, each with the line, the problem and two ways the story could keep it. Advises, never gates, never rewrites.",
+  "repo": "",
+  "model": "sonnet",
+  "path": ".claude/agents/sci-plausibility.md"
+ },
+ {
+  "kind": "agent",
+  "name": "security-reviewer",
+  "desc": "Reviews Python scripts and generated pages for leaked secrets, private data in public files, command and SQL injection, unsafe deserialization and unsafe fetching. Reports findings by severity with a fix; changes nothing.",
+  "repo": "affaan-m/ECC",
+  "model": "sonnet",
+  "path": ".claude/agents/security-reviewer.md"
+ },
+ {
+  "kind": "agent",
+  "name": "seo-specialist",
+  "desc": "Technical and on-page SEO reviewer for the Command's public pages and sites. Audits titles, meta tags, headings, canonicals, structured data, sitemap and robots, and gives exact fixes ranked by impact.",
+  "repo": "affaan-m/ECC",
+  "model": "sonnet",
+  "path": ".claude/agents/seo-specialist.md"
+ },
+ {
+  "kind": "agent",
+  "name": "silent-failure-hunter",
+  "desc": "Reviews Python scripts for silent failures: swallowed exceptions, fallbacks that hide errors, runs that look green while skipping work, and missing error propagation. Reports each with location, impact and fix.",
+  "repo": "affaan-m/ECC",
+  "model": "sonnet",
+  "path": ".claude/agents/silent-failure-hunter.md"
+ },
+ {
+  "kind": "agent",
+  "name": "skill-builder",
+  "desc": "Drafts or trims ONE skill or agent file from a brief, to the Anthropic skill patterns (frontmatter with name and a description that carries every trigger, body under about 500 lines, detail pushed to references/, long code pushed to scripts/). Writes only the output path the brief names and names the test prompts for the CDR to run.",
+  "repo": "",
+  "model": "sonnet",
+  "path": ".claude/agents/skill-builder.md"
+ },
+ {
+  "kind": "agent",
+  "name": "skill-optimizer",
+  "desc": "Reads ONE transcript file and ONE skill the brief names, finds where the skill misfired or dragged (steps skipped, re-reads, long turns), and proposes the smallest edit. Report only; it does not edit anything.",
+  "repo": "",
+  "model": "sonnet",
+  "path": ".claude/agents/skill-optimizer.md"
+ },
+ {
+  "kind": "agent",
+  "name": "syllabus-builder",
+  "desc": "Reads a topic note and the locked-parts list and returns a bare tree of one-line parts in teaching order, with prerequisites. Lists parts only; changes nothing.",
+  "repo": "",
+  "model": "sonnet",
+  "path": ".claude/agents/syllabus-builder.md"
+ },
+ {
+  "kind": "agent",
+  "name": "teach-coach",
+  "desc": "Teaches one tiny part of a topic at a time from a source note the brief names. Returns one idea as a full spoken sentence, one tip, and the next part's name. Never grades Chief; changes nothing.",
+  "repo": "",
+  "model": "sonnet",
+  "path": ".claude/agents/teach-coach.md"
+ },
+ {
+  "kind": "hook",
+  "name": "autocommit.sh",
+  "desc": "Commits the tree locally at the end of every turn. Never pushes.",
+  "repo": "",
+  "model": "fires on Stop",
+  "path": ".claude/settings.local.json"
+ },
+ {
+  "kind": "hook",
+  "name": "digest.py",
+  "desc": "Prints the session-open digest, so the session never reads the five big files.",
+  "repo": "",
+  "model": "fires on SessionStart",
+  "path": ".claude/settings.local.json"
+ },
+ {
+  "kind": "hook",
+  "name": "no_probe.py",
+  "desc": "Blocks commands that scan the box unless the order names it (ruled 9/19).",
+  "repo": "",
+  "model": "fires on PreToolUse",
+  "path": ".claude/settings.local.json"
+ },
+ {
+  "kind": "hook",
+  "name": "order_hint.py",
+  "desc": "Spots the proword in Chief's message and names the order before the turn starts.",
+  "repo": "",
+  "model": "fires on UserPromptSubmit",
+  "path": ".claude/settings.local.json"
+ },
+ {
+  "kind": "hook",
+  "name": "precompact_backup.py",
+  "desc": "Saves the transcript before the context gets compacted.",
+  "repo": "",
+  "model": "fires on PreCompact",
+  "path": ".claude/settings.local.json"
+ },
+ {
+  "kind": "workflow",
+  "name": "sitrep",
+  "desc": "Sit rep formation (BOLO 54/68): prep, then RACK + INDEX + WATCH in parallel, then assemble with RANGE. Stops before Block VI, build, flush and publish.",
+  "repo": "",
+  "model": "",
+  "path": ".claude/workflows/sitrep.js"
+ }
+]

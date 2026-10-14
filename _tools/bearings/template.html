@@ -1,0 +1,262 @@
+<title>The Bearings</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* the Command look, DARK only (ruled 9/11): one 44px strip with the tabs, then one sortable table per tab; a row opens in place */
+  :root { color-scheme: dark;
+    --bg:#121110; --panel:#1B1A18; --panel-2:#24221F; --line:#34312C; --ink:#ECE7DF; --ink-2:#B7B0A5; --ink-3:#7F786E;
+    --accent:#FF5A1F; --accent-soft:#3A1D10; --accent-ink:#FFB08F; --good:#5FBF8A; --good-soft:#16301F; --warn:#E3B341; --warn-soft:#3A2E10;
+    --cool:#7FB2E5; --cool-soft:#14273A;
+    --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif; --body:"Atkinson Hyperlegible","Segoe UI",Verdana,sans-serif; --mono:"IBM Plex Mono",Consolas,monospace; }
+  *{box-sizing:border-box} html,body{background:var(--bg);color:var(--ink)}
+  body{font:15px/1.5 var(--body);padding-inline:16px;padding-block:0 48px}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  a{color:var(--accent-ink)}
+  .strip{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;align-items:center;gap:10px;flex-wrap:wrap;min-height:44px;margin-inline:-16px;padding:6px 16px;background:var(--panel);border-bottom:1px solid var(--line)}
+  .strip h1{margin:0;font:800 20px/1 var(--display);letter-spacing:.06em;text-transform:uppercase;white-space:nowrap} .strip h1 b{color:var(--accent)}
+  .tabs{display:flex;gap:4px;flex-wrap:wrap}
+  .tab{font:700 15px/1 var(--display);letter-spacing:.06em;text-transform:uppercase;background:transparent;color:var(--ink-2);border:1px solid var(--line);border-radius:3px;padding:6px 10px;cursor:pointer}
+  .tab[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:#1B0A03}
+  .tab span{font:500 12px var(--mono);margin-left:6px;opacity:.8}
+  .spacer{flex:1}
+  #q{font:14px var(--mono);background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:3px;padding:6px 9px;width:min(240px,100%)}
+  .chip{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:4px 7px;border:1px solid var(--line);border-radius:3px;color:var(--ink-2);white-space:nowrap}
+  .wrap{max-width:1180px;margin:0 auto;display:grid;gap:14px;padding-block:14px}
+  .lede{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px}
+  .lede>div{background:var(--panel);padding:9px 12px;min-width:0}
+  .lede dt{font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+  .lede dd{margin:0;font:800 26px/1.1 var(--display);font-variant-numeric:tabular-nums} .lede small{font:400 13px var(--body);color:var(--ink-2);display:block;line-height:1.35}
+  .filters{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+  .f{font:500 12px/1 var(--mono);background:var(--panel);color:var(--ink-2);border:1px solid var(--line);border-radius:3px;padding:6px 9px;cursor:pointer}
+  .f[aria-pressed="true"]{border-color:var(--accent);color:var(--ink);background:var(--accent-soft)}
+  .note{font-size:13px;color:var(--ink-2);margin:0}
+  .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:4px;background:var(--panel)}
+  table{border-collapse:collapse;width:100%;min-width:760px;font-size:14px}
+  th{position:sticky;top:0;background:var(--panel-2);text-align:left;font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+  th.sort{cursor:pointer} th.sort:hover{color:var(--ink)} th[aria-sort="ascending"]::after{content:" ▲";color:var(--accent)} th[aria-sort="descending"]::after{content:" ▼";color:var(--accent)}
+  td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top;min-width:0}
+  tr.row{cursor:pointer} tr.row:hover td{background:#1F1D1A} tr.row.open td{background:var(--panel-2)}
+  td.n{font:500 13px var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+  td.name{font:700 15px var(--display);letter-spacing:.03em;white-space:nowrap}
+  td.name small{display:block;font:400 11px var(--mono);color:var(--ink-3);letter-spacing:0}
+  .zero{color:var(--ink-3)}
+  .kind{font:500 10px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;padding:3px 6px;border-radius:2px;background:var(--panel-2);color:var(--ink-2)}
+  .kind.skill{background:var(--accent-soft);color:var(--accent-ink)} .kind.agent{background:var(--cool-soft);color:var(--cool)}
+  .kind.hook{background:var(--warn-soft);color:var(--warn)} .kind.workflow{background:var(--good-soft);color:var(--good)}
+  .pill{display:inline-block;font:500 11px/1.2 var(--mono);padding:3px 6px;border-radius:2px;margin:0 4px 4px 0;border:1px solid var(--line);color:var(--ink-2);white-space:nowrap}
+  .pill.same{border-color:var(--accent);color:var(--accent-ink)} .pill.feeds{border-color:var(--good);color:var(--good)} .pill.idea{border-style:dashed}
+  .pill.k{border-color:var(--cool);color:var(--cool)}
+  .weak{color:var(--warn);font-size:13px}
+  .bar{display:inline-block;height:8px;background:var(--accent);border-radius:1px;vertical-align:middle;margin-left:6px;opacity:.8}
+  .detail td{background:var(--bg);padding:12px 14px 16px}
+  .dgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px 22px}
+  .dgrid h4{margin:0 0 4px;font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+  .dgrid p,.dgrid ul{margin:0;font-size:14px;color:var(--ink)} .dgrid ul{padding-left:18px}
+  .dgrid li{margin-bottom:4px}
+  .path{font:12px var(--mono);color:var(--ink-3);word-break:break-all}
+  .findings{border:1px solid var(--warn);background:var(--warn-soft);border-radius:4px;padding:8px 12px;font-size:13px}
+  .t{position:relative;font:inherit;color:inherit;letter-spacing:inherit;text-transform:inherit;background:none;border:0;padding:0;border-bottom:1px dotted var(--accent);cursor:help}
+  .tip{display:none;position:absolute;left:0;top:calc(100% + 6px);z-index:20;width:min(300px,80vw);padding:8px 10px;background:var(--panel-2);border:1px solid var(--accent);border-radius:4px;font:400 13px/1.45 var(--body);color:var(--ink);text-transform:none;letter-spacing:0;text-align:left;white-space:normal;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+  .t:hover .tip,.t:focus-visible .tip,.t.pin .tip{display:block}
+  @media (max-width:640px){#q{width:100%}}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<header class="strip">
+  <h1><b>The</b> Bearings</h1>
+  <div class="tabs" role="tablist" id="tabs"></div>
+  <span class="spacer"></span>
+  <label for="q" class="chip" style="border:0;padding:0">Search</label>
+  <input id="q" type="search" placeholder="name, repo, word…" autocomplete="off">
+  <span class="chip" id="built"></span>
+</header>
+<main class="wrap" id="main"></main>
+
+<script id="data" type="application/json">/*__DATA__*/null</script>
+<script>
+const D = JSON.parse(document.getElementById("data").textContent);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const G = {   // the hover layer: every term explains itself
+  repo: "A GitHub project Chief handed to the intake (BOLO 140). The intake read each one and wrote picks.",
+  pick: "One idea the intake pulled from a repo: what it is, a rec, and which Command piece it would replace.",
+  fit: "How a repo lines up with a Kit piece. SAME: it does the same job. FEEDS: it has a part we could adopt. IDEA: a loose idea.",
+  same: "The repo does what this piece does: a rival or the source it came from.",
+  feeds: "The repo has a part this piece could adopt.",
+  idea: "A loose idea worth a look, not a match.",
+  gap: "Something the repo covers that the Command has no piece for yet.",
+  kit: "Every skill, agent, hook and workflow the Command runs (the Kit, 10/13).",
+  skill: "A procedure Claude loads when its proword is said. Lives in .claude/skills/.",
+  agent: "A specialist Claude can launch for one job (the Roster, BOLO 139). Lives in .claude/agents/.",
+  hook: "A script the harness runs on its own at a set moment, like session start or every turn's end.",
+  workflow: "A script that runs a whole formation of agents in one go.",
+  sop: "A procedure written into SOP.md. §1 holds the prowords; §7 holds the format rules.",
+  runs: "How many times it fired, counted from every session transcript since 9/15.",
+  last7: "How many of those runs fell in the last 7 days.",
+  median: "Minutes from the moment it fired to Chief's next message, middle value. Gaps over 4 hours are left out.",
+  launches: "Agent launches by type. The formation launches specialists as general-purpose with a model, so Roster names show near zero.",
+  weak: "Where the piece drags, breaks or overlaps, from what its file shows.",
+  brief: "A short brief a specialist wrote from the piece's own file: what it does, when, what it leaves behind.",
+  proword: "A spoken code word that fires a procedure, like 'sit rep' or 'Oscar Mike'."
+};
+const T = (key, label) => `<button type="button" class="t" data-g="${key}">${esc(label)}<span class="tip" role="tooltip">${esc(G[key] || "")}</span></button>`;
+const runOf = k => D.runs[k] || null;
+const fmtLast = s => { if (!s) return ""; const d = new Date(s.replace(" ", "T")); if (isNaN(d)) return s;
+  return d.toLocaleDateString("en-US",{month:"numeric",day:"numeric"}) + (s.length > 10 ? " " + d.toLocaleTimeString("en-US",{hour:"numeric",minute:"2-digit"}) : ""); };
+
+/* ---------- derived ---------- */
+const byRepoKit = {};
+for (const [k, list] of Object.entries(D.match.by_kit || {})) for (const m of list) (byRepoKit[m.repo] ||= []).push({kit: k, fit: m.fit, how: m.how});
+const kitRuns = k => k.kind === "agent" ? runOf("agent:" + k.name) : k.kind === "skill" ? runOf("skill:" + k.name) : null;
+const sopRuns = s => { const a = runOf("sop:" + s.n), b = s.skill ? runOf("skill:" + s.skill) : null;
+  if (!a && !b) return null; if (!a) return b; if (!b) return a;
+  return a.runs >= b.runs ? a : b; };
+
+/* ---------- tabs ---------- */
+const TABS = [
+  {id: "repos", label: "Repos", count: D.repos.length},
+  {id: "kit", label: "Kit", count: D.kit.length},
+  {id: "sops", label: "SOPs", count: D.sops.filter(s => s.level === 3 || s.n.indexOf(".") < 0).length},
+];
+let tab = "kit", q = "", kindF = "all", sopF = "procedures", sort = {}, openRow = null;
+try { tab = localStorage.getItem("bearings.tab") || tab; } catch (e) {}
+if (/^#(repos|kit|sops)$/.test(location.hash)) tab = location.hash.slice(1);
+document.getElementById("built").textContent = "built " + D.built;
+const tabsEl = document.getElementById("tabs");
+function drawTabs() {
+  tabsEl.innerHTML = TABS.map(t => `<button type="button" class="tab" role="tab" id="tab-${t.id}" aria-selected="${t.id === tab}" data-tab="${t.id}">${t.label}<span>${t.count}</span></button>`).join("");
+}
+
+/* ---------- table helper ---------- */
+function table(id, cols, rows, detail) {
+  const s = sort[id] || {};
+  if (s.key) { const c = cols.find(c => c.key === s.key); rows = rows.slice().sort((a, b) => { const x = c.val(a), y = c.val(b);
+    return (x < y ? -1 : x > y ? 1 : 0) * (s.dir === "asc" ? 1 : -1); }); }
+  const head = cols.map(c => `<th${c.val ? ` class="sort" data-sort="${id}:${c.key}" aria-sort="${s.key === c.key ? (s.dir === "asc" ? "ascending" : "descending") : "none"}"` : ""}>${c.head}</th>`).join("");
+  const body = rows.map((r, i) => {
+    const key = id + ":" + (r.name || r.repo || r.n);
+    const open = openRow === key;
+    return `<tr class="row${open ? " open" : ""}" data-row="${esc(key)}" tabindex="0" aria-expanded="${open}">${cols.map(c => `<td class="${c.cls || ""}">${c.cell(r)}</td>`).join("")}</tr>` +
+      (open ? `<tr class="detail"><td colspan="${cols.length}">${detail(r)}</td></tr>` : "");
+  }).join("") || `<tr><td colspan="${cols.length}" class="note">Nothing matches "${esc(q)}".</td></tr>`;
+  return `<div class="tblwrap"><table><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table></div>`;
+}
+const hit = (...parts) => !q || parts.join(" ").toLowerCase().includes(q);
+
+/* ---------- Repos ---------- */
+function repos() {
+  const rows = D.repos.filter(r => hit(r.repo, r.what, (D.match.by_repo?.[r.repo]?.gist) || "", (byRepoKit[r.repo] || []).map(m => m.kit).join(" ")));
+  const gaps = D.repos.filter(r => D.match.by_repo?.[r.repo]?.gap).length;
+  const picks = D.repos.reduce((n, r) => n + r.picks.length, 0);
+  const lede = `<dl class="lede">
+    <div><dt>${T("repo","Repos")}</dt><dd>${D.repos.length}</dd><small>handed to the intake, read and noted</small></div>
+    <div><dt>${T("pick","Picks")}</dt><dd>${picks}</dd><small>ideas pulled from them</small></div>
+    <div><dt>${T("gap","Gaps")}</dt><dd>${gaps}</dd><small>repos covering something we have no piece for</small></div>
+    <div><dt>Touch the Kit</dt><dd>${Object.keys(byRepoKit).length}</dd><small>repos matched to at least one Kit piece</small></div></dl>`;
+  const cols = [
+    {key: "repo", head: "Repo", cls: "name", val: r => r.repo.toLowerCase(), cell: r => `${esc(r.repo.split("/")[1])}<small>${esc(r.repo.split("/")[0])}${r.license ? " · " + esc(r.license) : ""}</small>`},
+    {key: "what", head: "What it is", cell: r => esc(D.match.by_repo?.[r.repo]?.gist || r.what.slice(0, 220) + (r.what.length > 220 ? "…" : ""))},
+    {key: "picks", head: T("pick","Picks"), cls: "n", val: r => r.picks.length, cell: r => r.picks.length || `<span class="zero">0</span>`},
+    {key: "kit", head: `Matches in the ${T("kit","Kit")}`, val: r => (byRepoKit[r.repo] || []).length,
+      cell: r => (byRepoKit[r.repo] || []).map(m => `<span class="pill ${esc(m.fit)}">${esc(m.kit)}</span>`).join("") || `<span class="zero">none</span>`},
+    {key: "gap", head: T("gap","Gap"), cell: r => esc(D.match.by_repo?.[r.repo]?.gap || "")},
+  ];
+  const detail = r => `<div class="dgrid">
+    <div><h4>What it is</h4><p>${esc(r.what)}</p><p class="path" style="margin-top:6px"><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.url)}</a></p></div>
+    <div><h4>How it lines up with the Kit</h4><ul>${(byRepoKit[r.repo] || []).map(m => `<li><span class="pill ${esc(m.fit)}">${esc(m.fit)}</span><b>${esc(m.kit)}</b>: ${esc(m.how)}</li>`).join("") || "<li>No match yet.</li>"}</ul></div>
+    <div><h4>Picks (${r.picks.length})</h4><ul>${r.picks.slice(0, 12).map(p => `<li>${esc(p.plain)}${p.rec ? ` <span class="pill">${esc(p.rec)}</span>` : ""}${p.replaces && p.replaces !== "none" ? ` <span class="pill k">→ ${esc(p.replaces)}</span>` : ""}</li>`).join("") || "<li>No picks recorded.</li>"}${r.picks.length > 12 ? `<li class="zero">+${r.picks.length - 12} more on the intake picker</li>` : ""}</ul></div></div>`;
+  return lede + `<p class="note">Click a row to open it. Pills show the ${T("fit","fit")}: ${T("same","same")} · ${T("feeds","feeds")} · ${T("idea","idea")}.</p>` + table("repos", cols, rows, detail);
+}
+
+/* ---------- Kit ---------- */
+function kit() {
+  const kinds = ["all", "skill", "agent", "hook", "workflow"];
+  const rows = D.kit.filter(k => (kindF === "all" || k.kind === kindF) &&
+    hit(k.name, k.desc, (D.briefs[k.name] || {}).does || "", (D.match.by_kit?.[k.name] || []).map(m => m.repo).join(" ")));
+  const ran = D.kit.filter(k => kitRuns(k)).length;
+  const agents = D.kit.filter(k => k.kind === "agent"), agentsRan = agents.filter(k => kitRuns(k)).length;
+  const skills = D.kit.filter(k => k.kind === "skill"), skillsRan = skills.filter(k => kitRuns(k)).length;
+  const maxRuns = Math.max(1, ...D.kit.map(k => (kitRuns(k) || {}).runs || 0));
+  const lede = `<dl class="lede">
+    <div><dt>${T("kit","Pieces")}</dt><dd>${D.kit.length}</dd><small>${skills.length} skills · ${agents.length} agents · ${D.kit.length - skills.length - agents.length} hooks and workflows</small></div>
+    <div><dt>${T("skill","Skills that ran")}</dt><dd>${skillsRan}<small style="display:inline;font:500 14px var(--mono)"> / ${skills.length}</small></dd><small>by name, since 9/15</small></div>
+    <div><dt>${T("agent","Agents that ran")}</dt><dd>${agentsRan}<small style="display:inline;font:500 14px var(--mono)"> / ${agents.length}</small></dd><small>by Roster name; specialists run as general-purpose</small></div>
+    <div><dt>Matched to a repo</dt><dd>${D.kit.filter(k => (D.match.by_kit?.[k.name] || []).length).length}</dd><small>pieces with at least one repo behind or beside them</small></div></dl>`;
+  const filters = `<div class="filters" role="group" aria-label="Kind">${kinds.map(k => `<button type="button" class="f" data-kind="${k}" aria-pressed="${kindF === k}">${k === "all" ? "All" : k + "s"}</button>`).join("")}</div>`;
+  const cols = [
+    {key: "kind", head: "Kind", val: k => k.kind, cell: k => `<span class="kind ${k.kind}">${k.kind}</span>`},
+    {key: "name", head: "Name", cls: "name", val: k => k.name, cell: k => `${esc(k.name)}${k.model && k.kind === "agent" ? `<small>${esc(k.model)}</small>` : ""}`},
+    {key: "does", head: T("brief","Does"), cell: k => esc((D.briefs[k.name] || {}).does || k.desc.slice(0, 180))},
+    {key: "runs", head: T("runs","Runs"), cls: "n", val: k => (kitRuns(k) || {}).runs || 0,
+      cell: k => { const r = kitRuns(k); return r ? `${r.runs}<span class="bar" style="width:${Math.max(2, 46 * r.runs / maxRuns)}px"></span>` : `<span class="zero">never</span>`; }},
+    {key: "repos", head: "Repos", val: k => (D.match.by_kit?.[k.name] || []).length,
+      cell: k => (D.match.by_kit?.[k.name] || []).map(m => `<span class="pill ${esc(m.fit)}" title="${esc(m.how)}">${esc(m.repo.split("/")[1])}</span>`).join("") || (k.repo ? `<span class="pill same">${esc(k.repo)}</span>` : `<span class="zero">none</span>`)},
+    {key: "weak", head: T("weak","Weak spot"), cell: k => `<span class="weak">${esc((D.briefs[k.name] || {}).weak || "")}</span>`},
+  ];
+  const detail = k => { const b = D.briefs[k.name] || {}, r = kitRuns(k);
+    return `<div class="dgrid">
+      <div><h4>Brief</h4><p>${esc(b.does || k.desc)}</p>${b.fires ? `<h4 style="margin-top:10px">Fires</h4><p>${esc(b.fires)}</p>` : ""}${b.gives ? `<h4 style="margin-top:10px">Leaves behind</h4><p>${esc(b.gives)}</p>` : ""}</div>
+      <div><h4>Steps</h4><p>${esc(b.steps || "")}</p>${b.weak ? `<h4 style="margin-top:10px">${T("weak","Weak spot")}</h4><p class="weak">${esc(b.weak)}</p>` : ""}
+        <h4 style="margin-top:10px">${T("runs","Runs")}</h4><p>${r ? `${r.runs} runs in ${r.sessions} sessions · ${r.last7} in the last 7 days · last ${fmtLast(r.last)}${r.median_min != null ? ` · ${T("median","median")} ${r.median_min} min` : ""}` : "Never fired by name in any transcript."}</p></div>
+      <div><h4>Repos that line up</h4><ul>${(D.match.by_kit?.[k.name] || []).map(m => `<li><span class="pill ${esc(m.fit)}">${esc(m.fit)}</span><a href="https://github.com/${esc(m.repo)}" target="_blank" rel="noopener">${esc(m.repo)}</a>: ${esc(m.how)}</li>`).join("") || "<li>None matched.</li>"}</ul>
+        <h4 style="margin-top:10px">File</h4><p class="path">${esc(k.path)}</p></div></div>`; };
+  return lede + filters + table("kit", cols, rows, detail);
+}
+
+/* ---------- SOPs ---------- */
+function sops() {
+  const groups = {procedures: s => s.n.startsWith("1.") , format: s => s.n.startsWith("7."), all: s => true};
+  const rows = D.sops.filter(s => groups[sopF](s) && hit(s.n, s.title, s.summary));
+  const fired = D.sops.filter(s => sopRuns(s)).length;
+  const total = D.sops.reduce((n, s) => n + ((sopRuns(s) || {}).runs || 0), 0);
+  const maxRuns = Math.max(1, ...D.sops.map(s => (sopRuns(s) || {}).runs || 0));
+  const launches = Object.entries(D.runs).filter(([k]) => k.startsWith("agent:")).sort((a, b) => b[1].runs - a[1].runs);
+  const lede = `<dl class="lede">
+    <div><dt>${T("sop","Written SOPs")}</dt><dd>${D.sops.length}</dd><small>numbered sections in SOP.md</small></div>
+    <div><dt>${T("proword","Prowords that fired")}</dt><dd>${fired}</dd><small>of ${D.sops.filter(s => s.n.startsWith("1.")).length} in §1</small></div>
+    <div><dt>${T("runs","Total runs")}</dt><dd>${total.toLocaleString()}</dd><small>since 9/15, from the transcripts</small></div>
+    <div><dt>${T("launches","Agent launches")}</dt><dd>${launches.reduce((n, [, v]) => n + v.runs, 0).toLocaleString()}</dd><small>${launches.slice(0, 2).map(([k, v]) => esc(k.slice(6)) + " " + v.runs).join(" · ")}</small></div></dl>`;
+  const filters = `<div class="filters" role="group" aria-label="Section">${[["procedures","§1 prowords"],["format","§7 format rules"],["all","All sections"]].map(([k, l]) => `<button type="button" class="f" data-sop="${k}" aria-pressed="${sopF === k}">${l}</button>`).join("")}</div>`;
+  const cols = [
+    {key: "n", head: "§", cls: "n", val: s => s.n.split(".").map(x => x.padStart(3, "0")).join("."), cell: s => esc(s.n)},
+    {key: "title", head: "Procedure", val: s => s.title.toLowerCase(), cell: s => `<b>${esc(s.title.replace(/\s*\(.*$/, ""))}</b>${s.retired ? ` <span class="pill">retired</span>` : ""}${s.skill ? ` <span class="pill k">skill: ${esc(s.skill)}</span>` : ""}`},
+    {key: "runs", head: T("runs","Runs"), cls: "n", val: s => (sopRuns(s) || {}).runs || 0, cell: s => { const r = sopRuns(s); return r ? `${r.runs}<span class="bar" style="width:${Math.max(2, 46 * r.runs / maxRuns)}px"></span>` : `<span class="zero">—</span>`; }},
+    {key: "last7", head: T("last7","7 days"), cls: "n", val: s => (sopRuns(s) || {}).last7 || 0, cell: s => (sopRuns(s) || {}).last7 ?? `<span class="zero">—</span>`},
+    {key: "median", head: T("median","Median min"), cls: "n", val: s => (sopRuns(s) || {}).median_min ?? -1, cell: s => (sopRuns(s) || {}).median_min ?? `<span class="zero">—</span>`},
+    {key: "last", head: "Last run", cls: "n", val: s => (sopRuns(s) || {}).last || "", cell: s => fmtLast((sopRuns(s) || {}).last) || `<span class="zero">—</span>`},
+  ];
+  const detail = s => { const r = sopRuns(s);
+    return `<div class="dgrid"><div><h4>What SOP.md says</h4><p>${esc(s.summary || "(heading only)")}</p></div>
+      <div><h4>Says</h4><p>${s.says.map(x => `<span class="pill">${esc(x)}</span>`).join("") || "No spoken trigger; it is a rule, not a proword."}</p>
+      <h4 style="margin-top:10px">${T("runs","Performance")}</h4><p>${r ? `${r.runs} runs in ${r.sessions} sessions, first ${esc(r.first)} · ${r.last7} in the last 7 days${r.median_min != null ? ` · ${T("median","median")} ${r.median_min} min to Chief's next word` : ""}` : "No run found in the transcripts. Rules in §7 apply to every reply, so they never count as runs."}</p></div></div>`; };
+  const ltable = `<h2 style="margin:6px 0 0;font:700 18px var(--display);letter-spacing:.06em;text-transform:uppercase">${T("launches","Agent launches by type")}</h2>
+    <div class="tblwrap"><table style="min-width:520px"><thead><tr><th>Type</th><th style="text-align:right">Launches</th><th style="text-align:right">7 days</th><th style="text-align:right">Median min</th><th style="text-align:right">Last</th></tr></thead><tbody>${launches.map(([k, v]) => `<tr><td class="name">${esc(k.slice(6))}</td><td class="n">${v.runs.toLocaleString()}</td><td class="n">${v.last7}</td><td class="n">${v.median_min ?? "—"}</td><td class="n">${fmtLast(v.last)}</td></tr>`).join("")}</tbody></table></div>`;
+  return lede + filters + table("sops", cols, rows, detail) + ltable;
+}
+
+/* ---------- render + events ---------- */
+const main = document.getElementById("main");
+function draw() {
+  drawTabs();
+  const f = D.findings && D.findings.length ? `<div class="findings"><b>RANGE (the script reviewer):</b> ${D.findings.map(esc).join(" · ")}</div>` : "";
+  main.innerHTML = f + ({repos, kit, sops}[tab])();
+}
+document.addEventListener("click", ev => {
+  const t = ev.target.closest(".t");
+  document.querySelectorAll(".t.pin").forEach(x => { if (x !== t) x.classList.remove("pin"); });
+  if (t) { t.classList.toggle("pin"); ev.stopPropagation(); return; }
+  const tb = ev.target.closest("[data-tab]"); if (tb) { tab = tb.dataset.tab; openRow = null; try { localStorage.setItem("bearings.tab", tab); } catch (e) {} draw(); return; }
+  const k = ev.target.closest("[data-kind]"); if (k) { kindF = k.dataset.kind; draw(); return; }
+  const so = ev.target.closest("[data-sop]"); if (so) { sopF = so.dataset.sop; draw(); return; }
+  const th = ev.target.closest("th[data-sort]"); if (th) { const [id, key] = th.dataset.sort.split(":"); const s = sort[id] || {};
+    sort[id] = {key, dir: s.key === key && s.dir === "desc" ? "asc" : "desc"}; draw(); return; }
+  if (ev.target.closest("a")) return;
+  const row = ev.target.closest("tr.row"); if (row) { openRow = openRow === row.dataset.row ? null : row.dataset.row; draw(); }
+});
+document.addEventListener("keydown", ev => {
+  if (ev.key === "Escape") { document.querySelectorAll(".t.pin").forEach(x => x.classList.remove("pin")); return; }
+  if (ev.key === " " && document.activeElement && document.activeElement.classList.contains("t")) { ev.preventDefault(); document.activeElement.classList.toggle("pin"); return; }
+  if (ev.key === "Enter" && document.activeElement && document.activeElement.matches("tr.row")) { const r = document.activeElement.dataset.row; openRow = openRow === r ? null : r; draw();
+    const el = document.querySelector(`tr.row[data-row="${CSS.escape(r)}"]`); if (el) el.focus(); }
+});
+document.getElementById("q").addEventListener("input", ev => { q = ev.target.value.trim().toLowerCase(); draw(); });
+draw();
+</script>
