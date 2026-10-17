@@ -5,8 +5,8 @@
   "trunk": "BLACK",
   "issued": "2026-10-17",
   "asof": "2026-10-17",
-  "s": "open",
-  "status": "🟡 **OPEN 10/17** · scanner detected, research written, two agents built · the scan program and the pipeline scripts are not built yet.",
+  "s": "hot",
+  "status": "NAPS2 installed and sees the ES-590W over USB; scan.py and the voice blurb are built; first real scan waits on Chief.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "BOLO 107 the intake (paper + scripts bins, replaces the phone-photo rule for paper) · BOLO 139 the Roster",
   "related": [
@@ -21,7 +21,7 @@
   ],
   "home": "BOLO.md · row 149",
   "card": "none",
-  "version": "v0.1 · DOPE SHEET"
+  "version": "v0.2 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -133,6 +133,15 @@
       {
        "t": "Bound notepads do not feed through the sheet feeder. Chief tears out the pages or photographs them.",
        "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "The voice blurb",
+     "items": [
+      {
+       "t": "Chief, 10/17: \"before every document that I scan ... take that text ... and then attach it to that document ... I'll say the document, then you'll clean it up, and then you'll attach it, and then I'll scan it\".",
+       "s": "ruled"
       }
      ]
     }
@@ -282,6 +291,21 @@
      "path": "_scan_raw/",
      "what": "untouched copies of every raw scan (named in the research)",
      "s": "open"
+    },
+    {
+     "path": "_tools/scanner/scan.py",
+     "what": "one command scans the next document (typed · hand · photo · receipt) through NAPS2 over TWAIN, OCRs typed pages, attaches the waiting blurb",
+     "s": "done"
+    },
+    {
+     "path": "_tools/scanner/blurb.py",
+     "what": "the voice blurb queue: Claude cleans what Chief says, the next scan takes the oldest blurb as context.md, PDF Subject/Keywords and an embedded file",
+     "s": "done"
+    },
+    {
+     "path": "_PRIVATE/intake/paper/scans/",
+     "what": "one folder per document: raw.pdf · doc.pdf · doc.txt · context.md",
+     "s": "open"
     }
    ],
    "cost": [
@@ -380,44 +404,59 @@
      "when": "10/17",
      "who": "Claude",
      "t": "Built the agents `scan-reader` (sonnet) and `scan-filer` (haiku). The script that applies the filing is not built yet."
+    },
+    {
+     "when": "10/17",
+     "who": "Chief",
+     "t": "\"go\" on all five calls; asked for a spoken blurb before every document, cleaned up and attached."
+    },
+    {
+     "when": "10/17",
+     "who": "Claude",
+     "t": "Installed NAPS2 8.5.1; it lists the ES-590W on TWAIN and WIA, not on ESCL. Built scan.py and blurb.py; tested the attach on a dummy PDF."
     }
    ]
   }
  ],
  "frago": {
   "mission": "Stand up the ES-590W as the intake's paper door, so Chief's pages land as searchable, filed text.",
-  "order": "**Install NAPS2, make the four profiles, and scan one test page over USB.**",
-  "default": "Silence: nothing installs; ScanSmart stays the scanner's program.",
+  "order": "**Load one page, say the blurb, then say \"scan typed\" (or hand · photo · receipt).**",
+  "default": "Silence: nothing scans; the tools wait.",
   "calls": [
    {
     "q": "Install NAPS2 as the scan program",
     "options": "YES, winget install + four profiles (rec) · keep ScanSmart",
     "default": "YES (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "YES: Chief \"go\" 10/17; installed via winget (8.5.1)"
    },
    {
     "q": "Who reads the handwriting",
     "options": "TEST BOTH on 20 real pages, scan-reader and a local vision model (rec) · scan-reader only · local only",
     "default": "TEST BOTH (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "TEST BOTH on 20 real pages (\"go\", 10/17)"
    },
    {
     "q": "Bound notepads",
     "options": "KEEP the phone-photo rule for bound books (rec) · tear pages out for the feeder",
     "default": "KEEP (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "KEEP the phone-photo rule for bound books (\"go\", 10/17)"
    },
    {
     "q": "Paperless-ngx as the archive",
     "options": "NOT NOW, intake bins + Zotero (rec) · stand it up",
     "default": "NOT NOW (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "NOT NOW (\"go\", 10/17)"
    },
    {
     "q": "USB or Wi-Fi",
     "options": "USB (rec) · Wi-Fi (ESCL unconfirmed)",
     "default": "USB (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "USB (\"go\", 10/17); NAPS2 does not see the ES-590W over ESCL"
    }
   ]
  }
