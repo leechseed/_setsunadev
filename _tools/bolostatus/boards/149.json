@@ -1,0 +1,424 @@
+{
+ "bolo": {
+  "n": 149,
+  "title": "THE SCANNER: the Epson ES-590W as the paper door into the intake, with a better scan program, a hot-folder pipeline and its own agents",
+  "trunk": "BLACK",
+  "issued": "2026-10-17",
+  "asof": "2026-10-17",
+  "s": "open",
+  "status": "🟡 **OPEN 10/17** · scanner detected, research written, two agents built · the scan program and the pipeline scripts are not built yet.",
+  "decider": "HOTLINE ACTUAL",
+  "feeds": "BOLO 107 the intake (paper + scripts bins, replaces the phone-photo rule for paper) · BOLO 139 the Roster",
+  "related": [
+   {
+    "n": 107,
+    "why": "BOLO 107 held all paper on 10/12 until a document scanner arrived. This row is that scanner."
+   },
+   {
+    "n": 139,
+    "why": "BOLO 139 is the Roster. This row adds two scan agents to it."
+   }
+  ],
+  "home": "BOLO.md · row 149",
+  "card": "none",
+  "version": "v0.1 · DOPE SHEET"
+ },
+ "mantra": [
+  {
+   "k": "speed",
+   "w": "Speed",
+   "line": "The scanner works now, and the research and both agents landed the same day."
+  },
+  {
+   "k": "focus",
+   "w": "Focus",
+   "line": "One door for paper: scan, hot folder, text, filing. Handwriting goes to a vision reader."
+  },
+  {
+   "k": "boldness",
+   "w": "Boldness",
+   "line": "Replace ScanSmart with open-source NAPS2, and keep every raw scan untouched."
+  }
+ ],
+ "paragraphs": [
+  {
+   "id": "S",
+   "name": "Situation",
+   "kind": "list",
+   "plain": "Where this came from: what Chief said, what already exists, and what the record shows now.",
+   "strand": {
+    "last": "On 10/12 BOLO 107 held all paper until a document scanner arrived. Chief installed the scanner on 10/17.",
+    "plan": "Claude builds a better scan program, a hot-folder pipeline and agents, so paper flows into the intake.",
+    "you": "You said on 10/17: \"We need to create a good system, create the agents.\" You asked for the glass and this sheet.",
+    "next": "Claude scans one test page. Then Claude builds the watcher script."
+   },
+   "groups": [
+    {
+     "label": "The transmission · verbatim",
+     "items": [
+      {
+       "t": "\"see if you can detect the scanner? I've installed the scanner now, so I feel like we should now focus on that next ... what can we do to better optimize its usage? ... is there a better open source uh, program that I can use besides the Epson Scan Smart thing? What are its disadvantages ... We need to create a good system, create the agents ... bolo this, glass it, and give me the fucking dope sheet.\"",
+       "s": "done",
+       "when": "10/17"
+      }
+     ]
+    },
+    {
+     "label": "What exists already",
+     "items": [
+      {
+       "t": "Claude detected the EPSON ES-590W on USB. Windows lists it as Image class, status OK.",
+       "s": "done",
+       "when": "10/17"
+      },
+      {
+       "t": "The box has Epson Scan 2 (TWAIN + WIA), ScanSmart 3.7.20, the Epson OCR components and Event Manager.",
+       "s": "done",
+       "when": "10/17"
+      },
+      {
+       "t": "The box has Tesseract 5.4 (eng + osd), OCRmyPDF and Ghostscript. NAPS2 is not installed.",
+       "s": "done",
+       "when": "10/17"
+      },
+      {
+       "t": "Claude wrote the research file `_tools/scanner/research.md` from web sources only.",
+       "s": "done",
+       "when": "10/17"
+      },
+      {
+       "t": "Claude built the agent `.claude/agents/scan-reader.md` (sonnet). It writes handwriting transcripts from page images.",
+       "s": "done",
+       "when": "10/17"
+      },
+      {
+       "t": "Claude built the agent `.claude/agents/scan-filer.md` (haiku). It writes one filing.json per batch: title, date, bin, tags, ties.",
+       "s": "done",
+       "when": "10/17"
+      },
+      {
+       "t": "The drop folder `Q:\\_PDF_DROP\\paper` exists from BOLO 107. Chief held the paper scans until the scanner came.",
+       "s": "done",
+       "when": "10/12"
+      }
+     ]
+    },
+    {
+     "label": "What the record says",
+     "items": [
+      {
+       "t": "The research verdict: use NAPS2 to scan. It is free, open source, and drives the scanner through TWAIN or WIA.",
+       "s": "open"
+      },
+      {
+       "t": "The research verdict: use OCRmyPDF for typed text. It fixes tilt and rotation and writes a searchable PDF/A.",
+       "s": "open"
+      },
+      {
+       "t": "ScanSmart's flaws, from Epson's own docs: the auto file names can carry an old date, and OCR can fail.",
+       "s": "open"
+      },
+      {
+       "t": "ScanSmart's flaws, from Epson's own docs: cloud sending can break. It is closed source, and the research found no scripting.",
+       "s": "open"
+      },
+      {
+       "t": "Tesseract is weak on handwriting. The plan sends handwriting to a vision model that reads whole page images.",
+       "s": "open"
+      },
+      {
+       "t": "Nothing is tested yet. NAPS2 on the ES-590W, the vision reader's accuracy and the carrier sheet fit are all unverified.",
+       "s": "open"
+      },
+      {
+       "t": "Bound notepads do not feed through the sheet feeder. Chief tears out the pages or photographs them.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "M",
+   "name": "Mission",
+   "kind": "mission",
+   "plain": "Turn the new scanner into the paper door of the intake. Chief feeds pages; scripts and two agents do the rest.",
+   "strand": {
+    "last": "Claude found the ES-590W on USB and ran the research pass.",
+    "plan": "NAPS2 scans, OCRmyPDF reads typed pages, scan-reader reads handwriting, scan-filer files.",
+    "you": "Chief rules the five calls, starting with the NAPS2 install.",
+    "next": "Claude installs NAPS2 and scans one test page over USB."
+   },
+   "task": "Stand up the ES-590W as the paper door into the intake, with NAPS2, a hot-folder pipeline and two agents,",
+   "intent": "in order to move Chief's paper notes and scripts into the intake as searchable, filed text without hand work.",
+   "spoken": "\"I've installed the scanner now, so I feel like we should now focus on that next ... is there a better open source uh, program that I can use besides the Epson Scan Smart thing? ... We need to create a good system, create the agents\"",
+   "endstate": [
+    "Chief feeds a stack and walks away; every page lands searchable in its intake bin.",
+    "Handwritten pages get a faithful transcript with unclear words marked.",
+    "Every raw scan is kept untouched beside its text.",
+    "A script checks each batch; no checker agent."
+   ]
+  },
+  {
+   "id": "E",
+   "name": "Execution",
+   "kind": "phases",
+   "plain": "What happened between the order and today, and what is left to build.",
+   "strand": {
+    "last": "Claude detected the scanner, wrote the research and built the two scan agents on 10/17.",
+    "plan": "Claude installs NAPS2, scans a test page, then builds the watcher script and the scripts that apply the filing.",
+    "you": "You will spot-check the handwriting transcripts. Claude tests 20 real pages before anyone trusts the reader.",
+    "next": "Claude scans one page through NAPS2 to prove the scanner works there."
+   },
+   "main_effort": "Replace ScanSmart with NAPS2 and build the hot-folder pipeline, so a scanned page reaches the intake without a person at the screen.",
+   "phases": [
+    {
+     "n": 0,
+     "t": "**Scanner detected.** Claude found the ES-590W on USB with its Epson drivers, plus Tesseract, OCRmyPDF and Ghostscript.",
+     "s": "done",
+     "when": "10/17"
+    },
+    {
+     "n": 1,
+     "t": "**Research written.** Claude covered ScanSmart's flaws, open-source options, settings per material, the pipeline and handwriting in `_tools/scanner/research.md`.",
+     "s": "done",
+     "when": "10/17"
+    },
+    {
+     "n": 2,
+     "t": "**Agents built.** Claude wrote `scan-reader` (sonnet) and `scan-filer` (haiku). A script applies the filing, and RANGE checks it.",
+     "s": "done",
+     "when": "10/17"
+    },
+    {
+     "n": 3,
+     "t": "**Glass and this sheet.** Claude shows Chief the board and builds DOPE SHEET 149, as Chief ordered.",
+     "s": "now",
+     "when": "10/17"
+    },
+    {
+     "n": 4,
+     "t": "**Test scan.** Claude installs NAPS2 and scans one page over USB with TWAIN. The research marks this path unverified.",
+     "s": "open"
+    },
+    {
+     "n": 5,
+     "t": "**Scan profiles.** Claude saves one NAPS2 profile per material: typed pages, handwriting, photos, receipts. Handwriting scans at 300 dpi color, lossless.",
+     "s": "open"
+    },
+    {
+     "n": 6,
+     "t": "**Watcher script.** A small Python script polls `_scan_in/` and waits until the file size stops changing. It copies each raw scan to `_scan_raw/`.",
+     "s": "open"
+    },
+    {
+     "n": 7,
+     "t": "**Typed-page step.** The script runs OCRmyPDF with `--deskew --rotate-pages --clean` on typed material. It names files `YYYY-MM-DD_source_batch_NNN`.",
+     "s": "open"
+    },
+    {
+     "n": 8,
+     "t": "**Dedupe.** The script hashes each raw scan with SHA-256, plus a perceptual hash for near-duplicates. This is the research's own suggestion.",
+     "s": "open"
+    },
+    {
+     "n": 9,
+     "t": "**Handwriting test.** Claude runs `scan-reader` on 20 real pages. The reader marks unclear words `[?]`. Chief spot-checks.",
+     "s": "open"
+    },
+    {
+     "n": 10,
+     "t": "**Filing script.** Claude builds the script that applies each filing.json. Then it files into the intake's paper and scripts bins.",
+     "s": "open"
+    }
+   ],
+   "coord": [],
+   "running": [],
+   "groups": []
+  },
+  {
+   "id": "A",
+   "name": "Admin & Logistics",
+   "kind": "files",
+   "plain": "Where this row's files live and what it costs.",
+   "strand": {
+    "last": "Claude wrote the research file and two agent files on 10/17.",
+    "plan": "Claude adds the pipeline scripts and NAPS2 profiles. Raw scans stay private and are never edited.",
+    "you": "You spent nothing on this row. The sources name one optional buy: the carrier sheet.",
+    "next": "Claude installs NAPS2, a free download."
+   },
+   "files": [
+    {
+     "path": "BOLO.md",
+     "what": "row 149, the order spoken 10/17",
+     "s": "done"
+    },
+    {
+     "path": "_tools/scanner/research.md",
+     "what": "the research: ScanSmart flaws, alternatives, settings, pipeline, handwriting, risks",
+     "s": "done"
+    },
+    {
+     "path": ".claude/agents/scan-reader.md",
+     "what": "agent (sonnet): faithful handwriting transcripts from page images",
+     "s": "done"
+    },
+    {
+     "path": ".claude/agents/scan-filer.md",
+     "what": "agent (haiku): one filing.json per batch",
+     "s": "done"
+    },
+    {
+     "path": "Q:\\_PDF_DROP\\paper",
+     "what": "the paper drop folder from BOLO 107",
+     "s": "done"
+    },
+    {
+     "path": "_scan_in/",
+     "what": "the hot folder the watcher script polls (named in the research)",
+     "s": "open"
+    },
+    {
+     "path": "_scan_raw/",
+     "what": "untouched copies of every raw scan (named in the research)",
+     "s": "open"
+    }
+   ],
+   "cost": [
+    {
+     "k": "money",
+     "v": "none spent in the sources · NAPS2, OCRmyPDF and Tesseract are free"
+    },
+    {
+     "k": "optional buy",
+     "v": "Epson carrier sheet, part B12B819051, for creased or thin originals · a seller does not list the ES-590W as compatible, so check first"
+    },
+    {
+     "k": "scanner limits",
+     "v": "100-sheet feeder · 600 dpi optical · 215.9 mm wide maximum"
+    },
+    {
+     "k": "privacy",
+     "v": "the research prefers a local vision model, because a cloud model would send private notes off the box"
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "name": "Command & Signal",
+   "kind": "list",
+   "plain": "Who calls what. The research is in; the build waits on Chief's calls.",
+   "strand": {
+    "last": "Claude detected the scanner, filed the BOLO, made the two agents and published the glass.",
+    "plan": "Claude builds the pipeline after the calls.",
+    "you": "Chief rules the five calls on the glass or here.",
+    "next": "Say \"take all recs\" and the NAPS2 install starts."
+   },
+   "groups": [
+    {
+     "label": "Who decides",
+     "items": [
+      {
+       "t": "**ACTUAL**: the program, the handwriting reader, what goes through the feeder. **Claude**: the install, the profiles, the scripts and the agents.",
+       "s": "held"
+      }
+     ]
+    },
+    {
+     "label": "The gate",
+     "items": [
+      {
+       "t": "**Waiting on the calls.** Installing NAPS2 is the first build. Nothing else blocks it.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "Signal",
+     "items": [
+      {
+       "t": "The glass: https://claude.ai/artifact/7wpWvbEnQDChSaRnWxtoTK · research: `_tools/scanner/research.md`.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "name": "Log",
+   "kind": "log",
+   "plain": "Every transmission on this row, in order.",
+   "strand": {
+    "last": "Claude built the two scan agents on 10/17, the newest entry.",
+    "plan": "The next entry lands when NAPS2 scans its first test page.",
+    "you": "You held paper on 10/12, then spoke this order on 10/17.",
+    "next": "Your word on the glass and this sheet."
+   },
+   "entries": [
+    {
+     "when": "10/12",
+     "who": "Chief",
+     "t": "\"I'm just going to get a document scanner … let's hold on the ingestion of the hard stuff until we get that thing\" (said on BOLO 107; paper scans held)."
+    },
+    {
+     "when": "10/17",
+     "who": "Chief",
+     "t": "\"see if you can detect the scanner? I've installed the scanner now, so I feel like we should now focus on that next ... what can we do to better optimize its usage? ... is there a better open source uh, program that I can use besides the Epson Scan Smart thing? What are its disadvantages ... We need to create a good system, create the agents ... bolo this, glass it, and give me the fucking dope sheet.\""
+    },
+    {
+     "when": "10/17",
+     "who": "Claude",
+     "t": "Detected the EPSON ES-590W on USB with Epson Scan 2, ScanSmart 3.7.20, Tesseract 5.4, OCRmyPDF and Ghostscript. Opened row 149."
+    },
+    {
+     "when": "10/17",
+     "who": "Claude",
+     "t": "Wrote `_tools/scanner/research.md`: use NAPS2 and OCRmyPDF, send handwriting to a vision model, keep ScanSmart as a fallback."
+    },
+    {
+     "when": "10/17",
+     "who": "Claude",
+     "t": "Built the agents `scan-reader` (sonnet) and `scan-filer` (haiku). The script that applies the filing is not built yet."
+    }
+   ]
+  }
+ ],
+ "frago": {
+  "mission": "Stand up the ES-590W as the intake's paper door, so Chief's pages land as searchable, filed text.",
+  "order": "**Install NAPS2, make the four profiles, and scan one test page over USB.**",
+  "default": "Silence: nothing installs; ScanSmart stays the scanner's program.",
+  "calls": [
+   {
+    "q": "Install NAPS2 as the scan program",
+    "options": "YES, winget install + four profiles (rec) · keep ScanSmart",
+    "default": "YES (rec)",
+    "s": "open"
+   },
+   {
+    "q": "Who reads the handwriting",
+    "options": "TEST BOTH on 20 real pages, scan-reader and a local vision model (rec) · scan-reader only · local only",
+    "default": "TEST BOTH (rec)",
+    "s": "open"
+   },
+   {
+    "q": "Bound notepads",
+    "options": "KEEP the phone-photo rule for bound books (rec) · tear pages out for the feeder",
+    "default": "KEEP (rec)",
+    "s": "open"
+   },
+   {
+    "q": "Paperless-ngx as the archive",
+    "options": "NOT NOW, intake bins + Zotero (rec) · stand it up",
+    "default": "NOT NOW (rec)",
+    "s": "open"
+   },
+   {
+    "q": "USB or Wi-Fi",
+    "options": "USB (rec) · Wi-Fi (ESCL unconfirmed)",
+    "default": "USB (rec)",
+    "s": "open"
+   }
+  ]
+ }
+}

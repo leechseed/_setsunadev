@@ -1212,5 +1212,12 @@
   "d": "REVERSE THE HARVEST: top posts per board become labeled examples, and the engine learns to tag the whole corpus.",
   "w": "https://claude.ai/artifact/JB5Xw7BwCCpB4XeqzpjoXg",
   "st": "open"
+ },
+ "bolo149": {
+  "t": "BOLO 149",
+  "k": "bolo",
+  "d": "THE SCANNER: the Epson ES-590W as the paper door into the intake, with NAPS2, a hot-folder pipeline and two agents.",
+  "w": "https://claude.ai/artifact/K7VLiqZow1fDxQBgQFCYad",
+  "st": "open"
  }
 }

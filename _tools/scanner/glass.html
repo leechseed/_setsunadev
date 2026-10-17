@@ -1,0 +1,174 @@
+<title>The Scanner Glass</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* the Command look, DARK only (ruled 9/11): one thin strip, the paper path as the spine, the calls last */
+  :root { color-scheme: dark;
+    --bg:#121110; --panel:#1B1A18; --panel-2:#24221F; --line:#34312C; --ink:#ECE7DF; --ink-2:#B7B0A5; --ink-3:#8A8378;
+    --accent:#FF5A1F; --accent-soft:#3A1D10; --accent-ink:#FFB08F; --good:#5FBF8A; --good-soft:#16301F; --warn:#E3B341; --warn-soft:#3A2E10; --bad:#E9788A; --bad-soft:#3A1B20;
+    --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif; --body:"Atkinson Hyperlegible","Segoe UI",Verdana,sans-serif; --mono:"IBM Plex Mono",Consolas,monospace; }
+  *{box-sizing:border-box} html,body{background:var(--bg);color:var(--ink)}
+  body{font:15px/1.55 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 56px}
+  body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--panel)}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .strip{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;align-items:center;gap:12px;flex-wrap:wrap;min-height:44px;margin-inline:calc(-1 * max(16px,env(safe-area-inset-left,0px)));padding:6px max(16px,env(safe-area-inset-left,0px));background:var(--panel);border-bottom:1px solid var(--line)}
+  .strip h1{margin:0;font:800 20px/1 var(--display);letter-spacing:.06em;text-transform:uppercase} .strip h1 b{color:var(--accent)}
+  .chip{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:4px 7px;border:1px solid var(--line);border-radius:3px;color:var(--ink-2);white-space:nowrap}
+  .chip.ok{border-color:var(--good);color:var(--good)} .spacer{flex:1}
+  .wrap{max-width:1000px;margin:0 auto;display:grid;gap:22px;padding-block:20px}
+  section{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding-bottom:14px;min-width:0}
+  h2{margin:0 0 12px;padding:10px 16px;font:700 19px var(--display);letter-spacing:.06em;text-transform:uppercase;border-bottom:1px solid var(--line);text-wrap:balance;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+  h2 small{font:400 12px var(--mono);letter-spacing:0;text-transform:none;color:var(--ink-3)}
+  section>p,section>ul,section>ol,section>.tbl,section>.grid,section>.verdict{margin-inline:16px}
+  p{margin:0 0 10px;max-width:68ch} ul{margin:0;padding-left:20px;display:grid;gap:6px}
+  .verdict{display:grid;gap:8px;padding:0;list-style:none}
+  .verdict li{padding:9px 12px;background:var(--panel-2);border-left:3px solid var(--accent);border-radius:0 4px 4px 0}
+  .verdict b{color:var(--accent-ink)}
+  /* the paper path: a real sequence, so it is numbered */
+  .path{list-style:none;padding:0;margin:0 16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px;counter-reset:st}
+  .path li{counter-increment:st;position:relative;padding:12px 12px 12px 12px;background:var(--panel-2);border:1px solid var(--line);border-radius:4px;min-width:0}
+  .path li::before{content:counter(st);display:block;font:800 30px/1 var(--display);color:var(--accent);margin-bottom:4px}
+  .path li b{display:block;font:700 16px var(--display);letter-spacing:.04em;text-transform:uppercase}
+  .path li span{font-size:13px;color:var(--ink-2)}
+  .path li .who{display:inline-block;margin-top:8px;font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:3px 6px;border-radius:3px;background:var(--accent-soft);color:var(--accent-ink)}
+  .path li .who.script{background:var(--good-soft);color:var(--good)} .path li .who.chief{background:var(--warn-soft);color:var(--warn)}
+  .tbl{overflow-x:auto;border:1px solid var(--line);border-radius:4px}
+  table{border-collapse:collapse;width:100%;font-size:14px;min-width:620px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);background:var(--panel-2)}
+  tr:last-child td{border-bottom:0} td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+  .pick td:first-child{color:var(--accent-ink);font-weight:700}
+  .yes{color:var(--good)} .no{color:var(--bad)} .un{color:var(--warn)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}
+  .card{background:var(--panel-2);border:1px solid var(--line);border-radius:4px;padding:12px;min-width:0}
+  .card h3{margin:0 0 6px;font:700 17px var(--display);letter-spacing:.04em;text-transform:uppercase}
+  .card h3 em{font:500 11px var(--mono);font-style:normal;letter-spacing:.06em;color:var(--ink-3);margin-left:6px}
+  .card p{font-size:14px;color:var(--ink-2);margin:0}
+  .calls{list-style:none;padding:0;margin:0 16px;display:grid;gap:8px;counter-reset:c}
+  .calls li{counter-increment:c;display:grid;grid-template-columns:28px 1fr;gap:4px 10px;padding:10px 12px;background:var(--panel-2);border:1px solid var(--line);border-radius:4px}
+  .calls li::before{content:counter(c);font:800 22px/1 var(--display);color:var(--accent);grid-row:span 2}
+  .calls q{quotes:none;font-weight:700} .calls .rec{font-size:14px;color:var(--ink-2)} .calls .rec b{color:var(--good)}
+  .say{font:500 14px var(--mono);color:var(--ink);background:var(--bg);border:1px dashed var(--accent);border-radius:3px;padding:6px 10px;cursor:copy;margin:12px 16px 0}
+  .say:hover{background:var(--accent-soft)} .say.copied::after{content:"  ✓ copied";color:var(--good)}
+  a{color:var(--accent-ink)}
+  /* the hover layer (CK3, 9/16): every term explains itself; click or Space pins it, Escape closes */
+  .t{position:relative;font:inherit;color:inherit;letter-spacing:inherit;text-transform:inherit;background:none;border:0;padding:0;border-bottom:1px dotted var(--accent);cursor:help;text-align:inherit}
+  .tip{display:none;position:absolute;left:0;top:calc(100% + 6px);z-index:20;width:min(300px,78vw);padding:8px 10px;background:var(--panel-2);border:1px solid var(--accent);border-radius:4px;font:400 13px/1.45 var(--body);color:var(--ink);text-transform:none;letter-spacing:0;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+  .t:hover>.tip,.t:focus-visible>.tip,.t.pin>.tip{display:block}
+  .tip .t{border-bottom-color:var(--accent-ink)}
+  .src{font:12px var(--mono);color:var(--ink-3);margin:10px 16px 0}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<header class="strip">
+  <h1><b>The</b> Scanner</h1><span class="chip">BOLO 149</span>
+  <span class="chip ok">ES-590W · detected</span>
+  <span class="spacer"></span>
+  <span class="chip">as of Oct 17, 9:55 AM</span>
+</header>
+
+<main class="wrap">
+
+<section>
+  <h2>Verdict <small>research: _tools/scanner/research.md</small></h2>
+  <ul class="verdict">
+    <li><b>Scan with NAPS2.</b> It is free and open source. It drives the ES-590W through Epson's own driver, over <button type="button" class="t" aria-describedby="g-twain">TWAIN<span class="tip" role="tooltip" id="g-twain">The old standard way a scan program talks to a scanner's driver. Epson Scan 2 provides it. It exposes the most settings.</span></button> or <button type="button" class="t" aria-describedby="g-wia">WIA<span class="tip" role="tooltip" id="g-wia">Windows Image Acquisition: Windows' built-in scanner interface. Simpler than TWAIN, fewer settings.</span></button>, and it has a command line a script can call.</li>
+    <li><b>Read typed pages with <button type="button" class="t" aria-describedby="g-ocrmypdf">OCRmyPDF<span class="tip" role="tooltip" id="g-ocrmypdf">An open-source tool, already on the box, that runs Tesseract on a PDF. It straightens and rotates pages and writes a searchable <button type="button" class="t" aria-describedby="g-pdfa">PDF/A<span class="tip" role="tooltip" id="g-pdfa">The archive flavor of PDF, made to open the same way decades from now.</span></button> plus a plain-text sidecar.</span></button>.</b> It is already installed.</li>
+    <li><b>Read handwriting with a vision model, not Tesseract.</b> Tesseract cannot read handwriting. The new scan-reader agent reads the page images instead.</li>
+    <li><b>Keep ScanSmart as a fallback only.</b> NAPS2 uses the same Epson Scan 2 driver underneath.</li>
+    <li><b>Keep every raw scan.</b> Handwriting goes in at 300 dpi color, lossless. Nothing ever writes over the only copy.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>The paper path <small>scanner to intake, one batch at a time</small></h2>
+  <ol class="path">
+    <li><b>Feed</b><span>Loose pages into the 100-sheet feeder, both sides at once. One NAPS2 profile per material.</span><br><span class="who chief">Chief</span></li>
+    <li><b>Land</b><span>NAPS2 saves to the hot folder. A copy goes to the raw folder and is never touched again.</span><br><span class="who script">NAPS2 + script</span></li>
+    <li><b>Read</b><span>Typed pages: OCRmyPDF makes a searchable PDF and a text sidecar. Handwriting skips Tesseract.</span><br><span class="who script">script</span></li>
+    <li><b>Transcribe</b><span>scan-reader reads the handwritten page images and writes a faithful transcript, unclear words marked.</span><br><span class="who">scan-reader · Sonnet</span></li>
+    <li><b>File</b><span>scan-filer proposes a title, date, bin and tags for each document, as one filing.json.</span><br><span class="who">scan-filer · Haiku</span></li>
+    <li><b>Check and move</b><span>A script checks every page has text and every document a bin, then moves them into the intake bins.</span><br><span class="who script"><button type="button" class="t" aria-describedby="g-range">RANGE<span class="tip" role="tooltip" id="g-range">The Command's reviewer seat, always a script, never an agent (BOLO 54). It checks the fan-in and blocks a bad batch.</span></button> · script</span></li>
+  </ol>
+  <p class="src" style="margin-top:12px">Built: the two agents. Not built yet: NAPS2 install, the profiles, the hot-folder script, file.py and the RANGE check.</p>
+</section>
+
+<section>
+  <h2>ScanSmart: what's wrong <small>from Epson's own docs; no user complaint threads found</small></h2>
+  <ul style="margin-inline:16px">
+    <li><b>It guesses file names.</b> It reads a date and subject off the page, and Epson lists "Files are Named with an Old Date" as a known problem.</li>
+    <li><b>Its OCR fails on some pages.</b> Epson's guide has a whole topic for characters not being recognized.</li>
+    <li><b>Cloud sending breaks.</b> Epson lists that as a known problem too.</li>
+    <li><b>It wants a person at the screen.</b> Its flow is review, then save. It has no hot folder and no command line that the research could find.</li>
+    <li><b>It is closed source.</b> No script can drive it, so it can't sit inside a pipeline.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>The alternatives</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Program</th><th>Open source</th><th>How it drives the ES-590W</th><th>OCR</th><th>Automation</th><th>Weak spots</th></tr></thead>
+    <tbody>
+      <tr class="pick"><td>NAPS2 · the pick</td><td class="yes">Yes</td><td>TWAIN or WIA through Epson Scan 2; also lists <button type="button" class="t" aria-describedby="g-escl">ESCL<span class="tip" role="tooltip" id="g-escl">A driverless network-scanning standard (AirScan). Would allow Wi-Fi scanning; not confirmed on the ES-590W.</span></button> for Wi-Fi</td><td>Built in, 100+ languages</td><td>naps2.console: profiles, duplex, autosave</td><td>Blank-page skip on the command line unconfirmed. No true hot-folder watch.</td></tr>
+      <tr><td>Paperless-ngx</td><td class="yes">Yes</td><td>Not a scan program. It is an archive that watches a folder.</td><td>OCRmyPDF inside</td><td>Consume folder, tags, dedupe</td><td>Needs Docker or a server. More to run than the intake needs today.</td></tr>
+      <tr><td>Epson ScanSmart</td><td class="no">No</td><td>Epson's own</td><td>Epson OCR</td><td>Almost none</td><td>See above.</td></tr>
+      <tr><td>VueScan</td><td class="no">No, paid</td><td>Its own drivers</td><td>Yes</td><td>Some</td><td>Not open source. Skip.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <h2>Settings by material <small>research recs, not vendor-sourced; test one batch each</small></h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Material</th><th>dpi</th><th>Color</th><th>Both sides</th><th>Skip blanks</th><th><button type="button" class="t" aria-describedby="g-df">Double-feed<span class="tip" role="tooltip" id="g-df">An ultrasonic sensor stops the scan when two sheets go through stuck together. Stated for the ES-550W family; likely on the 590W.</span></button></th><th>File</th></tr></thead>
+    <tbody>
+      <tr><td>Typed pages, scripts</td><td class="n">300</td><td>Gray</td><td class="yes">On</td><td class="yes">On</td><td class="yes">On</td><td>PDF, then OCR</td></tr>
+      <tr><td>Handwritten notes</td><td class="n">300 · 400 tiny pen</td><td>Color</td><td class="yes">On</td><td class="un">Off (a faint page isn't blank)</td><td class="yes">On</td><td>Lossless PNG or TIFF, plus PDF</td></tr>
+      <tr><td>Photos</td><td class="n">600</td><td>Color</td><td class="no">Off</td><td>—</td><td class="no">Off, <button type="button" class="t" aria-describedby="g-carrier">carrier sheet<span class="tip" role="tooltip" id="g-carrier">A clear plastic sleeve that carries a fragile or odd-sized original through the feeder. Epson part B12B819051; one seller does not list the 590W as a fit.</span></button></td><td>TIFF or high-quality JPEG</td></tr>
+      <tr><td>Receipts</td><td class="n">300</td><td>Gray</td><td class="no">Off</td><td class="yes">On</td><td class="no">Off, carrier sheet</td><td>PDF</td></tr>
+    </tbody>
+  </table></div>
+  <p class="src">The feeder holds 100 sheets, up to 8.5 in wide, at 600 dpi optical. Bound notepads can't go through a sheet feeder.</p>
+</section>
+
+<section>
+  <h2>The agents <small>.claude/agents/ · on the Roster</small></h2>
+  <div class="grid">
+    <div class="card"><h3>scan-reader <em>Sonnet · MS</em></h3><p>Reads the page images of one batch and writes a faithful transcript per document. It keeps Chief's spelling and marks unclear words as [?word?]. It never summarizes or fixes the text.</p></div>
+    <div class="card"><h3>scan-filer <em>Haiku · PS</em></h3><p>Reads the text or transcripts and proposes a title, a written date, one bin, tags and BOLO ties per document, as filing.json. It never moves a file. The script applies the filing.</p></div>
+  </div>
+  <p class="src">Doctrine (BOLO 54): specialists on separate inputs, one script reviewer at the fan-in, never a checker agent.</p>
+</section>
+
+<section>
+  <h2>Calls for Chief</h2>
+  <ol class="calls">
+    <li><q>Install NAPS2?</q><span class="rec">Rec: <b>yes</b>. I install it with winget, make the four profiles, and scan one test page over USB.</span></li>
+    <li><q>Who reads the handwriting?</q><span class="rec">Rec: <b>test both on 20 real pages</b>, scan-reader (Claude) and a local vision model on the 3090. The local one keeps notes off the cloud.</span></li>
+    <li><q>Bound notepads?</q><span class="rec">Rec: <b>keep the phone-photo rule (10/6) for bound books</b>. The scanner takes loose pages only. Never tear a notebook for the feeder.</span></li>
+    <li><q>Paperless-ngx?</q><span class="rec">Rec: <b>not now</b>. The intake bins and Zotero cover it. Revisit when the paper pile is big.</span></li>
+    <li><q>USB or Wi-Fi?</q><span class="rec">Rec: <b>USB</b>. It is the tested path; Wi-Fi scanning is unconfirmed on this model.</span></li>
+  </ol>
+  <button type="button" class="say" data-say="take all recs">take all recs</button>
+</section>
+
+</main>
+<script>
+  document.addEventListener("click", (ev) => {
+    const t = ev.target.closest(".t");
+    document.querySelectorAll(".t.pin").forEach((x) => { if (x !== t && !x.contains(t)) x.classList.remove("pin"); });
+    if (t) t.classList.toggle("pin");
+    const s = ev.target.closest(".say");
+    if (s) {
+      const done = () => { s.classList.add("copied"); setTimeout(() => s.classList.remove("copied"), 1500); };
+      try { navigator.clipboard.writeText(s.dataset.say).then(done, () => getSelection().selectAllChildren(s)); }
+      catch (e) { getSelection().selectAllChildren(s); }
+    }
+  });
+  let hover = null;
+  document.addEventListener("mouseover", (ev) => { hover = ev.target.closest(".t"); });
+  document.addEventListener("keydown", (ev) => {
+    if (ev.key === "Escape") document.querySelectorAll(".t.pin").forEach((x) => x.classList.remove("pin"));
+    if (ev.code === "Space" && hover && !(ev.target instanceof HTMLButtonElement && !ev.target.classList.contains("t"))) { ev.preventDefault(); hover.classList.toggle("pin"); }
+  });
+</script>
