@@ -1,16 +1,16 @@
 {
- "time": "2026-10-14T05:12:03",
+ "time": "2026-10-16T21:41:12",
  "all_go": false,
  "stations": [
   {
    "name": "AUDIT",
    "go": false,
-   "detail": "SOP audit (1 finding(s) · R 0 · P 0 · B 0 · K 1 · T 0 · S 0 · report _tools/audit/out/ · 5.0 s)"
+   "detail": "SOP audit (1 finding(s) · R 0 · P 0 · B 0 · K 1 · T 0 · S 0 · report _tools/audit/out/ · 4.5 s)"
   },
   {
    "name": "PULL",
-   "go": false,
-   "detail": "pull glass (STALLED: wave 7, wave 8, wave 9 · wave 7: 95/100 boards (6 empty) · 23,334 images · STALLED? log quiet 195 min · 9 min/board · ETA 5:55 AM; wave 8: 91/100 boards (8 empty) · 20,372 images · STALLED? log quiet 198 min · 8 min/board · ETA 6:20 AM; wave 9: 6/100 boards (0 empty) · 3,421 images · STALLED? log quiet 211 min · 16 min/board · ETA 5:38 AM; wave 10: 21/100 boards (3 empty) · 4,797 images · on hugeasses · 9 min/board · ETA 4:42 PM; wave 11: 20/100 boards (1 empty) · 4,814 images · on girlfriendsnsfw · 9 min/board · ETA 5:01 PM; wave 12: 21/100 boards (4 empty) · 4,901 images · on sfwnextdoorgirls · 7 min/board · ETA 2:54 PM · disk: Q free 3,422 GB · glass built, republish owed · 0.4 s)"
+   "go": true,
+   "detail": "pull glass (runner B started · wave 1: 40/40 boards (4 empty) · 11,032 images · LANDED · 10 min/board · ETA -; wave 2: 40/40 boards (2 empty) · 9,006 images · LANDED · 10 min/board · ETA -; wave 18: 45/100 boards (15 empty) · 6,992 images · on titssucking · 5 min/board · ETA 2:36 AM; wave 19: 14/100 boards (5 empty) · 3,211 images · on succubus · 9 min/board · ETA 10:45 AM; wave 20: 12/100 boards (4 empty) · 2,372 images · on twitchasians · 11 min/board · ETA 1:37 PM; wave 21: 0/100 boards (0 empty) · 0 images · on arizonagirls · 15 min/board · ETA 10:40 PM; wave 22: 0/57 boards (0 empty) · 0 images · on gracecfulton · 15 min/board · ETA 11:55 AM · disk: Q free 3,192 GB · glass built, republish owed · 0.6 s)"
   },
   {
    "name": "DARKROOM",
@@ -25,12 +25,12 @@
   {
    "name": "NAHIMIC",
    "go": true,
-   "detail": "audio guard (service + tasks disabled · 5.8 s)"
+   "detail": "audio guard (service + tasks disabled · 3.1 s)"
   },
   {
    "name": "JUDY",
    "go": true,
-   "detail": "session voice · pid 28272 (already running)"
+   "detail": "session voice · pid 32024 (started · 7 s · hold the hotkey with the chat box focused)"
   },
   {
    "name": "FACES",
@@ -50,12 +50,12 @@
   {
    "name": "KNOBS",
    "go": true,
-   "detail": "MPK knobs · pid 6120 (started · 3.0 s · scroll Y · scroll X · zoom)"
+   "detail": "MPK knobs · pid 11020 (started · 2.1 s · scroll Y · scroll X · zoom)"
   },
   {
    "name": "WIRE",
    "go": true,
-   "detail": "server judy · 7/7 tools (probe ok · 3.3 s)"
+   "detail": "server judy · 7/7 tools (probe ok · 4.7 s)"
   },
   {
    "name": "FRAGO",
