@@ -34,3 +34,5 @@ Presses on the story: it is the OS Domain made a place (Situation / The Past); t
 | − | Pedigree | *Your name counts more than your work.* |
 | −− | Ownership | *You're a product the Bishops own.* |
 | −−− | A score that calls itself your nature | *The rating says who you are, and you believe it.* |
+
+**Inside the University (2026-10-17, provisional):** DCUS is the elite core of the University (WB-INS-0005): 52 Stock and 2 Jokers a year, picked at 15, seven years through 21 ⧗.
