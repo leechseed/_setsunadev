@@ -1,16 +1,16 @@
 {
- "time": "2026-10-16T21:41:12",
+ "time": "2026-10-17T19:49:05",
  "all_go": false,
  "stations": [
   {
    "name": "AUDIT",
    "go": false,
-   "detail": "SOP audit (1 finding(s) · R 0 · P 0 · B 0 · K 1 · T 0 · S 0 · report _tools/audit/out/ · 4.5 s)"
+   "detail": "SOP audit (1 finding(s) · R 0 · P 0 · B 0 · K 1 · T 0 · S 0 · report _tools/audit/out/ · 5.4 s)"
   },
   {
    "name": "PULL",
-   "go": true,
-   "detail": "pull glass (runner B started · wave 1: 40/40 boards (4 empty) · 11,032 images · LANDED · 10 min/board · ETA -; wave 2: 40/40 boards (2 empty) · 9,006 images · LANDED · 10 min/board · ETA -; wave 18: 45/100 boards (15 empty) · 6,992 images · on titssucking · 5 min/board · ETA 2:36 AM; wave 19: 14/100 boards (5 empty) · 3,211 images · on succubus · 9 min/board · ETA 10:45 AM; wave 20: 12/100 boards (4 empty) · 2,372 images · on twitchasians · 11 min/board · ETA 1:37 PM; wave 21: 0/100 boards (0 empty) · 0 images · on arizonagirls · 15 min/board · ETA 10:40 PM; wave 22: 0/57 boards (0 empty) · 0 images · on gracecfulton · 15 min/board · ETA 11:55 AM · disk: Q free 3,192 GB · glass built, republish owed · 0.6 s)"
+   "go": false,
+   "detail": "pull glass (STALLED: wave 19, wave 20, wave 21 · runner A+B+C started · wave 19: 56/100 boards (15 empty, 6 dropped) · 13,137 images · STALLED? log quiet 469 min · 13 min/board · ETA 5:09 AM; wave 20: 20/45 boards (5 empty, 5 dropped) · 3,464 images · STALLED? log quiet 469 min · 10 min/board · ETA 11:52 PM; wave 21: 91/100 boards (25 empty, 4 dropped) · 22,438 images · STALLED? log quiet 475 min · 12 min/board · ETA 9:32 PM · disk: Q free 3,119 GB · glass built, republish owed · 0.5 s)"
   },
   {
    "name": "DARKROOM",
@@ -25,12 +25,12 @@
   {
    "name": "NAHIMIC",
    "go": true,
-   "detail": "audio guard (service + tasks disabled · 3.1 s)"
+   "detail": "audio guard (service + tasks disabled · 2.5 s)"
   },
   {
    "name": "JUDY",
    "go": true,
-   "detail": "session voice · pid 32024 (started · 7 s · hold the hotkey with the chat box focused)"
+   "detail": "session voice · pid 6048 (started · 7 s · hold the hotkey with the chat box focused)"
   },
   {
    "name": "FACES",
@@ -50,17 +50,17 @@
   {
    "name": "KNOBS",
    "go": true,
-   "detail": "MPK knobs · pid 11020 (started · 2.1 s · scroll Y · scroll X · zoom)"
+   "detail": "MPK knobs · pid 15844 (started · 2.2 s · scroll Y · scroll X · zoom)"
   },
   {
    "name": "WIRE",
    "go": true,
-   "detail": "server judy · 7/7 tools (probe ok · 4.7 s)"
+   "detail": "server judy · 7/7 tools (probe ok · 3.8 s)"
   },
   {
    "name": "FRAGO",
    "go": true,
-   "detail": "next.json (no sheet to refresh)"
+   "detail": "next.json (refreshed [149] locally (republish owed))"
   },
   {
    "name": "SITREP",

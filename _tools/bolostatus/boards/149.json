@@ -21,7 +21,7 @@
   ],
   "home": "BOLO.md · row 149",
   "card": "none",
-  "version": "v0.2 · DOPE SHEET"
+  "version": "v0.3 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -414,6 +414,11 @@
      "when": "10/17",
      "who": "Claude",
      "t": "Installed NAPS2 8.5.1; it lists the ES-590W on TWAIN and WIA, not on ESCL. Built scan.py and blurb.py; tested the attach on a dummy PDF."
+    },
+    {
+     "when": "10/17",
+     "who": "Claude",
+     "t": "Launch refresh: reopened from the 2026-10-17.session.md close-out."
     }
    ]
   }
