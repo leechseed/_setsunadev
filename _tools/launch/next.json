@@ -1,19 +1,13 @@
 {
- "staged": "2026-10-16 21:31",
+ "staged": "2026-10-17 10:10",
  "leverage": {
-  "line": "Read the Bearings glass when it lands: it shows what the Command has, what runs, and what the repos add.",
-  "why": "Refining needs a map first. The transcripts show 42 of 43 Roster agents and 9 of 15 skills never ran.",
-  "board": "2026-10-14-2.json"
+  "line": "Rule \"drop it\" on the pull (BOLO 137): the flagged download, the drop guard and the wider filter.",
+  "why": "The waves keep landing boards. Every hour without the guard adds to the cleanup.",
+  "board": "2026-10-16.json"
  },
- "sheets": [],
- "open_at_close": [
-  "\"drop it\": the flagged download on Q, the drop guard and the wider age filter (detail in `_PRIVATE/`).",
-  "The reload: 545 boards left, then a second pass for 19.",
-  "Runner A still runs the old code without the lock.",
-  "The id-collision thumbnail check.",
-  "The PC crash cause: Chief runs `perfmon /rel`.",
-  "The GPT export triage.",
-  "BOLO 148: Chief picks the first process to refine."
+ "sheets": [
+  149
  ],
- "note": "2026-10-16.session.md"
+ "open_at_close": [],
+ "note": "2026-10-17.session.md"
 }
