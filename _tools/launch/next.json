@@ -1,16 +1,19 @@
 {
- "staged": "2026-10-13 21:56",
+ "staged": "2026-10-16 21:31",
  "leverage": {
-  "line": "Say 'go' to restart runner B: wave 9 has sat stalled since 12:22 PM, and the pull runs on two runners until it's back.",
-  "why": "The waves are the only thing running on their own. Everything else waits on a ruling.",
-  "board": "2026-10-13.json"
+  "line": "Read the Bearings glass when it lands: it shows what the Command has, what runs, and what the repos add.",
+  "why": "Refining needs a map first. The transcripts show 42 of 43 Roster agents and 9 of 15 skills never ran.",
+  "board": "2026-10-14-2.json"
  },
  "sheets": [],
  "open_at_close": [
-  "Runner B restart for wave 9 waits on Chief's go. The rec was to restart it and add error logging, since runner B died with no reason in its log.",
-  "Remote Control at launch: rec pending, and Chief types `/rc` himself.",
-  "BOLO Check standing page, Board Check shelf, Checks group, BOLO × Kit map: recs pending, no go.",
-  "BOLO 146 and 147: Sessions 2 and 3 wait on Chief's material; the audio track was offered, not ordered."
+  "\"drop it\": the flagged download on Q, the drop guard and the wider age filter (detail in `_PRIVATE/`).",
+  "The reload: 545 boards left, then a second pass for 19.",
+  "Runner A still runs the old code without the lock.",
+  "The id-collision thumbnail check.",
+  "The PC crash cause: Chief runs `perfmon /rel`.",
+  "The GPT export triage.",
+  "BOLO 148: Chief picks the first process to refine."
  ],
- "note": "2026-10-13-2.session.md"
+ "note": "2026-10-16.session.md"
 }
