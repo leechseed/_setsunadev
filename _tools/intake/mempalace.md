@@ -26,6 +26,8 @@ Source: [github.com/MemPalace/mempalace](https://github.com/MemPalace/mempalace)
 - Fit: it recalls text. It does not know the Command's rulings, so stale chat can outrank a newer ruling.
 
 ## Verdict: WATCH
+**RULED 10/17 ~7:58 PM** (Chief: "go" on the rec): WATCH, no install. Re-check on or after 11/17.
+
 Trial it later on one job: search past session transcripts for "what did we rule on X", on the 3090 with local embeddings, in a scratch folder with no private wing. Not yet, because the project is churning and retracted its claims. Re-check in two months.
 
 ## Unverified

@@ -42,3 +42,5 @@ Source for every claim below: https://github.com/simplifaisoul/osiris (README). 
 
 ## Verdict
 **REFERENCE (story only).** It shows what a fusion dashboard looks like and feels like. It adds nothing the Command should run. Use it for Providence's interface, vocabulary and visual language only.
+
+**RULED 10/17 ~7:58 PM** (Chief: "go"): the eight-point lens is filed in WB-GRP-0006 as provisional.
