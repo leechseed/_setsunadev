@@ -1,0 +1,1766 @@
+{
+ "meta": {
+  "date": "2026-10-18",
+  "when": "10/18 3:00 AM",
+  "trigger": "bring up the sit rep",
+  "countersign": false,
+  "version": "v0.9 · the formation (BOLO 54)",
+  "box": [
+   {
+    "name": "Stash",
+    "port": ":9999",
+    "up": false,
+    "k": "stash"
+   },
+   {
+    "name": "DARKROOM",
+    "port": ":8484",
+    "up": true,
+    "k": "darkroom"
+   }
+  ],
+  "rack": {
+   "flushed": "2026-10-17.session.md → _LOG/",
+   "staged": "2026-10-18.session.md"
+  },
+  "tree": "2 file(s) uncommitted at open",
+  "stack": "empty",
+  "agents": [],
+  "stats": [
+   "blocked: 0",
+   "pull: 1,693 of 1,693 boards · 449,789 images · done 10/18 ~2:59 AM",
+   "agents deployed: 3, by name (first named-agent board)",
+   "named agent jobs: 10 (round 1 + round 2)",
+   "Bash errors: 589 of 12,703 calls"
+  ],
+  "main_effort": "Sort the Bash errors (BOLO 155 M4).",
+  "build": {
+   "calls": "3 named agents",
+   "rounds": "1"
+  }
+ },
+ "blocks": [
+  {
+   "id": "0",
+   "name": "Last session",
+   "kind": "list",
+   "plain": "The last session ran on 10/17 and closed about 10:30 AM for a restart. Claude dropped 85 flagged boards, split wave 20, filed the University, and built the scanner. The session ended with a written queue for after the restart, pull first.",
+   "strand": {
+    "last": "On 10/17 Claude dropped 85 boards, split wave 20, built the scanner, and filed the University.",
+    "plan": "The plan was a written queue for the restart, with the pull first. Chief's rulings set the order: 'drop it', 'go', and 'take all recs'.",
+    "you": "Claude dropped 85 boards on Chief's 'drop it'. Claude split wave 20 on 'go'. Claude built the scanner, read four links, and filed BOLO 152. The pull runner kept running waves 18, 19, and 21 while Claude worked.",
+    "next": "Claude gives Chief the link consult first and takes his three calls. Then Claude checks the pull's wave locks after the restart and works the queue in order."
+   },
+   "items": [
+    {
+     "t": "Chief said 'queue these up as well ... oscar mike' to close the 10/17 session.",
+     "trunk": "OPERATOR",
+     "s": "done",
+     "when": "10/17"
+    },
+    {
+     "t": "Claude wrote the queue for the restart. The pull runs first, then BOLO 150, 149, 148, and 151.",
+     "trunk": "OPERATOR",
+     "s": "done",
+     "when": "10/17"
+    },
+    {
+     "t": "Chief is queuing more work for after the restart.",
+     "trunk": "OPERATOR",
+     "s": "open",
+     "when": "10/17"
+    },
+    {
+     "t": "The link consult opens the next session, before the queue starts.",
+     "trunk": "OPERATOR",
+     "s": "open",
+     "when": "10/17"
+    },
+    {
+     "t": "Claude read four links: OpenTerminal, Osiris, MemPalace, and NIKKE. Claude filed BOLO 152 TIMELINE DECK.",
+     "trunk": "OPERATOR",
+     "s": "done",
+     "when": "10/17"
+    },
+    {
+     "t": "Osiris is reference only. Claude never runs it on real people.",
+     "trunk": "OPERATOR",
+     "s": "ruled",
+     "when": "10/17"
+    },
+    {
+     "t": "Chief's three link calls are open. Claude recommends yes on the TIMELINE DECK slice after the NCP export, and yes on Osiris.",
+     "trunk": "OPERATOR",
+     "s": "open",
+     "when": "10/17"
+    },
+    {
+     "t": "Claude recommends WATCH for MemPalace, with a re-check in a month.",
+     "trunk": "OPERATOR",
+     "s": "open",
+     "when": "10/17"
+    },
+    {
+     "t": "Claude read NIKKE as Live2D work: Inochi2D is free, while Cubism and Spine cost money. Reddit blocks Claude, so Chief pastes the post text.",
+     "trunk": "OPERATOR",
+     "s": "open",
+     "when": "10/17"
+    },
+    {
+     "t": "Chief's 'take all recs' ruled BOLO 150, the NCP story protocol export.",
+     "trunk": "BLACK",
+     "s": "ruled",
+     "when": "10/17"
+    },
+    {
+     "t": "Claude built the NCP shelf folder for BOLO 150.",
+     "trunk": "BLACK",
+     "s": "done",
+     "when": "10/17"
+    },
+    {
+     "t": "Claude will export the OXO storyform to an NCP file and validate it against the NCP schema.",
+     "trunk": "BLACK",
+     "s": "open",
+     "when": "10/17"
+    },
+    {
+     "t": "Chief's 'take all recs' ruled BOLO 148, the PMBOK 8 flow. Chief still has to drop the poster PDF.",
+     "trunk": "OPERATOR",
+     "s": "ruled",
+     "when": "10/17"
+    },
+    {
+     "t": "Claude will map the poster's domains onto the four steps (BOLO 64) once it arrives.",
+     "trunk": "OPERATOR",
+     "s": "open",
+     "when": "10/17"
+    },
+    {
+     "t": "Chief's 'take all recs' ruled BOLO 151, the Hermes pager, as a trial.",
+     "trunk": "OPERATOR",
+     "s": "ruled",
+     "when": "10/17"
+    },
+    {
+     "t": "The Hermes pager trial starts after the scanner's first real batch. Hermes watches the pull and texts Chief's phone on a stall.",
+     "trunk": "OPERATOR",
+     "s": "open",
+     "when": "10/17"
+    },
+    {
+     "t": "Claude filed BOLO 148, 150, 151, and 152.",
+     "trunk": "OPERATOR",
+     "s": "done",
+     "when": "10/17"
+    },
+    {
+     "t": "Claude filed WB-INS-0005 as provisional canon after Chief's 'go' on the four University recs.",
+     "trunk": "BLACK",
+     "s": "done",
+     "when": "10/17"
+    },
+    {
+     "t": "Claude pointed WB-INS-0002 to WB-INS-0005, then rebuilt the catalog and worldview.",
+     "trunk": "BLACK",
+     "s": "done",
+     "when": "10/17"
+    },
+    {
+     "t": "Chief decides who makes the University rules: the Coast, or the Bishops' charter.",
+     "trunk": "BLACK",
+     "s": "open",
+     "when": "10/17"
+    },
+    {
+     "t": "Chief also owes a count of how many Outliers are Jokers.",
+     "trunk": "BLACK",
+     "s": "open",
+     "when": "10/17"
+    },
+    {
+     "t": "Chief's 'go' ruled NAPS2 as the scanner, OCRmyPDF for typed pages, and a vision model for handwriting. ScanSmart stays as the fallback only.",
+     "trunk": "BLACK",
+     "s": "ruled",
+     "when": "10/17"
+    },
+    {
+     "t": "Claude built the scanner for BOLO 149: scan.py, blurb.py, research.md, and an attach test on a dummy PDF.",
+     "trunk": "BLACK",
+     "s": "done",
+     "when": "10/17"
+    },
+    {
+     "t": "Claude added the agents scan-reader and scan-filer to the Roster. Claude installed NAPS2 8.5.1.",
+     "trunk": "BLACK",
+     "s": "done",
+     "when": "10/17"
+    },
+    {
+     "t": "Claude found the ES-590W scanner on USB. NAPS2 sees it through TWAIN and WIA, not ESCL.",
+     "trunk": "BLACK",
+     "s": "done",
+     "when": "10/17"
+    },
+    {
+     "t": "Claude wrote the memory note scan-voice-blurb.md and indexed it in MEMORY.md.",
+     "trunk": "BLACK",
+     "s": "done",
+     "when": "10/17"
+    },
+    {
+     "t": "Claude published the BOLO 149 status page and DOPE SHEET 149 v0.2.",
+     "trunk": "BLACK",
+     "s": "done",
+     "when": "10/17"
+    },
+    {
+     "t": "The first real scan has not run. Chief speaks the voice blurb, then says 'scan <kind>'.",
+     "trunk": "BLACK",
+     "s": "open",
+     "when": "10/17"
+    },
+    {
+     "t": "Claude has not built the RANGE check or file.py yet.",
+     "trunk": "BLACK",
+     "s": "open",
+     "when": "10/17"
+    },
+    {
+     "t": "The handwriting test compares scan-reader with a local vision model on 20 real pages.",
+     "trunk": "BLACK",
+     "s": "open",
+     "when": "10/17"
+    },
+    {
+     "t": "Claude dropped and deleted 85 boards (26.5 GB) on Chief's 'drop it'.",
+     "trunk": "BLACK",
+     "s": "done",
+     "when": "10/17"
+    },
+    {
+     "t": "Claude wired drop_guard.py into the queue build, the pull guard, and the load guard. drop_purge.py keeps the record.",
+     "trunk": "BLACK",
+     "s": "done",
+     "when": "10/17"
+    },
+    {
+     "t": "Chief's 'go' ruled the wave 20 split into waves 20, 23, and 24 (28, 28, and 27 boards).",
+     "trunk": "BLACK",
+     "s": "ruled",
+     "when": "10/17"
+    },
+    {
+     "t": "The finish moved from about midnight to about 5:30 PM.",
+     "trunk": "BLACK",
+     "s": "done",
+     "when": "10/17"
+    },
+    {
+     "t": "A restart is queued. It kills every running wave and leaves waveN.lock files behind.",
+     "trunk": "BLACK",
+     "s": "open",
+     "when": "10/17"
+    },
+    {
+     "t": "The pull runs waves 18, 19, and 21 live. Waves 20, 23, and 24 wait.",
+     "trunk": "BLACK",
+     "s": "open",
+     "when": "10/17"
+    },
+    {
+     "t": "Chief's standing order says 'Never start or kill a wave.'",
+     "trunk": "BLACK",
+     "s": "ruled",
+     "when": "10/17"
+    },
+    {
+     "t": "After the restart, Claude runs pull_queue.py report and flags any wave with a lock and a quiet log.",
+     "trunk": "BLACK",
+     "s": "open",
+     "when": "10/17"
+    },
+    {
+     "t": "Chief must give his word before Claude clears any dead wave locks.",
+     "trunk": "BLACK",
+     "s": "gated",
+     "when": "10/17"
+    },
+    {
+     "t": "The session cron posts pull updates at :07 and :37, and the restart kills it. The next launch re-arms it.",
+     "trunk": "BLACK",
+     "s": "open",
+     "when": "10/17"
+    },
+    {
+     "t": "The Startup-folder script pull_start.cmd brings the runners back at logon.",
+     "trunk": "BLACK",
+     "s": "done",
+     "when": "10/17"
+    },
+    {
+     "t": "Last pull report showed 1,528 of 1,693 boards, 408,326 images, and 3,155 GB free on Q.",
+     "trunk": "BLACK",
+     "s": "open",
+     "when": "10/17"
+    },
+    {
+     "t": "The 6-hour overnight stall went unseen, because nothing paged Chief. BOLO 151 covers that case.",
+     "trunk": "BLACK",
+     "s": "done",
+     "when": "10/17"
+    },
+    {
+     "t": "Moving files on one drive keeps their old dates, so Claude cannot find new PDFs by date.",
+     "trunk": "BLACK",
+     "s": "done",
+     "when": "10/17"
+    },
+    {
+     "t": "Chief names the new PDFs in the PDF drop on Q, or names a subfolder.",
+     "trunk": "OPERATOR",
+     "s": "open",
+     "when": "10/17"
+    },
+    {
+     "t": "Stash, the media library app, dropped during a scene-count query. The launch station's start brought it back in 2 seconds.",
+     "trunk": "BLACK",
+     "s": "done",
+     "when": "10/17"
+    }
+   ]
+  },
+  {
+   "id": "I",
+   "name": "The Fresh Ten",
+   "kind": "list",
+   "plain": "These are the ten things touched most recently, newest first. The Moved section for 10/17 and the Live tables name nine of them. The autosave windows only date them.",
+   "strand": {
+    "last": "The session ran the fortieth launch and dropped 85 flagged boards. It rescued the pull, opened the University rule, and built the scanner. It opened BOLOs 150 to 152 and closed for a restart.",
+    "plan": "The plan was to clear the pull's stale locks and finish waves 18 to 20. It also planned to scan paper into the Command with a voice blurb.",
+    "you": "You said \"drop it\" and the script deleted the boards. The University rule stays provisional until you confirm it.",
+    "next": "Wave 20 finishes around 5:30 PM. The restart queue starts with the link consult. Confirm or change the University rule."
+   },
+   "items": [
+    {
+     "n": 1,
+     "t": "**Unaccounted autosave window**. Eighty-two autosaves touched `.claude`, `_tools/dictation`, `_tools/brand`, `_tools/launch`, `_tools/sitrep` and `_tools/armory`. Neither the Moved section nor the Live tables name this work.",
+     "next": "Tell INDEX what this window was, or let it age out.",
+     "trunk": "OPERATOR",
+     "s": "open",
+     "when": "10/17 19:51-02:37"
+    },
+    {
+     "n": 2,
+     "t": "**BOLO 149 THE SCANNER stood up**. The ES-590W scanner, NAPS2 8.5.1, `scan.py` and the voice blurb `blurb.py` work together. The agents scan-reader and scan-filer read and file the pages. DOPE SHEET 149 is at v0.2.",
+     "next": "Speak a blurb, then say \"scan\" with a kind to run the first batch.",
+     "trunk": "OPERATOR",
+     "s": "open",
+     "when": "10/17 03:33-10:32"
+    },
+    {
+     "n": 3,
+     "t": "**Link reads landed in `_tools/intake/`**. The script now reads each link to text before the specialists judge it.",
+     "next": "Start the restart queue with the link consult.",
+     "trunk": "OPERATOR",
+     "s": "done",
+     "when": "10/17"
+    },
+    {
+     "n": 4,
+     "t": "**BOLOs 150, 151 and 152 opened**. They are the NCP export, the Hermes pager and the TIMELINE DECK. The session added PMBOK 8 to BOLO 148.",
+     "next": "Name the first order for each new BOLO.",
+     "trunk": "OPERATOR",
+     "s": "open",
+     "when": "10/17"
+    },
+    {
+     "n": 5,
+     "t": "**The University (WB-INS-0005) is ruled provisional**. School is mandatory from age 15 to 21. The Ultra School takes 52 Stock and 2 Jokers a year.",
+     "next": "Confirm the rule or change the numbers.",
+     "trunk": "BLACK",
+     "s": "held",
+     "when": "10/17"
+    },
+    {
+     "n": 6,
+     "t": "**The pull rescue cleared the stale locks on waves 18 to 20**. The session restarted runner B and swapped runner A to the new code between waves. It split wave 20 into 20, 23 and 24.",
+     "next": "Check wave 20 when it finishes around 5:30 PM.",
+     "trunk": "ORANGE/OPERATOR",
+     "s": "hot",
+     "when": "10/17"
+    },
+    {
+     "n": 7,
+     "t": "**BOLO 137 \"drop it\" deleted 85 boards (26.5 GB)**. The script `drop_guard.py` now applies a wider name filter. It guards the queue build, every wave board, the pull and the load.",
+     "next": "None; the drop is finished.",
+     "trunk": "ORANGE/OPERATOR",
+     "s": "done",
+     "when": "10/17"
+    },
+    {
+     "n": 8,
+     "t": "**The session closed for a restart with a written queue**. The first queue item is the link consult.",
+     "next": "Open the queue and run the link consult first.",
+     "trunk": "OPERATOR",
+     "s": "open",
+     "when": "10/17"
+    },
+    {
+     "n": 9,
+     "t": "**The fortieth launch ran on board 2026-10-16 (v80)**. The script updated STATE and the launch poll.",
+     "next": "Read the v80 board.",
+     "trunk": "OPERATOR",
+     "s": "done",
+     "when": "10/16"
+    },
+    {
+     "n": 10,
+     "t": "**BOLO 24 launch month ruled February 2027**. You spoke D-14 on 9/23 and the beat sheet rec beat the January rec. Three calls remain: the library, the split and the Gate 3 skin test.",
+     "next": "Rule the three calls so FRAGO 24 can go out.",
+     "trunk": "ORANGE",
+     "s": "open",
+     "when": "9/23"
+    }
+   ]
+  },
+  {
+   "id": "II",
+   "name": "The Ancients",
+   "kind": "list",
+   "plain": "What has gone quiet, oldest first, and what each one is waiting on. Nothing here is dead. Almost all of it waits on one word from you. No Ancients row appears in the Moved section this board.",
+   "strand": {
+    "last": "The true-ancients tier is still empty. Every row past the three-week line stayed put. The 10/17 work touched none of them.",
+    "plan": "Keep the tier empty. Anything that sits three weeks or more gets named here until you rule it or retire it.",
+    "you": "You moved no Ancients row since the last board.",
+    "next": "The cheapest three are the Kata name, the BBRT fill-ins and the Birthday re-rule. One word each. The collision proof still waits on Tori's L12, roughly 65 Dramatica fields."
+   },
+   "groups": [
+    {
+     "label": "True ancients",
+     "note": "tier empty since 9/9",
+     "items": []
+    },
+    {
+     "label": "Longest untouched · three weeks or more",
+     "items": [
+      {
+       "t": "**Berlin pivot + Germany field month** — waiting on the fold into BERLIN-PIVOT. It converges on Atlanta, whose 9/1 dossier still awaits your ruling.",
+       "trunk": "ORANGE",
+       "s": "held",
+       "when": "8/16-19"
+      },
+      {
+       "t": "**Kobra S1 / SlimeVR** — waiting on the Phase 1 order.",
+       "trunk": "BLACK",
+       "s": "held",
+       "when": "8/20"
+      },
+      {
+       "t": "**Kata rename · BBRT fill-ins (BOLO 3)** — waiting on you.",
+       "trunk": "ORANGE",
+       "s": "held",
+       "when": "8/19"
+      },
+      {
+       "t": "**Birthday 2026** — shelved on a new-job assumption that no longer holds. Re-rule Plan B or leave it shelved.",
+       "trunk": "OPERATOR",
+       "s": "held",
+       "when": "8/21"
+      },
+      {
+       "t": "**Focus doctrine · interface · pedagogy (BOLO 4/5/6)** — BOLO 6's pedagogy shelf moved 10/4 into SOP §7 rules 13–20. BOLO 4 and 5 still wait on your go.",
+       "trunk": "OPERATOR",
+       "s": "gated",
+       "when": "8/21"
+      },
+      {
+       "t": "**DOCTRINE 0 rename** — Standing Order versus the bench.",
+       "trunk": "BLACK",
+       "s": "held",
+       "when": "8/21"
+      },
+      {
+       "t": "**Strip follow-ons (BOLO 8/9)** — owner-only. You file the GitHub ticket and the Google removal. Well past three weeks now.",
+       "trunk": "BLACK/ORANGE",
+       "s": "open",
+       "when": "8/24"
+      },
+      {
+       "t": "**GBD plan · shoot set · Bongobabe (BOLO 10/11/12)** — the GBD answers · the §B ruling · your go. Past the three-week line since 9/16.",
+       "trunk": "ORANGE",
+       "s": "held",
+       "when": "8/25"
+      },
+      {
+       "t": "**Multimedia seed · grammar pass · spine sweep stage 2 (BOLO 15/16/18)** — your call, or scriptable. Past the three-week line since 9/16.",
+       "trunk": "BLACK",
+       "s": "open",
+       "when": "8/25-26"
+      },
+      {
+       "t": "**Tori×Anna collision proof** — needed Anna's chart. Anna's node is built and her twelve calls are ruled under BOLO 46. The character-dashboard pass named the remaining blocker. Tori's L12 is blocked on roughly 65 Dramatica fields. Eleven 9/16 calls were never applied and calls 12–15 are still unruled. Past the three-week line since 9/16.",
+       "trunk": "BLACK",
+       "s": "gated",
+       "when": "8/26"
+      }
+     ]
+    },
+    {
+     "label": "Going quiet · two to three weeks",
+     "items": [
+      {
+       "t": "**Glute reference · cleaning service · Lab venture** — parked; the Lab venture holds six queued decisions.",
+       "trunk": "ORANGE",
+       "s": "parked",
+       "when": "8/30-31"
+      },
+      {
+       "t": "**Three-check pass (BOLO 21)** — fired 8/31; waiting on your strike/keep over sweep 1.",
+       "trunk": "BLACK/ORANGE",
+       "s": "held",
+       "when": "8/31"
+      },
+      {
+       "t": "**Physique set (BOLO 23) · Atlanta (BOLO 22)** — morphology-cell calls · the recommendation ruling.",
+       "trunk": "ORANGE",
+       "s": "held",
+       "when": "9/1"
+      }
+     ]
+    },
+    {
+     "label": "Recently parked · a week or less",
+     "items": [
+      {
+       "t": "Project flow (BOLO 25) · dictation dictionary (BOLO 26) · directory-of-dir promote candidates · Discord intros (none sent) · [[block-c|ULTRA DARK Block C]] · [[d9|D-9]] · TikTok ([[bolo29|BOLO 29]]) · verb kit · MIL.01 read-through · [[warroom|WARROOM]] name · story timeline · [[trash-land|Trash Land]] (seven rulings) · Ableton · the [[register|register]] · the pages · the formation and its eight offload phases (9/12).",
+       "trunk": "BLACK/ORANGE",
+       "s": "parked",
+       "when": "9/3-9/12"
+      }
+     ]
+    },
+    {
+     "label": "Wire gap · thirteenth board running",
+     "items": [
+      {
+       "t": "**[[modmigrate]]** (opened 9/7, the Minecraft modpack) still has no STATE row. It has no BOLO and no journal on record. It is over three weeks unwired now.",
+       "trunk": "OPERATOR",
+       "s": "missing",
+       "when": "9/7"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "III",
+   "name": "The Deep Stacks",
+   "kind": "bars",
+   "plain": "How much thinking went into each project, measured as characters of conversation. It says where the thought has been spent, not what it is worth. Frozen at the August 15 export because the counting script is broken.",
+   "strand": {
+    "last": "Rank 10 was struck on 9/9. Business ops was a keyword bucket, never a project.",
+    "plan": "Repair the cluster script, then rerun after the next export so the ranks move again.",
+    "you": "You retired rank 10 with one word. PROJECTS.md still shows the August 15 numbers.",
+    "next": "The script repair is a Known-rot item. Nobody has ordered it."
+   },
+   "unit": "k characters",
+   "rows": [
+    {
+     "rank": 1,
+     "p": "[[outliers|OVEREXITOUT / The Outliers]]",
+     "trunk": "BLACK",
+     "v": 880,
+     "convs": 19,
+     "state": "live"
+    },
+    {
+     "rank": 2,
+     "p": "BVIPDS / LEECHSEED",
+     "trunk": "BLACK",
+     "v": 580,
+     "convs": 25,
+     "state": "live"
+    },
+    {
+     "rank": 3,
+     "p": "Adult content venture",
+     "trunk": "ORANGE",
+     "v": 504,
+     "convs": 16,
+     "state": "live"
+    },
+    {
+     "rank": 4,
+     "p": "Desire Profile",
+     "trunk": "ORANGE",
+     "v": 492,
+     "convs": 19,
+     "state": "live"
+    },
+    {
+     "rank": 5,
+     "p": "Character system",
+     "trunk": "BLACK",
+     "v": 489,
+     "convs": 8,
+     "state": "unstalled 8/24"
+    },
+    {
+     "rank": 6,
+     "p": "Social channels",
+     "trunk": "BOTH",
+     "v": 432,
+     "convs": 25,
+     "state": "live · zero artifacts"
+    },
+    {
+     "rank": 7,
+     "p": "Food ventures",
+     "trunk": "BLACK",
+     "v": 411,
+     "convs": 17,
+     "state": "cooling"
+    },
+    {
+     "rank": 8,
+     "p": "ULTRASIN / GDP",
+     "trunk": "ORANGE",
+     "v": 400,
+     "convs": 11,
+     "state": "live"
+    },
+    {
+     "rank": 9,
+     "p": "Tooling",
+     "trunk": "BLACK",
+     "v": 266,
+     "convs": 16,
+     "state": "support"
+    },
+    {
+     "rank": 10,
+     "p": "Business ops",
+     "trunk": "BLACK",
+     "v": 203,
+     "convs": 6,
+     "state": "retired 9/9",
+     "retired": true
+    }
+   ],
+   "totals": [
+    {
+     "k": "BLACK",
+     "v": "~2,830k"
+    },
+    {
+     "k": "ORANGE",
+     "v": "~1,400k"
+    },
+    {
+     "k": "shared",
+     "v": "~430k"
+    }
+   ]
+  },
+  {
+   "id": "IV",
+   "name": "The BOLO board",
+   "kind": "board",
+   "plain": "The board counts 155 BOLOs. Chief and Claude finished or folded 44 of them. Claude is working on 45 hot ones. Chief holds five on a ruling. Three fire when Chief says go. Twenty-one are open and slow. Thirty-seven are parked.",
+   "strand": {
+    "last": "On 10/17 Claude ran the scanner research pass under BOLO 149. Chief said 'take all recs' on BOLOs 150 and 151. Claude built the boot screen for the one-window program under BOLO 153.",
+    "plan": "Claude re-checks JUDY's ears on 10/19 under BOLO 63. Claude watches the 429 count on the pull queue under BOLO 137. Claude builds the timeline deck's first slice under BOLO 152 after Chief's scanner uploads.",
+    "you": "On 10/12 Chief ruled the turbo model swap for BOLO 63, after a week with the gate. On 10/13 Chief ruled depth two for the sit rep formation under BOLO 54. On 10/17 Chief said 'go' on the rec for BOLO 152.",
+    "next": "Chief drops the PMBOK 8 poster PDF for BOLO 148. Chief runs the first real scan on the Epson ES-590W for BOLO 149. Chief hand-checks the 50-scene sample for BOLO 28. Chief says 'go stage 1' or 'hold' on BOLO 143. Chief records Day 1 and Day 2 for BOLO 57 inside 48 hours."
+   },
+   "groups": [
+    {
+     "label": "Hot · moving or owed this week",
+     "items": [
+      {
+       "t": "**10** Bongobabe v0: Claude built the art-style test, one flat doll with three swappable layers. Chief ruled hand-drawn flat SVG as the art pipeline on 10/12.",
+       "trunk": "ORANGE",
+       "s": "hot",
+       "when": "10/12"
+      },
+      {
+       "t": "**27** [[ultra-dark|ULTRA DARK + video engine]]: Chief ruled on 10/3 that gay and straight BBC share one account. Chief's edit pass queues the first posts.",
+       "trunk": "ORANGE",
+       "s": "hot",
+       "when": "10/3"
+      },
+      {
+       "t": "**28** The Stash video engine: Claude's text auto-tagger v1a runs as a dry run on 3,320 scenes. Chief hand-checks the 50-scene sample; Claude writes no tags until the wrong rate is under 10 percent.",
+       "trunk": "ORANGE",
+       "s": "hot",
+       "when": "10/12"
+      },
+      {
+       "t": "**44** [[bolo44|tag rail + Tier 1 & 2 tagging]]: Claude built the tag rail and the probes in DARKROOM. Chief has banked 16,511 rulings; Claude runs the calibration pass next.",
+       "trunk": "ORANGE",
+       "s": "hot",
+       "when": "9/9"
+      },
+      {
+       "t": "**46** [[bolo46|OXO series Telling Profile + Anna node]]: Chief ruled the twelve Telling Profile calls and Anna's twelve. Claude waits on BOLO 100 before it writes the 14 Movement-1 questions.",
+       "trunk": "BLACK",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**51** [[bolo51|logistics front]]: Claude runs the audit script first at every launch. Claude keeps the audit rows and token offload phases moving.",
+       "trunk": "OPERATOR",
+       "s": "hot",
+       "when": "10/6"
+      },
+      {
+       "t": "**54** [[bolo54|sit rep formation]]: Claude built the formation, provisional. Chief ruled depth two on 10/13: a lead MS may launch up to three PS on disjoint inputs.",
+       "trunk": "OPERATOR",
+       "s": "hot",
+       "when": "10/13"
+      },
+      {
+       "t": "**56** JUDY, the voice loop: the console on :8787 holds the face deck and the face profiles. Claude built the profiles on 10/12; restarting the console loads them.",
+       "trunk": "OPERATOR",
+       "s": "hot",
+       "when": "10/12"
+      },
+      {
+       "t": "**57** Voice work as income: Chief would sell voices in the ElevenLabs Voice Library. Claude built the kit; Chief records Day 1 and Day 2 inside 48 hours.",
+       "trunk": "ORANGE",
+       "s": "hot",
+       "when": "9/24"
+      },
+      {
+       "t": "**63** JUDY's ears: Claude built the hallucination gate in ptt.py on Chief's go. Claude swaps the turbo model only after the re-check on 10/19.",
+       "trunk": "OPERATOR/BLACK",
+       "s": "hot",
+       "when": "10/12"
+      },
+      {
+       "t": "**64** The Claude Code doctrine: Chief ruled the four steps, and Claude ran five fixes on 9/23. Chief runs the allowlist skill himself; the Bash allowlist stays open.",
+       "trunk": "BLACK",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**68** The workflows: Claude wrote sitrep.js on Chief's go, not yet run. Chief ruled one side-by-side dry run of sitrep.js at the next sit rep.",
+       "trunk": "BLACK",
+       "s": "hot",
+       "when": "10/12"
+      },
+      {
+       "t": "**69** The yo-yo inbox: Claude built the follow-up questions on 10/12. Claude has not built the wind yet; Chief's use of the pad is the proof.",
+       "trunk": "OPERATOR/BLACK",
+       "s": "hot",
+       "when": "10/12"
+      },
+      {
+       "t": "**72** The Bold Venture patch: Chief confirmed comp 07 THE RIDE. Chief dropped Blender on 10/12, so Claude plans no pose scenes and no Blender step.",
+       "trunk": "BLACK",
+       "s": "hot",
+       "when": "10/12"
+      },
+      {
+       "t": "**76** Sensei's set list: Claude built it in code. stashplay.py defaults to 60 minutes of short clips with the gay filter. The set goes live at the next JUDY launch.",
+       "trunk": "ORANGE",
+       "s": "hot",
+       "when": "10/12"
+      },
+      {
+       "t": "**77** The plot system on rails: Chief ruled the Anna M4 to M6 calls on 10/12. Claude updated the M4 to M6 cards and the Anna node.",
+       "trunk": "BLACK",
+       "s": "hot",
+       "when": "10/12"
+      },
+      {
+       "t": "**86** The loop closes itself: Claude built the four recs on Chief's go 10/12. Claude has not tested them end to end; the next launch tests them.",
+       "trunk": "BLACK",
+       "s": "hot",
+       "when": "10/12"
+      },
+      {
+       "t": "**87** The setting shelf: Claude judged the 1,537 held items; 29 are to get. Chief closed the hunt on 10/4, and setting 03 reached v1.6.0.",
+       "trunk": "BLACK",
+       "s": "hot",
+       "when": "10/4"
+      },
+      {
+       "t": "**89** The trope system: one trope layer across every system. Claude keyed 8,700 tropes in register v0.5.0. Claude still owes definitions for 1,018 tropes.",
+       "trunk": "BLACK",
+       "s": "hot",
+       "when": "10/3"
+      },
+      {
+       "t": "**90** The tracking system: state over time as a full system. Chief locked seven story beats on 10/3, and Claude took the workspace to v13.",
+       "trunk": "BLACK",
+       "s": "hot",
+       "when": "10/3"
+      },
+      {
+       "t": "**92** The style guide system (06): prose, documents and pages are at 1.0.0. Claude folds the later BOLO 6 rules when they land.",
+       "trunk": "BLACK",
+       "s": "hot",
+       "when": "10/4"
+      },
+      {
+       "t": "**93** The worldbuilding system (05) and the catalog: the world as one system. Chief ruled the Tori calls on 10/4; the non-DCUS stubs wait for Chief's word.",
+       "trunk": "BLACK",
+       "s": "hot",
+       "when": "10/4"
+      },
+      {
+       "t": "**96** Vignettes as their own category, plus the actor lane. Chief ruled all five calls on 10/1, and Claude built both. Chief rules the sleeper DNA mechanism and the calf genre name.",
+       "trunk": "BLACK",
+       "s": "hot",
+       "when": "10/1"
+      },
+      {
+       "t": "**97** The FagMasterPDX shelf: Claude landed MSX.SET.01 Progression on 10/4. Chief finds his other books and drops them in the PDF drop.",
+       "trunk": "ORANGE",
+       "s": "hot",
+       "when": "10/4"
+      },
+      {
+       "t": "**98** The ORANGE board: one dashboard for the ORANGE trunk in six lanes. Claude's build.py reads BOLO.md to make it.",
+       "trunk": "ORANGE",
+       "s": "hot",
+       "when": "10/4"
+      },
+      {
+       "t": "**108** The research loop: Claude wrote the loop as SOP §9, named INTEL CYCLE. Two lanes feed one loop. Claude folded BOLOs 36, 40 and 41 into it on 10/6.",
+       "trunk": "BLACK",
+       "s": "hot",
+       "when": "10/6"
+      },
+      {
+       "t": "**115** The Traffic Panel: JUDY's last transmissions in tabs, with a net chart of open threads. Claude is adding a hover card per BOLO.",
+       "trunk": "OPERATOR",
+       "s": "hot",
+       "when": "10/6"
+      },
+      {
+       "t": "**118** Toy Makers by Arena: premium silicone first, then Japanese imports and more arenas. Claude verifies the Japanese arena next.",
+       "trunk": "ORANGE",
+       "s": "hot",
+       "when": "10/6"
+      },
+      {
+       "t": "**121** Reverse the Harvest: top posts per board become labeled examples. Claude wired the rail; the boards are balanced as of 10/12.",
+       "trunk": "ORANGE",
+       "s": "hot",
+       "when": "10/12"
+      },
+      {
+       "t": "**122** The Escalation Judge: Claude built the trigger list and the ledger. Nobody has tested the judge yet; the next board tests it.",
+       "trunk": "OPERATOR",
+       "s": "hot",
+       "when": "10/12"
+      },
+      {
+       "t": "**125** The Review Desk: Claude built the review page. Chief's accept and reject calls on DOCTRINE 0 come next.",
+       "trunk": "OPERATOR",
+       "s": "hot",
+       "when": "10/12"
+      },
+      {
+       "t": "**134** The expression library: Claude drafted the label set on Chief's go. Daz and Blender are both out, so the render route is still open.",
+       "trunk": "ORANGE/BLACK",
+       "s": "hot",
+       "when": "10/12"
+      },
+      {
+       "t": "**135** The creator income report: the honest market read, with one lane to try. Chief ruled all recs on 10/12, and Claude published the 90-day plan page.",
+       "trunk": "ORANGE",
+       "s": "hot",
+       "when": "10/12"
+      },
+      {
+       "t": "**136** The Cut: one editing process from concept to export, plus the editing shelf. Chief ruled the templates and process doc 0.2.0 on 10/12.",
+       "trunk": "ORANGE/BLACK",
+       "s": "hot",
+       "when": "10/12"
+      },
+      {
+       "t": "**137** The pull queue: every subreddit board the DARKROOM still needs, pulled 40 at a time. Wave 1 started 10/12. Claude watches the 429 count and drops back to two if it spikes.",
+       "trunk": "ORANGE",
+       "s": "hot",
+       "when": "10/12"
+      },
+      {
+       "t": "**140** The repo intake: one scan, judge, pick, and adopt process for every GitHub repo Chief brings. Claude built the scan on 10/12; 27 Kit pieces have no BOLO yet.",
+       "trunk": "OPERATOR",
+       "s": "hot",
+       "when": "10/12"
+      },
+      {
+       "t": "**141** The Command desk: an animated front page. Live tiles show stations, pull waves, open calls, JUDY's last replies. Claude wired real data into the desk on 10/13.",
+       "trunk": "OPERATOR",
+       "s": "hot",
+       "when": "10/13"
+      },
+      {
+       "t": "**146** The body training system: Claude stood up the private folder on 10/13. Chief sends the source material next; Claude files it unedited. Claude keeps the detail private.",
+       "trunk": "ORANGE",
+       "s": "hot",
+       "when": "10/13"
+      },
+      {
+       "t": "**147** The umbrella system for the private lanes: Claude glassed the private sheet and the system map on 10/13. Claude keeps the detail private.",
+       "trunk": "ORANGE",
+       "s": "hot",
+       "when": "10/13"
+      },
+      {
+       "t": "**149** The scanner: the Epson ES-590W is the paper door into the intake. Claude ran the research pass on 10/17. Chief runs the first real scan next.",
+       "trunk": "OPERATOR/BLACK",
+       "s": "hot",
+       "when": "10/17"
+      },
+      {
+       "t": "**150** The story protocol: Claude exports the OXO storyform to NCP JSON. Claude validates it against the NCP schema, so writer agents read one checked storyform. Chief said 'take all recs' on 10/17.",
+       "trunk": "BLACK",
+       "s": "hot",
+       "when": "10/17"
+      },
+      {
+       "t": "**151** The pager: Hermes Agent trials one job, texting Chief's phone when a detached run stalls. Chief said 'take all recs' on 10/17. Claude sets the trial up in Docker, with no repo write access.",
+       "trunk": "OPERATOR",
+       "s": "hot",
+       "when": "10/17"
+      },
+      {
+       "t": "**153** One window: the one-terminal, one-window program. Claude built the boot screen on 10/17. Chief architects the page structure next.",
+       "trunk": "OPERATOR",
+       "s": "hot",
+       "when": "10/17"
+      },
+      {
+       "t": "**154** The armory: Claude glassed the tools, skills, agents and workflows the Command uses. The glass reads 28,618 calls across 54 sessions, from 6/4 to 10/17.",
+       "trunk": "OPERATOR",
+       "s": "hot",
+       "when": "10/17"
+      },
+      {
+       "t": "**155** DVA's assessment: Claude glassed 8 findings and 7 methods from the Armory data. Top method M1: label every agent brief with a JOB line.",
+       "trunk": "OPERATOR",
+       "s": "hot",
+       "when": "10/17"
+      }
+     ]
+    },
+    {
+     "label": "Held on a ruling",
+     "items": [
+      {
+       "t": "**35** The timeline grammar loci are delivered and banked. The story-timeline half waits on Chief's word. Claude folded BOLO 36 into BOLO 108 on 10/6.",
+       "trunk": "BLACK/OPERATOR",
+       "s": "held",
+       "when": "9/23"
+      },
+      {
+       "t": "**99** The advice voice: Claude landed pilot 01 to 10 on 10/4. Chief rules the name and the sign-off; the question bank waits on those two calls.",
+       "trunk": "ORANGE",
+       "s": "held",
+       "when": "10/4"
+      },
+      {
+       "t": "**107** The intake system: Chief's own life data as fabula source. Claude waits on Chief's document scanner for the paper scans; Chief said to hold the hard stuff.",
+       "trunk": "BLACK/ORANGE",
+       "s": "held",
+       "when": "10/12"
+      },
+      {
+       "t": "**143** The clean tree: a 12-entry root and a staged cleanup of the repo. Claude moves nothing until Chief says 'go stage 1' or 'hold'. Claude would run stages 2 and 3 after the pull lands, about 10/21.",
+       "trunk": "OPERATOR",
+       "s": "held",
+       "when": "10/12"
+      },
+      {
+       "t": "**148** The bearings: the repos, the Kit and the SOPs on one glass, matched, with run counts. The glass shows 45 repos and 57 matched Kit pieces. Chief drops the PMBOK 8 poster PDF; Claude maps it onto the four steps.",
+       "trunk": "OPERATOR",
+       "s": "held",
+       "when": "10/14"
+      }
+     ]
+    },
+    {
+     "label": "Fires on your go",
+     "items": [
+      {
+       "t": "**85** Learn Unreal through UEFN: the course is picked, four stages. Chief saves five Epic pages as PDFs; Claude builds DOPE SHEET 85 from them.",
+       "trunk": "ORANGE",
+       "s": "gated",
+       "when": "9/24"
+      },
+      {
+       "t": "**100** Systems first: the storytelling systems closed 10/4. Chief ruled batch 2 on 10/12; batch 3 fires on Chief's go. Absorbs BOLO 30.",
+       "trunk": "BLACK",
+       "s": "gated",
+       "when": "10/12"
+      },
+      {
+       "t": "**123** A New Outliers Faction: an adult monastic order. Chief ruled the name and era on 10/12; Claude's seed waits on BOLO 100.",
+       "trunk": "BLACK/ORANGE",
+       "s": "gated",
+       "when": "10/12"
+      }
+     ]
+    },
+    {
+     "label": "Open, slow",
+     "items": [
+      {
+       "t": "**5** Optimize the Chief↔Claude interface. Claude writes docs for its own retrieval, not for Chief's reading. Speed comes first.",
+       "trunk": "BLACK",
+       "s": "open"
+      },
+      {
+       "t": "**9** Google outdated-content removal: open. Chief runs the removal after BOLO 8.",
+       "trunk": "BLACK/ORANGE",
+       "s": "open"
+      },
+      {
+       "t": "**14** The taxonomy engine: Claude completed Stage 1 with 58,421 normalized images. Claude runs Stage 2 and the verdict pass next.",
+       "trunk": "ORANGE",
+       "s": "open"
+      },
+      {
+       "t": "**18** The two-stage spine sweep: Claude finished stage 1. Stage 2 is open; Chief rules the bulk intake and the four re-acquisitions.",
+       "trunk": "BLACK",
+       "s": "open",
+       "when": "10/12"
+      },
+      {
+       "t": "**42** [[bolo42|The admired-performers table]]: 155 names, 30 creators, 21 core. Claude built DOPE SHEET 42; four calls stay open, none blocking.",
+       "trunk": "ORANGE",
+       "s": "open",
+       "when": "9/11"
+      },
+      {
+       "t": "**101** EMERGENCE: run the systems as a simulator, so the world emerges from rules. Claude waits on Chief's word; no engine, one rule at a time.",
+       "trunk": "BLACK",
+       "s": "open",
+       "when": "10/4"
+      },
+      {
+       "t": "**102** The doc suite and interface catalog: Claude completed stages 1 and 2. Claude waits to write the sixteen interface rows until fabula phase 2.",
+       "trunk": "BLACK",
+       "s": "open",
+       "when": "10/5"
+      },
+      {
+       "t": "**105** Sexology certs for ORANGE color: Claude's register found 81 programs, and the depth path is set. Chief rules the open call on the AASECT capstone.",
+       "trunk": "ORANGE",
+       "s": "open",
+       "when": "10/5"
+      },
+      {
+       "t": "**106** Health follow-ups from the 10/5 visit: two are open. Claude keeps the detail in the private file; this row stays generic.",
+       "trunk": "ORANGE",
+       "s": "open",
+       "when": "10/6"
+      },
+      {
+       "t": "**109** The Gonzo Voice: Hunter S. Thompson as Riley Moss's inner voice. Chief ruled Anna Colson as the other girl on 10/6.",
+       "trunk": "BLACK/ORANGE",
+       "s": "open",
+       "when": "10/6"
+      },
+      {
+       "t": "**111** The Goon Log: a private session calendar. Claude built it on 10/6 with a log form and a JUDY-lift chart. JUDY adds a line on 'log it'.",
+       "trunk": "ORANGE",
+       "s": "open",
+       "when": "10/6"
+      },
+      {
+       "t": "**113** The Actress Reference Lane: one reference card per actress Chief picks. Claude wrote seven cards; a bench of 62 names waits for Chief's picks.",
+       "trunk": "BLACK/ORANGE",
+       "s": "open",
+       "when": "10/6"
+      },
+      {
+       "t": "**119** Charge and Spend: the Aion 2 combat loop as a design pattern. Claude writes a one-page pattern card on Chief's go.",
+       "trunk": "BLACK",
+       "s": "open",
+       "when": "10/6"
+      },
+      {
+       "t": "**127** Workwear: a shortlist and a first order of about $97. Claude keeps both in private notes; Chief's fit, style and budget set the sizing.",
+       "trunk": "OPERATOR",
+       "s": "open",
+       "when": "10/12"
+      },
+      {
+       "t": "**129** The nacho cart: pick a menu build, then a starch. Chief's calls on format, chip method and menu size come next.",
+       "trunk": "ORANGE",
+       "s": "open",
+       "when": "10/9"
+      },
+      {
+       "t": "**130** The rotisserie truck: rotisserie chicken with loaded plates. Chief ruled the concept. Next, Chief calls the oven, pilot order and pricing.",
+       "trunk": "ORANGE",
+       "s": "open",
+       "when": "10/9"
+      },
+      {
+       "t": "**131** The fry shop: fries plus a wall of sauces. Chief makes the deciding fryer call next; Claude waits on it.",
+       "trunk": "ORANGE",
+       "s": "open",
+       "when": "10/9"
+      },
+      {
+       "t": "**132** The halal cart: halal platters over rice, in the New York cart style. Claude read the menu from the photo; no build yet.",
+       "trunk": "ORANGE",
+       "s": "open",
+       "when": "10/9"
+      },
+      {
+       "t": "**138** The productized offer: package what the Command knows as a sold framework. Claude gave the boresight on 10/12. The build waits on Chief's go.",
+       "trunk": "ORANGE/OPERATOR",
+       "s": "open",
+       "when": "10/12"
+      },
+      {
+       "t": "**145** The BOLO CHECK: Claude keeps every open BOLO on one glass, marked LIVE BOLO or COSMOLINE. Claude's 'what next' answer pulls from the live list only.",
+       "trunk": "OPERATOR",
+       "s": "open",
+       "when": "10/13"
+      },
+      {
+       "t": "**152** The timeline deck: a fabula assembler that shows the whole fabula on one time display. Claude queued the first slice, one static page, behind the scanner uploads.",
+       "trunk": "BLACK",
+       "s": "open",
+       "when": "10/17"
+      },
+      {
+       "t": "**3** BBRT profile fill-ins: the QoS bracket and the [Blunt Plug] and [taper] confirms. Chief supplies them; Claude waits.",
+       "trunk": "BLACK/ORANGE",
+       "s": "parked",
+       "when": "10/13"
+      },
+      {
+       "t": "**4** Focus doctrine: staged, fires on Chief's go once the proword ruling lands. Claude builds the walkthrough when Chief gives the go word.",
+       "trunk": "OPERATOR",
+       "s": "parked",
+       "when": "10/13"
+      },
+      {
+       "t": "**6** Transmission pedagogy: rules 13 to 20 are ruled. Claude closed the hunt on 10/4 and holds eight distills for the tutoring lane. Mayer stays partial.",
+       "trunk": "BLACK",
+       "s": "parked",
+       "when": "10/4"
+      },
+      {
+       "t": "**8** The GitHub Support purge ticket: parked 10/6 on the Call Sheet. Chief files it, since only the account owner can.",
+       "trunk": "BLACK/ORANGE",
+       "s": "parked",
+       "when": "10/6"
+      },
+      {
+       "t": "**11** The GBD plan: parked on the 8/25 Oscar Mike. Claude saved the draft; it resumes on Chief's review and 'log it'.",
+       "trunk": "ORANGE/OPERATOR",
+       "s": "parked"
+      },
+      {
+       "t": "**12** The shoot set: parked 10/6 on the Call Sheet. Claude resumes it on Chief's §B ruling and a review.",
+       "trunk": "ORANGE",
+       "s": "parked",
+       "when": "10/6"
+      },
+      {
+       "t": "**16** The music-video and short-form grammar pass: Chief parked it 10/6 on the Call Sheet. Claude sources the grammar when it resumes.",
+       "trunk": "BLACK/ORANGE",
+       "s": "parked",
+       "when": "10/6"
+      },
+      {
+       "t": "**20** Forza wheelspin tracker: Chief parked it 10/6. Claude counts 37 owned and 67 needed; Chief's next callout resumes it.",
+       "trunk": "OPERATOR",
+       "s": "parked",
+       "when": "10/6"
+      },
+      {
+       "t": "**24** [[bolo24|zero-budget ORANGE launch]]: Chief put it in storage on 10/13. Gate 3 is the whole schedule, with 0 of 15 to 20 evenings done; launch month is February 2027.",
+       "trunk": "ORANGE",
+       "s": "parked",
+       "when": "10/13"
+      },
+      {
+       "t": "**29** The SFW TikTok channel (Fortnite skin dance edits): Claude banked the research. Chief ruled 9/23 it is the side lane on leftover evenings only.",
+       "trunk": "BLACK",
+       "s": "parked",
+       "when": "9/23"
+      },
+      {
+       "t": "**34** The long-watch UI palette: Chief ruled the retune on 10/12, dark only. Claude retunes WARROOM; the register rules stay as checks. Chief put it in storage on 10/13.",
+       "trunk": "BLACK",
+       "s": "parked",
+       "when": "10/12"
+      },
+      {
+       "t": "**45** The creator-case sweep and the manager path: Chief parked it 10/6 on the Call Sheet. Claude waits on the token budget before wave two.",
+       "trunk": "ORANGE",
+       "s": "parked",
+       "when": "10/6"
+      },
+      {
+       "t": "**48** The name bench: ABORT, BREVITY and HOTLINE are ruled. Claude waits on Chief's word for READYROOM and MINT. Chief put it in storage on 10/13.",
+       "trunk": "BLACK/OPERATOR",
+       "s": "parked",
+       "when": "10/13"
+      },
+      {
+       "t": "**65** The lineage question: Claude wrote a one-page tier proposal on Chief's go. Chief rules on it first; Claude makes no SOP edits until then.",
+       "trunk": "BLACK/OPERATOR",
+       "s": "parked",
+       "when": "10/12"
+      },
+      {
+       "t": "**66** The GitHub field survey: Claude harvests nothing yet and waits on the seed links Chief is reading. The 10/12 RTB pass parked it, provisional.",
+       "trunk": "BLACK/OPERATOR",
+       "s": "parked",
+       "when": "10/12"
+      },
+      {
+       "t": "**70** The affiliate register: parked on the 10/12 clean-station pass, provisional. Chief saves three full affiliate pages into the private folder for the second pass.",
+       "trunk": "BLACK",
+       "s": "parked",
+       "when": "10/12"
+      },
+      {
+       "t": "**71** The look, off the slop: Chief ruled the broadsheet look on 10/12. Claude redesigns each page when Chief says go.",
+       "trunk": "BLACK",
+       "s": "parked",
+       "when": "10/12"
+      },
+      {
+       "t": "**73** The driver resets: the GPU kicks on XELLA-PC. Claude delivered the read. The box owner runs the fix on 'go 73'.",
+       "trunk": "BLACK",
+       "s": "parked",
+       "when": "9/19"
+      },
+      {
+       "t": "**78** The victory lap: 21 days in Berlin, July 2028. Chief parked it 9/24 at the bottom of the list. Chief ruled step 1 on 9/24: Berlin only, $20k budget.",
+       "trunk": "ORANGE",
+       "s": "parked",
+       "when": "9/24"
+      },
+      {
+       "t": "**79** The story workspace UI: the timeline is the map, in CK3-style nested windows. Claude published workspace v8 on 9/29. Chief put it in storage on 10/13.",
+       "trunk": "BLACK",
+       "s": "parked",
+       "when": "9/29"
+      },
+      {
+       "t": "**82** The story registry: one file, one row per story. Claude built registry 1.0.0 on 10/4 and seeded Tremor Cult there.",
+       "trunk": "BLACK",
+       "s": "parked",
+       "when": "10/4"
+      },
+      {
+       "t": "**83** The Amazon applications: Chief submitted six of eight on 9/24. Chief holds the last two on his word and fires them only when he asks.",
+       "trunk": "OPERATOR",
+       "s": "parked",
+       "when": "9/29"
+      },
+      {
+       "t": "**88** The sexuality shelf: the drop is fully distilled, 82 books. Chief ruled the schema pass on 10/4, and Claude wrote it as character v2.5.0.",
+       "trunk": "ORANGE",
+       "s": "parked",
+       "when": "10/4"
+      },
+      {
+       "t": "**91** The Apple Notes intake: Claude parsed the 2025 and 2026 notes, and Chief ruled their calls. Claude takes more years as they come in.",
+       "trunk": "BLACK/OPERATOR",
+       "s": "parked",
+       "when": "9/29"
+      },
+      {
+       "t": "**94** CYBERBUNK: Chief put it on the back burner on 10/4. Claude builds nothing until Chief brings it back; the seven first calls stay ruled.",
+       "trunk": "ORANGE",
+       "s": "parked",
+       "when": "10/4"
+      },
+      {
+       "t": "**110** The Cyberdeck: JUDY on the move, off the PC. Chief put the deck aside on 10/6; the printer comes first (BOLO 112). Chief put it in storage on 10/13.",
+       "trunk": "OPERATOR",
+       "s": "parked",
+       "when": "10/6"
+      },
+      {
+       "t": "**112** The Kobra Full Kit: Claude FRAGO'd the cart to $332.89. Chief still owes two calls: the power strip link and the spare hotend.",
+       "trunk": "OPERATOR",
+       "s": "parked",
+       "when": "10/8"
+      },
+      {
+       "t": "**114** The PTT chirp: a walkie-talkie sound on JUDY's talk pad, built 10/6 in chirp.py. Talk press plays do-doo; SEND plays a click.",
+       "trunk": "OPERATOR",
+       "s": "parked",
+       "when": "10/6"
+      },
+      {
+       "t": "**116** The Call Sheet: the standing decision panel. Claude built the deck; each open call has Take rec and Send.",
+       "trunk": "OPERATOR",
+       "s": "parked",
+       "when": "10/6"
+      },
+      {
+       "t": "**117** Spit Points: Chief's reinforcement signal. Claude writes a feedback memory on the first spit; the third promotes an SOP rule candidate.",
+       "trunk": "OPERATOR",
+       "s": "parked",
+       "when": "10/6"
+      },
+      {
+       "t": "**124** Session Mode: one switch brings a private session up as a dashboard. Claude's timer is live and voice read is on; the dashboard fires on go.",
+       "trunk": "ORANGE",
+       "s": "parked",
+       "when": "10/12"
+      },
+      {
+       "t": "**126** The House Net: the wireless headset reaches every room. Claude gave the boresight; nothing is built yet. Chief runs the far-room test of Remote Control first.",
+       "trunk": "OPERATOR",
+       "s": "parked",
+       "when": "10/7"
+      },
+      {
+       "t": "**128** The Assistant: a confidential executive and personal assistant. Chief ruled call 1 with no budget cap. Claude has six open calls, each with a rec.",
+       "trunk": "OPERATOR/ORANGE",
+       "s": "parked",
+       "when": "10/8"
+      },
+      {
+       "t": "**133** The silicone shop: an Ultrasin line of high-grade silicone novelty shapes. Chief parked it 10/12: 'wrap this up … we'll come look at this later'.",
+       "trunk": "ORANGE",
+       "s": "parked",
+       "when": "10/12"
+      },
+      {
+       "t": "**139** The ECC cherry-pick: a few helpful agents, skills, and hooks from Everything Claude Code. Claude adopted four skills; Chief put it in storage on 10/13.",
+       "trunk": "OPERATOR",
+       "s": "parked",
+       "when": "10/13"
+      },
+      {
+       "t": "**142** The Character MUD: a tiny text world where a character is built room by room. Chief parked it 10/13: 'Let's not prioritize the mudlet.'",
+       "trunk": "BLACK",
+       "s": "parked",
+       "when": "10/13"
+      },
+      {
+       "t": "**144** The ClawTeam trial: Claude advises against running ClawTeam as-is and names three ideas to copy. Chief put it in storage on 10/13.",
+       "trunk": "OPERATOR",
+       "s": "parked",
+       "when": "10/13"
+      }
+     ]
+    },
+    {
+     "label": "Done, not yet moved to Done",
+     "items": [
+      {
+       "t": "Chief and Claude finished BOLOs **1** · **2** · **7** · **13** · **17** · **19** · **21** · **22**.",
+       "trunk": "OPERATOR/BLACK/ORANGE",
+       "s": "done"
+      },
+      {
+       "t": "Chief folded **15** into BOLO 107 and **23** into BOLO 113 on 10/6.",
+       "trunk": "BLACK/ORANGE",
+       "s": "done",
+       "when": "10/6"
+      },
+      {
+       "t": "Chief folded **30** into BOLO 100, and **36**, **40** and **41** into BOLO 108, on 10/6. [[trash-land|Trash Land DMZ biome]] now sits under BOLO 100.",
+       "trunk": "BLACK",
+       "s": "done",
+       "when": "10/6"
+      },
+      {
+       "t": "Chief folded **53** into BOLO 51 on 10/6. Claude folded **67**, the plain register, into BOLO 95 on 10/12.",
+       "trunk": "BLACK/OPERATOR",
+       "s": "done",
+       "when": "10/12"
+      },
+      {
+       "t": "Claude finished **25** [[bolo25|PM flow/MCDP ✅]] on 9/3 and **31** [[bolo31|vocabulary page]] on 9/6. Claude finished **32**, the markdown marking SOP, on 9/6.",
+       "trunk": "OPERATOR/BLACK",
+       "s": "done",
+       "when": "9/6"
+      },
+      {
+       "t": "Claude shipped **26**, the dictation dictionary, on 9/16. **37** [[bolo37|proword loop]]: Chief retired the panel on 10/4, and all eight slots are ruled.",
+       "trunk": "OPERATOR/BLACK",
+       "s": "done",
+       "when": "10/4"
+      },
+      {
+       "t": "**33** The MCDP browser: Claude delivered v0 on 9/6. Chief closed it on 10/6 on the Call Sheet.",
+       "trunk": "BLACK",
+       "s": "done",
+       "when": "10/6"
+      },
+      {
+       "t": "Claude finished **38** [[bolo38|sit rep front page ✅ 9/10]] and **43** [[bolo43|L2b signatures ✅ 9/10]]. Chief closed **47** and **49** [[bolo49|Massive presets]] on 10/6.",
+       "trunk": "OPERATOR/BLACK",
+       "s": "done",
+       "when": "10/6"
+      },
+      {
+       "t": "Claude delivered **39**, the food preservation head version, on 9/6.",
+       "trunk": "OPERATOR/BLACK",
+       "s": "done",
+       "when": "9/6"
+      },
+      {
+       "t": "Claude finished **50** [[bolo50|standards campaign ✅ 9/15]] with zero open calls. Claude finished **55** [[bolo55|DOPE SHEET format ✅ 9/16]].",
+       "trunk": "BLACK/ORANGE/OPERATOR",
+       "s": "done",
+       "when": "9/16"
+      },
+      {
+       "t": "**52** The gearbox: Claude runs gear 1 every session, with the agent ceiling at three. The budget number waits on Chief's /usage read.",
+       "trunk": "BLACK/OPERATOR",
+       "s": "done",
+       "when": "10/12"
+      },
+      {
+       "t": "**58** The launch sequence: Claude built it on 9/17, and 'go for launch' stands the Command up. **59** Claude built the Fresh Ten autosave fold on 9/17.",
+       "trunk": "OPERATOR/BLACK",
+       "s": "done",
+       "when": "9/17"
+      },
+      {
+       "t": "**60** The PCP visit: Chief booked it, and the visit was held 10/5; follow-ups ride BOLO 106.",
+       "trunk": "OPERATOR",
+       "s": "done",
+       "when": "10/5"
+      },
+      {
+       "t": "**61** The quote library: Claude built it on 9/17 and recommends closing it. **62** Claude built the knobs on 9/17.",
+       "trunk": "BLACK/OPERATOR",
+       "s": "done",
+       "when": "9/17"
+      },
+      {
+       "t": "**74** The goon agent, Sensei: Claude stood it up and proved it end to end on 9/20. **75** Claude put the Stash deck live on :9999, with the station wired, on 9/20.",
+       "trunk": "ORANGE",
+       "s": "done",
+       "when": "9/20"
+      },
+      {
+       "t": "**80** The theme system: Claude landed THEME 1.0.0 on 9/29, with OXO as the worked instance. No open calls remain, so nothing waits on Chief.",
+       "trunk": "BLACK",
+       "s": "done",
+       "when": "9/29"
+      },
+      {
+       "t": "**81** Narrative invariants, now named TOUCHSTONE (cite TS 1:3). Chief closed BOLO 81 on 10/12. Claude's schema pass rides with its own row.",
+       "trunk": "BLACK",
+       "s": "done",
+       "when": "10/12"
+      },
+      {
+       "t": "**84** FAA Part 107: Chief closed it on 9/29, since the Prime Air reason is gone.",
+       "trunk": "OPERATOR",
+       "s": "done",
+       "when": "9/29"
+      },
+      {
+       "t": "**95** The documentation SOP: every doc type, taught one section at a time. Claude finished it on 10/4 with Chief's teach-back, and published the SOI edition 2026-10-04.",
+       "trunk": "BLACK",
+       "s": "done",
+       "when": "10/4"
+      },
+      {
+       "t": "**103** System renumber: Claude moved worldbuilding to 05 and put operations and tracking at the bottom, done 10/5. **104** Claude finished the visuals SOP, diagrams on every doc, on 10/5.",
+       "trunk": "BLACK",
+       "s": "done",
+       "when": "10/5"
+      },
+      {
+       "t": "**120** The V Reference Set: top cosplay posts become DARKROOM reference, kept private. Claude finished it on 10/12; the set rides BOLO 121's matcher as a costume label.",
+       "trunk": "ORANGE/BLACK",
+       "s": "done",
+       "when": "10/12"
+      }
+     ]
+    }
+   ],
+   "pmcs": [
+    {
+     "item": "PCP — establish care + physical",
+     "s": "open",
+     "status": "visit held 10/5 · BOLO 60 · follow-ups logged",
+     "next": "Claude tracks follow-ups on BOLO 106; the detail stays in the private file"
+    },
+    {
+     "item": "Pelvic-floor PT",
+     "s": "done",
+     "status": "dropped 10/4 by Chief",
+     "next": "—"
+    },
+    {
+     "item": "Fitness + diet — lift 5×5 again, a good diet",
+     "s": "open",
+     "status": "opened 10/4 · referral + gym checklist queued",
+     "next": "Chief books the dietitian referral, a must-do. Chief joins the gym and starts the strength program; targets stay in the private file."
+    },
+    {
+     "item": "Employment — the Amazon job did not work out",
+     "s": "hot",
+     "status": "unemployed as of 9/3 · Chief submitted six of eight applications 9/24; the rest wait on Chief's word",
+     "next": "Chief watches for callbacks · [[bolo24|BOLO 24]] is in storage since 10/13"
+    }
+   ]
+  },
+  {
+   "id": "V",
+   "name": "Blocked on you",
+   "kind": "numbered",
+   "plain": "The Blocked table has no numbered rows, the same as before. Nothing was added. One loose thread survives from 9/12: the standing force order for cross-session republishes, still unruled.",
+   "strand": {
+    "last": "The Blocked table has been empty since 9/23. That day you ruled #12, #14, #19 and #20 on the recommendations. Nothing new has reached it since.",
+    "plan": "Table order was unblock order. With the table empty, the next decision that lands here starts a fresh one.",
+    "you": "No numbered rulings were asked of you. The open threads from 10/17 sit in the Moved section, not in the table.",
+    "next": "Nothing is formally blocked. Open in practice: the standing force order for cross-session republishes. Also open: BOLO 24's three calls, which are the library, the split and the Gate 3 skin test."
+   },
+   "items": []
+  },
+  {
+   "id": "VI",
+   "name": "The leverage line",
+   "kind": "line",
+   "plain": "The pull finished all 1,693 boards overnight. Claude named ten agent jobs under the superpowers framework. The sit rep ran its three seats by name for the first time.",
+   "strand": {
+    "last": "Claude built the Armory, DVA's assessment and the boot screen. Claude then named ten recurring agent jobs.",
+    "plan": "Chief ruled the agents come first. The story work and the scanner pair wait for Chief's scanner uploads.",
+    "you": "Chief said \"i want to continue optimizing our fuckin agents thing\".",
+    "next": "Claude sorts the Bash errors, DVA's M4. Bash fails 589 times in 12,703 calls."
+   },
+   "line": "Sort the Bash errors (BOLO 155, DVA's M4): the biggest leak left in the agent work.",
+   "why": "Bash fails 589 of 12,703 calls. 461 are plain failed commands."
+  },
+  {
+   "id": "VII",
+   "name": "The SOI card",
+   "kind": "card",
+   "plain": "The words that run this operation. Say one and the protocol fires. Every term on this page is a live link; hover it, hold, and the definition opens. The full book is the SOI: the BREVITY.",
+   "strand": {
+    "last": "Ruled 9/11: DOPE SHEET (the status page) · SOI is the book · \"the house tongue\" and \"glossary\" retired · dark is the only theme.",
+    "plan": "The SOI page replaces the in-page glossary once it publishes (Charlie Mike pages, step 4). BOLO 37 moves rulings into a daily loop.",
+    "you": "You clarified FRAGO on your own read of doctrine: the update, never the page.",
+    "next": "Confirm OPORD as the page's word. Name the loop; MINT is the recommendation."
+   },
+   "soi": [
+    {
+     "k": "sitrep",
+     "w": "sit rep",
+     "g": "The full board, cold start. Spoken, it flushes the [[ready-rack|Ready Rack]] and delivers blocks 0 to VII in fixed order. From 9/10 it also "
+    },
+    {
+     "k": "oscar-mike",
+     "w": "Oscar Mike",
+     "g": "The close-out, all in one — RULED 9/11 (\"when I say we're Oscar Mike, I wanna close out the session… just one thing\"). Spoken, it ends the s"
+    },
+    {
+     "k": "how-copy",
+     "w": "how copy?",
+     "g": "End of orders. The reply opens Good copy plus a readback, then executes. Solid copy means nothing to add. Bad copy on an item means one ques"
+    },
+    {
+     "k": "boresight",
+     "w": "boresight",
+     "g": "The understanding check before delivery: readback, the read, clarifying questions only. Nothing builds until you clear it. Boresight in on X"
+    },
+    {
+     "k": "bolo",
+     "w": "BOLO",
+     "g": "\"BOLO that\" / \"put that down\": Claude captures the tasking in BOLO.md the turn Chief speaks it. Be On the Lookout, named for the bolas: thro"
+    },
+    {
+     "k": "ivory-tower",
+     "w": "ivory tower",
+     "g": "Academic mode: published literature only, every claim cited inline, established versus contested marked."
+    },
+    {
+     "k": "break-break",
+     "w": "break-break",
+     "g": "Open a detour; the main thread parks where it stands. [[buttonhook|Buttonhook back]] closes it."
+    },
+    {
+     "k": "buttonhook",
+     "w": "buttonhook back",
+     "g": "Close the detour and return to the parked thread unprompted, restating where we were."
+    },
+    {
+     "k": "run-the-darkroom",
+     "w": "run the darkroom",
+     "g": "Launch [[darkroom|DARKROOM]] in the background, no questions. The garbles black room and dark room read the same."
+    },
+    {
+     "k": "main-effort",
+     "w": "PRIORITY",
+     "g": "RULED 9/24 on [[brevity|BREVITY]] (the loop): the command proword for the one thing everything else supports; Block VI's title rides on it. "
+    },
+    {
+     "k": "challenge",
+     "w": "the challenge phrase",
+     "g": "The formal challenge, spoken as written in STATE.md's header. The countersign follows, first line, exact, then the board. The ritual is neve"
+    },
+    {
+     "k": "out-block",
+     "w": "the OUT block",
+     "g": "Every reply that executes an [[oscar-mike|Oscar Mike]] closes with the fenced end-of-transmission block and nothing after it: OSCAR MIKE, OU"
+    },
+    {
+     "k": "status-on-bolo",
+     "w": "status on BOLO N",
+     "g": "The plain-speech form of the DOPE SHEET (called [[opord|OPORD N]] until 9/11): \"give me the status on BOLO 45\" shows that BOLO's page. Dicta"
+    },
+    {
+     "k": "recon",
+     "w": "INTEL",
+     "g": "RULED 9/24 on [[brevity|BREVITY]] (the loop): the boresight aimed outside the wire (web and literature). Your ranking: INTEL, RECON, SCOUT. "
+    },
+    {
+     "k": "napkin",
+     "w": "ROUGH",
+     "g": "RULED 9/24 on [[brevity|BREVITY]] (the loop): the modifier for a one-pass read: rough numbers, no question loop (\"rough boresight\"). Your ra"
+    },
+    {
+     "k": "syllabus",
+     "w": "PRIMER",
+     "g": "RULED 9/24 on [[brevity|BREVITY]] (the loop): BVX intake step one: pull the tier-one 101 text of a field, one per field. Your ranking: PRIME"
+    },
+    {
+     "k": "distill",
+     "w": "DIGEST",
+     "g": "RULED 9/24 on [[brevity|BREVITY]] (the loop): BVX intake step three: the book through the Zotero pipeline, out as a one-sheet. Your ranking:"
+    },
+    {
+     "k": "grammar",
+     "w": "DOCTRINE",
+     "g": "RULED 9/24 on [[brevity|BREVITY]] (the loop): BVX intake step four: derive how a system's language operates. Your ranking: DOCTRINE, SYNTAX,"
+    },
+    {
+     "k": "rtb",
+     "w": "RTB",
+     "g": "Romeo Tango Bravo, return to base. The parked work goes home. Claude promotes every keeper in oscar-mike/ to its real file, deletes the rest"
+    },
+    {
+     "k": "charlie-mike",
+     "w": "Charlie Mike",
+     "g": "Continue mission. Resume a parked card: open it, one line on where it stood, pick up at its resume order, no re-derivation. Ruled 9/10. The "
+    },
+    {
+     "k": "frago",
+     "w": "FRAGO",
+     "g": "Fragmentary order: the UPDATE pushed onto a BOLO's standing page, never the page itself — Chief's clarification 9/10 late (\"FRAGO is just th"
+    },
+    {
+     "k": "dope-sheet",
+     "w": "DOPE SHEET",
+     "g": "The standing status page for one BOLO — the [[smeac|five-paragraph order]] with the next action on top, plus the log; changed by [[frago|FRA"
+    },
+    {
+     "k": "actual",
+     "w": "ACTUAL",
+     "g": "The suffix for the commander in person on the net (\"Six Actual\"). RULED 9/11 as the formal form of the operator's callsign: [[hotline|HOTLIN"
+    },
+    {
+     "k": "abort",
+     "w": "ABORT",
+     "g": "The cancel word, RULED 9/11: \"abort abort abort\" spoken three times, then the correction. Cancels the immediately preceding order; the recor"
+    },
+    {
+     "k": "hotline",
+     "w": "HOTLINE",
+     "g": "The operator's callsign, RULED 9/11. Casual: \"Hotline\", \"word from Hotline\". On the net and on every page: **HOTLINE ACTUAL**. The point: th"
+    },
+    {
+     "k": "gear",
+     "w": "THROTTLE",
+     "g": "RULED 9/24 on [[brevity|BREVITY]] (the loop): the agent ceiling. Throttle 1 = 3 agents (the default); 2 = 6; 3 = 9; 4 = 12; 5 = 15; 6 = 16, "
+    },
+    {
+     "k": "go",
+     "w": "go N",
+     "g": "The phase go-word on a [[dope-sheet|DOPE SHEET]]: \"go 6\" fires phase 6 of the sheet's execution paragraph, nothing more. Coded 9/15 (dictati"
+    },
+    {
+     "k": "go-for-launch",
+     "w": "go for launch",
+     "g": "The word that fires [[launch-sequence|the launch sequence]], RULED 9/17 over a bench of ten (five Marine, five NASA). Lineage: the flight di"
+    },
+    {
+     "k": "good-traffic",
+     "w": "good traffic, stand by",
+     "g": "One of [[judy|JUDY]]'s two acknowledgments, RULED 9/17: your transmission came through clean, wait for the reply. The other is \"Copy.\" She s"
+    },
+    {
+     "k": "lock-in",
+     "w": "JUDY, lock in",
+     "g": "Switches [[judy|JUDY]] to the military-comms attitude, RULED 9/17: radiotelephone register, prowords, no jokes, brat 0, nine sentences at mo"
+    },
+    {
+     "k": "fries-in-the-bag",
+     "w": "JUDY, put the fries in the bag",
+     "g": "Switches [[judy|JUDY]] to the comfortable-day attitude, RULED 9/17: warm, dry, a light flirt, the information first; brat 45. The standing d"
+    },
+    {
+     "k": "goon-time",
+     "w": "JUDY, it's goon time",
+     "g": "Switches [[judy|JUDY]] to the full-brat attitude, RULED 9/17: teasing, knowing, innuendo allowed, facts intact; brat 100, sixteen sentences."
+    },
+    {
+     "k": "sensei",
+     "w": "Sensei",
+     "g": "Opens a goon session, the second agent on the local model. RULED 9/20 (BOLO 74); she was Naked until 05:15, and \"Naked\" still reads as her. "
+    },
+    {
+     "k": "intel-cycle",
+     "w": "INTEL CYCLE",
+     "g": "The loop that turns sources into a system. RULED 10/6 (BOLO 108, \"all rec\"). Lane A, the books: PRIMER, Chief acquires, Zotero, DIGEST, DOCT"
+    },
+    {
+     "k": "glass",
+     "w": "GLASS",
+     "g": "Build Chief a UI: a page, a board, a console. \"Glass it\" or \"glass this for me\" fires the build. RULED 10/6 (Chief: \"I like glass it, like g"
+    },
+    {
+     "k": "clean-your-station",
+     "w": "CLEAN YOUR STATION",
+     "g": "The light data clean: pick up the trash, meaning dupes, junk and broken rows. Also \"clean up your shit\". RULED 10/6. The first of the three "
+    },
+    {
+     "k": "deep-clean",
+     "w": "DEEP CLEAN",
+     "g": "The deep data clean, run as if an inspection is coming: sort, normalize formats, tag, fix every record. RULED 10/6 (Chief: \"we're going to d"
+    },
+    {
+     "k": "audit",
+     "w": "AUDIT",
+     "g": "The inspection: a script checks the work against the SOP and lists every gap. RULED 10/6 (Chief: \"not white glove, but audit. Just call it w"
+    },
+    {
+     "k": "traffic-deck",
+     "w": "THE TRAFFIC DECK",
+     "g": "JUDY's deck at 127.0.0.1:8787/traffic: the last five replies in tabs, each reply's open calls with Take rec and an answer box, Take all recs"
+    }
+   ],
+   "nouns": [
+    "bolo",
+    "pmcs",
+    "fresh-ten",
+    "ancients",
+    "deep-stacks",
+    "ready-rack",
+    "magazine",
+    "sop",
+    "ttp"
+   ]
+  }
+ ]
+}
