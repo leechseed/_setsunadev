@@ -1,11 +1,16 @@
 {
- "time": "2026-10-18T03:39:14",
+ "time": "2026-10-18T04:24:49",
  "all_go": true,
  "stations": [
   {
+   "name": "PULL",
+   "go": true,
+   "detail": "pull glass (runner A+B+C started · wave 1: 40/40 boards (4 empty) · 11,032 images · LANDED · 10 min/board · ETA -; wave 2: 40/40 boards (1 empty, 3 dropped) · 9,006 images · LANDED · 10 min/board · ETA - · disk: Q free 3,102 GB · glass built, republish owed · 0.5 s)"
+  },
+  {
    "name": "ARMORY",
    "go": true,
-   "detail": "armory glass (rebuilding in the background (~40 s, log _PRIVATE/reference/armory/launch.log) · republish owed · budget 10/18 · 224 calls · agents 13 (100% named, 100% JOB) · shell fails 10% of 78 · Artifact fails 0% of 12)"
+   "detail": "armory glass (rebuilding in the background (~40 s, log _PRIVATE/reference/armory/launch.log) · republish owed · budget 10/18 · 229 calls · agents 13 (100% named, 100% JOB) · shell fails 10% of 79 · Artifact fails 0% of 12)"
   }
  ]
 }

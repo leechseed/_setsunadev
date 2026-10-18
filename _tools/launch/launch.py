@@ -13,7 +13,7 @@ Safe to run twice: a live DARKROOM is reported, not restarted (its single-instan
 a running JUDY session voice is reported, not restarted; a standalone JUDY (no --session)
 is stopped first because both take the same hotkey.
 """
-import io, os, sys, json, time, subprocess, argparse, datetime as dt, urllib.request
+import io, os, sys, glob, json, time, subprocess, argparse, datetime as dt, urllib.request
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 PY = sys.executable
@@ -550,7 +550,39 @@ def main():
              "stations": [{"name": r["station"], "go": bool(r["go"]), "detail": "%s (%s)" % (r["addr"], r["note"])} for r in rows]},
             ensure_ascii=False, indent=1))
     except Exception: pass
+    print_next(rows, nogo)
     sys.exit(0 if not nogo else 1)
+
+
+def print_next(rows, nogo):
+    """BOLO 155 M7 (10/18): the launch skill's procedure as NEXT lines, built from what this poll actually found."""
+    try:
+        pages = json.load(io.open(PAGES, encoding="utf-8"))
+    except Exception:
+        pages = {}
+    by = {r["station"]: r for r in rows}
+    print("\nNEXT · keep the poll above verbatim; report a NO-GO, never retry it in a loop.")
+    pull = by.get("PULL")
+    if pull:
+        print("NEXT · publish _PRIVATE/reference/pullqueue/pull-queue.html to %s (url; resend once if refused as unread)" % pages.get("pullglass", "pages.json pullglass"))
+        if pull.get("waves"):
+            print("NEXT · waves are open: CronList, then arm ONE CronCreate at minutes 7,37 (the 30-min pull report; it deletes itself when the pull goes idle)")
+    if "FRAGO" in by and "republish owed" in str(by["FRAGO"].get("note")):
+        print("NEXT · republish each FRAGO'd sheet named in the FRAGO row to its pages.json url")
+    try:
+        agents_t = max(os.path.getmtime(f) for f in glob.glob(os.path.join(ROOT, ".claude", "agents", "*.md")))
+        roster = os.path.join(ROOT, "_tools", "roster", "roster.html")
+        if not os.path.exists(roster) or agents_t > os.path.getmtime(roster):
+            print("NEXT · .claude/agents changed: python _tools/roster/build.py, then publish _tools/roster/roster.html to %s" % pages.get("roster", "pages.json roster"))
+    except Exception:
+        pass
+    print("NEXT · run the sit rep: python _tools/sitrep/run.py (and follow its NEXT lines)")
+    if "ARMORY" in by:
+        print("NEXT · after the sit rep publishes: publish _PRIVATE/reference/armory/armory.html to %s" % pages.get("armory", "pages.json armory"))
+    if "AUDIT" in nogo:
+        print("NEXT · AUDIT is NO-GO: put it in the reply's caveat with the fix offered as \"clean your station\"")
+    print("NEXT · the reply: the spoken line (names any NO-GO) · the poll in a fenced block · **Left off:** one sentence from the newest note ·")
+    print("       **Start next:** BOLO N with a five-word why · then the sit rep reply (link · Block 0 in three bullets · leverage line · one caveat line)")
 
 
 if __name__ == "__main__":
