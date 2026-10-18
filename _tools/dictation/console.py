@@ -874,7 +874,7 @@ class Handler(BaseHTTPRequestHandler):
             except Exception as e:
                 return self._send(500, f"console.html missing: {e}", "text/plain; charset=utf-8")
             # 10/8: the Traffic panel now lives inside the console (its first panel), so the BOLO 115 corner link is gone
-            html = html.replace("</title>", '</title><link rel="icon" type="image/png" href="/app/icon-192.png?v=3">', 1)   # ?v= busts Chrome's favicon cache (10/17 icon swap)
+            html = html.replace("</title>", '</title><link rel="icon" type="image/png" href="/app/icon-192.png?v=4">', 1)   # ?v= busts Chrome's favicon cache (10/17 icon swap)
             return self._send(200, html, "text/html; charset=utf-8")
 
         if path == "/traffic":
