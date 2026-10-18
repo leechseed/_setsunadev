@@ -1,0 +1,677 @@
+{
+ "at": "2026-10-18 09:16:45",
+ "glasses": [
+  {
+   "url": "https://claude.ai/artifact/RYyy6zNoAHMaTTxBZoV9Hn",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\reference\\armory\\armory.html",
+   "when": "2026-10-18T13:03:52.400Z",
+   "local": true,
+   "title": "The Armory",
+   "id": "2b6fe62e81"
+  },
+  {
+   "url": "https://claude.ai/artifact/NaXhP4egpqXGgcqn76dYKj",
+   "file": "C:\\Users\\U01_LE~1\\AppData\\Local\\Temp\\SITREP.fragment.html",
+   "when": "2026-10-18T13:03:03.715Z",
+   "local": true,
+   "title": "SITREP",
+   "id": "c38dd2330e"
+  },
+  {
+   "url": "https://claude.ai/artifact/Uyxx4EzoYiroFm15JMBkMU",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\bolostatus\\out\\BOLO-156.html",
+   "when": "2026-10-18T13:00:58.040Z",
+   "local": true,
+   "title": "DOPE SHEET 156",
+   "id": "aa450c772e"
+  },
+  {
+   "url": "https://claude.ai/artifact/TwEqZQ8DN1z1Vu8HWX7e5H",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\roster\\roster.html",
+   "when": "2026-10-18T12:59:59.306Z",
+   "local": true,
+   "title": "The Roster",
+   "id": "3ff29f5447"
+  },
+  {
+   "url": "https://claude.ai/artifact/Lg323uYY1oB2HCfgHFDFQ6",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\reference\\pullqueue\\pull-queue.html",
+   "when": "2026-10-18T12:59:58.009Z",
+   "local": true,
+   "title": "Pull Queue",
+   "id": "7a364899e9"
+  },
+  {
+   "url": "https://claude.ai/artifact/9ANGE6nkxKT3VA5Dc9kTzX",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\bolostatus\\work\\159\\interface-map.html",
+   "when": "2026-10-18T12:52:03.776Z",
+   "local": true,
+   "title": "Interface Map",
+   "id": "dff3519a6e"
+  },
+  {
+   "url": "https://claude.ai/artifact/W6XP6wTBPCZW3FARihUAyZ",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\bolostatus\\work\\157\\reading-desk.html",
+   "when": "2026-10-18T12:43:00.685Z",
+   "local": true,
+   "title": "The Reading Desk",
+   "id": "882b23eea9"
+  },
+  {
+   "url": "https://claude.ai/artifact/4y6z1kfNw9xJJx6hbupNq4",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\bolostatus\\work\\158\\civ-teardown.html",
+   "when": "2026-10-18T10:58:58.126Z",
+   "local": true,
+   "title": "The Civ Teardown",
+   "id": "e917e2ec97"
+  },
+  {
+   "url": "https://claude.ai/artifact/GK9GYmr3RjopCuhY3GCM61",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\bolostatus\\work\\156\\outlooks\\year3000.html",
+   "when": "2026-10-18T10:56:30.110Z",
+   "local": true,
+   "title": "Year 3000 Outlooks",
+   "id": "949f70fd4c"
+  },
+  {
+   "url": "https://claude.ai/artifact/X81zAWuzmWYwbuckLyyvwk",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\bolostatus\\work\\157\\lookups.html",
+   "when": "2026-10-18T10:54:41.334Z",
+   "local": true,
+   "title": "GitHub Look-Ups",
+   "id": "8dda82b15e"
+  },
+  {
+   "url": "https://claude.ai/artifact/SQK3MtUpVDvrUJp59VPCBG",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\reference\\armory\\assessment.html",
+   "when": "2026-10-18T07:36:52.399Z",
+   "local": true,
+   "title": "DVA's Assessment",
+   "id": "f098252a0f"
+  },
+  {
+   "url": "https://claude.ai/artifact/K7VLiqZow1fDxQBgQFCYad",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\bolostatus\\out\\BOLO-149.html",
+   "when": "2026-10-17T23:53:31.021Z",
+   "local": true,
+   "title": "DOPE SHEET 149",
+   "id": "502d8fd291"
+  },
+  {
+   "url": "https://claude.ai/artifact/7wpWvbEnQDChSaRnWxtoTK",
+   "file": "c:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\scanner\\glass.html",
+   "when": "2026-10-17T13:32:30.255Z",
+   "local": true,
+   "title": "The Scanner Glass",
+   "id": "e240714455"
+  },
+  {
+   "url": "https://claude.ai/artifact/7DL26zZGNgc1ZuKk6Eivom",
+   "file": "c:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\bearings\\bearings.html",
+   "when": "2026-10-14T09:18:29.349Z",
+   "local": true,
+   "title": "The Bearings",
+   "id": "81e75b8603"
+  },
+  {
+   "url": "https://claude.ai/artifact/SpuYfsjaisRpQ1MGPnwttR",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\orange\\seksing-malandi\\dope-sheet-147.html",
+   "when": "2026-10-13T16:21:06.188Z",
+   "local": true,
+   "title": "DOPE SHEET 147",
+   "id": "f6faafaa99"
+  },
+  {
+   "url": "https://claude.ai/artifact/Ks1vhvTXyBY4BvvzWRp7to",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\orange\\body-training\\open-for-him.html",
+   "when": "2026-10-13T16:19:45.422Z",
+   "local": true,
+   "title": "Open For Him",
+   "id": "e9be713dd2"
+  },
+  {
+   "url": "https://claude.ai/artifact/5SnP2oUsdvrwn4fA6ATx4b",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\kit\\kit.html",
+   "when": "2026-10-13T14:03:47.897Z",
+   "local": true,
+   "title": "The Kit",
+   "id": "7088d84a90"
+  },
+  {
+   "url": "https://claude.ai/artifact/GbhARXiKrAhTEBf57EVNN6",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\reference\\pullqueue\\board-check.html",
+   "when": "2026-10-13T13:16:28.047Z",
+   "local": true,
+   "title": "Board Check",
+   "id": "ca0658ca6f"
+  },
+  {
+   "url": "https://claude.ai/artifact/J2ayN33EUWUefRFtvPZqtJ",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\extract\\out\\scorer.html",
+   "when": "2026-10-13T11:51:26.640Z",
+   "local": true,
+   "title": "Event Scorer",
+   "id": "ae540e21aa"
+  },
+  {
+   "url": "https://claude.ai/artifact/V2Cme3Gih6cUbhHnVbJQLP",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\bolocheck\\out\\bolo-check.html",
+   "when": "2026-10-13T11:27:29.262Z",
+   "local": true,
+   "title": "BOLO Check",
+   "id": "fb6a579624"
+  },
+  {
+   "url": "https://claude.ai/artifact/AQf2S6z4dBv1J7EgFKvzse",
+   "file": "C:\\Users\\U01_LE~1\\AppData\\Local\\Temp\\SOI.fragment.html",
+   "when": "2026-10-13T09:26:04.343Z",
+   "local": true,
+   "title": "SOI",
+   "id": "a754d7817d"
+  },
+  {
+   "url": "https://claude.ai/artifact/4GbbNyNVEnGHwQUcce7BgG",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\reference\\desk\\command-desk.html",
+   "when": "2026-10-13T09:22:09.281Z",
+   "local": true,
+   "title": "Command Desk",
+   "id": "796e966022"
+  },
+  {
+   "url": "https://claude.ai/artifact/N1ULxW7F7HLMSiFzWsaTrx",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\reference\\erd\\zotero-erd.html",
+   "when": "2026-10-13T06:23:19.203Z",
+   "local": true,
+   "title": "Zotero ERD",
+   "id": "b516f13c57"
+  },
+  {
+   "url": "https://claude.ai/artifact/N2KwhGcqsL2iTTKJsUeSrr",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\reference\\erd\\stash-erd.html",
+   "when": "2026-10-13T06:23:17.825Z",
+   "local": true,
+   "title": "Stash ERD",
+   "id": "eff182b9ef"
+  },
+  {
+   "url": "https://claude.ai/artifact/3Cd3k14qcRHJBZ8Zee5z5c",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\reference\\fabula\\fabula-graph.html",
+   "when": "2026-10-13T06:21:01.680Z",
+   "local": true,
+   "title": "Fabula Graph",
+   "id": "193b2f0155"
+  },
+  {
+   "url": "https://claude.ai/artifact/9UUdPi3DmLAmWfQomLXg4e",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\intake-repos\\intake-report-3.html",
+   "when": "2026-10-13T05:54:32.378Z",
+   "local": true,
+   "title": "Intake Report 3",
+   "id": "a2d5f32002"
+  },
+  {
+   "url": "https://claude.ai/artifact/M2wUBkvHCwxnPPLW5iw7eq",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\intake-repos\\intake-picker-3.html",
+   "when": "2026-10-13T05:54:31.573Z",
+   "local": true,
+   "title": "Intake Picks 3",
+   "id": "1073f07e2e"
+  },
+  {
+   "url": "https://claude.ai/artifact/Ggbzzk5j5USvPPBSrLBMpi",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\intake-repos\\intake-report-2.html",
+   "when": "2026-10-13T05:44:43.751Z",
+   "local": true,
+   "title": "Intake Report 2",
+   "id": "7505cebf89"
+  },
+  {
+   "url": "https://claude.ai/artifact/H274SDWuSoggkn1mX6hrny",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\intake-repos\\intake-picker-2.html",
+   "when": "2026-10-13T05:44:42.977Z",
+   "local": true,
+   "title": "Intake Picks 2",
+   "id": "a12bbc0973"
+  },
+  {
+   "url": "https://claude.ai/artifact/V8XFc98p1ypiNvFtqTd156",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\intake-repos\\console\\console-mock.html",
+   "when": "2026-10-13T05:39:24.882Z",
+   "local": true,
+   "title": "The Console (mock)",
+   "id": "cf567da3d6"
+  },
+  {
+   "url": "https://claude.ai/artifact/KokCyEZAJwDPahY1pA7EGs",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\reference\\usage\\waste.html",
+   "when": "2026-10-13T04:40:21.743Z",
+   "local": true,
+   "title": "Session Waste",
+   "id": "ba57beaede"
+  },
+  {
+   "url": "https://claude.ai/artifact/VxRXvaD4vKTJqV7DzyVYFt",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\intake-repos\\intake-report.html",
+   "when": "2026-10-13T03:43:10.172Z",
+   "local": true,
+   "title": "Intake Report",
+   "id": "a74013cd50"
+  },
+  {
+   "url": "https://claude.ai/artifact/FkU6JbH3budAabZs1a6ork",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\intake-repos\\ruvnet__ruflo\\front-page-mock.html",
+   "when": "2026-10-13T03:37:02.289Z",
+   "local": true,
+   "title": "Command Desk",
+   "id": "1764c21727"
+  },
+  {
+   "url": "https://claude.ai/artifact/KSoTKfj9YqxKb1DnCEq7sL",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\intake-repos\\intake-picker.html",
+   "when": "2026-10-13T03:37:01.351Z",
+   "local": true,
+   "title": "Intake Picks",
+   "id": "ce8b99e477"
+  },
+  {
+   "url": "https://claude.ai/artifact/KQNF4TrhJsCGAyrLGndVrf",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\ecc\\roster-picker.html",
+   "when": "2026-10-13T02:33:27.415Z",
+   "local": true,
+   "title": "Agent Roster Picks",
+   "id": "3cdd1ab4d7"
+  },
+  {
+   "url": "https://claude.ai/artifact/TYWxTHnJRYrx4XZJxRTybx",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\intake\\world-first\\WORLD-SAID.html",
+   "when": "2026-10-12T11:50:55.874Z",
+   "local": true,
+   "title": "World Said",
+   "id": "df115f2526"
+  },
+  {
+   "url": "https://claude.ai/artifact/9nsifc9EvFLQuouPKGi7N1",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\crew\\CREW.html",
+   "when": "2026-10-12T11:03:42.183Z",
+   "local": true,
+   "title": "The Crew Roster",
+   "id": "d68bc19f04"
+  },
+  {
+   "url": "https://claude.ai/artifact/FEbS8vdJr1uSi4TfGj7FKX",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\intake\\world-first\\PLACE.html",
+   "when": "2026-10-12T11:00:02.916Z",
+   "local": true,
+   "title": "Place the Facts",
+   "id": "15f95ef333"
+  },
+  {
+   "url": "https://claude.ai/artifact/Wc3ZbCbUQUZoWXuNLhc362",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\bolo135-creator-income\\PLAN.html",
+   "when": "2026-10-12T09:44:04.485Z",
+   "local": true,
+   "title": "Venture Plan 135",
+   "id": "599ad76e88"
+  },
+  {
+   "url": "https://claude.ai/artifact/LgFRy3bBt5iKMMiKXfoRSr",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\bolo135-creator-income\\REPORT.html",
+   "when": "2026-10-12T09:34:52.519Z",
+   "local": true,
+   "title": "Creator Income Report",
+   "id": "a6a016f263"
+  },
+  {
+   "url": "https://claude.ai/artifact/JB5Xw7BwCCpB4XeqzpjoXg",
+   "file": "C:\\Users\\U01_LE~1\\AppData\\Local\\Temp\\BOLO-121.fragment.html",
+   "when": "2026-10-12T09:09:33.641Z",
+   "local": true,
+   "title": "DOPE SHEET 121",
+   "id": "2a16a1b735"
+  },
+  {
+   "url": "https://claude.ai/artifact/ScaT9E1LqUS4qbnNqiZSfw",
+   "file": "c:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\glass\\daz-kit.html",
+   "when": "2026-10-12T07:17:17.605Z",
+   "local": true,
+   "title": "Her DAZ Kit",
+   "id": "1b4e3b4849"
+  },
+  {
+   "url": "https://claude.ai/artifact/3T19Mdc5S5ayfCBg2aG2M3",
+   "file": "c:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\kobra\\KOBRA-CART.private.html",
+   "when": "2026-10-11T05:38:02.830Z",
+   "local": true,
+   "title": "Kobra Cart",
+   "id": "cab980cdf1"
+  },
+  {
+   "url": "https://claude.ai/artifact/PRszyUy9a2re1RyQpuRKTc",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\glass\\closet-rig.html",
+   "when": "2026-10-08T22:32:10.874Z",
+   "local": true,
+   "title": "Closet Rig",
+   "id": "03311e49b1"
+  },
+  {
+   "url": "https://claude.ai/artifact/AmpPaWeUbRVUycGbMAtRwW",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\kobra\\KOBRA-ORDER.html",
+   "when": "2026-10-08T14:08:47.911Z",
+   "local": true,
+   "title": "Printer Order List",
+   "id": "c5021b7082"
+  },
+  {
+   "url": "https://claude.ai/artifact/WWFg3pnZWxUgJjmdQf6LXW",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\glass\\throat-training.html",
+   "when": "2026-10-08T11:31:05.013Z",
+   "local": true,
+   "title": "Throat Training",
+   "id": "c8a37e8b77"
+  },
+  {
+   "url": "https://claude.ai/artifact/2Q6V7LAWaEoyKGrBu7eh6W",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\goon-log\\GOON-LOG.html",
+   "when": "2026-10-08T11:27:29.177Z",
+   "local": true,
+   "title": "Goon Log",
+   "id": "82930973c1"
+  },
+  {
+   "url": "https://claude.ai/artifact/PyMgTCS5LryqFoPtVUTt7D",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\avatar-funnel\\index.html",
+   "when": "2026-10-07T05:09:08.781Z",
+   "local": true,
+   "title": "The Avatar Funnel",
+   "id": "f3279af7dd"
+  },
+  {
+   "url": "https://claude.ai/artifact/4fAYj8oW2B2MXJo28Lssgs",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_PRIVATE\\deep-end\\index.html",
+   "when": "2026-10-07T04:42:11.908Z",
+   "local": true,
+   "title": "The Deep End",
+   "id": "e06c7f076b"
+  },
+  {
+   "url": "https://claude.ai/artifact/Xf9xzG92fykqkcxwNQUqcX",
+   "file": "c:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\orange\\SILICONE-MAKERS.html",
+   "when": "2026-10-07T01:37:31.580Z",
+   "local": true,
+   "title": "Toy Makers",
+   "id": "cb7887ba4d"
+  },
+  {
+   "url": "https://claude.ai/artifact/DCwjkdPjAATwswxKgMkekk",
+   "file": "c:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\callsheet\\CALL-SHEET.html",
+   "when": "2026-10-07T00:39:22.752Z",
+   "local": true,
+   "title": "Call Sheet",
+   "id": "b20ee6c2cc"
+  },
+  {
+   "url": "https://claude.ai/artifact/28F2EcsVahA2VAXWzrduyt",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\docs\\out\\REFERENCE.html",
+   "when": "2026-10-05T09:02:58.033Z",
+   "local": true,
+   "title": "Command Reference",
+   "id": "12b7a48a38"
+  },
+  {
+   "url": "https://claude.ai/artifact/CvJQMZV4Au1BwvvTftUaYX",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\review\\out\\REVIEW-06.html",
+   "when": "2026-10-04T20:52:31.901Z",
+   "local": true,
+   "title": "Style System Review",
+   "id": "1acced1464"
+  },
+  {
+   "url": "https://claude.ai/artifact/61QLFXxsGvMhnyRg3hGuxB",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\review\\out\\REVIEW-05.html",
+   "when": "2026-10-04T20:52:30.727Z",
+   "local": true,
+   "title": "Operations System Review",
+   "id": "8c2daadeb8"
+  },
+  {
+   "url": "https://claude.ai/artifact/GEKtSgfNukdENAJSWs5Y8n",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\review\\out\\REVIEW-00.html",
+   "when": "2026-10-04T20:52:29.362Z",
+   "local": true,
+   "title": "Epistemology System Review",
+   "id": "39e4a745a7"
+  },
+  {
+   "url": "https://claude.ai/artifact/Hc36qDrLjuWy7xexKVmhb1",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\review\\out\\REVIEW-09.html",
+   "when": "2026-10-04T20:30:14.439Z",
+   "local": true,
+   "title": "Worldbuilding System Review",
+   "id": "75f066a181"
+  },
+  {
+   "url": "https://claude.ai/artifact/2s3k57ErAdsgq9NeN7GrKH",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\review\\out\\REVIEW-08.html",
+   "when": "2026-10-04T20:30:13.428Z",
+   "local": true,
+   "title": "Tracking System Review",
+   "id": "b5bda3b29e"
+  },
+  {
+   "url": "https://claude.ai/artifact/Tx5aSzFxJb5ou8QqjSjzbg",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\review\\out\\REVIEW-07.html",
+   "when": "2026-10-04T20:30:12.453Z",
+   "local": true,
+   "title": "Theme System Review",
+   "id": "709e75e69a"
+  },
+  {
+   "url": "https://claude.ai/artifact/AWNnBxMwPbvSzosyqUH2K5",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\review\\out\\REVIEW-04.html",
+   "when": "2026-10-04T20:30:09.500Z",
+   "local": true,
+   "title": "Plot System Review",
+   "id": "2b37636868"
+  },
+  {
+   "url": "https://claude.ai/artifact/HTyXJXAxARQCqxCprW2vHf",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\review\\out\\REVIEW-03.html",
+   "when": "2026-10-04T20:30:08.542Z",
+   "local": true,
+   "title": "Setting System Review",
+   "id": "bac99c7136"
+  },
+  {
+   "url": "https://claude.ai/artifact/9rr1Q6sj99xM2XK7uoLSgo",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\review\\out\\REVIEW-02.html",
+   "when": "2026-10-04T20:30:07.435Z",
+   "local": true,
+   "title": "Character System Review",
+   "id": "bf1896ac88"
+  },
+  {
+   "url": "https://claude.ai/artifact/UHnaEWWkst8yHV9CDHL3Nw",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\review\\out\\REVIEW-01.html",
+   "when": "2026-10-04T20:30:05.894Z",
+   "local": true,
+   "title": "Narrative System Review",
+   "id": "2368b31fb0"
+  },
+  {
+   "url": "https://claude.ai/artifact/Rd6NSrhxuihbBvaWDfCxSU",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\subsheet\\out\\subreddit-sheet.html",
+   "when": "2026-10-04T10:53:45.272Z",
+   "local": true,
+   "title": "The Subreddit Sheet",
+   "id": "a02e85d07f"
+  },
+  {
+   "url": "https://claude.ai/artifact/9ZPmTodBXKp4sfZnTPLUd3",
+   "file": "C:\\Users\\U01_LE~1\\AppData\\Local\\Temp\\ORANGE.fragment.html",
+   "when": "2026-10-04T09:24:35.610Z",
+   "local": false,
+   "title": "ORANGE.fragment",
+   "id": "7d71c7bbf3"
+  },
+  {
+   "url": "https://claude.ai/artifact/Pb1YJvbZ1VQnLa7We6bw11",
+   "file": "c:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\bolostatus\\work\\87\\BOOKHUNT.html",
+   "when": "2026-10-04T08:32:16.695Z",
+   "local": true,
+   "title": "Book Hunt",
+   "id": "4afa822743"
+  },
+  {
+   "url": "https://claude.ai/artifact/PJz16VYzqErAQoB2WH5PWH",
+   "file": "C:\\Users\\U01_LE~1\\AppData\\Local\\Temp\\BOLO-87.fragment.html",
+   "when": "2026-10-04T07:26:09.638Z",
+   "local": false,
+   "title": "BOLO-87.fragment",
+   "id": "fffb244b8b"
+  },
+  {
+   "url": "https://claude.ai/artifact/SgBz3sQpuynWYgP7M6WaVT",
+   "file": "C:\\Users\\U01_LE~1\\AppData\\Local\\Temp\\BOLO-89.fragment.html",
+   "when": "2026-10-04T05:57:25.152Z",
+   "local": false,
+   "title": "BOLO-89.fragment",
+   "id": "d035c44b2d"
+  },
+  {
+   "url": "https://claude.ai/artifact/SRgr5uoVNbTcRxTi3WmC79",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\workspace\\out\\workspace.html",
+   "when": "2026-10-04T03:06:18.296Z",
+   "local": true,
+   "title": "Story Workspace",
+   "id": "df57956b6a"
+  },
+  {
+   "url": "https://claude.ai/artifact/867xamh5LuEnqDegBdJoGa",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\worldview\\out\\worldview.html",
+   "when": "2026-10-01T06:40:30.393Z",
+   "local": true,
+   "title": "World View",
+   "id": "4c633ff066"
+  },
+  {
+   "url": "https://claude.ai/artifact/WN3ADVxsebJR7W3YAvckjC",
+   "file": "C:\\Users\\U01_LE~1\\AppData\\Local\\Temp\\BOLO-77.fragment.html",
+   "when": "2026-09-29T15:58:30.909Z",
+   "local": true,
+   "title": "DOPE SHEET 77",
+   "id": "418a2c0624"
+  },
+  {
+   "url": "https://claude.ai/artifact/FbWht84bAYcBw35mxj7Dod",
+   "file": "C:\\Users\\U01_LE~1\\AppData\\Local\\Temp\\BOLO-83.fragment.html",
+   "when": "2026-09-29T13:27:23.852Z",
+   "local": false,
+   "title": "BOLO-83.fragment",
+   "id": "8d7368c049"
+  },
+  {
+   "url": "https://claude.ai/artifact/45VaiZ1qxsJaw3uei1KaTp",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\workspace\\arrangement\\index.html",
+   "when": "2026-09-29T11:51:27.850Z",
+   "local": true,
+   "title": "The Arrangement",
+   "id": "cb4150ab42"
+  },
+  {
+   "url": "https://claude.ai/artifact/L522HU9yTeAyw5tTyw5BiQ",
+   "file": "C:\\Users\\U01_LE~1\\AppData\\Local\\Temp\\claude\\c--Users-U01-LEECHSEED-Desktop--setsunadev\\c9cb7820-ccd6-45d1-ae18-b0cf46896a3f\\scratchpad\\BOLO-80.fragment.html",
+   "when": "2026-09-29T09:31:34.623Z",
+   "local": false,
+   "title": "BOLO-80.fragment",
+   "id": "65724d5867"
+  },
+  {
+   "url": "https://claude.ai/artifact/19rjZFkarB1QvEYK1vubdo",
+   "file": "C:\\Users\\U01_LE~1\\AppData\\Local\\Temp\\BOLO-57.fragment.html",
+   "when": "2026-09-25T02:22:06.748Z",
+   "local": false,
+   "title": "BOLO-57.fragment",
+   "id": "de697bb735"
+  },
+  {
+   "url": "https://claude.ai/artifact/FrkVdoW3g2JDsZm6i5FZpf",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\bolostatus\\work\\57\\kit\\voice-build.html",
+   "when": "2026-09-25T02:00:41.249Z",
+   "local": true,
+   "title": "The Voice Build",
+   "id": "5d93bd29bc"
+  },
+  {
+   "url": "https://claude.ai/artifact/GgA7zgN42aMWiJQqbKGGso",
+   "file": "C:\\Users\\U01_LE~1\\AppData\\Local\\Temp\\BOLO-37.fragment.html",
+   "when": "2026-09-24T17:17:46.860Z",
+   "local": false,
+   "title": "BOLO-37.fragment",
+   "id": "9a6193c651"
+  },
+  {
+   "url": "https://claude.ai/artifact/Uc8e84mmzY8gBjSHPjrCW7",
+   "file": "C:\\Users\\U01_LE~1\\AppData\\Local\\Temp\\BOLO-81.fragment.html",
+   "when": "2026-09-24T16:04:10.600Z",
+   "local": false,
+   "title": "BOLO-81.fragment",
+   "id": "0282ef62ab"
+  },
+  {
+   "url": "https://claude.ai/artifact/Ph5XJfN1TYAQQTFkrGkV3r",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\zotero\\out\\plot-sweep.html",
+   "when": "2026-09-24T04:15:45.620Z",
+   "local": true,
+   "title": "The Plot Shelf",
+   "id": "12a872a065"
+  },
+  {
+   "url": "https://claude.ai/artifact/RAsAM19ys8dzK5yhjSdhtH",
+   "file": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\charsys\\character-system.html",
+   "when": "2026-09-23T23:38:16.090Z",
+   "local": true,
+   "title": "The Character Stack",
+   "id": "8f49c0e5d9"
+  },
+  {
+   "url": "https://claude.ai/artifact/6CZHo9UUgyry2Bs2YYszmh",
+   "file": "C:\\Users\\U01_LE~1\\AppData\\Local\\Temp\\BOLO-24.fragment.html",
+   "when": "2026-09-23T12:19:04.287Z",
+   "local": false,
+   "title": "BOLO-24.fragment",
+   "id": "a2f2e270d0"
+  },
+  {
+   "url": "https://claude.ai/artifact/QoYPvjnuyTMHYvHbxRVuUP",
+   "file": "C:\\Users\\U01_LE~1\\AppData\\Local\\Temp\\BOLO-46.fragment.html",
+   "when": "2026-09-23T09:05:23.256Z",
+   "local": false,
+   "title": "BOLO-46.fragment",
+   "id": "8acb46aedd"
+  },
+  {
+   "url": "https://claude.ai/artifact/FnzAdEuAGoAkN3hWreqjMF",
+   "file": "C:\\Users\\U01_LE~1\\AppData\\Local\\Temp\\BOLO-64.fragment.html",
+   "when": "2026-09-23T07:17:59.743Z",
+   "local": false,
+   "title": "BOLO-64.fragment",
+   "id": "369d5307ae"
+  },
+  {
+   "url": "https://claude.ai/artifact/PtQsWhM6VpKzuiAQ1Mhfi4",
+   "file": "C:\\Users\\U01_LE~1\\AppData\\Local\\Temp\\BOLO-64.boresight.fragment.html",
+   "when": "2026-09-23T07:06:51.640Z",
+   "local": false,
+   "title": "BOLO-64.boresight.fragment",
+   "id": "3c8d590a2e"
+  },
+  {
+   "url": "https://claude.ai/artifact/G6sfNtbgR884ifa868RsLu",
+   "file": "C:\\Users\\U01_LE~1\\AppData\\Local\\Temp\\BOLO-69.fragment.html",
+   "when": "2026-09-18T07:35:57.445Z",
+   "local": false,
+   "title": "BOLO-69.fragment",
+   "id": "cc5650623e"
+  }
+ ]
+}

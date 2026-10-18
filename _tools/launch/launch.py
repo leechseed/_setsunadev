@@ -232,6 +232,11 @@ def station_console():
                     break
             else:
                 return {"station": "CONSOLE", "go": False, "addr": url, "note": "no answer after 10 s"}
+        if ONE_WINDOW:   # BOLO 153: the one window, snapped to half the screen; a second launch focuses it, never doubles it
+            r = subprocess.run([PY, "-X", "utf8", os.path.join(ROOT, "_tools", "console", "console.py"), "--open"], cwd=ROOT,
+                               capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=30)
+            note = (r.stdout or r.stderr or "").strip().splitlines()[-1:] or ["?"]
+            return {"station": "CONSOLE", "go": True, "addr": url, "note": ("already live" if was_up else "started") + " · " + note[0]}
         app = chromium_app_exe()
         if app:
             subprocess.Popen([app, "--app=" + url, "--window-size=1500,950"], cwd=ROOT, stdin=subprocess.DEVNULL,
@@ -465,8 +470,9 @@ def boot_open(enabled=True):
         return lambda *a, **k: None
     try:
         open(BOOT_EVENTS, "w", encoding="utf-8").close()
-        subprocess.Popen([PY, "-X", "utf8", os.path.join(ROOT, "_tools", "launch", "boot.py")], cwd=ROOT,
-                         creationflags=subprocess.CREATE_NEW_CONSOLE, stdin=None, close_fds=True)
+        if not ONE_WINDOW:   # BOLO 153: under one window the Console draws the boot sequence from boot.jsonl
+            subprocess.Popen([PY, "-X", "utf8", os.path.join(ROOT, "_tools", "launch", "boot.py")], cwd=ROOT,
+                             creationflags=subprocess.CREATE_NEW_CONSOLE, stdin=None, close_fds=True)
     except Exception:
         return lambda *a, **k: None
 
@@ -513,6 +519,8 @@ def main():
             boot("done", x["station"], go=bool(x["go"]), note=str(x.get("note") or ""), waves=x.get("waves") or [], sub=x.get("sub") or [])
         return r
 
+    if ONE_WINDOW and not a.no_console:   # BOLO 153: the window first, so the boot sequence plays inside it live
+        rows.append(run("CONSOLE", station_console))
     if not a.no_audit:   # first, always (Chief 10/6): get it out of the way
         rows.append(run("AUDIT", station_audit))
     if not a.no_pull:    # right after the audit (Chief 10/12): the pull waves and their glass
@@ -531,7 +539,7 @@ def main():
         rows.append(run("FACES", station_faces))
     if not a.no_deck and not a.no_faces:
         rows.append(run("DECK", station_deck))
-    if not a.no_console:
+    if not a.no_console and not ONE_WINDOW:
         rows.append(run("CONSOLE", station_console))
     if not a.no_knobs:
         rows.append(run("KNOBS", station_knobs))
