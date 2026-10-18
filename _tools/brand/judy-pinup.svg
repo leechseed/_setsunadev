@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="JUDY">
+  <!-- JUDY tab icon, draft 10/17: an original grown-woman pin-up silhouette (kneeling, leaning back on one arm), one solid ORANGE fill; drawn from scratch, nothing traced -->
+  <rect width="64" height="64" rx="14" fill="#121110"/>
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="#FF5A1F" stroke-width="3"/>
+  <g fill="#FF5A1F">
+    <!-- head + high ponytail -->
+    <circle cx="33" cy="13" r="5"/>
+    <path d="M30 9.5C26 6 20.5 7.5 19.5 12.5C22 10.5 25 11 27.5 13Z"/>
+    <!-- neck, torso, hips -->
+    <path d="M31 17.5h4l.6 3.5
+             C39.5 21.5 41 23.5 40.5 26
+             C42 28 41.5 31 38.5 31.5
+             C37 34 36.5 36 37.5 38.5
+             C40 40.5 42 42.5 42.5 45
+             C41 49 36.5 52 32 52
+             C27.5 52 23 49 21.5 45
+             C22 42.5 24 40.5 26.5 38.5
+             C27.5 36 27 33 25.5 30
+             C24.5 27 25 23.5 27 21.5
+             Z"/>
+    <!-- back arm, braced on the floor -->
+    <path d="M27 21.5C24 23 21.5 28 19.5 34L16 44.5l2.6.8L23 35.5C24.5 31.5 26 28 27.5 26Z"/>
+    <!-- front arm, hand on the thigh -->
+    <path d="M39 23C42.5 25 44 29 43 33L39.5 40.5l-2.4-1L40 32.5C40.5 29.5 39.5 27 37.5 25.5Z"/>
+    <!-- kneeling legs, knees out -->
+    <path d="M21.5 44C17 45.5 12.5 48.5 9.5 52.5C9 54 10 55 11.5 55L26 55C27 53 28.5 50.5 31 49Z"/>
+    <path d="M42.5 44C47 45.5 51.5 48.5 54.5 52.5C55 54 54 55 52.5 55L38 55C37 53 35.5 50.5 33 49Z"/>
+  </g>
+</svg>
