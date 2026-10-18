@@ -1,16 +1,11 @@
 {
- "time": "2026-10-17T20:26:51",
+ "time": "2026-10-17T20:53:32",
  "all_go": true,
  "stations": [
   {
-   "name": "FACES",
+   "name": "ARMORY",
    "go": true,
-   "detail": "http://127.0.0.1:8787/faces (started · 1.5 s · opened)"
-  },
-  {
-   "name": "DECK",
-   "go": true,
-   "detail": "http://127.0.0.1:8787/traffic (opened)"
+   "detail": "armory glass (rebuilding in the background (~40 s, log _PRIVATE/reference/armory/launch.log) · republish owed)"
   }
  ]
 }

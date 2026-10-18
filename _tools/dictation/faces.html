@@ -340,6 +340,13 @@ document.addEventListener("visibilitychange",()=>{if(document.hidden)stopPlaying
 
 function renderSlots(){
   $("#slots").innerHTML=STATES.map(s=>{const v=S.slots[s]||{};
+    if(S.sfw)   // 10/17 (Chief): SFW shows the original face only; no pool file names, no pool thumbnails
+      return `<div class="slot" data-slot="${s}">
+      <div class="top"><h3><em>${KEY[s]}</em> ${s}</h3><span class="note">${NOTE[s]}</span></div>
+      <div class="well">${v.sfw?media(v.sfw.url,v.sfw.file,`${s} face`):`<span>no SFW face for ${s}</span>`}</div>
+      <div class="file">${v.sfw?`<b>${esc(v.sfw.file)}</b>`:"—"}</div>
+      <div class="pool">SFW · the pool stays hidden until SFW is off</div>
+    </div>`;
     return `<div class="slot${sel?" armed":""}" data-slot="${s}">
       <div class="top"><h3><em>${KEY[s]}</em> ${s}</h3><span class="note">${NOTE[s]}</span>
         <label title="include in Shuffle"><input type="checkbox" data-sh="${s}" ${shuffleOn[s]?"checked":""}>shuffle</label></div>

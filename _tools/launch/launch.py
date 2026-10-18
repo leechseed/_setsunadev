@@ -31,7 +31,7 @@ STASH_CFG = os.path.join("Q:\\", "fun", ".StashApp", "config.yml")
 STASH_URL = "http://127.0.0.1:9999/"
 DECK = os.path.join(ROOT, "_PRIVATE", "stash_deck", "index.html")   # the Stash deck, opened in the default browser
 PAGES = os.path.join(ROOT, "_tools", "pages", "pages.json")
-BOARDS = ["sitrep", "soi", "pullglass", "roster"]   # RULED 9/17: the board · the SOI · zero DOPE SHEETs; + the pull glass (Chief 10/12, BOLO 137) + the Roster (BOLO 139)
+BOARDS = ["sitrep", "soi", "pullglass", "roster", "armory"]   # RULED 9/17: the board · the SOI · zero DOPE SHEETs; + the pull glass (Chief 10/12, BOLO 137) + the Roster (BOLO 139) + the Armory (Chief 10/17, BOLO 154)
 TOOLS = ("blocked", "bolo", "box", "effort", "help", "pmcs", "time")
 
 
@@ -400,6 +400,24 @@ def station_pull():
     return {"station": "PULL", "go": not stalled, "addr": "pull glass", "note": note}
 
 
+def station_armory():
+    """BOLO 154 (Chief 10/17: "sure add armory to launch"): rebuild the Armory glass from the transcripts.
+    The scan takes ~40 s, so it runs detached; the main line republishes the glass after the sit rep."""
+    script = os.path.join(ROOT, "_tools", "armory", "armory.py")
+    if not os.path.exists(script):
+        return {"station": "ARMORY", "go": False, "addr": "armory glass", "note": "armory.py missing"}
+    log = os.path.join(ROOT, "_PRIVATE", "reference", "armory", "launch.log")
+    try:
+        os.makedirs(os.path.dirname(log), exist_ok=True)
+        with open(log, "w", encoding="utf-8") as fh:
+            subprocess.Popen([PY, "-X", "utf8", script], cwd=ROOT, stdin=subprocess.DEVNULL, stdout=fh, stderr=subprocess.STDOUT,
+                             creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
+    except Exception as e:
+        return {"station": "ARMORY", "go": False, "addr": "armory glass", "note": "did not start: %s" % e}
+    return {"station": "ARMORY", "go": True, "addr": "armory glass",
+            "note": "rebuilding in the background (~40 s, log _PRIVATE/reference/armory/launch.log) · republish owed"}
+
+
 def station_audit():
     """Chief, 10/6: "audits to be done at the beginning of every launch, and that to be the first thing we always do."
     Runs the SOP audit (zero tokens) and reports its counts. NO-GO only on what needs Chief's eyes: private detail
@@ -429,6 +447,7 @@ def main():
     ap = argparse.ArgumentParser(description="the launch sequence (BOLO 58)")
     ap.add_argument("--no-audit", action="store_true")
     ap.add_argument("--no-pull", action="store_true")
+    ap.add_argument("--no-armory", action="store_true")
     ap.add_argument("--no-pages", action="store_true")
     ap.add_argument("--no-frago", action="store_true")
     ap.add_argument("--no-darkroom", action="store_true")
@@ -447,6 +466,8 @@ def main():
         rows.append(station_audit())
     if not a.no_pull:    # right after the audit (Chief 10/12): the pull waves and their glass
         rows.append(station_pull())
+    if not a.no_armory:  # BOLO 154: detached, so the launch does not wait on the transcript scan
+        rows.append(station_armory())
     if not a.no_darkroom:
         rows.append(station_darkroom())
     if not a.no_stash:

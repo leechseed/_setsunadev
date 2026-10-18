@@ -67,6 +67,8 @@ Any turn that starts a wave arms the same job. The job deletes itself when the p
 
 **THE ROSTER (BOLO 139, Chief 10/12: "a roster file that can pop up with the sitrep at the launch sequence"):** the pages station opens the Roster (`pages.json` "roster") with the boards. If `.claude/agents/` changed since the last launch, run `python _tools/roster/build.py`. Then republish `_tools/roster/roster.html` to that URL.
 
+**THE ARMORY (BOLO 154, Chief 10/17: "sure add armory to launch"):** station **ARMORY** starts `_tools/armory/armory.py` detached (~40 s), so the launch does not wait on the transcript scan. After the sit rep publishes, republish `_PRIVATE/reference/armory/armory.html` to `pages.json` "armory" (https://claude.ai/artifact/RYyy6zNoAHMaTTxBZoV9Hn). The pages station opens it with the boards.
+
 ## 2 · The sit rep
 
 Run the `sitrep` skill exactly as written: prep, three specialists at gear 1, assemble, then build, flush, publish. The launch does not change the formation.

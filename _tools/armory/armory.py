@@ -46,7 +46,7 @@ def collect():
     for proj in glob.glob(os.path.join(PROJECTS, "*")):
         files += [(f, "main") for f in glob.glob(os.path.join(proj, "*.jsonl"))]
         files += [(f, "agent") for f in glob.glob(os.path.join(proj, "*", "subagents", "*.jsonl"))]
-    calls, seen, errors, sessions, typed = [], set(), defaultdict(int), set(), []
+    calls, seen, errors, sessions, typed, causes = [], set(), defaultdict(int), set(), [], {}
     first_ts = last_ts = None
     for path, caller in files:
         try:
@@ -86,14 +86,40 @@ def collect():
                             text = body if isinstance(body, str) else json.dumps(body)[:400]
                             why = "denied" if ("denied" in text or "hook error" in text) else "error"
                             errors[(c.get("tool_use_id"), why)] += 1
+                            causes[c.get("tool_use_id")] = cause_of(text)
                 if has_cmd and rec.get("type") == "user":
                     raw = content if isinstance(content, str) else json.dumps(content)
                     for m in re.finditer(r"<command-name>/?([\w:.-]+)</command-name>", raw):
                         typed.append({"key": m.group(1), "day": ts.strftime("%Y-%m-%d") if ts else None})
-    err_by_id = defaultdict(lambda: {"error": 0, "denied": 0})
+    err_by_id = defaultdict(lambda: {"error": 0, "denied": 0, "cause": None})
     for (tid, why), n in errors.items():
         err_by_id[tid][why] += n
+        err_by_id[tid]["cause"] = causes.get(tid)
     return calls, err_by_id, sessions, typed, first_ts, last_ts, len(files)
+
+
+# M3 (DVA, BOLO 155): name why a call failed, from the first words of its error text, so causes can be counted
+CAUSES = [
+    ("artifact: unread live version", ("hadn't viewed the live version", "not built on it", "identical content already refused")),
+    ("guard: auto-mode classifier", ("auto mode classifier",)),
+    ("guard: no-probing hook", ("no-unasked-probing", "no_probe")),
+    ("hook blocked", ("hook error", "PreToolUse")),
+    ("Chief declined", ("doesn't want to proceed", "user rejected", "was rejected", "User declined")),
+    ("edit: file not read first", ("has not been read yet", "File must be read first", "Read it first")),
+    ("edit: text not found", ("String to replace not found", "old_string", "not unique")),
+    ("file missing", ("No such file", "does not exist", "cannot find the path", "not found")),
+    ("timeout", ("timed out", "Timeout", "timeout")),
+    ("network or fetch", ("ECONN", "fetch failed", "403", "404", "429", "Unable to fetch", "certificate")),
+    ("command failed (exit code)", ("Exit code", "exit code")),
+    ("bad input", ("InputValidationError", "Invalid", "invalid")),
+]
+
+
+def cause_of(text):
+    for label, needles in CAUSES:
+        if any(n in text for n in needles):
+            return label
+    return "other"
 
 
 def keep(calls, err_by_id):
@@ -109,19 +135,22 @@ def keep(calls, err_by_id):
                     old[r["id"]] = r
                 except (ValueError, KeyError):
                     continue
-    new = []
+    new = 0
     for c in calls:
-        if c["id"] in old:
-            continue
         e = err_by_id.get(c["id"]) or {}
-        rec = {**c, "error": bool(e.get("error")), "denied": bool(e.get("denied"))}
-        old[c["id"]] = rec
-        new.append(rec)
+        if c["id"] in old:
+            if e.get("cause") and not old[c["id"]].get("cause"):   # backfill causes onto calls kept before M3
+                old[c["id"]]["cause"] = e["cause"]
+            continue
+        old[c["id"]] = {**c, "error": bool(e.get("error")), "denied": bool(e.get("denied")), "cause": e.get("cause")}
+        new += 1
     os.makedirs(OUTDIR, exist_ok=True)
-    with io.open(path, "a", encoding="utf-8") as f:
-        for r in new:
+    tmp = path + ".tmp"
+    with io.open(tmp, "w", encoding="utf-8") as f:   # rewrite whole, then swap: a crash never leaves half a ledger
+        for r in old.values():
             f.write(json.dumps(r) + "\n")
-    return list(old.values()), len(new)
+    os.replace(tmp, path)
+    return list(old.values()), new
 
 
 def roster():
@@ -164,6 +193,8 @@ def summarize(calls, err_by_id, typed, rost):
             it["extra"][c["extra"]] += 1
         it["error"] += 1 if c.get("error") else 0
         it["denied"] += 1 if c.get("denied") else 0
+        if c.get("cause"):
+            it.setdefault("causes", defaultdict(int))[c["cause"]] += 1
     on_disk_skills = {r["key"] for r in rost if r["kind"] == "skill"}
     for t in typed:   # what Chief typed as /commands: his skills, plugin skills (with a colon), or Claude Code's own commands
         kind = "skill" if (t["key"] in on_disk_skills or ":" in t["key"] or ("skill", t["key"]) in items) else "command"
@@ -183,6 +214,7 @@ def summarize(calls, err_by_id, typed, rost):
         r = born.get((kind, key))
         rows.append({**it, "sessions": len(it["sessions"]), "days": dict(it["days"]), "extra": dict(it["extra"]),
                      "desc": dict(sorted(it["desc"].items(), key=lambda kv: -kv[1])[:6]),
+                     "causes": dict(sorted((it.get("causes") or {}).items(), key=lambda kv: -kv[1])),
                      "born": r["born"] if r else None, "on_disk": bool(r), "model": r["model"] if r else None})
     used = {(r["kind"], r["key"]) for r in rows}
     idle = [r for r in rost if (r["kind"], r["key"]) not in used]
@@ -283,6 +315,8 @@ def build(data):
                 flags.append('<span class="flag gone">built-in</span>' if r["key"] in BUILTIN_AGENTS else '<span class="flag gone">not on disk</span>')
             if kind == "agent" and r.get("desc"):
                 ext = (ext + " · " if ext else "") + "briefs: " + "; ".join(f"{k} ×{v}" if v > 1 else k for k, v in list(r["desc"].items())[:4])
+            if r.get("causes"):
+                ext = (ext + " · " if ext else "") + "fails: " + "; ".join(f"{k} ×{v}" for k, v in list(r["causes"].items())[:3])
             name = r["key"].replace("mcp__", "").replace("__", " · ") if kind == "mcp" else r["key"]
             body.append(f'<tr><th scope="row"><span class="nm">{e(name)}</span>{"".join(flags)}{f"<small>{e(ext)}</small>" if ext else ""}</th>'
                         f'<td class="num">{r["n"]:,}</td><td class="num">{r["sessions"]}</td><td class="num">{r["by_agent"]:,}</td>'
@@ -295,6 +329,12 @@ def build(data):
 
     idle_rows = "".join(f'<li><span>{e(r["key"])}</span><em>{e(r["kind"])}{" · " + e(r["model"]) if r["model"] else ""}</em><b>{md(r["born"]) if r["born"] else "—"}</b></li>'
                         for r in sorted(idle, key=lambda r: (r["kind"], r["key"]))) or "<li><span>none: everything on disk has fired</span></li>"
+    allc = defaultdict(lambda: defaultdict(int))
+    for r in rows:
+        for k2, v in (r.get("causes") or {}).items():
+            allc[k2][r["key"]] += v
+    fails = "".join(f'<tr><th scope="row">{e(k2)}</th><td class="num">{sum(v.values()):,}</td><td>{e(", ".join(f"{t} ×{n}" for t, n in sorted(v.items(), key=lambda kv: -kv[1])[:4]))}</td></tr>'
+                    for k2, v in sorted(allc.items(), key=lambda kv: -sum(kv[1].values()))) or '<tr><td colspan="3">no failed calls</td></tr>'
     kv = "".join(f'<div><dt>{e(lbl)}</dt><dd>{tot[k]:,}</dd></div>' for k, lbl in kinds) + \
          f'<div><dt>Sessions</dt><dd>{meta["sessions"]:,}</dd></div>'
     page = PAGE
@@ -304,7 +344,7 @@ def build(data):
         "AGENTS": table("agent", "Agents", "agent"), "SKILLS": table("skill", "Skills", "skill"), "MCP": table("mcp", "MCP tools", "mcp"),
         "TOOLS": table("tool", "Built-in tools", "tool"), "WORKFLOWS": table("workflow", "Workflows", "workflow"),
         "COMMANDS": table("command", "Commands typed", "command"),
-        "IDLE": idle_rows, "NIDLE": str(len(idle)), "T_IDLE": term("On the shelf, never fired", "idle"), "T_WINDOW": term("the window", "window"),
+        "FAILS": fails, "IDLE": idle_rows, "NIDLE": str(len(idle)), "T_IDLE": term("On the shelf, never fired", "idle"), "T_WINDOW": term("the window", "window"),
         "T_DENIED": term("denied", "denied"),
     }.items():
         page = page.replace("{{" + k + "}}", v)
@@ -385,13 +425,17 @@ PAGE = """<title>The Armory</title>
   <div class="legend"><span><i style="background:var(--k-agent)"></i>agents</span><span><i style="background:var(--k-skill)"></i>skills</span><span><i style="background:var(--k-mcp)"></i>MCP</span><span><i style="background:var(--k-tool)"></i>built-in tools</span><span><i style="background:var(--k-workflow)"></i>workflows</span><span><i style="background:var(--k-command)"></i>commands typed</span></div>
   <p class="note">Flags on a row: {{T_DENIED}} counts refusals by a rule, hook or the guard; errors count calls that came back failed. Born is the day git first saw the skill or agent file.</p>
 </section>
-<nav class="jump" aria-label="sections"><a href="#agent">Agents</a><a href="#skill">Skills</a><a href="#mcp">MCP tools</a><a href="#tool">Built-in tools</a><a href="#workflow">Workflows</a><a href="#command">Commands</a><a href="#idle">Never fired</a></nav>
+<nav class="jump" aria-label="sections"><a href="#agent">Agents</a><a href="#skill">Skills</a><a href="#mcp">MCP tools</a><a href="#tool">Built-in tools</a><a href="#workflow">Workflows</a><a href="#command">Commands</a><a href="#fails">Why calls fail</a><a href="#idle">Never fired</a></nav>
 {{AGENTS}}
 {{SKILLS}}
 {{MCP}}
 {{TOOLS}}
 {{WORKFLOWS}}
 {{COMMANDS}}
+<section id="fails">
+  <h2>Why calls fail<span class="s">named from each error's first words · M3, BOLO 155</span></h2>
+  <div class="tbl"><table><thead><tr><th scope="col">Cause</th><th scope="col" class="num">Calls</th><th scope="col">Where it hits</th></tr></thead><tbody>{{FAILS}}</tbody></table></div>
+</section>
 <section id="idle">
   <h2>{{T_IDLE}}<span class="s"><b>{{NIDLE}}</b> on disk · born date from git</span></h2>
   <ul class="list">{{IDLE}}</ul>
