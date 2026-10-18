@@ -1,6 +1,6 @@
 ---
 name: collect
-description: Run a link-harvest research pass in the formation (BOLO 51 phase 2.7; the LOCI six-step collect and the standards register are its instances) — a script fetches every link to text, Payload Specialists (PS, haiku) extract per batch, one Mission Specialist (MS, sonnet) writes the register, a script proves every link is covered. Fires on "collect the locus", "pull every link in …", "build the register from the harvest", "run the locus".
+description: 'Use when Chief asks for a link-harvest research pass: "collect the locus", "pull every link in …", "build the register from the harvest", "run the locus".'
 ---
 
 # Collect — the harvest formation

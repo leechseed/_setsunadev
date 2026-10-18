@@ -1,6 +1,6 @@
 ---
 name: sitrep
-description: Deliver the sit rep (the board + the SITREP page) in the formation ruled 2026-09-12 (BOLO 54) — a zero-token prep script, three independent specialists at gear 1 (one MS · two PS), RANGE the script reviewer at the fan-in, the CDR writing only Block VI and the header. Fires on "sit rep", "the board", "where did we leave off", "what are we working on", or the countersign.
+description: 'Use when Chief asks where things stand: "sit rep", "the board", "where did we leave off", "what are we working on", or the countersign.'
 ---
 
 # The sit rep — the formation
@@ -27,13 +27,15 @@ Chief, 10/4: "eliminate the brevity panel … it's just taking up space now". Sk
 
 ## H1 · Fan out (one message, three agents, gear 1)
 
-Launch all three in one message and wait for all. Each prompt is the brief file's contents verbatim: Read it, paste it. No agent reads another's input or output.
+Launch all three in one message and wait for all. Each prompt is the brief file's contents verbatim: Read it, paste it. No agent reads another's input or output. **Launch each by its agent name (`subagent_type`), never as general-purpose** (BOLO 155 M2, ruled 10/17 under the superpowers framework). Each brief opens with its `JOB:` line and ends with the status contract; each agent's reply ends DONE, DONE_WITH_CONCERNS, NEEDS_CONTEXT or BLOCKED.
 
-| Role | Model | Reads | Writes |
-|---|---|---|---|
-| **RACK** | haiku | `_CACHE/*.session.md` + `prev/0.json` | `frag/0.json` (Block 0) |
-| **INDEX** | sonnet | `state.blocked.md` · `state.live.md` · `git.log` · `PROJECTS.md` + `prev/{I,II,III,V}.json` | `frag/I.json` · `frag/II.json` · `frag/V.json` · `frag/III.json` (BOLO 86; if INDEX writes none, the carried III stands) |
-| **WATCH** | haiku | `BOLO.md` + `prev/IV.json` | `frag/IV.json` (Block IV + pmcs) |
+| Role | Agent (`subagent_type`) | Model | Reads | Writes |
+|---|---|---|---|---|
+| **RACK** | `drafting-rack-block` | haiku | `_CACHE/*.session.md` + `prev/0.json` | `frag/0.json` (Block 0) |
+| **INDEX** | `drafting-index-blocks` | sonnet | `state.blocked.md` · `state.live.md` · `git.log` · `PROJECTS.md` + `prev/{I,II,III,V}.json` | `frag/I.json` · `frag/II.json` · `frag/V.json` · `frag/III.json` (BOLO 86; if INDEX writes none, the carried III stands) |
+| **WATCH** | `drafting-watch-block` | haiku | `BOLO.md` + `prev/IV.json` | `frag/IV.json` (Block IV + pmcs) |
+
+The reruns (H2) launch the same agent names.
 
 The gearbox sets the model (SOP §1): PS (haiku) extract, MS (sonnet) writes, CDR (Fable) stays on the main line. A gear shift never adds a fourth specialist.
 

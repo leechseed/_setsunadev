@@ -153,7 +153,8 @@ def main():
         target = f"{date}.session.md" if not existing else f"{date}-{len(existing) + 1}.session.md"
     example = sorted(glob.glob(os.path.join(ROOT, "_LOG", "*.session.md")) + glob.glob(os.path.join(cache, "*.session.md")), key=os.path.getmtime)
     example = rel(example[-1]) if example else "(none)"
-    brief = f"""You are NOTE, the Ready Rack specialist for the close-out of {date}. Model: haiku.
+    brief = f"""JOB: drafting-session-note
+You are NOTE, the Ready Rack specialist for the close-out of {date}. Model: haiku.
 READ: {rel(os.path.join(wd, 'transcript.md'))} (the session, spoken turns only) · {rel(os.path.join(wd, 'meta.json'))} · {example} (the newest session note, for shape only){' · _CACHE/' + target + ' (the open note to finalize, keep every existing bullet)' if target in existing else ''}.
 WRITE: _CACHE/{target} — the session note in the Command's shape: a `# Session note — {date}: <what the session was>` title, then bullets:
   the transmission(s) (what Chief ordered, quoted where he ruled something) · what was built or delivered (file paths) · what was ruled (RULED / provisional / tabled, with the word) ·
@@ -165,7 +166,7 @@ PRIVATE DETAIL STAYS PRIVATE (ruled 10/4): _CACHE is in the public repo. Keep se
 After the note is drafted the main line runs `python _tools/oscarmike/close.py --header _CACHE/{target}` (it adds the resume header under the H1; do not write one yourself).
 Do not read any other file. Do not edit STATE.md or the journal. Reply with the note's path and nothing else.
 """
-    write(os.path.join(wd, "brief.NOTE.md"), brief)
+    write(os.path.join(wd, "brief.NOTE.md"), brief.rstrip("\n") + "\nSTATUS. End your reply with one status line: DONE · DONE_WITH_CONCERNS: <what> · NEEDS_CONTEXT: <what file or fact> · BLOCKED: <why> (superpowers contract, BOLO 155 M1).\n")
     print(f"OSCAR MIKE prep · session {sid[:8]} · {date}")
     print(f"transcript {rel(os.path.join(wd, 'transcript.md'))} ({len(text)//1024} KB, {meta['turns']['chief']} Chief / {meta['turns']['claude']} Claude turns)")
     print(f"commits this session: {len(meta['commits_this_session'])} · dirty: {len(meta['dirty'])}")

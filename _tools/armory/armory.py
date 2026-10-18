@@ -77,6 +77,10 @@ def collect():
                             seen.add(c.get("id"))
                             kind, key, extra = classify(c.get("name") or "?", c.get("input"))
                             desc = ((c.get("input") or {}).get("description") or "")[:60] if kind == "agent" else ""
+                            if kind == "agent":   # BOLO 155 M1: a brief's first line "JOB: <name>" names the job; it beats the description
+                                first = ((c.get("input") or {}).get("prompt") or "").lstrip().split("\n", 1)[0]
+                                if first.upper().startswith("JOB:"):
+                                    desc = "JOB " + first[4:].strip()[:56]
                             calls.append({"id": c.get("id"), "kind": kind, "key": key, "extra": extra, "desc": desc,
                                           "day": ts.strftime("%Y-%m-%d") if ts else None, "ts": ts.isoformat() if ts else None,
                                           "sid": sid, "caller": caller})

@@ -1,6 +1,6 @@
 ---
 name: strategic-compact
-description: Decides whether now is a good moment to run /compact. Fires on "compact check" or "should we compact". Judges by task phase, makes sure the state is written to a file first, then tells Chief what to type.
+description: 'Use when Chief asks whether to run /compact: "compact check" or "should we compact".'
 ---
 
 # Strategic Compact

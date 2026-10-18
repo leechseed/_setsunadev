@@ -1,6 +1,6 @@
 ---
 name: frago
-description: Push a fragmentary order onto DOPE SHEET N (FRAGO N, ruled 9/11) without rewriting the sheet — pure script (BOLO 51 phase 2.3): the main line writes a ~1 KB patch, frago.py merges it, bumps the version, builds; publish to the sheet's standing URL. Fires on "FRAGO N", "update the sheet for N", "push that onto N".
+description: 'Use when Chief wants a small update pushed onto an existing DOPE SHEET N without rewriting it: "FRAGO N", "update the sheet for N", "push that onto N".'
 ---
 
 # FRAGO N — the update

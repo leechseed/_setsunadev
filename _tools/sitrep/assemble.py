@@ -132,6 +132,7 @@ def main():
     if longs:
         findings.append("sentences over 20 words (advisory, SOP 3.2): " + " · ".join(f"{k} {v}" for k, v in longs.items()))
         # the auto-rerun (BOLO 95, ruled 10/4 "recommend"): one rerun per role, the finding pasted; written once, never looped
+        JOBS = {"RACK": "drafting-rack-block", "INDEX": "drafting-index-blocks", "WATCH": "drafting-watch-block"}   # BOLO 155 M2
         ROLES = {"0": ("RACK", "haiku"), "I": ("INDEX", "sonnet"), "II": ("INDEX", "sonnet"), "V": ("INDEX", "sonnet"), "IV": ("WATCH", "haiku")}
         byrole = {}
         for bid, n in longs.items():
@@ -141,6 +142,7 @@ def main():
             if os.path.exists(rp): continue  # already rerun once this board; the rest rides as advisory
             files = " · ".join(os.path.relpath(os.path.join(wd, "frag", f"{b}.json"), ROOT).replace("\\", "/") for b, _ in hits)
             io.open(rp, "w", encoding="utf-8").write(
+                f"JOB: {JOBS[role]} (rerun)\n"
                 f"Repo root {ROOT}. You are {role}, rerun with one finding. Model: {model}. Write files as UTF-8.\n"
                 f"READ and REWRITE only: {files}.\n"
                 f"FINDING (RANGE, DOC-SOP 3.2): sentences over 20 words: " + ", ".join(f"{b} has {n}" for b, n in hits) + ". "

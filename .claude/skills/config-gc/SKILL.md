@@ -1,6 +1,6 @@
 ---
 name: config-gc
-description: Config cleanup audit. Fires ONLY when Chief names it, on "config GC" or "clean the config". Never run it on its own, never scan the box unasked. Audits the repo's .claude config, then asks Chief about each deletion one at a time. Never deletes on its own.
+description: Config cleanup audit. Fires ONLY when Chief names it, on "config GC" or "clean the config". Never run it on its own, never scan the box unasked. Never deletes on its own.
 ---
 
 # Config GC

@@ -1,6 +1,6 @@
 ---
 name: launch
-description: Run the launch sequence (BOLO 58). A zero-token script brings the local stations up and opens the two boards, then the sit rep runs and the reply carries the station poll. Fires on "go for launch" (ruled 9/17), the garbles "go for log" and "go for lunch", and on "launch sequence", "start launch sequence" or "run launch sequence" spoken alone. Never on "go N".
+description: Use when Chief says "go for launch", the garbles "go for log" and "go for lunch", or "launch sequence", "start launch sequence" or "run launch sequence" spoken alone. Never on "go N".
 ---
 
 # The launch sequence — BOLO 58

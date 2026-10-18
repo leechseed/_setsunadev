@@ -143,6 +143,7 @@ def rel(p):
     return os.path.relpath(p, ROOT).replace("\\", "/")
 
 
+STATUS = "STATUS. End your reply with one status line: DONE · DONE_WITH_CONCERNS: <what> · NEEDS_CONTEXT: <what file or fact> · BLOCKED: <why> (superpowers contract, BOLO 155 M1)."
 CONTRACT = (
     "OUTPUT CONTRACT. Write ONLY the JSON file(s) named below, nothing else; the chat reply is three lines at most. "
     "Each block object keeps exactly the shape of its previous version (same keys: id · name · kind · plain · "
@@ -250,6 +251,7 @@ def main():
     p = lambda *a: rel(os.path.join(wd, *a))
     briefs = {
         "RACK": (
+            f"JOB: drafting-rack-block\n"
             f"You are RACK, the Block 0 specialist for the sit rep of {date}. Model: haiku.\n"
             f"READ: every file in _CACHE/ ending .session.md ({', '.join(notes) or 'none'}), "
             f"and {p('prev', '0.json')} (the previous Block 0, for shape only).\n"
@@ -257,6 +259,7 @@ def main():
             f"or closed across those notes, newest session first; the plain paragraph says in three sentences what "
             f"the last session(s) were.\n{CONTRACT}"),
         "INDEX": (
+            f"JOB: drafting-index-blocks\n"
             f"You are INDEX, the STATE specialist for the sit rep of {date}. Model: sonnet.\n"
             f"READ: {p('state.blocked.md')} · {p('state.live.md')} · {p('state.moved.md')} · {p('git.log')} · PROJECTS.md · and the previous fragments "
             f"{p('prev', 'I.json')} · {p('prev', 'II.json')} · {p('prev', 'III.json')} · {p('prev', 'V.json')}.\n"
@@ -274,6 +277,7 @@ def main():
             f"  {p('frag', 'III.json')} — Block III \"The Deep Stacks\" (BOLO 86): rebuild it from PROJECTS.md in the same shape as "
             f"{p('prev', 'III.json')}. If you cannot, write nothing; prep's carried copy stays as the fallback.\n{CONTRACT}"),
         "WATCH": (
+            f"JOB: drafting-watch-block\n"
             f"You are WATCH, the BOLO specialist for the sit rep of {date}. Model: haiku.\n"
             f"READ: BOLO.md (the whole file) and {p('prev', 'IV.json')} (the previous Block IV, for shape only).\n"
             f"WRITE: {p('frag', 'IV.json')} — Block IV \"The BOLO board\": the same five groups (hot · held on a ruling · "
@@ -281,7 +285,7 @@ def main():
             f"group; the pmcs list from the PMCS table, one entry per row.\n{CONTRACT}"),
     }
     for role, text in briefs.items():
-        write(os.path.join(wd, f"brief.{role}.md"), text + "\n")
+        write(os.path.join(wd, f"brief.{role}.md"), text + "\n" + STATUS + "\n")
 
     # 8 · the digest
     print(f"SITREP prep · board {date} · previous {prev_name}")

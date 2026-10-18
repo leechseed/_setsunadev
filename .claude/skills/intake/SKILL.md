@@ -1,6 +1,6 @@
 ---
 name: intake
-description: The repo intake (BOLO 140). Fires on "intake" followed by one or more GitHub links, or "run the intake on these repos". A script scans each repo, specialists judge what it could add to the Command, and Chief keeps or skips each pick on a glass page. Never installs anything on its own.
+description: Use when Chief says "intake" followed by one or more GitHub links, or "run the intake on these repos". Never installs anything on its own.
 ---
 
 # The repo intake — BOLO 140
