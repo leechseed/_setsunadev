@@ -33,6 +33,7 @@ DECK = os.path.join(ROOT, "_PRIVATE", "stash_deck", "index.html")   # the Stash 
 PAGES = os.path.join(ROOT, "_tools", "pages", "pages.json")
 BOARDS = ["sitrep", "soi", "pullglass", "roster", "armory"]   # RULED 9/17: the board · the SOI · zero DOPE SHEETs; + the pull glass (Chief 10/12, BOLO 137) + the Roster (BOLO 139) + the Armory (Chief 10/17, BOLO 154)
 TOOLS = ("blocked", "bolo", "box", "effort", "help", "pmcs", "time")
+ONE_WINDOW = True   # Chief 10/18 (BOLO 153): "I don't want Firefox to even be open". Stations start their servers but open nothing; only the Console opens. False = the old ten windows.
 
 
 def ping(url, timeout=1.0):
@@ -113,8 +114,8 @@ def station_stash():
                 break
         else:
             return {"station": "STASH", "go": False, "addr": STASH_URL, "note": "no answer after 60 s"}
-    deck = "deck opened" if os.path.exists(DECK) else "deck page missing"
-    if os.path.exists(DECK):
+    deck = "in the Console" if ONE_WINDOW else "deck opened" if os.path.exists(DECK) else "deck page missing"
+    if os.path.exists(DECK) and not ONE_WINDOW:
         try:
             os.startfile(DECK)
         except Exception as e:
@@ -201,6 +202,8 @@ def station_deck():
         if not ping(DECK_URL):
             return {"station": "DECK", "go": False, "addr": DECK_URL,
                     "note": "console has no /traffic (an old console; restart it)"}
+        if ONE_WINDOW:
+            return {"station": "DECK", "go": True, "addr": DECK_URL, "note": "in the Console"}
         app = chromium_app_exe()
         if app:
             subprocess.Popen([app, "--app=" + DECK_URL], cwd=ROOT, stdin=subprocess.DEVNULL,
@@ -260,6 +263,9 @@ def station_faces():
         if not ping(FACES_URL):
             return {"station": "FACES", "go": False, "addr": FACES_URL,
                     "note": "console is up but has no /faces (an old console; restart it)"}
+        if ONE_WINDOW:
+            return {"station": "FACES", "go": True, "addr": FACES_URL,
+                    "note": ("already live" if was_up else "started · %.1f s" % (time.time() - t0)) + " · in the Console"}
         app = chromium_app_exe()
         if app:   # Chrome/Edge default: an app window (own name, icon, no address bar)
             subprocess.Popen([app, "--app=" + FACES_URL], cwd=ROOT, stdin=subprocess.DEVNULL,
@@ -351,6 +357,9 @@ def station_pages():
         url = pages.get(name)
         if not url:
             out.append({"station": name.upper(), "go": False, "addr": "", "note": "not in pages.json"})
+            continue
+        if ONE_WINDOW:
+            out.append({"station": name.upper(), "go": True, "addr": url, "note": "not opened (one window)"})
             continue
         try:
             subprocess.Popen(["cmd", "/c", VIEW, name], cwd=ROOT, stdin=subprocess.DEVNULL,
