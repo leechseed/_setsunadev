@@ -33,6 +33,9 @@ def build(a, codec_src, out):
         f'<tr><th scope="row">{e(g["name"])}</th><td class="num">{e(g.get("deployments", ""))}</td><td>{e(g.get("model", ""))}</td>'
         f'<td>{e(g.get("job", ""))}<small>{e("; ".join(g.get("from_briefs", [])))}</small></td></tr>' for g in a.get("agents_to_name", []))
     shelf = a.get("shelf", {})
+    score = "".join(   # the rescore (10/18): before, now, target per metric
+        f'<tr><th scope="row">{e(r.get("metric", ""))}</th><td>{e(r.get("before", ""))}</td><td class="now">{e(r.get("now", ""))}</td>'
+        f'<td>{e(r.get("target", ""))}</td><td><small>{e(r.get("note", ""))}</small></td></tr>' for r in a.get("scoreboard", []))
 
     def chips(xs):
         return "".join(f'<li>{e(" + ".join(x) if isinstance(x, list) else x)}</li>' for x in xs) or "<li class=\"none\">none</li>"
@@ -42,7 +45,7 @@ def build(a, codec_src, out):
         "HEADLINE": e(a.get("headline", "")), "WINDOW": e(a.get("window", "")), "FINDINGS": findings, "METHODS": methods,
         "AGENTS": agents or '<tr><td colspan="4">none</td></tr>', "KEEP": chips(shelf.get("keep", [])), "FIX": chips(shelf.get("fix", [])),
         "MERGE": chips(shelf.get("merge", [])), "CUT": chips(shelf.get("cut", [])), "SHELFWHY": e(shelf.get("why", "")),
-        "DVA": e(a.get("dva_says", "")), "CODEC_SRC": codec_src,
+        "DVA": e(a.get("dva_says", "")), "SCORE": score or '<tr><td colspan="5">no scoreboard yet</td></tr>', "CODEC_SRC": codec_src,
         "WHEN": f"{now.month}/{now.day} {now.strftime('%I:%M %p').lstrip('0')}",
         "NF": str(len(a.get("findings", []))), "NM": str(len(a.get("methods", []))),
     }.items():
@@ -95,6 +98,7 @@ PAGE = """<title>DVA's Assessment</title>
   .shelf div{min-width:0} .shelf h3{margin:0 0 6px;font:700 15px var(--display);letter-spacing:.06em;text-transform:uppercase}
   .shelf ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:4px} .shelf li{font:12px var(--mono);padding:3px 7px;border-radius:3px;background:var(--panel-2)} .shelf li.none{color:var(--ink-3)}
   .k h3{color:var(--good)} .f h3{color:var(--warn)} .m h3{color:var(--accent-ink)} .c h3{color:var(--bad)}
+  td.now{color:var(--accent-ink);font-weight:700}
   .why{margin:12px 14px 0;font-size:14px;color:var(--ink-2)}
   /* the codec call: 16-bit, phosphor green, scanlines; the subtitle box carries DVA's sign-off */
   .codec{position:fixed;right:max(12px,env(safe-area-inset-right,0px));bottom:max(12px,env(safe-area-inset-bottom,0px));z-index:30;width:200px;background:var(--codec-bg);border:2px solid var(--codec);border-radius:2px;box-shadow:0 0 0 2px #000,0 0 18px rgba(124,255,107,.35);font:8px/1.6 var(--pixel);color:var(--codec)}
@@ -121,6 +125,8 @@ PAGE = """<title>DVA's Assessment</title>
 </header>
 <main class="wrap">
   <div class="read"><h2>{{HEADLINE}}</h2><p>{{WINDOW}}</p></div>
+  <section><h2>The scoreboard<span class="s">before (DVA's first read, 10/17) · now · target</span></h2>
+    <div class="tbl"><table><thead><tr><th scope="col">Metric</th><th scope="col">Before</th><th scope="col">Now</th><th scope="col">Target</th><th scope="col">Note</th></tr></thead><tbody>{{SCORE}}</tbody></table></div></section>
   <section><h2>What the data says<span class="s">red high · amber medium · green low</span></h2><div class="finds">{{FINDINGS}}</div></section>
   <section><h2>Methods to move forward<span class="s">ranked by payoff per effort</span></h2>
     <div class="tbl"><table><thead><tr><th scope="col">#</th><th scope="col">Move</th><th scope="col">The change</th><th scope="col">Effort</th><th scope="col">Proof</th></tr></thead><tbody>{{METHODS}}</tbody></table></div></section>
