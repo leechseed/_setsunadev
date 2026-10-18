@@ -133,6 +133,58 @@ def read_boot():
     return {"logo": LOGO, "events": evs, "now": time.time()}
 
 
+# ---- the fetch panel (Chief 10/18): neofetch-style numbers beside the spinning mark, for showing the Command off ----
+_FETCH = {"at": 0, "rows": []}
+
+
+def fetch_info():
+    if time.time() - _FETCH["at"] < 60:
+        return _FETCH["rows"]
+
+    def git(*a):
+        try:
+            return subprocess.run(["git"] + list(a), cwd=ROOT, capture_output=True, text=True, timeout=10).stdout.strip()
+        except Exception:
+            return ""
+    import glob, datetime as dt
+    rows = []
+    first = (git("log", "--reverse", "--format=%cs").splitlines() or [""])[0]
+    try:
+        days = (dt.date.today() - dt.date.fromisoformat(first)).days
+        up = "%d days (since %s)" % (days, first)
+    except ValueError:
+        up = "?"
+    try:
+        with open(os.path.join(ROOT, "BOLO.md"), encoding="utf-8") as f:
+            bolos = sum(1 for l in f if l[:2] == "| " and l[2:3].isdigit())
+    except OSError:
+        bolos = 0
+    try:
+        with open(os.path.join(ROOT, "_tools", "launch", "last_poll.json"), encoding="utf-8") as f:
+            st = json.load(f)["stations"]
+        stations = "%d/%d GO" % (sum(1 for s in st if s["go"]), len(st))
+    except Exception:
+        stations = "?"
+    rows = [
+        ("OS", "The Command · BoldVenture"),
+        ("Kernel", "Claude Code · Opus 5.5 (CDR)"),
+        ("Uptime", up),
+        ("Commits", "{:,}".format(int(git("rev-list", "--count", "HEAD") or 0))),
+        ("Stations", stations),
+        ("BOLOs", "%d on the board" % bolos),
+        ("Agents", "%d on call" % len(glob.glob(os.path.join(ROOT, ".claude", "agents", "*.md")))),
+        ("Skills", "%d" % len(glob.glob(os.path.join(ROOT, ".claude", "skills", "*", "")))),
+        ("Glasses", "%d published" % len(read_glasses())),
+        ("Shell", "bash 5 · PowerShell 7"),
+        ("Terminal", "The Console"),
+        ("Voice", "JUDY"),
+        ("Theme", "BoldVenture orange #FF5A1F"),
+        ("Font", "IBM Plex Mono"),
+    ]
+    _FETCH.update(at=time.time(), rows=rows)
+    return rows
+
+
 def page_bytes(path):
     """a page as the browser should get it: artifact fragments carry no skeleton, so give them one"""
     with open(path, "rb") as fh:
@@ -178,11 +230,15 @@ iframe{flex:1;border:0;width:100%;height:100%;background:var(--bg)}
 #flt{width:100%;background:none;border:0;border-bottom:1px solid var(--dim);outline:0;color:var(--fg);font:inherit;margin-bottom:6px}
 .d{color:var(--dim)}
 /* the boot overlay: the same sequence boot.py draws, inside the window */
-#boot{position:fixed;inset:0;z-index:50;background:var(--bg);padding:14px 18px;overflow:hidden;cursor:pointer;transition:opacity .5s}
+#boot{position:fixed;inset:0;z-index:50;background:var(--bg);padding:14px 18px;overflow:hidden;cursor:pointer;transition:opacity .5s;display:flex;flex-direction:column}
+#blines{flex:1;min-height:0;overflow:hidden}
 #boot.gone{opacity:0;pointer-events:none}
 #boot pre{margin:0;white-space:pre;font:inherit}
 #logo{line-height:1;letter-spacing:0;text-shadow:0 0 6px rgba(255,90,31,.45)}
 #lgtxt{margin:12px 0 10px}
+#hero{display:flex;align-items:center;gap:32px}
+#fetch .u{color:var(--acc);font-weight:600}#fetch .k{color:var(--acc);font-weight:600}
+#fetch .sw{display:inline-block;width:2.2ch;height:1.15em;vertical-align:-.2em}
 #logo .z{color:#79dfff;text-shadow:0 0 6px rgba(121,223,255,.6)}
 #logo .gl{color:#fff;text-shadow:-2px 0 #ff2a6d,2px 0 #00e5ff}
 #boot::after{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,.22) 0 1px,transparent 1px 3px)}
@@ -191,7 +247,7 @@ iframe{flex:1;border:0;width:100%;height:100%;background:var(--bg)}
 #bskip{position:fixed;right:18px;bottom:10px;color:var(--dim)}
 .blink{color:var(--acc);font-weight:600;animation:blink 1.1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
 </style></head><body>
-<div id="boot"><pre id="logo"></pre><pre id="lgtxt"></pre><pre id="blines"></pre><span id="bskip">SPACE · continue</span></div>
+<div id="boot"><div id="hero"><pre id="logo"></pre><pre id="fetch"></pre></div><pre id="lgtxt"></pre><pre id="blines"></pre><span id="bskip">SPACE · continue</span></div>
 <div class="top"><span><b>&#9670; THE CONSOLE</b>  the Command &middot; Chief</span><span id="clk"></span></div>
 <main>
  <div class="col">
@@ -289,16 +345,23 @@ function logoAnim(rows){
   $('logo').innerHTML=out.join('\n');
   requestAnimationFrame(frame)}
  LG=tok;requestAnimationFrame(frame)}
+/* the fetch panel: chief@the-command, a rule, the numbers, two rows of swatches; it types in line by line */
+function fetchPanel(rows){var P=['#050608','#6e280e','#be4216','#FF5A1F','#FFB08F','#4ec96f','#e3b341','#79dfff'],
+ Q=['#5f6160','#e5604d','#ff2a6d','#ff8f62','#ffd2bd','#72c79b','#ffcf73','#c6cbc8'],
+ sw=function(a){return a.map(function(c){return '<span class="sw" style="background:'+c+'"></span>'}).join('')},
+ L=['<span class="u">chief</span>@<span class="u">the-command</span>','<span class="d">'+Array(18).join('-')+'</span>'];
+ rows.forEach(function(r){L.push('<span class="k">'+esc(r[0])+'</span>: '+esc(r[1]))});L.push('');L.push(sw(P));L.push(sw(Q));
+ var n=0,el=$('fetch');(function more(){if(!booting)return;el.innerHTML=L.slice(0,++n).join('\n');if(n<L.length)setTimeout(more,70)})()}
 function skip(){booting=false;clearTimeout(timer);$('boot').classList.add('gone')}
 function boot(replay){booting=true;$('boot').classList.remove('gone');
  fetch('/boot.json').then(function(r){return r.json()}).then(function(b){
   var lg=$('logo');$('lgtxt').innerHTML='<span class="bv">        B  O  L  D  V  E  N  T  U  R  E</span>\n<span class="d">   &#9472;&#9472; the Command · launch sequence &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;</span>';
-  logoAnim(b.logo);
-  var cols=Math.max.apply(null,b.logo.map(function(l){return l.length}).concat([60])),fs=Math.max(5,Math.min(12,Math.floor(innerWidth/(cols*0.62))));lg.style.fontSize=fs+'px';
+  logoAnim(b.logo);fetchPanel(b.fetch||[]);
+  var cols=Math.max.apply(null,b.logo.map(function(l){return l.length}).concat([60])),fs=Math.max(5,Math.min(12,Math.floor(innerWidth*0.48/(cols*0.62)),Math.floor(innerHeight*0.42/Math.max(1,b.logo.length))));lg.style.fontSize=fs+'px';
   var ev=b.events,ended=ev.some(function(e){return e.state==='end'}),old=ended&&ev.length&&(b.now-ev[ev.length-1].t>120);
   var fast=replay||old,t0=ev.length?ev[0].t:b.now,lines=[],i=0,shown=0,start=Date.now(),pos=0,running=null,frame=0;
   EARLY.forEach(function(x,j){lines.push(stamp(0.12*(j+1))+' <span class="o">'+x[0]+'</span> '+esc(x[1]))});lines.push('');
-  function paint(extra){$('blines').innerHTML=lines.slice(0,shown).join('\n')+(extra?'\n'+extra:'')}
+  function paint(extra){var el=$('blines');el.innerHTML=lines.slice(0,shown).join('\n')+(extra?'\n'+extra:'');el.scrollTop=el.scrollHeight}
   function step(){if(!booting)return;
    if(shown<lines.length){shown++;paint();timer=setTimeout(step,fast?25:110);return}
    var evs=ev.slice(pos);pos=ev.length;
@@ -347,7 +410,9 @@ class H(http.server.BaseHTTPRequestHandler):
         if path == "/glasses.json":
             return self._send(200, json.dumps({"glasses": read_glasses()}, ensure_ascii=False), "application/json; charset=utf-8")
         if path == "/boot.json":
-            return self._send(200, json.dumps(read_boot(), ensure_ascii=False), "application/json; charset=utf-8")
+            b = read_boot()
+            b["fetch"] = fetch_info()
+            return self._send(200, json.dumps(b, ensure_ascii=False), "application/json; charset=utf-8")
         if path == "/status.json":
             return self._send(200, json.dumps({"pull": read_status()}), "application/json; charset=utf-8")
         if path.startswith("/local/"):
