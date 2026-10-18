@@ -33,13 +33,29 @@ def wd(date):
     return os.path.join(HERE, "work", date)
 
 
+BOARD = os.path.join(HERE, "work", ".board")
+
+
+def board():
+    # the board prep wrote (a second board in a day is 2026-10-18-2), else today
+    try:
+        b = open(BOARD, encoding="utf-8").read().strip()
+        if b.startswith(today()) and os.path.isdir(wd(b)):
+            return b
+    except OSError:
+        pass
+    return today()
+
+
 def prep():
     code, out = sh(os.path.join(HERE, "prep.py"))
     print(out.rstrip())
     if code:
         sys.exit(code)
-    m = re.search(r"board (\d{4}-\d{2}-\d{2})", out)
+    m = re.search(r"board (\d{4}-\d{2}-\d{2}(?:-\d+)?)", out)
     date = m.group(1) if m else today()
+    with open(BOARD, "w", encoding="utf-8") as f:
+        f.write(date)
     print("\nNEXT · H1 · launch these three in ONE message, each BY NAME (subagent_type), never general-purpose.")
     print("       The prompt is the brief file's text verbatim, then one line: (Repo root for every relative path: %s)" % ROOT.replace("\\", "/"))
     for role, agent, model in SEATS:
@@ -48,7 +64,7 @@ def prep():
 
 
 def fanin():
-    date = today()
+    date = board()
     code, out = sh(os.path.join(HERE, "assemble.py"), date)
     print(out.rstrip())
     reruns = re.findall(r"RERUN (\w+)", out)
@@ -71,7 +87,7 @@ def fanin():
 
 
 def close():
-    date = today()
+    date = board()
     code, out = sh(os.path.join(HERE, "assemble.py"), date, "--build", "--flush")
     print(out.rstrip())
     if code:
