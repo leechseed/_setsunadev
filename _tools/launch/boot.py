@@ -111,6 +111,8 @@ def main():
                     n_st = sum("STALLED" in w for w in ev["waves"])
                     note = "%d waves open%s" % (len(ev["waves"]), " · %d STALLED" % n_st if n_st else " · all moving")
                 sys.stdout.write("\r\x1b[2K" + stamp(t0) + " " + line(ev["station"], W_DOTS, tag, verdict, D + note + X) + "\n")
+                for sl in ev.get("sub") or []:   # plain detail lines under a row (ARMORY: the budget line, BOLO 155 M6)
+                    sys.stdout.write("           " + D + "└─ " + sl[:92] + X + "\n")
                 for wv in ev.get("waves") or []:   # the pull report under PULL (Chief 10/17): one line per wave
                     stalled = "STALLED" in wv
                     parts = [p.strip() for p in wv.split("·")]

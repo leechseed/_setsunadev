@@ -225,6 +225,40 @@ def summarize(calls, err_by_id, typed, rost):
     return sorted(rows, key=lambda r: -r["n"]), idle
 
 
+def daily(calls):
+    """M6 (DVA, BOLO 155; Chief 10/18 "go"): the budget line, one row per day, so drift shows early.
+    agents = agent runs · named = runs not general-purpose · job = runs with a JOB line or a name ·
+    shell = Bash/PowerShell calls and how many failed · artifact = Artifact calls and how many failed."""
+    days = defaultdict(lambda: {"agents": 0, "named": 0, "job": 0, "shell": 0, "shell_fail": 0, "artifact": 0, "artifact_fail": 0, "calls": 0})
+    for c in calls:
+        if not c.get("day"):
+            continue
+        d = days[c["day"]]
+        d["calls"] += 1
+        failed = bool(c.get("error") or c.get("denied"))
+        if c["kind"] == "agent":
+            d["agents"] += 1
+            named = c["key"] != "general-purpose"
+            d["named"] += named
+            d["job"] += named or (c.get("desc") or "").startswith("JOB")
+        elif c["key"] in ("Bash", "PowerShell"):
+            d["shell"] += 1
+            d["shell_fail"] += failed
+        elif c["key"] == "Artifact":
+            d["artifact"] += 1
+            d["artifact_fail"] += failed
+    return dict(sorted(days.items()))
+
+
+def pct(a, b):
+    return f"{100 * a / b:.0f}%" if b else "—"
+
+
+def budget_line(day, d):
+    return (f"{md(day)} · {d['calls']:,} calls · agents {d['agents']} ({pct(d['named'], d['agents'])} named, {pct(d['job'], d['agents'])} JOB) · "
+            f"shell fails {pct(d['shell_fail'], d['shell'])} of {d['shell']:,} · Artifact fails {pct(d['artifact_fail'], d['artifact'])} of {d['artifact']}")
+
+
 # ---------------------------------------------------------------- the page
 
 def e(s):
@@ -339,6 +373,12 @@ def build(data):
             allc[k2][r["key"]] += v
     fails = "".join(f'<tr><th scope="row">{e(k2)}</th><td class="num">{sum(v.values()):,}</td><td>{e(", ".join(f"{t} ×{n}" for t, n in sorted(v.items(), key=lambda kv: -kv[1])[:4]))}</td></tr>'
                     for k2, v in sorted(allc.items(), key=lambda kv: -sum(kv[1].values()))) or '<tr><td colspan="3">no failed calls</td></tr>'
+    last = list(data.get("daily", {}).items())[-7:]
+    budget = "".join(
+        f'<tr><th scope="row">{md(day)}</th><td class="num">{d["calls"]:,}</td><td class="num">{d["agents"]}</td>'
+        f'<td class="num">{pct(d["named"], d["agents"])}</td><td class="num">{pct(d["job"], d["agents"])}</td>'
+        f'<td class="num">{pct(d["shell_fail"], d["shell"])}</td><td class="num">{pct(d["artifact_fail"], d["artifact"])}</td></tr>'
+        for day, d in reversed(last)) or '<tr><td colspan="7">no days yet</td></tr>'
     kv = "".join(f'<div><dt>{e(lbl)}</dt><dd>{tot[k]:,}</dd></div>' for k, lbl in kinds) + \
          f'<div><dt>Sessions</dt><dd>{meta["sessions"]:,}</dd></div>'
     page = PAGE
@@ -348,7 +388,7 @@ def build(data):
         "AGENTS": table("agent", "Agents", "agent"), "SKILLS": table("skill", "Skills", "skill"), "MCP": table("mcp", "MCP tools", "mcp"),
         "TOOLS": table("tool", "Built-in tools", "tool"), "WORKFLOWS": table("workflow", "Workflows", "workflow"),
         "COMMANDS": table("command", "Commands typed", "command"),
-        "FAILS": fails, "IDLE": idle_rows, "NIDLE": str(len(idle)), "T_IDLE": term("On the shelf, never fired", "idle"), "T_WINDOW": term("the window", "window"),
+        "FAILS": fails, "BUDGET": budget, "IDLE": idle_rows, "NIDLE": str(len(idle)), "T_IDLE": term("On the shelf, never fired", "idle"), "T_WINDOW": term("the window", "window"),
         "T_DENIED": term("denied", "denied"),
     }.items():
         page = page.replace("{{" + k + "}}", v)
@@ -429,6 +469,10 @@ PAGE = """<title>The Armory</title>
   <div class="legend"><span><i style="background:var(--k-agent)"></i>agents</span><span><i style="background:var(--k-skill)"></i>skills</span><span><i style="background:var(--k-mcp)"></i>MCP</span><span><i style="background:var(--k-tool)"></i>built-in tools</span><span><i style="background:var(--k-workflow)"></i>workflows</span><span><i style="background:var(--k-command)"></i>commands typed</span></div>
   <p class="note">Flags on a row: {{T_DENIED}} counts refusals by a rule, hook or the guard; errors count calls that came back failed. Born is the day git first saw the skill or agent file.</p>
 </section>
+<section id="budget">
+  <h2>The budget line<span class="s">last 7 days, newest first · targets: named 80% · JOB 100% · shell fails under 3.5% · Artifact fails under 8%</span></h2>
+  <div class="tbl"><table><thead><tr><th scope="col">Day</th><th scope="col" class="num">Calls</th><th scope="col" class="num">Agent runs</th><th scope="col" class="num">Named</th><th scope="col" class="num">JOB line</th><th scope="col" class="num">Shell fails</th><th scope="col" class="num">Artifact fails</th></tr></thead><tbody>{{BUDGET}}</tbody></table></div>
+</section>
 <nav class="jump" aria-label="sections"><a href="#agent">Agents</a><a href="#skill">Skills</a><a href="#mcp">MCP tools</a><a href="#tool">Built-in tools</a><a href="#workflow">Workflows</a><a href="#command">Commands</a><a href="#fails">Why calls fail</a><a href="#idle">Never fired</a></nav>
 {{AGENTS}}
 {{SKILLS}}
@@ -482,7 +526,8 @@ def main():
             "early": f"plus {early_n:,} calls on {', '.join(md(d) for d in early)}, before a month-long gap" if early else ""}
     if early:
         meta["first"] = early[0]
-    data = {"meta": meta, "rows": rows, "idle": idle}
+    dl = daily(calls)
+    data = {"meta": meta, "rows": rows, "idle": idle, "daily": dl}
     os.makedirs(OUTDIR, exist_ok=True)
     with open(os.path.join(OUTDIR, "armory.json"), "w", encoding="utf-8") as f:
         json.dump(data, f, indent=1, default=str)
@@ -493,6 +538,11 @@ def main():
     print(f"ARMORY · {len(calls):,} calls · {meta['sessions']} sessions · {nfiles} files · {md(meta['first'])} → {md(meta['last'])}")
     print("  " + " · ".join(f"{k} {v:,}" for k, v in sorted(by.items(), key=lambda kv: -kv[1])) + f" · never fired {len(idle)}")
     print(f"  ledger +{added:,} new calls (kept after the transcripts expire)")
+    if dl:
+        day, d = list(dl.items())[-1]
+        print("  budget " + budget_line(day, d))
+        with io.open(os.path.join(OUTDIR, "budget.txt"), "w", encoding="utf-8") as f:   # the launch reads this one line
+            f.write(budget_line(day, d) + "\n")
     print("  wrote", out)
     if "--json" in sys.argv:
         print(json.dumps({k: v for k, v in by.items()}))

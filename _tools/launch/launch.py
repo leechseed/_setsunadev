@@ -415,8 +415,14 @@ def station_armory():
                              creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
     except Exception as e:
         return {"station": "ARMORY", "go": False, "addr": "armory glass", "note": "did not start: %s" % e}
-    return {"station": "ARMORY", "go": True, "addr": "armory glass",
-            "note": "rebuilding in the background (~40 s, log _PRIVATE/reference/armory/launch.log) · republish owed"}
+    budget = ""
+    try:   # M6 (BOLO 155): the last budget line the previous rebuild wrote
+        budget = io.open(os.path.join(ROOT, "_PRIVATE", "reference", "armory", "budget.txt"), encoding="utf-8").read().strip()
+    except OSError:
+        pass
+    return {"station": "ARMORY", "go": True, "addr": "armory glass", "sub": [budget] if budget else [],
+            "note": "rebuilding in the background (~40 s, log _PRIVATE/reference/armory/launch.log) · republish owed"
+                    + (" · budget " + budget if budget else "")}
 
 
 def station_audit():
@@ -495,7 +501,7 @@ def main():
         boot("start", name)
         r = fn()
         for x in (r if isinstance(r, list) else [r]):
-            boot("done", x["station"], go=bool(x["go"]), note=str(x.get("note") or ""), waves=x.get("waves") or [])
+            boot("done", x["station"], go=bool(x["go"]), note=str(x.get("note") or ""), waves=x.get("waves") or [], sub=x.get("sub") or [])
         return r
 
     if not a.no_audit:   # first, always (Chief 10/6): get it out of the way
