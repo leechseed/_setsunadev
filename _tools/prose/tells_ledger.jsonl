@@ -7,3 +7,4 @@
 {"ts": "2026-10-18 08:51", "sid": "64a1868c", "words": 152, "tells": 1, "per_1k": 6.6, "families": {"other": 1}, "rules": {"long-sentence": 1}}
 {"ts": "2026-10-18 08:52", "sid": "64a1868c", "words": 361, "tells": 5, "per_1k": 13.9, "families": {"passive": 1, "other": 4}, "rules": {"passive": 1, "long-sentence": 4}}
 {"ts": "2026-10-18 08:54", "sid": "64a1868c", "words": 361, "tells": 5, "per_1k": 13.9, "families": {"passive": 1, "other": 4}, "rules": {"passive": 1, "long-sentence": 4}}
+{"ts": "2026-10-18 08:56", "sid": "64a1868c", "words": 69, "tells": 2, "per_1k": 29.0, "families": {"passive": 2}, "rules": {"passive": 2}}
