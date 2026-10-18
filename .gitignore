@@ -62,3 +62,5 @@ scratchpad/
 _tools/dictation/judy.session.log
 _tools/dictation/judy.log
 _tools/dictation/judy.err.log
+
+_tools/cmdtui/last_up.log
