@@ -21,6 +21,7 @@ STATUS = os.path.join(HERE, "status.json")
 GLASSES = os.path.join(HERE, "glasses.json")
 BOOT = os.path.join(ROOT, "_tools", "launch", "boot.jsonl")
 ART = os.path.join(ROOT, "_tools", "brand", "boldventure-ascii.txt")
+MARK = os.path.join(ROOT, "_tools", "brand", "boldventure-mark.svg")   # the favicon and the window's icon
 PQ = os.path.join(ROOT, "_PRIVATE", "taxonomy_engine", "pull_queue.py")
 SNAP = "right"   # Chief 10/18: half the screen, top edge to the taskbar; the right half keeps VS Code on the left (provisional)
 
@@ -145,6 +146,7 @@ def page_bytes(path):
 PAGE = r'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Console</title>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
 /* the boot screen's look, everywhere (Chief 10/18): black ground, BoldVenture orange, mono, box lines, [  OK  ] tags */
@@ -155,7 +157,7 @@ body{display:grid;grid-template-rows:auto 1fr auto auto;padding:8px 12px;gap:6px
 .top{display:flex;justify-content:space-between;color:var(--dim);white-space:pre;overflow:hidden}
 .top b{color:var(--acc)}
 main{display:grid;grid-template-columns:250px 1fr;gap:8px;min-height:0}
-.col{display:grid;grid-template-rows:auto 1fr;gap:10px;min-height:0}
+.col{display:grid;grid-template-rows:auto 1fr;gap:16px;min-height:0;padding-top:.8em}
 .box{position:relative;border:1px solid var(--dim);padding:14px 8px 8px;overflow:auto;min-height:0}
 .box::before{content:"\2524 " attr(data-t) " \251C";position:absolute;top:-.8em;left:10px;background:var(--bg);padding:0 4px;color:var(--dim)}
 .box.on{border-color:var(--acc)}.box.on::before{color:var(--acc)}
@@ -301,6 +303,9 @@ class H(http.server.BaseHTTPRequestHandler):
         path = unquote(self.path.split("?")[0])
         if path == "/":
             return self._send(200, PAGE, "text/html; charset=utf-8")
+        if path in ("/favicon.svg", "/favicon.ico") and os.path.isfile(MARK):   # the BoldVenture bunny bandit (Chief 10/18)
+            with open(MARK, "rb") as fh:
+                return self._send(200, fh.read(), "image/svg+xml")
         if path == "/panes.json":
             return self._send(200, json.dumps({"panes": PANES}), "application/json; charset=utf-8")
         if path == "/glasses.json":
