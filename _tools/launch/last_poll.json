@@ -1,11 +1,11 @@
 {
- "time": "2026-10-17T20:53:32",
+ "time": "2026-10-17T20:57:52",
  "all_go": true,
  "stations": [
   {
-   "name": "ARMORY",
+   "name": "PULL",
    "go": true,
-   "detail": "armory glass (rebuilding in the background (~40 s, log _PRIVATE/reference/armory/launch.log) · republish owed)"
+   "detail": "pull glass (runner A+B+C started · wave 1: 40/40 boards (4 empty) · 11,032 images · LANDED · 10 min/board · ETA -; wave 2: 40/40 boards (1 empty, 3 dropped) · 9,006 images · LANDED · 10 min/board · ETA -; wave 19: 56/100 boards (15 empty, 6 dropped) · 13,137 images · on joymii · 13 min/board · ETA 6:18 AM; wave 20: 20/45 boards (5 empty, 5 dropped) · 3,464 images · on asiantitsandpussy · 10 min/board · ETA 1:01 AM; wave 21: 91/100 boards (25 empty, 4 dropped) · 22,438 images · on giaderza · 12 min/board · ETA 10:41 PM · disk: Q free 3,119 GB · glass built, republish owed · 0.5 s)"
   }
  ]
 }
