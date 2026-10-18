@@ -1,0 +1,1079 @@
+.claude/README.md
+.claude/agents/README.md
+.claude/agents/applying-ruled-calls.md
+.claude/agents/architect.md
+.claude/agents/bench-engineer.md
+.claude/agents/bench-money.md
+.claude/agents/bench-operator.md
+.claude/agents/bench-skeptic.md
+.claude/agents/bench-storyteller.md
+.claude/agents/checking-doc-facts.md
+.claude/agents/collect-lead.md
+.claude/agents/distilling-book.md
+.claude/agents/doc-updater.md
+.claude/agents/drafting-dope-sheet.md
+.claude/agents/drafting-index-blocks.md
+.claude/agents/drafting-rack-block.md
+.claude/agents/drafting-session-note.md
+.claude/agents/drafting-watch-block.md
+.claude/agents/dva.md
+.claude/agents/extracting-interfaces.md
+.claude/agents/extracting-link-batch.md
+.claude/agents/harness-optimizer.md
+.claude/agents/judging-intake-repo.md
+.claude/agents/keying-zotero-batch.md
+.claude/agents/loop-operator.md
+.claude/agents/opensource-sanitizer.md
+.claude/agents/order-parser.md
+.claude/agents/python-reviewer.md
+.claude/agents/references/brief-writing.md
+.claude/agents/references/ceo-reading.md
+.claude/agents/references/context-layers.md
+.claude/agents/references/cto-reading.md
+.claude/agents/references/floor.md
+.claude/agents/references/manager-heuristics.md
+.claude/agents/references/marketing/cold-outreach.md
+.claude/agents/references/marketing/copy-and-cro.md
+.claude/agents/references/marketing/launch.md
+.claude/agents/references/marketing/lifecycle-email.md
+.claude/agents/references/marketing/offers.md
+.claude/agents/references/marketing/pricing.md
+.claude/agents/references/marketing/product-context.md
+.claude/agents/references/plan-template.md
+.claude/agents/references/planning.md
+.claude/agents/references/retire.md
+.claude/agents/references/science-method.md
+.claude/agents/references/security-checklist.md
+.claude/agents/references/severity.md
+.claude/agents/references/simplify.md
+.claude/agents/root-cause.md
+.claude/agents/scan-filer.md
+.claude/agents/scan-reader.md
+.claude/agents/sci-biomed.md
+.claude/agents/sci-forecast.md
+.claude/agents/sci-literature.md
+.claude/agents/sci-physics.md
+.claude/agents/sci-plausibility.md
+.claude/agents/security-reviewer.md
+.claude/agents/skill-builder.md
+.claude/agents/skill-optimizer.md
+.claude/agents/writing-core-doc.md
+.claude/agents/writing-harvest-register.md
+.claude/rules/private.md
+.claude/skills/README.md
+.claude/skills/bench/SKILL.md
+.claude/skills/brainstorm/SKILL.md
+.claude/skills/collect/SKILL.md
+.claude/skills/collect/references/research-frames.md
+.claude/skills/config-gc/SKILL.md
+.claude/skills/context-budget/SKILL.md
+.claude/skills/dope-sheet/SKILL.md
+.claude/skills/frago/SKILL.md
+.claude/skills/intake/SKILL.md
+.claude/skills/launch/SKILL.md
+.claude/skills/launch/references/SKILL.pre-M7.md
+.claude/skills/launch/references/history.md
+.claude/skills/oscar-mike/SKILL.md
+.claude/skills/oscar-mike/references/SKILL.pre-M7.md
+.claude/skills/rtb/SKILL.md
+.claude/skills/safety-guard/SKILL.md
+.claude/skills/sitrep/SKILL.md
+.claude/skills/sitrep/references/SKILL.pre-M7.md
+.claude/skills/sitrep/references/context-degradation.md
+.claude/skills/sitrep/references/history.md
+.claude/skills/steel-man/SKILL.md
+.claude/skills/strategic-compact/SKILL.md
+.claude/skills/verifying-before-done/SKILL.md
+.claude/workflows/sitrep.js
+.gitignore
+.mcp.json
+BOLO.md
+BOLO_head.txt
+BOLO_table_sample.txt
+CLAUDE.md
+KOBRA-CART.md
+PROJECTS.md
+QUOTES.md
+README.md
+SITREP.html
+SOI.html
+SOP.md
+STATE.md
+ShroomsQ/.obsidian/workspace.json
+ShroomsQ/_ARCHIVE/ssot_legacy/2_on_ascertaining_truth.md
+"ShroomsQ/_ARCHIVE/ssot_legacy/\360\237\223\220ssot_variable_registry_05_copy.md"
+"ShroomsQ/_CANON/_AUTHORITATIVE/OVEREXITOUT/characters/\360\237\223\220 Authoritative Character Astrology Ingest \342\200\224 Victoria Midnight.md"
+"ShroomsQ/_CANON/_AUTHORITATIVE/OVEREXITOUT/characters/\360\237\223\220 Authoritative Victoria Midnight Validation Report.md"
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot epistemology truth verification/1-concept.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot epistemology truth verification/2-reference.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot epistemology truth verification/3-how-to.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot epistemology truth verification/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_base_60_number_system/1-concept.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_base_60_number_system/2-reference.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_base_60_number_system/3-how-to.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_base_60_number_system/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_bold_venture_design_system/1-concept.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_bold_venture_design_system/2-reference.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_bold_venture_design_system/3-how-to.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_bold_venture_design_system/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_interface_catalog/1-concept.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_interface_catalog/2-reference.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_interface_catalog/3-how-to.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_interface_catalog/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_module_architecture/1-concept.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_module_architecture/2-reference.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_module_architecture/3-how-to.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_module_architecture/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_module_registry/1-concept.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_module_registry/2-reference.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_module_registry/3-how-to.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_module_registry/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_pattern_library/1-concept.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_pattern_library/2-reference.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_pattern_library/3-how-to.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_pattern_library/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_variable_registry/1-concept.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_variable_registry/2-reference.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_variable_registry/3-how-to.md
+ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_variable_registry/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_collision_engine/1-concept.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_collision_engine/2-reference.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_collision_engine/3-how-to.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_collision_engine/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_genre_system/1-concept.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_genre_system/2-reference.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_genre_system/3-how-to.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_genre_system/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_medium_grammars/1-concept.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_medium_grammars/2-reference.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_medium_grammars/3-how-to.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_medium_grammars/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_modern_poetics/1-concept.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_modern_poetics/2-reference.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_modern_poetics/3-how-to.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_modern_poetics/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_scale_ladder/1-concept.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_scale_ladder/2-reference.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_scale_ladder/3-how-to.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_scale_ladder/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_spine_house_inventory/1-concept.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_spine_house_inventory/2-reference.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_spine_house_inventory/3-how-to.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_spine_house_inventory/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_story_registry/1-concept.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_story_registry/2-reference.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_story_registry/3-how-to.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_story_registry/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_story_spine_comparative_tree/1-concept.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_story_spine_comparative_tree/2-reference.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_story_spine_comparative_tree/3-how-to.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_story_spine_comparative_tree/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_texture_layer/1-concept.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_texture_layer/2-reference.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_texture_layer/3-how-to.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_texture_layer/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_texture_system/1-concept.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_texture_system/2-reference.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_texture_system/3-how-to.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_texture_system/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_three_check_pass/1-concept.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_three_check_pass/2-reference.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_three_check_pass/3-how-to.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_three_check_pass/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_touchstones_register/1-concept.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_touchstones_register/2-reference.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_touchstones_register/3-how-to.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_touchstones_register/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_trope_register/1-concept.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_trope_register/2-reference.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_trope_register/3-how-to.md
+ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_trope_register/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_00_process_illustration_character_pipeline/1-concept.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_00_process_illustration_character_pipeline/2-reference.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_00_process_illustration_character_pipeline/3-how-to.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_00_process_illustration_character_pipeline/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_astrology/1-concept.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_astrology/2-reference.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_astrology/3-how-to.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_astrology/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_astrology_12_layer_mapping/1-concept.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_astrology_12_layer_mapping/2-reference.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_astrology_12_layer_mapping/3-how-to.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_astrology_12_layer_mapping/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_astrology_dai/1-concept.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_astrology_dai/2-reference.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_astrology_dai/3-how-to.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_astrology_dai/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_state_architecture/1-concept.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_state_architecture/2-reference.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_state_architecture/3-how-to.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_state_architecture/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_systems_vertical_slice/1-concept.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_systems_vertical_slice/2-reference.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_systems_vertical_slice/3-how-to.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_systems_vertical_slice/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_dramatica_integration_protocol/1-concept.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_dramatica_integration_protocol/2-reference.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_dramatica_integration_protocol/3-how-to.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_dramatica_integration_protocol/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_l9_eros_synthesis/1-concept.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_l9_eros_synthesis/2-reference.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_l9_eros_synthesis/3-how-to.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_l9_eros_synthesis/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_step_1_source_verification_protocol/1-concept.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_step_1_source_verification_protocol/2-reference.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_step_1_source_verification_protocol/3-how-to.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_step_1_source_verification_protocol/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_template_astrology_ingest/1-concept.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_template_astrology_ingest/2-reference.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_template_astrology_ingest/3-how-to.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_template_astrology_ingest/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_template_dramatica_ingest/1-concept.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_template_dramatica_ingest/2-reference.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_template_dramatica_ingest/3-how-to.md
+ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_template_dramatica_ingest/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/lakad-station-postapoc-reading-list.md
+ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_state_architecture/1-concept.md
+ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_state_architecture/2-reference.md
+ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_state_architecture/3-how-to.md
+ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_state_architecture/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_synthesis/1-concept.md
+ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_synthesis/2-reference.md
+ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_synthesis/3-how-to.md
+ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_synthesis/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_system/1-concept.md
+ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_system/2-reference.md
+ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_system/3-how-to.md
+ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_system/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_fabula/1-concept.md
+ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_fabula/2-reference.md
+ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_fabula/3-how-to.md
+ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_fabula/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_plot_system/1-concept.md
+ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_plot_system/2-reference.md
+ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_plot_system/3-how-to.md
+ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_plot_system/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_trope_graph/1-concept.md
+ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_trope_graph/2-reference.md
+ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_trope_graph/3-how-to.md
+ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_trope_graph/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/05_WORLDBUILDING_SYSTEMS/ssot_05_worldbuilding_system/1-concept.md
+ShroomsQ/_CANON/_DOCS/05_WORLDBUILDING_SYSTEMS/ssot_05_worldbuilding_system/2-reference.md
+ShroomsQ/_CANON/_DOCS/05_WORLDBUILDING_SYSTEMS/ssot_05_worldbuilding_system/3-how-to.md
+ShroomsQ/_CANON/_DOCS/05_WORLDBUILDING_SYSTEMS/ssot_05_worldbuilding_system/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/06_THEME_SYSTEMS/ssot_06_theme_system/1-concept.md
+ShroomsQ/_CANON/_DOCS/06_THEME_SYSTEMS/ssot_06_theme_system/2-reference.md
+ShroomsQ/_CANON/_DOCS/06_THEME_SYSTEMS/ssot_06_theme_system/3-how-to.md
+ShroomsQ/_CANON/_DOCS/06_THEME_SYSTEMS/ssot_06_theme_system/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/07_STYLE_GUIDES/ssot_07_1_prose_style/1-concept.md
+ShroomsQ/_CANON/_DOCS/07_STYLE_GUIDES/ssot_07_1_prose_style/2-reference.md
+ShroomsQ/_CANON/_DOCS/07_STYLE_GUIDES/ssot_07_1_prose_style/3-how-to.md
+ShroomsQ/_CANON/_DOCS/07_STYLE_GUIDES/ssot_07_1_prose_style/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/07_STYLE_GUIDES/ssot_07_2_documents_style/1-concept.md
+ShroomsQ/_CANON/_DOCS/07_STYLE_GUIDES/ssot_07_2_documents_style/2-reference.md
+ShroomsQ/_CANON/_DOCS/07_STYLE_GUIDES/ssot_07_2_documents_style/3-how-to.md
+ShroomsQ/_CANON/_DOCS/07_STYLE_GUIDES/ssot_07_2_documents_style/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/07_STYLE_GUIDES/ssot_07_2a_writing_guide/1-concept.md
+ShroomsQ/_CANON/_DOCS/07_STYLE_GUIDES/ssot_07_2a_writing_guide/2-reference.md
+ShroomsQ/_CANON/_DOCS/07_STYLE_GUIDES/ssot_07_2a_writing_guide/3-how-to.md
+ShroomsQ/_CANON/_DOCS/07_STYLE_GUIDES/ssot_07_2a_writing_guide/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/07_STYLE_GUIDES/ssot_07_2b_markdown_marking/1-concept.md
+ShroomsQ/_CANON/_DOCS/07_STYLE_GUIDES/ssot_07_2b_markdown_marking/2-reference.md
+ShroomsQ/_CANON/_DOCS/07_STYLE_GUIDES/ssot_07_2b_markdown_marking/3-how-to.md
+ShroomsQ/_CANON/_DOCS/07_STYLE_GUIDES/ssot_07_2b_markdown_marking/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/07_STYLE_GUIDES/ssot_07_3_pages_style/1-concept.md
+ShroomsQ/_CANON/_DOCS/07_STYLE_GUIDES/ssot_07_3_pages_style/2-reference.md
+ShroomsQ/_CANON/_DOCS/07_STYLE_GUIDES/ssot_07_3_pages_style/3-how-to.md
+ShroomsQ/_CANON/_DOCS/07_STYLE_GUIDES/ssot_07_3_pages_style/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/08_TRACKING_SYSTEMS/ssot_08_tracking_system/1-concept.md
+ShroomsQ/_CANON/_DOCS/08_TRACKING_SYSTEMS/ssot_08_tracking_system/2-reference.md
+ShroomsQ/_CANON/_DOCS/08_TRACKING_SYSTEMS/ssot_08_tracking_system/3-how-to.md
+ShroomsQ/_CANON/_DOCS/08_TRACKING_SYSTEMS/ssot_08_tracking_system/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/how_to_use_goon_room/1-concept.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/how_to_use_goon_room/2-reference.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/how_to_use_goon_room/3-how-to.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/how_to_use_goon_room/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_development_standard/1-concept.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_development_standard/2-reference.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_development_standard/3-how-to.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_development_standard/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_goon_room_protocol/2-reference.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_legacy_styleguide_2024/2-reference.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_markdown_marking/2-reference.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_pm_holdings_inventory/1-concept.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_pm_holdings_inventory/2-reference.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_pm_holdings_inventory/3-how-to.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_pm_holdings_inventory/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_project_flow/1-concept.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_project_flow/2-reference.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_project_flow/3-how-to.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_project_flow/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_retrieval_dossier_protocol/1-concept.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_retrieval_dossier_protocol/2-reference.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_retrieval_dossier_protocol/3-how-to.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_retrieval_dossier_protocol/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_standards_ladder/1-concept.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_standards_ladder/2-reference.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_standards_ladder/3-how-to.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_standards_ladder/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_SSOT_CREATION/1-concept.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_SSOT_CREATION/2-reference.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_SSOT_CREATION/3-how-to.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_SSOT_CREATION/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_ai_instruction_protocol/1-concept.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_ai_instruction_protocol/2-reference.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_ai_instruction_protocol/3-how-to.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_ai_instruction_protocol/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_template_prompt_for_summarizing_novels_and_books/1-concept.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_template_prompt_for_summarizing_novels_and_books/2-reference.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_template_prompt_for_summarizing_novels_and_books/3-how-to.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_template_prompt_for_summarizing_novels_and_books/4-tutorial.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_writing_guide/2-reference.md
+ShroomsQ/_CANON/_DOCS/09_OPERATIONS/the-cut-editing-process.md
+"ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/\360\237\223\220 ssot epistemology truth verification.md"
+"ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/\360\237\223\220 ssot_00_base_60_number_system.md"
+"ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/\360\237\223\220 ssot_00_bold_venture_design_system.md"
+"ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/\360\237\223\220 ssot_00_interface_catalog.md"
+"ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/\360\237\223\220 ssot_00_module_architecture.md"
+"ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/\360\237\223\220 ssot_00_module_registry.md"
+"ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/\360\237\223\220 ssot_00_pattern_library.md"
+"ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/\360\237\223\220 ssot_00_variable_registry.md"
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/UID_index.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/competencies/Draft2_Core Competencies Expanded.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/competencies/Draft_Core Competencies Expanded.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 1/CH-3302 Characterization/1balnaf_narrative_agents_framework_bal.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 1/CH-3302 Characterization/1forsterfrcm_flat_and_round_character_model_forster.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 1/CH-3302 Characterization/3rimmonkenancf_charaterization_framework_rimmonkenan.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 1/CH-3302 Characterization/6hermancmrf_characterization_and_mind_representation_framework_herman.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 1/CH-3302 Characterization/WICKED/6mckeecacm_character_and_conflict_model.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 1/NS-3301 Narrative Structure/1sternbergemf_expositional_modes_framework_sternberg.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 1/NS-3301 Narrative Structure/1todorovnsm_narrative_syntax_model_todorov.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 1/NS-3301 Narrative Structure/3brooksmsmf_middle_as_a_site_of_meaning_framework_brooks.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 1/NS-3301 Narrative Structure/WICKED/1mckeedosf_definition_of_story_framework.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 1/NS-3301 Narrative Structure/WICKED/2mckeetlosm_three_levels_of_storytelling_model.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 1/NS-3301 Narrative Structure/WICKED/3mckeessf_story_structure_framework.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 1/NS-3301 Narrative Structure/WICKED/4mckeetam_three_acts_model.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 1/NS-3301 Narrative Structure/WICKED/5mckeeposdm_princples_of_story_design_model.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 1/PA-3303 Plot and Event Analysis/3chatmancef_character_and_event_framework_chatman.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 1/PA-3303 Plot and Event Analysis/3forsterpc_prophecy_concept_forster.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 1/PA-3303 Plot and Event Analysis/WICKED/12mckeegm_gap_model.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 1/PA-3303 Plot and Event Analysis/WICKED/7mckeescf_story_climax_framework.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 1/PA-3303 Plot and Event Analysis/WICKED/8mckeetpm_turning_points_model.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/CL-3406 Narrative Coherence and Logic/4brooksnrsf_narrative_as_a_rhetorical_structure_framework_brooks.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/CL-3406 Narrative Coherence and Logic/5brooksteem_textual_energy_and_entropy_model_brooks.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/FO-3403 Focalization/1rimmonkenanff_focalization_framework_rimmonkenan.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/FO-3403 Focalization/3balff_focalization_framework_bal.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/FO-3403 Focalization/3genette3focalization_three_focalization_framework_genette.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/NA-3402 Narration and Narrator Analysis/1boothiam_implied_author_model_booth.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/NA-3402 Narration and Narrator Analysis/2bakhtinhm_heteroglossia_model_bakhtin.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/NA-3402 Narration and Narrator Analysis/2chatmanncm_narrative_communication_model_chatman.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/NA-3402 Narration and Narrator Analysis/4boothrfwm_rhetoric_of_fictional_worlds_model_booth.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/NA-3402 Narration and Narrator Analysis/6bakhtinpf_polyphony_framework_bakhtin.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/NA-3402 Narration and Narrator Analysis/7boothmdraf_modern_dogma_and_rhetoric_of_assent_framework_booth.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/NA-3402 Narration and Narrator Analysis/8bakhtinahaa_author_and_hero_in_aesthetic_activity_bakhtin.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/NV-3405 Narrative Voice and Point of View/1abbottnpf_narrative_perspective_framework_abbott.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/NV-3405 Narrative Voice and Point of View/1bakhtindf_dialogism_framework_bakhtin.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/NV-3405 Narrative Voice and Point of View/1ryanif_immersion_framework_ryan.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/NV-3405 Narrative Voice and Point of View/2boothnnvf_narrator_and_narrative_voice_framework_booth.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)/1chatmansdf_story_vs_discourse_framework_chatman.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)/2tomashevskypsf_plot_vs_story_framework_tomashevsky.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)/5rimmonkenannsf_narrative_discourse_strategies_framework_rimmonkenan.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/TMV-3407 Tense, Mood, and Voice in Narrative Grammar/1tier2_tmv-3407.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/TT-3404 Time and Temporality/2baltsf_temporal_structures_framework_bal.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/TT-3404 Time and Temporality/2barthesptf_pleasure_of_the_text_framework_barthes.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/TT-3404 Time and Temporality/2brooksntf_narrative_temporality_framework_brooks.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/TT-3404 Time and Temporality/2sternbergtof_temporal_ordering_framework_sternberg.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/TT-3404 Time and Temporality/3bakhtincf_chronotope_framework_bakhtin.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/TT-3404 Time and Temporality/4chatmantsnf_time_and_space_in_narrative_framework_chatman.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 2/TT-3404 Time and Temporality/5hermantlnf_temporal_logic_in_narrative_framework_herman_EXPLICIT.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/DM-3503 Diegesis and Mimesis/2hermanslf_story_logic_framework_herman.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/DM-3503 Diegesis and Mimesis/2todorovsanf_deep_structures_framework_todorov.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/DM-3503 Diegesis and Mimesis/3boothsvf_showing_vs_telling_framework_booth.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/DM-3503 Diegesis and Mimesis/4hermanetf_eventfulness_and_tellability_framework_herman.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/DM-3503 Diegesis and Mimesis/5todorovntf_narrative_transformation_framework_todorov.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/DM-3503 Diegesis and Mimesis/6tomashevksydm_defamiliarization_model_tomashevsky.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/DM-3503 Diegesis and Mimesis/7tomashevskyndf_narrative_devices_framework_tomashevsky.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/DM-3503 Diegesis and Mimesis/8ryannif_narrative_and_identity_framework_ryan.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/FM-3506 Function and Motif Analysis/1propp31_narrative_functions_framework_propp.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/FM-3506 Function and Motif Analysis/1propp7_spheres_of_action_framework_propp.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/FM-3506 Function and Motif Analysis/1tomashevskytmf_theme_and_motif_framework_tomashevksy.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/FM-3506 Function and Motif Analysis/3greimasam_actantial_model_greimas.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/FM-3506 Function and Motif Analysis/3sternbergscsm_suspense_curiosity_and_surprise_model_sternberg.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/FM-3506 Function and Motif Analysis/3tomashevskynff_narrative_functions_framework_tomashevsky.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/FM-3506 Function and Motif Analysis/5tomashevskytpf_thematics_framework_tomashevsky.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/FM-3506 Function and Motif Analysis/7brooksmif_melodramatic_imagination_framework_brooks.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/GT-3505 Genre and Narrative Typology/3todorovgenre_genres_as_structures_framework_todorov.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/GT-3505 Genre and Narrative Typology/4forsterfvrf_fantasy_vs_realism_framework_forster.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/GT-3505 Genre and Narrative Typology/4todorovfmf_fantastic_mode_framework_todorov.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/GT-3505 Genre and Narrative Typology/5bakhtinndgm_novel_as_a_dynamic_genre_model_bakhtin.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/GT-3505 Genre and Narrative Typology/WICKED/9mckeegf_genre_framework.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/INT-3502 Intertextuality/4rimmonkenantiaf_textual_and_intertextual_analysis_framework_rimmonkenan.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/INT-3502 Intertextuality/5genettearchitext_architextual_model_genette.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/INT-3502 Intertextuality/6brooksind_intertextuality_and_narrative_design_framework_brooks.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/MT-3508 Metalepsis and Narrative Transgression/4genettemetalepsis_metalepsis_model_genette.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/NE-3509 Narrative Ethics and Ideology/1brooksrdnf_role_of_desire_in_narrative_framework_brooks.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/NLE-3501 Narrative Levels and Embedding/2genette3nif_three_narrative_instances_framework_genette.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/NLE-3501 Narrative Levels and Embedding/2genette5key_five_key_narrative_categories_framework_genette.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/NLE-3501 Narrative Levels and Embedding/2rimmonkenannlf_narrative_levels_framework_rimmonkenan.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/NR-3507 Narratee and Implied Reader/2abbottngri_narrative_gaps_and_reader_involvement_abbott.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/NR-3507 Narratee and Implied Reader/4tomashevskyrim_reader_interaction_model_tomashevsky.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/NR-3507 Narratee and Implied Reader/5boothrrf_readers_role_framework_booth.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/NR-3507 Narratee and Implied Reader/5forsterrrf_readers_role_framework_forster.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/NR-3507 Narratee and Implied Reader/WICKED/10mckeeaef_audience_expectation_framework.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/SN-3504 Semiotics of Narrative/1barthesncf_narrative_codes_framework_barthes.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/SN-3504 Semiotics of Narrative/1greimassnsf_semionarrative_structure_framework_greimas.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/SN-3504 Semiotics of Narrative/2greimasssm_semiotic_square_model_greimas.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/SN-3504 Semiotics of Narrative/3barthesclf_camera_lucida_framework_barthes.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/SN-3504 Semiotics of Narrative/4bakhtincc_carnivalesque_concept_bakhtin.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/SN-3504 Semiotics of Narrative/4greimasngf_narrative_grammar_framework_greimas.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/SN-3504 Semiotics of Narrative/5greimasif_isotopy_framework_greimas.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/SN-3504 Semiotics of Narrative/6boothrif_rhetoric_of_irony_framework_booth.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/SN-3504 Semiotics of Narrative/6greimasmf_modalities_framework_greimas.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/SN-3504 Semiotics of Narrative/7bakhtinsgf_speech_genres_framework_bakhtin.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 3/SN-3504 Semiotics of Narrative/7greimass_greimasian_semiotics_greimas.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 4/AS-3601 Advanced Semiotics and Symbolic Interpretation/3ryanmsf_medium_specificity_framework_ryan.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 4/AS-3601 Advanced Semiotics and Symbolic Interpretation/4ryanpwtf_possible_worlds_theory_framework_ryan.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 4/AS-3601 Advanced Semiotics and Symbolic Interpretation/WICKED/14mckeeaosm_art_of_subtext_model.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 4/TN-3602 Transmedia Narratology/7ryantsf_role_of_technology_in_storytelling_framework_.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 5/CA-3705 Creative Application/999_tier5_ca-3705.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 5/CC-3704 Cultural and Contextual Analysis/1tier5_cc_3704 Cultural and Contextual Analysis.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 5/CMS-3703 Cross-Media Narrative Study/1tier5_cms-3703.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 5/CMS-3703 Cross-Media Narrative Study/1tier5_cms-3703_CA-3705 Creative Application.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 5/HN-3701 Holistic Narrative Analysis/1hermancnf_cognitive_narratology_framework_herman.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 5/HN-3701 Holistic Narrative Analysis/2ryannccf_narrative_as_a_cognitive_construct_framework_ryan.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 5/HN-3701 Holistic Narrative Analysis/3hermanncaf_narrative_as_a_cognitive_artifact_framework_herman.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 5/HN-3701 Holistic Narrative Analysis/7hermannwf_narrative_worlds_framework_herman.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 5/HN-3701 Holistic Narrative Analysis/WICKED/11mckeewpm_writers_process_model.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 5/HN-3701 Holistic Narrative Analysis/WICKED/15mckeebosm_business_of_storytelling_model.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 5/MN-3706 Meta-Narrative Awareness/1tier5-MN-3706 Meta-Narrative Awareness.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 5/TI-3702 Theoretical Integration/6ryaniaf_interdisciplinary_approaches_framework_ryan.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 5/TN-3602 Transmedia Narratology/5ryanndim_narrative_in_digital_and_interactive_media_ryan.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/frameworks/Tier 5/TN-3602 Transmedia Narratology/WICKED/13mckeeasamf_adapting_stories_across_media_framework.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/narratology_core_rulebook_pre-alpha_draft.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/ncp/.gitignore
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/ncp/CONTRIBUTING.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/ncp/COPYRIGHT.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/ncp/HISTORY.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/ncp/LICENSE.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/ncp/README.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/ncp/SPECIFICATION.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/ncp/docs/narrative-context-protocol-schema.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/ncp/docs/terminology/01.perspectives.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/ncp/docs/terminology/02.appreciations-of-narrative.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/ncp/docs/terminology/03.methods-of-conflict.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/ncp/docs/terminology/04.dynamics.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/ncp/docs/terminology/05.vectors.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/ncp/docs/terminology/10.dramatica-translation.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/ncp/examples/anora.json
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/ncp/examples/example-mapping.json
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/ncp/examples/example-story.json
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/ncp/examples/the-shawshank-redemption.json
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/ncp/schema/ncp-schema.json
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/ncp/schema/ncp-schema.yaml
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/ncp/tests/validate-schema.js
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/propositions/Ascertaining Truth.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/propositions/P1.2_Establishing_Meaning_in_Narratology.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/propositions/P1.3_Narratology_Unique_Overlooked_Meaning.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/propositions/P1_Narrative_is_a_Fundamental_Concept.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/propositions/P2_General_Model_of_Narratology.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/propositions/P3_The_Value_of_Intertextual_Narratives.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/propositions/P4_Model_for_Hyper-media.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/propositions/P5_Modern_Entertainment_Demands.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/propositions/P6_Narrative_Intellectual_Property.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/propositions/P7_Empowering_the_Designer.md
+ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/propositions/P8_Balancing_Form_and_Function.md
+"ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/\360\237\223\220 ssot_01_narratology_shelf.md"
+"ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/\360\237\223\220 ssot_01_collision_engine.md"
+"ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/\360\237\223\220 ssot_01_genre_system.md"
+"ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/\360\237\223\220 ssot_01_medium_grammars.md"
+"ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/\360\237\223\220 ssot_01_modern_poetics.md"
+"ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/\360\237\223\220 ssot_01_scale_ladder.md"
+"ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/\360\237\223\220 ssot_01_spine_house_inventory.md"
+"ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/\360\237\223\220 ssot_01_story_registry.md"
+"ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/\360\237\223\220 ssot_01_story_spine_comparative_tree.md"
+"ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/\360\237\223\220 ssot_01_texture_layer.md"
+"ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/\360\237\223\220 ssot_01_texture_system.md"
+"ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/\360\237\223\220 ssot_01_three_check_pass.md"
+"ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/\360\237\223\220 ssot_01_touchstones_register.md"
+"ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/\360\237\223\220 ssot_01_trope_register.md"
+"ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/\360\237\223\220 ssot_00_process_illustration_character_pipeline.md"
+"ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/\360\237\223\220 ssot_02_character_astrology.md"
+"ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/\360\237\223\220 ssot_02_character_systems_vertical_slice.md"
+"ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/\360\237\223\220 ssot_02_l9_eros_synthesis.md"
+"ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/\360\237\223\220 ssot_02_module_look.md"
+"ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/\360\237\223\220 ssot_02_template_astrology_ingest.md"
+"ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/\360\237\223\220 ssot_02_template_dramatica_ingest.md"
+"ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/\360\237\224\256 ssot_02_dramatica_integration_protocol.md"
+"ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/\360\237\224\256ssot_02_character_astrology_12_layer_mapping.md"
+"ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/\360\237\224\256ssot_02_character_astrology_dai.md"
+"ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/\360\237\224\256ssot_02_character_state_architecture.md"
+"ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/\360\237\224\256ssot_02_step_1_source_verification_protocol.md"
+"ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/\360\237\223\220 ssot_03_setting_synthesis.md"
+"ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/\360\237\223\220 ssot_03_setting_system.md"
+"ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/\360\237\224\256 ssot_03_setting_state_architecture.md"
+"ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/\360\237\223\220 ssot_04_fabula.md"
+"ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/\360\237\223\220 ssot_04_plot_system.md"
+"ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/\360\237\223\220 ssot_04_trope_graph.md"
+ShroomsQ/_CANON/_SSOT/05_OPERATIONS/how_to_use_goon_room.md
+"ShroomsQ/_CANON/_SSOT/05_OPERATIONS/\360\237\223\220 ssot_05_operations_legacy_styleguide_2024.md"
+"ShroomsQ/_CANON/_SSOT/05_OPERATIONS/\360\237\223\220 ssot_05_operations_markdown_marking.md"
+"ShroomsQ/_CANON/_SSOT/05_OPERATIONS/\360\237\223\220 ssot_writing_guide.md"
+ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/ARC/WB-ARC-0001.md
+ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/BEL/WB-BEL-0001.md
+ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/BEL/WB-BEL-0002.md
+ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/BIO/WB-BIO-0001.md
+ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/BIO/WB-BIO-0002.md
+ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/CUS/WB-CUS-0001.md
+ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/CUS/WB-CUS-0002.md
+ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/CUS/WB-CUS-0003.md
+ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/FSU/WB-FSU-0001.md
+ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/GRP/WB-GRP-0001.md
+ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/GRP/WB-GRP-0002.md
+ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/GRP/WB-GRP-0003.md
+ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/GRP/WB-GRP-0004.md
+ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/GRP/WB-GRP-0005.md
+ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/GRP/WB-GRP-0006.md
+ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/GRP/WB-GRP-0007.md
+ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/INS/WB-INS-0001.md
+ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/INS/WB-INS-0002.md
+ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/INS/WB-INS-0003.md
+ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/INS/WB-INS-0004.md
+ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/INS/WB-INS-0005.md
+ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/TEC/WB-TEC-0001.md
+ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/TEC/WB-TEC-0002.md
+ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/WDR/WB-WDR-0001.md
+ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/_INDEX.md
+"ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/\360\237\223\220 ssot_05_worldbuilding_system.md"
+"ShroomsQ/_CANON/_SSOT/06_THEME_SYSTEMS/\360\237\223\220 ssot_06_theme_system.md"
+"ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/_history/\360\237\223\220 ssot_06_legacy_styleguide_2024.md"
+"ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/\360\237\223\220 ssot_07_1_prose_style.md"
+"ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/\360\237\223\220 ssot_07_2_documents_style.md"
+"ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/\360\237\223\220 ssot_07_2a_writing_guide.md"
+"ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/\360\237\223\220 ssot_07_2b_markdown_marking.md"
+"ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/\360\237\223\220 ssot_07_3_pages_style.md"
+"ShroomsQ/_CANON/_SSOT/08_TRACKING_SYSTEMS/\360\237\223\220 ssot_08_tracking_system.md"
+ShroomsQ/_CANON/_SSOT/09_OPERATIONS/_decisions/DR-2026-10-05-system-renumber.md
+ShroomsQ/_CANON/_SSOT/09_OPERATIONS/how_to_use_goon_room.md
+"ShroomsQ/_CANON/_SSOT/09_OPERATIONS/\360\237\223\220 ssot_09_operations_development_standard.md"
+"ShroomsQ/_CANON/_SSOT/09_OPERATIONS/\360\237\223\220 ssot_09_operations_goon_room_protocol.md"
+"ShroomsQ/_CANON/_SSOT/09_OPERATIONS/\360\237\223\220 ssot_09_operations_legacy_styleguide_2024.md"
+"ShroomsQ/_CANON/_SSOT/09_OPERATIONS/\360\237\223\220 ssot_09_operations_markdown_marking.md"
+"ShroomsQ/_CANON/_SSOT/09_OPERATIONS/\360\237\223\220 ssot_09_operations_pm_holdings_inventory.md"
+"ShroomsQ/_CANON/_SSOT/09_OPERATIONS/\360\237\223\220 ssot_09_operations_project_flow.md"
+"ShroomsQ/_CANON/_SSOT/09_OPERATIONS/\360\237\223\220 ssot_09_operations_retrieval_dossier_protocol.md"
+"ShroomsQ/_CANON/_SSOT/09_OPERATIONS/\360\237\223\220 ssot_09_operations_standards_ladder.md"
+"ShroomsQ/_CANON/_SSOT/09_OPERATIONS/\360\237\223\220 ssot_ai_instruction_protocol.md"
+"ShroomsQ/_CANON/_SSOT/09_OPERATIONS/\360\237\223\220 ssot_template_prompt_for_summarizing_novels_and_books.md"
+"ShroomsQ/_CANON/_SSOT/09_OPERATIONS/\360\237\223\220 ssot_writing_guide.md"
+"ShroomsQ/_CANON/_SSOT/09_OPERATIONS/\360\237\223\220ssot_SSOT_CREATION.md"
+"ShroomsQ/_CANON/_TEMPLATES/ssot/\342\231\250\357\270\217_template_ssot_09_operations_standard_structure_template.md"
+"ShroomsQ/_CANON/_TEMPLATES/ssot/\342\231\250\357\270\217_template_ssot_character_astrology_ingest_template.md"
+"ShroomsQ/_CANON/_TEMPLATES/ssot/\342\231\250\357\270\217_template_ssot_dramatica_ingest_template.md"
+ShroomsQ/_GOON_ROOM/tree_structure.txt
+_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.1276.md
+_0.1_BVX_LEARN/_index/_INDEX.md
+_CACHE/2026-10-18-2.session.md
+_CANON_NODES/actress-reference-register.md
+_CANON_NODES/anna-colson-conway.md
+_CANON_NODES/outliers-moon-origin-seed.md
+_CANON_NODES/oxo-scene-card-M1-skeleton.md
+_CANON_NODES/oxo-scene-card-M2-grief-summary.md
+_CANON_NODES/oxo-scene-card-M2-row9.md
+_CANON_NODES/oxo-scene-card-M3-crash-analepsis.md
+_CANON_NODES/oxo-scene-card-M4-skeleton.md
+_CANON_NODES/oxo-scene-card-M5-skeleton.md
+_CANON_NODES/oxo-scene-card-M6-skeleton.md
+_CANON_NODES/oxo-storyform.ncp-map.md
+_CANON_NODES/oxo-storyform.ncp.json
+_CANON_NODES/oxo-trash-land-seed.md
+_CANON_NODES/riley-moss-gonzo-seed.md
+_CANON_NODES/victoria-midnight.md
+_CANON_NODES/voice-register.md
+_LOG/2026-10-04-2.session.md
+_LOG/2026-10-04-3.session.md
+_LOG/2026-10-04-4.session.md
+_LOG/2026-10-04-5.session.md
+_LOG/2026-10-04.session.md
+_LOG/2026-10-05-2.session.md
+_LOG/2026-10-05-3.session.md
+_LOG/2026-10-05.session.md
+_LOG/2026-10-06-2.session.md
+_LOG/2026-10-06.session.md
+_LOG/2026-10-08-2.session.md
+_LOG/2026-10-08-3.session.md
+_LOG/2026-10-08.session.md
+_LOG/2026-10-10.session.md
+_LOG/2026-10-12-2.session.md
+_LOG/2026-10-12-3.session.md
+_LOG/2026-10-12-4.session.md
+_LOG/2026-10-12-5.session.md
+_LOG/2026-10-12.session.md
+_LOG/2026-10-13-2.session.md
+_LOG/2026-10-13.session.md
+_LOG/2026-10-16.session.md
+_LOG/2026-10-17.session.md
+_LOG/2026-10-18.session.md
+_LOG/cache-shots/comps-shot.png
+_LOG/cache-shots/patch-color.png
+_LOG/cache-shots/patch-shot.png
+_LOG/cache-shots/sitrep-shot.png
+_LOG/cache-shots/thumb1.png
+_LOG/cache-shots/thumb7.png
+_YOYO/0003-editing-shelf-davinci.md
+_YOYO/FIRST-RUN.md
+_devlog/_devlog_docs/_devlog_journals/10042026.journal.md
+_devlog/_devlog_docs/_devlog_journals/10052026.journal.md
+_devlog/_devlog_docs/_devlog_journals/10062026.journal.md
+_devlog/_devlog_docs/_devlog_journals/10082026.journal.md
+_devlog/_devlog_docs/_devlog_journals/10102026.journal.md
+_devlog/_devlog_docs/_devlog_journals/10122026.journal.md
+_devlog/_devlog_docs/_devlog_journals/10132026.journal.md
+_devlog/_devlog_docs/_devlog_journals/10162026.journal.md
+_devlog/_devlog_docs/_devlog_journals/10172026.journal.md
+_devlog/_devlog_docs/_devlog_journals/10182026.journal.md
+_reviews/DOCTRINE-0-INVARIANTS.review.html
+_reviews/DOCTRINE-0-INVARIANTS.reviewed.md
+_reviews/apply_review.py
+_reviews/review_page.py
+_sop/README.md
+_sop/archive/2026-10-12-s1-prowords/after.md
+_sop/archive/2026-10-12-s1-prowords/before.md
+_sop/archive/2026-10-12-s1-prowords/history.md
+_sop/archive/2026-10-12-s1-prowords/proposal.md
+_sop/archive/2026-10-12-s7-scenarios/after.md
+_sop/archive/2026-10-12-s7-scenarios/before.md
+_sop/archive/2026-10-12-s7-scenarios/proposal.md
+_sop/archive/2026-10-13-ivory-tower-science-seats/after.md
+_sop/archive/2026-10-13-ivory-tower-science-seats/proposal.md
+_sop/archive/2026-10-13-s1-24-sources/after.md
+_sop/archive/2026-10-13-s1-24-sources/before.md
+_sop/archive/2026-10-13-s1-24-sources/proposal.md
+_sop/archive/2026-10-13-s7-23-reader-test/after.md
+_sop/archive/2026-10-13-s7-23-reader-test/before.md
+_sop/archive/2026-10-13-s7-23-reader-test/proposal.md
+_sop/archive/2026-10-13-s7-taste-rules/after.md
+_sop/archive/2026-10-13-s7-taste-rules/proposal.md
+_sop/changes/2026-10-13-verify-before-done/after.md
+_sop/changes/2026-10-13-verify-before-done/proposal.md
+_tools/README.md
+_tools/armory/armory.py
+_tools/armory/assess_build.py
+_tools/armory/bash_errors.py
+_tools/armory/naming/brief.common.md
+_tools/armory/shelf/agents/a11y-architect.md
+_tools/armory/shelf/agents/chief-of-staff.md
+_tools/armory/shelf/agents/claim-checker.md
+_tools/armory/shelf/agents/code-explorer.md
+_tools/armory/shelf/agents/conversation-analyzer.md
+_tools/armory/shelf/agents/cto.md
+_tools/armory/shelf/agents/drill-maker.md
+_tools/armory/shelf/agents/marketing-agent.md
+_tools/armory/shelf/agents/mle-reviewer.md
+_tools/armory/shelf/agents/network-troubleshooter.md
+_tools/armory/shelf/agents/opensource-forker.md
+_tools/armory/shelf/agents/opensource-packager.md
+_tools/armory/shelf/agents/performance-optimizer.md
+_tools/armory/shelf/agents/planner.md
+_tools/armory/shelf/agents/prose-taste.md
+_tools/armory/shelf/agents/pytorch-build-resolver.md
+_tools/armory/shelf/agents/refactor-cleaner.md
+_tools/armory/shelf/agents/seo-specialist.md
+_tools/armory/shelf/agents/silent-failure-hunter.md
+_tools/armory/shelf/agents/syllabus-builder.md
+_tools/armory/shelf/agents/teach-coach.md
+_tools/audit/allow.json
+_tools/audit/out/sop-audit-2026-10-06.md
+_tools/audit/out/sop-audit-2026-10-08.md
+_tools/audit/out/sop-audit-2026-10-10.md
+_tools/audit/out/sop-audit-2026-10-12.md
+_tools/audit/out/sop-audit-2026-10-13.md
+_tools/audit/out/sop-audit-2026-10-14.md
+_tools/audit/out/sop-audit-2026-10-16.md
+_tools/audit/out/sop-audit-2026-10-17.md
+_tools/audit/out/sop-audit-2026-10-18.md
+_tools/audit/sop_audit.py
+_tools/bearings/bearings.html
+_tools/bearings/build.py
+_tools/bearings/collect.py
+_tools/bearings/data/briefs.agents.json
+_tools/bearings/data/briefs.skills.json
+_tools/bearings/data/kit.index.md
+_tools/bearings/data/kit.json
+_tools/bearings/data/match.json
+_tools/bearings/data/repos.json
+_tools/bearings/data/runs.json
+_tools/bearings/data/sops.json
+_tools/bearings/template.html
+_tools/bolocheck/build.py
+_tools/bolocheck/live.json
+_tools/bolocheck/out/bolo-check.html
+_tools/bolocheck/range.py
+_tools/bolocheck/recs.txt
+_tools/bolocheck/rows.json
+_tools/bolocheck/work/batch1.md
+_tools/bolocheck/work/batch2.md
+_tools/bolocheck/work/batch3.md
+_tools/bolocheck/work/batch4.md
+_tools/bolocheck/work/out1.json
+_tools/bolocheck/work/out2.json
+_tools/bolocheck/work/out3.json
+_tools/bolocheck/work/out4.json
+_tools/bolostatus/boards/121.json
+_tools/bolostatus/boards/149.json
+_tools/bolostatus/boards/156.json
+_tools/bolostatus/boards/77.json
+_tools/bolostatus/out/BOLO-121.html
+_tools/bolostatus/out/BOLO-149.html
+_tools/bolostatus/out/BOLO-156.html
+_tools/bolostatus/out/BOLO-77.html
+_tools/bolostatus/prep.py
+_tools/brand/boldventure-ascii.txt
+_tools/brand/boldventure-mark.svg
+_tools/brand/gen_gamer.py
+_tools/brand/gen_kick.py
+_tools/brand/judy-gamer.svg
+_tools/brand/judy-kick.svg
+_tools/brand/judy-pinup.svg
+_tools/brand/render_icon.py
+_tools/callsheet/CALL-SHEET.html
+_tools/charsys/character-system.html
+_tools/console/console.cmd
+_tools/console/console.py
+_tools/console/status.json
+_tools/crew/CREW.html
+_tools/desk/build_desk.py
+_tools/dictation/_dual_left.m3u
+_tools/dictation/_dual_right.m3u
+_tools/dictation/_facepos.json
+_tools/dictation/_voiceread_baseline.json
+_tools/dictation/app/icon-192.bak-j.png
+_tools/dictation/app/icon-192.png
+_tools/dictation/app/icon-512.bak-j.png
+_tools/dictation/app/icon-512.png
+_tools/dictation/app/manifest.webmanifest
+_tools/dictation/app/sw.js
+_tools/dictation/bolo_plain.json
+_tools/dictation/chirp.py
+_tools/dictation/config.json
+_tools/dictation/console.html
+_tools/dictation/console.py
+_tools/dictation/console.py.bak-profiles
+_tools/dictation/faces.html
+_tools/dictation/faces.html.bak-profiles
+_tools/dictation/judy.json
+_tools/dictation/judy.json.bak-124
+_tools/dictation/judy.json.bak-profiles
+_tools/dictation/judy.log
+_tools/dictation/judy.py
+_tools/dictation/judy.py.bak-b63
+_tools/dictation/naked.py
+_tools/dictation/naked.py.bak-b76
+_tools/dictation/presets.py
+_tools/dictation/presets.py.bak-profiles
+_tools/dictation/ptt.py
+_tools/dictation/ptt.py.bak-b63
+_tools/dictation/reader.py
+_tools/dictation/sounds/busy_35.wav
+_tools/dictation/sounds/confirm_35.wav
+_tools/dictation/sounds/deescalate_35.wav
+_tools/dictation/sounds/escalate_35.wav
+_tools/dictation/sounds/focus_35.wav
+_tools/dictation/sounds/open_35.wav
+_tools/dictation/sounds/relay_35.wav
+_tools/dictation/sounds/send_35.wav
+_tools/dictation/sounds/sent_35.wav
+_tools/dictation/stashplay.py
+_tools/dictation/stashplay.py.bak-b76
+_tools/dictation/traffic.py
+_tools/dictation/voiceread.py
+_tools/dictation/wire.py
+_tools/dictation/wire_probe.py
+_tools/docs/ADR-template.md
+_tools/docs/build.py
+_tools/docs/components.py
+_tools/docs/docs_check.py
+_tools/docs/fix_front.py
+_tools/docs/ifc_apply.py
+_tools/docs/ifc_build.py
+_tools/docs/ifc_merge.py
+_tools/docs/interfaces.py
+_tools/docs/landing.md
+_tools/docs/long_list.py
+_tools/docs/mirror.py
+_tools/docs/mirror_pages.txt
+_tools/docs/open_list.py
+_tools/docs/out/N2.md
+_tools/docs/out/REFERENCE.html
+_tools/docs/out/batch_C_proposals.md
+_tools/docs/out/components.json
+_tools/docs/out/ifc_candidates.json
+_tools/docs/out/interfaces.json
+_tools/docs/out/open_gaps.json
+_tools/docs/work/brief.APPLY.md
+_tools/docs/work/brief.FACTS.md
+_tools/docs/work/brief.FIXA.md
+_tools/docs/work/brief.FIXC.md
+_tools/docs/work/brief.FIXD.md
+_tools/docs/work/brief.IFC.md
+_tools/docs/work/brief.VISUALS.md
+_tools/docs/work/brief.WORDS.md
+_tools/docs/work/brief.WRITER.md
+_tools/docs/work/ifc/00.json
+_tools/docs/work/ifc/01.json
+_tools/docs/work/ifc/02.json
+_tools/docs/work/ifc/03-04.json
+_tools/docs/work/ifc/05-08.json
+_tools/docs/work/ifc/09.json
+_tools/docs/work/ifc/apply.00.md
+_tools/docs/work/ifc/apply.01.md
+_tools/docs/work/ifc/apply.02.md
+_tools/docs/work/ifc/apply.03.md
+_tools/docs/work/ifc/apply.04.md
+_tools/docs/work/ifc/apply.05.md
+_tools/docs/work/ifc/apply.06.md
+_tools/docs/work/ifc/apply.07.md
+_tools/docs/work/ifc/apply.08.md
+_tools/docs/work/ifc/apply.09.md
+_tools/docs/work/ifc/done.00.json
+_tools/docs/work/ifc/done.01.json
+_tools/docs/work/ifc/done.02.json
+_tools/docs/work/ifc/done.03.json
+_tools/docs/work/ifc/done.04.json
+_tools/docs/work/ifc/done.05.json
+_tools/docs/work/ifc/done.06.json
+_tools/docs/work/ifc/done.07.json
+_tools/docs/work/ifc/done.08.json
+_tools/docs/work/ifc/done.09.json
+_tools/docs/work/ifc/rungs.json
+_tools/docs/work/long.A.txt
+_tools/docs/work/long.A.v2.txt
+_tools/docs/work/long.A.v3.txt
+_tools/docs/work/long.B.txt
+_tools/docs/work/long.B.v2.txt
+_tools/docs/work/long.B.v3.txt
+_tools/docs/work/long.C.txt
+_tools/docs/work/long.C.v2.txt
+_tools/docs/work/long.C.v3.txt
+_tools/docs/work/long.all.txt
+_tools/done/verify.py
+_tools/extract/build_scorer.py
+_tools/extract/out/00_START_HERE.jsonl
+_tools/extract/out/00_START_HERE.review.md
+_tools/extract/out/2022_12_23.jsonl
+_tools/extract/out/2022_12_23.review.md
+_tools/extract/out/anna-colson-conway.jsonl
+_tools/extract/out/anna-colson-conway.review.md
+_tools/extract/out/dcus-standards-body.jsonl
+_tools/extract/out/dcus-standards-body.review.md
+_tools/extract/out/delta-coast-ultra-school.jsonl
+_tools/extract/out/delta-coast-ultra-school.review.md
+_tools/extract/out/oxo-scene-card-M2-row9.jsonl
+_tools/extract/out/oxo-scene-card-M2-row9.review.md
+_tools/extract/out/oxo-scene-card-M4-skeleton.jsonl
+_tools/extract/out/oxo-scene-card-M4-skeleton.review.md
+_tools/extract/out/oxo-scene-card-M5-skeleton.jsonl
+_tools/extract/out/oxo-scene-card-M5-skeleton.review.md
+_tools/extract/out/oxo-storyform.jsonl
+_tools/extract/out/oxo-storyform.review.md
+_tools/extract/out/oxo-trash-land-seed.jsonl
+_tools/extract/out/oxo-trash-land-seed.review.md
+_tools/extract/out/scorer.html
+_tools/extract/out/step2.log
+_tools/extract/out/victoria-midnight.jsonl
+_tools/extract/out/victoria-midnight.review.md
+"_tools/extract/out/\360\237\223\220_Authoritative_OVEREXITOUT_DRAMATICA_Anna_Colson_Conway.jsonl"
+"_tools/extract/out/\360\237\223\220_Authoritative_OVEREXITOUT_DRAMATICA_Anna_Colson_Conway.review.md"
+"_tools/extract/out/\360\237\223\220_Authoritative_OVEREXITOUT_DRAMATICA_Quinn_Bishop.jsonl"
+"_tools/extract/out/\360\237\223\220_Authoritative_OVEREXITOUT_DRAMATICA_Quinn_Bishop.review.md"
+"_tools/extract/out/\360\237\223\220_Authoritative_OVEREXITOUT_DRAMATICA_Riley_Moss.jsonl"
+"_tools/extract/out/\360\237\223\220_Authoritative_OVEREXITOUT_DRAMATICA_Riley_Moss.review.md"
+"_tools/extract/out/\360\237\223\220_Authoritative_OVEREXITOUT_DRAMATICA_Shane_Doucet.jsonl"
+"_tools/extract/out/\360\237\223\220_Authoritative_OVEREXITOUT_DRAMATICA_Shane_Doucet.review.md"
+"_tools/extract/out/\360\237\223\220_Authoritative_OVEREXITOUT_DRAMATICA_The_Administration.jsonl"
+"_tools/extract/out/\360\237\223\220_Authoritative_OVEREXITOUT_DRAMATICA_The_Administration.review.md"
+"_tools/extract/out/\360\237\223\230_KB_S1_Character_Invariant_Narrative_Astrology.jsonl"
+"_tools/extract/out/\360\237\223\230_KB_S1_Character_Invariant_Narrative_Astrology.review.md"
+"_tools/extract/out/\360\237\223\230_KB_S1_Character_Invariant_Pillars.jsonl"
+"_tools/extract/out/\360\237\223\230_KB_S1_Character_Invariant_Pillars.review.md"
+"_tools/extract/out/\360\237\223\230_KB_S1_Master_Structural_Engine.jsonl"
+"_tools/extract/out/\360\237\223\230_KB_S1_Master_Structural_Engine.review.md"
+"_tools/extract/out/\360\237\223\230_KB_S1_North_Star_Architecture_of_Erasure.jsonl"
+"_tools/extract/out/\360\237\223\230_KB_S1_North_Star_Architecture_of_Erasure.review.md"
+_tools/extract/queue.txt
+_tools/extract/trial.py
+_tools/hooks/.box-named
+_tools/hooks/README.md
+_tools/hooks/no_probe.py
+_tools/hooks/order_hint.py
+_tools/hooks/precompact_backup.py
+_tools/hooks/settings.proposed.json
+_tools/ingest/ingest.cmd
+_tools/ingest/ingest.py
+_tools/ingest/pdf_route.py
+_tools/intake/README.md
+_tools/intake/TODO-next-session.md
+_tools/intake/batch.py
+_tools/intake/build_picker.py
+_tools/intake/build_report.py
+_tools/intake/dedupe.py
+_tools/intake/digest.py
+_tools/intake/enex.py
+_tools/intake/gpt_inventory.py
+_tools/intake/hermes-agent.md
+_tools/intake/inventory.py
+_tools/intake/known_skills.json
+_tools/intake/lookalike.py
+_tools/intake/mempalace.md
+_tools/intake/nikke-live-wallpaper.md
+_tools/intake/openterminal.md
+_tools/intake/osiris.md
+_tools/intake/repo_scan.py
+_tools/intake/superpowers.md
+_tools/kit/build.py
+_tools/kit/kit.html
+_tools/kobra/KOBRA-CART.html
+_tools/kobra/KOBRA-ORDER.html
+_tools/kobra/build.py
+_tools/kobra/cart.json
+_tools/kobra/file_inbox.py
+_tools/launch/boot.jsonl
+_tools/launch/boot.py
+_tools/launch/frago.patch.json
+_tools/launch/last_poll.json
+_tools/launch/launch.py
+_tools/launch/next.json
+_tools/learn/progress.py
+_tools/learn/schedule.json
+_tools/learn/schedule.py
+_tools/leechseed/continuity_check.py
+_tools/leechseed/heritage.py
+_tools/leechseed/registry.json
+_tools/loci/check.py
+_tools/loci/collect.py
+_tools/loop/LEDGER.md
+_tools/loop/jobs/lint-zero.json
+_tools/loop/jobs/lint-zero.prompt.md
+_tools/loop/jobs/tasks.md
+_tools/loop/ralph.py
+_tools/mcp/db_copy.py
+_tools/mcp/erd.py
+_tools/mcp/explore.py
+_tools/mcp/probe_sqlite_ro.py
+_tools/mcp/sqlite_ro.py
+_tools/molds/moldbox.py
+_tools/orange/SILICONE-MAKERS.html
+_tools/oscarmike/__pycache__/journal.cpython-311.pyc
+_tools/oscarmike/close.py
+_tools/oscarmike/recall.py
+_tools/oscarmike/run.py
+_tools/oscarmike/stage_next.py
+_tools/pages/TASTE.md
+_tools/pages/glass_lint.py
+_tools/pages/page_check.py
+_tools/pages/pages.json
+_tools/patch/pose72.py
+_tools/patch/pose72.py.bak
+_tools/prose/prose_lint.py
+_tools/renumber/prose.py
+_tools/renumber/renumber.py
+_tools/research/65-lineage.md
+_tools/research/65-tier-proposal.md
+_tools/research/70-affiliate-register.md
+_tools/research/paper_search.py
+_tools/review/build.py
+_tools/review/library_gap.py
+_tools/review/localpr.py
+_tools/review/out/REVIEW-00.html
+_tools/review/out/REVIEW-01.html
+_tools/review/out/REVIEW-02.html
+_tools/review/out/REVIEW-03.html
+_tools/review/out/REVIEW-04.html
+_tools/review/out/REVIEW-05.html
+_tools/review/out/REVIEW-06.html
+_tools/review/out/REVIEW-07.html
+_tools/review/out/REVIEW-08.html
+_tools/review/out/REVIEW-09.html
+_tools/review/shapes.json
+_tools/review/template.html
+_tools/review/touchstone_check.py
+_tools/roster/build.py
+_tools/roster/roster.html
+_tools/scanner/blurb.py
+_tools/scanner/glass.html
+_tools/scanner/research.md
+_tools/scanner/scan.py
+_tools/sitrep/__pycache__/prep.cpython-311.pyc
+_tools/sitrep/assemble.py
+_tools/sitrep/assemble.py.bak
+_tools/sitrep/boards/2026-10-04-3.json
+_tools/sitrep/boards/2026-10-04-4.json
+_tools/sitrep/boards/2026-10-04-5.json
+_tools/sitrep/boards/2026-10-05-2.json
+_tools/sitrep/boards/2026-10-05-3.json
+_tools/sitrep/boards/2026-10-05-4.json
+_tools/sitrep/boards/2026-10-05.json
+_tools/sitrep/boards/2026-10-06-2.json
+_tools/sitrep/boards/2026-10-06.json
+_tools/sitrep/boards/2026-10-08-2.json
+_tools/sitrep/boards/2026-10-08-3.json
+_tools/sitrep/boards/2026-10-08.json
+_tools/sitrep/boards/2026-10-10.json
+_tools/sitrep/boards/2026-10-12-2.json
+_tools/sitrep/boards/2026-10-12-3.json
+_tools/sitrep/boards/2026-10-12-4.json
+_tools/sitrep/boards/2026-10-12-5.json
+_tools/sitrep/boards/2026-10-12.json
+_tools/sitrep/boards/2026-10-13.json
+_tools/sitrep/boards/2026-10-14-2.json
+_tools/sitrep/boards/2026-10-14.json
+_tools/sitrep/boards/2026-10-16.json
+_tools/sitrep/boards/2026-10-17.json
+_tools/sitrep/boards/2026-10-18-2.json
+_tools/sitrep/boards/2026-10-18.json
+_tools/sitrep/digest.py
+_tools/sitrep/glossary.json
+_tools/sitrep/judge_ledger.jsonl
+_tools/sitrep/judge_log.py
+_tools/sitrep/judge_triggers.json
+_tools/sitrep/prep.py
+_tools/sitrep/prep.py.bak
+_tools/sitrep/run.py
+_tools/sitrep/template.html
+_tools/skills/baseline.py
+_tools/skills/collide.py
+_tools/skills/lint.py
+_tools/skills/pin.py
+_tools/skills/pins.json
+_tools/skills/sweep_agents.py
+_tools/soi/build.py
+_tools/soi/garble.py
+_tools/soi/soi.json
+_tools/soi/template.html
+_tools/spit/README.md
+_tools/spit/ledger.jsonl
+_tools/stashdupes/dupes.py
+_tools/stashplay/bandit.py
+_tools/stashtag/autotag.py
+_tools/thecut/deconstruct.py
+_tools/thecut/split_template.py
+_tools/tm/__pycache__/build.cpython-311.pyc
+_tools/tm/systems.json
+_tools/tm/terms.json
+_tools/tropes/build_register.py
+_tools/tropes/data/domains/LAYERS.md
+_tools/tropes/data/domains/register.json
+_tools/usage/tax.py
+_tools/usage/waste.py
+_tools/vocab_harvest.py
+_tools/workspace/build.py
+_tools/worldview/build.py
+_tools/worldview/build_graph.py
+_tools/worldview/fabula.json
+_tools/worldview/fabula_json.py
+_tools/worldview/fabula_links.json
+_tools/worldview/out/worldview.html
+_tools/yoyo/yoyo.py
+_tools/yoyo/yoyo.py.bak-followups
+_tools/zotero/README.md
+_tools/zotero/__pycache__/fullpass.cpython-311.pyc
+bolo_statuses.txt
