@@ -1,16 +1,13 @@
 {
- "staged": "2026-10-17 10:10",
- "leverage": {
-  "line": "Rule \"drop it\" on the pull (BOLO 137): the flagged download, the drop guard and the wider filter.",
-  "why": "The waves keep landing boards. Every hour without the guard adds to the cleanup.",
-  "board": "2026-10-16.json"
- },
- "sheets": [
-  149
+ "staged": "2026-10-18 04:56",
+ "leverage": "FIRST (Chief 10/18: \"we return to this next launch immediately\"): BOLO 155 agent optimization. The launch is M7's live test (launch.py NEXT lines, then python _tools/sitrep/run.py), then DVA's 9 \"fix\" agent files, M9, M10.",
+ "sheets": [],
+ "open_at_close": [
+  "FIRST (Chief: \"we return to this next launch immediately\"): the next launch is M7's live test, then BOLO 155: DVA's 9 \"fix\" files, M9, M10.",
+  "Chief restarts VS Code so shells pick up `PYTHONUTF8=1`.",
+  "Untested until they run: sit rep prep and close phases, the close-out driver's `out` phase.",
+  "HELD for the scanner uploads: BOLO 150 Anna's domain (rec Manipulation), BOLO 152 slice, the scan pair.",
+  "BOLO 153 ONE WINDOW page pass: Chief. ReSkate: Chief signs in and lets it download (~15 GB)."
  ],
- "open_at_close": [],
- "note": "2026-10-17.session.md",
- "frago_done": [
-  149
- ]
+ "note": "2026-10-18.session.md"
 }
