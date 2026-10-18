@@ -1,11 +1,11 @@
 {
- "time": "2026-10-17T20:19:05",
+ "time": "2026-10-17T20:21:35",
  "all_go": true,
  "stations": [
   {
    "name": "FACES",
    "go": true,
-   "detail": "http://127.0.0.1:8787/faces (started · 1.6 s · opened)"
+   "detail": "http://127.0.0.1:8787/faces (started · 1.5 s · opened)"
   },
   {
    "name": "DECK",

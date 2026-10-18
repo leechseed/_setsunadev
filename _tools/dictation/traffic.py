@@ -397,10 +397,10 @@ poll();setInterval(poll,2000);
 </script></body></html>
 '''
 
-# the tab icon: JUDY's pin-up silhouette (Chief, 10/17; was the BoldVenture mark from 10/6), inlined so the page needs no extra route
+# the tab icon: JUDY's gamer-girl action silhouette (Chief, 10/17, v2; was the BoldVenture mark from 10/6), inlined so the page needs no extra route
 try:
     import base64
-    _mark = io.open(os.path.join(ROOT, "_tools", "brand", "judy-pinup.svg"), "rb").read()
+    _mark = io.open(os.path.join(ROOT, "_tools", "brand", "judy-gamer.svg"), "rb").read()
     PAGE = PAGE.replace("<title>Traffic</title>", '<title>Traffic</title>\n<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,'
                         + base64.b64encode(_mark).decode("ascii") + '">', 1)
 except OSError:
