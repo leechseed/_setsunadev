@@ -1,16 +1,96 @@
 {
- "time": "2026-10-18T04:24:49",
- "all_go": true,
+ "time": "2026-10-18T05:03:18",
+ "all_go": false,
  "stations": [
+  {
+   "name": "AUDIT",
+   "go": false,
+   "detail": "SOP audit (2 finding(s) · R 0 · P 0 · B 0 · K 1 · T 1 · S 0 · report _tools/audit/out/ · 4.4 s)"
+  },
   {
    "name": "PULL",
    "go": true,
-   "detail": "pull glass (runner A+B+C started · wave 1: 40/40 boards (4 empty) · 11,032 images · LANDED · 10 min/board · ETA -; wave 2: 40/40 boards (1 empty, 3 dropped) · 9,006 images · LANDED · 10 min/board · ETA - · disk: Q free 3,102 GB · glass built, republish owed · 0.5 s)"
+   "detail": "pull glass (runner A+B+C started · wave 1: 40/40 boards (4 empty) · 11,032 images · LANDED · 10 min/board · ETA -; wave 2: 40/40 boards (1 empty, 3 dropped) · 9,006 images · LANDED · 10 min/board · ETA - · disk: Q free 3,102 GB · glass built, republish owed · 1.6 s)"
   },
   {
    "name": "ARMORY",
    "go": true,
-   "detail": "armory glass (rebuilding in the background (~40 s, log _PRIVATE/reference/armory/launch.log) · republish owed · budget 10/18 · 229 calls · agents 13 (100% named, 100% JOB) · shell fails 10% of 79 · Artifact fails 0% of 12)"
+   "detail": "armory glass (rebuilding in the background (~40 s, log _PRIVATE/reference/armory/launch.log) · republish owed · budget 10/18 · 252 calls · agents 13 (100% named, 100% JOB) · shell fails 9% of 90 · Artifact fails 0% of 13)"
+  },
+  {
+   "name": "DARKROOM",
+   "go": true,
+   "detail": "http://127.0.0.1:8484/ (started · 4.6 s)"
+  },
+  {
+   "name": "STASH",
+   "go": true,
+   "detail": "http://127.0.0.1:9999/ (started · 8 s · deck opened)"
+  },
+  {
+   "name": "NAHIMIC",
+   "go": true,
+   "detail": "audio guard (service + tasks disabled · 3.2 s)"
+  },
+  {
+   "name": "JUDY",
+   "go": true,
+   "detail": "session voice · pid 26844 (started · 8 s · hold the hotkey with the chat box focused)"
+  },
+  {
+   "name": "FACES",
+   "go": true,
+   "detail": "http://127.0.0.1:8787/faces (already live · opened)"
+  },
+  {
+   "name": "DECK",
+   "go": true,
+   "detail": "http://127.0.0.1:8787/traffic (opened)"
+  },
+  {
+   "name": "CONSOLE",
+   "go": true,
+   "detail": "http://127.0.0.1:8795/ (already live · opened)"
+  },
+  {
+   "name": "KNOBS",
+   "go": true,
+   "detail": "MPK knobs · pid 15844 (already running)"
+  },
+  {
+   "name": "WIRE",
+   "go": true,
+   "detail": "server judy · 7/7 tools (probe ok · 13.7 s)"
+  },
+  {
+   "name": "FRAGO",
+   "go": true,
+   "detail": "next.json (no sheet to refresh)"
+  },
+  {
+   "name": "SITREP",
+   "go": true,
+   "detail": "https://claude.ai/code/artifact/aebe5f9c-9f2c-4cb8-abbf-714a0a6ea28a (opened)"
+  },
+  {
+   "name": "SOI",
+   "go": true,
+   "detail": "https://claude.ai/code/artifact/4c2fc9c7-e0d2-4626-8142-9740ff8ee0e5 (opened)"
+  },
+  {
+   "name": "PULLGLASS",
+   "go": true,
+   "detail": "https://claude.ai/artifact/Lg323uYY1oB2HCfgHFDFQ6 (opened)"
+  },
+  {
+   "name": "ROSTER",
+   "go": true,
+   "detail": "https://claude.ai/artifact/TwEqZQ8DN1z1Vu8HWX7e5H (opened)"
+  },
+  {
+   "name": "ARMORY",
+   "go": true,
+   "detail": "https://claude.ai/artifact/RYyy6zNoAHMaTTxBZoV9Hn (opened)"
   }
  ]
 }

@@ -1,13 +1,18 @@
 {
- "staged": "2026-10-18 04:56",
- "leverage": "FIRST (Chief 10/18: \"we return to this next launch immediately\"): BOLO 155 agent optimization. The launch is M7's live test (launch.py NEXT lines, then python _tools/sitrep/run.py), then DVA's 9 \"fix\" agent files, M9, M10.",
+ "staged": "2026-10-18 05:09",
+ "leverage": {
+  "line": "Sort the Bash errors (BOLO 155, DVA's M4): the biggest leak left in the agent work.",
+  "why": "Bash fails 589 of 12,703 calls. 461 are plain failed commands.",
+  "board": "2026-10-18.json"
+ },
  "sheets": [],
  "open_at_close": [
-  "FIRST (Chief: \"we return to this next launch immediately\"): the next launch is M7's live test, then BOLO 155: DVA's 9 \"fix\" files, M9, M10.",
-  "Chief restarts VS Code so shells pick up `PYTHONUTF8=1`.",
-  "Untested until they run: sit rep prep and close phases, the close-out driver's `out` phase.",
-  "HELD for the scanner uploads: BOLO 150 Anna's domain (rec Manipulation), BOLO 152 slice, the scan pair.",
-  "BOLO 153 ONE WINDOW page pass: Chief. ReSkate: Chief signs in and lets it download (~15 GB)."
+  "Fanin not run: run.py fanin and the sit rep publish.",
+  "M7 bug: the NEXT line printed the brief paths under the stale folder _tools/sitrep/work/2026-10-18/ instead of 2026-10-18-2. The briefs themselves were correct.",
+  "Block I: state.moved.md was empty, so its dates lean on 9/23 and earlier. Block V is empty (no numbered Blocked rows). Block III is frozen at the 8/15 export.",
+  "WATCH fragment (frag/IV.json) not written.",
+  "Armory republish to _PRIVATE/reference/armory/armory.html not run.",
+  "AUDIT NO-GO (2 findings): clean your station. The audit is not clean."
  ],
- "note": "2026-10-18.session.md"
+ "note": "2026-10-18-2.session.md"
 }

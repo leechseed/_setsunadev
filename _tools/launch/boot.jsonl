@@ -1,3 +1,33 @@
-{"t": 1792287756.7896821, "state": "start", "station": "PULL"}
-{"t": 1792287757.5875888, "state": "done", "station": "PULL", "go": true, "note": "wave 1: 40/40 boards (4 empty) · 11,032 images · LANDED · 10 min/board · ETA -; wave 2: 40/40 boards (1 empty, 3 dropped) · 9,006 images · LANDED · 10 min/board · ETA -; wave 19: 60/100 boards (15 empty, 6 dropped) · 14,579 images · on galjav · 14 min/board · ETA 6:47 AM; wave 20: 23/45 boards (6 empty, 5 dropped) · 4,110 images · on abellaanderson · 11 min/board · ETA 1:39 AM; wave 21: 95/100 boards (26 empty, 4 dropped) · 23,640 images · on michigantitties · 14 min/board · ETA 10:52 PM · disk: Q free 3,116 GB · glass built, republish owed · 0.8 s", "waves": ["wave 19: 60/100 boards (15 empty, 6 dropped) · 14,579 images · on galjav · 14 min/board · ETA 6:47 AM", "wave 20: 23/45 boards (6 empty, 5 dropped) · 4,110 images · on abellaanderson · 11 min/board · ETA 1:39 AM", "wave 21: 95/100 boards (26 empty, 4 dropped) · 23,640 images · on michigantitties · 14 min/board · ETA 10:52 PM"]}
-{"t": 1792287757.9084606, "state": "end", "station": ""}
+{"t": 1792314151.5843549, "state": "start", "station": "AUDIT"}
+{"t": 1792314155.9726853, "state": "done", "station": "AUDIT", "go": false, "note": "2 finding(s) · R 0 · P 0 · B 0 · K 1 · T 1 · S 0 · report _tools/audit/out/ · 4.4 s", "waves": [], "sub": []}
+{"t": 1792314155.9731812, "state": "start", "station": "PULL"}
+{"t": 1792314157.5834782, "state": "done", "station": "PULL", "go": true, "note": "runner A+B+C started · wave 1: 40/40 boards (4 empty) · 11,032 images · LANDED · 10 min/board · ETA -; wave 2: 40/40 boards (1 empty, 3 dropped) · 9,006 images · LANDED · 10 min/board · ETA - · disk: Q free 3,102 GB · glass built, republish owed · 1.6 s", "waves": [], "sub": []}
+{"t": 1792314157.583974, "state": "start", "station": "ARMORY"}
+{"t": 1792314157.6079643, "state": "done", "station": "ARMORY", "go": true, "note": "rebuilding in the background (~40 s, log _PRIVATE/reference/armory/launch.log) · republish owed · budget 10/18 · 252 calls · agents 13 (100% named, 100% JOB) · shell fails 9% of 90 · Artifact fails 0% of 13", "waves": [], "sub": ["10/18 · 252 calls · agents 13 (100% named, 100% JOB) · shell fails 9% of 90 · Artifact fails 0% of 13"]}
+{"t": 1792314157.6079643, "state": "start", "station": "DARKROOM"}
+{"t": 1792314162.1760387, "state": "done", "station": "DARKROOM", "go": true, "note": "started · 4.6 s", "waves": [], "sub": []}
+{"t": 1792314162.1760387, "state": "start", "station": "STASH"}
+{"t": 1792314169.9386675, "state": "done", "station": "STASH", "go": true, "note": "started · 8 s · deck opened", "waves": [], "sub": []}
+{"t": 1792314169.9391718, "state": "start", "station": "NAHIMIC"}
+{"t": 1792314173.1405914, "state": "done", "station": "NAHIMIC", "go": true, "note": "service + tasks disabled · 3.2 s", "waves": [], "sub": []}
+{"t": 1792314173.1415834, "state": "start", "station": "JUDY"}
+{"t": 1792314180.810106, "state": "done", "station": "JUDY", "go": true, "note": "started · 8 s · hold the hotkey with the chat box focused", "waves": [], "sub": []}
+{"t": 1792314180.813591, "state": "start", "station": "FACES"}
+{"t": 1792314180.906687, "state": "done", "station": "FACES", "go": true, "note": "already live · opened", "waves": [], "sub": []}
+{"t": 1792314180.9071813, "state": "start", "station": "DECK"}
+{"t": 1792314180.9260664, "state": "done", "station": "DECK", "go": true, "note": "opened", "waves": [], "sub": []}
+{"t": 1792314180.9270608, "state": "start", "station": "CONSOLE"}
+{"t": 1792314180.9708307, "state": "done", "station": "CONSOLE", "go": true, "note": "already live · opened", "waves": [], "sub": []}
+{"t": 1792314180.9713285, "state": "start", "station": "KNOBS"}
+{"t": 1792314183.4966662, "state": "done", "station": "KNOBS", "go": true, "note": "already running", "waves": [], "sub": []}
+{"t": 1792314183.4971697, "state": "start", "station": "WIRE"}
+{"t": 1792314197.2234004, "state": "done", "station": "WIRE", "go": true, "note": "probe ok · 13.7 s", "waves": [], "sub": []}
+{"t": 1792314197.2238948, "state": "start", "station": "FRAGO"}
+{"t": 1792314197.2243922, "state": "done", "station": "FRAGO", "go": true, "note": "no sheet to refresh", "waves": [], "sub": []}
+{"t": 1792314197.2248871, "state": "start", "station": "PAGES"}
+{"t": 1792314197.3517125, "state": "done", "station": "SITREP", "go": true, "note": "opened", "waves": [], "sub": []}
+{"t": 1792314197.3522155, "state": "done", "station": "SOI", "go": true, "note": "opened", "waves": [], "sub": []}
+{"t": 1792314197.3522155, "state": "done", "station": "PULLGLASS", "go": true, "note": "opened", "waves": [], "sub": []}
+{"t": 1792314197.3527143, "state": "done", "station": "ROSTER", "go": true, "note": "opened", "waves": [], "sub": []}
+{"t": 1792314197.3532104, "state": "done", "station": "ARMORY", "go": true, "note": "opened", "waves": [], "sub": []}
+{"t": 1792314198.1651602, "state": "end", "station": ""}
