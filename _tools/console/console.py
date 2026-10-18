@@ -359,7 +359,7 @@ function boot(replay){booting=true;$('boot').classList.remove('gone');
  fetch('/boot.json').then(function(r){return r.json()}).then(function(b){
   var lg=$('logo');$('lgtxt').innerHTML='<span class="bv">        B  O  L  D  V  E  N  T  U  R  E</span>\n<span class="d">   &#9472;&#9472; the Command · launch sequence &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;</span>';
   logoAnim(b.logo);fetchPanel(b.fetch||[]);
-  var cols=Math.max.apply(null,b.logo.map(function(l){return l.length}).concat([60])),fs=Math.max(5,Math.min(12,Math.floor(innerWidth*0.48/(cols*0.62)),Math.floor(innerHeight*0.42/Math.max(1,b.logo.length))));lg.style.fontSize=fs+'px';
+  var cols=Math.max.apply(null,b.logo.map(function(l){return l.length}).concat([60])),fs=Math.max(5,Math.min(12,Math.floor(innerWidth*0.55/(cols*0.62)),Math.floor(innerHeight*0.56/Math.max(1,b.logo.length))))   /* Chief 10/18: the mark big */;lg.style.fontSize=fs+'px';
   var ev=b.events,ended=ev.some(function(e){return e.state==='end'}),old=ended&&ev.length&&(b.now-ev[ev.length-1].t>120);
   var fast=replay||old,t0=ev.length?ev[0].t:b.now,lines=[],i=0,shown=0,start=Date.now(),pos=0,running=null,frame=0;
   EARLY.forEach(function(x,j){lines.push(stamp(0.12*(j+1))+' <span class="o">'+x[0]+'</span> '+esc(x[1]))});lines.push('');
@@ -435,6 +435,10 @@ class H(http.server.BaseHTTPRequestHandler):
         self._send(404, "not found", "text/plain")
 
     def do_POST(self):
+        if self.path == "/quit":   # console.py --restart asks the old server to step down (no port scan needed)
+            self._send(200, "bye", "text/plain")
+            threading.Thread(target=lambda: (time.sleep(0.3), os._exit(0)), daemon=True).start()
+            return
         if self.path != "/cmd":
             return self._send(404, "not found", "text/plain")
         try:
@@ -535,6 +539,32 @@ if __name__ == "__main__":
         sys.exit(0)
     if "--open" in sys.argv:
         print(open_window())
+        sys.exit(0)
+    if "--restart" in sys.argv:   # new code live: the old server quits, a fresh one starts detached, the window reloads
+        import urllib.request
+        try:
+            urllib.request.urlopen(urllib.request.Request(URL + "quit", data=b"", method="POST"), timeout=3)
+            time.sleep(1.0)
+        except Exception:
+            pass
+        si = subprocess.STARTUPINFO()
+        si.dwFlags |= subprocess.STARTF_USESHOWWINDOW
+        si.wShowWindow = 7
+        subprocess.Popen([sys.executable, "-u", os.path.abspath(__file__)], cwd=ROOT, startupinfo=si,
+                         creationflags=subprocess.CREATE_NEW_CONSOLE | subprocess.CREATE_NEW_PROCESS_GROUP,
+                         stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        for _ in range(20):
+            time.sleep(0.5)
+            try:
+                urllib.request.urlopen(URL, timeout=2)
+                break
+            except Exception:
+                pass
+        import ctypes
+        for h in find_windows(TITLE):
+            ctypes.windll.user32.PostMessageW(h, 0x0010, 0, 0)
+        time.sleep(1.5)
+        print("restarted · " + open_window())
         sys.exit(0)
     threading.Thread(target=glasses_loop, daemon=True).start()
     S(("127.0.0.1", PORT), H).serve_forever()

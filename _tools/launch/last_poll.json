@@ -1,7 +1,12 @@
 {
- "time": "2026-10-18T08:58:22",
+ "time": "2026-10-18T10:30:37",
  "all_go": true,
  "stations": [
+  {
+   "name": "CONSOLE",
+   "go": true,
+   "detail": "http://127.0.0.1:8795/ (already live · focused the open window)"
+  },
   {
    "name": "AUDIT",
    "go": true,
@@ -10,47 +15,42 @@
   {
    "name": "PULL",
    "go": true,
-   "detail": "pull glass (runner A+B+C started · wave 1: 40/40 boards (4 empty) · 11,032 images · LANDED · 10 min/board · ETA -; wave 2: 40/40 boards (1 empty, 3 dropped) · 9,006 images · LANDED · 10 min/board · ETA - · disk: Q free 3,040 GB · glass built, republish owed · 0.4 s)"
+   "detail": "pull glass (runner A+B+C started · wave 1: 40/40 boards (4 empty) · 11,032 images · LANDED · 10 min/board · ETA -; wave 2: 40/40 boards (1 empty, 3 dropped) · 9,006 images · LANDED · 10 min/board · ETA - · disk: Q free 3,014 GB · glass built, republish owed · 0.4 s)"
   },
   {
    "name": "ARMORY",
    "go": true,
-   "detail": "armory glass (rebuilding in the background (~40 s, log _PRIVATE/reference/armory/launch.log) · republish owed · budget 10/18 · 334 calls · agents 18 (100% named, 100% JOB) · shell fails 8% of 117 · Artifact fails 12% of 16)"
+   "detail": "armory glass (rebuilding in the background (~40 s, log _PRIVATE/reference/armory/launch.log) · republish owed · budget 10/18 · 858 calls · agents 42 (100% named, 100% JOB) · shell fails 5% of 320 · Artifact fails 25% of 32)"
   },
   {
    "name": "DARKROOM",
    "go": true,
-   "detail": "http://127.0.0.1:8484/ (started · 3.0 s)"
+   "detail": "http://127.0.0.1:8484/ (already live)"
   },
   {
    "name": "STASH",
    "go": true,
-   "detail": "http://127.0.0.1:9999/ (already live · deck opened)"
+   "detail": "http://127.0.0.1:9999/ (already live · in the Console)"
   },
   {
    "name": "NAHIMIC",
    "go": true,
-   "detail": "audio guard (service + tasks disabled · 2.1 s)"
+   "detail": "audio guard (service + tasks disabled · 2.0 s)"
   },
   {
    "name": "JUDY",
    "go": true,
-   "detail": "session voice · pid 21220 (started · 7 s · hold the hotkey with the chat box focused)"
+   "detail": "session voice · pid 21220 (already running)"
   },
   {
    "name": "FACES",
    "go": true,
-   "detail": "http://127.0.0.1:8787/faces (already live · opened)"
+   "detail": "http://127.0.0.1:8787/faces (already live · in the Console)"
   },
   {
    "name": "DECK",
    "go": true,
-   "detail": "http://127.0.0.1:8787/traffic (opened)"
-  },
-  {
-   "name": "CONSOLE",
-   "go": true,
-   "detail": "http://127.0.0.1:8795/ (already live · opened)"
+   "detail": "http://127.0.0.1:8787/traffic (in the Console)"
   },
   {
    "name": "KNOBS",
@@ -60,37 +60,37 @@
   {
    "name": "WIRE",
    "go": true,
-   "detail": "server judy · 7/7 tools (probe ok · 3.6 s)"
+   "detail": "server judy · 7/7 tools (probe ok · 3.1 s)"
   },
   {
    "name": "FRAGO",
    "go": true,
-   "detail": "next.json (refreshed [156] locally (republish owed))"
+   "detail": "next.json (already refreshed)"
   },
   {
    "name": "SITREP",
    "go": true,
-   "detail": "https://claude.ai/code/artifact/aebe5f9c-9f2c-4cb8-abbf-714a0a6ea28a (opened)"
+   "detail": "https://claude.ai/code/artifact/aebe5f9c-9f2c-4cb8-abbf-714a0a6ea28a (not opened (one window))"
   },
   {
    "name": "SOI",
    "go": true,
-   "detail": "https://claude.ai/code/artifact/4c2fc9c7-e0d2-4626-8142-9740ff8ee0e5 (opened)"
+   "detail": "https://claude.ai/code/artifact/4c2fc9c7-e0d2-4626-8142-9740ff8ee0e5 (not opened (one window))"
   },
   {
    "name": "PULLGLASS",
    "go": true,
-   "detail": "https://claude.ai/artifact/Lg323uYY1oB2HCfgHFDFQ6 (opened)"
+   "detail": "https://claude.ai/artifact/Lg323uYY1oB2HCfgHFDFQ6 (not opened (one window))"
   },
   {
    "name": "ROSTER",
    "go": true,
-   "detail": "https://claude.ai/artifact/TwEqZQ8DN1z1Vu8HWX7e5H (opened)"
+   "detail": "https://claude.ai/artifact/TwEqZQ8DN1z1Vu8HWX7e5H (not opened (one window))"
   },
   {
    "name": "ARMORY",
    "go": true,
-   "detail": "https://claude.ai/artifact/RYyy6zNoAHMaTTxBZoV9Hn (opened)"
+   "detail": "https://claude.ai/artifact/RYyy6zNoAHMaTTxBZoV9Hn (not opened (one window))"
   }
  ]
 }

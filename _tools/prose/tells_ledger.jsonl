@@ -21,3 +21,4 @@
 {"ts": "2026-10-18 09:28", "sid": "5d76f495", "words": 389, "tells": 2, "per_1k": 5.1, "families": {"other": 2}, "rules": {"long-sentence": 2}}
 {"ts": "2026-10-18 09:45", "sid": "5d76f495", "words": 130, "tells": 0, "per_1k": 0.0, "families": {}, "rules": {}}
 {"ts": "2026-10-18 09:47", "sid": "5d76f495", "words": 519, "tells": 2, "per_1k": 3.9, "families": {"slop words": 1, "other": 1}, "rules": {"stock-phrase": 1, "long-sentence": 1}}
+{"ts": "2026-10-18 10:31", "sid": "5d76f495", "words": 423, "tells": 3, "per_1k": 7.1, "families": {"passive": 1, "other": 2}, "rules": {"passive": 1, "long-sentence": 2}}

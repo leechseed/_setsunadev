@@ -237,33 +237,28 @@ func (m *model) tail() []string {
 	return out
 }
 
+// View: the big mark on the left at boot.py's full size (Chief 10/18: "I kinda miss how high fidelity the original
+// bunny logo was"); the fetch panel, the banner and the station rows stack in the column beside it.
 func (m *model) View() string {
-	top := m.hero(false) + "\n\n" + banner() + "\n"
-	room := m.h - lipgloss.Height(top) - 1
+	logo := m.spin.frame(time.Now(), false)
+	lw := lipgloss.Width(logo)
+	head := fetchBlock(m.fetch, 2+m.frame/2) + "\n\n" + banner() + "\n"
+	room := max(m.h, lipgloss.Height(logo)) - lipgloss.Height(head) - 1
 	body := m.tail()
 	if room > 0 && len(body) > room {
 		body = body[len(body)-room:]
 	}
+	colW := max(m.w-lw-4, 20)
 	var b strings.Builder
-	b.WriteString(top)
+	b.WriteString(head)
 	for _, l := range body {
-		b.WriteString("\n" + ansi.Truncate(l, max(m.w, 20), ""))
+		b.WriteString("\n" + ansi.Truncate(l, colW, ""))
 	}
-	return b.String()
+	return lipgloss.JoinHorizontal(lipgloss.Top, logo, "    ", b.String())
 }
 
-// pickScale fits the mark into about 45% of the terminal height
-func pickScale(art []string, h int) int {
-	if h <= 0 {
-		h = 40
-	}
-	for s := 2; s < 8; s++ {
-		if (len(art)+s-1)/s <= int(float64(h)*0.45) {
-			return s
-		}
-	}
-	return 8
-}
+// pickScale: boot.py's size, always (half the source art each way, 44 rows); the layout makes room beside it
+func pickScale(art []string, h int) int { return 2 }
 
 func termHeight() int {
 	if _, h, err := termSize(); err == nil {
