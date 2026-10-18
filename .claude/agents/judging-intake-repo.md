@@ -1,6 +1,6 @@
 ---
 name: judging-intake-repo
-description: Use when the intake skill (step 2, Judge) runs, one per GitHub repo, or when a brief says "Intake #N" or "intake <repo>". Reads one scanned repo and writes picks.json.
+description: 'Use when the intake skill (step 2, Judge) runs, one per GitHub repo, or when a brief says "Intake #N" or "intake <repo>". Reads one scanned repo and writes picks.json.'
 tools: Read, Write, Glob, WebFetch
 model: haiku
 ---

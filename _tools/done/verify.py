@@ -95,6 +95,9 @@ def check(name):
                     out.append(f"{name}: frontmatter has no {k}")
             if fm.get("name") and fm["name"] != os.path.basename(name)[:-3]:
                 out.append(f"{name}: name '{fm['name']}' does not match the file name")
+            d = fm.get("description", "")
+            if " #" in d and d[:1] not in ("'", '"'):   # 10/18: an unquoted ' #' starts a YAML comment and cut a description short
+                out.append(f"{name}: description holds ' #' unquoted (YAML reads the rest as a comment); quote the value")
     elif re.match(r"\.claude/skills/[^/]+/SKILL\.md$", name):
         text = io.open(p, encoding="utf-8").read()
         raw = io.open(p, encoding="utf-8", newline="").read(4000)
