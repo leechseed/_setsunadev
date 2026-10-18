@@ -10,3 +10,4 @@
 {"ts": "2026-10-18 08:56", "sid": "64a1868c", "words": 69, "tells": 2, "per_1k": 29.0, "families": {"passive": 2}, "rules": {"passive": 2}}
 {"ts": "2026-10-18 09:02", "sid": "5d76f495", "words": 29, "tells": 1, "per_1k": 34.5, "families": {"passive": 1}, "rules": {"passive": 1}}
 {"ts": "2026-10-18 09:05", "sid": "5d76f495", "words": 251, "tells": 2, "per_1k": 8.0, "families": {"passive": 1, "other": 1}, "rules": {"passive": 1, "long-sentence": 1}}
+{"ts": "2026-10-18 09:09", "sid": "5d76f495", "words": 345, "tells": 2, "per_1k": 5.8, "families": {"other": 2}, "rules": {"long-sentence": 2}}
