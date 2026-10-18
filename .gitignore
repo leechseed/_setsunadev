@@ -57,3 +57,8 @@ _tools/workspace/out/edits_dump/
 
 # agent scratch files (10/8: a reader agent left note bodies here and the autosave committed them)
 scratchpad/
+
+# JUDY logs hold spoken lines and Chief's messages verbatim; never public (10/18)
+_tools/dictation/judy.session.log
+_tools/dictation/judy.log
+_tools/dictation/judy.err.log
