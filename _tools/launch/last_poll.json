@@ -1,21 +1,21 @@
 {
- "time": "2026-10-18T05:11:39",
- "all_go": false,
+ "time": "2026-10-18T08:58:22",
+ "all_go": true,
  "stations": [
   {
    "name": "AUDIT",
-   "go": false,
-   "detail": "SOP audit (2 finding(s) · R 0 · P 0 · B 0 · K 1 · T 1 · S 0 · report _tools/audit/out/ · 3.2 s)"
+   "go": true,
+   "detail": "SOP audit (1 finding(s) · R 0 · P 0 · B 0 · K 0 · T 1 · S 0 · report _tools/audit/out/ · 3.1 s)"
   },
   {
    "name": "PULL",
    "go": true,
-   "detail": "pull glass (runner A+B+C started · wave 1: 40/40 boards (4 empty) · 11,032 images · LANDED · 10 min/board · ETA -; wave 2: 40/40 boards (1 empty, 3 dropped) · 9,006 images · LANDED · 10 min/board · ETA - · disk: Q free 3,102 GB · glass built, republish owed · 0.5 s)"
+   "detail": "pull glass (runner A+B+C started · wave 1: 40/40 boards (4 empty) · 11,032 images · LANDED · 10 min/board · ETA -; wave 2: 40/40 boards (1 empty, 3 dropped) · 9,006 images · LANDED · 10 min/board · ETA - · disk: Q free 3,040 GB · glass built, republish owed · 0.4 s)"
   },
   {
    "name": "ARMORY",
    "go": true,
-   "detail": "armory glass (rebuilding in the background (~40 s, log _PRIVATE/reference/armory/launch.log) · republish owed · budget 10/18 · 276 calls · agents 14 (100% named, 100% JOB) · shell fails 8% of 101 · Artifact fails 0% of 13)"
+   "detail": "armory glass (rebuilding in the background (~40 s, log _PRIVATE/reference/armory/launch.log) · republish owed · budget 10/18 · 334 calls · agents 18 (100% named, 100% JOB) · shell fails 8% of 117 · Artifact fails 12% of 16)"
   },
   {
    "name": "DARKROOM",
@@ -30,12 +30,12 @@
   {
    "name": "NAHIMIC",
    "go": true,
-   "detail": "audio guard (service + tasks disabled · 1.7 s)"
+   "detail": "audio guard (service + tasks disabled · 2.1 s)"
   },
   {
    "name": "JUDY",
    "go": true,
-   "detail": "session voice · pid 45416 (started · 7 s · hold the hotkey with the chat box focused)"
+   "detail": "session voice · pid 21220 (started · 7 s · hold the hotkey with the chat box focused)"
   },
   {
    "name": "FACES",
@@ -60,12 +60,12 @@
   {
    "name": "WIRE",
    "go": true,
-   "detail": "server judy · 7/7 tools (probe ok · 3.8 s)"
+   "detail": "server judy · 7/7 tools (probe ok · 3.6 s)"
   },
   {
    "name": "FRAGO",
    "go": true,
-   "detail": "next.json (no sheet to refresh)"
+   "detail": "next.json (refreshed [156] locally (republish owed))"
   },
   {
    "name": "SITREP",

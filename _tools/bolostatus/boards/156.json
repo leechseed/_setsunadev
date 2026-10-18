@@ -17,7 +17,7 @@
   ],
   "home": "BOLO.md · row 156",
   "card": "none",
-  "version": "v0.1 · DOPE SHEET"
+  "version": "v0.2 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -291,6 +291,11 @@
      "when": "10/18",
      "who": "Chief",
      "t": "Ruled about 6:30 AM from the car: \"do all recs … go ahead and do all the builds\". Six views, with a null bound \"just to sort of build the boundaries on this thing\". \"Don't file it as Fabula. This is still all research. None of it is … caught in stone … the ideation phase\"."
+    },
+    {
+     "when": "10/18",
+     "who": "Claude",
+     "t": "Launch refresh: reopened from the 2026-10-18-2.session.md close-out."
     }
    ]
   }
