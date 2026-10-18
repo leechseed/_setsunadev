@@ -185,8 +185,9 @@ iframe{flex:1;border:0;width:100%;height:100%;background:var(--bg)}
 #logo .a{color:var(--accd)}#logo .b{color:var(--accm)}#logo .c{color:var(--acc)}#logo .e{color:var(--acch);font-weight:600}
 .bv{color:var(--acc);font-weight:600}.o{color:var(--acc)}.g{color:var(--ok);font-weight:600}.r{color:var(--bad);font-weight:600}.y{color:var(--am);font-weight:600}.w{color:#fff;font-weight:600}
 #bskip{position:fixed;right:18px;bottom:10px;color:var(--dim)}
+.blink{color:var(--acc);font-weight:600;animation:blink 1.1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
 </style></head><body>
-<div id="boot"><pre id="logo"></pre><pre id="blines"></pre><span id="bskip">any key · skip</span></div>
+<div id="boot"><pre id="logo"></pre><pre id="blines"></pre><span id="bskip">SPACE · continue</span></div>
 <div class="top"><span><b>&#9670; THE CONSOLE</b>  the Command &middot; Chief</span><span id="clk"></span></div>
 <main>
  <div class="col">
@@ -233,7 +234,7 @@ inp.addEventListener('keydown',function(e){if(e.key==='Escape'){inp.value='';inp
  if(e.key==='Enter'&&inp.value.trim()){var line=inp.value.trim();inp.value='';
   fetch('/cmd',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({line:line})})
   .then(function(){inp.placeholder='logged; JUDY wiring next'}).catch(function(){inp.placeholder='command failed'})}});
-document.addEventListener('keydown',function(e){var t=e.target;if(t===inp||t===flt)return;if(booting){skip();return}
+document.addEventListener('keydown',function(e){var t=e.target;if(t===inp||t===flt)return;if(booting){if(e.key===' '||e.key==='Enter'){e.preventDefault();skip()}return}
  if(e.key>='1'&&e.key<='6'){var p=panes[+e.key-1];if(p)open(p.url,p.title)}
  else if(e.key==='/'){e.preventDefault();flt.focus()}
  else if(e.key===':'){e.preventDefault();inp.focus()}
@@ -272,7 +273,7 @@ function boot(replay){booting=true;$('boot').classList.remove('gone');
      lines.push('');lines.push(bad?'<span class="r">  '+bad+' NO-GO</span> · <span class="g">'+ok+' GO</span> · the sit rep carries the details'
       :'<span class="g">  Reached target </span><span class="bv">The Command</span><span class="g">.  ALL GO ('+ok+')</span>');ended=true}});
    if(shown<lines.length){timer=setTimeout(step,fast?25:60);return}
-   if(ended){paint();timer=setTimeout(skip,fast?900:2500);return}
+   if(ended){paint('\n<span class="blink">  press SPACE to continue</span>');return}   /* Chief 10/18: the boot holds until Space */
    frame++;paint(running?stamp((Date.now()/1000)-t0)+' <span class="y">[  '+'|/-\\'[frame%4]+'   ]</span> <span class="w">'+esc(pad(running,10))+'</span> <span class="d">'+Array(Math.min(frame,30)+1).join('.')+'</span>':'');
    timer=setTimeout(function(){fetch('/boot.json').then(function(r){return r.json()}).then(function(n){ev=n.events;step()}).catch(step)},250)}
   if(!ev.length){lines.push('<span class="d">  no launch on record · the workspace is ready</span>');ended=true}
