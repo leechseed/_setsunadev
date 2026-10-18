@@ -1,0 +1,19 @@
+{
+ "measured": "2026-10-18 09:40",
+ "what": "every final reply in session 64a1868c before the hook went live",
+ "replies": 39,
+ "words": 9171,
+ "tells": 115,
+ "per_1k": 12.5,
+ "families": {
+  "other (long sentences)": 73,
+  "passive": 32,
+  "staged run-ups": 2,
+  "repeated openings": 2,
+  "slop words": 2,
+  "rhythm": 1,
+  "filler openers": 1,
+  "meta writing": 1,
+  "copula dodges": 1
+ }
+}

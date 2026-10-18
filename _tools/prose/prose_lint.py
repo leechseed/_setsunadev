@@ -146,12 +146,48 @@ one thing is certain|as we move forward|sit with that|that's not nothing|mic dro
 _HEDGE = """could potentially|may eventually|might ultimately|up to my last training|not publicly available|maintains a low profile
 not widely documented|as of my last update|experts believe|studies show|research suggests|industry leaders agree|experts argue
 industry reports|observers have cited|arguably""".replace("\n", "|").split("|")
+# 10/18 (BOLO 157, Chief: "implement it in everything"): the humanizer 3.1 and sepia families the table lacked.
+# Each maps phrase -> fix; the family name is the key's group.
+_MORE_FAMILIES = {
+    "copula dodges": ({"serves as": "is", "stands as": "is", "functions as": "is", "boasts": "has"}),
+    "meta writing": ({"this page covers": "cut; start with the content", "this section covers": "cut; start with the content",
+                      "below is": "cut; show it", "below are": "cut; show them", "in this section": "cut",
+                      "here's a breakdown": "cut; give the breakdown", "here is a breakdown": "cut; give the breakdown",
+                      "let me walk you through": "cut; walk through it", "let me break": "cut; break it down",
+                      "i'll walk you through": "cut; walk through it"}),
+    "staged run-ups": ({"the short answer": "cut the run-up; say it", "short answer:": "cut the run-up; say it",
+                        "bottom line:": "cut the run-up; say it", "the bottom line": "cut the run-up; say it",
+                        "the takeaway": "cut the run-up; say it", "here's the deal": "cut the run-up; say it",
+                        "the punchline": "cut the run-up; say it", "the twist:": "cut the run-up; say it"}),
+    "imagined objectors": ({"some might say": "cut the imagined objector", "you might think": "cut the imagined objector",
+                            "you might be wondering": "cut the imagined objector", "you may be wondering": "cut the imagined objector",
+                            "critics will say": "cut the imagined objector"}),
+    "sales talk": ({"unlock": "open, enable (or say what changes)", "elevate": "improve", "supercharge": "speed up",
+                    "next level": "say what improves", "level up": "improve", "empower": "let, help",
+                    "transformative": "say what changes", "revolutionize": "change"}),
+    # StoryScope (arXiv 2604.03136): AI fiction renders emotion through the body 81% of the time vs 38% for humans
+    "body-for-feeling": ({"chest tightened": "name the feeling or show an action", "throat tightened": "name the feeling or show an action",
+                          "breath caught": "name the feeling or show an action", "stomach dropped": "name the feeling or show an action",
+                          "heart hammered": "name the feeling or show an action", "pulse quickened": "name the feeling or show an action",
+                          "jaw tightened": "name the feeling or show an action", "a knot in": "name the feeling or show an action",
+                          "shiver ran down": "name the feeling or show an action"}),
+}
+for _fam, _tbl in _MORE_FAMILIES.items():
+    for _k, _v in _tbl.items():
+        STOCK.setdefault(_k, _v)
 FAMILY = {}
 for _names, _fam in ((_FILLER, "filler openers"), (_CLOSER, "one-line closers"), (_HEDGE, "hedges")):
     for _n in _names:
         FAMILY[_n.strip()] = _fam
+for _fam, _tbl in _MORE_FAMILIES.items():
+    for _k in _tbl:
+        FAMILY[_k] = _fam
 FAMILIES = ["slop words", "contrast frames", "one-line closers", "filler openers", "passive",
-            "fake precision", "hedges", "other"]
+            "fake precision", "hedges"] + list(_MORE_FAMILIES) + ["repeated openings", "rhythm", "other"]
+# sepia (research/rhythm-syntax.md): the spread of sentence lengths is the one syntactic measure every study agrees on;
+# human text varies more. A passage of 8+ sentences whose lengths barely vary reads as a metronome. Provisional threshold.
+METRONOME_CV = 0.35
+HTML_BLOCK_END = re.compile(r"</(?:td|th|li|p|h[1-6]|div|tr|dd|dt|summary|figcaption|caption)>|<br\s*/?>", re.I)
 STOCK_RE = [(re.compile(r"(?<![\w-])" + re.escape(k).replace(r"\ ", r"\s+") + r"(?![\w-])", re.I), k, v)
             for k, v in sorted(STOCK.items(), key=lambda kv: -len(kv[0]))]
 LEVERAGE_VERB = re.compile(r"\b(?:to|will|can|could|should|we|they|you|i|that|which)\s+leverag(?:e|es|ed|ing)\b"
@@ -195,6 +231,8 @@ def sentences(lines):
                 buf, start = [], None
             continue
         s = re.sub(r"^\s*(?:[-*+]|\d+[.)])\s+", "", s)
+        # a " · " list item counts as its own sentence (the sit rep's RANGE rule)
+        s = re.sub(r"\s+·\s+", ". ", s)
         for part in re.split(r"(?<=[.!?])\s+", s):
             if start is None:
                 start = n
@@ -211,6 +249,7 @@ def lint(name, raw):
     is_html = name.lower().endswith((".html", ".htm"))
     text = strip_html(raw) if is_html else raw
     if is_html:
+        text = HTML_BLOCK_END.sub(". ", text)  # a table cell or list item ends a sentence (10/18: cells merged into 60-word "sentences")
         text = re.sub(r"<[^>]+>", " ", text)
     lines = text.splitlines()
     in_code = False
@@ -250,7 +289,9 @@ def lint(name, raw):
         if words < 500 and HEADER.search(line):
             out.append((n, "header-short-file", f"header in a {words}-word file; drop it", "other"))
 
-    for n, s in sentences(clean):
+    sents = [(n, s) for n, s in sentences(clean) if len(re.findall(r"[A-Za-z]{2,}", s)) >= 2]
+    run = []
+    for n, s in sents:
         wc = len(s.split())
         if wc > 20:
             out.append((n, "long-sentence", f"{wc} words: {s[:60]}...", "other"))
@@ -258,6 +299,19 @@ def lint(name, raw):
             if m.group(1).lower() not in PASSIVE_SKIP:
                 out.append((n, "passive", f'"{m.group(0)}" (name the actor)', "passive"))
                 break
+        # humanizer #7: three sentences in a row that open on the same word
+        first = re.sub(r"[^a-z']", "", (s.split() or [""])[0].lower())
+        run = run + [(n, first)] if run and run[-1][1] == first else [(n, first)]
+        if len(run) == 3 and first and first not in ("the", "a"):
+            out.append((run[0][0], "repeated-opening", f'three sentences open on "{first}"; vary the openings', "repeated openings"))
+    lens = [len(s.split()) for _, s in sents]
+    if len(lens) >= 8:
+        mean = sum(lens) / len(lens)
+        sd = (sum((x - mean) ** 2 for x in lens) / len(lens)) ** 0.5
+        cv = sd / mean if mean else 0
+        if cv < METRONOME_CV:
+            out.append((sents[0][0], "metronome", f"sentence lengths barely vary (spread {cv:.2f} under {METRONOME_CV}); mix short and long",
+                        "rhythm"))
     out.sort(key=lambda t: t[0])
     return out
 
