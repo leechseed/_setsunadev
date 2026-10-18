@@ -1,0 +1,820 @@
+{
+  "schema_version": "1.0",
+  "story": {
+    "id": "oxo_primary_v1",
+    "title": "OVEREXITOUT (The Outliers)",
+    "genre": "",
+    "logline": "The system forecasts her; she intervenes. She loses the war and wins the argument.",
+    "created_at": "2026-10-17T00:00:00Z",
+    "narratives": [
+      {
+        "id": "oxo_primary_v1",
+        "title": "OXO Primary Storyform (v2.0, CANON, ruled 2026-08-24)",
+        "subtext": {
+          "perspectives": [
+            {
+              "id": "persp_mc_tori",
+              "pov": "i",
+              "author_structural_pov": "i",
+              "summary": "Main Character: Victoria \"Tori\" Midnight",
+              "storytelling": "Tori's personal story is Activity / Understanding (storyform section 2, ruled 2026-08-24)."
+            },
+            {
+              "id": "persp_ic_anna",
+              "pov": "you",
+              "author_structural_pov": "you",
+              "summary": "Impact Character: Anna-Colson Conway",
+              "storytelling": "Anna's impact is Manipulation / Developing a Plan (storyform section 2, ruled 2026-08-24). Anna ascends with no fairness premise at all, in the same institution, and it works (section 4)."
+            },
+            {
+              "id": "persp_rs_tori_anna",
+              "pov": "we",
+              "author_structural_pov": "we",
+              "summary": "Relationship Story: Victoria Midnight <-> Anna-Colson Conway",
+              "storytelling": "The rivalry lives in Fixed Attitude / Memories: the war over what is remembered (storyform section 9). The relationship is the competition (section 6)."
+            },
+            {
+              "id": "persp_os_factions",
+              "pov": "they",
+              "author_structural_pov": "they",
+              "summary": "Objective Story: the Factions",
+              "storytelling": "The world carries the Situation war over The Past (storyform section 9). The Factions rewrite people into Assets (section 5)."
+            }
+          ],
+          "players": [
+            {
+              "id": "player_tori",
+              "name": "Victoria \"Tori\" Midnight",
+              "role": "Main Character",
+              "visual": "",
+              "audio": "",
+              "summary": "Protagonist (L12 dramatica_archetype). The system forecasts her; she intervenes.",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_mc_tori"
+                },
+                {
+                  "perspective_id": "persp_rs_tori_anna"
+                }
+              ]
+            },
+            {
+              "id": "player_anna",
+              "name": "Anna-Colson Conway",
+              "role": "Impact Character",
+              "visual": "",
+              "audio": "",
+              "summary": "RULED 2026-08-24: Anna is a demonstration, not an argument. Power ascends; fairness was never the operating system.",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_ic_anna"
+                },
+                {
+                  "perspective_id": "persp_rs_tori_anna"
+                }
+              ]
+            }
+          ],
+          "dynamics": [
+            {
+              "id": "dynamic_i_perspective_resolve",
+              "dynamic": "i_perspective_resolve",
+              "vector": "change",
+              "summary": "MC Resolve: Change (LOCKED).",
+              "storytelling": ""
+            },
+            {
+              "id": "dynamic_you_perspective_resolve",
+              "dynamic": "you_perspective_resolve",
+              "vector": "steadfast",
+              "summary": "IC Resolve: Steadfast (engine pass 2026-08-24).",
+              "storytelling": ""
+            },
+            {
+              "id": "dynamic_growth",
+              "dynamic": "growth",
+              "vector": "stop",
+              "summary": "Growth: Stop. The meritocratic premise must collapse; she stops believing, she does not start waiting (RULED 2026-08-24).",
+              "storytelling": ""
+            },
+            {
+              "id": "dynamic_approach",
+              "dynamic": "approach",
+              "vector": "do_er",
+              "summary": "Approach: Do-er (LOCKED).",
+              "storytelling": ""
+            },
+            {
+              "id": "dynamic_alignment",
+              "dynamic": "alignment",
+              "vector": "linear",
+              "summary": "Problem-Solving Style: Linear. Acts once convinced, evaluates on tangible outcomes (RULED 2026-08-24). Engine label: Logical.",
+              "storytelling": ""
+            },
+            {
+              "id": "dynamic_fabric",
+              "dynamic": "fabric",
+              "vector": "options",
+              "summary": "Limit: Optionlock. Exits close because of who she is, not a clock (LOCKED).",
+              "storytelling": ""
+            },
+            {
+              "id": "dynamic_driver",
+              "dynamic": "driver",
+              "vector": "action",
+              "summary": "Driver: Action. Crashes, punitive removals and acquisitions open every movement (RULED 2026-08-24).",
+              "storytelling": ""
+            },
+            {
+              "id": "dynamic_outcome",
+              "dynamic": "outcome",
+              "vector": "failure",
+              "summary": "Outcome: Failure (LOCKED). The system wins the board.",
+              "storytelling": ""
+            },
+            {
+              "id": "dynamic_judgment",
+              "dynamic": "judgment",
+              "vector": "good",
+              "summary": "Judgment: Good (LOCKED). The cost_and_meaning invariant: meaning survives systemic defeat. Together with Failure, the Personal Triumph ending.",
+              "storytelling": ""
+            }
+          ],
+          "storypoints": [
+            {
+              "id": "storypoint_mc_domain",
+              "appreciation": "domain",
+              "method": "physics",
+              "illustration": "",
+              "summary": "Activity",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_mc_tori"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_mc_concern",
+              "appreciation": "concern",
+              "method": "understanding",
+              "illustration": "",
+              "summary": "Understanding",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_mc_tori"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_mc_issue",
+              "appreciation": "issue",
+              "method": "interpretation",
+              "illustration": "",
+              "summary": "Interpretation vs. Senses",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_mc_tori"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_mc_problem",
+              "appreciation": "problem",
+              "method": "equity",
+              "illustration": "",
+              "summary": "Equity",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_mc_tori"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_mc_solution",
+              "appreciation": "solution",
+              "method": "inequity",
+              "illustration": "",
+              "summary": "Inequity",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_mc_tori"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_mc_focus",
+              "appreciation": "focus",
+              "method": "order",
+              "illustration": "",
+              "summary": "Order (engine Symptom)",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_mc_tori"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_mc_direction",
+              "appreciation": "direction",
+              "method": "chaos",
+              "illustration": "",
+              "summary": "Chaos (engine Response)",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_mc_tori"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_mc_unique_ability",
+              "appreciation": "unique_ability",
+              "method": "senses",
+              "illustration": "",
+              "summary": "Senses",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_mc_tori"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_mc_critical_flaw",
+              "appreciation": "critical_flaw",
+              "method": "circumstances",
+              "illustration": "",
+              "summary": "Circumstances",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_mc_tori"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_mc_benchmark",
+              "appreciation": "benchmark",
+              "method": "learning",
+              "illustration": "",
+              "summary": "Gathering Information",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_mc_tori"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_ic_domain",
+              "appreciation": "domain",
+              "method": "psychology",
+              "illustration": "",
+              "summary": "Manipulation",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_ic_anna"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_ic_concern",
+              "appreciation": "concern",
+              "method": "conceptualizing",
+              "illustration": "",
+              "summary": "Developing a Plan",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_ic_anna"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_ic_issue",
+              "appreciation": "issue",
+              "method": "circumstances",
+              "illustration": "",
+              "summary": "Circumstances vs. Situation",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_ic_anna"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_ic_problem",
+              "appreciation": "problem",
+              "method": "projection",
+              "illustration": "",
+              "summary": "Projection",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_ic_anna"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_ic_solution",
+              "appreciation": "solution",
+              "method": "speculation",
+              "illustration": "",
+              "summary": "Speculation",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_ic_anna"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_ic_focus",
+              "appreciation": "focus",
+              "method": "ability",
+              "illustration": "",
+              "summary": "Ability (engine Symptom)",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_ic_anna"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_ic_direction",
+              "appreciation": "direction",
+              "method": "desire",
+              "illustration": "",
+              "summary": "Desire (engine Response)",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_ic_anna"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_ic_unique_ability",
+              "appreciation": "unique_ability",
+              "method": "situation",
+              "illustration": "",
+              "summary": "Situation",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_ic_anna"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_ic_critical_flaw",
+              "appreciation": "critical_flaw",
+              "method": "interpretation",
+              "illustration": "",
+              "summary": "Interpretation",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_ic_anna"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_ic_benchmark",
+              "appreciation": "benchmark",
+              "method": "conceiving",
+              "illustration": "",
+              "summary": "Conceiving an Idea",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_ic_anna"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_os_domain",
+              "appreciation": "domain",
+              "method": "universe",
+              "illustration": "",
+              "summary": "Situation",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_os_factions"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_os_concern",
+              "appreciation": "concern",
+              "method": "past",
+              "illustration": "",
+              "summary": "The Past",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_os_factions"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_os_issue",
+              "appreciation": "issue",
+              "method": "interdiction",
+              "illustration": "",
+              "summary": "Interdiction vs. Prediction",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_os_factions"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_os_problem",
+              "appreciation": "problem",
+              "method": "equity",
+              "illustration": "",
+              "summary": "Equity",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_os_factions"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_os_solution",
+              "appreciation": "solution",
+              "method": "inequity",
+              "illustration": "",
+              "summary": "Inequity",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_os_factions"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_os_focus",
+              "appreciation": "focus",
+              "method": "ability",
+              "illustration": "",
+              "summary": "Ability (engine Symptom)",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_os_factions"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_os_direction",
+              "appreciation": "direction",
+              "method": "desire",
+              "illustration": "",
+              "summary": "Desire (engine Response)",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_os_factions"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_os_catalyst",
+              "appreciation": "catalyst",
+              "method": "prediction",
+              "illustration": "",
+              "summary": "Prediction",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_os_factions"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_os_inhibitor",
+              "appreciation": "inhibitor",
+              "method": "suspicion",
+              "illustration": "",
+              "summary": "Suspicion",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_os_factions"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_os_benchmark",
+              "appreciation": "benchmark",
+              "method": "present",
+              "illustration": "",
+              "summary": "The Present",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_os_factions"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_rs_domain",
+              "appreciation": "domain",
+              "method": "mind",
+              "illustration": "",
+              "summary": "Fixed Attitude",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_rs_tori_anna"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_rs_concern",
+              "appreciation": "concern",
+              "method": "memory",
+              "illustration": "",
+              "summary": "Memories",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_rs_tori_anna"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_rs_issue",
+              "appreciation": "issue",
+              "method": "suspicion",
+              "illustration": "",
+              "summary": "Suspicion vs. Evidence",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_rs_tori_anna"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_rs_problem",
+              "appreciation": "problem",
+              "method": "equity",
+              "illustration": "",
+              "summary": "Equity",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_rs_tori_anna"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_rs_solution",
+              "appreciation": "solution",
+              "method": "inequity",
+              "illustration": "",
+              "summary": "Inequity",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_rs_tori_anna"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_rs_focus",
+              "appreciation": "focus",
+              "method": "projection",
+              "illustration": "",
+              "summary": "Projection (engine Symptom)",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_rs_tori_anna"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_rs_direction",
+              "appreciation": "direction",
+              "method": "speculation",
+              "illustration": "",
+              "summary": "Speculation (engine Response)",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_rs_tori_anna"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_rs_catalyst",
+              "appreciation": "catalyst",
+              "method": "evidence",
+              "illustration": "",
+              "summary": "Evidence",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_rs_tori_anna"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_rs_inhibitor",
+              "appreciation": "inhibitor",
+              "method": "interdiction",
+              "illustration": "",
+              "summary": "Interdiction",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_rs_tori_anna"
+                }
+              ]
+            },
+            {
+              "id": "storypoint_rs_benchmark",
+              "appreciation": "benchmark",
+              "method": "conscious",
+              "illustration": "",
+              "summary": "Contemplation",
+              "storytelling": "",
+              "perspectives": [
+                {
+                  "perspective_id": "persp_rs_tori_anna"
+                }
+              ]
+            }
+          ],
+          "storybeats": []
+        },
+        "storytelling": {
+          "overviews": [],
+          "moments": []
+        },
+        "x_canon_transits": {
+          "note": "The 16 Signposts (4 per throughline), carried here in NCP Transit form. Not placed in subtext.storybeats because the schema requires tones, illustration, summary and storytelling for every storybeat and the storyform supplies none of them.",
+          "transits": [
+            {
+              "id": "transit_mc_1",
+              "appreciation": "transit",
+              "sequence": 1,
+              "method": "obtaining",
+              "canon_word": "Obtaining",
+              "perspective_id": "persp_mc_tori"
+            },
+            {
+              "id": "transit_mc_2",
+              "appreciation": "transit",
+              "sequence": 2,
+              "method": "understanding",
+              "canon_word": "Understanding",
+              "perspective_id": "persp_mc_tori"
+            },
+            {
+              "id": "transit_mc_3",
+              "appreciation": "transit",
+              "sequence": 3,
+              "method": "doing",
+              "canon_word": "Doing",
+              "perspective_id": "persp_mc_tori"
+            },
+            {
+              "id": "transit_mc_4",
+              "appreciation": "transit",
+              "sequence": 4,
+              "method": "learning",
+              "canon_word": "Gathering Information",
+              "perspective_id": "persp_mc_tori"
+            },
+            {
+              "id": "transit_ic_1",
+              "appreciation": "transit",
+              "sequence": 1,
+              "method": "conceiving",
+              "canon_word": "Conceiving an Idea",
+              "perspective_id": "persp_ic_anna"
+            },
+            {
+              "id": "transit_ic_2",
+              "appreciation": "transit",
+              "sequence": 2,
+              "method": "conceptualizing",
+              "canon_word": "Developing a Plan",
+              "perspective_id": "persp_ic_anna"
+            },
+            {
+              "id": "transit_ic_3",
+              "appreciation": "transit",
+              "sequence": 3,
+              "method": "being",
+              "canon_word": "Playing a Role",
+              "perspective_id": "persp_ic_anna"
+            },
+            {
+              "id": "transit_ic_4",
+              "appreciation": "transit",
+              "sequence": 4,
+              "method": "becoming",
+              "canon_word": "Changing One's Nature",
+              "perspective_id": "persp_ic_anna"
+            },
+            {
+              "id": "transit_os_1",
+              "appreciation": "transit",
+              "sequence": 1,
+              "method": "past",
+              "canon_word": "The Past",
+              "perspective_id": "persp_os_factions"
+            },
+            {
+              "id": "transit_os_2",
+              "appreciation": "transit",
+              "sequence": 2,
+              "method": "present",
+              "canon_word": "The Present",
+              "perspective_id": "persp_os_factions"
+            },
+            {
+              "id": "transit_os_3",
+              "appreciation": "transit",
+              "sequence": 3,
+              "method": "progress",
+              "canon_word": "How Things are Changing",
+              "perspective_id": "persp_os_factions"
+            },
+            {
+              "id": "transit_os_4",
+              "appreciation": "transit",
+              "sequence": 4,
+              "method": "future",
+              "canon_word": "The Future",
+              "perspective_id": "persp_os_factions"
+            },
+            {
+              "id": "transit_rs_1",
+              "appreciation": "transit",
+              "sequence": 1,
+              "method": "preconscious",
+              "canon_word": "Impulsive Responses",
+              "perspective_id": "persp_rs_tori_anna"
+            },
+            {
+              "id": "transit_rs_2",
+              "appreciation": "transit",
+              "sequence": 2,
+              "method": "subconscious",
+              "canon_word": "Innermost Desires",
+              "perspective_id": "persp_rs_tori_anna"
+            },
+            {
+              "id": "transit_rs_3",
+              "appreciation": "transit",
+              "sequence": 3,
+              "method": "conscious",
+              "canon_word": "Contemplation",
+              "perspective_id": "persp_rs_tori_anna"
+            },
+            {
+              "id": "transit_rs_4",
+              "appreciation": "transit",
+              "sequence": 4,
+              "method": "memory",
+              "canon_word": "Memories",
+              "perspective_id": "persp_rs_tori_anna"
+            }
+          ]
+        },
+        "x_canon_plot_appreciations": {
+          "note": "Engine plot appreciations (storyform section 9). The NCP schema enum has no appreciation for these, so they are carried as canon wording, unmapped.",
+          "Goal": "The Past",
+          "Consequence": "Memories",
+          "Cost": "Developing a Plan",
+          "Dividend": "Understanding",
+          "Requirement": "The Present",
+          "Prerequisite": "Contemplation",
+          "Precondition": "Conceiving an Idea",
+          "Forewarnings": "Gathering Information"
+        }
+      }
+    ]
+  }
+}
