@@ -439,6 +439,30 @@ def station_audit():
     return {"station": "AUDIT", "go": not hot, "addr": "SOP audit", "note": note}
 
 
+BOOT_EVENTS = os.path.join(ROOT, "_tools", "launch", "boot.jsonl")
+
+
+def boot_open(enabled=True):
+    """The boot screen (Chief 10/17): a console window that draws the stations as they run, Arch-boot style.
+    Returns emit(state, station, **kw); a dead screen or a write error never stops the launch."""
+    if not enabled:
+        return lambda *a, **k: None
+    try:
+        open(BOOT_EVENTS, "w", encoding="utf-8").close()
+        subprocess.Popen([PY, "-X", "utf8", os.path.join(ROOT, "_tools", "launch", "boot.py")], cwd=ROOT,
+                         creationflags=subprocess.CREATE_NEW_CONSOLE, stdin=None, close_fds=True)
+    except Exception:
+        return lambda *a, **k: None
+
+    def emit(state, station, **kw):
+        try:
+            with open(BOOT_EVENTS, "a", encoding="utf-8") as f:
+                f.write(json.dumps({"t": time.time(), "state": state, "station": station, **kw}, ensure_ascii=False) + "\n")
+        except Exception:
+            pass
+    return emit
+
+
 def main():
     try:
         sys.stdout.reconfigure(encoding="utf-8")
@@ -460,36 +484,47 @@ def main():
     ap.add_argument("--no-wire", action="store_true")
     ap.add_argument("--no-knobs", action="store_true")
     ap.add_argument("--json", action="store_true")
+    ap.add_argument("--no-boot", action="store_true")   # skip the boot screen window
     a = ap.parse_args()
+    boot = boot_open(enabled=not (a.json or a.no_boot))
     rows = []
+
+    def run(name, fn):
+        """one station: tell the boot screen it started, run it, tell it how it ended"""
+        boot("start", name)
+        r = fn()
+        for x in (r if isinstance(r, list) else [r]):
+            boot("done", x["station"], go=bool(x["go"]), note=str(x.get("note") or ""))
+        return r
+
     if not a.no_audit:   # first, always (Chief 10/6): get it out of the way
-        rows.append(station_audit())
+        rows.append(run("AUDIT", station_audit))
     if not a.no_pull:    # right after the audit (Chief 10/12): the pull waves and their glass
-        rows.append(station_pull())
+        rows.append(run("PULL", station_pull))
     if not a.no_armory:  # BOLO 154: detached, so the launch does not wait on the transcript scan
-        rows.append(station_armory())
+        rows.append(run("ARMORY", station_armory))
     if not a.no_darkroom:
-        rows.append(station_darkroom())
+        rows.append(run("DARKROOM", station_darkroom))
     if not a.no_stash:
-        rows.append(station_stash())
+        rows.append(run("STASH", station_stash))
     if not a.no_nahimic:
-        rows.append(station_nahimic())   # before JUDY: her mic needs the devices to hold still
+        rows.append(run("NAHIMIC", station_nahimic))   # before JUDY: her mic needs the devices to hold still
     if not a.no_judy:
-        rows.append(station_judy())
+        rows.append(run("JUDY", station_judy))
     if not a.no_faces:
-        rows.append(station_faces())
+        rows.append(run("FACES", station_faces))
     if not a.no_deck and not a.no_faces:
-        rows.append(station_deck())
+        rows.append(run("DECK", station_deck))
     if not a.no_console:
-        rows.append(station_console())
+        rows.append(run("CONSOLE", station_console))
     if not a.no_knobs:
-        rows.append(station_knobs())
+        rows.append(run("KNOBS", station_knobs))
     if not a.no_wire:
-        rows.append(station_wire())
+        rows.append(run("WIRE", station_wire))
     if not a.no_frago:
-        rows.append(station_frago())   # BOLO 86: every staged sheet is FRAGO'd before the boards open
+        rows.append(run("FRAGO", station_frago))   # BOLO 86: every staged sheet is FRAGO'd before the boards open
     if not a.no_pages:
-        rows += station_pages()
+        rows += run("PAGES", station_pages)
     try: subprocess.run([sys.executable, "-X", "utf8", os.path.join(ROOT, "_tools", "desk", "build_desk.py")], capture_output=True, timeout=90)   # BOLO 141: rebuild the Command Desk; never fatal
     except Exception: pass
     stamp =dt.datetime.now().strftime("%Y-%m-%d %H:%M")
@@ -501,6 +536,7 @@ def main():
         print("  %-9s %-6s %s  (%s)" % (r["station"], "GO" if r["go"] else "NO-GO", r["addr"], r["note"]))
     nogo = [r["station"] for r in rows if not r["go"]]
     print("  ALL GO" if not nogo else "  NO-GO: " + ", ".join(nogo))
+    boot("end", "")
     try:   # BOLO 141: last_poll.json feeds the Command Desk; never fatal
         io.open(os.path.join(ROOT, "_tools", "launch", "last_poll.json"), "w", encoding="utf-8").write(json.dumps(
             {"time": dt.datetime.now().isoformat(timespec="seconds"), "all_go": not nogo,

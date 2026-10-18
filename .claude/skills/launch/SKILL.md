@@ -33,6 +33,8 @@ Then it brings up what is down and reports what is up:
 - **WIRE:** runs `wire_probe.py` for the seven tools.
 - **SITREP and SOI:** opens both as tabs in the default browser (Chief, 9/20: never the Edge app window).
 
+**THE BOOT SCREEN (Chief 10/17, "really cruncy arc linux boot sequence looking with an ascii logo of bold venture"; BOLO 153's first screen):** `launch.py` opens `_tools/launch/boot.py` in its own console window and writes each station's start and finish to `boot.jsonl`. The window draws the BoldVenture mark, an initramfs-style preamble, then one `[  OK  ]` / `[FAILED]` row per station with filling dots and the detail column. ALL GO closes it after 10 s; a NO-GO keeps it open until Enter. `--no-boot` skips it; `--json` never opens it.
+
 It prints the station poll:
 
 ```

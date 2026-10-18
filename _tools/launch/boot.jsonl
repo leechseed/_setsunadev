@@ -1,0 +1,7 @@
+{"t": 1792285557.8701706, "state": "start", "station": "AUDIT"}
+{"t": 1792285560.6835113, "state": "done", "station": "AUDIT", "go": true, "note": "1 finding(s) · R 0 · P 0 · B 0 · K 0 · T 1 · S 0 · report _tools/audit/out/ · 2.8 s"}
+{"t": 1792285560.6835113, "state": "start", "station": "DARKROOM"}
+{"t": 1792285560.7045178, "state": "done", "station": "DARKROOM", "go": true, "note": "already live"}
+{"t": 1792285560.705028, "state": "start", "station": "WIRE"}
+{"t": 1792285563.8681383, "state": "done", "station": "WIRE", "go": true, "note": "probe ok · 3.2 s"}
+{"t": 1792285564.1073716, "state": "end", "station": ""}
