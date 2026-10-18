@@ -181,13 +181,17 @@ iframe{flex:1;border:0;width:100%;height:100%;background:var(--bg)}
 #boot{position:fixed;inset:0;z-index:50;background:var(--bg);padding:14px 18px;overflow:hidden;cursor:pointer;transition:opacity .5s}
 #boot.gone{opacity:0;pointer-events:none}
 #boot pre{margin:0;white-space:pre;font:inherit}
-#logo{line-height:1;letter-spacing:0}
+#logo{line-height:1;letter-spacing:0;text-shadow:0 0 6px rgba(255,90,31,.45)}
+#lgtxt{margin:12px 0 10px}
+#logo .z{color:#79dfff;text-shadow:0 0 6px rgba(121,223,255,.6)}
+#logo .gl{color:#fff;text-shadow:-2px 0 #ff2a6d,2px 0 #00e5ff}
+#boot::after{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,.22) 0 1px,transparent 1px 3px)}
 #logo .a{color:var(--accd)}#logo .b{color:var(--accm)}#logo .c{color:var(--acc)}#logo .e{color:var(--acch);font-weight:600}
 .bv{color:var(--acc);font-weight:600}.o{color:var(--acc)}.g{color:var(--ok);font-weight:600}.r{color:var(--bad);font-weight:600}.y{color:var(--am);font-weight:600}.w{color:#fff;font-weight:600}
 #bskip{position:fixed;right:18px;bottom:10px;color:var(--dim)}
 .blink{color:var(--acc);font-weight:600;animation:blink 1.1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
 </style></head><body>
-<div id="boot"><pre id="logo"></pre><pre id="blines"></pre><span id="bskip">SPACE · continue</span></div>
+<div id="boot"><pre id="logo"></pre><pre id="lgtxt"></pre><pre id="blines"></pre><span id="bskip">SPACE · continue</span></div>
 <div class="top"><span><b>&#9670; THE CONSOLE</b>  the Command &middot; Chief</span><span id="clk"></span></div>
 <main>
  <div class="col">
@@ -255,10 +259,41 @@ function stationLine(ev,t){var go=ev.go,note=(ev.note||'').slice(0,52);
  (ev.sub||[]).forEach(function(s){o+='\n           <span class="d">&#9492;&#9472; '+esc(s.slice(0,92))+'</span>'});
  (ev.waves||[]).forEach(function(w){o+='\n           <span class="d">&#9492;&#9472; </span><span class="'+(w.indexOf('STALLED')>=0?'r':'g')+'">'+esc(w.slice(0,90))+'</span>'});
  return o}
+/* the bunny bandit comes in hackerpunk (Chief 10/18): the glyphs decode out of noise, then the head spins on its
+   vertical axis, holding front-on between turns; now and then a few rows tear sideways. Reduced motion: still. */
+var LG=null;
+function logoAnim(rows){
+ var H=rows.length,W=Math.max.apply(null,rows.map(function(l){return l.length})),cx=(W-1)/2,
+  g=rows.map(function(l){while(l.length<W)l+=' ';return l}),seed=[],GL='!<>-_\\/[]{}=+*^?#01',
+  t0=performance.now(),glUntil=0,glRows={},nextGl=t0+1800,tok={},
+  red=matchMedia('(prefers-reduced-motion: reduce)').matches,
+  C={'.':'a','-':'b','+':'c','#':'e'},BACK={'#':'+','+':'-','-':'.','.':'.'};
+ for(var y=0;y<H;y++){seed.push([]);for(var x=0;x<W;x++)seed[y].push(Math.random())}
+ function ease(p){return p<.5?4*p*p*p:1-Math.pow(-2*p+2,3)/2}
+ function span(cls,s){return s?(cls?'<span class="'+cls+'">'+esc(s)+'</span>':esc(s)):''}
+ function frame(now){if(!booting||LG!==tok)return;
+  var t=(now-t0)/1000,dec=red?1:Math.min(1,t/1.1),th=0;
+  if(!red&&t>1.3){var P=5,p=((t-1.3)%P)/P;th=p<.4?0:ease((p-.4)/.6)*2*Math.PI}
+  var c=Math.cos(th);
+  if(!red&&now>nextGl){glUntil=now+130;glRows={};for(var k=0;k<3;k++)glRows[Math.floor(Math.random()*H)]=(Math.random()<.5?-1:1)*(2+Math.floor(Math.random()*4));nextGl=now+1500+Math.random()*2500}
+  var out=[];
+  for(var y=0;y<H;y++){var line='',cls=null,buf='',sh=(now<glUntil&&glRows[y])?glRows[y]:0;
+   for(var ox=0;ox<W;ox++){var ch=' ',k2=null;
+    if(Math.abs(c)<0.03){if(ox===Math.round(cx)&&g[y].trim()){ch='|';k2='b'}}
+    else{var sx=Math.round(cx+(ox-sh-cx)/c);
+     if(sx>=0&&sx<W){ch=g[y][sx];if(c<0&&BACK[ch])ch=BACK[ch]}
+     if(ch!==' '){if(dec<1&&seed[y][sx]>dec){ch=GL[Math.floor(Math.random()*GL.length)];k2='z'}else k2=sh?'gl':C[ch]}}
+    if(k2!==cls){line+=span(cls,buf);buf='';cls=k2}
+    buf+=ch}
+   out.push(line+span(cls,buf))}
+  $('logo').innerHTML=out.join('\n');
+  requestAnimationFrame(frame)}
+ LG=tok;requestAnimationFrame(frame)}
 function skip(){booting=false;clearTimeout(timer);$('boot').classList.add('gone')}
 function boot(replay){booting=true;$('boot').classList.remove('gone');
  fetch('/boot.json').then(function(r){return r.json()}).then(function(b){
-  var lg=$('logo');lg.innerHTML=logoHTML(b.logo)+'\n\n<span class="bv">        B  O  L  D  V  E  N  T  U  R  E</span>\n<span class="d">   &#9472;&#9472; the Command · launch sequence &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;</span>';
+  var lg=$('logo');$('lgtxt').innerHTML='<span class="bv">        B  O  L  D  V  E  N  T  U  R  E</span>\n<span class="d">   &#9472;&#9472; the Command · launch sequence &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;</span>';
+  logoAnim(b.logo);
   var cols=Math.max.apply(null,b.logo.map(function(l){return l.length}).concat([60])),fs=Math.max(5,Math.min(12,Math.floor(innerWidth/(cols*0.62))));lg.style.fontSize=fs+'px';
   var ev=b.events,ended=ev.some(function(e){return e.state==='end'}),old=ended&&ev.length&&(b.now-ev[ev.length-1].t>120);
   var fast=replay||old,t0=ev.length?ev[0].t:b.now,lines=[],i=0,shown=0,start=Date.now(),pos=0,running=null,frame=0;
