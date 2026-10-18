@@ -302,10 +302,54 @@ func up() {
 	}
 }
 
-func fetchOnce() {
+// spinModel: command fetch, live (Chief 10/18 "can u make da big bunny head spin"): the mark decodes in and spins
+// beside the fetch panel, drawn in place; Space or q stops it and leaves the front-facing frame behind.
+type spinModel struct {
+	s     *spinner
+	rows  [][2]string
+	frame int
+	done  bool
+}
+
+func (m *spinModel) Init() tea.Cmd { return tick() }
+
+func (m *spinModel) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
+	switch msg := msg.(type) {
+	case tea.KeyMsg:
+		switch msg.String() {
+		case " ", "enter", "q", "esc", "ctrl+c":
+			m.done = true
+			return m, tea.Quit
+		}
+	case tickMsg:
+		m.frame++
+		return m, tick()
+	}
+	return m, nil
+}
+
+func (m *spinModel) View() string {
+	if m.done {
+		return lipgloss.JoinHorizontal(lipgloss.Center, m.s.frame(time.Now(), true), "    ", fetchBlock(m.rows, -1)) + "\n"
+	}
+	hint := ""
+	if (m.frame/10)%2 == 0 {
+		hint = sDim.Render("\n\nSPACE · stop")
+	}
+	return lipgloss.JoinHorizontal(lipgloss.Center, m.s.frame(time.Now(), false), "    ", fetchBlock(m.rows, 2+m.frame/2)+hint) + "\n"
+}
+
+func fetchOnce(still bool) {
 	art := loadArt(filepath.Join(root, "_tools", "brand", "boldventure-ascii.txt"))
 	s := newSpinner(shrink(art, pickScale(art, termHeight())))
-	fmt.Println(lipgloss.JoinHorizontal(lipgloss.Center, s.frame(time.Now(), true), "    ", fetchBlock(fetchRows(), -1)))
+	rows := fetchRows()
+	if still {
+		fmt.Println(lipgloss.JoinHorizontal(lipgloss.Center, s.frame(time.Now(), true), "    ", fetchBlock(rows, -1)))
+		return
+	}
+	if _, err := tea.NewProgram(&spinModel{s: s, rows: rows}).Run(); err != nil { // no terminal (a pipe): the still frame
+		fmt.Println(lipgloss.JoinHorizontal(lipgloss.Center, s.frame(time.Now(), true), "    ", fetchBlock(rows, -1)))
+	}
 }
 
 func main() {
@@ -317,12 +361,12 @@ func main() {
 	case "up":
 		up()
 	case "fetch":
-		fetchOnce()
+		fetchOnce(len(os.Args) > 2 && os.Args[2] == "--still")
 	default:
 		w := bufio.NewWriter(os.Stdout)
 		fmt.Fprintln(w, sAccB.Render("command")+sDim.Render(" · the Command's terminal front end (BOLO 153)"))
 		fmt.Fprintln(w, "  "+sAcc.Render("up   ")+"  boot the whole architecture: VS Code, the stations, JUDY, the Console")
-		fmt.Fprintln(w, "  "+sAcc.Render("fetch")+"  the mark and the numbers, neofetch style")
+		fmt.Fprintln(w, "  "+sAcc.Render("fetch")+"  the mark spinning beside the numbers, neofetch style; Space stops it (--still: one frame)")
 		w.Flush()
 	}
 }
