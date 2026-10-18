@@ -23,27 +23,30 @@ D = "\x1b[2;37m"
 B = "\x1b[1;37m"
 X = "\x1b[0m"
 
-MASK = r"""
-           /\               /\
-          /  \             /  \
-         | /\ |           | /\ |
-         | || |           | || |
-          \||/             \||/
-     ______||_______________||______
-    /                               \
-   |    ________         ________    |
-   |   /########\       /########\   |
-    \  \########/  /^\  \########/  /
-     \___________/     \___________/
-"""
+ART = os.path.join(HERE, "..", "brand", "boldventure-ascii.txt")   # Chief's logo (10/17: "this is the new logo")
+RAMP = " .-+#"
+SHADE = {".": "\x1b[38;2;110;40;14m", "-": "\x1b[38;2;190;66;22m", "+": "\x1b[38;2;255;90;31m", "#": "\x1b[1;38;2;255;176;143m"}
 
-FONT = {
-    "B": ["████ ", "█   █", "████ ", "█   █", "████ "], "O": [" ███ ", "█   █", "█   █", "█   █", " ███ "],
-    "L": ["█    ", "█    ", "█    ", "█    ", "█████"], "D": ["████ ", "█   █", "█   █", "█   █", "████ "],
-    "V": ["█   █", "█   █", "█   █", " █ █ ", "  █  "], "E": ["█████", "█    ", "████ ", "█    ", "█████"],
-    "N": ["█   █", "██  █", "█ █ █", "█  ██", "█   █"], "T": ["█████", "  █  ", "  █  ", "  █  ", "  █  "],
-    "U": ["█   █", "█   █", "█   █", "█   █", " ███ "], "R": ["████ ", "█   █", "████ ", "█  █ ", "█   █"],
-}
+
+def logo(scale=2):
+    """The art, common indent stripped, shrunk by `scale` (each block keeps its densest character), shaded orange."""
+    try:
+        rows = [l.rstrip() for l in open(ART, encoding="utf-8").read().splitlines() if l.strip()]
+    except OSError:
+        return []
+    ind = min(len(l) - len(l.lstrip()) for l in rows)
+    rows = [l[ind:] for l in rows]
+    w = max(len(l) for l in rows)
+    rows = [l.ljust(w) for l in rows]
+    out = []
+    for y in range(0, len(rows), scale):
+        line = ""
+        for x in range(0, w, scale):
+            block = [rows[yy][xx] for yy in range(y, min(y + scale, len(rows))) for xx in range(x, min(x + scale, w))]
+            line += max(block, key=lambda c: RAMP.index(c) if c in RAMP else 0)
+        out.append("".join(SHADE.get(c, "") + c + X if c != " " else " " for c in line.rstrip()))
+    return out
+
 
 EARLY = [   # the crunchy part: an initramfs-style preamble, ~1 s, before the real stations
     (":: running early hook", "[udev]"), (":: running hook", "[keymap]"), (":: mounting", "'/dev/q' on real root"),
@@ -52,11 +55,10 @@ EARLY = [   # the crunchy part: an initramfs-style preamble, ~1 s, before the re
 
 
 def banner():
-    out = [O + line + X for line in MASK.strip("\n").splitlines()]
-    word = "BOLDVENTURE"
-    for row in range(5):
-        out.append(OB + "  " + " ".join(FONT[c][row] for c in word) + X)
-    out.append(D + "  ── the Command · launch sequence ──────────────────────────────────" + X)
+    out = ["   " + l for l in logo()]
+    out.append("")
+    out.append(OB + "        B  O  L  D  V  E  N  T  U  R  E" + X)
+    out.append(D + "   ── the Command · launch sequence ─────────────────────────" + X)
     return "\n".join(out)
 
 
@@ -81,7 +83,7 @@ def read_from(pos):
 def main():
     os.system("")                       # turns on ANSI colors in the Windows console
     if os.name == "nt":
-        os.system("mode con: cols=104 lines=46 >nul 2>&1")
+        os.system("mode con: cols=110 lines=64 >nul 2>&1")
         os.system("title THE COMMAND · launch sequence")
     replay = "--replay" in sys.argv
     t0 = time.time()
@@ -105,7 +107,17 @@ def main():
                 tag = G + "[  OK  ]" + X if go else R + "[FAILED]" + X
                 verdict = G + "GO    " + X if go else R + "NO-GO " + X
                 note = (ev.get("note") or "")[:52]
+                if ev.get("waves"):   # PULL: the per-wave lines below carry the detail; the row says how many
+                    n_st = sum("STALLED" in w for w in ev["waves"])
+                    note = "%d waves open%s" % (len(ev["waves"]), " · %d STALLED" % n_st if n_st else " · all moving")
                 sys.stdout.write("\r\x1b[2K" + stamp(t0) + " " + line(ev["station"], W_DOTS, tag, verdict, D + note + X) + "\n")
+                for wv in ev.get("waves") or []:   # the pull report under PULL (Chief 10/17): one line per wave
+                    stalled = "STALLED" in wv
+                    parts = [p.strip() for p in wv.split("·")]
+                    head = parts[0].split(" boards")[0].replace(":", "")           # "wave 19 60/100"
+                    where = next((p for p in parts if p.startswith("on ") or p.startswith("STALLED")), "")
+                    eta = next((p for p in parts if p.startswith("ETA")), "")
+                    sys.stdout.write("           " + D + "└─ " + X + (R if stalled else G) + "%-16s %-34s %s" % (head, where[:34], eta) + X + "\n")
                 running = None
             elif ev.get("state") == "end":
                 done = True

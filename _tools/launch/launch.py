@@ -397,7 +397,8 @@ def station_pull():
         note = "runner %s started · " % "+".join(started) + note
     if stalled:
         note = "STALLED: %s · " % ", ".join(stalled) + note
-    return {"station": "PULL", "go": not stalled, "addr": "pull glass", "note": note}
+    open_waves = [l.split(" · 429s")[0] for l in waves if "LANDED" not in l]   # the boot screen lists these under PULL
+    return {"station": "PULL", "go": not stalled, "addr": "pull glass", "note": note, "waves": open_waves}
 
 
 def station_armory():
@@ -494,7 +495,7 @@ def main():
         boot("start", name)
         r = fn()
         for x in (r if isinstance(r, list) else [r]):
-            boot("done", x["station"], go=bool(x["go"]), note=str(x.get("note") or ""))
+            boot("done", x["station"], go=bool(x["go"]), note=str(x.get("note") or ""), waves=x.get("waves") or [])
         return r
 
     if not a.no_audit:   # first, always (Chief 10/6): get it out of the way

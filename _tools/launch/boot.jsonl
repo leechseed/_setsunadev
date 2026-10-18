@@ -1,7 +1,3 @@
-{"t": 1792285557.8701706, "state": "start", "station": "AUDIT"}
-{"t": 1792285560.6835113, "state": "done", "station": "AUDIT", "go": true, "note": "1 finding(s) · R 0 · P 0 · B 0 · K 0 · T 1 · S 0 · report _tools/audit/out/ · 2.8 s"}
-{"t": 1792285560.6835113, "state": "start", "station": "DARKROOM"}
-{"t": 1792285560.7045178, "state": "done", "station": "DARKROOM", "go": true, "note": "already live"}
-{"t": 1792285560.705028, "state": "start", "station": "WIRE"}
-{"t": 1792285563.8681383, "state": "done", "station": "WIRE", "go": true, "note": "probe ok · 3.2 s"}
-{"t": 1792285564.1073716, "state": "end", "station": ""}
+{"t": 1792287756.7896821, "state": "start", "station": "PULL"}
+{"t": 1792287757.5875888, "state": "done", "station": "PULL", "go": true, "note": "wave 1: 40/40 boards (4 empty) · 11,032 images · LANDED · 10 min/board · ETA -; wave 2: 40/40 boards (1 empty, 3 dropped) · 9,006 images · LANDED · 10 min/board · ETA -; wave 19: 60/100 boards (15 empty, 6 dropped) · 14,579 images · on galjav · 14 min/board · ETA 6:47 AM; wave 20: 23/45 boards (6 empty, 5 dropped) · 4,110 images · on abellaanderson · 11 min/board · ETA 1:39 AM; wave 21: 95/100 boards (26 empty, 4 dropped) · 23,640 images · on michigantitties · 14 min/board · ETA 10:52 PM · disk: Q free 3,116 GB · glass built, republish owed · 0.8 s", "waves": ["wave 19: 60/100 boards (15 empty, 6 dropped) · 14,579 images · on galjav · 14 min/board · ETA 6:47 AM", "wave 20: 23/45 boards (6 empty, 5 dropped) · 4,110 images · on abellaanderson · 11 min/board · ETA 1:39 AM", "wave 21: 95/100 boards (26 empty, 4 dropped) · 23,640 images · on michigantitties · 14 min/board · ETA 10:52 PM"]}
+{"t": 1792287757.9084606, "state": "end", "station": ""}
