@@ -18,3 +18,4 @@
 {"ts": "2026-10-18 09:24", "sid": "5d76f495", "words": 215, "tells": 2, "per_1k": 9.3, "families": {"other": 2}, "rules": {"exclamation": 1, "long-sentence": 1}}
 {"ts": "2026-10-18 09:26", "sid": "5d76f495", "words": 188, "tells": 3, "per_1k": 16.0, "families": {"other": 3}, "rules": {"long-sentence": 3}}
 {"ts": "2026-10-18 09:27", "sid": "5d76f495", "words": 110, "tells": 1, "per_1k": 9.1, "families": {"other": 1}, "rules": {"long-sentence": 1}}
+{"ts": "2026-10-18 09:28", "sid": "5d76f495", "words": 389, "tells": 2, "per_1k": 5.1, "families": {"other": 2}, "rules": {"long-sentence": 2}}

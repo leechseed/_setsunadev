@@ -210,10 +210,12 @@ body{display:grid;grid-template-rows:auto 1fr auto auto;padding:8px 12px;gap:6px
 .top b{color:var(--acc)}
 main{display:grid;grid-template-columns:250px 1fr;gap:8px;min-height:0}
 .col{display:grid;grid-template-rows:auto 1fr;gap:16px;min-height:0;padding-top:.8em}
-.box{position:relative;border:1px solid var(--dim);padding:14px 8px 8px;overflow:auto;min-height:0}
+.box{position:relative;border:1px solid var(--dim);padding:14px 8px 8px;min-height:0;display:flex;flex-direction:column}
+/* the label rides on the border, so the box itself never clips; the rail inside it scrolls (Chief 10/18: the cut-off labels) */
 .box::before{content:"\2524 " attr(data-t) " \251C";position:absolute;top:-.8em;left:10px;background:var(--bg);padding:0 4px;color:var(--dim)}
 .box.on{border-color:var(--acc)}.box.on::before{color:var(--acc)}
-#main{padding:0;overflow:hidden;display:flex;margin-top:.8em}
+#main{padding:12px 0 0;flex-direction:row;margin-top:.8em}
+.rail{flex:1;min-height:0;overflow:auto}
 iframe{flex:1;border:0;width:100%;height:100%;background:var(--bg)}
 .rail div{padding:1px 4px;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .rail div.sel{color:var(--bg);background:var(--acc)}.rail div:not(.sel):hover{background:var(--hl)}
