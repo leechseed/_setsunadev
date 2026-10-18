@@ -1,0 +1,323 @@
+{
+ "bolo": {
+  "n": 156,
+  "title": "THE YEAR 3000 OUTLOOKS: six sourced views of humanity at the turn of the millennium (2999 to 3000)",
+  "trunk": "BLACK",
+  "issued": "2026-10-18",
+  "asof": "2026-10-18",
+  "s": "hot",
+  "status": "Chief ruled six views on 10/18 as research, not fabula; the source pull and the writing have not started.",
+  "decider": "HOTLINE ACTUAL",
+  "feeds": "BOLO 100 the fabula to the end of time · universe era 5, beyond · the Science Department seats",
+  "related": [
+   {
+    "n": 100,
+    "why": "BOLO 100 wants the fabula built from the beginning of time to the end of time. These views are research for the far end."
+   }
+  ],
+  "home": "BOLO.md · row 156",
+  "card": "none",
+  "version": "v0.1 · DOPE SHEET"
+ },
+ "mantra": [
+  {
+   "k": "speed",
+   "w": "Speed",
+   "line": "Chief spoke the order and ruled it within about ten minutes on 10/18."
+  },
+  {
+   "k": "focus",
+   "w": "Focus",
+   "line": "Six views of humanity in 2999 to 3000, each pulled from published futures sources, never invented."
+  },
+  {
+   "k": "boldness",
+   "w": "Boldness",
+   "line": "Push the absurd views to maximum magnitude, then add a null view past what anyone can conceive."
+  }
+ ],
+ "paragraphs": [
+  {
+   "id": "S",
+   "name": "Situation",
+   "kind": "list",
+   "plain": "Where this came from: what Chief said, what already exists, and what the record says.",
+   "strand": {
+    "last": "Chief spoke the order at about 6:20 AM on 10/18 and ruled six views at about 6:30 AM.",
+    "plan": "Claude pulls published futures sources, then writes six views of humanity at the turn of 2999 to 3000.",
+    "you": "You said \"do all recs\" and filed this as research, not fabula.",
+    "next": "Claude starts with the sci-literature pull of sources."
+   },
+   "groups": [
+    {
+     "label": "The transmission · verbatim",
+     "items": [
+      {
+       "t": "\"outlooks on what humanity could possibly look like … not off the top of your fucking head … 3.1 is going to be a very optimistic … a very bleak, very dystopian, very pessimistic … one that's kind of rooted in sort of science, and then one rooted in like the absurdity … the maximum amount of it\" (the start of the dictation was cut off).",
+       "s": "done",
+       "when": "10/18"
+      },
+      {
+       "t": "\"do all recs … go ahead and do all the builds\" (from the car). Chief split the absurd view in two and added a null bound: \"just to sort of build the boundaries on this thing\".",
+       "s": "done",
+       "when": "10/18"
+      },
+      {
+       "t": "\"Don't file it as Fabula. This is still all research. None of it is … caught in stone … the ideation phase\"",
+       "s": "done",
+       "when": "10/18"
+      }
+     ]
+    },
+    {
+     "label": "What exists already",
+     "items": [
+      {
+       "t": "Claude filed row 156 in BOLO.md. It is the only record of this work in the sources.",
+       "s": "done",
+       "when": "10/18"
+      },
+      {
+       "t": "The sources show no outlooks files yet. The views will go in `_tools/bolostatus/work/156/outlooks/`.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "What the record says",
+     "items": [
+      {
+       "t": "Chief's six views: 3.1 optimistic · 3.2 bleak · 3.3 science-rooted · 3.4 absurd, positive at maximum magnitude · 3.5 absurd, negative at maximum magnitude · 3.6 null, past what can be conceived.",
+       "s": "ruled",
+       "when": "10/18"
+      },
+      {
+       "t": "Each view says what humanity is like and how it functions. Claude pulls each from published futures sources.",
+       "s": "ruled",
+       "when": "10/18"
+      },
+      {
+       "t": "The views file in `_tools/bolostatus/work/156/outlooks/`. They never go to `ssot_04_fabula` or the canon.",
+       "s": "ruled",
+       "when": "10/18"
+      },
+      {
+       "t": "BOLO 100 (10/12) set era 5 as the generation ship's journey, provisional. The views feed that far end.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "M",
+   "name": "Mission",
+   "kind": "mission",
+   "plain": "Map humanity in the year 3000 as six sourced views. The views mark the edges of the space; none of it is canon.",
+   "strand": {
+    "last": "Chief ruled six views from the car on 10/18.",
+    "plan": "sci-literature pulls sources, sci-forecast writes the views, Claude checks each claim against its source.",
+    "you": "Chief listens to the spoken summary, then reads the glass.",
+    "next": "Chief says which views to deepen, or leaves it as research."
+   },
+   "task": "Write six sourced views of humanity at the turn of the millennium, from optimistic to null,",
+   "intent": "in order to set the outer boundaries of the far future before any of it becomes story.",
+   "spoken": "\"3.1 is going to be a very optimistic … a very bleak, very dystopian, very pessimistic … one that's kind of rooted in sort of science … split that ultimate absurd into two different answers … and then one that is absolutely like null … just to sort of build the boundaries on this thing … Don't file it as Fabula. This is still all research.\"",
+   "endstate": [
+    "Six views sit on one glass, each with its sources and a confidence.",
+    "Every claim names its source or carries an extrapolation mark.",
+    "The views read as a range: sign and magnitude from 3.1 to 3.6.",
+    "Nothing files into the fabula or the canon."
+   ]
+  },
+  {
+   "id": "E",
+   "name": "Execution",
+   "kind": "phases",
+   "plain": "What happened between the order and today, and what is left to build.",
+   "strand": {
+    "last": "Chief spoke the order and ruled six views, research only, on 10/18.",
+    "plan": "Claude runs the build in order: sources, six views, claim check, glass and sheet, listenable script.",
+    "you": "You said \"go ahead and do all the builds\". Nothing waits on you.",
+    "next": "The sci-literature agent pulls the published futures sources."
+   },
+   "main_effort": "Write six sourced views of humanity at the turn of 2999 to 3000, each checked against its source.",
+   "phases": [
+    {
+     "n": 0,
+     "t": "**Order spoken.** Chief asked for outlooks on what humanity could look like, from sources, not from memory.",
+     "s": "done",
+     "when": "10/18"
+    },
+    {
+     "n": 1,
+     "t": "**Ruled.** Chief ruled six views, filed as research in `_tools/bolostatus/work/156/outlooks/`, never as fabula.",
+     "s": "done",
+     "when": "10/18"
+    },
+    {
+     "n": 2,
+     "t": "**Sources pulled.** The sci-literature agent pulls published futures sources for the six views.",
+     "s": "open"
+    },
+    {
+     "n": 3,
+     "t": "**Six views written.** The sci-forecast agent writes views 3.1 to 3.6 from those sources.",
+     "s": "open"
+    },
+    {
+     "n": 4,
+     "t": "**Claims checked.** The CDR checks each claim against its source.",
+     "s": "open"
+    },
+    {
+     "n": 5,
+     "t": "**Glass and sheet.** Claude builds the research glass and publishes DOPE SHEET 156.",
+     "s": "open"
+    },
+    {
+     "n": 6,
+     "t": "**Listenable reply.** Claude writes the reply as a script Chief can hear in the car.",
+     "s": "open"
+    }
+   ],
+   "coord": [],
+   "running": [],
+   "groups": []
+  },
+  {
+   "id": "A",
+   "name": "Admin & Logistics",
+   "kind": "files",
+   "plain": "Where this row's files live and what it costs.",
+   "strand": {
+    "last": "Claude filed row 156 in BOLO.md on 10/18.",
+    "plan": "Claude files every view in `_tools/bolostatus/work/156/outlooks/`, away from the fabula and the canon.",
+    "you": "You spent nothing on this row. The sources name no cost.",
+    "next": "Claude creates the outlooks folder when the first source pull lands."
+   },
+   "files": [
+    {
+     "path": "BOLO.md",
+     "what": "row 156, the order spoken and ruled 10/18",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/156/sources.md",
+     "what": "everything the Command holds on this row, the input to this sheet",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/156/outlooks/",
+     "what": "where the six views and their sources file; research, never fabula",
+     "s": "open"
+    },
+    {
+     "path": "_tools/bolostatus/boards/156.draft.json",
+     "what": "this sheet's first draft",
+     "s": "done"
+    }
+   ],
+   "cost": [
+    {
+     "k": "money",
+     "v": "none named in the sources"
+    },
+    {
+     "k": "agents",
+     "v": "sci-literature pulls the sources · sci-forecast writes the views · the CDR checks the claims"
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "name": "Command & Signal",
+   "kind": "list",
+   "plain": "Who calls what. The research is Claude's to build; any move toward story is Chief's.",
+   "strand": {
+    "last": "Claude ran the source pull and the writing seat.",
+    "plan": "Claude publishes the glass and this sheet.",
+    "you": "Chief rules the three calls when he is out of the car.",
+    "next": "Say \"take all recs\" and the views stay research, with a second source pass queued."
+   },
+   "groups": [
+    {
+     "label": "Who decides",
+     "items": [
+      {
+       "t": "**ACTUAL**: which views matter and whether any reaches the story. **Claude**: the sources, the writing seat and the checks.",
+       "s": "held"
+      }
+     ]
+    },
+    {
+     "label": "The gate",
+     "items": [
+      {
+       "t": "**Research only.** Chief ruled on 10/18 that nothing here files as fabula.",
+       "s": "ruled"
+      }
+     ]
+    },
+    {
+     "label": "Signal",
+     "items": [
+      {
+       "t": "The glass: https://claude.ai/artifact/GK9GYmr3RjopCuhY3GCM61 · sources: `_tools/bolostatus/work/156/outlooks/sources.md` · views: `_tools/bolostatus/work/156/outlooks/views.md`.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "name": "Log",
+   "kind": "log",
+   "plain": "Every transmission on this row, in order.",
+   "strand": {
+    "last": "Chief ruled six views as research at about 6:30 AM on 10/18, the newest entry.",
+    "plan": "The next entry lands when the sci-literature pull of sources returns.",
+    "you": "You spoke the order, then ruled it from the car.",
+    "next": "Your word on the glass and this sheet."
+   },
+   "entries": [
+    {
+     "when": "10/18",
+     "who": "Chief",
+     "t": "Spoken about 6:20 AM, start cut off: \"outlooks on what humanity could possibly look like … not off the top of your fucking head … 3.1 is going to be a very optimistic … a very bleak, very dystopian, very pessimistic … one that's kind of rooted in sort of science, and then one rooted in like the absurdity … the maximum amount of it\". Four views."
+    },
+    {
+     "when": "10/18",
+     "who": "Chief",
+     "t": "Ruled about 6:30 AM from the car: \"do all recs … go ahead and do all the builds\". Six views, with a null bound \"just to sort of build the boundaries on this thing\". \"Don't file it as Fabula. This is still all research. None of it is … caught in stone … the ideation phase\"."
+    }
+   ]
+  }
+ ],
+ "frago": {
+  "mission": "Map humanity in the year 3000 as six sourced views that mark the boundaries, as research only.",
+  "order": "**Listen to the summary, then open the glass and say which views to deepen.**",
+  "default": "Silence: the six views stay as research; nothing moves toward the story.",
+  "calls": [
+   {
+    "q": "Where the views live",
+    "options": "STAY research in the work folder (rec) · promote a view to the fabula",
+    "default": "STAY research (rec)",
+    "s": "open"
+   },
+   {
+    "q": "The thin spots (3.5, 3.6, climate to 3000)",
+    "options": "RUN a second source pass with abstracts read (rec) · leave it thin",
+    "default": "RUN a second pass (rec)",
+    "s": "open"
+   },
+   {
+    "q": "Era 5 tie-in",
+    "options": "HOLD until BOLO 100 asks for era 5 (rec) · tie the views to era 5 now",
+    "default": "HOLD (rec)",
+    "s": "open"
+   }
+  ]
+ }
+}

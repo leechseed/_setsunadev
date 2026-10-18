@@ -5,19 +5,14 @@
 | Name | Model | Job in plain words | Access |
 |---|---|---|---|
 | architect | opus | Proposes a design with trade-offs for a new tool or restructure | read-only |
-| conversation-analyzer | haiku | Finds behaviors Chief had to correct in a transcript | read-only |
 | doc-updater | haiku | Refreshes READMEs and code maps from the actual scripts | writes |
-| drill-maker | haiku | Writes five recall questions from locked parts, each with its answer as a tip | read-only |
 | harness-optimizer | sonnet | Reviews hooks, skills and agent config for reliability and cost; proposes | read-only |
 | loop-operator | sonnet | Watches a long run from its logs, spots stalls, recommends pause or resume | read-only (Bash read-only) |
 | opensource-sanitizer | sonnet | Independent pre-release audit: secrets, personal data, binaries, history | read-only (Bash read-only) |
 | order-parser | haiku | Turns a garbled dictation line into a clean order (proword, BOLO, verb, object, confidence); never acts | read-only |
-| prose-taste | sonnet | Flags slop words, filler openers, fake precision and unsourced claims in a draft, with the fix; never rewrites | read-only |
 | python-reviewer | sonnet | Reviews Python for security, error handling, Windows pitfalls, style | read-only (Bash read-only) |
 | root-cause | sonnet | Traces a bug to its root cause with an evidence chain before any fix is proposed | read-only (Bash read-only) |
 | security-reviewer | sonnet | Finds leaked secrets, private data in public files, injection risks | read-only (Bash read-only) |
-| syllabus-builder | sonnet | Maps a topic into a bare tree of one-line parts in teaching order | read-only |
-| teach-coach | sonnet | Teaches one tiny part at a time as a spoken sentence plus one tip | read-only |
 | skill-builder | sonnet | Drafts or trims one skill or agent file to the Anthropic skill patterns; names test prompts | writes (one named file) |
 | skill-optimizer | sonnet | Reads one transcript and one skill, finds where the skill misfired or dragged, proposes the smallest edit | read-only |
 | collect-lead | sonnet | Depth-2 lead for one collect run: launches up to three PS on the batch briefs, checks the extracts parse, writes the register | writes (the register) + Agent (budget 3 PS) |
@@ -37,3 +32,5 @@
 Every agent opens with the same block (BOLO 139). It says the agent is a specialist on the CDR's call: it works only on the inputs it is given and writes only the files its brief names. It reports in plain words, with file:line or URL for every claim, in under 250 words unless the brief says otherwise. It never grades another agent's work, never launches agents (no agent has the Agent tool, except collect-lead, which launches up to three PS its brief budgets under depth 2, SOP §1.17), and never scans the machine unless the brief names it. Private detail (health, sexual, provider) stays out of public files. Only collect-lead (its register), doc-updater, refactor-cleaner, opensource-forker and opensource-packager can write or edit; every other agent returns its result as a report for the CDR to file. What each agent lost in adaptation is in `_PRIVATE/ecc/roster-notes.md`.
 
 **Shelved 10/18** (Chief: "take all recs", BOLO 155 M5; never fired; files kept in `_tools/armory/shelf/agents/`, one move from coming back): `a11y-architect`, `chief-of-staff`, `claim-checker`, `code-explorer`, `cto`, `marketing-agent`, `mle-reviewer`, `network-troubleshooter`, `opensource-forker`, `opensource-packager`, `performance-optimizer`, `planner`, `pytorch-build-resolver`, `refactor-cleaner`, `seo-specialist`, `silent-failure-hunter`. Merged: `code-explorer` and `planner` are modes of `architect`; `silent-failure-hunter` and `performance-optimizer` are modes of `python-reviewer`.
+
+**M11 ruled 10/18** (Chief: "do all recs", BOLO 155): five more shelved (no skill or script calls them): `conversation-analyzer` (the session note's Lessons line does the job), `prose-taste` (the one reviewer is a script, `prose_lint.py`; a checker agent breaks the doctrine), `drill-maker` · `teach-coach` · `syllabus-builder` (the teach-back runs in the spoken line). Kept with a named launcher: `architect` (the CDR on a "design X" or "plan X" tooling ask; first test: "plan the per-layer probe step for BOLO 121") and `loop-operator` (the 30-minute reload report deploys it when the log stalls or errors repeat).
