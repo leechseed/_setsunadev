@@ -80,6 +80,31 @@ reason = destructive(cmd)
 if reason:
     sys.stderr.write("destructive-command guard: '%s' blocked. It can erase work that git or the Command cannot restore. To override: Chief says 'override guard' and the CDR runs it by hand. (rm -rf inside the scratchpad or _tools/*/out/ is never blocked.)\n" % reason)
     sys.exit(2)
+
+
+def habit(cmd, tool):
+    """BOLO 155 M4 (10/18, memory `shell-habits`): the mechanical shell mistakes that failed 74+ calls, caught before
+    they run. Returns the fix to hand back, or None. Bash only; checks each command segment's first word."""
+    if tool != "Bash":
+        return None
+    for seg in re.split(r"[;\n]|&&|\|\||\|", cmd):
+        toks = _tokens(seg)
+        while toks and re.match(r"^\w+=\S*$", toks[0]):   # skip VAR=value prefixes
+            toks = toks[1:]
+        if not toks:
+            continue
+        first = os.path.basename(toks[0]).lower()
+        if re.fullmatch(r"python3(\.\d+)?(\.exe)?", first):
+            return "'python3' is not on this box; use 'python' (Python 3.11), with -X utf8 when output holds symbols"
+        if re.fullmatch(r"(get|set|select|remove|new|write|test|start|stop)-[a-z]+", first):
+            return "'%s' is a PowerShell cmdlet and the Bash tool runs Git Bash; use the Bash equivalent or the PowerShell tool" % toks[0]
+    return None
+
+
+fix = habit(cmd, d.get("tool_name"))
+if fix:
+    sys.stderr.write("shell-habits guard (BOLO 155 M4): %s.\n" % fix)
+    sys.exit(2)
 PAT = re.compile(r"(?i)(?<![\w-])(get-process|tasklist|get-service|sc\s+query|netstat|get-nettcpconnection|get-netadapter|get-netipconfiguration|ipconfig|arp\s+-a|nmap|get-winevent|get-eventlog|wevtutil|get-computerinfo|systeminfo|wmic|get-ciminstance|get-wmiobject|reg\s+query|get-itemproperty\s+['\"]?hk|schtasks|get-scheduledtask|netsh|whoami\s+/all|ps\s+(aux|-ef)|ss\s+-[a-z]*t|lsof\s+-i|dmesg|journalctl|get-hotfix|driverquery|pnputil|get-pnpdevice|nvidia-smi)(?![\w-])")
 m = PAT.search(cmd)
 if not m:
