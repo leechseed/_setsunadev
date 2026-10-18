@@ -57,14 +57,16 @@ def main():
     ex["bolo"]["related"] = ex["bolo"].get("related", [])[:2]
     write(os.path.join(wd, "schema.json"), json.dumps(ex, ensure_ascii=False, indent=1))
     title = re.sub(r"\*\*", "", re.search(r"^\| \d+ \| \*\*(.+?)\*\*", row).group(1)) if re.search(r"^\| \d+ \| \*\*(.+?)\*\*", row) else f"BOLO {n}"
-    brief = f"""You are SHEET, the DOPE SHEET specialist for BOLO {n}. Model: sonnet.
+    brief = f"""JOB: drafting-dope-sheet
+You are SHEET, the DOPE SHEET specialist for BOLO {n}. Model: sonnet.
 READ: {rel(os.path.join(wd, 'sources.md'))} (everything the Command has on it) and {rel(os.path.join(wd, 'schema.json'))} (the exact JSON shape; copy keys, not content).
 WRITE: {rel(os.path.join(HERE, 'boards', n + '.draft.json'))} — the whole sheet in the schema's shape, filled for BOLO {n} ("{title}"):
   bolo: n · title · trunk · issued (the row's date) · asof (today) · s · status (one header line) · decider "HOTLINE ACTUAL" · feeds · related (n + why, from the rows it names) · home "BOLO.md · row {n}" · card "none" · version "v0.1 · DOPE SHEET"
   mantra: three lines (speed · focus · boldness) specific to this BOLO
   paragraphs S (Situation: groups = the transmission, verbatim where Chief ruled · what exists already · what the record says) · E (Execution: main_effort + phases with n/t/s/when, done phases first) · A (Admin & Logistics: files with path/what/s · cost with k/v) · L (Log: one entry per transmission in the sources, dated, who = Chief or Claude).
   Leave paragraphs M and C as the schema's shape with empty strings; leave frago.order / default / calls empty. The main line writes those.
-RULES: write to the documentation SOP (BOLO 95, 3.1-3.2): one word for each thing, the word the sources use; one idea per sentence, 20 words at most, and each ' · ' list item counts as a sentence; every sentence names who does what ('the script checks the file', never 'the file is checked'); Chief's quoted words stay verbatim. Every strand (last · plan · you · next) in plain words for a reader who was not there; nothing not in the sources; file paths verbatim; [[key|label]] links only for keys you saw in schema.json. Do not read any other file. Reply with the path and nothing else.
+RULES: write to the documentation SOP (BOLO 95, 3.1-3.2): one word for each thing, the word the sources use; one idea per sentence, 20 words at most, and each ' · ' list item counts as a sentence; every sentence names who does what ('the script checks the file', never 'the file is checked'); Chief's quoted words stay verbatim. Every strand (last · plan · you · next) in plain words for a reader who was not there; nothing not in the sources; file paths verbatim; [[key|label]] links only for keys you saw in schema.json. Do not read any other file. Reply with the path, then one status line.
+STATUS. End your reply with one status line: DONE · DONE_WITH_CONCERNS: <what> · NEEDS_CONTEXT: <what file or fact> · BLOCKED: <why> (superpowers contract, BOLO 155 M1).
 """
     write(os.path.join(wd, "brief.SHEET.md"), brief)
     print(f"DOPE SHEET prep · BOLO {n} · names {named or '-'} · STATE mentions {len(smentions)} · note mentions {len(nmentions)} · sheets {len(sheets)}")

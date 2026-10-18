@@ -212,7 +212,7 @@ Stop when every batch has a non-empty extract.k.json, WRITE has produced the reg
         todo.append(j)
         files = " · ".join(rel(os.path.join(wd, f"{m['n']:03d}.txt")) for m in chunk)
         write(os.path.join(wd, f"brief.EXTRACT.{j}.md"), parts(
-            f'You are EXTRACT-{j}, a collect specialist for the "{name}" locus. Model: haiku. Read {rel(plan_p)}; stay inside your batch.',
+            f'JOB: extracting-link-batch\nYou are EXTRACT-{j}, a collect specialist for the "{name}" locus. Model: haiku. Read {rel(plan_p)}; stay inside your batch.',
             f'Extract what each page in your batch actually lists, for the "{name}" locus. A page that is a list of standards yields many items, a single standard yields one; never invent an id; keep notes under 20 words.',
             f'{rel(os.path.join(wd, f"{xp}{j}.json"))} — a JSON list, one object per file: {{"url": "…", "body": "<the standards body or publisher>", "quality": "high|low", "items": [{{"id": "<standard number or title>", "title": "…", "domain": "<quality|software|systems|AI|risk|PM|HF|design|print|other>", "tier": "<policy|standard|handbook|procedure|list>", "free": true|false, "note": "one line"}}], "gaps": "what the page promised but did not carry"}}.',
             f'READ: {files}. Nothing else. SOURCE QUALITY: prefer the primary source (paper, author, official doc). Mark SEO farms, listicles and reposts "quality": "low"; if you cannot fit the field, start the note with "quality: low".',
@@ -229,7 +229,7 @@ Stop when every batch has a non-empty extract.k.json, WRITE has produced the reg
         sys.exit(0)
     wsrc = f"every {rel(wd)}/extract.n*.json (the narrow set only)" if narrow else f"every {rel(wd)}/extract.*.json"
     write(os.path.join(wd, "brief.WRITE.md"), parts(
-        f'You are WRITE, the register specialist for the "{name}" locus. Model: sonnet.',
+        f'JOB: writing-harvest-register\nYou are WRITE, the register specialist for the "{name}" locus. Model: sonnet.',
         "Write the register: one table by domain (id · title · body · tier · free · maps to house area · note), then a gaps section (what no link carried), then a free-sources section. Every fetched URL appears at least once. Outline first (the domains, then the rows). Cite each claim. Keep one source per paragraph or row.",
         f"the register file the locus names (or {rel(os.path.join(wd, name + '.register.draft.md'))} if it does not). Under 900 lines. Every claim line (bullet or table row) carries one URL from manifest.json.",
         f"READ: {wsrc} and the locus file {rel(src)} (for the Command's areas it names). Nothing else. Carry each extract's quality field into the note; never rank a quality: low source above a high one.",
@@ -246,7 +246,7 @@ Stop when every batch has a non-empty extract.k.json, WRITE has produced the reg
         blist = NL.join(f"- batch {j}: {rel(os.path.join(wd, f'brief.EXTRACT.{j}.md'))} -> {rel(os.path.join(wd, f'extract.{j}.json'))}" for j in todo)
         lead_txt = parts(
             f'You are collect-lead for the "{name}" locus. Model: sonnet. Depth 2 (SOP 1.17).',
-            "Launch one PS (haiku, general-purpose) per batch below, all in one message, each with its brief verbatim; wait; check each extract.k.json exists and parses to a non-empty JSON list (script check, no judging); then write the register from the WRITE brief yourself.",
+            "Launch one PS per batch below as the agent extracting-link-batch (haiku; by name, never general-purpose), all in one message, each with its brief verbatim; wait; check each extract.k.json exists and parses to a non-empty JSON list (script check, no judging); then write the register from the WRITE brief yourself.",
             f"the register file named in {rel(os.path.join(wd, 'brief.WRITE.md'))}; hand back one line per batch plus the register path.",
             f"READ: {rel(plan_p)} and the briefs below. Work folder: {rel(wd)}. Batches:{NL}{blist}{NL}Register brief: {rel(os.path.join(wd, 'brief.WRITE.md'))}",
             "budget: at most 3 PS, one launch round, no relaunch, no reviewer, no depth 3; write only the register.",

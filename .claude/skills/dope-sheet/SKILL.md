@@ -19,7 +19,7 @@ Writes `_tools/bolostatus/work/N/sources.md` (the BOLO row, the rows it names, S
 
 ## H1 · One specialist
 
-Launch **SHEET** (sonnet) with the brief verbatim. It writes `boards/N.draft.json`: the header, the mantra, paragraphs S · E · A · L. It leaves M and C as empty shapes and the order and calls empty. It reads nothing outside the work dir.
+Launch **SHEET** as the agent `drafting-dope-sheet` (sonnet; by name, never general-purpose, BOLO 155 M2) with the brief verbatim. It writes `boards/N.draft.json`: the header, the mantra, paragraphs S · E · A · L. It leaves M and C as empty shapes and the order and calls empty. It reads nothing outside the work dir.
 
 ## H2 · The main line's judgment
 

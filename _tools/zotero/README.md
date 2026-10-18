@@ -26,10 +26,10 @@ Authority order for a key: Chief's own Zotero tags (`00_` … `09_`, never overw
 | 2 · subject for every item | `python _tools/zotero/classify_live.py` | 0 |
 | 3 · key by tags + rules | `python _tools/zotero/fullpass.py key` | 0 |
 | 4 · bundle the unkeyed | `FULLPASS_BATCH_DIR=<scratch> python _tools/zotero/fullpass.py batch` | 0 |
-| 5 · PS per batch | one PS per `batchNN.md` → `_meta/spinekeys-batchNN.json` (keys + a repaired title for boilerplate-titled items) | ~40k per batch |
+| 5 · PS per batch | one PS per `batchNN.md`, launched as the agent `keying-zotero-batch` (brief opens `JOB: keying-zotero-batch`; BOLO 155) → `_meta/spinekeys-batchNN.json` (keys + a repaired title for boilerplate-titled items) | ~40k per batch |
 | 6 · fan-in | `python _tools/zotero/fullpass.py merge` → `SPINE-KEYS.md` (one shelf per key, whole library) | 0 |
 | 7 · the gap | `python _tools/zotero/gap_scan.py` → `GAP-BY-SHELF.md` (the z-lib favourites ranked per shelf, the acquisition queue) | 0 |
-| 8 · distill waves | per shelf: pdftotext → one MS per book on `TEMPLATE.distill.v4.md` → `check_distill.py` → the `_INDEX.md` Distilled register | ~120–190k per book |
+| 8 · distill waves | per shelf: pdftotext → one MS per book, launched as the agent `distilling-book` (brief opens `JOB: distilling-book`; BOLO 155), on `TEMPLATE.distill.v4.md` → `check_distill.py` → the `_INDEX.md` Distilled register | ~120–190k per book |
 | 9 · the model | the SSOT doc for the shelf is written FROM the shelf, never before it is keyed | one MS |
 
 **The drop folder (9/16; moved to Q: 9/24):** `Q:/_PDF_DROP/` — acquisitions land there as bare PDFs, no Zotero filing needed; `inventory.py` scans it (`src: drop`, title/author/year guessed from the filename, `bvx: NEW` until cataloged) and the sweep keys them like any row. **Regeneration is safe (9/16 fix):** `inventory.py` carries `spine · spine_src · subject · junk_title · rot` and PS-repaired titles across runs, matched by zkey; before the fix a rerun silently dropped every PS TOC key. Rot notes live in `_meta/rot.json`, keyed by BVX id. **The bulk is held:** drop rows with no catalog match get `spine_src: drop-unkeyed` and are never bundled for a PS pass until an intake is ordered (title rules over-key RPG character sheets). Acquisitions get a row in `catalog.json` with `drop_file`, and a manual spine key in `fullpass.py` `MANUAL` (`spine_src: manual`, never overwritten). Report: `_meta/DROP-INTAKE.md`.

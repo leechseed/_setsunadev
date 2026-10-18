@@ -24,7 +24,7 @@ Writes `_PRIVATE/intake-repos/<owner>__<repo>/scan.json` (stars, license, last p
 
 ## 2 · Judge (one specialist per repo, in parallel)
 
-Launch one MS (sonnet) per repo in one message. Each brief, verbatim plus the repo path:
+Launch one judge per repo in one message, as the agent `judging-intake-repo` (haiku, as 55 of its 83 runs were; by name, never general-purpose, BOLO 155 M2). Each brief opens with `JOB: judging-intake-repo`, then this text verbatim plus the repo path:
 
 > Read `_PRIVATE/intake-repos/<owner>__<repo>/scan.json` and `README.md`, then fetch and read in full any file you recommend (raw.githubusercontent.com). Compare against what the Command already has: `.claude/agents/README.md`, the skill list in `.claude/skills/`, the hooks in `.claude/settings.local.json`, and `_tools/` (names only). Write `_PRIVATE/intake-repos/<owner>__<repo>/picks.json`: a list of `{id, kind (agent|skill|command|hook|script|idea), plain (one plain sentence: what it does for us), rec (yes|maybe|no), why (one line), replaces (our seat, skill or tool it would replace, or "none"), source (path or URL), risk (hooks, installers, network calls, telemetry, license: one line or "none")}`. Rules: our formation (no checker agents, a script reviews), least tools, no auto-triggers, no machine scanning unasked, no Node installers, private detail stays private. Reply in under 120 words.
 

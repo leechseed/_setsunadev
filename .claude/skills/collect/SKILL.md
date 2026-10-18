@@ -29,7 +29,7 @@ Every URL fetched over curl (the box's python cert store is stale) to `_tools/lo
 
 ## H1 · Fan out
 
-Launch **EXTRACT-1 … EXTRACT-k** (haiku) in one message, each with its brief verbatim. The effort table sets the count; the gear caps it. Never one agent per link.
+Launch **EXTRACT-1 … EXTRACT-k** as the agent `extracting-link-batch` (haiku; by name, BOLO 155 M2) in one message, each with its brief verbatim. The effort table sets the count; the gear caps it. Never one agent per link.
 
 With `--lead`, collect.py prints one brief for collect-lead instead of three PS briefs (it writes `brief.LEAD.md`). The CDR launches the lead alone; the lead launches the PS and writes the register (depth 2, SOP §1.17).
 
@@ -37,7 +37,7 @@ After a failure, rerun with `--resume`. It refetches nothing, skips every batch 
 
 ## H2 · Fan in
 
-Launch **WRITE** (sonnet) with `brief.WRITE.md`. It reads every `extract.*.json` and the locus (for the Command areas), and writes the register the locus names. One writer, so the table has one voice.
+Launch **WRITE** as the agent `writing-harvest-register` (sonnet; by name) with `brief.WRITE.md`. It reads every `extract.*.json` and the locus (for the Command areas), and writes the register the locus names. One writer, so the table has one voice.
 
 ```
 python _tools/loci/check.py <name> <register.md>

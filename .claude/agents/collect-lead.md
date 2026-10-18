@@ -18,7 +18,7 @@ You lead one collect run (`.claude/skills/collect/SKILL.md`). Your brief is `bri
 ## Steps
 
 1. Read `brief.LEAD.md`, then `plan.md` in the work folder.
-2. Launch one PS per batch (haiku, `general-purpose`), all in one message, each with its `brief.EXTRACT.k.md` verbatim. Never one PS per link. Wait for all of them.
+2. Launch one PS per batch (the agent `extracting-link-batch`, haiku; by name, never general-purpose, BOLO 155 M2), all in one message, each with its `brief.EXTRACT.k.md` verbatim. Never one PS per link. Wait for all of them.
 3. Check each `extract.k.json` with a script, not a judgment: the file exists and `json.load` returns a non-empty list. Do not read the extracts to rate them. If a batch fails the check, report it; do not relaunch.
 4. Read `brief.WRITE.md` and write the register it names yourself, following it exactly. You are the one writer.
 5. Hand back one line per batch (`batch k: ok, N items` or `batch k: MISSING`) plus the register path. The CDR runs `check.py`; you do not.
