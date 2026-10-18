@@ -1,6 +1,6 @@
 ---
 name: collect
-description: 'Use when Chief asks for a link-harvest research pass: "collect the locus", "pull every link in …", "build the register from the harvest", "run the locus".'
+description: 'Use when Chief asks for a link-harvest research pass: "collect the locus", "pull every link in …", "build the register from the harvest", "run the locus".'
 ---
 
 # Collect — the harvest formation

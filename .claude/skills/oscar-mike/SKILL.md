@@ -1,6 +1,6 @@
 ---
 name: oscar-mike
-description: 'Use when Chief closes out the session: "Oscar Mike" or "we''re Oscar Mike".'
+description: 'Use when Chief closes out the session: "Oscar Mike" or "we''re Oscar Mike".'
 ---
 
 # Oscar Mike — the close-out

@@ -97,6 +97,9 @@ def check(name):
                 out.append(f"{name}: name '{fm['name']}' does not match the file name")
     elif re.match(r"\.claude/skills/[^/]+/SKILL\.md$", name):
         text = io.open(p, encoding="utf-8").read()
+        raw = io.open(p, encoding="utf-8", newline="").read(4000)
+        if "\r'\n" in raw or "\r\"\n" in raw:   # 10/17: a closing quote landed after the CR of a CRLF file and the skill lost its description
+            out.append(f"{name}: a frontmatter quote sits after the line's carriage return (CRLF file)")
         fm = strict(text)
         if fm is None and frontmatter(text) is not None:
             # 10/17: an unquoted ': ' inside a description broke two skills in Claude Code's listing; quote the value
