@@ -1,7 +1,7 @@
 {
   "active": "research",
-  "since": "2026-10-19 06:30",
-  "set_by": "build",
+  "since": "2026-10-19 06:36",
+  "set_by": "proword",
   "modes": {
     "research": {
       "model": "Opus",
@@ -9,8 +9,18 @@
       "may_not": "install, write code, touch canon",
       "rules": "core + research",
       "ends": "\"design mode\" · \"build mode\" · Oscar Mike",
-      "skills": ["collect", "intake", "brainstorm"],
-      "agents": ["sci-literature", "extracting-link-batch", "judging-intake-repo", "distilling-book", "collect-lead"]
+      "skills": [
+        "collect",
+        "intake",
+        "brainstorm"
+      ],
+      "agents": [
+        "sci-literature",
+        "extracting-link-batch",
+        "judging-intake-repo",
+        "distilling-book",
+        "collect-lead"
+      ]
     },
     "design": {
       "model": "Fable",
@@ -18,8 +28,18 @@
       "may_not": "install, edit scripts, write canon unless Chief promotes it",
       "rules": "core + research",
       "ends": "\"research mode\" · \"build mode\" · Oscar Mike",
-      "skills": ["brainstorm", "steel-man", "bench"],
-      "agents": ["architect", "bench-engineer", "bench-skeptic", "extracting-interfaces", "deconstructing-game-system"]
+      "skills": [
+        "brainstorm",
+        "steel-man",
+        "bench"
+      ],
+      "agents": [
+        "architect",
+        "bench-engineer",
+        "bench-skeptic",
+        "extracting-interfaces",
+        "deconstructing-game-system"
+      ]
     },
     "build": {
       "model": "Opus",
@@ -27,8 +47,18 @@
       "may_not": "install without Chief's word for that install, claim done without evidence",
       "rules": "core + build (7.26)",
       "ends": "\"research mode\" · \"design mode\" · Oscar Mike",
-      "skills": ["verifying-before-done", "safety-guard", "config-gc"],
-      "agents": ["python-reviewer", "skill-builder", "root-cause", "security-reviewer", "doc-updater"]
+      "skills": [
+        "verifying-before-done",
+        "safety-guard",
+        "config-gc"
+      ],
+      "agents": [
+        "python-reviewer",
+        "skill-builder",
+        "root-cause",
+        "security-reviewer",
+        "doc-updater"
+      ]
     }
   }
 }
