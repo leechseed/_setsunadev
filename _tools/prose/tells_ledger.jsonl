@@ -85,3 +85,6 @@
 {"ts": "2026-10-19 09:03", "sid": "10d97340", "words": 219, "tells": 5, "per_1k": 22.8, "families": {"other": 4, "passive": 1}, "rules": {"long-sentence": 4, "passive": 1}}
 {"ts": "2026-10-19 09:03", "sid": "10d97340", "words": 219, "tells": 5, "per_1k": 22.8, "families": {"other": 4, "passive": 1}, "rules": {"long-sentence": 4, "passive": 1}}
 {"ts": "2026-10-19 09:04", "sid": "10d97340", "words": 296, "tells": 4, "per_1k": 13.5, "families": {"passive": 1, "other": 3}, "rules": {"passive": 1, "long-sentence": 3}}
+{"ts": "2026-10-19 09:06", "sid": "10d97340", "words": 292, "tells": 5, "per_1k": 17.1, "families": {"other": 3, "passive": 2}, "rules": {"exclamation": 1, "long-sentence": 2, "passive": 2}}
+{"ts": "2026-10-19 09:07", "sid": "10d97340", "words": 292, "tells": 5, "per_1k": 17.1, "families": {"other": 3, "passive": 2}, "rules": {"exclamation": 1, "long-sentence": 2, "passive": 2}}
+{"ts": "2026-10-19 09:08", "sid": "10d97340", "words": 292, "tells": 5, "per_1k": 17.1, "families": {"other": 3, "passive": 2}, "rules": {"exclamation": 1, "long-sentence": 2, "passive": 2}}
