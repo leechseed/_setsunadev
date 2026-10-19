@@ -98,7 +98,7 @@
   },
   {
    "file": "_tools/audit/sop_audit.py",
-   "contains": "if \"diagnos\" in pat and path.startswith(\"_CANON_NODES\")",
+   "contains": "in pat and path.startswith(\"_CANON_NODES\"): continue",
    "why": "the --diff mode's own fiction skip names the pattern (10/19)"
   }
  ]

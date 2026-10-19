@@ -355,7 +355,8 @@ func (f *pushFlow) run() {
 	}
 	switch {
 	case !f.look:
-		f.row(pushSkip, "Diff", sFg.Render(how)+sDim.Render(" · not opened (no terminal, --print, --json or --no-diff)"))
+		f.row(pushSkip, "Diff", sFg.Render(how))
+		f.sub(sDim.Render("not opened: no terminal, or --print, --json, --no-diff"))
 	case r.Hunk.Found:
 		f.row(pushSkip, "Diff", sFg.Render(hunkLook)+sDim.Render(" · quitting hunk comes back here"))
 		c := exec.Command(r.Hunk.Path, strings.Fields(hunkLook)[1:]...)
@@ -463,11 +464,20 @@ func pushLog(from, to string, n int) error {
 	return err
 }
 
-// pushPager: the outgoing diff on the shared pager when hunk is not here; a files tab, then one tab per file
+// pushPager: the outgoing diff on the shared pager when hunk is not here
 func pushPager() error {
-	ns, err := pushGit("diff", "--numstat", "--no-renames", pushRange)
+	p, err := pushDiffPager()
 	if err != nil {
 		return err
+	}
+	return runPager(p)
+}
+
+// pushDiffPager: a files tab, then one tab per file (pushTabCap at most), each drawn the first time it shows
+func pushDiffPager() (*pager, error) {
+	ns, err := pushGit("diff", "--numstat", "--no-renames", pushRange)
+	if err != nil {
+		return nil, err
 	}
 	type nfile struct{ add, del, path string }
 	var files []nfile
@@ -511,7 +521,7 @@ func pushPager() error {
 		}
 		return pushDiffBody(fl.path, d, width)
 	}
-	return runPager(&pager{title: "push · outgoing", tabs: tabs, render: render})
+	return &pager{title: "push · outgoing", tabs: tabs, render: render}, nil
 }
 
 // pushDiffBody: one file's diff in git's colors, taken from theme.go; each @@ opens a section, so n/N step the hunks
