@@ -109,3 +109,4 @@
 {"ts": "2026-10-19 09:49", "sid": "10d97340", "words": 1054, "tells": 19, "per_1k": 18.0, "families": {"other": 14, "passive": 5}, "rules": {"long-sentence": 14, "passive": 5}}
 {"ts": "2026-10-19 09:56", "sid": "10d97340", "words": 147, "tells": 3, "per_1k": 20.4, "families": {"filler openers": 1, "other": 1, "passive": 1}, "rules": {"stock-phrase": 1, "long-sentence": 1, "passive": 1}}
 {"ts": "2026-10-19 10:05", "sid": "10d97340", "words": 1330, "tells": 25, "per_1k": 18.8, "families": {"other": 21, "hedges": 2, "passive": 2}, "rules": {"long-sentence": 21, "stock-phrase": 2, "passive": 2}}
+{"ts": "2026-10-19 13:52", "sid": "10d97340", "words": 889, "tells": 24, "per_1k": 27.0, "families": {"other": 17, "passive": 7}, "rules": {"long-sentence": 17, "passive": 7}}
