@@ -91,3 +91,4 @@
 {"ts": "2026-10-19 09:11", "sid": "10d97340", "words": 459, "tells": 10, "per_1k": 21.8, "families": {"passive": 6, "other": 4}, "rules": {"passive": 6, "long-sentence": 4}}
 {"ts": "2026-10-19 09:11", "sid": "10d97340", "words": 227, "tells": 2, "per_1k": 8.8, "families": {"other": 1, "passive": 1}, "rules": {"long-sentence": 1, "passive": 1}}
 {"ts": "2026-10-19 09:15", "sid": "10d97340", "words": 86, "tells": 1, "per_1k": 11.6, "families": {"other": 1}, "rules": {"long-sentence": 1}}
+{"ts": "2026-10-19 09:16", "sid": "10d97340", "words": 344, "tells": 5, "per_1k": 14.5, "families": {"other": 4, "passive": 1}, "rules": {"long-sentence": 4, "passive": 1}}
