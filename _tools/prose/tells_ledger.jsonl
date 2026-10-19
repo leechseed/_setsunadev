@@ -66,3 +66,5 @@
 {"ts": "2026-10-19 06:42", "sid": "10d97340", "words": 3858, "tells": 40, "per_1k": 10.4, "families": {"other": 27, "repeated openings": 2, "passive": 9, "slop words": 1, "contrast frames": 1}, "rules": {"long-sentence": 26, "repeated-opening": 2, "passive": 9, "stock-phrase": 1, "contrast-frame": 1, "exclamation": 1}}
 {"ts": "2026-10-19 06:53", "sid": "10d97340", "words": 126, "tells": 1, "per_1k": 7.9, "families": {"other": 1}, "rules": {"long-sentence": 1}}
 {"ts": "2026-10-19 06:54", "sid": "10d97340", "words": 126, "tells": 1, "per_1k": 7.9, "families": {"other": 1}, "rules": {"long-sentence": 1}}
+{"ts": "2026-10-19 08:21", "sid": "10d97340", "words": 194, "tells": 2, "per_1k": 10.3, "families": {"rhythm": 1, "other": 1}, "rules": {"metronome": 1, "long-sentence": 1}}
+{"ts": "2026-10-19 08:21", "sid": "10d97340", "words": 194, "tells": 2, "per_1k": 10.3, "families": {"rhythm": 1, "other": 1}, "rules": {"metronome": 1, "long-sentence": 1}}
