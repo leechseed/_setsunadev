@@ -1,6 +1,6 @@
 {
- "time": "2026-10-18T10:30:37",
- "all_go": true,
+ "time": "2026-10-19T04:30:31",
+ "all_go": false,
  "stations": [
   {
    "name": "CONSOLE",
@@ -9,18 +9,18 @@
   },
   {
    "name": "AUDIT",
-   "go": true,
-   "detail": "SOP audit (1 finding(s) · R 0 · P 0 · B 0 · K 0 · T 1 · S 0 · report _tools/audit/out/ · 3.1 s)"
+   "go": false,
+   "detail": "SOP audit (2 finding(s) · R 0 · P 0 · B 0 · K 1 · T 1 · S 0 · report _tools/audit/out/ · 4.4 s)"
   },
   {
    "name": "PULL",
    "go": true,
-   "detail": "pull glass (runner A+B+C started · wave 1: 40/40 boards (4 empty) · 11,032 images · LANDED · 10 min/board · ETA -; wave 2: 40/40 boards (1 empty, 3 dropped) · 9,006 images · LANDED · 10 min/board · ETA - · disk: Q free 3,014 GB · glass built, republish owed · 0.4 s)"
+   "detail": "pull glass (runner A+B+C started · no wave running · disk: Q free 2,962 GB · glass built, republish owed · 0.8 s)"
   },
   {
    "name": "ARMORY",
    "go": true,
-   "detail": "armory glass (rebuilding in the background (~40 s, log _PRIVATE/reference/armory/launch.log) · republish owed · budget 10/18 · 858 calls · agents 42 (100% named, 100% JOB) · shell fails 5% of 320 · Artifact fails 25% of 32)"
+   "detail": "armory glass (rebuilding in the background (~40 s, log _PRIVATE/reference/armory/launch.log) · republish owed · budget 10/18 · 1,039 calls · agents 45 (100% named, 100% JOB) · shell fails 6% of 391 · Artifact fails 38% of 47)"
   },
   {
    "name": "DARKROOM",
@@ -35,12 +35,12 @@
   {
    "name": "NAHIMIC",
    "go": true,
-   "detail": "audio guard (service + tasks disabled · 2.0 s)"
+   "detail": "audio guard (service + tasks disabled · 2.6 s)"
   },
   {
    "name": "JUDY",
    "go": true,
-   "detail": "session voice · pid 21220 (already running)"
+   "detail": "session voice · pid 6768 (already running)"
   },
   {
    "name": "FACES",
@@ -60,7 +60,7 @@
   {
    "name": "WIRE",
    "go": true,
-   "detail": "server judy · 7/7 tools (probe ok · 3.1 s)"
+   "detail": "server judy · 7/7 tools (probe ok · 4.7 s)"
   },
   {
    "name": "FRAGO",

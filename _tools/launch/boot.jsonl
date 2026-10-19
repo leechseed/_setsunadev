@@ -1,33 +1,33 @@
-{"t": 1792333826.6006422, "state": "start", "station": "CONSOLE"}
-{"t": 1792333826.9322064, "state": "done", "station": "CONSOLE", "go": true, "note": "already live · focused the open window", "waves": [], "sub": []}
-{"t": 1792333826.9322064, "state": "start", "station": "AUDIT"}
-{"t": 1792333830.0366926, "state": "done", "station": "AUDIT", "go": true, "note": "1 finding(s) · R 0 · P 0 · B 0 · K 0 · T 1 · S 0 · report _tools/audit/out/ · 3.1 s", "waves": [], "sub": []}
-{"t": 1792333830.0366926, "state": "start", "station": "PULL"}
-{"t": 1792333830.4207451, "state": "done", "station": "PULL", "go": true, "note": "runner A+B+C started · wave 1: 40/40 boards (4 empty) · 11,032 images · LANDED · 10 min/board · ETA -; wave 2: 40/40 boards (1 empty, 3 dropped) · 9,006 images · LANDED · 10 min/board · ETA - · disk: Q free 3,014 GB · glass built, republish owed · 0.4 s", "waves": [], "sub": []}
-{"t": 1792333830.4212582, "state": "start", "station": "ARMORY"}
-{"t": 1792333830.435067, "state": "done", "station": "ARMORY", "go": true, "note": "rebuilding in the background (~40 s, log _PRIVATE/reference/armory/launch.log) · republish owed · budget 10/18 · 858 calls · agents 42 (100% named, 100% JOB) · shell fails 5% of 320 · Artifact fails 25% of 32", "waves": [], "sub": ["10/18 · 858 calls · agents 42 (100% named, 100% JOB) · shell fails 5% of 320 · Artifact fails 25% of 32"]}
-{"t": 1792333830.4355745, "state": "start", "station": "DARKROOM"}
-{"t": 1792333830.4380934, "state": "done", "station": "DARKROOM", "go": true, "note": "already live", "waves": [], "sub": []}
-{"t": 1792333830.4380934, "state": "start", "station": "STASH"}
-{"t": 1792333830.4660323, "state": "done", "station": "STASH", "go": true, "note": "already live · in the Console", "waves": [], "sub": []}
-{"t": 1792333830.4660323, "state": "start", "station": "NAHIMIC"}
-{"t": 1792333832.50771, "state": "done", "station": "NAHIMIC", "go": true, "note": "service + tasks disabled · 2.0 s", "waves": [], "sub": []}
-{"t": 1792333832.5082185, "state": "start", "station": "JUDY"}
-{"t": 1792333833.2045047, "state": "done", "station": "JUDY", "go": true, "note": "already running", "waves": [], "sub": []}
-{"t": 1792333833.2045047, "state": "start", "station": "FACES"}
-{"t": 1792333833.208394, "state": "done", "station": "FACES", "go": true, "note": "already live · in the Console", "waves": [], "sub": []}
-{"t": 1792333833.2089047, "state": "start", "station": "DECK"}
-{"t": 1792333833.2104475, "state": "done", "station": "DECK", "go": true, "note": "in the Console", "waves": [], "sub": []}
-{"t": 1792333833.2104475, "state": "start", "station": "KNOBS"}
-{"t": 1792333833.6845021, "state": "done", "station": "KNOBS", "go": true, "note": "already running", "waves": [], "sub": []}
-{"t": 1792333833.6850076, "state": "start", "station": "WIRE"}
-{"t": 1792333836.816504, "state": "done", "station": "WIRE", "go": true, "note": "probe ok · 3.1 s", "waves": [], "sub": []}
-{"t": 1792333836.816504, "state": "start", "station": "FRAGO"}
-{"t": 1792333836.817516, "state": "done", "station": "FRAGO", "go": true, "note": "already refreshed", "waves": [], "sub": []}
-{"t": 1792333836.8180633, "state": "start", "station": "PAGES"}
-{"t": 1792333836.8185766, "state": "done", "station": "SITREP", "go": true, "note": "not opened (one window)", "waves": [], "sub": []}
-{"t": 1792333836.8185766, "state": "done", "station": "SOI", "go": true, "note": "not opened (one window)", "waves": [], "sub": []}
-{"t": 1792333836.8190844, "state": "done", "station": "PULLGLASS", "go": true, "note": "not opened (one window)", "waves": [], "sub": []}
-{"t": 1792333836.8190844, "state": "done", "station": "ROSTER", "go": true, "note": "not opened (one window)", "waves": [], "sub": []}
-{"t": 1792333836.8190844, "state": "done", "station": "ARMORY", "go": true, "note": "not opened (one window)", "waves": [], "sub": []}
-{"t": 1792333837.029324, "state": "end", "station": ""}
+{"t": 1792398616.8492641, "state": "start", "station": "CONSOLE"}
+{"t": 1792398617.2725005, "state": "done", "station": "CONSOLE", "go": true, "note": "already live · focused the open window", "waves": [], "sub": []}
+{"t": 1792398617.2725005, "state": "start", "station": "AUDIT"}
+{"t": 1792398621.6902099, "state": "done", "station": "AUDIT", "go": false, "note": "2 finding(s) · R 0 · P 0 · B 0 · K 1 · T 1 · S 0 · report _tools/audit/out/ · 4.4 s", "waves": [], "sub": []}
+{"t": 1792398621.6908054, "state": "start", "station": "PULL"}
+{"t": 1792398622.466201, "state": "done", "station": "PULL", "go": true, "note": "runner A+B+C started · no wave running · disk: Q free 2,962 GB · glass built, republish owed · 0.8 s", "waves": [], "sub": []}
+{"t": 1792398622.4667156, "state": "start", "station": "ARMORY"}
+{"t": 1792398622.4817555, "state": "done", "station": "ARMORY", "go": true, "note": "rebuilding in the background (~40 s, log _PRIVATE/reference/armory/launch.log) · republish owed · budget 10/18 · 1,039 calls · agents 45 (100% named, 100% JOB) · shell fails 6% of 391 · Artifact fails 38% of 47", "waves": [], "sub": ["10/18 · 1,039 calls · agents 45 (100% named, 100% JOB) · shell fails 6% of 391 · Artifact fails 38% of 47"]}
+{"t": 1792398622.4822714, "state": "start", "station": "DARKROOM"}
+{"t": 1792398622.4884567, "state": "done", "station": "DARKROOM", "go": true, "note": "already live", "waves": [], "sub": []}
+{"t": 1792398622.488966, "state": "start", "station": "STASH"}
+{"t": 1792398622.4915907, "state": "done", "station": "STASH", "go": true, "note": "already live · in the Console", "waves": [], "sub": []}
+{"t": 1792398622.4921067, "state": "start", "station": "NAHIMIC"}
+{"t": 1792398625.0962262, "state": "done", "station": "NAHIMIC", "go": true, "note": "service + tasks disabled · 2.6 s", "waves": [], "sub": []}
+{"t": 1792398625.0967422, "state": "start", "station": "JUDY"}
+{"t": 1792398625.7919743, "state": "done", "station": "JUDY", "go": true, "note": "already running", "waves": [], "sub": []}
+{"t": 1792398625.7924902, "state": "start", "station": "FACES"}
+{"t": 1792398625.8406897, "state": "done", "station": "FACES", "go": true, "note": "already live · in the Console", "waves": [], "sub": []}
+{"t": 1792398625.8412068, "state": "start", "station": "DECK"}
+{"t": 1792398625.8432705, "state": "done", "station": "DECK", "go": true, "note": "in the Console", "waves": [], "sub": []}
+{"t": 1792398625.8437905, "state": "start", "station": "KNOBS"}
+{"t": 1792398626.4752626, "state": "done", "station": "KNOBS", "go": true, "note": "already running", "waves": [], "sub": []}
+{"t": 1792398626.4752626, "state": "start", "station": "WIRE"}
+{"t": 1792398631.194952, "state": "done", "station": "WIRE", "go": true, "note": "probe ok · 4.7 s", "waves": [], "sub": []}
+{"t": 1792398631.194952, "state": "start", "station": "FRAGO"}
+{"t": 1792398631.2042034, "state": "done", "station": "FRAGO", "go": true, "note": "already refreshed", "waves": [], "sub": []}
+{"t": 1792398631.2052238, "state": "start", "station": "PAGES"}
+{"t": 1792398631.2057772, "state": "done", "station": "SITREP", "go": true, "note": "not opened (one window)", "waves": [], "sub": []}
+{"t": 1792398631.2057772, "state": "done", "station": "SOI", "go": true, "note": "not opened (one window)", "waves": [], "sub": []}
+{"t": 1792398631.2062988, "state": "done", "station": "PULLGLASS", "go": true, "note": "not opened (one window)", "waves": [], "sub": []}
+{"t": 1792398631.2068126, "state": "done", "station": "ROSTER", "go": true, "note": "not opened (one window)", "waves": [], "sub": []}
+{"t": 1792398631.2068126, "state": "done", "station": "ARMORY", "go": true, "note": "not opened (one window)", "waves": [], "sub": []}
+{"t": 1792398631.4854023, "state": "end", "station": ""}
