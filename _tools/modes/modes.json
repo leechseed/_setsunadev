@@ -1,0 +1,34 @@
+{
+  "active": "research",
+  "since": "2026-10-19 06:30",
+  "set_by": "build",
+  "modes": {
+    "research": {
+      "model": "Opus",
+      "may": "read, fetch, glass, file to the BOLO work folder",
+      "may_not": "install, write code, touch canon",
+      "rules": "core + research",
+      "ends": "\"design mode\" · \"build mode\" · Oscar Mike",
+      "skills": ["collect", "intake", "brainstorm"],
+      "agents": ["sci-literature", "extracting-link-batch", "judging-intake-repo", "distilling-book", "collect-lead"]
+    },
+    "design": {
+      "model": "Fable",
+      "may": "research, plus drafts, specs, plans and schemas on paper",
+      "may_not": "install, edit scripts, write canon unless Chief promotes it",
+      "rules": "core + research",
+      "ends": "\"research mode\" · \"build mode\" · Oscar Mike",
+      "skills": ["brainstorm", "steel-man", "bench"],
+      "agents": ["architect", "bench-engineer", "bench-skeptic", "extracting-interfaces", "deconstructing-game-system"]
+    },
+    "build": {
+      "model": "Opus",
+      "may": "write and edit scripts, install on Chief's word, ship each new tool as a command verb",
+      "may_not": "install without Chief's word for that install, claim done without evidence",
+      "rules": "core + build (7.26)",
+      "ends": "\"research mode\" · \"design mode\" · Oscar Mike",
+      "skills": ["verifying-before-done", "safety-guard", "config-gc"],
+      "agents": ["python-reviewer", "skill-builder", "root-cause", "security-reviewer", "doc-updater"]
+    }
+  }
+}
