@@ -184,7 +184,11 @@ func (m *model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		m.frame++
 		if m.earlyShown < len(early) && m.frame%2 == 0 {
 			e := early[m.earlyShown]
-			m.lines = append(m.lines, fmt.Sprintf("%s %s %s", stamp(0.12*float64(m.earlyShown+1)), sAcc.Render(e[0]), sFg.Render(e[1])))
+			if e[0] == "" { // the wake-up lines: green, no hook word
+				m.lines = append(m.lines, fmt.Sprintf("%s %s", stamp(0.12*float64(m.earlyShown+1)), sOK.Render(e[1])))
+			} else {
+				m.lines = append(m.lines, fmt.Sprintf("%s %s %s", stamp(0.12*float64(m.earlyShown+1)), sAcc.Render(e[0]), sFg.Render(e[1])))
+			}
 			m.earlyShown++
 			if m.earlyShown == len(early) {
 				m.lines = append(m.lines, "")
@@ -357,7 +361,28 @@ func fetchOnce(still bool) {
 	}
 }
 
+// wakeWords: "Wake Up, Neo." (Chief 10/19) is the go code for up. The shell runs wake.exe (a copy of this program)
+// and hands it "Up," "Neo." in any case and punctuation; anything that starts with "up" boots.
+func wakeWords(args []string) bool {
+	w := strings.Fields(strings.Map(func(r rune) rune {
+		if r >= 'a' && r <= 'z' || r == ' ' {
+			return r
+		}
+		return ' '
+	}, strings.ToLower(strings.Join(args, " "))))
+	return len(w) == 0 || w[0] == "up"
+}
+
 func main() {
+	if self := strings.ToLower(filepath.Base(os.Args[0])); strings.TrimSuffix(self, ".exe") == "wake" {
+		if wakeWords(os.Args[1:]) {
+			early = append([][2]string{{"", "Wake up, Neo..."}, {"", "The Matrix has you..."}, {"", "Follow the white rabbit."}, {"", ""}}, early...)
+			up()
+			return
+		}
+		fmt.Println(sOK.Render("Wake up, Neo...") + sDim.Render("  (say: wake up, neo)"))
+		return
+	}
 	cmd := ""
 	if len(os.Args) > 1 {
 		cmd = os.Args[1]
@@ -383,7 +408,7 @@ func main() {
 	default:
 		w := bufio.NewWriter(os.Stdout)
 		fmt.Fprintln(w, sAccB.Render("command")+sDim.Render(" · the Command's terminal front end (BOLO 153)"))
-		fmt.Fprintln(w, "  "+sAcc.Render("up   ")+"  boot the whole architecture: VS Code, the stations, JUDY, the Console")
+		fmt.Fprintln(w, "  "+sAcc.Render("up   ")+"  boot the whole architecture: VS Code, the stations, JUDY, the Console (the go code: wake up, neo)")
 		fmt.Fprintln(w, "  "+sAcc.Render("fetch")+"  the mark spinning beside the numbers, neofetch style; Space stops it (--still: one frame)")
 		fmt.Fprintln(w, "  "+sAcc.Render("board")+"  the newest sit rep board, one tab per block (--json: the board)")
 		fmt.Fprintln(w, "  "+sAcc.Render("md   ")+"  a markdown file in the terminal: sop · bolo · state · projects · any path (--json: its headings)")

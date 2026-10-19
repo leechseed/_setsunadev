@@ -95,6 +95,11 @@
    "file": "SOP.md",
    "contains": "Chief says \"ENDEX\"",
    "why": "§1.3 scenario: the retired word still maps to Oscar Mike (10/12)"
+  },
+  {
+   "file": "_tools/audit/sop_audit.py",
+   "contains": "if \"diagnos\" in pat and path.startswith(\"_CANON_NODES\")",
+   "why": "the --diff mode's own fiction skip names the pattern (10/19)"
   }
  ]
 }
