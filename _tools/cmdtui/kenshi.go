@@ -90,6 +90,9 @@ func stepOllama(dry bool) step {
 		return step{"ollama server", true, "down; would start " + exe}
 	}
 	cmd := exec.Command(exe, "serve")
+	// 8192 tokens of context is plenty for the mod's prompts and keeps the 14B model near 10 GB of video memory,
+	// which leaves room for Kenshi (3 GB) and JUDY (2 GB) on the 24 GB card. Ollama's own default can grow the cache to ~14 GB.
+	cmd.Env = append(os.Environ(), "OLLAMA_CONTEXT_LENGTH=8192")
 	cmd.SysProcAttr = &syscall.SysProcAttr{HideWindow: true, CreationFlags: 0x00000008 | 0x00000200} // DETACHED_PROCESS | CREATE_NEW_PROCESS_GROUP: it outlives this window
 	if err := cmd.Start(); err != nil {
 		return step{"ollama server", false, "start failed: " + err.Error()}
