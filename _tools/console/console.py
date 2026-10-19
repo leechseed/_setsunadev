@@ -4,7 +4,7 @@ The boot sequence plays inside it, then the workspace: a rail of panes, a rail o
 Everything wears the boot screen's look. The window snaps to the right half of the screen, top to taskbar.
 Serves 127.0.0.1:8795 only.
   /  the frame · /panes.json · /glasses.json · /boot.json · /local/<name> (whitelist) · /glass/<id>/<file>
-  /status.json · POST /cmd -> cmd.log
+  /status.json · POST /cmd -> cmd.log · POST /show + /show.json (command glass hands the frame a glass)
 Usage: python console.py              serve
        python console.py --open       open the window (or focus the open one) and snap it to the right half
        python console.py --status     run pull_queue.py report and cache status.json
@@ -105,6 +105,23 @@ def read_glasses():
             return json.load(f).get("glasses") or []
     except Exception:
         return []
+
+
+# ---- the hand-off (command glass, 10/19): POST /show bumps seq; the frame polls /show.json and opens the glass ----
+SHOW = {"seq": 0, "id": "", "url": "", "title": ""}   # memory only: a restart forgets the last pick
+SHOW_LOCK = threading.Lock()
+
+
+def show(gid, url, title):
+    with SHOW_LOCK:
+        SHOW.update(seq=SHOW["seq"] + 1, id=gid, url=url, title=title)
+
+
+def bring():
+    """the window to the front; a window opened just now only records seq on load, so the pick goes over again"""
+    if open_window().startswith("opened"):
+        time.sleep(2)
+        show(SHOW["id"], SHOW["url"], SHOW["title"])
 
 
 # ---- the boot sequence, for the window to draw: the launch's events plus the BoldVenture mark ----
@@ -339,7 +356,7 @@ function draw(){var q=flt.value.toLowerCase(),P=$('panes'),G=$('glasses'),n=0;P.
 /* links never leave for Firefox (Chief 10/19): a link inside a pane opens in the pane when it can (our own pages,
    a glass with a local copy, any site that allows frames); a site that refuses frames gets its own app window from
    the same Edge process the Console already runs. */
-function route(href,label){var u;try{u=new URL(href,fr.contentWindow?fr.contentWindow.location.href:location.href)}catch(e){return}
+function route(href,label){var u,b=location.href;try{b=fr.contentWindow.location.href}catch(e){}try{u=new URL(href,b)}catch(e){return}
  if(!/^https?:$/.test(u.protocol))return;
  if(u.origin===location.origin){open(u.pathname+u.search,label||u.pathname,u.pathname.indexOf('/glass/')===0?'glass':'');return}
  if(alias[u.href]){open(alias[u.href],label||u.href);return}
@@ -358,9 +375,12 @@ function open(u,title,kind){cur={u:u,t:title};fr.src=u;$('main').setAttribute('d
 function clk(){var d=new Date();$('clk').textContent=(d.getMonth()+1)+'/'+d.getDate()+'  '+hm(d)}
 function stat(){fetch('/status.json').then(function(r){return r.json()}).then(function(j){$('st').textContent=j.pull}).catch(function(){})}
 function gl(){fetch('/glasses.json').then(function(r){return r.json()}).then(function(j){glasses=j.glasses||[];draw()}).catch(function(){})}
+/* command glass hands over a pick (POST /show bumps seq); a fresh load only records seq, so a reload never replays one */
+var seq=-1;function show(){fetch('/show.json').then(function(r){return r.json()}).then(function(j){
+ if(seq>=0&&j.seq!==seq&&j.url){if(booting)skip();if(j.url.charAt(0)==='/')open(j.url,j.title,'glass');else route(j.url,j.title)}seq=j.seq}).catch(function(){})}
 var alias={};
 fetch('/panes.json').then(function(r){return r.json()}).then(function(j){panes=j.panes;alias=j.aliases||{};open(panes[0].url,panes[0].title)});
-clk();stat();gl();setInterval(clk,15000);setInterval(stat,60000);setInterval(gl,60000);
+clk();stat();gl();show();setInterval(clk,15000);setInterval(stat,60000);setInterval(gl,60000);setInterval(show,1500);
 flt.oninput=draw;
 flt.addEventListener('keydown',function(e){if(e.key==='Escape'){flt.value='';draw();flt.blur()}
  else if(e.key==='Enter'){var q=flt.value.toLowerCase(),p=panes.find(function(p){return p.title.toLowerCase().indexOf(q)>=0}),
@@ -494,6 +514,10 @@ class H(http.server.BaseHTTPRequestHandler):
             return self._send(200, json.dumps(b, ensure_ascii=False), "application/json; charset=utf-8")
         if path == "/status.json":
             return self._send(200, json.dumps({"pull": read_status()}), "application/json; charset=utf-8")
+        if path == "/show.json":
+            with SHOW_LOCK:
+                s = {"seq": SHOW["seq"], "url": SHOW["url"], "title": SHOW["title"]}
+            return self._send(200, json.dumps(s, ensure_ascii=False), "application/json; charset=utf-8")
         if path.startswith("/local/"):
             f = LOCAL.get(path[7:])
             if f and os.path.isfile(f):
@@ -526,6 +550,22 @@ class H(http.server.BaseHTTPRequestHandler):
             if exe:
                 subprocess.Popen([exe, "--app=" + url], cwd=ROOT, stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             return self._send(200, json.dumps({"pane": False, "window": bool(exe)}), "application/json")
+        if self.path == "/show":   # command glass: only an id comes in, checked against the list
+            from urllib.parse import quote
+            try:
+                n = min(int(self.headers.get("Content-Length") or 0), 1024)
+                gid = str(json.loads(self.rfile.read(n).decode("utf-8")).get("glass", ""))
+            except Exception:
+                return self._send(400, json.dumps({"ok": False}), "application/json")
+            g = next((x for x in read_glasses() if gid and x.get("id") == gid), None) or {}
+            url = str(g.get("url", ""))
+            if g.get("local"):   # the same path the rail builds, encodeURIComponent's safe set
+                url = "/glass/%s/%s" % (gid, quote(os.path.basename(g.get("file", "")), safe="!*'()"))
+            if not g or not url.startswith(("/glass/", "https://")):
+                return self._send(400, json.dumps({"ok": False, "error": "unknown glass"}), "application/json")
+            show(gid, url, str(g.get("title") or gid))
+            threading.Thread(target=bring, daemon=True).start()
+            return self._send(200, json.dumps({"ok": True, "seq": SHOW["seq"], "url": url}), "application/json")
         if self.path in ("/music/start", "/music/stop"):
             music(self.path.endswith("start"))
             return self._send(200, "ok", "text/plain")
