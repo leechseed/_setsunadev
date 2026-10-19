@@ -1,0 +1,7 @@
+{
+ "held": true,
+ "since": "2026-10-18",
+ "reason": "a sanitizer pass failed; older pushes carry private detail; the history needs a clean and a PASS before anything goes up",
+ "by": "Chief",
+ "clear": "only Chief clears this file"
+}

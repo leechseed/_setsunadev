@@ -3,6 +3,7 @@
 Zero tokens. Archives are out of scope (_LOG, _CLAUDE_ARCHIVE*, journals, _PRIVATE); STATE's Moved sections are history.
 
 Usage:  python _tools/audit/sop_audit.py          # print the findings, write _tools/audit/out/sop-audit-<date>.md
+        python _tools/audit/sop_audit.py --diff origin/main..HEAD --json   # the outgoing check (`command push`), writes nothing
 Checks:
   R  retired words still in live files (SOP §1/§5 rulings; a line that names the retirement is allowed)
   P  private detail in public files (health · sexual · provider detail lives only in _PRIVATE/, ruled 10/4)
@@ -132,4 +133,43 @@ def main():
     io.open(rp, "w", encoding="utf-8", newline="\n").write("\n".join(out))
     print("wrote", rel(rp))
 
-main()
+def diff_audit(rng, as_json):
+    """--diff <range> (BOLO 153, 10/19, `command push`): the P patterns and the allowlist over the ADDED lines of every
+    outgoing path (any type, any folder), plus any _PRIVATE/ path that a commit in the range touches. Writes nothing.
+    Items carry file, line and kind only, never the matched word."""
+    def git(*a):
+        r = subprocess.run(["git", "-c", "core.quotepath=off", *a], cwd=ROOT, capture_output=True, text=True, encoding="utf-8", errors="replace")
+        if r.returncode: raise RuntimeError((r.stderr.strip().splitlines() or ["git %s failed" % a[0]])[0])
+        return r.stdout
+    try:
+        diff = git("diff", "--unified=0", "--no-color", "--no-ext-diff", "--no-renames", rng)
+        names = set(git("diff", "--name-only", "--no-renames", rng).split("\n")) | set(git("log", "--name-only", "--format=", "--no-renames", rng).split("\n"))
+    except Exception as e:
+        if as_json: print(json.dumps({"ran": False, "error": str(e), "findings": 0, "private_paths": 0, "items": []}))
+        else: print("sop audit --diff:", e)
+        sys.exit(1)
+    items, path, n, head = [], None, 0, False
+    for l in diff.split("\n"):
+        if l.startswith("diff --git "): path, head = None, True
+        elif head and l.startswith("+++ "): path = None if l[4:] == "/dev/null" else l[4:].removeprefix("b/")
+        elif l.startswith("@@"):
+            m = re.match(r"@@ -\S+ \+(\d+)", l); n, head = (int(m.group(1)) if m else 0), False
+        elif not head and l.startswith("+") and path:
+            for pat, fl in PRIVATE:
+                if "diagnos" in pat and path.startswith("_CANON_NODES"): continue
+                m = re.search(pat, l[1:], fl)
+                if m and not allowed(path, l[1:], m.group(0)):
+                    items.append({"file": path, "line": n, "kind": "P"}); break
+            n += 1
+    private = sorted(p for p in names if p.strip() and p.replace("\\", "/").startswith("_PRIVATE/"))
+    out = {"ran": True, "range": rng, "findings": len(items), "private_paths": len(private),
+           "items": items + [{"file": p, "line": 0, "kind": "_PRIVATE"} for p in private]}
+    if as_json: print(json.dumps(out, ensure_ascii=False)); return
+    print(f"diff audit {rng}: {out['findings']} findings · {out['private_paths']} private paths")
+    for it in out["items"]: print(f"  {it['file']}:{it['line']} · {it['kind']}")
+
+if "--diff" in sys.argv:
+    i = sys.argv.index("--diff")
+    diff_audit(sys.argv[i + 1] if i + 1 < len(sys.argv) and not sys.argv[i + 1].startswith("--") else "origin/main..HEAD", "--json" in sys.argv)
+else:
+    main()

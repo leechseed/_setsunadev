@@ -82,6 +82,19 @@ if reason:
     sys.exit(2)
 
 
+def held():
+    """The push hold (BOLO 153, 10/19): _tools/release/hold.json. Missing or unreadable counts as held."""
+    try:
+        return json.load(io.open(os.path.join(HERE, "..", "release", "hold.json"), encoding="utf-8")).get("held") is not False
+    except Exception:
+        return True
+
+
+if re.search(r"(?i)\bgit(?:\.exe)?(?:\s+-c\s+\S+|\s+--?[\w.-]+(?:=\S+)?)*\s+push\b|\bgit-push\b", re.sub(r"[\"']", "", cmd)) and held():
+    sys.stderr.write("push hold: 'git push' blocked while _tools/release/hold.json says held (or cannot be read). Only Chief clears that file; a push goes up through `command push` in his terminal.\n")
+    sys.exit(2)
+
+
 def habit(cmd, tool):
     """BOLO 155 M4 (10/18, memory `shell-habits`): the mechanical shell mistakes that failed 74+ calls, caught before
     they run. Returns the fix to hand back, or None. Bash only; checks each command segment's first word."""
