@@ -366,12 +366,27 @@ func main() {
 	case "up":
 		up()
 	case "fetch":
-		fetchOnce(len(os.Args) > 2 && os.Args[2] == "--still")
+		if hasFlag(os.Args[2:], "--json") {
+			m := map[string]string{}
+			for _, r := range fetchRows() {
+				m[r[0]] = r[1]
+			}
+			b, _ := json.MarshalIndent(m, "", " ")
+			fmt.Println(string(b))
+			return
+		}
+		fetchOnce(hasFlag(os.Args[2:], "--still") || hasFlag(os.Args[2:], "--print"))
+	case "board":
+		boardCmd(os.Args[2:])
+	case "md":
+		mdCmd(os.Args[2:])
 	default:
 		w := bufio.NewWriter(os.Stdout)
 		fmt.Fprintln(w, sAccB.Render("command")+sDim.Render(" · the Command's terminal front end (BOLO 153)"))
 		fmt.Fprintln(w, "  "+sAcc.Render("up   ")+"  boot the whole architecture: VS Code, the stations, JUDY, the Console")
 		fmt.Fprintln(w, "  "+sAcc.Render("fetch")+"  the mark spinning beside the numbers, neofetch style; Space stops it (--still: one frame)")
+		fmt.Fprintln(w, "  "+sAcc.Render("board")+"  the newest sit rep board, one tab per block (--json: the board)")
+		fmt.Fprintln(w, "  "+sAcc.Render("md   ")+"  a markdown file in the terminal: sop · bolo · state · projects · any path (--json: its headings)")
 		w.Flush()
 	}
 }
