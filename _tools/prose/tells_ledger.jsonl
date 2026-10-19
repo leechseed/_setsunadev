@@ -75,3 +75,5 @@
 {"ts": "2026-10-19 08:51", "sid": "10d97340", "words": 429, "tells": 3, "per_1k": 7.0, "families": {"other": 2, "passive": 1}, "rules": {"long-sentence": 2, "passive": 1}}
 {"ts": "2026-10-19 08:52", "sid": "10d97340", "words": 429, "tells": 3, "per_1k": 7.0, "families": {"other": 2, "passive": 1}, "rules": {"long-sentence": 2, "passive": 1}}
 {"ts": "2026-10-19 08:52", "sid": "10d97340", "words": 429, "tells": 3, "per_1k": 7.0, "families": {"other": 2, "passive": 1}, "rules": {"long-sentence": 2, "passive": 1}}
+{"ts": "2026-10-19 08:57", "sid": "10d97340", "words": 489, "tells": 6, "per_1k": 12.3, "families": {"other": 6}, "rules": {"long-sentence": 6}}
+{"ts": "2026-10-19 08:57", "sid": "10d97340", "words": 489, "tells": 6, "per_1k": 12.3, "families": {"other": 6}, "rules": {"long-sentence": 6}}
