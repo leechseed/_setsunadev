@@ -1,23 +1,20 @@
 {
- "staged": "2026-10-18 08:55",
+ "staged": "2026-10-19 05:26",
  "leverage": {
-  "line": "Read the reload finish lines, then BOLO 121 step 3 (per-layer probes); then the BOLO 159 design pass, research only.",
-  "why": "M9 and M11 are done; the reload lands about 2:15 PM 10/18; research mode stands.",
-  "board": "2026-10-18-2.json"
+  "line": "BOLO 166, the downloads station: read ytdlp_go.py, then a DOWNLOADS launch station that starts it in its own Windows Terminal window only when it is not running.",
+  "why": "Chief ruled it first after this Oscar Mike (10/19 5:18 AM). The BOLO 159 design pass is done (modes-design.md, 9 calls waiting)."
  },
- "sheets": [
-  156
- ],
+ "sheets": [],
  "open_at_close": [
-  "push held (Chief's call: make the repo private)",
-  "reload finish lines + the 30-minute report cron ends with this session",
-  "reading desk notes",
-  "civ files' numbering (civilization.md §7/§8)",
-  "interface seams unfixed",
-  "AUDIT tree item."
+  "BOLO 166 first",
+  "`wake up, neo` screenshot (the hunk screen, the glass cursor and the typed confirm are untested in a real terminal)",
+  "repo private + history clean",
+  "Star Desk marks",
+  "Fathom by ear",
+  "BOLO 159 calls",
+  "BOLOs 160-165",
+  "the mood probe tag (11,852 images) needs a skim",
+  "comment auto-replies on five pages paused."
  ],
- "note": "2026-10-18-2.session.md",
- "frago_done": [
-  156
- ]
+ "note": "2026-10-19.session.md"
 }
