@@ -405,6 +405,12 @@ func main() {
 		boardCmd(os.Args[2:])
 	case "md":
 		mdCmd(os.Args[2:])
+	case "glass":
+		glassCmd(os.Args[2:])
+	case "pull":
+		pullCmd(os.Args[2:])
+	case "push":
+		pushCmd(os.Args[2:])
 	default:
 		w := bufio.NewWriter(os.Stdout)
 		fmt.Fprintln(w, sAccB.Render("command")+sDim.Render(" · the Command's terminal front end (BOLO 153)"))
@@ -412,6 +418,9 @@ func main() {
 		fmt.Fprintln(w, "  "+sAcc.Render("fetch")+"  the mark spinning beside the numbers, neofetch style; Space stops it (--still: one frame)")
 		fmt.Fprintln(w, "  "+sAcc.Render("board")+"  the newest sit rep board, one tab per block (--json: the board)")
 		fmt.Fprintln(w, "  "+sAcc.Render("md   ")+"  a markdown file in the terminal: sop · bolo · state · projects · any path (--json: its headings)")
+		fmt.Fprintln(w, "  "+sAcc.Render("glass")+"  the recent glasses, newest first; Enter opens one in the Console (--json: the list · <id|N> --json: the pick)")
+		fmt.Fprintln(w, "  "+sAcc.Render("pull ")+"  the pull waves, live and all (--json: the counts · --boards adds board names)")
+		fmt.Fprintln(w, "  "+sAcc.Render("push ")+"  the outgoing check, then Chief types push (--dry-run · --print · --json); held while _tools/release/hold.json says so")
 		w.Flush()
 	}
 }
