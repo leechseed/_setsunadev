@@ -64,3 +64,11 @@ _tools/dictation/judy.log
 _tools/dictation/judy.err.log
 
 _tools/cmdtui/last_up.log
+
+# runtime data the Console and the launch write (BOLO 153, 10/19): page titles, paths and station notes stay off GitHub
+_tools/console/glasses.json
+_tools/console/glasses.json.tmp
+_tools/console/status.json
+_tools/console/cmd.log
+_tools/launch/boot.jsonl
+_tools/launch/last_poll.json
