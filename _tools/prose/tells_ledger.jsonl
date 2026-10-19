@@ -82,3 +82,5 @@
 {"ts": "2026-10-19 09:02", "sid": "10d97340", "words": 368, "tells": 5, "per_1k": 13.6, "families": {"other": 4, "passive": 1}, "rules": {"long-sentence": 4, "passive": 1}}
 {"ts": "2026-10-19 09:02", "sid": "10d97340", "words": 175, "tells": 4, "per_1k": 22.9, "families": {"other": 3, "passive": 1}, "rules": {"long-sentence": 3, "passive": 1}}
 {"ts": "2026-10-19 09:02", "sid": "10d97340", "words": 73, "tells": 0, "per_1k": 0.0, "families": {}, "rules": {}}
+{"ts": "2026-10-19 09:03", "sid": "10d97340", "words": 219, "tells": 5, "per_1k": 22.8, "families": {"other": 4, "passive": 1}, "rules": {"long-sentence": 4, "passive": 1}}
+{"ts": "2026-10-19 09:03", "sid": "10d97340", "words": 219, "tells": 5, "per_1k": 22.8, "families": {"other": 4, "passive": 1}, "rules": {"long-sentence": 4, "passive": 1}}
