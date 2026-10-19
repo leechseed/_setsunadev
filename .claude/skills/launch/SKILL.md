@@ -15,7 +15,7 @@ python _tools/launch/launch.py
 
 ## What the script does (zero tokens)
 
-AUDIT first (Chief 10/6), then PULL, ARMORY, DARKROOM, STASH, NAHIMIC, JUDY, FACES, DECK, CONSOLE, KNOBS, WIRE, FRAGO and the board pages. It opens the boot screen window (Chief 10/17: the BoldVenture mark, Arch-style rows, the per-wave pull lines, the budget line), prints the station poll, then prints the NEXT lines: what to publish where, whether to arm the pull report, whether the Roster needs a rebuild, the sit rep, and the reply shape.
+AUDIT first (Chief 10/6), then PULL, ARMORY, DARKROOM, STASH, DOWNLOADS (BOLO 166: the download script in its own Windows Terminal window, the one exception to the one window; a running copy is reported, never doubled), NAHIMIC, JUDY, FACES, DECK, CONSOLE, KNOBS, WIRE, FRAGO and the board pages. It opens the boot screen window (Chief 10/17: the BoldVenture mark, Arch-style rows, the per-wave pull lines, the budget line), prints the station poll, then prints the NEXT lines: what to publish where, whether to arm the pull report, whether the Roster needs a rebuild, the sit rep, and the reply shape.
 
 ## Standing rules
 

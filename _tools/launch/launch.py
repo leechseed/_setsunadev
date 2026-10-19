@@ -7,13 +7,13 @@ spoken tools over the wire. This script brings the local stations up, opens the 
 boards, and prints the station poll (GO / NO-GO with an address) for the sit rep header.
 The sit rep itself runs in the formation after this (skill: launch → sitrep).
 
-Usage:  python _tools/launch/launch.py [--no-audit] [--no-pages] [--no-darkroom] [--no-stash] [--no-judy] [--no-faces] [--no-deck][--no-knobs] [--no-wire] [--json]
+Usage:  python _tools/launch/launch.py [--no-audit] [--no-pages] [--no-darkroom] [--no-stash] [--no-downloads] [--no-judy] [--no-faces] [--no-deck][--no-knobs] [--no-wire] [--json]
 
 Safe to run twice: a live DARKROOM is reported, not restarted (its single-instance guard);
 a running JUDY session voice is reported, not restarted; a standalone JUDY (no --session)
 is stopped first because both take the same hotkey.
 """
-import io, os, sys, glob, json, time, subprocess, argparse, datetime as dt, urllib.request
+import io, os, sys, glob, json, time, shutil, subprocess, argparse, datetime as dt, urllib.request
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 PY = sys.executable
@@ -26,6 +26,7 @@ CONSOLE = os.path.join(ROOT, "_tools", "dictation", "console.py")   # JUDY's con
 FACES_URL = "http://127.0.0.1:8787/faces"
 DECK_URL = "http://127.0.0.1:8787/traffic"
 VIEW = os.path.join(ROOT, "_tools", "pages", "view.cmd")
+YTDLP_GO = os.path.join(os.path.expanduser("~"), "Downloads", "ytdlp_go.py")   # BOLO 166: Chief's download script; it saves into its working folder
 STASH_EXE = os.path.join("Q:\\", "fun", ".StashApp", "stash-win.exe")          # BOLO 75: Stash is a station (9/20); shutdown leaves it running
 STASH_CFG = os.path.join("Q:\\", "fun", ".StashApp", "config.yml")
 STASH_URL = "http://127.0.0.1:9999/"
@@ -122,6 +123,41 @@ def station_stash():
             deck = "deck failed: %s" % e
     return {"station": "STASH", "go": True, "addr": STASH_URL,
             "note": ("already live · " if was_up else "started · %.0f s · " % (time.time() - t0)) + deck}
+
+
+def station_downloads():
+    """BOLO 166 (Chief 10/19): the download script in its own Windows Terminal window so Chief can watch it.
+    The one exception to ONE_WINDOW, by Chief's order. A running copy is reported, never doubled; the match
+    is held to a python executable, because wt.exe's own command line names the script and the python path too."""
+    t0 = time.time()
+    folder = os.path.dirname(YTDLP_GO)
+
+    def exe(cl):
+        cl = cl.strip()
+        return os.path.basename(cl[1:].split('"', 1)[0] if cl.startswith('"') else cl.split(" ", 1)[0]).lower()
+
+    def live():
+        return [p for p in procs(r"ytdlp_go\.py") if exe(p[1]).startswith(("python", "py.exe"))]
+    running = live()
+    if running:
+        return {"station": "DOWNLOADS", "go": True, "addr": "Windows Terminal · pid %d" % running[0][0], "note": "already running"}
+    if not os.path.exists(YTDLP_GO):
+        return {"station": "DOWNLOADS", "go": False, "addr": "Windows Terminal", "note": "ytdlp_go.py missing from Downloads"}
+    wt = shutil.which("wt")
+    if not wt:
+        return {"station": "DOWNLOADS", "go": False, "addr": "Windows Terminal", "note": "wt.exe not found"}
+    try:   # -d: the script saves into its working folder, so it starts in Downloads like Chief runs it
+        subprocess.Popen([wt, "-w", "new", "--title", "DOWNLOADS", "--suppressApplicationTitle", "-d", folder, PY, YTDLP_GO],
+                         cwd=folder, stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, close_fds=True)
+    except Exception as e:
+        return {"station": "DOWNLOADS", "go": False, "addr": "Windows Terminal", "note": "start failed: %s" % e}
+    for _ in range(20):
+        time.sleep(0.5)
+        running = live()
+        if running:
+            return {"station": "DOWNLOADS", "go": True, "addr": "Windows Terminal · pid %d" % running[0][0],
+                    "note": "started · %.1f s" % (time.time() - t0)}
+    return {"station": "DOWNLOADS", "go": False, "addr": "Windows Terminal", "note": "no python process after 10 s"}
 
 
 def station_nahimic():
@@ -498,6 +534,7 @@ def main():
     ap.add_argument("--no-frago", action="store_true")
     ap.add_argument("--no-darkroom", action="store_true")
     ap.add_argument("--no-stash", action="store_true")
+    ap.add_argument("--no-downloads", action="store_true")
     ap.add_argument("--no-judy", action="store_true")
     ap.add_argument("--no-nahimic", action="store_true")
     ap.add_argument("--no-faces", action="store_true")
@@ -531,6 +568,8 @@ def main():
         rows.append(run("DARKROOM", station_darkroom))
     if not a.no_stash:
         rows.append(run("STASH", station_stash))
+    if not a.no_downloads:
+        rows.append(run("DOWNLOADS", station_downloads))   # BOLO 166: its own Windows Terminal window, never doubled
     if not a.no_nahimic:
         rows.append(run("NAHIMIC", station_nahimic))   # before JUDY: her mic needs the devices to hold still
     if not a.no_judy:
