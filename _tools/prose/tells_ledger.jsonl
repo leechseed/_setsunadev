@@ -79,3 +79,4 @@
 {"ts": "2026-10-19 08:57", "sid": "10d97340", "words": 489, "tells": 6, "per_1k": 12.3, "families": {"other": 6}, "rules": {"long-sentence": 6}}
 {"ts": "2026-10-19 08:59", "sid": "10d97340", "words": 291, "tells": 7, "per_1k": 24.1, "families": {"passive": 4, "other": 3}, "rules": {"passive": 4, "long-sentence": 3}}
 {"ts": "2026-10-19 09:00", "sid": "10d97340", "words": 345, "tells": 3, "per_1k": 8.7, "families": {"rhythm": 1, "other": 1, "passive": 1}, "rules": {"metronome": 1, "long-sentence": 1, "passive": 1}}
+{"ts": "2026-10-19 09:02", "sid": "10d97340", "words": 368, "tells": 5, "per_1k": 13.6, "families": {"other": 4, "passive": 1}, "rules": {"long-sentence": 4, "passive": 1}}
