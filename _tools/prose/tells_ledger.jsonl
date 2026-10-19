@@ -30,3 +30,4 @@
 {"ts": "2026-10-19 04:11", "sid": "5d76f495", "words": 433, "tells": 4, "per_1k": 9.2, "families": {"passive": 3, "other": 1}, "rules": {"passive": 3, "long-sentence": 1}}
 {"ts": "2026-10-19 04:14", "sid": "5d76f495", "words": 393, "tells": 1, "per_1k": 2.5, "families": {"other": 1}, "rules": {"long-sentence": 1}}
 {"ts": "2026-10-19 04:16", "sid": "5d76f495", "words": 158, "tells": 0, "per_1k": 0.0, "families": {}, "rules": {}}
+{"ts": "2026-10-19 04:19", "sid": "5d76f495", "words": 363, "tells": 3, "per_1k": 8.3, "families": {"other": 2, "passive": 1}, "rules": {"long-sentence": 2, "passive": 1}}
