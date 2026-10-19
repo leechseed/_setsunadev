@@ -282,6 +282,8 @@ func up() {
 	launch.Stdout, launch.Stderr = logf, logf
 
 	p := tea.NewProgram(m, tea.WithAltScreen())
+	musicStart()
+	defer musicStop()
 	if err := launch.Start(); err != nil {
 		m.launchErr = err
 	} else {
@@ -347,7 +349,10 @@ func fetchOnce(still bool) {
 		fmt.Println(lipgloss.JoinHorizontal(lipgloss.Center, s.frame(time.Now(), true), "    ", fetchBlock(rows, -1)))
 		return
 	}
-	if _, err := tea.NewProgram(&spinModel{s: s, rows: rows}).Run(); err != nil { // no terminal (a pipe): the still frame
+	musicStart()
+	_, err := tea.NewProgram(&spinModel{s: s, rows: rows}).Run()
+	musicStop()
+	if err != nil { // no terminal (a pipe): the still frame
 		fmt.Println(lipgloss.JoinHorizontal(lipgloss.Center, s.frame(time.Now(), true), "    ", fetchBlock(rows, -1)))
 	}
 }

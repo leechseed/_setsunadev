@@ -22,6 +22,19 @@ GLASSES = os.path.join(HERE, "glasses.json")
 BOOT = os.path.join(ROOT, "_tools", "launch", "boot.jsonl")
 ART = os.path.join(ROOT, "_tools", "brand", "boldventure-ascii.txt")
 MARK = os.path.join(ROOT, "_tools", "brand", "boldventure-mark.svg")   # the favicon and the window's icon
+MUSIC = os.path.join(ROOT, "_PRIVATE", "audio", "boot-music.wav")   # Chief 10/19: the boot screen's idle music, looped until Space (a PCM copy; game audio stays out of the public repo)
+
+
+def music(on):
+    """the server plays it (winsound, async loop), so the browser's autoplay rule never mutes it"""
+    try:
+        import winsound
+        if on and os.path.isfile(MUSIC):
+            winsound.PlaySound(MUSIC, winsound.SND_FILENAME | winsound.SND_ASYNC | winsound.SND_LOOP)
+        else:
+            winsound.PlaySound(None, winsound.SND_PURGE)
+    except Exception:
+        pass
 PQ = os.path.join(ROOT, "_PRIVATE", "taxonomy_engine", "pull_queue.py")
 SNAP = "right"   # Chief 10/18: half the screen, top edge to the taskbar; the right half keeps VS Code on the left (provisional)
 
@@ -354,8 +367,10 @@ function fetchPanel(rows){var P=['#050608','#6e280e','#be4216','#FF5A1F','#FFB08
  L=['<span class="u">chief</span>@<span class="u">the-command</span>','<span class="d">'+Array(18).join('-')+'</span>'];
  rows.forEach(function(r){L.push('<span class="k">'+esc(r[0])+'</span>: '+esc(r[1]))});L.push('');L.push(sw(P));L.push(sw(Q));
  var n=0,el=$('fetch');(function more(){if(!booting)return;el.innerHTML=L.slice(0,++n).join('\n');if(n<L.length)setTimeout(more,70)})()}
-function skip(){booting=false;clearTimeout(timer);$('boot').classList.add('gone')}
-function boot(replay){booting=true;$('boot').classList.remove('gone');
+function mus(on){try{fetch('/music/'+(on?'start':'stop'),{method:'POST',keepalive:true})}catch(e){}}
+addEventListener('pagehide',function(){if(booting)navigator.sendBeacon('/music/stop')});
+function skip(){if(booting)mus(false);booting=false;clearTimeout(timer);$('boot').classList.add('gone')}
+function boot(replay){booting=true;mus(true);$('boot').classList.remove('gone');
  fetch('/boot.json').then(function(r){return r.json()}).then(function(b){
   var lg=$('logo');$('lgtxt').innerHTML='<span class="bv">        B  O  L  D  V  E  N  T  U  R  E</span>\n<span class="d">   &#9472;&#9472; the Command · launch sequence &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;</span>';
   logoAnim(b.logo);fetchPanel(b.fetch||[]);
@@ -435,6 +450,9 @@ class H(http.server.BaseHTTPRequestHandler):
         self._send(404, "not found", "text/plain")
 
     def do_POST(self):
+        if self.path in ("/music/start", "/music/stop"):
+            music(self.path.endswith("start"))
+            return self._send(200, "ok", "text/plain")
         if self.path == "/quit":   # console.py --restart asks the old server to step down (no port scan needed)
             self._send(200, "bye", "text/plain")
             threading.Thread(target=lambda: (time.sleep(0.3), os._exit(0)), daemon=True).start()
