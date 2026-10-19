@@ -198,6 +198,50 @@ def fetch_info():
     return rows
 
 
+def aliases():
+    """a web URL the Command published -> the local page that holds the same thing (pages.json names; the pull glass is the pull queue)"""
+    out = {}
+    try:
+        with open(os.path.join(ROOT, "_tools", "pages", "pages.json"), encoding="utf-8") as f:
+            pages = json.load(f)
+    except Exception:
+        return out
+    for name, url in pages.items():
+        local = {"pullglass": "pullqueue"}.get(name, name)
+        if local in LOCAL and isinstance(url, str):
+            out[url] = "/local/" + local
+        elif isinstance(url, str):   # else a local glass with the same title (the SOI lives at two web addresses)
+            g = next((x for x in read_glasses() if x.get("local") and x.get("title", "").lower() == name.lower()), None)
+            if g:
+                out[url] = "/glass/%s/%s" % (g["id"], os.path.basename(g["file"]))
+    return out
+
+
+_FRAME = {}
+
+
+def frameable(url):
+    """does the site let another page frame it? X-Frame-Options or a CSP frame-ancestors rule says no; cached per host"""
+    from urllib.parse import urlsplit
+    import urllib.request
+    host = urlsplit(url).netloc
+    if host.startswith(("127.0.0.1", "localhost")):
+        return True
+    if host in _FRAME:
+        return _FRAME[host]
+    ok = False
+    try:
+        r = urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 the-console"}), timeout=6)
+        xfo = (r.headers.get("X-Frame-Options") or "").strip()
+        csp = (r.headers.get("Content-Security-Policy") or "").lower()
+        fa = csp.split("frame-ancestors", 1)[1].split(";", 1)[0] if "frame-ancestors" in csp else None
+        ok = not xfo and (fa is None or "*" in fa.split())
+    except Exception:
+        ok = False
+    _FRAME[host] = ok
+    return ok
+
+
 def page_bytes(path):
     """a page as the browser should get it: artifact fragments carry no skeleton, so give them one"""
     with open(path, "rb") as fh:
@@ -290,14 +334,32 @@ function draw(){var q=flt.value.toLowerCase(),P=$('panes'),G=$('glasses'),n=0;P.
   if(k!==last){G.appendChild(row('&#9472;&#9472; '+k,false,null,'day'));last=k}
   var u=g.local?'/glass/'+g.id+'/'+encodeURIComponent(g.file.split(/[\\/]/).pop()):g.url;
   G.appendChild(row('<span class="tm">'+hm(d)+'</span> '+esc(g.title)+(g.local?'':' <span class="web">&#8599; web</span>'),cur&&cur.u===u,
-   function(){if(g.local)open(u,g.title,'glass');else window.open(g.url,'_blank')}));n++});
+   function(){if(g.local)open(u,g.title,'glass');else route(g.url,g.title)}));n++});
  $('gbox').setAttribute('data-t','GLASSES · '+n)}
+/* links never leave for Firefox (Chief 10/19): a link inside a pane opens in the pane when it can (our own pages,
+   a glass with a local copy, any site that allows frames); a site that refuses frames gets its own app window from
+   the same Edge process the Console already runs. */
+function route(href,label){var u;try{u=new URL(href,fr.contentWindow?fr.contentWindow.location.href:location.href)}catch(e){return}
+ if(!/^https?:$/.test(u.protocol))return;
+ if(u.origin===location.origin){open(u.pathname+u.search,label||u.pathname,u.pathname.indexOf('/glass/')===0?'glass':'');return}
+ if(alias[u.href]){open(alias[u.href],label||u.href);return}
+ var g=glasses.find(function(g){return g.local&&g.url===u.href});
+ if(g){open('/glass/'+g.id+'/'+encodeURIComponent(g.file.split(/[\\/]/).pop()),g.title,'glass');return}
+ fetch('/open',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({url:u.href})})
+ .then(function(r){return r.json()}).then(function(j){if(j.pane)open(u.href,label||u.hostname);else $('st').textContent='opened in its own window: '+u.hostname})}
+function hook(){try{var w=fr.contentWindow,d=fr.contentDocument;if(!d||w.__routed)return;w.__routed=true;
+ d.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href]');if(!a||e.defaultPrevented)return;
+  var h=a.getAttribute('href');if(!h||h.charAt(0)==='#'||/^(javascript|mailto):/i.test(h))return;
+  e.preventDefault();route(a.href,(a.textContent||'').trim().slice(0,40))},true);
+ w.open=function(h){route(h);return null}}catch(e){}}   /* other ports (Stash, DARKROOM, JUDY) are cross-origin: their links stay theirs */
+fr.addEventListener('load',hook);
 function open(u,title,kind){cur={u:u,t:title};fr.src=u;$('main').setAttribute('data-t',title.toUpperCase());$('pn').textContent=title;
  $('pbox').classList.toggle('on',kind!=='glass');$('gbox').classList.toggle('on',kind==='glass');draw()}
 function clk(){var d=new Date();$('clk').textContent=(d.getMonth()+1)+'/'+d.getDate()+'  '+hm(d)}
 function stat(){fetch('/status.json').then(function(r){return r.json()}).then(function(j){$('st').textContent=j.pull}).catch(function(){})}
 function gl(){fetch('/glasses.json').then(function(r){return r.json()}).then(function(j){glasses=j.glasses||[];draw()}).catch(function(){})}
-fetch('/panes.json').then(function(r){return r.json()}).then(function(j){panes=j.panes;open(panes[0].url,panes[0].title)});
+var alias={};
+fetch('/panes.json').then(function(r){return r.json()}).then(function(j){panes=j.panes;alias=j.aliases||{};open(panes[0].url,panes[0].title)});
 clk();stat();gl();setInterval(clk,15000);setInterval(stat,60000);setInterval(gl,60000);
 flt.oninput=draw;
 flt.addEventListener('keydown',function(e){if(e.key==='Escape'){flt.value='';draw();flt.blur()}
@@ -423,7 +485,7 @@ class H(http.server.BaseHTTPRequestHandler):
             with open(MARK, "rb") as fh:
                 return self._send(200, fh.read(), "image/svg+xml")
         if path == "/panes.json":
-            return self._send(200, json.dumps({"panes": PANES}), "application/json; charset=utf-8")
+            return self._send(200, json.dumps({"panes": PANES, "aliases": aliases()}), "application/json; charset=utf-8")
         if path == "/glasses.json":
             return self._send(200, json.dumps({"glasses": read_glasses()}, ensure_ascii=False), "application/json; charset=utf-8")
         if path == "/boot.json":
@@ -450,6 +512,20 @@ class H(http.server.BaseHTTPRequestHandler):
         self._send(404, "not found", "text/plain")
 
     def do_POST(self):
+        if self.path == "/open":   # a link from a pane: in the pane if the site allows frames, else its own app window
+            try:
+                n = min(int(self.headers.get("Content-Length") or 0), 8192)
+                url = str(json.loads(self.rfile.read(n).decode("utf-8")).get("url", ""))
+            except Exception:
+                return self._send(400, json.dumps({"ok": False}), "application/json")
+            if not url.startswith(("http://", "https://")):
+                return self._send(400, json.dumps({"ok": False}), "application/json")
+            if frameable(url):
+                return self._send(200, json.dumps({"pane": True}), "application/json")
+            exe = app_exe()
+            if exe:
+                subprocess.Popen([exe, "--app=" + url], cwd=ROOT, stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            return self._send(200, json.dumps({"pane": False, "window": bool(exe)}), "application/json")
         if self.path in ("/music/start", "/music/stop"):
             music(self.path.endswith("start"))
             return self._send(200, "ok", "text/plain")
