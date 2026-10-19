@@ -219,9 +219,9 @@
     "built": "2026-09-17",
     "squelch": {
       "enabled": true,
-      "up": "",
-      "down": "",
-      "note": "empty paths = sfx/key-up.wav · sfx/key-down.wav; drop your own files there"
+      "up": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\sfx\\blip.wav",
+      "down": "off",
+      "note": "Chief 10/19: the Steam chatroom blip (a trimmed copy in sfx/, the original stays in Steam) before she speaks, nothing after. Empty paths = sfx/key-up.wav · sfx/key-down.wav; \"off\" = no sound"
     },
     "cap_from_persona": true,
     "focus_on_talk": "never",

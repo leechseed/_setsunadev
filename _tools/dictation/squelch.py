@@ -60,7 +60,7 @@ def ensure_defaults():
     if not os.path.exists(c["up"]):
         # key-up: a click then a short hiss opening
         _write(c["up"], _click() + _burst(70, tail=False, gain=0.25) + [0.0] * 200)
-    if not os.path.exists(c["down"]):
+    if c["down"] != "off" and not os.path.exists(c["down"]):
         # key-down: the hiss tail, then the click of the carrier dropping
         _write(c["down"], _burst(110, gain=0.3) + [0.0] * 120 + _click(gain=0.35))
     return c
@@ -82,6 +82,8 @@ def key_up():
 
 def key_down():
     c = ensure_defaults()
+    if c.get("down") == "off":   # Chief 10/19: one blip before she speaks, nothing after
+        return
     if c.get("enabled", True) and os.path.exists(c["down"]):
         _play_sync(c["down"])
 

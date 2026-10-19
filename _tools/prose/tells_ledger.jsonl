@@ -23,3 +23,6 @@
 {"ts": "2026-10-18 09:47", "sid": "5d76f495", "words": 519, "tells": 2, "per_1k": 3.9, "families": {"slop words": 1, "other": 1}, "rules": {"stock-phrase": 1, "long-sentence": 1}}
 {"ts": "2026-10-18 10:31", "sid": "5d76f495", "words": 423, "tells": 3, "per_1k": 7.1, "families": {"passive": 1, "other": 2}, "rules": {"passive": 1, "long-sentence": 2}}
 {"ts": "2026-10-18 10:33", "sid": "5d76f495", "words": 188, "tells": 1, "per_1k": 5.3, "families": {"other": 1}, "rules": {"long-sentence": 1}}
+{"ts": "2026-10-19 04:01", "sid": "5d76f495", "words": 146, "tells": 3, "per_1k": 20.5, "families": {"other": 3}, "rules": {"long-sentence": 3}}
+{"ts": "2026-10-19 04:03", "sid": "5d76f495", "words": 146, "tells": 3, "per_1k": 20.5, "families": {"other": 3}, "rules": {"long-sentence": 3}}
+{"ts": "2026-10-19 04:04", "sid": "5d76f495", "words": 146, "tells": 3, "per_1k": 20.5, "families": {"other": 3}, "rules": {"long-sentence": 3}}
