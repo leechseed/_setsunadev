@@ -86,7 +86,7 @@ def station_darkroom():
         return {"station": "DARKROOM", "go": True, "addr": DARK_URL, "note": "already live"}
     if not os.path.exists(DARKROOM):
         return {"station": "DARKROOM", "go": False, "addr": DARK_URL, "note": "server script missing"}
-    spawn_console([PY, DARKROOM])
+    spawn_console([PY, DARKROOM] + (["--no-browser"] if ONE_WINDOW else []))   # the server opens its own tab unless told not to
     for _ in range(40):
         time.sleep(0.5)
         if ping(DARK_URL + "api/ping"):
