@@ -70,3 +70,4 @@
 {"ts": "2026-10-19 08:21", "sid": "10d97340", "words": 194, "tells": 2, "per_1k": 10.3, "families": {"rhythm": 1, "other": 1}, "rules": {"metronome": 1, "long-sentence": 1}}
 {"ts": "2026-10-19 08:38", "sid": "10d97340", "words": 142, "tells": 1, "per_1k": 7.0, "families": {"rhythm": 1}, "rules": {"metronome": 1}}
 {"ts": "2026-10-19 08:41", "sid": "10d97340", "words": 440, "tells": 7, "per_1k": 15.9, "families": {"passive": 3, "other": 4}, "rules": {"passive": 3, "long-sentence": 4}}
+{"ts": "2026-10-19 08:42", "sid": "10d97340", "words": 229, "tells": 3, "per_1k": 13.1, "families": {"other": 2, "passive": 1}, "rules": {"long-sentence": 2, "passive": 1}}
