@@ -24,7 +24,7 @@ def install_segments(cmd):
         seg = seg.strip().lstrip("(").strip()
         seg = re.sub(r"^(?:\$env:\w+\s*=\s*\S+\s*;?\s*|\w+=\S+\s+)+", "", seg)   # leading env assignments
         seg = re.sub(r"^&\s*", "", seg)                                           # PowerShell call operator
-        seg = re.sub(r'^"?[^"\s]*[/\\](?:python|pip|scoop|winget)[\d.]*(?:\.exe)?"?', lambda m: os.path.basename(m.group(0).strip('"')).replace(".exe", ""), seg, flags=re.I)
+        seg = re.sub(r'^"?[^"\s]*[/\\](?:python|pip|scoop|winget)(?:\d+(?:\.\d+)*)?(?:\.exe)?"?', lambda m: os.path.basename(m.group(0).strip('"')).replace(".exe", ""), seg, flags=re.I)
         if INSTALL.match(seg):
             out.append(seg[:60])
     return out
