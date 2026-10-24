@@ -56,7 +56,18 @@ ADF limits:
 5. **Handwriting skips Tesseract** and goes to the handwriting step below.
 6. **Name** files `YYYY-MM-DD_source_batch_NNN`. Do not use ScanSmart's guessed names.
 7. **Dedupe** by SHA-256 of the raw scan, plus a perceptual hash for near-duplicates. My suggestion, not sourced.
-8. **File** into Zotero or a folder tree. Paperless-ngx is optional.
+8. **File** into Zotero or a folder tree. Paperless-ngx is optional (see below).
+
+## Paperless-ngx, ruled optional (10/24)
+
+Chief asked if it beats `scan.py`. It does not replace it. It is an archive, not a scan driver.
+- **It cannot scan.** It only watches a consume folder. `scan.py` drives the ES-590W through NAPS2, with a preset per kind.
+- **Handwriting is not solved by it.** It OCRs with Tesseract-class tools. Handwriting stays on the vision-model reader.
+- **The voice blurb (`context.md`) has no native slot.** It would need an API script.
+- **It stores data unencrypted.** The project README says run it only on a trusted local host, with backups. License GPL-3.0. Deploy is Docker Compose.
+- **What it would add:** full-text search in a browser, tags and auto-sorting, dedupe, a phone view. It would replace the scan-filer agent's bin guess.
+- **Unverified:** consume folder, auto-tagging and API are from general knowledge. The GitHub README did not list them and the docs site returned 403 earlier. Check the docs before building.
+- **Trigger to revisit:** about 100 scanned documents, or the first time a scan cannot be found. Then point a consume folder at `_PRIVATE/intake/paper/scans/`.
 
 ## Handwriting
 
