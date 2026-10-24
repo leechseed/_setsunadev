@@ -1,20 +1,20 @@
 {
- "staged": "2026-10-19 05:26",
+ "staged": "2026-10-24 07:39",
  "leverage": {
-  "line": "BOLO 166, the downloads station: read ytdlp_go.py, then a DOWNLOADS launch station that starts it in its own Windows Terminal window only when it is not running.",
-  "why": "Chief ruled it first after this Oscar Mike (10/19 5:18 AM). The BOLO 159 design pass is done (modes-design.md, 9 calls waiting)."
+  "line": "Look at the character in Kenshi with Dust and one clothing mod off; if the fault is still there, I remove Tight Rags next, then a body-texture mod.",
+  "why": "The BOLO 159 design pass is done and ruled; this test is the one thing waiting on Chief's eyes. The push gate (Blocked row 21) is the other.",
+  "board": "2026-10-18-3.json"
  },
  "sheets": [],
  "open_at_close": [
-  "BOLO 166 first",
-  "`wake up, neo` screenshot (the hunk screen, the glass cursor and the typed confirm are untested in a real terminal)",
-  "repo private + history clean",
-  "Star Desk marks",
-  "Fathom by ear",
-  "BOLO 159 calls",
-  "BOLOs 160-165",
-  "the mood probe tag (11,852 images) needs a skim",
-  "comment auto-replies on five pages paused."
+  "the push gate: pick 1 \"Private first\" (Claude's pick), 2 \"Clear the hold\", or 3 \"Leave it\" (37 commits, 45 files; sanitizer pass failed)",
+  "Chief's look at the in-game character with Dust and one clothing mod off (if still broken: remove Tight Rags, then a body-texture mod)",
+  "paste the two mode-hook entries into `.claude/settings.local.json`; `.venv/Scripts/python.exe -m pip install` gap in `mode_guard.py`",
+  "cold launch untested for the DARKROOM tab and the DOWNLOADS station",
+  "the real `wake up, neo` boot screen still unseen",
+  "`kenshi watanabi` real game launch and first NPC reply not run (may need `kenshi watanabi --no-game` to reload the model)",
+  "KenshiLib not in the mod list, unchecked",
+  "BOLO 167 waits on \"go\"."
  ],
- "note": "2026-10-19.session.md"
+ "note": "2026-10-24.session.md"
 }
