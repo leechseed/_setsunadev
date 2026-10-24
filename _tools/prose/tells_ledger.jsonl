@@ -118,3 +118,4 @@
 {"ts": "2026-10-24 07:47", "sid": "8e6f931a", "words": 273, "tells": 1, "per_1k": 3.7, "families": {"passive": 1}, "rules": {"passive": 1}}
 {"ts": "2026-10-24 07:48", "sid": "8e6f931a", "words": 414, "tells": 5, "per_1k": 12.1, "families": {"staged run-ups": 1, "other": 4}, "rules": {"stock-phrase": 1, "long-sentence": 4}}
 {"ts": "2026-10-24 07:48", "sid": "8e6f931a", "words": 139, "tells": 0, "per_1k": 0.0, "families": {}, "rules": {}}
+{"ts": "2026-10-24 07:49", "sid": "8e6f931a", "words": 135, "tells": 2, "per_1k": 14.8, "families": {"other": 2}, "rules": {"long-sentence": 2}}
