@@ -157,7 +157,16 @@ def station_downloads():
         if running:
             return {"station": "DOWNLOADS", "go": True, "addr": "Windows Terminal · pid %d" % running[0][0],
                     "note": "started · %.1f s" % (time.time() - t0)}
-    return {"station": "DOWNLOADS", "go": False, "addr": "Windows Terminal", "note": "no python process after 10 s"}
+    # 10/24: wt.exe exits 0 but never runs the command (error 0x80070002 in its window); a plain new console works
+    subprocess.Popen([PY, YTDLP_GO], cwd=folder, creationflags=subprocess.CREATE_NEW_CONSOLE,
+                     stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, close_fds=True)
+    for _ in range(10):
+        time.sleep(0.5)
+        running = live()
+        if running:
+            return {"station": "DOWNLOADS", "go": True, "addr": "console · pid %d" % running[0][0],
+                    "note": "wt failed, started in a plain console · %.1f s" % (time.time() - t0)}
+    return {"station": "DOWNLOADS", "go": False, "addr": "Windows Terminal", "note": "no python process after wt and console tries"}
 
 
 def station_nahimic():
