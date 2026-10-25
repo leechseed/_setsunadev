@@ -1,20 +1,18 @@
 {
- "staged": "2026-10-24 07:39",
+ "staged": "2026-10-24 23:19",
  "leverage": {
-  "line": "Look at the character in Kenshi with Dust and one clothing mod off; if the fault is still there, I remove Tight Rags next, then a body-texture mod.",
-  "why": "The BOLO 159 design pass is done and ruled; this test is the one thing waiting on Chief's eyes. The push gate (Blocked row 21) is the other.",
+  "line": "Run the BOLO 159 design pass (what each mode loads, the seam fixes), research only, while the reload finishes.",
+  "why": "BOLO 121 step 3 needs the reload done, about 1:30 PM. The modes keep research mode from turning into builds.",
   "board": "2026-10-18-3.json"
  },
  "sheets": [],
  "open_at_close": [
-  "the push gate: pick 1 \"Private first\" (Claude's pick), 2 \"Clear the hold\", or 3 \"Leave it\" (37 commits, 45 files; sanitizer pass failed)",
-  "Chief's look at the in-game character with Dust and one clothing mod off (if still broken: remove Tight Rags, then a body-texture mod)",
-  "paste the two mode-hook entries into `.claude/settings.local.json`; `.venv/Scripts/python.exe -m pip install` gap in `mode_guard.py`",
-  "cold launch untested for the DARKROOM tab and the DOWNLOADS station",
-  "the real `wake up, neo` boot screen still unseen",
-  "`kenshi watanabi` real game launch and first NPC reply not run (may need `kenshi watanabi --no-game` to reload the model)",
-  "KenshiLib not in the mod list, unchecked",
-  "BOLO 167 waits on \"go\"."
+  "Push gate: 67 commits held. Repo goes private only if Chief changes visibility on GitHub, or Claude installs `gh` by scoop on his word. Sanitizer pass has not passed.",
+  "Hooks may need a session restart to take effect.",
+  "Cold-launch test of the DARKROOM tab and DOWNLOADS: not run; needs Chief at the screen.",
+  "BOLO 167: Chief picks judging option 1 (judge, then export \"decisions are in\"), 2 (check all 3,164), or 3 (park). Whether adult-site links get checked is undecided (detail in `_PRIVATE/`). Offline ingest after keepers.",
+  "Defender: `setup.exe` in `F:\\GAMES\\Call of Duty - MW4 [FitGirl Repack]` is still quarantined. Restore needs an elevated PowerShell; Claude could not raise rights (safety classifier denial, ). Chief runs the restore line or pastes the admin prompt text if it refuses. Optional folder exclusion not set. A second repack carried a crack detection; not touched.",
+  "Chief's Windows Defender sign-in problem: cause unconfirmed."
  ],
- "note": "2026-10-24.session.md"
+ "note": "2026-10-24-2.session.md"
 }

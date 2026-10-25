@@ -142,6 +142,8 @@ The 2026-08-16 **scrubbed-mirror design is superseded** by the in-place strip. S
 
 ---
 
+## ✅ Moved 2026-10-24 (**the mode guard and mode line wired into settings, `.venv` pip gap closed** · **Paperless-ngx ruled optional (scanner research, BOLO 149)** · **BOLO 167 steps one and two: 3,505 bookmarks deduped to 3,164, sorted, judging page built in `_PRIVATE/bolo167/`** · push still HELD, Chief passed · a Defender-quarantined installer not restored, needs an admin PowerShell · closed on "oscar mike")
+
 ## ✅ Moved 2026-10-19 (closed 10/24; **the DARKROOM stopped opening a Firefox tab at launch** · **BOLO 166 DONE: a DOWNLOADS station in launch.py** · **BOLO 167 filed** · **BOLO 159's nine calls ruled, phase one half built** · **`kenshi watanabi`**)
 
 - **Launch:** `_PRIVATE/taxonomy_engine/darkroom_server.py` takes `--no-browser`; `_tools/launch/launch.py` passes it under ONE_WINDOW. New DOWNLOADS station starts Chief's `ytdlp_go.py` in its own Windows Terminal window, never doubled (`--no-downloads` skips it); tested live, started in 1.5 s. A cold launch is not tested.
