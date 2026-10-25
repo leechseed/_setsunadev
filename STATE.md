@@ -142,6 +142,8 @@ The 2026-08-16 **scrubbed-mirror design is superseded** by the in-place strip. S
 
 ---
 
+## ✅ Moved 2026-10-25 (**BOLO 168 opened and worked: the angels and demons shelf (49 books, browser-only ticks), 18 dive notes + SYNTHESIS + CHURCH-ANALOGUE in `_PRIVATE/BOLO-168/`; Chief ruled the church an analogue with strict Roman Catholic rules and a Latin flavor, the nine ranks as Victoria's layers tabled** · **Zotero rescanned (9,307 items, inventory step only)** · **16 hand scans, 222 pages: the sketchbook, a Moleskine, a yellow pad; transcripts in `_PRIVATE/intake/paper/`** · **the DOWNLOADS station got a plain-console fallback** · push still HELD · closed on "oscar mike")
+
 ## ✅ Moved 2026-10-24 (**the mode guard and mode line wired into settings, `.venv` pip gap closed** · **Paperless-ngx ruled optional (scanner research, BOLO 149)** · **BOLO 167 steps one and two: 3,505 bookmarks deduped to 3,164, sorted, judging page built in `_PRIVATE/bolo167/`** · push still HELD, Chief passed · a Defender-quarantined installer not restored, needs an admin PowerShell · closed on "oscar mike")
 
 ## ✅ Moved 2026-10-19 (closed 10/24; **the DARKROOM stopped opening a Firefox tab at launch** · **BOLO 166 DONE: a DOWNLOADS station in launch.py** · **BOLO 167 filed** · **BOLO 159's nine calls ruled, phase one half built** · **`kenshi watanabi`**)

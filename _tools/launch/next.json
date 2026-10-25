@@ -1,5 +1,5 @@
 {
- "staged": "2026-10-24 23:19",
+ "staged": "2026-10-25 10:28",
  "leverage": {
   "line": "Run the BOLO 159 design pass (what each mode loads, the seam fixes), research only, while the reload finishes.",
   "why": "BOLO 121 step 3 needs the reload done, about 1:30 PM. The modes keep research mode from turning into builds.",
@@ -7,12 +7,15 @@
  },
  "sheets": [],
  "open_at_close": [
-  "Push gate: 67 commits held. Repo goes private only if Chief changes visibility on GitHub, or Claude installs `gh` by scoop on his word. Sanitizer pass has not passed.",
-  "Hooks may need a session restart to take effect.",
-  "Cold-launch test of the DARKROOM tab and DOWNLOADS: not run; needs Chief at the screen.",
-  "BOLO 167: Chief picks judging option 1 (judge, then export \"decisions are in\"), 2 (check all 3,164), or 3 (park). Whether adult-site links get checked is undecided (detail in `_PRIVATE/`). Offline ingest after keepers.",
-  "Defender: `setup.exe` in `F:\\GAMES\\Call of Duty - MW4 [FitGirl Repack]` is still quarantined. Restore needs an elevated PowerShell; Claude could not raise rights (safety classifier denial, ). Chief runs the restore line or pastes the admin prompt text if it refuses. Optional folder exclusion not set. A second repack carried a crack detection; not touched.",
-  "Chief's Windows Defender sign-in problem: cause unconfirmed."
+  "Sketchbook: the cut-piece matching failed. One page is dated 06/08/17, which conflicts with the early-2020s date. A personal line on one journal page stays in `_PRIVATE/`.",
+  "Sketchbook name mappings to confirm: Flynn and the Principal Price slot.",
+  "Shelf: Dante's Paradiso (right one) found. Still missing: Parente, Rodewyk and Aquinas's own On Evil. Kelly's Satan is only front matter. Duplicates (Evagrius, Bonino, Pagels, Davies) and the Lezama Lima novel not deleted.",
+  "BOLO 168: the Summa PDF is unusable. Its English text on New Advent is waiting on Chief's word. Daniélou and Origen OCR results not yet used. Held-back books (Davies, Milton, Dante, Ignatius, Heiser's Unseen Realm, Wink, Mesopotamia and Boyce, Clark, Cuneo, Martin, two other Enochs) await Chief.",
+  "BOLO 168: five canon checks in SYNTHESIS are unruled. One is a conflict between the ruled Moon Severance and the seed's Kessler cascade.",
+  "Nine ranks as Victoria's layers: tabled.",
+  "Notebook: \"Moskey\" was taken as Moleskine, unconfirmed. \"Jan. Damn.\" was read as \"scan hand,\" unconfirmed. Shorthand pages need Chief's pick if a clean version is wanted.",
+  "Scanner: ScanSmart auto-start cause unconfirmed.",
+  "Zotero classify and key steps not run."
  ],
- "note": "2026-10-24-2.session.md"
+ "note": "2026-10-25.session.md"
 }
