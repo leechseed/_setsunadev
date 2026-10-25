@@ -124,3 +124,4 @@
 {"ts": "2026-10-24 23:09", "sid": "8e6f931a", "words": 176, "tells": 1, "per_1k": 5.7, "families": {"rhythm": 1}, "rules": {"metronome": 1}}
 {"ts": "2026-10-24 23:11", "sid": "8e6f931a", "words": 294, "tells": 4, "per_1k": 13.6, "families": {"other": 2, "passive": 1, "sales talk": 1}, "rules": {"exclamation": 1, "long-sentence": 1, "passive": 1, "stock-phrase": 1}}
 {"ts": "2026-10-24 23:14", "sid": "8e6f931a", "words": 212, "tells": 2, "per_1k": 9.4, "families": {"other": 1, "passive": 1}, "rules": {"long-sentence": 1, "passive": 1}}
+{"ts": "2026-10-24 23:17", "sid": "8e6f931a", "words": 220, "tells": 3, "per_1k": 13.6, "families": {"other": 3}, "rules": {"long-sentence": 3}}
