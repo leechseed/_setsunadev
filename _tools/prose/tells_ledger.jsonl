@@ -224,3 +224,4 @@
 {"ts": "2026-10-25 10:51", "sid": "837768fc", "words": 132, "tells": 1, "per_1k": 7.6, "families": {"other": 1}, "rules": {"exclamation": 1}}
 {"ts": "2026-10-25 11:26", "sid": "837768fc", "words": 189, "tells": 3, "per_1k": 15.9, "families": {"other": 3}, "rules": {"long-sentence": 2, "exclamation": 1}}
 {"ts": "2026-10-25 11:27", "sid": "837768fc", "words": 130, "tells": 3, "per_1k": 23.1, "families": {"passive": 2, "rhythm": 1}, "rules": {"passive": 2, "metronome": 1}}
+{"ts": "2026-10-25 19:22", "sid": "dc7ccd1e", "words": 197, "tells": 3, "per_1k": 15.2, "families": {"other": 3}, "rules": {"long-sentence": 3}}
