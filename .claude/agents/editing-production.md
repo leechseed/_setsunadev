@@ -32,3 +32,4 @@ The Command's distilled library lives in `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.<id
 - BVX.1047 · Layout and composition for animation (Ghertner): layout and composition for animation
 - BVX.0255 · Visual Character Development in Film and Television (Hanly): costume and look as story
 - BVX.0868 · Digital Compositing for Film and Video (Wright): digital compositing, what effects shots take
+- BVX.0013 · Film Production Management 9780240806952 (Bastian Cleve): film production management, the budget view

@@ -31,3 +31,4 @@ The Command's distilled library lives in `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.<id
 - BVX.0056 · A writer's guide to active setting (Buckham): active setting, how to describe fast
 - BVX.0081 · Description and Setting (Rozelle): description and setting
 - BVX.0200 · The Chicago Guide to Copyediting Fiction (Schneider): copyediting fiction, house rules on consistency
+- BVX.0159 · Revision And Self-Editing (James Scott Bell): revision and self-editing, the cut-and-tighten method

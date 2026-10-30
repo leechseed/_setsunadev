@@ -40,3 +40,5 @@ The Command's distilled library lives in `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.<id
 - BVX.0053 · Alternative scriptwriting (Dancyger): structures that break the Hollywood formula
 - BVX.0565 · Complex TV (Mittell): how a long series stacks arcs (the Outliers is a series)
 - BVX.0250 · TV Writing On Demand (Landau): TV act and episode shape
+- BVX.1046 · Inside Story (Marks): the transformational arc as the spine
+- BVX.0262 · Write to TV (Cook): writing for TV, series beats

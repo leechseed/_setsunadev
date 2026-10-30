@@ -26,3 +26,5 @@ The Command's distilled library lives in `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.<id
 - BVX.1076 · Questions for the movie answer man (Ebert): Ebert, how a working critic judges
 - BVX.0044 · 27 Fiction Writing Blunders - And How Not To Make Them! (Bell): twenty-seven fiction blunders
 - BVX.0565 · Complex TV (Mittell): complex TV, how long stories hold a viewer
+- BVX.0159 · Revision And Self-Editing (James Scott Bell): revision and self-editing
+- BVX.0094 · Elements of Fiction Writing - Conflict and Suspense (Scott Bell): conflict and suspense

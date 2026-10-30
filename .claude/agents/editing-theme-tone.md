@@ -41,3 +41,6 @@ The Command's distilled library lives in `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.<id
 - BVX.0142 · Notions of Genre (Grant): how popular film names its genres
 - BVX.0840 · The Philosophy of Horror or Paradoxes of The Heart (Carroll): why horror works
 - BVX.0290 · Youth Subcultures in Fiction, Film and Other Media (Bentley): youth subcultures in fiction and film
+- BVX.0068 · Conventions and Obligatory Moments (Kimberly Kessler & Leslie Watts): conventions and obligatory moments, what the audience expects
+- BVX.1021 · Cinema genre (Moine): cinema genre
+- BVX.0281 · Writing Scary Scenes (Rayne Hall): scary scenes, tone control
