@@ -1,5 +1,5 @@
 {
- "staged": "2026-10-30 03:08",
+ "staged": "2026-10-30 03:47",
  "leverage": {
   "line": "Run the BOLO 159 design pass (what each mode loads, the seam fixes), research only, while the reload finishes.",
   "why": "BOLO 121 step 3 needs the reload done, about 1:30 PM. The modes keep research mode from turning into builds.",
@@ -7,17 +7,14 @@
  },
  "sheets": [],
  "open_at_close": [
-  "Chief's 7:05 AM asks, unanswered: OCR all the scans, sort them into intake categories, and \"the distill.\"",
-  "Typewriter pages (15): which main categories, the intake bins or Chief's own list. Faint-ink lines not checked.",
-  "Script: 185 pages against \"300-something\"; Chief to confirm. Page 233 has ghost text. unpaper is not installed (needs admin).",
-  "Script slice: the BOLO 156 canon condition is unanswered.",
-  "Script editors: eight made, not run; the first pass waits on \"go.\" Craft basis (checked on disk): five of the eight carry books (structure, character, dialogue, theme-tone, continuity); reading-cold, editing-line and editing-production have none, by design or for lack of a book in the library.",
-  "Sorter: Chief's \"Copy decisions\" paste pending. Photo pre-fills are wrong for the brochure and the magazines. About 1,000 pages; collapse offered.",
-  "Posters: some pages unnamed and one name not in the performer register; ORANGE items, detail in `_PRIVATE/`. Placement call not ruled.",
-  "Notebooks: transcripts not started; waits on blank-back toss. Recipe cards handwritten vs typed unconfirmed. \"Mosky\" read as Moleskine. Blurb B020 generic until Chief names the notebook.",
-  "Blurbs unanswered: the Dirty Rotten Scoundrels year, why the Tallahassee pages matter, the Sprite film title and year, the \"Boston Skad\" phrase (not added), and \"overexit\" read as OXO.",
-  "Covers: the PDF's embedded title still says \"Book covers.\" Reading the covers and matching the library was offered, not requested.",
-  "Sprite pages 23, 48, 55 and 56 need a manual turn."
+  "Downloads launcher: check at next startup that the error is gone.",
+  "VLC keeper dies on session restart; build into the launcher not ordered.",
+  "Private program: first real run untested (voice cues, VLC pin, end-of-session log). Stats not given; Goon Log not written.",
+  "Old male voice: Chief reported it at 7:31 AM; Claude's check found none. Chief has not confirmed.",
+  "BOLO 172: photo target (about 500 sets vs 1,000+ stills) needs a ruling. Split is provisional. The 7:24 AM dictation cut off at \"th-th-th\"; that category is not captured.",
+  "BOLO 171: not started.",
+  "Earlier BOLO 172 detail sits in unpushed commits; nothing pushed.",
+  "Carried from last session: OCR all scans, sort into intake categories, \"the distill.\""
  ],
- "note": "2026-10-30.session.md"
+ "note": "2026-10-30-2.session.md"
 }
