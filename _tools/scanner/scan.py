@@ -58,7 +58,7 @@ def main():
         sys.exit(f"SCAN failed (exit {r.returncode}): {(r.stdout + r.stderr).strip()[-400:] or 'no output; is paper in the feeder?'}")
     if ocr:
         env = dict(os.environ, PATH=TESS + os.pathsep + os.environ.get("PATH", ""))
-        o = subprocess.run([sys.executable, "-m", "ocrmypdf", "--deskew", "--rotate-pages", "--clean", "--output-type", "pdfa",
+        o = subprocess.run([sys.executable, "-m", "ocrmypdf", "--deskew", "--rotate-pages", "--output-type", "pdfa",
                             "--optimize", "1", "-l", "eng", "--sidecar", os.path.join(d, "doc.txt"), raw, os.path.join(d, "doc.pdf")],
                            capture_output=True, text=True, env=env, timeout=1800)
         note = "OCR ok" if o.returncode == 0 else f"OCR failed (exit {o.returncode}): {o.stderr.strip()[-200:]}"
