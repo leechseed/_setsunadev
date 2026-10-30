@@ -87,8 +87,8 @@ flowchart TD
     H --> B
 ```
 
-**Diagram 3 — the phases and the ideological stance, side by side.**
-A film's stance toward its own genre (rows) is a different question from its place in the genre's life (columns); do not read one as the other.
+**Diagram 3 — convention use against ideological stance.**
+Films sit by how far they honor or break the genre's conventions (left to right) and how far they endorse or challenge the status quo (bottom to top). Placements are illustrative, not the book's.
 
 ```mermaid
 quadrantChart
