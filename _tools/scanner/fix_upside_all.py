@@ -29,8 +29,9 @@ def ocr(png):
     return r.stdout
 
 
-def main():
-    d = os.path.abspath(sys.argv[1])
+def fix(d, quiet=False):
+    """returns the list of rotated pages (writes doc.fixed.* only when there are some)"""
+    d = os.path.abspath(d)
     raw = os.path.join(d, "raw.pdf")
     n = len(pikepdf.open(raw).pages)
     flip = []
@@ -44,8 +45,10 @@ def main():
             dn = score(ocr(base + "_r.png"))
             if (dn or 0) > (up or 0) + 0.05:
                 flip.append(i)
-            print(f"p.{i}: up={up} rot={dn} {'FLIP' if i in flip else ''}", flush=True)
-    print(f"flip {len(flip)} of {n}: {flip}", flush=True)
+            if not quiet: print(f"p.{i}: up={up} rot={dn} {'FLIP' if i in flip else ''}", flush=True)
+    if not quiet: print(f"flip {len(flip)} of {n}: {flip}", flush=True)
+    if not flip:
+        return flip
     rot = os.path.join(d, "_rot.pdf")
     with pikepdf.open(raw) as p:
         for i in flip:
@@ -57,7 +60,9 @@ def main():
                         "--sidecar", os.path.join(d, "doc.fixed.txt"), rot, os.path.join(d, "doc.fixed.pdf")],
                        capture_output=True, text=True, env=env, timeout=3600)
     os.remove(rot)
-    print("OCR", "ok" if o.returncode == 0 else o.stderr[-300:], flush=True)
+    if not quiet: print("OCR", "ok" if o.returncode == 0 else o.stderr[-300:], flush=True)
+    return flip if o.returncode == 0 else []
 
 
-main()
+if __name__ == "__main__":
+    fix(sys.argv[1])

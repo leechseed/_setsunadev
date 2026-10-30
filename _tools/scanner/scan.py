@@ -62,6 +62,13 @@ def main():
                             "--optimize", "1", "-l", "eng", "--sidecar", os.path.join(d, "doc.txt"), raw, os.path.join(d, "doc.pdf")],
                            capture_output=True, text=True, env=env, timeout=1800)
         note = "OCR ok" if o.returncode == 0 else f"OCR failed (exit {o.returncode}): {o.stderr.strip()[-200:]}"
+        if o.returncode == 0 and a.kind == "typed":   # feeder pages often arrive upside down (10/30): rotate them, keep raw.pdf
+            import fix_upside_all
+            flipped = fix_upside_all.fix(d, quiet=True)
+            if flipped:
+                for ext in ("pdf", "txt"):
+                    os.replace(os.path.join(d, "doc.fixed." + ext), os.path.join(d, "doc." + ext))
+                note += f", {len(flipped)} upside-down page(s) rotated"
     else:
         note = "no OCR (scan-reader reads it)" if a.kind == "hand" else "no OCR"
     b = blurb.attach(d)
