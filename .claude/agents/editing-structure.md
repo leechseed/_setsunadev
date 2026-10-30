@@ -17,3 +17,17 @@ Map and judge:
 - **Scene jobs:** for the slice, one line per scene on what it changes. A scene that changes nothing is a cut candidate.
 
 Leave dialogue polish, character voice and typos to the other editors.
+
+## Craft basis
+
+The Command's distilled library lives in `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.<id>.md`. Before you read the script, read only §3 (framework), §5 (heuristics) and §7 (pitfalls) of each entry below. Tag findings with the source, for example (BVX.0163). The books disagree with each other; when two of them split on a point, say so and let the page decide. A book rule is evidence, not a verdict.
+
+- BVX.0163 · Save the Cat! (Snyder): beat sheet, genres, the logline test
+- BVX.0175 · Story (McKee): scene, sequence, act, the gap, the controlling idea
+- BVX.0193 · The Anatomy of Story (Truby): the 22 steps, the designing principle
+- BVX.1124 · The Writer's Journey (Vogler): the hero's journey stages
+- BVX.0236 · The Story Grid (Coyne): the five commandments of a scene, genre conventions
+- BVX.1123 · The Art of Dramatic Writing (Egri): premise, the pivotal character
+- BVX.1126 · Poetics (Aristotle): plot, reversal, recognition
+- BVX.0054 · Anatomy of a Premise Line: premise and story development
+- BVX.0089 · Dramatica: a theory of story, the Throughlines (the Command's own Dramatica reports sit beside it)

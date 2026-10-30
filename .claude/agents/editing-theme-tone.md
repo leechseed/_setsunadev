@@ -18,3 +18,16 @@ Report, with pages:
 - **Fit:** how the slice sits beside the Outliers or BoldVenture material the brief hands you. Without that material, mark it "needs canon check".
 
 Leave structure, dialogue craft and formatting to the other editors.
+
+## Craft basis
+
+The Command's distilled library lives in `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.<id>.md`. Before you read the script, read only §3 (framework), §5 (heuristics) and §7 (pitfalls) of each entry below. Tag findings with the source, for example (BVX.0163). The books disagree with each other; when two of them split on a point, say so and let the page decide. A book rule is evidence, not a verdict.
+
+- BVX.0191 · The Anatomy of Genres (Truby): story forms and their meaning
+- BVX.0576 · Film Genre for the Screenwriter: what each genre promises
+- BVX.0580 · Genre and Hollywood
+- BVX.0581 · Genre: an introduction to history, theory and research
+- BVX.0279 · Writing for Emotional Impact
+- BVX.0175 · Story (McKee): the controlling idea
+- BVX.0841 · The Power of Myth (Campbell) and BVX.1124 · The Writer's Journey: motif and myth
+- BVX.0236 · The Story Grid: genre conventions and obligatory scenes

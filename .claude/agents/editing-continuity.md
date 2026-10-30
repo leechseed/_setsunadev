@@ -18,3 +18,13 @@ Build, then check, with both pages for every conflict:
 - **World rules:** anything the script sets up as a rule (a power, a policy, a cost) and any scene that breaks it.
 
 Check against canon only when the brief hands you the files. Otherwise mark "needs canon check". Leave craft and polish to the other editors.
+
+## Craft basis
+
+The Command's distilled library lives in `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.<id>.md`. Before you read the script, read only §3 (framework), §5 (heuristics) and §7 (pitfalls) of each entry below. Tag findings with the source, for example (BVX.0163). The books disagree with each other; when two of them split on a point, say so and let the page decide. A book rule is evidence, not a verdict.
+
+- BVX.0100 · Fictional Worlds (Pavel): how a world stays consistent
+- BVX.0458 · The Kobold Guide to Worldbuilding: rules and their consequences
+- BVX.0141 · New Worlds, Year One: worldbuilding craft
+- BVX.0596 · Narratology in Practice: time, order and duration in a told story
+- BVX.0598 · Point of View, Perspective and Focalization: who knows what, and who tells it
