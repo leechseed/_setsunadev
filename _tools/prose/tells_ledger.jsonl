@@ -414,3 +414,4 @@
 {"ts": "2026-10-30 04:45", "sid": "75861711", "words": 256, "tells": 5, "per_1k": 19.5, "families": {"other": 4, "passive": 1}, "rules": {"long-sentence": 4, "passive": 1}}
 {"ts": "2026-10-30 04:45", "sid": "75861711", "words": 25, "tells": 0, "per_1k": 0.0, "families": {}, "rules": {}}
 {"ts": "2026-10-30 04:46", "sid": "75861711", "words": 46, "tells": 0, "per_1k": 0.0, "families": {}, "rules": {}}
+{"ts": "2026-10-30 04:46", "sid": "75861711", "words": 45, "tells": 0, "per_1k": 0.0, "families": {}, "rules": {}}
