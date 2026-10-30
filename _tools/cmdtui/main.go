@@ -394,6 +394,8 @@ func main() {
 	switch cmd {
 	case "kenshi":
 		kenshiCmd(os.Args[2:], kenshiWords(os.Args[2:]))
+	case "goon":
+		goonCmd(os.Args[2:])
 	case "up":
 		up()
 	case "fetch":
@@ -427,6 +429,7 @@ func main() {
 		fmt.Fprintln(w, "  "+sAcc.Render("glass")+"  the recent glasses, newest first; Enter opens one in the Console (--json: the list · <id|N> --json: the pick)")
 		fmt.Fprintln(w, "  "+sAcc.Render("pull ")+"  the pull waves, live and all (--json: the counts · --boards adds board names)")
 		fmt.Fprintln(w, "  "+sAcc.Render("push ")+"  the outgoing check, then Chief types push (--dry-run · --print · --json); held while _tools/release/hold.json says so")
+		fmt.Fprintln(w, "  "+sAcc.Render("goon ")+"  the Goon program: a standard hour, hit timer, bust and vape cues, VLC on top, start/end log (--json: the last session · --dry-run)")
 		fmt.Fprintln(w, "  "+sAcc.Render("kenshi")+" start Kenshi with RE_Kenshi and Sentient Sands (the go code: kenshi watanabi · --dry-run · --json)")
 		w.Flush()
 	}
