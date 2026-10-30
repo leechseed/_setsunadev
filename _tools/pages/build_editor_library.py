@@ -119,9 +119,10 @@ cards, need = [], []
 for seat, lens, wired, add in SEATS:
     lis = []
     for i in wired:
-        lis.append(row(i, "wired in the agent file today", "W"))
+        lis.append(row(i, "in the agent file", "W"))
     for i, why in add:
-        kind = "D" if "BVX." + i in DONE else "N"
+        agent = open(os.path.join(ROOT, ".claude", "agents", seat + ".md"), encoding="utf8").read()
+        kind = "W" if f"BVX.{i} " in agent else ("D" if "BVX." + i in DONE else "N")
         lis.append(row(i, why, kind))
         if kind == "N":
             need.append(i)
@@ -152,7 +153,7 @@ li{{display:grid;grid-template-columns:70px 78px 1fr;gap:2px 10px;padding:6px 0;
 @media(max-width:600px){{li{{grid-template-columns:62px 1fr}}.id{{grid-column:2}}.t,.a,.w{{grid-column:1/-1}}}}
 </style></head><body>
 <header><b>OXO EDITOR LIBRARY</b><span>8 script editors · books behind each lens</span></header><main>
-<div class="sum"><div><b>{sum(len(s[2]) for s in SEATS)}</b>wired today</div><div><b>{len(uniq)}</b>to distill (unique)</div>
+<div class="sum"><div><b>{sum(1 for s in SEATS for i in [x for x,_ in s[3]]+list(s[2]) if 'BVX.'+i in DONE)}</b>wired today</div><div><b>{len(uniq)}</b>to distill (unique)</div>
 <div><b>{sum(1 for s in SEATS for i,_ in s[3] if 'BVX.'+i in DONE)}</b>ready to wire</div><div><b>3</b>seats with no book yet</div></div>
 <p style="color:var(--mut)">WIRED = in the agent file now. READY = already distilled, add the line to the agent. DISTILL = in the library but not yet distilled; the distill order turns each into a KNOWLEDGE_AREAS entry the editors can read. Books are evidence, not verdicts.</p>
 {"".join(cards)}

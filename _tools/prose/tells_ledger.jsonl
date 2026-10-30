@@ -387,3 +387,4 @@
 {"ts": "2026-10-30 04:15", "sid": "75861711", "words": 340, "tells": 5, "per_1k": 14.7, "families": {"passive": 4, "repeated openings": 1}, "rules": {"passive": 4, "repeated-opening": 1}}
 {"ts": "2026-10-30 04:21", "sid": "75861711", "words": 166, "tells": 3, "per_1k": 18.1, "families": {"passive": 1, "other": 1, "slop words": 1}, "rules": {"passive": 1, "long-sentence": 1, "stock-phrase": 1}}
 {"ts": "2026-10-30 04:22", "sid": "75861711", "words": 113, "tells": 2, "per_1k": 17.7, "families": {"passive": 1, "other": 1}, "rules": {"passive": 1, "long-sentence": 1}}
+{"ts": "2026-10-30 04:26", "sid": "75861711", "words": 114, "tells": 0, "per_1k": 0.0, "families": {}, "rules": {}}
