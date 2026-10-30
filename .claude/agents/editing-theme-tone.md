@@ -31,3 +31,5 @@ The Command's distilled library lives in `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.<id
 - BVX.0175 · Story (McKee): the controlling idea
 - BVX.0841 · The Power of Myth (Campbell) and BVX.1124 · The Writer's Journey: motif and myth
 - BVX.0236 · The Story Grid: genre conventions and obligatory scenes
+- BVX.0614 · The Fantastic (Todorov): the structural test for the uncanny and the marvelous
+- BVX.0599 · Rhetorics of Fantasy (Mendlesohn): how a fantasy frames its reader

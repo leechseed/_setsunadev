@@ -28,3 +28,6 @@ The Command's distilled library lives in `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.<id
 - BVX.0141 · New Worlds, Year One: worldbuilding craft
 - BVX.0596 · Narratology in Practice: time, order and duration in a told story
 - BVX.0598 · Point of View, Perspective and Focalization: who knows what, and who tells it
+- BVX.0562 · Building Imaginary Worlds (Wolf): how a world is built and kept whole
+- BVX.0575 · Exploring Imaginary Worlds (Wolf): world structure and subcreation
+- BVX.0630 · The Routledge Companion to Imaginary Worlds: invention, canon and consistency
