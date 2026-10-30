@@ -397,3 +397,4 @@
 {"ts": "2026-10-30 04:33", "sid": "75861711", "words": 310, "tells": 3, "per_1k": 9.7, "families": {"slop words": 1, "other": 2}, "rules": {"stock-phrase": 1, "long-sentence": 2}}
 {"ts": "2026-10-30 04:33", "sid": "75861711", "words": 310, "tells": 3, "per_1k": 9.7, "families": {"slop words": 1, "other": 2}, "rules": {"stock-phrase": 1, "long-sentence": 2}}
 {"ts": "2026-10-30 04:33", "sid": "75861711", "words": 460, "tells": 6, "per_1k": 13.0, "families": {"other": 6}, "rules": {"long-sentence": 6}}
+{"ts": "2026-10-30 04:33", "sid": "75861711", "words": 103, "tells": 0, "per_1k": 0.0, "families": {}, "rules": {}}
