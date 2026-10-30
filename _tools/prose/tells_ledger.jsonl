@@ -239,3 +239,4 @@
 {"ts": "2026-10-29 23:18", "sid": "dc7ccd1e", "words": 115, "tells": 1, "per_1k": 8.7, "families": {"passive": 1}, "rules": {"passive": 1}}
 {"ts": "2026-10-29 23:33", "sid": "dc7ccd1e", "words": 242, "tells": 4, "per_1k": 16.5, "families": {"rhythm": 1, "passive": 1, "repeated openings": 1, "other": 1}, "rules": {"metronome": 1, "passive": 1, "repeated-opening": 1, "long-sentence": 1}}
 {"ts": "2026-10-29 23:34", "sid": "dc7ccd1e", "words": 141, "tells": 2, "per_1k": 14.2, "families": {"rhythm": 1, "passive": 1}, "rules": {"metronome": 1, "passive": 1}}
+{"ts": "2026-10-29 23:34", "sid": "dc7ccd1e", "words": 125, "tells": 2, "per_1k": 16.0, "families": {"rhythm": 1, "other": 1}, "rules": {"metronome": 1, "long-sentence": 1}}
