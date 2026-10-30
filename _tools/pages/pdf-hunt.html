@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PDF Hunt</title>
+<style>
+:root{--bg:#111;--panel:#1a1a1a;--line:#2e2e2e;--fg:#e8e6e1;--mut:#9b978f;--or:#FF5A1F;--ok:#9fdc86}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.45 system-ui,sans-serif}
+header{position:sticky;top:0;height:44px;display:flex;align-items:center;gap:16px;padding:0 16px;background:#0b0b0b;border-bottom:1px solid var(--line);z-index:2}
+header b{color:var(--or)}header span{color:var(--mut);font-size:13px}#prog{margin-left:auto;color:var(--or);font-weight:700}
+main{max-width:900px;margin:0 auto;padding:16px}
+.note{color:var(--mut);font-size:14px;margin:0 0 14px}
+.row{display:grid;grid-template-columns:34px 1fr;gap:12px;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:0 0 10px}
+.row.got{opacity:.55;border-color:#2a3a24}
+.row input[type=checkbox]{width:24px;height:24px;accent-color:var(--or);margin-top:2px}
+.t{font-weight:600}.m{color:var(--mut);font-size:13px;margin:2px 0 8px}
+.cp{display:flex;gap:8px;align-items:stretch;margin:4px 0}
+.cp code{flex:1;background:#0b0b0b;border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:13.5px;overflow-wrap:anywhere}
+button{background:#3a1d12;color:var(--or);border:1px solid #5a2a18;border-radius:6px;padding:0 12px;font-weight:700;cursor:pointer;min-height:34px}
+button:active{background:var(--or);color:#111}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}
+.id{color:var(--or);font-size:12px;font-weight:700}
+@media(max-width:600px){main{padding:12px 16px}.cp{flex-direction:column}}
+</style></head><body>
+<header><b>PDF HUNT</b><span>9 books for the script editors</span><span id="prog"></span></header>
+<main>
+<p class="note">Copy a title, find the PDF, attach it to the book's record in Zotero, tick the box, then tell me "rescan Zotero". Ticks live in this browser only; I can't see them until you say so.</p>
+<div class="bar"><button id="cpmiss" style="padding:0 16px">Copy the missing list</button><button id="reset" style="padding:0 16px">Clear ticks</button></div>
+<div id="list"></div>
+</main>
+<script>
+var BOOKS=[
+{id:"BVX.0013",t:"Film Production Management",a:"Bastian Cleve",isbn:"9780240806952",f:"Production editor: what a shoot costs"},
+{id:"BVX.0068",t:"Conventions and Obligatory Moments: The Must-haves to Meet Audience Expectations",a:"Kimberly Kessler and Leslie Watts",f:"Theme and tone editor: genre promises"},
+{id:"BVX.0094",t:"Elements of Fiction Writing: Conflict and Suspense",a:"James Scott Bell",f:"Structure editor and cold reader: tension"},
+{id:"BVX.0159",t:"Revision and Self-Editing",a:"James Scott Bell",f:"Line editor and cold reader: tightening a draft"},
+{id:"BVX.0262",t:"Write to TV: Out of Your Head and onto the Page",a:"Martie Cook",f:"Structure editor: series and episode shape"},
+{id:"BVX.0264",t:"13 Steps to Evil: How to Craft a Superbad Villain",a:"Sacha Black",f:"Character editor: villains"},
+{id:"BVX.0281",t:"Writing Scary Scenes: Professional Techniques for Thrillers, Horror and Other Exciting Fiction",a:"Rayne Hall",f:"Theme and tone editor: tone control"},
+{id:"BVX.1021",t:"Cinema Genre",a:"Raphaëlle Moine (2008; author from the catalog, verify)",f:"Theme and tone editor: how genres work"},
+{id:"BVX.1046",t:"Inside Story: The Power of the Transformational Arc: The Secret to Crafting Extraordinary Screenplays",a:"Dara Marks",f:"Structure and character editors: the arc"}
+];
+var KEY="pdfhunt-1030",got={};
+try{got=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){got={}}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(got))}catch(e){}}
+function copy(txt,btn){
+  function done(){var o=btn.textContent;btn.textContent="Copied";setTimeout(function(){btn.textContent=o},1100)}
+  try{navigator.clipboard.writeText(txt).then(done,function(){fallback(txt);done()})}catch(e){fallback(txt);done()}
+}
+function fallback(txt){var x=document.createElement("textarea");x.value=txt;document.body.appendChild(x);x.select();try{document.execCommand("copy")}catch(e){}document.body.removeChild(x)}
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+function render(){
+  var h="",n=0;
+  BOOKS.forEach(function(b,i){
+    var g=!!got[b.id];if(g)n++;
+    h+='<div class="row'+(g?' got':'')+'"><input type="checkbox" data-i="'+i+'"'+(g?' checked':'')+' aria-label="Got '+esc(b.t)+'">'
+     +'<div><div class="id">'+b.id+'</div><div class="t">'+esc(b.t)+'</div><div class="m">'+esc(b.a)+' · feeds the '+esc(b.f)+'</div>'
+     +'<div class="cp"><code>'+esc(b.t)+'</code><button data-c="'+i+'">Copy title</button></div>'
+     +'<div class="cp"><code>'+esc(b.t+" "+b.a.split(" (")[0]+" pdf")+'</code><button data-s="'+i+'">Copy search</button></div>'
+     +(b.isbn?'<div class="cp"><code>'+b.isbn+'</code><button data-n="'+i+'">Copy ISBN</button></div>':'')
+     +'</div></div>';
+  });
+  document.getElementById("list").innerHTML=h;
+  document.getElementById("prog").textContent=n+" of "+BOOKS.length+" got";
+}
+document.addEventListener("click",function(e){
+  var t=e.target,i;
+  if(t.dataset.c!==undefined){copy(BOOKS[t.dataset.c].t,t)}
+  else if(t.dataset.s!==undefined){var b=BOOKS[t.dataset.s];copy(b.t+" "+b.a.split(" (")[0]+" pdf",t)}
+  else if(t.dataset.n!==undefined){copy(BOOKS[t.dataset.n].isbn,t)}
+  else if(t.id==="cpmiss"){copy(BOOKS.filter(function(b){return !got[b.id]}).map(function(b){return b.id+" · "+b.t}).join("\n"),t)}
+  else if(t.id==="reset"){got={};save();render()}
+});
+document.addEventListener("change",function(e){
+  var t=e.target;if(t.dataset.i===undefined)return;
+  var b=BOOKS[t.dataset.i];if(t.checked)got[b.id]=1;else delete got[b.id];save();render();
+});
+render();
+</script></body></html>
