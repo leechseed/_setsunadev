@@ -402,6 +402,8 @@ func main() {
 		goonCmd(os.Args[2:])
 	case "hour":
 		hourCmd(os.Args[2:])
+	case "slideshow":
+		slideshowCmd(os.Args[2:])
 	case "up":
 		up()
 	case "fetch":
@@ -437,6 +439,7 @@ func main() {
 		fmt.Fprintln(w, "  "+sAcc.Render("push ")+"  the outgoing check, then Chief types push (--dry-run · --print · --json); held while _tools/release/hold.json says so")
 		fmt.Fprintln(w, "  "+sAcc.Render("goon ")+"  the Goon program: a standard hour, hit timer, bust and vape cues, VLC on top, start/end log (--json: the last session · --dry-run)")
 		fmt.Fprintln(w, "  "+sAcc.Render("hour  ")+"  a fresh hour of BBC in a new VLC window (go code: fresh hour · --only gay|straight · --minutes N · --dry-run · --json)")
+		fmt.Fprintln(w, "  "+sAcc.Render("slideshow")+" a photo slideshow from the DARKROOM as a video in a new VLC window (--minutes N · --seconds N · --dry-run · --json)")
 		fmt.Fprintln(w, "  "+sAcc.Render("kenshi")+" start Kenshi with RE_Kenshi and Sentient Sands (the go code: kenshi watanabi · --dry-run · --json)")
 		w.Flush()
 	}
