@@ -1,5 +1,5 @@
 """prep_wave.py — 10/30: zero-token prep for a distill wave (README step 8): pdftotext + one brief per book.
-Usage: python -X utf8 _tools/zotero/prep_wave.py 0092 0176 ...   (4-digit BVX numbers)
+Usage: python -X utf8 _tools/zotero/prep_wave.py 0092 0176 0013=Q:/path/book.pdf ...   (4-digit BVX numbers, optional =pdf path)
 Writes _PRIVATE/distill_wave/BVX.####.txt (book text, never public) and BVX.####.brief.md.
 Prints one line per book: ok / no-pdf / pdftotext-failed. Books with no PDF are Chief's to attach in Zotero.
 """
@@ -24,9 +24,10 @@ def main(ids):
             pdfs.setdefault(norm(r["title"]), (r["pdf"], r.get("zkey", "")))
     os.makedirs(OUT, exist_ok=True)
     for i in ids:
+        i, _, given = i.partition("=")   # "0013=C:/path/book.pdf" points straight at a PDF Zotero does not know yet
         bid = f"BVX.{i}"
         b = cat[bid]
-        hit = pdfs.get(norm(b["t"]))
+        hit = (given, "") if given else pdfs.get(norm(b["t"]))
         if not hit:
             print(bid, "no-pdf", b["t"][:60])
             continue
