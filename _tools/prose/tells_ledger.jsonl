@@ -318,3 +318,4 @@
 {"ts": "2026-10-30 03:25", "sid": "68a18a45", "words": 353, "tells": 4, "per_1k": 11.3, "families": {"filler openers": 1, "other": 3}, "rules": {"stock-phrase": 1, "long-sentence": 3}}
 {"ts": "2026-10-30 03:26", "sid": "68a18a45", "words": 165, "tells": 2, "per_1k": 12.1, "families": {"other": 2}, "rules": {"long-sentence": 2}}
 {"ts": "2026-10-30 03:27", "sid": "68a18a45", "words": 134, "tells": 2, "per_1k": 14.9, "families": {"other": 2}, "rules": {"long-sentence": 2}}
+{"ts": "2026-10-30 03:28", "sid": "68a18a45", "words": 167, "tells": 5, "per_1k": 29.9, "families": {"other": 4, "passive": 1}, "rules": {"long-sentence": 3, "exclamation": 1, "passive": 1}}
