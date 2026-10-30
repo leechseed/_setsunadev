@@ -40,3 +40,4 @@ The Command's distilled library lives in `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.<id
 - BVX.0265 · WRITING ABOUT VILLAINS (Hall): writing about villains
 - BVX.0255 · Visual Character Development in Film and Television (Hanly): how a character reads on screen
 - BVX.0290 · Youth Subcultures in Fiction, Film and Other Media (Bentley): youth subcultures in fiction and film (school-age cast)
+- BVX.0264 · [writing] 13 steps to evil - how to craft a superbad villains (Sacha Black): villain craft
