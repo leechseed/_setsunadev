@@ -345,3 +345,4 @@
 {"ts": "2026-10-30 04:01", "sid": "75861711", "words": 27, "tells": 0, "per_1k": 0.0, "families": {}, "rules": {}}
 {"ts": "2026-10-30 04:01", "sid": "75861711", "words": 36, "tells": 0, "per_1k": 0.0, "families": {}, "rules": {}}
 {"ts": "2026-10-30 04:01", "sid": "75861711", "words": 41, "tells": 0, "per_1k": 0.0, "families": {}, "rules": {}}
+{"ts": "2026-10-30 04:02", "sid": "75861711", "words": 39, "tells": 2, "per_1k": 51.3, "families": {"other": 1, "passive": 1}, "rules": {"long-sentence": 1, "passive": 1}}
