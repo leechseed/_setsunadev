@@ -287,3 +287,4 @@
 {"ts": "2026-10-30 02:04", "sid": "dc7ccd1e", "words": 83, "tells": 0, "per_1k": 0.0, "families": {}, "rules": {}}
 {"ts": "2026-10-30 02:06", "sid": "dc7ccd1e", "words": 93, "tells": 2, "per_1k": 21.5, "families": {"passive": 2}, "rules": {"passive": 2}}
 {"ts": "2026-10-30 02:07", "sid": "dc7ccd1e", "words": 114, "tells": 0, "per_1k": 0.0, "families": {}, "rules": {}}
+{"ts": "2026-10-30 02:09", "sid": "dc7ccd1e", "words": 97, "tells": 2, "per_1k": 20.6, "families": {"passive": 2}, "rules": {"passive": 2}}
