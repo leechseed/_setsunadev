@@ -1,20 +1,24 @@
 {
- "staged": "2026-10-30 03:47",
+ "staged": "2026-10-30 06:43",
  "leverage": {
-  "line": "Run the BOLO 159 design pass (what each mode loads, the seam fixes), research only, while the reload finishes.",
-  "why": "BOLO 121 step 3 needs the reload done, about 1:30 PM. The modes keep research mode from turning into builds.",
-  "board": "2026-10-18-3.json"
+  "line": "Scan Q:\\_Final_Media_Products\\1keep_copy2 for OXO material, videos included (Chief's order, 10/30 10:39 AM); touch the box-named marker first.",
+  "why": "Chief said to pick this up immediately next. Detail and the exact steps are in _CACHE/2026-10-30-3.session.md (Open at close)."
  },
  "sheets": [],
  "open_at_close": [
-  "Downloads launcher: check at next startup that the error is gone.",
-  "VLC keeper dies on session restart; build into the launcher not ordered.",
-  "Private program: first real run untested (voice cues, VLC pin, end-of-session log). Stats not given; Goon Log not written.",
-  "Old male voice: Chief reported it at 7:31 AM; Claude's check found none. Chief has not confirmed.",
-  "BOLO 172: photo target (about 500 sets vs 1,000+ stills) needs a ruling. Split is provisional. The 7:24 AM dictation cut off at \"th-th-th\"; that category is not captured.",
-  "BOLO 171: not started.",
-  "Earlier BOLO 172 detail sits in unpushed commits; nothing pushed.",
-  "Carried from last session: OCR all scans, sort into intake categories, \"the distill.\""
+  "Scan `Q:\\_Final_Media_Products\\1keep_copy2` for OXO material, videos included (Chief 10:39 AM). Not started.",
+  "Dropbox is now the OXO account. Not read: `Oxo.csn` (84 KB, format not checked), Script 3 Dev's `.csn` and Script 4 / Script 5 files, `LoreBass Obsidian`, `Setzna Worldbuild.scriv`, `Evil Check Draft 1 Reports`.",
+  "Sequel notes: read the 53 OXO and 68 Mx86 Evernote notes in part (the longest, \"Over.Exit.Out - So What?\", 6,446 words, and \"forum.\" are unread). The 147 other Evernote keyword hits (`_PRIVATE/evernote/keyword-hits.md`) are not reviewed. The \"Tori's crew / ship / Mass Effect\" idea matches the 2021 Setsuna and Ariel scope page; no longer text found.",
+  "Mx86: Scrivener document files are not on disk. Outline only.",
+  "Names: Chief's answers on Cain's p. 13 line, \"Hurley,\" the Hurricane plant, and \"3 years\" vs \"two years.\" Provisionals above.",
+  "Pass 2 findings with no ruling yet, except the Coda: frame story rules, Dixie's bridge, Coach's exposition, \"Cain York was not an accident\" never paid, Ivy's switch off the page, Bloom's role, Shane's shot of Marcus with no consequence, voice sameness.",
+  "Editors read the scan text. The clean text replaced it at 10:13 AM. The editors' OCR-scrambled stretches were not re-read.",
+  "Book gaps (§10): BVX.0262 chapters skimmed. BVX.1046 case studies and glossary unread. BVX.0264 appendix trait lists unread, soul-scar and core-value lists missing from the extraction. BVX.0013 and BVX.0281 reference material skipped. BVX.0094 author and year come from the agent's knowledge, not the PDF.",
+  "The cold reader ran before BVX.1093 existed and did not use it.",
+  "Photo slideshow picks were random. No keep or cut rulings on the archive yet.",
+  "Straight pool in the hour is thin (4 to 7 clips). Performer-data match unchecked.",
+  "From the earlier 10/30 note: \"the distill\" is done (55 of 55). Still open from it: the notebook transcripts (502 pages, scan-reader agents, costly), the scan sorter paste (\"Copy decisions\"), typewriter pages into the intake bins (Chief ruled 10/30), four unanswered blurbs partly answered (Tallahassee reason and Dirty Rotten year given).",
+  "**Next action, exact:** Chief's order \"scan Q:\\_Final_Media_Products\\1keep_copy2 for all the worth even the videos\" names the box. First run `python _tools/hooks/no_probe.py --box-named` (the old marker has expired), then list the folder with PowerShell (not Bash `ls`; the Q: drive is slow for Bash), sort by type, and pull OXO material: text and PDFs first, then video file names and any transcripts. Report before reading video content."
  ],
- "note": "2026-10-30-2.session.md"
+ "note": "2026-10-30-3.session.md"
 }
