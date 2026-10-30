@@ -237,3 +237,4 @@
 {"ts": "2026-10-29 23:15", "sid": "dc7ccd1e", "words": 102, "tells": 2, "per_1k": 19.6, "families": {"passive": 2}, "rules": {"passive": 2}}
 {"ts": "2026-10-29 23:16", "sid": "dc7ccd1e", "words": 93, "tells": 2, "per_1k": 21.5, "families": {"passive": 2}, "rules": {"passive": 2}}
 {"ts": "2026-10-29 23:18", "sid": "dc7ccd1e", "words": 115, "tells": 1, "per_1k": 8.7, "families": {"passive": 1}, "rules": {"passive": 1}}
+{"ts": "2026-10-29 23:33", "sid": "dc7ccd1e", "words": 242, "tells": 4, "per_1k": 16.5, "families": {"rhythm": 1, "passive": 1, "repeated openings": 1, "other": 1}, "rules": {"metronome": 1, "passive": 1, "repeated-opening": 1, "long-sentence": 1}}
