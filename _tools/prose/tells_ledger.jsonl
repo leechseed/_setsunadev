@@ -457,3 +457,4 @@
 {"ts": "2026-10-30 06:52", "sid": "6a94475e", "words": 267, "tells": 3, "per_1k": 11.2, "families": {"other": 3}, "rules": {"long-sentence": 3}}
 {"ts": "2026-10-30 06:54", "sid": "6a94475e", "words": 309, "tells": 6, "per_1k": 19.4, "families": {"passive": 3, "other": 3}, "rules": {"passive": 3, "long-sentence": 3}}
 {"ts": "2026-10-30 06:59", "sid": "6a94475e", "words": 280, "tells": 7, "per_1k": 25.0, "families": {"repeated openings": 1, "other": 5, "passive": 1}, "rules": {"repeated-opening": 1, "long-sentence": 5, "passive": 1}}
+{"ts": "2026-10-30 06:59", "sid": "6a94475e", "words": 410, "tells": 3, "per_1k": 7.3, "families": {"passive": 1, "other": 2}, "rules": {"passive": 1, "long-sentence": 1, "exclamation": 1}}
