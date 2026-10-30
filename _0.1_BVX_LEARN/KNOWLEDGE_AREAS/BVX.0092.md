@@ -265,7 +265,7 @@ A caution for the series work: this is a single-film model. Long-form arcs acros
 
 ## 10 · PROVENANCE & CONFIDENCE
 
-Source: full text via pdftotext, read in runs of about 150 to 250 pages equivalent per chunk, chapters 1 to 9 read in full including all examples and summaries. Chapter 10 (script formats): read the screenplay, sitcom, two-column and stage-play rules and the summary, and skimmed the repeated La Llorona sample pages. Front matter and the index/references were not read (pages after the Chapter 10 discussion, roughly lines 7050 to 7706). Figures lost to OCR (humors, Enneagram, Freud/Jung charts, Fig 7.1, Fig 8.3) were reconstructed from the surrounding text. All chapters are covered, so no chapter is unread.
+Source: full text via pdftotext, read in chunks of 700 to 1,000 text lines, chapters 1 to 9 read in full including all examples and summaries. Chapter 10 (script formats): read the screenplay, sitcom, two-column and stage-play rules and the summary, and skimmed the repeated La Llorona sample pages. Front matter and the index/references were not read (pages after the Chapter 10 discussion, roughly lines 7050 to 7706). Figures lost to OCR (humors, Enneagram, Freud/Jung charts, Fig 7.1, Fig 8.3) were reconstructed from the surrounding text. All chapters are covered, so no chapter is unread.
 
 Inferences labeled in this entry: the Application section, the quadrant placement of the example works in Diagram 4, the heuristics table's phrasing, and the cross-reference relations (entry titles confirmed in the library, bodies not reopened). Confidence high on Fink's claims; medium on how well they fit episodic or serial work.
 

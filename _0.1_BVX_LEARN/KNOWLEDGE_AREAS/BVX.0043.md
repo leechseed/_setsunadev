@@ -90,7 +90,7 @@ flowchart TD
 ```
 
 **Diagram 3 — the twenty plots placed by focus and hero change.**
-Read off the quadrants: top-left action plots rarely change the hero (sequel-friendly); right side is character plots where the hero change is the point.
+Read off the quadrants: bottom-left action plots rarely change the hero (sequel-friendly); the right side is character plots where the hero change is the point.
 
 ```mermaid
 quadrantChart
@@ -129,11 +129,31 @@ quadrantChart
 - Ch. 4 adds deep structure: every work carries a moral argument. Build it as two opposing arguments that are each logical, valid and compelling, so the hero is between a rock and a hard place.
 - Ch. 5 counts character dynamics: 2 characters give 2 relationships, 3 give 6, 4 give 12, 5 give 20. Use the Rule of Three. Action defines character.
 
-**Part two, the twenty plots (ch. 6 to 25).** Each chapter runs: definition, famous examples, three dramatic phases, a checklist. Body plots: quest* (hybrid), adventure, pursuit, rescue, escape, revenge, riddle. Rivalry and underdog follow. Mind plots: temptation, metamorphosis, transformation, maturation, love, forbidden love, sacrifice, discovery, wretched excess, ascension, descension.
+**Part two, the twenty plots (ch. 6 to 25).** Each chapter runs: definition, famous examples, three dramatic phases, a checklist. Order: quest, adventure, pursuit, rescue, escape, revenge, riddle, rivalry, underdog, temptation, metamorphosis, transformation, maturation, love, forbidden love, sacrifice, discovery, wretched excess, then ascension and descension together. Tobias labels adventure, pursuit, rescue, escape, revenge, riddle, rivalry and underdog as body (action) plots. Quest, temptation, metamorphosis, transformation, maturation, love, forbidden love, sacrifice, discovery, wretched excess, ascension and descension are character plots.
+
+| Plot | Phase 1 | Phase 2 | Phase 3 |
+|---|---|---|---|
+| Quest | Motivating incident, leave home, buddy and helper | Episodic trials that teach | Revelation: found or not, hero changed |
+| Adventure | Forced departure | Journey keyed to act-one setup | Payoff of set-up skills; hero barely changes |
+| Pursuit | Ground rules, stakes, start gun | Chase with twists and confinement | Caught or escaped |
+| Rescue | Separation (abduction) | Hero pursues on villain's turf | Confrontation and reunion |
+| Escape | Imprisonment, failed try | Plans, thwarted | Escape under changed terms |
+| Revenge | The crime (show it) | Plan and pursue | Confrontation; punishment equals crime |
+| Riddle | Generals: cast, crime | Specifics: clues | Solution fits both |
+| Rivalry | Common ground, catalyst, antagonist ahead | Protagonist rises to parity | Showdown, order restored |
+| Underdog | Disempowered by superior force | Gains ally or power, fails twice | Open contest, usually wins |
+| Temptation | Yields, rationalises | Cost mounts, denial | Atonement and forgiveness |
+| Metamorphosis | The cursed state | Antagonist and metamorph move toward each other | Release; reason for curse revealed |
+| Transformation | Transforming incident | Effects, self-examination | Clarifying incident, sad wisdom |
+| Maturation | Innocent baseline | Denial, trial and error | New belief accepted or rejected |
+| Love | Lovers found, then split | Active lover fights setbacks | Reunited, love tested |
+| Forbidden love | Taboo set in social context | Idyll then pressure | Society collects, usually by death |
+| Sacrifice | Establish selfish baseline | Moral dilemma, no easy way | The costly act and its effects |
+| Discovery | Who she was | Equilibrium lost, struggle | Self-realisation |
+| Wretched excess | Normal life, then the serpent | Gradual loss of control | Crisis: destruction or recovery |
+| Ascension / Descension | Character before the change | The change | Culmination: flaw wins or is beaten |
 
 **Part three (ch. 26).** Combine plots only with one major and the rest minor. State the story in fifty words. Answer the twelve-question final checklist.
-
-*Note: the book calls quest a character plot of the mind that is physical in motion.*
 
 ---
 
@@ -151,12 +171,12 @@ quadrantChart
 | Deep structure | The moral argument under the plot | Where depth and theme come from |
 | Good vs good | Both sides valid, so no villain-by-default | Source of real dilemma (Kramer vs Kramer) |
 | Propaganda | Author takes a side and lectures | Kills conflict; author is referee, not god |
-| Character triangle / dynamic number | N people give N(N-1) relationships | Cast-size budget |
+| Character dynamic number | N people give N(N-1) relationships | Cast-size budget |
 | Rule of Three | Two failures, third succeeds | Tension without boredom |
-| Chekhov's shotgun / casual-causal | Plant it quietly, pay it off | Fair setups, no deus ex machina |
+| Casual vs causal | Plant it quietly (Chekhov's shotgun), pay it off | Fair setups, no deus ex machina |
 | Power curve | Rivals' standing moves inversely | Shape of rivalry and underdog |
 | Confinement | Smaller space, more tension | Pursuit, Casablanca |
-| Sentiment vs sentimentality | Earned feeling vs borrowed stock feeling | Love, sacrifice scenes |
+| Sentiment vs sentimentality | Earned feeling vs borrowed stock feeling | Love and sacrifice scenes |
 | Proportion | Emotion matched to what the scene can carry | Defines melodrama |
 | Fifty-word test | Whole plot in fifty words | Proof the writer knows the story |
 
@@ -172,10 +192,10 @@ quadrantChart
 | Helper or solution needed late | Plant the helper in act one | Drop in a convenient rescuer |
 | Clue in a mystery | Hide in plain view, keep it ambiguous, play fair | Use red herrings that are not clues |
 | Hero is passive at climax | Hero performs the central action | Let antagonist or events do it |
-| Sympathy for a falling hero | Show his decline and give him the information early | Hide sympathetic facts until the end |
+| Sympathy for a falling hero | Show his decline and give the facts early | Hide sympathetic facts until the end |
 | Two valid sides to a dilemma | Give both equal logic, validity and feeling | Strawman the side you dislike |
 | Adding a fourth or fifth major character | Count the relationships first | Add cast without budget |
-| Sacrifice scene | Underplay; show cost through earlier character groundwork | Make a saint, or overplay emotion |
+| Sacrifice scene | Underplay; show cost through earlier groundwork | Make a saint, or overplay emotion |
 | Choosing a plot | Match idea to one primary plot; others are satellites | Graft two competing plots |
 | Plot not working | Revisit, then leave the path | Force brilliant pages to fit |
 | Pursuit scene | Keep pursued close, confine space, subvert type | Predictable chase cliches |
@@ -193,7 +213,7 @@ quadrantChart
 6. Plot and character are inseparable; the division is only a matter of focus.
 7. Chance may start a story but may not resolve it.
 8. Every moral system implied by a work is an argument that needs an opposing argument to be convincing.
-9. Rule of Three governs attempts and cast shape.
+9. The Rule of Three governs attempts and cast shape.
 10. Originality is in expression, not in a new plot.
 
 ---
@@ -209,7 +229,7 @@ quadrantChart
 - Writing propaganda: author with a score to settle, stereotypes, a lecture.
 - Raising the stakes without raising character: Fatal Attraction thrills but leaves a static hero.
 - Sentimentality and melodrama: borrowed or inflated emotion.
-- A tacked-on happy ending for a story that did not earn it (Pygmalion, Light That Failed).
+- A tacked-on happy ending for a story that did not earn it (Pygmalion, The Light That Failed).
 - Treating the twenty as laws. Tobias says they are patterns, not templates.
 - Number worship: the plot count is a packaging choice.
 
@@ -219,7 +239,7 @@ quadrantChart
 
 - **Spine level:** TEXTURE. The book supplies craft vocabulary for scene and sequence design, not a spine level of its own.
 - **12-layer character stack:** none (`feeds: []`). It treats character as action and intent/motivation only.
-- **plot_systems:** a diagnostic menu. Tag a scene or arc with a master plot and check its phases against the checklist.
+- **plot_systems:** a diagnostic menu. Tag a scene or arc with a master plot and check its phases against the table in section 3.
 - **Setting:** confinement and authentic detail rules (adventure, pursuit) feed setting scenes.
 
 This is meant as an editing lens for the script editors in `.claude/agents/editing-*.md` and `reading-cold.md`. Suggested uses:
@@ -248,7 +268,7 @@ Caution for use: the examples are 1990s Hollywood and canon literature, so the "
 ## 10 · PROVENANCE & CONFIDENCE
 
 - Source: full pdftotext of the book at `_PRIVATE/distill_wave/BVX.0043.txt`, read in sections from front matter through ch. 26 and the final checklist. Chapters 1 to 26 all read. The back index was skimmed only (reference list, no argument).
-- Everything in sections 1 to 7 is from the text. The quadrant placement in Diagram 3 is my judgment from the chapters' own statements about whether the hero changes; the book does not rank them that way. Section 8 is inference for Command use.
+- Sections 1 to 7 come from the text. The quadrant placement in Diagram 3 is my judgment from the chapters' own statements about whether the hero changes; the book does not rank them that way. Section 8 is inference for Command use.
 - Text encoding is legacy (smart quotes show as replacement characters); no content was lost.
 - Confidence high for the framework and heuristics; medium for the quadrant positions.
 
