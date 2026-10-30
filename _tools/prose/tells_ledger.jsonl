@@ -410,3 +410,4 @@
 {"ts": "2026-10-30 04:43", "sid": "75861711", "words": 279, "tells": 2, "per_1k": 7.2, "families": {"other": 2}, "rules": {"long-sentence": 2}}
 {"ts": "2026-10-30 04:43", "sid": "75861711", "words": 279, "tells": 2, "per_1k": 7.2, "families": {"other": 2}, "rules": {"long-sentence": 2}}
 {"ts": "2026-10-30 04:44", "sid": "75861711", "words": 279, "tells": 2, "per_1k": 7.2, "families": {"other": 2}, "rules": {"long-sentence": 2}}
+{"ts": "2026-10-30 04:45", "sid": "75861711", "words": 362, "tells": 4, "per_1k": 11.0, "families": {"other": 3, "repeated openings": 1}, "rules": {"long-sentence": 3, "repeated-opening": 1}}
