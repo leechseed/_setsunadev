@@ -147,7 +147,7 @@ def station_downloads():
     if not wt:
         return {"station": "DOWNLOADS", "go": False, "addr": "Windows Terminal", "note": "wt.exe not found"}
     try:   # -d: the script saves into its working folder, so it starts in Downloads like Chief runs it
-        subprocess.Popen([wt, "-w", "new", "--title", "DOWNLOADS", "--suppressApplicationTitle", "-d", folder, PY, YTDLP_GO],
+        subprocess.Popen([wt, "-w", "new", "--title", "DOWNLOADS", "--suppressApplicationTitle", "-d", folder, "cmd", "/k", PY, YTDLP_GO],   # via cmd: wt run on the bare python path fails 0x80070002 (10/30)
                          cwd=folder, stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, close_fds=True)
     except Exception as e:
         return {"station": "DOWNLOADS", "go": False, "addr": "Windows Terminal", "note": "start failed: %s" % e}
