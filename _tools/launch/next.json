@@ -1,5 +1,5 @@
 {
- "staged": "2026-10-25 10:28",
+ "staged": "2026-10-30 03:08",
  "leverage": {
   "line": "Run the BOLO 159 design pass (what each mode loads, the seam fixes), research only, while the reload finishes.",
   "why": "BOLO 121 step 3 needs the reload done, about 1:30 PM. The modes keep research mode from turning into builds.",
@@ -7,15 +7,17 @@
  },
  "sheets": [],
  "open_at_close": [
-  "Sketchbook: the cut-piece matching failed. One page is dated 06/08/17, which conflicts with the early-2020s date. A personal line on one journal page stays in `_PRIVATE/`.",
-  "Sketchbook name mappings to confirm: Flynn and the Principal Price slot.",
-  "Shelf: Dante's Paradiso (right one) found. Still missing: Parente, Rodewyk and Aquinas's own On Evil. Kelly's Satan is only front matter. Duplicates (Evagrius, Bonino, Pagels, Davies) and the Lezama Lima novel not deleted.",
-  "BOLO 168: the Summa PDF is unusable. Its English text on New Advent is waiting on Chief's word. Daniélou and Origen OCR results not yet used. Held-back books (Davies, Milton, Dante, Ignatius, Heiser's Unseen Realm, Wink, Mesopotamia and Boyce, Clark, Cuneo, Martin, two other Enochs) await Chief.",
-  "BOLO 168: five canon checks in SYNTHESIS are unruled. One is a conflict between the ruled Moon Severance and the seed's Kessler cascade.",
-  "Nine ranks as Victoria's layers: tabled.",
-  "Notebook: \"Moskey\" was taken as Moleskine, unconfirmed. \"Jan. Damn.\" was read as \"scan hand,\" unconfirmed. Shorthand pages need Chief's pick if a clean version is wanted.",
-  "Scanner: ScanSmart auto-start cause unconfirmed.",
-  "Zotero classify and key steps not run."
+  "Chief's 7:05 AM asks, unanswered: OCR all the scans, sort them into intake categories, and \"the distill.\"",
+  "Typewriter pages (15): which main categories, the intake bins or Chief's own list. Faint-ink lines not checked.",
+  "Script: 185 pages against \"300-something\"; Chief to confirm. Page 233 has ghost text. unpaper is not installed (needs admin).",
+  "Script slice: the BOLO 156 canon condition is unanswered.",
+  "Script editors: eight made, not run; the first pass waits on \"go.\" Craft basis (checked on disk): five of the eight carry books (structure, character, dialogue, theme-tone, continuity); reading-cold, editing-line and editing-production have none, by design or for lack of a book in the library.",
+  "Sorter: Chief's \"Copy decisions\" paste pending. Photo pre-fills are wrong for the brochure and the magazines. About 1,000 pages; collapse offered.",
+  "Posters: some pages unnamed and one name not in the performer register; ORANGE items, detail in `_PRIVATE/`. Placement call not ruled.",
+  "Notebooks: transcripts not started; waits on blank-back toss. Recipe cards handwritten vs typed unconfirmed. \"Mosky\" read as Moleskine. Blurb B020 generic until Chief names the notebook.",
+  "Blurbs unanswered: the Dirty Rotten Scoundrels year, why the Tallahassee pages matter, the Sprite film title and year, the \"Boston Skad\" phrase (not added), and \"overexit\" read as OXO.",
+  "Covers: the PDF's embedded title still says \"Book covers.\" Reading the covers and matching the library was offered, not requested.",
+  "Sprite pages 23, 48, 55 and 56 need a manual turn."
  ],
- "note": "2026-10-25.session.md"
+ "note": "2026-10-30.session.md"
 }
