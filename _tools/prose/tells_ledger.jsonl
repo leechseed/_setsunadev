@@ -453,3 +453,4 @@
 {"ts": "2026-10-30 06:35", "sid": "75861711", "words": 306, "tells": 6, "per_1k": 19.6, "families": {"passive": 3, "other": 2, "meta writing": 1}, "rules": {"passive": 3, "long-sentence": 2, "stock-phrase": 1}}
 {"ts": "2026-10-30 06:39", "sid": "75861711", "words": 526, "tells": 8, "per_1k": 15.2, "families": {"other": 8}, "rules": {"long-sentence": 8}}
 {"ts": "2026-10-30 06:42", "sid": "75861711", "words": 20, "tells": 1, "per_1k": 50.0, "families": {"passive": 1}, "rules": {"passive": 1}}
+{"ts": "2026-10-30 06:48", "sid": "6a94475e", "words": 174, "tells": 3, "per_1k": 17.2, "families": {"passive": 2, "other": 1}, "rules": {"passive": 2, "long-sentence": 1}}
