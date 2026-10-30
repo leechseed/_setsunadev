@@ -266,3 +266,6 @@
 {"ts": "2026-10-30 01:37", "sid": "dc7ccd1e", "words": 49, "tells": 1, "per_1k": 20.4, "families": {"passive": 1}, "rules": {"passive": 1}}
 {"ts": "2026-10-30 01:38", "sid": "dc7ccd1e", "words": 81, "tells": 3, "per_1k": 37.0, "families": {"passive": 2, "other": 1}, "rules": {"passive": 2, "long-sentence": 1}}
 {"ts": "2026-10-30 01:40", "sid": "dc7ccd1e", "words": 37, "tells": 0, "per_1k": 0.0, "families": {}, "rules": {}}
+{"ts": "2026-10-30 01:41", "sid": "dc7ccd1e", "words": 125, "tells": 4, "per_1k": 32.0, "families": {"passive": 3, "other": 1}, "rules": {"passive": 3, "long-sentence": 1}}
+{"ts": "2026-10-30 01:41", "sid": "dc7ccd1e", "words": 125, "tells": 4, "per_1k": 32.0, "families": {"passive": 3, "other": 1}, "rules": {"passive": 3, "long-sentence": 1}}
+{"ts": "2026-10-30 01:42", "sid": "dc7ccd1e", "words": 125, "tells": 4, "per_1k": 32.0, "families": {"passive": 3, "other": 1}, "rules": {"passive": 3, "long-sentence": 1}}
