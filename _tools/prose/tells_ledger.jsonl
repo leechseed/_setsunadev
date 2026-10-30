@@ -431,3 +431,4 @@
 {"ts": "2026-10-30 04:55", "sid": "75861711", "words": 77, "tells": 1, "per_1k": 13.0, "families": {"other": 1}, "rules": {"long-sentence": 1}}
 {"ts": "2026-10-30 04:55", "sid": "75861711", "words": 77, "tells": 1, "per_1k": 13.0, "families": {"other": 1}, "rules": {"long-sentence": 1}}
 {"ts": "2026-10-30 04:58", "sid": "75861711", "words": 176, "tells": 3, "per_1k": 17.0, "families": {"other": 2, "passive": 1}, "rules": {"long-sentence": 2, "passive": 1}}
+{"ts": "2026-10-30 04:59", "sid": "75861711", "words": 161, "tells": 2, "per_1k": 12.4, "families": {"other": 2}, "rules": {"long-sentence": 2}}
