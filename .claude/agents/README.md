@@ -1,6 +1,6 @@
 # Agent roster
 
-37 specialist agents: 22 adapted from the ECC repo (MIT, github.com/affaan-m/ECC) on 10/12, plus the BOLO 140 intake agents, the five Bench seats and the five Science Department seats (sci-*) (each file names its source and license at the bottom). Seats: haiku = PS (fetch/extract), sonnet = MS (write/review), opus = planning and architecture only. The CDR decides when to call each one.
+45 specialist agents: 22 adapted from the ECC repo (MIT, github.com/affaan-m/ECC) on 10/12, plus the BOLO 140 intake agents, the five Bench seats and the five Science Department seats (sci-*) (each file names its source and license at the bottom). Seats: haiku = PS (fetch/extract), sonnet = MS (write/review), opus = planning and architecture only. The CDR decides when to call each one.
 
 | Name | Model | Job in plain words | Access |
 |---|---|---|---|
@@ -26,6 +26,14 @@
 | sci-plausibility | sonnet | Flags the impossible or unexplained in a scene (line, problem, two ways to keep it); advises, never gates; Science Department seat | read-only |
 | sci-biomed | sonnet | Checks biology and medicine for the eras in bounded-claims wording; Science Department seat | read-only |
 | sci-forecast | sonnet | Forecasts technology for eras 3 and 4 in a favorable / adverse / wild-card / second-order frame; Science Department seat | read-only |
+| editing-structure | sonnet | Script editor: act shape, turning points, setups and payoffs, pacing; report only | writes (one report) |
+| editing-character | sonnet | Script editor: want vs need, arcs, choices, consistency; report only | writes (one report) |
+| editing-dialogue | sonnet | Script editor: voice, subtext, on-the-nose and exposition lines, rhythm; report only | writes (one report) |
+| editing-line | sonnet | Script editor: action-line economy, scene headings, formatting, readability; report only | writes (one report) |
+| editing-continuity | sonnet | Script editor: timeline, who-knows-what, names, props, world rules; report only | writes (one report) |
+| editing-theme-tone | sonnet | Script editor: theme, tone breaks, genre promise, motifs; report only | writes (one report) |
+| reading-cold | sonnet | Script editor: first-time reader's coverage with no canon; report only | writes (one report) |
+| editing-production | sonnet | Script editor: locations, cast, hard scenes, slice candidates, cheapest beats; report only | writes (one report) |
 
 ## The Command rules
 

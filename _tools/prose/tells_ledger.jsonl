@@ -255,3 +255,4 @@
 {"ts": "2026-10-30 00:16", "sid": "dc7ccd1e", "words": 174, "tells": 2, "per_1k": 11.5, "families": {"passive": 1, "other": 1}, "rules": {"passive": 1, "long-sentence": 1}}
 {"ts": "2026-10-30 00:17", "sid": "dc7ccd1e", "words": 130, "tells": 2, "per_1k": 15.4, "families": {"passive": 1, "other": 1}, "rules": {"passive": 1, "long-sentence": 1}}
 {"ts": "2026-10-30 00:40", "sid": "dc7ccd1e", "words": 246, "tells": 1, "per_1k": 4.1, "families": {"passive": 1}, "rules": {"passive": 1}}
+{"ts": "2026-10-30 00:41", "sid": "dc7ccd1e", "words": 351, "tells": 4, "per_1k": 11.4, "families": {"other": 4}, "rules": {"long-sentence": 4}}
