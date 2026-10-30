@@ -442,3 +442,4 @@
 {"ts": "2026-10-30 05:53", "sid": "75861711", "words": 325, "tells": 5, "per_1k": 15.4, "families": {"other": 2, "passive": 3}, "rules": {"long-sentence": 2, "passive": 3}}
 {"ts": "2026-10-30 05:55", "sid": "75861711", "words": 347, "tells": 4, "per_1k": 11.5, "families": {"passive": 3, "other": 1}, "rules": {"passive": 3, "long-sentence": 1}}
 {"ts": "2026-10-30 05:59", "sid": "75861711", "words": 455, "tells": 5, "per_1k": 11.0, "families": {"passive": 1, "other": 4}, "rules": {"passive": 1, "long-sentence": 4}}
+{"ts": "2026-10-30 06:08", "sid": "75861711", "words": 512, "tells": 9, "per_1k": 17.6, "families": {"passive": 2, "other": 7}, "rules": {"passive": 2, "exclamation": 1, "long-sentence": 6}}
