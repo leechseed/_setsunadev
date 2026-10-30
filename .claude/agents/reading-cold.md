@@ -28,3 +28,4 @@ The Command's distilled library lives in `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.<id
 - BVX.0565 · Complex TV (Mittell): complex TV, how long stories hold a viewer
 - BVX.0159 · Revision And Self-Editing (James Scott Bell): revision and self-editing
 - BVX.0094 · Elements of Fiction Writing - Conflict and Suspense (Scott Bell): conflict and suspense
+- BVX.1093 · The little book of Hollywood clichʹes (Ebert): Ebert's Hollywood clichés, the checklist a cold reader needs
