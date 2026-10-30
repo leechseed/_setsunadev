@@ -391,3 +391,8 @@
 {"ts": "2026-10-30 04:27", "sid": "75861711", "words": 244, "tells": 5, "per_1k": 20.5, "families": {"passive": 4, "rhythm": 1}, "rules": {"passive": 4, "metronome": 1}}
 {"ts": "2026-10-30 04:29", "sid": "75861711", "words": 404, "tells": 4, "per_1k": 9.9, "families": {"other": 4}, "rules": {"long-sentence": 4}}
 {"ts": "2026-10-30 04:30", "sid": "75861711", "words": 404, "tells": 4, "per_1k": 9.9, "families": {"other": 4}, "rules": {"long-sentence": 4}}
+{"ts": "2026-10-30 04:32", "sid": "75861711", "words": 310, "tells": 3, "per_1k": 9.7, "families": {"slop words": 1, "other": 2}, "rules": {"stock-phrase": 1, "long-sentence": 2}}
+{"ts": "2026-10-30 04:32", "sid": "75861711", "words": 310, "tells": 3, "per_1k": 9.7, "families": {"slop words": 1, "other": 2}, "rules": {"stock-phrase": 1, "long-sentence": 2}}
+{"ts": "2026-10-30 04:32", "sid": "75861711", "words": 310, "tells": 3, "per_1k": 9.7, "families": {"slop words": 1, "other": 2}, "rules": {"stock-phrase": 1, "long-sentence": 2}}
+{"ts": "2026-10-30 04:33", "sid": "75861711", "words": 310, "tells": 3, "per_1k": 9.7, "families": {"slop words": 1, "other": 2}, "rules": {"stock-phrase": 1, "long-sentence": 2}}
+{"ts": "2026-10-30 04:33", "sid": "75861711", "words": 310, "tells": 3, "per_1k": 9.7, "families": {"slop words": 1, "other": 2}, "rules": {"stock-phrase": 1, "long-sentence": 2}}

@@ -54,7 +54,7 @@ function render(){
     h+='<div class="row'+(g?' got':'')+'"><input type="checkbox" data-i="'+i+'"'+(g?' checked':'')+' aria-label="Got '+esc(b.t)+'">'
      +'<div><div class="id">'+b.id+'</div><div class="t">'+esc(b.t)+'</div><div class="m">'+esc(b.a)+' · feeds the '+esc(b.f)+'</div>'
      +'<div class="cp"><code>'+esc(b.t)+'</code><button data-c="'+i+'">Copy title</button></div>'
-     +'<div class="cp"><code>'+esc(b.t+" "+b.a.split(" (")[0]+" pdf")+'</code><button data-s="'+i+'">Copy search</button></div>'
+     +'<div class="cp"><code>'+esc(b.t+" "+b.a.split(" (")[0])+'</code><button data-s="'+i+'">Copy search</button></div>'
      +(b.isbn?'<div class="cp"><code>'+b.isbn+'</code><button data-n="'+i+'">Copy ISBN</button></div>':'')
      +'</div></div>';
   });
@@ -64,7 +64,7 @@ function render(){
 document.addEventListener("click",function(e){
   var t=e.target,i;
   if(t.dataset.c!==undefined){copy(BOOKS[t.dataset.c].t,t)}
-  else if(t.dataset.s!==undefined){var b=BOOKS[t.dataset.s];copy(b.t+" "+b.a.split(" (")[0]+" pdf",t)}
+  else if(t.dataset.s!==undefined){var b=BOOKS[t.dataset.s];copy(b.t+" "+b.a.split(" (")[0],t)}
   else if(t.dataset.n!==undefined){copy(BOOKS[t.dataset.n].isbn,t)}
   else if(t.id==="cpmiss"){copy(BOOKS.filter(function(b){return !got[b.id]}).map(function(b){return b.id+" · "+b.t}).join("\n"),t)}
   else if(t.id==="reset"){got={};save();render()}
