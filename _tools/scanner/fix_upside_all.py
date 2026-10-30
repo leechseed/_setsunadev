@@ -30,7 +30,7 @@ def ocr(png):
 
 
 def main():
-    d = sys.argv[1]
+    d = os.path.abspath(sys.argv[1])
     raw = os.path.join(d, "raw.pdf")
     n = len(pikepdf.open(raw).pages)
     flip = []
