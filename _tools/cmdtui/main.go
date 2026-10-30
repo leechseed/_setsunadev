@@ -387,6 +387,10 @@ func main() {
 		kenshiCmd(os.Args[1:], kenshiWords(os.Args[1:]))
 		return
 	}
+	if strings.TrimSuffix(strings.ToLower(filepath.Base(os.Args[0])), ".exe") == "fresh" { // "Fresh hour" (Chief 10/30)
+		hourCmd(os.Args[1:])
+		return
+	}
 	cmd := ""
 	if len(os.Args) > 1 {
 		cmd = os.Args[1]
@@ -396,6 +400,8 @@ func main() {
 		kenshiCmd(os.Args[2:], kenshiWords(os.Args[2:]))
 	case "goon":
 		goonCmd(os.Args[2:])
+	case "hour":
+		hourCmd(os.Args[2:])
 	case "up":
 		up()
 	case "fetch":
@@ -430,6 +436,7 @@ func main() {
 		fmt.Fprintln(w, "  "+sAcc.Render("pull ")+"  the pull waves, live and all (--json: the counts · --boards adds board names)")
 		fmt.Fprintln(w, "  "+sAcc.Render("push ")+"  the outgoing check, then Chief types push (--dry-run · --print · --json); held while _tools/release/hold.json says so")
 		fmt.Fprintln(w, "  "+sAcc.Render("goon ")+"  the Goon program: a standard hour, hit timer, bust and vape cues, VLC on top, start/end log (--json: the last session · --dry-run)")
+		fmt.Fprintln(w, "  "+sAcc.Render("hour  ")+"  a fresh hour of BBC in a new VLC window (go code: fresh hour · --only gay|straight · --minutes N · --dry-run · --json)")
 		fmt.Fprintln(w, "  "+sAcc.Render("kenshi")+" start Kenshi with RE_Kenshi and Sentient Sands (the go code: kenshi watanabi · --dry-run · --json)")
 		w.Flush()
 	}
