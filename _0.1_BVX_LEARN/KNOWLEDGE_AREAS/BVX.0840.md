@@ -107,10 +107,10 @@ quadrantChart
     title Outcome pairs and suspense
     x-axis Evil outcome unlikely --> Evil outcome likely
     y-axis Moral outcome unlikely --> Moral outcome likely
-    quadrant-1 No suspense, safe
-    quadrant-2 No suspense, doomed hero
-    quadrant-3 SUSPENSE
-    quadrant-4 No suspense, hopeless
+    quadrant-1 Both likely, muddled
+    quadrant-2 No suspense, safe
+    quadrant-3 No suspense, nothing at stake
+    quadrant-4 SUSPENSE
     Heroine on tracks: [0.85, 0.15]
     Superman vs pistols: [0.15, 0.85]
 ```

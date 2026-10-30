@@ -31,3 +31,12 @@ The Command's distilled library lives in `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.<id
 - BVX.1126 · Poetics (Aristotle): plot, reversal, recognition
 - BVX.0054 · Anatomy of a Premise Line: premise and story development
 - BVX.0089 · Dramatica: a theory of story, the Throughlines (the Command's own Dramatica reports sit beside it)
+- BVX.0092 · Dramatic Story Structure (Fink): screenplay act structure, the closest match to a script
+- BVX.0176 · Storytelling for Film and Television (Dancyger): structure for film and TV, first word to last frame
+- BVX.0136 · Mastering Suspense, Structure, & Plot (Cleland): suspense, structure and plot
+- BVX.0195 · The Architecture of Story (Dunne): the architecture of a scene and a story, technical
+- BVX.0043 · 20 master plots (Tobias): twenty plot shapes to name what the script is doing
+- BVX.0169 · Sizzling Story Outlines (D'Costa): outline method, to rebuild the shape from the pages
+- BVX.0053 · Alternative scriptwriting (Dancyger): structures that break the Hollywood formula
+- BVX.0565 · Complex TV (Mittell): how a long series stacks arcs (the Outliers is a series)
+- BVX.0250 · TV Writing On Demand (Landau): TV act and episode shape

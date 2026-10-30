@@ -18,3 +18,16 @@ Check, with pages:
 - **Readability:** the three densest pages and the three cleanest, so the writer sees the difference.
 
 Leave story shape, character and dialogue craft to the other editors.
+
+## Craft basis
+
+The Command's distilled library lives in `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.<id>.md`. Before you read the script, read only §3 (framework), §5 (heuristics) and §7 (pitfalls) of each entry below. Tag findings with the source, for example (BVX.0188). The books disagree with each other; when two of them split on a point, say so and let the page decide. A book rule is evidence, not a verdict. Entries marked draft rest on a partial read; weigh them lightly.
+
+- BVX.0188 · The 21st century screenplay (Aronson): the 21st-century screenplay, current format and style
+- BVX.0228 · The Process of Screenwriting (Clive Frayne): the process of screenwriting
+- BVX.0221 · The Nutshell Technique (Chamberlain): the nutshell technique, scene by scene
+- BVX.0201 · The Coffee Break Screenwriter (Pilar Alessandra): the coffee-break screenwriter, page-sized drills
+- BVX.0267 · Writing Active Hooks Book 2 (Buckham): active hooks and description
+- BVX.0056 · A writer's guide to active setting (Buckham): active setting, how to describe fast
+- BVX.0081 · Description and Setting (Rozelle): description and setting
+- BVX.0200 · The Chicago Guide to Copyediting Fiction (Schneider): copyediting fiction, house rules on consistency

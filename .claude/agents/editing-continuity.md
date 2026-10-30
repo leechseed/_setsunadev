@@ -31,3 +31,6 @@ The Command's distilled library lives in `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.<id
 - BVX.0562 · Building Imaginary Worlds (Wolf): how a world is built and kept whole
 - BVX.0575 · Exploring Imaginary Worlds (Wolf): world structure and subcreation
 - BVX.0630 · The Routledge Companion to Imaginary Worlds: invention, canon and consistency
+- BVX.0167 · Seymour Benjamin Chatman - Story and Discourse Narrative Structure in : Chatman, story and discourse in fiction and film
+- BVX.0563 · Characters in fictional worlds (Eder): characters in fictional worlds
+- BVX.0654 · Unnatural narratology (Alber): unnatural narratology, for time that breaks the rules

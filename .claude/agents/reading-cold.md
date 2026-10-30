@@ -18,3 +18,11 @@ Write the coverage:
 6. **Call:** pass, consider or recommend, and the one reason.
 
 Plain words, quotes and pages for every claim. End with `Status: DONE` (or `BLOCKED` with the reason).
+
+## Craft basis
+
+The Command's distilled library lives in `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.<id>.md`. Before you read the script, read only §3 (framework), §5 (heuristics) and §7 (pitfalls) of each entry below. Tag findings with the source, for example (BVX.0188). The books disagree with each other; when two of them split on a point, say so and let the page decide. A book rule is evidence, not a verdict. Entries marked draft rest on a partial read; weigh them lightly.
+
+- BVX.1076 · Questions for the movie answer man (Ebert): Ebert, how a working critic judges
+- BVX.0044 · 27 Fiction Writing Blunders - And How Not To Make Them! (Bell): twenty-seven fiction blunders
+- BVX.0565 · Complex TV (Mittell): complex TV, how long stories hold a viewer

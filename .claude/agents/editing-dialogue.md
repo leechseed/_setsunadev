@@ -27,3 +27,7 @@ The Command's distilled library lives in `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.<id
 - BVX.0175 · Story (McKee): the dialogue and subtext chapters
 - BVX.0279 · Writing for Emotional Impact: advanced dramatic techniques
 - BVX.0196 · The Art of Character (Corbett): how speech marks a person
+- BVX.0121 · How to Write Dazzling Dialogue (Bell): dazzling dialogue, the fast fix for a manuscript
+- BVX.0267 · Writing Active Hooks Book 2 (Buckham): hooks in dialogue and foreshadowing
+- BVX.0062 · Character, Scene, and Story (Dunne): dialogue inside the scene
+- BVX.0207 · The dramatic writer's companion (Dunne): subtext tools

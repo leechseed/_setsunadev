@@ -32,3 +32,11 @@ The Command's distilled library lives in `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.<id
 - BVX.0061 · Characters and Viewpoint
 - BVX.0273 · Writing Deep Point of View
 - BVX.1123 · The Art of Dramatic Writing (Egri): the pivotal character
+- BVX.0057 · A Writer’s Guide to Characterization (Schmidt): characterization toolkit
+- BVX.0122 · How to Write Great Characters (Wisehart): hero growth and transformation
+- BVX.0207 · The dramatic writer's companion (Dunne): tools to develop characters and cause scenes
+- BVX.0062 · Character, Scene, and Story (Dunne): character, scene and story
+- BVX.0047 · 8 Steps to Side Characters (Black): supporting roles with purpose
+- BVX.0265 · WRITING ABOUT VILLAINS (Hall): writing about villains
+- BVX.0255 · Visual Character Development in Film and Television (Hanly): how a character reads on screen
+- BVX.0290 · Youth Subcultures in Fiction, Film and Other Media (Bentley): youth subcultures in fiction and film (school-age cast)

@@ -33,3 +33,11 @@ The Command's distilled library lives in `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.<id
 - BVX.0236 · The Story Grid: genre conventions and obligatory scenes
 - BVX.0614 · The Fantastic (Todorov): the structural test for the uncanny and the marvelous
 - BVX.0599 · Rhetorics of Fantasy (Mendlesohn): how a fantasy frames its reader
+- BVX.0049 · Action Story (Shawn Coyne): action as a genre
+- BVX.0050 · Action (McKee): action as an art of excitement
+- BVX.0577 · Film genre (Grant): genre from iconography to ideology
+- BVX.0578 · Film Genre Hollywood and Beyond (Barry Langford): film genre, Hollywood and beyond
+- BVX.0579 · Film genre reader IV (Grant): film genre reader
+- BVX.0142 · Notions of Genre (Grant): how popular film names its genres
+- BVX.0840 · The Philosophy of Horror or Paradoxes of The Heart (Carroll): why horror works
+- BVX.0290 · Youth Subcultures in Fiction, Film and Other Media (Bentley): youth subcultures in fiction and film
