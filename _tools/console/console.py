@@ -60,6 +60,7 @@ LOCAL = {   # the whitelist: name -> file
     "fabula-graph": os.path.join(ROOT, "_PRIVATE", "intake-repos", "d3__d3", "fabula-graph.html"),
     "stash-erd": os.path.join(ROOT, "_PRIVATE", "reference", "erd", "stash-erd.html"),
     "zotero-erd": os.path.join(ROOT, "_PRIVATE", "reference", "erd", "zotero-erd.html"),
+    "tropes": os.path.join(ROOT, "_tools", "tropes", "glass", "tropes.html"),   # BOLO 89, _tools/tropes/build_glass.py
 }
 PANES = [   # the rail: six up front (Chief 10/18, rec taken), the rest behind "more"
     {"id": "desk", "title": "Desk", "url": "/local/desk"},
@@ -74,6 +75,7 @@ PANES = [   # the rail: six up front (Chief 10/18, rec taken), the rest behind "
     {"id": "fabula", "title": "Fabula graph", "url": "/local/fabula-graph", "more": True},
     {"id": "stash-erd", "title": "Stash ERD", "url": "/local/stash-erd", "more": True},
     {"id": "zotero-erd", "title": "Zotero ERD", "url": "/local/zotero-erd", "more": True},
+    {"id": "tropes", "title": "Tropes", "url": "/local/tropes", "more": True},
 ]
 
 
@@ -632,9 +634,18 @@ class H(http.server.BaseHTTPRequestHandler):
             from urllib.parse import quote
             try:
                 n = min(int(self.headers.get("Content-Length") or 0), 1024)
-                gid = str(json.loads(self.rfile.read(n).decode("utf-8")).get("glass", ""))
+                body = json.loads(self.rfile.read(n).decode("utf-8"))
+                gid = str(body.get("glass", ""))
+                pid = str(body.get("pane", ""))
             except Exception:
                 return self._send(400, json.dumps({"ok": False}), "application/json")
+            if pid:   # command tropes (BOLO 89): a /local/ pane by id, checked against PANES
+                p = next((x for x in PANES if x["id"] == pid and x["url"].startswith("/local/")), None)
+                if not p:
+                    return self._send(400, json.dumps({"ok": False, "error": "unknown pane"}), "application/json")
+                show(pid, p["url"], p["title"])
+                threading.Thread(target=bring, daemon=True).start()
+                return self._send(200, json.dumps({"ok": True, "seq": SHOW["seq"], "url": p["url"]}), "application/json")
             g = next((x for x in read_glasses() if gid and x.get("id") == gid), None) or {}
             url = str(g.get("url", ""))
             if g.get("local"):   # the same path the rail builds, encodeURIComponent's safe set

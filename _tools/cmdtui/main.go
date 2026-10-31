@@ -449,6 +449,8 @@ func main() {
 		recallCmd(os.Args[2:])
 	case "lookalike":
 		lookalikeCmd(os.Args[2:])
+	case "tropes":
+		tropesCmd(os.Args[2:])
 	default:
 		w := bufio.NewWriter(os.Stdout)
 		fmt.Fprintln(w, sAccB.Render("command")+sDim.Render(" · the Command's terminal front end (BOLO 153)"))
@@ -466,6 +468,7 @@ func main() {
 		fmt.Fprintln(w, "  "+sAcc.Render("repos")+"  the GitHub repos in Firefox's open tabs + the intake hand-off (the proword: repos are up · --file F · --json · --dry-run)")
 		fmt.Fprintln(w, "  "+sAcc.Render("recall")+" ranked search over _CACHE, _LOG, memory, SOP and STATE: where did we rule X (-n N · --source S · --rebuild · --json)")
 		fmt.Fprintln(w, "  "+sAcc.Render("lookalike")+" one page's layout skeleton: landmarks, headings, grid/flex, colors, fonts, components (<url|file> · --json · --out F · --dry-run)")
+		fmt.Fprintln(w, "  "+sAcc.Render("tropes")+" build the trope system glass and open it in the Console's Tropes pane (--json · --print · --dry-run; page in _tools/tropes/glass)")
 		fmt.Fprintln(w, "  "+sAcc.Render("kenshi")+" start Kenshi with RE_Kenshi and Sentient Sands (the go code: kenshi watanabi · --dry-run · --json)")
 		w.Flush()
 	}
