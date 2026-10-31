@@ -1,0 +1,122 @@
+{
+ "europatch": "0.1.0",
+ "kind": "preset",
+ "name": "wounded-veteran",
+ "title": "The wounded veteran",
+ "provisional": true,
+ "trope": "ShellShockedVeteran",
+ "source": "trope register link slug ShellShockedVeteran (_tools/tropes/data/tropes.jsonl); dial values the CDR's call 10/31",
+ "description": "Skeptic: a strong body, a severe injury, armored and avoidant, hard to read, still deciding under fire.",
+ "dials": {
+  "L2": {
+   "VITAL": {
+    "value": 68,
+    "spread": 8
+   }
+  },
+  "L3": {
+   "SOCIAL": {
+    "value": 30,
+    "spread": 8
+   },
+   "circumplex.communion": {
+    "value": 35,
+    "spread": 8
+   }
+  },
+  "L4": {
+   "WILL": {
+    "value": 62,
+    "spread": 8
+   },
+   "coping_strategy": {
+    "weights": {
+     "disappointed": 4
+    }
+   },
+   "system_stance": {
+    "weights": {
+     "cog": 2,
+     "resister": 2,
+     "bystander": 1
+    }
+   }
+  },
+  "L5": {
+   "severity": {
+    "value": 78,
+    "spread": 10
+   },
+   "wound_kind": {
+    "weights": {
+     "injury_suffered": 4,
+     "error_committed": 2
+    }
+   },
+   "relational_refs.kind": {
+    "weights": {
+     "ghost": 4,
+     "revenant": 2
+    }
+   }
+  },
+  "L6": {
+   "futurity_stance": {
+    "weights": {
+     "foreclosed": 4,
+     "none": 2
+    }
+   }
+  },
+  "L7": {
+   "origin_wound_seed": {
+    "value": 40,
+    "spread": 8
+   }
+  },
+  "L8": {
+   "attachment_style": {
+    "weights": {
+     "avoidant": 3,
+     "fearful_avoidant": 3
+    }
+   },
+   "emotional_range": {
+    "value": 30,
+    "spread": 8
+   }
+  },
+  "L9": {
+   "armor_index": {
+    "value": 80,
+    "spread": 8
+   }
+  },
+  "L10": {
+   "shadow_density": {
+    "value": 70,
+    "spread": 8
+   }
+  },
+  "L11": {
+   "resistance_index": {
+    "value": 65,
+    "spread": 8
+   },
+   "change_cause": {
+    "weights": {
+     "external_force": 3,
+     "will": 2
+    }
+   }
+  },
+  "L12": {
+   "dramatica_archetype": {
+    "weights": {
+     "Skeptic": 5,
+     "Guardian": 1
+    }
+   }
+  }
+ }
+}

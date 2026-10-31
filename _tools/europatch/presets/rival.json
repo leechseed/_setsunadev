@@ -1,0 +1,125 @@
+{
+ "europatch": "0.1.0",
+ "kind": "preset",
+ "name": "rival",
+ "title": "The rival",
+ "provisional": true,
+ "trope": "TheRival",
+ "source": "trope register link slug TheRival (_tools/tropes/data/tropes.jsonl); dial values the CDR's call 10/31",
+ "description": "Contagonist, the mirror who wants the same thing: high drive, competitive agency, an injury that made winning the point.",
+ "dials": {
+  "L1": {
+   "CORE": {
+    "value": 65,
+    "spread": 8
+   }
+  },
+  "L2": {
+   "VITAL": {
+    "value": 70,
+    "spread": 8
+   }
+  },
+  "L3": {
+   "SOCIAL": {
+    "value": 60,
+    "spread": 8
+   },
+   "circumplex.agency": {
+    "value": 80,
+    "spread": 8
+   },
+   "circumplex.communion": {
+    "value": 35,
+    "spread": 8
+   }
+  },
+  "L4": {
+   "WILL": {
+    "value": 70,
+    "spread": 8
+   },
+   "locus_of_control": {
+    "value": 55,
+    "spread": 8
+   },
+   "coping_strategy": {
+    "weights": {
+     "exceptional": 4,
+     "pleasing": 1
+    }
+   }
+  },
+  "L5": {
+   "severity": {
+    "value": 40,
+    "spread": 8
+   },
+   "wound_kind": {
+    "weights": {
+     "injury_suffered": 2,
+     "loss_unrecognized": 2
+    }
+   }
+  },
+  "L6": {
+   "DRIVE": {
+    "value": 82,
+    "spread": 8
+   },
+   "drive_texture": {
+    "weights": {
+     "more": 3,
+     "risk": 2
+    }
+   },
+   "futurity_stance": {
+    "weights": {
+     "planned": 3
+    }
+   }
+  },
+  "L8": {
+   "attachment_style": {
+    "weights": {
+     "avoidant": 3,
+     "anxious": 2
+    }
+   }
+  },
+  "L10": {
+   "shadow_density": {
+    "value": 55,
+    "spread": 8
+   },
+   "projection_tendency": {
+    "value": 70,
+    "spread": 8
+   },
+   "shadow_content.kind": {
+    "weights": {
+     "feared_double": 4
+    }
+   }
+  },
+  "L11": {
+   "resistance_index": {
+    "value": 70,
+    "spread": 8
+   }
+  },
+  "L12": {
+   "dramatica_archetype": {
+    "weights": {
+     "Contagonist": 6,
+     "Antagonist": 2
+    }
+   },
+   "convention_role.actant_slot": {
+    "weights": {
+     "opponent": 4
+    }
+   }
+  }
+ }
+}

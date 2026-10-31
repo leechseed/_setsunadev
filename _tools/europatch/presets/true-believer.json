@@ -1,0 +1,113 @@
+{
+ "europatch": "0.1.0",
+ "kind": "preset",
+ "name": "true-believer",
+ "title": "The true believer",
+ "provisional": true,
+ "trope": "KnightTemplar",
+ "source": "trope register link slug KnightTemplar (_tools/tropes/data/tropes.jsonl); dial values the CDR's call 10/31",
+ "description": "Antagonist, steadfast: a high will bent to a cause, believer stance, locked-in conditioning, a dense shadow it cannot see.",
+ "dials": {
+  "L1": {
+   "CORE": {
+    "value": 70,
+    "spread": 8
+   }
+  },
+  "L3": {
+   "circumplex.agency": {
+    "value": 80,
+    "spread": 8
+   }
+  },
+  "L4": {
+   "WILL": {
+    "value": 88,
+    "spread": 6
+   },
+   "locus_of_control": {
+    "value": 25,
+    "spread": 8
+   },
+   "system_stance": {
+    "weights": {
+     "believer": 6,
+     "cog": 1
+    }
+   }
+  },
+  "L5": {
+   "wound_kind": {
+    "weights": {
+     "loss_unrecognized": 3,
+     "injury_suffered": 2
+    }
+   }
+  },
+  "L6": {
+   "DRIVE": {
+    "value": 80,
+    "spread": 8
+   },
+   "futurity_stance": {
+    "weights": {
+     "planned": 3,
+     "horizon": 2
+    }
+   },
+   "want_need.need_kind": {
+    "weights": {
+     "moral": 4
+    }
+   }
+  },
+  "L8": {
+   "imprint_flexibility": {
+    "value": 15,
+    "spread": 8
+   }
+  },
+  "L10": {
+   "shadow_density": {
+    "value": 82,
+    "spread": 8
+   },
+   "projection_tendency": {
+    "value": 80,
+    "spread": 8
+   },
+   "shadow_content.kind": {
+    "weights": {
+     "denied_wish": 2,
+     "feared_double": 2,
+     "standing_alarm": 2
+    }
+   }
+  },
+  "L11": {
+   "resistance_index": {
+    "value": 88,
+    "spread": 8
+   }
+  },
+  "L12": {
+   "dramatica_archetype": {
+    "weights": {
+     "Antagonist": 6,
+     "Guardian": 1
+    }
+   },
+   "resolve": {
+    "weights": {
+     "Steadfast": 5
+    }
+   },
+   "convention_role.actant_slot": {
+    "weights": {
+     "opponent": 4,
+     "sender": 1
+    }
+   }
+  }
+ }
+}

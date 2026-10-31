@@ -1,0 +1,139 @@
+{
+ "europatch": "0.1.0",
+ "kind": "preset",
+ "name": "mentor",
+ "title": "The mentor",
+ "provisional": true,
+ "trope": "TheMentor",
+ "source": "trope register link slug TheMentor (_tools/tropes/data/tropes.jsonl); dial values the CDR's call 10/31",
+ "description": "Guardian, steadfast: a heavy mind and a will that holds, an old error carried quietly, secure enough to teach.",
+ "dials": {
+  "L1": {
+   "CORE": {
+    "value": 75,
+    "spread": 8
+   }
+  },
+  "L2": {
+   "VITAL": {
+    "value": 40,
+    "spread": 8
+   }
+  },
+  "L3": {
+   "SOCIAL": {
+    "value": 65,
+    "spread": 8
+   },
+   "circumplex.agency": {
+    "value": 65,
+    "spread": 8
+   },
+   "circumplex.communion": {
+    "value": 70,
+    "spread": 8
+   }
+  },
+  "L4": {
+   "WILL": {
+    "value": 78,
+    "spread": 8
+   },
+   "locus_of_control": {
+    "value": 30,
+    "spread": 8
+   },
+   "system_stance": {
+    "weights": {
+     "resister": 3,
+     "bystander": 2,
+     "mask": 1
+    }
+   }
+  },
+  "L5": {
+   "severity": {
+    "value": 45,
+    "spread": 8
+   },
+   "wound_kind": {
+    "weights": {
+     "error_committed": 3,
+     "loss_unrecognized": 2
+    }
+   },
+   "relational_refs.kind": {
+    "weights": {
+     "ghost": 3,
+     "mentor": 2
+    }
+   }
+  },
+  "L6": {
+   "DRIVE": {
+    "value": 45,
+    "spread": 8
+   },
+   "futurity_stance": {
+    "weights": {
+     "horizon": 3,
+     "hoped": 2
+    }
+   }
+  },
+  "L8": {
+   "attachment_style": {
+    "weights": {
+     "secure": 4,
+     "avoidant": 1
+    }
+   },
+   "imprint_flexibility": {
+    "value": 60,
+    "spread": 8
+   }
+  },
+  "L10": {
+   "shadow_density": {
+    "value": 45,
+    "spread": 8
+   },
+   "projection_tendency": {
+    "value": 30,
+    "spread": 8
+   }
+  },
+  "L11": {
+   "resistance_index": {
+    "value": 35,
+    "spread": 8
+   },
+   "arc_type": {
+    "weights": {
+     "growth": 3,
+     "hybrid": 1
+    }
+   }
+  },
+  "L12": {
+   "dramatica_archetype": {
+    "weights": {
+     "Guardian": 6,
+     "Reason": 2
+    }
+   },
+   "resolve": {
+    "weights": {
+     "Steadfast": 4,
+     "Change": 1
+    }
+   },
+   "convention_role.actant_slot": {
+    "weights": {
+     "helper": 3,
+     "sender": 3
+    }
+   }
+  }
+ }
+}

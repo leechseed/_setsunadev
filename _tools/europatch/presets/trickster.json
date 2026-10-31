@@ -1,0 +1,100 @@
+{
+ "europatch": "0.1.0",
+ "kind": "preset",
+ "name": "trickster",
+ "title": "The trickster",
+ "provisional": true,
+ "trope": "TheTrickster",
+ "source": "trope register link slug TheTrickster (_tools/tropes/data/tropes.jsonl); dial values the CDR's call 10/31",
+ "description": "Emotion: quick, warm, unarmored, low will and a mask for every system; the shadow lives in the joke.",
+ "dials": {
+  "L1": {
+   "CORE": {
+    "value": 62,
+    "spread": 12
+   }
+  },
+  "L3": {
+   "SOCIAL": {
+    "value": 78,
+    "spread": 8
+   },
+   "circumplex.communion": {
+    "value": 70,
+    "spread": 8
+   }
+  },
+  "L4": {
+   "WILL": {
+    "value": 35,
+    "spread": 12
+   },
+   "locus_of_control": {
+    "value": 70,
+    "spread": 8
+   },
+   "system_stance": {
+    "weights": {
+     "mask": 5,
+     "resister": 2
+    }
+   }
+  },
+  "L5": {
+   "severity": {
+    "value": 30,
+    "spread": 12
+   }
+  },
+  "L6": {
+   "drive_texture": {
+    "weights": {
+     "novelty": 4,
+     "risk": 3
+    }
+   }
+  },
+  "L8": {
+   "imprint_flexibility": {
+    "value": 80,
+    "spread": 8
+   },
+   "emotional_range": {
+    "value": 80,
+    "spread": 8
+   }
+  },
+  "L9": {
+   "armor_index": {
+    "value": 25,
+    "spread": 8
+   },
+   "signal_fluency": {
+    "weights": {
+     "fluent": 5
+    }
+   }
+  },
+  "L10": {
+   "projection_tendency": {
+    "value": 55,
+    "spread": 8
+   },
+   "shadow_content.kind": {
+    "weights": {
+     "denied_wish": 3,
+     "imposed_self_image": 2
+    }
+   }
+  },
+  "L12": {
+   "dramatica_archetype": {
+    "weights": {
+     "Emotion": 5,
+     "Sidekick": 2,
+     "Contagonist": 1
+    }
+   }
+  }
+ }
+}

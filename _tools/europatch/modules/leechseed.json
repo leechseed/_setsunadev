@@ -1,0 +1,1108 @@
+{
+ "europatch": 1,
+ "catalog": "leechseed",
+ "system": "LEECHSEED (the character system)",
+ "built": "2026-10-31 11:03",
+ "generator": "_tools/europatch/build_catalog.py",
+ "source": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md",
+ "scale": "every slider is 0..100 on the bay; native = the doc's own scale (shown beside it)",
+ "private": "L9 EROS: only SFW keys are dials here. The explicit keys stay in _PRIVATE/ and link by key (a private patch can carry them under dials with the same key names).",
+ "modules": [
+  {
+   "id": "L1",
+   "code": "CORE",
+   "name": "Core",
+   "tier": "Tier 1",
+   "question": "How much cognitive and ideological mass does the mind carry?",
+   "fields": [
+    "CORE",
+    "psychology_stack",
+    "assigned_labels",
+    "neurotype"
+   ],
+   "dials": [
+    {
+     "key": "CORE",
+     "kind": "slider",
+     "native": [
+      0,
+      20
+     ],
+     "default_native": 10,
+     "words": [
+      "a light, practical mind",
+      "an ordinary working mind",
+      "a heavy, sharp mind"
+     ],
+     "label": "CORE",
+     "help": "Cognitive and ideological mass (IQ equivalent; default 10).",
+     "default": 50,
+     "spread": 10,
+     "observed_native": 13
+    },
+    {
+     "key": "psychology_stack.extrovert_introvert",
+     "kind": "pick",
+     "label": "extro/intro",
+     "help": "Egri's psychology third names extrovert/introvert on the checklist.",
+     "choices": [
+      "extrovert",
+      "introvert"
+     ],
+     "vocab_src": "cited: BVX.1123 Egri psychology checklist"
+    }
+   ],
+   "jacks_in": [
+    "CORE"
+   ],
+   "jacks_out": [
+    "CORE"
+   ]
+  },
+  {
+   "id": "L2",
+   "code": "VITAL",
+   "name": "Vital",
+   "tier": "Tier 1",
+   "question": "How much physical and energetic presence does the body carry?",
+   "fields": [
+    "VITAL",
+    "physiology_stack",
+    "body_capital"
+   ],
+   "dials": [
+    {
+     "key": "VITAL",
+     "kind": "slider",
+     "native": [
+      0,
+      20
+     ],
+     "default_native": 10,
+     "words": [
+      "a slight, low-energy body",
+      "a steady body",
+      "a strong, high-energy presence"
+     ],
+     "label": "VITAL",
+     "help": "Physical and energetic presence (DX equivalent; default 10).",
+     "default": 50,
+     "spread": 10,
+     "observed_native": 14
+    }
+   ],
+   "jacks_in": [
+    "VITAL"
+   ],
+   "jacks_out": [
+    "VITAL"
+   ]
+  },
+  {
+   "id": "L3",
+   "code": "SOCIAL",
+   "name": "Social",
+   "tier": "Tier 1",
+   "question": "How does the character project into and read the social world?",
+   "fields": [
+    "SOCIAL",
+    "sociology_stack",
+    "community_membership",
+    "standing",
+    "catalog_ref",
+    "circumplex",
+    "pair_register",
+    "civic_standing",
+    "catalog_ref",
+    "disclosure_posture",
+    "voice_sheet"
+   ],
+   "dials": [
+    {
+     "key": "SOCIAL",
+     "kind": "slider",
+     "native": [
+      0,
+      20
+     ],
+     "default_native": 10,
+     "words": [
+      "hard to read and easy to miss",
+      "socially ordinary",
+      "reads a room and fills it"
+     ],
+     "label": "SOCIAL",
+     "help": "Projection into and reading of the social world (default 10).",
+     "default": 50,
+     "spread": 10,
+     "observed_native": 10
+    },
+    {
+     "key": "circumplex.agency",
+     "kind": "slider",
+     "native": [
+      -5,
+      5
+     ],
+     "default_native": 0,
+     "words": [
+      "yielding",
+      "even in a room",
+      "dominant"
+     ],
+     "label": "agency",
+     "help": "Interpersonal circumplex, yielding to dominant (-5..+5).",
+     "default": 50,
+     "spread": 10
+    },
+    {
+     "key": "circumplex.communion",
+     "kind": "slider",
+     "native": [
+      -5,
+      5
+     ],
+     "default_native": 0,
+     "words": [
+      "cold",
+      "neutral",
+      "warm"
+     ],
+     "label": "communion",
+     "help": "Interpersonal circumplex, cold to warm (-5..+5).",
+     "default": 50,
+     "spread": 10
+    }
+   ],
+   "jacks_in": [
+    "SOCIAL",
+    "circumplex.agency",
+    "circumplex.communion"
+   ],
+   "jacks_out": [
+    "SOCIAL",
+    "circumplex.agency",
+    "circumplex.communion"
+   ]
+  },
+  {
+   "id": "L4",
+   "code": "WILL",
+   "name": "Will",
+   "tier": "Tier 2",
+   "question": "How much resistance holds under pressure, and where does the capacity to decide bend?",
+   "fields": [
+    "WILL",
+    "coping_strategy",
+    "locus_of_control",
+    "system_stance"
+   ],
+   "dials": [
+    {
+     "key": "WILL",
+     "kind": "slider",
+     "native": [
+      0,
+      20
+     ],
+     "default_native": 10,
+     "words": [
+      "bends under pressure",
+      "holds under ordinary pressure",
+      "decides under any pressure"
+     ],
+     "label": "WILL",
+     "help": "The capacity to decide under pressure. Derives from CORE by default (WILL = CORE).",
+     "default": 50,
+     "spread": 10,
+     "observed_native": 14
+    },
+    {
+     "key": "locus_of_control",
+     "kind": "slider",
+     "native": [
+      -5,
+      5
+     ],
+     "default_native": 0,
+     "words": [
+      "owns the outcome",
+      "a mixed locus",
+      "puts the outcome on the world"
+     ],
+     "label": "locus",
+     "help": "Internal (-5) to external (+5).",
+     "default": 50,
+     "spread": 10
+    },
+    {
+     "key": "coping_strategy",
+     "kind": "pick",
+     "label": "coping",
+     "help": "",
+     "choices": [
+      "naive",
+      "cinderella",
+      "exceptional",
+      "pleasing",
+      "disappointed"
+     ],
+     "vocab_src": "cited: BVX.0045 Schmidt's five coping strategies"
+    },
+    {
+     "key": "system_stance",
+     "kind": "pick",
+     "label": "stance",
+     "help": "",
+     "choices": [
+      "cog",
+      "believer",
+      "mask",
+      "bystander",
+      "resister"
+     ],
+     "vocab_src": "doc: slice doc CL25"
+    }
+   ],
+   "jacks_in": [
+    "WILL",
+    "locus_of_control"
+   ],
+   "jacks_out": [
+    "WILL",
+    "locus_of_control"
+   ]
+  },
+  {
+   "id": "L5",
+   "code": "WOUND",
+   "name": "Wound",
+   "tier": "Tier 2",
+   "question": "What accumulated damage failed to resolve, and how severe is it?",
+   "fields": [
+    "WOUND",
+    "severity",
+    "triggers",
+    "minority_stress",
+    "relational_refs",
+    "mentor_state",
+    "wound_kind",
+    "wound_work"
+   ],
+   "dials": [
+    {
+     "key": "severity",
+     "kind": "slider",
+     "native": [
+      0,
+      10
+     ],
+     "default_native": 3,
+     "words": [
+      "lightly marked",
+      "carries real damage",
+      "near the collapse line"
+     ],
+     "label": "severity",
+     "help": "WOUND, 0 undamaged to 10 functional collapse (Puglisi & Ackerman's severity).",
+     "default": 30,
+     "spread": 10,
+     "observed_native": 8
+    },
+    {
+     "key": "wound_kind",
+     "kind": "pick",
+     "label": "kind",
+     "help": "",
+     "choices": [
+      "injury_suffered",
+      "error_committed",
+      "loss_unrecognized"
+     ],
+     "vocab_src": "doc: slice doc CL22"
+    },
+    {
+     "key": "relational_refs.kind",
+     "kind": "pick",
+     "label": "tie",
+     "help": "The kind of character the wound keys to.",
+     "choices": [
+      "ghost",
+      "revenant",
+      "mentor",
+      "shapeshifter"
+     ],
+     "vocab_src": "doc: slice doc, BVX.0196"
+    }
+   ],
+   "jacks_in": [
+    "severity"
+   ],
+   "jacks_out": [
+    "severity"
+   ]
+  },
+  {
+   "id": "L6",
+   "code": "DRIVE",
+   "name": "Drive",
+   "tier": "Tier 2",
+   "question": "What fuels the active goal-pursuit, and from what source?",
+   "fields": [
+    "DRIVE",
+    "futurity_stance",
+    "want_need"
+   ],
+   "dials": [
+    {
+     "key": "DRIVE",
+     "kind": "slider",
+     "native": [
+      0,
+      20
+     ],
+     "default_native": 10,
+     "words": [
+      "running on fumes",
+      "steady fuel",
+      "a burning drive"
+     ],
+     "label": "DRIVE",
+     "help": "Narrative motivation fuel. Derives from VITAL by default (DRIVE = VITAL).",
+     "default": 50,
+     "spread": 10,
+     "observed_native": 12
+    },
+    {
+     "key": "futurity_stance",
+     "kind": "pick",
+     "label": "future",
+     "help": "",
+     "choices": [
+      "planned",
+      "hoped",
+      "foreclosed",
+      "none",
+      "refused",
+      "horizon"
+     ],
+     "vocab_src": "doc: slice doc 3.0.0"
+    },
+    {
+     "key": "drive_texture",
+     "kind": "pick",
+     "label": "texture",
+     "help": "",
+     "choices": [
+      "more",
+      "risk",
+      "novelty",
+      "abundance"
+     ],
+     "vocab_src": "cited: slice doc 2.5.0 (prose list)"
+    },
+    {
+     "key": "want_need.need_kind",
+     "kind": "pick",
+     "label": "need",
+     "help": "",
+     "choices": [
+      "psychological",
+      "moral"
+     ],
+     "vocab_src": "doc: slice doc CL16"
+    }
+   ],
+   "jacks_in": [
+    "DRIVE"
+   ],
+   "jacks_out": [
+    "DRIVE"
+   ]
+  },
+  {
+   "id": "L7",
+   "code": "ORIGIN",
+   "name": "Origin",
+   "tier": "Tier 3",
+   "question": "What birth context and formation set the starting conditions?",
+   "fields": [
+    "origin_class",
+    "origin_stability",
+    "family_coherence",
+    "origin_wound_seed",
+    "tech_level",
+    "catalog_ref",
+    "system_exposure",
+    "layers",
+    "regime",
+    "catalog_ref",
+    "origin_event",
+    "hereditary_predisposition",
+    "life_script"
+   ],
+   "dials": [
+    {
+     "key": "origin_stability",
+     "kind": "slider",
+     "native": [
+      0,
+      10
+     ],
+     "default_native": 5,
+     "words": [
+      "an unstable start",
+      "an uneven start",
+      "a stable start"
+     ],
+     "label": "stability",
+     "help": "",
+     "default": 50,
+     "spread": 10,
+     "observed_native": 4
+    },
+    {
+     "key": "family_coherence",
+     "kind": "slider",
+     "native": [
+      0,
+      10
+     ],
+     "default_native": 5,
+     "words": [
+      "a broken family",
+      "a strained family",
+      "a tight family"
+     ],
+     "label": "family",
+     "help": "",
+     "default": 50,
+     "spread": 10,
+     "observed_native": 7
+    },
+    {
+     "key": "origin_wound_seed",
+     "kind": "slider",
+     "native": [
+      0,
+      10
+     ],
+     "default_native": 3,
+     "words": [
+      "little early harm",
+      "some early harm",
+      "deep early harm"
+     ],
+     "label": "wound seed",
+     "help": "Feeds the WOUND base.",
+     "default": 30,
+     "spread": 10,
+     "observed_native": 6
+    },
+    {
+     "key": "tech_level",
+     "kind": "slider",
+     "native": [
+      0,
+      10
+     ],
+     "default_native": 5,
+     "words": [
+      "low tech",
+      "mid tech",
+      "high tech"
+     ],
+     "label": "tech",
+     "help": "",
+     "default": 50,
+     "spread": 10,
+     "observed_native": 6
+    }
+   ],
+   "jacks_in": [
+    "origin_stability",
+    "family_coherence",
+    "origin_wound_seed",
+    "tech_level"
+   ],
+   "jacks_out": [
+    "origin_stability",
+    "family_coherence",
+    "origin_wound_seed",
+    "tech_level"
+   ]
+  },
+  {
+   "id": "L8",
+   "code": "IMPRINT",
+   "name": "Imprint",
+   "tier": "Tier 3",
+   "question": "What formative conditioning locked in before the story began?",
+   "fields": [
+    "attachment_style",
+    "attachment_style_score",
+    "attachment_dimensions",
+    "protest_behaviors",
+    "deactivating_strategies",
+    "emotional_range",
+    "conditional_patterns",
+    "imprint_flexibility",
+    "secure_base_object",
+    "primary_attachment_object",
+    "appeasement_strategies"
+   ],
+   "dials": [
+    {
+     "key": "attachment_style_score",
+     "kind": "slider",
+     "native": [
+      0,
+      10
+     ],
+     "default_native": 5,
+     "words": [
+      "a faint attachment pull",
+      "a middling attachment pull",
+      "a strong attachment pull"
+     ],
+     "label": "attach score",
+     "help": "",
+     "default": 50,
+     "spread": 10,
+     "observed_native": 6
+    },
+    {
+     "key": "emotional_range",
+     "kind": "slider",
+     "native": [
+      0,
+      10
+     ],
+     "default_native": 5,
+     "words": [
+      "a narrow emotional range",
+      "a middling emotional range",
+      "a wide emotional range"
+     ],
+     "label": "range",
+     "help": "",
+     "default": 50,
+     "spread": 10,
+     "observed_native": 9
+    },
+    {
+     "key": "imprint_flexibility",
+     "kind": "slider",
+     "native": [
+      0,
+      10
+     ],
+     "default_native": 5,
+     "words": [
+      "locked-in conditioning",
+      "partly flexible conditioning",
+      "flexible conditioning"
+     ],
+     "label": "flexibility",
+     "help": "",
+     "default": 50,
+     "spread": 10,
+     "observed_native": 3
+    },
+    {
+     "key": "attachment_style",
+     "kind": "pick",
+     "label": "attachment",
+     "help": "",
+     "choices": [
+      "secure",
+      "anxious",
+      "avoidant",
+      "fearful_avoidant"
+     ],
+     "vocab_src": "doc: slice doc, BVX.1127 Attached"
+    }
+   ],
+   "jacks_in": [
+    "attachment_style_score",
+    "emotional_range",
+    "imprint_flexibility"
+   ],
+   "jacks_out": [
+    "attachment_style_score",
+    "emotional_range",
+    "imprint_flexibility"
+   ]
+  },
+  {
+   "id": "L9",
+   "code": "EROS",
+   "name": "Eros",
+   "tier": "Tier 3",
+   "question": "How is desire structured, armored, and made safe?",
+   "fields": [
+    "erotic_blueprint_type",
+    "arousal_curve",
+    "desire_vector",
+    "resolution_type",
+    "group_size",
+    "group_position",
+    "erotic_craft",
+    "power_exchange",
+    "consent_posture",
+    "client_script",
+    "signal_fluency",
+    "shame_index",
+    "exposure_shame",
+    "role_shame",
+    "armor_index",
+    "satisfaction_cycle_truncation",
+    "erotic_safety_precondition",
+    "erotic_safety_precondition_scope",
+    "intimacy_mode",
+    "disclosure_posture",
+    "template_origin",
+    "compersion",
+    "fantasy_ledger",
+    "desire_object",
+    "pleasure_evidence",
+    "sex_creed",
+    "touch_rule",
+    "dissolution",
+    "compartment_practice",
+    "attraction_channels",
+    "risk_role",
+    "risk_account"
+   ],
+   "dials": [
+    {
+     "key": "armor_index",
+     "kind": "slider",
+     "native": [
+      0,
+      12
+     ],
+     "default_native": 6,
+     "words": [
+      "unarmored",
+      "guarded",
+      "heavily armored"
+     ],
+     "label": "armor",
+     "help": "Body armor; Expressive Range = 12 - armor.",
+     "default": 50,
+     "spread": 10,
+     "observed_native": 8
+    },
+    {
+     "key": "exposure_shame",
+     "kind": "slider",
+     "native": [
+      0,
+      10
+     ],
+     "default_native": 5,
+     "words": [
+      "unbothered by exposure",
+      "some exposure shame",
+      "exposure-shamed"
+     ],
+     "label": "exposure shame",
+     "help": "Shame under public exposure (read alias shame_index).",
+     "default": 50,
+     "spread": 10,
+     "observed_native": 2
+    },
+    {
+     "key": "intimacy_mode",
+     "kind": "pick",
+     "label": "intimacy",
+     "help": "",
+     "choices": [
+      "partnered_merge",
+      "parallel_presence",
+      "solo_directed",
+      "bounded_no_strings"
+     ],
+     "vocab_src": "doc: slice doc CL2"
+    },
+    {
+     "key": "signal_fluency",
+     "kind": "pick",
+     "label": "signals",
+     "help": "",
+     "choices": [
+      "fluent",
+      "functional",
+      "illiterate"
+     ],
+     "vocab_src": "cited: slice doc L9 (prose list)"
+    }
+   ],
+   "jacks_in": [
+    "armor_index",
+    "exposure_shame"
+   ],
+   "jacks_out": [
+    "armor_index",
+    "exposure_shame"
+   ]
+  },
+  {
+   "id": "L10",
+   "code": "SHADOW",
+   "name": "Shadow",
+   "tier": "Tier 3",
+   "question": "What is repressed, projected, or denied, and what does it generate?",
+   "fields": [
+    "shadow_density",
+    "projection_tendency",
+    "regression_pattern",
+    "shadow_content",
+    "dark_triad",
+    "light_triad",
+    "disinhibition_context"
+   ],
+   "dials": [
+    {
+     "key": "shadow_density",
+     "kind": "slider",
+     "native": [
+      0,
+      10
+     ],
+     "default_native": 5,
+     "words": [
+      "a thin shadow",
+      "a working shadow",
+      "a dense shadow"
+     ],
+     "label": "density",
+     "help": "",
+     "default": 50,
+     "spread": 10,
+     "observed_native": 7
+    },
+    {
+     "key": "projection_tendency",
+     "kind": "slider",
+     "native": [
+      0,
+      10
+     ],
+     "default_native": 5,
+     "words": [
+      "owns what it carries",
+      "projects at times",
+      "projects hard"
+     ],
+     "label": "projection",
+     "help": "",
+     "default": 50,
+     "spread": 10,
+     "observed_native": 6
+    },
+    {
+     "key": "shadow_content.kind",
+     "kind": "pick",
+     "label": "content",
+     "help": "",
+     "choices": [
+      "denied_wish",
+      "assigned_by_world",
+      "feared_double",
+      "standing_alarm",
+      "scrubbed_bond",
+      "imposed_self_image"
+     ],
+     "vocab_src": "doc: slice doc CL9"
+    }
+   ],
+   "jacks_in": [
+    "shadow_density",
+    "projection_tendency"
+   ],
+   "jacks_out": [
+    "shadow_density",
+    "projection_tendency"
+   ]
+  },
+  {
+   "id": "L11",
+   "code": "DESTINY",
+   "name": "Destiny",
+   "tier": "Tier 3",
+   "question": "What is the character building toward, not where they stand?",
+   "fields": [
+    "growth_axis",
+    "resistance_index",
+    "soul_evolution_archetype",
+    "karmic_memory",
+    "growth_requirement",
+    "arc_type",
+    "change_cause",
+    "catalyst_archetype",
+    "rail_ref"
+   ],
+   "dials": [
+    {
+     "key": "resistance_index",
+     "kind": "slider",
+     "native": [
+      0,
+      10
+     ],
+     "default_native": 5,
+     "words": [
+      "open to change",
+      "resists change",
+      "fights change hard"
+     ],
+     "label": "resistance",
+     "help": "",
+     "default": 50,
+     "spread": 10,
+     "observed_native": 8
+    },
+    {
+     "key": "arc_type",
+     "kind": "pick",
+     "label": "arc",
+     "help": "",
+     "choices": [
+      "growth",
+      "transformation",
+      "hybrid"
+     ],
+     "vocab_src": "cited: BVX.0196 growth vs transformation"
+    },
+    {
+     "key": "change_cause",
+     "kind": "pick",
+     "label": "cause",
+     "help": "",
+     "choices": [
+      "unmasking",
+      "external_force",
+      "will",
+      "uncaused"
+     ],
+     "vocab_src": "cited: BVX.0061 the four causes"
+    }
+   ],
+   "jacks_in": [
+    "resistance_index"
+   ],
+   "jacks_out": [
+    "resistance_index"
+   ]
+  },
+  {
+   "id": "L12",
+   "code": "FUNCTION",
+   "name": "Function",
+   "tier": "Tier 3",
+   "question": "What narrative role and mechanical function does the character discharge?",
+   "fields": [
+    "dramatica_archetype",
+    "mc_problem_element",
+    "methodology_element",
+    "evaluation_element",
+    "purpose_element",
+    "touchstone",
+    "story_outcome",
+    "story_judgement",
+    "limit_type",
+    "resolve",
+    "convention_role"
+   ],
+   "dials": [
+    {
+     "key": "dramatica_archetype",
+     "kind": "pick",
+     "label": "archetype",
+     "help": "",
+     "choices": [
+      "Protagonist",
+      "Antagonist",
+      "Guardian",
+      "Contagonist",
+      "Reason",
+      "Emotion",
+      "Sidekick",
+      "Skeptic"
+     ],
+     "vocab_src": "cited: BVX.0089 the eight archetypes"
+    },
+    {
+     "key": "resolve",
+     "kind": "pick",
+     "label": "resolve",
+     "help": "",
+     "choices": [
+      "Change",
+      "Steadfast"
+     ],
+     "vocab_src": "cited: Dramatica protocol, storyform dynamics"
+    },
+    {
+     "key": "story_outcome",
+     "kind": "pick",
+     "label": "outcome",
+     "help": "",
+     "choices": [
+      "Success",
+      "Failure"
+     ],
+     "vocab_src": "cited: Dramatica protocol, storyform dynamics"
+    },
+    {
+     "key": "story_judgement",
+     "kind": "pick",
+     "label": "judgement",
+     "help": "",
+     "choices": [
+      "Good",
+      "Bad"
+     ],
+     "vocab_src": "cited: Dramatica protocol, storyform dynamics"
+    },
+    {
+     "key": "limit_type",
+     "kind": "pick",
+     "label": "limit",
+     "help": "",
+     "choices": [
+      "Timelock",
+      "Optionlock"
+     ],
+     "vocab_src": "cited: Dramatica protocol, storyform dynamics"
+    },
+    {
+     "key": "convention_role.actant_slot",
+     "kind": "pick",
+     "label": "actant",
+     "help": "",
+     "choices": [
+      "subject",
+      "object",
+      "sender",
+      "receiver",
+      "helper",
+      "opponent"
+     ],
+     "vocab_src": "doc: Dramatica protocol CL15"
+    }
+   ],
+   "jacks_in": [],
+   "jacks_out": []
+  }
+ ],
+ "suggested_cables": [
+  {
+   "from": "L1.CORE",
+   "to": "L4.WILL",
+   "mode": "add",
+   "strength": 0.2,
+   "curve": "linear",
+   "why": "L4: WILL derives from CORE by default (WILL = CORE)",
+   "src": "doc"
+  },
+  {
+   "from": "L2.VITAL",
+   "to": "L6.DRIVE",
+   "mode": "add",
+   "strength": 0.2,
+   "curve": "linear",
+   "why": "L6: DRIVE derives from VITAL by default (DRIVE = VITAL)",
+   "src": "doc"
+  },
+  {
+   "from": "L5.severity",
+   "to": "L4.WILL",
+   "mode": "add",
+   "strength": -0.3,
+   "curve": "threshold-soft",
+   "threshold": 0.5,
+   "soft": 0.2,
+   "why": "L5: high WOUND reduces effective WILL under trigger conditions",
+   "src": "doc"
+  },
+  {
+   "from": "L5.severity",
+   "to": "L3.SOCIAL",
+   "mode": "add",
+   "strength": -0.2,
+   "curve": "threshold-soft",
+   "threshold": 0.5,
+   "soft": 0.2,
+   "why": "L5: high WOUND reduces effective SOCIAL under trigger conditions",
+   "src": "doc"
+  },
+  {
+   "from": "L7.origin_wound_seed",
+   "to": "L5.severity",
+   "mode": "add",
+   "strength": 0.3,
+   "curve": "ease",
+   "why": "L7: ORIGIN's numbers feed the WOUND base",
+   "src": "doc"
+  },
+  {
+   "from": "L7.origin_stability",
+   "to": "L3.SOCIAL",
+   "mode": "add",
+   "strength": 0.15,
+   "curve": "linear",
+   "why": "L7: ORIGIN's numbers feed SOCIAL defaults",
+   "src": "doc"
+  },
+  {
+   "from": "L10.projection_tendency",
+   "to": "L3.SOCIAL",
+   "mode": "add",
+   "strength": -0.1,
+   "curve": "linear",
+   "why": "Derived: Social Legibility = SOCIAL - projection/3",
+   "src": "doc"
+  },
+  {
+   "from": "L8.imprint_flexibility",
+   "to": "L11.resistance_index",
+   "mode": "multiply",
+   "strength": -0.4,
+   "curve": "ease",
+   "why": "a flexible imprint lowers resistance to change",
+   "src": "provisional"
+  }
+ ],
+ "groups": [
+  {
+   "title": "Tier 1 · surface",
+   "modules": [
+    "L1",
+    "L2",
+    "L3"
+   ]
+  },
+  {
+   "title": "Tier 2 · pressure",
+   "modules": [
+    "L4",
+    "L5",
+    "L6"
+   ]
+  },
+  {
+   "title": "Tier 3 · depth",
+   "modules": [
+    "L7",
+    "L8",
+    "L9",
+    "L10",
+    "L11",
+    "L12"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,122 @@
+{
+ "europatch": "0.1.0",
+ "kind": "preset",
+ "name": "idealist",
+ "title": "The wide-eyed idealist",
+ "provisional": true,
+ "trope": "WideEyedIdealist",
+ "source": "trope register link slug WideEyedIdealist (_tools/tropes/data/tropes.jsonl); dial values the CDR's call 10/31",
+ "description": "Protagonist who must change: a light wound, warm, hoped-for future, open to change; growth through will.",
+ "dials": {
+  "L1": {
+   "CORE": {
+    "value": 55,
+    "spread": 12
+   }
+  },
+  "L3": {
+   "circumplex.communion": {
+    "value": 78,
+    "spread": 8
+   }
+  },
+  "L4": {
+   "WILL": {
+    "value": 55,
+    "spread": 12
+   },
+   "coping_strategy": {
+    "weights": {
+     "naive": 4,
+     "cinderella": 1
+    }
+   }
+  },
+  "L5": {
+   "severity": {
+    "value": 20,
+    "spread": 8
+   },
+   "wound_kind": {
+    "weights": {
+     "loss_unrecognized": 3
+    }
+   }
+  },
+  "L6": {
+   "DRIVE": {
+    "value": 70,
+    "spread": 8
+   },
+   "futurity_stance": {
+    "weights": {
+     "hoped": 5
+    }
+   }
+  },
+  "L7": {
+   "origin_stability": {
+    "value": 65,
+    "spread": 8
+   },
+   "family_coherence": {
+    "value": 65,
+    "spread": 8
+   },
+   "origin_wound_seed": {
+    "value": 20,
+    "spread": 8
+   }
+  },
+  "L8": {
+   "attachment_style": {
+    "weights": {
+     "secure": 3,
+     "anxious": 2
+    }
+   }
+  },
+  "L9": {
+   "armor_index": {
+    "value": 25,
+    "spread": 8
+   }
+  },
+  "L10": {
+   "shadow_density": {
+    "value": 25,
+    "spread": 8
+   }
+  },
+  "L11": {
+   "resistance_index": {
+    "value": 30,
+    "spread": 8
+   },
+   "arc_type": {
+    "weights": {
+     "growth": 3,
+     "transformation": 2
+    }
+   }
+  },
+  "L12": {
+   "dramatica_archetype": {
+    "weights": {
+     "Protagonist": 6
+    }
+   },
+   "resolve": {
+    "weights": {
+     "Change": 4,
+     "Steadfast": 1
+    }
+   },
+   "convention_role.actant_slot": {
+    "weights": {
+     "subject": 5
+    }
+   }
+  }
+ }
+}

@@ -1,10 +1,12 @@
 {
- "built": "BOLO 77 wave 2",
+ "built": "BOLO 77 wave 2 · on the full register (BOLO 89 v0.6.0, 2026-10-31)",
  "counts": {
   "nodes": 135,
   "tropes_keyed": 1034,
   "tropes_unkeyed": 644,
-  "links_fetched": 1678,
+  "in_register": 344,
+  "register_size": 8700,
+  "links_fetched": 9864,
   "edges_trope_link": 2584,
   "edges_same_as": 31
  },
@@ -2276,14 +2278,23 @@
   {
    "slug": "ADeadlyAffair",
    "name": "A Deadly Affair",
-   "def": "An extramarital affair that leads to murder.",
+   "def": "When an affair turns into a crime scene. Victim(s) can vary.",
    "indexes": [
     "Plots",
     "RomanceArc"
    ],
    "node": "sch.29_adultery",
    "alt": "sch.05_vengeance_for_a_crime",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "AFoolAndHisNewMoneyAreSoonParted",
@@ -2321,13 +2332,22 @@
   {
    "slug": "AMatchMadeInStockholm",
    "name": "A Match Made in Stockholm",
-   "def": "The pair meet when one kidnaps the other.",
+   "def": "A character falls in love with their kidnapper.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "sch.39_self_sacrifice",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "AMinorKidroduction",
@@ -2521,13 +2541,22 @@
   {
    "slug": "AlienInvasion",
    "name": "Alien Invasion",
-   "def": "Aliens plan to invade a planet.",
+   "def": "They don't come in peace.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.15_revolt",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S5"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "AllForNothing",
@@ -2621,13 +2650,22 @@
   {
    "slug": "AmnesiaDanger",
    "name": "Amnesia Danger",
-   "def": "A character would be able to deal with this easily if they had their memories. Unfortunately, they don't.",
+   "def": "A character with amnesia is in a situation they would normally be able to handle, but can't because they don't remember how.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.07_the_riddle",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "AnOfferYouCantRefuse",
@@ -2665,13 +2703,22 @@
   {
    "slug": "AnguishedDeclarationOfLove",
    "name": "Anguished Declaration of Love",
-   "def": "...with great angst.",
+   "def": "Confessing your love for somebody during a moment of angst.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "AnimalTesting",
@@ -2687,35 +2734,62 @@
   {
    "slug": "AntagonistInMourning",
    "name": "Antagonist in Mourning",
-   "def": "The villain feels sorry for the hero's death.",
+   "def": "The bad guy feels sorry for the hero's death.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.50_empathy",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "AntiSchoolUniformsPlot",
    "name": "Anti-School Uniforms Plot",
-   "def": "A group of students protest a newly installed rule requiring school uniforms.",
+   "def": "A school tries to implement school uniforms and the students try to protest.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.15_revolt",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "ApocalypseWow",
    "name": "Apocalypse Wow",
-   "def": "The apocalypse is absolutely nightmarish, but man if it isn't cool!",
+   "def": "The Apocalypse never looked so spectacular.",
    "indexes": [
     "EndingTropes"
    ],
    "node": "tob.20_descension",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S11"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "ApopheniaPlot",
@@ -2731,25 +2805,43 @@
   {
    "slug": "AppeaseTheVolcanoGod",
    "name": "Appease the Volcano God",
-   "def": "A group try to throw a character into a volcano to appease the volcano god.",
+   "def": "A Human Sacrifice is thrown into a volcano to appease the volcano god.",
    "indexes": [
     "Plots",
     "GoalsAndObjectivesIndex"
    ],
    "node": "sch.21_enigma",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S8"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "AscendToAHigherPlaneOfExistence",
    "name": "Ascend to a Higher Plane of Existence",
-   "def": "",
+   "def": "A character dies without actually dying, often becoming a spirit.",
    "indexes": [
     "GoalsAndObjectivesIndex"
    ],
    "node": "tob.19_ascension",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "AsinineAlternateActivity",
@@ -2765,14 +2857,23 @@
   {
    "slug": "AssimilationPlot",
    "name": "Assimilation Plot",
-   "def": "A villain attempts to eliminate all differences between people.",
+   "def": "A type of ploy where the end goal is the elimination of all individual identity",
    "indexes": [
     "Plots",
     "GoalsAndObjectivesIndex"
    ],
    "node": "sch.15_revolt",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "AttackOfTheTownFestival",
@@ -2788,13 +2889,22 @@
   {
    "slug": "AvengingTheVillain",
    "name": "Avenging the Villain",
-   "def": "",
+   "def": "You killed my evil leader, and now I will avenge them by hunting you down!",
    "indexes": [
     "GoalsAndObjectivesIndex"
    ],
    "node": "tob.06_revenge",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "AwesomeAchievementPettyPurpose",
@@ -2810,13 +2920,22 @@
   {
    "slug": "AwesomeMomentOfCrowning",
    "name": "Awesome Moment of Crowning",
-   "def": "Story ends with character being crowned ruler of the land they just saved.",
+   "def": "\"Now come the days of the king!",
    "indexes": [
     "EndingTropes"
    ],
    "node": "prp.31_wedding",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "AwkwardFirstSleepover",
@@ -2832,24 +2951,42 @@
   {
    "slug": "AxesAtSchool",
    "name": "Axes at School",
-   "def": "Someone brings a weapon to class.",
+   "def": "A student brings a weapon to school and may or may not use it against someone.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.13_falling_prey_to_cruelty_or_misfortune",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "BabiesEverAfter",
    "name": "Babies Ever After",
-   "def": "The story ends with the heroes having children.",
+   "def": "A couple is shown to have started a family at the end of the story.",
    "indexes": [
     "EndingTropes"
    ],
    "node": "prp.31_wedding",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "BackForTheFinale",
@@ -2865,13 +3002,22 @@
   {
    "slug": "BackToSchool",
    "name": "Back to School",
-   "def": "An adult character returns to school.",
+   "def": "The story has a character having to attend school again.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.13_maturation",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S8"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "BackstabBackfire",
@@ -2887,13 +3033,24 @@
   {
    "slug": "BadSamaritan",
    "name": "Bad Samaritan",
-   "def": "Someone takes in the hero and seems (at first) to be helping, but they have ulterior motives.",
+   "def": "And that's why we tell kids not to accept free candy from people they don't know.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.05_vengeance_for_a_crime",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "character",
+     "theme"
+    ],
+    "keys": {
+     "character": "L10",
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "BadSanta",
@@ -2953,13 +3110,22 @@
   {
    "slug": "BatmanInMyBasement",
    "name": "Batman in My Basement",
-   "def": "A character hides out in someone's home. One resident has to keep the others from finding out.",
+   "def": "When someone highly conspicuous hides in a \"normal\" location.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.04_sojourn",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "BeCarefulWhatYouWishFor",
@@ -3020,13 +3186,22 @@
   {
    "slug": "BecomingTheMask",
    "name": "Becoming the Mask",
-   "def": "A character becomes like the person they pretend to be.",
+   "def": "The Mole genuinely comes to fall in love with the person they were stringing along.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.12_transformation",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "BelatedHappyEnding",
@@ -3042,13 +3217,22 @@
   {
    "slug": "BelligerentSexualTension",
    "name": "Belligerent Sexual Tension",
-   "def": "",
+   "def": "Two people are in love, but they mask their feelings behind arguments.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.08_rivalry",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "BenchedHero",
@@ -3064,35 +3248,62 @@
   {
    "slug": "BenevolentConspiracy",
    "name": "Benevolent Conspiracy",
-   "def": "A secret plan is happening, but for noble reasons.",
+   "def": "A secret society that isn't really evil, but is in fact planning something for the (greater) good of the world.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.02_benefaction",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "BetterAsFriends",
    "name": "Better as Friends",
-   "def": "The pair decide they're happier when they're not a couple.",
+   "def": "Two people were in love for a while, but then decided it was better that they were Just Friends .",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "BetterIfNotBornPlot",
    "name": "\"Better If Not Born\" Plot",
-   "def": "Someone is shown what the world would be like if they never existed, and everyone's lives are enriched because of it.",
+   "def": "A suicidal person is shown what life would be like if they didn't exist... only for everyone to be doing just fine or better without their presence.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.17_discovery",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "BigBadassBattleSequence",
@@ -3103,7 +3314,16 @@
    ],
    "node": "prp.16_struggle",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S5"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "BigDamnHeroes",
@@ -3246,18 +3466,36 @@
    ],
    "node": "sch.48_intuitive_judgment",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R3"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "BodyCountCompetition",
    "name": "Body-Count Competition",
-   "def": "Characters compete to see who kills the most Mooks .",
+   "def": "This movie must have killed more men than Cecil B.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.27_competition",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S5"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "BodyHorror",
@@ -3295,13 +3533,22 @@
   {
    "slug": "BolivianArmyEnding",
    "name": "Bolivian Army Ending",
-   "def": "The work ends on a cliffhanger, with the characters facing Uncertain Doom .",
+   "def": "The story ends with a character or characters’ fates uncertain, but highly likely they will die.",
    "indexes": [
     "EndingTropes"
    ],
    "node": "prp.21_pursuit",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "BondingThroughSharedEarbuds",
@@ -3334,7 +3581,16 @@
    ],
    "node": "prp.04_reconnaissance",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "Bookends",
@@ -3362,14 +3618,23 @@
   {
    "slug": "BoyMeetsGirl",
    "name": "Boy Meets Girl",
-   "def": "A boy and a girl meet each other, lose each other, then find each other again.",
+   "def": "A boy and a girl meet, lose each other, then find each other again.",
    "indexes": [
     "BeginningTropes",
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "Brainwashed",
@@ -3418,13 +3683,22 @@
   {
    "slug": "BreakingOutTheBoss",
    "name": "Breaking Out the Boss",
-   "def": "Members of a gang of criminals orchestrate a plan to free their incarcerated leader from prison.",
+   "def": "A gang of criminals break their incarcerated boss from prison.",
    "indexes": [
     "Plots"
    ],
    "node": "prp.10_beginning_counteraction",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "BringHelpBack",
@@ -3473,13 +3747,22 @@
   {
    "slug": "BrokenPedestal",
    "name": "Broken Pedestal",
-   "def": "A person who idolized someone they saw as a hero starts hating their hero after discovering them to not truly be the flawless paragon of virtue they thought they were.",
+   "def": "Someone finds out that the person they idolized wasn't quite as heroic and noble as they thought they were.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.41_discovery_of_the_dishonor_of_a_loved_one",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "BrokenTreasure",
@@ -3539,35 +3822,62 @@
   {
    "slug": "BucketList",
    "name": "Bucket List",
-   "def": "To do everything on a certain list before one dies.",
+   "def": "A person puts together a list of things to do before they die.",
    "indexes": [
     "GoalsAndObjectivesIndex"
    ],
    "node": "tob.01_quest",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "BurningTheShips",
    "name": "Burning the Ships",
-   "def": "",
+   "def": "Hernán Cortés scuttling his fleet off the Veracruz coast .",
    "indexes": [
     "ClimacticTropes"
    ],
    "node": "prp.11_departure",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S5"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "BuryMeNotOnTheLonePrairie",
    "name": "Bury Me Not on the Lone Prairie",
-   "def": "Someone has difficulty honoring the last requests of a deceased person.",
+   "def": "Someone has difficulty in honoring the deceased's last requests.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.39_self_sacrifice",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R3"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "ButICantBePregnant",
@@ -3605,13 +3915,22 @@
   {
    "slug": "CainAndAbel",
    "name": "Cain and Abel",
-   "def": "Sibling rivalry turns into bitter, murderous hatred.",
+   "def": "A sibling becomes dead set on killing the other.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.27_competition",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "CallOfTheWildBlueYonder",
@@ -3649,14 +3968,23 @@
   {
    "slug": "CameBackWithAVengeance",
    "name": "Came Back with a Vengeance",
-   "def": "A wronged innocent returns under an assumed name in order to take revenge on their former tormentors. Inspired by The Count of Monte Cristo .",
+   "def": "You ruined my life and sent me away to rot in exile, but I'm back with new skills, a new identity, and a meticulous plan to destroy everything you love.",
    "indexes": [
     "Plots",
     "GoalsAndObjectivesIndex"
    ],
    "node": "tob.06_revenge",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "CannotSpitItOut",
@@ -3694,13 +4022,22 @@
   {
    "slug": "CantLiveWithThemCantLiveWithoutThem",
    "name": "Can't Live With Them, Can't Live Without Them",
-   "def": "",
+   "def": "When you prefer to be alone but find yourself oddly attached to another.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "CantRefuseTheCallAnymore",
@@ -3800,7 +4137,16 @@
    ],
    "node": "sch.13_falling_prey_to_cruelty_or_misfortune",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": "T3"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "CelebrityIsOverrated",
@@ -3816,13 +4162,22 @@
   {
    "slug": "CelebrityLie",
    "name": "Celebrity Lie",
-   "def": "Lying about being close to a celebrity.",
+   "def": "A character claims to be friends with a celebrity. Hilarity Ensues .",
    "indexes": [
     "Plots"
    ],
    "node": "prp.06_trickery",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "ChainOfDeals",
@@ -3904,13 +4259,22 @@
   {
    "slug": "ChildOfForbiddenLove",
    "name": "Child of Forbidden Love",
-   "def": "",
+   "def": "The child from a forbidden relationship .",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.15_forbidden_love",
    "alt": "tob.14_love",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "ChildrenRaiseYou",
@@ -3972,13 +4336,22 @@
   {
    "slug": "ClimacticBattleResurrection",
    "name": "Climactic Battle Resurrection",
-   "def": "",
+   "def": "Someone comes back from the dead in time for the final battle.",
    "indexes": [
     "ClimacticTropes"
    ],
    "node": "prp.19_liquidation",
    "alt": "vog.11_the_resurrection",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "ClimacticMaiming",
@@ -4041,24 +4414,42 @@
   {
    "slug": "ColdEquation",
    "name": "Cold Equation",
-   "def": "In a survival situation, can killing one to save others be a solution?",
+   "def": "Choosing to kill someone so that others may live.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.16_sacrifice",
    "alt": "sch.17_daring_enterprise",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R3"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "ColorMeBlack",
    "name": "Color Me Black",
-   "def": "A character is turned into a member of another race in order to teach them a lesson about racism.",
+   "def": "You treated me like crap because I'm from a different race. Now I'm gonna turn you into the very thing you hate, you racist prick!",
    "indexes": [
     "Plots"
    ],
    "node": "tob.12_transformation",
    "alt": "tob.17_discovery",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "ComingOfAgeStory",
@@ -4069,7 +4460,16 @@
    ],
    "node": "tob.13_maturation",
    "alt": "tob.17_discovery",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "genre"
+    ],
+    "keys": {
+     "genre": "G1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "CommunityThreateningConstruction",
@@ -4207,13 +4607,22 @@
   {
    "slug": "CouplesRetreatPlot",
    "name": "Couple's Retreat Plot",
-   "def": "A couple or group of couples go on a vacation/getaway/holiday to enjoy themselves or repair/save their marriage.",
+   "def": "A couple or a group of couples go on a vacation to relax or repair their relationship.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R3"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "CourtroomEpisode",
@@ -4229,14 +4638,23 @@
   {
    "slug": "CrapsackWorld",
    "name": "Crapsack World",
-   "def": "The story takes place in a terrible location to live.",
+   "def": "A horrible world to live in.",
    "indexes": [
     "Plots",
     "TheHerosJourney"
    ],
    "node": "sch.51_loss_of_a_loved_one",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S11"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "CrashCourseLanding",
@@ -4308,13 +4726,22 @@
   {
    "slug": "CryingWolf",
    "name": "Crying Wolf",
-   "def": "Pull too many deliberate false alarms and no one will believe you when you're trying to warn about real danger.",
+   "def": "Lying so often that nobody believes you when you actually tell the truth.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.13_falling_prey_to_cruelty_or_misfortune",
    "alt": "prp.07_complicity",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "CryptidEpisode",
@@ -4436,7 +4863,16 @@
    ],
    "node": "sch.51_loss_of_a_loved_one",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "DeadPetSketch",
@@ -4452,24 +4888,42 @@
   {
    "slug": "DeadlyDistantFinale",
    "name": "Deadly Distant Finale",
-   "def": "The story ends with a flash forward to a character's later years where they die.",
+   "def": "The work ends with a flash forward to the main character's later years where they die.",
    "indexes": [
     "EndingTropes"
    ],
    "node": "tob.20_descension",
    "alt": "sch.51_loss_of_a_loved_one",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "DeadlyGame",
    "name": "Deadly Game",
-   "def": "When the consequences of losing the game is death.",
+   "def": "A game in which losers are killed.",
    "indexes": [
     "Plots"
    ],
    "node": "prp.31_wedding",
    "alt": "sch.51_loss_of_a_loved_one",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R3"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "DeadlyGraduation",
@@ -4480,7 +4934,16 @@
    ],
    "node": "sch.05_vengeance_for_a_crime",
    "alt": "prp.25_difficult_task",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S2"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "DeadlyRoadTrip",
@@ -4491,7 +4954,16 @@
    ],
    "node": "sch.11_disaster",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "DeadlyUpgrade",
@@ -4507,24 +4979,42 @@
   {
    "slug": "DealWithTheDevil",
    "name": "Deal with the Devil",
-   "def": "A crooked bargain with an evil person or entity for something one wants, with a bad price attached.",
+   "def": "Someone gets what they want by making a deal with Satan or some other demonic being.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.10_temptation",
    "alt": "sch.15_revolt",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "DeathByFlashback",
    "name": "Death by Flashback",
-   "def": "Revealing a character's backstory is a good indication that they are about to die.",
+   "def": "We learn a character's backstory just before they die.",
    "indexes": [
     "FlashbacksAndChronology"
    ],
    "node": "sch.51_loss_of_a_loved_one",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "DeathIsASadThing",
@@ -4535,30 +5025,57 @@
    ],
    "node": "sch.51_loss_of_a_loved_one",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "DeathOfTheHypotenuse",
    "name": "Death of the Hypotenuse",
-   "def": "The third person in a Love Triangle passes away, thus solving the issue in question for the other two characters.",
+   "def": "A person has two love interests and one of them dies.",
    "indexes": [
     "EndingTropes",
     "RomanceArc"
    ],
    "node": "sch.51_loss_of_a_loved_one",
    "alt": "tob.14_love",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "DeathTakesAHoliday",
    "name": "Death Takes a Holiday",
-   "def": "For some reason, The Grim Reaper stops making people die.",
+   "def": "The Grim Reaper stops making people die for whatever reason.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.12_miracle",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "DeclarationOfPersonalIndependence",
@@ -4673,24 +5190,42 @@
   {
    "slug": "DescentIntoAddiction",
    "name": "Descent into Addiction",
-   "def": "A character gets involved with drugs or some other substance or experience and descends into addiction.",
+   "def": "A character's journey from normal to an addicted mess.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.20_descension",
    "alt": "tob.10_temptation",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S10"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "DesertedIsland",
    "name": "Deserted Island",
-   "def": "A small island that's completely uninhabited.",
+   "def": "No one lives there. Good place to be marooned. Full of Jungle Japes .",
    "indexes": [
     "Plots"
    ],
    "node": "sch.12_miracle",
    "alt": "tob.02_adventure",
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "DesperatelyLookingForAPurposeInLife",
@@ -4798,36 +5333,63 @@
   {
    "slug": "DisneyDeath",
    "name": "Disney Death",
-   "def": "A character who appeared to die at first subsequently turns out to still be alive or is miraculously resurrected.",
+   "def": "A character turns out to still be alive after initially appearing to die.",
    "indexes": [
     "ClimacticTropes"
    ],
    "node": "sch.12_miracle",
    "alt": "vog.11_the_resurrection",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "DisneyVillainDeath",
    "name": "Disney Villain Death",
-   "def": "The villain ends up falling to their death.",
+   "def": "Villain ends up falling to their death.",
    "indexes": [
     "ClimacticTropes"
    ],
    "node": "prp.19_liquidation",
    "alt": "prp.30_punishment",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "DistantFinale",
    "name": "Distant Finale",
-   "def": "The story ends after a Time Skip with the characters much older.",
+   "def": "The series' ending takes place many years in the future with the surviving characters much older.",
    "indexes": [
     "EndingTropes",
     "FlashbacksAndChronology"
    ],
    "node": "vog.12_return_with_the_elixir",
    "alt": "cam.17_freedom_to_live",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "tracking"
+    ],
+    "keys": {
+     "tracking": "world_clock"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "DistantPrologue",
@@ -4884,7 +5446,16 @@
    ],
    "node": "prp.19_liquidation",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": "T12"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "DontGoInTheWoods",
@@ -4900,13 +5471,22 @@
   {
    "slug": "DoomedHometown",
    "name": "Doomed Hometown",
-   "def": "The destruction of the hero's hometown is what stirs them into the adventure.",
+   "def": "Look on the bright side!",
    "indexes": [
     "BeginningTropes"
    ],
    "node": "sch.11_disaster",
    "alt": "vog.02_call_to_adventure",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "DoomedMoralVictor",
@@ -4923,13 +5503,22 @@
   {
    "slug": "DoomedProtagonist",
    "name": "Doomed Protagonist",
-   "def": "",
+   "def": "There are no winners in a nuclear war.",
    "indexes": [
     "EndingTropes"
    ],
    "node": "tob.20_descension",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "character"
+    ],
+    "keys": {
+     "character": "L11"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "DoomedRebellion",
@@ -4945,24 +5534,42 @@
   {
    "slug": "DoorstopBaby",
    "name": "Doorstop Baby",
-   "def": "A baby left on someone's doorstep gets adopted by whomever lives in the house.",
+   "def": "A baby gets left on someone's doorstep and ends up adopted by whoever lives in the house.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.02_benefaction",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": "T8"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "DorkHorseCandidate",
    "name": "Dork Horse Candidate",
-   "def": "An underdog character competes against a more popular opponent in an election.",
+   "def": "Someone utterly unsuited for the student council leadership runs for it and wins.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.09_underdog",
    "alt": "tob.08_rivalry",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S4"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "DownTheRabbitHole",
@@ -5033,13 +5640,22 @@
   {
    "slug": "DreadedKidsTable",
    "name": "Dreaded Kids' Table",
-   "def": "An older child longs to sit with the adults instead of the kids during a family meal.",
+   "def": "During large family meals, kids who aren't quite adults are forced to sit with smaller children, much to their dismay.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.09_underdog",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "DreamIntro",
@@ -5055,24 +5671,42 @@
   {
    "slug": "DrivingQuestion",
    "name": "Driving Question",
-   "def": "The core element of a plot is a mystery.",
+   "def": "Spoiler: It wasn't the butler .",
    "indexes": [
     "Plots"
    ],
    "node": "tob.07_the_riddle",
    "alt": "sch.21_enigma",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": "T12"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "DuelToTheDeath",
    "name": "Duel to the Death",
-   "def": "Two characters, rivals or enemies, go mano a mano , and only one will survive. Usually.",
+   "def": "Two opponents are chosen to fight each other until one has killed the other.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.08_rivalry",
    "alt": "prp.16_struggle",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "DuelsDecideEverything",
@@ -5088,13 +5722,22 @@
   {
    "slug": "DyingDeclarationOfLove",
    "name": "Dying Declaration of Love",
-   "def": "...moments before dying.",
+   "def": "A character confesses their love to someone as they die.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.16_sacrifice",
    "alt": "tob.14_love",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "EarPiercingPlot",
@@ -5105,7 +5748,16 @@
    ],
    "node": "tob.09_underdog",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "style"
+    ],
+    "keys": {
+     "style": "07.3"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "EarnYourHappyEnding",
@@ -5155,13 +5807,22 @@
   {
    "slug": "EleventhHourSuperpower",
    "name": "11th-Hour Superpower",
-   "def": "",
+   "def": "A new superpower at the last minute.",
    "indexes": [
     "ClimacticTropes"
    ],
    "node": "vog.09_reward",
    "alt": "vog.08_the_ordeal",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "EmbarrassingRescue",
@@ -5255,13 +5916,22 @@
   {
    "slug": "EngineeredPublicConfession",
    "name": "Engineered Public Confession",
-   "def": "A villain who has been able to hide their true nature from the public is tricked by the heroes into publicly admitting that they are a horrible person who was deceiving everyone.",
+   "def": "A villain beloved by the public gets exposed when the heroes trick him into openly confessing that he's really a rotten scumbag manipulating everyone.",
    "indexes": [
     "ClimacticTropes"
    ],
    "node": "prp.18_victory",
    "alt": "prp.08_villainy",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": "T3"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "EnthusiasticNewbieTeacher",
@@ -5310,24 +5980,44 @@
   {
    "slug": "EpiphanicPrison",
    "name": "Epiphanic Prison",
-   "def": "A prison someone can't escape from unless they have an epiphany.",
+   "def": "To exit: Have epiphany.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.05_escape",
    "alt": "sch.09_flight",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting",
+     "texture"
+    ],
+    "keys": {
+     "setting": "S10",
+     "texture": "T3"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "EqualizingTheInterspeciesRomance",
    "name": "Equalizing the Interspecies Romance",
-   "def": "The story ends with one of the characters in an Interspecies Relationship becoming the other's species.",
+   "def": "Lovers from different species are brought together when one of them is turned into another's species.",
    "indexes": [
     "EndingTropes"
    ],
    "node": "sch.51_loss_of_a_loved_one",
    "alt": "sch.42_discovery_of_the_honor_of_a_loved_one",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R3"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "EquivalentExchange",
@@ -5405,41 +6095,79 @@
    ],
    "node": "sch.32_genius",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "EverybodyMustGetStoned",
    "name": "Everybody Must Get Stoned",
-   "def": "Most or all of the cast gets exposed to some kind of substance that alters their behavior.",
+   "def": "When a group of people get stoned, often by accident.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.11_metamorphosis",
    "alt": "prp.28_exposure",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S10"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "EverybodysDeadDave",
    "name": "Everybody's Dead, Dave",
-   "def": "A work where all but one character is dead.",
+   "def": "An entire group dies except one survivor.",
    "indexes": [
     "Plots",
     "EndingTropes"
    ],
    "node": "tob.12_transformation",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme",
+     "texture"
+    ],
+    "keys": {
+     "texture": "T3",
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "EveryoneCanSeeIt",
    "name": "Everyone Can See It",
-   "def": "",
+   "def": "It's obvious that these two are meant to be together, if only they themselves saw it.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "vog.06_tests_allies_enemies",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "EveryoneIsATomato",
@@ -5489,24 +6217,42 @@
   {
    "slug": "EvilPlan",
    "name": "Evil Plan",
-   "def": "The villain's plan to do something evil.",
+   "def": "The villain's scheme to do something bad.",
    "indexes": [
     "Plots"
    ],
    "node": "prp.08_villainy",
    "alt": "prp.06_trickery",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "EvilTwin",
    "name": "Evil Twin",
-   "def": "A character has a twin who is evil.",
+   "def": "So which one's the bigger dick?",
    "indexes": [
     "Plots"
    ],
    "node": "prp.18_victory",
    "alt": "prp.30_punishment",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "character"
+    ],
+    "keys": {
+     "character": "L10"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "EvilWillFail",
@@ -5533,13 +6279,24 @@
   {
    "slug": "ExactWords",
    "name": "Exact Words",
-   "def": "It's revealed that what a person said was intended in the exact phrasing and wasn't an idiom or figure of speech.",
+   "def": "Everything the speaker says is true — but you must pay careful attention to exactly what they are saying to avoid misleading implications.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.42_discovery_of_the_honor_of_a_loved_one",
    "alt": "cam.10_apotheosis",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme",
+     "texture"
+    ],
+    "keys": {
+     "theme": "R4",
+     "texture": "T6"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "ExcusePlot",
@@ -5555,13 +6312,22 @@
   {
    "slug": "ExitPursuedByABear",
    "name": "Exit, Pursued by a Bear",
-   "def": "The story ends with the villain being chased by a creature that intends to harm them.",
+   "def": "A person is last seen being chased by a creature that will probably kill them.",
    "indexes": [
     "EndingTropes"
    ],
    "node": "prp.21_pursuit",
    "alt": "prp.18_victory",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "ExperimentalArcheology",
@@ -5677,14 +6443,23 @@
   {
    "slug": "FakeRelationship",
    "name": "Fake Relationship",
-   "def": "Two characters who aren't romantically interested in each other pretend to be a couple.",
+   "def": "Two characters pretend to be in a romantic relationship.",
    "indexes": [
     "Plots",
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": "sch.43_obstacles_to_love",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "FakedRipVanWinkle",
@@ -5751,7 +6526,16 @@
    ],
    "node": "sch.37_slaying_of_a_loved_one",
    "alt": "cam.01_call_to_adventure",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S10"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "FamilialFameFrustrations",
@@ -5773,7 +6557,16 @@
    ],
    "node": "prp.01_absentation",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "FamilyRelationshipSwitcheroo",
@@ -5822,47 +6615,83 @@
   {
    "slug": "FastForwardToReunion",
    "name": "Fast-Forward to Reunion",
-   "def": "The main plot resolves with characters going separate ways, the ending skips to future to when they eventually reunite.",
+   "def": "Stories often end with partings, as characters who were drawn together for a temporary adventure return to their old lives, or as relationships break under pressure.",
    "indexes": [
     "EndingTropes",
     "FlashbacksAndChronology"
    ],
    "node": "sch.20_reunion",
    "alt": "sch.40_self_preservation",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "tracking"
+    ],
+    "keys": {
+     "tracking": "world_clock"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "FatalForcedMarch",
    "name": "Fatal Forced March",
-   "def": "Characters are forced to make a dangerous and likely-deadly journey on foot through hostile territory.",
+   "def": "Death by unavoidable foot-journey.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.45_conflict_with_a_god",
    "alt": "sch.32_genius",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "FateDrivesUsTogether",
    "name": "Fate Drives Us Together",
-   "def": "",
+   "def": "If two people keep encountering each other, it means they're meant to be together.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "sch.53_odd_couple",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R3"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "FaustianRebellion",
    "name": "Faustian Rebellion",
-   "def": "Someone who made a Deal with the Devil decides to show the Devil where he can stick it. Forcefully.",
+   "def": "Overthrowing Satan.",
    "indexes": [
     "Plots"
    ],
    "node": "prp.18_victory",
    "alt": "prp.08_villainy",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "FauxAdventureStory",
@@ -5900,24 +6729,42 @@
   {
    "slug": "FawltyTowersPlot",
    "name": "\"Fawlty Towers\" Plot",
-   "def": "A lie is told which must be propped up with more lies before everything cannot be sustained and goes crashing down.",
+   "def": "Someone tells a lie, then other lies must be told to convince people the lie is true, but then it's revealed as false as it becomes too ridiculous.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.09_underdog",
    "alt": "vog.11_the_resurrection",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "FidelityTest",
    "name": "Fidelity Test",
-   "def": "A character tests their spouse's faithfulness to them.",
+   "def": "Testing your lover to see just how faithful they are to you.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.30_fidelity",
    "alt": "vog.11_the_resurrection",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "FieldTripToThePast",
@@ -5977,13 +6824,24 @@
   {
    "slug": "FightingForAHomeland",
    "name": "Fighting for a Homeland",
-   "def": "Group of people fight for ownership of a land to claim as their home.",
+   "def": "The Exiles vs The Dominion , the battle rages on to make Nexus their new home, who will win?",
    "indexes": [
     "Plots"
    ],
    "node": "prp.24_unfounded_claims",
    "alt": "vog.09_reward",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "character",
+     "setting"
+    ],
+    "keys": {
+     "character": "L11",
+     "setting": "S11"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "FinalBattle",
@@ -6011,13 +6869,24 @@
   {
    "slug": "FinalGirl",
    "name": "Final Girl",
-   "def": "A female character who survives the events of the story after everyone else dies.",
+   "def": "A female character who survives while the others get killed.",
    "indexes": [
     "EndingTropes"
    ],
    "node": "sch.30_fidelity",
    "alt": "vog.08_the_ordeal",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "character",
+     "theme"
+    ],
+    "keys": {
+     "character": "L12",
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "FindTheCure",
@@ -6033,13 +6902,22 @@
   {
    "slug": "FindingJudas",
    "name": "Finding Judas",
-   "def": "A character willingly betrays the protagonists for benevolent reasons.",
+   "def": "Betrayal for benevolent reasons by a non-villain.",
    "indexes": [
     "Plots"
    ],
    "node": "prp.09_mediation",
    "alt": "tob.17_discovery",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "FirstKiss",
@@ -6132,13 +7010,22 @@
   {
    "slug": "FlashbackBPlot",
    "name": "Flashback B-Plot",
-   "def": "A linear secondary story is told through flashbacks alongside the main story, both involving the same character(s).",
+   "def": "The story of a character in the present day is interspersed with flashbacks telling a linear story of past events of the same character's life, as a form of Backstory .",
    "indexes": [
     "FlashbacksAndChronology"
    ],
    "node": "vog.11_the_resurrection",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "tracking"
+    ],
+    "keys": {
+     "tracking": "told_order"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "FlashbackBackBack",
@@ -6253,13 +7140,22 @@
   {
    "slug": "FlatlinePlotline",
    "name": "Flatline Plotline",
-   "def": "Characters make it so they die for a certain amount of time.",
+   "def": "Temporary death caused by slowing down heart rate.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.37_slaying_of_a_loved_one",
    "alt": "vog.08_the_ordeal",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "FlowerFromTheMountaintop",
@@ -6319,13 +7215,22 @@
   {
    "slug": "ForcedOutOfTheCloset",
    "name": "Forced Out of the Closet",
-   "def": "People who discover or assume a character is gay and in the closet decide that the best thing to do is to publicly reveal the person's secret against their wishes.",
+   "def": "A character who is secretly LGBT is outed without their permission.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.37_slaying_of_a_loved_one",
    "alt": "vog.06_tests_allies_enemies",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "ForegoneConclusion",
@@ -6360,7 +7265,16 @@
    ],
    "node": "vog.02_call_to_adventure",
    "alt": "sch.38_conviction",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "ForgottenAnniversary",
@@ -6437,18 +7351,38 @@
    ],
    "node": "sch.07_vengeance_taken_for_kindred_upon_kindred",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "FreakyFridayFlip",
    "name": "\"Freaky Friday\" Flip",
-   "def": "Two people get their brains switched and have to find a way to get their minds restored to the proper bodies.",
+   "def": "Two or more characters switch minds and have to figure out how to get each other's brains back in their proper bodies.",
    "indexes": [
     "Plots"
    ],
    "node": "prp.09_mediation",
    "alt": "sch.38_conviction",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "texture",
+     "theme"
+    ],
+    "keys": {
+     "texture": "T3",
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "FreeTheFrogs",
@@ -6460,18 +7394,38 @@
    ],
    "node": "vog.07_approach_to_the_inmost_cave",
    "alt": "sch.27_competition",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S4"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "FrequentlyBrokenUnbreakableVow",
    "name": "Frequently-Broken Unbreakable Vow",
-   "def": "Someone makes The Promise or a Heroic Vow , and is forced by some circumstance or another to break it. Repeatedly.",
+   "def": "A promise that circumstances force the character to break. Repeatedly.",
    "indexes": [
     "Plots"
    ],
    "node": "prp.18_victory",
    "alt": "sch.44_unconditional_love",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme",
+     "texture"
+    ],
+    "keys": {
+     "texture": "T5",
+     "theme": "R3"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "FriendlyScheming",
@@ -6569,13 +7523,22 @@
   {
    "slug": "FundraiserCarnival",
    "name": "Fundraiser Carnival",
-   "def": "The characters organize a carnival to raise money for a charity or other cause.",
+   "def": "A school throws a carnival in order to help raise money.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.05_vengeance_for_a_crime",
    "alt": "cam.03_supernatural_aid",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S4"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "Futureshadowing",
@@ -6597,7 +7560,16 @@
    ],
    "node": "vog.08_the_ordeal",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "GameChanger",
@@ -6696,18 +7668,36 @@
    ],
    "node": "sch.40_self_preservation",
    "alt": "tob.13_maturation",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "GenocideBackfire",
    "name": "Genocide Backfire",
-   "def": "An evil tyrant or regime seeks to wipe out a people because they fear they are a threat to their power. Unfortunately for them, someone manages to survive.",
+   "def": "Someone trying to wipe out a people to keep them from destroying oneself will only give the survivors (and there are always survivors) all the reason they need to destroy that person.",
    "indexes": [
     "Plots"
    ],
    "node": "prp.04_reconnaissance",
    "alt": "sch.05_vengeance_for_a_crime",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "GetBackToTheFuture",
@@ -6724,13 +7714,22 @@
   {
    "slug": "GettingMyOwnRoomPlot",
    "name": "\"Getting My Own Room\" Plot",
-   "def": "A child who has always shared a room with siblings finally gets their own room.",
+   "def": "A family member wants their own room.",
    "indexes": [
     "Plots"
    ],
    "node": "vog.04_meeting_with_the_mentor",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "GettingReadyForBedPlot",
@@ -6779,13 +7778,22 @@
   {
    "slug": "GirlOfMyDreams",
    "name": "Girl of My Dreams",
-   "def": "",
+   "def": "First encountering your Love Interest in your dreams.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "vog.12_return_with_the_elixir",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "GirlsBehindBars",
@@ -6845,24 +7853,42 @@
   {
    "slug": "GoAmongMadPeople",
    "name": "Go Among Mad People",
-   "def": "A sane person is committed to a mental institution, and needs to convince the staff that they're not crazy.",
+   "def": "\"In that direction,\" the Cat said, waving its right paw round, \"lives a Hatter: and in that direction,\" waving the other paw, \"lives a March Hare.",
    "indexes": [
     "Plots"
    ],
    "node": "prp.09_mediation",
    "alt": "sch.44_unconditional_love",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "GoIntoTheLight",
    "name": "Go into the Light",
-   "def": "",
+   "def": "While dying, there will be a light to walk into in order to enter the afterlife.",
    "indexes": [
     "ClimacticTropes"
    ],
    "node": "vog.02_call_to_adventure",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "GoalInLife",
@@ -6878,13 +7904,22 @@
   {
    "slug": "GodAndSatanAreBothJerks",
    "name": "God and Satan Are Both Jerks",
-   "def": "Neither the forces of Hell nor the forces of Heaven have anything good in mind for humanity.",
+   "def": "The forces of Heaven and Hell are both evil and antagonistic towards humanity.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.42_discovery_of_the_honor_of_a_loved_one",
    "alt": "sch.27_competition",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S11"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "GodForADay",
@@ -6900,47 +7935,83 @@
   {
    "slug": "GodhoodSeeker",
    "name": "Godhood Seeker",
-   "def": "To become a deity.",
+   "def": "Aspiring to become a deity.",
    "indexes": [
     "GoalsAndObjectivesIndex"
    ],
    "node": "sch.32_genius",
    "alt": "sch.28_concession",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "GoingNative",
    "name": "Going Native",
-   "def": "A character adopts the customs and morality of a group which they were originally sent to infiltrate.",
+   "def": "Finding more in common with another group than your own, sometimes to the point of betrayal.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.33_imprudence",
    "alt": "vog.08_the_ordeal",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "GoingToSeeTheElephant",
    "name": "Going to See the Elephant",
-   "def": "A young character travels the world to go see something new and exotic, often learning life lessons along the way.",
+   "def": "\"It is good to have an end to journey toward; but it is the journey that matters, in the end.\" — The Left Hand of Darkness",
    "indexes": [
     "Plots",
     "GoalsAndObjectivesIndex"
    ],
    "node": "prp.09_mediation",
    "alt": "vog.06_tests_allies_enemies",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": "T3"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "GoldFever",
    "name": "Gold Fever",
-   "def": "A group of characters fall prey to greed and turn on each other while on the hunt for gold or some other fabulous treasure.",
+   "def": "Greed for riches drives you to betray your friends.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.04_rescue",
    "alt": "vog.10_the_road_back",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "GondorCallsForAid",
@@ -7040,18 +8111,36 @@
    ],
    "node": "sch.23_obtaining",
    "alt": "tob.20_descension",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "GraduateFromTheStory",
    "name": "Graduate from the Story",
-   "def": "The main cast of a school-centered story graduate at the ending.",
+   "def": "The main cast of a school centered story are graduating.",
    "indexes": [
     "EndingTropes"
    ],
    "node": "cam.04_crossing_of_the_first_threshold",
    "alt": "vog.05_crossing_the_first_threshold",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S11"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "GraduationForEveryone",
@@ -7062,7 +8151,16 @@
    ],
    "node": "prp.12_first_function_of_the_donor",
    "alt": "vog.09_reward",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S11"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "GrandTheftMe",
@@ -7084,7 +8182,18 @@
    ],
    "node": "tob.01_quest",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "character",
+     "setting"
+    ],
+    "keys": {
+     "character": "L6",
+     "setting": "S11"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "GreatEscape",
@@ -7100,13 +8209,22 @@
   {
    "slug": "GrowOldWithMe",
    "name": "Grow Old with Me",
-   "def": "",
+   "def": "Lovers stay together to old age.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "GuardingThePortal",
@@ -7122,13 +8240,23 @@
   {
    "slug": "GuessWhoImMarrying",
    "name": "Guess Who I'm Marrying?",
-   "def": "A character's single parent has found someone. Unfortunately, that someone is anything but good for the character, and now they need to stop this!",
+   "def": "\"Uh oh!",
    "indexes": [
     "Plots"
    ],
    "node": "tob.14_love",
    "alt": "sch.43_obstacles_to_love",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "setting": "S8",
+     "texture": "T3"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "GuiltyUntilSomeoneElseIsGuilty",
@@ -7166,24 +8294,42 @@
   {
    "slug": "HappilyMarried",
    "name": "Happily Married",
-   "def": "",
+   "def": "A married couple who are happy together.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "HappyEndingMassage",
    "name": "Happy-Ending Massage",
-   "def": "A massage session turns into something quite a lot steamier than that.",
+   "def": "Someone tries to get sex at a massage parlor.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "sexuality"
+    ],
+    "keys": {
+     "sexuality": "L9"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "HarbingerOfImpendingDoom",
@@ -7221,13 +8367,22 @@
   {
    "slug": "HeKnowsTooMuch",
    "name": "He Knows Too Much",
-   "def": "Killing someone for getting even a smidgen close to discovering a secret they can't be allowed to know.",
+   "def": "Killing someone because they've learned about something they can't be allowed to make public knowledge.",
    "indexes": [
     "Plots"
    ],
    "node": "prp.08_villainy",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "HeadbuttingHeroes",
@@ -7242,25 +8397,43 @@
   },
   {
    "slug": "HeelFaceRevolvingDoor",
-   "name": "The Shapeshifter",
-   "def": "Someone you don't trust but nonetheless need for their capabilities or knowledge.",
+   "name": "Heel–Face Revolving Door",
+   "def": "The character keeps switching between being good and being evil.",
    "indexes": [
     "TheHerosJourney"
    ],
    "node": "vog.06_tests_allies_enemies",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "HeldGaze",
    "name": "Held Gaze",
-   "def": "",
+   "def": "Lovers look deeply into each other's eyes.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "HellInvadesHeaven",
@@ -7276,24 +8449,44 @@
   {
    "slug": "HellOnEarth",
    "name": "Hell on Earth",
-   "def": "The Legions of Hell invade the mortal realm.",
+   "def": "London Bridge is falling down, falling down, falling down...",
    "indexes": [
     "Plots"
    ],
    "node": "sch.31_madness",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "setting",
+     "texture"
+    ],
+    "keys": {
+     "setting": "S10",
+     "texture": "T3"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "HerHeartWillGoOn",
    "name": "Her Heart Will Go On",
-   "def": "(exit point) Someone to Remember Him By",
+   "def": "When a person's love interest dies, they don't let their death keep them from finding someone else to love.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "HeroicRematch",
@@ -7370,29 +8563,56 @@
    ],
    "node": "tob.13_maturation",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "HoldingHands",
    "name": "Holding Hands",
-   "def": "",
+   "def": "A classic romantic gesture is lovers locking hands with each other.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "HomeSweetHome",
    "name": "Home Sweet Home",
-   "def": "A character settles down at home after a long adventure.",
+   "def": "Staying home to settle down with your Love Interest after a long adventure.",
    "indexes": [
     "EndingTropes"
    ],
    "node": "vog.12_return_with_the_elixir",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "HoneyTrap",
@@ -7403,18 +8623,36 @@
    ],
    "node": "tob.14_love",
    "alt": "prp.06_trickery",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "character"
+    ],
+    "keys": {
+     "character": "L9"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "HookedUpAfterwards",
    "name": "Hooked Up Afterwards",
-   "def": "",
+   "def": "At the end of the story, two characters are shown to have started dating.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "HourglassPlot",
@@ -7425,7 +8663,16 @@
    ],
    "node": "sch.53_odd_couple",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "HouseFire",
@@ -7441,7 +8688,7 @@
   {
    "slug": "HowDadMetMom",
    "name": "How Dad Met Mom",
-   "def": "The story of how a character's parents met each other and fell in love.",
+   "def": "A character tells their children the story of how they met their spouse.",
    "indexes": [
     "Plots",
     "FlashbacksAndChronology",
@@ -7449,7 +8696,16 @@
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "HumanAlienDiscovery",
@@ -7476,13 +8732,22 @@
   {
    "slug": "HumiliationConga",
    "name": "Humiliation Conga",
-   "def": "The ending has the villain get his comeuppance by being subjected to a string of embarrassing misfortunes.",
+   "def": "The bad guy's defeat has him suffer a string of embarrassing misfortunes.",
    "indexes": [
     "EndingTropes"
    ],
    "node": "tob.20_descension",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": "T4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "HuntingTheRogue",
@@ -7493,7 +8758,16 @@
    ],
    "node": "tob.03_pursuit",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "HurryingHomeForTheHolidays",
@@ -7553,14 +8827,23 @@
   {
    "slug": "IAmWho",
    "name": "I Am Who?",
-   "def": "The protagonist discovers their heroic destiny which had been kept secret from them.",
+   "def": "Someone is unaware of their status as The Chosen One .",
    "indexes": [
     "Plots",
     "PlotTwist"
    ],
    "node": "tob.17_discovery",
    "alt": "vog.02_call_to_adventure",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "IChooseToStay",
@@ -7576,35 +8859,62 @@
   {
    "slug": "IDontWantToRuinOurFriendship",
    "name": "I Don't Want to Ruin Our Friendship",
-   "def": "",
+   "def": "Two people who are good friends refuse to get romantically involved with each other on the grounds that their friendship would go south.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R3"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "IGotYouADrawer",
    "name": "I Got You a Drawer",
-   "def": "",
+   "def": "Two characters are signaled to be getting a Relationship Upgrade when one partner gives the other partner a space in their home to put their stuff.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "IHaveYourWife",
-   "name": "I Have Your Girlfriend",
-   "def": "Cock Fight",
+   "name": "I Have Your Wife",
+   "def": "The villain manipulates someone into doing as they say by capturing the person's loved ones.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.08_rivalry",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": "T4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "IMadeCopies",
@@ -7620,35 +8930,62 @@
   {
    "slug": "IWantMyBelovedToBeHappy",
    "name": "I Want My Beloved to Be Happy",
-   "def": "",
+   "def": "Being willing to let your unrequited crush go be with the one they love.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "IWillFindYou",
    "name": "I Will Find You",
-   "def": "A character is searching for a loved one who has been kidnapped or has otherwise gone missing.",
+   "def": "\"You stay alive, no matter what occurs!",
    "indexes": [
     "Plots"
    ],
    "node": "tob.01_quest",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": "T1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "IWillWaitForYou",
    "name": "I Will Wait for You",
-   "def": "",
+   "def": "Promising to remain faithful to your lover who's away",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "IWishItWereReal",
@@ -7664,13 +9001,22 @@
   {
    "slug": "IdentityImpersonator",
    "name": "Identity Impersonator",
-   "def": "A superhero protects their secret identity by appearing in public with someone pretending to be their alter ego.",
+   "def": "A ruse to protect a character's Secret Identity by showing both character's identities in the same place together at the same time.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.07_the_riddle",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "IgnorantOfTheCall",
@@ -7681,18 +9027,36 @@
    ],
    "node": "vog.02_call_to_adventure",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "character"
+    ],
+    "keys": {
+     "character": "L11"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "ImDyingPleaseTakeMyMacGuffin",
    "name": "I'm Dying, Please Take My MacGuffin",
-   "def": "The call starts when a dying person gives you a Plot Device .",
+   "def": "A dying person gives an important object to someone else before they die.",
    "indexes": [
     "CallToAdventure"
    ],
    "node": "vog.02_call_to_adventure",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "ImmortalitySeeker",
@@ -7708,13 +9072,22 @@
   {
    "slug": "ImpostorAllAlong",
    "name": "Impostor All Along",
-   "def": "",
+   "def": "A major character turns out to be an impersonator of said character.",
    "indexes": [
     "PlotTwist"
    ],
    "node": "sch.21_enigma",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "InAnotherMansShoes",
@@ -7730,13 +9103,22 @@
   {
    "slug": "InLoveWithTheMark",
    "name": "In Love with the Mark",
-   "def": "One character is a hired killer, and the other is the person they're supposed to kill.",
+   "def": "A Professional Killer falls in love with the target they're supposed to kill.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.15_forbidden_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "IncitingIncident",
@@ -7796,13 +9178,22 @@
   {
    "slug": "InsideAComputerSystem",
    "name": "Inside a Computer System",
-   "def": "Characters go inside a virtual world contained within a computer.",
+   "def": "Inside a self-contained virtual world (unlike Cyberspace , in which locations correspond to the real world).",
    "indexes": [
     "Plots"
    ],
    "node": "tob.02_adventure",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "IntergenerationalFriendship",
@@ -7818,46 +9209,82 @@
   {
    "slug": "InternalReveal",
    "name": "Internal Reveal",
-   "def": "The Reveal in-universe.",
+   "def": "The characters find something out that the audience already knew.",
    "indexes": [
     "PlotTwist"
    ],
    "node": "tob.17_discovery",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "IntrepidFictioneer",
    "name": "Intrepid Fictioneer",
-   "def": "Characters breach internal fourth walls to go on adventures in books, films, etc.",
+   "def": "Intrepid Fictioneers, beware meddling, or you could end up trapped in Moby Duck , Frankenstein's Monster Truck , Tarzan of the Drapes , The Three Mousketeers , or Jason and the Pussycats .",
    "indexes": [
     "Plots"
    ],
    "node": "vog.02_call_to_adventure",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": "T9"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "IntroductionByHookup",
    "name": "Introduction by Hookup",
-   "def": "",
+   "def": "Someone has sex or romance with a stranger and then meets said stranger.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "sexuality"
+    ],
+    "keys": {
+     "sexuality": "L9"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "InventedIndividual",
    "name": "Invented Individual",
-   "def": "Somebody makes up an imaginary person and eventually has to give up the made-up person by \"killing\" them.",
+   "def": "Somebody makes someone up and eventually has to give up the made-up person by \"killing\" them or in some other way.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.22_invention",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "InvisibleMainCharacter",
@@ -7896,13 +9323,22 @@
   {
    "slug": "ItWasWithYouAllAlong",
    "name": "It Was with You All Along",
-   "def": "",
+   "def": "It's too late, a skeleton is inside you!",
    "indexes": [
     "PlotTwist"
    ],
    "node": "tob.17_discovery",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": "T4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "ItsAWonderfulPlot",
@@ -7918,24 +9354,42 @@
   {
    "slug": "ItsNotYouItsMyEnemies",
    "name": "It's Not You, It's My Enemies",
-   "def": "",
+   "def": "Being with your lover puts them in harm's way.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "ItsPersonal",
    "name": "It's Personal",
-   "def": "Something bad has happened to a loved one, and now the hero wants the villain responsible taken down more than ever!",
+   "def": "It sure is. You hurt someone dear to me. Now I'm gonna fucking kill you!",
    "indexes": [
     "Plots"
    ],
    "node": "tob.06_revenge",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "JackieRobinsonStory",
@@ -7962,13 +9416,22 @@
   {
    "slug": "JekyllAndHyde",
    "name": "Jekyll & Hyde",
-   "def": "A good person who transforms into a villainous alter ego.",
+   "def": "A good person has an evil alter-ego.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.11_metamorphosis",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "JigsawPuzzlePlot",
@@ -8017,14 +9480,23 @@
   {
    "slug": "JumpedAtTheCall",
    "name": "Jumped at the Call",
-   "def": "The Chosen One gets the call and can't wait to heed it.",
+   "def": "When asked to become the hero, the character is very excited about the opportunity.",
    "indexes": [
     "CallToAdventure",
     "TheHerosJourney"
    ],
    "node": "vog.02_call_to_adventure",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "character"
+    ],
+    "keys": {
+     "character": "L6"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "JumpingOffTheSlipperySlope",
@@ -8040,13 +9512,22 @@
   {
    "slug": "JustFriends",
    "name": "Just Friends",
-   "def": "The pair aren't officially a couple yet. Attractiveness Isolation",
+   "def": "Two people consider themselves to be only good friends rather than lovers.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "JustThinkOfThePotential",
@@ -8124,7 +9605,16 @@
    ],
    "node": "sch.35_crimes_of_love",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "LastDayOfNormalcy",
@@ -8141,24 +9631,42 @@
   {
    "slug": "LastFertileRegion",
    "name": "Last Fertile Region",
-   "def": "The last place to support life in an otherwise barren world.",
+   "def": "The last bit of nature and greenery in a wasteland dystopia.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.01_quest",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "LastMomentTogether",
    "name": "Last Moment Together",
-   "def": "Two people (friends, family, or lovers) are together for what they know is the final time.",
+   "def": "Focus is given to the last interaction between two loved ones before one of them dies or they are otherwise forever separated.",
    "indexes": [
     "EndingTropes"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "LastStand",
@@ -8169,7 +9677,20 @@
    ],
    "node": "prp.16_struggle",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme",
+     "texture",
+     "setting"
+    ],
+    "keys": {
+     "texture": "T4",
+     "setting": "S8",
+     "theme": "R1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "LastVillainStand",
@@ -8180,7 +9701,16 @@
    ],
    "node": "prp.18_victory",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S11"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "LateToTheTragedy",
@@ -8196,13 +9726,22 @@
   {
    "slug": "LeaveTheTwoLovebirdsAlone",
    "name": "Leave the Two Lovebirds Alone",
-   "def": "",
+   "def": "Leaving a room so two lovers can have some alone time.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "LeaveYourQuestTest",
@@ -8218,13 +9757,22 @@
   {
    "slug": "LeavingYouToFindMyself",
    "name": "Leaving You to Find Myself",
-   "def": "A character is changing intellectually and dumps their partner to live a new life.",
+   "def": "Character breaks off a love relationship to go do some soul searching.",
    "indexes": [
     "EndingTropes"
    ],
    "node": "tob.17_discovery",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "LedByTheOutsider",
@@ -8240,13 +9788,22 @@
   {
    "slug": "LeftForDead",
    "name": "Left for Dead",
-   "def": "",
+   "def": "A person turns out to be alive after it was assumed they were left to die.",
    "indexes": [
     "PlotTwist"
    ],
    "node": "sch.13_falling_prey_to_cruelty_or_misfortune",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "LegionOfDoom",
@@ -8273,13 +9830,22 @@
   {
    "slug": "LetsJustBeFriends",
    "name": "Let's Just Be Friends",
-   "def": "",
+   "def": "Characters break up, but decide to remain friends because they still care about each other.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "LikeADuckTakesToWater",
@@ -8290,18 +9856,36 @@
    ],
    "node": "tob.12_transformation",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "character"
+    ],
+    "keys": {
+     "character": "L1"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "LikeBrotherAndSister",
    "name": "Like Brother and Sister",
-   "def": "",
+   "def": "These two see themselves like siblings rather than as lovers.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "LikeYouWereDying",
@@ -8312,29 +9896,56 @@
    ],
    "node": "tob.13_maturation",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "LiteralTransformativeExperience",
    "name": "Literal Transformative Experience",
-   "def": "A character undergoes a drastic transformation and sees their personality change as a result of their experiences.",
+   "def": "A character develops as a result of a physical transformation and the experiences therein.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.12_transformation",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "character"
+    ],
+    "keys": {
+     "character": "L11"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "LiterallyLovingThyNeighbor",
    "name": "Literally Loving Thy Neighbor",
-   "def": "",
+   "def": "Falling in love with your neighbor.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "LockedRoomMystery",
@@ -8372,13 +9983,22 @@
   {
    "slug": "LongingLook",
    "name": "Longing Look",
-   "def": "",
+   "def": "Glancing at your Love Interest in a yearning way.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "LostOrphanedRoyalty",
@@ -8416,112 +10036,206 @@
   {
    "slug": "LoveAtFirstNote",
    "name": "Love at First Note",
-   "def": "",
+   "def": "Falling in love with somebody when you hear them sing.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "LoveAtFirstPunch",
    "name": "Love at First Punch",
-   "def": "",
+   "def": "Falling in love with somebody who beat you up.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "LoveAtFirstSight",
    "name": "Love at First Sight",
-   "def": "One or both characters fall in love the moment they see the other.",
+   "def": "Falling in love with somebody the moment you see them.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "LoveBeforeFirstSight",
    "name": "Love Before First Sight",
-   "def": "One or both characters fall in love with their love interest before they even meet. Because Destiny Says So",
+   "def": "Falling in love with somebody before you even see them.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "LoveConfession",
    "name": "Love Confession",
-   "def": "One character confesses their love for the other. Accidental Declaration of Love : ...unintentionally.",
+   "def": "Character confesses their love for another.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "LoveConfessor",
    "name": "Love Confessor",
-   "def": "A third party tells one character that the other loves them.",
+   "def": "Then don't tell me, girl!",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "character",
+     "theme"
+    ],
+    "keys": {
+     "character": "L12",
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "LoveEpiphany",
    "name": "Love Epiphany",
-   "def": "One character realizes they're in love with the other. Green-Eyed Epiphany",
+   "def": "Realizing that you're in love with somebody.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "LoveRevelationEpiphany",
    "name": "Love Revelation Epiphany",
-   "def": "...after said other character confesses their own love.",
+   "def": "Developing feelings for somebody when you learn that they love you.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "LoveTriangle",
    "name": "Love Triangle",
-   "def": "Two people love the same person, and only one person can have them.",
+   "def": "A character is caught between two choices for a Love Interest .",
    "indexes": [
     "Plots"
    ],
    "node": "tob.08_rivalry",
    "alt": "tob.14_love",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "LukeIAmYourFather",
    "name": "Luke, I Am Your Father",
-   "def": "",
+   "def": "A character finds out their parentage in a plot twist.",
    "indexes": [
     "PlotTwist"
    ],
    "node": "prp.27_recognition",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme",
+     "texture"
+    ],
+    "keys": {
+     "texture": "T3",
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "MacGuffinEscortMission",
@@ -8581,13 +10295,22 @@
   {
    "slug": "MainCharacterFinalBoss",
    "name": "Main Character Final Boss",
-   "def": "The game ends with the main character becoming the final boss, requiring their party to either fight to free them or kill them.",
+   "def": "The main protagonist also plays the role of final boss and in some cases ends up dead as a result.",
    "indexes": [
     "ClimacticTropes"
    ],
    "node": "tob.20_descension",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R1"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "MakeUpOrBreakUp",
@@ -8599,7 +10322,16 @@
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "ManInTheIronMask",
@@ -8649,13 +10381,22 @@
   {
    "slug": "MassageOfLove",
    "name": "Massage of Love",
-   "def": "",
+   "def": "A loving couple giving each other an intimate, non-sexual massage.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "MeetCute",
@@ -8693,24 +10434,42 @@
   {
    "slug": "MiracleRally",
    "name": "Miracle Rally",
-   "def": "",
+   "def": "\"Do you believe in miracles?",
    "indexes": [
     "ClimacticTropes"
    ],
    "node": "sch.12_miracle",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": "T7"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "MissedTheCall",
    "name": "Missed the Call",
-   "def": "The Chosen One missed their opportunity for the adventure.",
+   "def": "The Chosen One receives the Call to Adventure : picking up the Applied Phlebotinum dropped off on their doorstep, stepping through the portal to a Magical Land , impressing the Mentor seeking to pass on the mantle.",
    "indexes": [
     "CallToAdventure"
    ],
    "node": "vog.03_refusal_of_the_call",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "character"
+    ],
+    "keys": {
+     "character": "L11"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "MissionFromGod",
@@ -8721,7 +10480,16 @@
    ],
    "node": "cam.01_call_to_adventure",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "MobySchtick",
@@ -8754,18 +10522,36 @@
    ],
    "node": "sch.19_abduction",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "MomentKiller",
    "name": "Moment Killer",
-   "def": "Someone else ruins a romantic moment between the pair.",
+   "def": "A couple tries to have a romantic moment with each other, but gets interrupted.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "MoreThanMindControl",
@@ -8781,13 +10567,22 @@
   {
    "slug": "MutualPining",
    "name": "Mutual Pining",
-   "def": "",
+   "def": "Two characters are madly in love with each other but are so convinced the other can't return their feelings to the point they both suffer quietly over it instead.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "MyBiologicalClockIsTicking",
@@ -8809,7 +10604,16 @@
    ],
    "node": "tob.06_revenge",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R3"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "NaiveNewcomer",
@@ -8820,40 +10624,78 @@
    ],
    "node": "vog.05_crossing_the_first_threshold",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "character"
+    ],
+    "keys": {
+     "character": "L12"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "NeverLearnedToRead",
    "name": "Never Learned to Read",
-   "def": "A character is revealed to be illiterate and in many cases will try to overcome it.",
+   "def": "A character is illiterate.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.13_maturation",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "style"
+    ],
+    "keys": {
+     "style": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "NewAbilityAddiction",
    "name": "New Ability Addiction",
-   "def": "A character gets a new skill or piece of kit and has the urge to use it.",
+   "def": "Grunt: Wait, you really brought your NCO sword on deployment?",
    "indexes": [
     "Plots"
    ],
    "node": "tob.10_temptation",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "NewOldFlame",
    "name": "New Old Flame",
-   "def": "",
+   "def": "A gentle Retcon to allow a previously unmentioned love interest to pop up for a main character in an episode.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "character",
+     "theme"
+    ],
+    "keys": {
+     "character": "L9",
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "NewSuperPower",
@@ -8864,7 +10706,16 @@
    ],
    "node": "tob.12_transformation",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "NiceJobBreakingItHero",
@@ -8902,13 +10753,22 @@
   {
    "slug": "NoDoubtTheYearsHaveChangedMe",
    "name": "No Doubt the Years Have Changed Me",
-   "def": "A character is unrecognizable after being away for many years.",
+   "def": "A character is virtually unrecognizable after a long absence.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.12_transformation",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "NoGuyWantsAnAmazon",
@@ -8919,7 +10779,16 @@
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R3"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "NoahsStoryArc",
@@ -8946,24 +10815,42 @@
   {
    "slug": "NotADate",
    "name": "Not a Date",
-   "def": "They spend time together, but one or both of them specify that it's not a date.",
+   "def": "[watching Yusei teach Akiza to rollerblade] Leo: Do you feel like a third wheel?",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": "T2"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "NotHimself",
    "name": "Not Himself",
-   "def": "A character isn't acting like they normally would, usually as a result of an Evil Twin , \"Freaky Friday\" Flip , or Demonic Possession .",
+   "def": "A character's Out of Character behavior is central to the plot.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.12_transformation",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "NotJustATournament",
@@ -9013,35 +10900,62 @@
   {
    "slug": "NowOrNeverKiss",
    "name": "Now-or-Never Kiss",
-   "def": "",
+   "def": "Characters kiss and confess their love for each other in a moment where they think they're about to die.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "ObliviousToLove",
    "name": "Oblivious to Love",
-   "def": "",
+   "def": "They don't notice that someone is in love with them.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "OffTheWagon",
    "name": "Off the Wagon",
-   "def": "An alcoholic or drug addict tries to quit but then starts it up again.",
+   "def": "A reformed character returning to their original vice.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.20_descension",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S6"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "OffToSeeTheWizard",
@@ -9057,14 +10971,23 @@
   {
    "slug": "OfficialKiss",
    "name": "Official Kiss",
-   "def": "Two characters kiss, signaling a Relationship Upgrade .",
+   "def": "Two characters kiss to signal their Relationship Upgrade .",
    "indexes": [
     "EndingTropes",
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "OlderHeroVsYoungerVillain",
@@ -9091,24 +11014,42 @@
   {
    "slug": "OneCrazyNight",
    "name": "One Crazy Night",
-   "def": "Plans for a quiet peaceful night turns into a problem that keeps getting worse.",
+   "def": "Shaggy: Ghosts!",
    "indexes": [
     "Plots"
    ],
    "node": "sch.11_disaster",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": "T4"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "OperationJealousy",
    "name": "Operation: Jealousy",
-   "def": "",
+   "def": "A character tries to get their Love Interest 's attention by pretending to date someone else as a way of inducing jealousy.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "OutOfJobIntoThePlot",
@@ -9124,13 +11065,22 @@
   {
    "slug": "PairTheSpares",
    "name": "Pair the Spares",
-   "def": "",
+   "def": "The characters who don't have Love Interests end up together.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "ParentalMarriageVeto",
@@ -9213,13 +11163,22 @@
   {
    "slug": "Pilgrimage",
    "name": "Pilgrimage",
-   "def": "A travel to Holy Ground or for a holy purpose.",
+   "def": "A trip for a religious purpose.",
    "indexes": [
     "Plots"
    ],
    "node": "cam.01_call_to_adventure",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S8"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "PirateBooty",
@@ -9246,36 +11205,63 @@
   {
    "slug": "PlayingHardToGet",
    "name": "Playing Hard to Get",
-   "def": "",
+   "def": "A character tries to attract their Love Interest by pretending to be not interested in them.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R3"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "PlotDrivingSecret",
    "name": "Plot-Driving Secret",
-   "def": "The entire plot of a work depends on no one knowing the truth.",
+   "def": "If they knew the truth, we wouldn't have a plot.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.21_enigma",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "PlotIncitingInfidelity",
    "name": "Plot-Inciting Infidelity",
-   "def": "When the plot of a story is kickstarted by having the protagonist catch their partner cheating on them.",
+   "def": "A story that starts with the protagonist catching a cheating partner.",
    "indexes": [
     "Plots",
     "BeginningTropes"
    ],
    "node": "sch.29_adultery",
    "alt": "tob.15_forbidden_love",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "sexuality"
+    ],
+    "keys": {
+     "sexuality": "L9"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "PlotTailoredToTheParty",
@@ -9302,25 +11288,43 @@
   {
    "slug": "PlotTriggeringDeath",
    "name": "Plot-Triggering Death",
-   "def": "A character's death at the outset of a story puts its main plot into motion.",
+   "def": "The character dying in the beginning is the reason the story's events happen at all.",
    "indexes": [
     "Plots",
     "BeginningTropes"
    ],
    "node": "prp.09_mediation",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "PoisonAndCureGambit",
    "name": "Poison and Cure Gambit",
-   "def": "Manipulating someone into doing what you want by poisoning them and refusing to give them the antidote until they do as you say.",
+   "def": "Manipulating people by poisoning them and refusing to give the antidote until they do what you tell them to.",
    "indexes": [
     "Plots"
    ],
    "node": "prp.06_trickery",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": "T9"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "PoliceBrutalityGambit",
@@ -9347,13 +11351,24 @@
   {
    "slug": "PossessiveParadise",
    "name": "Possessive Paradise",
-   "def": "A place that prevents you from leaving.",
+   "def": "A paradise setting with an unfortunate tendency towards the yandere .",
    "indexes": [
     "Plots"
    ],
    "node": "tob.05_escape",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "setting",
+     "texture"
+    ],
+    "keys": {
+     "setting": "S9",
+     "texture": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "PreMeeting",
@@ -9386,7 +11401,16 @@
    ],
    "node": "sch.15_revolt",
    "alt": "sch.16_support",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "PrideBeforeAFall",
@@ -9398,7 +11422,16 @@
    ],
    "node": "tob.20_descension",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "character"
+    ],
+    "keys": {
+     "character": "L11"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "PrinceAndPauper",
@@ -9414,13 +11447,22 @@
   {
    "slug": "PrincessForADay",
    "name": "Princess for a Day",
-   "def": "When a woman dresses up as an upper-class person.",
+   "def": "One night of grace and charm in a life of toil and chore.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.12_transformation",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": "T4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "ProdigalFamily",
@@ -9491,13 +11533,22 @@
   {
    "slug": "PygmalionPlot",
    "name": "Pygmalion Plot",
-   "def": "A character falls in love with their own creation.",
+   "def": "Falling in love with one's own creation.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "PygmalionSnapBack",
@@ -9531,7 +11582,16 @@
    ],
    "node": "tob.17_discovery",
    "alt": "tob.01_quest",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "QuestForSex",
@@ -9542,7 +11602,16 @@
    ],
    "node": "tob.01_quest",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "sexuality"
+    ],
+    "keys": {
+     "sexuality": "L9"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "QuestForTheRest",
@@ -9570,14 +11639,23 @@
   {
    "slug": "RaceAgainstTheClock",
    "name": "Race Against the Clock",
-   "def": "The heroes have to do something to stop the countdown, or else the consequences will be catastrophic.",
+   "def": "You have no chance to survive make your time .",
    "indexes": [
     "Plots",
     "EndingTropes"
    ],
    "node": "vog.08_the_ordeal",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "tracking"
+    ],
+    "keys": {
+     "tracking": "grid"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "RadishCure",
@@ -9593,13 +11671,22 @@
   {
    "slug": "RageAgainstTheHeavens",
    "name": "Rage Against the Heavens",
-   "def": "A character wants the gods to pay for what they've done.",
+   "def": "Someone expresses anger and blame at God (or the gods) due to their life being so miserable.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.45_conflict_with_a_god",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "RageWithinTheMachine",
@@ -9637,13 +11724,22 @@
   {
    "slug": "RashPromise",
    "name": "Rash Promise",
-   "def": "A character swears to do something without much thought and must choose between keeping their word or suffering the consequences of their lack of foresight.",
+   "def": "\"I gave my word... but not much thought to it.\"",
    "indexes": [
     "Plots"
    ],
    "node": "tob.10_temptation",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R3"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "RayOfHopeEnding",
@@ -9687,7 +11783,16 @@
    ],
    "node": "sch.54_fish_out_of_water",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "RebuiltPedestal",
@@ -9789,18 +11894,38 @@
    ],
    "node": "vog.02_call_to_adventure",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "ReincarnationRomance",
    "name": "Reincarnation Romance",
-   "def": "The two characters were a couple in their past lives.",
+   "def": "A second chance for these mooncrossed lovers .",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "texture",
+     "theme"
+    ],
+    "keys": {
+     "texture": "T3",
+     "theme": "R1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "RekindledSparks",
@@ -9833,18 +11958,40 @@
    ],
    "node": "tob.04_rescue",
    "alt": "tob.14_love",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "texture",
+     "theme"
+    ],
+    "keys": {
+     "texture": null,
+     "theme": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "RescuedFromTheUnderworld",
    "name": "Rescued from the Underworld",
-   "def": "Rescuing someone who is trapped in the afterlife.",
+   "def": "Entering the afterlife to bring a dead person back.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.23_obtaining",
    "alt": "tob.04_rescue",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme",
+     "texture"
+    ],
+    "keys": {
+     "texture": "T8",
+     "theme": "R3"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "ResignedToTheCall",
@@ -9882,13 +12029,22 @@
   {
    "slug": "RightManInTheWrongPlace",
    "name": "Right Man in the Wrong Place",
-   "def": "Some guy is asked to heed the call. Not because it's their call to heed, but because they really need a Chosen One right now.",
+   "def": "\" The right man in the wrong place can make all the difference...",
    "indexes": [
     "CallToAdventure"
    ],
    "node": "vog.02_call_to_adventure",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "character"
+    ],
+    "keys": {
+     "character": "L12"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "RightfulKingReturns",
@@ -9915,24 +12071,42 @@
   {
    "slug": "RiverOfInsanity",
    "name": "River of Insanity",
-   "def": "Any river voyage or wilderness journey is a doomed expedition in which the characters alternately die, go mad, get lost, go native, or otherwise barely live to tell the tale.",
+   "def": "People who go on a journey down a river into the unknown will not make it back unchanged.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.02_adventure",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S11"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "RoadTripPlot",
    "name": "Road Trip Plot",
-   "def": "Everyone goes on a road trip. Hilarity Ensues .",
+   "def": "Hmmm.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.02_adventure",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "RoadTripRomance",
@@ -9943,7 +12117,16 @@
    ],
    "node": "tob.14_love",
    "alt": "tob.02_adventure",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "RoaringRampageOfRescue",
@@ -9959,13 +12142,22 @@
   {
    "slug": "RoaringRampageOfRevenge",
    "name": "Roaring Rampage of Revenge",
-   "def": "A character is pushed so far over the edge and goes completely ballistic on those that hurt them.",
+   "def": "Forget plotting my vengeance! I want to get them through raging violence!",
    "indexes": [
     "Plots"
    ],
    "node": "tob.06_revenge",
    "alt": "sch.05_vengeance_for_a_crime",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "RobbingTheMobBank",
@@ -9998,40 +12190,80 @@
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "RomanticFalseLead",
    "name": "Romantic False Lead",
-   "def": "",
+   "def": "It took three years, but their romance finally pushed Victor and Padma completely out of the frame.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "sch.43_obstacles_to_love",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "character",
+     "theme"
+    ],
+    "keys": {
+     "character": "L9",
+     "theme": "R1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "RomanticRain",
    "name": "Romantic Rain",
-   "def": "Umbrella of Togetherness",
+   "def": "Rain makes a good backdrop for a love scene.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "RomanticRideSharing",
    "name": "Romantic Ride Sharing",
-   "def": "",
+   "def": "Two characters bond by sharing a vehicle that holds only two (such as a horse or motorcycle), requiring them to be in close proximity.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "setting",
+     "theme"
+    ],
+    "keys": {
+     "setting": "S1",
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "RoommateDrama",
@@ -10168,7 +12400,16 @@
    ],
    "node": "sch.17_daring_enterprise",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S8"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "SchrodingersButterfly",
@@ -10184,13 +12425,22 @@
   {
    "slug": "ScoobyDooHoax",
    "name": "\"Scooby-Doo\" Hoax",
-   "def": "A monster is revealed to actually be a disguised criminal pretending to be one.",
+   "def": "Using supernatural myths and Urban Legends to scare someone for whatever reason.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.07_the_riddle",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "ScreeningTheCall",
@@ -10246,19 +12496,37 @@
    ],
    "node": "tob.10_temptation",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "SecretRelationship",
    "name": "Secret Relationship",
-   "def": "Characters are in a relationship that they don't want their friends and family to know about.",
+   "def": "Two characters keep their relationship a secret from everyone else.",
    "indexes": [
     "Plots",
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "SecretTest",
@@ -10274,13 +12542,24 @@
   {
    "slug": "SecretTestOfCharacter",
    "name": "Secret Test of Character",
-   "def": "The hero is then told that by forfeiting the challenge in a certain way is exactly what was needed to triumph, and that it was actually a test of character, and they have passed with flying colors.",
+   "def": "The actual test is a secret to prove what's in their heart.",
    "indexes": [
     "PlotTwist"
    ],
    "node": "vog.06_tests_allies_enemies",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme",
+     "texture"
+    ],
+    "keys": {
+     "texture": "T2",
+     "theme": "R3"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "SeekingTheIntangible",
@@ -10335,18 +12614,38 @@
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "SerialKiller",
    "name": "Serial Killer",
-   "def": "There's a murderer on the loose, and people are dying one by one. Can the heroes stop the killer before they strike again?",
+   "def": "A murderer who kills many people seemingly at random.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.31_madness",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "character",
+     "theme"
+    ],
+    "keys": {
+     "character": "L12",
+     "theme": "R1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "SetRightWhatOnceWentWrong",
@@ -10363,24 +12662,42 @@
   {
    "slug": "SettlingTheFrontier",
    "name": "Settling the Frontier",
-   "def": "Standard Western plot involving people establishing a colony or settlement in a previously unknown land.",
+   "def": "Can serve as either a setting for a story or as a Plot .",
    "indexes": [
     "Plots"
    ],
    "node": "tob.02_adventure",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "SexAsRiteOfPassage",
    "name": "Sex as Rite-of-Passage",
-   "def": "Characters set out to get themselves laid.",
+   "def": "A man is embarrassed to be a virgin.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.13_maturation",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "sexuality"
+    ],
+    "keys": {
+     "sexuality": "L9"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "SexEqualsLove",
@@ -10391,7 +12708,18 @@
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "sexuality",
+     "theme"
+    ],
+    "keys": {
+     "sexuality": "L9",
+     "theme": "R1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "SexForServices",
@@ -10402,7 +12730,16 @@
    ],
    "node": "sch.23_obtaining",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "sexuality"
+    ],
+    "keys": {
+     "sexuality": "L9"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "SexyManInstantHarem",
@@ -10418,24 +12755,42 @@
   {
    "slug": "SheCleansUpNicely",
    "name": "She Cleans Up Nicely",
-   "def": "",
+   "def": "The frumpy Love Interest looks beautiful when they get dressed up.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.12_transformation",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "SheIsNotMyGirlfriend",
    "name": "She Is Not My Girlfriend",
-   "def": "",
+   "def": "Two people deny being in a relationship, to the scepticism of everyone around them.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "ShipTease",
@@ -10462,24 +12817,42 @@
   {
    "slug": "ShootTheShaggyDog",
    "name": "Shoot the Shaggy Dog",
-   "def": "The story ends with the protagonist dying and rubs salt in the wound by revealing their efforts to be pointless.",
+   "def": "Story ends with the protagonist getting killed and their efforts turning out to be pointless.",
    "indexes": [
     "EndingTropes"
    ],
    "node": "tob.20_descension",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "ShutUpHannibal",
    "name": "Shut Up, Hannibal!",
-   "def": "The hero gives a defiant response to the villain mocking the hero's idealism or the villain justifying their immoral actions.",
+   "def": "The villain mocks the hero for being idealistic and the hero gives a rebuttal.",
    "indexes": [
     "EndingTropes"
    ],
    "node": "sch.38_conviction",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": "T1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "ShutUpKiss",
@@ -10523,40 +12896,76 @@
    ],
    "node": "tob.10_temptation",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S8"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "SlapSlapKiss",
    "name": "Slap-Slap-Kiss",
-   "def": "",
+   "def": "Characters in love argue with each other then begin to kiss.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "SleepCute",
    "name": "Sleep Cute",
-   "def": "",
+   "def": "Lovers or characters with Ship Tease fall asleep next to each other.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "SleepLearning",
    "name": "Sleep Learning",
-   "def": "Someone tries to learn information in their sleep.",
+   "def": "A character uses Bedtime Brainwashing to help them study for an important event.",
    "indexes": [
     "Plots"
    ],
    "node": "vog.06_tests_allies_enemies",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "SlowAndSteadyWinsTheRace",
@@ -10572,13 +12981,24 @@
   {
    "slug": "SlumberPartyPloy",
    "name": "Slumber Party Ploy",
-   "def": "In order to do something or go somewhere they were prohibited from, kids lie to their parents that they are staying over at each others' houses.",
+   "def": "In order to do something or go somewhere they were prohibited from, kids lie to their parents that they are staying over at each other's houses.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.10_temptation",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme",
+     "texture"
+    ],
+    "keys": {
+     "theme": "R2",
+     "texture": "T3"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "SmallMindedVillain",
@@ -10622,7 +13042,16 @@
    ],
    "node": "tob.05_escape",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "SoNearYetSoFar",
@@ -10638,13 +13067,22 @@
   {
    "slug": "SomeoneToRememberHimBy",
    "name": "Someone to Remember Him By",
-   "def": "A woman turns out to be pregnant with the child of her recently deceased lover.",
+   "def": "A dead man's widow or bereaved girlfriend turns out to be pregnant with his child.",
    "indexes": [
     "EndingTropes"
    ],
    "node": "sch.51_loss_of_a_loved_one",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "SorcerersApprenticePlot",
@@ -10677,7 +13115,16 @@
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "SpellingBee",
@@ -10781,25 +13228,43 @@
   {
    "slug": "StartsWithASuicide",
    "name": "Starts with a Suicide",
-   "def": "The story begins with someone committing or attempting to commit suicide.",
+   "def": "Story starts with a character committing or attempting suicide.",
    "indexes": [
     "BeginningTropes"
    ],
    "node": "sch.31_madness",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R1"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "StartsWithTheirFuneral",
    "name": "Starts with Their Funeral",
-   "def": "The story begins with a funeral before explaining how the person died.",
+   "def": "Work begins with a funeral before explaining how the person died.",
    "indexes": [
     "BeginningTropes",
     "FlashbacksAndChronology"
    ],
    "node": "sch.51_loss_of_a_loved_one",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "StepOneEscape",
@@ -10848,13 +13313,22 @@
   {
    "slug": "StormingTheCastle",
    "name": "Storming the Castle",
-   "def": "Assaulting the Big Bad's home base.",
+   "def": "\"The first card was The Tower.",
    "indexes": [
     "EndingTropes"
    ],
    "node": "vog.10_the_road_back",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "StrangerBehindTheMask",
@@ -10887,7 +13361,16 @@
    ],
    "node": "sch.54_fish_out_of_water",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S8"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "StrangersOnATrainPlotMurder",
@@ -10903,13 +13386,22 @@
   {
    "slug": "StuffBlowingUp",
    "name": "Stuff Blowing Up",
-   "def": "",
+   "def": "A Michael Bay movie every five seconds.",
    "indexes": [
     "ClimacticTropes"
    ],
    "node": "vog.10_the_road_back",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": "T7"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "StumbledIntoThePlot",
@@ -10982,24 +13474,42 @@
   {
    "slug": "SuicidalCosmicTemperTantrum",
    "name": "Suicidal Cosmic Temper Tantrum",
-   "def": "",
+   "def": "\"Human, have you ever been to Hell?",
    "indexes": [
     "GoalsAndObjectivesIndex"
    ],
    "node": "sch.31_madness",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "SuicideMission",
    "name": "Suicide Mission",
-   "def": "A mission will almost certainly end in death for whoever accepts it.",
+   "def": "Shoot for the comet.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.39_self_sacrifice",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "SummonEverymanHero",
@@ -11010,7 +13520,16 @@
    ],
    "node": "prp.09_mediation",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "character"
+    ],
+    "keys": {
+     "character": "L12"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "SuperPowersForADay",
@@ -11131,18 +13650,36 @@
    ],
    "node": "sch.31_madness",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "TakeCareOfTheKids",
    "name": "Take Care of the Kids",
-   "def": "Someone is dying and asks another person to take care of a person (usually a kid as kids are more likely to need care).",
+   "def": "Dying person asks someone to look after their children.",
    "indexes": [
     "EndingTropes"
    ],
    "node": "sch.36_sacrifice_for_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R1"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "TakeMyHand",
@@ -11169,13 +13706,22 @@
   {
    "slug": "TakeOverTheWorld",
    "name": "Take Over the World",
-   "def": "",
+   "def": "The villain plans to conquer the world.",
    "indexes": [
     "GoalsAndObjectivesIndex"
    ],
    "node": "sch.15_revolt",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "TakeUpMySword",
@@ -11247,13 +13793,22 @@
   {
    "slug": "TeacherStudentRomance",
    "name": "Teacher/Student Romance",
-   "def": "A student and a teacher get into a romantic or sexual relationship. Highly inadvisable in Real Life .",
+   "def": "A student and their teacher fall in love.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.15_forbidden_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S8"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "TechnicianVersusPerformer",
@@ -11291,24 +13846,42 @@
   {
    "slug": "TheBet",
    "name": "The Bet",
-   "def": "",
+   "def": "Love is involved in a wager.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "sch.07_vengeance_taken_for_kindred_upon_kindred",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "TheBigDamnKiss",
    "name": "The Big Damn Kiss",
-   "def": "",
+   "def": "A grandiose kiss scene.",
    "indexes": [
     "ClimacticTropes"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "TheBigRace",
@@ -11424,13 +13997,22 @@
   {
    "slug": "TheCavalryArrivesLate",
    "name": "The Cavalry Arrives Late",
-   "def": "The hero has reinforcements, but they don't show up until after the day is saved.",
+   "def": "The heroes' reinforcements don't show up until after the villains have already been defeated.",
    "indexes": [
     "EndingTropes"
    ],
    "node": "vog.10_the_road_back",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "tracking"
+    ],
+    "keys": {
+     "tracking": "grid"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "TheChainOfHarm",
@@ -11463,7 +14045,16 @@
    ],
    "node": "vog.03_refusal_of_the_call",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "character"
+    ],
+    "keys": {
+     "character": "L12"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "TheCollector",
@@ -11490,30 +14081,48 @@
   {
    "slug": "TheConspiracy",
    "name": "The Conspiracy",
-   "def": "A secret plot from a powerful figure or group is happening and the protagonists investigate it.",
+   "def": "A grand, secretive (and most likely sinister ) plot that is planned and executed by a mysterious group. Ancient Conspiracy : A very old secret society that has manipulated various historical and current events for their own gain.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.15_revolt",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "TheDayOfReckoning",
    "name": "The Day of Reckoning",
-   "def": "The day when an Evil Overlord is destined to win.",
+   "def": "\"It's been a long journey and no one is coming out without scars.",
    "indexes": [
     "Plots",
     "EndingTropes"
    ],
    "node": "vog.08_the_ordeal",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "TheDogBitesBack",
    "name": "The Dog Bites Back",
-   "def": "An abused character finally has enough and enacts retribution on their tormentor(s).",
+   "def": "Someone gets killed by a person they had been abusing and tormenting.",
    "indexes": [
     "Plots",
     "EndingTropes",
@@ -11521,7 +14130,16 @@
    ],
    "node": "tob.06_revenge",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "TheDragonsComeBack",
@@ -11537,13 +14155,22 @@
   {
    "slug": "TheDulcineaEffect",
    "name": "The Dulcinea Effect",
-   "def": "",
+   "def": "A character falls for someone and instantly wants to protect them with their life.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "TheEndOfTheBeginning",
@@ -11559,13 +14186,22 @@
   {
    "slug": "TheEvilsOfFreeWill",
    "name": "The Evils of Free Will",
-   "def": "Someone feels that eliminating free will is the only way to achieve utopia.",
+   "def": "Someone believes that utopia can only be achieved by eliminating free will.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.15_revolt",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "TheFellowshipHasEnded",
@@ -11615,13 +14251,22 @@
   {
    "slug": "TheGlomp",
    "name": "The Glomp",
-   "def": "",
+   "def": "Tackling and hugging your Love Interest tightly.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "TheGoodGuysAlwaysWin",
@@ -11637,13 +14282,22 @@
   {
    "slug": "TheGoodKingdom",
    "name": "The Good Kingdom",
-   "def": ", for a story in which the Hero must save the world from impending doom, and",
+   "def": "Where good monarchs reign. Usually small, pleasant, and an underdog against The Empire .",
    "indexes": [
     "TheHerosJourney"
    ],
    "node": "vog.01_ordinary_world",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S9"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "TheGreatRepair",
@@ -11681,24 +14335,44 @@
   {
    "slug": "TheHero",
    "name": "The Hero",
-   "def": "may be dissatisfied with the ordinary and express a desire for adventure. In musicals this can be expressed through an \"I Want\" Song or a Wanderlust Song .",
+   "def": "The do-gooder protagonist .",
    "indexes": [
     "TheHerosJourney"
    ],
    "node": "vog.01_ordinary_world",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "character",
+     "theme"
+    ],
+    "keys": {
+     "character": "L12",
+     "theme": "R3"
+    },
+    "conf": "low"
+   }
   },
   {
    "slug": "TheHeroDies",
    "name": "The Hero Dies",
-   "def": "The protagonist dies at the end of the story.",
+   "def": "The work's hero dies.",
    "indexes": [
     "EndingTropes"
    ],
    "node": "tob.20_descension",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "TheHomewardJourney",
@@ -11816,13 +14490,22 @@
   {
    "slug": "TheMasochismTango",
    "name": "The Masochism Tango",
-   "def": "",
+   "def": "Two people claim to be in love, but act like they hate each other.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "TheMigration",
@@ -11878,7 +14561,16 @@
    ],
    "node": "vog.02_call_to_adventure",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S9"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "TheQueenWillBeWatching",
@@ -11905,14 +14597,25 @@
   {
    "slug": "TheRevealPromptsRomance",
    "name": "The Reveal Prompts Romance",
-   "def": "",
+   "def": "\"Yeah, if I were Iron Man , I'd have this girlfriend who knew my true identity.",
    "indexes": [
     "PlotTwist",
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": "sch.42_discovery_of_the_honor_of_a_loved_one",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "texture",
+     "theme"
+    ],
+    "keys": {
+     "texture": null,
+     "theme": "R2"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "TheSecretLifeOfNonhumans",
@@ -11939,13 +14642,22 @@
   {
    "slug": "TheSiege",
    "name": "The Siege",
-   "def": "The good guys must hold off an overwhelming enemy threat against impossible odds.",
+   "def": "Do your worst!",
    "indexes": [
     "Plots"
    ],
    "node": "tob.09_underdog",
    "alt": "prp.16_struggle",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "TheSoCalledCoward",
@@ -11994,14 +14706,23 @@
   },
   {
    "slug": "TheVamp",
-   "name": "The Temptress",
-   "def": "a figure that tries to derail the journey and/or corrupt the hero.",
+   "name": "The Vamp",
+   "def": "A woman who acts seductive to manipulate men into doing what they want them to.",
    "indexes": [
     "TheHerosJourney"
    ],
    "node": "cam.08_woman_as_the_temptress",
    "alt": "tob.10_temptation",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "character"
+    ],
+    "keys": {
+     "character": "L3"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "TheVillainMustBePunished",
@@ -12012,18 +14733,36 @@
    ],
    "node": "prp.30_punishment",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "TheirFirstTime",
    "name": "Their First Time",
-   "def": "The first time two people had sex in their entire lives.",
+   "def": "A couple decides to have sex for the first time.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.14_love",
    "alt": "sch.44_unconditional_love",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "sexuality"
+    ],
+    "keys": {
+     "sexuality": "L9"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "ThereCanBeOnlyOne",
@@ -12133,7 +14872,16 @@
    ],
    "node": "tob.14_love",
    "alt": "tob.15_forbidden_love",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "TitanomachyRoundTwo",
@@ -12172,24 +14920,42 @@
   {
    "slug": "TogetherInDeath",
    "name": "Together in Death",
-   "def": "(exit point) Reincarnation Romance (Go back to start )",
+   "def": "Two lovers may have died, but at least now they'll be together for eternity in the afterlife.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "tob.14_love",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "TomatoInTheMirror",
    "name": "Tomato in the Mirror",
-   "def": "A character discovers that they are not what they think they are.",
+   "def": "A person's true nature is revealed and it turns out that even they were unaware of the secret.",
    "indexes": [
     "PlotTwist"
    ],
    "node": "tob.17_discovery",
    "alt": "tob.12_transformation",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "TomatoSurprise",
@@ -12200,18 +14966,36 @@
    ],
    "node": "sch.01_supplication",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": "T2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "Tontine",
    "name": "Tontine",
-   "def": "A group of people make an agreement that the valuables they've found will go to the last surviving member of the group.",
+   "def": "A group of people reach an agreement that a collection of valuables will go to the last surviving member of them.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.27_competition",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R3"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "TorchTheFranchiseAndRun",
@@ -12249,13 +15033,22 @@
   {
    "slug": "TrainingAccident",
    "name": "Training \"Accident\"",
-   "def": "A character undergoes special training only for something to go horrible wrong .",
+   "def": "A character undergoes special training only for something to go horribly wrong .",
    "indexes": [
     "Plots"
    ],
    "node": "sch.11_disaster",
    "alt": "prp.12_first_function_of_the_donor",
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "TrainingThePeacefulVillagers",
@@ -12266,7 +15059,16 @@
    ],
    "node": "sch.17_daring_enterprise",
    "alt": "tob.09_underdog",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "TransformedEverAfter",
@@ -12333,7 +15135,16 @@
    ],
    "node": "tob.01_quest",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "TrendAesop",
@@ -12344,7 +15155,16 @@
    ],
    "node": "tob.13_maturation",
    "alt": "tob.12_transformation",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "TrickedIntoSigning",
@@ -12492,13 +15312,22 @@
   {
    "slug": "TwoAliasesOneCharacter",
    "name": "Two Aliases, One Character",
-   "def": "",
+   "def": "Two characters are revealed to be the same person.",
    "indexes": [
     "PlotTwist"
    ],
    "node": "sch.01_supplication",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "TwoDunIt",
@@ -12525,13 +15354,22 @@
   {
    "slug": "TwoTimerDate",
    "name": "Two-Timer Date",
-   "def": "A character schedules dates with two different people at the same time.",
+   "def": "\"You gotta set up tables at both restaurants.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.09_flight",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "UnbelievableSourcePlot",
@@ -12553,7 +15391,16 @@
    ],
    "node": "prp.06_trickery",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R3"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "UndercoverCopReveal",
@@ -12602,35 +15449,64 @@
   {
    "slug": "UnreliableNarrator",
    "name": "Unreliable Narrator",
-   "def": "It is hinted that the narrator may be exaggerating or glossing over parts of the story, if they weren't just outright lying.",
+   "def": "The narrator is hinted to be lying about what happened in their story.",
    "indexes": [
     "PlotTwist"
    ],
    "node": "sch.01_supplication",
    "alt": "tob.07_the_riddle",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "character",
+     "theme"
+    ],
+    "keys": {
+     "character": "L10",
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "UnrequitedLoveSwitcheroo",
    "name": "Unrequited Love Switcheroo",
-   "def": "",
+   "def": "A character has an unrequited crush on another then later gets over it, only for their former crush to develop feelings for them.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "sch.44_unconditional_love",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "UnresolvedSexualTension",
    "name": "Unresolved Sexual Tension",
-   "def": "Almost Holding Hands",
+   "def": "Two characters are obviously attracted to each other, but they never act on their feelings.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "sch.23_obtaining",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "UnsettlingGenderReveal",
@@ -12707,7 +15583,16 @@
    ],
    "node": "sch.40_self_preservation",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "UnwittingTestSubject",
@@ -12723,14 +15608,23 @@
   {
    "slug": "UsurpingTheAlphaBitch",
    "name": "Usurping the Alpha Bitch",
-   "def": "The story ends with the new girl overthrowing the Alpha Bitch and taking her place on the social throne.",
+   "def": "The new girl overthrows the Alpha Bitch and her iron-clad rule, then takes her place at the top of the Popularity Food Chain .",
    "indexes": [
     "EndingTropes",
     "PlotTwist"
    ],
    "node": "sch.27_competition",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "UtopiaJustifiesTheMeans",
@@ -12757,13 +15651,22 @@
   {
    "slug": "VampireRefugee",
    "name": "Vampire Refugee",
-   "def": "Someone turned by a vampire decides to find and kill the vampire that bit them to reverse the transformation.",
+   "def": "This sucks!",
    "indexes": [
     "Plots"
    ],
    "node": "tob.06_revenge",
    "alt": "tob.01_quest",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "character"
+    ],
+    "keys": {
+     "character": "L2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "VanishingVillage",
@@ -12840,7 +15743,16 @@
    ],
    "node": "vog.09_reward",
    "alt": "tob.14_love",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "sexuality"
+    ],
+    "keys": {
+     "sexuality": "L9"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "VillainBeatingArtifact",
@@ -12856,13 +15768,22 @@
   {
    "slug": "VillainRevealsTheSecret",
    "name": "Villain Reveals the Secret",
-   "def": "",
+   "def": "Sometimes, they're telling the truth and it usually isn't good for our heroes.",
    "indexes": [
     "PlotTwist"
    ],
    "node": "sch.01_supplication",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "VillainousLegacy",
@@ -12890,13 +15811,22 @@
   {
    "slug": "WakeUpCall",
    "name": "Wake-Up Call",
-   "def": "Something occurs that forces a character to develop out of complacency, get their act together, learn a lesson, or some combination thereof.",
+   "def": "A character gets put through some event that forces them to grow or otherwise get their act together.",
    "indexes": [
     "Plots"
    ],
    "node": "vog.02_call_to_adventure",
    "alt": "tob.13_maturation",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "character"
+    ],
+    "keys": {
+     "character": "L11"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "WakeUpGoToSchoolSaveTheWorld",
@@ -12907,7 +15837,16 @@
    ],
    "node": "sch.17_daring_enterprise",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "WakingUpElsewhere",
@@ -12934,68 +15873,122 @@
   {
    "slug": "WarArc",
    "name": "War Arc",
-   "def": "A Story Arc that concerns two or more large-scale factions (city-sized at least) in conflict with one another.",
+   "def": "The War Arc is a Story Arc that concerns two or more large-scale factions (city-sized at least) in conflict with one another, with the protagonists being involved somehow.",
    "indexes": [
     "Plots"
    ],
    "node": "prp.16_struggle",
    "alt": "sch.27_competition",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "WarComesHome",
    "name": "War Comes Home",
-   "def": "When a war spreads to the hero's homeland, making it personal.",
+   "def": "\"We'll take 2 million burgers with a side of your land, comrade!\"",
    "indexes": [
     "Plots"
    ],
    "node": "sch.11_disaster",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "WarForFunAndProfit",
    "name": "War for Fun and Profit",
-   "def": "Instigating a war for one's own material benefit.",
+   "def": "A character or group starts a war for their own benefit.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.18_wretched_excess",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "WarFromAnotherWorld",
    "name": "War from Another World",
-   "def": "When a world and its inhabitants unwillingly gets drawn into a war from elsewhere.",
+   "def": "♫ When two tribes go to war A point is all you can score ♫ Serpentine: You think you can just walk into this conflict, don't you?",
    "indexes": [
     "Plots"
    ],
    "node": "sch.11_disaster",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S4"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "WarWasBeginning",
    "name": "War Was Beginning",
-   "def": "The story begins with a war starting.",
+   "def": "\"In A.D.",
    "indexes": [
     "BeginningTropes"
    ],
    "node": "vog.02_call_to_adventure",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": null
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "WasItAllALie",
    "name": "Was It All a Lie?",
-   "def": "",
+   "def": "Someone finds out that they have been lied to by a loved one and ponders whether the fabrication means that everything concerning their relationship with this person was insincere. Becoming the Mask : What was intended to be the cover of the mole ends up becoming how they really are.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "sch.01_supplication",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "WasItReallyWorthIt",
@@ -13022,13 +16015,22 @@
   {
    "slug": "WaterSourceTampering",
    "name": "Water Source Tampering",
-   "def": "Villains tamper with the water supply.",
+   "def": "They don't want you to know what you're really drinking.",
    "indexes": [
     "Plots"
    ],
    "node": "prp.08_villainy",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "WaybackTrip",
@@ -13056,13 +16058,22 @@
   {
    "slug": "WeNeedToGetProof",
    "name": "We Need to Get Proof",
-   "def": "The heroes discover the bad guy is up to no good, but need to find a way for others to believe them.",
+   "def": "Valeris: We must inform Starfleet Command— Scotty: Inform them of what!?",
    "indexes": [
     "Plots"
    ],
    "node": "sch.17_daring_enterprise",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "WeWantOurIdiotBack",
@@ -13095,7 +16106,16 @@
    ],
    "node": "sch.01_supplication",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "WealthyEverAfter",
@@ -13166,14 +16186,23 @@
   },
   {
    "slug": "WellDoneSonGuy",
-   "name": "Atonement With the Father",
+   "name": "\"Well Done, Son\" Guy",
    "def": "George Lucas loved this step. Oedipus probably didn't. Variants include a final showdown with an Archnemesis Dad (sometimes still ending in atonement if Death Equals Redemption ) and Calling the Old Man Out .",
    "indexes": [
     "TheHerosJourney"
    ],
    "node": "cam.09_atonement_with_the_father",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "character"
+    ],
+    "keys": {
+     "character": "L6"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "WellIntentionedReplacement",
@@ -13239,7 +16268,16 @@
    ],
    "node": "tob.07_the_riddle",
    "alt": "sch.01_supplication",
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "WhenItAllBegan",
@@ -13256,13 +16294,24 @@
   {
    "slug": "WhereAreTheyNowEpilogue",
    "name": "\"Where Are They Now?\" Epilogue",
-   "def": "The ending shows what became of the characters after the events of the story.",
+   "def": "The story ends with an epilogue explaining what happened to the characters after the events of the story.",
    "indexes": [
     "EndingTropes"
    ],
    "node": "vog.12_return_with_the_elixir",
    "alt": null,
-   "conf": "low"
+   "conf": "low",
+   "register": {
+    "domains": [
+     "texture",
+     "tracking"
+    ],
+    "keys": {
+     "texture": "T2",
+     "tracking": "grid"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "WhereIWasBornAndRazed",
@@ -13278,13 +16327,22 @@
   {
    "slug": "WhereItAllBegan",
    "name": "Where It All Began",
-   "def": "The hero's journey ends the same location where it began.",
+   "def": "It took 10 years and 38 levels to get that door open.",
    "indexes": [
     "EndingTropes"
    ],
    "node": "prp.20_return",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "WhiteMansBurden",
@@ -13295,7 +16353,16 @@
    ],
    "node": "sch.02_benefaction",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "character"
+    ],
+    "keys": {
+     "character": "L12"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "WhoWillTakeTheKids",
@@ -13317,18 +16384,36 @@
    ],
    "node": "sch.01_supplication",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "WhyWouldAnyoneTakeHimBack",
    "name": "Why Would Anyone Take Him Back?",
-   "def": "",
+   "def": "Giving a former lover another chance when they don't deserve it.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "sch.44_unconditional_love",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "WinWinEnding",
@@ -13355,13 +16440,22 @@
   {
    "slug": "WithThisRing",
    "name": "With This Ring",
-   "def": "",
+   "def": "When a man proposes to his lady love, anything can go wrong with securing the ring.",
    "indexes": [
     "RomanceArc"
    ],
    "node": "prp.31_wedding",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R3"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "WithholdingTheCure",
@@ -13399,13 +16493,22 @@
   {
    "slug": "WorkplaceHorror",
    "name": "Workplace Horror",
-   "def": "A setting where unexpected horrors appear while trying do to a mundane job.",
+   "def": "Monstrosities and serial killers showing up at a mundane job site.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.11_disaster",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S11"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "WorldHealingWave",
@@ -13421,13 +16524,22 @@
   {
    "slug": "WorldTour",
    "name": "World Tour",
-   "def": "The characters travel to well-known places around the world.",
+   "def": "When the story is set across multiple different locations around the Earth.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.02_adventure",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "setting"
+    ],
+    "keys": {
+     "setting": "S1"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "WorstWeddingEver",
@@ -13454,13 +16566,22 @@
   {
    "slug": "WoundedGazelleGambit",
    "name": "Wounded Gazelle Gambit",
-   "def": "Manipulating people by pretending to be injured.",
+   "def": "A guilty person acts innocent and manages to fool everyone.",
    "indexes": [
     "Plots"
    ],
    "node": "prp.06_trickery",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "WoundedGazelleWarcry",
@@ -13537,7 +16658,16 @@
    ],
    "node": "sch.17_daring_enterprise",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "XanatosSpeedChess",
@@ -13625,18 +16755,36 @@
    ],
    "node": "tob.13_maturation",
    "alt": null,
-   "conf": "medium"
+   "conf": "medium",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "YouCanKeepHer",
    "name": "You Can Keep Her!",
-   "def": "A character is contacted by some kidnappers who are holding someone they should care about for ransom, but the character doesn't care.",
+   "def": "Zero-Tactility Society member: We have your wife.",
    "indexes": [
     "Plots"
    ],
    "node": "tob.18_wretched_excess",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "texture"
+    ],
+    "keys": {
+     "texture": null
+    },
+    "conf": "medium"
+   }
   },
   {
    "slug": "YouGoGirl",
@@ -13652,13 +16800,22 @@
   {
    "slug": "YouHaveWaitedLongEnough",
    "name": "You Have Waited Long Enough",
-   "def": "A character is forced to marry someone else when the one they love doesn't come right back to them.",
+   "def": "When a character's true love doesn't return, they're forced to move on.",
    "indexes": [
     "Plots"
    ],
    "node": "sch.23_obtaining",
    "alt": null,
-   "conf": "high"
+   "conf": "high",
+   "register": {
+    "domains": [
+     "theme"
+    ],
+    "keys": {
+     "theme": "R2"
+    },
+    "conf": "high"
+   }
   },
   {
    "slug": "YouKnowWhatYouDid",
@@ -14131,6 +17288,12 @@
    "w": 16
   },
   {
+   "a": "cam.08_woman_as_the_temptress",
+   "b": "tob.14_love",
+   "type": "trope_link",
+   "w": 15
+  },
+  {
    "a": "sch.11_disaster",
    "b": "sch.15_revolt",
    "type": "trope_link",
@@ -14193,12 +17356,6 @@
   {
    "a": "tob.20_descension",
    "b": "vog.01_ordinary_world",
-   "type": "trope_link",
-   "w": 14
-  },
-  {
-   "a": "cam.08_woman_as_the_temptress",
-   "b": "tob.14_love",
    "type": "trope_link",
    "w": 14
   },
@@ -19843,6 +23000,12 @@
    "w": 3
   },
   {
+   "a": "cam.08_woman_as_the_temptress",
+   "b": "sch.23_obtaining",
+   "type": "trope_link",
+   "w": 3
+  },
+  {
    "a": "tob.02_adventure",
    "b": "tob.03_pursuit",
    "type": "trope_link",
@@ -22743,12 +25906,6 @@
   {
    "a": "vog.03_refusal_of_the_call",
    "b": "vog.11_the_resurrection",
-   "type": "trope_link",
-   "w": 2
-  },
-  {
-   "a": "cam.08_woman_as_the_temptress",
-   "b": "sch.23_obtaining",
    "type": "trope_link",
    "w": 2
   },
