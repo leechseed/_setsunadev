@@ -140,33 +140,25 @@ def station_downloads():
         return [p for p in procs(r"ytdlp_go\.py") if exe(p[1]).startswith(("python", "py.exe"))]
     running = live()
     if running:
-        return {"station": "DOWNLOADS", "go": True, "addr": "Windows Terminal · pid %d" % running[0][0], "note": "already running"}
+        return {"station": "DOWNLOADS", "go": True, "addr": "console · pid %d" % running[0][0], "note": "already running"}
     if not os.path.exists(YTDLP_GO):
         return {"station": "DOWNLOADS", "go": False, "addr": "Windows Terminal", "note": "ytdlp_go.py missing from Downloads"}
-    wt = shutil.which("wt")
-    if not wt:
-        return {"station": "DOWNLOADS", "go": False, "addr": "Windows Terminal", "note": "wt.exe not found"}
-    try:   # -d: the script saves into its working folder, so it starts in Downloads like Chief runs it
-        subprocess.Popen([wt, "-w", "new", "--title", "DOWNLOADS", "--suppressApplicationTitle", "-d", folder, "cmd", "/k", PY, YTDLP_GO],   # via cmd: wt run on the bare python path fails 0x80070002 (10/30)
-                         cwd=folder, stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, close_fds=True)
+    # 10/31 (Chief: "still getting this error"): wt.exe got the whole command as one quoted name and failed 0x80070002
+    # (10/24, then again after the 10/30 cmd /k patch), so wt is out. A new console opens in Windows Terminal anyway
+    # when it is the default terminal. cmd /k keeps the window up if the script dies; the script saves into its
+    # working folder, so it starts in Downloads like Chief runs it.
+    try:
+        subprocess.Popen(["cmd", "/k", "title", "DOWNLOADS", "&", PY, YTDLP_GO], cwd=folder, creationflags=subprocess.CREATE_NEW_CONSOLE,
+                         stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, close_fds=True)
     except Exception as e:
-        return {"station": "DOWNLOADS", "go": False, "addr": "Windows Terminal", "note": "start failed: %s" % e}
+        return {"station": "DOWNLOADS", "go": False, "addr": "console", "note": "start failed: %s" % e}
     for _ in range(20):
         time.sleep(0.5)
         running = live()
         if running:
-            return {"station": "DOWNLOADS", "go": True, "addr": "Windows Terminal · pid %d" % running[0][0],
-                    "note": "started · %.1f s" % (time.time() - t0)}
-    # 10/24: wt.exe exits 0 but never runs the command (error 0x80070002 in its window); a plain new console works
-    subprocess.Popen([PY, YTDLP_GO], cwd=folder, creationflags=subprocess.CREATE_NEW_CONSOLE,
-                     stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, close_fds=True)
-    for _ in range(10):
-        time.sleep(0.5)
-        running = live()
-        if running:
             return {"station": "DOWNLOADS", "go": True, "addr": "console · pid %d" % running[0][0],
-                    "note": "wt failed, started in a plain console · %.1f s" % (time.time() - t0)}
-    return {"station": "DOWNLOADS", "go": False, "addr": "Windows Terminal", "note": "no python process after wt and console tries"}
+                    "note": "started · %.1f s" % (time.time() - t0)}
+    return {"station": "DOWNLOADS", "go": False, "addr": "console", "note": "no python process after 10 s"}
 
 
 def station_nahimic():
@@ -578,7 +570,7 @@ def main():
     if not a.no_stash:
         rows.append(run("STASH", station_stash))
     if not a.no_downloads:
-        rows.append(run("DOWNLOADS", station_downloads))   # BOLO 166: its own Windows Terminal window, never doubled
+        rows.append(run("DOWNLOADS", station_downloads))   # BOLO 166: its own console window, never doubled
     if not a.no_nahimic:
         rows.append(run("NAHIMIC", station_nahimic))   # before JUDY: her mic needs the devices to hold still
     if not a.no_judy:

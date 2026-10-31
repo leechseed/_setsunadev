@@ -300,13 +300,7 @@ func up() { upWith(startLaunch()) }
 
 func upWith(m *model) {
 	p := tea.NewProgram(m, tea.WithAltScreen())
-	if d := time.Until(bootMusicAt); d > 0 {
-		t := time.AfterFunc(d, musicStart)
-		defer t.Stop()
-	} else {
-		musicStart()
-	}
-	defer musicStop()
+	defer musicStop()                // no boot music (Chief 10/31: "remove the bg music"); this only ends the intro's clip if it still plays
 	go func() { p.Send(<-m.done) }() // the launch may already have ended during the intro: the buffered result waits
 	if _, err := p.Run(); err != nil {
 		fmt.Fprintln(os.Stderr, "command up:", err)

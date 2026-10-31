@@ -362,7 +362,7 @@ iframe{flex:1;border:0;width:100%;height:100%;background:var(--bg)}
 #bskip{position:fixed;right:18px;bottom:10px;color:var(--dim)}
 .blink{color:var(--acc);font-weight:600;animation:blink 1.1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
 </style></head><body>
-<div id="boot"><img id="dvd" src="/bounce" alt="" draggable="false"><span id="bstat"></span><span id="bskip">SPACE · skip</span></div>
+<div id="boot"><img id="dvd" src="/bounce" alt="" draggable="false" data-tint=""><span id="bstat"></span><span id="bskip">SPACE · skip</span></div>
 <div class="top"><span><b>&#9670; THE CONSOLE</b>  the Command &middot; Chief</span><span id="clk"></span></div>
 <main>
  <div class="col">
@@ -448,7 +448,7 @@ function bounce(){var el=$('dvd'),tok={},red=matchMedia('(prefers-reduced-motion
   last=now;if(!red){x+=vx*dt;y+=vy*dt}
   if(x<=0){x=0;vx=Math.abs(vx);hx=true}else if(x>=W){x=W;vx=-Math.abs(vx);hx=true}
   if(y<=0){y=0;vy=Math.abs(vy);hy=true}else if(y>=H){y=H;vy=-Math.abs(vy);hy=true}
-  if(!red&&(hx||hy)){hue=(hue+60+Math.random()*120)%360;el.style.filter='hue-rotate('+Math.round(hue)+'deg)';
+  if(!red&&(hx||hy)){if(el.dataset.tint){hue=(hue+60+Math.random()*120)%360;el.style.filter='hue-rotate('+Math.round(hue)+'deg)'}   /* the mark only; a picture keeps its colors */
    if(hx&&hy){$('boot').classList.add('corner');setTimeout(function(){$('boot').classList.remove('corner')},600)}}
   el.style.transform='translate('+Math.round(x)+'px,'+Math.round(y)+'px)';requestAnimationFrame(f)}
  requestAnimationFrame(f)}
@@ -465,10 +465,9 @@ function poll(){if(!booting)return;
   $('bstat').innerHTML=s;
   $('bskip').className=done?'blink':'';$('bskip').textContent=done?'press SPACE to continue':'SPACE · skip';   /* Chief 10/18: the boot holds until Space */
   if(!done)timer=setTimeout(poll,500)}).catch(function(){timer=setTimeout(poll,1500)})}
-function mus(on){try{fetch('/music/'+(on?'start':'stop'),{method:'POST',keepalive:true})}catch(e){}}
-addEventListener('pagehide',function(){if(booting)navigator.sendBeacon('/music/stop')});
-function skip(){if(booting)mus(false);booting=false;clearTimeout(timer);$('boot').classList.add('gone')}
-function boot(replay){booting=true;mus(true);$('boot').classList.remove('gone');bounce();poll()}
+/* no music on the boot (Chief 10/31: "remove the bg music") */
+function skip(){booting=false;clearTimeout(timer);$('boot').classList.add('gone')}
+function boot(replay){booting=true;$('boot').classList.remove('gone');bounce();poll()}
 $('boot').onclick=skip;
 boot(false);
 })();
@@ -494,7 +493,8 @@ class H(http.server.BaseHTTPRequestHandler):
         from urllib.parse import unquote
         path = unquote(self.path.split("?")[0])
         if path == "/":
-            return self._send(200, PAGE, "text/html; charset=utf-8")
+            page = PAGE.replace('data-tint=""', 'data-tint="1"') if bounce_file() == MARK else PAGE
+            return self._send(200, page, "text/html; charset=utf-8")
         if path in ("/favicon.svg", "/favicon.ico") and os.path.isfile(MARK):   # the BoldVenture bunny bandit (Chief 10/18)
             with open(MARK, "rb") as fh:
                 return self._send(200, fh.read(), "image/svg+xml")
