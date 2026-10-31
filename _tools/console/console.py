@@ -121,7 +121,9 @@ def read_glasses():
 
 
 # ---- the hand-off (command glass, 10/19): POST /show bumps seq; the frame polls /show.json and opens the glass ----
-SHOW = {"seq": 0, "id": "", "url": "", "title": ""}   # memory only: a restart forgets the last pick
+SHOW = {"seq": 0, "id": "", "url": "", "title": "", "boot": 0}   # memory only: a restart forgets the last pick
+# boot: bumped by POST /boot (launch.py, when the Console was already up) so the open window replays the bounce;
+# a window that stays open never reloads, so it never saw a launch's boot (Chief 10/31: "doesn't have the bouncing gif")
 SHOW_LOCK = threading.Lock()
 
 
@@ -415,8 +417,9 @@ function clk(){var d=new Date();$('clk').textContent=(d.getMonth()+1)+'/'+d.getD
 function stat(){fetch('/status.json').then(function(r){return r.json()}).then(function(j){$('st').textContent=j.pull}).catch(function(){})}
 function gl(){fetch('/glasses.json').then(function(r){return r.json()}).then(function(j){glasses=j.glasses||[];draw()}).catch(function(){})}
 /* command glass hands over a pick (POST /show bumps seq); a fresh load only records seq, so a reload never replays one */
-var seq=-1;function show(){fetch('/show.json').then(function(r){return r.json()}).then(function(j){
- if(seq>=0&&j.seq!==seq&&j.url){if(booting)skip();if(j.url.charAt(0)==='/')open(j.url,j.title,'glass');else route(j.url,j.title)}seq=j.seq}).catch(function(){})}
+var seq=-1,bootN=-1;function show(){fetch('/show.json').then(function(r){return r.json()}).then(function(j){
+ if(seq>=0&&j.seq!==seq&&j.url){if(booting)skip();if(j.url.charAt(0)==='/')open(j.url,j.title,'glass');else route(j.url,j.title)}seq=j.seq;
+ if(bootN>=0&&j.boot!==bootN&&!booting){$('dvd').src='/bounce?'+j.boot;boot(true)}bootN=j.boot}).catch(function(){})}   /* a new launch: the bounce again */
 var alias={};
 fetch('/panes.json').then(function(r){return r.json()}).then(function(j){panes=j.panes;alias=j.aliases||{};open(panes[0].url,panes[0].title)});
 clk();stat();gl();show();setInterval(clk,15000);setInterval(stat,60000);setInterval(gl,60000);setInterval(show,1500);
@@ -515,7 +518,7 @@ class H(http.server.BaseHTTPRequestHandler):
             return self._send(200, json.dumps({"pull": read_status()}), "application/json; charset=utf-8")
         if path == "/show.json":
             with SHOW_LOCK:
-                s = {"seq": SHOW["seq"], "url": SHOW["url"], "title": SHOW["title"]}
+                s = {"seq": SHOW["seq"], "url": SHOW["url"], "title": SHOW["title"], "boot": SHOW["boot"]}
             return self._send(200, json.dumps(s, ensure_ascii=False), "application/json; charset=utf-8")
         if path.startswith("/local/"):
             f = LOCAL.get(path[7:])
@@ -616,6 +619,10 @@ class H(http.server.BaseHTTPRequestHandler):
             show(gid, url, str(g.get("title") or gid))
             threading.Thread(target=bring, daemon=True).start()
             return self._send(200, json.dumps({"ok": True, "seq": SHOW["seq"], "url": url}), "application/json")
+        if self.path == "/boot":   # replay the bounce in the open window (the launch found the Console already up)
+            with SHOW_LOCK:
+                SHOW["boot"] += 1
+            return self._send(200, json.dumps({"ok": True, "boot": SHOW["boot"]}), "application/json")
         if self.path in ("/music/start", "/music/stop"):
             music(self.path.endswith("start"))
             return self._send(200, "ok", "text/plain")

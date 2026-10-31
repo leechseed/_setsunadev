@@ -131,6 +131,7 @@ func matrixIntro() bool {
 		musicStop()
 		return true // no terminal (a pipe): skip straight to the boot
 	}
+	introPlayed = true
 	if m.skipped {
 		musicStop()
 	} else if st, err := os.Stat(introSoundPath()); err == nil { // let the clip finish; the boot music waits for it
@@ -139,5 +140,9 @@ func matrixIntro() bool {
 	return !m.aborted
 }
 
-// bootMusicAt: when the boot's music may start (after the intro's clip has played out); zero means at once
-var bootMusicAt time.Time
+// bootMusicAt: when the boot's music may start (after the intro's clip has played out); zero means at once.
+// introPlayed: only wake's intro leads into the music; a bare `command up` boots silent.
+var (
+	bootMusicAt time.Time
+	introPlayed bool
+)

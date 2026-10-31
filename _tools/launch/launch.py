@@ -27,6 +27,7 @@ FACES_URL = "http://127.0.0.1:8787/faces"
 DECK_URL = "http://127.0.0.1:8787/traffic"
 VIEW = os.path.join(ROOT, "_tools", "pages", "view.cmd")
 YTDLP_GO = os.path.join(os.path.expanduser("~"), "Downloads", "ytdlp_go.py")   # BOLO 166: Chief's download script; it saves into its working folder
+DOWNLOADS_CMD = os.path.join(ROOT, "_tools", "launch", "downloads.cmd")   # its tab's whole command (wt takes one bare path; no spaces in it)
 STASH_EXE = os.path.join("Q:\\", "fun", ".StashApp", "stash-win.exe")          # BOLO 75: Stash is a station (9/20); shutdown leaves it running
 STASH_CFG = os.path.join("Q:\\", "fun", ".StashApp", "config.yml")
 STASH_URL = "http://127.0.0.1:9999/"
@@ -138,27 +139,32 @@ def station_downloads():
 
     def live():
         return [p for p in procs(r"ytdlp_go\.py") if exe(p[1]).startswith(("python", "py.exe"))]
+    def tab():   # the station's own window, by title; it reads even when the tab runs elevated (its command line does not)
+        sys.path.insert(0, os.path.join(ROOT, "_tools", "console"))
+        from console import find_windows
+        return find_windows("DOWNLOADS")
     running = live()
-    if running:
-        return {"station": "DOWNLOADS", "go": True, "addr": "console · pid %d" % running[0][0], "note": "already running"}
+    if running or tab():
+        return {"station": "DOWNLOADS", "go": True, "addr": "Windows Terminal" + (" · pid %d" % running[0][0] if running else ""),
+                "note": "already running"}
     if not os.path.exists(YTDLP_GO):
         return {"station": "DOWNLOADS", "go": False, "addr": "Windows Terminal", "note": "ytdlp_go.py missing from Downloads"}
-    # 10/31 (Chief: "still getting this error"): wt.exe got the whole command as one quoted name and failed 0x80070002
-    # (10/24, then again after the 10/30 cmd /k patch), so wt is out. A new console opens in Windows Terminal anyway
-    # when it is the default terminal. cmd /k keeps the window up if the script dies; the script saves into its
-    # working folder, so it starts in Downloads like Chief runs it.
+    # 10/31 (Chief: "open up a separate window ... like i have it open now"): its own Windows Terminal window, the
+    # default profile (PowerShell 7 x86), in Downloads. wt.exe folds a command with arguments into one program name
+    # (the 0x80070002 of 10/24-10/31), so the whole command is downloads.cmd, one bare path; tested 10/31 with a stand-in.
+    # When Chief's Terminal is already open as admin, the window opens inside it (admin too, as he runs it).
     try:
-        subprocess.Popen(["cmd", "/k", "title", "DOWNLOADS", "&", PY, YTDLP_GO], cwd=folder, creationflags=subprocess.CREATE_NEW_CONSOLE,
+        subprocess.Popen('wt.exe -w new --title DOWNLOADS --suppressApplicationTitle %s' % DOWNLOADS_CMD, cwd=folder,
                          stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, close_fds=True)
     except Exception as e:
-        return {"station": "DOWNLOADS", "go": False, "addr": "console", "note": "start failed: %s" % e}
+        return {"station": "DOWNLOADS", "go": False, "addr": "Windows Terminal", "note": "start failed: %s" % e}
     for _ in range(20):
         time.sleep(0.5)
-        running = live()
-        if running:
-            return {"station": "DOWNLOADS", "go": True, "addr": "console · pid %d" % running[0][0],
+        if tab():
+            running = live()
+            return {"station": "DOWNLOADS", "go": True, "addr": "Windows Terminal" + (" · pid %d" % running[0][0] if running else ""),
                     "note": "started · %.1f s" % (time.time() - t0)}
-    return {"station": "DOWNLOADS", "go": False, "addr": "console", "note": "no python process after 10 s"}
+    return {"station": "DOWNLOADS", "go": False, "addr": "Windows Terminal", "note": "no DOWNLOADS window after 10 s"}
 
 
 def station_nahimic():
@@ -270,6 +276,11 @@ def station_console():
             else:
                 return {"station": "CONSOLE", "go": False, "addr": url, "note": "no answer after 10 s"}
         if ONE_WINDOW:   # BOLO 153: the one window, snapped to half the screen; a second launch focuses it, never doubles it
+            if was_up:   # 10/31: an open window never reloads, so it is told to replay the boot bounce
+                try:
+                    urllib.request.urlopen(urllib.request.Request(url + "boot", data=b"", method="POST"), timeout=3)
+                except Exception:
+                    pass
             r = subprocess.run([PY, "-X", "utf8", os.path.join(ROOT, "_tools", "console", "console.py"), "--open"], cwd=ROOT,
                                capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=30)
             note = (r.stdout or r.stderr or "").strip().splitlines()[-1:] or ["?"]
