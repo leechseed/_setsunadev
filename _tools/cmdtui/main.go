@@ -376,8 +376,9 @@ func wakeWords(args []string) bool {
 func main() {
 	if self := strings.ToLower(filepath.Base(os.Args[0])); strings.TrimSuffix(self, ".exe") == "wake" {
 		if wakeWords(os.Args[1:]) {
-			early = append([][2]string{{"", "Wake up, Neo..."}, {"", "The Matrix has you..."}, {"", "Follow the white rabbit."}, {"", ""}}, early...)
-			up()
+			if matrixIntro() { // the film's opening on a black screen first (intro.go, Chief 10/31)
+				up()
+			}
 			return
 		}
 		fmt.Println(sOK.Render("Wake up, Neo...") + sDim.Render("  (say: wake up, neo)"))
