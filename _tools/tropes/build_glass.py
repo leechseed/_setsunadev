@@ -299,6 +299,8 @@ h3{margin:18px 0 8px;font-size:11px;letter-spacing:.14em;text-transform:uppercas
 /* the hover layer (CK3): dotted terms open a tip; click pins it; Space locks the open tips; Esc clears; terms nest */
 .t{border-bottom:1px dotted var(--cmd-accm);cursor:help}
 a.t{cursor:pointer}
+nav a.t,a.row.t,.bars a.t{border-bottom-color:transparent}
+a.row.t{border-bottom:1px solid var(--cmd-line)}
 .tip{position:fixed;z-index:50;max-width:360px;background:var(--cmd-panel2);border:1px solid var(--cmd-acc);padding:8px 10px;font-size:12px;line-height:1.45;color:var(--cmd-fg);box-shadow:0 6px 24px rgba(0,0,0,.6)}
 .tip b{color:var(--cmd-acch);display:block;margin-bottom:2px;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
 .tip .q{display:block;margin-top:4px;color:var(--cmd-fg2)}
@@ -348,7 +350,8 @@ function lay(di,li){return DOM[di].layers[li]}
 function code(di,li){var l=lay(di,li);return l.c==="null"?"null":l.c}
 function keysOf(i){var k=D.ky[i],o=[];for(var j=0;j<k.length;j+=2)o.push([k[j],k[j+1]]);return o}
 function domsOf(i){var k=D.ky[i],s={};for(var j=0;j<k.length;j+=2)s[k[j]]=1;return Object.keys(s).map(Number)}
-function kchip(di,li){var l=lay(di,li);return T("l:"+di+"."+li,E(DOM[di].id.slice(0,4)+" "+(l.c==="null"?"null":l.c)),"kc"+(l.c==="null"?" null":""))}
+var SHORT={character:"char",sexuality:"sex",setting:"set",genre:"genre",theme:"theme",texture:"tex",tracking:"track",style:"style"};
+function kchip(di,li){var l=lay(di,li);return T("l:"+di+"."+li,E((SHORT[DOM[di].id]||DOM[di].id)+" "+(l.c==="null"?"null":l.c)),"kc"+(l.c==="null"?" null":""))}
 function cword(c){return T("c:"+c,CONF[c],"cw c"+c)}
 function tipHTML(spec){
  var p=spec.split(":"),k=p[0],v=p.slice(1).join(":");
