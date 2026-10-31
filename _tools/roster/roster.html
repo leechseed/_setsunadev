@@ -34,11 +34,77 @@
   .tip{display:none;position:absolute;left:0;top:calc(100% + 6px);z-index:20;width:min(300px,80vw);padding:8px 10px;background:var(--panel-2);border:1px solid var(--accent);border-radius:4px;font:400 13px/1.45 var(--body);color:var(--ink);box-shadow:0 8px 24px rgba(0,0,0,.5)}
   .t:hover .tip,.t:focus-visible .tip,.t.pin .tip{display:block}
 </style>
-<header class="strip"><h1><b>The</b> Roster</h1><span class="chip">BOLO 139</span><span class="spacer"></span><span class="chip">40 agents on call</span></header>
+<!-- cmd-theme -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<style id="cmd-theme">
+/* The Command theme (BOLO 171, 10/31). One look for every page the launch opens.
+   Source of truth: the Console's tokens (_tools/console/console.py PAGE). Dark only, no toggle (9/11).
+   Orange #FF5A1F on every page, the DARKROOM included (Chief 10/30: the rose pages are IN).
+   theme.py injects this file as <style id="cmd-theme"> at the end of a page's styles, so it wins.
+   Edit the values here, then run:  python _tools/brand/theme.py apply-all                        */
+
+:root{
+  color-scheme:dark;
+  /* the Console's own values */
+  --cmd-bg:#050608; --cmd-hl:#10151b; --cmd-panel:#0a0c0f; --cmd-panel2:#10151b; --cmd-inset:#030405;
+  --cmd-line:#23272b; --cmd-line2:#3a3e40;
+  --cmd-fg:#c6cbc8; --cmd-fg2:#959a97; --cmd-dim:#5f6160; --cmd-white:#ffffff;
+  --cmd-acc:#FF5A1F; --cmd-acch:#FFB08F; --cmd-accm:#be4216; --cmd-accd:#6e280e; --cmd-accsoft:#24110a;
+  --cmd-ok:#4ec96f; --cmd-oksoft:#0f2416; --cmd-am:#e3b341; --cmd-amsoft:#2a210b;
+  --cmd-bad:#e5604d; --cmd-badsoft:#2a120e; --cmd-cyan:#5CC8D0;
+  --cmd-font:"IBM Plex Mono",Consolas,monospace;
+  --cmd-chrome:44px;
+}
+
+/* every page's own token names, pointed at the Console's values */
+:root{
+  /* ground and panels */
+  --bg:var(--cmd-bg)!important; --ground:var(--cmd-bg)!important;
+  --panel:var(--cmd-panel)!important; --panel-2:var(--cmd-panel2)!important; --panel2:var(--cmd-panel2)!important;
+  --pan:var(--cmd-panel)!important; --pan2:var(--cmd-panel2)!important; --inset:var(--cmd-inset)!important;
+  --hl:var(--cmd-hl)!important;
+  /* lines */
+  --line:var(--cmd-line)!important; --line-2:var(--cmd-line2)!important; --line2:var(--cmd-line2)!important; --ln:var(--cmd-line)!important;
+  /* text */
+  --fg:var(--cmd-fg)!important; --ink:var(--cmd-fg)!important; --tx:var(--cmd-fg)!important;
+  --ink-2:var(--cmd-fg2)!important; --ink2:var(--cmd-fg2)!important; --muted:var(--cmd-fg2)!important; --help:var(--cmd-fg2)!important;
+  --ink-3:var(--cmd-dim)!important; --ink3:var(--cmd-dim)!important; --mut:var(--cmd-fg2)!important; --mu:var(--cmd-fg2)!important;
+  --dim:var(--cmd-dim)!important; --faint:var(--cmd-dim)!important;
+  /* the accent */
+  --acc:var(--cmd-acc)!important; --accent:var(--cmd-acc)!important; --ac:var(--cmd-acc)!important; --or:var(--cmd-acc)!important;
+  --amber:var(--cmd-acc)!important; --amber-dim:var(--cmd-accd)!important; --amber-glow:rgba(255,90,31,.30)!important;
+  --accent-ink:var(--cmd-acch)!important; --acch:var(--cmd-acch)!important; --or2:var(--cmd-acch)!important;
+  --link:var(--cmd-acch)!important; --orange:var(--cmd-acch)!important;
+  --accent-soft:var(--cmd-accsoft)!important; --orange-soft:var(--cmd-accsoft)!important;
+  --accd:var(--cmd-accd)!important; --accm:var(--cmd-accm)!important;
+  /* states */
+  --ok:var(--cmd-ok)!important; --good:var(--cmd-ok)!important; --go:var(--cmd-ok)!important; --green:var(--cmd-ok)!important;
+  --good-soft:var(--cmd-oksoft)!important;
+  --am:var(--cmd-am)!important; --warn:var(--cmd-am)!important; --warn-soft:var(--cmd-amsoft)!important; --mark:var(--cmd-amsoft)!important;
+  --bad:var(--cmd-bad)!important; --no:var(--cmd-bad)!important; --bad-soft:var(--cmd-badsoft)!important;
+  --cyan:var(--cmd-cyan)!important;
+  /* one font: the Console's mono */
+  --display:var(--cmd-font)!important; --disp:var(--cmd-font)!important; --body:var(--cmd-font)!important;
+  --mono:var(--cmd-font)!important; --tile:var(--cmd-font)!important; --cond:var(--cmd-font)!important;
+  /* no dot grid, flat shadows */
+  --grid:transparent!important; --shadow:none!important;
+}
+
+/* base layer */
+html,body{background-color:var(--cmd-bg)!important;color:var(--cmd-fg)}
+body{background-image:none!important;-webkit-font-smoothing:auto}
+body,body *:not(svg):not(svg *){font-family:var(--cmd-font)!important}
+::selection{background:var(--cmd-acc);color:var(--cmd-bg)}
+:focus-visible{outline-color:var(--cmd-acc)}
+input,select,textarea{accent-color:var(--cmd-acc);caret-color:var(--cmd-acc)}
+*{scrollbar-color:var(--cmd-line2) transparent}
+</style>
+<!-- /cmd-theme -->
+<header class="strip"><h1><b>The</b> Roster</h1><span class="chip">BOLO 139</span><span class="spacer"></span><span class="chip">48 agents on call</span></header>
 <main class="wrap">
   <p class="note">Who's on call. The <button class="t" type="button">seats<span class="tip">The formation (BOLO 54): one main session, specialists on separate inputs, a script at the fan-in. Seats are roles; agents fill them.</span></button> run every job; the agents below are specialists the CDR calls by name. Say "call the python-reviewer on pull_queue.py" and it goes. Each one works in its own space, reports back, and never <button class="t" type="button">grades another agent<span class="tip">The doctrine: a script reviews at the fan-in, never a checker agent.</span></button>. Files live in <code>.claude/agents/</code>.</p>
   <div class="seats"><div class="seat"><b>CDR</b><span class="role">main session</span><span class="m">Opus (Fable on design days)</span><p>Runs the session, decides who gets called, writes the rulings. Never hands off judgment.</p></div><div class="seat"><b>MS</b><span class="role">Mission Specialist</span><span class="m">Sonnet</span><p>The writer: drafts, rewrites, reviews code. Gets one brief, one set of inputs.</p></div><div class="seat"><b>PS</b><span class="role">Payload Specialist</span><span class="m">Haiku</span><p>The fetcher: pulls, extracts, counts. Cheap and fast; judges by reading.</p></div><div class="seat"><b>RANGE</b><span class="role">the reviewer</span><span class="m">a script, not an agent</span><p>Checks the specialists&#x27; output at the fan-in. Never a checker agent.</p></div></div>
-  <section><h2>Code care <small>Our Python tools: find bugs, quiet failures, holes and slow spots before they bite.</small></h2><div class="tw"><table><thead><tr><th>Agent</th><th>Model</th><th>Touches</th><th>Job</th></tr></thead><tbody><tr><td><button class="t" type="button"><code>python-reviewer</code><span class="tip"><b>Voice:</b> terse, severity first, file:line on every claim<br><b>Weakness:</b> reads only the diff and the files named; misses behavior that only shows at run time<br><b>Last jobs:</b> no recorded jobs yet; no recorded jobs yet; no recorded jobs yet<br><b>Cost:</b> Sonnet seat; a small script costs a few thousand tokens, a long one more (not yet measured)<br></span></button></td><td><span class="m sonnet">sonnet</span></td><td><span class="rw r">read-only</span></td><td>Reads a Python script and points out bugs and messy spots.</td></tr><tr><td><code>security-reviewer</code></td><td><span class="m sonnet">sonnet</span></td><td><span class="rw r">read-only</span></td><td>Checks code for leaked keys, unsafe inputs and open doors.</td></tr><tr><td><code>doc-updater</code></td><td><span class="m haiku">haiku</span></td><td><span class="rw w">writes files</span></td><td>Brings READMEs and docs back in step with the code.</td></tr></tbody></table></div></section><section><h2>Plans and design <small>Before a big build: the plan and the shape of the system.</small></h2><div class="tw"><table><thead><tr><th>Agent</th><th>Model</th><th>Touches</th><th>Job</th></tr></thead><tbody><tr><td><code>architect</code></td><td><span class="m opus">opus</span></td><td><span class="rw r">read-only</span></td><td>Big-picture system design for a new build.</td></tr></tbody></table></div></section><section><h2>The public repo and the product <small>The repo is public and BOLO 138 sells a starter kit: keep secrets out, package it, sell it.</small></h2><div class="tw"><table><thead><tr><th>Agent</th><th>Model</th><th>Touches</th><th>Job</th></tr></thead><tbody><tr><td><code>opensource-sanitizer</code></td><td><span class="m sonnet">sonnet</span></td><td><span class="rw r">read-only</span></td><td>Scans the repo for secrets and private detail before anything goes public.</td></tr></tbody></table></div></section><section><h2>Operations <small>Running the Command: messages, long runs, the network, the harness itself.</small></h2><div class="tw"><table><thead><tr><th>Agent</th><th>Model</th><th>Touches</th><th>Job</th></tr></thead><tbody><tr><td><code>loop-operator</code></td><td><span class="m sonnet">sonnet</span></td><td><span class="rw r">read-only</span></td><td>Watches long runs like the pull waves and flags a stall.</td></tr><tr><td><code>harness-optimizer</code></td><td><span class="m sonnet">sonnet</span></td><td><span class="rw r">read-only</span></td><td>Tunes the Claude Code setup itself for reliability and cost.</td></tr></tbody></table></div></section><section><h2>Unsorted</h2><p><code>applying-ruled-calls</code>, <code>bench-engineer</code>, <code>bench-money</code>, <code>bench-operator</code>, <code>bench-skeptic</code>, <code>bench-storyteller</code>, <code>checking-doc-facts</code>, <code>collect-lead</code>, <code>deconstructing-game-system</code>, <code>distilling-book</code>, <code>drafting-dope-sheet</code>, <code>drafting-index-blocks</code>, <code>drafting-rack-block</code>, <code>drafting-session-note</code>, <code>drafting-watch-block</code>, <code>dva</code>, <code>extracting-interfaces</code>, <code>extracting-link-batch</code>, <code>judging-intake-repo</code>, <code>keying-zotero-batch</code>, <button class="t" type="button"><code>order-parser</code><span class="tip"><b>Voice:</b> one clean order line with a confidence word<br><b>Weakness:</b> guesses on short garbles with no BOLO title to match<br><b>Last jobs:</b> no recorded jobs yet; no recorded jobs yet; no recorded jobs yet<br><b>Cost:</b> Haiku seat; the cheapest call on the Roster (not yet measured)<br></span></button>, <code>root-cause</code>, <code>scan-filer</code>, <code>scan-reader</code>, <code>sci-biomed</code>, <code>sci-forecast</code>, <code>sci-literature</code>, <code>sci-physics</code>, <code>sci-plausibility</code>, <code>skill-builder</code>, <code>skill-optimizer</code>, <code>writing-core-doc</code>, <code>writing-harvest-register</code></p></section>
+  <section><h2>Code care <small>Our Python tools: find bugs, quiet failures, holes and slow spots before they bite.</small></h2><div class="tw"><table><thead><tr><th>Agent</th><th>Model</th><th>Touches</th><th>Job</th></tr></thead><tbody><tr><td><button class="t" type="button"><code>python-reviewer</code><span class="tip"><b>Voice:</b> terse, severity first, file:line on every claim<br><b>Weakness:</b> reads only the diff and the files named; misses behavior that only shows at run time<br><b>Last jobs:</b> no recorded jobs yet; no recorded jobs yet; no recorded jobs yet<br><b>Cost:</b> Sonnet seat; a small script costs a few thousand tokens, a long one more (not yet measured)<br></span></button></td><td><span class="m sonnet">sonnet</span></td><td><span class="rw r">read-only</span></td><td>Reads a Python script and points out bugs and messy spots.</td></tr><tr><td><code>security-reviewer</code></td><td><span class="m sonnet">sonnet</span></td><td><span class="rw r">read-only</span></td><td>Checks code for leaked keys, unsafe inputs and open doors.</td></tr><tr><td><code>doc-updater</code></td><td><span class="m haiku">haiku</span></td><td><span class="rw w">writes files</span></td><td>Brings READMEs and docs back in step with the code.</td></tr></tbody></table></div></section><section><h2>Plans and design <small>Before a big build: the plan and the shape of the system.</small></h2><div class="tw"><table><thead><tr><th>Agent</th><th>Model</th><th>Touches</th><th>Job</th></tr></thead><tbody><tr><td><code>architect</code></td><td><span class="m opus">opus</span></td><td><span class="rw r">read-only</span></td><td>Big-picture system design for a new build.</td></tr></tbody></table></div></section><section><h2>The public repo and the product <small>The repo is public and BOLO 138 sells a starter kit: keep secrets out, package it, sell it.</small></h2><div class="tw"><table><thead><tr><th>Agent</th><th>Model</th><th>Touches</th><th>Job</th></tr></thead><tbody><tr><td><code>opensource-sanitizer</code></td><td><span class="m sonnet">sonnet</span></td><td><span class="rw r">read-only</span></td><td>Scans the repo for secrets and private detail before anything goes public.</td></tr></tbody></table></div></section><section><h2>Operations <small>Running the Command: messages, long runs, the network, the harness itself.</small></h2><div class="tw"><table><thead><tr><th>Agent</th><th>Model</th><th>Touches</th><th>Job</th></tr></thead><tbody><tr><td><code>loop-operator</code></td><td><span class="m sonnet">sonnet</span></td><td><span class="rw r">read-only</span></td><td>Watches long runs like the pull waves and flags a stall.</td></tr><tr><td><code>harness-optimizer</code></td><td><span class="m sonnet">sonnet</span></td><td><span class="rw r">read-only</span></td><td>Tunes the Claude Code setup itself for reliability and cost.</td></tr></tbody></table></div></section><section><h2>Unsorted</h2><p><code>applying-ruled-calls</code>, <code>bench-engineer</code>, <code>bench-money</code>, <code>bench-operator</code>, <code>bench-skeptic</code>, <code>bench-storyteller</code>, <code>checking-doc-facts</code>, <code>collect-lead</code>, <code>deconstructing-game-system</code>, <code>distilling-book</code>, <code>drafting-dope-sheet</code>, <code>drafting-index-blocks</code>, <code>drafting-rack-block</code>, <code>drafting-session-note</code>, <code>drafting-watch-block</code>, <code>dva</code>, <code>editing-character</code>, <code>editing-continuity</code>, <code>editing-dialogue</code>, <code>editing-line</code>, <code>editing-production</code>, <code>editing-structure</code>, <code>editing-theme-tone</code>, <code>extracting-interfaces</code>, <code>extracting-link-batch</code>, <code>judging-intake-repo</code>, <code>keying-zotero-batch</code>, <button class="t" type="button"><code>order-parser</code><span class="tip"><b>Voice:</b> one clean order line with a confidence word<br><b>Weakness:</b> guesses on short garbles with no BOLO title to match<br><b>Last jobs:</b> no recorded jobs yet; no recorded jobs yet; no recorded jobs yet<br><b>Cost:</b> Haiku seat; the cheapest call on the Roster (not yet measured)<br></span></button>, <code>reading-cold</code>, <code>root-cause</code>, <code>scan-filer</code>, <code>scan-reader</code>, <code>sci-biomed</code>, <code>sci-forecast</code>, <code>sci-literature</code>, <code>sci-physics</code>, <code>sci-plausibility</code>, <code>skill-builder</code>, <code>skill-optimizer</code>, <code>writing-core-doc</code>, <code>writing-harvest-register</code></p></section>
 </main>
 <script>
   document.addEventListener("click", (ev) => { const t = ev.target.closest(".t"); document.querySelectorAll(".t.pin").forEach((x) => { if (x !== t) x.classList.remove("pin"); }); if (t) t.classList.toggle("pin"); });

@@ -1,0 +1,19 @@
+/* DARKROOM: the 44px strip, and the rose tints that sit outside the tokens moved to the Console's ground */
+#top{height:var(--cmd-chrome);background:var(--cmd-bg);border-bottom-color:var(--cmd-line2)}
+#shell{height:calc(100% - var(--cmd-chrome) - 30px)}
+#top .id{font-size:18px;font-weight:600;letter-spacing:.12em}
+#top .id b{text-shadow:none}
+#top .over{display:none}
+#top > div:first-child{position:relative}
+#top > div:first-child:hover .over{display:block;position:absolute;top:100%;left:0;z-index:70;white-space:nowrap;
+  background:var(--cmd-panel);border:1px solid var(--cmd-line2);padding:4px 8px;font-size:10px}
+#modules button{font-size:12px;letter-spacing:.12em;padding:5px 12px}
+#modules button.on{text-shadow:none}
+.fgroup .fopt:hover,.more:hover{background:var(--cmd-hl)}
+.fgroup .fopt.on{background:linear-gradient(90deg,rgba(255,90,31,.08),transparent 70%)}
+.tgrow.act,.capv.on{background:linear-gradient(90deg,rgba(255,90,31,.10),transparent 70%)}
+.crow,#help td{border-bottom-color:var(--cmd-line)}
+#loupe{background:rgba(5,6,8,.97)}
+#help{background:rgba(5,6,8,.96)}
+#tgLeft,#capGridWrap{background:rgba(5,6,8,.6)}
+::-webkit-scrollbar-thumb{background:var(--cmd-line2)}

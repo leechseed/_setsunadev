@@ -1,0 +1,61 @@
+/* The Command theme (BOLO 171, 10/31). One look for every page the launch opens.
+   Source of truth: the Console's tokens (_tools/console/console.py PAGE). Dark only, no toggle (9/11).
+   Orange #FF5A1F on every page, the DARKROOM included (Chief 10/30: the rose pages are IN).
+   theme.py injects this file as <style id="cmd-theme"> at the end of a page's styles, so it wins.
+   Edit the values here, then run:  python _tools/brand/theme.py apply-all                        */
+
+:root{
+  color-scheme:dark;
+  /* the Console's own values */
+  --cmd-bg:#050608; --cmd-hl:#10151b; --cmd-panel:#0a0c0f; --cmd-panel2:#10151b; --cmd-inset:#030405;
+  --cmd-line:#23272b; --cmd-line2:#3a3e40;
+  --cmd-fg:#c6cbc8; --cmd-fg2:#959a97; --cmd-dim:#5f6160; --cmd-white:#ffffff;
+  --cmd-acc:#FF5A1F; --cmd-acch:#FFB08F; --cmd-accm:#be4216; --cmd-accd:#6e280e; --cmd-accsoft:#24110a;
+  --cmd-ok:#4ec96f; --cmd-oksoft:#0f2416; --cmd-am:#e3b341; --cmd-amsoft:#2a210b;
+  --cmd-bad:#e5604d; --cmd-badsoft:#2a120e; --cmd-cyan:#5CC8D0;
+  --cmd-font:"IBM Plex Mono",Consolas,monospace;
+  --cmd-chrome:44px;
+}
+
+/* every page's own token names, pointed at the Console's values */
+:root{
+  /* ground and panels */
+  --bg:var(--cmd-bg)!important; --ground:var(--cmd-bg)!important;
+  --panel:var(--cmd-panel)!important; --panel-2:var(--cmd-panel2)!important; --panel2:var(--cmd-panel2)!important;
+  --pan:var(--cmd-panel)!important; --pan2:var(--cmd-panel2)!important; --inset:var(--cmd-inset)!important;
+  --hl:var(--cmd-hl)!important;
+  /* lines */
+  --line:var(--cmd-line)!important; --line-2:var(--cmd-line2)!important; --line2:var(--cmd-line2)!important; --ln:var(--cmd-line)!important;
+  /* text */
+  --fg:var(--cmd-fg)!important; --ink:var(--cmd-fg)!important; --tx:var(--cmd-fg)!important;
+  --ink-2:var(--cmd-fg2)!important; --ink2:var(--cmd-fg2)!important; --muted:var(--cmd-fg2)!important; --help:var(--cmd-fg2)!important;
+  --ink-3:var(--cmd-dim)!important; --ink3:var(--cmd-dim)!important; --mut:var(--cmd-fg2)!important; --mu:var(--cmd-fg2)!important;
+  --dim:var(--cmd-dim)!important; --faint:var(--cmd-dim)!important;
+  /* the accent */
+  --acc:var(--cmd-acc)!important; --accent:var(--cmd-acc)!important; --ac:var(--cmd-acc)!important; --or:var(--cmd-acc)!important;
+  --amber:var(--cmd-acc)!important; --amber-dim:var(--cmd-accd)!important; --amber-glow:rgba(255,90,31,.30)!important;
+  --accent-ink:var(--cmd-acch)!important; --acch:var(--cmd-acch)!important; --or2:var(--cmd-acch)!important;
+  --link:var(--cmd-acch)!important; --orange:var(--cmd-acch)!important;
+  --accent-soft:var(--cmd-accsoft)!important; --orange-soft:var(--cmd-accsoft)!important;
+  --accd:var(--cmd-accd)!important; --accm:var(--cmd-accm)!important;
+  /* states */
+  --ok:var(--cmd-ok)!important; --good:var(--cmd-ok)!important; --go:var(--cmd-ok)!important; --green:var(--cmd-ok)!important;
+  --good-soft:var(--cmd-oksoft)!important;
+  --am:var(--cmd-am)!important; --warn:var(--cmd-am)!important; --warn-soft:var(--cmd-amsoft)!important; --mark:var(--cmd-amsoft)!important;
+  --bad:var(--cmd-bad)!important; --no:var(--cmd-bad)!important; --bad-soft:var(--cmd-badsoft)!important;
+  --cyan:var(--cmd-cyan)!important;
+  /* one font: the Console's mono */
+  --display:var(--cmd-font)!important; --disp:var(--cmd-font)!important; --body:var(--cmd-font)!important;
+  --mono:var(--cmd-font)!important; --tile:var(--cmd-font)!important; --cond:var(--cmd-font)!important;
+  /* no dot grid, flat shadows */
+  --grid:transparent!important; --shadow:none!important;
+}
+
+/* base layer */
+html,body{background-color:var(--cmd-bg)!important;color:var(--cmd-fg)}
+body{background-image:none!important;-webkit-font-smoothing:auto}
+body,body *:not(svg):not(svg *){font-family:var(--cmd-font)!important}
+::selection{background:var(--cmd-acc);color:var(--cmd-bg)}
+:focus-visible{outline-color:var(--cmd-acc)}
+input,select,textarea{accent-color:var(--cmd-acc);caret-color:var(--cmd-acc)}
+*{scrollbar-color:var(--cmd-line2) transparent}

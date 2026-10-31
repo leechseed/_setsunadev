@@ -1,0 +1,11 @@
+/* Stash deck: title, light and nav on one 44px strip; the sub-line shows on hover of the title */
+.wrap{padding-top:0}
+header{min-height:var(--cmd-chrome);align-items:center;flex-wrap:nowrap;gap:16px;padding:0;margin-bottom:16px;border-bottom-color:var(--cmd-line2)}
+header > div:first-child{position:relative;flex:none}
+h1{font-size:18px;font-weight:600;letter-spacing:.08em}
+h1 i{width:9px;height:9px;transform:translateY(-1px)}
+.sub{display:none}
+header > div:first-child:hover .sub{display:block;position:absolute;top:100%;left:0;z-index:30;white-space:nowrap;
+  background:var(--cmd-panel);border:1px solid var(--cmd-line2);padding:4px 8px}
+.nav{flex-wrap:nowrap;overflow-x:auto;gap:6px}
+.nav a,button.b{padding:5px 10px;font-size:11px;white-space:nowrap}

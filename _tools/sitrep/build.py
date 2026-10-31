@@ -17,6 +17,16 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
 BOARDS = os.path.join(HERE, "boards")
 
+
+def _theme(h, page=None):   # BOLO 171: the one theme for the launch pages (_tools/brand/theme.py); never fatal
+    try:
+        import importlib.util as _u
+        _s = _u.spec_from_file_location("cmd_theme", os.path.join(ROOT, "_tools", "brand", "theme.py"))
+        _m = _u.module_from_spec(_s); _s.loader.exec_module(_m)
+        return _m.apply(h, page)
+    except Exception:
+        return h
+
 def load(p):
     with io.open(p, encoding="utf-8") as f:
         return f.read()
@@ -53,6 +63,7 @@ def main():
     tpl = load(os.path.join(HERE, "template.html"))
     assert tpl.count("/*__DATA__*/null") == 1
     frag = tpl.replace("/*__DATA__*/null", data)
+    frag = _theme(frag, "sitrep")
 
     full = ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
             '<meta name="viewport" content="width=device-width,initial-scale=1">\n</head>\n<body>\n'

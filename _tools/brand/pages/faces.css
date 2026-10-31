@@ -1,0 +1,7 @@
+/* face deck: the profile toolbar was sized for Barlow Condensed; scaled so it keeps one line in mono */
+.profiles{gap:8px}
+.profiles #profile{font-size:14px}
+.profiles .pbtn{font-size:12px;padding:5px 9px}
+.profiles select,.profiles input{font-size:12px;padding:4px 6px}
+.profiles .lbl,.profiles .att label{font-size:10.5px}
+.bar h2{font-size:17px}

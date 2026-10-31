@@ -1,0 +1,13 @@
+/* sit rep: sizes set for Barlow Condensed, scaled for the wider mono so rail titles and cards keep one line */
+body{font-size:15px}
+.ol-row .name{font-size:14px;letter-spacing:0}
+.rail h4{font-size:15px}
+p.plain,.lev p{font-size:16px}
+.item .text{font-size:15px}
+.item .n{font-size:20px}
+.bar-row .rk{font-size:18px}
+.bar-row .pj,.soi .g{font-size:14px}
+.dec h3{font-size:19px}
+.dec .n{font-size:32px}
+.soi .w,.gent .gw .t,.gl-detail h5{font-size:17px}
+.gsearch{font-size:14px}

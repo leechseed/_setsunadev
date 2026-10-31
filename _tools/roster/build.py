@@ -13,6 +13,16 @@ import re
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 OUT = os.path.join(os.path.dirname(__file__), "roster.html")
 
+
+def _theme(h, page=None):   # BOLO 171: the one theme for the launch pages (_tools/brand/theme.py); never fatal
+    try:
+        import importlib.util as _u
+        _s = _u.spec_from_file_location("cmd_theme", os.path.join(ROOT, "_tools", "brand", "theme.py"))
+        _m = _u.module_from_spec(_s); _s.loader.exec_module(_m)
+        return _m.apply(h, page)
+    except Exception:
+        return h
+
 SEATS = [
     ("CDR", "main session", "Opus (Fable on design days)", "Runs the session, decides who gets called, writes the rulings. Never hands off judgment."),
     ("MS", "Mission Specialist", "Sonnet", "The writer: drafts, rewrites, reviews code. Gets one brief, one set of inputs."),
@@ -118,6 +128,7 @@ def build():
     if extra:
         groups.append('<section><h2>Unsorted</h2><p>' + ", ".join(tip(n, A[n]["profile"]) for n in extra) + "</p></section>")
     page = PAGE.replace("{{SEATS}}", seats).replace("{{GROUPS}}", "".join(groups)).replace("{{N}}", str(len(A)))
+    page = _theme(page, "roster")
     open(OUT, "w", encoding="utf-8", newline="\n").write(page)
     return OUT
 

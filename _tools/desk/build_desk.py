@@ -14,6 +14,16 @@ import io, os, re, sys, json, html, datetime as dt, subprocess
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 OUT = os.path.join(ROOT, "_PRIVATE", "reference", "desk", "command-desk.html")
+
+
+def _theme(h, page=None):   # BOLO 171: the one theme for the launch pages (_tools/brand/theme.py); never fatal
+    try:
+        import importlib.util as _u
+        _s = _u.spec_from_file_location("cmd_theme", os.path.join(ROOT, "_tools", "brand", "theme.py"))
+        _m = _u.module_from_spec(_s); _s.loader.exec_module(_m)
+        return _m.apply(h, page)
+    except Exception:
+        return h
 TE = os.path.join(ROOT, "_PRIVATE", "taxonomy_engine")
 NEXT = os.path.join(ROOT, "_tools", "launch", "next.json")
 PAGES = os.path.join(ROOT, "_tools", "pages", "pages.json")
@@ -343,6 +353,7 @@ def main():
 </body>
 </html>
 """ % (CSS, t12(now), E(meta), stn, wv, cl, sy, bd, JS)
+    page = _theme(page, "desk")
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     io.open(OUT, "w", encoding="utf-8", newline="\n").write(page)
     print("desk built: %d bytes -> %s" % (len(page.encode("utf-8")), OUT))

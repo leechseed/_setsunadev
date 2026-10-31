@@ -16,6 +16,16 @@ from datetime import datetime, timezone
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 PROJECTS = os.path.join(os.path.expanduser("~"), ".claude", "projects")
+
+
+def _theme(h, page=None):   # BOLO 171: the one theme for the launch pages (_tools/brand/theme.py); never fatal
+    try:
+        import importlib.util as _u
+        _s = _u.spec_from_file_location("cmd_theme", os.path.join(ROOT, "_tools", "brand", "theme.py"))
+        _m = _u.module_from_spec(_s); _s.loader.exec_module(_m)
+        return _m.apply(h, page)
+    except Exception:
+        return h
 OUTDIR = os.path.join(ROOT, "_PRIVATE", "reference", "armory")
 BUILTIN_AGENTS = {"general-purpose", "Explore", "Plan", "claude-code-guide", "statusline-setup", "claude", "fork"}
 
@@ -392,6 +402,7 @@ def build(data):
         "T_DENIED": term("denied", "denied"),
     }.items():
         page = page.replace("{{" + k + "}}", v)
+    page = _theme(page, "armory")
     out = os.path.join(OUTDIR, "armory.html")
     with open(out, "w", encoding="utf-8", newline="\n") as f:
         f.write(page)

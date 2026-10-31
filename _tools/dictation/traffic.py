@@ -397,6 +397,19 @@ poll();setInterval(poll,2000);
 </script></body></html>
 '''
 
+
+def _theme(h, page=None):   # BOLO 171: the one theme for the launch pages (_tools/brand/theme.py); never fatal
+    try:
+        import importlib.util as _u
+        _s = _u.spec_from_file_location("cmd_theme", os.path.join(ROOT, "_tools", "brand", "theme.py"))
+        _m = _u.module_from_spec(_s); _s.loader.exec_module(_m)
+        return _m.apply(h, page)
+    except Exception:
+        return h
+
+
+PAGE = _theme(PAGE, "traffic")
+
 # the tab icon: JUDY's over-the-shoulder action silhouette (Chief, 10/17, v3; was the BoldVenture mark from 10/6), inlined so the page needs no extra route
 try:
     import base64
