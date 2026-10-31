@@ -12,6 +12,9 @@ R = Path(__file__).parent
 D = R / "data" / "domains"
 idx = json.loads((D / "index.json").read_text(encoding="utf-8"))
 defs = json.loads((D / "defs.json").read_text(encoding="utf-8")) if (D / "defs.json").exists() else {}  # first sentences for index lines with no def
+# 10/31: the plot pull's index (BOLO 77) carries index defs for some tropes the domain pull listed bare
+plot_idx = json.loads((R / "data" / "index.json").read_text(encoding="utf-8"))
+STYLE_RENUMBER = {"06.1": "07.1", "06.3": "07.3"}  # BOLO 103 renumber (10/03): 06 Style became 07; the batch files keep the old code
 links = {}
 for l in (D / "tropes.jsonl").read_text(encoding="utf-8").splitlines():
     if l.strip():
@@ -21,13 +24,14 @@ for f in sorted(glob.glob(str(R.parent / "bolostatus/work/89/keys.batch*.json"))
     for r in json.loads(Path(f).read_text(encoding="utf-8")):
         k = keys.setdefault(r["slug"], {"keys": {}, "conf": r.get("conf")})
         k["keys"].update(r.get("keys", {}))  # theme batches (batchT*) add a key, never replace
-        if "batchR" in f or "batchAR" in f or "batchBR" in f: k["conf"] = r.get("conf")  # the re-key read the real definition: its confidence replaces the name-only one
+        if "style" in k["keys"]: k["keys"]["style"] = STYLE_RENUMBER.get(k["keys"]["style"], k["keys"]["style"])
+        if "batchR" in f or "batchAR" in f or "batchBR" in f: k["conf"] = r.get("conf")  # batchRR* (10/31 v0.6.0 re-key) matches "batchR" too  # the re-key read the real definition: its confidence replaces the name-only one
         elif k["conf"] != "low" and r.get("conf") == "low": k["conf"] = "low"
 reg = {}
 for s, v in idx.items():
     if not v.get("domains"): continue
     k = keys.get(s, {})
-    reg[s] = {"name": v["name"], "def": v["def"] or defs.get(s, ""), "domains": v["domains"], "keys": k.get("keys", {}),
+    reg[s] = {"name": v["name"], "def": v["def"] or defs.get(s, "") or plot_idx.get(s, {}).get("def", ""), "domains": v["domains"], "keys": k.get("keys", {}),
               "conf": k.get("conf"), "links": links.get(s, [])}
 (D / "register.json").write_text(json.dumps(reg, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 ORDER = {"character": [f"L{i}" for i in range(1, 13)], "sexuality": [f"L{i}" for i in range(1, 13)],

@@ -1232,5 +1232,12 @@
   "k": "item",
   "d": "EUROPATCH: one model for building complexity (modules, jacks, cables, a seed that rolls the patch) and the patch bay to wire it. Captured 10/31.",
   "w": "BOLO.md #173 · DOPE SHEET 173"
+ },
+ "europatch": {
+  "t": "europatch",
+  "k": "noun",
+  "st": "provisional",
+  "d": "The model: modules, jacks and cables; set the dials, the seed rolls it; say \"europatch it\" to build a system this way. Name provisional, ruled 10/31 ([[bolo173|BOLO 173]]).",
+  "w": "ssot_00_europatch.md · BOLO 173"
  }
 }
