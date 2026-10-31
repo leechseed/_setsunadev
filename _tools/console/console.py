@@ -3,7 +3,7 @@
 The boot sequence plays inside it, then the workspace: a rail of panes, a rail of the recent glasses, one main pane.
 Everything wears the boot screen's look. The window snaps to the right half of the screen, top to taskbar.
 Serves 127.0.0.1:8795 only.
-  /  the frame · /panes.json · /glasses.json · /boot.json · /local/<name> (whitelist) · /glass/<id>/<file>
+  /  the frame · /panes.json · /glasses.json · /boot.json · /desk.json · /local/<name> (whitelist) · /glass/<id>/<file>
   /status.json · POST /cmd -> cmd.log · POST /show + /show.json (command glass hands the frame a glass)
 Usage: python console.py              serve
        python console.py --open       open the window (or focus the open one) and snap it to the right half
@@ -118,6 +118,26 @@ def read_glasses():
             return json.load(f).get("glasses") or []
     except Exception:
         return []
+
+
+# ---- the desk's live data (BOLO 141, 10/31): the desk pane polls /desk.json every 60 s; build_desk.py --json, cached 30 s ----
+DESK = os.path.join(ROOT, "_tools", "desk", "build_desk.py")
+DESK_CACHE = {"at": 0.0, "body": None}
+DESK_LOCK = threading.Lock()   # one build at a time; a second poll waits and takes the fresh copy
+
+
+def desk_json():
+    with DESK_LOCK:
+        if DESK_CACHE["body"] is None or time.time() - DESK_CACHE["at"] > 30:
+            try:
+                r = subprocess.run([sys.executable, "-X", "utf8", DESK, "--json"], capture_output=True, timeout=30,
+                                   cwd=ROOT, stdin=subprocess.DEVNULL)
+                json.loads(r.stdout.decode("utf-8"))   # only good JSON replaces the cache
+                DESK_CACHE.update(at=time.time(), body=r.stdout)
+            except Exception:
+                if DESK_CACHE["body"] is None:
+                    return None
+        return DESK_CACHE["body"]
 
 
 # ---- the hand-off (command glass, 10/19): POST /show bumps seq; the frame polls /show.json and opens the glass ----
@@ -510,6 +530,11 @@ class H(http.server.BaseHTTPRequestHandler):
             return self._send(200, json.dumps({"panes": PANES, "aliases": aliases()}), "application/json; charset=utf-8")
         if path == "/glasses.json":
             return self._send(200, json.dumps({"glasses": read_glasses()}, ensure_ascii=False), "application/json; charset=utf-8")
+        if path == "/desk.json":
+            body = desk_json()
+            if body is None:
+                return self._send(503, '{"error":"build_desk.py --json failed"}', "application/json; charset=utf-8")
+            return self._send(200, body, "application/json; charset=utf-8")
         if path == "/boot.json":
             b = read_boot()
             b["fetch"] = fetch_info()

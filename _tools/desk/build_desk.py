@@ -102,6 +102,9 @@ def ping(url, timeout=1.0):
 def note_clean(s):
     """a launch note for the desk: drop the pull report's "on <board>" bits, then the private guard"""
     s = re.sub(r"(?:·\s*)?\bon [^·;)]+", "", s or "")
+    s = re.sub(r"https?://127\.0\.0\.1:\d+/\S*\s*", "", s).strip()   # the port line already shows it
+    if s.startswith("(") and s.endswith(")"):
+        s = s[1:-1]
     return guard(plain(s, 220))
 
 
@@ -195,13 +198,14 @@ MARK = re.compile(r"(✅|🟢|🟡|🟠|🔴|⏸️?|➡️|⬜|⬛|⛔|🔵|�
 DONE_WORD = re.compile(r"^\W*(done|delivered|closed|folded)\b", re.I)
 
 
-def bolo_state(status, in_done):
+def bolo_state(status):
     """the status cell is a history, oldest first: its LAST mark is the row's state now.
-    Done = the Done section, or a last ✅ that says DONE / DELIVERED / CLOSED / FOLDED (a last ✅ LIVE BOLO is live)."""
+    Done = a last ✅ that says DONE / DELIVERED / CLOSED / FOLDED (a last ✅ LIVE BOLO is live). The "## Done"
+    heading is not used: new rows get appended at the file's end, under it (167-172 on 10/31), while still open."""
     ms = list(MARK.finditer(status))
     last = ms[-1].group(1) if ms else ""
     tail = plain(status[ms[-1].end():ms[-1].end() + 40]) if ms else ""
-    if in_done or (last == "✅" and DONE_WORD.search(tail)):
+    if last == "✅" and DONE_WORD.search(tail):
         return "done"
     if last == "🔴":
         return "red"
@@ -222,17 +226,14 @@ def short_title(cell):
 
 
 def bolo():
-    rows, sec = [], ""
+    rows = []
     for ln in rd(BOLO).splitlines():
-        if ln.startswith("## "):
-            sec = ln[3:]
-            continue
         m = re.match(r"^\| (\d+) \|", ln)
         if not m:
             continue
         cells = [c.strip() for c in ln.strip().strip("|").split("|")]
         rows.append({"n": int(m.group(1)), "title": short_title(cells[1] if len(cells) > 1 else ""),
-                     "state": bolo_state(cells[-1], sec.startswith("Done"))})
+                     "state": bolo_state(cells[-1])})
     if not rows:
         return {"ok": False, "error": "no BOLO rows found"}
     by = {}
@@ -333,11 +334,12 @@ nav a:hover,nav a:focus-visible,nav a.on{color:var(--cmd-acc);border-left-color:
 main{padding:14px 16px 40px;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));align-content:start;min-width:0}
 section{background:var(--cmd-panel);border:1px solid var(--cmd-line);padding:12px 14px 14px;min-width:0;scroll-margin-top:56px}
 section.wide{grid-column:1/-1}
-section h2{margin:0 0 10px;display:flex;align-items:baseline;gap:10px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--cmd-acc)}
+.side{display:grid;gap:14px;align-content:start;min-width:0}
+section h2{margin:0 0 10px;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--cmd-acc)}
 section h2 small{font-weight:400;letter-spacing:.04em;text-transform:none;color:var(--cmd-dim);font-size:11px}
 section h2 .r{margin-left:auto}
 .empty{border:1px dashed var(--cmd-line2);padding:14px 12px;color:var(--cmd-fg2);text-align:center}
-.chip{display:inline-block;border:1px solid var(--cmd-line2);padding:0 6px;font-size:11px;color:var(--cmd-fg2)}
+.chip{display:inline-block;white-space:nowrap;text-transform:none;letter-spacing:0;font-weight:400;border:1px solid var(--cmd-line2);padding:0 6px;font-size:11px;color:var(--cmd-fg2)}
 .chip.am{border-color:var(--cmd-am);color:var(--cmd-am)} .chip.bad{border-color:var(--cmd-bad);color:var(--cmd-bad)} .chip.ok{border-color:var(--cmd-ok);color:var(--cmd-ok)}
 .num{font-variant-numeric:tabular-nums}
 /* stations: GO / NO-GO pulse tiles */
@@ -358,11 +360,13 @@ section h2 .r{margin-left:auto}
 .big{display:flex;flex-wrap:wrap;gap:6px 22px;margin-bottom:10px}
 .big div{min-width:0} .big b{display:block;font-size:20px;font-weight:600;color:var(--cmd-white);line-height:1.2} .big small{color:var(--cmd-dim);font-size:11px}
 .bars{display:flex;align-items:flex-end;gap:3px;height:74px;padding:0 0 2px;border-bottom:1px solid var(--cmd-line2)}
-.bar{flex:1 1 0;min-width:4px;height:100%;position:relative;background:var(--cmd-inset)}
+.bar{flex:1 1 0;min-width:4px;height:100%;position:relative}
+.bar u{position:absolute;left:0;right:0;bottom:0;background:var(--cmd-inset);border-top:1px solid var(--cmd-line2)}
 .bar i{position:absolute;left:0;right:0;bottom:0;background:var(--cmd-accm);transform-origin:bottom;animation:grow .9s cubic-bezier(.2,.8,.2,1) both}
 .bar.landed i{background:var(--cmd-acc)}
 .bar.run i{background:var(--cmd-acch);animation:grow .9s cubic-bezier(.2,.8,.2,1) both,wave 1.6s ease-in-out infinite alternate}
 .bar.todo i{background:var(--cmd-line2)}
+.bar.stall i{background:var(--cmd-bad);animation:grow .9s cubic-bezier(.2,.8,.2,1) both,wave .8s ease-in-out infinite alternate}
 .bar:hover i{background:var(--cmd-white)}
 @keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
 @keyframes wave{from{opacity:1}to{opacity:.45}}
@@ -419,14 +423,15 @@ var TERMS={
  port:["Port ping","When the desk refreshes, it asks each local server one question with a 1 second limit. It never starts or stops a station."],
  stale:["Stale","The last {launch} is more than 12 hours old. The GO words may be old; the port pings are fresh."],
  boards:["Boards","The pages the {launch} opens (sit rep, SOI, pull glass, Roster, Armory). Under one window the Console opens them, so they read 'not opened'."],
- wave:["Wave","One batch of boards the pull works through. Each bar is a wave: its height is the share of its boards that are pulled. A {landed} wave is finished."],
+ wave:["Wave","One batch of boards the pull works through. Each bar is a wave: its height is the wave's image count against the biggest wave, and the orange fill is the share of its boards pulled. A {landed} wave is full; a {stalled} one blinks red."],
  landed:["Landed","Every board in the {wave} has been pulled (done, empty or dropped)."],
+ stalled:["Stalled","A running {wave} whose log has been quiet far longer than its pace. The bar blinks red."],
  held:["Held video","Video files the pull set aside instead of downloading. A count only."],
  qfree:["Q free","Free space on the Q: drive, where the pull saves. Under 200 GB the desk flags it low."],
  e429:["429s","'Too many requests' answers in the recent pull log. A climbing count means the site is slowing the pull."],
  active:["Active","Every BOLO row not done: {live}, open, parked and {red}. Read from BOLO.md each refresh."],
  red:["Red","A row whose newest status mark is the red circle: hot or blocked."],
- done:["Done","A row in the Done section, or whose newest mark is a check followed by DONE, DELIVERED, CLOSED or FOLDED."],
+ done:["Done","A row whose newest mark is a check followed by DONE, DELIVERED, CLOSED or FOLDED."],
  live:["Live","A row whose newest mark is the check with LIVE BOLO: checked by Chief and in the rotation."],
  state:["Row state","The status cell keeps a history, oldest first. The desk reads the last mark in it as the row's state now: {red}, {live}, {done}, open or parked."],
  resume:["Resume block","The fenced 'resume' block at the top of the newest session note in _CACHE/. Oscar Mike writes it."],
@@ -463,8 +468,9 @@ function pull(p){
  if(!p||!p.ok)return head("pull","Pull queue","")+EMPTY((p&&p.error)||"No pull data.");
  var big='<div class="big"><div><b class="num">'+N(p.pulled)+'/'+N(p.total)+'</b><small>boards pulled</small></div><div><b class="num">'+N(p.images)+'</b><small>images</small></div>'+
   '<div><b class="num">'+N(p.held_video)+'</b><small>'+T("held","held video")+'</small></div><div><b class="num'+(p.low?'" style="color:var(--cmd-bad)':'')+'">'+N(Math.round(p.q_free_gb))+' GB</b><small>'+T("qfree","Q free")+(p.low?' · LOW':'')+'</small></div></div>';
- var bars=p.map.length?'<div class="bars">'+p.map.map(function(w,i){var f=w.size?w.got/w.size:0;var c=w.state==="landed"?"landed":(w.state==="todo"?"todo":(["running","active","live","pulling"].indexOf(w.state)>=0?"run":"part"));
-   return '<div class="bar '+c+'" tabindex="0" data-x="'+E("Wave "+w.n+" · "+w.state+"\n"+w.got+" of "+w.size+" boards · "+N(w.images)+" images")+'"><i style="height:'+Math.max(4,Math.round(f*100))+'%;animation-delay:'+(i*35)+'ms"></i></div>'}).join("")+'</div>'+
+ var mx=Math.max.apply(null,p.map.map(function(w){return w.images||0}).concat([1]));
+ var bars=p.map.length?'<div class="bars">'+p.map.map(function(w,i){var f=w.size?w.got/w.size:0,hgt=Math.max(6,Math.round(100*(w.images||0)/mx));var c=w.state==="landed"?"landed":(w.state==="todo"?"todo":(w.state==="pulling"?"run":(w.state==="stalled"?"stall":"part")));
+   return '<div class="bar '+c+'" tabindex="0" data-x="'+E("Wave "+w.n+" · "+w.state+"\n"+w.got+" of "+w.size+" boards · "+N(w.images)+" images")+'"><u style="height:'+hgt+'%"></u><i style="height:'+Math.max(3,Math.round(hgt*f))+'%;animation-delay:'+(i*35)+'ms"></i></div>'}).join("")+'</div>'+
    '<div class="axis"><span>'+T("wave","wave")+' '+p.map[0].n+'</span><span>'+p.landed+' of '+p.map.length+' '+T("landed","landed")+'</span><span>wave '+p.map[p.map.length-1].n+'</span></div>':EMPTY("No waves in the queue.");
  var runs=p.waves.length?'<ul class="runs">'+p.waves.map(function(w){var f=w.size?Math.round(100*(w.done||0)/w.size):0;
    return '<li><span>wave '+w.n+'</span><span class="m"><i style="width:'+f+'%"></i></span><span class="num">'+(w.done||0)+'/'+w.size+'</span><small>'+E(w.state)+' · '+N(w.left)+' left · '+(w.pace||"-")+' min/board · ETA '+E(w.eta||"-")+' · '+T("e429","429s")+' '+(w.e429||0)+'</small></li>'}).join("")+'</ul>'
@@ -491,7 +497,7 @@ function glasses(g){
 
 function render(d){
  var m=document.querySelector("main");
- m.innerHTML='<section id="stations" class="wide">'+stations(d.stations)+'</section><section id="pull">'+pull(d.pull)+'</section><section id="bolo">'+bolo(d.bolo)+'</section><section id="notes">'+notes(d.notes)+'</section><section id="glasses">'+glasses(d.glasses)+'</section>';
+ m.innerHTML='<section id="stations" class="wide">'+stations(d.stations)+'</section><section id="pull">'+pull(d.pull)+'</section><section id="bolo">'+bolo(d.bolo)+'</section><div class="side"><section id="notes">'+notes(d.notes)+'</section><section id="glasses">'+glasses(d.glasses)+'</section></div>';
  document.getElementById("built").textContent="data "+d.built;
 }
 document.querySelector("nav").innerHTML=NAV.map(function(n){return '<a href="#'+n[0]+'" title="'+n[1]+'">'+ICON[n[0]]+'<span>'+n[1]+'</span></a>'}).join("");
