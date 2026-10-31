@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """build.py - the portfolio glass (10/30): one local viewer page for Chief's past video and audio work.
 
-Reads   Q:\\_Final_Media_Products\\1keep_copy2 (video + audio only; stock packs, lessons and installers are skipped)
+Reads   Q:\\_Final_Media_Products\\1keep_copy2 (video, audio and stills; stock packs, lessons, class files and installers are skipped)
 Writes  _PRIVATE/portfolio/portfolio.html + thumbs/*.jpg + catalog.json   (private, local; file:// links, no copies)
 Zero tokens. Usage: python -X utf8 build.py [--root PATH] [--no-thumbs]
 """
@@ -13,17 +13,18 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.normpath(os.path.join(HERE, "..", "..", "_PRIVATE", "portfolio"))
 VIDEO = {".mp4", ".mov", ".wmv", ".m4v", ".avi", ".mkv", ".webm"}
 AUDIO = {".mp3", ".wav", ".m4a", ".flac", ".ogg", ".aac"}
+IMAGE = {".png", ".jpg", ".jpeg"}
 # not Chief's works: stock packs, lessons, installers, class files, game folders
 SKIP = {"Light Leaks Pack", "AE2", "Vocal Coach.com - Voice Singing Lessons [Complete mp3]", "Toontrack",
         "Toontrack_Product_Manager_WIN", "Auto-Tune Artist v9.0.0 Windows (4)", "Cyberpunk 2077",
-        "Blender Class Dillongoo", "VASHI VISUALS EXTREME WIDESCREEN", "Clonehires_512kb.mp4"}
+        "Blender Class Dillongoo", "VASHI VISUALS EXTREME WIDESCREEN", "Clonehires_512kb.mp4", "Storytelling"}
 SKIP_NAMES = re.compile(r"^(Together - Pegboard Nerds)", re.I)   # a bought track, not a work
 # folders shown as their own shelf; loose top-level files go on "Films and videos" / "Music and audio"
 SHELF = {"finals": "Finals (episodes)", "pbp": "PBP", "jsoc": "JSOC", "Disarmed": "Disarmed",
          "Where the fuck is Tom": "Where the F is Tom", "TikTok Drops": "TikTok drops", "vtuber": "VTuber",
          "Birddog Music": "Birddog music", "cllankers spotify": "Spotify uploads", "sound": "Sound",
          "SMM-Salon1-all-audio-files": "SMM salon audio", "C2C VOICE OVER AND B ROLL": "C2C voice-over and b-roll",
-         "readthroughs": "Readthroughs (2012-13)"}
+         "readthroughs": "Readthroughs (2012-13)", "noboxotaku - instagram": "Instagram (noboxotaku)", "o no": "Stills"}
 
 
 def probe(path):
@@ -44,7 +45,8 @@ def thumb(path, dur, dest):
         return True
     t = max(0.0, min(dur * 0.1, 30.0)) if dur else 0
     try:
-        subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", f"{t:.2f}", "-i", path, "-frames:v", "1",
+        seek = ["-ss", f"{t:.2f}"] if t else []   # a seek on a still image can skip its only frame and write nothing
+        subprocess.run(["ffmpeg", "-y", "-v", "error", *seek, "-i", path, "-frames:v", "1",
                         "-vf", "scale=320:-2", "-q:v", "5", dest], capture_output=True, timeout=90)
     except Exception:
         return False
@@ -56,14 +58,14 @@ def walk(root):
     for dp, dn, fn in os.walk(root):
         rel = os.path.relpath(dp, root)
         top = "" if rel == "." else rel.split(os.sep)[0]
-        if top in SKIP:
+        if top in SKIP or top.lower().endswith(".scriv") or top == "OXO scrivener 2":
             dn[:] = []
             continue
         for f in fn:
             ext = os.path.splitext(f)[1].lower()
-            if ext not in VIDEO | AUDIO or f in SKIP or SKIP_NAMES.match(f):
+            if ext not in VIDEO | AUDIO | IMAGE or f in SKIP or SKIP_NAMES.match(f):
                 continue
-            items.append((os.path.join(dp, f), top, "video" if ext in VIDEO else "audio"))
+            items.append((os.path.join(dp, f), top, "video" if ext in VIDEO else "audio" if ext in AUDIO else "still"))
     return items
 
 
@@ -84,14 +86,16 @@ def main():
     def work(it):
         p, top, kind = it
         st = os.stat(p)
-        dur, w, h, codec = probe(p)
+        dur, w, h, codec = probe(p) if kind != "still" else (0.0, 0, 0, "")
         key = hashlib.md5(p.encode("utf-8")).hexdigest()[:12]
         th = ""
-        if kind == "video" and not a.no_thumbs:
+        if kind in ("video", "still") and not a.no_thumbs:
             d = os.path.join(OUT, "thumbs", key + ".jpg")
             if thumb(p, dur, d):
                 th = "thumbs/" + key + ".jpg"
-        shelf = SHELF.get(top) or ("Films and videos" if kind == "video" else "Music and audio")
+        shelf = SHELF.get(top) or {"video": "Films and videos", "audio": "Music and audio", "still": "Stills"}[kind]
+        if kind == "still" and top == "vtuber":
+            shelf = "VTuber stills"
         return {"path": p, "name": os.path.splitext(os.path.basename(p))[0], "ext": os.path.splitext(p)[1].lower()[1:],
                 "kind": kind, "shelf": shelf, "dur": dur, "w": w, "h": h, "codec": codec, "mb": round(st.st_size / 1048576, 1),
                 "year": time.strftime("%Y", time.localtime(st.st_mtime)), "thumb": th}
@@ -103,8 +107,8 @@ def main():
         json.dump(cat, f, indent=1, ensure_ascii=False)
     with open(os.path.join(OUT, "portfolio.html"), "w", encoding="utf-8") as f:
         f.write(page(cat))
-    v = sum(c["kind"] == "video" for c in cat)
-    print(f"wrote {OUT}\\portfolio.html  ({v} video, {len(cat) - v} audio)")
+    k = {x: sum(c["kind"] == x for c in cat) for x in ("video", "audio", "still")}
+    print(f"wrote {OUT}\\portfolio.html  ({k['video']} video, {k['audio']} audio, {k['still']} stills)")
 
 
 def url(p):
@@ -121,6 +125,10 @@ def card(c):
         return (f'<article class="card" {data}><button class="play" data-src="{u}" data-name="{name}" aria-label="Play {name}">{img}'
                 f'<span class="dur">{mins(c["dur"])}</span></button><h3>{name}</h3><p class="meta">{html.escape(meta)} · {c["year"]}</p>'
                 f'<a href="{u}" target="_blank">open file</a></article>')
+    if c["kind"] == "still":
+        img = f'<img loading="lazy" src="{html.escape(c["thumb"])}" alt="">' if c["thumb"] else '<div class="nothumb">IMAGE</div>'
+        return (f'<article class="card" {data}><button class="play still" data-src="{u}" data-name="{name}" data-img="1" aria-label="View {name}">{img}</button>'
+                f'<h3>{name}</h3><p class="meta">{c["ext"].upper()} · {c["mb"]:.1f} MB · {c["year"]}</p><a href="{u}" target="_blank">open file</a></article>')
     return (f'<article class="card audio" {data}><h3>{name}</h3><p class="meta">{html.escape(meta)} · {c["year"]}</p>'
             f'<audio controls preload="none" src="{u}"></audio></article>')
 
@@ -131,11 +139,12 @@ def page(cat):
         shelves.setdefault(c["shelf"], []).append(c)
     order = sorted(shelves, key=lambda s: (s not in ("Films and videos", "Music and audio"), s))
     nv = sum(c["kind"] == "video" for c in cat)
+    ns = sum(c["kind"] == "still" for c in cat)
     secs = "".join(
         f'<section id="s{i}"><h2>{html.escape(s)} <small>{len(shelves[s])}</small></h2><div class="grid">'
         + "".join(card(c) for c in shelves[s]) + "</div></section>" for i, s in enumerate(order))
     nav = "".join(f'<a href="#s{i}">{html.escape(s)}</a>' for i, s in enumerate(order))
-    return PAGE.replace("@@SECS@@", secs).replace("@@NAV@@", nav).replace("@@NV@@", str(nv)).replace("@@NA@@", str(len(cat) - nv))
+    return PAGE.replace("@@SECS@@", secs).replace("@@NAV@@", nav).replace("@@NV@@", str(nv)).replace("@@NA@@", str(len(cat) - nv - ns)).replace("@@NS@@", str(ns))
 
 
 PAGE = """<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -165,21 +174,22 @@ h2{margin:0 0 12px;padding:10px 16px;font:700 19px var(--display);letter-spacing
 .dur{position:absolute;right:6px;bottom:6px;background:#000c;color:#fff;font:11px var(--mono);padding:2px 5px;border-radius:3px}
 .audio audio{width:100%;margin-top:4px;height:34px}
 dialog{width:min(960px,96vw);background:var(--panel);color:var(--ink);border:1px solid var(--accent);border-radius:6px;padding:12px}dialog::backdrop{background:#000d}
-dialog video{width:100%;max-height:75vh;background:#000}dialog header{display:flex;justify-content:space-between;gap:10px;margin-bottom:8px;font:700 18px var(--display)}
+dialog video,dialog img{width:100%;max-height:75vh;background:#000;object-fit:contain}.play.still{aspect-ratio:1}dialog header{display:flex;justify-content:space-between;gap:10px;margin-bottom:8px;font:700 18px var(--display)}
 dialog button{background:var(--accent);color:#000;border:0;padding:6px 14px;border-radius:4px;font:700 13px var(--mono);cursor:pointer}
 .hide{display:none!important}
 </style></head><body>
-<div class="strip"><h1>The <b>Portfolio</b> Glass</h1><span class="chip">@@NV@@ video</span><span class="chip">@@NA@@ audio</span><span class="chip">private · local</span>
-<input type="search" id="q" placeholder="search title" aria-label="search"><span class="tabs"><button data-k="all" aria-pressed="true">All</button><button data-k="video" aria-pressed="false">Video</button><button data-k="audio" aria-pressed="false">Audio</button></span></div>
+<div class="strip"><h1>The <b>Portfolio</b> Glass</h1><span class="chip">@@NV@@ video</span><span class="chip">@@NA@@ audio</span><span class="chip">@@NS@@ stills</span><span class="chip">private · local</span>
+<input type="search" id="q" placeholder="search title" aria-label="search"><span class="tabs"><button data-k="all" aria-pressed="true">All</button><button data-k="video" aria-pressed="false">Video</button><button data-k="audio" aria-pressed="false">Audio</button><button data-k="still" aria-pressed="false">Stills</button></span></div>
 <nav>@@NAV@@</nav><main>@@SECS@@</main>
-<dialog id="dlg"><header><span id="dt"></span><button id="dc">Close</button></header><video id="dv" controls></video></dialog>
+<dialog id="dlg"><header><span id="dt"></span><button id="dc">Close</button></header><video id="dv" controls></video><img id="di" alt="" hidden></dialog>
 <script>
 const q=document.getElementById('q'),cards=[...document.querySelectorAll('.card')],tabs=[...document.querySelectorAll('.tabs button')];let kind='all';
 function filt(){const s=q.value.trim().toLowerCase();cards.forEach(c=>c.classList.toggle('hide',!(c.dataset.n.includes(s)&&(kind==='all'||c.dataset.k===kind))));
 document.querySelectorAll('section').forEach(sec=>sec.classList.toggle('hide',!sec.querySelector('.card:not(.hide)')))}
 q.oninput=filt;tabs.forEach(b=>b.onclick=()=>{kind=b.dataset.k;tabs.forEach(x=>x.setAttribute('aria-pressed',x===b));filt()});
 const dlg=document.getElementById('dlg'),dv=document.getElementById('dv');
-document.addEventListener('click',e=>{const p=e.target.closest('.play');if(!p)return;document.getElementById('dt').textContent=p.dataset.name;dv.src=p.dataset.src;dlg.showModal();dv.play().catch(()=>{})});
+document.addEventListener('click',e=>{const p=e.target.closest('.play');if(!p)return;document.getElementById('dt').textContent=p.dataset.name;const di=document.getElementById('di'),im=!!p.dataset.img;dv.hidden=im;di.hidden=!im;
+if(im){di.src=p.dataset.src;dlg.showModal()}else{dv.src=p.dataset.src;dlg.showModal();dv.play().catch(()=>{})}});
 function shut(){dv.pause();dv.removeAttribute('src');dv.load();dlg.close()}document.getElementById('dc').onclick=shut;dlg.addEventListener('cancel',()=>{dv.pause()});
 </script></body></html>
 """
