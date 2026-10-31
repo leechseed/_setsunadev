@@ -500,3 +500,4 @@
 {"ts": "2026-10-31 01:33", "sid": "6a94475e", "words": 314, "tells": 9, "per_1k": 28.7, "families": {"passive": 2, "other": 7}, "rules": {"passive": 2, "long-sentence": 7}}
 {"ts": "2026-10-31 01:34", "sid": "6a94475e", "words": 372, "tells": 7, "per_1k": 18.8, "families": {"other": 6, "passive": 1}, "rules": {"long-sentence": 6, "passive": 1}}
 {"ts": "2026-10-31 01:35", "sid": "6a94475e", "words": 254, "tells": 2, "per_1k": 7.9, "families": {"other": 2}, "rules": {"long-sentence": 2}}
+{"ts": "2026-10-31 01:39", "sid": "6a94475e", "words": 357, "tells": 3, "per_1k": 8.4, "families": {"other": 2, "passive": 1}, "rules": {"long-sentence": 2, "passive": 1}}
