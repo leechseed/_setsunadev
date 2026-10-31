@@ -8,6 +8,8 @@ Serves 127.0.0.1:8795 only.
 Usage: python console.py              serve
        python console.py --open       open the window (or focus the open one) and snap it to the right half
        python console.py --status     run pull_queue.py report and cache status.json
+       python console.py --store [key]  what glasses saved while open in the Console (_PRIVATE/console-stores/)
+  /store/<key>/<collection>[/<doc>]  GET · PUT · PATCH · DELETE: the stand-in for a glass's claude.use("db")
 """
 import os, sys, json, time, subprocess, threading, mimetypes, http.server, socketserver
 
@@ -259,13 +261,46 @@ def frameable(url):
     return ok
 
 
-def page_bytes(path):
-    """a page as the browser should get it: artifact fragments carry no skeleton, so give them one"""
+STORES = os.path.join(ROOT, "_PRIVATE", "console-stores")   # 10/30: a glass's calls when it runs in the Console (private)
+STORE_LOCK = threading.Lock()
+# 10/30 (Chief: "Calls are not saving: the page could not reach its store"): a page opened from its local file has no
+# claude.ai host, so window.claude is missing. The Console hands it a small stand-in for claude.use("db") that keeps the
+# docs in _PRIVATE/console-stores/<key>.json, where the CDR reads them (python console.py --store <key>).
+SHIM = r'''<script>(function(){if(window.claude&&window.claude.use)return;var K=%s,B="/store/"+encodeURIComponent(K)+"/";
+function req(m,c,d,body){return fetch(B+encodeURIComponent(c)+(d!=null?"/"+encodeURIComponent(d):""),{method:m,headers:{"Content-Type":"application/json"},body:body==null?undefined:JSON.stringify(body)}).then(function(r){if(!r.ok)throw{code:"store-"+r.status};return r.json()})}
+function snap(o){var docs=Object.keys(o).map(function(id){return{id:id,exists:true,data:function(){return o[id]}}});return{docs:docs,size:docs.length,empty:!docs.length,forEach:function(f){docs.forEach(f)}}}
+function coll(c){return{doc:function(id){return{id:id,set:function(v){return req("PUT",c,id,v)},update:function(v){return req("PATCH",c,id,v)},delete:function(){return req("DELETE",c,id)},
+get:function(){return req("GET",c).then(function(o){return{id:id,exists:id in o,data:function(){return o[id]}}})}}},
+get:function(){return req("GET",c).then(snap)},
+onSnapshot:function(ok,bad){var last=null,live=true;function tick(){if(!live)return;req("GET",c).then(function(o){var s=JSON.stringify(o);if(s!==last){last=s;ok(snap(o))}},function(e){if(bad)bad(e)}).then(function(){setTimeout(tick,3000)})}tick();return function(){live=false}}}}
+var db={collection:coll,console:true};window.claude=window.claude||{};window.claude.use=function(n){return Promise.resolve(n==="db"?db:null)};})();</script>'''
+
+
+def store_path(key):
+    safe = "".join(ch if ch.isalnum() or ch in "-_." else "_" for ch in key)[:80] or "page"
+    return os.path.join(STORES, safe + ".json")
+
+
+def store_read(key):
+    try:
+        with open(store_path(key), encoding="utf-8") as fh:
+            return json.load(fh)
+    except (OSError, ValueError):
+        return {}
+
+
+def page_bytes(path, key=None):
+    """a page as the browser should get it: artifact fragments carry no skeleton, so give them one; with a key, the db stand-in"""
     with open(path, "rb") as fh:
         b = fh.read()
-    if path.lower().endswith((".html", ".htm")) and not b.lstrip()[:15].lower().startswith(b"<!doctype"):
+    html = path.lower().endswith((".html", ".htm"))
+    if html and not b.lstrip()[:15].lower().startswith(b"<!doctype"):
         b = (b'<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" '
              b'content="width=device-width,initial-scale=1"></head><body>' + b + b"</body></html>")
+    if html and key:
+        shim = (SHIM % json.dumps(key)).encode("utf-8")
+        i = b.lower().find(b"<head>")
+        b = b[:i + 6] + shim + b[i + 6:] if i >= 0 else shim + b
     return b
 
 
@@ -521,7 +556,13 @@ class H(http.server.BaseHTTPRequestHandler):
         if path.startswith("/local/"):
             f = LOCAL.get(path[7:])
             if f and os.path.isfile(f):
-                return self._send(200, page_bytes(f), "text/html; charset=utf-8")
+                return self._send(200, page_bytes(f, "local-" + path[7:]), "text/html; charset=utf-8")
+        if path.startswith("/store/"):   # the db stand-in: GET /store/<key>/<collection> -> {doc id: data}
+            parts = path[7:].split("/")
+            if len(parts) == 2:
+                with STORE_LOCK:
+                    data = store_read(parts[0]).get("collections", {}).get(parts[1], {})
+                return self._send(200, json.dumps(data, ensure_ascii=False), "application/json; charset=utf-8")
         if path.startswith("/glass/"):   # /glass/<id>/<file>: only files a publish named, and their own folder's assets
             parts = path[7:].split("/", 1)
             g = next((x for x in read_glasses() if x.get("id") == parts[0] and x.get("local")), None)
@@ -532,8 +573,53 @@ class H(http.server.BaseHTTPRequestHandler):
                     ctype = mimetypes.guess_type(f)[0] or "application/octet-stream"
                     if ctype.startswith("text/") or ctype.endswith(("json", "javascript")):
                         ctype += "; charset=utf-8"
-                    return self._send(200, page_bytes(f), ctype)
+                    return self._send(200, page_bytes(f, g["id"]), ctype)
         self._send(404, "not found", "text/plain")
+
+    def _store(self, method):
+        """the db stand-in's writes: PUT sets a doc, PATCH merges into it, DELETE removes it"""
+        from urllib.parse import unquote
+        parts = [unquote(p) for p in self.path.split("?")[0][7:].split("/")]
+        if not self.path.startswith("/store/") or len(parts) != 3:
+            return self._send(404, "not found", "text/plain")
+        key, coll, doc = parts
+        body = None
+        if method != "DELETE":
+            n = min(int(self.headers.get("Content-Length") or 0), 1 << 20)
+            try:
+                body = json.loads(self.rfile.read(n) or b"null")
+            except ValueError:
+                return self._send(400, '{"error":"bad json"}', "application/json")
+            if not isinstance(body, dict):
+                return self._send(400, '{"error":"a doc is an object"}', "application/json")
+        with STORE_LOCK:
+            s = store_read(key)
+            if not s:
+                g = next((x for x in read_glasses() if x.get("id") == key), {})
+                s = {"key": key, "url": g.get("url", ""), "title": g.get("title", key), "collections": {}}
+            c = s["collections"].setdefault(coll, {})
+            if method == "PUT":
+                c[doc] = body
+            elif method == "PATCH":
+                c[doc] = dict(c.get(doc) or {}, **body)
+            else:
+                c.pop(doc, None)
+            s["updated"] = time.strftime("%Y-%m-%d %H:%M:%S")
+            os.makedirs(STORES, exist_ok=True)
+            tmp = store_path(key) + ".tmp"
+            with open(tmp, "w", encoding="utf-8") as fh:
+                json.dump(s, fh, ensure_ascii=False, indent=1)
+            os.replace(tmp, store_path(key))
+        return self._send(200, '{"ok":true}', "application/json")
+
+    def do_PUT(self):
+        return self._store("PUT")
+
+    def do_PATCH(self):
+        return self._store("PATCH")
+
+    def do_DELETE(self):
+        return self._store("DELETE")
 
     def do_POST(self):
         if self.path == "/open":   # a link from a pane: in the pane if the site allows frames, else its own app window
@@ -668,6 +754,16 @@ def open_window():
 
 
 if __name__ == "__main__":
+    if "--store" in sys.argv:   # what a glass saved in the Console: --store lists them, --store <key> prints one
+        i = sys.argv.index("--store")
+        if i + 1 < len(sys.argv):
+            print(json.dumps(store_read(sys.argv[i + 1]), ensure_ascii=False, indent=1))
+        else:
+            for f in sorted(os.listdir(STORES)) if os.path.isdir(STORES) else []:
+                s = store_read(f[:-5])
+                n = sum(len(v) for v in s.get("collections", {}).values())
+                print(f"{f[:-5]:<24} {n:>4} doc(s)  {s.get('updated', '')}  {s.get('title', '')}")
+        sys.exit(0)
     if "--status" in sys.argv:
         print(write_status())
         sys.exit(0)
