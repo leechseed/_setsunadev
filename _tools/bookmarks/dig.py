@@ -64,6 +64,8 @@ CHECK = BM / "check.json"
 RANKED = BM / "ranked.json"
 TOPICS = BM / "topics.json"          # hand-judged {pid: topic}, written by the CDR reading titles
 ADULT_FILE = BM / "adult_domains.txt"  # private, one domain per line
+BOT_FILE = BM / "bot_refuse.txt"       # private, extra sites that wall off bots
+NO_TEXT_FILE = BM / "no_text.txt"      # private, sites whose pages come back as a bot wall
 INGEST = BM / "ingest.json"
 PAGES = BM / "pages"
 PAGE = BM / "bookmarks.html"
@@ -162,7 +164,7 @@ def adult_domains() -> set[str]:
 
 
 def is_adult(host: str, topic: str | None, extra: set[str]) -> bool:
-    if topic == "adult":
+    if topic and topic.startswith("adult"):
         return True
     if domain_match(host, extra) or domain_match(host, ("onlyfans.com", "pornhub.com")):
         return True
@@ -283,8 +285,24 @@ def _ssl_ctx():
 
 
 def _opener():
+    # a fresh cookie jar per request: some sites set a cookie on the first hop and loop without it
+    import http.cookiejar
     ctx = _ssl_ctx()
-    return urllib.request.build_opener(_FewRedirects(), urllib.request.HTTPSHandler(context=ctx))
+    return urllib.request.build_opener(_FewRedirects(), urllib.request.HTTPSHandler(context=ctx),
+                                       urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
+
+
+def private_list(p: Path) -> tuple[str, ...]:
+    try:
+        return tuple(ln.strip().lower() for ln in p.read_text(encoding="utf-8").splitlines()
+                     if ln.strip() and not ln.startswith("#"))
+    except OSError:
+        return ()
+
+
+def bot_refuse() -> tuple[str, ...]:
+    """BOT_REFUSE plus the private list (domains that answered with an anti-bot wall)."""
+    return BOT_REFUSE + private_list(BOT_FILE)
 
 
 _host_locks: dict[str, threading.Semaphore] = defaultdict(lambda: threading.Semaphore(PER_HOST))
@@ -334,7 +352,7 @@ def check_one(url: str) -> dict:
     scheme = urllib.parse.urlsplit(url).scheme
     if scheme not in ("http", "https"):
         return {"status": "unchecked", "why": "not a web link"}
-    if domain_match(host, BOT_REFUSE):
+    if domain_match(host, bot_refuse()):
         return {"status": "unchecked", "why": "site refuses bots"}
     opener = _opener()
     with _host_sem(host):
@@ -559,14 +577,23 @@ def ingest(max_pages: int = 500, dry_run: bool = False) -> dict:
     extra = adult_domains()
     log = load(INGEST, {})
     picks, adult_listed = [], []
+    refuse = bot_refuse()
+    no_text = private_list(NO_TEXT_FILE)  # sites that wall page fetches behind a bot check
     for r in load(RANKED, []):
         if r["status"] != "live" or r["score"] <= 0:
             continue
         i = by_id[r["id"]]
-        if domain_match(i["host"], BOT_REFUSE):
+        if domain_match(i["host"], refuse) or "(toss)" in topics.get(i["id"], ""):
             continue
         if is_adult(i["host"], topics.get(i["id"]), extra):
             adult_listed.append(i["id"])
+            continue
+        tried = log.get(i["id"])
+        if tried and not tried.get("saved"):
+            continue  # tried once and failed: the cap counts pages saved, so move down the list
+        if i["id"] not in topics:
+            continue  # text is saved only for rows a reader has tagged
+        if not tried and domain_match(i["host"], no_text):
             continue
         picks.append(i)
         if len(picks) >= max_pages:
@@ -687,6 +714,9 @@ td.t a{color:var(--ink);text-decoration:none}td.t a:hover{color:var(--acc)}
 tr.tossed td{opacity:.45}
 .dg td{white-space:normal}.copies{color:var(--dim);font-size:12px}
 .more{color:var(--dim);font-size:12px;padding:6px}
+.jump{display:flex;flex-wrap:wrap;gap:5px;margin:4px 0 6px}.jump .chip{cursor:pointer;text-decoration:none;color:var(--ink);background:#2a1a12;border:1px solid #4a2a1a}
+.jump .chip:hover{border-color:var(--acc)}.jump .chip.dim{background:#222;color:var(--dim);border-color:var(--line)}
+h2{scroll-margin-top:54px}
 @media (max-width:760px){td.h,td.f{display:none}td.t{width:60%}td.k{width:28%}header{gap:8px}#q{width:30vw}}
 </style></head><body>
 <header><b>BOOKMARK DIG</b>
@@ -718,7 +748,10 @@ return `<tr class="${m=="toss"?"tossed":""}" data-id="${r.id}"><td class="t" tit
 function table(rs,cap){const shown=rs.slice(0,cap||rs.length);return `<table>${shown.map(row).join("")}</table>`+(rs.length>shown.length?`<div class="more">${rs.length-shown.length} more; type in the filter to narrow.</div>`:"")}
 function render(){const v=document.getElementById("view");let h="";
 if(tab=="gold"){const g=D.rows.filter(r=>r.tp&&hit(r));const by={};g.forEach(r=>(by[r.tp]=by[r.tp]||[]).push(r));
-Object.entries(by).sort((a,b)=>b[1].length-a[1].length).forEach(([t,rs])=>{rs.sort((a,b)=>b.sc-a.sc);h+=`<h2>${esc(t)} <span>${rs.length}</span></h2>`+table(rs)});
+const tier=t=>t.startsWith("adult")?1:(t.includes("(toss)")?2:0);
+const order=Object.entries(by).sort((a,b)=>tier(a[0])-tier(b[0])||b[1].length-a[1].length);
+h+=`<div class="jump">`+order.map(([t,rs],k)=>`<a href="#tp${k}" class="chip${tier(t)?" dim":""}">${esc(t)} ${rs.length}</a>`).join(" ")+`</div>`;
+order.forEach(([t,rs],k)=>{rs.sort((a,b)=>b.sc-a.sc);h+=`<h2 id="tp${k}">${esc(t)} <span>${rs.length}</span></h2>`+table(rs)});
 if(!g.length)h="<p class=more>No rows match.</p>"}
 else if(tab=="dupes"){const ds=D.dupes.filter(d=>{const r=byId[d.id];return r&&hit(r)});h=`<h2>Saved more than once <span>${ds.length} pages</span></h2><table class="dg">`+ds.map(d=>{const r=byId[d.id];return row(r).replace("</td><td class=\"h\">",`<div class="copies">${d.copies.map(c=>esc(c.folder)+" · "+(c.added||"")).join("<br>")}</div></td><td class="h">`)}).join("")+"</table>"}
 else if(tab=="dead"){const dd=D.rows.filter(r=>(r.s=="dead"||r.s=="gone")&&hit(r));const dt=D.rows.filter(r=>(r.s=="timeout"||r.s=="error")&&hit(r));
@@ -731,7 +764,7 @@ document.getElementById("view").onclick=e=>{const b=e.target.closest(".mk");if(!
 document.getElementById("hideToss").onclick=e=>{hideT=!hideT;e.target.textContent=hideT?"Show tossed":"Hide tossed";render()};
 document.getElementById("exp").onclick=()=>{const blob=new Blob([JSON.stringify({exported:new Date().toISOString(),marks:M},null,1)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="bookmark_marks.json";a.click()};
 const m=D.meta,s=m.status||{};document.getElementById("stats").textContent=`${m.total} bookmarks · ${m.unique} unique · ${m.dupe_copies} duplicate copies · ${s.live||0} live · ${(s.dead||0)+(s.gone||0)} dead · ${s.blocked||0} blocked · ${(s.timeout||0)+(s.error||0)} check by hand · ${s.unchecked||0} unchecked · ${m.pages_saved} saved offline`;
-try{const t=localStorage.getItem("bmdig.tab");if(t){tab=t;document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("on",x.dataset.t==t))}}catch(e){}
+try{const t=(location.hash.match(/tab=(\w+)/)||[])[1]||localStorage.getItem("bmdig.tab");if(t){tab=t;document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("on",x.dataset.t==t))}}catch(e){}
 count();render();
 </script></body></html>"""
 
