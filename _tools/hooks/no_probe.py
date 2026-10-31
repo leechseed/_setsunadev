@@ -100,6 +100,16 @@ def habit(cmd, tool):
     they run. Returns the fix to hand back, or None. Bash only; checks each command segment's first word."""
     if tool != "Bash":
         return None
+    # 10/31 rescore (BOLO 155): two shapes that always fail in Git Bash. Heredoc bodies and PowerShell text are skipped.
+    top = re.split(r"<<-?\s*['\"]?\w+", cmd)[0]
+    if not re.search(r"(?i)\b(powershell|pwsh)(\.exe)?\b", top):
+        if re.search(r"(?<![\w$])\d?>>?\s*\$null\b", top):
+            return "'>$null' is PowerShell; in Bash it expands to nothing and the redirect fails with 'ambiguous redirect'. Use '>/dev/null'"
+        for seg in re.split(r"[;\n]|&&|\|\||\|", top):
+            t = _tokens(seg)
+            if t and os.path.basename(t[0]).lower() in ("ls", "cat", "cd", "cp", "mv", "mkdir", "head", "tail", "wc", "find", "du", "stat") \
+                    and re.search(r'"[A-Za-z]:\\[^"\n]*\\"', seg):
+                return "a double-quoted Windows path ending in a backslash escapes its own closing quote, so the shell never closes the string. Use forward slashes (C:/dir/) or drop the trailing backslash"
     for seg in re.split(r"[;\n]|&&|\|\||\|", cmd):
         toks = _tokens(seg)
         while toks and re.match(r"^\w+=\S*$", toks[0]):   # skip VAR=value prefixes

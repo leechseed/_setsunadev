@@ -441,6 +441,8 @@ func main() {
 		pullCmd(os.Args[2:])
 	case "push":
 		pushCmd(os.Args[2:])
+	case "bookmarks":
+		bookmarksCmd(os.Args[2:])
 	default:
 		w := bufio.NewWriter(os.Stdout)
 		fmt.Fprintln(w, sAccB.Render("command")+sDim.Render(" · the Command's terminal front end (BOLO 153)"))
@@ -454,6 +456,7 @@ func main() {
 		fmt.Fprintln(w, "  "+sAcc.Render("goon ")+"  the Goon program: a standard hour, hit timer, bust and vape cues, VLC on top, start/end log (--json: the last session · --dry-run)")
 		fmt.Fprintln(w, "  "+sAcc.Render("hour  ")+"  a fresh hour of BBC in a new VLC window (go code: fresh hour · --only gay|straight · --minutes N · --dry-run · --json)")
 		fmt.Fprintln(w, "  "+sAcc.Render("slideshow")+" a photo slideshow from the DARKROOM as a video in a new VLC window (--minutes N · --seconds N · --dry-run · --json)")
+		fmt.Fprintln(w, "  "+sAcc.Render("bookmarks")+" the bookmark dig: summary · scan · check · rank · ingest · build (--json · --print · --dry-run; page in _PRIVATE/reference/bookmarks)")
 		fmt.Fprintln(w, "  "+sAcc.Render("kenshi")+" start Kenshi with RE_Kenshi and Sentient Sands (the go code: kenshi watanabi · --dry-run · --json)")
 		w.Flush()
 	}
