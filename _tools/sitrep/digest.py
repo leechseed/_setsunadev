@@ -38,11 +38,43 @@ def first_bold(s):
     m = re.search(r"\*\*(.+?)\*\*", s)
     return (m.group(1) if m else s).strip()[:110]
 
+def hook_input():
+    """The SessionStart hook JSON on stdin (source: startup|resume|clear|compact). A by-hand run gets {} and never blocks."""
+    import json, threading
+    if sys.stdin is None or sys.stdin.isatty():
+        return {}
+    box = {}
+    def rd():
+        try:
+            box["d"] = json.loads(sys.stdin.read() or "{}")
+        except Exception:
+            box["d"] = {}
+    t = threading.Thread(target=rd, daemon=True); t.start(); t.join(1.5)
+    return box.get("d") or {}
+
+def snapshot_lines(hook):
+    """BOLO 162 call 2: the resume snapshot compact_snapshot.py wrote at PreCompact, if under 2 hours old.
+    This session's own file first, then latest.md. Lives in _PRIVATE/compact/ (it carries Chief's words)."""
+    d = os.path.join(ROOT, "_PRIVATE", "compact")
+    if "--snapshot-dir" in sys.argv:
+        d = sys.argv[sys.argv.index("--snapshot-dir") + 1]
+    sid = (hook.get("session_id") or "")[:8]
+    for name in ([sid + ".md"] if sid else []) + ["latest.md"]:
+        p = os.path.join(d, name)
+        if os.path.isfile(p) and (datetime.datetime.now().timestamp() - os.path.getmtime(p)) < 2 * 3600:
+            with io.open(p, encoding="utf-8") as f:
+                body = f.read().rstrip()
+            src = hook.get("source") or "by hand"
+            return [f"SNAPSHOT · {src} · from _PRIVATE/compact/{name} (pick up from here)"] + ["  " + ln for ln in body.splitlines()]
+    return []
+
 def main():
     today = datetime.date.today()
+    hook = hook_input()
     state, bolo = load("STATE.md"), load("BOLO.md")
     out = []
     out.append(f"SESSION-OPEN DIGEST · {today.isoformat()} · read this, not the five files (SOP §4 under the formation, BOLO 54)")
+    out.extend(snapshot_lines(hook))
     out.append("gear 1 in force (3 agents; PS fetch · MS write · CDR main; RANGE = the script reviewer). Skills: sitrep · oscar-mike · dope-sheet · frago · collect · rtb.")
 
     # the rack: an index row per note (id · time · type · title · ~tokens) + path; newest note's resume header

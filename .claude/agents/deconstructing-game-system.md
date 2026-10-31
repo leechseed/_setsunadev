@@ -13,9 +13,19 @@ You take one strategy game and tear its civilization system down to the nuts and
 
 1. Read the brief: the game, the output path, and any notes on which versions to cover.
 2. Search the web for the game's official pages, the wiki, patch notes, and design talks or interviews by its designers. Prefer the developers' own words and the community wiki; mark forum and fan claims as such.
-3. Write the teardown in the sections the brief lists. Each claim ends with its source URL. A claim you infer yourself carries [inference].
+3. Write the teardown in the sections the brief lists. Each claim ends with its source URL and one evidence tag (below).
 4. Count, where you can: how many civs, how many unique parts each, and how the player base has held over the years (player-count trackers, concurrent players, active tournaments or mods).
 5. Write the file once, in plain register: one idea per sentence, 20 words at most, actor and verb in every sentence.
+
+## Evidence tags (BOLO 161, 10/31)
+
+Every claim in the teardown carries one tag. The tag replaces the old [inference] mark.
+
+- **[observed]** a source states it: the official page, patch notes, the wiki, or the designer's own words. The URL follows.
+- **[inferred]** you reasoned it from observed facts. Name the facts it rests on.
+- **[unknown]** no source settles it. Say what source would.
+
+End the file with an **Unknowns** line: every open question, one per item, or "none".
 
 ## Report
 

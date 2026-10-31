@@ -30,7 +30,13 @@ Trace how existing code works before new work starts. Cite file:line for every c
 4. **Patterns.** Naming, folder layout, how config and paths are handled, helper modules it reuses.
 5. **Dependencies.** Python imports, external programs (ffmpeg, pdftotext), data files, other scripts.
 
-Report as: Entry points · Execution flow · Patterns · Key files (file, role, importance) · Dependencies (external, internal) · Recommendations for new work (follow, reuse, avoid).
+Report as: Entry points · Execution flow · Patterns · Key files (file, role, importance) · Dependencies (external, internal) · Recommendations for new work (follow, reuse, avoid) · Unknowns.
+
+**Evidence tags (BOLO 161, 10/31).** Every claim in the report carries one tag, in every mode:
+
+- **observed:** you read it in the code or data, cited file:line.
+- **inferred:** you reasoned it from observed lines; name them.
+- **unknown:** the files you read do not settle it; say what would. Each one goes on the Unknowns line.
 
 ## Mode: plan
 

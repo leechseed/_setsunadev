@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>lookalike test page</title>
+<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+<style>
+  /* the fixture: every kind of hint the reader should find */
+  :root { --accent: #FF5A1F; --bg: #1a1a1a; --ink: rgb(230, 230, 230); --gutter: 16px; }
+  body { font-family: "Inter", system-ui, sans-serif; font-size: 16px; background: var(--bg); color: var(--ink); }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 var(--gutter); }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .row { display: flex; flex-direction: row; flex-wrap: wrap; gap: 12px; }
+  .card { padding: 20px; border: 1px solid #333; }
+  h1 { font-size: 2.5rem; }
+  @media (max-width: 720px) { .grid { grid-template-columns: 1fr; } }
+  @media (min-width: 1200px) { .wrap { max-width: 1280px; } }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <nav aria-label="main"><a href="/">Home</a> <a href="/a">A</a> <a class="btn" href="/go">Go</a></nav>
+</header>
+<main class="wrap">
+  <h1>Test page</h1>
+  <section>
+    <h2>Cards</h2>
+    <div class="grid">
+      <article class="card"><h3>One</h3><p>a</p></article>
+      <article class="card"><h3>Two</h3><p>b</p></article>
+      <article class="card"><h3>Three</h3><p>c</p></article>
+    </div>
+  </section>
+  <section>
+    <h2>Lists and a table</h2>
+    <ul><li>x</li><li>y</li></ul>
+    <ol><li>1</li></ol>
+    <table><tr><td>t</td></tr></table>
+  </section>
+  <section>
+    <h2>Form</h2>
+    <form class="row" style="display: flex; gap: 8px">
+      <input type="text"><input type="email"><textarea></textarea>
+      <button>Send</button><input type="submit" value="ok">
+    </form>
+  </section>
+</main>
+<aside role="complementary"><h2>Side</h2></aside>
+<footer><p>foot</p></footer>
+<script>var notHeading = "<h1>no</h1>";</script>
+</body>
+</html>

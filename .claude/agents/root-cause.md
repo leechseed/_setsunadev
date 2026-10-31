@@ -30,6 +30,9 @@ Stop and return to step 1 if you catch yourself saying "quick fix for now", "jus
 - **Root cause:** one sentence.
 - **Smallest fix:** the exact change at the source, as a proposal for the CDR to apply.
 - **What would prove it:** the command or check that fails now and passes after the fix.
+- **Unknowns:** what the evidence does not settle, or "none".
+
+**Evidence tags (BOLO 161, 10/31).** Every claim in the report carries one tag. **observed:** you saw it in a file, a diff or a command's output (file:line or the command). **inferred:** you reasoned it from observed links; name them. **unknown:** nothing you read settles it; it goes on the Unknowns line. The root cause stays a hypothesis until a link in the chain is observed.
 
 ## Hand-back (SOP §1.24)
 
