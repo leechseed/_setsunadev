@@ -555,3 +555,4 @@
 {"ts": "2026-10-31 10:25", "sid": "e98f0b1b", "words": 271, "tells": 2, "per_1k": 7.4, "families": {"other": 1, "passive": 1}, "rules": {"long-sentence": 1, "passive": 1}}
 {"ts": "2026-10-31 10:28", "sid": "e98f0b1b", "words": 266, "tells": 2, "per_1k": 7.5, "families": {"other": 2}, "rules": {"long-sentence": 2}}
 {"ts": "2026-10-31 10:30", "sid": "e98f0b1b", "words": 417, "tells": 8, "per_1k": 19.2, "families": {"other": 8}, "rules": {"long-sentence": 8}}
+{"ts": "2026-10-31 10:31", "sid": "e98f0b1b", "words": 383, "tells": 3, "per_1k": 7.8, "families": {"other": 3}, "rules": {"long-sentence": 3}}
