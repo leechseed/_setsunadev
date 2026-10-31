@@ -551,3 +551,4 @@
 {"ts": "2026-10-31 09:50", "sid": "e98f0b1b", "words": 184, "tells": 2, "per_1k": 10.9, "families": {"other": 2}, "rules": {"long-sentence": 2}}
 {"ts": "2026-10-31 09:52", "sid": "e98f0b1b", "words": 158, "tells": 3, "per_1k": 19.0, "families": {"sales talk": 1, "other": 2}, "rules": {"stock-phrase": 1, "long-sentence": 2}}
 {"ts": "2026-10-31 10:21", "sid": "e98f0b1b", "words": 181, "tells": 2, "per_1k": 11.0, "families": {"other": 2}, "rules": {"long-sentence": 2}}
+{"ts": "2026-10-31 10:23", "sid": "e98f0b1b", "words": 48, "tells": 0, "per_1k": 0.0, "families": {}, "rules": {}}
