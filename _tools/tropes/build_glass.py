@@ -393,7 +393,7 @@ function markRail(){
  var cur=location.hash||"#/";
  [].forEach.call(nav.querySelectorAll("a"),function(a){a.classList.toggle("on",a.getAttribute("href")===cur)});
  var r=route(),open=-1;
- if(r[0]==="domain"||r[0]==="layer")open=DOM.findIndex(function(d){return d.id===r[1]});
+ if(r[0]==="domain"||r[0]==="layer"){var did=r[1].split("/")[0];open=DOM.findIndex(function(d){return d.id===did})}
  if(r[0]==="trope"&&BYID[r[1]]!=null){var ds=domsOf(BYID[r[1]]);open=ds.length?ds[0]:-1}
  [].forEach.call(nav.querySelectorAll(".sub"),function(s){s.classList.toggle("open",+s.dataset.d===open)});
  var on=nav.querySelector("a.on");if(on&&on.scrollIntoView){var nr=nav.getBoundingClientRect(),ar=on.getBoundingClientRect();if(ar.top<nr.top||ar.bottom>nr.bottom)on.scrollIntoView({block:"center"})}

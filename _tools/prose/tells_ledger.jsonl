@@ -559,3 +559,4 @@
 {"ts": "2026-10-31 10:34", "sid": "e98f0b1b", "words": 301, "tells": 5, "per_1k": 16.6, "families": {"other": 5}, "rules": {"long-sentence": 5}}
 {"ts": "2026-10-31 10:35", "sid": "e98f0b1b", "words": 339, "tells": 2, "per_1k": 5.9, "families": {"other": 2}, "rules": {"long-sentence": 2}}
 {"ts": "2026-10-31 10:36", "sid": "e98f0b1b", "words": 348, "tells": 4, "per_1k": 11.5, "families": {"other": 4}, "rules": {"long-sentence": 4}}
+{"ts": "2026-10-31 10:37", "sid": "e98f0b1b", "words": 161, "tells": 0, "per_1k": 0.0, "families": {}, "rules": {}}
