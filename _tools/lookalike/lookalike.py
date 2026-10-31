@@ -43,6 +43,17 @@ VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "met
 # ---------------------------------------------------------------- fetch
 
 
+def ssl_ctx():
+    # the Windows store on this box carries an expired root ("certificate has expired" on big sites,
+    # 10/31); certifi's bundle builds the right chain, as in _tools/bookmarks/dig.py. System store if absent.
+    import ssl
+    try:
+        import certifi
+        return ssl.create_default_context(cafile=certifi.where())
+    except (ImportError, OSError):
+        return ssl.create_default_context()
+
+
 def load(target: str) -> tuple[str, dict]:
     """Return (html, meta). Exactly one network request for a URL."""
     p = Path(target)
@@ -52,7 +63,7 @@ def load(target: str) -> tuple[str, dict]:
         raw = p.read_bytes()[:MAX_BYTES]
         return decode(raw, None), {"source": "file", "path": str(p.resolve()), "status": None, "bytes": len(raw)}
     req = urllib.request.Request(target, headers={"User-Agent": UA, "Accept": "text/html,*/*;q=0.5"})
-    with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
+    with urllib.request.urlopen(req, timeout=TIMEOUT, context=ssl_ctx()) as r:
         raw = r.read(MAX_BYTES + 1)
         meta = {
             "source": "url", "final_url": r.geturl(), "status": r.status,
