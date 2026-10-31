@@ -271,8 +271,19 @@ class _FewRedirects(urllib.request.HTTPRedirectHandler):
     max_repeats = 2
 
 
+def _ssl_ctx():
+    # The Windows store on this box carries an expired root that OpenSSL picks
+    # ("certificate has expired" on big live sites); certifi's bundle builds the
+    # right chain. Fall back to the system store when certifi is absent.
+    try:
+        import certifi
+        return ssl.create_default_context(cafile=certifi.where())
+    except (ImportError, OSError):
+        return ssl.create_default_context()
+
+
 def _opener():
-    ctx = ssl.create_default_context()
+    ctx = _ssl_ctx()
     return urllib.request.build_opener(_FewRedirects(), urllib.request.HTTPSHandler(context=ctx))
 
 
@@ -297,7 +308,6 @@ def classify_code(code: int) -> str:
 
 def _classify_exc(e: BaseException) -> tuple[str, str]:
     if isinstance(e, urllib.error.HTTPError):
-        msg = str(e.reason or "")
         if 300 <= e.code < 400:
             return "error", "too many redirects"
         return classify_code(e.code), f"HTTP {e.code}"
@@ -349,9 +359,13 @@ def check_one(url: str) -> dict:
             return {"status": st, "why": why, "head": first[1] if first else None}
 
 
-def check(limit: int | None = None, recheck: bool = False, workers: int = WORKERS) -> dict:
+def check(limit: int | None = None, recheck: bool = False, workers: int = WORKERS,
+          redo: str | None = None) -> dict:
     rec = load(RECORDS, None) or scan()
     cache = {} if recheck else load(CHECK, {})
+    if redo:  # recheck only rows with these statuses, e.g. "error,timeout"
+        want = set(redo.split(","))
+        cache = {k: v for k, v in cache.items() if v.get("status") not in want}
     todo = [i for i in rec["items"] if i["key"] not in cache]
     if limit:
         todo = todo[:limit]
@@ -731,6 +745,7 @@ def main(argv=None):
     ap.add_argument("--json", action="store_true", help="print the result as JSON")
     ap.add_argument("--limit", type=int, help="check: only this many new URLs")
     ap.add_argument("--recheck", action="store_true", help="check: ignore the cache")
+    ap.add_argument("--redo", help="check: recheck rows with these statuses (comma list)")
     ap.add_argument("--titles", type=int, help="rank: print the top N for hand tagging")
     ap.add_argument("--max", type=int, default=500, help="ingest: page cap (max 500)")
     ap.add_argument("--dry-run", action="store_true", help="ingest: say what would be fetched")
@@ -740,7 +755,7 @@ def main(argv=None):
         res = {k: d[k] for k in ("total", "unique", "dupe_copies", "dupe_groups")}
         res["folders"], res["domains"] = len(d["by_folder"]), len(d["by_domain"])
     elif a.verb == "check":
-        res = check(a.limit, a.recheck)
+        res = check(a.limit, a.recheck, redo=a.redo)
     elif a.verb == "rank":
         res = rank()
         if a.titles:
