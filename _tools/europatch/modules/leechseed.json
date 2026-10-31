@@ -2,7 +2,7 @@
  "europatch": 1,
  "catalog": "leechseed",
  "system": "LEECHSEED (the character system)",
- "built": "2026-10-31 11:03",
+ "built": "2026-10-31 11:11",
  "generator": "_tools/europatch/build_catalog.py",
  "source": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md",
  "scale": "every slider is 0..100 on the bay; native = the doc's own scale (shown beside it)",
@@ -1044,7 +1044,7 @@
    "to": "L5.severity",
    "mode": "add",
    "strength": 0.3,
-   "curve": "ease",
+   "curve": "s-curve",
    "why": "L7: ORIGIN's numbers feed the WOUND base",
    "src": "doc"
   },
@@ -1071,7 +1071,7 @@
    "to": "L11.resistance_index",
    "mode": "multiply",
    "strength": -0.4,
-   "curve": "ease",
+   "curve": "ease-in",
    "why": "a flexible imprint lowers resistance to change",
    "src": "provisional"
   }

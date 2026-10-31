@@ -7,7 +7,7 @@ Usage:  python -X utf8 _tools/europatch/europatch.py roll <patch.json | - | pres
         python -X utf8 _tools/europatch/europatch.py presets [--json]     the starter presets (presets/*.json)
         python -X utf8 _tools/europatch/europatch.py check <patch.json | -> [--json]
         python -X utf8 _tools/europatch/europatch.py default [--json]     the starter patch (12 modules, the doc's cables)
-        python -X utf8 _tools/europatch/europatch.py build [--json]       rebuild the catalog from LEECHSEED + refresh the page
+        python -X utf8 _tools/europatch/europatch.py build [--json] [--dry-run]  rebuild the catalog from LEECHSEED + refresh the page
 
 The roll, in the doc's stacked order: the preset sets the dials, the patch's own values nudge them, the patch cables
 bend each dial's centre, then the seed rolls inside the window (centre +- spread). Modules roll in cable order: a
@@ -299,6 +299,12 @@ def roll_core(patch, seed, cat, presets):
                 rl[key] = pick
         out_mods[m["id"] + "_" + m["code"]] = {"id": m["id"], "module": m["module"], "seed": mseed,
                                                "dials": dout, "rolled": rl}
+    ordered = {}
+    for m in mods:
+        k = m["id"] + "_" + m["code"]
+        if k in out_mods:
+            ordered[k] = out_mods[k]
+    out_mods = ordered
     inst = {"europatch": VERSION, "kind": "instance", "catalog": cat.get("catalog"),
             "patch": patch.get("name") or "untitled", "preset": patch.get("preset") or None, "seed": seed,
             "modules": out_mods, "cables": cab_out, "tension": tension, "patterns": patterns,
@@ -373,24 +379,15 @@ def load_presets():
 
 
 def default_patch(cat):
-    """all 12 modules in the doc's tier groups, the doc's suggested cables, laid out in columns"""
-    pos, mods = {}, []
-    cols = {}
-    for g in cat.get("groups", []):
-        for j, mid in enumerate(g["modules"]):
-            cols[mid] = (cat["groups"].index(g), j)
-    for m in cat["modules"]:
-        gi, j = cols.get(m["id"], (0, 0))
-        x = 40 + (gi * 2 + (j % 2 if gi == 2 else 0)) * 300 if gi == 2 else 40 + gi * 300
-        y = 60 + ((j // 2) if gi == 2 else j) * 330
-        mods.append({"id": m["id"], "module": m["id"], "pos": [x, y], "dials": {}})
+    """all 12 modules (the page lays them out by the doc's tier groups), the doc's suggested patch cables"""
+    mods = [{"id": m["id"], "module": m["id"], "dials": {}} for m in cat["modules"]]
     cables = []
     for i, c in enumerate(cat.get("suggested_cables", [])):
         cc = {k: v for k, v in c.items() if k in ("from", "to", "mode", "strength", "curve", "threshold", "soft")}
         cc["id"] = "c%d" % (i + 1)
         cables.append(cc)
     return {"europatch": VERSION, "kind": "patch", "name": "leechseed-default", "catalog": "leechseed",
-            "preset": None, "seed": 1, "modules": mods, "cables": cables,
+            "preset": None, "seed": 48213, "modules": mods, "cables": cables,
             "groups": [dict(g) for g in cat.get("groups", [])]}
 
 
@@ -475,7 +472,7 @@ def roll(patch, seed=None, cat=None, presets=None):
     presets = load_presets() if presets is None else presets
     if seed is None:
         seed = patch.get("seed", 1)
-    if isinstance(seed, str) and re.match(r"^\d+$", seed):
+    if isinstance(seed, str) and re.match(r"^\d{1,15}$", seed):
         seed = int(seed)
     errs, _ = check(dict(patch, seed=seed), cat, presets)
     if errs:
@@ -545,6 +542,14 @@ def main(argv):
     if not args or args[0] in ("-h", "--help", "help"):
         print(__doc__); return 0
     verb = args[0]
+    if verb == "build" and "--dry-run" in args:
+        import subprocess
+        r = subprocess.run([sys.executable, "-X", "utf8", os.path.join(HERE, "build_catalog.py"), "--dry-run", "--json"],
+                           capture_output=True, text=True, encoding="utf-8")
+        res = json.loads(r.stdout) if r.stdout.strip().startswith("{") else {"ok": False, "errors": [r.stderr]}
+        res["page"] = "would refresh " + os.path.relpath(PAGE, ROOT).replace("\\", "/")
+        print(json.dumps(res, indent=1) if js else "dry run: catalog %s modules, %s dials · %s" % (res.get("modules"), res.get("dials"), res["page"]))
+        return r.returncode
     if verb == "build":
         res, code = build(js)
         print(json.dumps(res, indent=1) if js else "catalog %s · page %s" % (res.get("out", "?"), res.get("page", "?")))

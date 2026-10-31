@@ -36,6 +36,7 @@ PAGES = {
     "pullqueue": os.path.join(ROOT, "_PRIVATE", "reference", "pullqueue", "pull-queue.html"),  # pull_glass.py
     "roster": os.path.join(ROOT, "_tools", "roster", "roster.html"),                  # _tools/roster/build.py
     "armory": os.path.join(ROOT, "_PRIVATE", "reference", "armory", "armory.html"),   # _tools/armory/armory.py
+    "europatch": os.path.join(ROOT, "_tools", "europatch", "patchbay.html"),          # europatch.py build (BOLO 173)
 }
 # served from a .py string, so apply() runs at import: traffic (_tools/dictation/traffic.py, :8787/traffic)
 

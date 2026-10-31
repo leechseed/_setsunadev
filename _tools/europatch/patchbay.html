@@ -1,0 +1,896 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Patch Bay</title>
+<!-- LiteGraph.js 0.7.18 (jagenjo, the graph library ComfyUI forked), pinned; 1.0.0-x on npm is a prerelease -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litegraph.js@0.7.18/css/litegraph.css">
+<script src="https://cdn.jsdelivr.net/npm/litegraph.js@0.7.18/build/litegraph.min.js"></script>
+<style>
+:root{--bg:#050608;--panel:#0a0c0f;--panel2:#10151b;--line:#23272b;--line2:#3a3e40;--fg:#c6cbc8;--fg2:#959a97;--dim:#5f6160;
+ --acc:#FF5A1F;--acch:#FFB08F;--accm:#be4216;--accd:#6e280e;--accsoft:#24110a;--cyan:#5CC8D0;--ok:#4ec96f;--bad:#e5604d;--am:#e3b341}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font:12px/1.45 "IBM Plex Mono",Consolas,monospace;overflow:hidden}
+header{height:44px;display:flex;align-items:center;gap:8px;padding:0 10px;border-bottom:1px solid var(--line);background:var(--panel);white-space:nowrap;overflow-x:auto;overflow-y:hidden}
+header h1{font-size:13px;margin:0 6px 0 0;color:var(--acc);letter-spacing:.12em;font-weight:600}
+header label{color:var(--fg2);font-size:11px}
+header input,header select,header button{font:inherit;font-size:12px;background:var(--bg);color:var(--fg);border:1px solid var(--line2);height:26px;padding:0 7px}
+header input:focus,header select:focus{outline:none;border-color:var(--acc)}
+header button{cursor:pointer}
+header button:hover,header button:focus-visible{border-color:var(--acc);color:var(--acch);outline:none}
+header button.go{background:var(--acc);color:#050608;border-color:var(--acc);font-weight:600}
+header button.go:hover{background:var(--acch);color:#050608}
+#seed{width:92px}#pname{width:150px}
+.sep{width:1px;height:22px;background:var(--line)}
+main{display:grid;grid-template-columns:minmax(0,1fr) 420px;height:calc(100vh - 44px)}
+#wrap{position:relative;min-width:0;min-height:0;overflow:hidden}
+#cv{display:block}
+aside{border-left:1px solid var(--line);background:var(--panel);display:flex;flex-direction:column;min-height:0}
+.tabs{display:flex;border-bottom:1px solid var(--line)}
+.tabs button{flex:1;font:inherit;background:none;border:0;border-bottom:2px solid transparent;color:var(--fg2);padding:8px;cursor:pointer}
+.tabs button.on{color:var(--acch);border-bottom-color:var(--acc)}
+.pane{flex:1;overflow:auto;padding:10px 12px;display:none}
+.pane.on{display:block}
+#src{color:var(--dim);font-size:11px;margin-bottom:8px}
+#sum p{margin:0 0 7px}
+#sum p.head{color:var(--acch);font-size:13px;border-left:2px solid var(--acc);padding-left:8px}
+#sum .mod{color:var(--acc)}
+.pat{border:1px solid var(--line2);padding:6px 8px;margin:6px 0;font-size:11px}
+.pat.set_piece{border-color:var(--am)}.pat.reflective{border-color:var(--cyan)}
+.warn{color:var(--bad)}
+.empty{color:var(--dim);border:1px dashed var(--line2);padding:14px;text-align:center}
+#tree details{margin-left:12px}
+#tree summary{cursor:pointer;color:var(--fg2)}
+#tree summary:hover{color:var(--acch)}
+#tree .kv{margin-left:24px;white-space:pre-wrap;word-break:break-word}
+#tree .k{color:var(--acch)}#tree .n{color:var(--cyan)}#tree .s{color:var(--fg)}#tree .z{color:var(--dim)}
+#meta{display:none;position:absolute;top:44px;right:0;width:520px;max-width:100%;z-index:40;background:var(--panel2);border:1px solid var(--acc);padding:10px 12px;font-size:11px;color:var(--fg2)}
+#meta.on{display:block}
+#meta b{color:var(--acch)}
+.pop{position:fixed;z-index:60;background:var(--panel2);border:1px solid var(--acc);padding:10px;width:260px;box-shadow:0 6px 24px rgba(0,0,0,.6);font-size:12px}
+.pop h3{margin:0 0 6px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--acch)}
+.pop .row{display:grid;grid-template-columns:96px 1fr 44px;gap:6px;align-items:center;margin:4px 0}
+.pop select,.pop input[type=number]{font:inherit;background:var(--bg);color:var(--fg);border:1px solid var(--line2);height:24px;width:100%}
+.pop input[type=range]{width:100%;accent-color:var(--acc)}
+.pop .foot{display:flex;gap:6px;justify-content:flex-end;margin-top:8px}
+.pop button{font:inherit;background:var(--bg);color:var(--fg);border:1px solid var(--line2);padding:3px 8px;cursor:pointer}
+.pop button:hover{border-color:var(--acc);color:var(--acch)}
+/* the hover layer (CK3, 9/16; the desk's pattern): dotted terms open a tip; click pins; Space locks; Esc clears; tips nest */
+.t{border-bottom:1px dotted var(--accm);cursor:help}
+.tip{position:fixed;z-index:70;max-width:340px;background:var(--panel2);border:1px solid var(--acc);padding:8px 10px;font-size:12px;line-height:1.45;color:var(--fg);box-shadow:0 6px 24px rgba(0,0,0,.6)}
+.tip b{color:var(--acch);display:block;margin-bottom:2px;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.tip.pin{border-style:double;border-width:3px}
+.tip .hint{display:block;margin-top:5px;color:var(--dim);font-size:10px}
+#ghost{position:fixed;width:1px;height:1px;pointer-events:none;opacity:0}
+.litegraph .litemenu-entry,.litegraph.litecontextmenu{font-family:"IBM Plex Mono",Consolas,monospace!important}
+@media(max-width:900px){main{grid-template-columns:minmax(0,1fr)}aside{display:none}}
+</style>
+<!-- cmd-theme -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<style id="cmd-theme">
+/* The Command theme (BOLO 171, 10/31). One look for every page the launch opens.
+   Source of truth: the Console's tokens (_tools/console/console.py PAGE). Dark only, no toggle (9/11).
+   Orange #FF5A1F on every page, the DARKROOM included (Chief 10/30: the rose pages are IN).
+   theme.py injects this file as <style id="cmd-theme"> at the end of a page's styles, so it wins.
+   Edit the values here, then run:  python _tools/brand/theme.py apply-all                        */
+
+:root{
+  color-scheme:dark;
+  /* the Console's own values */
+  --cmd-bg:#050608; --cmd-hl:#10151b; --cmd-panel:#0a0c0f; --cmd-panel2:#10151b; --cmd-inset:#030405;
+  --cmd-line:#23272b; --cmd-line2:#3a3e40;
+  --cmd-fg:#c6cbc8; --cmd-fg2:#959a97; --cmd-dim:#5f6160; --cmd-white:#ffffff;
+  --cmd-acc:#FF5A1F; --cmd-acch:#FFB08F; --cmd-accm:#be4216; --cmd-accd:#6e280e; --cmd-accsoft:#24110a;
+  --cmd-ok:#4ec96f; --cmd-oksoft:#0f2416; --cmd-am:#e3b341; --cmd-amsoft:#2a210b;
+  --cmd-bad:#e5604d; --cmd-badsoft:#2a120e; --cmd-cyan:#5CC8D0;
+  --cmd-font:"IBM Plex Mono",Consolas,monospace;
+  --cmd-chrome:44px;
+}
+
+/* every page's own token names, pointed at the Console's values */
+:root{
+  /* ground and panels */
+  --bg:var(--cmd-bg)!important; --ground:var(--cmd-bg)!important;
+  --panel:var(--cmd-panel)!important; --panel-2:var(--cmd-panel2)!important; --panel2:var(--cmd-panel2)!important;
+  --pan:var(--cmd-panel)!important; --pan2:var(--cmd-panel2)!important; --inset:var(--cmd-inset)!important;
+  --hl:var(--cmd-hl)!important;
+  /* lines */
+  --line:var(--cmd-line)!important; --line-2:var(--cmd-line2)!important; --line2:var(--cmd-line2)!important; --ln:var(--cmd-line)!important;
+  /* text */
+  --fg:var(--cmd-fg)!important; --ink:var(--cmd-fg)!important; --tx:var(--cmd-fg)!important;
+  --ink-2:var(--cmd-fg2)!important; --ink2:var(--cmd-fg2)!important; --muted:var(--cmd-fg2)!important; --help:var(--cmd-fg2)!important;
+  --ink-3:var(--cmd-dim)!important; --ink3:var(--cmd-dim)!important; --mut:var(--cmd-fg2)!important; --mu:var(--cmd-fg2)!important;
+  --dim:var(--cmd-dim)!important; --faint:var(--cmd-dim)!important;
+  /* the accent */
+  --acc:var(--cmd-acc)!important; --accent:var(--cmd-acc)!important; --ac:var(--cmd-acc)!important; --or:var(--cmd-acc)!important;
+  --amber:var(--cmd-acc)!important; --amber-dim:var(--cmd-accd)!important; --amber-glow:rgba(255,90,31,.30)!important;
+  --accent-ink:var(--cmd-acch)!important; --acch:var(--cmd-acch)!important; --or2:var(--cmd-acch)!important;
+  --link:var(--cmd-acch)!important; --orange:var(--cmd-acch)!important;
+  --accent-soft:var(--cmd-accsoft)!important; --orange-soft:var(--cmd-accsoft)!important;
+  --accd:var(--cmd-accd)!important; --accm:var(--cmd-accm)!important;
+  /* states */
+  --ok:var(--cmd-ok)!important; --good:var(--cmd-ok)!important; --go:var(--cmd-ok)!important; --green:var(--cmd-ok)!important;
+  --good-soft:var(--cmd-oksoft)!important;
+  --am:var(--cmd-am)!important; --warn:var(--cmd-am)!important; --warn-soft:var(--cmd-amsoft)!important; --mark:var(--cmd-amsoft)!important;
+  --bad:var(--cmd-bad)!important; --no:var(--cmd-bad)!important; --bad-soft:var(--cmd-badsoft)!important;
+  --cyan:var(--cmd-cyan)!important;
+  /* one font: the Console's mono */
+  --display:var(--cmd-font)!important; --disp:var(--cmd-font)!important; --body:var(--cmd-font)!important;
+  --mono:var(--cmd-font)!important; --tile:var(--cmd-font)!important; --cond:var(--cmd-font)!important;
+  /* no dot grid, flat shadows */
+  --grid:transparent!important; --shadow:none!important;
+}
+
+/* base layer */
+html,body{background-color:var(--cmd-bg)!important;color:var(--cmd-fg)}
+body{background-image:none!important;-webkit-font-smoothing:auto}
+body,body *:not(svg):not(svg *){font-family:var(--cmd-font)!important}
+::selection{background:var(--cmd-acc);color:var(--cmd-bg)}
+:focus-visible{outline-color:var(--cmd-acc)}
+input,select,textarea{accent-color:var(--cmd-acc);caret-color:var(--cmd-acc)}
+*{scrollbar-color:var(--cmd-line2) transparent}
+</style>
+<!-- /cmd-theme -->
+</head><body>
+<header>
+ <h1><span class="t" data-t="europatch" tabindex="0">EUROPATCH</span></h1>
+ <label><span class="t" data-t="preset" tabindex="0">preset</span></label><select id="preset"></select>
+ <span class="sep"></span>
+ <label><span class="t" data-t="seed" tabindex="0">seed</span></label><input id="seed" value="48213" inputmode="numeric" aria-label="seed">
+ <button id="dice" title="a new seed">dice</button>
+ <button id="roll" class="go">Roll</button>
+ <span class="sep"></span>
+ <input id="pname" value="leechseed-default" aria-label="patch name">
+ <button id="save">Save</button>
+ <select id="load" aria-label="load a saved patch"><option value="">load…</option></select>
+ <button id="tidy" title="lay the patch modules out by tier">tidy</button>
+ <button id="xpatch" title="download the patch JSON">patch.json</button>
+ <button id="xinst" title="download the instance JSON">instance.json</button>
+ <button id="mb" aria-expanded="false">about</button>
+</header>
+<div id="meta"><b>Patch bay v1</b> (BOLO 173, 10/31, provisional). LEECHSEED's 12 layers as <span class="t" data-t="module" tabindex="0">patch modules</span>; dials are sliders (0..100, the doc's own scale beside) with a <span class="t" data-t="spread" tabindex="0">spread</span>, and <span class="t" data-t="weights" tabindex="0">weighted lists</span>. Drag from an out-<span class="t" data-t="jack" tabindex="0">jack</span> to an in-jack to lay a <span class="t" data-t="cable" tabindex="0">patch cable</span>; click the dot at its middle to set mode, strength and <span class="t" data-t="curve" tabindex="0">curve</span>. Roll asks the Console (python europatch.py roll); with no Console the page rolls with its <span class="t" data-t="mirror" tabindex="0">JS mirror</span>. Groups are the sub-patches (the doc's three tiers). Saves go to _PRIVATE/europatch/patches/. Rebuild the catalog and this page from LEECHSEED: <b>python -X utf8 _tools/europatch/europatch.py build</b>. Model: ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/ssot_00_europatch.md. Dotted words open a tip: click pins, Space locks, Esc clears.</div>
+<main>
+ <div id="wrap"><canvas id="cv"></canvas></div>
+ <aside>
+  <div class="tabs"><button class="on" data-p="sum">Character</button><button data-p="tree">Instance JSON</button></div>
+  <div class="pane on" id="sum"><div class="empty">Set the dials, then Roll.</div></div>
+  <div class="pane" id="tree"><div class="empty">No instance yet.</div></div>
+ </aside>
+</main>
+<div id="ghost"></div>
+<script type="application/json" id="ep-data">{"catalog":{"europatch":1,"catalog":"leechseed","system":"LEECHSEED (the character system)","built":"2026-10-31 11:11","generator":"_tools/europatch/build_catalog.py","source":"ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md","scale":"every slider is 0..100 on the bay; native = the doc's own scale (shown beside it)","private":"L9 EROS: only SFW keys are dials here. The explicit keys stay in _PRIVATE/ and link by key (a private patch can carry them under dials with the same key names).","modules":[{"id":"L1","code":"CORE","name":"Core","tier":"Tier 1","question":"How much cognitive and ideological mass does the mind carry?","fields":["CORE","psychology_stack","assigned_labels","neurotype"],"dials":[{"key":"CORE","kind":"slider","native":[0,20],"default_native":10,"words":["a light, practical mind","an ordinary working mind","a heavy, sharp mind"],"label":"CORE","help":"Cognitive and ideological mass (IQ equivalent; default 10).","default":50,"spread":10,"observed_native":13},{"key":"psychology_stack.extrovert_introvert","kind":"pick","label":"extro/intro","help":"Egri's psychology third names extrovert/introvert on the checklist.","choices":["extrovert","introvert"],"vocab_src":"cited: BVX.1123 Egri psychology checklist"}],"jacks_in":["CORE"],"jacks_out":["CORE"]},{"id":"L2","code":"VITAL","name":"Vital","tier":"Tier 1","question":"How much physical and energetic presence does the body carry?","fields":["VITAL","physiology_stack","body_capital"],"dials":[{"key":"VITAL","kind":"slider","native":[0,20],"default_native":10,"words":["a slight, low-energy body","a steady body","a strong, high-energy presence"],"label":"VITAL","help":"Physical and energetic presence (DX equivalent; default 10).","default":50,"spread":10,"observed_native":14}],"jacks_in":["VITAL"],"jacks_out":["VITAL"]},{"id":"L3","code":"SOCIAL","name":"Social","tier":"Tier 1","question":"How does the character project into and read the social world?","fields":["SOCIAL","sociology_stack","community_membership","standing","catalog_ref","circumplex","pair_register","civic_standing","catalog_ref","disclosure_posture","voice_sheet"],"dials":[{"key":"SOCIAL","kind":"slider","native":[0,20],"default_native":10,"words":["hard to read and easy to miss","socially ordinary","reads a room and fills it"],"label":"SOCIAL","help":"Projection into and reading of the social world (default 10).","default":50,"spread":10,"observed_native":10},{"key":"circumplex.agency","kind":"slider","native":[-5,5],"default_native":0,"words":["yielding","even in a room","dominant"],"label":"agency","help":"Interpersonal circumplex, yielding to dominant (-5..+5).","default":50,"spread":10},{"key":"circumplex.communion","kind":"slider","native":[-5,5],"default_native":0,"words":["cold","neutral","warm"],"label":"communion","help":"Interpersonal circumplex, cold to warm (-5..+5).","default":50,"spread":10}],"jacks_in":["SOCIAL","circumplex.agency","circumplex.communion"],"jacks_out":["SOCIAL","circumplex.agency","circumplex.communion"]},{"id":"L4","code":"WILL","name":"Will","tier":"Tier 2","question":"How much resistance holds under pressure, and where does the capacity to decide bend?","fields":["WILL","coping_strategy","locus_of_control","system_stance"],"dials":[{"key":"WILL","kind":"slider","native":[0,20],"default_native":10,"words":["bends under pressure","holds under ordinary pressure","decides under any pressure"],"label":"WILL","help":"The capacity to decide under pressure. Derives from CORE by default (WILL = CORE).","default":50,"spread":10,"observed_native":14},{"key":"locus_of_control","kind":"slider","native":[-5,5],"default_native":0,"words":["owns the outcome","a mixed locus","puts the outcome on the world"],"label":"locus","help":"Internal (-5) to external (+5).","default":50,"spread":10},{"key":"coping_strategy","kind":"pick","label":"coping","help":"","choices":["naive","cinderella","exceptional","pleasing","disappointed"],"vocab_src":"cited: BVX.0045 Schmidt's five coping strategies"},{"key":"system_stance","kind":"pick","label":"stance","help":"","choices":["cog","believer","mask","bystander","resister"],"vocab_src":"doc: slice doc CL25"}],"jacks_in":["WILL","locus_of_control"],"jacks_out":["WILL","locus_of_control"]},{"id":"L5","code":"WOUND","name":"Wound","tier":"Tier 2","question":"What accumulated damage failed to resolve, and how severe is it?","fields":["WOUND","severity","triggers","minority_stress","relational_refs","mentor_state","wound_kind","wound_work"],"dials":[{"key":"severity","kind":"slider","native":[0,10],"default_native":3,"words":["lightly marked","carries real damage","near the collapse line"],"label":"severity","help":"WOUND, 0 undamaged to 10 functional collapse (Puglisi & Ackerman's severity).","default":30,"spread":10,"observed_native":8},{"key":"wound_kind","kind":"pick","label":"kind","help":"","choices":["injury_suffered","error_committed","loss_unrecognized"],"vocab_src":"doc: slice doc CL22"},{"key":"relational_refs.kind","kind":"pick","label":"tie","help":"The kind of character the wound keys to.","choices":["ghost","revenant","mentor","shapeshifter"],"vocab_src":"doc: slice doc, BVX.0196"}],"jacks_in":["severity"],"jacks_out":["severity"]},{"id":"L6","code":"DRIVE","name":"Drive","tier":"Tier 2","question":"What fuels the active goal-pursuit, and from what source?","fields":["DRIVE","futurity_stance","want_need"],"dials":[{"key":"DRIVE","kind":"slider","native":[0,20],"default_native":10,"words":["running on fumes","steady fuel","a burning drive"],"label":"DRIVE","help":"Narrative motivation fuel. Derives from VITAL by default (DRIVE = VITAL).","default":50,"spread":10,"observed_native":12},{"key":"futurity_stance","kind":"pick","label":"future","help":"","choices":["planned","hoped","foreclosed","none","refused","horizon"],"vocab_src":"doc: slice doc 3.0.0"},{"key":"drive_texture","kind":"pick","label":"texture","help":"","choices":["more","risk","novelty","abundance"],"vocab_src":"cited: slice doc 2.5.0 (prose list)"},{"key":"want_need.need_kind","kind":"pick","label":"need","help":"","choices":["psychological","moral"],"vocab_src":"doc: slice doc CL16"}],"jacks_in":["DRIVE"],"jacks_out":["DRIVE"]},{"id":"L7","code":"ORIGIN","name":"Origin","tier":"Tier 3","question":"What birth context and formation set the starting conditions?","fields":["origin_class","origin_stability","family_coherence","origin_wound_seed","tech_level","catalog_ref","system_exposure","layers","regime","catalog_ref","origin_event","hereditary_predisposition","life_script"],"dials":[{"key":"origin_stability","kind":"slider","native":[0,10],"default_native":5,"words":["an unstable start","an uneven start","a stable start"],"label":"stability","help":"","default":50,"spread":10,"observed_native":4},{"key":"family_coherence","kind":"slider","native":[0,10],"default_native":5,"words":["a broken family","a strained family","a tight family"],"label":"family","help":"","default":50,"spread":10,"observed_native":7},{"key":"origin_wound_seed","kind":"slider","native":[0,10],"default_native":3,"words":["little early harm","some early harm","deep early harm"],"label":"wound seed","help":"Feeds the WOUND base.","default":30,"spread":10,"observed_native":6},{"key":"tech_level","kind":"slider","native":[0,10],"default_native":5,"words":["low tech","mid tech","high tech"],"label":"tech","help":"","default":50,"spread":10,"observed_native":6}],"jacks_in":["origin_stability","family_coherence","origin_wound_seed","tech_level"],"jacks_out":["origin_stability","family_coherence","origin_wound_seed","tech_level"]},{"id":"L8","code":"IMPRINT","name":"Imprint","tier":"Tier 3","question":"What formative conditioning locked in before the story began?","fields":["attachment_style","attachment_style_score","attachment_dimensions","protest_behaviors","deactivating_strategies","emotional_range","conditional_patterns","imprint_flexibility","secure_base_object","primary_attachment_object","appeasement_strategies"],"dials":[{"key":"attachment_style_score","kind":"slider","native":[0,10],"default_native":5,"words":["a faint attachment pull","a middling attachment pull","a strong attachment pull"],"label":"attach score","help":"","default":50,"spread":10,"observed_native":6},{"key":"emotional_range","kind":"slider","native":[0,10],"default_native":5,"words":["a narrow emotional range","a middling emotional range","a wide emotional range"],"label":"range","help":"","default":50,"spread":10,"observed_native":9},{"key":"imprint_flexibility","kind":"slider","native":[0,10],"default_native":5,"words":["locked-in conditioning","partly flexible conditioning","flexible conditioning"],"label":"flexibility","help":"","default":50,"spread":10,"observed_native":3},{"key":"attachment_style","kind":"pick","label":"attachment","help":"","choices":["secure","anxious","avoidant","fearful_avoidant"],"vocab_src":"doc: slice doc, BVX.1127 Attached"}],"jacks_in":["attachment_style_score","emotional_range","imprint_flexibility"],"jacks_out":["attachment_style_score","emotional_range","imprint_flexibility"]},{"id":"L9","code":"EROS","name":"Eros","tier":"Tier 3","question":"How is desire structured, armored, and made safe?","fields":["erotic_blueprint_type","arousal_curve","desire_vector","resolution_type","group_size","group_position","erotic_craft","power_exchange","consent_posture","client_script","signal_fluency","shame_index","exposure_shame","role_shame","armor_index","satisfaction_cycle_truncation","erotic_safety_precondition","erotic_safety_precondition_scope","intimacy_mode","disclosure_posture","template_origin","compersion","fantasy_ledger","desire_object","pleasure_evidence","sex_creed","touch_rule","dissolution","compartment_practice","attraction_channels","risk_role","risk_account"],"dials":[{"key":"armor_index","kind":"slider","native":[0,12],"default_native":6,"words":["unarmored","guarded","heavily armored"],"label":"armor","help":"Body armor; Expressive Range = 12 - armor.","default":50,"spread":10,"observed_native":8},{"key":"exposure_shame","kind":"slider","native":[0,10],"default_native":5,"words":["unbothered by exposure","some exposure shame","exposure-shamed"],"label":"exposure shame","help":"Shame under public exposure (read alias shame_index).","default":50,"spread":10,"observed_native":2},{"key":"intimacy_mode","kind":"pick","label":"intimacy","help":"","choices":["partnered_merge","parallel_presence","solo_directed","bounded_no_strings"],"vocab_src":"doc: slice doc CL2"},{"key":"signal_fluency","kind":"pick","label":"signals","help":"","choices":["fluent","functional","illiterate"],"vocab_src":"cited: slice doc L9 (prose list)"}],"jacks_in":["armor_index","exposure_shame"],"jacks_out":["armor_index","exposure_shame"]},{"id":"L10","code":"SHADOW","name":"Shadow","tier":"Tier 3","question":"What is repressed, projected, or denied, and what does it generate?","fields":["shadow_density","projection_tendency","regression_pattern","shadow_content","dark_triad","light_triad","disinhibition_context"],"dials":[{"key":"shadow_density","kind":"slider","native":[0,10],"default_native":5,"words":["a thin shadow","a working shadow","a dense shadow"],"label":"density","help":"","default":50,"spread":10,"observed_native":7},{"key":"projection_tendency","kind":"slider","native":[0,10],"default_native":5,"words":["owns what it carries","projects at times","projects hard"],"label":"projection","help":"","default":50,"spread":10,"observed_native":6},{"key":"shadow_content.kind","kind":"pick","label":"content","help":"","choices":["denied_wish","assigned_by_world","feared_double","standing_alarm","scrubbed_bond","imposed_self_image"],"vocab_src":"doc: slice doc CL9"}],"jacks_in":["shadow_density","projection_tendency"],"jacks_out":["shadow_density","projection_tendency"]},{"id":"L11","code":"DESTINY","name":"Destiny","tier":"Tier 3","question":"What is the character building toward, not where they stand?","fields":["growth_axis","resistance_index","soul_evolution_archetype","karmic_memory","growth_requirement","arc_type","change_cause","catalyst_archetype","rail_ref"],"dials":[{"key":"resistance_index","kind":"slider","native":[0,10],"default_native":5,"words":["open to change","resists change","fights change hard"],"label":"resistance","help":"","default":50,"spread":10,"observed_native":8},{"key":"arc_type","kind":"pick","label":"arc","help":"","choices":["growth","transformation","hybrid"],"vocab_src":"cited: BVX.0196 growth vs transformation"},{"key":"change_cause","kind":"pick","label":"cause","help":"","choices":["unmasking","external_force","will","uncaused"],"vocab_src":"cited: BVX.0061 the four causes"}],"jacks_in":["resistance_index"],"jacks_out":["resistance_index"]},{"id":"L12","code":"FUNCTION","name":"Function","tier":"Tier 3","question":"What narrative role and mechanical function does the character discharge?","fields":["dramatica_archetype","mc_problem_element","methodology_element","evaluation_element","purpose_element","touchstone","story_outcome","story_judgement","limit_type","resolve","convention_role"],"dials":[{"key":"dramatica_archetype","kind":"pick","label":"archetype","help":"","choices":["Protagonist","Antagonist","Guardian","Contagonist","Reason","Emotion","Sidekick","Skeptic"],"vocab_src":"cited: BVX.0089 the eight archetypes"},{"key":"resolve","kind":"pick","label":"resolve","help":"","choices":["Change","Steadfast"],"vocab_src":"cited: Dramatica protocol, storyform dynamics"},{"key":"story_outcome","kind":"pick","label":"outcome","help":"","choices":["Success","Failure"],"vocab_src":"cited: Dramatica protocol, storyform dynamics"},{"key":"story_judgement","kind":"pick","label":"judgement","help":"","choices":["Good","Bad"],"vocab_src":"cited: Dramatica protocol, storyform dynamics"},{"key":"limit_type","kind":"pick","label":"limit","help":"","choices":["Timelock","Optionlock"],"vocab_src":"cited: Dramatica protocol, storyform dynamics"},{"key":"convention_role.actant_slot","kind":"pick","label":"actant","help":"","choices":["subject","object","sender","receiver","helper","opponent"],"vocab_src":"doc: Dramatica protocol CL15"}],"jacks_in":[],"jacks_out":[]}],"suggested_cables":[{"from":"L1.CORE","to":"L4.WILL","mode":"add","strength":0.2,"curve":"linear","why":"L4: WILL derives from CORE by default (WILL = CORE)","src":"doc"},{"from":"L2.VITAL","to":"L6.DRIVE","mode":"add","strength":0.2,"curve":"linear","why":"L6: DRIVE derives from VITAL by default (DRIVE = VITAL)","src":"doc"},{"from":"L5.severity","to":"L4.WILL","mode":"add","strength":-0.3,"curve":"threshold-soft","threshold":0.5,"soft":0.2,"why":"L5: high WOUND reduces effective WILL under trigger conditions","src":"doc"},{"from":"L5.severity","to":"L3.SOCIAL","mode":"add","strength":-0.2,"curve":"threshold-soft","threshold":0.5,"soft":0.2,"why":"L5: high WOUND reduces effective SOCIAL under trigger conditions","src":"doc"},{"from":"L7.origin_wound_seed","to":"L5.severity","mode":"add","strength":0.3,"curve":"s-curve","why":"L7: ORIGIN's numbers feed the WOUND base","src":"doc"},{"from":"L7.origin_stability","to":"L3.SOCIAL","mode":"add","strength":0.15,"curve":"linear","why":"L7: ORIGIN's numbers feed SOCIAL defaults","src":"doc"},{"from":"L10.projection_tendency","to":"L3.SOCIAL","mode":"add","strength":-0.1,"curve":"linear","why":"Derived: Social Legibility = SOCIAL - projection/3","src":"doc"},{"from":"L8.imprint_flexibility","to":"L11.resistance_index","mode":"multiply","strength":-0.4,"curve":"ease-in","why":"a flexible imprint lowers resistance to change","src":"provisional"}],"groups":[{"title":"Tier 1 · surface","modules":["L1","L2","L3"]},{"title":"Tier 2 · pressure","modules":["L4","L5","L6"]},{"title":"Tier 3 · depth","modules":["L7","L8","L9","L10","L11","L12"]}]},"presets":[{"europatch":"0.1.0","kind":"preset","name":"idealist","title":"The wide-eyed idealist","provisional":true,"trope":"WideEyedIdealist","source":"trope register link slug WideEyedIdealist (_tools/tropes/data/tropes.jsonl); dial values the CDR's call 10/31","description":"Protagonist who must change: a light wound, warm, hoped-for future, open to change; growth through will.","dials":{"L1":{"CORE":{"value":55,"spread":12}},"L3":{"circumplex.communion":{"value":78,"spread":8}},"L4":{"WILL":{"value":55,"spread":12},"coping_strategy":{"weights":{"naive":4,"cinderella":1}}},"L5":{"severity":{"value":20,"spread":8},"wound_kind":{"weights":{"loss_unrecognized":3}}},"L6":{"DRIVE":{"value":70,"spread":8},"futurity_stance":{"weights":{"hoped":5}}},"L7":{"origin_stability":{"value":65,"spread":8},"family_coherence":{"value":65,"spread":8},"origin_wound_seed":{"value":20,"spread":8}},"L8":{"attachment_style":{"weights":{"secure":3,"anxious":2}}},"L9":{"armor_index":{"value":25,"spread":8}},"L10":{"shadow_density":{"value":25,"spread":8}},"L11":{"resistance_index":{"value":30,"spread":8},"arc_type":{"weights":{"growth":3,"transformation":2}}},"L12":{"dramatica_archetype":{"weights":{"Protagonist":6}},"resolve":{"weights":{"Change":4,"Steadfast":1}},"convention_role.actant_slot":{"weights":{"subject":5}}}}},{"europatch":"0.1.0","kind":"preset","name":"mentor","title":"The mentor","provisional":true,"trope":"TheMentor","source":"trope register link slug TheMentor (_tools/tropes/data/tropes.jsonl); dial values the CDR's call 10/31","description":"Guardian, steadfast: a heavy mind and a will that holds, an old error carried quietly, secure enough to teach.","dials":{"L1":{"CORE":{"value":75,"spread":8}},"L2":{"VITAL":{"value":40,"spread":8}},"L3":{"SOCIAL":{"value":65,"spread":8},"circumplex.agency":{"value":65,"spread":8},"circumplex.communion":{"value":70,"spread":8}},"L4":{"WILL":{"value":78,"spread":8},"locus_of_control":{"value":30,"spread":8},"system_stance":{"weights":{"resister":3,"bystander":2,"mask":1}}},"L5":{"severity":{"value":45,"spread":8},"wound_kind":{"weights":{"error_committed":3,"loss_unrecognized":2}},"relational_refs.kind":{"weights":{"ghost":3,"mentor":2}}},"L6":{"DRIVE":{"value":45,"spread":8},"futurity_stance":{"weights":{"horizon":3,"hoped":2}}},"L8":{"attachment_style":{"weights":{"secure":4,"avoidant":1}},"imprint_flexibility":{"value":60,"spread":8}},"L10":{"shadow_density":{"value":45,"spread":8},"projection_tendency":{"value":30,"spread":8}},"L11":{"resistance_index":{"value":35,"spread":8},"arc_type":{"weights":{"growth":3,"hybrid":1}}},"L12":{"dramatica_archetype":{"weights":{"Guardian":6,"Reason":2}},"resolve":{"weights":{"Steadfast":4,"Change":1}},"convention_role.actant_slot":{"weights":{"helper":3,"sender":3}}}}},{"europatch":"0.1.0","kind":"preset","name":"rival","title":"The rival","provisional":true,"trope":"TheRival","source":"trope register link slug TheRival (_tools/tropes/data/tropes.jsonl); dial values the CDR's call 10/31","description":"Contagonist, the mirror who wants the same thing: high drive, competitive agency, an injury that made winning the point.","dials":{"L1":{"CORE":{"value":65,"spread":8}},"L2":{"VITAL":{"value":70,"spread":8}},"L3":{"SOCIAL":{"value":60,"spread":8},"circumplex.agency":{"value":80,"spread":8},"circumplex.communion":{"value":35,"spread":8}},"L4":{"WILL":{"value":70,"spread":8},"locus_of_control":{"value":55,"spread":8},"coping_strategy":{"weights":{"exceptional":4,"pleasing":1}}},"L5":{"severity":{"value":40,"spread":8},"wound_kind":{"weights":{"injury_suffered":2,"loss_unrecognized":2}}},"L6":{"DRIVE":{"value":82,"spread":8},"drive_texture":{"weights":{"more":3,"risk":2}},"futurity_stance":{"weights":{"planned":3}}},"L8":{"attachment_style":{"weights":{"avoidant":3,"anxious":2}}},"L10":{"shadow_density":{"value":55,"spread":8},"projection_tendency":{"value":70,"spread":8},"shadow_content.kind":{"weights":{"feared_double":4}}},"L11":{"resistance_index":{"value":70,"spread":8}},"L12":{"dramatica_archetype":{"weights":{"Contagonist":6,"Antagonist":2}},"convention_role.actant_slot":{"weights":{"opponent":4}}}}},{"europatch":"0.1.0","kind":"preset","name":"trickster","title":"The trickster","provisional":true,"trope":"TheTrickster","source":"trope register link slug TheTrickster (_tools/tropes/data/tropes.jsonl); dial values the CDR's call 10/31","description":"Emotion: quick, warm, unarmored, low will and a mask for every system; the shadow lives in the joke.","dials":{"L1":{"CORE":{"value":62,"spread":12}},"L3":{"SOCIAL":{"value":78,"spread":8},"circumplex.communion":{"value":70,"spread":8}},"L4":{"WILL":{"value":35,"spread":12},"locus_of_control":{"value":70,"spread":8},"system_stance":{"weights":{"mask":5,"resister":2}}},"L5":{"severity":{"value":30,"spread":12}},"L6":{"drive_texture":{"weights":{"novelty":4,"risk":3}}},"L8":{"imprint_flexibility":{"value":80,"spread":8},"emotional_range":{"value":80,"spread":8}},"L9":{"armor_index":{"value":25,"spread":8},"signal_fluency":{"weights":{"fluent":5}}},"L10":{"projection_tendency":{"value":55,"spread":8},"shadow_content.kind":{"weights":{"denied_wish":3,"imposed_self_image":2}}},"L12":{"dramatica_archetype":{"weights":{"Emotion":5,"Sidekick":2,"Contagonist":1}}}}},{"europatch":"0.1.0","kind":"preset","name":"true-believer","title":"The true believer","provisional":true,"trope":"KnightTemplar","source":"trope register link slug KnightTemplar (_tools/tropes/data/tropes.jsonl); dial values the CDR's call 10/31","description":"Antagonist, steadfast: a high will bent to a cause, believer stance, locked-in conditioning, a dense shadow it cannot see.","dials":{"L1":{"CORE":{"value":70,"spread":8}},"L3":{"circumplex.agency":{"value":80,"spread":8}},"L4":{"WILL":{"value":88,"spread":6},"locus_of_control":{"value":25,"spread":8},"system_stance":{"weights":{"believer":6,"cog":1}}},"L5":{"wound_kind":{"weights":{"loss_unrecognized":3,"injury_suffered":2}}},"L6":{"DRIVE":{"value":80,"spread":8},"futurity_stance":{"weights":{"planned":3,"horizon":2}},"want_need.need_kind":{"weights":{"moral":4}}},"L8":{"imprint_flexibility":{"value":15,"spread":8}},"L10":{"shadow_density":{"value":82,"spread":8},"projection_tendency":{"value":80,"spread":8},"shadow_content.kind":{"weights":{"denied_wish":2,"feared_double":2,"standing_alarm":2}}},"L11":{"resistance_index":{"value":88,"spread":8}},"L12":{"dramatica_archetype":{"weights":{"Antagonist":6,"Guardian":1}},"resolve":{"weights":{"Steadfast":5}},"convention_role.actant_slot":{"weights":{"opponent":4,"sender":1}}}}},{"europatch":"0.1.0","kind":"preset","name":"wounded-veteran","title":"The wounded veteran","provisional":true,"trope":"ShellShockedVeteran","source":"trope register link slug ShellShockedVeteran (_tools/tropes/data/tropes.jsonl); dial values the CDR's call 10/31","description":"Skeptic: a strong body, a severe injury, armored and avoidant, hard to read, still deciding under fire.","dials":{"L2":{"VITAL":{"value":68,"spread":8}},"L3":{"SOCIAL":{"value":30,"spread":8},"circumplex.communion":{"value":35,"spread":8}},"L4":{"WILL":{"value":62,"spread":8},"coping_strategy":{"weights":{"disappointed":4}},"system_stance":{"weights":{"cog":2,"resister":2,"bystander":1}}},"L5":{"severity":{"value":78,"spread":10},"wound_kind":{"weights":{"injury_suffered":4,"error_committed":2}},"relational_refs.kind":{"weights":{"ghost":4,"revenant":2}}},"L6":{"futurity_stance":{"weights":{"foreclosed":4,"none":2}}},"L7":{"origin_wound_seed":{"value":40,"spread":8}},"L8":{"attachment_style":{"weights":{"avoidant":3,"fearful_avoidant":3}},"emotional_range":{"value":30,"spread":8}},"L9":{"armor_index":{"value":80,"spread":8}},"L10":{"shadow_density":{"value":70,"spread":8}},"L11":{"resistance_index":{"value":65,"spread":8},"change_cause":{"weights":{"external_force":3,"will":2}}},"L12":{"dramatica_archetype":{"weights":{"Skeptic":5,"Guardian":1}}}}}],"default":{"europatch":"0.1.0","kind":"patch","name":"leechseed-default","catalog":"leechseed","preset":null,"seed":48213,"modules":[{"id":"L1","module":"L1","dials":{}},{"id":"L2","module":"L2","dials":{}},{"id":"L3","module":"L3","dials":{}},{"id":"L4","module":"L4","dials":{}},{"id":"L5","module":"L5","dials":{}},{"id":"L6","module":"L6","dials":{}},{"id":"L7","module":"L7","dials":{}},{"id":"L8","module":"L8","dials":{}},{"id":"L9","module":"L9","dials":{}},{"id":"L10","module":"L10","dials":{}},{"id":"L11","module":"L11","dials":{}},{"id":"L12","module":"L12","dials":{}}],"cables":[{"from":"L1.CORE","to":"L4.WILL","mode":"add","strength":0.2,"curve":"linear","id":"c1"},{"from":"L2.VITAL","to":"L6.DRIVE","mode":"add","strength":0.2,"curve":"linear","id":"c2"},{"from":"L5.severity","to":"L4.WILL","mode":"add","strength":-0.3,"curve":"threshold-soft","threshold":0.5,"soft":0.2,"id":"c3"},{"from":"L5.severity","to":"L3.SOCIAL","mode":"add","strength":-0.2,"curve":"threshold-soft","threshold":0.5,"soft":0.2,"id":"c4"},{"from":"L7.origin_wound_seed","to":"L5.severity","mode":"add","strength":0.3,"curve":"s-curve","id":"c5"},{"from":"L7.origin_stability","to":"L3.SOCIAL","mode":"add","strength":0.15,"curve":"linear","id":"c6"},{"from":"L10.projection_tendency","to":"L3.SOCIAL","mode":"add","strength":-0.1,"curve":"linear","id":"c7"},{"from":"L8.imprint_flexibility","to":"L11.resistance_index","mode":"multiply","strength":-0.4,"curve":"ease-in","id":"c8"}],"groups":[{"title":"Tier 1 · surface","modules":["L1","L2","L3"]},{"title":"Tier 2 · pressure","modules":["L4","L5","L6"]},{"title":"Tier 3 · depth","modules":["L7","L8","L9","L10","L11","L12"]}]}}</script>
+<script>
+/*ENGINE-START*/
+var EP = (function(){
+"use strict";
+var VERSION = "0.1.0", CONF = {high:3, medium:2, low:1}, SET_PIECE_TENSION = 0.5, REFLECTIVE_PULL = 0.5;
+function fnv1a(s){ var h = 2166136261 >>> 0; s = String(s); for (var i = 0; i < s.length; i++){ h ^= s.charCodeAt(i); h = Math.imul(h, 16777619) >>> 0; } return h >>> 0; }
+function Rng(state){ this.x = (state >>> 0) || 0x9E3779B9; for (var i = 0; i < 3; i++) this.next(); }
+Rng.prototype.next = function(){ var x = this.x; x ^= x << 13; x >>>= 0; x ^= x >>> 17; x ^= x << 5; x >>>= 0; this.x = x; return x / 4294967296; };
+function rnd(x, n){ var p = Math.pow(10, n); return Math.floor(x * p + 0.5) / p; }
+function clamp(x, lo, hi){ return x < lo ? lo : x > hi ? hi : x; }
+function curve(x, c){
+  x = clamp(x, 0, 1); var k = c.curve || "linear";
+  if (k === "ease-in") return x * x;
+  if (k === "ease-out") return 1 - (1 - x) * (1 - x);
+  if (k === "s-curve") return x * x * (3 - 2 * x);
+  if (k === "threshold-soft"){ var t = c.threshold != null ? c.threshold : 0.5, w = c.soft != null ? c.soft : 0.15; if (w < 0.001) w = 0.001;
+    var y = clamp((x - (t - w)) / (2 * w), 0, 1); return y * y * (3 - 2 * y); }
+  return x;
+}
+function weight(w){ if (typeof w === "string") return CONF[w.toLowerCase()] || 0; return (typeof w === "number" && w > 0) ? w : 0; }
+function fmt(x){ return String(x); }
+function band(v){ return v < 34 ? 0 : v < 67 ? 1 : 2; }
+function human(s){ return String(s).split("_").join(" "); }
+function has(o, k){ return o != null && Object.prototype.hasOwnProperty.call(o, k); }
+function nonEmpty(o){ return o != null && typeof o === "object" && Object.keys(o).length > 0; }
+
+function resolve(patch, cat, presets){
+  var defs = {}; cat.modules.forEach(function(m){ defs[m.id] = m; });
+  var mods = [], plist = patch.modules;
+  if (!plist || !plist.length) plist = cat.modules.map(function(m){ return {id: m.id, module: m.id}; });
+  plist.forEach(function(pm){
+    var mid = pm.module || pm.id, cm = defs[mid]; if (!cm) return;
+    var iid = pm.id || mid, dials = {};
+    cm.dials.forEach(function(d){
+      if (d.kind === "slider") dials[d.key] = {value: d["default"], spread: d.spread};
+      else { var ws = {}; d.choices.forEach(function(ch){ ws[ch] = 1; }); dials[d.key] = {weights: ws}; }
+    });
+    var layers = [];
+    if (patch.preset && has(presets, patch.preset)) layers.push((presets[patch.preset].dials || {})[mid] || {});
+    if (pm.preset && has(presets, pm.preset)) layers.push((presets[pm.preset].dials || {})[mid] || {});
+    layers.push(pm.dials || {});
+    layers.forEach(function(lay){
+      Object.keys(lay).forEach(function(key){
+        if (!has(dials, key)) return;
+        var src = lay[key], cur = dials[key], ws, ch;
+        if (has(cur, "weights")){
+          if (src.pick != null){ ws = {}; for (ch in cur.weights) ws[ch] = ch === src.pick ? 1 : 0; cur.weights = ws; }
+          if (nonEmpty(src.weights)){ ws = {}; for (ch in cur.weights) ws[ch] = cur.weights[ch];
+            for (ch in src.weights) if (has(ws, ch)) ws[ch] = weight(src.weights[ch]); cur.weights = ws; }
+        } else {
+          if (src.value != null) cur.value = src.value;
+          if (src.spread != null) cur.spread = src.spread;
+        }
+      });
+    });
+    mods.push({id: iid, module: mid, code: cm.code, dials: dials, cat: cm});
+  });
+  var cables;
+  if (has(patch, "cables")) cables = patch.cables || [];
+  else if (patch.preset && has(presets, patch.preset) && has(presets[patch.preset], "cables")) cables = presets[patch.preset].cables;
+  else cables = [];
+  return [mods, cables];
+}
+
+function rollOrder(mods, cables){
+  var idx = {}; mods.forEach(function(m, i){ idx[m.id] = i; });
+  var deps = mods.map(function(){ return {}; });
+  cables.forEach(function(c){
+    var a = idx[String(c.from == null ? "" : c.from).split(".")[0]], b = idx[String(c.to == null ? "" : c.to).split(".")[0]];
+    if (a != null && b != null && a !== b) deps[b][a] = true;
+  });
+  var done = {}, order = [];
+  while (order.length < mods.length){
+    var nxt = -1;
+    for (var i = 0; i < mods.length; i++){
+      if (done[i]) continue;
+      var ok = true; for (var d in deps[i]) if (!done[d]) { ok = false; break; }
+      if (ok){ nxt = i; break; }
+    }
+    if (nxt < 0){ var loop = []; for (var j = 0; j < mods.length; j++) if (!done[j]) loop.push(mods[j].id); return [order, loop]; }
+    done[nxt] = true; order.push(nxt);
+  }
+  return [order, []];
+}
+
+function check(patch, cat, presets){
+  var errs = [], r = resolve(patch, cat, presets), mods = r[0], ids = {};
+  mods.forEach(function(m){ ids[m.id] = m.cat; });
+  (patch.cables || []).forEach(function(c, i){
+    var tag = c.id || ("cables[" + i + "]");
+    ["from", "to"].forEach(function(end){
+      var ref = String(c[end] || ""), p = ref.indexOf("."), mid = ref.slice(0, p), key = ref.slice(p + 1);
+      if (p < 0 || !ids[mid] || ids[mid].jacks_out.indexOf(key) < 0) errs.push(tag + "." + end + ": no slider jack '" + ref + "'");
+    });
+    if (String(c.from || "").split(".")[0] === String(c.to || "").split(".")[0]) errs.push(tag + ": a patch cable inside one module is not in v1");
+  });
+  if (!errs.length){ var lo = rollOrder(mods, r[1])[1]; if (lo.length) errs.push("patch cable loop through: " + lo.join(", ")); }
+  return errs;
+}
+
+function rollCore(patch, seed, cat, presets){
+  var r = resolve(patch, cat, presets), mods = r[0], cables = r[1];
+  var ro = rollOrder(mods, cables), order = ro[0], loop = ro[1];
+  var sseed = String(seed), outMods = {}, rolled = {}, warnings = [];
+  if (loop.length) return [null, ["patch cable loop through: " + loop.join(", ")]];
+  var cabOut = [], into = {};
+  cables.forEach(function(c, i){
+    var cid = c.id || ("c" + (i + 1));
+    cabOut.push({id: cid, from: c.from, to: c.to, mode: c.mode || "add", strength: c.strength != null ? c.strength : 0,
+                 curve: c.curve || "linear", value: null, pull: 0});
+    (into[c.to] = into[c.to] || []).push(i);
+  });
+  var tension = {}, patterns = [];
+  order.forEach(function(oi){
+    var m = mods[oi], mseed = fnv1a(sseed + "|" + m.id), dout = {}, rl = {};
+    m.cat.dials.forEach(function(d){
+      var key = d.key, spec = m.dials[key], rng = new Rng(fnv1a(String(mseed) + "|" + key)), u = rng.next();
+      if (d.kind === "slider"){
+        var centre = clamp(spec.value, 0, 100), spread = clamp(spec.spread, 0, 50), bent = [], pulls = [];
+        (into[m.id + "." + key] || []).forEach(function(ci){
+          var c = cables[ci], co = cabOut[ci], src = rolled[c.from];
+          if (src == null){ warnings.push(co.id + ": no rolled value at " + c.from); return; }
+          var x = src / 100, f = curve(x, c), s = c.strength != null ? c.strength : 0, nc;
+          if ((c.mode || "add") === "multiply") nc = centre * (1 + s * f);
+          else nc = centre + s * f * 100;
+          var p = (nc - centre) / 100;
+          centre = nc; co.value = rnd(x, 4); co.pull = rnd(p, 4); pulls.push(p); bent.push(co.id);
+        });
+        centre = clamp(centre, 0, 100);
+        var val = clamp(centre + (2 * u - 1) * spread, 0, 100);
+        val = rnd(val, 2);
+        var lo = d.native[0], hi = d.native[1];
+        var dd = {set: spec.value, spread: spread, centre: rnd(centre, 2),
+                  window: [rnd(clamp(centre - spread, 0, 100), 2), rnd(clamp(centre + spread, 0, 100), 2)],
+                  rolled: val, native: rnd(lo + val * (hi - lo) / 100, 1)};
+        if (bent.length){
+          dd.bent_by = bent;
+          var tot = 0, mag = 0; pulls.forEach(function(p){ tot += p; mag += Math.abs(p); });
+          var t = rnd(mag - Math.abs(tot), 4), tk = m.id + "_" + m.code + "." + key;
+          tension[tk] = t;
+          if (t >= SET_PIECE_TENSION) patterns.push({kind: "set_piece", dial: tk, tension: t, total_pull: rnd(tot, 4)});
+          else if (pulls.length >= 2 && t < 0.05 && Math.abs(tot) >= REFLECTIVE_PULL) patterns.push({kind: "reflective", dial: tk, tension: t, total_pull: rnd(tot, 4)});
+        }
+        dout[key] = dd; rl[key] = val; rolled[m.id + "." + key] = val;
+      } else {
+        var ws = spec.weights, total = 0, pick = null, ch, k;
+        for (k = 0; k < d.choices.length; k++) total += weight(ws[d.choices[k]] != null ? ws[d.choices[k]] : 0);
+        if (total > 0){
+          var rr = u * total, acc = 0;
+          for (k = 0; k < d.choices.length; k++){ ch = d.choices[k]; acc += weight(ws[ch] != null ? ws[ch] : 0); if (rr < acc){ pick = ch; break; } }
+          if (pick == null) pick = d.choices[d.choices.length - 1];
+        }
+        var wout = {}; d.choices.forEach(function(c2){ wout[c2] = weight(ws[c2] != null ? ws[c2] : 0); });
+        dout[key] = {weights: wout, pick: pick}; rl[key] = pick;
+      }
+    });
+    outMods[m.id + "_" + m.code] = {id: m.id, module: m.module, seed: mseed, dials: dout, rolled: rl};
+  });
+  var ordered = {}; mods.forEach(function(m){ var k = m.id + "_" + m.code; if (has(outMods, k)) ordered[k] = outMods[k]; });
+  var inst = {europatch: VERSION, kind: "instance", catalog: cat.catalog, patch: patch.name || "untitled",
+              preset: patch.preset || null, seed: seed, modules: ordered, cables: cabOut, tension: tension,
+              patterns: patterns, warnings: warnings};
+  inst.summary = summarize(inst, cat);
+  return [inst, []];
+}
+
+function summarize(inst, cat){
+  var by = {}; cat.modules.forEach(function(m){ by[m.id] = m; });
+  var r = {}; Object.keys(inst.modules).forEach(function(k){ var mm = inst.modules[k]; r[mm.module] = mm.rolled; });
+  var lines = [], head = [], f = r.L12 || {}, d = r.L11 || {}, w = r.L5 || {}, im = r.L8 || {};
+  if (f.dramatica_archetype){ var a = f.dramatica_archetype;
+    head.push(("AEIOU".indexOf(a[0]) >= 0 ? "An " : "A ") + a + (f.resolve ? " who must " + (f.resolve === "Change" ? "change" : "hold steady") : "")); }
+  if (d.arc_type) head.push("a " + human(d.arc_type) + " arc" + (d.change_cause ? ", moved by " + human(d.change_cause) : ""));
+  if (w.wound_kind && w.severity != null){ var nat = by.L5 ? by.L5.dials[0].native : [0, 10], lo = nat[0], hi = nat[1];
+    head.push("wound: " + human(w.wound_kind) + " at " + fmt(rnd(lo + w.severity * (hi - lo) / 100, 1)) + "/" + fmt(hi)); }
+  if (im.attachment_style) head.push(human(im.attachment_style) + " attachment");
+  if (head.length) lines.push(head.join("; ") + ".");
+  Object.keys(inst.modules).forEach(function(k){
+    var mm = inst.modules[k], cm = by[mm.module]; if (!cm) return;
+    var parts = [];
+    cm.dials.forEach(function(dd){
+      var v = mm.rolled[dd.key]; if (v == null) return;
+      if (dd.kind === "slider") parts.push(dd.words[band(v)] + " (" + fmt(mm.dials[dd.key].native) + "/" + fmt(dd.native[1]) + ")");
+      else parts.push((dd.label || dd.key) + ": " + human(v));
+    });
+    lines.push(cm.code + ": " + parts.join("; ") + ".");
+  });
+  return lines;
+}
+
+function roll(patch, seed, cat, presets){
+  if (seed == null) seed = patch.seed != null ? patch.seed : 1;
+  if (typeof seed === "string" && /^\d{1,15}$/.test(seed)) seed = Number(seed);
+  var errs = check(patch, cat, presets);
+  if (errs.length) return [null, errs];
+  return rollCore(patch, seed, cat, presets);
+}
+return {VERSION: VERSION, fnv1a: fnv1a, Rng: Rng, curve: curve, resolve: resolve, rollOrder: rollOrder, check: check,
+        rollCore: rollCore, roll: roll, summarize: summarize, human: human};
+})();
+/*ENGINE-END*/
+</script>
+<script>
+(function(){
+"use strict";
+var DATA = JSON.parse(document.getElementById("ep-data").textContent || "{}");
+var CAT = DATA.catalog, PRESETS = {}, DEFAULT = DATA["default"];
+(DATA.presets || []).forEach(function(p){ PRESETS[p.name] = p; });
+var BYID = {}; CAT.modules.forEach(function(m){ BYID[m.id] = m; });
+var $ = function(id){ return document.getElementById(id); };
+function E(s){ return String(s == null ? "" : s).replace(/[&<>"']/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
+var COL = {acc:"#FF5A1F", acch:"#FFB08F", accm:"#be4216", accd:"#6e280e", soft:"#24110a", bg:"#050608", panel:"#0a0c0f",
+           panel2:"#10151b", line:"#23272b", line2:"#3a3e40", fg:"#c6cbc8", fg2:"#959a97", dim:"#5f6160", cyan:"#5CC8D0", bad:"#e5604d"};
+var FONT = "IBM Plex Mono, Consolas, monospace";
+var LAST = null;   // the last instance
+
+/* ---------- LiteGraph setup: the Command's colors ---------- */
+LiteGraph.clearRegisteredTypes();
+LiteGraph.NODE_DEFAULT_BGCOLOR = COL.panel2; LiteGraph.NODE_DEFAULT_COLOR = COL.soft; LiteGraph.NODE_DEFAULT_BOXCOLOR = COL.accm;
+LiteGraph.NODE_TITLE_COLOR = COL.acch; LiteGraph.NODE_SELECTED_TITLE_COLOR = "#ffffff"; LiteGraph.NODE_TEXT_COLOR = COL.fg2;
+LiteGraph.NODE_TEXT_SIZE = 11; LiteGraph.NODE_SUBTEXT_SIZE = 11; LiteGraph.DEFAULT_SHADOW_COLOR = "rgba(0,0,0,0.6)";
+LiteGraph.WIDGET_BGCOLOR = COL.bg; LiteGraph.WIDGET_OUTLINE_COLOR = COL.line2; LiteGraph.WIDGET_TEXT_COLOR = COL.fg;
+LiteGraph.WIDGET_SECONDARY_TEXT_COLOR = COL.fg2; LiteGraph.LINK_COLOR = COL.acc; LiteGraph.EVENT_LINK_COLOR = COL.acc;
+LiteGraph.release_link_on_empty_shows_menu = false; LiteGraph.NODE_DEFAULT_SHAPE = "box";
+LGraphCanvas.link_type_colors.dial = COL.acc;
+
+/* ---------- the module types, one per LEECHSEED layer ---------- */
+function comboValue(ws, choices){
+  var on = choices.filter(function(c){ return (ws[c] || 0) > 0; });
+  if (on.length === 1) return on[0];
+  var first = ws[choices[0]] || 0;
+  return choices.every(function(c){ return (ws[c] || 0) === first; }) ? "even" : "weighted";
+}
+function makeType(cm){
+  function N(){
+    var self = this;
+    this.mod = cm.id;
+    this.properties = {id: cm.id};
+    this.dials = {};
+    this.preset = "";
+    cm.dials.forEach(function(d){ if (d.kind === "slider") self.addInput(d.key, "dial", {label: d.label}); });
+    cm.dials.forEach(function(d){ if (d.kind === "slider") self.addOutput(d.key, "dial", {label: d.label}); });
+    this.addWidget("combo", "preset", "—", function(v){ applyPreset(self, v); }, {values: ["—"].concat(Object.keys(PRESETS))});
+    cm.dials.forEach(function(d){
+      if (d.kind === "slider"){
+        self.dials[d.key] = {value: d["default"], spread: d.spread};
+        var w = self.addWidget("slider", d.label, d["default"], function(v){ self.dials[d.key].value = Math.round(v); }, {min: 0, max: 100, precision: 0});
+        w.dkey = d.key; w.dpart = "value";
+        var s = self.addWidget("number", "  ± spread", d.spread, function(v){ self.dials[d.key].spread = Math.max(0, Math.min(50, Math.round(v))); }, {min: 0, max: 50, step: 10, precision: 0});
+        s.dkey = d.key; s.dpart = "spread";
+      } else {
+        var ws = {}; d.choices.forEach(function(c){ ws[c] = 1; });
+        self.dials[d.key] = {weights: ws};
+        var c = self.addWidget("combo", d.label, "even", function(v){ setPick(self, d, v); }, {values: ["even", "weighted"].concat(d.choices)});
+        c.dkey = d.key; c.dpart = "pick";
+        var b = self.addWidget("button", "  weights…", null, function(v, canvas, node, pos, ev){ openWeights(self, d, ev); });
+        b.dkey = d.key; b.dpart = "weights"; b.label = " ";
+      }
+    });
+    this.color = COL.soft; this.bgcolor = COL.panel2;
+    var sz = this.computeSize(); this.size = [Math.max(sz[0], 270), sz[1]];
+  }
+  N.title = cm.id + " " + cm.code;
+  N.prototype.onDrawOverlayWidgets = function(ctx){
+    if (this.flags.collapsed) return;
+    var Hh = LiteGraph.NODE_WIDGET_HEIGHT;
+    ctx.font = "11px " + FONT; ctx.textAlign = "left"; ctx.fillStyle = COL.fg2;
+    (this.widgets || []).forEach(function(w){ if (w.dpart === "weights" && w.last_y != null) ctx.fillText("weights…", 22, w.last_y + Hh * 0.7); });
+    if (!LAST) return;
+    var key = this.properties.id + "_" + cm.code, im = LAST.modules[key]; if (!im) return;
+    var H = LiteGraph.NODE_WIDGET_HEIGHT, W = this.size[0], self = this;
+    (this.widgets || []).forEach(function(w){
+      if (w.last_y == null || !w.dkey) return;
+      var dd = im.dials[w.dkey]; if (!dd) return;
+      if (w.dpart === "value"){
+        var x = 15 + (W - 30) * dd.rolled / 100;
+        ctx.fillStyle = dd.bent_by ? COL.cyan : "#ffffff";
+        ctx.fillRect(x - 1, w.last_y + 1, 3, H - 2);
+        if (dd.window){ ctx.fillStyle = "rgba(255,90,31,0.35)"; var a = 15 + (W - 30) * dd.window[0] / 100, b = 15 + (W - 30) * dd.window[1] / 100; ctx.fillRect(a, w.last_y + H - 3, Math.max(1, b - a), 2); }
+      } else if (w.dpart === "weights" && dd.pick != null && LAST){
+        ctx.font = "11px " + FONT; ctx.fillStyle = COL.acch; ctx.textAlign = "right";
+        ctx.fillText("→ " + EP.human(dd.pick), W - 18, w.last_y + H * 0.7); ctx.textAlign = "left";
+      }
+    });
+  };
+  N.prototype.onConnectionsChange = function(type, slot, connected){
+    if (type === LiteGraph.INPUT && this.inputs && this.inputs[slot] && !LOADING){
+      var key = inKey(this.inputs[slot]);
+      if (connected) freeIn(this, key); else pruneIn(this, key);
+    }
+    markDirty();
+  };
+  LiteGraph.registerNodeType("leechseed/" + cm.id, N);
+}
+CAT.modules.forEach(makeType);
+
+/* one in-jack takes one link in LiteGraph, so a plugged dial grows a spare in-jack ("WILL +"): many patch cables, one dial */
+var LOADING = false;
+function inKey(slot){ return String(slot.name || "").split("#")[0]; }
+function fitNode(node){ var sz = node.computeSize(); node.size = [Math.max(node.size[0], sz[0], 270), sz[1]]; }
+function freeIn(node, key){
+  for (var i = 0; i < node.inputs.length; i++) if (inKey(node.inputs[i]) === key && node.inputs[i].link == null) return i;
+  var d = dialOf(node.mod, key), n = 2;
+  while (node.findInputSlot(key + "#" + n) >= 0) n++;
+  node.addInput(key + "#" + n, "dial", {label: (d ? d.label : key) + " +"});
+  fitNode(node);
+  return node.inputs.length - 1;
+}
+function pruneIn(node, key){
+  var empty = [];
+  (node.inputs || []).forEach(function(s, i){ if (inKey(s) === key && s.link == null) empty.push(i); });
+  for (var j = empty.length - 1; j >= 1; j--){
+    var idx = empty[j]; if (node.inputs[idx].name.indexOf("#") < 0) idx = empty[0];
+    if (node.inputs[idx].name.indexOf("#") >= 0) node.removeInput(idx);
+  }
+  fitNode(node);
+}
+var _dnw = LGraphCanvas.prototype.drawNodeWidgets;
+LGraphCanvas.prototype.drawNodeWidgets = function(node, posY, ctx, active){
+  var r = _dnw.apply(this, arguments);
+  if (node.onDrawOverlayWidgets) node.onDrawOverlayWidgets(ctx);
+  return r;
+};
+function syncWidgets(node){
+  var cm = BYID[node.mod];
+  (node.widgets || []).forEach(function(w){
+    if (!w.dkey) return;
+    var d = cm.dials.filter(function(x){ return x.key === w.dkey; })[0], st = node.dials[w.dkey];
+    if (w.dpart === "value") w.value = st.value;
+    else if (w.dpart === "spread") w.value = st.spread;
+    else if (w.dpart === "pick") w.value = comboValue(st.weights, d.choices);
+  });
+  node.setDirtyCanvas(true, true);
+}
+function setPick(node, d, v){
+  var ws = node.dials[d.key].weights;
+  if (v === "even") d.choices.forEach(function(c){ ws[c] = 1; });
+  else if (v !== "weighted") d.choices.forEach(function(c){ ws[c] = c === v ? 1 : 0; });
+  syncWidgets(node);
+}
+function applyPreset(node, name){
+  var p = PRESETS[name]; if (!p) return;
+  var lay = (p.dials || {})[node.mod] || {};
+  Object.keys(lay).forEach(function(key){
+    var src = lay[key], cur = node.dials[key]; if (!cur) return;
+    if (cur.weights){
+      if (src.pick != null) Object.keys(cur.weights).forEach(function(c){ cur.weights[c] = c === src.pick ? 1 : 0; });
+      if (src.weights) Object.keys(src.weights).forEach(function(c){ if (c in cur.weights) cur.weights[c] = weightOf(src.weights[c]); });
+    } else {
+      if (src.value != null) cur.value = src.value;
+      if (src.spread != null) cur.spread = src.spread;
+    }
+  });
+  node.preset = name;
+  syncWidgets(node);
+}
+function weightOf(w){ return typeof w === "string" ? ({high:3, medium:2, low:1}[w.toLowerCase()] || 0) : (w > 0 ? w : 0); }
+
+/* ---------- graph + canvas ---------- */
+var graph = new LGraph();
+var canvasEl = $("cv");
+var gc = new LGraphCanvas(canvasEl, graph);
+gc.background_image = null; gc.clear_background_color = COL.bg; gc.render_canvas_border = false;
+gc.title_text_font = "600 13px " + FONT; gc.inner_text_font = "normal 11px " + FONT;
+gc.default_link_color = COL.acc; gc.render_connections_border = false; gc.links_render_mode = LiteGraph.SPLINE_LINK;
+gc.allow_searchbox = false; gc.render_link_tooltip = false; gc.show_info = false;
+var CABLES = {};   // link id -> {mode, strength, curve, threshold, soft}
+function markDirty(){ gc.setDirty(true, true); }
+function cableOf(link){ if (!CABLES[link.id]) CABLES[link.id] = {mode: "add", strength: 0.25, curve: "linear"}; return CABLES[link.id]; }
+function paintLink(link){ var c = cableOf(link); link.color = c.mode === "multiply" ? COL.cyan : (c.strength < 0 ? COL.bad : COL.acc); }
+graph.onNodeConnectionChange = function(){ for (var id in graph.links){ var l = graph.links[id]; if (l) paintLink(l); } };
+gc.onDrawForeground = function(ctx){
+  ctx.font = "10px " + FONT; ctx.textAlign = "left";
+  for (var id in graph.links){
+    var l = graph.links[id]; if (!l || !l._pos) continue;
+    var c = cableOf(l), s = (c.strength >= 0 ? "+" : "") + Number(c.strength).toFixed(2);
+    var txt = (c.mode === "multiply" ? "×" : "") + s + " " + ({"linear": "lin", "ease-in": "in", "ease-out": "out", "s-curve": "S", "threshold-soft": "thr"}[c.curve] || c.curve);
+    var w = ctx.measureText(txt).width + 8;
+    ctx.fillStyle = "rgba(5,6,8,0.85)"; ctx.fillRect(l._pos[0] + 8, l._pos[1] - 8, w, 15);
+    ctx.fillStyle = l.color || COL.acc; ctx.fillText(txt, l._pos[0] + 12, l._pos[1] + 3);
+  }
+};
+LGraphCanvas.prototype.showLinkMenu = function(link, e){ openCable(link, e); return false; };
+
+function resize(){
+  var r = $("wrap").getBoundingClientRect();
+  canvasEl.width = Math.max(200, Math.floor(r.width)); canvasEl.height = Math.max(200, Math.floor(r.height));
+  gc.resize(canvasEl.width, canvasEl.height); markDirty();
+}
+window.addEventListener("resize", resize);
+
+/* ---------- patch <-> graph ---------- */
+function tidy(fit){
+  var colOf = {}, gs = CAT.groups || [];
+  gs.forEach(function(g, gi){ g.modules.forEach(function(mid, j){ colOf[mid] = [gi, j]; }); });
+  var nodes = graph._nodes.slice(), colY = {}, X = 30, GAP = 60, W = 300;
+  nodes.sort(function(a, b){ return CAT.modules.indexOf(BYID[a.mod]) - CAT.modules.indexOf(BYID[b.mod]); });
+  nodes.forEach(function(n){
+    var cj = colOf[n.mod] || [0, 0], col = cj[0] === 2 ? 2 + (cj[1] % 2) : cj[0];
+    var y = colY[col] == null ? 60 : colY[col];
+    n.pos = [X + col * (W + GAP), y]; colY[col] = y + n.size[1] + LiteGraph.NODE_TITLE_HEIGHT + 30;
+  });
+  regroup(); if (fit !== false) fitView();
+}
+function regroup(spec){
+  (graph._groups || []).slice().forEach(function(g){ graph.remove(g); });
+  (spec || CAT.groups || []).forEach(function(g){
+    var ns = graph._nodes.filter(function(n){ return g.modules.indexOf(n.properties.id) >= 0; });
+    if (!ns.length) return;
+    var x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity, T = LiteGraph.NODE_TITLE_HEIGHT;
+    ns.forEach(function(n){ x0 = Math.min(x0, n.pos[0]); y0 = Math.min(y0, n.pos[1] - T); x1 = Math.max(x1, n.pos[0] + n.size[0]); y1 = Math.max(y1, n.pos[1] + n.size[1]); });
+    var grp = new LiteGraph.LGraphGroup(g.title);
+    grp.pos = [x0 - 12, y0 - 44]; grp.size = [x1 - x0 + 24, y1 - y0 + 56]; grp.color = "#3a2015"; grp.font_size = 14;
+    graph.add(grp);
+  });
+}
+function fitView(){
+  var ns = graph._nodes; if (!ns.length) return;
+  var x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+  (graph._groups || []).forEach(function(g){ x0 = Math.min(x0, g.pos[0]); y0 = Math.min(y0, g.pos[1]); x1 = Math.max(x1, g.pos[0] + g.size[0]); y1 = Math.max(y1, g.pos[1] + g.size[1]); });
+  ns.forEach(function(n){ x0 = Math.min(x0, n.pos[0]); y0 = Math.min(y0, n.pos[1] - 30); x1 = Math.max(x1, n.pos[0] + n.size[0]); y1 = Math.max(y1, n.pos[1] + n.size[1]); });
+  var cw = canvasEl.width, ch = canvasEl.height, s = Math.min(cw / (x1 - x0 + 40), ch / (y1 - y0 + 40), 1.2);
+  gc.ds.scale = s; gc.ds.offset = [-x0 + 20 + (cw / s - (x1 - x0 + 40)) / 2, -y0 + 20 + (ch / s - (y1 - y0 + 40)) / 2];
+  markDirty();
+}
+function loadPatch(patch){
+  graph.clear(); CABLES = {}; LAST = null; LOADING = true;
+  var r = EP.resolve(patch, CAT, PRESETS), mods = r[0], nodeBy = {}, anyPos = false;
+  mods.forEach(function(m, i){
+    var n = LiteGraph.createNode("leechseed/" + m.module);
+    n.properties.id = m.id; if (m.id !== m.module) n.title = m.id + " " + m.code;
+    n.dials = JSON.parse(JSON.stringify(m.dials));
+    var pm = (patch.modules || [])[i] || {};
+    if (pm.pos){ n.pos = pm.pos.slice(); anyPos = true; }
+    graph.add(n); syncWidgets(n); nodeBy[m.id] = n;
+  });
+  r[1].forEach(function(c){
+    var a = String(c.from).split("."), b = String(c.to).split(".");
+    var na = nodeBy[a[0]], nb = nodeBy[b[0]]; if (!na || !nb) return;
+    var oi = na.findOutputSlot(a.slice(1).join(".")), ii = nb.findInputSlot(b.slice(1).join(".")) >= 0 ? freeIn(nb, b.slice(1).join(".")) : -1;
+    if (oi < 0 || ii < 0) return;
+    var link = na.connect(oi, nb, ii);
+    if (link){ CABLES[link.id] = {mode: c.mode || "add", strength: c.strength != null ? c.strength : 0.25, curve: c.curve || "linear",
+                                  threshold: c.threshold, soft: c.soft}; paintLink(link); }
+  });
+  LOADING = false;
+  graph._nodes.forEach(function(n){ (n.inputs || []).forEach(function(s){ if (s.link != null) freeIn(n, inKey(s)); }); });
+  $("pname").value = patch.name || "untitled";
+  $("preset").value = patch.preset || "";
+  if (patch.seed != null) $("seed").value = patch.seed;
+  if (anyPos){ regroup(patch.groups); fitView(); } else tidy();
+  showInstance(null);
+}
+function toPatch(){
+  var nodes = graph._nodes.slice().sort(function(a, b){ return CAT.modules.indexOf(BYID[a.mod]) - CAT.modules.indexOf(BYID[b.mod]); });
+  var mods = nodes.map(function(n){ return {id: n.properties.id, module: n.mod, pos: [Math.round(n.pos[0]), Math.round(n.pos[1])], dials: JSON.parse(JSON.stringify(n.dials))}; });
+  var ids = Object.keys(graph.links).map(Number).sort(function(a, b){ return a - b; }), cables = [];
+  ids.forEach(function(id){
+    var l = graph.links[id]; if (!l) return;
+    var na = graph.getNodeById(l.origin_id), nb = graph.getNodeById(l.target_id); if (!na || !nb) return;
+    var c = cableOf(l), out = {id: "c" + (cables.length + 1), from: na.properties.id + "." + na.outputs[l.origin_slot].name,
+               to: nb.properties.id + "." + inKey(nb.inputs[l.target_slot]), mode: c.mode, strength: c.strength, curve: c.curve};
+    if (c.curve === "threshold-soft"){ out.threshold = c.threshold != null ? c.threshold : 0.5; out.soft = c.soft != null ? c.soft : 0.15; }
+    cables.push(out);
+  });
+  var groups = (graph._groups || []).map(function(g){ g.recomputeInsideNodes();
+    return {title: g.title, modules: g._nodes.map(function(n){ return n.properties.id; }), bounding: g._bounding ? Array.prototype.slice.call(g._bounding).map(Math.round) : null}; });
+  var name = ($("pname").value || "untitled").trim();
+  return {europatch: EP.VERSION, kind: "patch", name: name, catalog: CAT.catalog, preset: $("preset").value || null,
+          seed: seedVal(), modules: mods, cables: cables, groups: groups};
+}
+function seedVal(){ var s = ($("seed").value || "1").trim(); return /^\d{1,15}$/.test(s) ? Number(s) : s; }
+
+/* ---------- patch cable editor (the dot at a cable's middle) ---------- */
+var POP = null;
+function closePop(){ if (POP){ POP.remove(); POP = null; } }
+function popAt(el, ev){
+  document.body.appendChild(el); POP = el;
+  var x = (ev && ev.clientX) || innerWidth / 2, y = (ev && ev.clientY) || innerHeight / 2;
+  el.style.left = Math.min(Math.max(8, x + 8), innerWidth - el.offsetWidth - 8) + "px";
+  el.style.top = Math.min(Math.max(52, y + 8), innerHeight - el.offsetHeight - 8) + "px";
+}
+function openCable(link, ev){
+  closePop();
+  var c = cableOf(link), na = graph.getNodeById(link.origin_id), nb = graph.getNodeById(link.target_id);
+  var el = document.createElement("div"); el.className = "pop";
+  el.innerHTML = '<h3><span class="t" data-t="cable" tabindex="0">Patch cable</span></h3><div style="color:var(--fg2);margin-bottom:6px">' +
+    E(na.properties.id + "." + na.outputs[link.origin_slot].name) + " → " + E(nb.properties.id + "." + inKey(nb.inputs[link.target_slot])) + '</div>' +
+    '<div class="row"><span>mode</span><select data-k="mode"><option>add</option><option>multiply</option></select><span></span></div>' +
+    '<div class="row"><span>strength</span><input type="range" min="-1" max="1" step="0.05" data-k="strength"><span data-o="strength"></span></div>' +
+    '<div class="row"><span><span class="t" data-t="curve" tabindex="0">curve</span></span><select data-k="curve"><option>linear</option><option>ease-in</option><option>ease-out</option><option>s-curve</option><option>threshold-soft</option></select><span></span></div>' +
+    '<div class="row" data-thr><span>threshold</span><input type="range" min="0" max="1" step="0.05" data-k="threshold"><span data-o="threshold"></span></div>' +
+    '<div class="row" data-thr><span>softness</span><input type="range" min="0.01" max="0.5" step="0.01" data-k="soft"><span data-o="soft"></span></div>' +
+    '<div class="foot"><button data-a="del">unplug</button><button data-a="ok">done</button></div>';
+  function sync(){
+    el.querySelector('[data-k=mode]').value = c.mode; el.querySelector('[data-k=curve]').value = c.curve;
+    el.querySelector('[data-k=strength]').value = c.strength; el.querySelector('[data-o=strength]').textContent = Number(c.strength).toFixed(2);
+    var t = c.threshold != null ? c.threshold : 0.5, s = c.soft != null ? c.soft : 0.15;
+    el.querySelector('[data-k=threshold]').value = t; el.querySelector('[data-o=threshold]').textContent = Number(t).toFixed(2);
+    el.querySelector('[data-k=soft]').value = s; el.querySelector('[data-o=soft]').textContent = Number(s).toFixed(2);
+    [].forEach.call(el.querySelectorAll("[data-thr]"), function(r){ r.style.display = c.curve === "threshold-soft" ? "" : "none"; });
+  }
+  el.addEventListener("input", function(e){
+    var k = e.target.dataset.k; if (!k) return;
+    c[k] = (k === "mode" || k === "curve") ? e.target.value : Number(e.target.value);
+    sync(); paintLink(link); markDirty();
+  });
+  el.addEventListener("click", function(e){
+    var a = e.target.dataset.a;
+    if (a === "del"){ graph.removeLink(link.id); delete CABLES[link.id]; closePop(); markDirty(); }
+    else if (a === "ok") closePop();
+  });
+  sync(); popAt(el, ev);
+}
+function openWeights(node, d, ev){
+  closePop();
+  var ws = node.dials[d.key].weights, el = document.createElement("div"); el.className = "pop";
+  var rows = d.choices.map(function(c){ return '<div class="row"><span title="' + E(c) + '">' + E(EP.human(c)) + '</span><input type="range" min="0" max="9" step="1" data-c="' + E(c) + '" value="' + (ws[c] || 0) + '"><span data-o="' + E(c) + '">' + (ws[c] || 0) + '</span></div>'; }).join("");
+  el.innerHTML = '<h3>' + E(node.properties.id + " · " + d.label) + ' <span class="t" data-t="weights" tabindex="0">weights</span></h3>' + rows +
+    '<div style="color:var(--dim);font-size:10px;margin-top:4px">vocab: ' + E(d.vocab_src || "") + '</div><div class="foot"><button data-a="even">even</button><button data-a="ok">done</button></div>';
+  el.addEventListener("input", function(e){ var c = e.target.dataset.c; if (!c) return; ws[c] = Number(e.target.value); el.querySelector('[data-o="' + c + '"]').textContent = ws[c]; syncWidgets(node); });
+  el.addEventListener("click", function(e){
+    var a = e.target.dataset.a;
+    if (a === "even"){ d.choices.forEach(function(c){ ws[c] = 1; }); [].forEach.call(el.querySelectorAll("[data-c]"), function(i){ i.value = 1; el.querySelector('[data-o="' + i.dataset.c + '"]').textContent = 1; }); syncWidgets(node); }
+    else if (a === "ok") closePop();
+  });
+  popAt(el, ev);
+}
+document.addEventListener("mousedown", function(e){ if (POP && !POP.contains(e.target) && !(e.target.closest && e.target.closest(".tip"))) closePop(); }, true);
+
+/* ---------- roll ---------- */
+function roll(){
+  var patch = toPatch(), seed = seedVal(), body = JSON.stringify({patch: patch, seed: seed});
+  var local = function(why){
+    var r = EP.roll(patch, seed, CAT, PRESETS);
+    if (r[1].length) return showErrors(r[1]);
+    showInstance(r[0], '<span class="t" data-t="mirror" tabindex="0">JS mirror</span> (' + E(why) + ')');
+  };
+  if (location.protocol === "file:") return local("file copy, no Console");
+  fetch("/europatch/roll", {method: "POST", headers: {"Content-Type": "application/json"}, body: body})
+    .then(function(r){ return r.json().then(function(j){ return [r.status, j]; }); })
+    .then(function(x){ if (x[0] !== 200 || x[1].ok === false) return showErrors(x[1].errors || ["roll failed"]); showInstance(x[1], "the Console · europatch.py roll"); })
+    .catch(function(){ local("the Console did not answer"); });
+}
+function showErrors(errs){
+  $("sum").innerHTML = '<div id="src">the patch did not roll</div>' + errs.map(function(e){ return '<p class="warn">' + E(e) + '</p>'; }).join("");
+}
+function showInstance(inst, src){
+  LAST = inst; markDirty();
+  if (!inst){ $("sum").innerHTML = '<div class="empty">Set the dials, then Roll.</div>'; $("tree").innerHTML = '<div class="empty">No instance yet.</div>'; return; }
+  var h = '<div id="src">seed ' + E(inst.seed) + ' · ' + E(inst.patch) + ' · rolled by ' + src + '</div>';
+  inst.summary.forEach(function(line, i){
+    var m = /^([A-Z]+): /.exec(line), mod = m ? CAT.modules.filter(function(x){ return x.code === m[1]; })[0] : null;
+    h += i === 0 && !m ? '<p class="head">' + E(line) + '</p>' : '<p>' + (mod ? '<span class="mod t" data-t="mod:' + mod.id + '" tabindex="0">' + E(m[1]) + '</span>' + E(line.slice(m[0].length - 1)) : E(line)) + '</p>';
+  });
+  if (inst.patterns.length) inst.patterns.forEach(function(p){
+    h += '<div class="pat ' + p.kind + '"><b>' + (p.kind === "set_piece" ? "set-piece candidate" : "reflective moment") + '</b> at ' + E(p.dial) + ' · <span class="t" data-t="tension" tabindex="0">tension</span> ' + p.tension + ' · total pull ' + p.total_pull + '</div>'; });
+  var tks = Object.keys(inst.tension);
+  if (tks.length) h += '<p style="color:var(--fg2);margin-top:10px"><span class="t" data-t="tension" tabindex="0">tension</span>: ' + tks.map(function(k){ return E(k) + " " + inst.tension[k]; }).join(" · ") + '</p>';
+  inst.warnings.forEach(function(w){ h += '<p class="warn">' + E(w) + '</p>'; });
+  $("sum").innerHTML = h;
+  $("tree").innerHTML = '<div id="src">the <span class="t" data-t="instance" tabindex="0">instance</span>: click a key to fold</div>' + tree(inst, "instance", 0);
+}
+function tree(v, k, depth){
+  if (v === null || typeof v !== "object"){
+    var cls = v === null ? "z" : typeof v === "number" ? "n" : "s";
+    return '<div class="kv"><span class="k">' + E(k) + '</span>: <span class="' + cls + '">' + E(JSON.stringify(v)) + '</span></div>';
+  }
+  var keys = Object.keys(v), small = Array.isArray(v) && keys.length <= 6 && v.every(function(x){ return x === null || typeof x !== "object"; });
+  if (small) return '<div class="kv"><span class="k">' + E(k) + '</span>: <span class="n">' + E(JSON.stringify(v)) + '</span></div>';
+  return '<details' + (depth < 2 ? " open" : "") + '><summary><span class="k">' + E(k) + '</span> ' + (Array.isArray(v) ? "[" + keys.length + "]" : "{" + keys.length + "}") + '</summary>' +
+    keys.map(function(kk){ return tree(v[kk], kk, depth + 1); }).join("") + '</details>';
+}
+
+/* ---------- save / load / export ---------- */
+function slug(s){ return String(s || "").toLowerCase().replace(/[^a-z0-9_-]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 48) || "untitled"; }
+function download(name, obj){
+  var a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([JSON.stringify(obj, null, 1)], {type: "application/json"}));
+  a.download = name; document.body.appendChild(a); a.click(); setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 500);
+}
+function listPatches(){
+  if (location.protocol === "file:") return;
+  fetch("/europatch/patches").then(function(r){ return r.json(); }).then(function(j){
+    var sel = $("load"); sel.innerHTML = '<option value="">load…</option><option value="@default">the starter patch</option>' +
+      (j.patches || []).map(function(n){ return '<option>' + E(n) + '</option>'; }).join("");
+  }).catch(function(){});
+}
+$("save").onclick = function(){
+  var p = toPatch(), name = slug(p.name); p.name = name; $("pname").value = name;
+  if (location.protocol === "file:") return download(name + ".patch.json", p);
+  fetch("/europatch/patches/" + encodeURIComponent(name), {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify(p)})
+    .then(function(r){ return r.json(); }).then(function(j){ $("save").textContent = j.ok ? "saved" : "not saved"; setTimeout(function(){ $("save").textContent = "Save"; }, 1400); listPatches(); })
+    .catch(function(){ download(name + ".patch.json", p); });
+};
+$("load").onchange = function(){
+  var n = this.value; this.value = ""; if (!n) return;
+  if (n === "@default") return loadPatch(JSON.parse(JSON.stringify(DEFAULT)));
+  fetch("/europatch/patches/" + encodeURIComponent(n)).then(function(r){ return r.json(); }).then(function(p){ if (p && p.europatch) loadPatch(p); });
+};
+$("xpatch").onclick = function(){ var p = toPatch(); download(slug(p.name) + ".patch.json", p); };
+$("xinst").onclick = function(){ if (LAST) download(slug(LAST.patch) + "-" + slug(LAST.seed) + ".instance.json", LAST); };
+$("roll").onclick = roll;
+$("dice").onclick = function(){ $("seed").value = 1 + Math.floor(Math.random() * 999999); roll(); };
+$("seed").addEventListener("keydown", function(e){ if (e.key === "Enter") roll(); });
+$("tidy").onclick = function(){ tidy(); };
+var ps = $("preset"); ps.innerHTML = '<option value="">none</option>' + Object.keys(PRESETS).map(function(n){ return '<option value="' + E(n) + '">' + E(PRESETS[n].title || n) + (PRESETS[n].provisional ? " *" : "") + '</option>'; }).join("");
+ps.onchange = function(){ var n = this.value; graph._nodes.forEach(function(node){ if (n) applyPreset(node, n); }); };
+$("mb").onclick = function(){ var m = $("meta").classList.toggle("on"); this.setAttribute("aria-expanded", m); };
+[].forEach.call(document.querySelectorAll(".tabs button"), function(b){ b.onclick = function(){
+  [].forEach.call(document.querySelectorAll(".tabs button"), function(x){ x.classList.toggle("on", x === b); });
+  [].forEach.call(document.querySelectorAll(".pane"), function(p){ p.classList.toggle("on", p.id === b.dataset.p); }); }; });
+
+/* ---------- the hover layer: TERMS + the desk's stack, fed by DOM terms and by canvas hit-tests ---------- */
+var TERMS = {
+ europatch: ["EUROPATCH", "Build anything complex out of {module}s, {jack}s and {cable}s, like a Eurorack synth. Set the dials; the {seed} rolls one {instance}. Not on/off logic: patch cables bend, they never switch."],
+ module: ["Patch module", "One LEECHSEED layer as a box: dials, in-{jack}s on the left, out-jacks on the right. Hover a module's title for its question."],
+ jack: ["Jack", "A named input or output on a {module}. An out-jack offers a rolled slider value; an in-jack takes a {cable} and bends that dial."],
+ cable: ["Patch cable", "Carries one rolled value from an out-{jack} to an in-jack and bends that dial's centre before the {seed} rolls. Mode add (centre + strength × {curve}(value) × 100) or multiply (centre × (1 + strength × curve(value))); strength −1 to +1. Click the dot at a cable's middle to edit it. Orange adds, red subtracts, cyan multiplies."],
+ curve: ["Curve", "Shapes the carried value (0..1) before the strength: linear, ease-in, ease-out, s-curve, or threshold-soft (a soft step around a threshold: the bend only bites once the source runs high)."],
+ seed: ["Seed", "A whole number that drives the dice. Same patch + same seed = the same {instance}. Each module gets its own seed from this one plus its id, so adding a module never reshuffles the others."],
+ instance: ["Instance", "One rolled result: per module, each dial's {window}, rolled value and its native value, each list's pick, the patch cables' pulls, and the {tension}. Draft output, never canon until Chief promotes it."],
+ window: ["Window", "The dial's centre ± its {spread}. The {cable}s move the centre, then the {seed} rolls inside. On a module: the thin orange bar; the white tick is the roll (cyan when a cable bent it)."],
+ spread: ["Spread", "How far the {seed} may roll from the centre, 0 to 50. 0 = exact; wide = the seed decides more. Sets the {window}."],
+ weights: ["Weighted list", "A pick-list: each choice has a weight, the {seed} draws one, heavier comes up more. The combo: even (all 1), weighted (custom), or one choice (locked). Trope-register conf reads as weights: high 3, medium 2, low 1."],
+ preset: ["Preset", "A character type that sets many dials in one move. Stacked: the preset, then your nudges, then the {cable}s, then the {seed}. The header applies it to every module; a module's own preset combo applies one layer only (a mentor's WOUND in a rival). Provisional (*), tied to trope register links."],
+ tension: ["Tension", "Where 2+ {cable}s plug into one dial: the sum of each pull's size minus the size of their sum. High (≥ 0.5) = a set-piece candidate (lenses collide); near 0 with a big total pull = a reflective moment (lenses agree)."],
+ mirror: ["JS mirror", "The page carries the roll engine in JavaScript, line for line with europatch.py. test_europatch.py rolls both and proves the same {instance}. Used when the Console is not answering."]
+};
+function dialOf(mid, key){ var m = BYID[mid]; return m ? m.dials.filter(function(d){ return d.key === key; })[0] : null; }
+function tipData(k){
+  if (TERMS[k]) return TERMS[k];
+  var p = k.split(":"), m = BYID[p[1]];
+  if (p[0] === "mod" && m){
+    var dl = m.dials.map(function(d){ return "{dial:" + m.id + ":" + d.key + "}"; }).join(" · ");
+    return [m.id + " " + m.code + " · " + m.tier, m.question + "<br><br>Dials: " + dl + "<br>Fields it writes (LEECHSEED): " + E(m.fields.join(", ")) + ".<br>A {module}; in-{jack}s left, out-jacks right."];
+  }
+  if (p[0] === "dial" && m){
+    var d = dialOf(p[1], p[2]); if (!d) return null;
+    if (d.kind === "slider"){
+      var obs = d.observed_native != null ? "<br>The locked instance (Victoria Midnight) holds " + d.observed_native + "." : "";
+      return [m.code + " · " + d.label, E(d.help || d.key) + "<br>Key <i>" + E(d.key) + "</i>, native scale " + d.native[0] + " to " + d.native[1] + " (the bay shows 0..100). Below it: its {spread}. Words: " + E(d.words.join(" / ")) + "." + obs];
+    }
+    return [m.code + " · " + d.label, "A {weights} list. Key <i>" + E(d.key) + "</i>. Choices: " + E(d.choices.map(EP.human).join(" · ")) + ".<br>Vocab: " + E(d.vocab_src || "")];
+  }
+  if ((p[0] === "jin" || p[0] === "jout") && m){
+    var dj = dialOf(p[1], p[2]);
+    return [(p[0] === "jin" ? "in-jack · " : "out-jack · ") + m.code + "." + (dj ? dj.label : p[2]), p[0] === "jin" ?
+      "Plug a {cable} here and it bends {dial:" + m.id + ":" + p[2] + "}'s centre before the {seed} rolls." :
+      "Offers {dial:" + m.id + ":" + p[2] + "}'s rolled value (0..1) to any {cable} that leaves here."];
+  }
+  return null;
+}
+function tipHTML(k){
+  var t = tipData(k); if (!t) return "";
+  var body = t[1].replace(/\{([a-z]+(?::[A-Za-z0-9_.]+)*)\}(s?)/g, function(all, key, pl){
+    var dd = tipData(key); if (!dd) return all;
+    var label = key.indexOf("dial:") === 0 ? (dialOf(key.split(":")[1], key.split(":")[2]) || {}).label : (TERMS[key] ? TERMS[key][0].toLowerCase() : key);
+    return '<span class="t" data-t="' + E(key) + '" tabindex="0">' + E(label) + pl + '</span>';
+  });
+  return "<b>" + E(t[0]) + "</b>" + body;
+}
+var stack = [], locked = false, timer = null, ghost = $("ghost");
+function closeTips(from){ while (stack.length > from){ var t = stack.pop(); t.el.remove(); } }
+function openTip(trg, level, key){
+  key = key || trg.dataset.t;
+  if (stack[level] && stack[level].key === key) return;
+  closeTips(level);
+  var html = tipHTML(key); if (!html) return;
+  var el = document.createElement("div"); el.className = "tip"; el.innerHTML = html + '<span class="hint">click pins · Space locks · Esc clears</span>';
+  document.body.appendChild(el);
+  var r = trg.getBoundingClientRect(), w = el.offsetWidth, h = el.offsetHeight;
+  var x = Math.min(Math.max(8, r.left), innerWidth - w - 8), y = r.bottom + 10; if (y + h > innerHeight - 8) y = Math.max(8, r.top - h - 10);
+  el.style.left = x + "px"; el.style.top = y + "px"; el.dataset.level = level;
+  stack.push({trg: trg, key: key, el: el, pin: false});
+}
+function levelOf(node){ var t = node.closest && node.closest(".tip"); return t ? (+t.dataset.level + 1) : 0; }
+function softClose(){ if (locked || !stack.length) return; clearTimeout(timer); timer = setTimeout(function(){ var keep = 0; stack.forEach(function(s, i){ if (s.pin) keep = i + 1; }); closeTips(keep); }, 260); }
+document.addEventListener("mouseover", function(e){
+  if (e.target === canvasEl) return;
+  var trg = e.target.closest && e.target.closest("[data-t]"), inTip = e.target.closest && e.target.closest(".tip");
+  if (trg){ clearTimeout(timer); openTip(trg, levelOf(trg)); return; }
+  if (inTip){ clearTimeout(timer); closeTips(+inTip.dataset.level + 1); return; }
+  softClose();
+});
+document.addEventListener("focusin", function(e){ var trg = e.target.closest && e.target.closest("[data-t]"); if (trg) openTip(trg, levelOf(trg)); });
+document.addEventListener("click", function(e){
+  var trg = e.target.closest && e.target.closest("[data-t]");
+  if (trg){ var lv = levelOf(trg); openTip(trg, lv); if (stack[lv]){ stack[lv].pin = !stack[lv].pin; stack[lv].el.classList.toggle("pin", stack[lv].pin); } return; }
+  if (e.target === canvasEl) return;
+  if (!(e.target.closest && e.target.closest(".tip"))){ locked = false; closeTips(0); }
+});
+document.addEventListener("keydown", function(e){
+  if (e.target && /INPUT|SELECT|TEXTAREA/.test(e.target.tagName)) return;
+  if (e.key === " " && stack.length){ e.preventDefault(); locked = !locked; stack.forEach(function(s){ s.el.classList.toggle("pin", locked || s.pin); }); }
+  else if (e.key === "Escape"){ locked = false; closeTips(0); closePop(); }
+}, true);
+/* the canvas side: what is under the pointer (a module title, a dial widget, a jack) opens the same tip */
+function canvasTerm(e){
+  var p = gc.convertEventToCanvasOffset(e), n = graph.getNodeOnPos(p[0], p[1], graph._nodes, 5);
+  if (!n) return null;
+  var lx = p[0] - n.pos[0], ly = p[1] - n.pos[1];
+  if (ly < 0) return "mod:" + n.mod;
+  var s = n.getSlotInPosition ? n.getSlotInPosition(p[0], p[1]) : null;
+  if (s && s.input) return "jin:" + n.mod + ":" + inKey(s.input);
+  if (s && s.output) return "jout:" + n.mod + ":" + s.output.name;
+  var H = LiteGraph.NODE_WIDGET_HEIGHT;
+  for (var i = 0; i < (n.widgets || []).length; i++){ var w = n.widgets[i];
+    if (w.last_y != null && w.dkey && ly >= w.last_y && ly < w.last_y + H && lx < n.size[0] * 0.45){
+      if (w.dpart === "spread") return "spread";
+      if (w.dpart === "weights") return "weights";
+      return "dial:" + n.mod + ":" + w.dkey;
+    }
+    if (w.last_y != null && w.name === "preset" && ly >= w.last_y && ly < w.last_y + H && lx < n.size[0] * 0.45) return "preset";
+  }
+  return null;
+}
+canvasEl.addEventListener("mousemove", function(e){
+  if (e.buttons) return;
+  var k = canvasTerm(e);
+  if (k){ clearTimeout(timer); ghost.style.left = e.clientX + "px"; ghost.style.top = (e.clientY + 6) + "px"; openTip(ghost, 0, k); }
+  else if (stack.length && !stack.some(function(s){ return s.pin; })) softClose();
+});
+canvasEl.addEventListener("mouseleave", softClose);
+canvasEl.addEventListener("mousedown", function(e){
+  var k = canvasTerm(e);
+  if (k && stack[0] && stack[0].key === k && (k.indexOf("mod:") === 0)){ stack[0].pin = !stack[0].pin; stack[0].el.classList.toggle("pin", stack[0].pin); }
+  else if (!locked && !stack.some(function(s){ return s.pin; })) closeTips(0);
+}, true);
+
+/* ---------- boot ---------- */
+resize();
+loadPatch(JSON.parse(JSON.stringify(DEFAULT)));
+listPatches();
+if (/[?&]roll=1/.test(location.search)) setTimeout(roll, 50);
+})();
+</script>
+</body></html>

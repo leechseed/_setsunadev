@@ -451,6 +451,8 @@ func main() {
 		lookalikeCmd(os.Args[2:])
 	case "tropes":
 		tropesCmd(os.Args[2:])
+	case "europatch":
+		europatchCmd(os.Args[2:])
 	default:
 		w := bufio.NewWriter(os.Stdout)
 		fmt.Fprintln(w, sAccB.Render("command")+sDim.Render(" · the Command's terminal front end (BOLO 153)"))
@@ -469,6 +471,7 @@ func main() {
 		fmt.Fprintln(w, "  "+sAcc.Render("recall")+" ranked search over _CACHE, _LOG, memory, SOP and STATE: where did we rule X (-n N · --source S · --rebuild · --json)")
 		fmt.Fprintln(w, "  "+sAcc.Render("lookalike")+" one page's layout skeleton: landmarks, headings, grid/flex, colors, fonts, components (<url|file> · --json · --out F · --dry-run)")
 		fmt.Fprintln(w, "  "+sAcc.Render("tropes")+" build the trope system glass and open it in the Console's Tropes pane (--json · --print · --dry-run; page in _tools/tropes/glass)")
+		fmt.Fprintln(w, "  "+sAcc.Render("europatch")+" the patch bay: open it in the Console · roll <patch|default|preset:NAME> --seed N · modules · presets · check · build (--json)")
 		fmt.Fprintln(w, "  "+sAcc.Render("kenshi")+" start Kenshi with RE_Kenshi and Sentient Sands (the go code: kenshi watanabi · --dry-run · --json)")
 		w.Flush()
 	}

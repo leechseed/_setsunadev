@@ -116,14 +116,14 @@ SUGGESTED = [
      "threshold": 0.5, "soft": 0.2, "why": "L5: high WOUND reduces effective WILL under trigger conditions", "src": "doc"},
     {"from": "L5.severity", "to": "L3.SOCIAL", "mode": "add", "strength": -0.2, "curve": "threshold-soft",
      "threshold": 0.5, "soft": 0.2, "why": "L5: high WOUND reduces effective SOCIAL under trigger conditions", "src": "doc"},
-    {"from": "L7.origin_wound_seed", "to": "L5.severity", "mode": "add", "strength": 0.3, "curve": "ease",
+    {"from": "L7.origin_wound_seed", "to": "L5.severity", "mode": "add", "strength": 0.3, "curve": "s-curve",
      "why": "L7: ORIGIN's numbers feed the WOUND base", "src": "doc"},
     {"from": "L7.origin_stability", "to": "L3.SOCIAL", "mode": "add", "strength": 0.15, "curve": "linear",
      "why": "L7: ORIGIN's numbers feed SOCIAL defaults", "src": "doc"},
     {"from": "L10.projection_tendency", "to": "L3.SOCIAL", "mode": "add", "strength": -0.1, "curve": "linear",
      "why": "Derived: Social Legibility = SOCIAL - projection/3", "src": "doc"},
     {"from": "L8.imprint_flexibility", "to": "L11.resistance_index", "mode": "multiply", "strength": -0.4,
-     "curve": "ease", "why": "a flexible imprint lowers resistance to change", "src": "provisional"},
+     "curve": "ease-in", "why": "a flexible imprint lowers resistance to change", "src": "provisional"},
 ]
 
 GROUPS = [   # the doc's own three tiers, as the starter sub-patches

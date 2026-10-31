@@ -61,6 +61,7 @@ LOCAL = {   # the whitelist: name -> file
     "stash-erd": os.path.join(ROOT, "_PRIVATE", "reference", "erd", "stash-erd.html"),
     "zotero-erd": os.path.join(ROOT, "_PRIVATE", "reference", "erd", "zotero-erd.html"),
     "tropes": os.path.join(ROOT, "_tools", "tropes", "glass", "tropes.html"),   # BOLO 89, _tools/tropes/build_glass.py
+    "europatch": os.path.join(ROOT, "_tools", "europatch", "patchbay.html"),   # BOLO 173, the patch bay (europatch.py build)
 }
 PANES = [   # the rail: six up front (Chief 10/18, rec taken), the rest behind "more"
     {"id": "desk", "title": "Desk", "url": "/local/desk"},
@@ -76,7 +77,31 @@ PANES = [   # the rail: six up front (Chief 10/18, rec taken), the rest behind "
     {"id": "stash-erd", "title": "Stash ERD", "url": "/local/stash-erd", "more": True},
     {"id": "zotero-erd", "title": "Zotero ERD", "url": "/local/zotero-erd", "more": True},
     {"id": "tropes", "title": "Tropes", "url": "/local/tropes", "more": True},
+    {"id": "europatch", "title": "Patch bay", "url": "/local/europatch", "more": True},
 ]
+EUROPATCH = os.path.join(ROOT, "_tools", "europatch", "europatch.py")   # BOLO 173: the roll engine
+EP_PATCHES = os.path.join(ROOT, "_PRIVATE", "europatch", "patches")      # saved patches (whitelisted names only)
+EP_NAME = __import__("re").compile(r"^[a-z0-9][a-z0-9_-]{0,47}$")
+
+
+def ep_roll(body):
+    """POST /europatch/roll {patch, seed}: python europatch.py roll - --seed S --json; the patch goes in on stdin"""
+    patch, seed = body.get("patch"), str(body.get("seed", "1"))
+    if not isinstance(patch, dict) or not __import__("re").match(r"^[A-Za-z0-9_-]{1,64}$", seed):
+        return 400, {"ok": False, "errors": ["a patch object and a seed (letters, digits, _ -)"]}
+    try:
+        r = subprocess.run([sys.executable, "-X", "utf8", EUROPATCH, "roll", "-", "--seed", seed, "--json"],
+                           input=json.dumps(patch), capture_output=True, text=True, encoding="utf-8", timeout=30, cwd=ROOT)
+        out = json.loads(r.stdout)
+    except Exception as e:
+        return 500, {"ok": False, "errors": ["europatch.py roll failed: %s" % e]}
+    return 200, out
+
+
+def ep_list():
+    if not os.path.isdir(EP_PATCHES):
+        return []
+    return sorted(f[:-5] for f in os.listdir(EP_PATCHES) if f.endswith(".json") and EP_NAME.match(f[:-5]))
 
 
 def write_status():
@@ -547,6 +572,15 @@ class H(http.server.BaseHTTPRequestHandler):
             with SHOW_LOCK:
                 s = {"seq": SHOW["seq"], "url": SHOW["url"], "title": SHOW["title"], "boot": SHOW["boot"]}
             return self._send(200, json.dumps(s, ensure_ascii=False), "application/json; charset=utf-8")
+        if path == "/europatch/patches":
+            return self._send(200, json.dumps({"patches": ep_list()}), "application/json; charset=utf-8")
+        if path.startswith("/europatch/patches/"):
+            name = path[19:]
+            f = os.path.join(EP_PATCHES, name + ".json")
+            if EP_NAME.match(name) and os.path.isfile(f):
+                with open(f, "rb") as fh:
+                    return self._send(200, fh.read(), "application/json; charset=utf-8")
+            return self._send(404, '{"error":"no such patch"}', "application/json")
         if path.startswith("/local/"):
             f = LOCAL.get(path[7:])
             if f and os.path.isfile(f):
@@ -616,6 +650,26 @@ class H(http.server.BaseHTTPRequestHandler):
         return self._store("DELETE")
 
     def do_POST(self):
+        if self.path == "/europatch/roll" or self.path.startswith("/europatch/patches/"):   # BOLO 173, the patch bay
+            try:
+                n = int(self.headers.get("Content-Length") or 0)
+                if n > (1 << 20):
+                    return self._send(413, '{"ok":false,"errors":["a patch is under 1 MB"]}', "application/json")
+                body = json.loads(self.rfile.read(n).decode("utf-8"))
+            except Exception:
+                return self._send(400, '{"ok":false,"errors":["bad json"]}', "application/json")
+            if self.path == "/europatch/roll":
+                code, out = ep_roll(body if isinstance(body, dict) else {})
+                return self._send(code, json.dumps(out, ensure_ascii=False), "application/json; charset=utf-8")
+            name = self.path[19:]
+            if not EP_NAME.match(name) or not isinstance(body, dict) or not body.get("europatch"):
+                return self._send(400, '{"ok":false,"errors":["a whitelisted name (a-z 0-9 _ -) and a patch object"]}', "application/json")
+            os.makedirs(EP_PATCHES, exist_ok=True)
+            tmp = os.path.join(EP_PATCHES, name + ".json.tmp")
+            with open(tmp, "w", encoding="utf-8", newline=chr(10)) as fh:
+                json.dump(body, fh, ensure_ascii=False, indent=1)
+            os.replace(tmp, os.path.join(EP_PATCHES, name + ".json"))
+            return self._send(200, json.dumps({"ok": True, "name": name}), "application/json")
         if self.path == "/open":   # a link from a pane: in the pane if the site allows frames, else its own app window
             try:
                 n = min(int(self.headers.get("Content-Length") or 0), 8192)
