@@ -24,6 +24,17 @@ GLASSES = os.path.join(HERE, "glasses.json")
 BOOT = os.path.join(ROOT, "_tools", "launch", "boot.jsonl")
 ART = os.path.join(ROOT, "_tools", "brand", "boldventure-ascii.txt")
 MARK = os.path.join(ROOT, "_tools", "brand", "boldventure-mark.svg")   # the favicon and the window's icon
+BOUNCE = os.path.join(ROOT, "_PRIVATE", "console")   # Chief 10/31: bounce.gif (or .webp/.png) here bounces on the boot; else the mark
+
+
+def bounce_file():
+    for ext in ("gif", "webp", "apng", "png", "jpg"):
+        p = os.path.join(BOUNCE, "bounce." + ext)
+        if os.path.isfile(p):
+            return p
+    return MARK
+
+
 MUSIC = os.path.join(ROOT, "_PRIVATE", "audio", "boot-music.wav")   # Chief 10/19: the boot screen's idle music, looped until Space (a PCM copy; game audio stays out of the public repo)
 
 
@@ -340,25 +351,18 @@ iframe{flex:1;border:0;width:100%;height:100%;background:var(--bg)}
 .cmd input{flex:1;background:none;border:0;outline:0;color:var(--fg);font:inherit;caret-color:var(--acc)}
 #flt{width:100%;background:none;border:0;border-bottom:1px solid var(--dim);outline:0;color:var(--fg);font:inherit;margin-bottom:6px}
 .d{color:var(--dim)}
-/* the boot overlay: the same sequence boot.py draws, inside the window */
-#boot{position:fixed;inset:0;z-index:50;background:var(--bg);padding:14px 18px;overflow:hidden;cursor:pointer;transition:opacity .5s;display:flex;flex-direction:column}
-#blines{flex:1;min-height:0;overflow:hidden}
+/* the boot overlay (Chief 10/31): the terminal already plays the full boot, so the window bounces the mark like a DVD
+   screensaver while the launch runs; one status line at the bottom. The mark is /bounce (Chief's gif when it lands). */
+#boot{position:fixed;inset:0;z-index:50;background:#000;overflow:hidden;cursor:pointer;transition:opacity .5s,background .3s}
 #boot.gone{opacity:0;pointer-events:none}
-#boot pre{margin:0;white-space:pre;font:inherit}
-#logo{line-height:1;letter-spacing:0;text-shadow:0 0 6px rgba(255,90,31,.45)}
-#lgtxt{margin:12px 0 10px}
-#hero{display:flex;align-items:center;gap:32px}
-#fetch .u{color:var(--acc);font-weight:600}#fetch .k{color:var(--acc);font-weight:600}
-#fetch .sw{display:inline-block;width:2.2ch;height:1.15em;vertical-align:-.2em}
-#logo .z{color:#79dfff;text-shadow:0 0 6px rgba(121,223,255,.6)}
-#logo .gl{color:#fff;text-shadow:-2px 0 #ff2a6d,2px 0 #00e5ff}
-#boot::after{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,.22) 0 1px,transparent 1px 3px)}
-#logo .a{color:var(--accd)}#logo .b{color:var(--accm)}#logo .c{color:var(--acc)}#logo .e{color:var(--acch);font-weight:600}
-.bv{color:var(--acc);font-weight:600}.o{color:var(--acc)}.g{color:var(--ok);font-weight:600}.r{color:var(--bad);font-weight:600}.y{color:var(--am);font-weight:600}.w{color:#fff;font-weight:600}
+#boot.corner{background:#1a0d07}
+#dvd{position:absolute;left:0;top:0;width:min(24vw,280px);height:auto;will-change:transform;user-select:none;-webkit-user-drag:none}
+.bv{color:var(--acc);font-weight:600}.g{color:var(--ok);font-weight:600}.r{color:var(--bad);font-weight:600}.y{color:var(--am);font-weight:600}.w{color:#fff;font-weight:600}
+#bstat{position:fixed;left:18px;bottom:10px;color:var(--dim)}
 #bskip{position:fixed;right:18px;bottom:10px;color:var(--dim)}
 .blink{color:var(--acc);font-weight:600;animation:blink 1.1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
 </style></head><body>
-<div id="boot"><div id="hero"><pre id="logo"></pre><pre id="fetch"></pre></div><pre id="lgtxt"></pre><pre id="blines"></pre><span id="bskip">SPACE · continue</span></div>
+<div id="boot"><img id="dvd" src="/bounce" alt="" draggable="false"><span id="bstat"></span><span id="bskip">SPACE · skip</span></div>
 <div class="top"><span><b>&#9670; THE CONSOLE</b>  the Command &middot; Chief</span><span id="clk"></span></div>
 <main>
  <div class="col">
@@ -432,84 +436,39 @@ document.addEventListener('keydown',function(e){var t=e.target;if(t===inp||t===f
  else if(e.key===':'){e.preventDefault();inp.focus()}
  else if(e.key==='b'){boot(true)}});
 
-/* ---- the boot sequence: the launch writes boot.jsonl; the window draws it like boot.py does ---- */
-var booting=false,timer=null;
-var EARLY=[[':: running early hook','[udev]'],[':: running hook','[keymap]'],[':: mounting',"'/dev/q' on real root"],
- [':: loading','the Command · SOP · BOLO · STATE'],[':: starting','systemd-launch (BOLO 58)']];
-function pad(s,n){s=String(s);while(s.length<n)s+=' ';return s}
-function stamp(s){var t=s.toFixed(3);while(t.length<8)t=' '+t;return '<span class="d">['+t+']</span>'}
-function logoHTML(rows){var C={'.':'a','-':'b','+':'c','#':'e'};return rows.map(function(l){var o='';for(var i=0;i<l.length;i++){var c=l[i];
- o+=C[c]?'<span class="'+C[c]+'">'+esc(c)+'</span>':esc(c)}return o}).join('\n')}
-function stationLine(ev,t){var go=ev.go,note=(ev.note||'').slice(0,52);
- if(ev.waves&&ev.waves.length)note=ev.waves.length+' waves open';
- var o=stamp(t)+' '+(go?'<span class="g">[  OK  ]</span>':'<span class="r">[FAILED]</span>')+' <span class="w">'+esc(pad(ev.station,10))+'</span> '+
-  '<span class="d">'+Array(31).join('.')+'</span> '+(go?'<span class="g">GO    </span>':'<span class="r">NO-GO </span>')+' <span class="d">'+esc(note)+'</span>';
- (ev.sub||[]).forEach(function(s){o+='\n           <span class="d">&#9492;&#9472; '+esc(s.slice(0,92))+'</span>'});
- (ev.waves||[]).forEach(function(w){o+='\n           <span class="d">&#9492;&#9472; </span><span class="'+(w.indexOf('STALLED')>=0?'r':'g')+'">'+esc(w.slice(0,90))+'</span>'});
- return o}
-/* the bunny bandit comes in hackerpunk (Chief 10/18): the glyphs decode out of noise, then the head spins on its
-   vertical axis, holding front-on between turns; now and then a few rows tear sideways. Reduced motion: still. */
-var LG=null;
-function logoAnim(rows){
- var H=rows.length,W=Math.max.apply(null,rows.map(function(l){return l.length})),cx=(W-1)/2,
-  g=rows.map(function(l){while(l.length<W)l+=' ';return l}),seed=[],GL='!<>-_\\/[]{}=+*^?#01',
-  t0=performance.now(),glUntil=0,glRows={},nextGl=t0+1800,tok={},
-  red=matchMedia('(prefers-reduced-motion: reduce)').matches,
-  C={'.':'a','-':'b','+':'c','#':'e'},BACK={'#':'+','+':'-','-':'.','.':'.'};
- for(var y=0;y<H;y++){seed.push([]);for(var x=0;x<W;x++)seed[y].push(Math.random())}
- function ease(p){return p<.5?4*p*p*p:1-Math.pow(-2*p+2,3)/2}
- function span(cls,s){return s?(cls?'<span class="'+cls+'">'+esc(s)+'</span>':esc(s)):''}
- function frame(now){if(!booting||LG!==tok)return;
-  var t=(now-t0)/1000,dec=red?1:Math.min(1,t/1.1),th=0;
-  if(!red&&t>1.3){var P=5,p=((t-1.3)%P)/P;th=p<.4?0:ease((p-.4)/.6)*2*Math.PI}
-  var c=Math.cos(th);
-  if(!red&&now>nextGl){glUntil=now+130;glRows={};for(var k=0;k<3;k++)glRows[Math.floor(Math.random()*H)]=(Math.random()<.5?-1:1)*(2+Math.floor(Math.random()*4));nextGl=now+1500+Math.random()*2500}
-  var out=[];
-  for(var y=0;y<H;y++){var line='',cls=null,buf='',sh=(now<glUntil&&glRows[y])?glRows[y]:0;
-   for(var ox=0;ox<W;ox++){var ch=' ',k2=null;
-    if(Math.abs(c)<0.03){if(ox===Math.round(cx)&&g[y].trim()){ch='|';k2='b'}}
-    else{var sx=Math.round(cx+(ox-sh-cx)/c);
-     if(sx>=0&&sx<W){ch=g[y][sx];if(c<0&&BACK[ch])ch=BACK[ch]}
-     if(ch!==' '){if(dec<1&&seed[y][sx]>dec){ch=GL[Math.floor(Math.random()*GL.length)];k2='z'}else k2=sh?'gl':C[ch]}}
-    if(k2!==cls){line+=span(cls,buf);buf='';cls=k2}
-    buf+=ch}
-   out.push(line+span(cls,buf))}
-  $('logo').innerHTML=out.join('\n');
-  requestAnimationFrame(frame)}
- LG=tok;requestAnimationFrame(frame)}
-/* the fetch panel: chief@the-command, a rule, the numbers, two rows of swatches; it types in line by line */
-function fetchPanel(rows){var P=['#050608','#6e280e','#be4216','#FF5A1F','#FFB08F','#4ec96f','#e3b341','#79dfff'],
- Q=['#5f6160','#e5604d','#ff2a6d','#ff8f62','#ffd2bd','#72c79b','#ffcf73','#c6cbc8'],
- sw=function(a){return a.map(function(c){return '<span class="sw" style="background:'+c+'"></span>'}).join('')},
- L=['<span class="u">chief</span>@<span class="u">the-command</span>','<span class="d">'+Array(18).join('-')+'</span>'];
- rows.forEach(function(r){L.push('<span class="k">'+esc(r[0])+'</span>: '+esc(r[1]))});L.push('');L.push(sw(P));L.push(sw(Q));
- var n=0,el=$('fetch');(function more(){if(!booting)return;el.innerHTML=L.slice(0,++n).join('\n');if(n<L.length)setTimeout(more,70)})()}
+/* ---- the boot: the mark bounces like a DVD screensaver (Chief 10/31) while the launch writes boot.jsonl ---- */
+var booting=false,timer=null,BX=null;
+/* each wall hit shifts the hue, the way the DVD logo changed color; a corner hit flashes the screen */
+function bounce(){var el=$('dvd'),tok={},red=matchMedia('(prefers-reduced-motion: reduce)').matches,
+  x=Math.random()*Math.max(0,innerWidth-300),y=Math.random()*Math.max(0,innerHeight-300),
+  vx=(Math.random()<.5?-1:1)*150,vy=(Math.random()<.5?-1:1)*115,hue=0,last=performance.now();
+ BX=tok;
+ function f(now){if(!booting||BX!==tok)return;
+  var dt=Math.min(.05,(now-last)/1000),W=Math.max(0,innerWidth-el.offsetWidth),H=Math.max(0,innerHeight-el.offsetHeight),hx=false,hy=false;
+  last=now;if(!red){x+=vx*dt;y+=vy*dt}
+  if(x<=0){x=0;vx=Math.abs(vx);hx=true}else if(x>=W){x=W;vx=-Math.abs(vx);hx=true}
+  if(y<=0){y=0;vy=Math.abs(vy);hy=true}else if(y>=H){y=H;vy=-Math.abs(vy);hy=true}
+  if(!red&&(hx||hy)){hue=(hue+60+Math.random()*120)%360;el.style.filter='hue-rotate('+Math.round(hue)+'deg)';
+   if(hx&&hy){$('boot').classList.add('corner');setTimeout(function(){$('boot').classList.remove('corner')},600)}}
+  el.style.transform='translate('+Math.round(x)+'px,'+Math.round(y)+'px)';requestAnimationFrame(f)}
+ requestAnimationFrame(f)}
+/* one status line from boot.json: the station running now and the GO count; it holds on Space when the launch ends */
+function poll(){if(!booting)return;
+ fetch('/boot.json').then(function(r){return r.json()}).then(function(b){if(!booting)return;
+  var ev=b.events||[],ok=0,bad=0,end=false,run=null;
+  ev.forEach(function(e){if(e.state==='start')run=e.station;else if(e.state==='done'){run=null;if(e.go)ok++;else bad++}else if(e.state==='end')end=true});
+  var done=end||!ev.length,s;
+  if(!ev.length)s='<span class="d">no launch on record · the workspace is ready</span>';
+  else if(end)s=bad?'<span class="r">'+bad+' NO-GO</span> · <span class="g">'+ok+' GO</span> <span class="d">· the sit rep carries the details</span>'
+   :'<span class="g">Reached target </span><span class="bv">The Command</span><span class="g">.  ALL GO ('+ok+')</span>';
+  else s='<span class="y">loading</span> <span class="w">'+esc(run||'...')+'</span> <span class="d">· '+ok+' GO'+(bad?' · '+bad+' NO-GO':'')+'</span>';
+  $('bstat').innerHTML=s;
+  $('bskip').className=done?'blink':'';$('bskip').textContent=done?'press SPACE to continue':'SPACE · skip';   /* Chief 10/18: the boot holds until Space */
+  if(!done)timer=setTimeout(poll,500)}).catch(function(){timer=setTimeout(poll,1500)})}
 function mus(on){try{fetch('/music/'+(on?'start':'stop'),{method:'POST',keepalive:true})}catch(e){}}
 addEventListener('pagehide',function(){if(booting)navigator.sendBeacon('/music/stop')});
 function skip(){if(booting)mus(false);booting=false;clearTimeout(timer);$('boot').classList.add('gone')}
-function boot(replay){booting=true;mus(true);$('boot').classList.remove('gone');
- fetch('/boot.json').then(function(r){return r.json()}).then(function(b){
-  var lg=$('logo');$('lgtxt').innerHTML='<span class="bv">        B  O  L  D  V  E  N  T  U  R  E</span>\n<span class="d">   &#9472;&#9472; the Command · launch sequence &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;</span>';
-  logoAnim(b.logo);fetchPanel(b.fetch||[]);
-  var cols=Math.max.apply(null,b.logo.map(function(l){return l.length}).concat([60])),fs=Math.max(5,Math.min(12,Math.floor(innerWidth*0.55/(cols*0.62)),Math.floor(innerHeight*0.56/Math.max(1,b.logo.length))))   /* Chief 10/18: the mark big */;lg.style.fontSize=fs+'px';
-  var ev=b.events,ended=ev.some(function(e){return e.state==='end'}),old=ended&&ev.length&&(b.now-ev[ev.length-1].t>120);
-  var fast=replay||old,t0=ev.length?ev[0].t:b.now,lines=[],i=0,shown=0,start=Date.now(),pos=0,running=null,frame=0;
-  EARLY.forEach(function(x,j){lines.push(stamp(0.12*(j+1))+' <span class="o">'+x[0]+'</span> '+esc(x[1]))});lines.push('');
-  function paint(extra){var el=$('blines');el.innerHTML=lines.slice(0,shown).join('\n')+(extra?'\n'+extra:'');el.scrollTop=el.scrollHeight}
-  function step(){if(!booting)return;
-   if(shown<lines.length){shown++;paint();timer=setTimeout(step,fast?25:110);return}
-   var evs=ev.slice(pos);pos=ev.length;
-   evs.forEach(function(e){if(e.state==='start'){running=e.station;frame=0}
-    else if(e.state==='done'){lines.push(stationLine(e,e.t-t0));running=null}
-    else if(e.state==='end'){var ok=ev.filter(function(x){return x.state==='done'&&x.go}).length,bad=ev.filter(function(x){return x.state==='done'&&!x.go}).length;
-     lines.push('');lines.push(bad?'<span class="r">  '+bad+' NO-GO</span> · <span class="g">'+ok+' GO</span> · the sit rep carries the details'
-      :'<span class="g">  Reached target </span><span class="bv">The Command</span><span class="g">.  ALL GO ('+ok+')</span>');ended=true}});
-   if(shown<lines.length){timer=setTimeout(step,fast?25:60);return}
-   if(ended){paint('\n<span class="blink">  press SPACE to continue</span>');return}   /* Chief 10/18: the boot holds until Space */
-   frame++;paint(running?stamp((Date.now()/1000)-t0)+' <span class="y">[  '+'|/-\\'[frame%4]+'   ]</span> <span class="w">'+esc(pad(running,10))+'</span> <span class="d">'+Array(Math.min(frame,30)+1).join('.')+'</span>':'');
-   timer=setTimeout(function(){fetch('/boot.json').then(function(r){return r.json()}).then(function(n){ev=n.events;step()}).catch(step)},250)}
-  if(!ev.length){lines.push('<span class="d">  no launch on record · the workspace is ready</span>');ended=true}
-  step()}).catch(skip)}
+function boot(replay){booting=true;mus(true);$('boot').classList.remove('gone');bounce();poll()}
 $('boot').onclick=skip;
 boot(false);
 })();
@@ -539,6 +498,11 @@ class H(http.server.BaseHTTPRequestHandler):
         if path in ("/favicon.svg", "/favicon.ico") and os.path.isfile(MARK):   # the BoldVenture bunny bandit (Chief 10/18)
             with open(MARK, "rb") as fh:
                 return self._send(200, fh.read(), "image/svg+xml")
+        if path == "/bounce":   # the boot's bouncing mark (Chief 10/31)
+            f = bounce_file()
+            if os.path.isfile(f):
+                with open(f, "rb") as fh:
+                    return self._send(200, fh.read(), "image/svg+xml" if f.endswith(".svg") else mimetypes.guess_type(f)[0] or "image/gif")
         if path == "/panes.json":
             return self._send(200, json.dumps({"panes": PANES, "aliases": aliases()}), "application/json; charset=utf-8")
         if path == "/glasses.json":
