@@ -69,6 +69,7 @@ type model struct {
 	offset     int64
 	partial    string
 	logPath    string
+	done       chan launchDone // the launch's exit, sent on once
 }
 
 func stamp(sec float64) string { return sDim.Render(fmt.Sprintf("[%8.3f]", sec)) }
@@ -271,28 +272,42 @@ func termHeight() int {
 	return 40
 }
 
-func up() {
+// startLaunch: VS Code on the repo (an open window just gets focus), then the launch sequence, running from here on.
+// wake calls it before the intro so the stations load under the typing (Chief 10/31: "start loading stuff in the
+// background as well"); the boot screen then picks up every event since this start.
+func startLaunch() *model {
 	art := loadArt(filepath.Join(root, "_tools", "brand", "boldventure-ascii.txt"))
 	m := &model{start: time.Now(), events: filepath.Join(root, "_tools", "launch", "boot.jsonl"), fetch: fetchRows()}
 	m.startEpoch = float64(m.start.UnixNano()) / 1e9
 	m.spin = newSpinner(shrink(art, pickScale(art, termHeight())))
+	m.done = make(chan launchDone, 1)
 
-	// VS Code on the repo (an open window just gets focus), then the launch sequence
 	exec.Command("cmd", "/c", "code", root).Start()
 	m.logPath = filepath.Join(root, "_tools", "cmdtui", "last_up.log")
 	logf, _ := os.Create(m.logPath)
 	launch := exec.Command("python", "-X", "utf8", filepath.Join(root, "_tools", "launch", "launch.py"))
 	launch.Dir = root
 	launch.Stdout, launch.Stderr = logf, logf
-
-	p := tea.NewProgram(m, tea.WithAltScreen())
-	musicStart()
-	defer musicStop()
 	if err := launch.Start(); err != nil {
 		m.launchErr = err
 	} else {
-		go func() { err := launch.Wait(); logf.Close(); p.Send(launchDone{err}) }()
+		go func() { err := launch.Wait(); logf.Close(); m.done <- launchDone{err} }()
 	}
+	return m
+}
+
+func up() { upWith(startLaunch()) }
+
+func upWith(m *model) {
+	p := tea.NewProgram(m, tea.WithAltScreen())
+	if d := time.Until(bootMusicAt); d > 0 {
+		t := time.AfterFunc(d, musicStart)
+		defer t.Stop()
+	} else {
+		musicStart()
+	}
+	defer musicStop()
+	go func() { p.Send(<-m.done) }() // the launch may already have ended during the intro: the buffered result waits
 	if _, err := p.Run(); err != nil {
 		fmt.Fprintln(os.Stderr, "command up:", err)
 		os.Exit(1)
@@ -376,8 +391,9 @@ func wakeWords(args []string) bool {
 func main() {
 	if self := strings.ToLower(filepath.Base(os.Args[0])); strings.TrimSuffix(self, ".exe") == "wake" {
 		if wakeWords(os.Args[1:]) {
+			m := startLaunch() // the stations load while the intro plays
 			if matrixIntro() { // the film's opening on a black screen first (intro.go, Chief 10/31)
-				up()
+				upWith(m)
 			}
 			return
 		}
