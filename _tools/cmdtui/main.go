@@ -443,6 +443,8 @@ func main() {
 		pushCmd(os.Args[2:])
 	case "bookmarks":
 		bookmarksCmd(os.Args[2:])
+	case "repos":
+		reposCmd(os.Args[2:])
 	default:
 		w := bufio.NewWriter(os.Stdout)
 		fmt.Fprintln(w, sAccB.Render("command")+sDim.Render(" · the Command's terminal front end (BOLO 153)"))
@@ -457,6 +459,7 @@ func main() {
 		fmt.Fprintln(w, "  "+sAcc.Render("hour  ")+"  a fresh hour of BBC in a new VLC window (go code: fresh hour · --only gay|straight · --minutes N · --dry-run · --json)")
 		fmt.Fprintln(w, "  "+sAcc.Render("slideshow")+" a photo slideshow from the DARKROOM as a video in a new VLC window (--minutes N · --seconds N · --dry-run · --json)")
 		fmt.Fprintln(w, "  "+sAcc.Render("bookmarks")+" the bookmark dig: summary · scan · check · rank · ingest · build (--json · --print · --dry-run; page in _PRIVATE/reference/bookmarks)")
+		fmt.Fprintln(w, "  "+sAcc.Render("repos")+"  the GitHub repos in Firefox's open tabs + the intake hand-off (the proword: repos are up · --file F · --json · --dry-run)")
 		fmt.Fprintln(w, "  "+sAcc.Render("kenshi")+" start Kenshi with RE_Kenshi and Sentient Sands (the go code: kenshi watanabi · --dry-run · --json)")
 		w.Flush()
 	}

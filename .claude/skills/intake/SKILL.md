@@ -1,6 +1,6 @@
 ---
 name: intake
-description: Use when Chief says "intake" followed by one or more GitHub links, or "run the intake on these repos". Never installs anything on its own.
+description: Use when Chief says "intake" followed by one or more GitHub links, or "run the intake on these repos", or "repos are up" (first run `python _tools/intake/repos_up.py`, which reads the open Firefox tabs on that word only, then intake the repos it lists). Never installs anything on its own.
 ---
 
 # The repo intake — BOLO 140
