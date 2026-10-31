@@ -486,3 +486,4 @@
 {"ts": "2026-10-30 20:13", "sid": "6a94475e", "words": 85, "tells": 2, "per_1k": 23.5, "families": {"sales talk": 1, "passive": 1}, "rules": {"stock-phrase": 1, "passive": 1}}
 {"ts": "2026-10-30 20:20", "sid": "6a94475e", "words": 548, "tells": 6, "per_1k": 10.9, "families": {"other": 4, "passive": 2}, "rules": {"long-sentence": 4, "passive": 2}}
 {"ts": "2026-10-30 20:35", "sid": "6a94475e", "words": 307, "tells": 5, "per_1k": 16.3, "families": {"passive": 3, "other": 2}, "rules": {"passive": 3, "long-sentence": 2}}
+{"ts": "2026-10-30 21:04", "sid": "6a94475e", "words": 168, "tells": 1, "per_1k": 6.0, "families": {"other": 1}, "rules": {"long-sentence": 1}}
