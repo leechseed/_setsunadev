@@ -4,7 +4,7 @@
   "title": "REVERSE THE HARVEST: top posts per board become labeled examples, and the engine learns to tag the whole corpus",
   "trunk": "ORANGE",
   "issued": "2026-10-06",
-  "asof": "2026-10-12",
+  "asof": "2026-11-01",
   "s": "open",
   "status": "🟢 **Re-pull round 2 landed 10/11** · 627 new images loaded into the DARKROOM · the board-as-label matcher is still the build.",
   "decider": "HOTLINE ACTUAL",
@@ -21,7 +21,7 @@
   ],
   "home": "BOLO.md · row 121",
   "card": "none",
-  "version": "v0.3 · DOPE SHEET"
+  "version": "v0.4 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -357,6 +357,16 @@
      "when": "10/12",
      "who": "Claude",
      "t": "Launch refresh: reopened from the 2026-10-12-5.session.md close-out."
+    },
+    {
+     "when": "11/1",
+     "who": "Chief",
+     "t": "\"go\" (11/1): make ViT-L/14 the live matcher space and switch the visual data on the pages."
+    },
+    {
+     "when": "11/1",
+     "who": "Claude",
+     "t": "Matcher swapped to ViT-L/14 (11/1). Self-check board 25.6% -> 33.7%, part 96.2% -> 97.1%. Board families 402 -> 347, family hit 41.4% -> 50.7%. Rail board tags 5,067 -> 11,029 images. All 58,421 corpus images keep a label (0 on fallback). The B/32 embeddings stay for the probes; rollback copy kept."
     }
    ]
   }
