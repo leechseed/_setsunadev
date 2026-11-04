@@ -703,3 +703,4 @@
 {"ts": "2026-11-04 07:00", "sid": "0b50d38c", "words": 213, "tells": 1, "per_1k": 4.7, "families": {"other": 1}, "rules": {"long-sentence": 1}}
 {"ts": "2026-11-04 07:01", "sid": "0b50d38c", "words": 213, "tells": 1, "per_1k": 4.7, "families": {"other": 1}, "rules": {"long-sentence": 1}}
 {"ts": "2026-11-04 07:01", "sid": "0b50d38c", "words": 209, "tells": 4, "per_1k": 19.1, "families": {"other": 3, "slop words": 1}, "rules": {"long-sentence": 3, "stock-phrase": 1}}
+{"ts": "2026-11-04 07:01", "sid": "0b50d38c", "words": 27, "tells": 1, "per_1k": 37.0, "families": {"passive": 1}, "rules": {"passive": 1}}
