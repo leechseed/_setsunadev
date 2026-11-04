@@ -284,6 +284,7 @@ BOOT_CSS = """
 #boot{position:fixed;inset:0;z-index:50;background:#000;overflow:hidden;cursor:pointer;transition:opacity .5s,background .3s;font:14px/1.6 Consolas,"Cascadia Mono",monospace}
 #boot.gone{opacity:0;pointer-events:none}#boot.corner{background:#1a0d07}
 #dvd{position:absolute;left:0;top:0;width:min(24vw,280px);height:auto;will-change:transform;user-select:none}
+#dvd.vid{width:auto;height:min(46vh,420px);border-radius:6px}
 #blog{position:fixed;left:18px;bottom:34px;color:#cfcac3;white-space:pre;max-width:calc(100vw - 36px);overflow:hidden}
 #blog .okt{color:#7fbf8e;font-weight:600}#blog .bv{color:#FF5A1F;font-weight:600}
 #bskip{position:fixed;right:18px;bottom:10px;color:#9a9690}#bstat{position:fixed;left:18px;bottom:10px;color:#9a9690}
@@ -314,7 +315,17 @@ BOOT_JS = r"""
  if(seen)B.classList.add('gone');else boot();})();
 """
 
-BOOT_HTML = """<div id="boot"><img id="dvd" src="/bounce" alt="" draggable="false"><div id="blog"></div><span id="bstat"></span><span id="bskip">SPACE · skip</span></div>"""
+BOOT_HTML = """<div id="boot">%s<div id="blog"></div><span id="bstat"></span><span id="bskip">SPACE · skip</span></div>"""
+
+
+def bounce_tag():
+    """A video clip (Chief 11/4: the Engine Room's .webm) bounces as a muted looping video; a picture as an img."""
+    here = os.path.dirname(os.path.abspath(__file__))
+    own = os.path.join(here, "..", "..", "_PRIVATE", "engineroom")
+    for ext in ("webm", "mp4"):
+        if os.path.isfile(os.path.join(own, "bounce." + ext)):
+            return '<video id="dvd" class="vid" src="/bounce" autoplay muted loop playsinline></video>'
+    return '<img id="dvd" src="/bounce" alt="" draggable="false">'
 
 
 def boot_lines(g, answers, recs):
@@ -398,5 +409,5 @@ def page(g, answers=None, recs=None):
 <script type="application/json" id="er-recs">%s</script>
 <script type="application/json" id="er-boot">%s</script>
 <script>%s</script><script>%s</script></body></html>""" % (CSS + MODAL_CSS + BOOT_CSS, clock12(g["counted_at"]), lock, t["gate"], clear, ring(systems), nxt, queued,
-                             cards_html, behind, MODAL_HTML, BOOT_HTML, json_script(data), json_script(recs),
+                             cards_html, behind, MODAL_HTML, BOOT_HTML % bounce_tag(), json_script(data), json_script(recs),
                              json_script(boot_lines(g, answers, recs)), MODAL_JS, BOOT_JS)

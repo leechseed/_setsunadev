@@ -136,7 +136,8 @@ class Handler(BaseHTTPRequestHandler):
             return self._send(200, json.dumps(sources.gate(with_rows=rows)), "application/json")
         if path == "/bounce":   # the boot's bouncing gif: the Engine Room's own (_PRIVATE/engineroom/bounce.*), else the Console's
             for where in ("engineroom", "console"):
-              for ext, ctype in (("gif", "image/gif"), ("webp", "image/webp"), ("png", "image/png"), ("jpg", "image/jpeg")):
+              for ext, ctype in (("webm", "video/webm"), ("mp4", "video/mp4"), ("gif", "image/gif"), ("webp", "image/webp"),
+                                 ("png", "image/png"), ("jpg", "image/jpeg")):   # Chief 11/4: a .webm clip bounces too
                 f = os.path.join(sources.ROOT, "_PRIVATE", where, "bounce." + ext)
                 if os.path.isfile(f):
                     with open(f, "rb") as fh:
