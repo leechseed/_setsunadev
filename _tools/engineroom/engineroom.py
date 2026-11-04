@@ -118,6 +118,12 @@ class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
         path = self.path.split("?")[0]
         if path in ("/", "/gate"):
+            import importlib
+            import gatepage
+            importlib.reload(sources)
+            importlib.reload(gatepage)   # page edits show on the next refresh, no restart
+            return self._send(200, gatepage.page(sources.gate()), "text/html; charset=utf-8")
+        if path == "/gate/table":
             return self._send(200, page(sources.gate()), "text/html; charset=utf-8")
         if path == "/api/gate":
             rows = "rows=1" in self.path
