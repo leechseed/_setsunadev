@@ -512,6 +512,26 @@ def stats_core(inp, label):
     return {"char": label, "stats": stats, "flags": flags, "inputs_missing": missing, "inputs": inp}
 
 
+def apply_declared(res, decl):
+    """a flag state the record declares (ACTIVE, INACTIVE, PENDING, FIRED_PRE_STORY) is the state reported; the bare
+    condition stays in flags_computed, and every flag whose two states disagree is listed in flags_differ"""
+    comp = {}
+    for f in FLAG_KEYS:
+        comp[f] = res["flags"][f]
+    res["flags_computed"] = comp
+    res["flags_declared"] = {}
+    res["flags_differ"] = []
+    for f in FLAG_KEYS:
+        st = (decl or {}).get(f)
+        if not st:
+            continue
+        res["flags_declared"][f] = st
+        res["flags"][f] = st
+        if st != comp[f]:
+            res["flags_differ"].append(f)
+    return res
+
+
 def inputs_from_instance(inst):
     inp = {}
     for name in INSTANCE_MAP:
@@ -723,6 +743,45 @@ def formula_src():
     return out
 
 
+def declared_flags(cid, rec=None):
+    """the flag states a character's record declares: the record's own `flags` object if it has one, else the
+    FLAGS: list in the slice's structured data block under `CHARACTER_ID: <id>`. Returns (states, events, src)."""
+    if rec and isinstance(rec.get("flags"), dict):
+        st = {f: str(rec["flags"][f]).upper() for f in FLAG_KEYS if rec["flags"].get(f)}
+        return st, {}, "the record's flags"
+    try:
+        lines = io.open(SLICE, encoding="utf-8").read().split("\n")
+    except OSError:
+        return {}, {}, None
+    states, events, at = {}, {}, None
+    for i, ln in enumerate(lines):
+        if ln.strip() == "CHARACTER_ID: " + cid:
+            at = i
+            break
+    if at is None:
+        return {}, {}, None
+    flags_at = None
+    for j in range(at + 1, len(lines)):
+        if lines[j].startswith("```") or lines[j].startswith("CHARACTER_ID:"):
+            break
+        if lines[j].strip() == "FLAGS:":
+            flags_at = j
+            continue
+        if flags_at is not None:
+            m = re.match(r"^\s+([A-Z_]+?)(_event_id)?:\s*([A-Za-z0-9_]+)", lines[j])
+            if not m:
+                if lines[j].strip() and not lines[j].startswith(" "):
+                    break
+                continue
+            if m.group(1) in FLAG_KEYS:
+                if m.group(2):
+                    events[m.group(1)] = None if m.group(3) == "null" else m.group(3)
+                else:
+                    states[m.group(1)] = m.group(3)
+    src = "vertical slice § Structured Data Block FLAGS / line %d" % (flags_at + 1) if flags_at is not None else None
+    return states, events, src
+
+
 def char_stats(cid):
     if not CHAR_ID_RE.match(cid or ""):
         return {"ok": False, "errors": ["char: an id of lowercase letters, digits, _ or -"]}
@@ -732,6 +791,10 @@ def char_stats(cid):
                                                     % os.path.relpath(path, ROOT).replace("\\", "/")]}
     rec = load_json(path)
     res = stats_core(inputs_from_char(rec), rec.get("id") or cid)
+    states, events, src = declared_flags(rec.get("id") or cid, rec)
+    apply_declared(res, states)
+    res["flag_events"] = events
+    res["flags_declared_src"] = src
     res["name"] = rec.get("name")
     res["formula_src"] = formula_src()
     return res
@@ -780,8 +843,11 @@ def char_digests(cat):
         for k, f in (rec.get("fields") or {}).items():
             if k in keys and isinstance(f, dict):
                 fields[k] = {"value": f.get("value"), "status": f.get("status")}
-        out.append({"id": rec.get("id") or fn[:-5], "name": rec.get("name"), "numbers": rec.get("numbers") or {},
-                    "fields": fields, "counts": rec.get("counts"), "gates": rec.get("gates")})
+        cid = rec.get("id") or fn[:-5]
+        states, _, src = declared_flags(cid, rec)
+        out.append({"id": cid, "name": rec.get("name"), "numbers": rec.get("numbers") or {},
+                    "fields": fields, "counts": rec.get("counts"), "gates": rec.get("gates"),
+                    "flags_declared": states, "flags_declared_src": src})
     return out
 
 
@@ -851,7 +917,10 @@ def main(argv):
             for k in STAT_KEYS:
                 print("  %-19s %s" % (k, "null" if res["stats"][k] is None else res["stats"][k]))
             for f in FLAG_KEYS:
-                print("  %-23s %s" % (f, res["flags"][f]))
+                note = ""
+                if f in res.get("flags_differ", []):
+                    note = "   (declared; the condition alone reads %s)" % res["flags_computed"][f]
+                print("  %-23s %s%s" % (f, res["flags"][f], note))
             if res["inputs_missing"]:
                 print("  missing: " + ", ".join(res["inputs_missing"]))
         return 1 if res.get("errors") else 0

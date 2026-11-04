@@ -242,6 +242,17 @@ for cid, want in (("victoria_midnight", {"truth_exposure": 20, "expressive_range
         continue
     got = {k: res["stats"][k] for k in want}
     ok("10c %s's record (CONSOLE's JSON) gives the known values" % cid, got == want, json.dumps(got))
+    if cid == "victoria_midnight":
+        slice_flags = {"SHADOW_DENIAL": "ACTIVE", "TRUTH_VULNERABILITY": "ACTIVE", "OPTIONLOCK_PROGRESSION": "ACTIVE",
+                       "EARNED_JUDGEMENT": "PENDING", "KINSHIP_COLLAPSE": "FIRED_PRE_STORY"}   # slice § Active Flags, Tori
+        ok("10e Tori's five flags match the slice (declared PENDING / FIRED_PRE_STORY kept; the bare condition beside, the gap marked)",
+           res["flags"] == slice_flags and set(res["flags_computed"].values()) == {"ACTIVE"}
+           and sorted(res["flags_differ"]) == ["EARNED_JUDGEMENT", "KINSHIP_COLLAPSE"]
+           and res["flag_events"].get("KINSHIP_COLLAPSE") == "m1b_crash_jebb_death",
+           json.dumps(res["flags"]))
+    else:
+        ok("10f Anna's five flags match the slice: all INACTIVE",
+           res["flags"] == {f: "INACTIVE" for f in ep.FLAG_KEYS}, json.dumps(res["flags"]))
 if node:
     d = tempfile.mkdtemp(prefix="europatch-stats-")
     try:
@@ -253,17 +264,19 @@ if node:
         with io.open(js, "w", encoding="utf-8") as f:
             f.write(engine + "\nvar fs=require('fs');var IN=JSON.parse(fs.readFileSync(process.argv[2],'utf8'));"
                     "var out=IN.insts.map(function(i){return EP.statsCore(EP.inputsFromInstance(i),'x')})"
-                    ".concat(IN.recs.map(function(r){return EP.statsCore(EP.inputsFromChar(r),'x')}));"
+                    ".concat(IN.recs.map(function(r,i){return EP.applyDeclared(EP.statsCore(EP.inputsFromChar(r),'x'),IN.decl[i])}));"
                     "fs.writeFileSync(process.argv[3],JSON.stringify(out));\n")
         inp, outp = os.path.join(d, "in.json"), os.path.join(d, "out.json")
         with io.open(inp, "w", encoding="utf-8") as f:
-            json.dump({"insts": insts, "recs": recs}, f)
+            decl = [ep.declared_flags(x.get("id", ""), x)[0] for x in recs]
+            json.dump({"insts": insts, "recs": recs, "decl": decl}, f)
         r = subprocess.run([node, js, inp, outp], capture_output=True, text=True)
         if r.returncode:
             ok("10d stats: Python = JS mirror", False, r.stderr[-400:])
         else:
             jo = json.load(io.open(outp, encoding="utf-8"))
-            po = [ep.stats_core(ep.inputs_from_instance(i), "x") for i in insts] + [ep.stats_core(ep.inputs_from_char(x), "x") for x in recs]
+            po = [ep.stats_core(ep.inputs_from_instance(i), "x") for i in insts] + \
+                 [ep.apply_declared(ep.stats_core(ep.inputs_from_char(x), "x"), dc) for x, dc in zip(recs, decl)]
             bad = [i for i, (a1, b1) in enumerate(zip(po, jo)) if json.loads(json.dumps(a1)) != b1]
             ok("10d stats: Python = JS mirror, %d instances + %d records" % (len(insts), len(recs)), not bad and len(jo) == len(po),
                "mismatch at %s" % bad[:5] if bad else "%d identical" % len(po))
