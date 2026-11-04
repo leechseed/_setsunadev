@@ -36,14 +36,14 @@ input:focus,textarea:focus{outline:none;border-color:var(--acc)}
 #doc code{background:var(--hl);padding:0 .3em;border-radius:2px;color:var(--acch)}
 #doc pre{background:#030405;border:1px solid var(--line);padding:8px 10px;overflow:auto}
 #doc pre code{background:none;padding:0;color:var(--fg)}
+#doc pre.fm code{color:var(--dim)}
 #doc blockquote{border-left:3px solid var(--accd);margin:.6em 0;padding:.1em .8em;color:var(--fg2)}
 #doc ul{list-style:none;padding:0;margin:.4em 0}
 #doc li{position:relative;padding-left:1.4em;margin:.15em 0}
 #doc li>.mk{position:absolute;left:0;color:var(--acc)}
 #doc hr{border:0;border-top:1px solid var(--line2);margin:1.2em 0}
-#doc table{border-collapse:collapse;margin:.6em 0;width:100%}
-#doc td,#doc th{border:1px solid var(--line);padding:4px 7px;vertical-align:top;text-align:left}
-#doc th{background:var(--hl);color:var(--acch)}
+#doc table{border-collapse:collapse;margin:.6em 0;width:100%;table-layout:fixed}
+#doc td,#doc th{border:1px solid var(--line);padding:4px 7px;vertical-align:top;text-align:left;overflow-wrap:anywhere}#doc th{background:var(--hl);color:var(--acch)}
 #doc .lnk{color:var(--acch);text-decoration:underline dotted}
 #doc .cm{color:var(--dim)}
 #doc [data-l0]:hover{box-shadow:-3px 0 0 var(--line2)}
@@ -90,6 +90,72 @@ label.l{display:block;color:var(--fg2);font-size:11px;margin:6px 0 2px}
 #plist a span{color:var(--dim);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 #recent{margin-top:16px;color:var(--fg2);font-size:12px}
 </style>
+<!-- cmd-theme -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<style id="cmd-theme">
+/* The Command theme (BOLO 171, 10/31). One look for every page the launch opens.
+   Source of truth: the Console's tokens (_tools/console/console.py PAGE). Dark only, no toggle (9/11).
+   Orange #FF5A1F on every page, the DARKROOM included (Chief 10/30: the rose pages are IN).
+   theme.py injects this file as <style id="cmd-theme"> at the end of a page's styles, so it wins.
+   Edit the values here, then run:  python _tools/brand/theme.py apply-all                        */
+
+:root{
+  color-scheme:dark;
+  /* the Console's own values */
+  --cmd-bg:#050608; --cmd-hl:#10151b; --cmd-panel:#0a0c0f; --cmd-panel2:#10151b; --cmd-inset:#030405;
+  --cmd-line:#23272b; --cmd-line2:#3a3e40;
+  --cmd-fg:#c6cbc8; --cmd-fg2:#959a97; --cmd-dim:#5f6160; --cmd-white:#ffffff;
+  --cmd-acc:#FF5A1F; --cmd-acch:#FFB08F; --cmd-accm:#be4216; --cmd-accd:#6e280e; --cmd-accsoft:#24110a;
+  --cmd-ok:#4ec96f; --cmd-oksoft:#0f2416; --cmd-am:#e3b341; --cmd-amsoft:#2a210b;
+  --cmd-bad:#e5604d; --cmd-badsoft:#2a120e; --cmd-cyan:#5CC8D0;
+  --cmd-font:"IBM Plex Mono",Consolas,monospace;
+  --cmd-chrome:44px;
+}
+
+/* every page's own token names, pointed at the Console's values */
+:root{
+  /* ground and panels */
+  --bg:var(--cmd-bg)!important; --ground:var(--cmd-bg)!important;
+  --panel:var(--cmd-panel)!important; --panel-2:var(--cmd-panel2)!important; --panel2:var(--cmd-panel2)!important;
+  --pan:var(--cmd-panel)!important; --pan2:var(--cmd-panel2)!important; --inset:var(--cmd-inset)!important;
+  --hl:var(--cmd-hl)!important;
+  /* lines */
+  --line:var(--cmd-line)!important; --line-2:var(--cmd-line2)!important; --line2:var(--cmd-line2)!important; --ln:var(--cmd-line)!important;
+  /* text */
+  --fg:var(--cmd-fg)!important; --ink:var(--cmd-fg)!important; --tx:var(--cmd-fg)!important;
+  --ink-2:var(--cmd-fg2)!important; --ink2:var(--cmd-fg2)!important; --muted:var(--cmd-fg2)!important; --help:var(--cmd-fg2)!important;
+  --ink-3:var(--cmd-dim)!important; --ink3:var(--cmd-dim)!important; --mut:var(--cmd-fg2)!important; --mu:var(--cmd-fg2)!important;
+  --dim:var(--cmd-dim)!important; --faint:var(--cmd-dim)!important;
+  /* the accent */
+  --acc:var(--cmd-acc)!important; --accent:var(--cmd-acc)!important; --ac:var(--cmd-acc)!important; --or:var(--cmd-acc)!important;
+  --amber:var(--cmd-acc)!important; --amber-dim:var(--cmd-accd)!important; --amber-glow:rgba(255,90,31,.30)!important;
+  --accent-ink:var(--cmd-acch)!important; --acch:var(--cmd-acch)!important; --or2:var(--cmd-acch)!important;
+  --link:var(--cmd-acch)!important; --orange:var(--cmd-acch)!important;
+  --accent-soft:var(--cmd-accsoft)!important; --orange-soft:var(--cmd-accsoft)!important;
+  --accd:var(--cmd-accd)!important; --accm:var(--cmd-accm)!important;
+  /* states */
+  --ok:var(--cmd-ok)!important; --good:var(--cmd-ok)!important; --go:var(--cmd-ok)!important; --green:var(--cmd-ok)!important;
+  --good-soft:var(--cmd-oksoft)!important;
+  --am:var(--cmd-am)!important; --warn:var(--cmd-am)!important; --warn-soft:var(--cmd-amsoft)!important; --mark:var(--cmd-amsoft)!important;
+  --bad:var(--cmd-bad)!important; --no:var(--cmd-bad)!important; --bad-soft:var(--cmd-badsoft)!important;
+  --cyan:var(--cmd-cyan)!important;
+  /* one font: the Console's mono */
+  --display:var(--cmd-font)!important; --disp:var(--cmd-font)!important; --body:var(--cmd-font)!important;
+  --mono:var(--cmd-font)!important; --tile:var(--cmd-font)!important; --cond:var(--cmd-font)!important;
+  /* no dot grid, flat shadows */
+  --grid:transparent!important; --shadow:none!important;
+}
+
+/* base layer */
+html,body{background-color:var(--cmd-bg)!important;color:var(--cmd-fg)}
+body{background-image:none!important;-webkit-font-smoothing:auto}
+body,body *:not(svg):not(svg *){font-family:var(--cmd-font)!important}
+::selection{background:var(--cmd-acc);color:var(--cmd-bg)}
+:focus-visible{outline-color:var(--cmd-acc)}
+input,select,textarea{accent-color:var(--cmd-acc);caret-color:var(--cmd-acc)}
+*{scrollbar-color:var(--cmd-line2) transparent}
+</style>
+<!-- /cmd-theme -->
 </head><body>
 <header id="strip">
   <span class="tag">REVIEW DESK</span>
@@ -156,6 +222,8 @@ function render(text){
   var L=text.split("\n"),out=[],i=0,n=L.length;
   var isList=/^(\s*)([-*+]|\d+[.)])\s+(.*)$/,isHead=/^(#{1,6})\s+(.*)$/,isHr=/^\s*([-*_])(\s*\1){2,}\s*$/,isSep=/^\s*\|?\s*:?-{2,}/;
   function A(a,b){return ' data-l0="'+(a+1)+'" data-l1="'+(b+1)+'"'}
+  if(n&&L[0].trim()==="---"){var e=1;while(e<n&&L[e].trim()!=="---")e++;   /* the front matter, dim */
+    if(e<n){out.push('<pre class="fm"'+A(0,e)+"><code>"+esc(L.slice(1,e).join("\n"))+"</code></pre>");i=e+1}}
   while(i<n){
     var l=L[i],m;
     if(!l.trim()){i++;continue}
@@ -164,9 +232,13 @@ function render(text){
     if((m=isHead.exec(l))){var h=m[1].length;out.push("<h"+h+A(i,i)+">"+inline(m[2])+"</h"+h+">");i++;continue}
     if(isHr.test(l)){out.push("<hr"+A(i,i)+">");i++;continue}
     if(/^\s*\|/.test(l)){var j=i,rows=[];while(j<n&&/^\s*\|/.test(L[j]))j++;
-      var hdr=j>i+1&&isSep.test(L[i+1]);
+      var hdr=j>i+1&&isSep.test(L[i+1]),nc=Math.max(1,cells(L[i]).length),mx=[];
+      var fit=function(cs){if(cs.length>nc)cs=cs.slice(0,nc-1).concat([cs.slice(nc-1).join(" | ")]);while(cs.length<nc)cs.push("");return cs};
+      for(var k=i;k<j;k++){if(hdr&&k===i+1)continue;fit(cells(L[k])).forEach(function(c,ci){mx[ci]=Math.max(mx[ci]||0,c.replace(/\*\*|`/g,"").length)})}
+      /* short columns (#, dates) get their width in ch; the long ones share what is left */
+      rows.push("<colgroup>"+mx.map(function(m){return m<=18?'<col style="width:'+(Math.max(2,m)+3)+'ch">':"<col>"}).join("")+"</colgroup>");
       for(var k=i;k<j;k++){if(hdr&&k===i+1)continue;var tag=hdr&&k===i?"th":"td";
-        rows.push("<tr"+A(k,k)+">"+cells(L[k]).map(function(c){return"<"+tag+">"+inline(c)+"</"+tag+">"}).join("")+"</tr>")}
+        rows.push("<tr"+A(k,k)+">"+fit(cells(L[k])).map(function(c){return"<"+tag+">"+inline(c)+"</"+tag+">"}).join("")+"</tr>")}
       out.push("<table"+A(i,j-1)+">"+rows.join("")+"</table>");i=j;continue}
     if(/^\s*>/.test(l)){var j=i;while(j<n&&/^\s*>/.test(L[j]))j++;
       out.push("<blockquote"+A(i,j-1)+">"+L.slice(i,j).map(function(x){return inline(x.replace(/^\s*>\s?/,""))}).join("<br>")+"</blockquote>");i=j;continue}
@@ -194,7 +266,8 @@ function openDoc(path){
     try{localStorage.setItem("rv.last",d.path)}catch(e){}
     try{history.replaceState(null,"","?doc="+encodeURIComponent(d.path))}catch(e){}
     closePick();paint();msg("");
-  }).catch(function(e){msg("could not open "+path+": "+e.message,"bad")});
+    if(SELFTEST){SELFTEST=false;selftest()}
+  }).catch(function(e){msg("could not open "+path+": "+e.message,"bad");if(!S.doc)openPick()});
 }
 function blockOf(node){var e=node.nodeType===1?node:node.parentElement;return e&&e.closest?e.closest("[data-l0]"):null}
 function offsetIn(block,node,off){var r=document.createRange();r.selectNodeContents(block);r.setEnd(node,off);return r.toString().length}
@@ -348,6 +421,20 @@ document.addEventListener("keydown",function(e){
   if(e.key==="Escape"&&!$("composer").hidden&&!typing)closeComposer();
 });
 
+/* ---- #selftest: drive highlight -> composer -> save on the first paragraphs, leave one composer open; sends nothing ---- */
+function selftest(){
+  var ps=Array.prototype.filter.call(document.querySelectorAll("#doc p[data-l0]"),function(p){return p.textContent.length>60}).slice(0,3);
+  ps.forEach(function(p,i){
+    var tw=document.createTreeWalker(p,NodeFilter.SHOW_TEXT),t=tw.nextNode();while(t&&t.data.trim().length<12)t=tw.nextNode();if(!t)return;
+    var r=document.createRange(),a=t.data.search(/\S/);r.setStart(t,a);r.setEnd(t,Math.min(t.data.length,a+28));
+    var sel=window.getSelection();sel.removeAllRanges();sel.addRange(r);S.pending=selInfo();
+    startComposer(i===1?"suggestion":"comment");
+    if(i===0)$("ctext").value="selftest: what does this mean here?";
+    if(i===1){$("crep").value="a plainer line";$("ctext").value="selftest: say it plainer"}
+    if(i<2)saveItem();else $("ctext").value="selftest: the composer, left open";
+  });
+}
+var SELFTEST=location.hash==="#selftest";
 /* ---- start: ?doc=, else the last doc, else the picker ---- */
 var start=new URLSearchParams(location.search).get("doc");
 if(!start){try{start=localStorage.getItem("rv.last")}catch(e){}}

@@ -165,8 +165,7 @@ def save(body):
               "doc_changed_since_open": bool(body.get("sha1")) and body.get("sha1") != doc["sha1"],
               "summary": summary[:20000], "voice": _audio(body.get("voice"), "voice-00", folder, errors),
               "counts": {"comments": sum(1 for x in items if x["kind"] == "comment"),
-                         "suggestions": sum(1 for x in items if x["kind"] == "suggestion"),
-                         "voice": sum(1 for x in items if x["voice"]) + (1 if body.get("voice") else 0)},
+                         "suggestions": sum(1 for x in items if x["kind"] == "suggestion"), "voice": 0},
               "items": items, "errors": errors, "test": bool(body.get("test"))}
     review["counts"]["voice"] = sum(1 for x in items if x["voice"]) + (1 if review["voice"] else 0)
     tmp = os.path.join(folder, "review.json.tmp")

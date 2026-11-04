@@ -5,6 +5,7 @@ Everything wears the boot screen's look. The window snaps to the right half of t
 Serves 127.0.0.1:8795 only.
   /  the frame · /panes.json · /glasses.json · /boot.json · /desk.json · /local/<name> (whitelist) · /glass/<id>/<file>
   /status.json · POST /cmd -> cmd.log · POST /show + /show.json (command glass hands the frame a glass)
+  /review/docs · /review/doc?path= · /review/list · POST /review/send (BOLO 125, the review desk; engine _tools/reviewdesk)
 Usage: python console.py              serve
        python console.py --open       open the window (or focus the open one) and snap it to the right half
        python console.py --status     run pull_queue.py report and cache status.json
@@ -62,6 +63,7 @@ LOCAL = {   # the whitelist: name -> file
     "zotero-erd": os.path.join(ROOT, "_PRIVATE", "reference", "erd", "zotero-erd.html"),
     "tropes": os.path.join(ROOT, "_tools", "tropes", "glass", "tropes.html"),   # BOLO 89, _tools/tropes/build_glass.py
     "europatch": os.path.join(ROOT, "_tools", "europatch", "patchbay.html"),   # BOLO 173, the patch bay (europatch.py build)
+    "review": os.path.join(ROOT, "_tools", "reviewdesk", "review-desk.html"),   # BOLO 125, the review desk (11/4)
 }
 PANES = [   # the rail: six up front (Chief 10/18, rec taken), the rest behind "more"
     {"id": "desk", "title": "Desk", "url": "/local/desk"},
@@ -78,7 +80,21 @@ PANES = [   # the rail: six up front (Chief 10/18, rec taken), the rest behind "
     {"id": "zotero-erd", "title": "Zotero ERD", "url": "/local/zotero-erd", "more": True},
     {"id": "tropes", "title": "Tropes", "url": "/local/tropes", "more": True},
     {"id": "europatch", "title": "Patch bay", "url": "/local/europatch", "more": True},
+    {"id": "review", "title": "Review desk", "url": "/local/review", "more": True},   # BOLO 125 (provisional: behind "more")
 ]
+REVIEWDESK = os.path.join(ROOT, "_tools", "reviewdesk", "reviewdesk.py")   # BOLO 125: the review desk's engine
+_RD = []
+
+
+def rd():
+    """the review desk's engine, loaded once from its file (docs · read_doc · save · all_reviews)"""
+    if not _RD:
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("reviewdesk", REVIEWDESK)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        _RD.append(mod)
+    return _RD[0]
 EUROPATCH = os.path.join(ROOT, "_tools", "europatch", "europatch.py")   # BOLO 173: the roll engine
 EP_PATCHES = os.path.join(ROOT, "_PRIVATE", "europatch", "patches")      # saved patches (whitelisted names only)
 EP_NAME = __import__("re").compile(r"^[a-z0-9][a-z0-9_-]{0,47}$")
@@ -418,7 +434,7 @@ iframe{flex:1;border:0;width:100%;height:100%;background:var(--bg)}
   <section class="box on" data-t="PANES" id="pbox"><input id="flt" placeholder="/ filter" autocomplete="off"><div id="panes" class="rail"></div></section>
   <section class="box" data-t="GLASSES" id="gbox"><div id="glasses" class="rail"></div></section>
  </div>
- <section class="box" data-t="MAIN" id="main"><iframe id="fr" title="pane"></iframe></section>
+ <section class="box" data-t="MAIN" id="main"><iframe id="fr" title="pane" allow="microphone"></iframe></section>
 </main>
 <div class="status"><span><b id="mode">NORMAL</b>  <b id="pn">-</b></span><span id="st" class="d"></span><span class="d">1-6 pane · / filter · : command · b boot</span></div>
 <label class="cmd"><span>&gt;</span><input id="in" placeholder="press : for a command, / to filter" autocomplete="off"></label>
@@ -581,6 +597,20 @@ class H(http.server.BaseHTTPRequestHandler):
                 with open(f, "rb") as fh:
                     return self._send(200, fh.read(), "application/json; charset=utf-8")
             return self._send(404, '{"error":"no such patch"}', "application/json")
+        if path in ("/review/docs", "/review/doc", "/review/list"):   # BOLO 125, the review desk
+            from urllib.parse import urlparse, parse_qs
+            try:
+                if path == "/review/docs":
+                    out = {"docs": rd().docs()}
+                elif path == "/review/list":
+                    out = {"reviews": [rd().brief(r) for r in rd().all_reviews()][:50]}
+                else:
+                    out = rd().read_doc((parse_qs(urlparse(self.path).query).get("path") or [""])[0])
+                    if out is None:
+                        return self._send(404, '{"ok":false,"errors":["no such .md doc in the repo"]}', "application/json")
+            except Exception as e:
+                return self._send(500, json.dumps({"ok": False, "errors": [str(e)]}), "application/json")
+            return self._send(200, json.dumps(out, ensure_ascii=False), "application/json; charset=utf-8")
         if path.startswith("/local/"):
             f = LOCAL.get(path[7:])
             if f and os.path.isfile(f):
@@ -650,6 +680,19 @@ class H(http.server.BaseHTTPRequestHandler):
         return self._store("DELETE")
 
     def do_POST(self):
+        if self.path == "/review/send":   # BOLO 125: one review.json + its audio -> _PRIVATE/reviews/<doc-slug>-<ts>/
+            try:
+                n = int(self.headers.get("Content-Length") or 0)
+                if n > (96 << 20):
+                    return self._send(413, '{"ok":false,"errors":["a review is under 96 MB"]}', "application/json")
+                body = json.loads(self.rfile.read(n).decode("utf-8"))
+            except Exception:
+                return self._send(400, '{"ok":false,"errors":["bad json"]}', "application/json")
+            try:
+                code, out = rd().save(body)
+            except Exception as e:
+                code, out = 500, {"ok": False, "errors": ["save failed: %s" % e]}
+            return self._send(code, json.dumps(out, ensure_ascii=False), "application/json; charset=utf-8")
         if self.path == "/europatch/roll" or self.path.startswith("/europatch/patches/"):   # BOLO 173, the patch bay
             try:
                 n = int(self.headers.get("Content-Length") or 0)

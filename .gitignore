@@ -73,3 +73,7 @@ _tools/console/status.json
 _tools/console/cmd.log
 _tools/launch/boot.jsonl
 _tools/launch/last_poll.json
+
+# 11/4: the Ollama identity key was tracked and pushed (found by the BOLO 143 dry run); never track it again
+lola-sama/ollama-data/id_ed25519
+lola-sama/ollama-data/id_ed25519.pub

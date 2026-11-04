@@ -598,3 +598,4 @@
 {"ts": "2026-11-04 01:15", "sid": "33907b68", "words": 282, "tells": 2, "per_1k": 7.1, "families": {"other": 1, "slop words": 1}, "rules": {"long-sentence": 1, "stock-phrase": 1}}
 {"ts": "2026-11-04 01:16", "sid": "e98f0b1b", "words": 67, "tells": 1, "per_1k": 14.9, "families": {"repeated openings": 1}, "rules": {"repeated-opening": 1}}
 {"ts": "2026-11-04 01:21", "sid": "e98f0b1b", "words": 330, "tells": 5, "per_1k": 15.2, "families": {"passive": 4, "other": 1}, "rules": {"passive": 4, "long-sentence": 1}}
+{"ts": "2026-11-04 01:26", "sid": "e98f0b1b", "words": 149, "tells": 3, "per_1k": 20.1, "families": {"passive": 2, "other": 1}, "rules": {"passive": 2, "long-sentence": 1}}
