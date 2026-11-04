@@ -625,3 +625,6 @@
 {"ts": "2026-11-04 02:53", "sid": "e98f0b1b", "words": 198, "tells": 4, "per_1k": 20.2, "families": {"other": 1, "passive": 3}, "rules": {"long-sentence": 1, "passive": 3}}
 {"ts": "2026-11-04 03:03", "sid": "e98f0b1b", "words": 198, "tells": 4, "per_1k": 20.2, "families": {"other": 1, "passive": 3}, "rules": {"long-sentence": 1, "passive": 3}}
 {"ts": "2026-11-04 03:03", "sid": "e98f0b1b", "words": 198, "tells": 4, "per_1k": 20.2, "families": {"other": 1, "passive": 3}, "rules": {"long-sentence": 1, "passive": 3}}
+{"ts": "2026-11-04 03:04", "sid": "e98f0b1b", "words": 117, "tells": 1, "per_1k": 8.5, "families": {"passive": 1}, "rules": {"passive": 1}}
+{"ts": "2026-11-04 03:06", "sid": "e98f0b1b", "words": 117, "tells": 1, "per_1k": 8.5, "families": {"passive": 1}, "rules": {"passive": 1}}
+{"ts": "2026-11-04 03:06", "sid": "e98f0b1b", "words": 117, "tells": 1, "per_1k": 8.5, "families": {"passive": 1}, "rules": {"passive": 1}}
