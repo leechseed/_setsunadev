@@ -24,7 +24,7 @@
               "pov": "you",
               "author_structural_pov": "you",
               "summary": "Impact Character: Anna-Colson Conway",
-              "storytelling": "Anna's impact is Manipulation / Developing a Plan (storyform section 2, ruled 2026-08-24). Anna ascends with no fairness premise at all, in the same institution, and it works (section 4)."
+              "storytelling": "Anna's impact is Fixed Attitude / Memories: the storyform section 9 RS(MvI) column, reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150; ruled Chief 'go' 11/4, BOLO 176). Anna ascends with no fairness premise at all, in the same institution, and it works (section 4). OPEN: the RS perspective below still reads the same column; which column the RS takes is a Chief call."
             },
             {
               "id": "persp_rs_tori_anna",
@@ -276,10 +276,10 @@
             {
               "id": "storypoint_ic_domain",
               "appreciation": "domain",
-              "method": "psychology",
+              "method": "mind",
               "illustration": "",
-              "summary": "Manipulation",
-              "storytelling": "",
+              "summary": "Fixed Attitude",
+              "storytelling": "From the storyform section 9 RS(MvI) column, reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150; ruled Chief 'go' 11/4, BOLO 176).",
               "perspectives": [
                 {
                   "perspective_id": "persp_ic_anna"
@@ -289,10 +289,10 @@
             {
               "id": "storypoint_ic_concern",
               "appreciation": "concern",
-              "method": "conceptualizing",
+              "method": "memory",
               "illustration": "",
-              "summary": "Developing a Plan",
-              "storytelling": "",
+              "summary": "Memories",
+              "storytelling": "From the storyform section 9 RS(MvI) column, reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150; ruled Chief 'go' 11/4, BOLO 176).",
               "perspectives": [
                 {
                   "perspective_id": "persp_ic_anna"
@@ -302,10 +302,10 @@
             {
               "id": "storypoint_ic_issue",
               "appreciation": "issue",
-              "method": "circumstances",
+              "method": "suspicion",
               "illustration": "",
-              "summary": "Circumstances vs. Situation",
-              "storytelling": "",
+              "summary": "Suspicion vs. Evidence",
+              "storytelling": "From the storyform section 9 RS(MvI) column, reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150; ruled Chief 'go' 11/4, BOLO 176).",
               "perspectives": [
                 {
                   "perspective_id": "persp_ic_anna"
@@ -315,10 +315,10 @@
             {
               "id": "storypoint_ic_problem",
               "appreciation": "problem",
-              "method": "projection",
+              "method": "equity",
               "illustration": "",
-              "summary": "Projection",
-              "storytelling": "",
+              "summary": "Equity",
+              "storytelling": "From the storyform section 9 RS(MvI) column, reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150; ruled Chief 'go' 11/4, BOLO 176).",
               "perspectives": [
                 {
                   "perspective_id": "persp_ic_anna"
@@ -328,10 +328,10 @@
             {
               "id": "storypoint_ic_solution",
               "appreciation": "solution",
-              "method": "speculation",
+              "method": "inequity",
               "illustration": "",
-              "summary": "Speculation",
-              "storytelling": "",
+              "summary": "Inequity",
+              "storytelling": "From the storyform section 9 RS(MvI) column, reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150; ruled Chief 'go' 11/4, BOLO 176).",
               "perspectives": [
                 {
                   "perspective_id": "persp_ic_anna"
@@ -341,10 +341,10 @@
             {
               "id": "storypoint_ic_focus",
               "appreciation": "focus",
-              "method": "ability",
+              "method": "projection",
               "illustration": "",
-              "summary": "Ability (engine Symptom)",
-              "storytelling": "",
+              "summary": "Projection (engine Symptom)",
+              "storytelling": "From the storyform section 9 RS(MvI) column, reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150; ruled Chief 'go' 11/4, BOLO 176).",
               "perspectives": [
                 {
                   "perspective_id": "persp_ic_anna"
@@ -354,10 +354,10 @@
             {
               "id": "storypoint_ic_direction",
               "appreciation": "direction",
-              "method": "desire",
+              "method": "speculation",
               "illustration": "",
-              "summary": "Desire (engine Response)",
-              "storytelling": "",
+              "summary": "Speculation (engine Response)",
+              "storytelling": "From the storyform section 9 RS(MvI) column, reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150; ruled Chief 'go' 11/4, BOLO 176).",
               "perspectives": [
                 {
                   "perspective_id": "persp_ic_anna"
@@ -367,10 +367,10 @@
             {
               "id": "storypoint_ic_unique_ability",
               "appreciation": "unique_ability",
-              "method": "situation",
+              "method": "evidence",
               "illustration": "",
-              "summary": "Situation",
-              "storytelling": "",
+              "summary": "Evidence (engine Catalyst; the UA-equivalent, anna-colson-conway §Structure)",
+              "storytelling": "From the storyform section 9 RS(MvI) column, reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150; ruled Chief 'go' 11/4, BOLO 176).",
               "perspectives": [
                 {
                   "perspective_id": "persp_ic_anna"
@@ -380,10 +380,10 @@
             {
               "id": "storypoint_ic_critical_flaw",
               "appreciation": "critical_flaw",
-              "method": "interpretation",
+              "method": "interdiction",
               "illustration": "",
-              "summary": "Interpretation",
-              "storytelling": "",
+              "summary": "Interdiction (engine Inhibitor; the CF-equivalent, anna-colson-conway §Structure)",
+              "storytelling": "From the storyform section 9 RS(MvI) column, reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150; ruled Chief 'go' 11/4, BOLO 176).",
               "perspectives": [
                 {
                   "perspective_id": "persp_ic_anna"
@@ -393,10 +393,10 @@
             {
               "id": "storypoint_ic_benchmark",
               "appreciation": "benchmark",
-              "method": "conceiving",
+              "method": "conscious",
               "illustration": "",
-              "summary": "Conceiving an Idea",
-              "storytelling": "",
+              "summary": "Contemplation",
+              "storytelling": "From the storyform section 9 RS(MvI) column, reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150; ruled Chief 'go' 11/4, BOLO 176).",
               "perspectives": [
                 {
                   "perspective_id": "persp_ic_anna"
@@ -709,32 +709,32 @@
               "id": "transit_ic_1",
               "appreciation": "transit",
               "sequence": 1,
-              "method": "conceiving",
-              "canon_word": "Conceiving an Idea",
+              "method": "preconscious",
+              "canon_word": "Impulsive Responses",
               "perspective_id": "persp_ic_anna"
             },
             {
               "id": "transit_ic_2",
               "appreciation": "transit",
               "sequence": 2,
-              "method": "conceptualizing",
-              "canon_word": "Developing a Plan",
+              "method": "subconscious",
+              "canon_word": "Innermost Desires",
               "perspective_id": "persp_ic_anna"
             },
             {
               "id": "transit_ic_3",
               "appreciation": "transit",
               "sequence": 3,
-              "method": "being",
-              "canon_word": "Playing a Role",
+              "method": "conscious",
+              "canon_word": "Contemplation",
               "perspective_id": "persp_ic_anna"
             },
             {
               "id": "transit_ic_4",
               "appreciation": "transit",
               "sequence": 4,
-              "method": "becoming",
-              "canon_word": "Changing One's Nature",
+              "method": "memory",
+              "canon_word": "Memories",
               "perspective_id": "persp_ic_anna"
             },
             {

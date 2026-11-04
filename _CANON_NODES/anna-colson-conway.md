@@ -10,11 +10,11 @@ series: The Outliers
 trunk: BLACK
 role: Impact Character
 resolve: Steadfast
-status: ruled on the recommendations 2026-09-23 (Chief: "take the recs") — the chart is a placeholder until an astrology ingest runs; every ⧗ below stands as the ruled answer
+status: LOCKED 11/4 as Anna's authority (Chief: go) — ruled Chief 'go' 11/4, BOLO 176; the authority document for her LEECHSEED record (slice 3.6.1, anna_colson_conway 0.3.0). Earlier: ruled on the recommendations 2026-09-23 (Chief: "take the recs") — the chart is a placeholder until an astrology ingest runs; every ⧗ below stands as the ruled answer
 blocking: none — IC ruling CANON 2026-08-24 ([[oxo-storyform]] §4, BOLO 46 phase 1) and telling-profile ruling CANON 2026-09-23 ([[oxo-telling-profile]] T2). This node's proposed fields (chart, origin, body, voice, handle) are ⧗ and await Chief's ruling — BOLO 46 phase 2.
 created: 2026-09-23
 aliases: [Anna, Colson, "Anna Colson Conway", "Anna Colson", "Colson (Red Hills legacy)"]
-leechseed_record: "anna_colson_conway — vertical slice 3.6.0, THE INSTANCE · Anna-Colson Conway (draft 0.2.0, 2026-11-04); proposals in _tools/bolostatus/work/176/anna-fill.md"
+leechseed_record: "anna_colson_conway — vertical slice 3.6.1, THE INSTANCE · Anna-Colson Conway (draft 0.3.0, 2026-11-04); proposals and derivations in _tools/bolostatus/work/176/anna-fill.md"
 links:
   - "[[victoria-midnight]]"
   - "[[oxo-storyform]]"
@@ -57,7 +57,7 @@ Tori has to learn this. Anna has already stopped needing to learn anything.
 | Full name | Anna Colson Conway |
 | Narrative role | Impact Character |
 | Resolve | **Steadfast** — [[oxo-storyform]] §9 Dynamics line ("IC Resolve Steadfast") |
-| IC Domain | **Fixed Attitude** — [[oxo-storyform]] §9, the ruled reassignment of the engine's RS(MvI) slot to Anna; **re-ruled 2026-11-04 (BOLO 150, the Docket)** over the NCP export, whose IC storypoints still read the engine's IC column (Manipulation) and need a re-export |
+| IC Domain | **Fixed Attitude** — [[oxo-storyform]] §9, the ruled reassignment of the engine's RS(MvI) slot to Anna; **re-ruled 2026-11-04 (BOLO 150, the Docket)** over the NCP export. The NCP IC storypoints now read this column (re-exported 11/4, ruled Chief 'go' 11/4, BOLO 176; Draft 7, 0 errors). Open: the NCP RS still reads the same column |
 | IC Concern | **Memories** — same reassignment. This supersedes two earlier readings in the record: §4's own VERIFY guess ("Innermost Desires," which the engine actually seats as this throughline's *Signpost 2*, not its Concern) and §2's pre-rotation table ("Developing a Plan," whose content the same ruling sends to **OS — the Factions**, not to Anna) |
 | Problem → Solution | **Equity → Inequity** — identical to the MC and RS columns; [[oxo-storyform]] §9 notes "the story's argument is one argument" |
 | Symptom → Response | Projection → Speculation |
@@ -130,14 +130,20 @@ Every entry below states where Anna and Tori collide or mirror on the RS axis (F
 | L11 DESTINY | establishment's proof of concept | Canon-adjacent: [[BVX.0064]] "The Engine — Power/Escalation" | Tori's L11 is "tactical_disruptor." Anna is the inverse: the case the Administration points to when it says the system works |
 | L12 FUNCTION | dramatica_archetype: Impact Character; ic_problem_element: Equity; resolve: Steadfast | Dramatica direct, no astrology feed | Identical Problem element to Tori's L12. [[oxo-storyform]]: "the story's argument is one argument" |
 
-### On record in LEECHSEED (2026-11-04, slice 3.6.0)
+### On record in LEECHSEED (2026-11-04, slice 3.6.1)
 
-Her record is `anna_colson_conway`, in the vertical slice's section **THE INSTANCE · Anna-Colson Conway, the second slice** (draft 0.2.0). Every proposal, its source and its confidence: [anna-fill.md](../_tools/bolostatus/work/176/anna-fill.md).
+**LOCKED 11/4 as Anna's authority (Chief: go).** This node is the authority document for her record, `anna_colson_conway`, in the vertical slice's section **THE INSTANCE · Anna-Colson Conway, the second slice** (draft 0.3.0). Every proposal, derivation, source and confidence is in [anna-fill.md](../_tools/bolostatus/work/176/anna-fill.md).
 
 | What | Value on record | Source |
 |---|---|---|
-| Step 1 gate | **red**: no locked authority document, Dramatica ingest or astrology ingest | the slice, Step 1 protocol |
-| Filled | 19 of 81 layer fields (17 values, 2 held by rule) | anna-fill.md §1 |
+| Step 1 gate | **red**: component 1 passes (this node, locked 11/4); no Dramatica ingest; no astrology ingest | the slice, Step 1 protocol |
+| Filled | 43 of 81 layer fields; 38 parked | anna-fill.md §1, §5 |
+| Numbers (provisional, ruled Chief 'go' 11/4, BOLO 176) | CORE 10 · VITAL 10 · SOCIAL 10 · WILL 11 (CORE + 1, Steadfast) · WOUND 0 · DRIVE 10 (= VITAL) · resistance_index 0 | this node L1–L6, through the slice's defaults and modifiers; anna-fill.md §5 |
+| Derived stats | Basic Damage Resistance 11 · Narrative Momentum 10 · Stress Threshold 11; Social Legibility and Collapse Risk wait on L10; TEI and Expressive Range undefined (L9 n/a) | anna-fill.md §3 |
+| Flags | all five INACTIVE | the slice, Active Flags |
+| `want_need` | want: to ascend, the top of the DCUS board · need: `held: Inequity` (the Steadfast rule). Step 3 **passes** | ruled Chief 'go' 11/4, BOLO 176 |
+| L7 `origin_event` | null: she is one continuous actor across her four origin events; only the copy begins at an event | ruled Chief 'go' 11/4, BOLO 176 |
+| L8 | secure · secure_base_object the_system · conditional_patterns [power_ascends] | this node, Q4; ruled 11/4 |
 | L7 `origin_class` | legacy_track | this node, Q3 |
 | L7 antecedents | `backstory_colson_skating_death` → `_father_seeks_scientist` → `_scientist_attachment` → `_father_reclaims` | [ssot_04_fabula](../ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md) §ANNA COLSON'S ORIGIN, ruled 9/29 |
 | L3 `civic_standing` | Verified, ascending, by the Administration (WB-INS-0001) | [[oxo-scene-card-M2-row9]], [[oxo-telling-profile]] T5 |
@@ -146,10 +152,9 @@ Her record is `anna_colson_conway`, in the vertical slice's section **THE INSTAN
 | L9 | n/a by design | this node, Q6; [[oxo-telling-profile]] T2 |
 | L11 `rail_ref` | R3, R4 | ssot_06_theme_system THE RAILS |
 | L12 | Impact Character · ic_problem Equity · Steadfast · Failure / Good · Optionlock · actant_slot object · ic_domain **Fixed Attitude** · ic_concern Memories | [[oxo-storyform]] §4, §9; BOLO 150 (11/4) |
-| Derived statistics | **none computable**: no layer number exists for her in canon; TEI and Expressive Range are undefined while L9 is n/a | anna-fill.md §3 |
-| Step 3 (`want_need.need`) | **fails**: she is Steadfast, and the slice has no rule for a character who already holds her solution | anna-fill.md §2, call C3 |
 
-**She is not the copy.** The fabula gives the scientist's secret copy her own record, `anna_colson_copy`, "apart from" this node (IF-02-04-17). This node is the Colson who died, was built back "but better", and was reclaimed by her father.
+
+**She is not the copy. The copy keeps her own record, split from Anna (ruled Chief 'go' 11/4, BOLO 176).** The fabula gives the scientist's secret copy her own record, `anna_colson_copy`, "apart from" this node (IF-02-04-17). This node is the Colson who died, was built back "but better", and was reclaimed by her father.
 
 ---
 
@@ -183,7 +188,9 @@ Her record is `anna_colson_conway`, in the vertical slice's section **THE INSTAN
 
 **✅ Locked** — the IC ruling itself: Anna is the Impact Character ([[oxo-storyform]] §4, 2026-08-24), her domain is Fixed Attitude, her concern is Memories ([[oxo-storyform]] §9), her resolve is Steadfast, and she is denied POV on screen ([[oxo-telling-profile]] T2, 2026-09-23).
 
-**🟡 Draft — this node** — first authored character document for Anna. Identity, storyform fields, and telling-profile constraints transcribe cleanly from ruled sources. Everything else (chart, body, origin, attachment, wound, register, handle) is a proposal awaiting Chief's word.
+**✅ LOCKED 11/4 as Anna's authority (Chief: go)** — ruled Chief 'go' 11/4, BOLO 176. The node is now the authority document for her LEECHSEED record. The ⧗ marks below stay as history; each was already ruled 9/23.
+
+**🟡 Draft (superseded 11/4) — this node** — first authored character document for Anna. Identity, storyform fields, and telling-profile constraints transcribe cleanly from ruled sources. Everything else (chart, body, origin, attachment, wound, register, handle) is a proposal awaiting Chief's word.
 
 **🔴 Gaps that block a locked node:** no astrology ingest exists (this chart is a placeholder) · [[oxo-storyform]] §4's field table still reads `ENGINE` on rows §9 already answers · no origin/family/faculty file touches Anna specifically the way Tori's ground her L7/L8 (out of this node's five-file scope) · L9 EROS may be structurally incompatible with the no-POV ruling and needs a decision, not just data.
 

@@ -1,11 +1,11 @@
 ---
 type: ssot_06_theme_systems
 category: theme_system
-version: 1.4.1
+version: 1.4.2
 tier: narratology
-last_updated: 2026-10-05
+last_updated: 2026-11-04
 applies_to: [OVEREXITOUT (1.0, this doc) — EVIL CHECK PARKED, wave 2, per 80-D]
-status: "v1.4.0 2026-10-05: RULED, Chief (\"My word\") — BOLO 102 stage 2: holders on the rails, motif ids and `motif_ref`, the theme record, the CT11 verdict, the SOP §5 bar. Earlier: v1.3.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 follow-up: latent-theme line, two motif checks, `meets` per rail. Earlier: canonical — 1.0 per BOLO 80's bar (RULED 2026-09-29)"
+status: "v1.4.2 2026-11-04: Chief: go (Anna recs, BOLO 176): rail R3 (Anna) reads her Fixed Attitude column, Suspicion vs. Evidence and Equity → Inequity; R4 now carries the same pair, an open call. v1.4.0 2026-10-05: RULED, Chief (\"My word\") — BOLO 102 stage 2: holders on the rails, motif ids and `motif_ref`, the theme record, the CT11 verdict, the SOP §5 bar. Earlier: v1.3.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 follow-up: latent-theme line, two motif checks, `meets` per rail. Earlier: canonical — 1.0 per BOLO 80's bar (RULED 2026-09-29)"
 purpose: "THE THEME SYSTEM — L6, the argument's value layer: what the story argues, stated as one sentence, and the rails that carry that argument through the throughlines and the scenes."
 dependencies: ["oxo-storyform (Outcome/Judgment, Problem/Solution, Growth)", "ssot_01_story_spine_comparative_tree (L6)", "ssot_01_touchstones_register (BOLO 81, the handshake)"]
 trunk: BLACK
@@ -89,7 +89,7 @@ Theme runs as four debates at once, one per point of view, each the storyform's 
 |---|---|---|---|---|---|---|
 | 1 | **The world** (the factions, DCUS) | Interdiction vs. Prediction | *They already know how you'll turn out. Can you prove them wrong?* | Equity → Inequity | `⏸ OXO theme fill pass (phase 2)` | `world:dcus` |
 | 2 | **Tori** | Interpretation vs. Senses | *Believe the story, or believe your eyes?* | Equity → Inequity | `⏸ OXO theme fill pass (phase 2)` | `character:tori` |
-| 3 | **Anna** | Circumstances vs. Situation | *Don't fight the game. Win it.* | Projection → Speculation | `⏸ OXO theme fill pass (phase 2)` | `character:anna` |
+| 3 | **Anna** | Suspicion vs. Evidence (Fixed Attitude; was Circumstances vs. Situation, the engine's Manipulation column; ruled Chief 'go' 11/4, BOLO 176, domain ruled 11/4 BOLO 150; OPEN: R4 now reads the same pair, Chief call) | *Don't fight the game. Win it.* | Equity → Inequity (was Projection → Speculation) | `⏸ OXO theme fill pass (phase 2)` | `character:anna` |
 | 4 | **Tori ↔ Anna** | Suspicion vs. Evidence | *Whose memory of what happened counts?* | Equity → Inequity | `⏸ OXO theme fill pass (phase 2)` | `character:tori`, `character:anna` |
 
 The four sum to the controlling idea: the world forecasts everyone doing their job (1); Tori stops trusting the story over her own eyes (2); Anna proves the forecast by winning the game as dealt (3); the rivalry settles whose account survives (4).
@@ -239,6 +239,7 @@ None. Both items formerly listed here are resolved: the BOLO 81 handshake is bui
 
 ## Version history
 
+- **1.4.2 · 2026-11-04** Chief: go (Anna recs, BOLO 176; ruled Chief 'go' 11/4, BOLO 176). Rail R3 (Anna) moves from the engine's Manipulation column (Circumstances vs. Situation; Projection → Speculation) to her ruled Fixed Attitude column (Suspicion vs. Evidence; Equity → Inequity; BOLO 150, ruled 11/4). Chief's plain-words line is unchanged. **Open:** R4 (Tori ↔ Anna) already reads that pair, so two rails now share one debate; which column the RS takes is a Chief call.
 - **1.4.1 · 2026-10-05** BOLO 102 batch D (Chief: "All recommendations"): the value scale's build step reads "best to worst", matching the four-step lists (positive first, the negation of the negation last).
 - **1.4.0 · 2026-10-05** BOLO 102 stage 2 (Chief: "My word"): `holders:` on each rail; `motif.<slug>` ids and `motif_ref` in THE MOTIFS; the theme record (`rail_tested` · `side_argued` · `gauge`) stated as 06's output; G4 `core_binary` as the idea's seed; the CT11 verdict (`argues` · `neutral` · `undercuts`); the citation test runs on the scene plan; the 1.0 bar is SOP §5's six.
 - **1.3.2 · 2026-10-05** BOLO 102 batch C (Chief: "all recs"): TROPES gains the five-step procedure for keying a trope to one rail; Chief decides any trope that needs two.
