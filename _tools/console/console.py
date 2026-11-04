@@ -7,6 +7,7 @@ Serves 127.0.0.1:8795 only.
   /status.json · POST /cmd -> cmd.log · POST /show + /show.json (command glass hands the frame a glass)
   /review/docs · /review/doc?path= · /review/list · POST /review/send (BOLO 125, the review desk; engine _tools/reviewdesk)
   /leechseed/characters · /leechseed/char?id= · /leechseed/stats?char= · /leechseed/distill (BOLO 176, the character console)
+  /leechseed/draft?id= (GET) · POST /leechseed/draft: the patch bay's kept dials -> _PRIVATE/leechseed/drafts/<slug>.json + .md
 Usage: python console.py              serve
        python console.py --open       open the window (or focus the open one) and snap it to the right half
        python console.py --status     run pull_queue.py report and cache status.json
@@ -116,7 +117,7 @@ def ls_list():
             out.append({k: r.get(k) for k in ("id", "name", "node", "counts", "gates")})
     order = {"victoria_midnight": 0, "anna_colson_conway": 1}
     out.sort(key=lambda r: (order.get(r["id"], 9), r["name"] or ""))
-    return {"title": ls_title(), "characters": out}
+    return {"title": ls_title(), "characters": out, "drafts": ls_drafts()}
 
 
 def ls_text(path):
@@ -141,6 +142,127 @@ def ls_stats(cid):
         return 200, {"ok": False, "built": False, "error": "stats engine not built yet"}
     out["ok"], out["built"] = True, True
     return 200, out
+
+
+# ---- draft characters (BOLO 176, Chief "go all recs" 11/4): the patch bay's kept dials -> _PRIVATE, never canon ----
+# Private because a draft can carry eros-layer values. One JSON (the record shape the console reads) + one draft card.
+LS_DRAFTS = os.path.join(ROOT, "_PRIVATE", "leechseed", "drafts")
+_re = __import__("re")
+LS_DRAFT_ID = _re.compile(r"^[a-z0-9][a-z0-9-]{0,47}$")
+LS_DRAFT_NAME = _re.compile(r"^[A-Za-z0-9][A-Za-z0-9 _.,'()&-]{0,63}$")
+LS_DRAFT_PATCH = _re.compile(r"^[A-Za-z0-9][A-Za-z0-9 _.-]{0,63}$")
+LS_DRAFT_SEED = _re.compile(r"^[A-Za-z0-9_-]{1,64}$")
+LS_DRAFT_IID = _re.compile(r"^[A-Za-z0-9_@#.:-]{1,128}$")
+LS_DRAFT_KEY = _re.compile(r"^[A-Za-z0-9_.]{1,64}$")
+LS_DRAFT_PICK = _re.compile(r"^[A-Za-z0-9_ .-]{1,64}$")
+
+
+def ls_draft_save(body):
+    """POST /leechseed/draft {name, patch, seed, instance_id, kept:[{module, code, key, kind, native, scale} | {..., pick}]}"""
+    if not isinstance(body, dict):
+        return 400, {"ok": False, "errors": ["a draft is a JSON object"]}
+    errs = []
+    name = str(body.get("name") or "").strip()
+    if not LS_DRAFT_NAME.match(name):
+        errs.append("name: 1-64 letters, digits, space and _ . , ' ( ) & -")
+    patch = body.get("patch")
+    if not isinstance(patch, dict) or len(json.dumps(patch)) > (512 << 10):
+        errs.append("patch: the patch object that rolled (under 512 KB)")
+        patch = {}
+    pname = str(patch.get("name") or "untitled")
+    if not LS_DRAFT_PATCH.match(pname):
+        pname = "untitled"
+    seed = str(body.get("seed", ""))
+    if not LS_DRAFT_SEED.match(seed):
+        errs.append("seed: a whole number or a short word")
+    iid = str(body.get("instance_id") or "")
+    if not LS_DRAFT_IID.match(iid):
+        errs.append("instance_id: up to 128 of A-Z a-z 0-9 _ @ # . : -")
+    kept = body.get("kept")
+    if not isinstance(kept, list) or not 1 <= len(kept) <= 200:
+        errs.append("kept: 1 to 200 kept dials")
+        kept = []
+    fields, numbers, rows = {}, {}, []
+    src = "rolled from %s seed %s" % (pname, seed)
+    for i, k in enumerate(kept):
+        if not isinstance(k, dict):
+            errs.append("kept[%d]: an object" % i); continue
+        mod, code, key, kind = str(k.get("module", "")), str(k.get("code", "")), str(k.get("key", "")), k.get("kind")
+        if not (_re.match(r"^L\d{1,2}$", mod) and _re.match(r"^[A-Z0-9]{1,12}$", code) and LS_DRAFT_KEY.match(key)):
+            errs.append("kept[%d]: module L1-L12, code, key" % i); continue
+        scale = None
+        if kind == "slider":
+            v = k.get("native")
+            if isinstance(v, bool) or not isinstance(v, (int, float)) or not -1000 <= v <= 1000:
+                errs.append("kept[%d].native: a number" % i); continue
+            sc = k.get("scale")
+            if isinstance(sc, list) and len(sc) == 2 and all(isinstance(x, (int, float)) and not isinstance(x, bool) for x in sc):
+                scale = {"code": None, "range": [sc[0], sc[1]], "default": None}
+        elif kind == "list":
+            v = str(k.get("pick") or "")
+            if not LS_DRAFT_PICK.match(v):
+                errs.append("kept[%d].pick: a choice name" % i); continue
+        else:
+            errs.append("kept[%d].kind: slider or list" % i); continue
+        fk = key if key not in fields else mod + "." + key
+        fields[fk] = {"layer": mod, "value": v, "native_scale": scale, "source": src, "confidence": "draft", "status": "filled"}
+        if kind == "slider":
+            numbers[fk] = v
+        rows.append((fk, mod + " " + code, v, scale))
+    if errs:
+        return 400, {"ok": False, "errors": errs[:20]}
+    base = _re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")[:40] or "draft"
+    os.makedirs(LS_DRAFTS, exist_ok=True)
+    slug, n = base, 1
+    while os.path.exists(os.path.join(LS_DRAFTS, slug + ".json")):
+        n += 1
+        slug = "%s-%d" % (base, n)
+        if n > 999:
+            return 409, {"ok": False, "errors": ["too many drafts named %s" % base]}
+    saved = time.strftime("%Y-%m-%d %H:%M")
+    rec = {"id": slug, "name": name, "kind": "draft", "status": "DRAFT", "canon": False, "saved": saved,
+           "patch_name": pname, "seed": seed, "instance_id": iid, "patch": patch,
+           "fields": fields, "numbers": numbers, "counts": {"filled": len(fields), "parked": 0},
+           "gates": {"step1": "draft", "step3": "draft"}}
+    cell = lambda x: str(x).replace("|", "\\|").replace("\n", " ")
+    md = ["# %s · DRAFT" % name, "",
+          "> **DRAFT, never canon.** Rolled in the patch bay: patch `%s`, seed `%s`, instance `%s`. Saved %s. "
+          "It stays in `_PRIVATE/leechseed/drafts/` until Chief promotes it." % (pname, seed, iid, saved), "",
+          "| field | layer | value | source |", "|---|---|---|---|"]
+    for fk, lay, v, scale in rows:
+        val = cell(v) + (" (%s to %s)" % (scale["range"][0], scale["range"][1]) if scale else "")
+        md.append("| `%s` | %s | %s | %s |" % (cell(fk), cell(lay), val, cell(src)))
+    md += ["", "%d kept fields. Status: DRAFT." % len(rows)]
+    for ext, text in ((".json", json.dumps(rec, ensure_ascii=False, indent=1)), (".md", "\n".join(md) + "\n")):
+        p = os.path.join(LS_DRAFTS, slug + ext)
+        with open(p + ".tmp", "w", encoding="utf-8", newline=chr(10)) as fh:
+            fh.write(text)
+        os.replace(p + ".tmp", p)
+    return 200, {"ok": True, "id": slug, "kept": len(rows), "json": "_PRIVATE/leechseed/drafts/%s.json" % slug,
+                 "md": "_PRIVATE/leechseed/drafts/%s.md" % slug, "open": "/local/leechseed#draft=" + slug}
+
+
+def ls_draft(slug):
+    if not LS_DRAFT_ID.match(slug or ""):
+        return None
+    f = os.path.join(LS_DRAFTS, slug + ".json")
+    if not os.path.isfile(f):
+        return None
+    with open(f, encoding="utf-8") as fh:
+        r = json.load(fh)
+    m = os.path.join(LS_DRAFTS, slug + ".md")
+    r["card_md"] = ls_text(m) if os.path.isfile(m) else None
+    return r
+
+
+def ls_drafts():
+    out = []
+    for name in sorted(os.listdir(LS_DRAFTS)) if os.path.isdir(LS_DRAFTS) else []:
+        r = ls_draft(name[:-5]) if name.endswith(".json") else None
+        if r:
+            out.append({k: r.get(k) for k in ("id", "name", "counts", "gates", "saved", "patch_name", "seed")})
+    out.sort(key=lambda r: r.get("saved") or "", reverse=True)
+    return out
 REVIEWDESK = os.path.join(ROOT, "_tools", "reviewdesk", "reviewdesk.py")   # BOLO 125: the review desk's engine
 _RD = []
 
@@ -646,6 +768,11 @@ class H(http.server.BaseHTTPRequestHandler):
                 node = os.path.join(ROOT, *str(r.get("node") or "").split("/"))
                 r["card_md"] = ls_text(node) if r.get("node") and os.path.isfile(node) else None
                 return self._send(200, json.dumps(r, ensure_ascii=False), js)
+            if path == "/leechseed/draft":
+                r = ls_draft((q.get("id") or [""])[0])
+                if r is None:
+                    return self._send(404, '{"ok":false,"error":"no such draft"}', js)
+                return self._send(200, json.dumps(r, ensure_ascii=False), js)
             if path == "/leechseed/stats":
                 code, out = ls_stats((q.get("char") or [""])[0])
                 return self._send(code, json.dumps(out, ensure_ascii=False), js)
@@ -775,6 +902,19 @@ class H(http.server.BaseHTTPRequestHandler):
                 code, out = rd().save(body)
             except Exception as e:
                 code, out = 500, {"ok": False, "errors": ["save failed: %s" % e]}
+            return self._send(code, json.dumps(out, ensure_ascii=False), "application/json; charset=utf-8")
+        if self.path == "/leechseed/draft":   # BOLO 176: the patch bay's kept dials -> a private draft character
+            try:
+                n = int(self.headers.get("Content-Length") or 0)
+                if n > (1 << 20):
+                    return self._send(413, '{"ok":false,"errors":["a draft is under 1 MB"]}', "application/json")
+                body = json.loads(self.rfile.read(n).decode("utf-8"))
+            except Exception:
+                return self._send(400, '{"ok":false,"errors":["bad json"]}', "application/json")
+            try:
+                code, out = ls_draft_save(body)
+            except Exception as e:
+                code, out = 500, {"ok": False, "errors": ["draft not saved: %s" % e]}
             return self._send(code, json.dumps(out, ensure_ascii=False), "application/json; charset=utf-8")
         if self.path == "/europatch/roll" or self.path.startswith("/europatch/patches/"):   # BOLO 173, the patch bay
             try:

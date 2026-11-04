@@ -40,7 +40,13 @@ aside{border-left:1px solid var(--line);background:var(--panel);display:flex;fle
 #stats table{width:100%;border-collapse:collapse;margin:4px 0 10px}#stats th{color:var(--dim);font-weight:normal;text-align:left;font-size:11px;padding:3px 4px;border-bottom:1px solid var(--line2)}
 #stats td{padding:3px 4px;border-bottom:1px solid var(--line)}#stats td.v{text-align:right;color:var(--cyan)}#stats td.mk{width:14px;color:var(--acc);font-weight:bold;text-align:center}
 #stats tr.diff td{background:var(--accsoft)}#stats tr.diff td.v{color:var(--acch)}#stats .z{color:var(--dim)}#stats .on{color:var(--ok)}#stats .unk{color:var(--am)}
-#stats p{margin:0 0 6px;font-size:11px;color:var(--fg2)}#stats h4{margin:10px 0 2px;font-size:12px;color:var(--acch);font-weight:normal}
+#sum .keep{margin-top:14px;border-top:1px solid var(--line2);padding-top:8px}#sum .keep h4{margin:0 0 6px;font-size:12px;color:var(--acch);font-weight:normal}
+#sum .krow{display:flex;gap:6px;margin-bottom:6px;flex-wrap:wrap}#sum .krow input{font:inherit;font-size:12px;background:var(--bg);color:var(--fg);border:1px solid var(--line2);height:24px;padding:0 6px;flex:1;min-width:110px}
+#sum .krow button{font:inherit;font-size:12px;background:var(--bg);color:var(--fg);border:1px solid var(--line2);height:24px;padding:0 8px;cursor:pointer}#sum .krow button:hover{border-color:var(--acc);color:var(--acch)}
+#sum .krow button.hot{border-color:var(--acc);color:var(--acch);background:var(--accsoft)}
+#sum table.kt{width:100%;border-collapse:collapse;font-size:11px}#sum table.kt td{padding:2px 4px;border-bottom:1px solid var(--line)}#sum table.kt td.c{color:var(--acc);width:52px}#sum table.kt td.v{color:var(--cyan);text-align:right}
+#sum table.kt tr.on td{background:var(--accsoft)}#kmsg{font-size:11px;color:var(--fg2);margin-bottom:6px}#kmsg.bad{color:var(--bad)}
+#stats p{margin:0 0 6px;font-size:11px;color:var(--fg2)}#stats .bnt{color:var(--am);font-size:10px}#stats h4{margin:10px 0 2px;font-size:12px;color:var(--acch);font-weight:normal}
 #tree details{margin-left:12px}
 #tree summary{cursor:pointer;color:var(--fg2)}
 #tree summary:hover{color:var(--acch)}
@@ -217,6 +223,7 @@ function resolve(patch, cat, presets){
         } else {
           if (src.value != null) cur.value = src.value;
           if (src.spread != null) cur.spread = src.spread;
+          if (src.pin != null) cur.pin = !!src.pin;
         }
       });
     });
@@ -288,6 +295,7 @@ function rollCore(patch, seed, cat, presets){
         (into[m.id + "." + key] || []).forEach(function(ci){
           var c = cables[ci], co = cabOut[ci], src = rolled[c.from];
           if (src == null){ warnings.push(co.id + ": no rolled value at " + c.from); return; }
+          if (spec.pin){ co.value = rnd(src / 100, 4); co.held = true; return; }
           var x = src / 100, f = curve(x, c), s = c.strength != null ? c.strength : 0, p;
           if ((c.mode || "add") === "multiply"){ scale = scale * (1 + s * f); p = z0 * s * f; }
           else { p = s * K * f; push = push + p; }
@@ -301,6 +309,7 @@ function rollCore(patch, seed, cat, presets){
         var dd = {set: spec.value, spread: spread, centre: rnd(centre, 2),
                   window: [rnd(clamp(centre - spread, 0, 100), 2), rnd(clamp(centre + spread, 0, 100), 2)],
                   rolled: val, native: rnd(lo + val * (hi - lo) / 100, 1)};
+        if (spec.pin) dd.pinned = true;
         if (bent.length){
           dd.bent_by = bent;
           var tot = 0, mag = 0; pulls.forEach(function(p){ tot += p; mag += Math.abs(p); });
@@ -488,6 +497,72 @@ function inputsFromChar(rec){
   return inp;
 }
 
+function instanceBends(inst){
+  var out = {};
+  Object.keys(INSTANCE_MAP).forEach(function(name){
+    var mid = INSTANCE_MAP[name][0], key = INSTANCE_MAP[name][1], mods = inst.modules || {}, ks = Object.keys(mods);
+    for (var i = 0; i < ks.length; i++){
+      var mm = mods[ks[i]];
+      if (mm.module !== mid) continue;
+      var d = (mm.dials || {})[key];
+      if (d != null && d.bent_by && d.bent_by.length) out[name] = d.bent_by.slice();
+      break;
+    }
+  });
+  return out;
+}
+function statBends(bends){
+  var out = {};
+  STAT_KEYS.forEach(function(k){
+    var ids = [];
+    STAT_INPUTS[k].forEach(function(name){ (bends[name] || []).forEach(function(cid){ if (ids.indexOf(cid) < 0) ids.push(cid); }); });
+    if (ids.length) out[k] = ids;
+  });
+  return out;
+}
+// ---------- a character record as a patch (BOLO 176; mirrors europatch.py char_patch) ----------
+function recValue(rec, key){
+  var nums = rec.numbers || {}, fields = rec.fields || {}, parts = key.split("."), f, v;
+  if (has(nums, key) && nums[key] != null) return nums[key];
+  f = fields[key] || fields[parts[0]];
+  if (!f || typeof f !== "object" || f.status !== "filled" || f.value == null) return null;
+  v = f.value;
+  if (!has(fields, key)) for (var i = 1; i < parts.length; i++) v = (v && typeof v === "object" && !Array.isArray(v)) ? (has(v, parts[i]) ? v[parts[i]] : null) : null;
+  return v;
+}
+function matchChoice(v, choices){
+  var w = String(v).trim().toLowerCase().replace(/[\s-]+/g, "_");
+  for (var i = 0; i < choices.length; i++) if (choices[i].toLowerCase() === w) return choices[i];
+  return null;
+}
+function charPatch(rec, cat, base){
+  var mods = [], filled = [], parked = [], clipped = [];
+  cat.modules.forEach(function(m){
+    var dials = {};
+    m.dials.forEach(function(d){
+      var v = recValue(rec, d.key), tag = m.code + "." + d.key;
+      if (d.kind === "slider"){
+        var n = num(v);
+        if (n == null){ parked.push(tag); return; }
+        var lo = d.native[0], hi = d.native[1], p = (n - lo) / (hi - lo) * 100;
+        if (p < 0 || p > 100) clipped.push(tag + " " + fmt(n) + " (bay " + fmt(lo) + "-" + fmt(hi) + ")");
+        dials[d.key] = {value: rnd(clamp(p, 0, 100), 2), spread: 0, pin: true}; filled.push(tag);
+      } else {
+        var vs = Array.isArray(v) ? v : (v != null ? [v] : []), ws = {}, hit = 0;
+        vs.forEach(function(x){ var c = typeof x === "string" ? matchChoice(x, d.choices) : null; if (c && !has(ws, c)){ ws[c] = 1; hit++; } });
+        if (!hit){ parked.push(tag); return; }
+        if (hit === 1) dials[d.key] = {pick: Object.keys(ws)[0]};
+        else { d.choices.forEach(function(c){ if (!has(ws, c)) ws[c] = 0; }); dials[d.key] = {weights: ws}; }
+        filled.push(tag);
+      }
+    });
+    mods.push({id: m.id, module: m.id, dials: dials});
+  });
+  var cables = (base.cables || []).map(function(c){ var o = {}; Object.keys(c).forEach(function(k){ o[k] = c[k]; }); return o; });
+  var patch = {europatch: VERSION, kind: "patch", name: "char-" + String(rec.id).split("_").join("-").slice(0, 40),
+               catalog: cat.catalog, preset: null, seed: base.seed, modules: mods, cables: cables, groups: base.groups || []};
+  return {patch: patch, filled: filled, parked: parked, clipped: clipped};
+}
 function roll(patch, seed, cat, presets){
   if (seed == null) seed = patch.seed != null ? patch.seed : 1;
   if (typeof seed === "string" && /^\d{1,15}$/.test(seed)) seed = Number(seed);
@@ -498,7 +573,8 @@ function roll(patch, seed, cat, presets){
 return {VERSION: VERSION, fnv1a: fnv1a, Rng: Rng, curve: curve, resolve: resolve, rollOrder: rollOrder, check: check,
         rollCore: rollCore, roll: roll, summarize: summarize, human: human,
         STAT_KEYS: STAT_KEYS, FLAG_KEYS: FLAG_KEYS, INSTANCE_MAP: INSTANCE_MAP, FLAG_TERMS: FLAG_TERMS, num: num,
-        statsCore: statsCore, applyDeclared: applyDeclared, inputsFromInstance: inputsFromInstance, inputsFromChar: inputsFromChar};
+        statsCore: statsCore, applyDeclared: applyDeclared, inputsFromInstance: inputsFromInstance, inputsFromChar: inputsFromChar,
+        instanceBends: instanceBends, statBends: statBends, charPatch: charPatch};
 })();
 /*ENGINE-END*/
 </script>
@@ -516,6 +592,7 @@ var COL = {acc:"#FF5A1F", acch:"#FFB08F", accm:"#be4216", accd:"#6e280e", soft:"
 var TIERCOL = {"Tier 1": "#6e280e", "Tier 2": "#4a3a10", "Tier 3": "#123a44"};   // title bars: surface orange · pressure amber · depth teal
 var FONT = "IBM Plex Mono, Consolas, monospace";
 var LAST = null;   // the last instance
+var ROLLPATCH = null, KEEPROWS = [];   // the patch that rolled LAST; the dial rows the keep ticks read
 
 /* ---------- LiteGraph setup: the Command's colors ---------- */
 LiteGraph.clearRegisteredTypes();
@@ -870,6 +947,7 @@ document.addEventListener("mousedown", function(e){ if (POP && !POP.contains(e.t
 /* ---------- roll ---------- */
 function roll(){
   var patch = toPatch(), seed = seedVal(), body = JSON.stringify({patch: patch, seed: seed});
+  ROLLPATCH = patch;
   var local = function(why){
     var r = EP.roll(patch, seed, CAT, PRESETS);
     if (r[1].length) return showErrors(r[1]);
@@ -898,6 +976,7 @@ function showInstance(inst, src){
   var tks = Object.keys(inst.tension);
   if (tks.length) h += '<p style="color:var(--fg2);margin-top:10px"><span class="t" data-t="tension" tabindex="0">tension</span>: ' + tks.map(function(k){ return E(k) + " " + inst.tension[k]; }).join(" · ") + '</p>';
   inst.warnings.forEach(function(w){ h += '<p class="warn">' + E(w) + '</p>'; });
+  h += keepHTML(inst);
   $("sum").innerHTML = h;
   $("tree").innerHTML = '<div id="src">the <span class="t" data-t="instance" tabindex="0">instance</span>: click a key to fold</div>' + tree(inst, "instance", 0);
 }
@@ -917,52 +996,10 @@ var CHARS = {}; (DATA.characters || []).forEach(function(r){ CHARS[r.id] = r; })
 var CHAR = null;   // the loaded character record (from /leechseed/char, or the copy embedded at build)
 function has(o, k){ return o != null && Object.prototype.hasOwnProperty.call(o, k); }
 function charLabel(r){ var m = /"([^"]+)"/.exec(r.name || ""); return m ? m[1] : String(r.name || r.id).split(/[\s-]/)[0]; }
-function recValue(rec, key){
-  var nums = rec.numbers || {}, fields = rec.fields || {}, parts = key.split("."), f, v;
-  if (has(nums, key) && nums[key] != null) return nums[key];
-  f = fields[key] || fields[parts[0]];
-  if (!f || f.status !== "filled" || f.value == null) return null;
-  v = f.value;
-  if (!fields[key]) for (var i = 1; i < parts.length; i++) v = (v && typeof v === "object") ? v[parts[i]] : null;
-  return v;
-}
-function matchChoice(v, choices){
-  var w = String(v).trim().toLowerCase().replace(/[\s-]+/g, "_");
-  for (var i = 0; i < choices.length; i++) if (choices[i].toLowerCase() === w) return choices[i];
-  return null;
-}
-function charPatch(rec){
-  /* filled native values -> 0..100 through each dial's native range, spread 0; parked dials keep the default */
-  var mods = [], filled = [], parked = [], clipped = [];
-  CAT.modules.forEach(function(m){
-    var dials = {};
-    m.dials.forEach(function(d){
-      var v = recValue(rec, d.key), tag = m.code + "." + d.key;
-      if (d.kind === "slider"){
-        var n = EP.num(v);
-        if (n == null){ parked.push(tag); return; }
-        var lo = d.native[0], hi = d.native[1], p = (n - lo) / (hi - lo) * 100;
-        if (p < 0 || p > 100) clipped.push(tag + " " + n + " (bay " + lo + "-" + hi + ")");
-        dials[d.key] = {value: Math.round(Math.min(100, Math.max(0, p)) * 100) / 100, spread: 0}; filled.push(tag);
-      } else {
-        var vs = Array.isArray(v) ? v : (v != null ? [v] : []), ws = {}, hit = 0;
-        vs.forEach(function(x){ var c = typeof x === "string" ? matchChoice(x, d.choices) : null; if (c && !ws[c]){ ws[c] = 1; hit++; } });
-        if (!hit){ parked.push(tag); return; }
-        if (hit === 1) dials[d.key] = {pick: Object.keys(ws)[0]};
-        else { d.choices.forEach(function(c){ if (!ws[c]) ws[c] = 0; }); dials[d.key] = {weights: ws}; }
-        filled.push(tag);
-      }
-    });
-    mods.push({id: m.id, module: m.id, dials: dials});
-  });
-  return {patch: {europatch: EP.VERSION, kind: "patch", name: "char-" + String(rec.id).replace(/_/g, "-").slice(0, 40), catalog: CAT.catalog,
-                  preset: null, seed: seedVal(), modules: mods, cables: [], groups: (DEFAULT.groups || [])},
-          filled: filled, parked: parked, clipped: clipped};
-}
 function loadChar(id){
   var use = function(rec, src){
     if (!rec){ CHAR = null; return showErrors(["no character record '" + id + "' (CONSOLE's extract.py writes _tools/leechseed/characters/" + id + ".json)"]); }
-    var cp = charPatch(rec);
+    var cp = EP.charPatch(rec, CAT, {cables: DEFAULT.cables, groups: DEFAULT.groups, seed: seedVal()});
     loadPatch(cp.patch);
     CHAR = rec; CHAR._src = src; CHAR._load = cp;
     var ps2 = $("preset"); if (![].some.call(ps2.options, function(o){ return o.value === "char:" + id; }))
@@ -996,6 +1033,7 @@ function renderStats(){
   var el = $("stats"); if (!el) return;
   if (!LAST && !CHAR){ el.innerHTML = '<div class="empty">Roll, or load a character, to see the derived stats.</div>'; return; }
   var ri = LAST ? rollInputs(LAST) : [null, []];
+  var bn = LAST ? EP.statBends(EP.instanceBends(LAST)) : {};
   var rs = LAST ? EP.statsCore(ri[0], "roll") : null, cs = CHAR ? EP.applyDeclared(EP.statsCore(EP.inputsFromChar(CHAR), CHAR.id), declOf(CHAR)) : null;
   var h = '<div id="src">' + (LAST ? 'this roll: seed ' + E(LAST.seed) + ' · ' + E(LAST.patch) : 'no roll yet') +
           (CHAR ? ' · record: ' + E(CHAR.name || CHAR.id) + ' (' + E(CHAR._src || "") + ')' : '') + ' · the JS mirror of <i>europatch.py stats</i></div>';
@@ -1003,7 +1041,7 @@ function renderStats(){
   h += '<h4><span class="t" data-t="stats" tabindex="0">Derived stats</span></h4><table><tr><th></th><th>stat</th><th style="text-align:right">roll</th>' + (cs ? '<th style="text-align:right">record</th>' : '') + '</tr>';
   EP.STAT_KEYS.forEach(function(k){
     var a = rs ? rs.stats[k] : null, b = cs ? cs.stats[k] : null, d = rs && cs && a !== b; if (d) diffs++;
-    h += '<tr' + (d ? ' class="diff"' : '') + '><td class="mk">' + (d ? "≠" : "") + '</td><td><span class="t" data-t="stat:' + k + '" tabindex="0">' + STAT_LABEL[k] + '</span></td><td class="v">' + (rs ? cell(a) : '<span class="z">·</span>') + '</td>' + (cs ? '<td class="v">' + cell(b) + '</td>' : '') + '</tr>';
+    h += '<tr' + (d ? ' class="diff"' : '') + '><td class="mk">' + (d ? "≠" : "") + '</td><td><span class="t" data-t="stat:' + k + '" tabindex="0">' + STAT_LABEL[k] + '</span></td><td class="v">' + (bn[k] ? '<span class="bnt" title="a cable moved an input: ' + E(bn[k].join(", ")) + '">↯ ' + E(bn[k].join(",")) + '</span> ' : '') + (rs ? cell(a) : '<span class="z">·</span>') + '</td>' + (cs ? '<td class="v">' + cell(b) + '</td>' : '') + '</tr>';
   });
   h += '</table><h4><span class="t" data-t="flags" tabindex="0">Flags</span></h4><table><tr><th></th><th>flag</th><th>roll</th>' + (cs ? '<th>record</th>' : '') + '</tr>';
   EP.FLAG_KEYS.forEach(function(f){
@@ -1014,14 +1052,61 @@ function renderStats(){
   h += '</table>';
   if (cs && Object.keys(cs.flags_declared).length) h += '<p>record flags: the states the slice declares (' + E(CHAR._declSrc || "the record") + '); "cond." is the bare condition where it disagrees.</p>';
   if (rs && cs) h += '<p>' + (diffs ? '<b style="color:var(--acc)">≠</b> ' + diffs + ' row' + (diffs === 1 ? '' : 's') + ' differ from the record.' : 'Every row matches the record.') + '</p>';
+  if (Object.keys(bn).length) h += '<p><span class="bnt">↯</span> a cable bent an input of: ' + E(Object.keys(bn).map(function(k){ return STAT_LABEL[k] + " (" + bn[k].join(", ") + ")"; }).join("; ")) + '. A dial the record holds is pinned; cables bend only the parked ones.</p>';
   if (rs && rs.inputs_missing.length) h += '<p>roll is missing: ' + E(rs.inputs_missing.join(", ")) + '</p>';
   if (cs && cs.inputs_missing.length) h += '<p>record is missing: ' + E(cs.inputs_missing.join(", ")) + '</p>';
   if (ri[1].length) h += '<p>from the record (the bay does not roll these): ' + E(ri[1].join(", ")) + '</p>';
   if (CHAR && CHAR._load){ var L = CHAR._load;
-    h += '<p>loaded: ' + L.filled.length + ' dials from the record (spread 0) · ' + L.parked.length + ' parked at the default' + (L.clipped.length ? ' · clipped to the bay range: ' + E(L.clipped.join("; ")) : '') + '</p>'; }
+    h += '<p>loaded: ' + L.filled.length + ' dials from the record (spread 0, pinned) · ' + ((CHAR._load.patch.cables || []).length) + ' suggested cables · ' + L.parked.length + ' parked at the default' + (L.clipped.length ? ' · clipped to the bay range: ' + E(L.clipped.join("; ")) : '') + '</p>'; }
   h += '<p>The roll column reads each flag\'s condition only: ACTIVE (met), INACTIVE (a term is false) or UNKNOWN (an input is missing). The record column shows the state the record declares, PENDING and FIRED_PRE_STORY included (story timing the roll cannot know), so a roll that meets a PENDING condition is marked ≠.</p>';
   el.innerHTML = h;
 }
+
+/* ---------- accept to record: keep ticks -> a private draft character (BOLO 176, Chief "go all recs" 11/4) ---------- */
+function keepHTML(inst){
+  KEEPROWS = [];
+  Object.keys(inst.modules).forEach(function(mk){
+    var mm = inst.modules[mk], cm = BYID[mm.module]; if (!cm) return;
+    cm.dials.forEach(function(d){
+      var dd = mm.dials[d.key]; if (!dd) return;
+      if (d.kind === "slider") KEEPROWS.push({module: mm.module, code: cm.code, key: d.key, kind: "slider", native: dd.native, scale: d.native.slice(),
+                                               label: d.label || d.key, show: String(dd.native) + "/" + d.native[1]});
+      else if (dd.pick != null) KEEPROWS.push({module: mm.module, code: cm.code, key: d.key, kind: "list", pick: dd.pick, label: d.label || d.key, show: EP.human(dd.pick)});
+    });
+  });
+  return '<div class="keep"><h4><span class="t" data-t="keep" tabindex="0">Keep to a draft</span></h4>' +
+    '<div class="krow"><button id="keepall" type="button">Keep all</button><input id="dname" placeholder="draft name" maxlength="64" aria-label="draft name">' +
+    '<button id="savedraft" class="hot" type="button">Save draft character</button></div><div id="kmsg">Tick the dials to keep, name it, save. Drafts go to _PRIVATE, never canon.</div>' +
+    '<table class="kt">' + KEEPROWS.map(function(r, i){
+      return '<tr data-i="' + i + '"><td style="width:18px"><input type="checkbox" class="kp" data-i="' + i + '" aria-label="keep ' + E(r.code + " " + r.label) + '"></td><td class="c">' + E(r.code) + '</td><td>' + E(r.label) + '</td><td class="v">' + E(r.show) + '</td></tr>'; }).join("") + '</table></div>';
+}
+function keepMsg(t, bad){ var m = $("kmsg"); if (m){ m.innerHTML = t; m.classList.toggle("bad", !!bad); } }
+function saveDraft(){
+  var name = ($("dname").value || "").trim(), ticks = [].filter.call(document.querySelectorAll("#sum .kp"), function(c){ return c.checked; });
+  if (!LAST) return keepMsg("Roll first.", true);
+  if (!ticks.length) return keepMsg("Tick at least one dial (or Keep all).", true);
+  if (!name){ $("dname").focus(); return keepMsg("Name the draft first.", true); }
+  var kept = ticks.map(function(c){ var r = KEEPROWS[+c.dataset.i];
+    return r.kind === "slider" ? {module: r.module, code: r.code, key: r.key, kind: "slider", native: r.native, scale: r.scale}
+                               : {module: r.module, code: r.code, key: r.key, kind: "list", pick: r.pick}; });
+  var iid = slug(LAST.patch) + "@" + LAST.seed + "#" + EP.fnv1a(JSON.stringify(LAST.modules)).toString(16);
+  var body = {name: name, patch: ROLLPATCH || toPatch(), seed: LAST.seed, instance_id: iid, kept: kept};
+  if (location.protocol === "file:") return keepMsg("Drafts save through the Console (open /local/europatch).", true);
+  keepMsg("saving…");
+  fetch("/leechseed/draft", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify(body)})
+    .then(function(r){ return r.json(); })
+    .then(function(j){ if (!j.ok) return keepMsg("not saved: " + E((j.errors || ["?"]).join("; ")), true);
+      keepMsg('saved draft <b>' + E(j.id) + '</b> · ' + j.kept + ' fields · ' + E(j.json) + ' · <a href="' + E(j.open) + '" target="_blank" rel="noopener">open in the character console</a>'); })
+    .catch(function(){ keepMsg("the Console did not answer /leechseed/draft (restart it: python _tools/console/console.py --restart)", true); });
+}
+$("sum").addEventListener("click", function(e){
+  var t = e.target;
+  if (t.id === "keepall"){ var cs = document.querySelectorAll("#sum .kp"), all = [].every.call(cs, function(c){ return c.checked; });
+    [].forEach.call(cs, function(c){ c.checked = !all; c.closest("tr").classList.toggle("on", !all); }); t.textContent = all ? "Keep all" : "Keep none"; }
+  else if (t.id === "savedraft") saveDraft();
+});
+$("sum").addEventListener("change", function(e){ if (e.target.classList.contains("kp")) e.target.closest("tr").classList.toggle("on", e.target.checked); });
+$("sum").addEventListener("keydown", function(e){ if (e.target.id === "dname" && e.key === "Enter") saveDraft(); });
 
 /* ---------- save / load / export ---------- */
 function slug(s){ return String(s || "").toLowerCase().replace(/[^a-z0-9_-]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 48) || "untitled"; }
@@ -1093,6 +1178,7 @@ var TERMS = {
  "flag:OPTIONLOCK_PROGRESSION": ["OPTIONLOCK_PROGRESSION", "WOUND &gt; 7 AND resistance_index &gt; 7 AND limit_type = Optionlock."],
  "flag:EARNED_JUDGEMENT": ["EARNED_JUDGEMENT", "dramatica_archetype = Protagonist AND story_outcome = Failure AND WILL &gt; 10. Tori's record calls it PENDING (it fires at the climax)."],
  "flag:KINSHIP_COLLAPSE": ["KINSHIP_COLLAPSE", "attachment_style_score &gt; 5 AND secure_base_object = deceased AND WOUND &gt; 7. Tori's record calls it FIRED_PRE_STORY."],
+ keep: ["Keep to a draft", "Accept to record: tick the dials worth keeping (or Keep all), name the draft and save. The Console writes _PRIVATE/leechseed/drafts/&lt;name&gt;.json (the kept native values, the patch, the seed, the instance id) and a short DRAFT card. Private, because a draft can carry eros-layer values; never canon until Chief promotes it. The character console lists drafts under Drafts."],
  mirror: ["JS mirror", "The page carries the roll engine in JavaScript, line for line with europatch.py. test_europatch.py rolls both and proves the same {instance}. Used when the Console is not answering."]
 };
 function dialOf(mid, key){ var m = BYID[mid]; return m ? m.dials.filter(function(d){ return d.key === key; })[0] : null; }

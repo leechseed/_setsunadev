@@ -185,6 +185,8 @@ def resolve(patch, cat, presets):
                         cur["value"] = src["value"]
                     if src.get("spread") is not None:
                         cur["spread"] = src["spread"]
+                    if src.get("pin") is not None:
+                        cur["pin"] = bool(src["pin"])
         mods.append({"id": iid, "module": mid, "code": cm["code"], "dials": dials, "cat": cm})
     if "cables" in patch:
         cables = patch.get("cables") or []
@@ -263,6 +265,10 @@ def roll_core(patch, seed, cat, presets):
                     if src is None:
                         warnings.append(co["id"] + ": no rolled value at " + c["from"])
                         continue
+                    if spec.get("pin"):
+                        co["value"] = rnd(src / 100.0, 4)
+                        co["held"] = True
+                        continue
                     x = src / 100.0
                     f = curve(x, c)
                     s = c.get("strength", 0)
@@ -285,6 +291,8 @@ def roll_core(patch, seed, cat, presets):
                 dd = {"set": spec["value"], "spread": spread, "centre": rnd(centre, 2),
                       "window": [rnd(clamp(centre - spread, 0, 100), 2), rnd(clamp(centre + spread, 0, 100), 2)],
                       "rolled": val, "native": rnd(lo + val * (hi - lo) / 100.0, 1)}
+                if spec.get("pin"):
+                    dd["pinned"] = True
                 if bent:
                     dd["bent_by"] = bent
                     tot = 0
@@ -562,6 +570,115 @@ def inputs_from_char(rec):
                 inp[name] = f["value"]
                 break
     return inp
+
+
+def instance_bends(inst):
+    """input name -> the cable ids that bent the dial it reads (empty when no cable moved it)"""
+    out = {}
+    for name in INSTANCE_MAP:
+        mid, key = INSTANCE_MAP[name]
+        for mk in inst.get("modules", {}):
+            mm = inst["modules"][mk]
+            if mm.get("module") != mid:
+                continue
+            d = (mm.get("dials") or {}).get(key)
+            if d is not None and d.get("bent_by"):
+                out[name] = list(d["bent_by"])
+            break
+    return out
+
+
+def stat_bends(bends):
+    """stat -> the cable ids that bent any of its inputs"""
+    out = {}
+    for k in STAT_KEYS:
+        ids = []
+        for name in STAT_INPUTS[k]:
+            for cid in bends.get(name, []):
+                if cid not in ids:
+                    ids.append(cid)
+        if ids:
+            out[k] = ids
+    return out
+
+
+# ---------- a character record as a patch (BOLO 176) ----------
+def rec_value(rec, key):
+    nums = rec.get("numbers") or {}
+    fields = rec.get("fields") or {}
+    parts = key.split(".")
+    if key in nums and nums[key] is not None:
+        return nums[key]
+    f = fields.get(key) or fields.get(parts[0])
+    if not isinstance(f, dict) or f.get("status") != "filled" or f.get("value") is None:
+        return None
+    v = f["value"]
+    if key not in fields:
+        for i in range(1, len(parts)):
+            v = v.get(parts[i]) if isinstance(v, dict) else None
+    return v
+
+
+def match_choice(v, choices):
+    w = re.sub(r"[\s-]+", "_", str(v).strip().lower())
+    for ch in choices:
+        if ch.lower() == w:
+            return ch
+    return None
+
+
+def char_patch(rec, cat, base):
+    """filled native values -> 0..100 through each dial's native range, spread 0 and pinned (a cable never bends a
+    value the record holds); parked dials keep the default and take the cables. `base` (the starter patch) gives the
+    suggested cables, the groups and the seed."""
+    mods = []
+    filled = []
+    parked = []
+    clipped = []
+    for m in cat["modules"]:
+        dials = {}
+        for d in m["dials"]:
+            v = rec_value(rec, d["key"])
+            tag = m["code"] + "." + d["key"]
+            if d["kind"] == "slider":
+                n = num(v)
+                if n is None:
+                    parked.append(tag)
+                    continue
+                lo, hi = d["native"]
+                p = (n - lo) / float(hi - lo) * 100
+                if p < 0 or p > 100:
+                    clipped.append(tag + " " + fmt(n) + " (bay " + fmt(lo) + "-" + fmt(hi) + ")")
+                dials[d["key"]] = {"value": rnd(clamp(p, 0, 100), 2), "spread": 0, "pin": True}
+                filled.append(tag)
+            else:
+                vs = v if isinstance(v, list) else ([v] if v is not None else [])
+                ws = {}
+                hit = 0
+                for x in vs:
+                    c = match_choice(x, d["choices"]) if isinstance(x, str) else None
+                    if c and c not in ws:
+                        ws[c] = 1
+                        hit += 1
+                if not hit:
+                    parked.append(tag)
+                    continue
+                if hit == 1:
+                    dials[d["key"]] = {"pick": list(ws.keys())[0]}
+                else:
+                    for c in d["choices"]:
+                        if c not in ws:
+                            ws[c] = 0
+                    dials[d["key"]] = {"weights": ws}
+                filled.append(tag)
+        mods.append({"id": m["id"], "module": m["id"], "dials": dials})
+    cables = []
+    for c in base.get("cables") or []:
+        cables.append(dict(c))
+    patch = {"europatch": VERSION, "kind": "patch", "name": "char-" + str(rec.get("id")).replace("_", "-")[:40],
+             "catalog": cat.get("catalog"), "preset": None, "seed": base.get("seed"), "modules": mods, "cables": cables,
+             "groups": base.get("groups") or []}
+    return {"patch": patch, "filled": filled, "parked": parked, "clipped": clipped}
 # ---------- end of the portable core ----------
 
 
@@ -631,6 +748,8 @@ def check(patch, cat, presets):
             if d["kind"] == "slider":
                 if "value" in v and not (isinstance(v["value"], (int, float)) and 0 <= v["value"] <= 100):
                     errs.append("%s.%s: value 0..100" % (iid, key))
+                if "pin" in v and not isinstance(v["pin"], bool):
+                    errs.append("%s.%s: pin is true or false" % (iid, key))
                 if "spread" in v and not (isinstance(v["spread"], (int, float)) and 0 <= v["spread"] <= 50):
                     errs.append("%s.%s: spread 0..50" % (iid, key))
             else:
@@ -691,6 +810,12 @@ def read_patch(arg, cat, presets):
         return json.loads(sys.stdin.read())
     if arg == "default":
         return default_patch(cat)
+    if arg.startswith("char:"):
+        cid = arg[5:]
+        path = os.path.join(CHARS, cid + ".json")
+        if not CHAR_ID_RE.match(cid) or not os.path.exists(path):
+            raise ValueError("no character file: %s" % cid)
+        return char_patch(load_json(path), cat, default_patch(cat))["patch"]
     if arg.startswith("preset:"):
         p = default_patch(cat)
         name = arg[7:]
@@ -803,6 +928,7 @@ def char_stats(cid):
 def instance_stats(path):
     inst = load_json(path) if path != "-" else json.loads(sys.stdin.read())
     res = stats_core(inputs_from_instance(inst), "instance:%s seed %s" % (inst.get("patch"), inst.get("seed")))
+    res["bent"] = stat_bends(instance_bends(inst))
     res["formula_src"] = formula_src()
     res["inputs_not_rolled"] = [n for n in CHAR_NAMES if n not in INSTANCE_MAP]
     return res

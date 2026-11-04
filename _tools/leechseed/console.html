@@ -41,6 +41,9 @@ h3{margin:0 0 8px;font-size:11px;letter-spacing:.14em;color:var(--dim);font-weig
 .bar{display:flex;height:6px;margin:6px 0 4px;background:var(--inset);border:1px solid var(--line)}
 .bar i{display:block;height:100%}
 .bar .f{background:var(--ok)}.bar .p{background:var(--am);opacity:.55}
+.ch.draft .nm::after{content:" DRAFT";color:var(--am);font-size:10px;letter-spacing:.1em;font-weight:600}
+.lt.draft::before{background:var(--am);opacity:.6}
+#drafthd{padding:14px 12px 0}
 .meta{display:flex;justify-content:space-between;color:var(--fg2);font-size:11px}
 .lights{display:flex;gap:8px}
 .lt{display:inline-flex;align-items:center;gap:4px}
@@ -190,9 +193,10 @@ var TIPS={
  "held":"Held: filled with a ruling, not a value (e.g. L9 n/a by design, or a stance the theme rider holds open).",
  "native":"Native scale: the field's own scale from the slice's scale column (SC-20 is 0-20, default 10; SC-12 is 0-12). The patch bay shows it as 0-100.",
  "confidence":"Confidence: high = canon states it; med = one judgment step, ruled by Chief 11/4; low = a lean or lineage only; derived = a slice rule computed it (provisional); canon = the locked record itself.",
- "source":"Source: the file and section the value came from, as tagged in the slice block or the fill list."
+ "source":"Source: the file and section the value came from, as tagged in the slice block or the fill list.",
+ "drafts":"Drafts: characters saved from the patch bay (Keep to a draft). Private in _PRIVATE/leechseed/drafts/, never canon until Chief promotes one. Each field reads rolled from <patch> seed <n>."
 };
-var chars=[],cur=null,rec=null,tab="card",sortK="layer",sortDir=1,stFilter="all",q="";
+var chars=[],drafts=[],cur=null,rec=null,tab="card",sortK="layer",sortDir=1,stFilter="all",q="";
 function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
 function tip(key,label){return '<span class="tip" data-tip="'+key+'">'+esc(label)+'</span>'}
 function md(t){try{if(window.marked)return marked.parse(t||"")}catch(e){}return "<pre class=raw>"+esc(t)+"</pre>"}
@@ -201,25 +205,33 @@ function lyr(l){var m=/^L(\d+)$/.exec(l||"");return m?+m[1]:99}
 
 function loadChars(){
  return fetch("/leechseed/characters").then(function(r){return r.json()}).then(function(j){
-  chars=j.characters||[];$("title").textContent=j.title||"LEECHSEED";document.title=j.title||"LEECHSEED";
-  $("stamp").textContent=chars.length+" characters";drawChars();
+  chars=j.characters||[];drafts=j.drafts||[];$("title").textContent=j.title||"LEECHSEED";document.title=j.title||"LEECHSEED";
+  $("stamp").textContent=chars.length+" characters · "+drafts.length+" drafts";drawChars();
+  var wd=(location.hash.match(/draft=([a-z0-9-]+)/)||[])[1];
+  if(wd)return pick(wd,true);
   var want=(location.hash.match(/char=([a-z0-9_]+)/)||[])[1]||(cur&&cur.id)||(chars[0]&&chars[0].id);
-  if(want)pick(want);
+  if(want)pick(want,cur&&cur.id===want&&cur._draft);
  }).catch(function(){$("chars").innerHTML='<div class="note" style="margin:10px">The Console did not answer /leechseed/characters. Restart it: python _tools/console/console.py --restart</div>'});
 }
 function drawChars(){
  $("chars").innerHTML=chars.map(function(c){
   var f=c.counts.filled,p=c.counts.parked,t=Math.max(1,f+p);
-  return '<div class="ch'+(cur&&cur.id===c.id?' on':'')+'" data-id="'+esc(c.id)+'"><div class="nm">'+esc(c.name)+'</div>'+
+  return '<div class="ch'+(cur&&!cur._draft&&cur.id===c.id?' on':'')+'" data-id="'+esc(c.id)+'"><div class="nm">'+esc(c.name)+'</div>'+
    '<div class="bar" title="'+f+' filled · '+p+' parked"><i class="f" style="width:'+(100*f/t)+'%"></i><i class="p" style="width:'+(100*p/t)+'%"></i></div>'+
    '<div class="meta"><span>'+tip("filled",f+" filled")+' · '+tip("parked",p+" parked")+'</span></div>'+
    '<div class="meta lights"><span class="lt '+esc(c.gates.step1)+'">'+tip("step1","step 1")+'</span><span class="lt '+esc(c.gates.step3)+'">'+tip("step3","step 3")+'</span></div></div>';
- }).join("");
+ }).join("")+'<div id="drafthd"><h3>'+tip("drafts","Drafts")+'</h3></div>'+(drafts.length?drafts.map(function(d){
+  return '<div class="ch draft'+(cur&&cur._draft&&cur.id===d.id?' on':'')+'" data-draft="'+esc(d.id)+'"><div class="nm">'+esc(d.name)+'</div>'+
+   '<div class="meta"><span>'+esc((d.counts||{}).filled||0)+' kept · seed '+esc(d.seed)+'</span></div><div class="meta"><span>'+esc(d.patch_name||"")+'</span><span>'+esc(d.saved||"")+'</span></div></div>';
+ }).join(""):'<div class="meta" style="padding:0 12px 10px">none yet: roll in the patch bay, tick Keep, Save draft</div>');
 }
-function pick(id){
- cur=chars.find(function(c){return c.id===id})||null;drawChars();if(!cur)return;
- history.replaceState(null,"","#char="+id);$("who").textContent=cur.name;
- fetch("/leechseed/char?id="+encodeURIComponent(id)).then(function(r){return r.json()}).then(function(j){rec=j;draw()});
+function pick(id,isDraft){
+ var c=(isDraft?drafts:chars).find(function(x){return x.id===id});cur=c?Object.assign({_draft:!!isDraft},c):null;drawChars();if(!cur)return;
+ history.replaceState(null,"","#"+(isDraft?"draft=":"char=")+id);$("who").textContent=cur.name+(isDraft?" · DRAFT":"");
+ Array.prototype.forEach.call(document.querySelectorAll('#tabs [data-tab="fill"],#tabs [data-tab="stats"]'),function(b){b.style.display=isDraft?"none":""});
+ $("roll").disabled=!!isDraft;$("roll").title=isDraft?"a draft is already a roll; it opens in Card and Record":"open the patch bay with this character's dials loaded";
+ rec=null;if(isDraft&&(tab==="fill"||tab==="stats"))setTab("card");
+ fetch((isDraft?"/leechseed/draft?id=":"/leechseed/char?id=")+encodeURIComponent(id)).then(function(r){return r.json()}).then(function(j){rec=j;draw()});
 }
 function setTab(t){tab=t;Array.prototype.forEach.call(document.querySelectorAll("#tabs button"),function(b){b.classList.toggle("on",b.dataset.tab===t)});
  document.querySelector('#tabs [data-tab="distill"]').style.display=t==="distill"?"":"none";draw()}
@@ -229,7 +241,7 @@ function draw(){
   fetch("/leechseed/distill").then(function(r){return r.json()}).then(function(j){v.innerHTML='<div class="md">'+(j.md?md(j.md):'<div class="note">distill.md is missing</div>')+'</div>'});return}
  if(!rec){v.innerHTML="";return}
  if(tab==="card"){v.innerHTML='<div class="md">'+(rec.card_md?md(rec.card_md):'<div class="note">No node file for this character.</div>')+'</div>';return}
- if(tab==="record"){v.innerHTML='<div class="ctl">The raw record: '+esc("_tools/leechseed/characters/"+rec.id+".json")+' (written by extract.py)</div><pre class="raw">'+esc(JSON.stringify(rec.fields,null,1))+'</pre>';return}
+ if(tab==="record"){v.innerHTML='<div class="ctl">The raw record: '+(rec.kind==="draft"?esc("_PRIVATE/leechseed/drafts/"+rec.id+".json")+' (DRAFT, saved from the patch bay '+esc(rec.saved||"")+', '+esc(rec.patch_name||"")+' seed '+esc(rec.seed)+')':esc("_tools/leechseed/characters/"+rec.id+".json")+' (written by extract.py)')+'</div><pre class="raw">'+esc(JSON.stringify(rec.fields,null,1))+'</pre>';return}
  if(tab==="fill"){drawFill();return}
  if(tab==="stats"){drawStats();return}
 }
@@ -270,7 +282,7 @@ document.addEventListener("click",function(e){var t=e.target.closest&&e.target.c
  if(pinned&&!box.contains(e.target)){pinned=false;box.classList.remove("pin");box.style.display="none"}},true);
 document.addEventListener("keydown",function(e){if(e.key==="Escape"){pinned=false;box.classList.remove("pin");box.style.display="none"}});
 /* wiring */
-$("chars").addEventListener("click",function(e){var c=e.target.closest(".ch");if(c&&!e.target.closest(".tip"))pick(c.dataset.id)});
+$("chars").addEventListener("click",function(e){var c=e.target.closest(".ch");if(c&&!e.target.closest(".tip"))c.dataset.draft?pick(c.dataset.draft,true):pick(c.dataset.id)});
 Array.prototype.forEach.call(document.querySelectorAll("#tabs button"),function(b){b.onclick=function(){setTab(b.dataset.tab)}});
 $("distill").onclick=function(e){e.preventDefault();setTab("distill")};
 $("roll").onclick=function(){if(cur)location.href="/local/europatch?preset=char:"+encodeURIComponent(cur.id)};

@@ -138,6 +138,8 @@ else:
     patches.append(("cable mix", dict(copy.deepcopy(base), cables=base["cables"] + [
         {"from": "L1.CORE", "to": "L3.SOCIAL", "mode": "multiply", "strength": 0.3, "curve": "s-curve"},
         {"from": "L2.VITAL", "to": "L3.SOCIAL", "mode": "add", "strength": -0.6, "curve": "ease-out"}])))
+    if os.path.isdir(ep.CHARS):   # the character presets: pinned dials + the suggested cables
+        patches += [("char:" + f[:-5], ep.read_patch("char:" + f[:-5], CAT, PRESETS)) for f in sorted(os.listdir(ep.CHARS)) if f.endswith(".json")]
     for name, pt in patches:
         for sd in (1, 7, 48213, 4294967295, "kenshi"):
             cases.append({"name": name, "patch": pt, "seed": sd})
@@ -282,6 +284,53 @@ if node:
                "mismatch at %s" % bad[:5] if bad else "%d identical" % len(po))
     finally:
         shutil.rmtree(d, ignore_errors=True)
+
+# 11 character presets carry the suggested cables; the record's own values are pinned
+tori_path = os.path.join(ep.CHARS, "victoria_midnight.json")
+if not os.path.exists(tori_path):
+    SKIPS.append("11 no victoria_midnight.json yet")
+else:
+    TORI = ep.load_json(tori_path)
+    want_cables = ep.default_patch(CAT)["cables"]
+    tp = ep.char_patch(TORI, CAT, ep.default_patch(CAT))
+    ti = roll(tp["patch"], 48213)
+    tr = ep.char_stats("victoria_midnight")
+    ts2 = ep.stats_core(ep.inputs_from_instance(ti), "roll")
+    held = [c["id"] for c in ti["cables"] if c.get("held")]
+    ok("11a Tori loads with all %d suggested cables and her roll still matches her record (seven stats)" % len(want_cables),
+       tp["patch"]["cables"] == want_cables and ts2["stats"] == tr["stats"] and not ep.stat_bends(ep.instance_bends(ti)),
+       "cables %d · held by pins %s · roll %s" % (len(tp["patch"]["cables"]), ",".join(held), json.dumps(ts2["stats"])))
+    ok("11b a cable into a pinned dial holds (no pull, no bend), a cable into a parked dial still bends",
+       len(held) >= 4 and all(c["pull"] == 0 for c in ti["cables"] if c.get("held"))
+       and all("bent_by" not in d for m in ti["modules"].values() for d in m["dials"].values() if d.get("pinned")),
+       "held: " + ",".join(held))
+    loose = copy.deepcopy(TORI)
+    loose["numbers"].pop("resistance_index", None)
+    loose["fields"].pop("resistance_index", None)
+    li = roll(ep.char_patch(loose, CAT, ep.default_patch(CAT))["patch"], 48213)
+    lb = ep.stat_bends(ep.instance_bends(li))
+    ls = ep.stats_core(ep.inputs_from_instance(li), "roll")["stats"]
+    ok("11c a parked cable target moves its stat, and the move is reported (resistance parked: c8 bends Momentum)",
+       lb.get("narrative_momentum") == ["c8"] and ls["narrative_momentum"] != tr["stats"]["narrative_momentum"],
+       "bent %s · Momentum roll %s vs record %s" % (json.dumps(lb), ls["narrative_momentum"], tr["stats"]["narrative_momentum"]))
+    if node:
+        d = tempfile.mkdtemp(prefix="europatch-char-")
+        try:
+            js = os.path.join(d, "char.js")
+            with io.open(js, "w", encoding="utf-8") as f:
+                f.write(engine + "\nvar fs=require('fs');var IN=JSON.parse(fs.readFileSync(process.argv[2],'utf8'));"
+                        "var out=IN.recs.map(function(r){return EP.charPatch(r,IN.catalog,IN.base)});"
+                        "fs.writeFileSync(process.argv[3],JSON.stringify(out));\n")
+            recs = [ep.load_json(os.path.join(ep.CHARS, f)) for f in sorted(os.listdir(ep.CHARS)) if f.endswith(".json")] + [loose]
+            inp, outp = os.path.join(d, "in.json"), os.path.join(d, "out.json")
+            with io.open(inp, "w", encoding="utf-8") as f:
+                json.dump({"recs": recs, "catalog": CAT, "base": ep.default_patch(CAT)}, f)
+            r = subprocess.run([node, js, inp, outp], capture_output=True, text=True)
+            jo = json.load(io.open(outp, encoding="utf-8")) if not r.returncode else []
+            po = [json.loads(json.dumps(ep.char_patch(x, CAT, ep.default_patch(CAT)))) for x in recs]
+            ok("11d charPatch: Python = JS mirror, %d records" % len(recs), not r.returncode and jo == po, r.stderr[-300:])
+        finally:
+            shutil.rmtree(d, ignore_errors=True)
 
 # 7 the catalog rebuilds
 r = subprocess.run([sys.executable, "-X", "utf8", os.path.join(HERE, "build_catalog.py"), "--dry-run", "--json"],

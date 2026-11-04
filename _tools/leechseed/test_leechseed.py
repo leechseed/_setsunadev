@@ -155,9 +155,64 @@ def t6_private_name():
     check("the display name appears in no public leechseed or console file", not leaks, ", ".join(leaks))
 
 
+def t7_draft_roundtrip():
+    """POST /leechseed/draft -> the JSON + card land (in a temp folder, not _PRIVATE) -> the list and GET read them back"""
+    import shutil, tempfile
+    spec = importlib.util.spec_from_file_location("console_ut7", os.path.join(ROOT, "_tools", "console", "console.py"))
+    con = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(con)
+    tmp = tempfile.mkdtemp(prefix="leechseed-drafts-")
+    con.LS_DRAFTS = tmp
+    srv = con.S(("127.0.0.1", 0), con.H)
+    threading.Thread(target=srv.serve_forever, daemon=True).start()
+    base = "http://127.0.0.1:%d" % srv.server_address[1]
+
+    def call(path, body=None):
+        data = json.dumps(body).encode("utf-8") if body is not None else None
+        req = urllib.request.Request(base + path, data=data, headers={"Content-Type": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return r.status, json.loads(r.read().decode("utf-8"))
+        except urllib.error.HTTPError as e:
+            return e.code, json.loads(e.read().decode("utf-8") or "{}")
+    draft = {"name": "Test Draft (round trip)", "seed": 48213, "instance_id": "char-victoria-midnight@48213#1a2b3c",
+             "patch": {"europatch": "0.2.0", "kind": "patch", "name": "char-victoria-midnight", "modules": [], "cables": []},
+             "kept": [{"module": "L4", "code": "WILL", "key": "WILL", "kind": "slider", "native": 14, "scale": [0, 20]},
+                      {"module": "L5", "code": "WOUND", "key": "severity", "kind": "slider", "native": 8, "scale": [0, 10]},
+                      {"module": "L12", "code": "FUNCTION", "key": "dramatica_archetype", "kind": "list", "pick": "Protagonist"}]}
+    try:
+        code, out = call("/leechseed/draft", draft)
+        sid = out.get("id")
+        check("POST /leechseed/draft saves a draft", code == 200 and out.get("ok") and sid == "test-draft-round-trip", str(out)[:200])
+        jp, mp = os.path.join(tmp, "%s.json" % sid), os.path.join(tmp, "%s.md" % sid)
+        rec = json.load(open(jp, encoding="utf-8")) if os.path.isfile(jp) else {}
+        card = open(mp, encoding="utf-8").read() if os.path.isfile(mp) else ""
+        check("the draft JSON holds the kept natives, the patch, the seed and the instance id",
+              rec.get("numbers") == {"WILL": 14, "severity": 8} and rec["fields"]["dramatica_archetype"]["value"] == "Protagonist"
+              and rec.get("seed") == "48213" and rec.get("instance_id") == draft["instance_id"] and rec.get("patch", {}).get("name")
+              == "char-victoria-midnight" and rec.get("status") == "DRAFT" and rec.get("canon") is False, json.dumps(rec)[:200])
+        check("the draft card lists every kept field, marked DRAFT, rolled from <patch> seed <n>",
+              "DRAFT" in card and "never canon" in card and card.count("rolled from char-victoria-midnight seed 48213") == 3
+              and all(k in card for k in ("WILL", "severity", "dramatica_archetype")), card[:160])
+        code, lst = call("/leechseed/characters")
+        check("GET /leechseed/characters lists it under drafts", code == 200 and any(d["id"] == sid for d in lst.get("drafts", [])))
+        code, back = call("/leechseed/draft?id=" + str(sid))
+        check("GET /leechseed/draft?id= reads it back with its card", code == 200 and back.get("fields", {}).get("WILL", {}).get("value") == 14
+              and "DRAFT" in (back.get("card_md") or ""))
+        code, again = call("/leechseed/draft", draft)
+        check("a second draft with the same name gets its own file", code == 200 and again.get("id") == sid + "-2")
+        bad = dict(draft, name="<script>x</script>", kept=[{"module": "L4", "code": "WILL", "key": "WILL", "kind": "slider", "native": "x"}])
+        code, out = call("/leechseed/draft", bad)
+        check("a bad name or value is refused, nothing written", code == 400 and len(os.listdir(tmp)) == 4, str(out)[:160])
+        check("GET /leechseed/draft refuses a path", call("/leechseed/draft?id=../x")[0] == 404)
+    finally:
+        srv.shutdown()
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
 if __name__ == "__main__":
     for name, fn in [("1 found", t1_found), ("2 counts", t2_counts), ("3 sources", t3_sources), ("4 contract", t4_contract),
-                     ("5 routes", t5_routes), ("6 private name", t6_private_name)]:
+                     ("5 routes", t5_routes), ("6 private name", t6_private_name), ("7 draft round trip", t7_draft_roundtrip)]:
         print(name)
         fn()
     print("PASS" if not FAILS else "FAIL (%d): %s" % (len(FAILS), "; ".join(FAILS)))

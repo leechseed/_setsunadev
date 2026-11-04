@@ -4,7 +4,7 @@ package main
 // card, fill list, raw record and derived stats, read from _tools/leechseed/characters/<id>.json (extract.py writes them).
 // The verb is the spoken code name (leechseedVerb); it also answers to `command leechseed`.
 //   command <verb>              open the character pane in the Console (else the page in the browser)
-//   command <verb> --json       the character list with counts and gates
+//   command <verb> --json       the character list with counts and gates, plus the private drafts (_PRIVATE/leechseed/drafts)
 //   command <verb> --print      the same list as a table, once
 //   command <verb> --dry-run    what it would open
 //   command <verb> extract      re-run extract.py (--json · --dry-run pass through)
@@ -65,6 +65,34 @@ func lsList() ([]lsChar, error) {
 	return out, nil
 }
 
+// lsDraft: a draft character the patch bay saved (POST /leechseed/draft), private in _PRIVATE/leechseed/drafts/
+type lsDraft struct {
+	ID        string         `json:"id"`
+	Name      string         `json:"name"`
+	Status    string         `json:"status"`
+	Saved     string         `json:"saved"`
+	PatchName string         `json:"patch_name"`
+	Seed      string         `json:"seed"`
+	Counts    map[string]int `json:"counts"`
+}
+
+func lsDrafts() []lsDraft {
+	files, _ := filepath.Glob(filepath.Join(root, "_PRIVATE", "leechseed", "drafts", "*.json"))
+	out := []lsDraft{}
+	for _, f := range files {
+		b, err := os.ReadFile(f)
+		if err != nil {
+			continue
+		}
+		var d lsDraft
+		if json.Unmarshal(b, &d) == nil && d.ID != "" {
+			out = append(out, d)
+		}
+	}
+	sort.SliceStable(out, func(i, j int) bool { return out[i].Saved > out[j].Saved })
+	return out
+}
+
 func leechseedCmd(args []string) {
 	script := filepath.Join(root, "_tools", "leechseed", "extract.py")
 	page := filepath.Join(root, "_tools", "leechseed", "console.html")
@@ -84,7 +112,7 @@ func leechseedCmd(args []string) {
 	chars, err := lsList()
 	if hasFlag(args, "--json") {
 		_, perr := os.Stat(page)
-		m := map[string]interface{}{"characters": chars, "pane": "/local/leechseed", "page": page, "page_ok": perr == nil,
+		m := map[string]interface{}{"characters": chars, "drafts": lsDrafts(), "pane": "/local/leechseed", "page": page, "page_ok": perr == nil,
 			"engine": script}
 		if err != nil {
 			m["error"] = err.Error()
@@ -102,6 +130,9 @@ func leechseedCmd(args []string) {
 		for _, c := range chars {
 			fmt.Printf("  %-22s filled %3d  parked %3d  step1 %-4s  step3 %-4s\n", c.Name, c.Counts["filled"], c.Counts["parked"],
 				c.Gates["step1"], c.Gates["step3"])
+		}
+		for _, d := range lsDrafts() {
+			fmt.Printf("  %-22s kept   %3d  DRAFT  %s seed %s  %s\n", d.Name, d.Counts["filled"], d.PatchName, d.Seed, d.Saved)
 		}
 		return
 	}
