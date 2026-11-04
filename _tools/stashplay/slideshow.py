@@ -3,6 +3,8 @@
   python slideshow.py                         # 10 minutes, 5 seconds per image = 120 photos, new VLC window on the left screen
   python slideshow.py --minutes 20 --seconds 4 --side right
   python slideshow.py --dry-run --json        # pick the photos and print them; render and launch nothing
+  python slideshow.py --minutes 120 --want framing=full,threeq --want part=legs,thighs,full       --want styling=gym,swim,skimpy,lingerie --want register=studio,editorial --boost styling=gym --fps 2
+                                              # filter by the top auto-tag (tags_auto.json); boosted photos play first (11/4)
 
 Source: the DARKROOM corpus manifest (Q:\\fun\\.2026picstach8252026\\_pipeline\\manifest.json), the normalized JPEGs, not
 animated, not quarantined (a quarantined file has left _normalized, so it is skipped). No photo repeats across slideshows:
@@ -37,10 +39,29 @@ def load_ledger():
         return set()
 
 
-def pick(n, used):
+TAGS = os.path.join(CORPUS, "_pipeline", "tags_auto.json")
+
+
+def parse_rules(specs):
+    out = []
+    for s in specs or []:
+        k, _, vals = s.partition("=")
+        out.append((k.strip(), {v.strip() for v in vals.split(",") if v.strip()}))
+    return out
+
+
+def pick(n, used, want=None, avoid=None, boost=None):
     images = json.load(open(MANIFEST, encoding="utf-8"))["images"]
-    ids = [c for c, v in images.items() if not v.get("animated") and c not in used]
+    ids = [c for c, v in images.items() if not v.get("animated") and not v.get("excluded") and c not in used]
+    if want or avoid or boost:
+        tags = json.load(open(TAGS, encoding="utf-8"))
+        top = lambda c, k: ((tags.get(c) or {}).get(k) or [""])[0]
+        ids = [c for c in ids if c in tags
+               and all(top(c, k) in vs for k, vs in want or [])
+               and not any(top(c, k) in vs for k, vs in avoid or [])]
     random.shuffle(ids)
+    if boost:
+        ids.sort(key=lambda c: not any(top(c, k) in vs for k, vs in boost))   # stable: boosted first, each group still shuffled
     out = []
     for c in ids:
         p = os.path.join(NORM, c + ".jpg")
@@ -51,7 +72,7 @@ def pick(n, used):
     return out, len(ids)
 
 
-def render(photos, seconds, path):
+def render(photos, seconds, path, fps=10):
     ff = shutil.which("ffmpeg")
     if not ff:
         sys.exit("ffmpeg is not on PATH.")
@@ -63,7 +84,7 @@ def render(photos, seconds, path):
             f.write("file '%s'\n" % photos[-1][1].replace("\\", "/").replace("'", "'\\''"))   # concat needs the last file repeated
         vf = "scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:black,format=yuv420p"
         r = subprocess.run([ff, "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", lst, "-vf", vf,
-                            "-r", "10", "-c:v", "libx264", "-preset", "veryfast", "-crf", "23", "-movflags", "+faststart", path],
+                            "-r", str(fps), "-c:v", "libx264", "-preset", "veryfast", "-crf", "23", "-movflags", "+faststart", path],
                            capture_output=True, text=True)
         if r.returncode:
             sys.exit("ffmpeg failed: " + r.stderr.strip()[-400:])
@@ -76,10 +97,14 @@ def main():
     ap.add_argument("--side", default="left")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--json", action="store_true")
+    ap.add_argument("--want", action="append", help="KEY=v1,v2: the photo's top auto-tag for KEY must be one of these (repeatable)")
+    ap.add_argument("--avoid", action="append", help="KEY=v1,v2: drop photos whose top tag for KEY is one of these")
+    ap.add_argument("--boost", action="append", help="KEY=v1,v2: these play first")
+    ap.add_argument("--fps", type=float, default=10, help="video frame rate; 2 renders long shows fast")
     a = ap.parse_args()
     n = max(1, int(a.minutes * 60 / a.seconds))
     used = load_ledger()
-    photos, pool = pick(n, used)
+    photos, pool = pick(n, used, parse_rules(a.want), parse_rules(a.avoid), parse_rules(a.boost))
     if len(photos) < n:
         sys.exit("Only %d fresh photos left (wanted %d); clear _PRIVATE/slideshows/ledger.json to start over." % (len(photos), n))
     line = "%d photos x %g s = %g min (%d fresh photos were left in the pool)" % (n, a.seconds, n * a.seconds / 60, pool)
@@ -94,7 +119,7 @@ def main():
     k = 1 + sum(1 for f in os.listdir(OUT) if f.startswith("darkroom-" + day))
     path = os.path.join(OUT, "darkroom-%s-%d.mp4" % (day, k))
     t0 = time.time()
-    render(photos, a.seconds, path)
+    render(photos, a.seconds, path, a.fps)
     json.dump(sorted(used | {c for c, _ in photos}), open(LEDGER, "w", encoding="utf-8"))
     import stashplay as sp
     ok = sp.launch(path, side=a.side)
