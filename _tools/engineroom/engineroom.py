@@ -134,9 +134,10 @@ class Handler(BaseHTTPRequestHandler):
         if path == "/api/gate":
             rows = "rows=1" in self.path
             return self._send(200, json.dumps(sources.gate(with_rows=rows)), "application/json")
-        if path == "/bounce":   # the boot's bouncing gif, the same file the Console bounces (_PRIVATE/console/bounce.*)
-            for ext, ctype in (("gif", "image/gif"), ("webp", "image/webp"), ("png", "image/png"), ("jpg", "image/jpeg")):
-                f = os.path.join(sources.ROOT, "_PRIVATE", "console", "bounce." + ext)
+        if path == "/bounce":   # the boot's bouncing gif: the Engine Room's own (_PRIVATE/engineroom/bounce.*), else the Console's
+            for where in ("engineroom", "console"):
+              for ext, ctype in (("gif", "image/gif"), ("webp", "image/webp"), ("png", "image/png"), ("jpg", "image/jpeg")):
+                f = os.path.join(sources.ROOT, "_PRIVATE", where, "bounce." + ext)
                 if os.path.isfile(f):
                     with open(f, "rb") as fh:
                         b = fh.read()
