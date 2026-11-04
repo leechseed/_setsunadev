@@ -217,6 +217,7 @@ Adriana Chechik · Asa Akira · Ava Taylor · Katrina Jade · Nina Hartley · Ri
 | Chloë Grace Moretz | A | F | 1 | S | 2026 | — | — | spoken 10/3: given as a fan subreddit (r/ChloeGraceMoretzLove); subs in [[subreddit-list]] | — |
 | Cara Delevingne | O | F | 1 | S | 2026 | — | — | spoken 10/3: model and actress, given as a fan subreddit (r/Cara_J_Delevingne); subs in [[subreddit-list]] | — |
 | Anya Taylor-Joy | A | F | 1 | S | 2026 | — | — | spoken 10/3 ("another person that added to the list"): given as a fan subreddit (r/AnyaTaylor_Joy); subs in [[subreddit-list]] | — |
+| Priscilla Ricart | O | F | 2 | S · J | 2023 | 0 | — | spoken 11/4 ("if Priscilla Reichart is not part of the female list … go ahead"): model; also on the 2023 Logseq mobile-import list as "Priscilla ricart"; spelling Ricart (provisional); not in Stash | — |
 
 ## The gooner lane (Stash, watched not listed)
 
