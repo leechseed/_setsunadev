@@ -9,7 +9,7 @@
     "narratives": [
       {
         "id": "oxo_primary_v1",
-        "title": "OXO Primary Storyform (v2.0, CANON, ruled 2026-08-24)",
+        "title": "OXO Primary Storyform (v2.0, PROPOSED 11/4 remap frame, BOLO 176; not canon until Chief checks)",
         "subtext": {
           "perspectives": [
             {
@@ -17,28 +17,28 @@
               "pov": "i",
               "author_structural_pov": "i",
               "summary": "Main Character: Victoria \"Tori\" Midnight",
-              "storytelling": "Tori's personal story is Activity / Understanding (storyform section 2, ruled 2026-08-24)."
+              "storytelling": "Tori's personal story is Situation / The Past: the engine's OS column, which the 9/23 remap puts on the MC (section 9 table, row 1). The system forecasts her; she intervenes (Interdiction vs. Prediction, section 3). PROPOSED, provisional."
             },
             {
               "id": "persp_ic_anna",
               "pov": "you",
               "author_structural_pov": "you",
               "summary": "Impact Character: Anna-Colson Conway",
-              "storytelling": "Anna's impact is Fixed Attitude / Memories: the storyform section 9 RS(MvI) column, reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150; ruled Chief 'go' 11/4, BOLO 176). Anna ascends with no fairness premise at all, in the same institution, and it works (section 4). OPEN: the RS perspective below still reads the same column; which column the RS takes is a Chief call."
+              "storytelling": "Anna's impact is Fixed Attitude / Memories: the engine's RS(MvI) column, reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150). Anna ascends with no fairness premise at all, in the same institution, and it works (section 4)."
             },
             {
               "id": "persp_rs_tori_anna",
               "pov": "we",
               "author_structural_pov": "we",
               "summary": "Relationship Story: Victoria Midnight <-> Anna-Colson Conway",
-              "storytelling": "The rivalry lives in Fixed Attitude / Memories: the war over what is remembered (storyform section 9). The relationship is the competition (section 6)."
+              "storytelling": "The rivalry lives in Activity / Understanding: the engine's MC column, which the 9/23 remap puts on the RS (section 9 table, row 4; section 6 'RS in Activity'). The relationship is the competition (section 6). PROPOSED, provisional."
             },
             {
               "id": "persp_os_factions",
               "pov": "they",
               "author_structural_pov": "they",
               "summary": "Objective Story: the Factions",
-              "storytelling": "The world carries the Situation war over The Past (storyform section 9). The Factions rewrite people into Assets (section 5)."
+              "storytelling": "The world carries Manipulation / Developing a Plan: the engine's IC column, which the 9/23 remap sends to the OS (section 9 table, row 2; anna-colson-conway IC Concern row; section 5 os_domain; intake call 9, 10/9). The Factions rewrite people into Assets (section 5). PROPOSED, provisional."
             }
           ],
           "players": [
@@ -146,10 +146,10 @@
             {
               "id": "storypoint_mc_domain",
               "appreciation": "domain",
-              "method": "physics",
+              "method": "universe",
               "illustration": "",
-              "summary": "Activity",
-              "storytelling": "",
+              "summary": "Situation",
+              "storytelling": "Forced: the MC and IC domains are a dynamic pair, and the IC is Fixed Attitude. Engine OS column (section 9), carried to the MC by the 9/23 remap. PROPOSED.",
               "perspectives": [
                 {
                   "perspective_id": "persp_mc_tori"
@@ -159,10 +159,10 @@
             {
               "id": "storypoint_mc_concern",
               "appreciation": "concern",
-              "method": "understanding",
+              "method": "past",
               "illustration": "",
-              "summary": "Understanding",
-              "storytelling": "",
+              "summary": "The Past",
+              "storytelling": "Section 3 mc_concern, corrected 8/24 (chart fact). Engine OS column (section 9), carried to the MC by the 9/23 remap. PROPOSED.",
               "perspectives": [
                 {
                   "perspective_id": "persp_mc_tori"
@@ -172,10 +172,10 @@
             {
               "id": "storypoint_mc_issue",
               "appreciation": "issue",
-              "method": "interpretation",
+              "method": "interdiction",
               "illustration": "",
-              "summary": "Interpretation vs. Senses",
-              "storytelling": "",
+              "summary": "Interdiction vs. Prediction",
+              "storytelling": "Section 3 mc_issue and thematic conflict. Engine OS column (section 9), carried to the MC by the 9/23 remap. PROPOSED.",
               "perspectives": [
                 {
                   "perspective_id": "persp_mc_tori"
@@ -188,7 +188,7 @@
               "method": "equity",
               "illustration": "",
               "summary": "Equity",
-              "storytelling": "",
+              "storytelling": "Section 3 mc_problem LOCKED. Engine OS column (section 9), carried to the MC by the 9/23 remap. PROPOSED.",
               "perspectives": [
                 {
                   "perspective_id": "persp_mc_tori"
@@ -201,7 +201,7 @@
               "method": "inequity",
               "illustration": "",
               "summary": "Inequity",
-              "storytelling": "",
+              "storytelling": "Section 3 mc_solution LOCKED. Engine OS column (section 9), carried to the MC by the 9/23 remap. PROPOSED.",
               "perspectives": [
                 {
                   "perspective_id": "persp_mc_tori"
@@ -211,10 +211,10 @@
             {
               "id": "storypoint_mc_focus",
               "appreciation": "focus",
-              "method": "order",
+              "method": "ability",
               "illustration": "",
-              "summary": "Order (engine Symptom)",
-              "storytelling": "",
+              "summary": "Ability (engine Symptom)",
+              "storytelling": "Engine OS column (section 9), carried to the MC by the 9/23 remap. PROPOSED. Reverses section 3's pre-8/24 Desire/Ability order, as section 9 already noted.",
               "perspectives": [
                 {
                   "perspective_id": "persp_mc_tori"
@@ -224,36 +224,10 @@
             {
               "id": "storypoint_mc_direction",
               "appreciation": "direction",
-              "method": "chaos",
+              "method": "desire",
               "illustration": "",
-              "summary": "Chaos (engine Response)",
-              "storytelling": "",
-              "perspectives": [
-                {
-                  "perspective_id": "persp_mc_tori"
-                }
-              ]
-            },
-            {
-              "id": "storypoint_mc_unique_ability",
-              "appreciation": "unique_ability",
-              "method": "senses",
-              "illustration": "",
-              "summary": "Senses",
-              "storytelling": "",
-              "perspectives": [
-                {
-                  "perspective_id": "persp_mc_tori"
-                }
-              ]
-            },
-            {
-              "id": "storypoint_mc_critical_flaw",
-              "appreciation": "critical_flaw",
-              "method": "circumstances",
-              "illustration": "",
-              "summary": "Circumstances",
-              "storytelling": "",
+              "summary": "Desire (engine Response)",
+              "storytelling": "Engine OS column (section 9), carried to the MC by the 9/23 remap. PROPOSED.",
               "perspectives": [
                 {
                   "perspective_id": "persp_mc_tori"
@@ -263,10 +237,10 @@
             {
               "id": "storypoint_mc_benchmark",
               "appreciation": "benchmark",
-              "method": "learning",
+              "method": "present",
               "illustration": "",
-              "summary": "Gathering Information",
-              "storytelling": "",
+              "summary": "The Present",
+              "storytelling": "Engine OS column (section 9), carried to the MC by the 9/23 remap. PROPOSED.",
               "perspectives": [
                 {
                   "perspective_id": "persp_mc_tori"
@@ -279,7 +253,7 @@
               "method": "mind",
               "illustration": "",
               "summary": "Fixed Attitude",
-              "storytelling": "From the storyform section 9 RS(MvI) column, reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150; ruled Chief 'go' 11/4, BOLO 176).",
+              "storytelling": "Engine RS(MvI) column (section 9), reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150).",
               "perspectives": [
                 {
                   "perspective_id": "persp_ic_anna"
@@ -292,7 +266,7 @@
               "method": "memory",
               "illustration": "",
               "summary": "Memories",
-              "storytelling": "From the storyform section 9 RS(MvI) column, reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150; ruled Chief 'go' 11/4, BOLO 176).",
+              "storytelling": "Engine RS(MvI) column (section 9), reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150).",
               "perspectives": [
                 {
                   "perspective_id": "persp_ic_anna"
@@ -305,7 +279,7 @@
               "method": "suspicion",
               "illustration": "",
               "summary": "Suspicion vs. Evidence",
-              "storytelling": "From the storyform section 9 RS(MvI) column, reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150; ruled Chief 'go' 11/4, BOLO 176).",
+              "storytelling": "Engine RS(MvI) column (section 9), reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150).",
               "perspectives": [
                 {
                   "perspective_id": "persp_ic_anna"
@@ -318,7 +292,7 @@
               "method": "equity",
               "illustration": "",
               "summary": "Equity",
-              "storytelling": "From the storyform section 9 RS(MvI) column, reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150; ruled Chief 'go' 11/4, BOLO 176).",
+              "storytelling": "Engine RS(MvI) column (section 9), reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150).",
               "perspectives": [
                 {
                   "perspective_id": "persp_ic_anna"
@@ -331,7 +305,7 @@
               "method": "inequity",
               "illustration": "",
               "summary": "Inequity",
-              "storytelling": "From the storyform section 9 RS(MvI) column, reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150; ruled Chief 'go' 11/4, BOLO 176).",
+              "storytelling": "Engine RS(MvI) column (section 9), reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150).",
               "perspectives": [
                 {
                   "perspective_id": "persp_ic_anna"
@@ -344,7 +318,7 @@
               "method": "projection",
               "illustration": "",
               "summary": "Projection (engine Symptom)",
-              "storytelling": "From the storyform section 9 RS(MvI) column, reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150; ruled Chief 'go' 11/4, BOLO 176).",
+              "storytelling": "Engine RS(MvI) column (section 9), reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150).",
               "perspectives": [
                 {
                   "perspective_id": "persp_ic_anna"
@@ -357,7 +331,7 @@
               "method": "speculation",
               "illustration": "",
               "summary": "Speculation (engine Response)",
-              "storytelling": "From the storyform section 9 RS(MvI) column, reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150; ruled Chief 'go' 11/4, BOLO 176).",
+              "storytelling": "Engine RS(MvI) column (section 9), reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150).",
               "perspectives": [
                 {
                   "perspective_id": "persp_ic_anna"
@@ -369,8 +343,8 @@
               "appreciation": "unique_ability",
               "method": "evidence",
               "illustration": "",
-              "summary": "Evidence (engine Catalyst; the UA-equivalent, anna-colson-conway §Structure)",
-              "storytelling": "From the storyform section 9 RS(MvI) column, reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150; ruled Chief 'go' 11/4, BOLO 176).",
+              "summary": "Evidence (engine Catalyst; the UA-equivalent, ruled 9/23 on anna-colson-conway Structure)",
+              "storytelling": "Engine RS(MvI) column (section 9), reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150).",
               "perspectives": [
                 {
                   "perspective_id": "persp_ic_anna"
@@ -382,8 +356,8 @@
               "appreciation": "critical_flaw",
               "method": "interdiction",
               "illustration": "",
-              "summary": "Interdiction (engine Inhibitor; the CF-equivalent, anna-colson-conway §Structure)",
-              "storytelling": "From the storyform section 9 RS(MvI) column, reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150; ruled Chief 'go' 11/4, BOLO 176).",
+              "summary": "Interdiction (engine Inhibitor; the CF-equivalent, ruled 9/23 on anna-colson-conway Structure)",
+              "storytelling": "Engine RS(MvI) column (section 9), reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150).",
               "perspectives": [
                 {
                   "perspective_id": "persp_ic_anna"
@@ -396,7 +370,7 @@
               "method": "conscious",
               "illustration": "",
               "summary": "Contemplation",
-              "storytelling": "From the storyform section 9 RS(MvI) column, reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150; ruled Chief 'go' 11/4, BOLO 176).",
+              "storytelling": "Engine RS(MvI) column (section 9), reassigned to Anna (ruled 9/23; domain re-ruled 11/4, BOLO 150).",
               "perspectives": [
                 {
                   "perspective_id": "persp_ic_anna"
@@ -406,10 +380,10 @@
             {
               "id": "storypoint_os_domain",
               "appreciation": "domain",
-              "method": "universe",
+              "method": "psychology",
               "illustration": "",
-              "summary": "Situation",
-              "storytelling": "",
+              "summary": "Manipulation",
+              "storytelling": "Forced: the OS and RS domains are a dynamic pair; section 5 os_domain; anna-colson-conway IC Concern row (9/23: Developing a Plan goes to the OS). Engine IC column (section 9), carried to the OS by the 9/23 remap. PROPOSED.",
               "perspectives": [
                 {
                   "perspective_id": "persp_os_factions"
@@ -419,10 +393,10 @@
             {
               "id": "storypoint_os_concern",
               "appreciation": "concern",
-              "method": "past",
+              "method": "conceptualizing",
               "illustration": "",
-              "summary": "The Past",
-              "storytelling": "",
+              "summary": "Developing a Plan",
+              "storytelling": "Section 9 table row 2 (the Master Bible's own Concern gloss); intake call 9 ruled 10/9 (Goal Developing a Plan). Engine IC column (section 9), carried to the OS by the 9/23 remap. PROPOSED.",
               "perspectives": [
                 {
                   "perspective_id": "persp_os_factions"
@@ -432,36 +406,10 @@
             {
               "id": "storypoint_os_issue",
               "appreciation": "issue",
-              "method": "interdiction",
+              "method": "circumstances",
               "illustration": "",
-              "summary": "Interdiction vs. Prediction",
-              "storytelling": "",
-              "perspectives": [
-                {
-                  "perspective_id": "persp_os_factions"
-                }
-              ]
-            },
-            {
-              "id": "storypoint_os_problem",
-              "appreciation": "problem",
-              "method": "equity",
-              "illustration": "",
-              "summary": "Equity",
-              "storytelling": "",
-              "perspectives": [
-                {
-                  "perspective_id": "persp_os_factions"
-                }
-              ]
-            },
-            {
-              "id": "storypoint_os_solution",
-              "appreciation": "solution",
-              "method": "inequity",
-              "illustration": "",
-              "summary": "Inequity",
-              "storytelling": "",
+              "summary": "Circumstances vs. Situation",
+              "storytelling": "Engine IC column (section 9), carried to the OS by the 9/23 remap. PROPOSED.",
               "perspectives": [
                 {
                   "perspective_id": "persp_os_factions"
@@ -474,7 +422,7 @@
               "method": "ability",
               "illustration": "",
               "summary": "Ability (engine Symptom)",
-              "storytelling": "",
+              "storytelling": "Engine IC column (section 9), carried to the OS by the 9/23 remap. PROPOSED.",
               "perspectives": [
                 {
                   "perspective_id": "persp_os_factions"
@@ -487,7 +435,7 @@
               "method": "desire",
               "illustration": "",
               "summary": "Desire (engine Response)",
-              "storytelling": "",
+              "storytelling": "Engine IC column (section 9), carried to the OS by the 9/23 remap. PROPOSED.",
               "perspectives": [
                 {
                   "perspective_id": "persp_os_factions"
@@ -497,10 +445,10 @@
             {
               "id": "storypoint_os_catalyst",
               "appreciation": "catalyst",
-              "method": "prediction",
+              "method": "situation",
               "illustration": "",
-              "summary": "Prediction",
-              "storytelling": "",
+              "summary": "Situation (engine IC Unique Ability, read as the Catalyst by the 9/23 equivalence rule)",
+              "storytelling": "Engine IC column (section 9), carried to the OS by the 9/23 remap. PROPOSED. Provisional.",
               "perspectives": [
                 {
                   "perspective_id": "persp_os_factions"
@@ -510,10 +458,10 @@
             {
               "id": "storypoint_os_inhibitor",
               "appreciation": "inhibitor",
-              "method": "suspicion",
+              "method": "interpretation",
               "illustration": "",
-              "summary": "Suspicion",
-              "storytelling": "",
+              "summary": "Interpretation (engine IC Critical Flaw, read as the Inhibitor by the 9/23 equivalence rule)",
+              "storytelling": "Engine IC column (section 9), carried to the OS by the 9/23 remap. PROPOSED. Provisional.",
               "perspectives": [
                 {
                   "perspective_id": "persp_os_factions"
@@ -523,10 +471,10 @@
             {
               "id": "storypoint_os_benchmark",
               "appreciation": "benchmark",
-              "method": "present",
+              "method": "conceiving",
               "illustration": "",
-              "summary": "The Present",
-              "storytelling": "",
+              "summary": "Conceiving an Idea",
+              "storytelling": "Engine IC column (section 9), carried to the OS by the 9/23 remap. PROPOSED.",
               "perspectives": [
                 {
                   "perspective_id": "persp_os_factions"
@@ -536,10 +484,10 @@
             {
               "id": "storypoint_rs_domain",
               "appreciation": "domain",
-              "method": "mind",
+              "method": "physics",
               "illustration": "",
-              "summary": "Fixed Attitude",
-              "storytelling": "",
+              "summary": "Activity",
+              "storytelling": "Forced: the OS and RS domains are a dynamic pair; section 6 rs_domain Activity. Engine MC column (section 9), carried to the RS by the 9/23 remap. PROPOSED.",
               "perspectives": [
                 {
                   "perspective_id": "persp_rs_tori_anna"
@@ -549,10 +497,10 @@
             {
               "id": "storypoint_rs_concern",
               "appreciation": "concern",
-              "method": "memory",
+              "method": "understanding",
               "illustration": "",
-              "summary": "Memories",
-              "storytelling": "",
+              "summary": "Understanding",
+              "storytelling": "Section 6's expected Obtaining was VERIFY; the engine wins (section 8). Engine MC column (section 9), carried to the RS by the 9/23 remap. PROPOSED.",
               "perspectives": [
                 {
                   "perspective_id": "persp_rs_tori_anna"
@@ -562,10 +510,10 @@
             {
               "id": "storypoint_rs_issue",
               "appreciation": "issue",
-              "method": "suspicion",
+              "method": "interpretation",
               "illustration": "",
-              "summary": "Suspicion vs. Evidence",
-              "storytelling": "",
+              "summary": "Interpretation vs. Senses",
+              "storytelling": "Engine MC column (section 9), carried to the RS by the 9/23 remap. PROPOSED.",
               "perspectives": [
                 {
                   "perspective_id": "persp_rs_tori_anna"
@@ -578,7 +526,7 @@
               "method": "equity",
               "illustration": "",
               "summary": "Equity",
-              "storytelling": "",
+              "storytelling": "Engine MC column (section 9), carried to the RS by the 9/23 remap. PROPOSED.",
               "perspectives": [
                 {
                   "perspective_id": "persp_rs_tori_anna"
@@ -591,7 +539,7 @@
               "method": "inequity",
               "illustration": "",
               "summary": "Inequity",
-              "storytelling": "",
+              "storytelling": "Engine MC column (section 9), carried to the RS by the 9/23 remap. PROPOSED.",
               "perspectives": [
                 {
                   "perspective_id": "persp_rs_tori_anna"
@@ -601,10 +549,10 @@
             {
               "id": "storypoint_rs_focus",
               "appreciation": "focus",
-              "method": "projection",
+              "method": "order",
               "illustration": "",
-              "summary": "Projection (engine Symptom)",
-              "storytelling": "",
+              "summary": "Order (engine Symptom)",
+              "storytelling": "Engine MC column (section 9), carried to the RS by the 9/23 remap. PROPOSED.",
               "perspectives": [
                 {
                   "perspective_id": "persp_rs_tori_anna"
@@ -614,10 +562,10 @@
             {
               "id": "storypoint_rs_direction",
               "appreciation": "direction",
-              "method": "speculation",
+              "method": "chaos",
               "illustration": "",
-              "summary": "Speculation (engine Response)",
-              "storytelling": "",
+              "summary": "Chaos (engine Response)",
+              "storytelling": "Engine MC column (section 9), carried to the RS by the 9/23 remap. PROPOSED.",
               "perspectives": [
                 {
                   "perspective_id": "persp_rs_tori_anna"
@@ -627,10 +575,10 @@
             {
               "id": "storypoint_rs_catalyst",
               "appreciation": "catalyst",
-              "method": "evidence",
+              "method": "senses",
               "illustration": "",
-              "summary": "Evidence",
-              "storytelling": "",
+              "summary": "Senses (engine MC Unique Ability, read as the Catalyst by the 9/23 equivalence rule)",
+              "storytelling": "Engine MC column (section 9), carried to the RS by the 9/23 remap. PROPOSED. Provisional.",
               "perspectives": [
                 {
                   "perspective_id": "persp_rs_tori_anna"
@@ -640,10 +588,10 @@
             {
               "id": "storypoint_rs_inhibitor",
               "appreciation": "inhibitor",
-              "method": "interdiction",
+              "method": "circumstances",
               "illustration": "",
-              "summary": "Interdiction",
-              "storytelling": "",
+              "summary": "Circumstances (engine MC Critical Flaw, read as the Inhibitor by the 9/23 equivalence rule)",
+              "storytelling": "Engine MC column (section 9), carried to the RS by the 9/23 remap. PROPOSED. Provisional.",
               "perspectives": [
                 {
                   "perspective_id": "persp_rs_tori_anna"
@@ -653,10 +601,10 @@
             {
               "id": "storypoint_rs_benchmark",
               "appreciation": "benchmark",
-              "method": "conscious",
+              "method": "learning",
               "illustration": "",
-              "summary": "Contemplation",
-              "storytelling": "",
+              "summary": "Gathering Information",
+              "storytelling": "Engine MC column (section 9), carried to the RS by the 9/23 remap. PROPOSED.",
               "perspectives": [
                 {
                   "perspective_id": "persp_rs_tori_anna"
@@ -671,38 +619,38 @@
           "moments": []
         },
         "x_canon_transits": {
-          "note": "The 16 Signposts (4 per throughline), carried here in NCP Transit form. Not placed in subtext.storybeats because the schema requires tones, illustration, summary and storytelling for every storybeat and the storyform supplies none of them.",
+          "note": "The 16 Signposts (4 per throughline), carried here in NCP Transit form. Not placed in subtext.storybeats because the schema requires tones, illustration, summary and storytelling for every storybeat and the storyform supplies none of them. PROPOSED 11/4: each throughline's four Signposts move with its engine column under the 9/23 remap.",
           "transits": [
             {
               "id": "transit_mc_1",
               "appreciation": "transit",
               "sequence": 1,
-              "method": "obtaining",
-              "canon_word": "Obtaining",
+              "method": "past",
+              "canon_word": "The Past",
               "perspective_id": "persp_mc_tori"
             },
             {
               "id": "transit_mc_2",
               "appreciation": "transit",
               "sequence": 2,
-              "method": "understanding",
-              "canon_word": "Understanding",
+              "method": "present",
+              "canon_word": "The Present",
               "perspective_id": "persp_mc_tori"
             },
             {
               "id": "transit_mc_3",
               "appreciation": "transit",
               "sequence": 3,
-              "method": "doing",
-              "canon_word": "Doing",
+              "method": "progress",
+              "canon_word": "How Things are Changing",
               "perspective_id": "persp_mc_tori"
             },
             {
               "id": "transit_mc_4",
               "appreciation": "transit",
               "sequence": 4,
-              "method": "learning",
-              "canon_word": "Gathering Information",
+              "method": "future",
+              "canon_word": "The Future",
               "perspective_id": "persp_mc_tori"
             },
             {
@@ -741,79 +689,119 @@
               "id": "transit_os_1",
               "appreciation": "transit",
               "sequence": 1,
-              "method": "past",
-              "canon_word": "The Past",
+              "method": "conceiving",
+              "canon_word": "Conceiving an Idea",
               "perspective_id": "persp_os_factions"
             },
             {
               "id": "transit_os_2",
               "appreciation": "transit",
               "sequence": 2,
-              "method": "present",
-              "canon_word": "The Present",
+              "method": "conceptualizing",
+              "canon_word": "Developing a Plan",
               "perspective_id": "persp_os_factions"
             },
             {
               "id": "transit_os_3",
               "appreciation": "transit",
               "sequence": 3,
-              "method": "progress",
-              "canon_word": "How Things are Changing",
+              "method": "being",
+              "canon_word": "Playing a Role",
               "perspective_id": "persp_os_factions"
             },
             {
               "id": "transit_os_4",
               "appreciation": "transit",
               "sequence": 4,
-              "method": "future",
-              "canon_word": "The Future",
+              "method": "becoming",
+              "canon_word": "Changing One's Nature",
               "perspective_id": "persp_os_factions"
             },
             {
               "id": "transit_rs_1",
               "appreciation": "transit",
               "sequence": 1,
-              "method": "preconscious",
-              "canon_word": "Impulsive Responses",
+              "method": "obtaining",
+              "canon_word": "Obtaining",
               "perspective_id": "persp_rs_tori_anna"
             },
             {
               "id": "transit_rs_2",
               "appreciation": "transit",
               "sequence": 2,
-              "method": "subconscious",
-              "canon_word": "Innermost Desires",
+              "method": "understanding",
+              "canon_word": "Understanding",
               "perspective_id": "persp_rs_tori_anna"
             },
             {
               "id": "transit_rs_3",
               "appreciation": "transit",
               "sequence": 3,
-              "method": "conscious",
-              "canon_word": "Contemplation",
+              "method": "doing",
+              "canon_word": "Doing",
               "perspective_id": "persp_rs_tori_anna"
             },
             {
               "id": "transit_rs_4",
               "appreciation": "transit",
               "sequence": 4,
-              "method": "memory",
-              "canon_word": "Memories",
+              "method": "learning",
+              "canon_word": "Gathering Information",
               "perspective_id": "persp_rs_tori_anna"
             }
           ]
         },
         "x_canon_plot_appreciations": {
-          "note": "Engine plot appreciations (storyform section 9). The NCP schema enum has no appreciation for these, so they are carried as canon wording, unmapped.",
-          "Goal": "The Past",
-          "Consequence": "Memories",
-          "Cost": "Developing a Plan",
-          "Dividend": "Understanding",
-          "Requirement": "The Present",
-          "Prerequisite": "Contemplation",
-          "Precondition": "Conceiving an Idea",
-          "Forewarnings": "Gathering Information"
-        }
+          "note": "PROPOSED 11/4. Goal is forced: in Dramatica the Story Goal is the OS Concern, now Developing a Plan (also intake call 9, ruled 10/9). The other seven were computed by the engine for the 8/24 frame and do not move by relabelling; they are OPEN (see x_open_cells, cell 3).",
+          "Goal": "Developing a Plan",
+          "engine_8_24_values_not_carried": {
+            "Goal": "The Past",
+            "Consequence": "Memories",
+            "Cost": "Developing a Plan",
+            "Dividend": "Understanding",
+            "Requirement": "The Present",
+            "Prerequisite": "Contemplation",
+            "Precondition": "Conceiving an Idea",
+            "Forewarnings": "Gathering Information"
+          }
+        },
+        "x_remap": {
+          "frame": "9/23 remap frame (oxo-storyform section 9 table, right-hand column; anna-colson-conway Structure rows IC Domain/Concern, ruled 9/23, re-ruled 11/4 BOLO 150). PROPOSED 11/4 BOLO 176, provisional until Chief checks",
+          "assignment": {
+            "MC (Tori)": "Situation / The Past  <- engine OS column",
+            "IC (Anna)": "Fixed Attitude / Memories  <- engine RS(MvI) column",
+            "OS (the Factions)": "Manipulation / Developing a Plan  <- engine IC column",
+            "RS (Tori <-> Anna)": "Activity / Understanding  <- engine MC column"
+          },
+          "dynamic_pairs": "MC Situation <-> IC Fixed Attitude; OS Manipulation <-> RS Activity. One domain each.",
+          "engine_check": "Not engine-confirmed. Section 8: the engine wins. One Dramatica Pro re-entry of this frame settles every PROPOSED cell."
+        },
+        "x_open_cells": [
+          {
+            "cell": 1,
+            "field": "MC unique_ability / critical_flaw (Tori)",
+            "left_out": true,
+            "a": "Prediction / Suspicion: the engine OS Catalyst/Inhibitor, read as UA/CF by the rule ruled for Anna 9/23",
+            "b": "Destiny / Truth: the pre-8/24 LOCKED values still on victoria-midnight Structure",
+            "rec": "a (provisional)"
+          },
+          {
+            "cell": 2,
+            "field": "OS problem / solution (the Factions)",
+            "left_out": true,
+            "a": "Equity -> Inequity: section 5, a Change MC shares the OS problem pair; 'the story's argument is one argument'",
+            "b": "Projection -> Speculation: the engine IC column carried cell for cell, as done for Anna",
+            "rec": "a (provisional; the engine re-entry decides)"
+          },
+          {
+            "cell": 3,
+            "field": "plot appreciations other than Goal",
+            "left_out": true,
+            "a": "Chief re-enters the remap frame in Dramatica Pro and transcribes the engine's eight",
+            "b": "carry the 8/24 engine seven, marked stale",
+            "rec": "a"
+          }
+        ]
       }
     ]
   }
