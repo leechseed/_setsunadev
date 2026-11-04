@@ -141,7 +141,7 @@ input,select,textarea{accent-color:var(--cmd-acc);caret-color:var(--cmd-acc)}
  <input id="pname" value="leechseed-default" aria-label="patch name">
  <button id="save">Save</button>
  <select id="load" aria-label="load a saved patch"><option value="">load…</option></select>
- <button id="tidy" title="lay the patch modules out by tier">tidy</button>
+ <button id="tidy" title="lay the modules out left to right in signal order, so every cable runs forward">tidy</button>
  <button id="xpatch" title="download the patch JSON">patch.json</button>
  <button id="xinst" title="download the instance JSON">instance.json</button>
  <button id="mb" aria-expanded="false">about</button>
@@ -370,6 +370,7 @@ var $ = function(id){ return document.getElementById(id); };
 function E(s){ return String(s == null ? "" : s).replace(/[&<>"']/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
 var COL = {acc:"#FF5A1F", acch:"#FFB08F", accm:"#be4216", accd:"#6e280e", soft:"#24110a", bg:"#050608", panel:"#0a0c0f",
            panel2:"#10151b", line:"#23272b", line2:"#3a3e40", fg:"#c6cbc8", fg2:"#959a97", dim:"#5f6160", cyan:"#5CC8D0", bad:"#e5604d"};
+var TIERCOL = {"Tier 1": "#6e280e", "Tier 2": "#4a3a10", "Tier 3": "#123a44"};   // title bars: surface orange · pressure amber · depth teal
 var FONT = "IBM Plex Mono, Consolas, monospace";
 var LAST = null;   // the last instance
 
@@ -416,7 +417,7 @@ function makeType(cm){
         b.dkey = d.key; b.dpart = "weights"; b.label = " ";
       }
     });
-    this.color = COL.soft; this.bgcolor = COL.panel2;
+    this.color = TIERCOL[cm.tier] || COL.soft; this.bgcolor = COL.panel2;   // the tier rides on the title bar (11/4)
     var sz = this.computeSize(); this.size = [Math.max(sz[0], 270), sz[1]];
   }
   N.title = cm.id + " " + cm.code;
@@ -549,17 +550,48 @@ function resize(){
 window.addEventListener("resize", resize);
 
 /* ---------- patch <-> graph ---------- */
+/* tidy (11/4, Chief: "lead off into each other … more like a racetrack"): signal flow left to right. A module's column is
+   its longest cable path from a source, so every cable runs forward; inside a column, modules sort by where their
+   cables come from (barycenter sweeps), so cables cross less. Unpatched modules park in the last column. The tier
+   shows as the module's title color, since tier boxes would overlap in a flow layout. */
 function tidy(fit){
-  var colOf = {}, gs = CAT.groups || [];
-  gs.forEach(function(g, gi){ g.modules.forEach(function(mid, j){ colOf[mid] = [gi, j]; }); });
-  var nodes = graph._nodes.slice(), colY = {}, X = 30, GAP = 60, W = 300;
+  var nodes = graph._nodes.slice(), byId = {}, ins = {}, outs = {}, depth = {};
   nodes.sort(function(a, b){ return CAT.modules.indexOf(BYID[a.mod]) - CAT.modules.indexOf(BYID[b.mod]); });
-  nodes.forEach(function(n){
-    var cj = colOf[n.mod] || [0, 0], col = cj[0] === 2 ? 2 + (cj[1] % 2) : cj[0];
-    var y = colY[col] == null ? 60 : colY[col];
-    n.pos = [X + col * (W + GAP), y]; colY[col] = y + n.size[1] + LiteGraph.NODE_TITLE_HEIGHT + 30;
+  nodes.forEach(function(n){ byId[n.id] = n; ins[n.id] = []; outs[n.id] = []; depth[n.id] = 0; });
+  for (var id in graph.links){
+    var l = graph.links[id];
+    if (!l || !byId[l.origin_id] || !byId[l.target_id] || l.origin_id === l.target_id) continue;
+    outs[l.origin_id].push(l.target_id); ins[l.target_id].push(l.origin_id);
+  }
+  for (var k = 0; k < nodes.length; k++){            // longest path; the cap stops a feedback loop from running away
+    var moved = false;
+    nodes.forEach(function(n){ ins[n.id].forEach(function(s){
+      if (depth[s] + 1 > depth[n.id] && depth[s] + 1 < nodes.length){ depth[n.id] = depth[s] + 1; moved = true; } }); });
+    if (!moved) break;
+  }
+  var linked = function(n){ return ins[n.id].length || outs[n.id].length; }, maxD = 0;
+  nodes.forEach(function(n){ if (linked(n)) maxD = Math.max(maxD, depth[n.id]); });
+  var cols = [];
+  nodes.forEach(function(n){ var c = linked(n) ? depth[n.id] : maxD + 1; (cols[c] = cols[c] || []).push(n); });
+  cols = cols.filter(function(c){ return c && c.length; });
+  var rank = {};
+  function setRank(){ cols.forEach(function(c){ c.forEach(function(n, i){ rank[n.id] = i; }); }); }
+  function bary(n, nb){ var v = nb[n.id].map(function(m){ return rank[m]; }).filter(function(r){ return r != null; });
+    return v.length ? v.reduce(function(a, b){ return a + b; }, 0) / v.length : rank[n.id]; }
+  setRank();
+  for (var sweep = 0; sweep < 4; sweep++){
+    for (var c = 1; c < cols.length; c++){ cols[c].sort(function(a, b){ return bary(a, ins) - bary(b, ins); }); setRank(); }
+    for (c = cols.length - 2; c >= 0; c--){ cols[c].sort(function(a, b){ return bary(a, outs) - bary(b, outs); }); setRank(); }
+  }
+  var T = LiteGraph.NODE_TITLE_HEIGHT, X = 30, GAP = 140, VGAP = 34, W = 0, colH = [];
+  nodes.forEach(function(n){ W = Math.max(W, n.size[0]); });
+  cols.forEach(function(c, ci){ colH[ci] = c.reduce(function(h, n){ return h + n.size[1] + T + VGAP; }, -VGAP); });
+  var tallest = Math.max.apply(null, colH);
+  cols.forEach(function(c, ci){
+    var y = 60 + (tallest - colH[ci]) / 2;
+    c.forEach(function(n){ n.pos = [X + ci * (W + GAP), y + T]; y += n.size[1] + T + VGAP; });
   });
-  regroup(); if (fit !== false) fitView();
+  regroup([]); if (fit !== false) fitView();
 }
 function regroup(spec){
   (graph._groups || []).slice().forEach(function(g){ graph.remove(g); });
