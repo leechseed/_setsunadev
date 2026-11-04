@@ -7,7 +7,7 @@ series: The Outliers
 trunk: BLACK
 status: canon — medium RULED series 2026-09-09; all twelve answers RULED 2026-09-23 on the recommendations (Chief: "take our recs for row 18")
 scope: OXO.primary
-medium: SERIES (episodic television; legacy container = ten-episode Season 1 with a pilot, standing until plot_systems maps Movements to episodes)
+medium: FEATURE (ruled 11/4, OXO kickoff call 1: one feature, M1–M6 its acts). Lineage: SERIES (episodic television), ten-episode Season 1 with a pilot, parked as lineage (call 13)
 created: 2026-09-10
 instrument: "ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_texture_layer.md (TELLING PROFILE template) re-instrumented per ssot_01_medium_grammars M3 (TV / serial)"
 links:
@@ -103,9 +103,10 @@ The card's `telling:` line inherits T1 + T2 + T4 from this profile unless overri
 8. **T8 thresholds:** Axiom-grammar episode titles · colored movement cards · on-screen text = Feed only.
 9. **T9 frames:** tonal-only (⧗ rec) · the Feed-addresses-viewer exception: take or refuse.
 10. **T10 narratee:** none explicit under P2 (⧗ rec) / Feed user / future listener / Jebb.
-11. **Container:** the ten-episode Season 1 with a pilot stands as the working container · the address scheme gains an episode field for the series medium (`S1E02` overlay on `OXO.primary.M2.q1.s3`) · Movement→episode map is plot_systems work, flagged.
+11. **Container (superseded 11/4, OXO kickoff calls 1 and 13: one feature, M1–M6 its acts; the ten-episode design is parked lineage):** the ten-episode Season 1 with a pilot stood as the working container · the address scheme gains an episode field for the series medium (`S1E02` overlay on `OXO.primary.M2.q1.s3`) · Movement→episode map is plot_systems work, flagged.
 12. **Naming:** the Ten Questions (T1–T10) and the ladder address notation are themselves unruled (texture-layer and ladder OPEN lists); this profile uses both provisionally.
 
 ## Version history
+- **0.2.1 · 2026-11-04.** OXO kickoff: calls 1, 13 landed (ruled 11/4). The container is one feature; the ten-episode Season 1 is parked lineage. The series-era wording below stands as lineage until the profile is re-instanced for a feature.
 - **0.2.0 · 2026-09-23.** All twelve rulings taken on the recommendations in one word; the profile is canon. T1 Feed-only · T2 Tori-fixed + Feed-eye, Anna no POV · T3 linear + recovered data, Scramble retired, cold opens yes · T4–T8 as listed · T9 tonal-only, the Feed-addresses-viewer exception refused · T10 none explicit · container S1 ten + pilot with the episode field · the Ten Questions and the ladder notation ruled as used.
 - **0.1.0 ⧗ · 2026-09-10.** First instance, series medium, all ten answers drafted with menus; wired to the first scene card.

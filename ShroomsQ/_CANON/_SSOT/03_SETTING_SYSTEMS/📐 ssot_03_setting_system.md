@@ -1,7 +1,7 @@
 ---
 type: ssot_03_setting_systems
 category: setting_system
-version: 1.11.2
+version: 1.11.3
 tier: [fabula, narratology]
 last_updated: 2026-11-04
 applies_to: [all IPs]
@@ -331,11 +331,11 @@ Truby's dystopia mechanism is a touchpoint on S12 FUNCTION. It names the claim a
 
 Filled entirely from existing canon ([delta-coast-ultra-school.md](../../../../_CANON_NODES/delta-coast-ultra-school.md) + storyform §9 + handoff bundle). Starter depth — full instance lives with the canon node when Movements 2–4 open.
 
-**Header:** `dcus` · names: Delta Coast Ultra School / "DCUS" / the Ultra School / *Red Hills Academy* (legacy) / *Skeeter Creek* (founding, buried) / *Inner Spiral Academy* (pre-ruling) · scale: **site (campus)** · parent: the Middle Bands, Delta Coast, tri-state Spiral (FL/AL/GA) · role: Setting / Institutional Antagonist Vessel, Movements 2–4 · `job` · `dramatic role` · `adjacent` · `canon_tier` · `real_anchor` ⏸ DCUS faction fill pass (phase 2).
+**Header:** `dcus` · names: Delta Coast Ultra School / "DCUS" / the Ultra School / *Red Hills Academy* (legacy) / *Skeeter Creek* (founding, buried) / *Inner Spiral Academy* (lineage; Inner Spiral is now geography, ruled 11/4, OXO kickoff call 2) · scale: **site (campus)** · parent: the Middle Bands, Delta Coast, tri-state Spiral (FL/AL/GA); Delta Coast is the region and the school's prefix, and the Bishops are the guild that owns the school (ruled 11/4, OXO kickoff call 7) · role: Setting / Institutional Antagonist Vessel, Movements 2–4 · `job` · `dramatic role` · `adjacent` · `canon_tier` · `real_anchor` ⏸ DCUS faction fill pass (phase 2).
 
 | Layer | DCUS |
 |---|---|
-| S1 BODY | century-old Southern prestige campus, Delta Coast; Middle-Bands address ("Inner Spiral" reverting to geography per provisional tissue) `border_type` · `boundary_kind` ⏸ DCUS faction fill pass (phase 2) |
+| S1 BODY | century-old Southern prestige campus, Delta Coast; Middle-Bands address ("Inner Spiral" reverted to geography, RULED 11/4, OXO kickoff call 2) `border_type` · `boundary_kind` ⏸ DCUS faction fill pass (phase 2) |
 | S2 WEATHER | Gulf-South heat, humidity, and hurricane season (June–November); Southern Gothic light under the live oaks, gold in M1 and the Feed's glow by M2–4 (tracks S3 clean → NEON-ROT). **The cooled-building split (RULED 1.4.1):** Feed-conditioned interiors, the Gulf heat left outside for whoever doesn't rate a cooled building: class by budget line, not verdict (the controlling idea as climate). Storms are the one variable the Administration did not create. Arc: brochure weather (M1, Anchor + Mood) → a cost (M2–4, Pressure + Argue). Draft: `_tools/bolostatus/work/87/dcus/DCUS-S2-FACTIONS.md` |
 | S3 SENSORIUM | Southern Gothic register (ruled) — old brick and moss carrying a retrofit: Feed-linked clothing glow; the six-movement palette descent **clean → NEON-ROT** `governing detail` ⏸ DCUS faction fill pass (phase 2) |
 | S4 LAW | the Administration as depersonalized OS · Star-Rating · Sync Cult mechanics · Feed-linked clothing as enforced legibility `dials` · `material context` · `strained_leg` · `power_mode` · `access_form` · codex tags ⏸ DCUS faction fill pass (phase 2) |
@@ -421,6 +421,7 @@ Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the **setting** domain is k
 
 ## Version history
 
+- **1.11.3 — 2026-11-04.** 11/4 OXO kickoff: calls 2 and 7 landed (ruled 11/4). The Red Hills to DCUS rebrand and Inner Spiral as geography are ruled. Delta Coast is the region; the Bishops own the school.
 - **1.11.2 — 2026-11-04.** Chief: GO (storyform remap, BOLO 176): S12 binding for DCUS reads the OS Domain as Manipulation / Developing a Plan, Goal = Developing a Plan (propagation call B, rec a). No schema change.
 - **1.11.1 — 2026-10-05.** BOLO 102 batch D (Chief: "All recommendations"): THE SCENE CARD heading line counts its fields, twenty-four, in place of "Ten".
 - **1.11.0 — 2026-10-05.** BOLO 102 stage 2 (Chief: "My word"): IF catalog calls 1, 2, 5, 6 and 10 land. LEDGER_DUE future states carry the 08 time code. The SCENE CARD gains the theme record, `focal`, and `fantasy` / `sexy` / `aesthetic`. UNDERSIDE_SURFACING hands P7, LOAD_BEARING hands P12, and S8 `witness` takes a character id. Ryan's scoring is the genre-contract tool for 03 and 01. SETTING × LIBRARY gains six interface lines.

@@ -201,6 +201,8 @@ Every entry below states where Anna and Tori collide or mirror on the RS axis (A
 **RULED 2026-09-23, all twelve on the recommendations** (Chief: "take the recs, and who's Anna?"). Each ⧗ in this node now reads as the ruled answer: call 1 executed the same turn (the storyform §4 rows propagated from §9); the chart stays a placeholder until an astrology ingest is fired for her; L5 wound open by design; L9 eros N/A by design; Axiom is her register; the Feed ladder Compliant → Verified → Model Asset is proposed canon; no relation to Jebb; absent from M1, M4–6 open to plot work; the Ascent Legibility Index held; system-polished look.
 
 
+**Origin held open (ruled 11/4, OXO kickoff call 10):** Anna's pass comes after Tori's. Her origin stays open until then. The 9/29 origin chain and the L7 rows are working text, not final. 11/4 OXO kickoff: call 10 landed (ruled 11/4).
+
 1. **Propagate the §9 remapping into [[oxo-storyform]] §4** — housekeeping, not a creative call. *Rec: do it.*
 2. **Astrology ingest.** Full ingest / placeholder stands / skip astrology for ICs. *Rec: placeholder stands.*
 3. **L7 ORIGIN.** Legacy-track (proposed) / salvage narrative / undocumented. *Rec: legacy-track.*

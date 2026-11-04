@@ -88,6 +88,6 @@ The 10/29 OXO full script (BOLO 169, `_PRIVATE/BOLO-169/OXO-full-script.txt`) ha
 
 ## Sources
 
-AUTH = `ShroomsQ/_CANON/_AUTHORITATIVE/OVEREXITOUT/characters/🎯 auth overexitout victoria midnight.md` §Identity, §Movement 1 Origin Commitments, §Core Bond · [`victoria-midnight.md`](victoria-midnight.md) · [`victoria-midnight-L9-eros.md`](victoria-midnight-L9-eros.md) §3 · [`oxo-storyform.md`](oxo-storyform.md) §6 · `ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_fabula.md` (three events) · `ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md` (L5, L8, flags) · [`anna-colson-conway.md`](anna-colson-conway.md) §Relationships
+AUTH (lineage, ruled 11/4 OXO kickoff call 3) = `ShroomsQ/_CANON/_AUTHORITATIVE/OVEREXITOUT/characters/🎯 auth overexitout victoria midnight.md` §Identity, §Movement 1 Origin Commitments, §Core Bond · [`victoria-midnight.md`](victoria-midnight.md) · [`victoria-midnight-L9-eros.md`](victoria-midnight-L9-eros.md) §3 · [`oxo-storyform.md`](oxo-storyform.md) §6 · `ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_fabula.md` (three events) · `ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md` (L5, L8, flags) · [`anna-colson-conway.md`](anna-colson-conway.md) §Relationships
 
 **Naming note:** [[victoria-midnight]] links `[[jebb-midnight]]`. This card is filed as `jebb-midnight.md` (renamed 11/4) so the link resolves.

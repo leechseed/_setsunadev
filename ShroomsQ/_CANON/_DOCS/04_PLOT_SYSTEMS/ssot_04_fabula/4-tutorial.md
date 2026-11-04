@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_fabula.md
-source_version: 0.3.0
+source_version: 1.6.1
 ---
 
 **Who it's for:** a new writer learning the event record · **What it does:** one worked event, start to finish · **Type:** tutorial

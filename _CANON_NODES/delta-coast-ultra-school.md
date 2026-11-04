@@ -6,7 +6,7 @@ ip: OVEREXITOUT
 series: The Outliers
 trunk: BLACK
 role: Setting / Institutional Antagonist Vessel (Movements 2–4)
-status: name RULED 2026-08-24 — institutional tissue provisional
+status: name RULED 2026-08-24 — Red Hills → DCUS rebrand and Inner Spiral as geography RULED 11/4 (OXO kickoff call 2); the rest of the institutional tissue provisional
 blocking: none of its own (waits on storyform #1 and IC #2 like everything else)
 aliases: [DCUS, "the Ultra School", "Inner Spiral Academy (pre-ruling canon name)", "Red Hills Academy (legacy lineage)", "Skeeter Creek (legacy variant; was Skeeter Creek, renamed 2026-09-24)", "The Academy"]
 links:
@@ -18,7 +18,7 @@ links:
   - "[[the-student-diaspora]]"
   - "[[red-hills-academy]]"
   - "[[inner-spiral-academy]]"
-sources: _OXO_SCHOOL_HANDOFF/ (self-contained bundle, 22 files)
+sources: _OXO_SCHOOL_HANDOFF/ (self-contained bundle, 22 files; lineage, ruled 11/4 OXO kickoff call 3)
 ruled: 2026-08-24
 ---
 
@@ -43,10 +43,11 @@ ruled: 2026-08-24
 | **Red Hills Academy** (variant: *Skeeter Creek*) | 2022–23 legacy | 100+ year private prestige school · grandfather-vs-son ownership war · split faculty loyalties · alumni-legacy student bloc · the disruption → collapse plot skeleton |
 | **"Inner Spiral" Academy** | 2025–26 canon | The Sync Cult · Star-Rating / Feed-Linked Clothing · The Administration as depersonalized OS · the six-movement descent (clean → NEON-ROT → hunt) |
 
-## PROVISIONAL TISSUE — recommended, unruled
+## PROVISIONAL TISSUE — rebrand and Inner Spiral RULED 11/4; the rest recommended, unruled
 
-- **The rename is the fusion:** Red Hills Academy → DCUS on Bishop acquisition (the son sold for spoils *to the Bishops*). A rebrand is a Boot Sequence at institutional scale — the world's core overwrite mechanism done to a campus.
-- **"Inner Spiral" reverts to geography** — the school's Middle-Bands address, retconning the Master System Bible's single mention ("the Ultra School in the Inner Spiral").
+- **The rename is the fusion (RULED 11/4, OXO kickoff call 2):** Red Hills Academy → DCUS on Bishop acquisition (the son sold for spoils *to the Bishops*). A rebrand is a Boot Sequence at institutional scale — the world's core overwrite mechanism done to a campus.
+- **"Inner Spiral" reverts to geography (RULED 11/4, OXO kickoff call 2)** — the school's Middle-Bands address, retconning the Master System Bible's single mention ("the Ultra School in the Inner Spiral").
+- **Delta Coast and the Bishops (RULED 11/4, OXO kickoff call 7):** Delta Coast is the region and the school's prefix. "The Bishops" is the guild that owns the school. Quinton Bishop is of that family.
 - **"Ultra School" as institutional class** — the Bishops run Ultra Schools the way a chain runs franchises; DCUS is the flagship.
 - **The Skeeter Creek stratum** — the founding name sanded to "Red Hills" a century before the Bishops arrived: the erasure already happened once. Movement 3's forensic mode can find the first name under the second.
 - **Free conflict texture:** legacy students who still say "Red Hills" commit a small legibility violation every time they speak — the campus version of the Diaspora's scarred-over "Verified" tattoos.
@@ -66,3 +67,5 @@ The Southern Ultra School · Red Hills Ultra School · The Ultra School at Red H
 - **fantasy:** Getting the letter from the school that eats people — being special enough that the trap wants YOU *(three-check pass 1.0, kept 2026-09-29; F3)*
 - **sexy:** Seduction is its mechanism — an institution that *wants* you; feed-linked clothing makes the gaze a uniform *(three-check pass 1.0, kept 2026-09-29; S3)*
 - **aesthetic:** Southern Gothic rot: kudzu over century brick, a product word bolted onto prestige stone *(three-check pass 1.0, kept 2026-09-29; A3)*
+
+**History:** 11/4 OXO kickoff: calls 2, 3, 7, 11 landed (ruled 11/4). Older school names (Inner Spiral, Red Hills, Skeeter Creek) are lineage. Era 1 = Skeeter Creek (founding + Red Hills), era 2 = DCUS; any record that says "era 1 = DCUS" is lineage.

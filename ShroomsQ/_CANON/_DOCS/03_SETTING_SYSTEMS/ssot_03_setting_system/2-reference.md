@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md
-source_version: 1.11.2
+source_version: 1.11.3
 ---
 
 **Who it's for:** a writer or maintainer looking up a setting field · **What it does:** lists each component, part and field · **Type:** reference
@@ -203,7 +203,7 @@ Truby's dystopia mechanism is a touchpoint on S12. The world offers apparent cho
 
 ## THE INSTANCE — DCUS starter slice (proof of rig) — worked example (phase 2 fills)
 
-The slice is filled from canon. Header: `dcus`; names DCUS, the Ultra School and Red Hills Academy (legacy). The names also include Skeeter Creek (founding, buried) and Inner Spiral Academy (pre-ruling). The header also has scale site (campus). Its parent is the Middle Bands, Delta Coast, tri-state Spiral (FL/AL/GA).
+The slice is filled from canon. Header: `dcus`; names DCUS, the Ultra School and Red Hills Academy (legacy). The names also include Skeeter Creek (founding, buried) and Inner Spiral Academy (lineage; Inner Spiral is now geography, ruled 11/4, OXO kickoff call 2). Delta Coast is the region, and the Bishops are the guild that owns the school (call 7). The header also has scale site (campus). Its parent is the Middle Bands, Delta Coast, tri-state Spiral (FL/AL/GA).
 
 | Layer | DCUS entry |
 |---|---|

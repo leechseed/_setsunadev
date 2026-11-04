@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_fabula.md
-source_version: 0.3.0
+source_version: 1.6.1
 ---
 
 **Who it's for:** a writer or maintainer looking up a fabula fact · **What it does:** lists each component, field and event · **Type:** reference
@@ -87,7 +87,7 @@ Bal's process model has three phases: possibility, event, result. Any phase can 
 
 ## THE WORLD CLOCK
 
-**Eras.** The DCUS naming lattice read as clock eras. The first is Skeeter Creek (founding, buried, no date). The second is Red Hills (first rename, about a century before the Bishop acquisition). The third is DCUS (the current era). No calendar date exists for any transition. The clock cross-references the setting doc and does not re-author the eras (OPEN call 4).
+**Eras.** The clock has five eras (ruled 2026-09-29). Era 1 is Skeeter Creek, covering the founding and the Red Hills century. Era 2 is DCUS, which opens when the Bishops buy Red Hills and rebrand it (ruled 11/4, OXO kickoff call 2). Any record that says "era 1 = DCUS" is lineage. No calendar date exists for any transition. The clock cross-references the setting doc and does not re-author the eras (OPEN call 4).
 
 **Universe eras (ruled 2026-09-29).** Sequential, with overlap allowed at the seams.
 
@@ -99,7 +99,7 @@ Bal's process model has three phases: possibility, event, result. Any phase can 
 | 4 ASTRO7EX | ASTRO7EX | the Moon. Band only. |
 | 5 beyond | none yet | past the Moon. Band only. |
 
-**Calendar and the Moon Severance (ruled 2026-10-01, BOLO 96).** OXO's present is 2199. The Moon Severance is 2099, in era 1. Event id `backstory_moon_severance`. The Moon cut itself off by nukes in orbit and a Kessler cascade. The Outliers descend from Moon people who came back down. ASTRO7EX (era 4) is Earth's return to the Moon.
+**Calendar and the Moon Severance (ruled 2026-10-01, BOLO 96).** OXO's present is 2199. The Moon Severance is 2099, in era 1. The calendar says 2199, but the look, the tech feel and the themes read as 2009 (ruled 11/4, OXO kickoff call 12; the year is no longer provisional). Event id `backstory_moon_severance`. The Moon cut itself off by nukes in orbit and a Kessler cascade. The Outliers descend from Moon people who came back down. ASTRO7EX (era 4) is Earth's return to the Moon.
 
 > **OPEN:** the Severance's order against the Deep Meridian beam, and whether ASTRO7EX's own "Moon Severance" is this event.
 

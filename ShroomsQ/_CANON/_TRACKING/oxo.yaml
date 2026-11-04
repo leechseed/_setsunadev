@@ -5,10 +5,12 @@
 # M1 · M4 · M5 · M6 skeleton scenes loaded 2026-09-29 (BOLO 90), lengths ⧗ 16 bars.
 # RULED 2026-10-03 (Chief, "all recommendations"): the backstory events (Narco Republic · south-pole and ocean third impacts), the finish-line arrest, and the M4 · M5 · M6 beats are canon; bar lengths stay ⧗.
 
+# 11/4 OXO kickoff: call 1 landed (ruled 11/4). OXO is one feature; movements M1-M6 are its acts; the series design is parked as lineage.
+
 story: oxo
 title: OVEREXITOUT · The Outliers
-version: 0.1.1
-last_updated: 2026-09-29
+version: 0.1.2
+last_updated: 2026-11-04
 
 movements:
   - {id: M1, label: Movement 1}

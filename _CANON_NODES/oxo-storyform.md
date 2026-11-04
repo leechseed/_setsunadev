@@ -4,10 +4,10 @@ entity_id: oxo_storyform
 kind: storyform
 ip: OVEREXITOUT
 series: The Outliers
-medium: SERIES — RULED 2026-09-09 (true-ancients pass R9; supersedes the .fdx feature assumption and the lattice's tacit prose default; the legacy ten-episode Season 1 shape stands as the working container until plot_systems maps Movements to episodes)
+medium: FEATURE — OXO is one feature; movements M1–M6 are its acts (ruled 11/4, OXO kickoff call 1). Lineage: SERIES, ruled 2026-09-09 (true-ancients pass R9); the ten-episode Season 1 series design is parked as lineage (call 13)
 trunk: BLACK
 storyform_id: oxo_primary_v1
-storyform_version: 2.1
+storyform_version: 2.1.1
 status: CANON — RULED 2026-08-24: flag struck, the §9 engine form IS the storyform; the rotation supersedes the morning domain assignments · remap frame ruled 11/4 (BOLO 176): the 9/23 remap carried through, one domain each
 blocking: none
 links:
@@ -151,7 +151,7 @@ Every decision is made. What remains is data entry: open Dramatica, answer the e
 
 ## 9 · ENGINE PASS — 2026-08-24, the form as entered (BOLO 7)
 
-**The engine resolved to ONE storyform.** Entered live by Chief in Dramatica Pro, transcribed same session. Files, this folder: `oxo-storyform-engine.dsf` (exact engine state) · `story_engine_settings.TXT` · `plot_sequence.TXT`.
+**The engine resolved to ONE storyform.** Entered live by Chief in Dramatica Pro, transcribed same session. Files, this folder: `oxo-storyform-engine.dsf` (exact engine state) · `story_engine_settings.TXT` · `plot_sequence.TXT`. **Engine file of record (ruled 11/4, OXO kickoff call 8):** `oxo-storyform-engine.dsf` (8/24) plus the 11/4 remap. The older builds (`DRAMATICA V4 PROGRAM BUILDS/OXO.dsf`, `_ARCHIVE/_dramatica_OXO_builds/`) are lineage.
 
 ### ✅ FLAG STRUCK — RULED 2026-08-24: this form IS canon
 
@@ -211,7 +211,7 @@ The live export had put Anna (IC) in Fixed Attitude while its RS still sat there
 - **Unchanged:** all story dynamics.
 - **Old values:** struck through in §§2–6 and kept above as history. The live export `oxo-storyform.ncp.json` carries this frame; the pre-remap export is backed up under `_tools/bolostatus/work/176/`.
 
-**History:** 2.1 (2026-11-04) Chief: GO (storyform remap, BOLO 176).
+**History:** 2.1 (2026-11-04) Chief: GO (storyform remap, BOLO 176). 2.1.1 (2026-11-04) OXO kickoff: calls 1, 3, 8, 13 landed (ruled 11/4).
 
 
 ## THREE-CHECK LINES (three-check pass 1.0, kept 2026-09-29)

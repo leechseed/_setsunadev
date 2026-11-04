@@ -204,6 +204,9 @@ Missing: 9 storyform dynamics (driver, goal, consequence, cost, dividend, forewa
 
 ## Sources
 
+> **Record order (ruled 11/4, OXO kickoff calls 3 and 9):** the live Tori copy is this node plus the 11/4 storyline cells. The Authoritative 1.2.0 set, the Joplin KB bibles and the handoff copies listed below are lineage.
+> 11/4 OXO kickoff: calls 3, 5, 6, 9 landed (ruled 11/4).
+
 **Local — `_OXO_SCHOOL_HANDOFF/`**
 [`00_START_HERE.md`](../_OXO_SCHOOL_HANDOFF/00_START_HERE.md) · [`VICTORIA_MIDNIGHT_AUTH.md`](../_OXO_SCHOOL_HANDOFF/sources/VICTORIA_MIDNIGHT_AUTH.md) · [`VICTORIA_MIDNIGHT_ASTROLOGY_INGEST.md`](../_OXO_SCHOOL_HANDOFF/sources/VICTORIA_MIDNIGHT_ASTROLOGY_INGEST.md) · [`VICTORIA_MIDNIGHT_VALIDATION.md`](../_OXO_SCHOOL_HANDOFF/sources/VICTORIA_MIDNIGHT_VALIDATION.md) · `VICTORIA_MIDNIGHT_DRAMATICA.md` · `VICTORIA_MIDNIGHT_DRAMATICA_INGEST.md` · `THE_ADMINISTRATION.md` · `THE_STUDENT_DIASPORA.md` · `RED_HILLS_ACADEMY_DIAGRAM.md` · `MASTER_SYSTEM_BIBLE.md`
 
@@ -225,7 +228,7 @@ Missing: 9 storyform dynamics (driver, goal, consequence, cost, dividend, forewa
 `_OXO_SCHOOL_HANDOFF/00_START_HERE.md` is emphatic and it is worth repeating here, because the archive is full of the error:
 
 - The series is **The Outliers**. Never "The Outsiders" — an *Outlier* is a high-value statistical anomaly the system acquires and rebuilds, and Tori's whole arc is becoming a true one. "Outsider" destroys the meaning. Your largest single conversation is titled `THE OUTSIDERS SYSTEM`.
-- **Quinn Bishop.** Not "Quinton."
+- **Quinton Bishop**, Quinn short (ruled 11/4, OXO kickoff call 5). Bare "Quinn" is fine as the short form.
 - There is no character named **Barnes**.
 
 
@@ -239,3 +242,4 @@ Missing: 9 storyform dynamics (driver, goal, consequence, cost, dividend, forewa
 ## THE DIVE (RULED 2026-10-01, BOLO 96)
 
 - Tori is a **hot-zone diver** ([WB-CUS-0003](../ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/CUS/WB-CUS-0003.md)): belt-born, Moon blood she doesn't know about, Red Hills legacy at school; all three hold. She wears the [dive rig](../ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/TEC/WB-TEC-0002.md) (spine and calf ports) and spends her [Mother](../ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/catalog/BIO/WB-BIO-0002.md)'s quickened tissue, her kid, on every hard dive. Source: `outliers-moon-origin-seed.md`.
+- **Origin of record (ruled 11/4, OXO kickoff call 6):** belt-born, Red Hills legacy, Moon blood (the 10/01 ruling). Other Movement 1 origin versions, such as PURPLE TORI ORIGINS and the Authoritative Movement 1 Origin, are lineage.

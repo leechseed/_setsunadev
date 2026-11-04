@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md
-source_version: 1.11.2
+source_version: 1.11.3
 ---
 
 **Who it's for:** a new writer learning the setting slice · **What it does:** one worked pass through the DCUS slice · **Type:** tutorial
@@ -16,7 +16,7 @@ source_version: 1.11.2
 
 You will read the Delta Coast Ultra School (DCUS) slice as the source documents it, then find its flags. Keep the [reference](2-reference.md) open.
 
-1. **Read the header.** DCUS is a site (campus). Its parent is the Middle Bands, Delta Coast, tri-state Spiral. It has these names: DCUS, the Ultra School, Red Hills Academy, Skeeter Creek and Inner Spiral Academy.
+1. **Read the header.** DCUS is a site (campus). Its parent is the Middle Bands, Delta Coast, tri-state Spiral. It has these names: DCUS, the Ultra School, Red Hills Academy, Skeeter Creek and Inner Spiral Academy (lineage; Inner Spiral is now geography).
 2. **Start thin.** Only the header and S12 are needed. Ask: which layer does the story press on first? S5 SCAR, the rename lattice.
 3. **Read S5.** The lattice runs Skeeter Creek, then Red Hills, then DCUS. The erasure happened twice. Legacy students who say "Red Hills" commit a small legibility violation.
 4. **Check the S5 fields.** The `record` has five entries and the instance leaves them parked. Predict the flag: RUIN_INERT fires if an entry has no builder or no fall.

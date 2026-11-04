@@ -42,7 +42,7 @@ Everything past this line is ⧗ development against those lines. Nothing below 
 
 ## ⧗ The body
 
-The Administration is the OS layer; the Bishops are the ownership layer above it. Only one has a written canon name.
+The Administration is the OS layer; the Bishops are the ownership layer above it. Only one has a written canon name. The Bishops are the guild that owns the school; Delta Coast is the region and the school's prefix (ruled 11/4, OXO kickoff call 7).
 
 | Role | Who | Canon or ⧗ |
 |---|---|---|
@@ -123,3 +123,5 @@ This forbids costless ascent: no rating climb without something erased from that
 4. Who signs the Ultra Charter: the Bishops by name, or does the Administration sign itself?
 5. Does the invariant candidate bind the whole campus, or only students inside the Feed?
 6. Is "Ecclesial Laws" DCUS's own name for its standard rung, or reserved for the wider IP?
+
+**History:** 11/4 OXO kickoff: calls 2, 7 landed (ruled 11/4). Red Hills and Inner Spiral are lineage names; the Red Hills → DCUS rebrand is ruled.

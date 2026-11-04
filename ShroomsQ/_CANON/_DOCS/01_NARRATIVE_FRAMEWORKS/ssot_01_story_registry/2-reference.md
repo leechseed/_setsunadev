@@ -24,7 +24,7 @@ Eras: 1 Skeeter Creek, 2 DCUS, 3 LAKAD, 4 ASTRO7EX, 5 beyond.
 
 | Story (`id`) | Aliases | Genre | Era | Where | Medium | Status | Storyform |
 |---|---|---|---|---|---|---|---|
-| OVEREXITOUT (`oxo`) | *The Outliers* (series title); OXO; lead Tori first built as Ariel (Apple Notes 2025) | G1: cultcore | 2 · DCUS | Earth, the Delta Coast (DCUS) | Series; parked for phase 2 | Active: storyform locked, systems built, proof scenes ruled | `_CANON_NODES/oxo-storyform.md` |
+| OVEREXITOUT (`oxo`) | *The Outliers* (parked series design, lineage); OXO; lead Tori first built as Ariel (Apple Notes 2025) | G1: cultcore | 2 · DCUS | Earth, the Delta Coast (DCUS) | One feature; movements M1 to M6 are its acts (ruled 11/4, OXO kickoff call 1); series design parked as lineage | Active: storyform locked, systems built, proof scenes ruled | `_CANON_NODES/oxo-storyform.md` |
 | EVIL CHECK (`evil_check`) | none | Parked | 2 · DCUS | Earth, same universe as OXO | Parked | Reports in: three Dramatica reports held; loads onto the fabula in wave 2 (77-D) | Dramatica reports in `Q:/_PDF_DROP` (Story Guide, Character, Plot and Themes) |
 | LAKAD (`lakad`) | Codename, "for now" (2/9) | Parked | 3 · LAKAD | Cislunar space | Parked | Named only | none |
 | ASTRO7EX (`astro7ex`) | none | Parked | 4 · ASTRO7EX | The Moon | Parked | Storyform drafted (legacy Joplin notes); not yet in the SSOT systems | Dramatica reports in `.ASTRO7EX.SYNC.JOPLIN/` (MC Vivian, IC the MODS, Goal Understanding) |
