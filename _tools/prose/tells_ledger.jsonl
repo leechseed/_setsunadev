@@ -706,3 +706,5 @@
 {"ts": "2026-11-04 07:01", "sid": "0b50d38c", "words": 27, "tells": 1, "per_1k": 37.0, "families": {"passive": 1}, "rules": {"passive": 1}}
 {"ts": "2026-11-04 07:01", "sid": "0b50d38c", "words": 38, "tells": 1, "per_1k": 26.3, "families": {"passive": 1}, "rules": {"passive": 1}}
 {"ts": "2026-11-04 07:02", "sid": "0b50d38c", "words": 25, "tells": 1, "per_1k": 40.0, "families": {"passive": 1}, "rules": {"passive": 1}}
+{"ts": "2026-11-04 07:04", "sid": "0b50d38c", "words": 58, "tells": 3, "per_1k": 51.7, "families": {"passive": 2, "other": 1}, "rules": {"passive": 2, "long-sentence": 1}}
+{"ts": "2026-11-04 07:04", "sid": "0b50d38c", "words": 58, "tells": 3, "per_1k": 51.7, "families": {"passive": 2, "other": 1}, "rules": {"passive": 2, "long-sentence": 1}}
