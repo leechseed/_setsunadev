@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Review Desk</title>
+<!-- BOLO 125, the review desk (Chief 11/4 "Go."): served by the Console at /local/review; engine _tools/reviewdesk/reviewdesk.py.
+     Open a Command doc, highlight, comment or suggest a change, record voice notes, Send to Claude ->
+     _PRIVATE/reviews/<doc-slug>-<timestamp>/review.json + audio. Dark only; theme block from _tools/brand/theme.py. -->
+<style>
+:root{--bg:#050608;--hl:#10151b;--panel:#0a0c0f;--line:#23272b;--line2:#3a3e40;--fg:#c6cbc8;--fg2:#959a97;--dim:#5f6160;
+--acc:#FF5A1F;--acch:#FFB08F;--accd:#6e280e;--accsoft:#24110a;--ok:#4ec96f;--oksoft:#0f2416;--am:#e3b341;--amsoft:#2a210b;--bad:#e5604d;--cyan:#5CC8D0}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font:13px/1.5 "IBM Plex Mono",Consolas,monospace}
+body{display:grid;grid-template-rows:44px 1fr;height:100vh;overflow:hidden}
+button{font:inherit;color:var(--fg);background:var(--panel);border:1px solid var(--line2);padding:3px 10px;cursor:pointer;border-radius:2px}
+button:hover{border-color:var(--acc);color:var(--acch)}
+button.pri{background:var(--acc);color:#050608;border-color:var(--acc);font-weight:600}
+button.pri:hover{background:var(--acch);color:#050608}
+button:disabled{opacity:.4;cursor:default}
+input,textarea{font:inherit;color:var(--fg);background:#030405;border:1px solid var(--line2);padding:5px 7px;border-radius:2px;width:100%}
+textarea{resize:vertical;min-height:58px}
+input:focus,textarea:focus{outline:none;border-color:var(--acc)}
+/* the strip */
+#strip{display:flex;align-items:center;gap:10px;padding:0 12px;border-bottom:1px solid var(--line);background:var(--panel);min-width:0}
+#strip .tag{color:var(--acc);font-weight:600;letter-spacing:.08em;white-space:nowrap}
+#docbtn{max-width:46%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#counts{color:var(--fg2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1;min-width:0}
+/* the work area */
+#work{display:grid;grid-template-columns:1fr 360px;min-height:0}
+#doc{overflow:auto;padding:18px 28px 80px;min-width:0}
+#side{border-left:1px solid var(--line);background:var(--panel);overflow:auto;padding:12px;display:flex;flex-direction:column;gap:12px;min-width:0}
+@media (max-width:820px){#work{grid-template-columns:1fr;grid-template-rows:1fr 46%}#side{border-left:0;border-top:1px solid var(--line)}#doc{padding:12px 16px 60px}}
+/* the rendered doc */
+#doc .empty{color:var(--dim);margin-top:30vh;text-align:center}
+#doc h1,#doc h2,#doc h3,#doc h4,#doc h5,#doc h6{color:var(--acch);margin:1.2em 0 .4em;line-height:1.3}
+#doc h1{font-size:1.5em;color:var(--acc)}#doc h2{font-size:1.25em;border-bottom:1px solid var(--line);padding-bottom:.2em}#doc h3{font-size:1.1em}
+#doc p{margin:.5em 0}
+#doc code{background:var(--hl);padding:0 .3em;border-radius:2px;color:var(--acch)}
+#doc pre{background:#030405;border:1px solid var(--line);padding:8px 10px;overflow:auto}
+#doc pre code{background:none;padding:0;color:var(--fg)}
+#doc blockquote{border-left:3px solid var(--accd);margin:.6em 0;padding:.1em .8em;color:var(--fg2)}
+#doc ul{list-style:none;padding:0;margin:.4em 0}
+#doc li{position:relative;padding-left:1.4em;margin:.15em 0}
+#doc li>.mk{position:absolute;left:0;color:var(--acc)}
+#doc hr{border:0;border-top:1px solid var(--line2);margin:1.2em 0}
+#doc table{border-collapse:collapse;margin:.6em 0;width:100%}
+#doc td,#doc th{border:1px solid var(--line);padding:4px 7px;vertical-align:top;text-align:left}
+#doc th{background:var(--hl);color:var(--acch)}
+#doc .lnk{color:var(--acch);text-decoration:underline dotted}
+#doc .cm{color:var(--dim)}
+#doc [data-l0]:hover{box-shadow:-3px 0 0 var(--line2)}
+::highlight(rv-comment){background:#3a2a06;color:#ffe7a3}
+::highlight(rv-suggest){background:#0f2a3a;color:#bfeaf0;text-decoration:line-through}
+::highlight(rv-active){background:var(--acc);color:#050608}
+::selection{background:var(--acc);color:#050608}
+/* the selection toolbar */
+#tb{position:fixed;display:none;gap:4px;padding:3px;background:var(--panel);border:1px solid var(--acc);z-index:20;box-shadow:0 4px 14px #000a}
+#tb.on{display:flex}
+/* the side panel */
+.box{border:1px solid var(--line);padding:9px;background:var(--bg)}
+.box h4{margin:0 0 6px;font-size:11px;letter-spacing:.1em;color:var(--fg2);font-weight:600;text-transform:uppercase}
+.row{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.quote{border-left:3px solid var(--acc);padding:2px 8px;color:var(--fg2);max-height:7.5em;overflow:auto;white-space:pre-wrap;word-break:break-word;margin-bottom:6px}
+.kinds button.on{border-color:var(--acc);color:var(--acc)}
+label.l{display:block;color:var(--fg2);font-size:11px;margin:6px 0 2px}
+.rec{display:flex;gap:6px;align-items:center;margin-top:6px;flex-wrap:wrap}
+.rec .dot{width:9px;height:9px;border-radius:50%;background:var(--dim)}
+.rec.live .dot{background:var(--bad);animation:bl 1s infinite}
+@keyframes bl{50%{opacity:.25}}
+.rec audio{height:28px;max-width:100%}
+.item{border:1px solid var(--line);padding:7px 8px;cursor:pointer;background:var(--bg)}
+.item:hover,.item.act{border-color:var(--acc)}
+.item .k{font-size:11px;font-weight:600;letter-spacing:.06em}
+.item .k.c{color:var(--am)}.item .k.s{color:var(--cyan)}
+.item .q{color:var(--fg2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.item .r{color:var(--cyan);white-space:pre-wrap;word-break:break-word}
+.item .t{white-space:pre-wrap;word-break:break-word}
+.item .x{float:right;padding:0 6px;border:0;background:none;color:var(--dim)}
+.item .x:hover{color:var(--bad)}
+.hint{color:var(--dim);font-size:12px}
+#items{display:flex;flex-direction:column;gap:6px}
+#msg{min-height:1.2em;font-size:12px;word-break:break-all}
+#msg.ok{color:var(--ok)}#msg.bad{color:var(--bad)}
+/* the picker */
+#pick{position:fixed;inset:44px 0 0 0;background:#050608f2;display:none;z-index:30;padding:14px;overflow:auto}
+#pick.on{display:block}
+#pick .wrap{max-width:860px;margin:0 auto}
+#plist{margin-top:10px;display:flex;flex-direction:column}
+#plist .g{color:var(--acc);font-size:11px;letter-spacing:.1em;margin:10px 0 3px}
+#plist a{display:flex;gap:10px;padding:3px 6px;color:var(--fg);text-decoration:none;border-left:2px solid transparent;cursor:pointer}
+#plist a:hover,#plist a.sel{background:var(--hl);border-left-color:var(--acc)}
+#plist a span{color:var(--dim);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#recent{margin-top:16px;color:var(--fg2);font-size:12px}
+</style>
+</head><body>
+<header id="strip">
+  <span class="tag">REVIEW DESK</span>
+  <button id="docbtn" title="Pick a doc (Ctrl+O)">Open a doc…</button>
+  <span id="counts"></span>
+  <button id="send" class="pri" disabled title="Write the review to _PRIVATE/reviews/ for a session to read">Send to Claude</button>
+</header>
+<div id="work">
+  <main id="doc"><div class="empty">Open a doc: SOP, STATE, BOLO, the _CANON docs, or any .md path.<br>Then highlight text to comment or suggest a change.</div></main>
+  <aside id="side">
+    <div class="box" id="composer" hidden>
+      <h4>New note on the highlight</h4>
+      <div class="quote" id="cq"></div>
+      <div class="row kinds"><button data-k="comment" class="on">Comment</button><button data-k="suggestion">Suggest a change</button><span class="hint" id="cl"></span></div>
+      <div id="repwrap" hidden><label class="l" for="crep">Replace with</label><textarea id="crep" rows="3"></textarea></div>
+      <label class="l" for="ctext">Note</label><textarea id="ctext" rows="3" placeholder="yo what is this…"></textarea>
+      <div class="rec" id="crec"><span class="dot"></span><button data-act="rec">Record voice</button><span class="hint" data-t></span></div>
+      <div class="row" style="margin-top:8px"><button class="pri" id="csave">Save note</button><button id="ccancel">Cancel</button><span class="hint">Ctrl+Enter saves</span></div>
+    </div>
+    <div class="box">
+      <h4>Overall note</h4>
+      <textarea id="summary" rows="3" placeholder="the note on the whole doc (optional)"></textarea>
+      <div class="rec" id="srec"><span class="dot"></span><button data-act="rec">Record voice</button><span class="hint" data-t></span></div>
+    </div>
+    <div class="box">
+      <h4>Notes on this doc</h4>
+      <div id="items"><div class="hint">Highlight text in the doc, then Comment (C) or Suggest (S).</div></div>
+    </div>
+    <div id="msg"></div>
+  </aside>
+</div>
+<div id="tb"><button data-k="comment">Comment</button><button data-k="suggestion">Suggest</button></div>
+<div id="pick"><div class="wrap">
+  <input id="pf" placeholder="filter, or type a repo path like _PRIVATE/foo.md and press Enter" autocomplete="off">
+  <div id="plist"></div>
+  <div id="recent"></div>
+</div></div>
+<script>
+(function(){
+"use strict";
+var $=function(id){return document.getElementById(id)};
+var S={doc:null,items:[],seq:0,pending:null,ckind:"comment",cvoice:null,svoice:null,active:null,docs:[],psel:0};
+var HL=typeof Highlight!=="undefined"&&window.CSS&&CSS.highlights;
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function msg(t,cls){var m=$("msg");m.textContent=t||"";m.className=cls||""}
+function api(path,opt){return fetch(path,opt).then(function(r){return r.json().then(function(j){if(!r.ok)throw new Error((j.errors||[j.error||r.status]).join("; "));return j})})}
+
+/* ---- a small markdown renderer: every block carries its source lines (data-l0..data-l1) ---- */
+function inline(s){
+  var keep=[];
+  s=s.replace(/`([^`]+)`/g,function(_,c){keep.push("<code>"+esc(c)+"</code>");return "\u0000"+(keep.length-1)+"\u0000"});
+  s=esc(s);
+  s=s.replace(/!?\[([^\]]*)\]\(([^)\s]+)[^)]*\)/g,function(_,t,u){return '<span class="lnk" title="'+u+'">'+t+"</span>"});
+  s=s.replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/__([^_]+)__/g,"<b>$1</b>")
+     .replace(/(^|[^*\w])\*([^*\s][^*]*?)\*(?!\w)/g,"$1<i>$2</i>").replace(/~~([^~]+)~~/g,"<s>$1</s>")
+     .replace(/&lt;!--[\s\S]*?--&gt;/g,function(m){return '<span class="cm">'+m+"</span>"});
+  return s.replace(/\u0000(\d+)\u0000/g,function(_,i){return keep[+i]});
+}
+function cells(line){
+  var t=line.trim();if(t[0]==="|")t=t.slice(1);if(t.slice(-1)==="|"&&t.slice(-2)!=="\\|")t=t.slice(0,-1);
+  return t.split(/(?<!\\)\|/).map(function(c){return c.trim()});
+}
+function render(text){
+  var L=text.split("\n"),out=[],i=0,n=L.length;
+  var isList=/^(\s*)([-*+]|\d+[.)])\s+(.*)$/,isHead=/^(#{1,6})\s+(.*)$/,isHr=/^\s*([-*_])(\s*\1){2,}\s*$/,isSep=/^\s*\|?\s*:?-{2,}/;
+  function A(a,b){return ' data-l0="'+(a+1)+'" data-l1="'+(b+1)+'"'}
+  while(i<n){
+    var l=L[i],m;
+    if(!l.trim()){i++;continue}
+    if(/^\s*(```|~~~)/.test(l)){var f=l.trim().slice(0,3),j=i+1;while(j<n&&L[j].trim().slice(0,3)!==f)j++;
+      out.push("<pre"+A(i,Math.min(j,n-1))+"><code>"+esc(L.slice(i+1,j).join("\n"))+"</code></pre>");i=j+1;continue}
+    if((m=isHead.exec(l))){var h=m[1].length;out.push("<h"+h+A(i,i)+">"+inline(m[2])+"</h"+h+">");i++;continue}
+    if(isHr.test(l)){out.push("<hr"+A(i,i)+">");i++;continue}
+    if(/^\s*\|/.test(l)){var j=i,rows=[];while(j<n&&/^\s*\|/.test(L[j]))j++;
+      var hdr=j>i+1&&isSep.test(L[i+1]);
+      for(var k=i;k<j;k++){if(hdr&&k===i+1)continue;var tag=hdr&&k===i?"th":"td";
+        rows.push("<tr"+A(k,k)+">"+cells(L[k]).map(function(c){return"<"+tag+">"+inline(c)+"</"+tag+">"}).join("")+"</tr>")}
+      out.push("<table"+A(i,j-1)+">"+rows.join("")+"</table>");i=j;continue}
+    if(/^\s*>/.test(l)){var j=i;while(j<n&&/^\s*>/.test(L[j]))j++;
+      out.push("<blockquote"+A(i,j-1)+">"+L.slice(i,j).map(function(x){return inline(x.replace(/^\s*>\s?/,""))}).join("<br>")+"</blockquote>");i=j;continue}
+    if(isList.test(l)){var items=[];
+      while(i<n&&(m=isList.exec(L[i]))){var s=i,body=m[3],j=i+1;
+        while(j<n&&L[j].trim()&&!isList.test(L[j])&&/^\s{2,}/.test(L[j])){body+=" "+L[j].trim();j++}
+        var ind=Math.floor(m[1].replace(/\t/g,"  ").length/2),mk=/\d/.test(m[2])?m[2]:"•";
+        items.push('<li'+A(s,j-1)+' style="margin-left:'+(ind*1.4)+'em"><span class="mk">'+esc(mk)+"</span>"+inline(body)+"</li>");i=j}
+      out.push("<ul>"+items.join("")+"</ul>");continue}
+    var j=i;while(j<n&&L[j].trim()&&!isHead.test(L[j])&&!/^\s*(```|~~~|\||>)/.test(L[j])&&!(j>i&&isList.test(L[j])))j++;
+    if(j===i)j=i+1;
+    out.push("<p"+A(i,j-1)+">"+inline(L.slice(i,j).join(" "))+"</p>");i=j;
+  }
+  return out.join("\n");
+}
+
+/* ---- the doc ---- */
+function openDoc(path){
+  if(S.items.length&&S.doc&&path!==S.doc.path&&!confirm("Drop the "+S.items.length+" unsent note(s) on "+S.doc.path+"?"))return;
+  msg("opening "+path+"…");
+  api("/review/doc?path="+encodeURIComponent(path)).then(function(d){
+    S.doc=d;S.items=[];S.svoice=null;resetRec($("srec"));$("summary").value="";closeComposer();
+    $("doc").innerHTML=render(d.text);$("doc").scrollTop=0;
+    $("docbtn").textContent=d.path;$("docbtn").title=d.title+" · "+d.lines+" lines";
+    try{localStorage.setItem("rv.last",d.path)}catch(e){}
+    try{history.replaceState(null,"","?doc="+encodeURIComponent(d.path))}catch(e){}
+    closePick();paint();msg("");
+  }).catch(function(e){msg("could not open "+path+": "+e.message,"bad")});
+}
+function blockOf(node){var e=node.nodeType===1?node:node.parentElement;return e&&e.closest?e.closest("[data-l0]"):null}
+function offsetIn(block,node,off){var r=document.createRange();r.selectNodeContents(block);r.setEnd(node,off);return r.toString().length}
+
+/* ---- selection -> toolbar -> composer ---- */
+function selInfo(){
+  var sel=window.getSelection();if(!sel||sel.isCollapsed||!sel.rangeCount)return null;
+  var r=sel.getRangeAt(0);if(!$("doc").contains(r.commonAncestorContainer))return null;
+  var q=sel.toString();if(!q.trim())return null;
+  var b0=blockOf(r.startContainer),b1=blockOf(r.endContainer);if(!b0||!b1)return null;
+  var t0=b0.textContent,t1=b1.textContent,o0=offsetIn(b0,r.startContainer,r.startOffset),o1=offsetIn(b1,r.endContainer,r.endOffset);
+  return{range:r.cloneRange(),quote:q,line:[+b0.dataset.l0,Math.max(+b0.dataset.l1,+b1.dataset.l1)],
+    prefix:t0.slice(Math.max(0,o0-40),o0),suffix:t1.slice(o1,o1+40)};
+}
+document.addEventListener("mouseup",function(e){
+  if($("tb").contains(e.target))return;
+  setTimeout(function(){var s=selInfo();var tb=$("tb");
+    if(!s){tb.classList.remove("on");return}
+    S.pending=s;var rc=s.range.getBoundingClientRect();
+    tb.style.left=Math.max(6,Math.min(innerWidth-190,rc.left))+"px";tb.style.top=Math.max(50,rc.top-38)+"px";tb.classList.add("on");
+  },0);
+});
+$("tb").addEventListener("mousedown",function(e){e.preventDefault()});
+$("tb").addEventListener("click",function(e){var k=e.target.dataset.k;if(k&&S.pending)startComposer(k)});
+function startComposer(kind){
+  $("tb").classList.remove("on");var p=S.pending;if(!p)return;
+  S.comp=p;$("composer").hidden=false;$("cq").textContent=p.quote;
+  $("cl").textContent="line "+(p.line[0]===p.line[1]?p.line[0]:p.line[0]+"-"+p.line[1]);
+  $("crep").value=p.quote;$("ctext").value="";S.cvoice=null;resetRec($("crec"));setKind(kind);
+  setActive(p.range);(kind==="suggestion"?$("crep"):$("ctext")).focus();
+}
+function setKind(k){S.ckind=k;$("repwrap").hidden=k!=="suggestion";
+  Array.prototype.forEach.call(document.querySelectorAll(".kinds button"),function(b){b.classList.toggle("on",b.dataset.k===k)})}
+Array.prototype.forEach.call(document.querySelectorAll(".kinds button"),function(b){b.onclick=function(){setKind(b.dataset.k)}});
+function closeComposer(){$("composer").hidden=true;S.comp=null;stopRec();setActive(null)}
+$("ccancel").onclick=closeComposer;
+$("csave").onclick=saveItem;
+$("composer").addEventListener("keydown",function(e){if(e.key==="Enter"&&(e.ctrlKey||e.metaKey)){e.preventDefault();saveItem()}});
+function saveItem(){
+  var p=S.comp;if(!p)return;stopRec();
+  var it={id:++S.seq,kind:S.ckind,quote:p.quote,line:p.line,prefix:p.prefix,suffix:p.suffix,range:p.range,
+    text:$("ctext").value.trim(),replace:S.ckind==="suggestion"?$("crep").value:undefined,voice:S.cvoice};
+  if(!it.text&&!it.voice&&!(it.kind==="suggestion"&&it.replace!==it.quote)){msg("add a note, a voice note, or a change first","bad");return}
+  S.items.push(it);S.cvoice=null;closeComposer();window.getSelection().removeAllRanges();paint();msg("");
+}
+
+/* ---- the notes list + the highlights ---- */
+function paint(){
+  var c=0,s=0,v=0;S.items.forEach(function(x){x.kind==="comment"?c++:s++;if(x.voice)v++});if(S.svoice)v++;
+  $("counts").textContent=S.doc?(c+" comment(s) · "+s+" suggestion(s) · "+v+" voice note(s)"):"";
+  $("send").disabled=!S.doc||!(S.items.length||$("summary").value.trim()||S.svoice);
+  var box=$("items");
+  if(!S.items.length){box.innerHTML='<div class="hint">Highlight text in the doc, then Comment (C) or Suggest (S).</div>'}
+  else box.innerHTML=S.items.map(function(x){
+    return '<div class="item" data-id="'+x.id+'"><button class="x" title="Delete">×</button>'+
+      '<div class="k '+(x.kind==="comment"?"c":"s")+'">'+(x.kind==="comment"?"COMMENT":"SUGGEST")+' · line '+x.line[0]+(x.voice?" · voice":"")+'</div>'+
+      '<div class="q">'+esc(x.quote.replace(/\s+/g," "))+'</div>'+
+      (x.kind==="suggestion"?'<div class="r">→ '+esc(x.replace)+'</div>':"")+
+      (x.text?'<div class="t">'+esc(x.text)+'</div>':"")+
+      (x.voice?'<audio controls preload="none" src="'+x.voice.url+'"></audio>':"")+'</div>'}).join("");
+  if(HL){try{
+    CSS.highlights.set("rv-comment",new Highlight(...S.items.filter(function(x){return x.kind==="comment"}).map(function(x){return x.range})));
+    CSS.highlights.set("rv-suggest",new Highlight(...S.items.filter(function(x){return x.kind==="suggestion"}).map(function(x){return x.range})));
+  }catch(e){}}
+}
+function setActive(r){if(HL){try{r?CSS.highlights.set("rv-active",new Highlight(r)):CSS.highlights.delete("rv-active")}catch(e){}}}
+$("items").addEventListener("click",function(e){
+  var card=e.target.closest(".item");if(!card)return;var id=+card.dataset.id;
+  if(e.target.classList.contains("x")){S.items=S.items.filter(function(x){return x.id!==id});setActive(null);paint();return}
+  if(e.target.tagName==="AUDIO")return;
+  var it=S.items.find(function(x){return x.id===id});if(!it)return;
+  var el=it.range.startContainer;el=el.nodeType===1?el:el.parentElement;el.scrollIntoView({block:"center",behavior:"smooth"});
+  setActive(it.range);setTimeout(function(){setActive(null)},1400);
+});
+$("summary").addEventListener("input",paint);
+
+/* ---- voice notes: MediaRecorder, one per note + one overall ---- */
+var REC=null;
+function resetRec(box){box.classList.remove("live");box.querySelector("[data-act]").textContent="Record voice";
+  box.querySelector("[data-t]").textContent="";var a=box.querySelector("audio");if(a)a.remove();box._voice=null}
+function stopRec(){if(REC&&REC.mr.state!=="inactive")REC.mr.stop()}
+function bindRec(box,setter){
+  box.querySelector("[data-act]").onclick=function(){
+    if(REC&&REC.box===box){stopRec();return}
+    if(REC){stopRec()}
+    if(!navigator.mediaDevices||!window.MediaRecorder){msg("this window has no microphone access (MediaRecorder missing)","bad");return}
+    navigator.mediaDevices.getUserMedia({audio:true}).then(function(stream){
+      var mime=["audio/webm;codecs=opus","audio/webm","audio/ogg;codecs=opus","audio/mp4"].find(function(m){return MediaRecorder.isTypeSupported(m)})||"";
+      var mr=new MediaRecorder(stream,mime?{mimeType:mime}:{}),chunks=[],t0=Date.now();
+      REC={mr:mr,box:box};box.classList.add("live");box.querySelector("[data-act]").textContent="Stop";
+      var tick=setInterval(function(){box.querySelector("[data-t]").textContent="● "+((Date.now()-t0)/1000).toFixed(0)+"s"},250);
+      mr.ondataavailable=function(e){if(e.data&&e.data.size)chunks.push(e.data)};
+      mr.onstop=function(){clearInterval(tick);stream.getTracks().forEach(function(t){t.stop()});REC=null;
+        var blob=new Blob(chunks,{type:(mr.mimeType||mime||"audio/webm").split(";")[0]});
+        var v={blob:blob,url:URL.createObjectURL(blob),secs:Math.round((Date.now()-t0)/1000)};
+        box.classList.remove("live");box.querySelector("[data-act]").textContent="Re-record";
+        box.querySelector("[data-t]").textContent=v.secs+"s · "+Math.round(blob.size/1024)+" KB";
+        var a=box.querySelector("audio")||box.appendChild(document.createElement("audio"));a.controls=true;a.src=v.url;
+        setter(v);paint();};
+      mr.start(500);
+    }).catch(function(e){msg("microphone: "+e.message+" (allow the mic for 127.0.0.1:8795)","bad")});
+  };
+}
+bindRec($("crec"),function(v){S.cvoice=v});
+bindRec($("srec"),function(v){S.svoice=v});
+
+/* ---- send ---- */
+function b64(v){if(!v)return Promise.resolve(null);return new Promise(function(res,rej){var fr=new FileReader();
+  fr.onload=function(){res({mime:v.blob.type||"audio/webm",data:String(fr.result).split(",")[1]||""})};fr.onerror=rej;fr.readAsDataURL(v.blob)})}
+$("send").onclick=function(){
+  if(!S.doc)return;stopRec();$("send").disabled=true;msg("sending…");
+  Promise.all([b64(S.svoice)].concat(S.items.map(function(x){return b64(x.voice)}))).then(function(au){
+    var body={doc:S.doc.path,sha1:S.doc.sha1,summary:$("summary").value,voice:au[0],
+      items:S.items.map(function(x,i){return{kind:x.kind,quote:x.quote,line:x.line,prefix:x.prefix,suffix:x.suffix,text:x.text,replace:x.replace,voice:au[i+1]}})};
+    return api("/review/send",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});
+  }).then(function(r){
+    S.items=[];S.svoice=null;resetRec($("srec"));$("summary").value="";paint();
+    msg("Sent · "+r.dir+" · tell Claude: review "+r.id+(r.errors&&r.errors.length?" · "+r.errors.join("; "):""),"ok");
+  }).catch(function(e){paint();msg("send failed: "+e.message,"bad")});
+};
+window.addEventListener("beforeunload",function(e){if(S.items.length){e.preventDefault();e.returnValue=""}});
+
+/* ---- the picker ---- */
+function openPick(){$("pick").classList.add("on");$("pf").value="";S.psel=0;listPick();$("pf").focus();
+  if(!S.docs.length)api("/review/docs").then(function(d){S.docs=d.docs;listPick()}).catch(function(e){msg("doc list: "+e.message,"bad")});
+  api("/review/list").then(function(d){var rs=(d.reviews||[]).slice(0,6);
+    $("recent").innerHTML=rs.length?"Sent reviews: "+rs.map(function(r){return esc(r.id)+" ("+r.status+")"}).join(" · "):""}).catch(function(){});
+}
+function closePick(){$("pick").classList.remove("on")}
+function matches(){var f=$("pf").value.trim().toLowerCase();
+  return S.docs.filter(function(d){return!f||(d.path+" "+d.title).toLowerCase().indexOf(f)>=0}).slice(0,250)}
+function listPick(){var ms=matches(),g="",h=[];
+  if(!S.docs.length){$("plist").innerHTML='<div class="hint">loading…</div>';return}
+  S.psel=Math.min(S.psel,Math.max(0,ms.length-1));
+  ms.forEach(function(d,i){if(d.group!==g){g=d.group;h.push('<div class="g">'+({trunk:"THE TRUNK",root:"ROOT DOCS",canon:"_CANON"}[g]||g)+"</div>")}
+    h.push('<a data-p="'+esc(d.path)+'"'+(i===S.psel?' class="sel"':"")+">"+esc(d.title)+"<span>"+esc(d.path)+"</span></a>")});
+  $("plist").innerHTML=h.join("")||'<div class="hint">no match · press Enter to open the path as typed</div>';
+}
+$("pf").addEventListener("input",function(){S.psel=0;listPick()});
+$("pf").addEventListener("keydown",function(e){var ms=matches();
+  if(e.key==="ArrowDown"){S.psel=Math.min(ms.length-1,S.psel+1);listPick();e.preventDefault()}
+  else if(e.key==="ArrowUp"){S.psel=Math.max(0,S.psel-1);listPick();e.preventDefault()}
+  else if(e.key==="Enter"){var v=$("pf").value.trim();openDoc(/\.md$/i.test(v)&&!ms.some(function(d){return d.path===v})?v:(ms[S.psel]||{}).path||v)}
+  else if(e.key==="Escape"&&S.doc)closePick()});
+$("plist").addEventListener("click",function(e){var a=e.target.closest("a");if(a)openDoc(a.dataset.p)});
+$("docbtn").onclick=openPick;
+document.addEventListener("keydown",function(e){
+  if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==="o"){e.preventDefault();openPick();return}
+  var typing=/INPUT|TEXTAREA/.test((document.activeElement||{}).tagName);
+  if(!typing&&$("tb").classList.contains("on")&&(e.key==="c"||e.key==="s")){e.preventDefault();startComposer(e.key==="c"?"comment":"suggestion")}
+  if(e.key==="Escape"&&!$("composer").hidden&&!typing)closeComposer();
+});
+
+/* ---- start: ?doc=, else the last doc, else the picker ---- */
+var start=new URLSearchParams(location.search).get("doc");
+if(!start){try{start=localStorage.getItem("rv.last")}catch(e){}}
+if(start)openDoc(start);else openPick();
+paint();
+})();
+</script>
+</body></html>
