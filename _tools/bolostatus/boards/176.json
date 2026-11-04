@@ -1,0 +1,425 @@
+{
+ "bolo": {
+  "n": 176,
+  "title": "LEECHSEED, DISTILLED AND NAMED: the character system read whole, a formal name plus a code name, and the way forward",
+  "trunk": "BLACK",
+  "issued": "2026-11-04",
+  "asof": "2026-11-04",
+  "s": "open",
+  "status": "🟡 **Distill and names done 11/4** · the official name is LEECHSEED · the way forward waits on Chief's ruling.",
+  "decider": "HOTLINE ACTUAL",
+  "feeds": "BOLO 100 · 102 · 173 · 113 · 142 · 174",
+  "related": [
+   {
+    "n": 100,
+    "why": "BOLO 100 closed the character system on 10/4. It also parks the Victoria Midnight fill pass to phase 2."
+   },
+   {
+    "n": 102,
+    "why": "BOLO 102 holds the interface catalog. Sixteen character rows wait unruled for fabula phase 2."
+   },
+   {
+    "n": 173,
+    "why": "BOLO 173 built the EUROPATCH bay. It runs LEECHSEED's twelve layers as twelve modules."
+   },
+   {
+    "n": 113,
+    "why": "BOLO 113 writes the actress reference cards. They feed the LOOK module, but no character field points back."
+   },
+   {
+    "n": 142,
+    "why": "BOLO 142 is the parked character MUD. It would write the data block, one room per layer."
+   },
+   {
+    "n": 174,
+    "why": "BOLO 174 holds Wilber's quadrants. It waits on Chief's PDFs in Zotero."
+   }
+  ],
+  "home": "BOLO.md · row 176",
+  "card": "none",
+  "version": "v0.1 · DOPE SHEET"
+ },
+ "mantra": [
+  {
+   "k": "speed",
+   "w": "Speed",
+   "line": "The distill is done. The names are final. The next step is one consistency batch."
+  },
+  {
+   "k": "focus",
+   "w": "Focus",
+   "line": "One system, twelve layers. Fix the seven contradictions before any new build."
+  },
+  {
+   "k": "boldness",
+   "w": "Boldness",
+   "line": "Chief can open the patch bay and load Tori's values. The roll must reproduce her statistics."
+  }
+ ],
+ "paragraphs": [
+  {
+   "id": "S",
+   "name": "Situation",
+   "kind": "list",
+   "plain": "Where this came from: what Chief said, what already exists, and what the record shows now.",
+   "strand": {
+    "last": "Chief closed the character system on 10/4 under BOLO 100. Nothing in its folder has changed since 10/12.",
+    "plan": "Claude reads the whole system once, names it, and gives Chief the ways forward.",
+    "you": "You asked for the distill on 11/4. You ruled the official name LEECHSEED and the code name SISWET.",
+    "next": "You rule one of the three ways forward. Claude then starts its first step."
+   },
+   "groups": [
+    {
+     "label": "The transmission · verbatim",
+     "items": [
+      {
+       "t": "\"what i want though is the distill on our character system … name the system and give it a code name that i will use. formal name and code name … give me the dope sheet on it and give me your analysis suggestions ways forward and important things that i need to remember\"",
+       "s": "done",
+       "when": "11/4"
+      },
+      {
+       "t": "Chief ruled: \"LEECHSEED is the official name\". The spoken code name is SISWET. Written docs keep LEECHSEED.",
+       "s": "done",
+       "when": "11/4"
+      }
+     ]
+    },
+    {
+     "label": "What exists already",
+     "items": [
+      {
+       "t": "LEECHSEED stores a character in twelve layers, L1 CORE to L12 FUNCTION. Chief ruled the name on 10/5, replacing \"12-layer\".",
+       "s": "done"
+      },
+      {
+       "t": "Three tiers set the depth. Tier 1 covers L1-L3, Tier 2 covers L4-L6, and Tier 3 covers L7-L12 for leads.",
+       "s": "done"
+      },
+      {
+       "t": "The script computes seven statistics and five flags from the layers. It writes one Structured Data Block per character.",
+       "s": "done"
+      },
+      {
+       "t": "State diffs change the record over story time. A diff records what differs at one fabula event.",
+       "s": "done"
+      },
+      {
+       "t": "The sources sit in `ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/`. That folder holds 12 docs, about 380 KB.",
+       "s": "done"
+      },
+      {
+       "t": "The EUROPATCH bay holds the twelve layers as twelve modules, with 41 dials and 6 archetype presets. Claude built v1 on 10/31.",
+       "s": "done"
+      },
+      {
+       "t": "Two scripts exist in `_tools/leechseed/`. `heritage.py` rolls heritage and `continuity_check.py` checks drafts against canon.",
+       "s": "done"
+      },
+      {
+       "t": "The interface catalog lists 149 character rows. 130 are built, 16 are parked, and 3 are proposed.",
+       "s": "done"
+      }
+     ]
+    },
+    {
+     "label": "What the record says",
+     "items": [
+      {
+       "t": "Only one character has gone through the pipeline. Victoria \"Tori\" Midnight has 58 of her 126 block keys parked as the VM fill pass.",
+       "s": "open"
+      },
+      {
+       "t": "Anna Colson Conway has a canon node and a record stub only. No other cast member has a slice.",
+       "s": "open"
+      },
+      {
+       "t": "Seven contradictions sit between the docs. Truth Exposure Index uses two formulas, and three number scales compete.",
+       "s": "open"
+      },
+      {
+       "t": "Eight planned field modules stand unbuilt. The layer L2b MORPHOLOGY has no home in the module registry.",
+       "s": "open"
+      },
+      {
+       "t": "Four stale status lines remain in the spine, LOOK, state architecture, and eros synthesis. A script can refresh them.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "M",
+   "name": "Mission",
+   "kind": "mission",
+   "plain": "A mission is a task plus the reason for it. This one's reason: the character system is designed but proven on one character only.",
+   "strand": {
+    "last": "Claude read all twelve character docs on 11/4 and wrote the distill.",
+    "plan": "Claude closes the seams first, then fills Tori's record, then builds Anna as the second proof.",
+    "you": "You named the system on 11/4: LEECHSEED officially, SISWET out loud.",
+    "next": "You say go, and Claude runs one cleanup pass on the contradictions."
+   },
+   "task": "Read LEECHSEED whole, name it, and close the gaps between its docs,",
+   "intent": "in order to make the character system trusted enough to build the whole cast on.",
+   "spoken": "\"what i want though is the distill on our character system … name the system and give it a code name that i will use. formal name and code name … give me the dope sheet on it and give me your analysis suggestions ways forward and important things that i need to remember\"",
+   "endstate": [
+    "The system carries one official name, LEECHSEED, and one spoken code name.",
+    "Every score has one formula, and every stat names its scale.",
+    "Tori's record is full and passes the system's own checks.",
+    "Anna runs through the pipeline as the second proof."
+   ]
+  },
+  {
+   "id": "E",
+   "name": "Execution",
+   "kind": "phases",
+   "plain": "What happened between the order and today, and what is left to do.",
+   "strand": {
+    "last": "Claude finished the distill and Chief ruled the names on 11/4.",
+    "plan": "Claude fixes the seams in one batch, then runs the Tori fill pass, then builds Anna's slice.",
+    "you": "You pick one of three ways forward. Claude's rec is the first.",
+    "next": "You rule. Claude briefs one writer and one script check for the consistency batch."
+   },
+   "main_effort": "Close the seven contradictions and the ruled-but-never-applied list in one batch, then prove the system on Tori and Anna.",
+   "phases": [
+    {
+     "n": 0,
+     "t": "**System closed.** Chief closed the character system at 1.0 or above with zero open marks under BOLO 100.",
+     "s": "done",
+     "when": "10/4"
+    },
+    {
+     "n": 1,
+     "t": "**Name ruled.** Chief ruled LEECHSEED as the character system's name, replacing \"12-layer\".",
+     "s": "done",
+     "when": "10/5"
+    },
+    {
+     "n": 2,
+     "t": "**Heritage rolled.** Chief ruled option W1-B, and Claude built `_tools/leechseed/heritage.py` to roll L7 heritage.",
+     "s": "done",
+     "when": "10/12"
+    },
+    {
+     "n": 3,
+     "t": "**Patch bay built.** Claude built EUROPATCH v1 with the twelve layers as modules. It locks after Chief opens it.",
+     "s": "done",
+     "when": "10/31"
+    },
+    {
+     "n": 4,
+     "t": "**Distill and names done.** Claude read the twelve docs and gave naming recs. Chief ruled LEECHSEED official and SISWET the code name.",
+     "s": "done",
+     "when": "11/4"
+    },
+    {
+     "n": 5,
+     "t": "**Dope sheet and ways forward.** Claude drafts this sheet. Chief rules a way forward.",
+     "s": "open",
+     "when": "11/4"
+    },
+    {
+     "n": 6,
+     "t": "**Way 1, close the seams (rec).** One writer fixes the seven contradictions and the ruled-never-applied list. One script checks the result.",
+     "s": "open"
+    },
+    {
+     "n": 7,
+     "t": "**Then the proof.** Claude runs the Tori fill pass, then builds Anna's slice as the second proof.",
+     "s": "open"
+    },
+    {
+     "n": 8,
+     "t": "**Way 2, the patch bay as front door.** Chief opens the bay. Claude loads Tori's values and checks the roll reproduces her statistics.",
+     "s": "open"
+    },
+    {
+     "n": 9,
+     "t": "**Way 3, trim to a core.** A script counts field use. Claude runs it only after way 1, because it risks the rebuild-from-scratch stall.",
+     "s": "open"
+    }
+   ],
+   "coord": [],
+   "running": [],
+   "groups": []
+  },
+  {
+   "id": "A",
+   "name": "Admin & Logistics",
+   "kind": "files",
+   "plain": "Where this row's files live and what it costs.",
+   "strand": {
+    "last": "Claude wrote the distill to `_tools/bolostatus/work/176/distill.md` on 11/4.",
+    "plan": "This sheet goes to `_tools/bolostatus/boards/176.draft.json`. The main line publishes it.",
+    "you": "You spent nothing on this row in the sources.",
+    "next": "The first step adds one consistency batch brief under the BOLO 100 work folder."
+   },
+   "files": [
+    {
+     "path": "BOLO.md",
+     "what": "row 176, the order spoken 11/4",
+     "s": "done"
+    },
+    {
+     "path": "SOP.md",
+     "what": "the §5 naming line, updated 11/4",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/176/distill.md",
+     "what": "the full read of the system",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/176/sources.md",
+     "what": "everything the Command holds on this row",
+     "s": "done"
+    },
+    {
+     "path": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/",
+     "what": "the twelve system docs; the spine title still needs the new name",
+     "s": "open"
+    },
+    {
+     "path": "_tools/europatch/modules/leechseed.json",
+     "what": "the patch bay's twelve layer modules",
+     "s": "done"
+    },
+    {
+     "path": "_tools/leechseed/",
+     "what": "`heritage.py` and `continuity_check.py`",
+     "s": "done"
+    }
+   ],
+   "cost": [
+    {
+     "k": "size",
+     "v": "12 docs in the system folder · about 380 KB"
+    },
+    {
+     "k": "catalog",
+     "v": "149 character interface rows · 130 built · 16 parked · 3 proposed"
+    },
+    {
+     "k": "money",
+     "v": "none spent in the sources"
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "name": "Command & Signal",
+   "kind": "list",
+   "plain": "Who calls what, and what waits on whom.",
+   "strand": {
+    "last": "You ruled both names on 11/4.",
+    "plan": "Claude runs the cleanup; a script checks it.",
+    "you": "You rule the cleanup's go and the formula and scale calls.",
+    "next": "Say go on path 1."
+   },
+   "groups": [
+    {
+     "label": "Who decides",
+     "items": [
+      {
+       "t": "**ACTUAL**: the names, the path forward, and every formula or scale call. **Claude**: the distill, the cleanup pass, the fill pass and Anna's slice.",
+       "s": "held"
+      }
+     ]
+    },
+    {
+     "label": "The gate",
+     "items": [
+      {
+       "t": "**Waiting on go.** Path 1's cleanup pass is ready; nothing else blocks it.",
+       "s": "open"
+      },
+      {
+       "t": "BOLO 100 holds: this is system work, so no pilot writing rides on it.",
+       "s": "ruled"
+      }
+     ]
+    },
+    {
+     "label": "Signal",
+     "items": [
+      {
+       "t": "The eros layer and any ORANGE detail stay generic here; detail lives in `_PRIVATE/`.",
+       "s": "ruled"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "name": "Log",
+   "kind": "log",
+   "plain": "Every transmission on this row, in order.",
+   "strand": {
+    "last": "Chief ruled the final names on 11/4, the newest entry.",
+    "plan": "The next entry lands when Chief rules a way forward.",
+    "you": "You spoke the order and three naming rulings on 11/4.",
+    "next": "Your ruling on the three ways forward."
+   },
+   "entries": [
+    {
+     "when": "11/4",
+     "who": "Chief",
+     "t": "\"what i want though is the distill on our character system … name the system and give it a code name that i will use. formal name and code name … give me the dope sheet on it and give me your analysis suggestions ways forward and important things that i need to remember\""
+    },
+    {
+     "when": "11/4",
+     "who": "Claude",
+     "t": "Claude deployed the distill and gave Chief the naming recs. The DOPE SHEET follows the distill."
+    },
+    {
+     "when": "11/4",
+     "who": "Chief",
+     "t": "Chief ruled a first official name at about 4:10 AM and kept LEECHSEED as the code name. Chief withdrew that ruling later that night."
+    },
+    {
+     "when": "11/4",
+     "who": "Chief",
+     "t": "\"a code name syswet … the syswet system … or leaf seed. Call it one or the other\" — Claude added a garble line to SOP §5."
+    },
+    {
+     "when": "11/4",
+     "who": "Chief",
+     "t": "\"LEECHSEED is the official name\" — the code name is SISWET. Claude updated the row and the SOP §5 line."
+    }
+   ]
+  }
+ ],
+ "frago": {
+  "mission": "Read LEECHSEED whole, name it, and close the gaps between its docs, in order to make the character system trusted enough to build the whole cast on.",
+  "order": "**Say \"go 176\": Claude runs path 1's cleanup pass on the contradictions and the rulings never applied.**",
+  "default": "Silence: the system stays proven on Tori alone, and the docs keep two formulas for one score.",
+  "calls": [
+   {
+    "q": "Truth Exposure formula: 10 minus shame, or 12 minus shame?",
+    "options": "12 minus (rec, the 10/5 batch D fix) · 10 minus",
+    "default": "12 minus (rec)",
+    "s": "open"
+   },
+   {
+    "q": "Which scale does a record store?",
+    "options": "Each stat on its own scale, plus a scale column (rec) · one 0-100 scale for all",
+    "default": "Own scale (rec)",
+    "s": "open"
+   },
+   {
+    "q": "Where does L2b body shape live?",
+    "options": "A field module under L2, beside LOOK (rec) · its own layer",
+    "default": "Module under L2 (rec)",
+    "s": "open"
+   },
+   {
+    "q": "Which path forward?",
+    "options": "1 close the seams, then use it (rec) · 2 the patch bay as the front door · 3 trim to a core",
+    "default": "Path 1 (rec)",
+    "s": "open"
+   }
+  ]
+ }
+}
