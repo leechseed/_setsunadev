@@ -2,9 +2,9 @@
 type: ssot_00_foundations
 category: module_registry
 module_of: ssot_00_module_architecture
-version: 1.3.1
+version: 1.4.0
 tier: foundation
-last_updated: 2026-10-12
+last_updated: 2026-11-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: canonical
 trunk: BLACK
@@ -49,6 +49,7 @@ This is the complete catalog of every field module that attaches to the LEECHSEE
 |`COPING`|Coping Mechanism Catalog|L4 WILL|3|**planned** (narrowed)|2 (was 4)|Yes|Yes|
 |`DECOMP`|Decompensation Profile|L5 WOUND|3|**planned**|4|No|Yes|
 |`PHYS`|Physical Detail|L2 VITAL|3|**planned**|4 (was 6)|No|No|
+|`L2B`|Body Shape (L2b morphology)|L2 VITAL|⏸|**draft** (registered 2026-11-04)|⏸|No|No|
 |`CULTURE`|Cultural Conditioning|L7, L8|3|**conceptual**|⏸|⏸|⏸|
 |`SPIRIT`|Spiritual Framework|L11 DESTINY|3|**conceptual**|⏸|⏸|⏸|
 |`DESIGN`|Design Focus Power Board|Meta|3|**conceptual**|12|Yes|No|
@@ -406,6 +407,14 @@ MODULE_DECLARATION:
 
 ---
 
+### MOD.L2B — Body Shape (L2b morphology)
+
+Registered 2026-11-04 (Chief: go recs path cleanup (BOLO 176)), provisional. L2b is a field module under L2 VITAL, beside LOOK and PHYS. Before this entry it sat outside both the layer table and this registry. It holds body shape as face, build and population signatures. The variable list is ⏸ until the open decisions close.
+
+Nodes: [face](../../../../_CANON_NODES/L2b-morphology-face.md) · [gluteal](../../../../_CANON_NODES/L2b-morphology-gluteal.md) · [population signatures](../../../../_CANON_NODES/L2b-morphology-population-signatures.md). All three are drafts.
+
+Seven decisions stay open, as the population signatures node lists them: a female Column · the override flag as notation · priors as ranges or points · heels and twerk as one population or two · the wellness and override line · the male adult lane · source pulls.
+
 ### Audit of Planned Modules (2026-10-04)
 
 |Module|Slice check|Verdict|
@@ -496,3 +505,4 @@ Build order for maximum independence: WALK → PHYS → COMBAT → FASHION → M
 |1.2.0|2026-10-05|BOLO 102 stage 2 (Chief: "My word"): call 4, the DUALISM variables carry the `Static` or `Dynamic` tag the module architecture now requires.|
 |1.3.1|2026-10-12|LOOK call 6 RULED ("All recommendations"): `MOD.PHYS.body_type` and `MOD.PHYS.age_presentation` move to LOOK layers 1 and 2; `MOD.FASHION.body_display` moves to LOOK wardrobe. PHYS 6 → 4 variables, FASHION 5 → 4.|
 |1.3.0|2026-10-12|BOLO 121 layers (Chief: "All recommendations … Go layers"): MOD.LOOK registered active at 1.0.0, tier 2, L2 VITAL, 16 variables; overview row, Active Modules entry, dependency map. Audit row opened for the LOOK vs PHYS and FASHION overlap (LOOK call 6).|
+|1.4.0|2026-11-04|Chief: go recs path cleanup (BOLO 176): L2b body shape registered as field module `L2B` under L2 VITAL, beside LOOK and PHYS (draft). Overview row and entry added; the seven open decisions stay open.|

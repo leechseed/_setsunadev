@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_astrology_12_layer_mapping.md
-source_version: 1.1.0
+source_version: 1.1.1
 ---
 
 **Who it's for:** a narrative designer looking up a feed or boundary · **What it does:** lists every component of the mapping · **Type:** reference
@@ -254,7 +254,7 @@ The main doc added fields after this doc's 1.0.0. The chart justifies a layer va
 | L7 | `hereditary_predisposition` (2.1.0) | No feed. |
 | L1-L3 | `psychology_stack`, `physiology_stack`, `sociology_stack` (2.1.0) | No feed. The L1-L3 feeds justify numbers, not the Egri checklists. |
 
-Fields added in 2.2.0 to 2.4.0 follow the L9 and L8 notes above. They come from the L9 synthesis, wave 2 and wave 3 lists.
+Fields added in 2.2.0 to 2.4.0 follow the L9 and L8 notes above. They come from the L9 synthesis, wave 2 and wave 3 lists. Fields added after 3.0.0 have no chart feed unless this doc names them.
 
 ## Tier 2 Charts
 

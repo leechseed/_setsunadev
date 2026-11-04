@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_astrology.md
-source_version: 1.1.1
+source_version: 1.1.2
 ---
 
 **Who it's for:** a writer or builder asking why the character system carries a chart · **What it does:** explains why Character Astrology exists and where it stops · **Type:** concept
@@ -59,7 +59,7 @@ Nine categories pass the first test and form the static chart. Six pass the seco
 
 ## Chart depth follows the tier of the character
 
-Not every character needs a full chart. A Tier 3 character gets full chart generation. A Tier 2 character gets a partial chart: Sun, Moon and one or two defining aspects. A Tier 1 character gets none. A partial chart with the seven core placements is enough to fill layers 1 through 11. The outer planets and the advanced configurations arrive as development continues.
+Not every character needs a full chart. A Tier 3 character gets full chart generation. A Tier 2 character gets a partial chart: Sun, Moon and one defining aspect. A Tier 1 character gets none. A partial chart with the seven core placements is enough to fill layers 1 through 11. The outer planets and the advanced configurations arrive as development continues.
 
 ## The chart sits in the middle of a pipeline and feeds the 12 layers
 

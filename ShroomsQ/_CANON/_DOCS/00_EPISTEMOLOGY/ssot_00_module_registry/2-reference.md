@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_registry.md"
-source_version: "1.2.0"
+source_version: 1.4.0
 ---
 
 **Who it's for:** a designer looking up a field module · **What it does:** lists every module declaration, variable and status · **Type:** reference
@@ -53,6 +53,7 @@ All modules use tier 3. All declarations use `tier_min: 3`.
 | `COPING` | Coping Mechanism Catalog | L4 WILL | planned (narrowed) | 2 (was 4) | Yes | Yes |
 | `DECOMP` | Decompensation Profile | L5 WOUND | planned | 4 | No | Yes |
 | `PHYS` | Physical Detail | L2 VITAL | planned | 6 | No | No |
+| `L2B` | Body Shape (L2b morphology) | L2 VITAL | draft (registered 2026-11-04) | ⏸ | No | No |
 | `CULTURE` | Cultural Conditioning | L7, L8 | conceptual | parked | parked | parked |
 | `SPIRIT` | Spiritual Framework | L11 DESTINY | conceptual | parked | parked | parked |
 | `DESIGN` | Design Focus Power Board | Meta | conceptual | 12 | Yes | No |

@@ -1,9 +1,9 @@
 ---
 type: ssot_00_epistemology
 category: europatch
-version: 0.1.0
+version: 0.1.1
 tier: foundation
-last_updated: 2026-10-31
+last_updated: 2026-11-04
 reader: "the CDR and the writers, before building or extending any system; Chief, ruling the open calls"
 doc_type: concept
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
@@ -56,7 +56,7 @@ Chief spoke it on 10/31 (BOLO 173):
 
 ### The four kinds of dial
 
-1. **Preset.** A type that sets many dials at once. LEECHSEED's tiers already work this way: Tier 1 Flat, Tier 2 Standard, Tier 3 Deep.
+1. **Preset.** A type that sets many dials at once. The bay's six presets are archetypes. LEECHSEED's tiers (Tier 1 Flat, Tier 2 Standard, Tier 3 Deep) are depth levels, not presets.
 2. **Slider.** A value from 0 to 100, with a window. The seed rolls inside the window. A narrow window means the result is nearly fixed. A wide window means the seed decides more.
 3. **Weighted list.** A pick-list where each choice has a weight. The seed draws from it. Heavier choices come up more often.
 4. **Stacked.** The dials apply in a fixed order: the preset sets them, Chief nudges any one of them, the cables bend them, then the seed rolls.
@@ -95,7 +95,7 @@ Most of EUROPATCH is already in the Command, in pieces. Each system below gives 
 
 | System | What it already gives | What it lacks |
 |---|---|---|
-| **LEECHSEED** ([02 vertical slice](../02_CHARACTER_SYSTEMS/📐%20ssot_02_character_systems_vertical_slice.md), v3.4.2) | The first module set, L1–L12. The tiers are presets. The **derived statistics** are hard-wired cables (Stress Threshold is `WILL - WOUND`). The **structured data block**, "the database seed record", is the output's ancestor. | Values are entered, not rolled: no windows, weights or seed. Its formulas are fixed, with no strength to turn. |
+| **LEECHSEED** ([02 vertical slice](../02_CHARACTER_SYSTEMS/📐%20ssot_02_character_systems_vertical_slice.md), v3.5.0) | The first module set, L1–L12. The tiers are depth levels, not presets; the bay's six presets are archetypes. The **derived statistics** are hard-wired cables (Stress Threshold is `WILL - WOUND`). The **structured data block**, "the database seed record", is the output's ancestor. | Values are entered, not rolled: no windows, weights or seed. Its formulas are fixed, with no strength to turn. |
 | **Field modules** ([00 module architecture](📐%20ssot_00_module_architecture.md), v1.1.1) | "The 12 layers do not change. Modules attach beneath them." A field module becomes extra dials on its layer's module. | No cables beyond its read list. |
 | **The lens** ([05 worldbuilding](../05_WORLDBUILDING_SYSTEMS/📐%20ssot_05_worldbuilding_system.md), v1.2.0, BOLO 93) | A perspective asked across every system. The catalog holds shared things (groups, styles, customs) to draw from. | A lens is ruled to own no data, only questions (SOP §5). It needs dials to sit in a patch (open call 3). |
 | **The setting slice** ([03 setting](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md), v1.11.1) | The second module set, S1 BODY to S12 FUNCTION, mirroring L1–L12. Axis 1 SCALE runs spot to cosmos. **The polder test** is a ready sub-patch: the ring (S1), the keepers (S4), the flood (S11), the inside law (S4). | No windows, weights or seed. The polder test asks; it does not roll. |
@@ -140,7 +140,7 @@ A **reflective moment** is a quiet beat where the place states its argument with
 
 **Parents bend children.** A region's S2 climate band can cable into the S2 dial of every place inside it. Each child still rolls its own seed, so the blocks differ but share a climate.
 
-**One character to a cast.** Roll one character patch with ten seeds for ten people with the same characteristics. The Hierarchy Rule holds: background people take the Tier 1 preset, leads take Tier 3.
+**One character to a cast.** Roll one character patch with ten seeds for ten people with the same characteristics. The Hierarchy Rule holds: background people take Tier 1 depth, leads take Tier 3.
 
 **A place rolls its people.** This is the second patch (brief, decision 3). The place patch cables into the character patch, for example S6 ECONOMY into L7 ORIGIN, S8 HABIT into L3 SOCIAL, S4 LAW into L4 WILL. One place dial sets how many people to roll. One jack of this kind already exists: S8's tier `price` names a `witness`, a `character_id` (IF catalog call 5). The first build decides the real cable set.
 
@@ -165,7 +165,7 @@ Eurorack works because every module speaks the same voltage. **The shared standa
 
 1. **Layer ids.** A module is named by a key the Command already uses: L1–L12, S1–S12, G1–G12, and the other keys the trope register lists.
 2. **Jack names.** `<module>.in.<dial>` and `<module>.out.<value>`. A jack that matches a DATA interface carries its IF id.
-3. **One value range on the cable.** Every cable carries 0 to 1. Each jack declares its own native range (0–100, LEECHSEED's 0–12 scales, a list) and converts at the jack.
+3. **One value range on the cable.** Every cable carries 0 to 1. Each jack declares its own native range (0–100, LEECHSEED's native scales per the spine's scale column, a list) and converts at the jack. The bay's 0–100 sliders are a display of the normalized value. LEECHSEED's canonical store is normalized 0–1 (RULED 2026-11-04, BOLO 176, a design rule that is not built yet).
 4. **One address.** Anything placed in time carries the 08 time code, the one address in every system (08 §4A).
 5. **One file format.** Patches, presets and instances are plain JSON in the shape above.
 
@@ -209,3 +209,4 @@ Each call has a rec. All are provisional until Chief rules.
 ## Version history
 
 - **0.1.0 — 2026-10-31.** PROVISIONAL. First write, from the locked brief (BOLO 173, Chief: "lock it and run what you need"). Parts, mapping, the two patterns, scaling, kin, the shared standard, eight open calls.
+- **0.1.1 — 2026-11-04.** Chief: go recs path cleanup (BOLO 176), and Chief: go (normalized store, BOLO 176). Tiers are depth levels, not presets; the bay's presets are archetypes. Shared standard notes the normalized store (ruled, not built) and the scale column.

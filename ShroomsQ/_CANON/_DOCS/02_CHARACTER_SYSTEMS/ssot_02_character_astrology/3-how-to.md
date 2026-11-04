@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_astrology.md
-source_version: 1.1.1
+source_version: 1.1.2
 ---
 
 **Who it's for:** a writer building or checking a chart · **What it does:** numbered steps for each chart task · **Type:** how-to
@@ -22,7 +22,7 @@ Lookup tables: [reference](2-reference.md). Why the rules exist: [concept](1-con
 
 1. Find the character's tier.
 2. For Tier 3, plan a full chart.
-3. For Tier 2, plan a partial chart: Sun, Moon and one or two defining aspects, from the element signature.
+3. For Tier 2, plan a partial chart: Sun, Moon and one defining aspect, from the element signature.
 4. For Tier 1, write no chart.
 5. For a partial chart that must still feed L1-L11, assign the seven core placements. The seven are Sun, Moon, Mercury, Venus, Mars, Saturn, Ascendant.
 6. Leave Jupiter, Uranus, Neptune, Pluto, progressions and transits for later.

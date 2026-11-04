@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_interface_catalog.md"
-source_version: 0.2.0
+source_version: 0.2.1
 ---
 
 **Who it's for:** the CDR, the writers and Chief. They want to understand why the Command keeps a map of where its ten systems touch · **What it does:** explains what an interface is and why the catalog records both sides. It shows how the findings and the ten design calls close the gaps · **Type:** concept

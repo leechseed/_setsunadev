@@ -1,11 +1,11 @@
 ---
 type: ssot_synthesis
 category: character_systems
-version: 1.1.0
+version: 1.1.1
 tier: fabula
-last_updated: 2026-10-05
+last_updated: 2026-11-04
 applies_to: [OVEREXITOUT]
-status: "v1.0.0 2026-10-04: RULED, Chief — BOLO 100 C20: stamped the L9 EROS module of the character system. RULED 2026-09-29 — all ten applied in the character system v2.2.0"
+status: "v1.1.1 2026-11-04: Chief: go recs path cleanup (BOLO 176). Section 6 marks three questions the schema pass settled. v1.1.0 2026-10-05: the venue_comfort_and_practice merge noted. Earlier versions: see Version history."
 purpose: One synthesis pass (Chief RULED 2026-09-29, "Rex") reading the 9/29 sexuality distill shelf — MSX.18 through MSX.36, PSY.08 through PSY.13 — against L9 EROS for the first time. All ten PROPOSED CHANGES below are RULED and APPLIED in [ssot_02_character_systems_vertical_slice.md](📐%20ssot_02_character_systems_vertical_slice.md) v2.2.0; this document stands as the derivation record.
 dependencies:
   - "📐 ssot_02_character_systems_vertical_slice.md"
@@ -135,11 +135,11 @@ Numbered, at most ten, each a concrete rule change with cites and a one-line rec
 
 ## 6. Open questions
 
-- **`polarity_role` (MSX.32) has no home yet.** It reads as an L9 field (active/receptive as a tradeable role) but overlaps L6 `drive_texture`'s dominant/submissive default in MSX.21 and MSX.22. Needs a ruling on which layer owns role-as-behavior versus role-as-arousal-source (echoing MSX.22's own Top/Dominant/Sadist axis split, proposal #3 above under a different name).
-- **`practice_repertoire` and `scene_vocabulary` (MSX.21, MSX.35) may be one field, not two.** Both name a concrete-acts-and-dialogue vocabulary; whether they merge or stay separate (technique versus register) is unresolved here.
+- **SETTLED (schema pass, 2.5.0): `polarity_role` (MSX.32) has an L9 home.** Before: it had no home yet. It reads as an L9 field (active/receptive as a tradeable role) but overlaps L6 `drive_texture`'s dominant/submissive default in MSX.21 and MSX.22. Needs a ruling on which layer owns role-as-behavior versus role-as-arousal-source (echoing MSX.22's own Top/Dominant/Sadist axis split, proposal #3 above under a different name).
+- **SETTLED (schema pass, 2.5.0): `scene_vocabulary` is dropped in the alias table, so the two do not merge.** Before: `practice_repertoire` and `scene_vocabulary` (MSX.21, MSX.35) might be one field, not two. Both name a concrete-acts-and-dialogue vocabulary; whether they merge or stay separate (technique versus register) is unresolved here.
 - **Foucault's claim (MSX.36) is structurally different from the other 24 distills.** Every other source treats `shame_index` as a value to score; Foucault argues the naming event that produces a sexual identity is itself a power mechanism, prior to any scoring. This may mean `shame_index`/`shadow_content` need an origin-event field, not just a number — closer to proposal #10 than to proposal #5, and possibly the same open item.
 - **No source in this wave addresses lesbian or WLW-specific desire architecture.** The whole shelf is gay/bi/queer male plus mixed-gender academic and clinical sources; L9's only AUTHORED instance (Victoria Midnight) is a woman, but the wave that was supposed to fill her "orientation and partners" gap skews male. Whether that gap is now closed, widened, or simply relocated is a call for Chief, not this synthesis. **RULED 2026-09-29:** logged to the acquisition list as a shelf gap — the whole-spectrum sexuality library sweep already running covers it; no new acquisition action fired by this synthesis alone.
-- **`venue_comfort_and_practice` (three sources: MSX.20, MSX.29, PSY.12) sits ambiguously between L7 and L9.** All three distills' own `feeds:` blocks split it across both layers. This synthesis followed the majority keying (L9 primary) but the schema owner should confirm which layer actually owns "comfort in a sexualized space." Not ruled this pass — `venue_comfort_and_practice` was not among the ten applied changes. **Update 1.1.0 (IF catalog call 3, ruled 2026-10-05, IF-02-03-07):** the schema pass merged this field into `community_membership` (L3). That field now takes `catalog_ref`, a pointer to the 05 catalog entry for the room or venue.
+- **`venue_comfort_and_practice` (three sources: MSX.20, MSX.29, PSY.12) sits ambiguously between L7 and L9.** All three distills' own `feeds:` blocks split it across both layers. This synthesis followed the majority keying (L9 primary) but the schema owner should confirm which layer actually owns "comfort in a sexualized space." Not ruled in the ten applied changes. SETTLED by the schema pass: the field merged into `community_membership`. **Update 1.1.0 (IF catalog call 3, ruled 2026-10-05, IF-02-03-07):** the schema pass merged this field into `community_membership` (L3). That field now takes `catalog_ref`, a pointer to the 05 catalog entry for the room or venue.
 
 ## 7. Version history
 
@@ -150,3 +150,4 @@ Numbered, at most ten, each a concrete rule change with cites and a one-line rec
 |1.0.0|2026-10-04|RULED, Chief ("rec", BOLO 100 C20): stamped 1.0.0 as the L9 EROS module of the character system (`module_of` set). Content unchanged; its ten changes have been live since character 2.2.0.|
 |1.0.1|2026-10-05|BOLO 102 batch C (Chief: "all recs"): a Method section added before section 1: the nine-step procedure, Chief orders the pass and rules each change (C60). Content otherwise unchanged.|
 |1.1.0|2026-10-05|BOLO 102 stage 2 (Chief: "My word"): open question on `venue_comfort_and_practice` notes the merge into `community_membership` and its new `catalog_ref`.|
+|1.1.1|2026-11-04|Chief: go recs path cleanup (BOLO 176): section 6 marks the three questions the schema pass settled (`polarity_role` home, `scene_vocabulary` dropped, `venue_comfort_and_practice` merged). No new content.|

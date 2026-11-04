@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_l9_eros_synthesis.md
-source_version: 1.1.0
+source_version: 1.1.1
 ---
 
 **Who it's for:** a writer or schema owner looking up a source, field or change · **What it does:** lists every section of the synthesis · **Type:** reference
@@ -174,11 +174,11 @@ Context for change 8: Victoria's precondition is `control`, internal to her. Sev
 
 Five questions.
 
-1. **`polarity_role` (MSX.32) has no home.** It overlaps L6 `drive_texture`'s dominant/submissive default (MSX.21, MSX.22). A ruling is needed on which layer owns role-as-behavior and which owns role-as-arousal-source.
-2. **`practice_repertoire` and `scene_vocabulary` (MSX.21, MSX.35) may be one field.** Merge or stay separate is unresolved.
+1. **SETTLED (schema pass, 2.5.0): `polarity_role` (MSX.32) has an L9 home.** Before: it had no home. It overlaps L6 `drive_texture`'s dominant/submissive default (MSX.21, MSX.22). A ruling is needed on which layer owns role-as-behavior and which owns role-as-arousal-source.
+2. **SETTLED (schema pass, 2.5.0): `scene_vocabulary` is dropped in the alias table, so the two do not merge.** Before: `practice_repertoire` and `scene_vocabulary` (MSX.21, MSX.35) might be one field. Merge or stay separate is unresolved.
 3. **Foucault's claim (MSX.36) is different in kind.** It may mean `shame_index` and `shadow_content` need an origin-event field. This is close to change 10.
 4. **No source addresses lesbian or WLW-specific desire architecture.** RULED 2026-09-29: logged to the acquisition list. The whole-spectrum sexuality library sweep already running covers it.
-5. **`venue_comfort_and_practice` sits between L7 and L9.** The synthesis followed the majority keying (L9 primary). The schema owner should confirm. It was not among the ten applied changes. Update (1.1.0, IF catalog call 3): the schema pass merged it into `community_membership` (L3). That field now takes `catalog_ref`, a pointer to the 05 catalog entry for the room or venue.
+5. **`venue_comfort_and_practice` sits between L7 and L9.** The synthesis followed the majority keying (L9 primary). The schema owner should confirm. It was not among the ten applied changes. SETTLED by the schema pass: the field merged into `community_membership`. Update (1.1.0, IF catalog call 3): the schema pass merged it into `community_membership` (L3). That field now takes `catalog_ref`, a pointer to the 05 catalog entry for the room or venue.
 
 The history records the open-question count at the time of each version.
 

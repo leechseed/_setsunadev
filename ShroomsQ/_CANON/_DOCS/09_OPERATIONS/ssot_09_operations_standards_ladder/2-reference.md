@@ -90,7 +90,7 @@ The table carries one row per core SSOT doc (IF catalog call 9, ruled 2026-10-05
 | `📐 ssot_01_three_check_pass.md` (01_NARRATIVE_FRAMEWORKS) | handbook | to stamp (BOLO 102 stage 2) |
 | `📐 ssot_01_touchstones_register.md` (01_NARRATIVE_FRAMEWORKS) | standard | to stamp (BOLO 102 stage 2) |
 | `📐 ssot_01_trope_register.md` (01_NARRATIVE_FRAMEWORKS) | standard | to stamp (BOLO 102 stage 2) |
-| `📐 ssot_00_process_illustration_character_pipeline.md` (02_CHARACTER_SYSTEMS) | handbook | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_02_process_illustration_character_pipeline.md` (02_CHARACTER_SYSTEMS) | handbook | to stamp (BOLO 102 stage 2) |
 | `📐 ssot_02_character_astrology.md` (02_CHARACTER_SYSTEMS) | standard | to stamp (BOLO 102 stage 2) |
 | `📐 ssot_02_character_systems_vertical_slice.md` (02_CHARACTER_SYSTEMS) | standard | to stamp (BOLO 102 stage 2) |
 | `📐 ssot_02_l9_eros_synthesis.md` (02_CHARACTER_SYSTEMS) | handbook | to stamp (BOLO 102 stage 2) |

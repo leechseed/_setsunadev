@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md
-source_version: 1.4.0
+source_version: 1.4.1
 ---
 
 **Who it's for:** a narrative designer or writer looking up a field or rule · **What it does:** lists every component of the state architecture · **Type:** reference
@@ -54,7 +54,7 @@ The static character record never changes.
 The main doc's layer table carries a static/dynamic column. This doc reads it. No field ships without the tag.
 
 - Static fields live in the base record. Dynamic fields live in state diffs.
-- Until the column lands in the main doc, the Decision Test breaks ties.
+- The main doc's field-tag table now carries the column. The Decision Test breaks any tie it leaves.
 
 Items outside the layer table:
 

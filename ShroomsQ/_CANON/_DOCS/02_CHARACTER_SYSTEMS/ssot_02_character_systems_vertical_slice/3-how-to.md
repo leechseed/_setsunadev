@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md
-source_version: 3.4.0
+source_version: 3.5.0
 ---
 
 **Who it's for:** a writer or builder building, checking or extending a slice · **What it does:** numbered steps for each task · **Type:** how-to
@@ -77,7 +77,7 @@ Lookups: [reference](2-reference.md). Why: [concept](1-concept.md). A worked pas
 4. Narrative Momentum is `DRIVE + (DESTINY.resistance_index / 2)`.
 5. Stress Threshold is `WILL - WOUND`.
 6. Collapse Risk is `(WOUND + SHADOW.shadow_density) / 2`.
-7. Truth Exposure Index is `SOCIAL + max(0, 10 - EROS.shame_index)`.
+7. Truth Exposure Index is `SOCIAL + max(0, 12 - EROS.shame_index)`.
 8. Expressive Range is `12 - EROS.armor_index`.
 9. Read Truth Exposure Index and Collapse Risk first. They most reliably show whether the numbers cohere.
 

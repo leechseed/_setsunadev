@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md
-source_version: 3.4.0
+source_version: 3.5.0
 ---
 
 **Who it's for:** a newcomer who has never computed a slice · **What it does:** one guided pass through Victoria Midnight's statistics and flags · **Type:** tutorial
@@ -45,16 +45,16 @@ Do each one yourself before you read the answer. Round fractions down.
 3. Narrative Momentum is `DRIVE + (resistance_index / 2)`.
 4. Stress Threshold is `WILL - WOUND`.
 5. Collapse Risk is `(WOUND + shadow_density) / 2`.
-6. Truth Exposure Index is `SOCIAL + max(0, 10 - shame_index)`.
+6. Truth Exposure Index is `SOCIAL + max(0, 12 - shame_index)`.
 7. Expressive Range is `12 - armor_index`.
 
-Answers from the source: 10, 8, 16, 6, 7, 18 and 4.
+Answers from the source: 10, 8, 16, 6, 7, 20 and 4.
 
 Check your fifth. 8 plus 7 is 15, and half of 15 rounds down to 7. The source's table writes `(8 + 7) / 2` and shows 7.
 
 ## Step 3. Read the one that matters
 
-Truth Exposure Index is 18. Above 15, the character cannot manage their own signal visibility. The source says this is why the Ban acts on her. She carries low shame and average social masking, so the system reads her completely.
+Truth Exposure Index is 20. Above 15, the character cannot manage their own signal visibility. The source says this is why the Ban acts on her. She carries low shame and average social masking, so the system reads her completely.
 
 Say it back in one sentence: why does a low `shame_index` raise her exposure?
 

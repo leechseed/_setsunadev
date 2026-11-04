@@ -1,10 +1,10 @@
 ---
-type: ssot_00_foundations
+type: ssot_02_character_systems
 category: process_illustration
 module_of: ssot_02_character_systems_vertical_slice
-version: 1.1.0
+version: 1.2.0
 tier: operations
-last_updated: 2026-10-05
+last_updated: 2026-11-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: canonical
 trunk: BLACK
@@ -36,7 +36,7 @@ This document shows how data moves through the LEECHSEED character pipeline. Eac
 
 Read this document when you need to answer: "What do I do next?" at any point in the character development process.
 
-This is a worked example of the 02 pipeline. The method lives in the slice ([📐 ssot_02_character_systems_vertical_slice.md](../02_CHARACTER_SYSTEMS/📐%20ssot_02_character_systems_vertical_slice.md), 3.3.1) and in its doc modules. Where the two disagree, the module wins. The doc modules this page points to:
+This is a worked example of the 02 pipeline. The method lives in the slice ([📐 ssot_02_character_systems_vertical_slice.md](../02_CHARACTER_SYSTEMS/📐%20ssot_02_character_systems_vertical_slice.md), 3.5.0) and in its doc modules. Where the two disagree, the module wins. The doc modules this page points to:
 
 |Flow|Doc module|
 |---|---|
@@ -102,7 +102,7 @@ flowchart TD
     end
 
     subgraph OUTPUT["CANONICAL FOLDER"]
-        DIT --> FOLDER["_AUTHORITATIVE/IP/characters/CHARACTER_ID/"]
+        DIT --> FOLDER["_AUTHORITATIVE/OVEREXITOUT/characters/ (one flat folder; the file names carry the character)"]
         AIT --> FOLDER
         SDB --> FOLDER
         STATE --> FOLDER
@@ -453,7 +453,7 @@ A revised storyform is a new version, not an edit. The chart, the L12 block and 
 
 ## Cross-Flow: Module Attachment
 
-This section is about field modules (Layer-Locked Modules). A doc module, such as the Step 1 gate or the state architecture, is a step inside Flows A to D and is not activated here. See [📐 ssot_00_module_architecture.md](📐%20ssot_00_module_architecture.md).
+This section is about field modules (Layer-Locked Modules). A doc module, such as the Step 1 gate or the state architecture, is a step inside Flows A to D and is not activated here. See [📐 ssot_00_module_architecture.md](../00_EPISTEMOLOGY/📐%20ssot_00_module_architecture.md).
 
 Field modules attach at any point after the base record exists. They do not participate in Flows A-C. They activate during or after Flow C and persist through Flow D.
 
@@ -523,7 +523,7 @@ Module flags are re-evaluated alongside core flags during state diff creation.
 | Locked Dramatica Ingest, no chart | Character Astrology Ingest | Flow B |
 | Both ingests locked, no Vertical Slice | 12-Layer base record | Flow C |
 | Locked base record, narrative event occurred | State diff for that moment | Flow D |
-| Locked base record, want to attach a field module (DUALISM is the only active one) | Module activation | Cross-Flow |
+| Locked base record, want to attach a field module (DUALISM and LOOK are the active ones) | Module activation | Cross-Flow |
 | Nothing locked | Character authoritative document | Write the character bible first. Everything starts there. |
 | Authoritative doc exists but Dramatica storyform does not | Storyform | Open Dramatica. Build the storyform. Lock it. Then Flow A. |
 | Vertical Slice complete but derived stats feel wrong | Corrected layer values | Re-enter Flow C at Step 2 or Step 4. Stats are diagnostic. Fix the inputs, not the outputs. |
@@ -543,3 +543,4 @@ Module flags are re-evaluated alongside core flags during state diff creation.
 | 1.0.0 | 2026-03-08 | Initial process illustration. Four flows (A-D) plus module cross-flow. Mermaid diagrams for all flows. Decision point annotations. Quick reference table. |
 | 1.0.1 | 2026-10-04 | BOLO 100 base batch 1 (B1, B2, B3, B13, B14, B15), RULED Chief "REC.": frontmatter repaired with `trunk` and `module_of`; table-of-contents anchors fixed; dependency names fixed to real stems. Flows A to D re-run against slice 3.3.1: Flow A follows the ingest form's own section order and extraction priority (the old Section 8 relationships step and the old Section 9 invariants step are replaced by the Report Source Log and Touchstones); Flow B names the astrology form, its sections and the minimum viable chart; Flow C adds the Step 1 gate counts and yellow-light rule, the want_need check, the [INFERRED] and setting_ref rules, seven derived statistics, and the tag rule; Flow D uses checkpoints, fabula `origin_event`, told_at, story points and the Dynamic-only rule. New Cascade section for a revised storyform. Cross-Flow separates field modules from doc modules. |
 | 1.1.0 | 2026-10-05 | BOLO 102 stage 2 (Chief: "My word"): Flow D adds the setting-state check beside the relationship check (new decision point DP-D6). |
+| 1.2.0 | 2026-11-04 | Chief: go recs path cleanup (BOLO 176). File renamed to ssot_02 and its type field set to ssot_02_character_systems (IF call 9 moved it to 02 on 10/5). Slice version cited is 3.5.0 · active field modules are DUALISM and LOOK · the module architecture link fixed · the canonical folder is the flat OVEREXITOUT characters folder. |

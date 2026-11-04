@@ -2,11 +2,11 @@
 type: ssot_02_character_systems
 category: integration_mapping
 module_of: ssot_02_character_systems_vertical_slice
-version: 1.1.0
+version: 1.1.1
 tier: fabula
-last_updated: 2026-10-04
+last_updated: 2026-11-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
-status: "v1.1.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Before: canonical"
+status: "v1.1.1 2026-11-04: Chief: go recs path cleanup (BOLO 176). Feed notes now say fields after 3.0.0 have no chart feed unless named. v1.1.0 2026-10-04: module stamp and schema catch-up. Earlier versions: see Version History."
 purpose: "Defines the formal mapping between Character Astrology chart variables and the LEECHSEED Character System. Specifies which astrological data feeds which layers, the translation logic for each feed, and the independence boundaries where the two systems do not overlap."
 dependencies: ["ssot_02_character_astrology", "ssot_02_character_astrology_dai", "ssot_02_character_systems_vertical_slice"]
 rung: standard
@@ -344,6 +344,8 @@ The main doc added fields after this doc's 1.0.0. This table gives each one a fe
 
 Fields added in 2.2.0 to 2.4.0 (the L9 synthesis, the wave 2 and wave 3 lists) follow the L9 and L8 notes above.
 
+Fields added after 3.0.0 have no chart feed unless this doc names them.
+
 ---
 
 ## Tier 2 Charts
@@ -425,3 +427,4 @@ Run this checklist after completing both the Character Astrology Ingest Template
 |---|---|---|
 |1.0.0|2026-03-03|Initial mapping specification. Complete feed table, layer-by-layer specifications for all 12 layers, independence boundaries, conflict resolution protocol, and feed validation checklist.|
 |1.1.0|2026-10-04|RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Stamped as a module of the character system. L8 field list updated (`secure_base_object` replaces `primary_attachment_object`; `attachment_dimensions` and the 2.1.0 to 2.5.0 L8 fields added). L9 field list updated (`shame_index` split into `exposure_shame` and `role_shame`; about twenty variables). New table: feed notes for the schema-pass fields and the 3.0.0 additions. New section: Tier 2 charts. Dependency path fixed. Frontmatter repaired and table of contents links made in-page.|
+|1.1.1|2026-11-04|Chief: go recs path cleanup (BOLO 176): one line under the feed notes. Fields added after 3.0.0 have no chart feed unless named.|

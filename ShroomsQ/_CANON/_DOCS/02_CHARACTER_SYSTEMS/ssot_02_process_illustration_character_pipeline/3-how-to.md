@@ -6,8 +6,8 @@ does: "gives the steps for each pipeline task, from Dramatica extraction to stat
 owner: Chief
 state: draft
 reviewed: 2026-10-05
-source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_00_process_illustration_character_pipeline.md
-source_version: 1.1.0
+source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_process_illustration_character_pipeline.md
+source_version: 1.2.0
 ---
 
 **Who it's for:** a narrative designer running one step of the character pipeline · **What it does:** gives the steps for each pipeline task, from Dramatica extraction to state diffs and cascades · **Type:** how-to

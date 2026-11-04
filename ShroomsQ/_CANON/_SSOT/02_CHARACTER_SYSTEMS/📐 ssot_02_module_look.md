@@ -2,11 +2,11 @@
 type: ssot_02_character_systems
 category: field_module
 module_of: ssot_00_module_architecture
-version: 1.0.1
+version: 1.0.2
 tier: standard
-last_updated: 2026-10-12
+last_updated: 2026-11-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
-status: "v1.0.0 2026-10-12 RULED (Chief: 'All recommendations … Go layers'): tier 2 floor, L2 VITAL attachment, the static/dynamic split, the one-at-a-time accept rule, the new part and hair keys on the shared rail. Overlap with MOD.PHYS and MOD.FASHION is OPEN (call 6). v0.1.0 2026-10-12 draft."
+status: "v1.0.2 2026-11-04: Chief: go recs path cleanup (BOLO 176). Call 6 is ruled, not open (10/12, "All recommendations"). The new body, face and hair keys wait on Chief's one read, then lock. v1.0.1 2026-10-12: body_type and age_presentation moved from PHYS to LOOK. Earlier versions: see Version History."
 trunk: BLACK
 purpose: "Defines LOOK, the field module that holds a character's appearance as six layers of label keys, and the two-way sync between those keys and the private reference-image database."
 dependencies: ["ssot_00_module_architecture", "ssot_00_module_registry", "ssot_02_character_state_architecture", "ssot_02_character_astrology_12_layer_mapping"]
@@ -242,3 +242,4 @@ RULED 2026-10-12 (Chief: "All recommendations", second pass):
 |1.0.1|2026-10-12|Call 6 RULED ("All recommendations"): `body_type` and `age_presentation` move from PHYS to LOOK; `body_display` moves from FASHION to LOOK.|
 |1.0.0|2026-10-12|RULED, Chief ("All recommendations … Go layers"): calls 1 to 5 taken as recommended. `attachment_points` written `[VITAL]` to match the registry. The `part` and `hair` axes joined the shared vocabulary (private rail file) the same day. Registry 1.3.0 carries the entry. Call 6 (PHYS and FASHION overlap) opened.|
 |0.1.0|2026-10-12|Draft. Six layers in character-creator order, 16 variables, two-way sync contract, feeds from L2 VITAL and L7 ORIGIN, state-diff example. Awaiting Chief's ruling on five OPEN calls.|
+|1.0.2|2026-11-04|Chief: go recs path cleanup (BOLO 176): status line refreshed. It called call 6 open; call 6 was ruled 10/12 in 1.0.1.|

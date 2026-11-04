@@ -2,11 +2,11 @@
 type: ssot_02_character_systems
 category: state_architecture
 module_of: ssot_02_character_systems_vertical_slice
-version: 1.4.0
+version: 1.4.1
 tier: fabula
-last_updated: 2026-10-05
+last_updated: 2026-11-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
-status: "v1.4.0 2026-10-05: BOLO 102 stage 2 (Chief: \"My word\"), IF catalog calls 1, 4 and 5: `narrative_moment` and relationship `state_history.moment` carry the 08 time code, REL.* owned here, flag event ids. v1.3.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Before: canonical; 1.2.1 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — Rule 7 (backward diffs allowed) added, time-code examples updated to the ruled sequence grammar"
+status: "v1.4.1 2026-11-04: Chief: go recs path cleanup (BOLO 176). The stale "until the column lands" line now reads as landed. v1.4.0 2026-10-05: time code on `narrative_moment`, REL.* owned here, flag event ids. Earlier versions: see Version History."
 purpose: "Defines the architecture for tracking character change over narrative time without modifying the static core record. Establishes the state diff system, state record format, overlay resolution rules, and boundaries with the static character record, relationship tables, and plot_systems."
 dependencies: ["ssot_02_character_systems_vertical_slice", "ssot_02_character_astrology", "ssot_04_fabula", "ssot_08_tracking_system"]
 rung: standard
@@ -55,7 +55,7 @@ The LEECHSEED Vertical Slice and the Character Astrology natal chart represent t
 
 Static fields live in the base record and never change. Dynamic fields live in state diffs. This doc no longer keeps its own list, so there is one place to look and one place to fix.
 
-Until the column lands in the main doc, the Decision Test below breaks ties.
+The main doc's "Field tags · every field" table now carries the column. The Decision Test below breaks any tie it leaves.
 
 **Outside the layer table.** The main doc's column does not cover these items, so the rule for them stays here:
 
@@ -340,3 +340,4 @@ This document defines character state tracking. It does not define story structu
 |1.2.0|2026-09-29|BOLO 90 step 2, RULED 2026-09-29 ("go"): `told_at` added to Required Fields (a list of time codes; empty = true but offstage) · `narrative_moment` redefined as generated from the time code, readable label only · `mc_distance_temporal` redefined as computed from time codes with Tori fixed at (0,0); `mc_distance_narrative` stays authored · new §Checkpoints and Story Points (v1.2): today's state records are checkpoints, story points (single-field changes, any time code) live in [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) · Rule 6 amended to govern checkpoints only, story points may be many per moment · Boundaries with plot_systems updated: the timeline coordinate system and Victoria-as-(0,0) are ruled, provided by ssot_08. Additive; no field removed.|
 |1.1.0|2026-09-24|BOLO 77 handshake, ruled "all recs" 2026-09-24: `origin_event` required field (the fabula's `event_id`, `<movement>_<slug>`; null only for progression overlays) · the three MODIFIED blocks grouped under a `state_diffs` parent (v1.0 top-level blocks stay valid) · the plot_systems boundary points to the fabula doc. Additive; no field removed.|
 |1.0.0|2026-03-03|Initial state architecture. Establishes static/dynamic boundary, state diff format, diff rules, query assembly protocol, five state source categories, relationship record format, and plot_systems boundaries.|
+|1.4.1|2026-11-04|Chief: go recs path cleanup (BOLO 176): the line "until the column lands in the main doc" refreshed, since the slice's field-tag table (3.3.0 and later) is that column.|

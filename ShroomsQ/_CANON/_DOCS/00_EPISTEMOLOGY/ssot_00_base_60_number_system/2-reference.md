@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md"
-source_version: "1.1.0"
+source_version: 1.1.1
 ---
 
 **Who it's for:** a writer or designer looking up a number rule · **What it does:** lists every table, formula and rule in the base 60 doc · **Type:** reference
@@ -251,7 +251,7 @@ The final rule: compute every derived statistic in internal space. Each stat dis
 | Collapse Risk | `(WOUND_i + shadow_density_i) / 2` | SC-30 | WOUND + shadow_density must be even |
 | Truth Exposure Index | `SOCIAL_i + (12 - shame_index_d) × 5` | SC-60, uncapped | none, no division |
 
-The Truth Exposure Index uses `12 - shame_d`, replacing the old `10 - shame_d`.
+The Truth Exposure Index uses `12 - shame_d`, replacing the old 10-based constant.
 
 > **OPEN:** the source keeps three abandoned formula attempts in this section.
 

@@ -1,9 +1,9 @@
 ---
 type: ssot_00_foundations
 category: number_systems
-version: 1.1.0
+version: 1.1.1
 tier: foundation
-last_updated: 2026-10-05
+last_updated: 2026-11-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: canonical
 trunk: BLACK
@@ -187,6 +187,8 @@ A tensor decomposition of 60 factors into three or more dimensions. These define
 A scale class is a valid numeric range derived from the divisor lattice. Every variable in the system is assigned to exactly one scale class. The scale class defines the variable's display range, internal range, step size, and divisibility properties.
 
 **Notation:** SC-N means a scale class with N+1 valid values (0 through N), where N is a divisor of 60.
+
+**Conversion to 0–1 (RULED 2026-11-04, BOLO 176).** Each stat keeps its native scale. The scale column in the [character slice's layer table](../02_CHARACTER_SYSTEMS/📐%20ssot_02_character_systems_vertical_slice.md) gives each field's scale name, minimum, maximum and default, and a script reads it to normalize any field. The slice also holds the normalized-store rule, a design rule that is not built.
 
 |Scale Class|Display Range|Internal Range|Step (internal)|Valid Display Values|Divisible By|
 |---|---|---|---|---|---|
@@ -391,7 +393,7 @@ All input variables are converted to internal before computation.
 |**Narrative Momentum**|`DRIVE_i + (resistance_i / 2)`|SC-30|resistance_i = res_d × 5. /2 same constraint as BDR. **Constraint: resistance_index assigned in even increments.**|
 |**Stress Threshold**|`WILL_i - WOUND_i`|SC-60 (no division)|No division. Always exact. No constraint.|
 |**Collapse Risk**|`(WOUND_i + shadow_density_i) / 2`|SC-30|Both are ×5 internal. Sum of two ×5 values is always ×5, but /2 requires the sum to be even. Two ×5 values sum to ×5 which is odd when one is odd×5 and other is even×5. **Constraint: WOUND + shadow_density must be even (both even or both odd on display scale).**|
-|**Truth Exposure Index**|`SOCIAL_i + (12 - shame_index_d) × 5`|SC-60 (no division)|No division. Expression `12 - shame_d` replaces old `10 - shame_d` due to SC-12 scale shift. Always exact.|
+|**Truth Exposure Index**|`SOCIAL_i + (12 - shame_index_d) × 5`|SC-60 (no division)|No division. Expression `12 - shame_d` replaces the old 10-based constant because of the SC-12 scale shift. Always exact.|
 
 ### Derived Stat Divisibility Constraints Summary
 
@@ -549,3 +551,4 @@ When any new variable is added to the system (including Layer-Locked Module sub-
 |1.0.2|2026-10-05|BOLO 102 batch A (Chief: "All recs go"): C13 retired as a duplicate of C02, no renumbering; derived-stat display rule reworded to match the formula table (SC-30, SC-20, SC-60); the armor index row's formula corrected to `12 - armor_index`, matching the variable registry.|
 |1.0.3|2026-10-05|BOLO 102 batch C (Chief: "all recs"): C6, rounding rule for a converted threshold added to Rule 7 (nearest valid value; Chief picks the direction on a tie or a broken constraint).|
 |1.1.0|2026-10-05|BOLO 102 stage 2 (Chief: "My word"): call 8, the scope line becomes "every scaled number in any system"; S1 to S12 and P1 to P12 numerics take scale classes; time codes take none (IF-00-03-07, IF-00-04-12, IF-00-08-06).|
+|1.1.1|2026-11-04|Chief: go recs path cleanup (BOLO 176): the Scale Classes section points to the slice's scale column for normalizing any field to 0–1.|

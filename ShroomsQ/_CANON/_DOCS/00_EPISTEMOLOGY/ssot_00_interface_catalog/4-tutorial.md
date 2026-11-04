@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_interface_catalog.md"
-source_version: 0.2.0
+source_version: 0.2.1
 ---
 
 **Who it's for:** a writer or the CDR using the catalog for the first time. They have the source page open · **What it does:** teaches the lookup by doing one: find `IF-02-04-01`, read both sides and test whether it is one-sided · **Type:** tutorial

@@ -6,8 +6,8 @@ does: "lists every component of the Process Illustration"
 owner: Chief
 state: draft
 reviewed: 2026-10-05
-source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_00_process_illustration_character_pipeline.md
-source_version: 1.1.0
+source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_process_illustration_character_pipeline.md
+source_version: 1.2.0
 ---
 
 **Who it's for:** a narrative designer. They look up a flow, step, decision point, or the next action in the character pipeline · **What it does:** lists every component of the Process Illustration · **Type:** reference
@@ -61,7 +61,7 @@ The master diagram has six groups:
 - **Flow B:** the DAI derivation sequence (18 steps) into the Character Astrology Ingest Template.
 - **Flow C:** Step 1 source verification gate (PASS or FAIL/BLOCKED). Then Step 2 Tier 1 assignment, Step 3 Tier 2 derivation, and Step 4 Tier 3 population. Then Step 5 derived stats, Step 6 flag evaluation, and Step 7 structured data block.
 - **Flow D:** the structured data block is the base record. A fabula event (`event_id`) and the base record compute a state diff, which yields a checkpoint (.md).
-- **Canonical folder:** `_AUTHORITATIVE/IP/characters/CHARACTER_ID/` receives the Dramatica ingest, astrology ingest, structured data block, and checkpoint.
+- **Canonical folder:** `_AUTHORITATIVE/OVEREXITOUT/characters/` (one flat folder; the file names carry the character) receives the Dramatica ingest, astrology ingest, structured data block, and checkpoint.
 
 ## Flow A: Dramatica → Dramatica Ingest Template
 
@@ -245,7 +245,7 @@ Module flags are re-evaluated alongside core flags during state diff creation.
 | Locked Dramatica Ingest, no chart | Character Astrology Ingest | Flow B |
 | Both ingests locked, no Vertical Slice | 12-Layer base record | Flow C |
 | Locked base record, narrative event occurred | State diff for that moment | Flow D |
-| Locked base record, want to attach a field module (DUALISM is the only active one) | Module activation | Cross-Flow |
+| Locked base record, want to attach a field module (DUALISM and LOOK are the active ones) | Module activation | Cross-Flow |
 | Nothing locked | Character authoritative document | Write the character bible first. Everything starts there. |
 | Authoritative doc exists but no Dramatica storyform | Storyform | Open Dramatica. Build the storyform. Lock it. Then Flow A. |
 | Vertical Slice complete but derived stats feel wrong | Corrected layer values | Re-enter Flow C at Step 2 or Step 4. Fix the inputs, not the outputs. |

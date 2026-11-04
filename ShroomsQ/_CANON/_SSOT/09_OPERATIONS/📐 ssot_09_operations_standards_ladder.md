@@ -2,9 +2,9 @@
 rung: procedure · NASA four, ruled 2026-09-15 (BOLO 50)
 type: ssot_procedure
 category: operations
-version: 0.3.0
+version: 0.3.1
 tier: operations
-last_updated: 2026-10-05
+last_updated: 2026-11-04
 version_note: "0.2.3 set 2026-10-05, BOLO 102 batch A (Chief: \"All recs go\"); the 1.0.0 stamp of 2026-10-04 contradicted the version history, which ends at 0.2.2"
 applies_to: [BOLD_VENTURE, ULTRASIN, OPERATOR]
 status: ruled 2026-09-15 by Chief ("let's go with the NASA four"); the filing table grows a row per document
@@ -98,7 +98,7 @@ The table carries one row per core SSOT doc: all 59 in `ShroomsQ/_CANON/_SSOT/0*
 | `ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_three_check_pass.md` | handbook | to stamp (BOLO 102 stage 2) |
 | `ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_touchstones_register.md` | standard | to stamp (BOLO 102 stage 2) |
 | `ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_trope_register.md` | standard | to stamp (BOLO 102 stage 2) |
-| `ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_00_process_illustration_character_pipeline.md` | handbook | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_process_illustration_character_pipeline.md` | handbook | to stamp (BOLO 102 stage 2) |
 | `ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_astrology.md` | standard | to stamp (BOLO 102 stage 2) |
 | `ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md` | standard | to stamp (BOLO 102 stage 2) |
 | `ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_l9_eros_synthesis.md` | handbook | to stamp (BOLO 102 stage 2) |
@@ -218,3 +218,4 @@ DOCTRINE 0 governs: this ladder is v0.1, ruled, and promotes to canonical after 
 | 0.2.2 | 2026-10-04 | BOLO 100 TOUCH BATCH 1, Chief "REC.": front-door line (TS-B10). |
 | 0.2.3 | 2026-10-05 | BOLO 102 batch A (Chief: "All recs go"): the version is 0.2.2 plus this patch. The 1.0.0 stamp is withdrawn, because the history ends at 0.2.2. |
 | 0.3.0 | 2026-10-05 | BOLO 102 stage 2 (Chief: "My word"): the filing table gains one row per core SSOT doc (59), each with its rung, for the front-matter stamp; the two moved files point to their new homes in 02 and 00; the 1.0 bar is SOP §5's six. |
+| 0.3.1 | 2026-11-04 | Chief: go recs path cleanup (BOLO 176): the pipeline doc's ladder rows name its new ssot_02 file name. |

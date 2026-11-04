@@ -1,21 +1,21 @@
 ---
 type: ssot_02_character_systems
 category: character_systems
-version: 3.4.2
+version: 3.5.0
 tier: [fabula, narratology]
-last_updated: 2026-10-11
+last_updated: 2026-11-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
-status: "v3.3.2 2026-10-04: RULED, Chief (\"Rick\" = rec, then \"REC.\") — three scale fixes the base batch found: Expressive Range is `12 - armor_index` (was 10 -, negative at 11–12 on SC-12); `exposure_shame` and `role_shame` run SC-12 (0–12), matching their alias `shame_index`; Truth Exposure Index clamps its shame term, `SOCIAL + max(0, 10 - shame_index)`. v3.3.1 2026-10-04: CDR — nine sub-fields tagged (the review check found them untagged). v3.3.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 follow-up: CH-1–CH-5, FU-1 every field tagged. New fields: erotic_craft · power_exchange · standing (on community_membership) · neurotype · group_size · group_position. CH-4 is a narrow fix: the triangle_position merge is kept, and the group parts sit under desire_vector. Every key in the Structured Data Block now carries a tag: static, dynamic or derived. Victoria Midnight: new fields ⏸ VM fill pass (phase 2). v3.2.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 library pass: CL1–CL31 applied (31 calls from 85 books), plus the Cite list of 31 more books; the CHARACTER × LIBRARY table now lists them all; 5 reopened calls applied narrowly. v3.1.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2 (main doc): Step 1 points to the gate module · L12 points to the Dramatica integration module · field tags static/dynamic (C17). v3.0.0 2026-10-04: RULED, Chief: \"all rec\" — BOLO 100 character batch 1: Victoria Midnight's blank fields parked as the VM fill pass (phase 2), marker ⏸; held call 3 moved to 07.1 prose; call 5 closed; call 7 applied as the Villain-Arc Fork; call 9 moved to 08 tracking; call 8 promoted to optional scored dials (circumplex on L3, Dark and Light Triad on L10); call 12 `hereditary_predisposition` is a full L7 field; four thin names added (`locus_of_control`, `futurity_stance`, `minority_stress` trigger type, `body_capital`). v2.5.0 2026-10-04: RULED, Chief: \"all recommendations\" — the schema pass: 12 fields (identity_frame · community_membership · agreement_style · risk_management_practice · self_presentation · resistance_mode · motivation_stack · drive_texture · origin_disciplinary_formation · sexual_script_acquisition · polarity_role · love_lust_cleft); 139 coined names mapped as aliases or dropped; 4 held. Victoria Midnight unchanged. v2.4.0 2026-10-04: RULED, Chief: \"all rec\" — wave 3: L3/L9 knowledge_map · L9 template_origin.core_erotic_theme + arousal_curve SES/SIS · L9 consent_posture sub-fields (negotiation · signals · debrief + consent model) · L10 moral_incongruence. Victoria Midnight unchanged; new fields null (blank, then open). v2.3.0 2026-10-04: RULED 2026-10-04, Chief: \"rec\" — four wave-2 additions: L9 orientation_dimensions · L8 vandalism_event + L9 template_origin holds the lovemap · L9 charmed_circle_position (beside consent_posture, adults only) · L9 resonance_profile + L8 somatic_archive. Victoria Midnight instance unchanged; new fields null (blank, then open), no canon invented. About twelve more coined names wait for the schema pass (BOLO 88). v2.2.0 2026-09-29: RULED 2026-09-29, Chief: \"Rex\" — the L9 EROS synthesis (ssot_02_l9_eros_synthesis.md) applied in full, all ten PROPOSED CHANGES: L9 EROS gains consent_posture, client_script (the scripted↔spontaneous axis), signal_fluency, resolution_type (under desire_vector), exposure_shame/role_shame (splitting shame_index, kept as a read alias), arousal_curve (under erotic_blueprint_type), erotic_safety_precondition_scope (internal/external), disclosure_posture (on L9, cross-linked to L3's), and template_origin (an L9→L8 pointer); erotic_pacing adopted as a Core Methodology writing rule, not a field. Victoria Midnight instance kept valid: exposure_shame, erotic_safety_precondition_scope, and template_origin backfilled from documented text (victoria-midnight-L9-eros.md); consent_posture, client_script, signal_fluency, resolution_type, role_shame, arousal_curve, and disclosure_posture marked null (blank, then open), no canon invented. The shelf's WLW/lesbian desire-architecture gap (synthesis §6 Open questions) logged to the acquisition list — the whole-spectrum library sweep already running covers it. ## TROPES untouched. v2.1.0 2026-09-29: RULED 2026-09-29, Chief: \"Rex\" (recs) — the schema bump the 9/16 calls were held for. Calls 1, 2, 4, 6, 8 (pilot note only), 10, 12, 13, 14, 15 applied; calls 3, 5, 7, 9 held exactly as ruled 9/16; call 11 closed (attachment theory now distilled, BVX.1127). New fields: L1/L2/L3 gain an Egri text stack; L4 gains coping_strategy and is redefined as decision-capacity not toughness; L5 gains severity, triggers, relational_refs; L7 gains provisional hereditary_predisposition; L8 gains attachment_dimensions, protest_behaviors, deactivating_strategies, and the rename primary_attachment_object → secure_base_object (old name kept as a read alias); L11 gains arc_type, change_cause, catalyst_archetype; L12 gains the Protagonist-necessity rule. Victoria Midnight instance kept valid: new fields empty or marked open where undocumented, no canon invented. v2.0.2 2026-09-16: the drop-folder intake folded in (Egri's bone structure, Attached, Vogler's masks), four OPEN calls added, schema unchanged. v2.0.1 2026-09-16: the eleven OPEN calls RULED as recommended, at the next schema bump (Chief: \"character calls go\"). v2.0.0 2026-09-16 (BOLO 18 character wave): the slice table, mind models, the library layer and OPEN added around the v1.1.0 schema; schema, formulas and the Victoria Midnight instance unchanged; provisional a week like every ruling"
+status: "v3.5.0 2026-11-04: Chief: go recs path cleanup (BOLO 176), and Chief: go (normalized store, BOLO 176). Truth Exposure Index is `SOCIAL + max(0, 12 - shame_index)`, Tori = 20 · the layer table gains a scale column · the normalized store is ruled as a design rule, not built · L2b body shape registered under L2 · the venue alias rows re-pointed to community_membership · the pipeline doc renamed to ssot_02. Official name LEECHSEED (ruled 11/4). Earlier versions: see Version history."
 rung: standard
 dependencies: ["[[📐_ssot_writing_guide]]", "[[📐_ssot_ai_instruction_protocol]]", "ssot_02_character_astrology_12_layer_mapping", "ssot_02_character_state_architecture", "ssot_02_dramatica_integration_protocol", "ssot_04_plot_system", "ssot_03_setting_system", "ssot_02_l9_eros_synthesis"]
 trunk: BLACK
 sources: [BVX.0064, BVX.0075, BVX.0193, BVX.0089, BVX.0196, BVX.0061, BVX.0209, BVX.0233, BVX.0045, BVX.1123, BVX.1124, BVX.1127, MSX.18, MSX.19, MSX.20, MSX.21, MSX.22, MSX.23, MSX.24, MSX.25, MSX.26, MSX.27, MSX.28, MSX.29, MSX.30, MSX.31, MSX.32, MSX.33, MSX.34, MSX.35, MSX.36, PSY.08, PSY.09, PSY.10, PSY.11, PSY.12, PSY.13, BVX.0054, BVX.0084, BVX.0163, BVX.0175, BVX.0191, BVX.0258, BVX.0273, BVX.0399, BVX.0576, BVX.0596, BVX.0614, BVX.0822, BVX.1125, BVX.1126, BVX.1129, BVX.1130, BVX.1131, BVX.1132, BVX.1133, BVX.1134, BVX.1135, BVX.1148, BVX.1149, BVX.1150, BVX.1151, BVX.1152, BVX.1154, BVX.1155, BVX.1158, BVX.1172, BVX.1175, CRE.05, CRE.07, MSX.37, MSX.38, MSX.39, MSX.40, MSX.41, MSX.42, MSX.43, MSX.44, MSX.45, MSX.47, MSX.48, MSX.49, MSX.50, MSX.51, MSX.52, MSX.53, MSX.54, MSX.55, MSX.56, MSX.57, MSX.58, MSX.59, MSX.60, MSX.61, MSX.62, MSX.63, MSX.64, MSX.65, MSX.66, MSX.69, MSX.70, MSX.71, MSX.72, MSX.74, MSX.75, MSX.76, MSX.77, MSX.78, MSX.79, MSX.81, MSX.82, MSX.83, MSX.85, MSX.86, MSX.87, MSX.88, MSX.SET.01, PHI.03, PHI.04, PSY.14, PSY.15, PSY.16, PSY.17, PSY.18, PSY.19, PSY.20, PSY.23, PSY.24, PSY.25, PSY.26, PSY.27, PSY.28, PSY.29, PSY.30, PSY.31, PSY.32, PSY.33, PSY.35, PSY.36, PSY.37, PSY.38, PSY.39, PSY.40, PSY.49, PSY.51, PSY.52, PSY.55, PSY.60, PSY.61, PSY.62, PSY.67, MSX.11, MSX.12, MSX.13, MSX.14, MSX.15, PSY.02, PSY.03, PSY.05, PSY.06, PSY.07, PHI.01, PHI.02]
-purpose: "THE CHARACTER SYSTEM, v2.0.0: the LEECHSEED Character System vertical slice, the first top-layer model of the lattice, now written against the character shelf of the library, which holds nine distills across McKee, Davis, Truby, Dramatica, Corbett, Card, Puglisi & Ackerman, Pelican, and Schmidt."
+purpose: "THE CHARACTER SYSTEM, v3.5.0: LEECHSEED (the official name, ruled 11/4; the 12-layer character system is its description), the first top-layer model of the lattice. It stores a character as twelve layers in three tiers, with seven derived statistics and five flags computed from them, in one Structured Data Block that changes over story time only through state diffs. Written against the character shelf of the library, which holds nine distills."
 ---
 
-# 📐 SSOT · THE CHARACTER SYSTEM · the LEECHSEED vertical slice
+# 📐 SSOT · THE CHARACTER SYSTEM · LEECHSEED (the 12-layer system) · the vertical slice
 
-**What this is:** the LEECHSEED Character System promoted from a numbering scheme to a system, the second top-layer model in the lattice beside 03 (setting) and 04 (plot). Three tiers, twelve layers, seven derived statistics, and a set of flag trigger conditions, all terminating in one machine-readable structured data block. The **vertical slice**, one character walked through all twelve layers, is both the validation instrument (do the numbers produce the character canon already says exists) and the seed record for eventual database ingestion. Written first against a single locked example, Victoria Midnight; now with nine distills of the character shelf underneath it.
+**What this is:** the official name is **LEECHSEED** (ruled 2026-11-04); "the 12-layer system" stays as its description, not its name. LEECHSEED is the character system promoted from a numbering scheme to a system, the second top-layer model in the lattice beside 03 (setting) and 04 (plot). Three tiers, twelve layers, seven derived statistics, and a set of flag trigger conditions, all terminating in one machine-readable structured data block. The **vertical slice**, one character walked through all twelve layers, is both the validation instrument (do the numbers produce the character canon already says exists) and the seed record for eventual database ingestion. Written first against a single locked example, Victoria Midnight; now with nine distills of the character shelf underneath it.
 
 **Touchstones:** read [the Touchstones register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md) first.
 
@@ -95,20 +95,26 @@ stateDiagram-v2
 
 One table, twelve layers, the same architecture the SETTING SLICE and the PLOT SLICE mirror: surface to depth to structural function, L12 fed independently from the storyform exactly as S12 and P12 are.
 
-| Layer | Name | Question it answers | Source | Field it writes | Tier |
-|---|---|---|---|---|---|
-| **L1** | **CORE** | How much cognitive and ideological mass does the mind carry? | [[BVX.0075]], [[BVX.0233]] the Big Five, [[BVX.1123]] Egri's psychology dimension, [[PSY.05]] neurotype | `CORE`, `psychology_stack`, `assigned_labels`, `neurotype` (3.3.0) | Tier 1 |
-| **L2** | **VITAL** | How much physical and energetic presence does the body carry? | [[BVX.0075]], [[BVX.0233]] the stress-response cascade, [[BVX.1123]] Egri's physiology dimension | `VITAL`, `physiology_stack`, `body_capital` (adults only) | Tier 1 |
-| **L3** | **SOCIAL** | How does the character project into and read the social world? | [[BVX.0233]] the interpersonal circumplex (optional scored dial, 3.0.0), [[BVX.0061]] reputation, [[BVX.1123]] Egri's sociology dimension, [[MSX.12]] and [[MSX.13]] standing by conduct | `SOCIAL`, `sociology_stack`, `community_membership` (+ `standing`, 3.3.0; `catalog_ref`, 3.4.0), `circumplex` (optional), `pair_register`, `civic_standing` (+ `catalog_ref`, 3.4.0), `disclosure_posture` (outness), `voice_sheet` | Tier 1 |
-| **L4** | **WILL** | How much resistance holds under pressure, and where does the capacity to decide bend? | [[BVX.0075]] counter-will, [[BVX.0045]] coping strategy, [[BVX.1123]] strength of will | `WILL`, `coping_strategy`, `locus_of_control`, `system_stance` | Tier 2 |
-| **L5** | **WOUND** | What accumulated damage failed to resolve, and how severe is it? | [[BVX.0209]] the wound card, [[BVX.0196]] the ghost, [[BVX.0075]] back-story placement | `WOUND`, `severity`, `triggers` (incl. type `minority_stress`), `relational_refs` (+ `mentor_state`), `wound_kind`, `wound_work` | Tier 2 |
-| **L6** | **DRIVE** | What fuels the active goal-pursuit, and from what source? | [[BVX.0075]] super-objective, [[BVX.0233]] the fifteen motivations, [[BVX.0045]] cares-about/motivates | `DRIVE`, `futurity_stance`, `want_need` | Tier 2 |
-| **L7** | **ORIGIN** | What birth context and formation set the starting conditions? | [[BVX.0075]] birth marks, [[BVX.0061]] justification, [[BVX.1123]] heredity | `origin_class`, `origin_stability`, `family_coherence`, `origin_wound_seed`, `tech_level` (+ `catalog_ref`, 3.4.0), `system_exposure` (+ `layers`, whose `regime` takes `catalog_ref`, 3.4.0), `origin_event` (optional, 3.4.0), `hereditary_predisposition`, `life_script` | Tier 3 |
-| **L8** | **IMPRINT** | What formative conditioning locked in before the story began? | [[BVX.0075]], [[BVX.0233]] life-stage emotional concerns, [[BVX.1127]] attachment theory | `attachment_style`, `attachment_style_score`, `attachment_dimensions`, `protest_behaviors`, `deactivating_strategies`, `emotional_range`, `conditional_patterns`, `imprint_flexibility`, `secure_base_object` (was `primary_attachment_object`, kept as a read alias), `appeasement_strategies` | Tier 3 |
-| **L9** | **EROS** | How is desire structured, armored, and made safe? | [[BVX.0075]] sexuality as attitude, the L9 v2 doc, [victoria-midnight-L9-eros.md](../../../../_CANON_NODES/victoria-midnight-L9-eros.md), the 3.3.0 craft and exchange books ([[MSX.11]]–[[MSX.15]], [[PSY.02]]), and the L9 EROS synthesis (RULED 2026-09-29, MSX.18–MSX.36, PSY.08–PSY.13), [ssot_02_l9_eros_synthesis.md](📐%20ssot_02_l9_eros_synthesis.md) | `erotic_blueprint_type` (+ `arousal_curve`), `desire_vector` (+ `resolution_type`, `group_size`, `group_position`), `erotic_craft`, `power_exchange`, `consent_posture`, `client_script`, `signal_fluency`, `shame_index` (+ `exposure_shame`, `role_shame`), `armor_index`, `satisfaction_cycle_truncation`, `erotic_safety_precondition` (+ `erotic_safety_precondition_scope`), `intimacy_mode`, `disclosure_posture` (sexual-health register), `template_origin`, `compersion`, `fantasy_ledger`, `desire_object`, `pleasure_evidence`, `sex_creed`, `touch_rule`, `dissolution`, `compartment_practice`, `attraction_channels`, `risk_role`, `risk_account` | Tier 3 |
-| **L10** | **SHADOW** | What is repressed, projected, or denied, and what does it generate? | [[BVX.0064]] true character vs characterization, [[BVX.0196]] secrets and the adaptation hierarchy, [[BVX.0045]] the shadow face, [[BVX.0233]] the Dark Triad and Light Triad (optional scored dials, 3.0.0) | `shadow_density`, `projection_tendency`, `regression_pattern`, `shadow_content`, `dark_triad` (optional), `light_triad` (optional), `disinhibition_context` | Tier 3 |
-| **L11** | **DESTINY** | What is the character building toward, not where they stand? | [[BVX.0045]] the two journeys, [[BVX.0196]] growth vs transformation, [[BVX.0061]] the four causes of change | `growth_axis`, `resistance_index`, `soul_evolution_archetype`, `karmic_memory`, `growth_requirement`, `arc_type`, `change_cause`, `catalyst_archetype`, `rail_ref` (3.4.0) | Tier 3 |
-| **L12** | **FUNCTION** | What narrative role and mechanical function does the character discharge? | [[BVX.0089]] the eight archetypes, [[BVX.0061]] the hierarchy, [[BVX.0064]] the cast map, [[BVX.1123]] the pivotal character | `dramatica_archetype`, `mc_problem_element`, `methodology_element`, `evaluation_element`, `purpose_element`, `touchstone`, `story_outcome`, `story_judgement`, `limit_type`, `resolve`, `convention_role` | Tier 3 |
+| Layer | Name | Question it answers | Source | Field it writes | Tier | Scale (name · min–max · default) |
+|---|---|---|---|---|---|---|
+| **L1** | **CORE** | How much cognitive and ideological mass does the mind carry? | [[BVX.0075]], [[BVX.0233]] the Big Five, [[BVX.1123]] Egri's psychology dimension, [[PSY.05]] neurotype | `CORE`, `psychology_stack`, `assigned_labels`, `neurotype` (3.3.0) | Tier 1 | `CORE`: SC-20 · 0–20 · default 10. Text and enum fields: none |
+| **L2** | **VITAL** | How much physical and energetic presence does the body carry? | [[BVX.0075]], [[BVX.0233]] the stress-response cascade, [[BVX.1123]] Egri's physiology dimension | `VITAL`, `physiology_stack`, `body_capital` (adults only), `L2B` (field module, below) | Tier 1 | `VITAL`: SC-20 · 0–20 · default 10. Text fields and L2b: none (labels, scale not set) |
+| **L3** | **SOCIAL** | How does the character project into and read the social world? | [[BVX.0233]] the interpersonal circumplex (optional scored dial, 3.0.0), [[BVX.0061]] reputation, [[BVX.1123]] Egri's sociology dimension, [[MSX.12]] and [[MSX.13]] standing by conduct | `SOCIAL`, `sociology_stack`, `community_membership` (+ `standing`, 3.3.0; `catalog_ref`, 3.4.0), `circumplex` (optional), `pair_register`, `civic_standing` (+ `catalog_ref`, 3.4.0), `disclosure_posture` (outness), `voice_sheet` | Tier 1 | `SOCIAL`: SC-20 · 0–20 · default 10. `circumplex`: SC-10 two-sided · −5 to +5 · default null. Other fields: none |
+| **L4** | **WILL** | How much resistance holds under pressure, and where does the capacity to decide bend? | [[BVX.0075]] counter-will, [[BVX.0045]] coping strategy, [[BVX.1123]] strength of will | `WILL`, `coping_strategy`, `locus_of_control`, `system_stance` | Tier 2 | `WILL`: SC-20 · 0–20 · default = CORE. `locus_of_control`: SC-10 two-sided · −5 to +5 · default null. Other fields: none |
+| **L5** | **WOUND** | What accumulated damage failed to resolve, and how severe is it? | [[BVX.0209]] the wound card, [[BVX.0196]] the ghost, [[BVX.0075]] back-story placement | `WOUND`, `severity`, `triggers` (incl. type `minority_stress`), `relational_refs` (+ `mentor_state`), `wound_kind`, `wound_work` | Tier 2 | `WOUND` and `severity`: SC-12 · 0–12 (even values) · default 0. Other fields: none |
+| **L6** | **DRIVE** | What fuels the active goal-pursuit, and from what source? | [[BVX.0075]] super-objective, [[BVX.0233]] the fifteen motivations, [[BVX.0045]] cares-about/motivates | `DRIVE`, `futurity_stance`, `want_need` | Tier 2 | `DRIVE`: SC-20 · 0–20 · default = VITAL. Other fields: none |
+| **L7** | **ORIGIN** | What birth context and formation set the starting conditions? | [[BVX.0075]] birth marks, [[BVX.0061]] justification, [[BVX.1123]] heredity | `origin_class`, `origin_stability`, `family_coherence`, `origin_wound_seed`, `tech_level` (+ `catalog_ref`, 3.4.0), `system_exposure` (+ `layers`, whose `regime` takes `catalog_ref`, 3.4.0), `origin_event` (optional, 3.4.0), `hereditary_predisposition`, `life_script` | Tier 3 | `origin_stability`, `family_coherence`, `origin_wound_seed`, `tech_level`: SC-12 · 0–12 · default unset. Other fields: none |
+| **L8** | **IMPRINT** | What formative conditioning locked in before the story began? | [[BVX.0075]], [[BVX.0233]] life-stage emotional concerns, [[BVX.1127]] attachment theory | `attachment_style`, `attachment_style_score`, `attachment_dimensions`, `protest_behaviors`, `deactivating_strategies`, `emotional_range`, `conditional_patterns`, `imprint_flexibility`, `secure_base_object` (was `primary_attachment_object`, kept as a read alias), `appeasement_strategies` | Tier 3 | `attachment_style_score`, `attachment_dimensions`, `emotional_range`, `imprint_flexibility`: SC-12 · 0–12 · default unset. Other fields: none |
+| **L9** | **EROS** | How is desire structured, armored, and made safe? | [[BVX.0075]] sexuality as attitude, the L9 v2 doc, [victoria-midnight-L9-eros.md](../../../../_CANON_NODES/victoria-midnight-L9-eros.md), the 3.3.0 craft and exchange books ([[MSX.11]]–[[MSX.15]], [[PSY.02]]), and the L9 EROS synthesis (RULED 2026-09-29, MSX.18–MSX.36, PSY.08–PSY.13), [ssot_02_l9_eros_synthesis.md](📐%20ssot_02_l9_eros_synthesis.md) | `erotic_blueprint_type` (+ `arousal_curve`), `desire_vector` (+ `resolution_type`, `group_size`, `group_position`), `erotic_craft`, `power_exchange`, `consent_posture`, `client_script`, `signal_fluency`, `shame_index` (+ `exposure_shame`, `role_shame`), `armor_index`, `satisfaction_cycle_truncation`, `erotic_safety_precondition` (+ `erotic_safety_precondition_scope`), `intimacy_mode`, `disclosure_posture` (sexual-health register), `template_origin`, `compersion`, `fantasy_ledger`, `desire_object`, `pleasure_evidence`, `sex_creed`, `touch_rule`, `dissolution`, `compartment_practice`, `attraction_channels`, `risk_role`, `risk_account` | Tier 3 | `shame_index`, `exposure_shame`, `role_shame`, `armor_index`: SC-12 · 0–12 · default unset. `arousal_curve` (amplitude, spasm size), `compersion.level`, `attraction_channels`, `dissolution.depth`: SC-10 · 0–10 · default null. `orientation_dimensions` (Kinsey score): SC-6 · 0–6 · default null. Counts and minutes: unscaled. Other fields: none |
+| **L10** | **SHADOW** | What is repressed, projected, or denied, and what does it generate? | [[BVX.0064]] true character vs characterization, [[BVX.0196]] secrets and the adaptation hierarchy, [[BVX.0045]] the shadow face, [[BVX.0233]] the Dark Triad and Light Triad (optional scored dials, 3.0.0) | `shadow_density`, `projection_tendency`, `regression_pattern`, `shadow_content`, `dark_triad` (optional), `light_triad` (optional), `disinhibition_context` | Tier 3 | `shadow_density`, `projection_tendency`: SC-12 · 0–12 · default unset. `dark_triad`, `light_triad`: SC-10 · 0–10 · default null. Other fields: none |
+| **L11** | **DESTINY** | What is the character building toward, not where they stand? | [[BVX.0045]] the two journeys, [[BVX.0196]] growth vs transformation, [[BVX.0061]] the four causes of change | `growth_axis`, `resistance_index`, `soul_evolution_archetype`, `karmic_memory`, `growth_requirement`, `arc_type`, `change_cause`, `catalyst_archetype`, `rail_ref` (3.4.0) | Tier 3 | `resistance_index`: SC-12 · 0–12 · default unset. Other fields: none |
+| **L12** | **FUNCTION** | What narrative role and mechanical function does the character discharge? | [[BVX.0089]] the eight archetypes, [[BVX.0061]] the hierarchy, [[BVX.0064]] the cast map, [[BVX.1123]] the pivotal character | `dramatica_archetype`, `mc_problem_element`, `methodology_element`, `evaluation_element`, `purpose_element`, `touchstone`, `story_outcome`, `story_judgement`, `limit_type`, `resolve`, `convention_role` | Tier 3 | None: enums and text, fed from the storyform |
+
+**Scale column (RULED 2026-11-04, BOLO 176).** Each stat keeps its native scale. The last column of the table above gives, for each field or field group, the scale name, minimum, maximum and default. A script turns any numeric field into 0–1 with `(value − min) / (max − min)`. A two-sided field runs −max to +max, so the script divides by max and gets −1 to 1, with 0 neutral. Text, enum and list fields carry no scale. The derived statistics are computed, never stored. The [base 60 doc](../00_EPISTEMOLOGY/📐%20ssot_00_base_60_number_system.md) (SC-12 and the other scale classes) and the [variable registry](../00_EPISTEMOLOGY/📐%20ssot_00_variable_registry.md) (the SC-20 rows) point to this column. The patch bay's 0–100 sliders are a display of the normalized value.
+
+**Normalized store (RULED 2026-11-04, BOLO 176; a design rule, not built).** The record stores every stat normalized 0–1. Two-sided traits run −1 to 1, with 0 as neutral. Layers and modules each add a push in log-odds, and a sigmoid squashes the sum back to range. That gives diminishing returns at the edges, and the order of the pushes does not matter. The native scales (GURPS 10-default, SC-12 base 60, SC-20) and the bay's 0–100 are views of the stored value. The scale column is the conversion table. No value or formula is converted yet. The conversion is a later build.
+
+**L2b body shape (field module under L2, beside LOOK and PHYS; draft, provisional).** Registered 2026-11-04 (BOLO 176) as `L2B` in the [module registry](../00_EPISTEMOLOGY/📐%20ssot_00_module_registry.md). Its nodes are [face](../../../../_CANON_NODES/L2b-morphology-face.md), [gluteal](../../../../_CANON_NODES/L2b-morphology-gluteal.md) and [population signatures](../../../../_CANON_NODES/L2b-morphology-population-signatures.md). Seven decisions stay open: a female Column · the override flag as notation · priors as ranges or points · heels and twerk as one population or two · the wellness and override line · the male adult lane · source pulls.
 
 **Binding rule (mirror of the plot and setting bindings):** L12 FUNCTION is fed independently from the storyform, keyed by `storyform_id`, exactly as P12 FUNCTION and S12 FUNCTION are. A character with no storyform link may run L1 through L11 only; L12 filled is what makes a character load-bearing to the argument, not merely present. **The L12 field list lives in one place only:** the [Dramatica integration protocol](🔮%20ssot_02_dramatica_integration_protocol.md) (module, 1.2.0). This table names the fields; that doc defines them and owns the cascade when a storyform is revised. It also defines `convention_role` (3.2.0, CL15), an advisory genre-casting field that never overrides `dramatica_archetype`.
 
@@ -119,6 +125,7 @@ One table, twelve layers, the same architecture the SETTING SLICE and the PLOT S
 - Read by 03 (IF-02-03-04): 03 reads the four flag states for place flags: ACTIVE, PENDING, FIRED_PRE_STORY and INACTIVE. The record computes them and never assigns them.
 - Read by 01 (IF-01-02-14): the trope register reads Tori's L5 WOUND instance, the car crash that kills Jebb, as its SIGNATURE WOUND record.
 - Read by 06 (IF-02-06-01): 06 reads images already present in the character material as motif candidates.
+- Read by 06 (IF-02-06-03): 06 reads L3 `knowledge_map` for who in a scene knows what. The field already holds each character's knowledge and compliance state.
 - Read by 07.1 (IF-02-07-01): 07.1 reads L5 WOUND and L6 DRIVE, which set a character's motive. The page shows only its effects.
 
 
@@ -237,7 +244,7 @@ Derived statistics are computed columns. They are not entered — they are calcu
 |Narrative Momentum|`DRIVE + (DESTINY.resistance_index / 2)`|
 |Stress Threshold|`WILL - WOUND`|
 |Collapse Risk|`(WOUND + SHADOW.shadow_density) / 2`|
-|Truth Exposure Index|`SOCIAL + max(0, 10 - EROS.shame_index)`|
+|Truth Exposure Index|`SOCIAL + max(0, 12 - EROS.shame_index)`|
 |Expressive Range|`12 - EROS.armor_index`|
 
 **Truth Exposure Index** is the primary systemic legibility metric. A score above 15 indicates a character who cannot effectively manage their own signal visibility. This metric directly feeds antagonist targeting logic and systemic response escalation.
@@ -321,6 +328,8 @@ Produce the structured data block in the format defined in THE INSTANCE. This bl
 **IP:** OVEREXITOUT (The Outliers) **Character Status:** Canonical / Locked **Slice Version:** 1.0.0
 
 Her blank fields are parked as the VM fill pass, phase 2 of BOLO 100. The schema is complete without them. Each blank carries the marker `⏸ VM fill pass (phase 2)` (RULED 2026-10-04, Chief: "all rec").
+
+**Truth Exposure Index (11/4).** The shame term now reads `12 - shame_index` (ruled 10/5 batch D, applied 11/4, BOLO 176), so her value moves 18 → 20. Any older copy of her record that shows 18 updates in the VM fill pass. No other blank is filled here.
 
 **3.3.0 fields (BOLO 100 follow-up).** `neurotype`, `standing` (on `community_membership`), `erotic_craft`, `power_exchange`, `group_size` and `group_position` all read ⏸ VM fill pass (phase 2). No value is invented.
 
@@ -520,10 +529,10 @@ The Optionlock fires because her wound and resistance index combination systemat
 |Narrative Momentum|`12 + (8 / 2)`|**16**|
 |Stress Threshold|`14 - 8`|**6**|
 |Collapse Risk|`(8 + 7) / 2`|**7**|
-|Truth Exposure Index|`10 + max(0, 10 - 2)`|**18**|
+|Truth Exposure Index|`10 + max(0, 12 - 2)`|**20**|
 |Expressive Range|`12 - 8`|**4**|
 
-Truth Exposure Index 18 is the primary diagnostic value. It quantifies why the Ban activates against her and not against other characters with equivalent capability profiles. She is maximally legible to the system because she carries low shame and average social masking. The system cannot categorize a signal it can read completely and that refuses to self-regulate.
+Truth Exposure Index 20 is the primary diagnostic value. It quantifies why the Ban activates against her and not against other characters with equivalent capability profiles. She is maximally legible to the system because she carries low shame and average social masking. The system cannot categorize a signal it can read completely and that refuses to self-regulate.
 
 ---
 
@@ -716,7 +725,7 @@ DERIVED:
   narrative_momentum: 16
   stress_threshold: 6
   collapse_risk: 7
-  truth_exposure_index: 18
+  truth_exposure_index: 20
   expressive_range: 4
 
 FLAGS:
@@ -768,7 +777,7 @@ The three 10/4 waves coined 155 variable names. Twelve became fields (2.5.0 note
 | `chosen_family` | L3 | MERGE INTO `community_membership` |
 | `class_position` | L3 | MERGE INTO `sociology_stack` |
 | `contact_capacity` | L3 | MERGE INTO `community_membership` |
-| `contested_zone` | L3 | MERGE INTO `venue_belonging` |
+| `contested_zone` | L3 | MERGE INTO `community_membership` |
 | `counterpublic_membership` | L3 | MERGE INTO `community_membership` |
 | `digital_self_presentation` | L3 | MERGE INTO `self_presentation` |
 | `elder_transmission` | L3 | MERGE INTO `community_membership` |
@@ -790,9 +799,9 @@ The three 10/4 waves coined 155 variable names. Twelve became fields (2.5.0 note
 | `sexual_script` | L3 | MERGE INTO `sexual_script_acquisition` |
 | `social_code_gate` | L3 | DROP |
 | `stranger_address` | L3 | MERGE INTO `self_presentation` |
-| `subcultural_venue_stratification` | L3 | MERGE INTO `venue_belonging` |
+| `subcultural_venue_stratification` | L3 | MERGE INTO `community_membership` |
 | `tribe_entry_by_attitude` | L3 | MERGE INTO `community_membership` |
-| `venue_exposure` | L3 | MERGE INTO `venue_belonging` |
+| `venue_exposure` | L3 | MERGE INTO `community_membership` |
 | `control_relinquishment` | L4 | MERGE INTO `locus_of_control` |
 | `emotion_ownership` | L4 | MERGE INTO `locus_of_control` |
 | `label_stance` | L4 | MERGE INTO `identity_frame` |
@@ -837,7 +846,7 @@ The three 10/4 waves coined 155 variable names. Twelve became fields (2.5.0 note
 | `sexual_regime_formation` | L7 | MERGE INTO `system_exposure` |
 | `sexual_script_origin` | L7 | MERGE INTO `sexual_script_acquisition` |
 | `state_category_exposure` | L7 | MERGE INTO `system_exposure` |
-| `venue_etiquette_code` | L7/L9 | MERGE INTO `venue_belonging` |
+| `venue_etiquette_code` | L7/L9 | MERGE INTO `community_membership` |
 | `erotic_education_source` | L8 | MERGE INTO `sexual_script_acquisition` |
 | `first_experience_conditioning` | L8 | MERGE INTO `vandalism_event` |
 | `racial_sexual_stereotype_imprint` | L8 | MERGE INTO `polarity_role` |
@@ -861,7 +870,7 @@ The three 10/4 waves coined 155 variable names. Twelve became fields (2.5.0 note
 | `orientation_position` | L9 | MERGE INTO `orientation_dimensions` |
 | `position_persona` | L9 | MERGE INTO `polarity_role` |
 | `psychosexual_arousal_range` | L9 | MERGE INTO `arousal_curve` |
-| `public_sex_as_world_making` | L9 | MERGE INTO `venue_belonging` |
+| `public_sex_as_world_making` | L9 | MERGE INTO `community_membership` |
 | `risk_account_style` | L9 | MERGE INTO `risk_management_practice` (3.2.0, CL20: kept as sub-field `risk_account`) |
 | `safety_practice_repertoire` | L9 | MERGE INTO `risk_management_practice` |
 | `scene_vocabulary` | L9 | DROP |
@@ -871,7 +880,7 @@ The three 10/4 waves coined 155 variable names. Twelve became fields (2.5.0 note
 | `shame_architecture` | L9 | MERGE INTO `exposure_shame` |
 | `sociosexual_orientation` | L9 | MERGE INTO `love_lust_cleft` |
 | `triangle_position` | L9 | MERGE INTO `desire_vector` (narrow fix, 3.3.0, merge kept: sub-fields `group_size`, `group_position` added under `desire_vector`) |
-| `venue_comfort_and_practice` | L9 | MERGE INTO `venue_belonging` |
+| `venue_comfort_and_practice` | L9 | MERGE INTO `community_membership` |
 | `deactivated_love_shadow` | L10 | MERGE INTO `love_lust_cleft` |
 | `disappointment_shadow` | L10 | MERGE INTO `shadow_content` |
 | `disgust_shame_pull` | L10 | MERGE INTO `shadow_content` |
@@ -884,7 +893,6 @@ The three 10/4 waves coined 155 variable names. Twelve became fields (2.5.0 note
 | `horizon_not_yet_here` | L11 | MERGE INTO `futurity_stance` |
 | `protagonist_antagonist_role` | L12 | DROP |
 | `trust_signal_strategy` | L12 | MERGE INTO `body_capital` |
-| `venue_belonging` | L3 | MERGE INTO community_membership |
 | `gender_performance_register` | L3 | MERGE INTO identity_frame |
 | `formative_scene` | L8 | MERGE INTO vandalism_event (adult history only) |
 | `wound_belief_set` | L5 | MERGE INTO L5 WOUND (sub-field) |
@@ -1095,6 +1103,7 @@ Numbered calls surfaced by the five new distills' own "For the character system"
 
 ## Version history
 
+- **3.5.0 · 2026-11-04** — Chief: go recs path cleanup (BOLO 176), and Chief: go (normalized store, BOLO 176). Truth Exposure Index now reads `12 - shame_index` (ruled 10/5 batch D, applied here); Tori's value is 20 · scale column added to the layer table · the normalized store ruled as a design rule, not built · L2b body shape registered as a field module under L2 · the six alias rows that pointed at `venue_belonging` now point at `community_membership`, and its own row is gone (alias table 139 → 138) · IF-02-06-03 points at L3 `knowledge_map` · title and purpose carry the official name LEECHSEED (ruled 11/4) · status line refreshed · the pipeline doc renamed to ssot_02.
 - **3.4.2 · 2026-10-11** — The four 3.4.0 sub-fields (`event_id` · `story_beat` · `regime` · `catalog_ref`) join "Field tags · every field" (FU-1's rule: no field ships without a tag). The prose already ruled them Static or inherited; the table now carries them, and review 02 reads DONE again.
 - **3.4.1 · 2026-10-11** — E19 (Chief: "Take all recommendations"): 10/11 · E19: Chief's early frameworks (KWML, triune brain, Greek instincts) tagged as sources. New section CHARACTER × CHIEF'S EARLY METHOD; no new fields.
 - **3.4.0 · 2026-10-05** — BOLO 102 stage 2 (Chief: "My word"): L11 `rail_ref` · `catalog_ref` on `community_membership`, `civic_standing`, `system_exposure.layers.regime` and `tech_level` · L12 `touchstone` holds the TS n:m id, slug as alias · `story_beat` is a fabula `event_id` · PENDING and FIRED_PRE_STORY flags store `event_id` · L7 `origin_event` · Anna Colson (the copy) record stub · six interface lines.

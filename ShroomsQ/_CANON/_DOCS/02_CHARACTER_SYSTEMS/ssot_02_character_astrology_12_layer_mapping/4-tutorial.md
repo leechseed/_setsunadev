@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_astrology_12_layer_mapping.md
-source_version: 1.1.0
+source_version: 1.1.1
 ---
 
 **Who it's for:** a new narrative designer · **What it does:** one consistency check, L3 SOCIAL for Victoria Midnight · **Type:** tutorial

@@ -2,11 +2,11 @@
 type: ssot_02_character_systems
 category: character_astrology
 module_of: ssot_02_character_systems_vertical_slice
-version: 1.1.1
+version: 1.1.2
 tier: fabula
-last_updated: 2026-10-05
+last_updated: 2026-11-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
-status: "v1.1.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Before: canonical"
+status: "v1.1.2 2026-11-04: Chief: go recs path cleanup (BOLO 176). A Tier 2 chart is Sun, Moon and one defining aspect. v1.1.1 2026-10-05: Purpose says Layers 1 through 11; Sextile gate added. Earlier versions: see Version History."
 purpose: "Defines the Character Astrology system as a deterministic character rendering engine within the LEECHSEED pipeline. Establishes narrative-first derivation policy, separates 15 framework categories into character-level and story-level domains, and specifies the system's relationship to Dramatica and the LEECHSEED Character System."
 dependencies: ["ssot_02_dramatica_integration_protocol", "ssot_02_character_systems_vertical_slice"]
 supersedes: ["ssot_narrative_astrology_framework", "ssot_narrative_astrology_modular_toolkit"]
@@ -76,7 +76,7 @@ Character Astrology is also not traditional astrology applied to fictional chara
     
 4. Complete chart generation is not required for the Vertical Slice to proceed. A partial chart with core planets assigned (Sun, Moon, Mercury, Venus, Mars, Saturn, Ascendant) is sufficient for L1-L11 population. Outer planets (Jupiter, Uranus, Neptune, Pluto) and advanced configurations (progressions, transits) are populated as development continues.
     
-5. The narrative-first policy applies to all tiers. Tier 3 characters receive full chart generation. Tier 2 characters receive a partial chart (Sun, Moon, and one or two defining aspects) derived from their element signature. Tier 1 characters do not receive Character Astrology treatment.
+5. The narrative-first policy applies to all tiers. Tier 3 characters receive full chart generation. Tier 2 characters receive a partial chart (Sun, Moon, and one defining aspect) derived from their element signature. Tier 1 characters do not receive Character Astrology treatment.
     
 
 ---
@@ -381,3 +381,4 @@ The two systems coexist. A complete Tier 3 character has both a Character Astrol
 |1.0.0|2026-03-03|Initial SSOT. Renamed from Narrative Astrology to Character Astrology. Relocated to 02_CHARACTER_SYSTEMS. Separated 15 categories into character-level (9 categories) and story-level (6 categories). Established narrative-first policy. Defined pipeline position and relationship to 12-Layer system. Supersedes both prior Narrative Astrology documents.|
 |1.1.0|2026-10-04|RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Stamped as a module of the character system. DAI summary table replaced by a pointer to the DAI doc. L7-L11 corrected to L1-L11. Dependency names fixed. Added: the 2.5.0 schema fields are not chart-fed. Frontmatter repaired and table of contents links made in-page. Blank template: ssot_02_template_astrology_ingest.md.|
 |1.1.1|2026-10-05|BOLO 102 batch A (Chief: "All recs go"): Purpose now says Layers 1 through 11, matching Pipeline and Relationship. Added the Sextile gate (OR, a soft aspect).|
+|1.1.2|2026-11-04|Chief: go recs path cleanup (BOLO 176): a Tier 2 chart is Sun, Moon and one defining aspect (was one or two), matching the 12-layer mapping and the DAI doc.|

@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_variable_registry.md"
-source_version: "1.3.1"
+source_version: 1.3.2
 ---
 
 **Who it's for:** a writer or designer looking up a variable · **What it does:** lists every variable, formula, flag and path in the registry · **Type:** reference
@@ -94,7 +94,7 @@ Each system owns its fields in its own doc. The registry holds the character fie
 | System | Owning doc | Owns |
 |---|---|---|
 | Narrative (01) | `01_NARRATIVE_FRAMEWORKS/📐 ssot_01_story_spine_comparative_tree.md` and `📐 ssot_01_spine_house_inventory.md` | The `feeds:` library-keying field, the `module_of:` front-matter field and the spine addresses (`SPINE.L4`, `SPINE.L2.OS.concern`) |
-| Character state (02) | `02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md` | The `REL.*` relationship fields. The 139-row alias table stays in the vertical slice. |
+| Character state (02) | `02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md` | The `REL.*` relationship fields. The 138-row alias table stays in the vertical slice. |
 | Setting (03) | `ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md` | S1 to S12 layer fields under the `SET` prefix, including S12 FUNCTION |
 | Plot (04) | `04_PLOT_SYSTEMS/📐 ssot_04_plot_system.md` and `📐 ssot_04_fabula.md` | P1 to P12 layer fields under the `PLT` prefix, including P12 FUNCTION. The fabula owns event ids. The storyform record is Plot's, and `META.storyform_id` and `T3X.FUNC_EXT.storyform_id` point at it. |
 | Theme (06) | `06_THEME_SYSTEMS/📐 ssot_06_theme_system.md` | Theme fields and the argument record |
@@ -130,11 +130,11 @@ The Slice Fields section uses one table row per field. Its columns are Canonical
 
 Chief rules each retirement. The author keeps the entry and marks it retired, with the date and the BOLO. The author names any replacement and keeps an alias row for the old name. The author removes the variable from every Feeds line. Character records keep their data. The author adds a version-history row.
 
-The vertical slice keeps the 139-row alias table, THE SCHEMA PASS. This registry cites that table as its alias list (IF-00-02-28; IF catalog call 4, ruled 2026-10-05). It does not copy the table. The table names three read aliases: `shame_index` for `exposure_shame`, `primary_attachment_object` for `secure_base_object`, and `motivation_element` for `mc_problem_element`. The author keeps an alias row on the entry of each renamed field.
+The vertical slice keeps the 138-row alias table, THE SCHEMA PASS. This registry cites that table as its alias list (IF-00-02-28; IF catalog call 4, ruled 2026-10-05). It does not copy the table. The table names three read aliases: `shame_index` for `exposure_shame`, `primary_attachment_object` for `secure_base_object`, and `motivation_element` for `mc_problem_element`. The author keeps an alias row on the entry of each renamed field.
 
 ### Read aliases
 
-The vertical slice keeps the 139-row alias table, THE SCHEMA PASS. This registry cites that table as its alias list and does not copy it (IF-00-02-28, call 4). The table names three read aliases: `shame_index` for `exposure_shame`, `primary_attachment_object` for `secure_base_object`, and `motivation_element` for `mc_problem_element`. The author keeps an alias row on the entry of each renamed field.
+The vertical slice keeps the 138-row alias table, THE SCHEMA PASS. This registry cites that table as its alias list and does not copy it (IF-00-02-28, call 4). The table names three read aliases: `shame_index` for `exposure_shame`, `primary_attachment_object` for `secure_base_object`, and `motivation_element` for `mc_problem_element`. The author keeps an alias row on the entry of each renamed field.
 
 ## Tier 1 Variables
 

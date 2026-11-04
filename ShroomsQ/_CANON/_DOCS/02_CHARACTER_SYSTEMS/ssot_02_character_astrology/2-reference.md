@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_astrology.md
-source_version: 1.1.1
+source_version: 1.1.2
 ---
 
 **Who it's for:** a writer or builder looking up a category, planet, angle or rule · **What it does:** lists every component of the Character Astrology doc · **Type:** reference
@@ -67,7 +67,7 @@ Governing principle: Dramatica defines the narrative truth, and the chart serves
 | 2 | When astrology contradicts locked Dramatica data, Dramatica governs. The writer revises the astrological assignment. |
 | 3 | Chart generation follows the fixed derivation sequence in the DAI doc. No step is skipped or reordered. |
 | 4 | A partial chart is enough for L1-L11: Sun, Moon, Mercury, Venus, Mars, Saturn, Ascendant. Outer planets, progressions and transits come later. |
-| 5 | Tier 3 gets a full chart. Tier 2 gets a partial chart (Sun, Moon, one or two defining aspects) from its element signature. Tier 1 gets none. |
+| 5 | Tier 3 gets a full chart. Tier 2 gets a partial chart (Sun, Moon, one defining aspect) from its element signature. Tier 1 gets none. |
 
 Connects to: [DAI doc](../ssot_02_character_astrology_dai/2-reference.md).
 

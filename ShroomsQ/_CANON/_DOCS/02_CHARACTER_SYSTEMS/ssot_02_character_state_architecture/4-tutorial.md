@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md
-source_version: 1.4.0
+source_version: 1.4.1
 ---
 
 **Who it's for:** a new narrative designer · **What it does:** one state diff built from the source's own example · **Type:** tutorial
