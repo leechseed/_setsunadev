@@ -37,7 +37,7 @@
   ],
   "home": "BOLO.md · row 176",
   "card": "none",
-  "version": "v0.2 · DOPE SHEET"
+  "version": "v0.3 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -424,6 +424,11 @@
      "when": "11/4",
      "who": "Claude",
      "t": "Seams closed, Tori and Anna through the pipeline; one storyform flag found (two storylines in one domain); the remap check deployed."
+    },
+    {
+     "when": "11/4",
+     "who": "Claude",
+     "t": "Launch refresh: reopened from the 2026-10-31.session.md close-out."
     }
    ]
   }

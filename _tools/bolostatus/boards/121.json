@@ -21,7 +21,7 @@
   ],
   "home": "BOLO.md · row 121",
   "card": "none",
-  "version": "v0.5 · DOPE SHEET"
+  "version": "v0.6 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -372,6 +372,11 @@
      "when": "11/4",
      "who": "Claude",
      "t": "Placeholders dropped from the live matcher (11/4, Chief \"rec\"; provisional): 44,032 shared \"image removed\" reference images leave the reference set, no file touched. Self-check board 33.7% -> 37.5%, part 97.1% -> 96.8%. Boards 1,389 -> 1,382 (7 had only placeholders). Board families 347 -> 293, family hit 50.7% -> 55.7%. Rail board tags 11,029 -> 10,957 images. All 58,421 corpus images keep a label (79 changed board, 0 changed part). Rollback copy kept."
+    },
+    {
+     "when": "11/4",
+     "who": "Claude",
+     "t": "Launch refresh: reopened from the 2026-10-31.session.md close-out."
     }
    ]
   }
