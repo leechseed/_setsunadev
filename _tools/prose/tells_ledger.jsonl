@@ -585,3 +585,4 @@
 {"ts": "2026-11-04 00:33", "sid": "33907b68", "words": 77, "tells": 2, "per_1k": 26.0, "families": {"other": 1, "passive": 1}, "rules": {"long-sentence": 1, "passive": 1}}
 {"ts": "2026-11-04 00:33", "sid": "33907b68", "words": 77, "tells": 2, "per_1k": 26.0, "families": {"other": 1, "passive": 1}, "rules": {"long-sentence": 1, "passive": 1}}
 {"ts": "2026-11-04 00:36", "sid": "33907b68", "words": 77, "tells": 2, "per_1k": 26.0, "families": {"other": 1, "passive": 1}, "rules": {"long-sentence": 1, "passive": 1}}
+{"ts": "2026-11-04 00:41", "sid": "33907b68", "words": 170, "tells": 2, "per_1k": 11.8, "families": {"other": 1, "passive": 1}, "rules": {"long-sentence": 1, "passive": 1}}
