@@ -371,7 +371,8 @@ A reply that teaches carries one small idea, then stops. A reply that would teac
 ### 7.14 · The spoken line is the point
 When a reply teaches, the spoken line (rule 10) states the idea as a sentence, never a label like "three steps". Chief's teach-back says that same sentence back. The part locks when his gist matches it.
 - **WHEN** a reply teaches **THEN** its say-line is one full sentence stating the idea, not a label.
-<sub>Ruled 2026-10-04 · BOLO 6, Chief: "our recommendations" · TEC.04, the pyramid's top box</sub>
+- **The ladder (provisional, 11/4):** Bloom's revised steps grade a teach-back. Saying the sentence back is *understand*; using it on a new case is *apply*. See `_0.1_BVX_LEARN/LOCI/learning-design.locus.md`.
+<sub>Ruled 2026-10-04 · BOLO 6, Chief: "our recommendations" · TEC.04, the pyramid's top box · ladder line 2026-11-04, Chief: "go"</sub>
 
 ### 7.15 · The cold re-check, answer attached
 A part locks on the say-back. At the next session's open, Claude asks one cold question on the newest locked part. Every question Claude asks Chief carries its answer right after it, as a short tip. Chief answers if he wants to, and no reply is owed.
