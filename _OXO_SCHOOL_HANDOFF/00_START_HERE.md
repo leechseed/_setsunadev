@@ -1,5 +1,7 @@
 # OXO / THE OUTLIERS — School Fusion Brief
 
+> **LINEAGE (ruled 11/4, OXO kickoff call 3):** this handoff is lineage. Live canon is `_CANON_NODES/` plus the 11/4 storyline remap; the 185-page script is the legacy of record. OXO is one feature, and movements M1–M6 are its acts (call 1). The Tori copies in `sources/` are lineage (call 9).
+
 **Purpose of this document:** a self-contained handoff so a fresh Claude session (with no access to the `_setsunadev` repo) can help develop the school setting for OXO. Everything needed is in this file. The `sources/` folder holds the verbatim originals if deeper detail is wanted.
 
 **Project:** OXO = OVEREXITOUT = *The Outliers*. A non-linear, anthology-style serial about the reconstruction of human "assets" inside a tri-state megalopolis (Florida / Alabama / Georgia).
@@ -13,18 +15,18 @@ The repo was searched exhaustively. Three commonly-used working names **do not e
 | Working name | Reality |
 |---|---|
 | "UltraSchool" | Did not exist in any *pre-ruling* source doc. **Superseded 2026-08-24: "Ultra School" (two words) is now canon by deliberate ruling — see the DCUS banner below.** |
-| "Quinton" | No such character. The real character is **Quinn Bishop**. |
+| "Quinton" | **Corrected, ruled 11/4 (OXO kickoff call 5):** the character is **Quinton Bishop**, Quinn short. Bare "Quinn" stays fine as the short form. |
 | "Barnes" | No such character anywhere. (All hits were "Barnes & Noble" in an unrelated publishing note.) The canonical surname paired with Quinn is **Bishop**. |
 | "The Outsiders" | **Wrong title.** The series is **The Outliers** — always. Never write "The Outsiders" (that's the S.E. Hinton novel). The word *Outlier* is load-bearing in this world: an "Outlier" is a high-value statistical anomaly the system acquires and rebuilds, and Victoria's arc is becoming a true Outlier. "Outsider" destroys that meaning. |
 
 **The school has two names, from two eras of the project:**
 
-1. **The "Inner Spiral" Academy** — current canon (2025–26). Named exactly once in the Master System Bible; everywhere else it is generically "The Academy," "Year 1 School," "Year 2 School."
-2. **Red Hills Academy** — legacy canon (2022–23), later variant name *Red Stick Creek* (from North Florida Red Stick Creek Native American history). Far richer institutional detail.
+1. **The "Inner Spiral" Academy** — lineage (2025–26). Named exactly once in the Master System Bible; everywhere else it is generically "The Academy," "Year 1 School," "Year 2 School." Ruled 11/4 (OXO kickoff call 2): Inner Spiral is now geography, a place, not the school.
+2. **Red Hills Academy** — legacy (2022–23); ruled 11/4 (call 2): it becomes DCUS through the Bishop acquisition. Era 1 = Skeeter Creek (founding + Red Hills), era 2 = DCUS (call 11). Later variant name *Red Stick Creek* (from North Florida Red Stick Creek Native American history). Far richer institutional detail.
 
 **The task: fuse these two lineages.** Section 4 explains why they fuse cleanly.
 
-> ✅ **RULED 2026-08-24 — the fused school's name: the Delta Coast Ultra School ("DCUS").** Chosen from an 8-name Ultra bench on Chief's directive that "Ultra School" carry the title, Southern Gothic register. Recommended connective tissue, still unruled: Red Hills Academy → DCUS as the Bishop-acquisition rebrand · "Inner Spiral" reverts to pure geography (the school's Middle-Bands address; retcons the Bible's single mention) · "Ultra School" as an institutional class (a Bishop chain, DCUS the flagship) · the Red Stick Creek stratum beneath Red Hills. Node: `_CANON_NODES/delta-coast-ultra-school.md` (in the repo; not in this self-contained bundle).
+> ✅ **RULED 2026-08-24 — the fused school's name: the Delta Coast Ultra School ("DCUS").** Chosen from an 8-name Ultra bench on Chief's directive that "Ultra School" carry the title, Southern Gothic register. **Ruled 11/4 (OXO kickoff calls 2 and 7):** Red Hills Academy → DCUS as the Bishop-acquisition rebrand · "Inner Spiral" reverts to pure geography (the school's Middle-Bands address) · Delta Coast is the region and the school's prefix · "The Bishops" is the guild that owns the school; Quinton Bishop is of that family. Still unruled: "Ultra School" as an institutional class (a Bishop chain, DCUS the flagship) · the Red Stick Creek stratum beneath Red Hills. Node: `_CANON_NODES/delta-coast-ultra-school.md` (in the repo; not in this self-contained bundle).
 
 ---
 
@@ -177,13 +179,13 @@ Note the corroboration: current canon says Movement 3's focus is **"Anna Colson'
 - gives "legacy/alumni students" a reason to resent the Star-Rating system (old money vs. new metric),
 - and makes the Student Diaspora the *second* generation of discarded people, echoing the first.
 
-*(This synthesis is a proposal, not existing canon — it is the connective tissue the source documents don't yet have.)*
+*(The Red Hills → DCUS rebrand is RULED, 11/4, OXO kickoff call 2. The detail of the sale is still this brief's proposal.)*
 
 ---
 
 ## 5. WHAT TO WORK ON — open problems
 
-1. ~~**Name the fused school.**~~ ✅ **RULED 2026-08-24: the Delta Coast Ultra School ("DCUS").** The renaming-event mechanism (Red Hills → DCUS on Bishop acquisition) is the recommended tissue, unruled; *Red Stick Creek* remains a bench stratum.
+1. ~~**Name the fused school.**~~ ✅ **RULED 2026-08-24: the Delta Coast Ultra School ("DCUS").** The renaming event (Red Hills → DCUS on Bishop acquisition) is RULED 11/4 (OXO kickoff call 2); *Red Stick Creek* remains a bench stratum.
 2. **Build the faculty.** Zero named educators exist. Who teaches at a school where the curriculum is conformity ranking? Are they human holdovers from Red Hills, or Administration constructs?
 3. **Build the actual curriculum.** What are the classes? What does a Year 1 timetable look like? How is "Sync" literally taught, measured, and examined?
 4. **Specify the Star-Rating mechanics.** How are ranks assigned, displayed, raised, lost? What does a 1-star student's uniform look like vs. a 5-star?
@@ -224,4 +226,4 @@ All files in `sources/` are verbatim copies, renamed to plain ASCII.
 ### Repo notes (things that are NOT here, and why)
 - `OUTLIERS_FINAL_DRAFT/outliers.fdx` is **empty** — one blank scene heading. No script pages exist.
 - `ShroomsQ/_CANON/_AUTHORITATIVE/OVEREXITOUT/{world,plot,theme}/` are **empty directories**.
-- `_dramatica_OXO_builds/` and `DRAMATICA V4 PROGRAM BUILDS/OXO.dsf` are **unfilled Dramatica templates** with no story content.
+- `_dramatica_OXO_builds/` and `DRAMATICA V4 PROGRAM BUILDS/OXO.dsf` are **unfilled Dramatica templates** with no story content. Ruled 11/4 (call 8): they are lineage; the engine file of record is `_CANON_NODES/oxo-storyform-engine.dsf` (8/24) plus the 11/4 remap.

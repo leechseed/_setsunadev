@@ -62,8 +62,8 @@ Volume measures thought already spent. Leverage measures what moves if you touch
 ## What each one is, and what it's waiting on
 
 ### 1 · OVEREXITOUT / The Outliers — 🟢
-The IP. Anchors: `THE OUTSIDERS SYSTEM` (304k), `MAIN SONNET` (192k). Six movements, tri-state Delta Coast Spiral, death-as-boot-sequence. Tori node built, L9 authored, IC candidate derived.
-**Waiting on:** the engine-verify pass only (BOLO 7). **All three former blocks RULED 2026-08-24:** the storyform ([_CANON_NODES/oxo-storyform.md](_CANON_NODES/oxo-storyform.md)) · IC = Anna Colson Conway · the school = the Delta Coast Ultra School (DCUS).
+The IP. Anchors: `THE OUTLIERS SYSTEM` (304k; archived under its old title "The Outsiders System"), `MAIN SONNET` (192k). One feature (ruled 11/4, OXO kickoff call 1): movements M1–M6 are its acts. Tri-state Delta Coast Spiral, death-as-boot-sequence. Tori node built, L9 authored, IC candidate derived.
+**Waiting on:** the engine-verify pass only (BOLO 7). **All three former blocks RULED 2026-08-24:** the storyform ([_CANON_NODES/oxo-storyform.md](_CANON_NODES/oxo-storyform.md)) · IC = Anna Colson Conway · the school = the Delta Coast Ultra School (DCUS). 11/4 OXO kickoff: calls 1, 2 landed (ruled 11/4).
 → `_CANON_NODES/` · `_OXO_SCHOOL_HANDOFF/`
 
 ### 2 · BVIPDS / LEECHSEED — 🟢
