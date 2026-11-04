@@ -88,13 +88,35 @@ def straight_pool(used):
     return out
 
 
-def build(minutes, only):
-    used = played_today()
+def pmv_pool(used):
+    """--pmv (Chief 11/4: "mix in some non-nude PMVs"): scenes tagged non-nude that are PMVs (a pmv* tag or pmv in the name)."""
+    nn = [t["id"] for t in sp.gql('query{ findTags(filter:{q:"non-nude", per_page:10}){ tags{ id name } } }')["findTags"]["tags"]
+          if t["name"].lower() == "non-nude"]
+    if not nn:
+        return []
+    q = ('query($f:SceneFilterType){ findScenes(scene_filter:$f, filter:{per_page:-1}) { scenes { %s } } }' % sp.FIELDS)
+    out = []
+    for s in sp.gql(q, {"f": {"tags": {"value": nn, "modifier": "INCLUDES"}}})["findScenes"]["scenes"]:
+        if not s.get("files"):
+            continue
+        f = s["files"][0]
+        d = int(f.get("duration") or 0)
+        title = (s.get("title") or f.get("basename") or "").strip()
+        tagged = any((t.get("name") or "").lower().startswith("pmv") for t in s.get("tags") or [])
+        if (tagged or is_pmv(title, f["path"])) and MIN_CLIP <= d <= MAX_CLIP and norm(f["path"]) not in used:
+            out.append({"kind": "pmv", "dur": d, "title": title, "path": f["path"]})
+    return out
+
+
+def build(minutes, only, repeats=False, pmv=False):
+    used = set() if repeats else played_today()  # --repeats (Chief 11/4: "doesn't matter if we've run em again")
     pools = []
     if only in (None, "gay"):
         pools.append(gay_pool(used))
     if only in (None, "straight"):
         pools.append(straight_pool(used))
+    if pmv:
+        pools.append(pmv_pool(used))
     want = minutes * 60
     picked, total = [], 0
     for pool in pools:
@@ -123,12 +145,14 @@ def main():
     ap.add_argument("--side", default="left")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--json", action="store_true")
+    ap.add_argument("--repeats", action="store_true", help="allow clips already played today")
+    ap.add_argument("--pmv", action="store_true", help="mix in non-nude PMVs as a third share")
     a = ap.parse_args()
-    picked, total, nused = build(a.minutes, a.only)
+    picked, total, nused = build(a.minutes, a.only, a.repeats, a.pmv)
     if not picked:
         sys.exit("Nothing fresh left in the pool for today.")
-    kinds = {k: sum(1 for c in picked if c["kind"] == k) for k in ("gay", "straight")}
-    line = "%d clips, %d min (%d gay, %d straight), skipped %d already played today" % (len(picked), round(total / 60), kinds["gay"], kinds["straight"], nused)
+    kinds = {k: sum(1 for c in picked if c["kind"] == k) for k in ("gay", "straight", "pmv")}
+    line = "%d clips, %d min (%d gay, %d straight, %d PMV), skipped %d already played today" % (len(picked), round(total / 60), kinds["gay"], kinds["straight"], kinds["pmv"], nused)
     if a.json:
         print(json.dumps({"summary": line, "dry_run": a.dry_run, "clips": picked}, indent=1))
     if a.dry_run:
@@ -143,4 +167,5 @@ def main():
         print(("Fresh hour is up: " if ok else "Built, but the window did not report in: ") + line + "  [" + os.path.basename(out) + "]")
 
 
-main()
+if __name__ == "__main__":  # 11/4: an import once launched a stray hour
+    main()
