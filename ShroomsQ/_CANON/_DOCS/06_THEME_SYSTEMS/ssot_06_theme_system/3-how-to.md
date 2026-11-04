@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/06_THEME_SYSTEMS/📐 ssot_06_theme_system.md
-source_version: 1.4.1
+source_version: 1.4.3
 ---
 
 **Who it's for:** a writer who already knows what theme is · **What it does:** step-by-step recipes for the theme system's tasks · **Type:** how-to

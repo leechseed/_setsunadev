@@ -1,9 +1,9 @@
 ---
 type: ssot_03_setting_systems
 category: setting_system
-version: 1.11.1
+version: 1.11.2
 tier: [fabula, narratology]
-last_updated: 2026-10-05
+last_updated: 2026-11-04
 applies_to: [all IPs]
 status: "v1.11.0 2026-10-05: RULED, Chief (\"My word\") — BOLO 102 stage 2, IF catalog calls 1, 2, 5, 6 and 10: LEDGER_DUE future states carry the 08 time code; the SCENE CARD gains the theme record (`rail_tested`, `side_argued`, `gauge`), `focal`, and `fantasy` / `sexy` / `aesthetic`; UNDERSIDE_SURFACING hands P7; LOAD_BEARING hands P12; S8 `witness` takes a character id; Ryan's scoring is the genre-contract tool for 03 and 01; six interface lines. v1.10.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 follow-up: build order, premise ripple and derivation chain; faction `fault line` and `drift`; `boundary_kind` and `crossing`; S5 `overwritten_by` and `trace_kept`; S12 `link`; S8 tier `price`; header `real_anchor`. v1.9.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 library pass: faction goal, clock, wound; S4 dials and power mode; S5 record and RUIN_INERT; S11 phase; gauges; canon tier; derivation check; three new flags. v1.8.0 2026-10-04: RULED 9/16, landed 10/4 — BOLO 100 genre cross-doc: the dystopia mechanism written as method (genre OPEN 11). v1.7.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 setting batch 1: stale marks stripped; DCUS faction-card gaps parked; SETTING FLAGS starter set (six flags) written; scene-card field trial parked; scope set to all IPs; instance labeled worked example. Earlier: canonical — Module 2 of the lattice, delivered on Chief's clear 2026-08-25; layer names RULED 2026-09-29; 1.1.0 2026-09-16: MIND MODELS added (three diagrams) for TM 03; 1.2.0 2026-09-29: synthesis of 42 setting distills linked, proposed changes pending ruling; 1.3.0 2026-09-29: synthesis changes 1, 2, 3, 4, 6, 7, 8, 9 RULED and applied (Chief, \"go on all those recs\"); change 5 benched; change 10 reaffirmed; 1.4.0 2026-09-29: the six OPEN calls RULED as recommended (Chief, \"I'll recommend\"): passageway → S1 seam type · conflict level → S12 reading · fill rule written · tone → S12 sub-note · layer names ruled · 03 placement kept; 1.4.1 2026-09-29: DCUS S2 WEATHER filled + DCUS faction cards (Chief, \"go, all recommendations\"); 1.4.2 2026-09-29: setting state architecture landed (BOLO 90 step 3); 1.5.0 2026-09-29: THE SEQUENCE CARD added, RULED 2026-09-29, Chief: \"line up the recs\" (BOLO 90 step 7 trial)"
 purpose: "THE SETTING SYSTEM — character-grade place: the taxonomy of what setting IS, the 12-layer SETTING SLICE schema (mirror of the LEECHSEED Character System), the SCENE CARD notation, and the DCUS starter instance as proof."
@@ -346,7 +346,7 @@ Filled entirely from existing canon ([delta-coast-ultra-school.md](../../../../_
 | S9 ALLURE | **the meritocratic promise** — the exact premise Tori must stop believing (Growth: Stop); flagship-Ultra prestige; the Feed's glamour |
 | S10 UNDERSIDE | the first name under the second (Movement 3's forensic mode); what the rebrand-as-Boot-Sequence overwrote; the disruption→collapse skeleton |
 | S11 VECTOR | the six-movement descent: clean → NEON-ROT → hunt; collapse trajectory `phase` · `vacuum` · state `tone` ⏸ DCUS faction fill pass (phase 2) |
-| S12 FUNCTION | `storyform_id: oxo_primary_v1` — **the OS Domain embodied: Situation / The Past.** Goal = The Past, story_cost = Memories: the campus IS personal history deleted for programming space, done to a place. The rebrand is the world's Boot Sequence at institutional scale. **Touchstone set: the Institutional Invariants (Ecclesial Laws)** — `THE_ADMINISTRATION.md`, place-scoped `contradiction` · `salient surplus` · `link` ⏸ DCUS faction fill pass (phase 2) |
+| S12 FUNCTION | `storyform_id: oxo_primary_v1` — **the OS Domain embodied: Manipulation / Developing a Plan.** Goal = Developing a Plan (remap, ruled 11/4), story_cost = Memories: the campus IS personal history deleted for programming space, done to a place. The rebrand is the world's Boot Sequence at institutional scale. **Touchstone set: the Institutional Invariants (Ecclesial Laws)** — `THE_ADMINISTRATION.md`, place-scoped `contradiction` · `salient surplus` · `link` ⏸ DCUS faction fill pass (phase 2) |
 
 **DCUS faction cards (RULED 1.4.1, 2026-09-29; Chief, "go, all recommendations").** Full cards for the two factions the story centers, stubs for the rest. **The Administration and the Bishops are two factions** (the owners buy the school; the system runs it without them; THE_ADMINISTRATION.md's "(The Bishops)" parenthetical reads as the Bishops being its instrument, not its identity).
 
@@ -421,6 +421,7 @@ Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the **setting** domain is k
 
 ## Version history
 
+- **1.11.2 — 2026-11-04.** Chief: GO (storyform remap, BOLO 176): S12 binding for DCUS reads the OS Domain as Manipulation / Developing a Plan, Goal = Developing a Plan (propagation call B, rec a). No schema change.
 - **1.11.1 — 2026-10-05.** BOLO 102 batch D (Chief: "All recommendations"): THE SCENE CARD heading line counts its fields, twenty-four, in place of "Ten".
 - **1.11.0 — 2026-10-05.** BOLO 102 stage 2 (Chief: "My word"): IF catalog calls 1, 2, 5, 6 and 10 land. LEDGER_DUE future states carry the 08 time code. The SCENE CARD gains the theme record, `focal`, and `fantasy` / `sexy` / `aesthetic`. UNDERSIDE_SURFACING hands P7, LOAD_BEARING hands P12, and S8 `witness` takes a character id. Ryan's scoring is the genre-contract tool for 03 and 01. SETTING × LIBRARY gains six interface lines.
 - **1.10.2 — 2026-10-04.** Chief "rec" (BOLO 100, call D4): S2 WEATHER names `climate_band`, `seasons`, `light`, `rhythms`; S9 ALLURE names `promise`, `draw`, `glamour`, `source_rupture`. No tag change.

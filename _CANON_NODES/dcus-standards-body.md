@@ -30,7 +30,7 @@ bolo: 50
 - **What fused.** Red Hills Academy (2022–23): "grandfather-vs-son ownership war · split faculty loyalties · alumni-legacy student bloc." "Inner Spiral" Academy (2025–26): "The Sync Cult · Star-Rating / Feed-Linked Clothing · The Administration as depersonalized OS · the six-movement descent."
 - **S4 LAW, ruled instance.** "the Administration as a depersonalized OS · Star-Rating · Sync Cult mechanics · Feed-linked clothing as enforced legibility."
 - **S8 HABIT, ruled instance.** "alumni-legacy bloc vs Sync-era students; split faculty loyalties; the ritual life of the Star-Rating."
-- **S12 FUNCTION, ruled instance.** `storyform_id: oxo_primary_v1` — "the OS Domain embodied: Situation / The Past. Goal = The Past, story_cost = Memories: the campus IS personal history deleted for programming space, done to a place." Invariant set: "the Institutional Invariants (Ecclesial Laws) — `THE_ADMINISTRATION.md`, place-scoped."
+- **S12 FUNCTION, ruled instance.** `storyform_id: oxo_primary_v1` — "the OS Domain embodied: Manipulation / Developing a Plan. Goal = Developing a Plan (remap, ruled 11/4), story_cost = Memories: the campus IS personal history deleted for programming space, done to a place." Invariant set: "the Institutional Invariants (Ecclesial Laws) — `THE_ADMINISTRATION.md`, place-scoped."
 - **The storyform's cost.** `story_cost`: **Memories** (LOCKED, Master Bible §5). Consequence, engine pass: **Memories** — "fail to reclaim the past and the memories are forfeit."
 - **Victoria's Growth, RULED 2026-08-24.** "Stop — the meritocratic premise must collapse; she stops believing, she doesn't start waiting." S9 ALLURE: "the meritocratic promise — the exact premise Tori must stop believing (Growth: Stop)."
 - **The house ladder, ruled 2026-09-15.** Four rungs: **policy** ("what the house does and why… signed at the top"), **procedure** ("how the house does it. Mandatory."), **standard** ("the measurable 'shall' for a class of product or process"), **handbook** ("guidance. 'Should.' Forbids nothing"). Decided by: forbids nothing → handbook; measures a product → standard; governs how the house works → procedure; says what the house is and why → policy.
@@ -51,7 +51,7 @@ The Administration is the OS layer; the Bishops are the ownership layer above it
 | Enforces it day to day | Star-Rating · Sync Cult mechanics · Feed-linked clothing as legibility | canon (S4 LAW) |
 | Bound by it | students (legacy-bloc + Sync-era) and faculty (split loyalties) | canon (S8 HABIT) |
 | In-world name for the apparatus | "The Administration" | canon (S4 LAW; DOCTRINE 0's corpus table) |
-| What it is for in the storyform | embodies the OS Domain, **Situation / The Past** | ⧗, read off S12 FUNCTION |
+| What it is for in the storyform | embodies the OS Domain, **Manipulation / Developing a Plan** | ⧗, read off S12 FUNCTION |
 
 The Administration is the OS Domain made into an office: it enforces the meritocratic premise rather than arguing it, and Victoria's Growth (Stop) is ceasing to treat its output as true.
 

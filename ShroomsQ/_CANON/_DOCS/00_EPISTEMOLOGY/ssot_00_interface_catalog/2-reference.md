@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_interface_catalog.md"
-source_version: 0.2.1
+source_version: 0.2.2
 ---
 
 **Who it's for:** the CDR and the writers. They look up an interface, a count or a ruling before touching a field another system reads · **What it does:** lists every part of the interface catalog, in the source's order · **Type:** reference

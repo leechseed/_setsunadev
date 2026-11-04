@@ -57,7 +57,7 @@ Tori has to learn this. Anna has already stopped needing to learn anything.
 | Full name | Anna Colson Conway |
 | Narrative role | Impact Character |
 | Resolve | **Steadfast** — [[oxo-storyform]] §9 Dynamics line ("IC Resolve Steadfast") |
-| IC Domain | **Fixed Attitude** — [[oxo-storyform]] §9, the ruled reassignment of the engine's RS(MvI) slot to Anna; **re-ruled 2026-11-04 (BOLO 150, the Docket)** over the NCP export. The NCP IC storypoints now read this column (re-exported 11/4, ruled Chief 'go' 11/4, BOLO 176; Draft 7, 0 errors). Open: the NCP RS still reads the same column |
+| IC Domain | **Fixed Attitude** — [[oxo-storyform]] §9, the ruled reassignment of the engine's RS(MvI) slot to Anna; **re-ruled 2026-11-04 (BOLO 150, the Docket)** over the NCP export. The NCP IC storypoints now read this column (re-exported 11/4, ruled Chief 'go' 11/4, BOLO 176; Draft 7, 0 errors). Closed 11/4: the NCP RS moved to Activity / Understanding |
 | IC Concern | **Memories** — same reassignment. This supersedes two earlier readings in the record: §4's own VERIFY guess ("Innermost Desires," which the engine actually seats as this throughline's *Signpost 2*, not its Concern) and §2's pre-rotation table ("Developing a Plan," whose content the same ruling sends to **OS — the Factions**, not to Anna) |
 | Problem → Solution | **Equity → Inequity** — identical to the MC and RS columns; [[oxo-storyform]] §9 notes "the story's argument is one argument" |
 | Symptom → Response | Projection → Speculation |
@@ -113,7 +113,7 @@ Tori's Truth Exposure Index measures how legible she is *against her will*. Anna
 
 ## The 12 layers
 
-Every entry below states where Anna and Tori collide or mirror on the RS axis (Fixed Attitude / Memories), per the order fired in this session.
+Every entry below states where Anna and Tori collide or mirror on the RS axis (Activity / Understanding), per the order fired in this session.
 
 | Layer | Value | Fed by | Collision with Tori |
 |---|---|---|---|

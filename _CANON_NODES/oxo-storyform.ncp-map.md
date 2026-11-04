@@ -1,6 +1,6 @@
 # OXO storyform: NCP export map
 
-[oxo-storyform.ncp.json](oxo-storyform.ncp.json) is the OXO primary storyform written in Narrative Context Protocol form. [oxo-storyform.md](oxo-storyform.md) stays the source of truth; edit it, then regenerate the JSON, never the other way round. The JSON follows storyform section 9 (the engine form, the canon per section 2).
+[oxo-storyform.ncp.json](oxo-storyform.ncp.json) is the OXO primary storyform written in Narrative Context Protocol form. [oxo-storyform.md](oxo-storyform.md) stays the source of truth; edit it, then regenerate the JSON, never the other way round. The JSON follows the 9/23 remap frame (the section 9 table, right-hand column), ruled 11/4. Chief: GO (storyform remap, BOLO 176).
 
 ## Mapping: canon word to NCP word
 
@@ -42,12 +42,12 @@ Words that match one-to-one (Equity, Inequity, Projection, Speculation, Ability,
 3. `players[].visual`, `players[].audio`, `players[].storytelling`, every storypoint `illustration` and `storytelling`, and every dynamic `storytelling` are `""`. The storyform has no such text; the schema requires them.
 4. `subtext.storybeats` is empty. The schema requires `tones`, `illustration`, `summary` and `storytelling` on every storybeat and the storyform supplies none, so the 16 Signposts sit in `x_canon_transits` (an extension key) instead.
 5. Progressions (1-16) and events (1-64) are absent. The act-by-act variation quads live in `plot_sequence.TXT` and are not transcribed.
-6. Plot appreciations (Goal The Past, Consequence Memories, Cost Developing a Plan, Dividend Understanding, Requirement The Present, Prerequisite Contemplation, Precondition Conceiving an Idea, Forewarnings Gathering Information) have no value in the schema enum. They sit in `x_canon_plot_appreciations`, unmapped.
+6. Plot appreciations (Goal Developing a Plan, ruled 11/4; the other seven carry the 8/24 values until the Dramatica re-entry confirms: Consequence Memories, Cost Developing a Plan, Dividend Understanding, Requirement The Present, Prerequisite Contemplation, Precondition Conceiving an Idea, Forewarnings Gathering Information) have no value in the schema enum. They sit in `x_canon_plot_appreciations`, unmapped.
 7. `storytelling.overviews` and `storytelling.moments` are empty. The episode mapping waits on plot_systems (medium line, section header), and `audience_experiential_pov` is not set.
 8. Issue counterparts (the second term of "X vs. Y") share one storypoint with the issue; NCP holds one method per storypoint, so the pair is written in `summary` only.
 9. The Personal Triumph ending name has no vector in the schema enum. Failure and Good are set; the name is in the `judgment` summary.
-10. Conflict inside the storyform: section 2 and section 9 give Anna (IC) Manipulation / Developing a Plan, while section 4 (ruled 2026-09-23) gives her Fixed Attitude / Memories and the RS column. The export follows section 9, which section 2 names as the storyform. Needs Chief's ruling.
+10. Closed 11/4 (Chief: GO, BOLO 176). Anna (IC) is Fixed Attitude / Memories, and the RS moved to Activity / Understanding. Section 2 now carries the same frame.
 11. The Factions are not a Player. The storyform defines no OS character, so only Tori and Anna appear in `players`.
 12. L12 fields with no NCP slot are left out: methodology Certainty, evaluation Proven, purpose Knowledge, motivation_quad Consider, narrative_invariant, dramatica_archetype beyond the Tori player summary.
-13. Section 3-6 cells tagged VERIFY, ENGINE or superseded (for example os_concern Becoming, mc_issue Interdiction for Tori) are not used; section 9 replaces them.
+13. Section 3-6 cells tagged VERIFY, ENGINE or superseded (for example os_concern Becoming) are not used; section 9 replaces them. Closed 11/4 for Tori: mc_issue Interdiction is used again for the MC.
 14. Schema defects, not storyform gaps: `ncp-schema.json` is not a valid draft-07 schema (`oneOf` sits as an array inside `properties`), so `jsonschema.validate` stops at `check_schema`. The JSON was checked with `Draft7Validator(schema).iter_errors(doc)` and has zero errors. The schema also requires a `pov` key on perspectives that it never declares; the JSON carries both `pov` and `author_structural_pov`.

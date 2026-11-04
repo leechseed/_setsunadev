@@ -7,8 +7,8 @@ series: The Outliers
 medium: SERIES — RULED 2026-09-09 (true-ancients pass R9; supersedes the .fdx feature assumption and the lattice's tacit prose default; the legacy ten-episode Season 1 shape stands as the working container until plot_systems maps Movements to episodes)
 trunk: BLACK
 storyform_id: oxo_primary_v1
-storyform_version: 2.0
-status: CANON — RULED 2026-08-24: flag struck, the §9 engine form IS the storyform; the rotation supersedes the morning domain assignments
+storyform_version: 2.1
+status: CANON — RULED 2026-08-24: flag struck, the §9 engine form IS the storyform; the rotation supersedes the morning domain assignments · remap frame ruled 11/4 (BOLO 176): the 9/23 remap carried through, one domain each
 blocking: none
 links:
   - "[[victoria-midnight]]"
@@ -43,17 +43,18 @@ ruled: 2026-08-24
 
 **The shape:** Change · Stop · Do-er · Linear · Action · Optionlock · **Failure/Good — the Personal Triumph ending.** The system wins the board; Tori wins herself. This is the Grand Argument the whole series makes.
 
-## 2 · Throughline Domains — SUPERSEDED 2026-08-24 by the §9 ruling
+## 2 · Throughline Domains — the 9/23 remap frame, RULED 2026-11-04 (BOLO 176)
 
-**RULED 2026-08-24 (evening, flag struck): the engine form as entered is canon.** The four perspectives now sit:
+**RULED 2026-11-04 (Chief: GO): the 9/23 remap is carried through, one domain each.** The four perspectives now sit:
 
-| Throughline | Domain (canon, §9) | Superseded morning value |
+| Throughline | Domain (canon, 11/4) | Superseded values (history) |
 |---|---|---|
-| MC (Tori) | **Activity** — Concern: Understanding | ~~Situation~~ |
-| IC (Anna) | **Manipulation** — Concern: Developing a Plan | ~~Fixed Attitude~~ |
-| OS (the Factions) | **Situation** — Concern: The Past | ~~Manipulation~~ |
-| RS (Tori↔Anna) | **Fixed Attitude** — Concern: Memories | ~~Activity~~ |
+| MC (Tori) | **Situation** — Concern: The Past | ~~Activity / Understanding~~ (8/24 engine labels) |
+| IC (Anna) | **Fixed Attitude** — Concern: Memories | ~~Manipulation / Developing a Plan~~ (8/24 engine labels) |
+| OS (the Factions) | **Manipulation** — Concern: Developing a Plan | ~~Situation / The Past~~ (8/24 engine labels) |
+| RS (Tori↔Anna) | **Activity** — Concern: Understanding | ~~Fixed Attitude / Memories~~ (8/24 engine labels) |
 
+The 8/24 evening ruling had the engine labels as entered; the 11/4 ruling moves each throughline to its own domain. The 8/24 table stays in §9 as history.
 §§3–6 below record the pre-rotation frame and its rationale — historical record, not canon where they conflict with §9. **§9's transcription is the storyform.**
 
 ## 3 · MC Throughline — Victoria "Tori" Midnight
@@ -67,14 +68,14 @@ ruled: 2026-08-24
 | mc_thematic_conflict | **Interdiction vs. Prediction** — the system forecasts her; she intervenes | DERIVED |
 | mc_problem | Equity | LOCKED |
 | mc_solution | Inequity | LOCKED |
-| mc_symptom | Desire (= Focus; Focus/Symptom are one concept) | VERIFY |
-| mc_response | Ability (= Direction) | VERIFY |
-| mc_unique_ability | Destiny | LOCKED |
-| mc_critical_flaw | Truth | LOCKED |
-| mc_focus | Desire | LOCKED |
-| mc_direction | Ability | LOCKED |
-| mc_benchmark | — | ENGINE |
-| mc_signpost_1–4 | — | ENGINE |
+| mc_symptom | ~~Desire~~ **Ability** (= Focus; Focus/Symptom are one concept) — Ability → Desire, REMAP 2026-11-04 | REMAP |
+| mc_response | ~~Ability~~ **Desire** (= Direction) | REMAP |
+| mc_unique_ability | ~~Destiny~~ **Prediction** — RULED 2026-11-04 (Chief: GO, rec taken, open cell 1; provisional until the Dramatica re-entry) | RULED 11/4 |
+| mc_critical_flaw | ~~Truth~~ **Suspicion** — RULED 2026-11-04 (as above) | RULED 11/4 |
+| mc_focus | ~~Desire~~ **Ability** | REMAP |
+| mc_direction | ~~Ability~~ **Desire** | REMAP |
+| mc_benchmark | **The Present** — REMAP, 2026-11-04 (engine OS column) | REMAP |
+| mc_signpost_1–4 | The Past · The Present · How Things are Changing · The Future — REMAP, 2026-11-04 | REMAP |
 
 ## 4 · IC Throughline — Anna Colson Conway ← **RULED 2026-08-24 (STATE #2 closed)**
 
@@ -87,7 +88,7 @@ ruled: 2026-08-24
 | ic_character | **Anna Colson Conway** | **RULED 2026-08-24** |
 | ic_domain | Fixed Attitude | DERIVED (forced) · confirmed by the §9 remapping 2026-09-23 |
 | ic_concern | **Memories** — the §9 remapping (the engine's RS(MvI) slot reassigned to Anna). Innermost Desires is this throughline's Signpost 2, not its Concern | **RULED 2026-09-23** (propagated from §9 on Anna's node, call 1) |
-| ic_issue / counterpoint / thematic_conflict | — (not carried by the §9 transcription; still the engine's) | ENGINE |
+| ic_issue / counterpoint / thematic_conflict | **Suspicion vs. Evidence** (theme rail R3, v1.4.2) | **RULED 2026-11-04** |
 | ic_problem / solution | **Equity → Inequity** — identical to the MC and RS columns; §9: "the story's argument is one argument" | **RULED 2026-09-23** (from §9) |
 | ic_symptom / response | **Projection → Speculation** | **RULED 2026-09-23** (from §9) |
 | ic_unique_ability / critical_flaw | **Evidence → Interdiction** (catalyst → inhibitor equivalent, §9) | **RULED 2026-09-23** (from §9) |
@@ -98,12 +99,12 @@ ruled: 2026-08-24
 | Field | Value | Tag |
 |---|---|---|
 | os_domain | Manipulation — the Factions re-writing pasts and natures | LOCKED |
-| os_concern / story_goal | **Changing One's Nature (Becoming)** expected — the Future-aligned Psychology Type; the Master Bible's "Developing a Plan" gloss likely resolves here, and *Becoming* is the stronger read: the Factions' goal is literally rewriting people into Assets | VERIFY |
-| os_problem / solution | **Equity → Inequity** expected — a Change MC shares the OS problem pair; the story's argument is one argument | VERIFY |
-| os_issue / counterpoint | — | ENGINE |
-| os_symptom / response | — | ENGINE |
-| os_benchmark / signposts 1–4 | — | ENGINE |
-| story_cost | **Memories** — personal history deleted for programming space | LOCKED (Master Bible §5) |
+| os_concern / story_goal | ~~Changing One's Nature (Becoming)~~ **Developing a Plan** — the campus is the plan to rewrite people into Assets; the Story Goal is the OS Concern (RULED 9/23 + 10/9; remap 2026-11-04) | RULED 11/4 |
+| os_problem / solution | **Equity → Inequity** — a Change MC shares the OS problem pair; the story's argument is one argument (open cell 2, rec taken 2026-11-04, provisional until the re-entry) | RULED 11/4 |
+| os_issue / counterpoint | **Circumstances vs. Situation** | REMAP |
+| os_symptom / response | **Ability → Desire** | REMAP |
+| os_benchmark / signposts 1–4 | **Conceiving an Idea** / Conceiving an Idea · Developing a Plan · Playing a Role · Changing One's Nature | REMAP |
+| story_cost | **Memories** — personal history deleted for programming space. Carried until the Dramatica re-entry confirms (open cell 3, provisional) | LOCKED (Master Bible §5) |
 | story_consequence / dividend / requirements / prerequisites / preconditions / forewarnings | — | ENGINE |
 
 ## 6 · RS Throughline — Tori ↔ Anna ← rides the IC ruling
@@ -114,9 +115,11 @@ ruled: 2026-08-24
 |---|---|---|
 | rs_pair | **Victoria Midnight ↔ Anna Colson Conway** — supersedes the ingest's "Jebb or TBD"; Jebb remains the OS-level pre-story bond | **RULED 2026-08-24** (rides IC ruling) |
 | rs_domain | Activity | DERIVED (forced) |
-| rs_concern | **Obtaining** — the Future-aligned Physics Type: the relationship is about who gets the summit | VERIFY |
-| rs_issue / problem / solution / symptom / response | — | ENGINE |
-| rs_benchmark / signposts 1–4 | — | ENGINE |
+| rs_concern | ~~Obtaining~~ **Understanding** — the engine wins (§8); Obtaining stays as Signpost 1 | REMAP |
+| rs_issue / counterpoint | **Interpretation vs. Senses** | REMAP |
+| rs_problem / solution | **Equity → Inequity** | REMAP |
+| rs_symptom / response | **Order → Chaos** | REMAP |
+| rs_benchmark / signposts 1–4 | **Gathering Information** / Obtaining · Understanding · Doing · Gathering Information | REMAP |
 
 ## 7 · L12 Core Block — schema RULED (STATE #4 closed)
 
@@ -152,7 +155,7 @@ Every decision is made. What remains is data entry: open Dramatica, answer the e
 
 ### ✅ FLAG STRUCK — RULED 2026-08-24: this form IS canon
 
-The entered form rotates the morning's four perspective assignments — every ruled thematic block in the right *class*, ownership rotated one frame. **Chief ruled same session ("we're sticking with what we got" → "strike the flag"): the rotation is canon**, superseding the morning domain ruling and the LOCKED cells listed below; §2 amended. The frame this buys: the *world* carries the Situation war over The Past; Tori's personal story is Activity/Understanding; Anna's impact is Manipulation/Developing a Plan; the rivalry lives in Fixed Attitude/Memories — the war over what is remembered.
+The entered form rotates the morning's four perspective assignments — every ruled thematic block in the right *class*, ownership rotated one frame. **Chief ruled same session ("we're sticking with what we got" → "strike the flag"): the rotation is canon**, superseding the morning domain ruling and the LOCKED cells listed below; §2 amended. The frame this bought (8/24, history; the 11/4 ruling below moves it): the *world* carried the Situation war over The Past; Tori's personal story was Activity/Understanding; Anna's impact was Manipulation/Developing a Plan; the rivalry lived in Fixed Attitude/Memories — the war over what is remembered. **11/4 note:** mc_domain Situation, mc_issue Interdiction and os_domain Manipulation are restored by the remap (see the ruling block at the end of this section).
 
 | Slot (engine) | Engine holds | The 8/24 ruling puts this content on |
 |---|---|---|
@@ -163,7 +166,7 @@ The entered form rotates the morning's four perspective assignments — every ru
 
 **What the pass validated regardless of frame:** Interdiction vs. Prediction rides with Equity→Inequity in Situation ✓ · Manipulation carries Developing a Plan ✓ · Fixed Attitude carries Memories ✓ · Activity carries the Obtaining/Understanding cluster ✓ · all eight dynamics + IC Resolve **Steadfast** ✓ · **mc_concern corrects to The Past** (chart fact, frame-independent — §3 amended).
 
-**LOCKED cells superseded by the ruling (dated 2026-08-24, historical record):** mc_domain Situation · os_domain Manipulation · mc_issue Interdiction (now the OS Issue; Tori's is **Interpretation vs. Senses**) · mc UA Destiny / CF Truth (Tori's are now **Senses / Circumstances**) · mc Focus/Direction Desire/Ability (Tori's Symptom/Response: **Order/Chaos**; the Desire/Ability pair survives as OS Response/Symptom).
+**LOCKED cells superseded by the ruling (dated 2026-08-24, historical record; the 11/4 remap restores the Domain and Issue cells):** mc_domain Situation · os_domain Manipulation · mc_issue Interdiction (now the OS Issue; Tori's is **Interpretation vs. Senses**) · mc UA Destiny / CF Truth (Tori's are now **Senses / Circumstances**) · mc Focus/Direction Desire/Ability (Tori's Symptom/Response: **Order/Chaos**; the Desire/Ability pair survives as OS Response/Symptom).
 
 ### Full transcription — engine output, engine's own labels
 
@@ -186,13 +189,33 @@ The entered form rotates the morning's four perspective assignments — every ru
 | Signpost 3 | How Things are Changing | Playing a Role | Doing | Contemplation |
 | Signpost 4 | The Future | Changing One's Nature | Gathering Information | Memories |
 
-**Plot appreciations:** Goal **The Past** · Consequence **Memories** · Cost **Developing a Plan** · Dividend **Understanding** · Requirement **The Present** · Prerequisite **Contemplation** · Precondition **Conceiving an Idea** · Forewarnings **Gathering Information**
+**Plot appreciations (8/24 engine output, history):** ~~Goal **The Past**~~ · Consequence **Memories** · Cost **Developing a Plan** · Dividend **Understanding** · Requirement **The Present** · Prerequisite **Contemplation** · Precondition **Conceiving an Idea** · Forewarnings **Gathering Information**
 
-**Noted:** even rotated, the engine handed back the story's own poetry — Goal = The Past, Consequence = Memories: fail to reclaim the past and the memories are forfeit. The Master Bible's LOCKED cost ("Memories — personal history deleted for programming space") surfaces here as the **Consequence**, one slot over. Act-by-act variation quads per throughline live in `plot_sequence.TXT`.
+**Plot appreciations (11/4):** Goal **Developing a Plan** (the OS Concern). The other seven (Consequence, Cost, Dividend, Requirement, Prerequisite, Precondition, Forewarnings) carry the 8/24 values until the Dramatica re-entry confirms. Provisional.
+
+**Noted (8/24, history):** even rotated, the engine handed back the story's own poetry — Goal = The Past, Consequence = Memories: fail to reclaim the past and the memories are forfeit. The Master Bible's LOCKED cost ("Memories — personal history deleted for programming space") surfaces here as the **Consequence**, one slot over. Act-by-act variation quads per throughline live in `plot_sequence.TXT`.
+
+### RULED 11/4 (Chief: GO): the 9/23 remap carried through, one domain each
+
+The live export had put Anna (IC) in Fixed Attitude while its RS still sat there: two throughlines in one domain. In Dramatica the MC/IC domains are a dynamic pair and so are the OS/RS (Situation ↔ Fixed Attitude, Activity ↔ Manipulation). With the IC in Fixed Attitude, the MC must be Situation. Anna's node (ruled 9/23) already sends Developing a Plan to the OS, so the OS is Manipulation and the RS is Activity.
+
+| Throughline | Domain / Concern | Engine column carried |
+|---|---|---|
+| MC · Tori | **Situation** / The Past | engine OS |
+| IC · Anna | **Fixed Attitude** / Memories | engine RS(MvI) |
+| OS · the Factions | **Manipulation** / Developing a Plan (Story Goal = Developing a Plan) | engine IC |
+| RS · Tori↔Anna | **Activity** / Understanding | engine MC |
+
+- **Open cells, rec taken:** Tori's UA/CF = Prediction / Suspicion · OS Problem = Equity → Inequity · the other seven plot appreciations carry the 8/24 values until the Dramatica re-entry confirms. All provisional.
+- **Concern:** this frame is the engine's cells relabelled, not an engine output. §8's rule says the engine wins; one Dramatica Pro re-entry of this frame settles every provisional cell.
+- **Unchanged:** all story dynamics.
+- **Old values:** struck through in §§2–6 and kept above as history. The live export `oxo-storyform.ncp.json` carries this frame; the pre-remap export is backed up under `_tools/bolostatus/work/176/`.
+
+**History:** 2.1 (2026-11-04) Chief: GO (storyform remap, BOLO 176).
 
 
 ## THREE-CHECK LINES (three-check pass 1.0, kept 2026-09-29)
 
 - **fantasy:** Losing everything and being right — walking out of the wreck holding the one thing that mattered *(three-check pass 1.0, kept 2026-09-29; F7)*
 - **sexy:** Chassis, not skin; it protects the heat (Failure/Good keeps every cost real) *(three-check pass 1.0, kept 2026-09-29; S7)*
-- **aesthetic:** Personal Triumph geometry — a fall that lands upright; Goal=The Past runs the story facing backward *(three-check pass 1.0, kept 2026-09-29; A7)*
+- **aesthetic:** Personal Triumph geometry — a fall that lands upright; ~~Goal=The Past runs the story facing backward~~ *(three-check pass 1.0, kept 2026-09-29; A7; the Goal moved to Developing a Plan 2026-11-04, so this line awaits Chief's rewrite)*

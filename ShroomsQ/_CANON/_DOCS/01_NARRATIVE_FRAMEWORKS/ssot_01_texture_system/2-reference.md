@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_texture_system.md
-source_version: 1.1.0
+source_version: 1.1.1
 ---
 
 **Who it's for:** a writer or tool builder looking up a layer or field · **What it does:** lists every component of the texture system doc · **Type:** reference
@@ -152,7 +152,7 @@ The method does not depend on this example. Every value below is a proposal. Chi
 | T9 | Metalepsis withheld by default; the Feed-linked legibility apparatus is the nearest analogue to direct address, never crossed into second person |
 | T10 | Implied reader stands where Tori's meritocratic belief (S9 ALLURE) has not yet broken; no narratee construction beyond the Administration's address to "students" |
 | T11 | M1 prose with an M3 serial grammar |
-| T12 | The MC throughline, `storyform_id: oxo_primary_v1`, discharging DCUS's S12 record, the OS Domain Situation, the Past |
+| T12 | The MC throughline, `storyform_id: oxo_primary_v1`, discharging DCUS's S12 record, the OS Domain Manipulation, Developing a Plan |
 
 The values rest on canon: Tori as MC, the Driver ruled Action ([story spine](../ssot_01_story_spine_comparative_tree/2-reference.md)). They also rest on the six-movement descent and Southern Gothic register on the DCUS instance. They rest on the rename lattice (Skeeter Creek to Red Hills to DCUS) as S5 SCAR paratext. The setting system covers it ([📐 ssot_03_setting_system.md](../../../_SSOT/03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md)).
 

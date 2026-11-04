@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_story_spine_comparative_tree.md
-source_version: 1.1.0
+source_version: 1.1.1
 ---
 
 **Who it's for:** a designer or writer looking up a level or a rival · **What it does:** lists every component of the spine doc · **Type:** reference
@@ -148,7 +148,7 @@ Setting stays an entity (domain 03), never a spine level. The map links setting 
 
 | Spine level | Where setting plugs in |
 |---|---|
-| L2 Nesting | S12 FUNCTION: a load-bearing place embodies a throughline's Domain (DCUS = OS Situation / The Past) |
+| L2 Nesting | S12 FUNCTION: a load-bearing place embodies a throughline's Domain (DCUS = OS Manipulation / Developing a Plan) |
 | L3 Dynamics | S11 VECTOR: a place's trajectory can run the ending's geometry (DCUS collapse = the Failure/Good corridor) |
 | L4 Plot | scene cards (setting + state per scene); setting states keyed to acts; the setting arc as a plot thread |
 | L5 Character | the collision diagonal Lx × Sx (Module 5); C×Situation transits fire through place-states |

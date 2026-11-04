@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_three_check_pass.md
-source_version: 1.1.0
+source_version: 1.1.1
 ---
 
 **Who it's for:** a writer or designer looking up an element's lines · **What it does:** lists every sweep and row · **Type:** reference
@@ -70,7 +70,7 @@ Field: `aesthetic:`. Each row names one carrier: COLOR, SHAPE or TEXTURE (or GAP
 | A4 | The Drop | SHAPE | The hole: a thousand-foot circle of nothing; the purest shape in canon |
 | A5 | Sync-dive | TEXTURE | Velvet over chrome: palm-reader dressing on braindance tech |
 | A6 | Star-Rating | COLOR | Your rank as a wearable hue: the feed glows on your body |
-| A7 | The storyform | SHAPE | Personal Triumph geometry: a fall that lands upright; Goal=The Past runs the story facing backward |
+| A7 | The storyform | SHAPE | Personal Triumph geometry: a fall that lands upright; ~~Goal=The Past runs the story facing backward~~ (the Goal moved to Developing a Plan 2026-11-04; Chief's line to rewrite) |
 | A8 | Scream etiquette | TEXTURE | Silence as surface; the doppler warp is audio-texture |
 | A9 | Story Lattice | SHAPE | Tree, ladder, diagonal: geometry or nothing |
 | A10 | Collision Engine | SHAPE | The mirror diagonal; aspect angles as architecture |

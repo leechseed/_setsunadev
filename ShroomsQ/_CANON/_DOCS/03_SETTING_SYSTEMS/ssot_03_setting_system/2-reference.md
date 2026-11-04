@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md
-source_version: 1.11.1
+source_version: 1.11.2
 ---
 
 **Who it's for:** a writer or maintainer looking up a setting field · **What it does:** lists each component, part and field · **Type:** reference
@@ -218,7 +218,7 @@ The slice is filled from canon. Header: `dcus`; names DCUS, the Ultra School and
 | S9 | The meritocratic promise Tori must stop believing (Growth: Stop). |
 | S10 | The first name under the second; what the rebrand overwrote. |
 | S11 | The six-movement descent: clean, NEON-ROT, hunt. |
-| S12 | `storyform_id: oxo_primary_v1`; OS Domain embodied, Situation and The Past. Touchstone set: the Institutional Invariants (Ecclesial Laws). |
+| S12 | `storyform_id: oxo_primary_v1`; OS Domain embodied, Manipulation and Developing a Plan. Touchstone set: the Institutional Invariants (Ecclesial Laws). |
 
 **Faction cards (ruled 1.4.1).** Full cards: the Administration and the Bishops, which are two factions. Stubs: the alumni-legacy bloc, the faculty split, the Sync Cult (held until it has a canon node). Benched: the dueling bells.
 

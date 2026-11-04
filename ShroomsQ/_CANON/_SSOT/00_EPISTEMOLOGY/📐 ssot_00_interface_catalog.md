@@ -1,7 +1,7 @@
 ---
 type: ssot_00_epistemology
 category: interface_catalog
-version: 0.2.1
+version: 0.2.2
 tier: foundation
 last_updated: 2026-11-04
 reader: "the CDR and the writers, before touching a field another system reads; Chief, ruling the calls"
@@ -276,7 +276,7 @@ Named only: ssot_01_genre_system → ssot_02_character_systems_vertical_slice; s
 | `IF-01-03-10` | 01 writes | DATA | P7 narrative dilemma as scene-card fuel (mutually exclusive options, double fallout for inaction) | when a scene card is built around a choice | ssot_01_modern_poetics › P7 · THE NARRATIVE DILEMMA | built |
 | `IF-01-03-11` | 01 reads | DATA | SCENE CARD notation: commandments + value charge + duration + setting state *(Delivered by the setting system the same session.)* | when a scene card is specced | ssot_01_scale_ladder › THE RUNGS · R2 SCENE | built |
 | `IF-01-03-12` | 01 reads | DATA | setting arc thread: a place's state over time (any span, scene to universe) | when a setting thread is addressed by span | ssot_01_scale_ladder › THREADS | built |
-| `IF-01-03-13` | 01 reads | DATA | S12 FUNCTION: a load-bearing place embodies a throughline's Domain (DCUS = OS Situation/The Past); S11 VECTOR: a place's trajectory runs the ending's geometry (DCUS collapse = the Failure/Good corridor) | when a setting is bound to L2 or L3 | ssot_01_story_spine_comparative_tree › THE SETTING TOUCHPOINT MAP | built |
+| `IF-01-03-13` | 01 reads | DATA | S12 FUNCTION: a load-bearing place embodies a throughline's Domain (DCUS = OS Manipulation/Developing a Plan); S11 VECTOR: a place's trajectory runs the ending's geometry (DCUS collapse = the Failure/Good corridor) | when a setting is bound to L2 or L3 | ssot_01_story_spine_comparative_tree › THE SETTING TOUCHPOINT MAP | built |
 | `IF-01-03-14` | 01 reads | DATA | scene cards (setting + state per scene), setting states keyed to acts, setting arc as a plot thread | when plot units are placed against setting | ssot_01_story_spine_comparative_tree › THE SETTING TOUCHPOINT MAP · L4 Plot | built |
 | `IF-01-03-15` | 01 reads | DATA | the Argue function mode (a place makes the argument in matter) at L6; genre-setting contracts (Southern Gothic, western, space opera) at L7 | when theme or genre is read through a place | ssot_01_story_spine_comparative_tree › THE SETTING TOUCHPOINT MAP · L6 · L7 | built |
 | `IF-01-03-16` | 01 writes | DATA | domain lexicons: weaponology, food, cars, as subject-matter shelves keyed to the setting schema | as tagging hits | ssot_01_story_spine_comparative_tree › THE LATTICE · Cross-cutting | built |
@@ -291,7 +291,7 @@ Named only: ssot_01_genre_system → ssot_02_character_systems_vertical_slice; s
 | `IF-01-03-25` | 01 writes | DATA | register record `keys: {setting: S1–S12}`; pull list in LAYERS.md *(TROPES pointer section parked: ⏸ TROPES pointer sections (phase 2).)* | when a setting layer pulls its known patterns | ssot_01_trope_register › THE RECORD · THE COUNTS | built |
 | `IF-01-03-26` | 03 reads | DATA | ladder address form (`DCUS.campus.hall3.room12`, `OXO.primary.M2.q3.s12`) and rung R2 (scene); Axis 1 SCALE rhymes with the ladder's 8 rungs *(The SCENE CARD example address still uses the legacy q-scheme (`q3.s12`); the canonical form is the ssot_08 time code.)* | every slice and every scene card | ssot_03_setting_system › PART B · THE TAXONOMY › Axis 1 · SCALE | built |
 | `IF-01-03-27` | 03 writes | DATA | SCENE CARD `collision: seeding row(s), e.g. L9×S9`; S-layer x L-layer rows fire the collision engine; an S12 `link` of kind direct or metonymic seeds it *(Plot card P8 `collision_row` is the same field.)* | when a scene is built | ssot_03_setting_system › MIND MODELS › Diagram 2; THE SCENE CARD; PART A (S12) | built |
-| `IF-01-03-28` | 03 reads | DATA | S12 binding: the storyform Domain the place embodies, keyed by `storyform_id` (DCUS: `oxo_primary_v1`, OS Domain, Situation / The Past) *(The storyform itself lives in 02's Dramatica protocol; the spine is 01. to_sys 01 chosen for the spine.)* | when a place embodies a throughline Domain | ssot_03_setting_system › PART A · THE SETTING SLICE (S12; Binding rule); THE INSTANCE | built |
+| `IF-01-03-28` | 03 reads | DATA | S12 binding: the storyform Domain the place embodies, keyed by `storyform_id` (DCUS: `oxo_primary_v1`, OS Domain, Manipulation / Developing a Plan) *(The storyform itself lives in 02's Dramatica protocol; the spine is 01. to_sys 01 chosen for the spine.)* | when a place embodies a throughline Domain | ssot_03_setting_system › PART A · THE SETTING SLICE (S12; Binding rule); THE INSTANCE | built |
 | `IF-01-03-29` | 03 reads | DATA | SCENE CARD `telling: voice + focalization`, a per-scene override of the Telling Profile (Module 3) *(to_doc inferred: 'Telling Profile' appears in texture_system, texture_layer, medium_grammars and genre_system; 03 does not name the home doc.)* | per scene | ssot_03_setting_system › THE SCENE CARD | built |
 | `IF-01-03-30` | 03 writes | DATA | S1..S12 layer ids as the keys every setting-domain TV Tropes trope is keyed to (pull list `_tools/tropes/data/domains/LAYERS.md`) *(Quote is the sentence stem before the link.)* | when tropes are keyed | ssot_03_setting_system › TROPES | built |
 | `IF-01-03-34` | 03 writes | DATA | Ryan's nine-axis ontological scoring as the genre-contract tool, to replace Baur's five-lineage taxonomy in the genre system *(03 adopted it; the synthesis says the genre system is out of that ruling's scope. Two systems may now hold different primary tools. · landed 2026-10-05 (stage 2 apply batch))* | next genre system pass | ssot_03_setting_system › SETTING × LIBRARY › Genre-contract tool, 2026-09-29 | built |
@@ -899,6 +899,7 @@ The 115 proposed rows fell into ten calls. Chief ruled all ten as recommended on
 
 ## VERSION HISTORY
 
+- **0.2.2 · 2026-11-04** — Chief: GO (storyform remap, BOLO 176): IF-01-03-13 and IF-01-03-28 read DCUS as the OS Domain Manipulation / Developing a Plan. The builder source `_tools/docs/out/ifc_candidates.json` carries the same two payloads.
 - **0.2.1 · 2026-11-04** — Chief: go recs path cleanup (BOLO 176). Pipeline doc renamed to a ssot_02_ stem (every row that names it updated) · IF-02-04-06 reads `12 - shame_index` · IF-02-06-03 points at L3 `knowledge_map` · the venue_belonging mentions removed · alias count 138. Hand-edited; the build script (ifc_build.py) would write the old text back if re-run.
 - **0.2.0 · 2026-10-05** — RULED: all ten design calls as recommended (Chief: "My word"); the source-fix batch and the catalog's four pages fired the same turn. Two files moved under call 9: the character pipeline to 02, the design system to 00.
 - **0.1.0 · 2026-10-05** — BUILT (BOLO 102 stage 2, Chief: "go"). Six extractors, 573 rows, 514 interfaces across 45 pairs; ten design calls OPEN with recs. Built on Fable (SOP §7 rule 21, the model call).

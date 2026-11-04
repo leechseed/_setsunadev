@@ -23,7 +23,7 @@ DCUS is the fused school: "a hundred years of Red Hills prestige, acquired, rebo
 Rename lattice: Skeeter Creek, then Red Hills, then DCUS. Legacy vocabulary to search: Red Hills, Skeeter Creek, Inner Spiral.
 Who keeps it: the Bishops own it (WB-GRP-0001); the Administration runs it (WB-INS-0001).
 The gap it fills: the sale of Red Hills to the Bishops (backstory_dcus_rebrand). ⧗ Era ends M4: canon casts DCUS as antagonist vessel for Movements 2-4.
-Presses on the story: it is the OS Domain made a place (Situation / The Past); the cost is Memories.
+Presses on the story: it is the OS Domain made a place (Manipulation / Developing a Plan); the cost is Memories.
 - Named in: [delta-coast-ultra-school.md](../../../../../../_CANON_NODES/delta-coast-ultra-school.md)
 
 **The gauge: Worth** (RULED 2026-09-29, "all rec": Keep · Split; the rule lives in 06, the steps live here; plain words are Chief's to re-pick)

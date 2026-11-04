@@ -1,9 +1,9 @@
 ---
 type: ssot_01_texture_system
 category: texture_system
-version: 1.1.0
+version: 1.1.1
 tier: narratology
-last_updated: 2026-10-05
+last_updated: 2026-11-04
 applies_to: [all IPs]
 status: "v1.0.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 texture batch 1: stale marks stripped, ruled items built (T2 split, silence and memory sub-values, reflection axis, t1_t2_gap flag, pause test, distance instrument, mood entry, payoff ledger), OXO bench parked as ⏸ OXO telling profile (phase 2). v0.1.1 2026-09-16: the thirteen OPEN calls ruled as recommended (Chief: \"texture calls go\"). v0.1.0 2026-09-16 (BOLO 18 texture wave): first version, written from the TEXTURE shelf"
 rung: standard
@@ -202,7 +202,7 @@ The method above does not depend on this example. Chief strikes or keeps the pro
 | **T9** | Metalepsis withheld by default; the Administration's Feed-linked legibility apparatus is the nearest analogue to direct address, never crossed into second person |
 | **T10** | Implied reader stands where Tori's meritocratic belief, S9 ALLURE, has not yet broken; no in-text narratee construction beyond the Administration's own institutional address to "students" |
 | **T11** | M1 prose with an M3 serial grammar |
-| **T12** | The MC throughline, `storyform_id: oxo_primary_v1`, discharging DCUS's S12 record, the OS Domain Situation, the Past |
+| **T12** | The MC throughline, `storyform_id: oxo_primary_v1`, discharging DCUS's S12 record, the OS Domain Manipulation, Developing a Plan |
 
 Every value above is a proposal, grounded in what the canon docs already say: Tori as MC and the Driver ruled Action ([📐 ssot_01_story_spine_comparative_tree.md](📐%20ssot_01_story_spine_comparative_tree.md)), the six-movement descent and Southern Gothic register ruled on the DCUS instance, the rename lattice, Skeeter Creek to Red Hills to DCUS, as S5 SCAR paratext ([../03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md)). The layer doc's house finding stands without qualification: OXO has no ruled Telling Profile, no prose exists, and the whole discourse configuration is an unmade decision set. This table is that decision menu, filled with defaults for Chief to strike or keep line by line, not a ruling in itself.
 
@@ -245,6 +245,7 @@ The calls came from the five wave distills' "For the texture system" bullets. **
 
 ## Version history
 
+- **1.1.1, 2026-11-04.** Chief: GO (storyform remap, BOLO 176): T12 reads DCUS's S12 record as the OS Domain Manipulation, Developing a Plan.
 - **1.1.0, 2026-10-05.** BOLO 102 stage 2 (Chief: "My word"): T6's register and distance values are named as the terms 07.1 applies (call 7).
 - **1.0.0, 2026-10-04.** RULED, Chief ("REC"), BOLO 100 texture batch 1. Stale marks stripped from the twelve layer names and the status. Ruled items built: T2 split and sub-values, T1/T2 gap flag, T4 pause test, T6 distance instrument, T7 reflection axis, mood-curve entry, and payoff ledger (cross-linked to tracking §9A). OXO bench parked as ⏸ OXO telling profile (phase 2); `applies_to` is now all IPs. OPEN calls closed. The layer doc is stamped `module_of` this system.
 - **0.1.1, 2026-09-16.** The thirteen OPEN calls ruled as recommended ("texture calls go"): twelve layers hold; T2 splits into perceptual and informational sub-fields at the next bump; the three-point distance scale adopted; the register slot added to the telling line; the reflection axis absorbed by T7 provisionally; the OXO profile stays a bench. No slice or instrument change tonight.

@@ -12,7 +12,7 @@ This is the worked example moved out of the DAI doc (BOLO 100 C13, 2026-10-04). 
 
 **Open items.** The MC Concern is missing: `⏸ VM fill pass (phase 2)`. It blocks the Sun modality. The MC Response and Inhibitor are also unextracted, with the same flag. Steps 8-11 below are candidates only. Angles, houses and the remaining aspects need the full storyform. **VM fill pass 11/4 (BOLO 176):** storyform §9 gives all three (Concern Understanding, Response Chaos, Inhibitor Suspicion). Filling them re-opens Steps 1, 2, 5 and 7, so they wait on Chief → see tori-fill.md (`_tools/bolostatus/work/176/tori-fill.md`).
 
-**Reconcile before use.** The node [[victoria-midnight]] records that the storyform rotation (oxo-storyform section 9) supersedes the Dramatica cells below: the MC is now Activity / Understanding. The table below holds the earlier values. The VM fill pass must redo the derivation on the rotated storyform.
+**Reconcile before use.** The Situation basis is right again: the 11/4 remap returned the MC to Situation / The Past (Chief: GO, storyform remap, BOLO 176). One caveat stays: the Concern The Past still has to run through the Sun grid (the 3 held chart fields, BOLO 176).
 
 ## Source
 
@@ -41,7 +41,7 @@ Dramatica Ingest (from authoritative document).
 
 ## Step 1: Sun Sign
 
-MC Domain = Situation → Element = Earth. MC Concern = ⏸ VM fill pass (phase 2). MC Issue = Interdiction, which deals with prohibition, being blocked, external constraint on action. This suggests a Fixed concern area (the problem is about what IS, resistance to change imposed from outside). Earth + Fixed = **Taurus**.
+MC Domain = Situation → Element = Earth. MC Concern = The Past (filling it reopens the held Sun derivation). MC Issue = Interdiction, which deals with prohibition, being blocked, external constraint on action. This suggests a Fixed concern area (the problem is about what IS, resistance to change imposed from outside). Earth + Fixed = **Taurus**.
 
 **Validation:** Taurus encodes a character whose identity axis is material, embodied, earned through labor, resistant to being moved by external force. Victoria believes she is what she has built with her own hands. Merit earns freedom. "Beauty that is earned, not curated; motion under pressure, never ornamental." Taurus confirmed.
 

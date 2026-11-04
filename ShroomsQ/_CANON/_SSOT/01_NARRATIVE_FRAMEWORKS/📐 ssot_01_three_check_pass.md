@@ -1,9 +1,9 @@
 ---
 type: ssot_01_narrative_frameworks
 category: three_check_pass
-version: 1.1.0
+version: 1.1.1
 tier: narratology
-last_updated: 2026-10-05
+last_updated: 2026-11-04
 status: "v1.0.1 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 registers batch 1: history line reworded, Anna and OXO element gaps parked by name, module_of stamped. Earlier: canonical 1.0; all 36 lines KEPT by Chief 2026-09-29 (\"keep all\")"
 purpose: "The P8–P10 application pass (Modern Poetics): Fantasy Drive · Sexy Check · Aesthetic Check over the flagship canon roster. Three sweeps, never bundled per element."
 module_of: ssot_01_modern_poetics
@@ -61,7 +61,7 @@ rung: handbook
 | A4 | The Drop | **SHAPE** | The hole — a thousand-foot circle of nothing; the purest shape in canon |
 | A5 | Sync-dive | **TEXTURE** | Velvet over chrome — palm-reader dressing on braindance tech |
 | A6 | Star-Rating | **COLOR** | Your rank as a wearable hue — the feed glows on your body |
-| A7 | The storyform | **SHAPE** | Personal Triumph geometry — a fall that lands upright; Goal=The Past runs the story facing backward |
+| A7 | The storyform | **SHAPE** | Personal Triumph geometry — a fall that lands upright; ~~Goal=The Past runs the story facing backward~~ (the Goal moved to Developing a Plan 2026-11-04; Chief's line to rewrite) |
 | A8 | Scream etiquette | **TEXTURE** | Silence as surface; the doppler warp is audio-texture |
 | A9 | Story Lattice | **SHAPE** | Tree, ladder, diagonal — it is geometry or it is nothing |
 | A10 | Collision Engine | **SHAPE** | The mirror diagonal; aspect angles as architecture |
@@ -99,3 +99,4 @@ rung: handbook
 - **1.0.1 — 2026-10-04 (BOLO 100 registers batch 1, Chief "rec").** The 0.1.0 history line reworded without the glyph. Anna gaps parked as `⏸ Anna sheet (phase 2)`; sheetless elements parked as `⏸ OXO element sheets (phase 2)`. `module_of: ssot_01_modern_poetics` stamped.
 - **1.0.2 — 2026-10-05.** BOLO 102 batch C (Chief: "all recs"): row numbering rule past row 12 written under NEXT (C36).
 - **1.1.0 — 2026-10-05.** BOLO 102 stage 2 (Chief: "My word"): the three fields land on the plot card and the scene card as well as entity sheets (call 6).
+- **1.1.1 — 2026-11-04.** Chief: GO (storyform remap, BOLO 176): A7 struck where it named Goal = The Past; the line waits for Chief's rewrite.

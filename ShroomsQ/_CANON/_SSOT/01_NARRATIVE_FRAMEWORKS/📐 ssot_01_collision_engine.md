@@ -1,9 +1,9 @@
 ---
 type: ssot_01_narrative_frameworks
 category: collision_engine
-version: 1.0.1
+version: 1.0.2
 tier: narratology
-last_updated: 2026-10-04
+last_updated: 2026-11-04
 applies_to: [all IPs, character pipeline, setting system]
 status: canonical — lattice Module 5, built on Chief's go 2026-08-26 (BOLO 17); contact vocabulary provisional
 purpose: "THE COLLISION ENGINE — generalized synastry: any slice against any slice, producing friction, and friction is dramatic material. Activates Character Astrology Cats 11/13, adds the C×S mirror diagonal, proven on Tori × DCUS."
@@ -80,7 +80,7 @@ Run 2026-08-26 from canon: [victoria-midnight.md](../../../../_CANON_NODES/victo
 ## OPEN
 
 - **Contact vocabulary** (Conjunction/Trine/Square/Opposition/Void as diagonal classifications) — provisional, awaiting ruling.
-- **C×C first run** — Tori × Anna: the aspect mesh + composite, joined to the ruled RS (Fixed Attitude / Memories). Natural next proof; needs Anna's chart authored first.
+- **C×C first run** — Tori × Anna: the aspect mesh + composite, joined to the ruled RS (Activity / Understanding). Natural next proof; needs Anna's chart authored first.
 - **C×G spec** — at first ensemble need (the Diaspora is the obvious candidate).
 - **Automation** — v1 is a method run in-session; a script over the structured records is a later tool.
 
@@ -88,6 +88,7 @@ Run 2026-08-26 from canon: [victoria-midnight.md](../../../../_CANON_NODES/victo
 
 - **1.0.0 — 2026-08-26.** Built on Chief's go (BOLO 17): four classes, contact vocabulary, output contract, Tori×DCUS twelve-row proof run from canon.
 - **1.0.1 — 2026-10-04.** BOLO 100 TOUCH BATCH 1, Chief "REC.": scene-card `invariants:` renamed `touchstones:` (TS-B3); front-door line (TS-B10).
+- **1.0.2 — 2026-11-04.** Chief: GO (storyform remap, BOLO 176): the C×C first run joins the ruled RS (Activity / Understanding).
 
 
 ## THREE-CHECK LINES (three-check pass 1.0, kept 2026-09-29)

@@ -1,9 +1,9 @@
 ---
 type: ssot_01_narrative_frameworks
 category: story_spine
-version: 1.1.0
+version: 1.1.1
 tier: narratology
-last_updated: 2026-10-05
+last_updated: 2026-11-04
 applies_to: [OVEREXITOUT, BVX-LEARN, all future IPs]
 status: canonical — spine ruled by Chief 2026-08-25 (comparative tree, Dramatica canonical + rivals mapped)
 purpose: "THE STORY SPINE — the canonical tree of what makes a story. The reference Chief designs IPs against, and the keying structure the BVX-LEARN library (CRE/LIT holdings) organizes onto. Front door to the BVX reference system."
@@ -137,7 +137,7 @@ Not a "message" bolted on: theme is **structural position**. Issue vs Counterpoi
 
 | Spine level | Where setting plugs in |
 |---|---|
-| **L2 Nesting** | S12 FUNCTION — a load-bearing place *embodies* a throughline's Domain (DCUS = OS Situation/The Past) |
+| **L2 Nesting** | S12 FUNCTION — a load-bearing place *embodies* a throughline's Domain (DCUS = OS Manipulation/Developing a Plan) |
 | **L3 Dynamics** | S11 VECTOR — a place's trajectory can run the ending's geometry (DCUS collapse = the Failure/Good corridor) |
 | **L4 Plot** | scene cards (setting + state per scene) · setting states keyed to acts · the setting arc as a plot thread |
 | **L5 Character** | the collision diagonal — Lx × Sx (Module 5); C×Situation transits fire through place-states |
@@ -247,3 +247,4 @@ The spine covers the STRUCTURE axis. Chief ordered the full milieu same session;
 - **1.0.2 — 2026-10-04.** BOLO 100 D3: added Sources lines to L0, L3, L4, L6, L7.
 - **1.0.3 — 2026-10-05.** BOLO 102 batch C (Chief: "all recs"): procedure for adding a rival model written under the acquisition gaps (C31).
 - **1.1.0 — 2026-10-05.** BOLO 102 stage 2 (Chief: "My word"): L6 points at the 06 theme system's controlling idea (call 2).
+- **1.1.1 — 2026-11-04.** Chief: GO (storyform remap, BOLO 176): the L2 Nesting parenthetical reads DCUS as the OS Domain Manipulation / Developing a Plan.

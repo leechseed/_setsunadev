@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/06_THEME_SYSTEMS/📐 ssot_06_theme_system.md
-source_version: 1.4.1
+source_version: 1.4.3
 ---
 
 **Who it's for:** a writer or script author looking things up · **What it does:** lists every theme-system component, field and value · **Type:** reference
@@ -100,10 +100,10 @@ One debate per point of view. Each is the storyform's locked Issue versus Counte
 
 | # | Point of view | Storyform pair | Debate | Problem to Solution | Meets | `holders` |
 |---|---|---|---|---|---|---|
-| 1 | The world (factions, DCUS) | Interdiction vs. Prediction | *They already know how you'll turn out. Can you prove them wrong?* | Equity to Inequity | parked | `world:dcus` |
-| 2 | Tori | Interpretation vs. Senses | *Believe the story, or believe your eyes?* | Equity to Inequity | parked | `character:tori` |
-| 3 | Anna | Circumstances vs. Situation | *Don't fight the game. Win it.* | Projection to Speculation | parked | `character:anna` |
-| 4 | Tori and Anna | Suspicion vs. Evidence | *Whose memory of what happened counts?* | Equity to Inequity | parked | `character:tori`, `character:anna` |
+| 1 | The world (factions, DCUS) | Circumstances vs. Situation | *Don't fight the game. Win it.* | Equity to Inequity | parked | `world:dcus` |
+| 2 | Tori | Interdiction vs. Prediction | *They already know how you'll turn out. Can you prove them wrong?* | Equity to Inequity | parked | `character:tori` |
+| 3 | Anna | Suspicion vs. Evidence | *Whose memory of what happened counts?* | Equity to Inequity | parked | `character:anna` |
+| 4 | Tori and Anna | Interpretation vs. Senses | *Believe the story, or believe your eyes?* | Equity to Inequity | parked | `character:tori`, `character:anna` |
 
 The four sum to the controlling idea. Every Meets cell and the latent-theme line hold the mark "OXO theme fill pass (phase 2)".
 

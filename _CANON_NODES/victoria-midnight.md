@@ -8,7 +8,7 @@ trunk: BLACK
 role: Main Character / Protagonist
 resolve: Change
 status: authoritative-locked / pipeline-minimum-viable
-blocking: none — storyform CANON 2026-08-24 ([[oxo-storyform]] §9, BOLO 7 done). ⚠️ The §9 rotation supersedes this node's Structure-table Dramatica cells (MC now Activity/Understanding) — reconciliation pending
+blocking: none — storyform CANON 2026-08-24 ([[oxo-storyform]] §9, BOLO 7 done). The 11/4 remap returns the MC to Situation/The Past; the Domain and Issue rows stand (Chief: GO, storyform remap, BOLO 176)
 aliases: [Tori, Victoria Midnight, "Tori (Red Hills legacy)"]
 links:
   - "[[jebb-midnight]]"
@@ -57,10 +57,11 @@ She begins believing merit earns freedom. She survives long enough to learn that
 | Narrative role | Main Character / Protagonist |
 | Resolve | Change |
 | MC Domain | Situation |
+| MC Concern | **The Past** (RULED 8/24 chart fact; remap 11/4) |
 | MC Issue | Interdiction |
 | Problem → Solution | **Equity → Inequity** |
-| Focus → Direction | Desire → Ability |
-| Unique Ability / Critical Flaw | **Destiny / Truth** |
+| Focus → Direction | ~~Desire → Ability~~ **Ability → Desire** (remap 11/4) |
+| Unique Ability / Critical Flaw | ~~Destiny / Truth~~ **Prediction / Suspicion** (RULED 11/4, rec taken, provisional until the Dramatica re-entry) |
 | Approach | Do-er |
 | Story Outcome / Judgment | Failure / Good |
 | Primary bond | [[jebb-midnight]] (older brother) |
