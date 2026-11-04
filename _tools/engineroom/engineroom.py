@@ -149,6 +149,18 @@ class Handler(BaseHTTPRequestHandler):
                     self.wfile.write(b)
                     return
             return self._send(404, "no bounce file", "text/plain")
+        if path in ("/favicon.png", "/favicon.ico"):   # the V6 mark (Chief 11/4), drawn by make_icon.py
+            f = os.path.join(os.path.dirname(os.path.abspath(__file__)), "icon", "engineroom" + path[-4:])
+            if os.path.isfile(f):
+                with open(f, "rb") as fh:
+                    b = fh.read()
+                self.send_response(200)
+                self.send_header("Content-Type", "image/png" if f.endswith(".png") else "image/x-icon")
+                self.send_header("Content-Length", str(len(b)))
+                self.end_headers()
+                self.wfile.write(b)
+                return
+            return self._send(404, "no icon", "text/plain")
         if path == "/health":
             return self._send(200, json.dumps({"ok": True, "app": "engineroom", "port": PORT}), "application/json")
         self._send(404, json.dumps({"error": "no route " + path}), "application/json")

@@ -375,7 +375,7 @@ def page(g, answers=None, recs=None):
     behind = "".join("<tr><td>%s %s</td><td>%d</td><td>%d</td><td>%d</td><td>%d</td></tr>" % (
         s["id"], esc(s["name"]), s["unmarked"], s["dropped"], s["waived"], s["raw_open"] + s["raw_parked"]) for s in systems)
     return """<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The Engine Room</title><style>%s</style></head><body>
+<title>The Engine Room</title><link rel="icon" type="image/png" href="/favicon.png"><style>%s</style></head><body>
 <header class="strip"><span class="t">The <b>Engine Room</b></span><span class="m">Counted at %s · refresh to recount</span></header>
 <main>
 <section class="hero">
