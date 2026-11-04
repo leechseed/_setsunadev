@@ -709,3 +709,4 @@
 {"ts": "2026-11-04 07:04", "sid": "0b50d38c", "words": 58, "tells": 3, "per_1k": 51.7, "families": {"passive": 2, "other": 1}, "rules": {"passive": 2, "long-sentence": 1}}
 {"ts": "2026-11-04 07:04", "sid": "0b50d38c", "words": 58, "tells": 3, "per_1k": 51.7, "families": {"passive": 2, "other": 1}, "rules": {"passive": 2, "long-sentence": 1}}
 {"ts": "2026-11-04 07:08", "sid": "0b50d38c", "words": 434, "tells": 12, "per_1k": 27.6, "families": {"other": 8, "passive": 4}, "rules": {"long-sentence": 8, "passive": 4}}
+{"ts": "2026-11-04 07:08", "sid": "0b50d38c", "words": 52, "tells": 1, "per_1k": 19.2, "families": {"other": 1}, "rules": {"long-sentence": 1}}
