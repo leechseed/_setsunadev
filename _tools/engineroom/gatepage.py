@@ -284,7 +284,7 @@ BOOT_CSS = """
 #boot{position:fixed;inset:0;z-index:50;background:#000;overflow:hidden;cursor:pointer;transition:opacity .5s,background .3s;font:14px/1.6 Consolas,"Cascadia Mono",monospace}
 #boot.gone{opacity:0;pointer-events:none}#boot.corner{background:#1a0d07}
 #dvd{position:absolute;left:0;top:0;width:min(24vw,280px);height:auto;will-change:transform;user-select:none}
-#dvd.vid{width:auto;height:min(46vh,420px);mix-blend-mode:screen;filter:contrast(1.45) brightness(.92);-webkit-mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 62%,transparent 100%);mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 62%,transparent 100%)}/* Chief 11/4: transparent. The clip's dark backdrop is crushed to black and screened out; the edges feather away */
+#dvd.vid{width:auto;height:min(46vh,420px);mix-blend-mode:screen;filter:contrast(1.45) brightness(.92);-webkit-mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 62%,transparent 100%);mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 62%,transparent 100%)}#dvd.vid.alpha{mix-blend-mode:normal;filter:none;-webkit-mask-image:none;mask-image:none}/* Chief 11/4: transparent. The clip's dark backdrop is crushed to black and screened out; the edges feather away */
 #blog{position:fixed;left:18px;bottom:34px;color:#cfcac3;white-space:pre;max-width:calc(100vw - 36px);overflow:hidden}
 #blog .okt{color:#7fbf8e;font-weight:600}#blog .bv{color:#FF5A1F;font-weight:600}
 #bskip{position:fixed;right:18px;bottom:10px;color:#9a9690}#bstat{position:fixed;left:18px;bottom:10px;color:#9a9690}
@@ -322,9 +322,10 @@ def bounce_tag():
     """A video clip (Chief 11/4: the Engine Room's .webm) bounces as a muted looping video; a picture as an img."""
     here = os.path.dirname(os.path.abspath(__file__))
     own = os.path.join(here, "..", "..", "_PRIVATE", "engineroom")
-    for ext in ("webm", "mp4"):
-        if os.path.isfile(os.path.join(own, "bounce." + ext)):
-            return '<video id="dvd" class="vid" src="/bounce" autoplay muted loop playsinline></video>'
+    if os.path.isfile(os.path.join(own, "bounce.webm")):   # the true cut-out: VP9 with an alpha channel (Chief 11/4 "do it go")
+        return '<video id="dvd" class="vid alpha" src="/bounce" autoplay muted loop playsinline></video>'
+    if os.path.isfile(os.path.join(own, "bounce.mp4")):
+        return '<video id="dvd" class="vid" src="/bounce" autoplay muted loop playsinline></video>'
     return '<img id="dvd" src="/bounce" alt="" draggable="false">'
 
 
