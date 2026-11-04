@@ -411,6 +411,7 @@ iframe{flex:1;border:0;width:100%;height:100%;background:var(--bg)}
 .rail .web{color:var(--dim)}
 .status{display:flex;justify-content:space-between;gap:12px;background:var(--hl);padding:2px 8px;white-space:nowrap;overflow:hidden}
 .status b{color:var(--acc);font-weight:600}
+.status>span{flex:none}.status>#st{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;text-align:center}/* 11/4: a long pull line ellipsizes, the key hints stay on screen (agent-browser check, BOLO 160) */
 .cmd{display:flex;gap:8px;border-top:1px solid var(--dim);padding-top:4px}
 .cmd span{color:var(--acc)}
 .cmd input{flex:1;background:none;border:0;outline:0;color:var(--fg);font:inherit;caret-color:var(--acc)}

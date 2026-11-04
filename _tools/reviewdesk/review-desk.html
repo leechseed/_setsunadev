@@ -80,7 +80,7 @@ label.l{display:block;color:var(--fg2);font-size:11px;margin:6px 0 2px}
 #msg{min-height:1.2em;font-size:12px;word-break:break-all}
 #msg.ok{color:var(--ok)}#msg.bad{color:var(--bad)}
 /* the picker */
-#pick{position:fixed;inset:44px 0 0 0;background:#050608f2;display:none;z-index:30;padding:14px;overflow:auto}
+#pick{position:fixed;inset:44px 0 0 0;background:var(--bg);display:none;z-index:30;padding:14px;overflow:auto}
 #pick.on{display:block}
 #pick .wrap{max-width:860px;margin:0 auto}
 #plist{margin-top:10px;display:flex;flex-direction:column}
@@ -234,8 +234,9 @@ function render(text){
     if(/^\s*\|/.test(l)){var j=i,rows=[];while(j<n&&/^\s*\|/.test(L[j]))j++;
       var hdr=j>i+1&&isSep.test(L[i+1]),nc=Math.max(1,cells(L[i]).length),mx=[];
       var fit=function(cs){if(cs.length>nc)cs=cs.slice(0,nc-1).concat([cs.slice(nc-1).join(" | ")]);while(cs.length<nc)cs.push("");return cs};
-      for(var k=i;k<j;k++){if(hdr&&k===i+1)continue;fit(cells(L[k])).forEach(function(c,ci){mx[ci]=Math.max(mx[ci]||0,c.replace(/\*\*|`/g,"").length)})}
-      /* short columns (#, dates) get their width in ch; the long ones share what is left */
+      for(var k=i;k<j;k++){if(hdr&&k===i+1)continue;fit(cells(L[k])).forEach(function(c,ci){(mx[ci]=mx[ci]||[]).push(c.replace(/\*\*|`/g,"").length)})}
+      /* short columns (#, dates: 90th-percentile cell <= 18 chars) get their width in ch; the long ones share what is left */
+      mx=mx.map(function(a){a.sort(function(x,y){return x-y});return a[Math.floor((a.length-1)*0.9)]||0});
       rows.push("<colgroup>"+mx.map(function(m){return m<=18?'<col style="width:'+(Math.max(2,m)+3)+'ch">':"<col>"}).join("")+"</colgroup>");
       for(var k=i;k<j;k++){if(hdr&&k===i+1)continue;var tag=hdr&&k===i?"th":"td";
         rows.push("<tr"+A(k,k)+">"+fit(cells(L[k])).map(function(c){return"<"+tag+">"+inline(c)+"</"+tag+">"}).join("")+"</tr>")}
