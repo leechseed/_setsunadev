@@ -91,7 +91,7 @@
   "sociology_stack": {
    "layer": "L3",
    "value": {
-    "class": "working / criminal-adjacent; family were holdouts in the trash-zone delta",
+    "class": "working / criminal-adjacent; family were holdouts in the belt (belt-born, ruled 11/4 call 6)",
     "occupation": "salvage economy (M1A) -> rally driver, Delta Coast (M1B); hot-zone diver",
     "education": "Delta Coast Ultra School (recruited M2); Red Hills legacy at school",
     "home_life": "older brother Jebb, primary bond, her navigator",
@@ -337,11 +337,11 @@
   },
   "futurity_stance": {
    "layer": "L6",
-   "value": null,
+   "value": "foreclosed",
    "native_scale": null,
-   "source": "AUTH §System Illusion (\"success provides freedom\") · SF limit Optionlock · AUTH §Brother Death Event (Jebb's dream for her taken)",
-   "confidence": "low",
-   "status": "parked"
+   "source": "Joplin KB bible 2026-01; ruled Chief 'go'; provisional",
+   "confidence": "med (ruled 11/4)",
+   "status": "filled"
   },
   "system_stance": {
    "layer": "L4",
@@ -361,7 +361,7 @@
     "false_belief": "merit earns freedom",
     "want": null,
     "need_kind": null,
-    "cost": null,
+    "cost": "loss of racing and the banned name",
     "fusion_beat": null
    },
    "native_scale": null,
@@ -1327,7 +1327,7 @@
   "step3": "pass"
  },
  "counts": {
-  "filled": 78,
-  "parked": 33
+  "filled": 79,
+  "parked": 32
  }
 }

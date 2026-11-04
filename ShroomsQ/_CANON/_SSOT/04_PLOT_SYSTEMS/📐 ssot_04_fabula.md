@@ -1,7 +1,7 @@
 ---
 type: ssot_04_fabula
 category: plot_system
-version: 1.6.1
+version: 1.6.2
 tier: fabula
 last_updated: 2026-11-04
 applies_to: [OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX, all future IPs]
@@ -847,6 +847,58 @@ causal_edges:
 ```
 
 ```yaml
+event_id: "skeeter_creek_deep_meridian_beam"   # the hinge (ruled 2026-09-29, Chief: "number two, yes"); era prefix per F2
+transition: "the Deep Meridian drill front holds its chamber -> the chamber loses control and fires a beam a mile wide into the sky"
+actors: []   # the Drill Rangers crew the front, but no source names them as actors here
+kernel_satellite: kernel
+time:
+  movement: "backstory"
+  time_code: null
+  calendar_year: null   # no source gives the beam's year; OPEN
+  reach: "before the 2099 Moon Severance"
+  extent: "point"
+gap_type: logged
+repeat: false
+source_kind: construction
+canon_source: "The hinge (RULED 2026-09-29, Chief: 'number two, yes'; Apple Notes 2025, BOLO 91): a pressurized hot-water chamber at Deep Meridian 'loses control and fires a beam of radiation that punches a hole a mile wide into the sky'; the beam signals the quasar that reaches Vivian's time; F5 (ruled 2026-10-11): the beam comes first, then the Severance; minted ruled 11/4, OXO follow-up call 2"
+produces: []
+scheduled: null
+location: GAP   # Deep Meridian's 03 address OPEN
+stories: [backstory_only]
+provenance:
+  source: "_PRIVATE/notes/apple-notes-2026.digest.md (BOLO 91)"
+  confidence: direct_quote
+causal_edges:
+  - type: precede
+    to: "skeeter_creek_backstory_moon_severance"
+```
+
+```yaml
+event_id: "skeeter_creek_backstory_moon_severance"   # the Moon Severance, 2099 (year ruled 11/4, OXO kickoff call 12); minted ruled 11/4, OXO follow-up call 2; kept apart from ASTRO7EX's (G9)
+transition: "the Moon is linked to Earth -> the Moon cuts itself off by nukes in orbit and a Kessler cascade that walls Earth off from space"
+actors: []   # the Moon colony's people; no source names them as actors here
+kernel_satellite: kernel
+time:
+  movement: "backstory"
+  time_code: null
+  calendar_year: 2099   # on the Outliers clock only (F4, year ruled 11/4 call 12)
+  reach: "after the Deep Meridian beam (F5)"
+  extent: "point"
+gap_type: logged
+repeat: false
+source_kind: construction
+canon_source: "THE WORLD CLOCK (BOLO 96, 'all rec'; year ruled 11/4, OXO kickoff call 12): 'the Moon cut itself off on purpose: it detonated nukes in orbit and set off a Kessler cascade'; some Moon people came back down and are the Outliers; F5 (ruled 2026-10-11): the beam comes first, then the Severance"
+produces: []
+scheduled: null
+location: GAP   # orbit above Earth; no 03 address OPEN
+stories: [backstory_only]
+provenance:
+  source: "_PRIVATE/notes/apple-notes-2026.digest.md (BOLO 91)"
+  confidence: direct_quote
+causal_edges: []   # the Moon colony precedes it (edge on that record); the land sale follows it ("right after", H6)
+```
+
+```yaml
 event_id: "skeeter_creek_land_sold"   # the regret stays a separate record, PROVISIONAL (L4)
 transition: "the family holds the Skeeter Creek land -> the last generation sells it, and it becomes the school site"
 actors: []   # no source names the people yet; Chief hand-builds them (L3)
@@ -1230,6 +1282,7 @@ causal_edges: []
 
 ## Version history
 
+- **1.6.2 — 2026-11-04.** Ruled 11/4, OXO follow-up call 2: the two era 1 event records enter, `skeeter_creek_deep_meridian_beam` (the hinge) and `skeeter_creek_backstory_moon_severance` (2099), beam first (F5); the beam's year and place stay open.
 - **1.6.1 — 2026-11-04.** 11/4 OXO kickoff: calls 2 and 12 landed (ruled 11/4). The Red Hills to DCUS rebrand is ruled; the OXO year 2199 is ruled, and the look reads as 2009.
 - 10/11 · batch 1 F1–F12 ruled ('Take all recs')
 - **1.6.0 — 2026-10-12.** S1-S7 recs taken ('take all recs'). S3: the Aldrin Sector opens era 4. S4: Phase I gets two ids and one `simultaneous` edge, `skeeter_creek_backstory_moon_colony` (era 1) and `astro7ex_backstory_phase_one_colonized` (era 4). S5: `astro7ex_backstory_maxwing_purge` enters before the AI Collapse; the queenpin survives it. S6: `astro7ex_backstory_moon_severance` enters as the AI Collapse seen from the Moon (G9 keeps it apart from era 1's). S7: `astro7ex_backstory_myrtle_found` enters after the heist (C14 open). S2: the 2090s births are ancestors', held as lineage; I9 closes as lineage. S1: the queenpin's name goes on the name bench (BOLO 48). All provisional.

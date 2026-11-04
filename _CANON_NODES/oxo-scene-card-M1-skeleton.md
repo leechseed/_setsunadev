@@ -68,7 +68,7 @@ signpost seat:  Act 1 (M1+M2), per the trope graph's ruled movements map — MC 
                 M1 row) — see Open question 3                                                          (P6)
 reveal:         to the audience: dramatic irony seeded here that the series spends five more movements
                 paying off — the "untouchable" resolve IS the vulnerability the system will exploit
-                (Truth Exposure Index 18, victoria-midnight.md) ⧗ interpretive, its mechanism not fully
+                (Truth Exposure Index 20, victoria-midnight.md) ⧗ interpretive, its mechanism not fully
                 legible until oxo-scene-card-M2-row9.md's own reveal confirms the pattern. To Tori: none
                 yet — she believes the resolve is armor                                                (P7)
 collision:      unassigned ⧗ — no collision-engine row is read for this card, the same gap

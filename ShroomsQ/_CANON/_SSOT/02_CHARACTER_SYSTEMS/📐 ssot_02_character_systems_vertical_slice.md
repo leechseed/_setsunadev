@@ -1,16 +1,16 @@
 ---
 type: ssot_02_character_systems
 category: character_systems
-version: 3.6.2
+version: 3.6.3
 tier: [fabula, narratology]
 last_updated: 2026-11-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
-status: "v3.6.2 2026-11-04: Chief: go (OXO kickoff calls 5, 6, 9, 11, 12 applied to Tori). The VM fill pass note now calls AUTH lineage and names victoria-midnight.md as her live copy; no value changed. v3.6.1 2026-11-04: Chief: go (Anna recs, BOLO 176). The copy keeps her own record; origin_event null; the Steadfast rule (need `held: Inequity`, arc fields `none`) lands in Step 3, so Step 3 passes; her node is LOCKED as her authority; the numbers pass sets CORE 10, VITAL 10, SOCIAL 10, WILL 11, WOUND 0, DRIVE 10, resistance 0, all provisional; BDR 11, Narrative Momentum 10, Stress Threshold 11; all five flags INACTIVE; the 14 med rows ruled. v3.6.0 2026-11-04: Chief: go (Anna slice, BOLO 176). Anna-Colson Conway gets her own instance section, the second slice: the IC record, Fixed Attitude (ruled 11/4); her high-confidence fields filled from source, the rest point to anna-fill.md; Step 1 gate red, no layer numbers in canon, so no statistic computes and Step 3 fails. v3.5.2 2026-11-04: Chief: go (Tori med recs, BOLO 176). Her 13 medium-confidence recs applied; Jebb carded, relational_refs points at him. v3.5.1 2026-11-04: Chief: go (VM fill pass, BOLO 176). Tori's high-confidence fields filled from source; the rest point to tori-fill.md; Step 3 passes. v3.5.0 2026-11-04: Chief: go recs path cleanup (BOLO 176), and Chief: go (normalized store, BOLO 176). Truth Exposure Index is `SOCIAL + max(0, 12 - shame_index)`, Tori = 20 · the layer table gains a scale column · the normalized store is ruled as a design rule, not built · L2b body shape registered under L2 · the venue alias rows re-pointed to community_membership · the pipeline doc renamed to ssot_02. Official name LEECHSEED (ruled 11/4). Earlier versions: see Version history."
+status: "v3.6.3 2026-11-04: Chief: go (OXO follow-up calls 3, 4, 5). Tori: `want_need.cost` and `futurity_stance` filled from the Joplin KB bible; \"trash-zone\" retired for \"the belt\"; her TEI reads 20 wherever a live file showed 18. v3.6.2 2026-11-04: Chief: go (OXO kickoff calls 5, 6, 9, 11, 12 applied to Tori). The VM fill pass note now calls AUTH lineage and names victoria-midnight.md as her live copy; no value changed. v3.6.1 2026-11-04: Chief: go (Anna recs, BOLO 176). The copy keeps her own record; origin_event null; the Steadfast rule (need `held: Inequity`, arc fields `none`) lands in Step 3, so Step 3 passes; her node is LOCKED as her authority; the numbers pass sets CORE 10, VITAL 10, SOCIAL 10, WILL 11, WOUND 0, DRIVE 10, resistance 0, all provisional; BDR 11, Narrative Momentum 10, Stress Threshold 11; all five flags INACTIVE; the 14 med rows ruled. v3.6.0 2026-11-04: Chief: go (Anna slice, BOLO 176). Anna-Colson Conway gets her own instance section, the second slice: the IC record, Fixed Attitude (ruled 11/4); her high-confidence fields filled from source, the rest point to anna-fill.md; Step 1 gate red, no layer numbers in canon, so no statistic computes and Step 3 fails. v3.5.2 2026-11-04: Chief: go (Tori med recs, BOLO 176). Her 13 medium-confidence recs applied; Jebb carded, relational_refs points at him. v3.5.1 2026-11-04: Chief: go (VM fill pass, BOLO 176). Tori's high-confidence fields filled from source; the rest point to tori-fill.md; Step 3 passes. v3.5.0 2026-11-04: Chief: go recs path cleanup (BOLO 176), and Chief: go (normalized store, BOLO 176). Truth Exposure Index is `SOCIAL + max(0, 12 - shame_index)`, Tori = 20 · the layer table gains a scale column · the normalized store is ruled as a design rule, not built · L2b body shape registered under L2 · the venue alias rows re-pointed to community_membership · the pipeline doc renamed to ssot_02. Official name LEECHSEED (ruled 11/4). Earlier versions: see Version history."
 rung: standard
 dependencies: ["[[📐_ssot_writing_guide]]", "[[📐_ssot_ai_instruction_protocol]]", "ssot_02_character_astrology_12_layer_mapping", "ssot_02_character_state_architecture", "ssot_02_dramatica_integration_protocol", "ssot_04_plot_system", "ssot_03_setting_system", "ssot_02_l9_eros_synthesis"]
 trunk: BLACK
 sources: [BVX.0064, BVX.0075, BVX.0193, BVX.0089, BVX.0196, BVX.0061, BVX.0209, BVX.0233, BVX.0045, BVX.1123, BVX.1124, BVX.1127, MSX.18, MSX.19, MSX.20, MSX.21, MSX.22, MSX.23, MSX.24, MSX.25, MSX.26, MSX.27, MSX.28, MSX.29, MSX.30, MSX.31, MSX.32, MSX.33, MSX.34, MSX.35, MSX.36, PSY.08, PSY.09, PSY.10, PSY.11, PSY.12, PSY.13, BVX.0054, BVX.0084, BVX.0163, BVX.0175, BVX.0191, BVX.0258, BVX.0273, BVX.0399, BVX.0576, BVX.0596, BVX.0614, BVX.0822, BVX.1125, BVX.1126, BVX.1129, BVX.1130, BVX.1131, BVX.1132, BVX.1133, BVX.1134, BVX.1135, BVX.1148, BVX.1149, BVX.1150, BVX.1151, BVX.1152, BVX.1154, BVX.1155, BVX.1158, BVX.1172, BVX.1175, CRE.05, CRE.07, MSX.37, MSX.38, MSX.39, MSX.40, MSX.41, MSX.42, MSX.43, MSX.44, MSX.45, MSX.47, MSX.48, MSX.49, MSX.50, MSX.51, MSX.52, MSX.53, MSX.54, MSX.55, MSX.56, MSX.57, MSX.58, MSX.59, MSX.60, MSX.61, MSX.62, MSX.63, MSX.64, MSX.65, MSX.66, MSX.69, MSX.70, MSX.71, MSX.72, MSX.74, MSX.75, MSX.76, MSX.77, MSX.78, MSX.79, MSX.81, MSX.82, MSX.83, MSX.85, MSX.86, MSX.87, MSX.88, MSX.SET.01, PHI.03, PHI.04, PSY.14, PSY.15, PSY.16, PSY.17, PSY.18, PSY.19, PSY.20, PSY.23, PSY.24, PSY.25, PSY.26, PSY.27, PSY.28, PSY.29, PSY.30, PSY.31, PSY.32, PSY.33, PSY.35, PSY.36, PSY.37, PSY.38, PSY.39, PSY.40, PSY.49, PSY.51, PSY.52, PSY.55, PSY.60, PSY.61, PSY.62, PSY.67, MSX.11, MSX.12, MSX.13, MSX.14, MSX.15, PSY.02, PSY.03, PSY.05, PSY.06, PSY.07, PHI.01, PHI.02]
-purpose: "THE CHARACTER SYSTEM, v3.6.2: LEECHSEED (the official name, ruled 11/4; the 12-layer character system is its description), the first top-layer model of the lattice. It stores a character as twelve layers in three tiers, with seven derived statistics and five flags computed from them, in one Structured Data Block that changes over story time only through state diffs. Written against the character shelf of the library, which holds nine distills."
+purpose: "THE CHARACTER SYSTEM, v3.6.3: LEECHSEED (the official name, ruled 11/4; the 12-layer character system is its description), the first top-layer model of the lattice. It stores a character as twelve layers in three tiers, with seven derived statistics and five flags computed from them, in one Structured Data Block that changes over story time only through state diffs. Written against the character shelf of the library, which holds nine distills."
 ---
 
 # 📐 SSOT · THE CHARACTER SYSTEM · LEECHSEED (the 12-layer system) · the vertical slice
@@ -393,9 +393,9 @@ Active wound triggers: mechanical failure events; guidance she is inclined to re
 
 Meaning-driven characters burn below their physical ceiling because their fuel source is already damaged at story entry. The crash did not destroy her DRIVE — it dented the tank. Reduction reflects the compromised fuel source, not reduced physical capacity. Buy-down return: 6 pts.
 
-`futurity_stance`: ⏸ VM fill pass (phase 2) — not documented, null. → see tori-fill.md
+`futurity_stance`: foreclosed (post-Ban), confidence med (fill 11/4 round 3, lineage source: Joplin KB bible 2026-01; ruled Chief 'go'; provisional).
 
-`want_need`: `need` is accept_asymmetry, "rigged is not the same as wrong", and `false_belief` is merit earns freedom (fill 11/4, source: slice L11 `growth_requirement` and its arc line; oxo-storyform §9 MC Solution Inequity; AUTH §System Illusion). `want`, `need_kind`, `cost` and `fusion_beat` stay parked (see the block). The Step 3 check passes.
+`want_need`: `need` is accept_asymmetry, "rigged is not the same as wrong", and `false_belief` is merit earns freedom (fill 11/4, source: slice L11 `growth_requirement` and its arc line; oxo-storyform §9 MC Solution Inequity; AUTH §System Illusion). `cost` reads "loss of racing and the banned name" (fill 11/4 round 3, lineage source: Joplin KB bible 2026-01; ruled Chief 'go'; provisional). `want`, `need_kind` and `fusion_beat` stay parked (see the block). The Step 3 check passes.
 
 **Tier 2 Total (net): 139 pts**
 
@@ -618,7 +618,7 @@ TIER_1:
     health: "survived the M1B crash; wears the dive rig (spine and calf ports) and spends her Mother's quickened tissue on every hard dive"
   SOCIAL: 10
   sociology_stack:         # (fill 11/4, source: slice L7 origin_class; ssot_04_fabula family-origin note, RULED 9/29; AUTH §Continuity Bridge, §Core Bond, §Relationship to the System; victoria-midnight §Where she appears, §Relationships, §THE DIVE)
-    class: "working / criminal-adjacent; family were holdouts in the trash-zone delta"
+    class: "working / criminal-adjacent; family were holdouts in the belt (belt-born, ruled 11/4 call 6)"
     occupation: "salvage economy (M1A) -> rally driver, Delta Coast (M1B); hot-zone diver"
     education: "Delta Coast Ultra School (recruited M2); Red Hills legacy at school"
     home_life: "older brother Jebb, primary bond, her navigator"
@@ -644,15 +644,15 @@ TIER_2:
   locus_of_control: null   # ⏸ VM fill pass (phase 2) L4, -5 internal .. +5 external → see tori-fill.md
   WOUND: 8
   DRIVE: 12
-  futurity_stance: null    # ⏸ VM fill pass (phase 2) L6, planned | hoped | foreclosed | none | refused | horizon → see tori-fill.md
+  futurity_stance: foreclosed   # "foreclosed (post-Ban)", med (fill 11/4 round 3, lineage source: Joplin KB bible 2026-01; ruled Chief 'go'; provisional) · L6, planned | hoped | foreclosed | none | refused | horizon
   system_stance: {stance: believer, offstage_audience: null}   # (fill 11/4, source: AUTH §Relationship to the System; victoria-midnight §REORIENT; oxo-storyform §1 Growth Stop; CL25 second source met)
   want_need:               # L6, CL16; motivation_stack entries carry audience
     need: "accept_asymmetry: rigged is not the same as wrong"   # (fill 11/4, source: slice L11 growth_requirement + arc line; oxo-storyform §9 MC Solution Inequity)
     false_belief: "merit earns freedom"   # (fill 11/4, source: AUTH §System Illusion (Pre-Break); slice L1; L8 conditional_patterns)
     want: null
     need_kind: null
-    cost: null
-    fusion_beat: null      # ⏸ VM fill pass (phase 2) want, need_kind, cost (med) and fusion_beat (no climax event yet) → see tori-fill.md
+    cost: "loss of racing and the banned name"   # (fill 11/4 round 3, lineage source: Joplin KB bible 2026-01; ruled Chief 'go'; provisional)
+    fusion_beat: null      # ⏸ VM fill pass (phase 2) want, need_kind and fusion_beat (no climax event yet) → see tori-fill.md
 
 L5_WOUND:
   severity: 8              # same scale as TIER_2.WOUND, named per Puglisi & Ackerman (call 6)
@@ -1477,6 +1477,7 @@ Numbered calls surfaced by the five new distills' own "For the character system"
 
 ## Version history
 
+- **3.6.3 · 2026-11-04** — Chief: go (OXO follow-up calls 3, 4, 5). Tori's instance: `want_need.cost` reads "loss of racing and the banned name" and `futurity_stance` reads "foreclosed (post-Ban)" at med, both tagged as lineage-sourced from the Joplin KB bible (2026-01) and provisional; "trash-zone" in `origin_class` becomes "the belt" (call 6); her TEI is 20 in every live file that showed 18. No schema change.
 - **3.6.2 · 2026-11-04** — Chief: go (OXO kickoff calls 5, 6, 9, 11, 12, applying-ruled-calls). Tori's instance: the VM fill pass note now says AUTH is lineage and her live copy is `victoria-midnight.md` plus the 11/4 cells (call 9). Her origin already reads belt-born, Red Hills legacy, Moon blood (call 6); no Quinton, era or year line sat in her instance (calls 5, 11, 12). No value changed.
 
 - **3.6.1 · 2026-11-04** — Chief: go (Anna recs, BOLO 176). Every change is tagged "ruled Chief 'go' 11/4, BOLO 176". Anna's record moves to 0.3.0: the copy keeps her own record (stated in both records); `origin_event` is null, because she is one continuous actor; the **Steadfast rule** is written into Step 3 (`need` reads `held: <Solution>`, `arc_type` and `change_cause` take `none`), so her Step 3 check passes; her node is LOCKED 11/4 as her authority, which passes gate component 1 (the gate stays red on the two ingests); a numbers pass derives CORE 10, VITAL 10, SOCIAL 10, WILL 11, WOUND 0 (severity 0), DRIVE 10 and resistance_index 0 from her node through the slice's defaults and modifiers, all provisional; Basic Damage Resistance 11, Narrative Momentum 10 and Stress Threshold 11 compute, Social Legibility and Collapse Risk wait on L10, TEI and Expressive Range stay undefined (L9 n/a); all five flags read INACTIVE; the 14 med rows are written as ruled. 43 of 81 layer fields are filled, 38 parked. Derivations: `_tools/bolostatus/work/176/anna-fill.md` §5.

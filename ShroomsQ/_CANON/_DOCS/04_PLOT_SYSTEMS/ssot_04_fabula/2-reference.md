@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_fabula.md
-source_version: 1.6.1
+source_version: 1.6.2
 ---
 
 **Who it's for:** a writer or maintainer looking up a fabula fact · **What it does:** lists each component, field and event · **Type:** reference
@@ -99,9 +99,9 @@ Bal's process model has three phases: possibility, event, result. Any phase can 
 | 4 ASTRO7EX | ASTRO7EX | the Moon. Band only. |
 | 5 beyond | none yet | past the Moon. Band only. |
 
-**Calendar and the Moon Severance (ruled 2026-10-01, BOLO 96).** OXO's present is 2199. The Moon Severance is 2099, in era 1. The calendar says 2199, but the look, the tech feel and the themes read as 2009 (ruled 11/4, OXO kickoff call 12; the year is no longer provisional). Event id `backstory_moon_severance`. The Moon cut itself off by nukes in orbit and a Kessler cascade. The Outliers descend from Moon people who came back down. ASTRO7EX (era 4) is Earth's return to the Moon.
+**Calendar and the Moon Severance (ruled 2026-10-01, BOLO 96).** OXO's present is 2199. The Moon Severance is 2099, in era 1. The calendar says 2199, but the look, the tech feel and the themes read as 2009 (ruled 11/4, OXO kickoff call 12; the year is no longer provisional). Event id `skeeter_creek_backstory_moon_severance`. The Moon cut itself off by nukes in orbit and a Kessler cascade. The Outliers descend from Moon people who came back down. ASTRO7EX (era 4) is Earth's return to the Moon.
 
-> **OPEN:** the Severance's order against the Deep Meridian beam, and whether ASTRO7EX's own "Moon Severance" is this event.
+The beam comes first, then the Severance (F5, ruled 2026-10-11). ASTRO7EX's own Moon Severance is a separate event (G9). Both era 1 events now have records (ruled 11/4, OXO follow-up call 2). The beam's year and place stay open.
 
 **The Narco Republic.** Rises in era 1, stands in era 2, is a mature vice economy by era 4. Era 3 is silent. Its names and flag wait on Chief's calls.
 
@@ -109,7 +109,7 @@ Bal's process model has three phases: possibility, event, result. Any phase can 
 
 > **OPEN:** what the ocean impact wakes, and how both impacts sit against the Deep Meridian beam.
 
-**The hinge (ruled 2026-09-29): the Deep Meridian beam.** A geothermal drill front fires a beam. The beam punches a mile-wide hole in the sky. The beam signals the quasar that reaches the time of Vivian (ASTRO7EX). The Moon Severance and the AI Collapse follow from it. Future ids: `deep_meridian_beam`, `astro7ex_backstory_moon_severance`, `astro7ex_backstory_ai_collapse`.
+**The hinge (ruled 2026-09-29): the Deep Meridian beam.** A geothermal drill front fires a beam. The beam punches a mile-wide hole in the sky. The beam signals the quasar that reaches the time of Vivian (ASTRO7EX). The Moon Severance and the AI Collapse follow from it. Ids: `skeeter_creek_deep_meridian_beam`, `astro7ex_backstory_moon_severance`, `astro7ex_backstory_ai_collapse`.
 
 **Superseded.** The 2026-02-09 ruling that the three stories occur simultaneously is kept as history. The eon stays the umbrella.
 
