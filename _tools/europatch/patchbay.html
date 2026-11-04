@@ -161,12 +161,15 @@ input,select,textarea{accent-color:var(--cmd-acc);caret-color:var(--cmd-acc)}
 /*ENGINE-START*/
 var EP = (function(){
 "use strict";
-var VERSION = "0.1.0", CONF = {high:3, medium:2, low:1}, SET_PIECE_TENSION = 0.5, REFLECTIVE_PULL = 0.5;
+var VERSION = "0.2.0", CONF = {high:3, medium:2, low:1}, SET_PIECE_TENSION = 2.1972, REFLECTIVE_PULL = 2.1972, AGREE_TENSION = 0.2197;
+var K = 4.394449154672439, P_LO = 0.005, P_HI = 0.995;
 function fnv1a(s){ var h = 2166136261 >>> 0; s = String(s); for (var i = 0; i < s.length; i++){ h ^= s.charCodeAt(i); h = Math.imul(h, 16777619) >>> 0; } return h >>> 0; }
 function Rng(state){ this.x = (state >>> 0) || 0x9E3779B9; for (var i = 0; i < 3; i++) this.next(); }
 Rng.prototype.next = function(){ var x = this.x; x ^= x << 13; x >>>= 0; x ^= x >>> 17; x ^= x << 5; x >>>= 0; this.x = x; return x / 4294967296; };
 function rnd(x, n){ var p = Math.pow(10, n); return Math.floor(x * p + 0.5) / p; }
 function clamp(x, lo, hi){ return x < lo ? lo : x > hi ? hi : x; }
+function logit(p){ return Math.log(p / (1 - p)); }
+function sigmoid(z){ z = clamp(z, -40, 40); return 1 / (1 + Math.exp(-z)); }
 function curve(x, c){
   x = clamp(x, 0, 1); var k = c.curve || "linear";
   if (k === "ease-in") return x * x;
@@ -276,16 +279,17 @@ function rollCore(patch, seed, cat, presets){
       var key = d.key, spec = m.dials[key], rng = new Rng(fnv1a(String(mseed) + "|" + key)), u = rng.next();
       if (d.kind === "slider"){
         var centre = clamp(spec.value, 0, 100), spread = clamp(spec.spread, 0, 50), bent = [], pulls = [];
+        var z0 = logit(clamp(centre / 100, P_LO, P_HI)), scale = 1, push = 0;
         (into[m.id + "." + key] || []).forEach(function(ci){
           var c = cables[ci], co = cabOut[ci], src = rolled[c.from];
           if (src == null){ warnings.push(co.id + ": no rolled value at " + c.from); return; }
-          var x = src / 100, f = curve(x, c), s = c.strength != null ? c.strength : 0, nc;
-          if ((c.mode || "add") === "multiply") nc = centre * (1 + s * f);
-          else nc = centre + s * f * 100;
-          var p = (nc - centre) / 100;
-          centre = nc; co.value = rnd(x, 4); co.pull = rnd(p, 4); pulls.push(p); bent.push(co.id);
+          var x = src / 100, f = curve(x, c), s = c.strength != null ? c.strength : 0, p;
+          if ((c.mode || "add") === "multiply"){ scale = scale * (1 + s * f); p = z0 * s * f; }
+          else { p = s * K * f; push = push + p; }
+          co.value = rnd(x, 4); co.pull = rnd(p, 4); pulls.push(p); bent.push(co.id);
         });
-        centre = clamp(centre, 0, 100);
+        var z = z0 * scale + push;
+        if (bent.length && z !== z0) centre = 100 * clamp(sigmoid(z), P_LO, P_HI);
         var val = clamp(centre + (2 * u - 1) * spread, 0, 100);
         val = rnd(val, 2);
         var lo = d.native[0], hi = d.native[1];
@@ -298,7 +302,7 @@ function rollCore(patch, seed, cat, presets){
           var t = rnd(mag - Math.abs(tot), 4), tk = m.id + "_" + m.code + "." + key;
           tension[tk] = t;
           if (t >= SET_PIECE_TENSION) patterns.push({kind: "set_piece", dial: tk, tension: t, total_pull: rnd(tot, 4)});
-          else if (pulls.length >= 2 && t < 0.05 && Math.abs(tot) >= REFLECTIVE_PULL) patterns.push({kind: "reflective", dial: tk, tension: t, total_pull: rnd(tot, 4)});
+          else if (pulls.length >= 2 && t < AGREE_TENSION && Math.abs(tot) >= REFLECTIVE_PULL) patterns.push({kind: "reflective", dial: tk, tension: t, total_pull: rnd(tot, 4)});
         }
         dout[key] = dd; rl[key] = val; rolled[m.id + "." + key] = val;
       } else {
@@ -347,6 +351,126 @@ function summarize(inst, cat){
   return lines;
 }
 
+// ---------- the stats engine (BOLO 176; mirrors europatch.py line for line) ----------
+var STAT_KEYS = ["truth_exposure", "expressive_range", "stress_threshold", "damage_resistance",
+                 "narrative_momentum", "social_legibility", "collapse_risk"];
+var STAT_INPUTS = {truth_exposure: ["SOCIAL", "shame_index"], expressive_range: ["armor_index"],
+                   stress_threshold: ["WILL", "WOUND"], damage_resistance: ["WILL", "WOUND"],
+                   narrative_momentum: ["DRIVE", "resistance_index"], social_legibility: ["SOCIAL", "projection_tendency"],
+                   collapse_risk: ["WOUND", "shadow_density"]};
+var FLAG_KEYS = ["SHADOW_DENIAL", "TRUTH_VULNERABILITY", "OPTIONLOCK_PROGRESSION", "EARNED_JUDGEMENT", "KINSHIP_COLLAPSE"];
+var FLAG_TERMS = {
+  SHADOW_DENIAL: [["WOUND", ">", 6], ["projection_tendency", ">=", 5], ["conditional_patterns", "has", "merit_earns_freedom"]],
+  TRUTH_VULNERABILITY: [["SOCIAL", "<", 12], ["mc_problem_element", "=", "Equity"], ["shadow_density", ">", 6]],
+  OPTIONLOCK_PROGRESSION: [["WOUND", ">", 7], ["resistance_index", ">", 7], ["limit_type", "=", "Optionlock"]],
+  EARNED_JUDGEMENT: [["dramatica_archetype", "=", "Protagonist"], ["story_outcome", "=", "Failure"], ["WILL", ">", 10]],
+  KINSHIP_COLLAPSE: [["attachment_style_score", ">", 5], ["secure_base_object", "=", "deceased"], ["WOUND", ">", 7]]};
+var INSTANCE_MAP = {WILL: ["L4", "WILL"], WOUND: ["L5", "severity"], SOCIAL: ["L3", "SOCIAL"], DRIVE: ["L6", "DRIVE"],
+                    projection_tendency: ["L10", "projection_tendency"], shadow_density: ["L10", "shadow_density"],
+                    resistance_index: ["L11", "resistance_index"], shame_index: ["L9", "exposure_shame"],
+                    armor_index: ["L9", "armor_index"], attachment_style_score: ["L8", "attachment_style_score"],
+                    dramatica_archetype: ["L12", "dramatica_archetype"], story_outcome: ["L12", "story_outcome"],
+                    limit_type: ["L12", "limit_type"]};
+var CHAR_NAMES = {WILL: ["WILL"], WOUND: ["WOUND", "severity"], SOCIAL: ["SOCIAL"], DRIVE: ["DRIVE"],
+                  projection_tendency: ["projection_tendency"], shadow_density: ["shadow_density"],
+                  resistance_index: ["resistance_index", "resistance"], shame_index: ["shame_index", "exposure_shame"],
+                  armor_index: ["armor_index"], attachment_style_score: ["attachment_style_score"],
+                  dramatica_archetype: ["dramatica_archetype"], story_outcome: ["story_outcome"], limit_type: ["limit_type"],
+                  mc_problem_element: ["mc_problem_element"], conditional_patterns: ["conditional_patterns"],
+                  secure_base_object: ["secure_base_object", "primary_attachment_object"]};
+var NA_WORDS = ["n/a", "na", "unset", "null", "none", "parked", "\u23f8", ""];
+
+function num(v){
+  if (typeof v === "boolean") return null;
+  if (typeof v === "number") return v;
+  if (typeof v === "string" && /^\s*-?\d+(\.\d+)?\s*$/.test(v)) return parseFloat(v);
+  return null;
+}
+function outnum(x){ return rnd(x, 2); }
+function present(v){
+  if (v == null) return false;
+  if (typeof v === "string" && NA_WORDS.indexOf(v.trim().toLowerCase()) >= 0) return false;
+  if (Array.isArray(v) && v.length === 0) return false;
+  return true;
+}
+function statValue(k, g){
+  if (k === "truth_exposure") return g.SOCIAL + Math.max(0, 12 - g.shame_index);
+  if (k === "expressive_range") return 12 - g.armor_index;
+  if (k === "stress_threshold") return g.WILL - g.WOUND;
+  if (k === "damage_resistance") return g.WILL - Math.floor(g.WOUND / 2);
+  if (k === "narrative_momentum") return g.DRIVE + Math.floor(g.resistance_index / 2);
+  if (k === "social_legibility") return g.SOCIAL - Math.floor(g.projection_tendency / 3);
+  return Math.floor((g.WOUND + g.shadow_density) / 2);
+}
+function term(v, op, want){
+  if (!present(v)) return null;
+  if (op === "has"){
+    var items = Array.isArray(v) ? v : [v];
+    for (var i = 0; i < items.length; i++) if (String(items[i]).toLowerCase().indexOf(want.toLowerCase()) >= 0) return true;
+    return false;
+  }
+  if (op === "="){
+    var s = String(v).trim().toLowerCase(), w = want.toLowerCase();
+    return s === w || s.split(/[\s_()]+/).indexOf(w) >= 0;
+  }
+  var n = num(v);
+  if (n == null) return null;
+  if (op === ">") return n > want;
+  if (op === ">=") return n >= want;
+  return n < want;
+}
+function statsCore(inp, label){
+  var stats = {}, missing = [];
+  STAT_KEYS.forEach(function(k){
+    var g = {}, gap = false;
+    STAT_INPUTS[k].forEach(function(name){
+      var n = present(inp[name]) ? num(inp[name]) : null;
+      if (n == null){ gap = true; if (missing.indexOf(name) < 0) missing.push(name); }
+      g[name] = n;
+    });
+    stats[k] = gap ? null : outnum(statValue(k, g));
+  });
+  var flags = {};
+  FLAG_KEYS.forEach(function(f){
+    var st = "ACTIVE";
+    FLAG_TERMS[f].forEach(function(t){
+      var r = term(inp[t[0]], t[1], t[2]);
+      if (r == null && missing.indexOf(t[0]) < 0) missing.push(t[0]);
+      if (r === false) st = "INACTIVE";
+      else if (r == null && st === "ACTIVE") st = "UNKNOWN";
+    });
+    flags[f] = st;
+  });
+  return {char: label, stats: stats, flags: flags, inputs_missing: missing, inputs: inp};
+}
+function inputsFromInstance(inst){
+  var inp = {};
+  Object.keys(INSTANCE_MAP).forEach(function(name){
+    var mid = INSTANCE_MAP[name][0], key = INSTANCE_MAP[name][1], mods = inst.modules || {}, ks = Object.keys(mods);
+    for (var i = 0; i < ks.length; i++){
+      var mm = mods[ks[i]];
+      if (mm.module !== mid) continue;
+      var d = (mm.dials || {})[key];
+      if (d == null) continue;
+      inp[name] = has(d, "native") ? d.native : d.pick;
+      break;
+    }
+  });
+  return inp;
+}
+function inputsFromChar(rec){
+  var inp = {}, nums = rec.numbers || {}, fields = rec.fields || {};
+  Object.keys(CHAR_NAMES).forEach(function(name){
+    var al = CHAR_NAMES[name];
+    for (var i = 0; i < al.length; i++){
+      if (has(nums, al[i]) && present(nums[al[i]])){ inp[name] = nums[al[i]]; break; }
+      var f = fields[al[i]];
+      if (f && typeof f === "object" && f.status === "filled" && present(f.value)){ inp[name] = f.value; break; }
+    }
+  });
+  return inp;
+}
+
 function roll(patch, seed, cat, presets){
   if (seed == null) seed = patch.seed != null ? patch.seed : 1;
   if (typeof seed === "string" && /^\d{1,15}$/.test(seed)) seed = Number(seed);
@@ -355,7 +479,8 @@ function roll(patch, seed, cat, presets){
   return rollCore(patch, seed, cat, presets);
 }
 return {VERSION: VERSION, fnv1a: fnv1a, Rng: Rng, curve: curve, resolve: resolve, rollOrder: rollOrder, check: check,
-        rollCore: rollCore, roll: roll, summarize: summarize, human: human};
+        rollCore: rollCore, roll: roll, summarize: summarize, human: human,
+        STAT_KEYS: STAT_KEYS, FLAG_KEYS: FLAG_KEYS, statsCore: statsCore, inputsFromInstance: inputsFromInstance, inputsFromChar: inputsFromChar};
 })();
 /*ENGINE-END*/
 </script>
@@ -806,7 +931,7 @@ var TERMS = {
  europatch: ["EUROPATCH", "Build anything complex out of {module}s, {jack}s and {cable}s, like a Eurorack synth. Set the dials; the {seed} rolls one {instance}. Not on/off logic: patch cables bend, they never switch."],
  module: ["Patch module", "One LEECHSEED layer as a box: dials, in-{jack}s on the left, out-jacks on the right. Hover a module's title for its question."],
  jack: ["Jack", "A named input or output on a {module}. An out-jack offers a rolled slider value; an in-jack takes a {cable} and bends that dial."],
- cable: ["Patch cable", "Carries one rolled value from an out-{jack} to an in-jack and bends that dial's centre before the {seed} rolls. Mode add (centre + strength × {curve}(value) × 100) or multiply (centre × (1 + strength × curve(value))); strength −1 to +1. Click the dot at a cable's middle to edit it. Orange adds, red subtracts, cyan multiplies."],
+ cable: ["Patch cable", "Carries one rolled value from an out-{jack} to an in-jack and bends that dial's centre before the {seed} rolls. The math runs in log-odds (0.2, ruled 11/4): add pushes logit(centre) by strength × K × {curve}(value), K = 4 ln 3, so +0.25 at full moves 50 to 75; multiply scales the dial's log-odds distance from the middle by 1 + strength × curve(value). Pushes add in any order, edges give diminishing returns, and a bent dial stays inside 0.5–99.5. Strength −1 to +1. Click the dot at a cable's middle to edit it. Orange adds, red subtracts, cyan multiplies."],
  curve: ["Curve", "Shapes the carried value (0..1) before the strength: linear, ease-in, ease-out, s-curve, or threshold-soft (a soft step around a threshold: the bend only bites once the source runs high)."],
  seed: ["Seed", "A whole number that drives the dice. Same patch + same seed = the same {instance}. Each module gets its own seed from this one plus its id, so adding a module never reshuffles the others."],
  instance: ["Instance", "One rolled result: per module, each dial's {window}, rolled value and its native value, each list's pick, the patch cables' pulls, and the {tension}. Draft output, never canon until Chief promotes it."],
@@ -814,7 +939,7 @@ var TERMS = {
  spread: ["Spread", "How far the {seed} may roll from the centre, 0 to 50. 0 = exact; wide = the seed decides more. Sets the {window}."],
  weights: ["Weighted list", "A pick-list: each choice has a weight, the {seed} draws one, heavier comes up more. The combo: even (all 1), weighted (custom), or one choice (locked). Trope-register conf reads as weights: high 3, medium 2, low 1."],
  preset: ["Preset", "A character type that sets many dials in one move. Stacked: the preset, then your nudges, then the {cable}s, then the {seed}. The header applies it to every module; a module's own preset combo applies one layer only (a mentor's WOUND in a rival). Provisional (*), tied to trope register links."],
- tension: ["Tension", "Where 2+ {cable}s plug into one dial: the sum of each pull's size minus the size of their sum. High (≥ 0.5) = a set-piece candidate (lenses collide); near 0 with a big total pull = a reflective moment (lenses agree)."],
+ tension: ["Tension", "Where 2+ {cable}s plug into one dial: the sum of each pull's size minus the size of their sum, in log-odds units. High (≥ 2.2, half of K) = a set-piece candidate (lenses collide); under 0.22 with a total pull ≥ 2.2 = a reflective moment (lenses agree)."],
  mirror: ["JS mirror", "The page carries the roll engine in JavaScript, line for line with europatch.py. test_europatch.py rolls both and proves the same {instance}. Used when the Console is not answering."]
 };
 function dialOf(mid, key){ var m = BYID[mid]; return m ? m.dials.filter(function(d){ return d.key === key; })[0] : null; }

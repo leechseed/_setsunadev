@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LEECHSEED</title>
+<!-- the character console (BOLO 176, 11/4). Served by the Console at /local/leechseed; data from /leechseed/*.
+     The title strip reads its display name from /leechseed/characters (the server reads _PRIVATE/leechseed/console.json). -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#050608;--panel:#0a0c0f;--panel2:#10151b;--inset:#030405;--line:#23272b;--line2:#3a3e40;
+  --fg:#c6cbc8;--fg2:#959a97;--dim:#5f6160;--acc:#FF5A1F;--acch:#FFB08F;--accd:#6e280e;--accsoft:#24110a;
+  --ok:#4ec96f;--oksoft:#0f2416;--am:#e3b341;--amsoft:#2a210b;--bad:#e5604d;--badsoft:#2a120e;--cyan:#5CC8D0;
+  --font:"IBM Plex Mono",Consolas,monospace;--chrome:44px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font:13px/1.5 var(--font)}
+a{color:var(--acch)}
+button{font:inherit;color:var(--fg);background:var(--panel2);border:1px solid var(--line2);padding:3px 10px;cursor:pointer}
+button:hover{border-color:var(--acc);color:var(--acch)}
+button.hot{background:var(--accsoft);border-color:var(--acc);color:var(--acch)}
+/* the strip */
+#strip{height:var(--chrome);display:flex;align-items:center;gap:12px;padding:0 12px;border-bottom:1px solid var(--line);background:var(--panel)}
+#strip b{color:var(--acc);letter-spacing:.12em}
+#strip .sub{color:var(--dim)}
+#strip .sp{flex:1}
+/* the layout */
+#wrap{display:grid;grid-template-columns:220px minmax(0,1fr) 230px;height:calc(100% - var(--chrome))}
+@media (max-width:900px){#wrap{grid-template-columns:180px minmax(0,1fr)}#right{grid-column:1 / -1;border-left:0;border-top:1px solid var(--line)}html,body{height:auto}#wrap{height:auto}}
+#left,#right{overflow:auto;background:var(--panel)}
+#left{border-right:1px solid var(--line)}
+#right{border-left:1px solid var(--line);padding:10px}
+#center{overflow:auto;display:flex;flex-direction:column;min-width:0}
+h3{margin:0 0 8px;font-size:11px;letter-spacing:.14em;color:var(--dim);font-weight:600;text-transform:uppercase}
+/* the character rail */
+.ch{padding:10px 12px;border-bottom:1px solid var(--line);cursor:pointer}
+.ch:hover{background:var(--panel2)}
+.ch.on{background:var(--accsoft);box-shadow:inset 3px 0 0 var(--acc)}
+.ch .nm{font-weight:600;color:var(--fg)}
+.ch.on .nm{color:var(--acch)}
+.bar{display:flex;height:6px;margin:6px 0 4px;background:var(--inset);border:1px solid var(--line)}
+.bar i{display:block;height:100%}
+.bar .f{background:var(--ok)}.bar .p{background:var(--am);opacity:.55}
+.meta{display:flex;justify-content:space-between;color:var(--fg2);font-size:11px}
+.lights{display:flex;gap:8px}
+.lt{display:inline-flex;align-items:center;gap:4px}
+.lt::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--dim)}
+.lt.pass::before{background:var(--ok);box-shadow:0 0 6px var(--ok)}
+.lt.red::before,.lt.fail::before{background:var(--bad);box-shadow:0 0 6px var(--bad)}
+/* tabs */
+#tabs{display:flex;gap:0;border-bottom:1px solid var(--line);background:var(--panel);position:sticky;top:0;z-index:2}
+#tabs button{border:0;border-right:1px solid var(--line);background:none;padding:9px 16px;color:var(--fg2)}
+#tabs button.on{color:var(--acch);box-shadow:inset 0 -2px 0 var(--acc)}
+#tabs .sp{flex:1}
+#tabs .who{padding:9px 12px;color:var(--dim)}
+#view{padding:14px 18px;min-width:0}
+/* card markdown */
+.md{max-width:880px}
+.md h1{font-size:18px;color:var(--acch)}.md h2{font-size:15px;color:var(--acc);border-bottom:1px solid var(--line);padding-bottom:4px;margin-top:22px}
+.md h3{font-size:13px;color:var(--fg);letter-spacing:0;text-transform:none}
+.md table{border-collapse:collapse;margin:8px 0;font-size:12px}
+.md th,.md td{border:1px solid var(--line);padding:4px 8px;vertical-align:top;text-align:left}
+.md th{background:var(--panel2);color:var(--fg2)}
+.md blockquote{margin:8px 0;padding:4px 12px;border-left:3px solid var(--accd);color:var(--fg2)}
+.md code{background:var(--panel2);padding:0 4px;color:var(--acch)}
+.md pre{background:var(--inset);border:1px solid var(--line);padding:10px;overflow:auto}
+/* tables */
+table.t{border-collapse:collapse;width:100%;font-size:12px;table-layout:fixed}
+table.t th,table.t td{border-bottom:1px solid var(--line);padding:5px 6px;text-align:left;vertical-align:top;overflow-wrap:anywhere}
+table.t th{position:sticky;top:37px;background:var(--panel2);color:var(--fg2);cursor:pointer;user-select:none;font-weight:600}
+table.t th:hover{color:var(--acch)}
+table.t th .ar{color:var(--acc)}
+td.k{color:var(--fg)}td.v{color:var(--fg2)}td.s{color:var(--dim)}
+.st{display:inline-block;padding:0 6px;border:1px solid}
+.st.filled{color:var(--ok);border-color:var(--ok);background:var(--oksoft)}
+.st.parked{color:var(--am);border-color:var(--am);background:var(--amsoft)}
+.st.held{color:var(--cyan);border-color:var(--cyan)}
+.ctl{display:flex;gap:8px;align-items:center;margin-bottom:10px;color:var(--fg2);flex-wrap:wrap}
+select,input{font:inherit;background:var(--inset);color:var(--fg);border:1px solid var(--line2);padding:2px 6px}
+pre.raw{background:var(--inset);border:1px solid var(--line);padding:12px;overflow:auto;font-size:12px;color:var(--fg2)}
+.note{border:1px solid var(--line2);background:var(--panel2);padding:14px;color:var(--fg2);max-width:640px}
+.note b{color:var(--am)}
+/* glasses */
+.gl{display:block;padding:7px 9px;margin-bottom:6px;border:1px solid var(--line);background:var(--panel2);text-decoration:none;color:var(--fg)}
+.gl:hover{border-color:var(--acc);color:var(--acch)}
+.gl small{display:block;color:var(--dim)}
+#roll{width:100%;margin:6px 0 14px;padding:8px}
+/* hover tips: hover shows, click pins, Esc unpins */
+.tip{border-bottom:1px dotted var(--dim);cursor:help}
+#tipbox{position:fixed;z-index:9;max-width:320px;background:var(--panel2);border:1px solid var(--acc);color:var(--fg);padding:8px 10px;font-size:12px;display:none;pointer-events:none}
+#tipbox.pin{pointer-events:auto;box-shadow:0 0 0 1px var(--acch)}
+</style>
+<!-- cmd-theme -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<style id="cmd-theme">
+/* The Command theme (BOLO 171, 10/31). One look for every page the launch opens.
+   Source of truth: the Console's tokens (_tools/console/console.py PAGE). Dark only, no toggle (9/11).
+   Orange #FF5A1F on every page, the DARKROOM included (Chief 10/30: the rose pages are IN).
+   theme.py injects this file as <style id="cmd-theme"> at the end of a page's styles, so it wins.
+   Edit the values here, then run:  python _tools/brand/theme.py apply-all                        */
+
+:root{
+  color-scheme:dark;
+  /* the Console's own values */
+  --cmd-bg:#050608; --cmd-hl:#10151b; --cmd-panel:#0a0c0f; --cmd-panel2:#10151b; --cmd-inset:#030405;
+  --cmd-line:#23272b; --cmd-line2:#3a3e40;
+  --cmd-fg:#c6cbc8; --cmd-fg2:#959a97; --cmd-dim:#5f6160; --cmd-white:#ffffff;
+  --cmd-acc:#FF5A1F; --cmd-acch:#FFB08F; --cmd-accm:#be4216; --cmd-accd:#6e280e; --cmd-accsoft:#24110a;
+  --cmd-ok:#4ec96f; --cmd-oksoft:#0f2416; --cmd-am:#e3b341; --cmd-amsoft:#2a210b;
+  --cmd-bad:#e5604d; --cmd-badsoft:#2a120e; --cmd-cyan:#5CC8D0;
+  --cmd-font:"IBM Plex Mono",Consolas,monospace;
+  --cmd-chrome:44px;
+}
+
+/* every page's own token names, pointed at the Console's values */
+:root{
+  /* ground and panels */
+  --bg:var(--cmd-bg)!important; --ground:var(--cmd-bg)!important;
+  --panel:var(--cmd-panel)!important; --panel-2:var(--cmd-panel2)!important; --panel2:var(--cmd-panel2)!important;
+  --pan:var(--cmd-panel)!important; --pan2:var(--cmd-panel2)!important; --inset:var(--cmd-inset)!important;
+  --hl:var(--cmd-hl)!important;
+  /* lines */
+  --line:var(--cmd-line)!important; --line-2:var(--cmd-line2)!important; --line2:var(--cmd-line2)!important; --ln:var(--cmd-line)!important;
+  /* text */
+  --fg:var(--cmd-fg)!important; --ink:var(--cmd-fg)!important; --tx:var(--cmd-fg)!important;
+  --ink-2:var(--cmd-fg2)!important; --ink2:var(--cmd-fg2)!important; --muted:var(--cmd-fg2)!important; --help:var(--cmd-fg2)!important;
+  --ink-3:var(--cmd-dim)!important; --ink3:var(--cmd-dim)!important; --mut:var(--cmd-fg2)!important; --mu:var(--cmd-fg2)!important;
+  --dim:var(--cmd-dim)!important; --faint:var(--cmd-dim)!important;
+  /* the accent */
+  --acc:var(--cmd-acc)!important; --accent:var(--cmd-acc)!important; --ac:var(--cmd-acc)!important; --or:var(--cmd-acc)!important;
+  --amber:var(--cmd-acc)!important; --amber-dim:var(--cmd-accd)!important; --amber-glow:rgba(255,90,31,.30)!important;
+  --accent-ink:var(--cmd-acch)!important; --acch:var(--cmd-acch)!important; --or2:var(--cmd-acch)!important;
+  --link:var(--cmd-acch)!important; --orange:var(--cmd-acch)!important;
+  --accent-soft:var(--cmd-accsoft)!important; --orange-soft:var(--cmd-accsoft)!important;
+  --accd:var(--cmd-accd)!important; --accm:var(--cmd-accm)!important;
+  /* states */
+  --ok:var(--cmd-ok)!important; --good:var(--cmd-ok)!important; --go:var(--cmd-ok)!important; --green:var(--cmd-ok)!important;
+  --good-soft:var(--cmd-oksoft)!important;
+  --am:var(--cmd-am)!important; --warn:var(--cmd-am)!important; --warn-soft:var(--cmd-amsoft)!important; --mark:var(--cmd-amsoft)!important;
+  --bad:var(--cmd-bad)!important; --no:var(--cmd-bad)!important; --bad-soft:var(--cmd-badsoft)!important;
+  --cyan:var(--cmd-cyan)!important;
+  /* one font: the Console's mono */
+  --display:var(--cmd-font)!important; --disp:var(--cmd-font)!important; --body:var(--cmd-font)!important;
+  --mono:var(--cmd-font)!important; --tile:var(--cmd-font)!important; --cond:var(--cmd-font)!important;
+  /* no dot grid, flat shadows */
+  --grid:transparent!important; --shadow:none!important;
+}
+
+/* base layer */
+html,body{background-color:var(--cmd-bg)!important;color:var(--cmd-fg)}
+body{background-image:none!important;-webkit-font-smoothing:auto}
+body,body *:not(svg):not(svg *){font-family:var(--cmd-font)!important}
+::selection{background:var(--cmd-acc);color:var(--cmd-bg)}
+:focus-visible{outline-color:var(--cmd-acc)}
+input,select,textarea{accent-color:var(--cmd-acc);caret-color:var(--cmd-acc)}
+*{scrollbar-color:var(--cmd-line2) transparent}
+</style>
+<!-- /cmd-theme -->
+</head><body>
+<div id="strip"><b id="title">LEECHSEED</b><span class="sub">the character console</span><span class="sp"></span>
+ <span class="sub" id="stamp"></span><button id="reload" title="reload the characters">reload</button></div>
+<div id="wrap">
+ <nav id="left" aria-label="characters"><div style="padding:10px 12px 0"><h3>Characters</h3></div><div id="chars"></div></nav>
+ <main id="center">
+  <div id="tabs" role="tablist">
+   <button data-tab="card" class="on">Card</button><button data-tab="fill">Fill list</button>
+   <button data-tab="record">Record</button><button data-tab="stats">Stats</button><button data-tab="distill" style="display:none">Distill</button>
+   <span class="sp"></span><span class="who" id="who"></span></div>
+  <div id="view"></div>
+ </main>
+ <aside id="right" aria-label="glasses">
+  <button id="roll" class="hot" title="open the patch bay with this character's dials loaded">Roll in the patch bay</button>
+  <h3>Glasses</h3>
+  <a class="gl" href="https://claude.ai/artifact/9d1uQtKLzujf5nMRCsRxMD" target="_blank" rel="noopener">TM 02<small>the character system page</small></a>
+  <a class="gl" href="https://claude.ai/artifact/9ANGE6nkxKT3VA5Dc9kTzX" target="_blank" rel="noopener">Interface Map<small>how the systems wire together</small></a>
+  <a class="gl" href="https://claude.ai/artifact/KyvMMg3TmouSiDcu2eVYK6" target="_blank" rel="noopener">DOPE SHEET 176<small>this BOLO's status page</small></a>
+  <a class="gl" href="#" id="distill">The distill<small>work/176/distill.md, rendered here</small></a>
+  <a class="gl" href="/local/europatch">The patch bay<small>/local/europatch, the roll engine</small></a>
+ </aside>
+</div>
+<div id="tipbox"></div>
+<script>
+(function(){
+var $=function(id){return document.getElementById(id)};
+var TIPS={
+ "step1":"Step 1 gate: source verification. It needs a locked authority document, a Dramatica ingest and an astrology ingest. Green means the record may take numbers.",
+ "step3":"Step 3 check: a Tier 2 or 3 character with an empty want_need.need is incomplete. Green means the need is filled (or held, for a Steadfast character).",
+ "filled":"Filled: the slice block holds a value, with a source. Held fields count here too, as the fill lists count them.",
+ "parked":"Parked: the field is blank and carries the fill-pass marker. It waits for the fabula phase or for Chief.",
+ "held":"Held: filled with a ruling, not a value (e.g. L9 n/a by design, or a stance the theme rider holds open).",
+ "native":"Native scale: the field's own scale from the slice's scale column (SC-20 is 0-20, default 10; SC-12 is 0-12). The patch bay shows it as 0-100.",
+ "confidence":"Confidence: high = canon states it; med = one judgment step, ruled by Chief 11/4; low = a lean or lineage only; derived = a slice rule computed it (provisional); canon = the locked record itself.",
+ "source":"Source: the file and section the value came from, as tagged in the slice block or the fill list."
+};
+var chars=[],cur=null,rec=null,tab="card",sortK="layer",sortDir=1,stFilter="all",q="";
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function tip(key,label){return '<span class="tip" data-tip="'+key+'">'+esc(label)+'</span>'}
+function md(t){try{if(window.marked)return marked.parse(t||"")}catch(e){}return "<pre class=raw>"+esc(t)+"</pre>"}
+function short(v){if(v==null)return "";if(typeof v==="string")return v;return JSON.stringify(v)}
+function lyr(l){var m=/^L(\d+)$/.exec(l||"");return m?+m[1]:99}
+
+function loadChars(){
+ return fetch("/leechseed/characters").then(function(r){return r.json()}).then(function(j){
+  chars=j.characters||[];$("title").textContent=j.title||"LEECHSEED";document.title=j.title||"LEECHSEED";
+  $("stamp").textContent=chars.length+" characters";drawChars();
+  var want=(location.hash.match(/char=([a-z0-9_]+)/)||[])[1]||(cur&&cur.id)||(chars[0]&&chars[0].id);
+  if(want)pick(want);
+ }).catch(function(){$("chars").innerHTML='<div class="note" style="margin:10px">The Console did not answer /leechseed/characters. Restart it: python _tools/console/console.py --restart</div>'});
+}
+function drawChars(){
+ $("chars").innerHTML=chars.map(function(c){
+  var f=c.counts.filled,p=c.counts.parked,t=Math.max(1,f+p);
+  return '<div class="ch'+(cur&&cur.id===c.id?' on':'')+'" data-id="'+esc(c.id)+'"><div class="nm">'+esc(c.name)+'</div>'+
+   '<div class="bar" title="'+f+' filled · '+p+' parked"><i class="f" style="width:'+(100*f/t)+'%"></i><i class="p" style="width:'+(100*p/t)+'%"></i></div>'+
+   '<div class="meta"><span>'+tip("filled",f+" filled")+' · '+tip("parked",p+" parked")+'</span></div>'+
+   '<div class="meta lights"><span class="lt '+esc(c.gates.step1)+'">'+tip("step1","step 1")+'</span><span class="lt '+esc(c.gates.step3)+'">'+tip("step3","step 3")+'</span></div></div>';
+ }).join("");
+}
+function pick(id){
+ cur=chars.find(function(c){return c.id===id})||null;drawChars();if(!cur)return;
+ history.replaceState(null,"","#char="+id);$("who").textContent=cur.name;
+ fetch("/leechseed/char?id="+encodeURIComponent(id)).then(function(r){return r.json()}).then(function(j){rec=j;draw()});
+}
+function setTab(t){tab=t;Array.prototype.forEach.call(document.querySelectorAll("#tabs button"),function(b){b.classList.toggle("on",b.dataset.tab===t)});
+ document.querySelector('#tabs [data-tab="distill"]').style.display=t==="distill"?"":"none";draw()}
+function draw(){
+ var v=$("view");
+ if(tab==="distill"){v.innerHTML='<div class="md">loading the distill…</div>';
+  fetch("/leechseed/distill").then(function(r){return r.json()}).then(function(j){v.innerHTML='<div class="md">'+(j.md?md(j.md):'<div class="note">distill.md is missing</div>')+'</div>'});return}
+ if(!rec){v.innerHTML="";return}
+ if(tab==="card"){v.innerHTML='<div class="md">'+(rec.card_md?md(rec.card_md):'<div class="note">No node file for this character.</div>')+'</div>';return}
+ if(tab==="record"){v.innerHTML='<div class="ctl">The raw record: '+esc("_tools/leechseed/characters/"+rec.id+".json")+' (written by extract.py)</div><pre class="raw">'+esc(JSON.stringify(rec.fields,null,1))+'</pre>';return}
+ if(tab==="fill"){drawFill();return}
+ if(tab==="stats"){drawStats();return}
+}
+function drawFill(){
+ var rows=Object.keys(rec.fields).map(function(k){var f=rec.fields[k];return {k:k,layer:f.layer,status:f.status,value:short(f.value),source:f.source||"",confidence:f.confidence||"",scale:f.native_scale}});
+ rows=rows.filter(function(r){return (stFilter==="all"||r.status===stFilter)&&(!q||(r.k+" "+r.value+" "+r.source).toLowerCase().indexOf(q)>=0)});
+ rows.sort(function(a,b){var x,y;if(sortK==="layer"){x=lyr(a.layer);y=lyr(b.layer)}else{x=String(a[sortK]).toLowerCase();y=String(b[sortK]).toLowerCase()}
+  return (x<y?-1:x>y?1:(a.k<b.k?-1:1))*sortDir});
+ function th(k,label,w,tk){return '<th data-k="'+k+'" style="width:'+w+'">'+(tk?tip(tk,label):esc(label))+(sortK===k?' <span class="ar">'+(sortDir>0?"▲":"▼")+'</span>':'')+'</th>'}
+ $("view").innerHTML='<div class="ctl"><span>'+rows.length+' fields</span><label>status <select id="stf">'+
+  ["all","filled","parked","held"].map(function(s){return '<option'+(s===stFilter?' selected':'')+'>'+s+'</option>'}).join("")+
+  '</select></label><input id="fq" placeholder="filter" value="'+esc(q)+'"><span>click a heading to sort</span></div>'+
+  '<table class="t"><thead><tr>'+th("k","field","17%")+th("layer","layer","6%")+th("status","status","8%","filled")+th("value","value","31%")+th("source","source","26%","source")+th("confidence","confidence","12%","confidence")+'</tr></thead><tbody>'+
+  rows.map(function(r){var sc=r.scale?' <span class="tip" data-tip="native" style="color:var(--dim)">['+esc(r.scale.code)+']</span>':'';
+   return '<tr><td class="k">'+esc(r.k)+sc+'</td><td>'+esc(r.layer)+'</td><td><span class="st '+esc(r.status)+'">'+esc(r.status)+'</span></td><td class="v">'+esc(r.value)+'</td><td class="s">'+esc(r.source)+'</td><td>'+esc(r.confidence)+'</td></tr>'}).join("")+'</tbody></table>';
+ $("stf").onchange=function(){stFilter=this.value;drawFill()};
+ $("fq").oninput=function(){q=this.value.toLowerCase();var p=this.selectionStart;drawFill();var e=$("fq");e.focus();e.setSelectionRange(p,p)};
+ Array.prototype.forEach.call(document.querySelectorAll("table.t th"),function(h){h.onclick=function(){var k=h.dataset.k;if(sortK===k)sortDir=-sortDir;else{sortK=k;sortDir=1}drawFill()}});
+}
+function drawStats(){
+ var v=$("view"),id=rec.id;v.innerHTML='<div class="ctl">asking the stats engine…</div>';
+ fetch("/leechseed/stats?char="+encodeURIComponent(id)).then(function(r){return r.json()}).then(function(j){
+  if(rec.id!==id)return;
+  if(!j.built||!j.ok){v.innerHTML='<div class="note"><b>stats engine not built yet.</b><br>The Stats tab reads <code>python _tools/europatch/europatch.py stats --char '+esc(id)+' --json</code>. No number is shown until that engine answers.'+(j.error&&j.built?'<br>'+esc(j.error):'')+'</div>';return}
+  var s=j.stats||{},f=j.flags||{},src=j.formula_src||{};
+  v.innerHTML='<h3>Derived statistics</h3><table class="t" style="max-width:720px"><thead><tr><th>stat</th><th>value</th><th>formula source</th></tr></thead><tbody>'+
+   Object.keys(s).map(function(k){return '<tr><td class="k">'+esc(k)+'</td><td>'+(s[k]==null?'<span style="color:var(--dim)">null</span>':esc(s[k]))+'</td><td class="s">'+esc(src[k]||"")+'</td></tr>'}).join("")+'</tbody></table>'+
+   '<h3 style="margin-top:18px">Flags</h3><table class="t" style="max-width:720px"><tbody>'+Object.keys(f).map(function(k){return '<tr><td class="k">'+esc(k)+'</td><td>'+esc(f[k])+'</td></tr>'}).join("")+'</tbody></table>'+
+   ((j.inputs_missing||[]).length?'<div class="ctl" style="margin-top:12px">inputs missing: '+esc(j.inputs_missing.join(", "))+'</div>':'');
+ }).catch(function(){v.innerHTML='<div class="note"><b>stats engine not built yet.</b> The Console did not answer /leechseed/stats.</div>'});
+}
+/* hover tips */
+var box=$("tipbox"),pinned=false;
+document.addEventListener("mouseover",function(e){if(pinned)return;var t=e.target.closest&&e.target.closest(".tip");if(!t){box.style.display="none";return}
+ box.textContent=TIPS[t.dataset.tip]||"";var r=t.getBoundingClientRect();box.style.display="block";
+ box.style.left=Math.min(r.left,innerWidth-340)+"px";box.style.top=(r.bottom+6)+"px"});
+document.addEventListener("click",function(e){var t=e.target.closest&&e.target.closest(".tip");if(t){e.stopPropagation();pinned=!pinned;box.classList.toggle("pin",pinned);return}
+ if(pinned&&!box.contains(e.target)){pinned=false;box.classList.remove("pin");box.style.display="none"}},true);
+document.addEventListener("keydown",function(e){if(e.key==="Escape"){pinned=false;box.classList.remove("pin");box.style.display="none"}});
+/* wiring */
+$("chars").addEventListener("click",function(e){var c=e.target.closest(".ch");if(c&&!e.target.closest(".tip"))pick(c.dataset.id)});
+Array.prototype.forEach.call(document.querySelectorAll("#tabs button"),function(b){b.onclick=function(){setTab(b.dataset.tab)}});
+$("distill").onclick=function(e){e.preventDefault();setTab("distill")};
+$("roll").onclick=function(){if(cur)location.href="/local/europatch?preset=char:"+encodeURIComponent(cur.id)};
+$("reload").onclick=loadChars;
+loadChars();
+})();
+</script>
+</body></html>

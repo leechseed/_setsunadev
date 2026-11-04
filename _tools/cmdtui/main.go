@@ -453,6 +453,8 @@ func main() {
 		tropesCmd(os.Args[2:])
 	case "europatch":
 		europatchCmd(os.Args[2:])
+	case leechseedVerb, "leechseed":
+		leechseedCmd(os.Args[2:])
 	case "review":
 		reviewCmd(os.Args[2:])
 	case "close":
@@ -478,6 +480,7 @@ func main() {
 		fmt.Fprintln(w, "  "+sAcc.Render("lookalike")+" one page's layout skeleton: landmarks, headings, grid/flex, colors, fonts, components (<url|file> · --json · --out F · --dry-run)")
 		fmt.Fprintln(w, "  "+sAcc.Render("tropes")+" build the trope system glass and open it in the Console's Tropes pane (--json · --print · --dry-run; page in _tools/tropes/glass)")
 		fmt.Fprintln(w, "  "+sAcc.Render("europatch")+" the patch bay: open it in the Console · roll <patch|default|preset:NAME> --seed N · modules · presets · check · build (--json)")
+		fmt.Fprintln(w, "  "+sAcc.Render(leechseedVerb)+" the character console (LEECHSEED): open the Console pane · extract (--json: characters, counts, gates · --print · --dry-run)")
 		fmt.Fprintln(w, "  "+sAcc.Render("review")+" the review desk's sent reviews: list · show <id|N|latest> · done <id> · open (the Console pane) (--json · --print · --dry-run)")
 		fmt.Fprintln(w, "  "+sAcc.Render("file ")+"  apply an approved scan filing: scans move into their intake bins (<filing.json> · dry run by default · --apply · --json)")
 		fmt.Fprintln(w, "  "+sAcc.Render("close")+"  move finished BOLO rows to the Done table, stamped (<n> ... --why \"who said what\" · --dry-run · --json)")

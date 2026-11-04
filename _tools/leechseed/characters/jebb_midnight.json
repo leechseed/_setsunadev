@@ -1,0 +1,96 @@
+{
+ "id": "jebb_midnight",
+ "name": "Jebb Midnight",
+ "node": "_CANON_NODES/jebb-midnight.md",
+ "fields": {
+  "full_name": {
+   "layer": "card",
+   "value": "Jebb Midnight",
+   "native_scale": null,
+   "source": "AUTH §Identity (\"Primary Bond: Jebb Midnight (older brother)\")",
+   "confidence": "canon (card, stub)",
+   "status": "filled"
+  },
+  "character_id": {
+   "layer": "card",
+   "value": "jebb_midnight",
+   "native_scale": null,
+   "source": "this card (minted 11/4 for Tori's `relational_refs`)",
+   "confidence": "canon (card, stub)",
+   "status": "filled"
+  },
+  "relation_to_tori": {
+   "layer": "card",
+   "value": "older brother, her primary bond",
+   "native_scale": null,
+   "source": "AUTH §Core Bond · [[victoria-midnight]] §Structure, §Relationships",
+   "confidence": "canon (card, stub)",
+   "status": "filled"
+  },
+  "role_in_the_rally_car": {
+   "layer": "card",
+   "value": "navigator to her driver; he called the pace notes",
+   "native_scale": null,
+   "source": "slice L8 prose (\"He functioned as navigator to her driver\") · [[victoria-midnight-L9-eros]] §3",
+   "confidence": "canon (card, stub)",
+   "status": "filled"
+  },
+  "risk_profile": {
+   "layer": "card",
+   "value": "more reckless than Victoria",
+   "native_scale": null,
+   "source": "AUTH §Core Bond",
+   "confidence": "canon (card, stub)",
+   "status": "filled"
+  },
+  "system_belief": {
+   "layer": "card",
+   "value": "believes in the system more than she does",
+   "native_scale": null,
+   "source": "AUTH §Core Bond · [[victoria-midnight]] §Relationships",
+   "confidence": "canon (card, stub)",
+   "status": "filled"
+  },
+  "his_dream_for_her": {
+   "layer": "card",
+   "value": "that she succeeds \"the right way\" and does not ruin her life chasing dreams like he did",
+   "native_scale": null,
+   "source": "AUTH §Core Bond",
+   "confidence": "canon (card, stub)",
+   "status": "filled"
+  },
+  "his_pace_notes": {
+   "layer": "card",
+   "value": "Type B, technical + human noise: inside jokes, emotional shorthand, personal rhythm indicators",
+   "native_scale": null,
+   "source": "AUTH §Pace Notes",
+   "confidence": "canon (card, stub)",
+   "status": "filled"
+  },
+  "story_position": {
+   "layer": "card",
+   "value": "pre-story; the OS-level pre-story bond, not the RS pair",
+   "native_scale": null,
+   "source": "[[oxo-storyform]] §6 (rs_pair: \"Jebb remains the OS-level pre-story bond\")",
+   "confidence": "canon (card, stub)",
+   "status": "filled"
+  },
+  "death": {
+   "layer": "card",
+   "value": "M1B, Delta Coast Racing",
+   "native_scale": null,
+   "source": "AUTH §Brother Death Event · ssot_04_fabula `m1b_crash_jebb_death`",
+   "confidence": "canon (card, stub)",
+   "status": "filled"
+  }
+ },
+ "numbers": {},
+ "gates": {
+  "step1": "red",
+  "step3": "fail"
+ },
+ "counts": {
+  "filled": 10,
+  "parked": 0
+ }
+}

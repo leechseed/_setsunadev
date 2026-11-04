@@ -8,13 +8,22 @@ Usage:  python -X utf8 _tools/europatch/europatch.py roll <patch.json | - | pres
         python -X utf8 _tools/europatch/europatch.py check <patch.json | -> [--json]
         python -X utf8 _tools/europatch/europatch.py default [--json]     the starter patch (12 modules, the doc's cables)
         python -X utf8 _tools/europatch/europatch.py build [--json] [--dry-run]  rebuild the catalog from LEECHSEED + refresh the page
+        python -X utf8 _tools/europatch/europatch.py stats --char <id> [--json]       derived stats + flags from a character record
+        python -X utf8 _tools/europatch/europatch.py stats --instance <file | -> [--json]   ... from a rolled instance
 
 The roll, in the doc's stacked order: the preset sets the dials, the patch's own values nudge them, the patch cables
 bend each dial's centre, then the seed rolls inside the window (centre +- spread). Modules roll in cable order: a
 module rolls after every module cabled into it, and its out-jacks pass the rolled values on. A loop is an error.
-  add:       centre += strength x curve(value) x 100          (value = the source dial's rolled value / 100)
-  multiply:  centre *= 1 + strength x curve(value)
+The cable math, 0.2 (log-odds, RULED 11/4 BOLO 176; the same block as the model doc's "cable math"):
+  p0 = clamp(set / 100, 0.005, 0.995)     z0 = logit(p0) = ln(p0 / (1 - p0))     f = curve(source rolled / 100)
+  add:       pull = strength x K x f                          K = 4 ln 3 = 4.3944
+  multiply:  factor = 1 + strength x f   (its reported pull = z0 x strength x f)
+  z = z0 x (product of every multiply factor) + (sum of every add pull)        order-free
+  centre = 100 x clamp(sigmoid(z), 0.005, 0.995)      (a dial with no cable, or z = z0, keeps its set value)
+  tension = sum |pull| - |sum pull|, in logit units: set piece >= 2.1972 (0.5 K); reflective < 0.2197 with |sum| >= 2.1972
   curves:    linear · ease-in · ease-out · s-curve · threshold-soft (a soft step around `threshold`, width `soft`)
+Stats (BOLO 176): `stats --char <id>` or `stats --instance <file>` computes the spine's seven derived statistics and
+the five flags (vertical slice v3.6.1, "Derived Statistics" and "Active Flags"). A missing input reads null, never a guess.
 Seeds: each module's seed = fnv1a(seed|module id); each dial draws from fnv1a(module seed|dial key) through xorshift32,
 so adding a module never reshuffles the others. The page carries the same engine in JS (patchbay.html, between the
 ENGINE markers); test_europatch.py proves both give the same instance.
@@ -26,15 +35,18 @@ ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
 CATALOG = os.path.join(HERE, "modules", "leechseed.json")
 PRESETS = os.path.join(HERE, "presets")
 PAGE = os.path.join(HERE, "patchbay.html")
-VERSION = "0.1.0"
+VERSION = "0.2.0"
 M32 = 0xFFFFFFFF
+K = 4.394449154672439        # 4 x ln 3: a +0.25 add cable at full source moves a 50 dial to 75, as in 0.1 (provisional)
+P_LO, P_HI = 0.005, 0.995    # a dial's p is clamped here before logit, and the bent centre after the sigmoid
 CURVES = ("linear", "ease-in", "ease-out", "s-curve", "threshold-soft")
 MODES = ("add", "multiply")
 CONF = {"high": 3, "medium": 2, "low": 1}   # model doc open call 7: trope-register conf -> default weight
 NAME_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9 _.-]{0,63}$")
 SEED_RE = re.compile(r"^[A-Za-z0-9_-]{1,64}$")
-SET_PIECE_TENSION = 0.5      # provisional: tension at or above this flags a set-piece candidate
-REFLECTIVE_PULL = 0.5        # provisional: 2+ cables, tension under 0.05, total pull at or above this
+SET_PIECE_TENSION = 2.1972   # provisional: tension (logit units, 0.5 x K) at or above this flags a set-piece candidate
+REFLECTIVE_PULL = 2.1972     # provisional: 2+ cables, tension under AGREE_TENSION, total pull at or above this
+AGREE_TENSION = 0.2197       # 0.05 x K
 
 
 # ---------- the portable core (mirrored line for line in patchbay.html) ----------
@@ -68,6 +80,15 @@ def rnd(x, n):
 
 def clamp(x, lo, hi):
     return lo if x < lo else hi if x > hi else x
+
+
+def logit(p):
+    return math.log(p / (1 - p))
+
+
+def sigmoid(z):
+    z = clamp(z, -40.0, 40.0)
+    return 1 / (1 + math.exp(-z))
 
 
 def curve(x, c):
@@ -232,6 +253,9 @@ def roll_core(patch, seed, cat, presets):
                 spread = clamp(spec["spread"], 0, 50)
                 bent = []
                 pulls = []
+                z0 = logit(clamp(centre / 100.0, P_LO, P_HI))
+                scale = 1.0
+                push = 0.0
                 for ci in into.get(m["id"] + "." + key, []):
                     c = cables[ci]
                     co = cab_out[ci]
@@ -243,16 +267,18 @@ def roll_core(patch, seed, cat, presets):
                     f = curve(x, c)
                     s = c.get("strength", 0)
                     if (c.get("mode") or "add") == "multiply":
-                        nc = centre * (1 + s * f)
+                        scale = scale * (1 + s * f)
+                        p = z0 * s * f
                     else:
-                        nc = centre + s * f * 100
-                    p = (nc - centre) / 100.0
-                    centre = nc
+                        p = s * K * f
+                        push = push + p
                     co["value"] = rnd(x, 4)
                     co["pull"] = rnd(p, 4)
                     pulls.append(p)
                     bent.append(co["id"])
-                centre = clamp(centre, 0, 100)
+                z = z0 * scale + push
+                if bent and z != z0:
+                    centre = 100.0 * clamp(sigmoid(z), P_LO, P_HI)
                 val = clamp(centre + (2 * u - 1) * spread, 0, 100)
                 val = rnd(val, 2)
                 lo, hi = d["native"]
@@ -271,7 +297,7 @@ def roll_core(patch, seed, cat, presets):
                     tension[tk] = t
                     if t >= SET_PIECE_TENSION:
                         patterns.append({"kind": "set_piece", "dial": tk, "tension": t, "total_pull": rnd(tot, 4)})
-                    elif len(pulls) >= 2 and t < 0.05 and abs(tot) >= REFLECTIVE_PULL:
+                    elif len(pulls) >= 2 and t < AGREE_TENSION and abs(tot) >= REFLECTIVE_PULL:
                         patterns.append({"kind": "reflective", "dial": tk, "tension": t, "total_pull": rnd(tot, 4)})
                 dout[key] = dd
                 rl[key] = val
@@ -356,6 +382,166 @@ def summarize(inst, cat):
                 parts.append(dd.get("label", dd["key"]) + ": " + human(v))
         lines.append(cm["code"] + ": " + "; ".join(parts) + ".")
     return lines
+
+
+# ---------- the stats engine (BOLO 176; mirrored line for line in patchbay.html) ----------
+# the spine's seven derived statistics; every fraction rounds down (vertical slice "Derived Statistics")
+STAT_KEYS = ("truth_exposure", "expressive_range", "stress_threshold", "damage_resistance",
+             "narrative_momentum", "social_legibility", "collapse_risk")
+STAT_INPUTS = {"truth_exposure": ["SOCIAL", "shame_index"], "expressive_range": ["armor_index"],
+               "stress_threshold": ["WILL", "WOUND"], "damage_resistance": ["WILL", "WOUND"],
+               "narrative_momentum": ["DRIVE", "resistance_index"], "social_legibility": ["SOCIAL", "projection_tendency"],
+               "collapse_risk": ["WOUND", "shadow_density"]}
+# the five flags (vertical slice "Active Flags"): each term is [input, op, operand]; ops > >= < = has
+FLAG_KEYS = ("SHADOW_DENIAL", "TRUTH_VULNERABILITY", "OPTIONLOCK_PROGRESSION", "EARNED_JUDGEMENT", "KINSHIP_COLLAPSE")
+FLAG_TERMS = {
+    "SHADOW_DENIAL": [["WOUND", ">", 6], ["projection_tendency", ">=", 5], ["conditional_patterns", "has", "merit_earns_freedom"]],
+    "TRUTH_VULNERABILITY": [["SOCIAL", "<", 12], ["mc_problem_element", "=", "Equity"], ["shadow_density", ">", 6]],
+    "OPTIONLOCK_PROGRESSION": [["WOUND", ">", 7], ["resistance_index", ">", 7], ["limit_type", "=", "Optionlock"]],
+    "EARNED_JUDGEMENT": [["dramatica_archetype", "=", "Protagonist"], ["story_outcome", "=", "Failure"], ["WILL", ">", 10]],
+    "KINSHIP_COLLAPSE": [["attachment_style_score", ">", 5], ["secure_base_object", "=", "deceased"], ["WOUND", ">", 7]]}
+# where the bay's roll holds each input: [module, dial]; an input not listed here is not rolled by the bay
+INSTANCE_MAP = {"WILL": ["L4", "WILL"], "WOUND": ["L5", "severity"], "SOCIAL": ["L3", "SOCIAL"], "DRIVE": ["L6", "DRIVE"],
+                "projection_tendency": ["L10", "projection_tendency"], "shadow_density": ["L10", "shadow_density"],
+                "resistance_index": ["L11", "resistance_index"], "shame_index": ["L9", "exposure_shame"],
+                "armor_index": ["L9", "armor_index"], "attachment_style_score": ["L8", "attachment_style_score"],
+                "dramatica_archetype": ["L12", "dramatica_archetype"], "story_outcome": ["L12", "story_outcome"],
+                "limit_type": ["L12", "limit_type"]}
+# where a character record holds each input: names tried in order in `numbers`, then in `fields` (read aliases from the slice)
+CHAR_NAMES = {"WILL": ["WILL"], "WOUND": ["WOUND", "severity"], "SOCIAL": ["SOCIAL"], "DRIVE": ["DRIVE"],
+              "projection_tendency": ["projection_tendency"], "shadow_density": ["shadow_density"],
+              "resistance_index": ["resistance_index", "resistance"], "shame_index": ["shame_index", "exposure_shame"],
+              "armor_index": ["armor_index"], "attachment_style_score": ["attachment_style_score"],
+              "dramatica_archetype": ["dramatica_archetype"], "story_outcome": ["story_outcome"], "limit_type": ["limit_type"],
+              "mc_problem_element": ["mc_problem_element"], "conditional_patterns": ["conditional_patterns"],
+              "secure_base_object": ["secure_base_object", "primary_attachment_object"]}
+NA_WORDS = ("n/a", "na", "unset", "null", "none", "parked", "⏸", "")
+
+
+def num(v):
+    if isinstance(v, bool):
+        return None
+    if isinstance(v, (int, float)):
+        return v
+    if isinstance(v, str) and re.match(r"^\s*-?\d+(\.\d+)?\s*$", v):
+        return float(v)
+    return None
+
+
+def outnum(x):
+    r = rnd(x, 2)
+    return int(r) if r == math.floor(r) else r
+
+
+def present(v):
+    if v is None:
+        return False
+    if isinstance(v, str) and v.strip().lower() in NA_WORDS:
+        return False
+    if isinstance(v, list) and len(v) == 0:
+        return False
+    return True
+
+
+def stat_value(k, g):
+    if k == "truth_exposure":
+        return g["SOCIAL"] + max(0, 12 - g["shame_index"])
+    if k == "expressive_range":
+        return 12 - g["armor_index"]
+    if k == "stress_threshold":
+        return g["WILL"] - g["WOUND"]
+    if k == "damage_resistance":
+        return g["WILL"] - math.floor(g["WOUND"] / 2.0)
+    if k == "narrative_momentum":
+        return g["DRIVE"] + math.floor(g["resistance_index"] / 2.0)
+    if k == "social_legibility":
+        return g["SOCIAL"] - math.floor(g["projection_tendency"] / 3.0)
+    return math.floor((g["WOUND"] + g["shadow_density"]) / 2.0)
+
+
+def term(v, op, want):
+    """one flag term in three values: True, False, None (the input is missing)"""
+    if not present(v):
+        return None
+    if op == "has":
+        items = v if isinstance(v, list) else [v]
+        for it in items:
+            if want.lower() in str(it).lower():
+                return True
+        return False
+    if op == "=":
+        s = str(v).strip().lower()
+        return s == want.lower() or want.lower() in re.split(r"[\s_()]+", s)   # a whole word: "brother_deceased" = "deceased" (provisional)
+    n = num(v)
+    if n is None:
+        return None
+    if op == ">":
+        return n > want
+    if op == ">=":
+        return n >= want
+    return n < want
+
+
+def stats_core(inp, label):
+    """inp: {input name: value}; an absent or n/a input is missing. Returns the stats dict (formula_src added by the caller)."""
+    stats = {}
+    missing = []
+    for k in STAT_KEYS:
+        g = {}
+        gap = False
+        for name in STAT_INPUTS[k]:
+            n = num(inp.get(name)) if present(inp.get(name)) else None
+            if n is None:
+                gap = True
+                if name not in missing:
+                    missing.append(name)
+            g[name] = n
+        stats[k] = None if gap else outnum(stat_value(k, g))
+    flags = {}
+    for f in FLAG_KEYS:
+        st = "ACTIVE"
+        for t in FLAG_TERMS[f]:
+            r = term(inp.get(t[0]), t[1], t[2])
+            if r is None and t[0] not in missing:
+                missing.append(t[0])
+            if r is False:
+                st = "INACTIVE"
+            elif r is None and st == "ACTIVE":
+                st = "UNKNOWN"
+        flags[f] = st
+    return {"char": label, "stats": stats, "flags": flags, "inputs_missing": missing, "inputs": inp}
+
+
+def inputs_from_instance(inst):
+    inp = {}
+    for name in INSTANCE_MAP:
+        mid, key = INSTANCE_MAP[name]
+        for mk in inst.get("modules", {}):
+            mm = inst["modules"][mk]
+            if mm.get("module") != mid:
+                continue
+            d = (mm.get("dials") or {}).get(key)
+            if d is None:
+                continue
+            inp[name] = d["native"] if "native" in d else d.get("pick")
+            break
+    return inp
+
+
+def inputs_from_char(rec):
+    inp = {}
+    nums = rec.get("numbers") or {}
+    fields = rec.get("fields") or {}
+    for name in CHAR_NAMES:
+        for alias in CHAR_NAMES[name]:
+            if alias in nums and present(nums[alias]):
+                inp[name] = nums[alias]
+                break
+            f = fields.get(alias)
+            if isinstance(f, dict) and f.get("status") == "filled" and present(f.get("value")):
+                inp[name] = f["value"]
+                break
+    return inp
 # ---------- end of the portable core ----------
 
 
@@ -495,6 +681,70 @@ def read_patch(arg, cat, presets):
     return load_json(arg)
 
 
+CHARS = os.path.join(ROOT, "_tools", "leechseed", "characters")   # CONSOLE writes these (BOLO 176); read only here
+SLICE = os.path.join(ROOT, "ShroomsQ", "_CANON", "_SSOT", "02_CHARACTER_SYSTEMS",
+                     "\U0001F4D0 ssot_02_character_systems_vertical_slice.md")
+STAT_ROWS = {"truth_exposure": "|Truth Exposure Index|", "expressive_range": "|Expressive Range|",
+             "stress_threshold": "|Stress Threshold|", "damage_resistance": "|Basic Damage Resistance|",
+             "narrative_momentum": "|Narrative Momentum|", "social_legibility": "|Social Legibility|",
+             "collapse_risk": "|Collapse Risk|"}
+CHAR_ID_RE = re.compile(r"^[a-z0-9][a-z0-9_-]{0,63}$")
+
+
+def formula_src():
+    """stat or flag -> 'vertical slice vX § Derived Statistics / line N', read from the slice each run"""
+    out = {}
+    try:
+        lines = io.open(SLICE, encoding="utf-8").read().split("\n")
+    except OSError:
+        return {k: "vertical slice not found" for k in STAT_KEYS + FLAG_KEYS}
+    ver = ""
+    for ln in lines[:12]:
+        m = re.match(r"^version:\s*(\S+)", ln)
+        if m:
+            ver = " v" + m.group(1)
+    sec = None
+    for i, ln in enumerate(lines):
+        if ln.startswith("### Derived Statistics") and sec is None:
+            sec = i
+    for k in STAT_KEYS:
+        for i in range(sec or 0, len(lines)):
+            if lines[i].startswith(STAT_ROWS[k]) and "`" in lines[i]:
+                out[k] = "vertical slice%s § Derived Statistics / line %d" % (ver, i + 1)
+                break
+        out.setdefault(k, "vertical slice%s § Derived Statistics (row not found)" % ver)
+    for f in FLAG_KEYS:
+        for i, ln in enumerate(lines):
+            if ln.startswith("**FLAG: " + f):
+                j = next((x for x in range(i, min(i + 6, len(lines))) if lines[x].startswith("Trigger:")), i)
+                out[f] = "vertical slice%s § Active Flags / line %d" % (ver, j + 1)
+                break
+        out.setdefault(f, "vertical slice%s § Active Flags (trigger not found)" % ver)
+    return out
+
+
+def char_stats(cid):
+    if not CHAR_ID_RE.match(cid or ""):
+        return {"ok": False, "errors": ["char: an id of lowercase letters, digits, _ or -"]}
+    path = os.path.join(CHARS, cid + ".json")
+    if not os.path.exists(path):
+        return {"ok": False, "char": cid, "errors": ["no character file yet: %s (CONSOLE's extract.py writes it)"
+                                                    % os.path.relpath(path, ROOT).replace("\\", "/")]}
+    rec = load_json(path)
+    res = stats_core(inputs_from_char(rec), rec.get("id") or cid)
+    res["name"] = rec.get("name")
+    res["formula_src"] = formula_src()
+    return res
+
+
+def instance_stats(path):
+    inst = load_json(path) if path != "-" else json.loads(sys.stdin.read())
+    res = stats_core(inputs_from_instance(inst), "instance:%s seed %s" % (inst.get("patch"), inst.get("seed")))
+    res["formula_src"] = formula_src()
+    res["inputs_not_rolled"] = [n for n in CHAR_NAMES if n not in INSTANCE_MAP]
+    return res
+
+
 def build(js):
     import subprocess
     r = subprocess.run([sys.executable, "-X", "utf8", os.path.join(HERE, "build_catalog.py"), "--json"],
@@ -506,12 +756,42 @@ def build(js):
     return res, 0
 
 
+def char_digests(cat):
+    """CONSOLE's character records, trimmed to what the bay reads: numbers, plus value + status of the fields that a
+    dial or a stat input names. The page fetches /leechseed/char?id= first; this copy is its fallback."""
+    if not os.path.isdir(CHARS):
+        return []
+    keys = set()
+    for m in cat["modules"]:
+        for d in m["dials"]:
+            keys.add(d["key"])
+            keys.add(d["key"].split(".")[0])
+    for name in CHAR_NAMES:
+        keys.update(CHAR_NAMES[name])
+    out = []
+    for fn in sorted(os.listdir(CHARS)):
+        if not fn.endswith(".json"):
+            continue
+        try:
+            rec = load_json(os.path.join(CHARS, fn))
+        except (OSError, ValueError):
+            continue
+        fields = {}
+        for k, f in (rec.get("fields") or {}).items():
+            if k in keys and isinstance(f, dict):
+                fields[k] = {"value": f.get("value"), "status": f.get("status")}
+        out.append({"id": rec.get("id") or fn[:-5], "name": rec.get("name"), "numbers": rec.get("numbers") or {},
+                    "fields": fields, "counts": rec.get("counts"), "gates": rec.get("gates")})
+    return out
+
+
 def embed_page():
     """write catalog + presets + the starter patch into the page's data block, then the Command theme"""
     if not os.path.exists(PAGE):
         return "no page"
     cat = load_catalog()
-    data = {"catalog": cat, "presets": list(load_presets().values()), "default": default_patch(cat)}
+    data = {"catalog": cat, "presets": list(load_presets().values()), "default": default_patch(cat),
+            "characters": char_digests(cat)}
     s = io.open(PAGE, encoding="utf-8").read()
     blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     s2 = re.sub(r'(<script type="application/json" id="ep-data">).*?(</script>)',
@@ -554,6 +834,27 @@ def main(argv):
         res, code = build(js)
         print(json.dumps(res, indent=1) if js else "catalog %s · page %s" % (res.get("out", "?"), res.get("page", "?")))
         return code
+    if verb == "stats":
+        ch, ins = opt("--char"), opt("--instance")
+        if not ch and not ins:
+            print("stats needs --char <id> or --instance <file | ->"); return 2
+        try:
+            res = char_stats(ch) if ch else instance_stats(ins)
+        except (OSError, ValueError) as e:
+            res = {"ok": False, "errors": ["cannot read: %s" % e]}
+        if js:
+            print(json.dumps(res, ensure_ascii=False, indent=1))
+        elif res.get("errors"):
+            print("\n".join(res["errors"]))
+        else:
+            print("stats · %s" % res["char"])
+            for k in STAT_KEYS:
+                print("  %-19s %s" % (k, "null" if res["stats"][k] is None else res["stats"][k]))
+            for f in FLAG_KEYS:
+                print("  %-23s %s" % (f, res["flags"][f]))
+            if res["inputs_missing"]:
+                print("  missing: " + ", ".join(res["inputs_missing"]))
+        return 1 if res.get("errors") else 0
     cat = load_catalog()
     presets = load_presets()
     if verb == "modules":

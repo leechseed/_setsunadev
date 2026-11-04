@@ -1,0 +1,1333 @@
+{
+ "id": "victoria_midnight",
+ "name": "Victoria \"Tori\" Midnight",
+ "node": "_CANON_NODES/victoria-midnight.md",
+ "fields": {
+  "CORE": {
+   "layer": "L1",
+   "value": 13,
+   "native_scale": {
+    "code": "SC-20",
+    "range": [
+     0,
+     20
+    ],
+    "default": 10
+   },
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "psychology_stack": {
+   "layer": "L1",
+   "value": {
+    "moral_standards": [
+     "no_trust_in_institutional_protection",
+     "never_stops_seeking_the_truth_of_jebbs_death",
+     "will_not_stay_fair_when_fairness_is_a_cage"
+    ],
+    "ambition": "succeed on merit; after the crash, become untouchable",
+    "frustrations": "the system is a filter, not a judge",
+    "temperament": "acts once convinced, moves early, converts fear into action",
+    "attitude_toward_life": "merit earns freedom -> control is the only form of safety left",
+    "complexes": [
+     "need_for_control",
+     "need_to_prove_she_deserves_love"
+    ],
+    "extrovert_introvert": null,
+    "abilities": "detects systemic collapse before others see warning signs; rally driver; hot-zone diver",
+    "qualities": "fearlessness under risk load",
+    "iq": "CORE 13"
+   },
+   "native_scale": null,
+   "source": "AUTH §Non-Negotiables, §Movement 1 Origin Commitments, §Behavior Under Pressure, §Relationship to the System; victoria-midnight §THE DIVE",
+   "confidence": "high",
+   "status": "filled"
+  },
+  "VITAL": {
+   "layer": "L2",
+   "value": 14,
+   "native_scale": {
+    "code": "SC-20",
+    "range": [
+     0,
+     20
+    ],
+    "default": 10
+   },
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "physiology_stack": {
+   "layer": "L2",
+   "value": {
+    "heredity": "see L7_ORIGIN.hereditary_predisposition",
+    "appearance": "body shaped by labor, not prestige training; striking, nonconforming to elite grooming; grease, sweat, improvised gear",
+    "defects": null,
+    "posture": null,
+    "health": "survived the M1B crash; wears the dive rig (spine and calf ports) and spends her Mother's quickened tissue on every hard dive"
+   },
+   "native_scale": null,
+   "source": "AUTH §Outlier Signature, §Signature Imagery; victoria-midnight §THE DIVE; WB-TEC-0002; WB-BIO-0002",
+   "confidence": "high",
+   "status": "filled"
+  },
+  "SOCIAL": {
+   "layer": "L3",
+   "value": 10,
+   "native_scale": {
+    "code": "SC-20",
+    "range": [
+     0,
+     20
+    ],
+    "default": 10
+   },
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "sociology_stack": {
+   "layer": "L3",
+   "value": {
+    "class": "working / criminal-adjacent; family were holdouts in the trash-zone delta",
+    "occupation": "salvage economy (M1A) -> rally driver, Delta Coast (M1B); hot-zone diver",
+    "education": "Delta Coast Ultra School (recruited M2); Red Hills legacy at school",
+    "home_life": "older brother Jebb, primary bond, her navigator",
+    "political_affiliation": "merit believer inside the system at entry; the Student Diaspora's Radicalizing Spark by M5"
+   },
+   "native_scale": null,
+   "source": "slice L7 origin_class; ssot_04_fabula family-origin note, RULED 9/29; AUTH §Continuity Bridge, §Core Bond, §Relationship to the System; victoria-midnight §Where she appears, §Relationships, §THE DIVE",
+   "confidence": "high",
+   "status": "filled"
+  },
+  "circumplex": {
+   "layer": "L3",
+   "value": null,
+   "native_scale": {
+    "code": "SC-10 two-sided",
+    "range": [
+     -5,
+     5
+    ],
+    "default": null
+   },
+   "source": "AUTH §Behavior Under Pressure (\"acts through certainty rather than consensus\", \"moves early rather than waiting for permission\"). No feed (MAP §Schema-Pass).",
+   "confidence": "low",
+   "status": "parked"
+  },
+  "body_capital": {
+   "layer": "L2",
+   "value": {
+    "price_factors": [
+     {
+      "factor": "build",
+      "direction": "up"
+     },
+     {
+      "factor": "role",
+      "direction": "up"
+     }
+    ],
+    "window": null,
+    "venue_tier": null,
+    "trust_signal": "nonconforming beauty reads as earned",
+    "working_body_gap": "optimized by labor, not institutional training",
+    "embodied_cost": "each hard dive spends the quickened tissue"
+   },
+   "native_scale": null,
+   "source": "AUTH §Outlier Signature; WB-CUS-0003; WB-BIO-0002",
+   "confidence": "med (ruled 11/4)",
+   "status": "filled"
+  },
+  "assigned_labels": {
+   "layer": "L1",
+   "value": [
+    {
+     "label": "Potential",
+     "by": "state",
+     "year": null,
+     "accepted": null
+    },
+    {
+     "label": "Proprietary Salvage",
+     "by": "state",
+     "year": null,
+     "accepted": null
+    },
+    {
+     "label": "Critical Error",
+     "by": "state",
+     "year": null,
+     "accepted": null
+    },
+    {
+     "label": "The Fault Line",
+     "by": "state",
+     "year": null,
+     "accepted": null
+    },
+    {
+     "label": "Digital Puberty",
+     "by": "state",
+     "year": null,
+     "accepted": null
+    }
+   ],
+   "native_scale": null,
+   "source": "victoria-midnight §Relationships, §Where she appears M2; ssot_04_fabula m2_grief_outbursts; WB-INS-0001",
+   "confidence": "med (ruled 11/4)",
+   "status": "filled"
+  },
+  "neurotype": {
+   "layer": "L1",
+   "value": null,
+   "native_scale": null,
+   "source": "none names one. The \"Digital Puberty\" outbursts are a label (row 6), not a neurotype.",
+   "confidence": "none",
+   "status": "parked"
+  },
+  "pair_register": {
+   "layer": "L3",
+   "value": [
+    {
+     "character_id": "anna_colson_conway",
+     "attachment_dimensions": null,
+     "pacing": "goal",
+     "rules": [],
+     "rule_gap": null
+    }
+   ],
+   "native_scale": null,
+   "source": "oxo-storyform §6, §9 RS pair; anna-colson-conway §Relationships",
+   "confidence": "med (ruled 11/4)",
+   "status": "filled"
+  },
+  "standing": {
+   "layer": "L3",
+   "value": {
+    "earned_by": [
+     "M5: the Diaspora forms around her"
+    ],
+    "vouched_by": [],
+    "cost_to_lose": "the Diaspora's primary bond is to her"
+   },
+   "native_scale": null,
+   "source": "victoria-midnight §Relationships, §Where she appears M5",
+   "confidence": "med (ruled 11/4)",
+   "status": "filled"
+  },
+  "civic_standing": {
+   "layer": "L3",
+   "value": {
+    "category": "the Ban; Sync-era standing",
+    "by_whom": "the Administration",
+    "catalog_ref": [
+     "WB-INS-0001"
+    ],
+    "rank_or_score": null
+   },
+   "native_scale": null,
+   "source": "victoria-midnight §Relationships; WB-INS-0001",
+   "confidence": "high",
+   "status": "filled"
+  },
+  "disclosure_posture": {
+   "layer": "L3",
+   "value": [
+    {
+     "audience": "all",
+     "concealed_trait": "none",
+     "strategy": "open",
+     "stake": "the Ban"
+    }
+   ],
+   "native_scale": null,
+   "source": "slice flag TRUTH_VULNERABILITY; victoria-midnight-chart Step 3; victoria-midnight-L9-eros §1",
+   "confidence": "med (ruled 11/4)",
+   "status": "filled"
+  },
+  "voice_sheet": {
+   "layer": "L3",
+   "value": {
+    "register": "diagnostic, not hopeful",
+    "dialect": null,
+    "native_pace": null,
+    "tic_with_reason": null,
+    "noticing_filter": [
+     "earned_vs_given",
+     "kin",
+     "institutional_procedure"
+    ]
+   },
+   "native_scale": null,
+   "source": "AUTH §Behavior Under Pressure; slice L3 rule, noticing_filter from L8 conditional_patterns",
+   "confidence": "med (ruled 11/4)",
+   "status": "filled"
+  },
+  "WILL": {
+   "layer": "L4",
+   "value": 14,
+   "native_scale": {
+    "code": "SC-20",
+    "range": [
+     0,
+     20
+    ],
+    "default": "= CORE"
+   },
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "coping_strategy": {
+   "layer": "L4",
+   "value": "Naive",
+   "native_scale": null,
+   "source": "BVX.0045 the five strategies; AUTH §System Illusion",
+   "confidence": "med (ruled 11/4)",
+   "status": "filled"
+  },
+  "locus_of_control": {
+   "layer": "L4",
+   "value": null,
+   "native_scale": {
+    "code": "SC-10 two-sided",
+    "range": [
+     -5,
+     5
+    ],
+    "default": null
+   },
+   "source": "AUTH §System Illusion (\"merit determines outcomes\") · SLICE flag SHADOW_DENIAL pulls the other way (routes blame to the system)",
+   "confidence": "low",
+   "status": "parked"
+  },
+  "WOUND": {
+   "layer": "L5",
+   "value": 8,
+   "native_scale": {
+    "code": "SC-12",
+    "range": [
+     0,
+     12
+    ],
+    "default": 0,
+    "note": "even values"
+   },
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "DRIVE": {
+   "layer": "L6",
+   "value": 12,
+   "native_scale": {
+    "code": "SC-20",
+    "range": [
+     0,
+     20
+    ],
+    "default": "= VITAL"
+   },
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "futurity_stance": {
+   "layer": "L6",
+   "value": null,
+   "native_scale": null,
+   "source": "AUTH §System Illusion (\"success provides freedom\") · SF limit Optionlock · AUTH §Brother Death Event (Jebb's dream for her taken)",
+   "confidence": "low",
+   "status": "parked"
+  },
+  "system_stance": {
+   "layer": "L4",
+   "value": {
+    "stance": "believer",
+    "offstage_audience": null
+   },
+   "native_scale": null,
+   "source": "AUTH §Relationship to the System; victoria-midnight §REORIENT; oxo-storyform §1 Growth Stop; CL25 second source met",
+   "confidence": "high",
+   "status": "filled"
+  },
+  "want_need": {
+   "layer": "L6",
+   "value": {
+    "need": "accept_asymmetry: rigged is not the same as wrong",
+    "false_belief": "merit earns freedom",
+    "want": null,
+    "need_kind": null,
+    "cost": null,
+    "fusion_beat": null
+   },
+   "native_scale": null,
+   "source": "slice L11 growth_requirement + arc line; oxo-storyform §9 MC Solution Inequity",
+   "confidence": "high",
+   "status": "filled"
+  },
+  "severity": {
+   "layer": "L5",
+   "value": 8,
+   "native_scale": {
+    "code": "SC-12",
+    "range": [
+     0,
+     12
+    ],
+    "default": 0,
+    "note": "even values"
+   },
+   "source": "slice instance block (locked 1.0.0) · same scale as TIER_2.WOUND, named per Puglisi & Ackerman (call 6)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "triggers": {
+   "layer": "L5",
+   "value": [
+    "mechanical_failure_events",
+    "guidance_she_is_inclined_to_refuse",
+    "brothers_name",
+    "scenes_where_listening_would_prevent_harm"
+   ],
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0) · trigger types now include minority_stress (3.0.0); none documented for her",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "relational_refs": {
+   "layer": "L5",
+   "value": [
+    {
+     "kind": "ghost",
+     "character_id": "jebb_midnight",
+     "note": "brother_deceased; the pace notes"
+    }
+   ],
+   "native_scale": null,
+   "source": "slice L8 secure_base_object; ssot_04_fabula m1b_crash_jebb_death; _CANON_NODES/jebb-midnight.md",
+   "confidence": "med (ruled 11/4)",
+   "status": "filled"
+  },
+  "mentor_state": {
+   "layer": "L5",
+   "value": "absent",
+   "native_scale": null,
+   "source": "victoria-midnight Open question 6, no named faculty; slice flag KINSHIP_COLLAPSE",
+   "confidence": "med (ruled 11/4)",
+   "status": "filled"
+  },
+  "wound_kind": {
+   "layer": "L5",
+   "value": "error_committed",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0) · CL22: she chose not to listen",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "wound_work": {
+   "layer": "L5",
+   "value": {
+    "state": "avoided",
+    "terminating": null
+   },
+   "native_scale": null,
+   "source": "slice Active Flags SHADOW_DENIAL, the shield; Villain-Arc Fork path (b)",
+   "confidence": "high",
+   "status": "filled"
+  },
+  "origin_class": {
+   "layer": "L7",
+   "value": "working_criminal_adjacent",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "origin_stability": {
+   "layer": "L7",
+   "value": 4,
+   "native_scale": {
+    "code": "SC-12",
+    "range": [
+     0,
+     12
+    ],
+    "default": null
+   },
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "family_coherence": {
+   "layer": "L7",
+   "value": 7,
+   "native_scale": {
+    "code": "SC-12",
+    "range": [
+     0,
+     12
+    ],
+    "default": null
+   },
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "origin_wound_seed": {
+   "layer": "L7",
+   "value": 6,
+   "native_scale": {
+    "code": "SC-12",
+    "range": [
+     0,
+     12
+    ],
+    "default": null
+   },
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "tech_level": {
+   "layer": "L7",
+   "value": 6,
+   "native_scale": {
+    "code": "SC-12",
+    "range": [
+     0,
+     12
+    ],
+    "default": null
+   },
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "system_exposure": {
+   "layer": "L7",
+   "value": "early_pre_awareness",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "hereditary_predisposition": {
+   "layer": "L7",
+   "value": "moon_blood: belt-born Moon descent, inherited radiation resistance; unknown to her",
+   "native_scale": null,
+   "source": "victoria-midnight §THE DIVE, RULED 10/1 BOLO 96; WB-CUS-0003; outliers-moon-origin-seed pieces 1, 6",
+   "confidence": "high",
+   "status": "filled"
+  },
+  "layers": {
+   "layer": "L7",
+   "value": [
+    {
+     "regime": "the Power Line belt",
+     "catalog_ref": [
+      "WB-INS-0004"
+     ],
+     "years": null,
+     "trace_still_showing": true
+    },
+    {
+     "regime": "the salvage economy tracker",
+     "catalog_ref": null,
+     "years": null,
+     "trace_still_showing": null
+    },
+    {
+     "regime": "the Administration / DCUS",
+     "catalog_ref": [
+      "WB-INS-0001"
+     ],
+     "years": null,
+     "trace_still_showing": true
+    }
+   ],
+   "native_scale": null,
+   "source": "victoria-midnight §THE DIVE; AUTH §First Detection Source, §Continuity Bridge; WB-INS-0001; WB-INS-0004",
+   "confidence": "med (ruled 11/4)",
+   "status": "filled"
+  },
+  "life_script": {
+   "layer": "L7",
+   "value": {
+    "source": "Jebb's dream for her",
+    "version": "succeed the right way; do not ruin your life chasing dreams like he did",
+    "stance": "bend",
+    "cost": null
+   },
+   "native_scale": null,
+   "source": "AUTH §Core Bond; _CANON_NODES/jebb-midnight.md",
+   "confidence": "med (ruled 11/4)",
+   "status": "filled"
+  },
+  "origin_event": {
+   "layer": "L7",
+   "value": null,
+   "native_scale": null,
+   "source": "FAB: no birth record; the family origin is \"background condition… not filled as its own event record\"",
+   "confidence": "none",
+   "status": "parked"
+  },
+  "attachment_style": {
+   "layer": "L8",
+   "value": "secure_anxious",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0) · predates the four-way enum (call 14); locked value retained, not reclassified",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "attachment_style_score": {
+   "layer": "L8",
+   "value": 6,
+   "native_scale": {
+    "code": "SC-12",
+    "range": [
+     0,
+     12
+    ],
+    "default": null
+   },
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "attachment_dimensions": {
+   "layer": "L8",
+   "value": null,
+   "native_scale": {
+    "code": "SC-12",
+    "range": [
+     0,
+     12
+    ],
+    "default": null
+   },
+   "source": "MAP §L8 (Air Moon \"leans toward high avoidance… a lean and never a pick\") · CHART Moon Libra · SLICE `attachment_style` secure_anxious, score 6 · L9 §1 \"untouchable\"",
+   "confidence": "low",
+   "status": "parked"
+  },
+  "protest_behaviors": {
+   "layer": "L8",
+   "value": [],
+   "native_scale": null,
+   "source": "canon: none. LIN shows protest behavior with a partner (script ~L8741, L9042), in a version with no brother.",
+   "confidence": "low",
+   "status": "parked"
+  },
+  "deactivating_strategies": {
+   "layer": "L8",
+   "value": [
+    "vow_of_untouchability",
+    "control_escalation_under_stress"
+   ],
+   "native_scale": null,
+   "source": "AUTH §Immediate Post-Trauma Decision; victoria-midnight-L9-eros §1; slice L10 regression_pattern",
+   "confidence": "med (ruled 11/4)",
+   "status": "filled"
+  },
+  "appeasement_strategies": {
+   "layer": "L8",
+   "value": [],
+   "native_scale": null,
+   "source": "nothing documented; canon runs against it (Non-Negotiables)",
+   "confidence": "none",
+   "status": "parked"
+  },
+  "emotional_range": {
+   "layer": "L8",
+   "value": 9,
+   "native_scale": {
+    "code": "SC-12",
+    "range": [
+     0,
+     12
+    ],
+    "default": null
+   },
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "conditional_patterns": {
+   "layer": "L8",
+   "value": [
+    "merit_earns_freedom",
+    "loyalty_to_kinship",
+    "distrust_of_institution"
+   ],
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "imprint_flexibility": {
+   "layer": "L8",
+   "value": 3,
+   "native_scale": {
+    "code": "SC-12",
+    "range": [
+     0,
+     12
+    ],
+    "default": null
+   },
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "secure_base_object": {
+   "layer": "L8",
+   "value": "brother_deceased",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0) · renamed 2026-09-29 from primary_attachment_object (read alias kept)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "erotic_blueprint_type": {
+   "layer": "L9",
+   "value": "kinesthetic",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "arousal_curve": {
+   "layer": "L9",
+   "value": null,
+   "native_scale": {
+    "code": "SC-10",
+    "range": [
+     0,
+     10
+    ],
+    "default": null,
+    "note": "amplitude, spasm size"
+   },
+   "source": "L9 does not name one; no feed (MAP §L9)",
+   "confidence": "none",
+   "status": "parked"
+  },
+  "desire_vector": {
+   "layer": "L9",
+   "value": 3,
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "resolution_type": {
+   "layer": "L9",
+   "value": null,
+   "native_scale": null,
+   "source": "L9 §4 reads desire as a foreclosed signal, neither terminating nor additive",
+   "confidence": "none",
+   "status": "parked"
+  },
+  "group_size": {
+   "layer": "L9",
+   "value": null,
+   "native_scale": {
+    "code": "unscaled",
+    "range": null,
+    "default": null,
+    "note": "a count"
+   },
+   "source": "none",
+   "confidence": "none",
+   "status": "parked"
+  },
+  "group_position": {
+   "layer": "L9",
+   "value": null,
+   "native_scale": null,
+   "source": "none",
+   "confidence": "none",
+   "status": "parked"
+  },
+  "consent_posture": {
+   "layer": "L9",
+   "value": null,
+   "native_scale": null,
+   "source": "none (V-Sync is done to her, not her posture)",
+   "confidence": "none",
+   "status": "parked"
+  },
+  "shame_index": {
+   "layer": "L9",
+   "value": 2,
+   "native_scale": {
+    "code": "SC-12",
+    "range": [
+     0,
+     12
+    ],
+    "default": null
+   },
+   "source": "slice instance block (locked 1.0.0) · kept as read alias for exposure_shame (same pattern as L8 secure_base_object)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "exposure_shame": {
+   "layer": "L9",
+   "value": 2,
+   "native_scale": {
+    "code": "SC-12",
+    "range": [
+     0,
+     12
+    ],
+    "default": null
+   },
+   "source": "slice instance block (locked 1.0.0) · same value/text as shame_index -- immunity to public Desync/legibility shaming",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "role_shame": {
+   "layer": "L9",
+   "value": null,
+   "native_scale": {
+    "code": "SC-12",
+    "range": [
+     0,
+     12
+    ],
+    "default": null
+   },
+   "source": "MAP §L9 (Mars–Venus aspect: a trine reads \"low friction\"; a square raises role_shame) · VM Venus △ Mars · SLICE `exposure_shame` 2",
+   "confidence": "low",
+   "status": "parked"
+  },
+  "armor_index": {
+   "layer": "L9",
+   "value": 8,
+   "native_scale": {
+    "code": "SC-12",
+    "range": [
+     0,
+     12
+    ],
+    "default": null
+   },
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "satisfaction_cycle_truncation": {
+   "layer": "L9",
+   "value": "reach",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "erotic_safety_precondition": {
+   "layer": "L9",
+   "value": "control",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "erotic_safety_precondition_scope": {
+   "layer": "L9",
+   "value": "internal",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0) · \"control... internal to her\" (victoria-midnight-L9-eros §4)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "intimacy_mode": {
+   "layer": "L9",
+   "value": "parallel_presence",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "client_script": {
+   "layer": "L9",
+   "value": null,
+   "native_scale": null,
+   "source": "none; no staged or paid register in her canon",
+   "confidence": "none",
+   "status": "parked"
+  },
+  "compersion": {
+   "layer": "L9",
+   "value": null,
+   "native_scale": {
+    "code": "SC-10",
+    "range": [
+     0,
+     10
+    ],
+    "default": null,
+    "note": "level"
+   },
+   "source": "none",
+   "confidence": "none",
+   "status": "parked"
+  },
+  "fantasy_ledger": {
+   "layer": "L9",
+   "value": null,
+   "native_scale": null,
+   "source": "none (VM's three-check \"fantasy\" line is the audience's, not hers)",
+   "confidence": "none",
+   "status": "parked"
+  },
+  "desire_object": {
+   "layer": "L9",
+   "value": "activity",
+   "native_scale": null,
+   "source": "victoria-midnight-chart Step 5; victoria-midnight-L9-eros §3; victoria-midnight §REORIENT",
+   "confidence": "med (ruled 11/4)",
+   "status": "filled"
+  },
+  "pleasure_evidence": {
+   "layer": "L9",
+   "value": null,
+   "native_scale": null,
+   "source": "none",
+   "confidence": "none",
+   "status": "parked"
+  },
+  "sex_creed": {
+   "layer": "L9",
+   "value": null,
+   "native_scale": null,
+   "source": "none",
+   "confidence": "none",
+   "status": "parked"
+  },
+  "touch_rule": {
+   "layer": "L9",
+   "value": null,
+   "native_scale": null,
+   "source": "AUTH \"I will become untouchable\" · L9 §1",
+   "confidence": "low",
+   "status": "parked"
+  },
+  "dissolution": {
+   "layer": "L9",
+   "value": null,
+   "native_scale": {
+    "code": "SC-10",
+    "range": [
+     0,
+     10
+    ],
+    "default": null,
+    "note": "depth"
+   },
+   "source": "control as the safety precondition argues shallow, but no number exists",
+   "confidence": "none",
+   "status": "parked"
+  },
+  "compartment_practice": {
+   "layer": "L9",
+   "value": null,
+   "native_scale": null,
+   "source": "none",
+   "confidence": "none",
+   "status": "parked"
+  },
+  "attraction_channels": {
+   "layer": "L9",
+   "value": null,
+   "native_scale": {
+    "code": "SC-10",
+    "range": [
+     0,
+     10
+    ],
+    "default": null
+   },
+   "source": "L9 §Open: \"Orientation and partners remain undocumented\"",
+   "confidence": "none",
+   "status": "parked"
+  },
+  "risk_role": {
+   "layer": "L9",
+   "value": null,
+   "native_scale": null,
+   "source": "none",
+   "confidence": "none",
+   "status": "parked"
+  },
+  "risk_account": {
+   "layer": "L9",
+   "value": null,
+   "native_scale": null,
+   "source": "none",
+   "confidence": "none",
+   "status": "parked"
+  },
+  "erotic_craft": {
+   "layer": "L9",
+   "value": null,
+   "native_scale": null,
+   "source": "none",
+   "confidence": "none",
+   "status": "parked"
+  },
+  "power_exchange": {
+   "layer": "L9",
+   "value": null,
+   "native_scale": null,
+   "source": "L9 §Open: MSX.14/15 unread for her",
+   "confidence": "none",
+   "status": "parked"
+  },
+  "signal_fluency": {
+   "layer": "L9",
+   "value": null,
+   "native_scale": null,
+   "source": "L9 §3 (entrainment: \"two people, separate, pointed at the same thing\")",
+   "confidence": "low",
+   "status": "parked"
+  },
+  "disclosure_posture_L9": {
+   "layer": "L9",
+   "value": null,
+   "native_scale": null,
+   "source": "none",
+   "confidence": "none",
+   "status": "parked"
+  },
+  "template_origin": {
+   "layer": "L9",
+   "value": "L8.secure_base_object=brother_deceased",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0) · erotic template traces to the brother/navigator bond (§3)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "source_confidence": {
+   "layer": "L9",
+   "value": "canonical",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0) · AUTHORED 2026-08-15 — victoria-midnight-L9-eros v2; widened 2026-09-29, L9 EROS synthesis",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "shadow_density": {
+   "layer": "L10",
+   "value": 7,
+   "native_scale": {
+    "code": "SC-12",
+    "range": [
+     0,
+     12
+    ],
+    "default": null
+   },
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "projection_tendency": {
+   "layer": "L10",
+   "value": 6,
+   "native_scale": {
+    "code": "SC-12",
+    "range": [
+     0,
+     12
+    ],
+    "default": null
+   },
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "regression_pattern": {
+   "layer": "L10",
+   "value": "control_escalation",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "shadow_content": {
+   "layer": "L10",
+   "value": [
+    "culpability_for_brother",
+    "distrust_of_own_judgment",
+    "fear_of_being_right_and_wrong"
+   ],
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "dark_triad": {
+   "layer": "L10",
+   "value": null,
+   "native_scale": {
+    "code": "SC-10",
+    "range": [
+     0,
+     10
+    ],
+    "default": null
+   },
+   "source": "optional dial; none",
+   "confidence": "none",
+   "status": "parked"
+  },
+  "light_triad": {
+   "layer": "L10",
+   "value": null,
+   "native_scale": {
+    "code": "SC-10",
+    "range": [
+     0,
+     10
+    ],
+    "default": null
+   },
+   "source": "optional dial; none",
+   "confidence": "none",
+   "status": "parked"
+  },
+  "disinhibition_context": {
+   "layer": "L10",
+   "value": null,
+   "native_scale": null,
+   "source": "none for her (V-Sync is a world mechanism)",
+   "confidence": "none",
+   "status": "parked"
+  },
+  "growth_axis": {
+   "layer": "L11",
+   "value": "inequity",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "resistance_index": {
+   "layer": "L11",
+   "value": 8,
+   "native_scale": {
+    "code": "SC-12",
+    "range": [
+     0,
+     12
+    ],
+    "default": null
+   },
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "soul_evolution_archetype": {
+   "layer": "L11",
+   "value": "tactical_disruptor",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "karmic_memory": {
+   "layer": "L11",
+   "value": "meritocratic_certainty",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "growth_requirement": {
+   "layer": "L11",
+   "value": "accept_asymmetry",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "arc_type": {
+   "layer": "L11",
+   "value": "transformation",
+   "native_scale": null,
+   "source": "BVX.0196 growth vs transformation; slice flag SHADOW_DENIAL; oxo-storyform §1 Change, Growth Stop",
+   "confidence": "high",
+   "status": "filled"
+  },
+  "change_cause": {
+   "layer": "L11",
+   "value": "external_force",
+   "native_scale": null,
+   "source": "victoria-midnight epigraph \"every exit closes\"; slice L4; BVX.0061 four causes",
+   "confidence": "high",
+   "status": "filled"
+  },
+  "catalyst_archetype": {
+   "layer": "L11",
+   "value": null,
+   "native_scale": null,
+   "source": "SF §4 (IC ruled 8/24). Neither her Schmidt archetype nor Anna's is documented, so the pairing cannot be read.",
+   "confidence": "low",
+   "status": "parked"
+  },
+  "rail_ref": {
+   "layer": "L11",
+   "value": [
+    "R2",
+    "R4"
+   ],
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0) · 06 rails: R2 Tori, R4 Tori and Anna (IF catalog call 2)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "dramatica_archetype": {
+   "layer": "L12",
+   "value": "Protagonist",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "mc_problem_element": {
+   "layer": "L12",
+   "value": "Equity",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0) · renamed from motivation_element 2026-08-24 (STATE #4)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "methodology_element": {
+   "layer": "L12",
+   "value": "Proaction",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "evaluation_element": {
+   "layer": "L12",
+   "value": "Result",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "purpose_element": {
+   "layer": "L12",
+   "value": "Actuality",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "touchstone": {
+   "layer": "L12",
+   "value": "cost_and_meaning",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0) · slug alias; the TS n:m id is not minted, the register parks it (phase 2)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "story_outcome": {
+   "layer": "L12",
+   "value": "Failure",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "story_judgement": {
+   "layer": "L12",
+   "value": "Good",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "limit_type": {
+   "layer": "L12",
+   "value": "Optionlock",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "resolve": {
+   "layer": "L12",
+   "value": "Change",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "convention_role": {
+   "layer": "L12",
+   "value": {
+    "genre_role": null,
+    "actant_slot": "subject"
+   },
+   "native_scale": null,
+   "source": "ssot_04_fabula m1b_crash_jebb_death actant_role subject; integration protocol 1.2.1",
+   "confidence": "high",
+   "status": "filled"
+  },
+  "necessity": {
+   "layer": "L12",
+   "value": "satisfied",
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0) · call 13 rule (RULED 2026-09-29): sole MC anchor, load-bearing to the Optionlock",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  },
+  "motivation_quad": {
+   "layer": "L12",
+   "value": [
+    "Consider",
+    "Pursuit"
+   ],
+   "native_scale": null,
+   "source": "slice instance block (locked 1.0.0) · quad primary relocated here 2026-08-24 (STATE #4)",
+   "confidence": "canon (locked 1.0.0)",
+   "status": "filled"
+  }
+ },
+ "numbers": {
+  "CORE": 13,
+  "VITAL": 14,
+  "SOCIAL": 10,
+  "WILL": 14,
+  "WOUND": 8,
+  "DRIVE": 12,
+  "severity": 8,
+  "origin_stability": 4,
+  "family_coherence": 7,
+  "origin_wound_seed": 6,
+  "tech_level": 6,
+  "attachment_style_score": 6,
+  "emotional_range": 9,
+  "imprint_flexibility": 3,
+  "desire_vector": 3,
+  "shame_index": 2,
+  "exposure_shame": 2,
+  "armor_index": 8,
+  "shadow_density": 7,
+  "projection_tendency": 6,
+  "resistance_index": 8
+ },
+ "gates": {
+  "step1": "pass",
+  "step3": "pass"
+ },
+ "counts": {
+  "filled": 78,
+  "parked": 33
+ }
+}

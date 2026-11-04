@@ -6,6 +6,7 @@ Serves 127.0.0.1:8795 only.
   /  the frame · /panes.json · /glasses.json · /boot.json · /desk.json · /local/<name> (whitelist) · /glass/<id>/<file>
   /status.json · POST /cmd -> cmd.log · POST /show + /show.json (command glass hands the frame a glass)
   /review/docs · /review/doc?path= · /review/list · POST /review/send (BOLO 125, the review desk; engine _tools/reviewdesk)
+  /leechseed/characters · /leechseed/char?id= · /leechseed/stats?char= · /leechseed/distill (BOLO 176, the character console)
 Usage: python console.py              serve
        python console.py --open       open the window (or focus the open one) and snap it to the right half
        python console.py --status     run pull_queue.py report and cache status.json
@@ -64,6 +65,7 @@ LOCAL = {   # the whitelist: name -> file
     "tropes": os.path.join(ROOT, "_tools", "tropes", "glass", "tropes.html"),   # BOLO 89, _tools/tropes/build_glass.py
     "europatch": os.path.join(ROOT, "_tools", "europatch", "patchbay.html"),   # BOLO 173, the patch bay (europatch.py build)
     "review": os.path.join(ROOT, "_tools", "reviewdesk", "review-desk.html"),   # BOLO 125, the review desk (11/4)
+    "leechseed": os.path.join(ROOT, "_tools", "leechseed", "console.html"),   # BOLO 176, the character console (11/4)
 }
 PANES = [   # the rail: six up front (Chief 10/18, rec taken), the rest behind "more"
     {"id": "desk", "title": "Desk", "url": "/local/desk"},
@@ -81,7 +83,64 @@ PANES = [   # the rail: six up front (Chief 10/18, rec taken), the rest behind "
     {"id": "tropes", "title": "Tropes", "url": "/local/tropes", "more": True},
     {"id": "europatch", "title": "Patch bay", "url": "/local/europatch", "more": True},
     {"id": "review", "title": "Review desk", "url": "/local/review", "more": True},   # BOLO 125 (provisional: behind "more")
+    {"id": "leechseed", "title": "LEECHSEED", "url": "/local/leechseed", "more": True},   # BOLO 176; the title shown comes from ls_title()
 ]
+# ---- the character console (BOLO 176, 11/4): LEECHSEED's characters, read from _tools/leechseed/characters/<id>.json ----
+LS_DIR = os.path.join(ROOT, "_tools", "leechseed", "characters")
+LS_TITLE = os.path.join(ROOT, "_PRIVATE", "leechseed", "console.json")   # the display name lives here, never in the repo
+LS_DISTILL = os.path.join(ROOT, "_tools", "bolostatus", "work", "176", "distill.md")
+LS_ID = __import__("re").compile(r"^[a-z0-9_]{1,64}$")
+
+
+def ls_title():
+    try:
+        with open(LS_TITLE, encoding="utf-8") as f:
+            return str(json.load(f).get("title") or "LEECHSEED")[:40]
+    except Exception:
+        return "LEECHSEED"
+
+
+def ls_record(cid):
+    f = os.path.join(LS_DIR, cid + ".json")
+    if not LS_ID.match(cid or "") or not os.path.isfile(f):
+        return None
+    with open(f, encoding="utf-8") as fh:
+        return json.load(fh)
+
+
+def ls_list():
+    out = []
+    for name in sorted(os.listdir(LS_DIR)) if os.path.isdir(LS_DIR) else []:
+        r = ls_record(name[:-5]) if name.endswith(".json") else None
+        if r:
+            out.append({k: r.get(k) for k in ("id", "name", "node", "counts", "gates")})
+    order = {"victoria_midnight": 0, "anna_colson_conway": 1}
+    out.sort(key=lambda r: (order.get(r["id"], 9), r["name"] or ""))
+    return {"title": ls_title(), "characters": out}
+
+
+def ls_text(path):
+    """a repo markdown file's text, front matter dropped"""
+    with open(path, encoding="utf-8") as f:
+        t = f.read()
+    m = __import__("re").match(r"^---\r?\n.*?\r?\n---\r?\n", t, __import__("re").S)
+    return t[m.end():] if m else t
+
+
+def ls_stats(cid):
+    """GET /leechseed/stats?char=: BAY's engine, europatch.py stats --char <id> --json; never a made-up number"""
+    if not ls_record(cid):
+        return 404, {"ok": False, "built": True, "error": "no such character"}
+    try:
+        r = subprocess.run([sys.executable, "-X", "utf8", EUROPATCH, "stats", "--char", cid, "--json"],
+                           capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=30, cwd=ROOT)
+        out = json.loads(r.stdout)
+        if r.returncode != 0 or not isinstance(out, dict) or "stats" not in out:
+            raise ValueError("no stats in the output")
+    except Exception:
+        return 200, {"ok": False, "built": False, "error": "stats engine not built yet"}
+    out["ok"], out["built"] = True, True
+    return 200, out
 REVIEWDESK = os.path.join(ROOT, "_tools", "reviewdesk", "reviewdesk.py")   # BOLO 125: the review desk's engine
 _RD = []
 
@@ -571,7 +630,30 @@ class H(http.server.BaseHTTPRequestHandler):
                 with open(f, "rb") as fh:
                     return self._send(200, fh.read(), "image/svg+xml" if f.endswith(".svg") else mimetypes.guess_type(f)[0] or "image/gif")
         if path == "/panes.json":
-            return self._send(200, json.dumps({"panes": PANES, "aliases": aliases()}), "application/json; charset=utf-8")
+            panes = [dict(p, title=ls_title()) if p["id"] == "leechseed" else p for p in PANES]
+            return self._send(200, json.dumps({"panes": panes, "aliases": aliases()}, ensure_ascii=False),
+                              "application/json; charset=utf-8")
+        if path.startswith("/leechseed/"):   # BOLO 176, the character console
+            from urllib.parse import urlparse, parse_qs
+            q = parse_qs(urlparse(self.path).query)
+            js = "application/json; charset=utf-8"
+            if path == "/leechseed/characters":
+                return self._send(200, json.dumps(ls_list(), ensure_ascii=False), js)
+            if path == "/leechseed/char":
+                r = ls_record((q.get("id") or [""])[0])
+                if r is None:
+                    return self._send(404, '{"ok":false,"error":"no such character"}', js)
+                node = os.path.join(ROOT, *str(r.get("node") or "").split("/"))
+                r["card_md"] = ls_text(node) if r.get("node") and os.path.isfile(node) else None
+                return self._send(200, json.dumps(r, ensure_ascii=False), js)
+            if path == "/leechseed/stats":
+                code, out = ls_stats((q.get("char") or [""])[0])
+                return self._send(code, json.dumps(out, ensure_ascii=False), js)
+            if path == "/leechseed/distill":
+                ok = os.path.isfile(LS_DISTILL)
+                return self._send(200 if ok else 404, json.dumps({"md": ls_text(LS_DISTILL) if ok else None,
+                                                                  "path": "_tools/bolostatus/work/176/distill.md"},
+                                                                 ensure_ascii=False), js)
         if path == "/glasses.json":
             return self._send(200, json.dumps({"glasses": read_glasses()}, ensure_ascii=False), "application/json; charset=utf-8")
         if path == "/desk.json":

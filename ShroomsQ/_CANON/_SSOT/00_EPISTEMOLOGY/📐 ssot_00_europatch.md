@@ -1,7 +1,7 @@
 ---
 type: ssot_00_epistemology
 category: europatch
-version: 0.1.1
+version: 0.2.0
 tier: foundation
 last_updated: 2026-11-04
 reader: "the CDR and the writers, before building or extending any system; Chief, ruling the open calls"
@@ -17,7 +17,7 @@ rung: standard
 
 # 📐 SSOT: EUROPATCH — modules, jacks and cables; set the dials, the seed rolls it
 
-**Who it's for:** anyone building a system, a character, a place or a scene · **What it does:** gives every system one way to be built, wired and rolled · **Type:** concept · **Status:** provisional 0.1.0
+**Who it's for:** anyone building a system, a character, a place or a scene · **What it does:** gives every system one way to be built, wired and rolled · **Type:** concept · **Status:** provisional 0.2.0 (cable math ruled 11/4)
 
 ## WHAT THIS IS
 
@@ -63,7 +63,19 @@ Chief spoke it on 10/31 (BOLO 173):
 
 **One roll.** Each module rolls after every module cabled into it. Its out-jacks pass the rolled values on, and the bay writes the JSON after the last roll.
 
-**The cable math (provisional, brief call 3).** A cable carries a value from 0 to 1, shaped by its curve. **Add** moves the dial's centre by `strength × curve(value) × the dial's range`. **Multiply** scales it by `1 + strength × curve(value)`. The result stays inside the dial's limits.
+**The cable math (0.2, log-odds; RULED 2026-11-04, BOLO 176).** A cable carries its source dial's rolled value from 0 to 1, shaped by its curve, `f`. The bent dial works in log-odds, so pushes add, edges give diminishing returns, and the order of the cables does not matter. This block is the one statement; `europatch.py` and the page's JS mirror it line for line.
+
+```text
+p0      = clamp(set / 100, 0.005, 0.995)          the dial's set value as a probability
+z0      = logit(p0) = ln(p0 / (1 − p0))
+add     : pull   = strength × K × f               K = 4 ln 3 ≈ 4.3944 (provisional)
+multiply: factor = 1 + strength × f               reported pull = z0 × strength × f
+z       = z0 × (product of every multiply factor) + (sum of every add pull)
+centre  = 100 × clamp(sigmoid(z), 0.005, 0.995)   a dial with no cable, or z = z0, keeps its set value
+tension = Σ|pull| − |Σ pull|, in log-odds units   set piece ≥ 2.1972 (0.5 K) · reflective < 0.2197 with |Σ pull| ≥ 2.1972
+```
+
+K is set so a +0.25 add cable at full source moves a mid dial from 50 to 75, exactly as the 0.1 math did. Multiply scales the dial's log-odds distance from the middle, so it pushes a dial further from 50 on the side it already sits (provisional). The seed then rolls inside centre ± spread, as before; the same patch and seed still give the same instance.
 
 **The output shape (provisional).** One example, with placeholder values:
 
@@ -210,3 +222,4 @@ Each call has a rec. All are provisional until Chief rules.
 
 - **0.1.0 — 2026-10-31.** PROVISIONAL. First write, from the locked brief (BOLO 173, Chief: "lock it and run what you need"). Parts, mapping, the two patterns, scaling, kin, the shared standard, eight open calls.
 - **0.1.1 — 2026-11-04.** Chief: go recs path cleanup (BOLO 176), and Chief: go (normalized store, BOLO 176). Tiers are depth levels, not presets; the bay's presets are archetypes. Shared standard notes the normalized store (ruled, not built) and the scale column.
+- **0.2.0 — 2026-11-04.** Chief: go (patch-bay improvements, BOLO 173 / 176). The cable math moves to log-odds (RULED 11/4): one formula block under THE PARTS, K = 4 ln 3, order-free, the bent centre stays inside 0.5–99.5; tension thresholds move to log-odds units. Engine 0.2.0; rolled values change from 0.1, by design.
