@@ -59,7 +59,7 @@ So: `shame_index: 2` and `armor_index: 8`. Low shame, high armor. **Visibly simi
 
 **Invariant 2 of the series is "Shame is a Tool of Control."** The Administration enforces obedience through public Desyncs and sexual blackmail. **Tori is immune to their primary weapon.** She cannot be shamed into compliance.
 
-Which is precisely why they must use *legibility* instead. `Truth Exposure Index = 18` isn't a separate fact about her — it's the Administration's workaround for an asset that has no shame to leverage. **They read her because they cannot embarrass her.**
+Which is precisely why they must use *legibility* instead. `Truth Exposure Index = 20` (18 under the 8/15 formula; updated 11/4) isn't a separate fact about her — it's the Administration's workaround for an asset that has no shame to leverage. **They read her because they cannot embarrass her.**
 
 ---
 
@@ -141,7 +141,7 @@ That's not a thematic rhyme. It's the same mechanism, once consensual and once e
 
 Perel's **bounded space of eroticism**: *"Submission in the bedroom is not the same as submission in life — it can be an act of freedom, a reclamation of disowned parts of the self."* Rehor & Schiffman (**[[PSY.04]]**) put numbers on the same point: 70% of 1,580 women participate for **self-discovery**, not partner compliance — kink as identity construction with full agency.
 
-So her resolution is **not** becoming less legible. She can't; `Truth Exposure Index 18` is structural — Aries ASC doesn't filter, Virgo Venus doesn't perform.
+So her resolution is **not** becoming less legible. She can't; `Truth Exposure Index 20` is structural — Aries ASC doesn't filter, Virgo Venus doesn't perform.
 
 Her resolution is that **legibility becomes chosen instead of extracted.**
 
@@ -160,10 +160,12 @@ The armor doesn't come off. **She stops letting other people decide what it's fo
    The formula is arguably incomplete — armor plausibly modulates signal visibility too. It is left alone anyway, because **18 is a validated value**: the Phase 4 report cross-checked it against all 11 fed layers and 5 flags and found zero contradictions. Editing a load-bearing metric would invalidate that report and trade a known-good number for an untested one. Armor gets its own statistic instead:
 
    ```
-   Expressive Range = 10 − EROS.armor_index        → Tori: 2
+   Expressive Range = 12 − EROS.armor_index        → Tori: 4   (was 10 − armor → 2; ruled 10/4, applied 11/4)
    ```
 
    Low expressive range with high signal exposure is the exact paradox she embodies: **maximally readable, minimally expressive.** The system gets everything and she gets nothing out. TEI measures what leaks; Expressive Range measures what she can deliberately send. They are different quantities and were being forced through one number.
+
+   > **Updated 2026-11-04 (VM fill pass, BOLO 176).** Two later rulings moved both numbers. Expressive Range reads `12 − armor_index`, so Tori's is **4** (ruled 10/4). TEI reads `SOCIAL + max(0, 12 − shame_index)`, so hers is **20** (batch D, 10/5). Both terms sit on SC-12. The 8/15 reasoning above stands; only the arithmetic moved.
 
 3. **`satisfaction_cycle_truncation` ADOPTED.** Any character with a documented wound can be located on yield-push-reach-grasp-pull-yield. Cheap field, high yield.
 

@@ -118,7 +118,7 @@ She is built to survive cosmic-scale destruction, and her vulnerability is locat
 
 ### The number that explains itself
 
-**Truth Exposure Index = 18.** Aries ASC (no filter) + Virgo Venus in Fall (no performance) + Saturn in Gemini Detriment (speech as cage) + shame_index 2 (nothing held back) = maximally legible to a system whose entire weapon is legibility control.
+**Truth Exposure Index = 20** (18 under the old `10 − shame_index` term; the formula reads `12 − shame_index` since batch D, 10/5, carried here in the VM fill pass, 11/4, BOLO 176). Aries ASC (no filter) + Virgo Venus in Fall (no performance) + Saturn in Gemini Detriment (speech as cage) + shame_index 2 (nothing held back) = maximally legible to a system whose entire weapon is legibility control.
 
 The chart explains this number completely. That's the strongest evidence the pipeline works.
 

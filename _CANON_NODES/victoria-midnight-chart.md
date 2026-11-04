@@ -10,7 +10,7 @@ status: "partial — VM fill pass, phase 2"
 
 This is the worked example moved out of the DAI doc (BOLO 100 C13, 2026-10-04). The method lives in [ssot_02_character_astrology_dai.md](../ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_astrology_dai.md). This file is an instance, so it is half done.
 
-**Open items.** The MC Concern is missing: `⏸ VM fill pass (phase 2)`. It blocks the Sun modality. The MC Response and Inhibitor are also unextracted, with the same flag. Steps 8-11 below are candidates only. Angles, houses and the remaining aspects need the full storyform.
+**Open items.** The MC Concern is missing: `⏸ VM fill pass (phase 2)`. It blocks the Sun modality. The MC Response and Inhibitor are also unextracted, with the same flag. Steps 8-11 below are candidates only. Angles, houses and the remaining aspects need the full storyform. **VM fill pass 11/4 (BOLO 176):** storyform §9 gives all three (Concern Understanding, Response Chaos, Inhibitor Suspicion). Filling them re-opens Steps 1, 2, 5 and 7, so they wait on Chief → see tori-fill.md (`_tools/bolostatus/work/176/tori-fill.md`).
 
 **Reconcile before use.** The node [[victoria-midnight]] records that the storyform rotation (oxo-storyform section 9) supersedes the Dramatica cells below: the MC is now Activity / Understanding. The table below holds the earlier values. The VM fill pass must redo the derivation on the rotated storyform.
 
@@ -59,7 +59,7 @@ Approach = Do-er → Cardinal or Fire signs. MC Critical Flaw = Truth → The ex
 
 Ascendant in **Aries** encodes a visible, kinetic, confrontational interface. She enters rooms like a force. The Aries mask contains Truth as its exploit: Aries does not hedge, does not perform, does not code-switch. What you see is what is actually there. In a system that rewards managed legibility, an Aries Ascendant with Truth as its flaw is maximally vulnerable.
 
-**Validation:** Truth Exposure Index = 18. The Ascendant explains why.
+**Validation:** Truth Exposure Index = 20 (18 under the old `10 − shame_index` term; updated 11/4, VM fill pass). The Ascendant explains why.
 
 ## Step 4: Mercury
 
