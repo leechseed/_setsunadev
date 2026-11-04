@@ -1,16 +1,16 @@
 ---
 type: ssot_02_character_systems
 category: character_systems
-version: 3.5.2
+version: 3.6.0
 tier: [fabula, narratology]
 last_updated: 2026-11-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
-status: "v3.5.2 2026-11-04: Chief: go (Tori med recs, BOLO 176). Her 13 medium-confidence recs applied; Jebb carded, relational_refs points at him. v3.5.1 2026-11-04: Chief: go (VM fill pass, BOLO 176). Tori's high-confidence fields filled from source; the rest point to tori-fill.md; Step 3 passes. v3.5.0 2026-11-04: Chief: go recs path cleanup (BOLO 176), and Chief: go (normalized store, BOLO 176). Truth Exposure Index is `SOCIAL + max(0, 12 - shame_index)`, Tori = 20 · the layer table gains a scale column · the normalized store is ruled as a design rule, not built · L2b body shape registered under L2 · the venue alias rows re-pointed to community_membership · the pipeline doc renamed to ssot_02. Official name LEECHSEED (ruled 11/4). Earlier versions: see Version history."
+status: "v3.6.0 2026-11-04: Chief: go (Anna slice, BOLO 176). Anna-Colson Conway gets her own instance section, the second slice: the IC record, Fixed Attitude (ruled 11/4); her high-confidence fields filled from source, the rest point to anna-fill.md; Step 1 gate red, no layer numbers in canon, so no statistic computes and Step 3 fails. v3.5.2 2026-11-04: Chief: go (Tori med recs, BOLO 176). Her 13 medium-confidence recs applied; Jebb carded, relational_refs points at him. v3.5.1 2026-11-04: Chief: go (VM fill pass, BOLO 176). Tori's high-confidence fields filled from source; the rest point to tori-fill.md; Step 3 passes. v3.5.0 2026-11-04: Chief: go recs path cleanup (BOLO 176), and Chief: go (normalized store, BOLO 176). Truth Exposure Index is `SOCIAL + max(0, 12 - shame_index)`, Tori = 20 · the layer table gains a scale column · the normalized store is ruled as a design rule, not built · L2b body shape registered under L2 · the venue alias rows re-pointed to community_membership · the pipeline doc renamed to ssot_02. Official name LEECHSEED (ruled 11/4). Earlier versions: see Version history."
 rung: standard
 dependencies: ["[[📐_ssot_writing_guide]]", "[[📐_ssot_ai_instruction_protocol]]", "ssot_02_character_astrology_12_layer_mapping", "ssot_02_character_state_architecture", "ssot_02_dramatica_integration_protocol", "ssot_04_plot_system", "ssot_03_setting_system", "ssot_02_l9_eros_synthesis"]
 trunk: BLACK
 sources: [BVX.0064, BVX.0075, BVX.0193, BVX.0089, BVX.0196, BVX.0061, BVX.0209, BVX.0233, BVX.0045, BVX.1123, BVX.1124, BVX.1127, MSX.18, MSX.19, MSX.20, MSX.21, MSX.22, MSX.23, MSX.24, MSX.25, MSX.26, MSX.27, MSX.28, MSX.29, MSX.30, MSX.31, MSX.32, MSX.33, MSX.34, MSX.35, MSX.36, PSY.08, PSY.09, PSY.10, PSY.11, PSY.12, PSY.13, BVX.0054, BVX.0084, BVX.0163, BVX.0175, BVX.0191, BVX.0258, BVX.0273, BVX.0399, BVX.0576, BVX.0596, BVX.0614, BVX.0822, BVX.1125, BVX.1126, BVX.1129, BVX.1130, BVX.1131, BVX.1132, BVX.1133, BVX.1134, BVX.1135, BVX.1148, BVX.1149, BVX.1150, BVX.1151, BVX.1152, BVX.1154, BVX.1155, BVX.1158, BVX.1172, BVX.1175, CRE.05, CRE.07, MSX.37, MSX.38, MSX.39, MSX.40, MSX.41, MSX.42, MSX.43, MSX.44, MSX.45, MSX.47, MSX.48, MSX.49, MSX.50, MSX.51, MSX.52, MSX.53, MSX.54, MSX.55, MSX.56, MSX.57, MSX.58, MSX.59, MSX.60, MSX.61, MSX.62, MSX.63, MSX.64, MSX.65, MSX.66, MSX.69, MSX.70, MSX.71, MSX.72, MSX.74, MSX.75, MSX.76, MSX.77, MSX.78, MSX.79, MSX.81, MSX.82, MSX.83, MSX.85, MSX.86, MSX.87, MSX.88, MSX.SET.01, PHI.03, PHI.04, PSY.14, PSY.15, PSY.16, PSY.17, PSY.18, PSY.19, PSY.20, PSY.23, PSY.24, PSY.25, PSY.26, PSY.27, PSY.28, PSY.29, PSY.30, PSY.31, PSY.32, PSY.33, PSY.35, PSY.36, PSY.37, PSY.38, PSY.39, PSY.40, PSY.49, PSY.51, PSY.52, PSY.55, PSY.60, PSY.61, PSY.62, PSY.67, MSX.11, MSX.12, MSX.13, MSX.14, MSX.15, PSY.02, PSY.03, PSY.05, PSY.06, PSY.07, PHI.01, PHI.02]
-purpose: "THE CHARACTER SYSTEM, v3.5.2: LEECHSEED (the official name, ruled 11/4; the 12-layer character system is its description), the first top-layer model of the lattice. It stores a character as twelve layers in three tiers, with seven derived statistics and five flags computed from them, in one Structured Data Block that changes over story time only through state diffs. Written against the character shelf of the library, which holds nine distills."
+purpose: "THE CHARACTER SYSTEM, v3.6.0: LEECHSEED (the official name, ruled 11/4; the 12-layer character system is its description), the first top-layer model of the lattice. It stores a character as twelve layers in three tiers, with seven derived statistics and five flags computed from them, in one Structured Data Block that changes over story time only through state diffs. Written against the character shelf of the library, which holds nine distills."
 ---
 
 # 📐 SSOT · THE CHARACTER SYSTEM · LEECHSEED (the 12-layer system) · the vertical slice
@@ -782,6 +782,308 @@ FLAGS:
   KINSHIP_COLLAPSE_event_id: m1b_crash_jebb_death
 ```
 
+---
+
+## THE INSTANCE · Anna-Colson Conway, the second slice
+
+| Layer | Anna-Colson Conway |
+|---|---|
+| **L1** | CORE unset, "low, by design": no gap between surface and true character |
+| **L2** | VITAL unset, system-polished, died and built back "but better" |
+| **L3** | SOCIAL unset, Verified and ascending, legible on purpose |
+| **L4** | WILL unset, Steadfast, never registers pressure as pressure |
+| **L5** | WOUND open by ruling (9/23) |
+| **L6** | DRIVE unset, ascent, undented |
+| **L7** | ORIGIN legacy_track, the rebuild chain (four backstory events) |
+| **L8** | IMPRINT secure-institutional (proposed), anchored to the system |
+| **L9** | EROS n/a by design (no POV) |
+| **L10** | SHADOW withheld by design, shown only in consequence |
+| **L11** | DESTINY the establishment's proof of concept, rails R3 and R4 |
+| **L12** | FUNCTION Impact Character, ic_problem Equity, Fixed Attitude / Memories, Steadfast |
+
+**IP:** OVEREXITOUT (The Outliers) **Character Status:** Draft (Step 1 gate red) **Slice Version:** 0.2.0
+
+**Anna fill pass (11/4, BOLO 176, Chief: "go").** This record is the Impact Character, `anna_colson_conway`, whose node is [anna-colson-conway.md](../../../../_CANON_NODES/anna-colson-conway.md). She is the Colson who died, was built back "but better", and was reclaimed by her father. The copy the scientist kept is a separate person with her own stub below (provisional call P1 in the fill file). Her high-confidence, sourced values are written below, each tagged `(fill 11/4, source: …)`. Med, low and no-source fields carry `⏸ fill pass (phase 2) → see anna-fill.md`. [anna-fill.md](../../../../_tools/bolostatus/work/176/anna-fill.md) holds every proposal, its source and its confidence. Her ruled domain is **Fixed Attitude** (BOLO 150, ruled 11/4).
+
+**Step 1 gate: red.** She has no locked authority document, no Dramatica ingest and no astrology ingest (her node's chart is a placeholder by ruling, 9/23). Canon holds no number for any of her layers. So this pass assigns no Tier 1 or Tier 2 number, none of the seven statistics computes, and the block is versioned `draft`. **Step 3 fails:** `want_need.need` is empty, because she is Steadfast and the slice has no rule for a character who already holds her solution (the fill file, call C3).
+
+---
+
+### Tier 1 — Primary Layers
+
+**L1 CORE: unset**
+
+Ruled gloss: "low, by design" (her node, L1, ruled 9/23). [[BVX.0064]] lets the IC run near a type. Her coherence, with no gap between characterization, true character and subconscious, is the IC argument at the lowest layer. No source gives a number.
+
+`psychology_stack`: moral standards, ambition, temperament and attitude toward life come from canon; the other six slots stay null (fill 11/4, source: oxo-storyform §4, ruled 8/24; anna-colson-conway §What she will not do, ruled 9/23; victoria-midnight §Relationships; oxo-scene-card-M4-skeleton, 77-AM). `neurotype`: ⏸ fill pass (phase 2) → see anna-fill.md
+
+**L2 VITAL: unset**
+
+`physiology_stack`: system-polished, conforming to elite grooming; she died in a freak ice-skating accident and was built back "but better" (fill 11/4, source: ssot_04_fabula ANNA COLSON'S ORIGIN, ruled 9/29; anna-colson-conway §REORIENT, Open question 12). `body_capital`: ⏸ fill pass (phase 2) → see anna-fill.md
+
+**L3 SOCIAL: unset**
+
+Ruled gloss: "Verified, ascending". Tori is legible against her will. Anna is legible on purpose, and it protects her.
+
+`sociology_stack`: legacy track; student and Student Body President; DCUS; a father who had her rebuilt, then took her back; Verified inside the Administration's rank (fill 11/4, source: anna-colson-conway L7, Open question 3; victoria-midnight §Relationships; oxo-storyform §4; ssot_04_fabula ANNA COLSON'S ORIGIN; oxo-scene-card-M2-row9). `civic_standing`: Verified, ascending, by the Administration, catalog_ref WB-INS-0001 (fill 11/4, source: oxo-scene-card-M2-row9; oxo-telling-profile T5; WB-INS-0001); its number is parked. `voice_sheet`: the Feed's register, Axiom, adopted as her own (fill 11/4, source: anna-colson-conway §REORIENT, Open question 7; oxo-telling-profile T2). `assigned_labels`, `pair_register`, `standing`, `disclosure_posture`, `circumplex`: ⏸ fill pass (phase 2) → see anna-fill.md
+
+---
+
+### Tier 2 — Secondary Layers
+
+**L4 WILL: unset (Steadfast)**
+
+Her resolve is Steadfast (oxo-storyform §9). WILL = CORE by default, and CORE is unset. `system_stance`: held open by rule, because the theme rider keeps Anna a question: cog, believer or mask (fill 11/4, source: ssot_06_theme_system THE SCENE TESTS, the rider; IF-02-06-05). `coping_strategy`, `locus_of_control`: ⏸ fill pass (phase 2) → see anna-fill.md
+
+**L5 WOUND: open (ruled 9/23)**
+
+Her node rules the wound open: an IC may not need one. The 9/29 origin chain (her death) came after that ruling, so the wound is a call for Chief (C4). Every L5 field: ⏸ fill pass (phase 2) → see anna-fill.md
+
+**L6 DRIVE: unset (ascent, undented)**
+
+`want_need`: want is proposed (med), and need is empty. The Step 3 check fails. `futurity_stance`: ⏸ fill pass (phase 2) → see anna-fill.md
+
+---
+
+### Tier 3 — Deep Variable Stacks
+
+**L7 ORIGIN**
+
+|Variable|Value|
+|---|---|
+|`origin_class`|legacy_track (fill 11/4, source: anna-colson-conway L7, Open question 3, ruled 9/23; victoria-midnight §Relationships, "Legacy 'Colson'")|
+|`origin_stability`, `family_coherence`, `origin_wound_seed`, `tech_level`|⏸ fill pass (phase 2) → see anna-fill.md|
+|`system_exposure`, `layers`, `hereditary_predisposition`, `life_script`|⏸ fill pass (phase 2) → see anna-fill.md|
+|`origin_event`|⏸ fill pass (phase 2) → see anna-fill.md (rec: null; she is one continuous actor in the fabula)|
+
+Her L7 antecedents are the four Colson events in the fabula (ruled 9/29): `backstory_colson_skating_death` → `backstory_colson_father_seeks_scientist` → `backstory_colson_scientist_attachment` → `backstory_colson_father_reclaims`. The fifth event, `backstory_colson_copy_made`, begins the copy, not her. Tori's origin is outside institutional legibility. Anna's is the opposite: admitted and groomed, never salvaged. The system never had to flag her.
+
+---
+
+**L8 IMPRINT**
+
+Every L8 field: ⏸ fill pass (phase 2) → see anna-fill.md. The ruled gloss is secure-institutional (node Q4): Tori's imprint is anchored to a person, Anna's to the system itself.
+
+---
+
+**L9 EROS** — n/a by design
+
+`status`: n_a_by_design (fill 11/4, source: anna-colson-conway Open question 6, ruled 9/23; oxo-telling-profile T2, no POV). Every L9 key reads n/a, generic by rule. The three-check pass keeps her S2 (thin) and A2 (gap) parked on its own page.
+
+---
+
+**L10 SHADOW** — withheld by design
+
+Her node rules that her shadow shows only externally, in consequence, never in confession. That rules out showing it on screen; it does not give a value. Every L10 field: ⏸ fill pass (phase 2) → see anna-fill.md
+
+---
+
+**L11 DESTINY**
+
+|Variable|Value|
+|---|---|
+|`rail_ref`|[R3, R4] (fill 11/4, source: ssot_06_theme_system THE RAILS; IF-02-06-04)|
+|`growth_axis`, `soul_evolution_archetype`|⏸ fill pass (phase 2) → see anna-fill.md|
+|`resistance_index`, `karmic_memory`, `growth_requirement`, `arc_type`, `change_cause`, `catalyst_archetype`|⏸ fill pass (phase 2) → see anna-fill.md (Steadfast: the enums have no value for a character who does not change)|
+
+---
+
+**L12 FUNCTION**
+
+|Variable|Value|
+|---|---|
+|`dramatica_archetype`|Impact Character (fill 11/4, source: oxo-storyform §4, ruled 8/24; anna-colson-conway L12)|
+|`ic_problem_element`|Equity (fill 11/4, source: oxo-storyform §9 RS(MvI) column, reassigned to Anna; anna-colson-conway §Structure). The IC key; Tori's core key is `mc_problem_element`.|
+|`story_outcome` · `story_judgement` · `limit_type`|Failure · Good · Optionlock (fill 11/4, source: oxo-storyform §9 Dynamics, series-wide)|
+|`resolve`|Steadfast (fill 11/4, source: oxo-storyform §9, "IC Resolve Steadfast")|
+|`convention_role`|{genre_role: null, actant_slot: object} (fill 11/4, source: ssot_04_fabula, actant_role object in all four Colson events; integration protocol 1.2.1)|
+|`necessity`|not_applicable (fill 11/4, source: slice L12 rule, call 13, Protagonist-only; her IC choice is documented in BVX.0064 §8)|
+|`methodology_element`, `evaluation_element`, `purpose_element`, `touchstone`|⏸ fill pass (phase 2) → see anna-fill.md|
+
+`L12_DRAMATICA_EXTENDED`: `ic_domain` Fixed Attitude (fill 11/4, source: BOLO 150, ruled 11/4; oxo-storyform §4, §9) · `ic_concern` Memories (fill 11/4, source: oxo-storyform §4, ruled 9/23). The rest of her IC column stays in prose, because the sub-table schema is fixed: Issue Suspicion vs. Evidence · Symptom → Response Projection → Speculation · Catalyst Evidence · Inhibitor Interdiction · Benchmark Contemplation · Signposts Impulsive Responses, Innermost Desires, Contemplation, Memories.
+
+**Necessity:** not applicable. The call-13 rule binds the Protagonist only. She is the IC because she lives, visibly and successfully, the premise Tori must accept. Identical Problem element to Tori's: "the story's argument is one argument" (oxo-storyform §9).
+
+---
+
+### Derived Statistics
+
+|Stat|Formula|Result|
+|---|---|---|
+|Basic Damage Resistance|`WILL - (WOUND / 2)`|**not computable** (WILL, WOUND unset)|
+|Social Legibility|`SOCIAL - (projection_tendency / 3)`|**not computable** (SOCIAL, projection_tendency unset)|
+|Narrative Momentum|`DRIVE + (resistance_index / 2)`|**not computable** (DRIVE, resistance_index unset)|
+|Stress Threshold|`WILL - WOUND`|**not computable**|
+|Collapse Risk|`(WOUND + shadow_density) / 2`|**not computable**|
+|Truth Exposure Index|`SOCIAL + max(0, 12 - shame_index)`|**undefined by rule** (L9 is n/a by design)|
+|Expressive Range|`12 - armor_index`|**undefined by rule** (L9 is n/a by design)|
+
+Two of the seven are undefined by ruling, not by gap. Tori's TEI measures legibility against her will. Anna's legibility is by design, which is why her node holds an "Ascent Legibility Index" in reserve (Open question 11, held).
+
+---
+
+### Active Flags
+
+**EARNED_JUDGEMENT — INACTIVE.** `dramatica_archetype = "Protagonist"` is false: she is the Impact Character.
+
+**SHADOW_DENIAL · TRUTH_VULNERABILITY · OPTIONLOCK_PROGRESSION · KINSHIP_COLLAPSE — not evaluable.** Each reads WOUND, SOCIAL or an L10 number, and none is set. No source gives her `merit_earns_freedom`, and her proposed base object is the system, not the deceased, so SHADOW_DENIAL and KINSHIP_COLLAPSE read INACTIVE once her numbers land. TRUTH_VULNERABILITY reads the MC key, which she does not carry.
+
+---
+
+### Structured Data Block
+
+```
+CHARACTER_ID: anna_colson_conway
+IP: overexitout
+STATUS: draft              # Step 1 gate red: no authority document, Dramatica ingest or astrology ingest
+VERSION: 0.2.0
+
+TIER_1:
+  CORE: null               # ruled gloss "low, by design", no number · ⏸ fill pass (phase 2) → see anna-fill.md
+  psychology_stack:        # (fill 11/4, source: oxo-storyform §4, ruled 8/24; anna-colson-conway §What she will not do, ruled 9/23; victoria-midnight §Relationships; oxo-scene-card-M4-skeleton 77-AM)
+    moral_standards: [never_explains_or_defends_her_ascent, never_doubts_that_power_ascends, never_slows_for_anothers_fairness_claim, never_treats_tori_as_an_equal]
+    ambition: "ascend; Student Body President, the M3 ascent"
+    frustrations: null     # no source
+    temperament: "composed; demonstrates rather than argues"
+    attitude_toward_life: "power ascends; fairness was never the operating system"
+    complexes: null        # the 06 rider holds what she is open (cog, believer or mask)
+    extrovert_introvert: null   # no source
+    abilities: null        # no source
+    qualities: null        # no source
+    iq: null               # CORE unset
+  VITAL: null              # no number · ⏸ fill pass (phase 2) → see anna-fill.md
+  physiology_stack:        # (fill 11/4, source: ssot_04_fabula ANNA COLSON'S ORIGIN, ruled 9/29; anna-colson-conway §REORIENT, Open question 12, ruled 9/23)
+    heredity: null         # rebuilt, not inherited; see L7 antecedents
+    appearance: "system-polished; conforms to elite grooming; cyan-white, then Verified blue; no grease, no crash"
+    defects: null          # no source
+    posture: null          # no source
+    health: "died in a freak ice-skating accident; built back 'but better' by a scientist"
+  SOCIAL: null             # ruled gloss "Verified, ascending", no number · ⏸ fill pass (phase 2) → see anna-fill.md
+  sociology_stack:         # (fill 11/4, source: anna-colson-conway L7, Open question 3, ruled 9/23; victoria-midnight §Relationships; oxo-storyform §4; ssot_04_fabula ANNA COLSON'S ORIGIN; oxo-scene-card-M2-row9)
+    class: "legacy track: admitted and groomed, not salvaged"
+    occupation: "student; Student Body President"
+    education: "Delta Coast Ultra School (DCUS)"
+    home_life: "her father had her rebuilt after her death, then took her back from the scientist"
+    political_affiliation: "Verified, ascending inside the Administration's rank"
+  circumplex: null         # optional dial {agency, communion} · ⏸ fill pass (phase 2) → see anna-fill.md
+  body_capital: null       # med · ⏸ fill pass (phase 2) → see anna-fill.md
+  assigned_labels: null    # med (Verified, by state) · ⏸ fill pass (phase 2) → see anna-fill.md
+  neurotype: null          # ⏸ fill pass (phase 2) → see anna-fill.md
+  pair_register: null      # med (victoria_midnight, pacing goal) · ⏸ fill pass (phase 2) → see anna-fill.md
+  standing: null           # under community_membership, med · ⏸ fill pass (phase 2) → see anna-fill.md
+  civic_standing: {category: "Verified, ascending", by_whom: "the Administration", catalog_ref: [WB-INS-0001], rank_or_score: null}   # category, by_whom, catalog_ref (fill 11/4, source: oxo-scene-card-M2-row9; oxo-telling-profile T5; anna-colson-conway §Relationships; WB-INS-0001) · rank_or_score ⏸ fill pass (phase 2) → see anna-fill.md
+  disclosure_posture: null # L3 outness, low · ⏸ fill pass (phase 2) → see anna-fill.md
+  voice_sheet: {register: "the Feed's register (Axiom), adopted as her own idiolect: declarative, no hedging, no interrogative", dialect: null, native_pace: null, tic_with_reason: null, noticing_filter: null}   # (fill 11/4, source: anna-colson-conway §REORIENT, Open question 7, ruled 9/23; oxo-telling-profile T2); noticing_filter waits on L8 conditional_patterns
+
+TIER_2:
+  WILL: null               # Steadfast; WILL = CORE by default, CORE unset · ⏸ fill pass (phase 2) → see anna-fill.md
+  coping_strategy: null    # ⏸ fill pass (phase 2) → see anna-fill.md
+  locus_of_control: null   # ⏸ fill pass (phase 2) → see anna-fill.md
+  WOUND: null              # ruled open 9/23 (anna-colson-conway Open question 5) · ⏸ fill pass (phase 2) → see anna-fill.md
+  DRIVE: null              # ruled gloss "ascent, undented", no number · ⏸ fill pass (phase 2) → see anna-fill.md
+  futurity_stance: null    # low · ⏸ fill pass (phase 2) → see anna-fill.md
+  system_stance: {stance: null, offstage_audience: null}   # held open by rule (fill 11/4, source: ssot_06_theme_system THE SCENE TESTS, the rider "Anna stays a question (cog, believer or mask)"; IF-02-06-05)
+  want_need:               # L6, CL16 · want med, need empty: Step 3 fails · ⏸ fill pass (phase 2) → see anna-fill.md
+    want: null
+    need: null
+    false_belief: null     # the 06 rider holds it open
+    need_kind: null
+    cost: null
+    fusion_beat: null
+
+L5_WOUND:
+  severity: null           # WOUND ruled open · ⏸ fill pass (phase 2) → see anna-fill.md
+  triggers: null           # ⏸ fill pass (phase 2) → see anna-fill.md
+  relational_refs: null    # ⏸ fill pass (phase 2) → see anna-fill.md
+  mentor_state: null       # med (absent) · ⏸ fill pass (phase 2) → see anna-fill.md
+  wound_kind: null         # low (injury_suffered, the skating death) · ⏸ fill pass (phase 2) → see anna-fill.md
+  wound_work: null         # ⏸ fill pass (phase 2) → see anna-fill.md
+
+L7_ORIGIN:
+  origin_class: legacy_track   # (fill 11/4, source: anna-colson-conway L7, Open question 3, ruled 9/23; victoria-midnight §Relationships "Legacy 'Colson'")
+  origin_stability: null   # ⏸ fill pass (phase 2) → see anna-fill.md
+  family_coherence: null   # ⏸ fill pass (phase 2) → see anna-fill.md
+  origin_wound_seed: null  # ⏸ fill pass (phase 2) → see anna-fill.md
+  tech_level: null         # ⏸ fill pass (phase 2) → see anna-fill.md
+  system_exposure: null    # med (opted_in_from_the_start) · ⏸ fill pass (phase 2) → see anna-fill.md
+  hereditary_predisposition: null   # ⏸ fill pass (phase 2) → see anna-fill.md
+  layers: null             # under system_exposure, med (the Administration / DCUS, WB-INS-0001) · ⏸ fill pass (phase 2) → see anna-fill.md
+  life_script: null        # low · ⏸ fill pass (phase 2) → see anna-fill.md
+  origin_event: null       # med, Chief call C2 (rec null: one continuous actor) · ⏸ fill pass (phase 2) → see anna-fill.md
+  # L7 antecedents (ssot_04_fabula ANNA COLSON'S ORIGIN, ruled 9/29): backstory_colson_skating_death -> backstory_colson_father_seeks_scientist -> backstory_colson_scientist_attachment -> backstory_colson_father_reclaims
+  # backstory_colson_copy_made begins the copy (anna_colson_copy, below), never this record
+
+L8_IMPRINT:
+  attachment_style: null   # med (secure; node Q4 "secure-institutional") · ⏸ fill pass (phase 2) → see anna-fill.md
+  attachment_style_score: null   # ⏸ fill pass (phase 2) → see anna-fill.md
+  attachment_dimensions: null    # ⏸ fill pass (phase 2) → see anna-fill.md
+  protest_behaviors: null        # ⏸ fill pass (phase 2) → see anna-fill.md
+  deactivating_strategies: null  # ⏸ fill pass (phase 2) → see anna-fill.md
+  appeasement_strategies: null   # ⏸ fill pass (phase 2) → see anna-fill.md
+  emotional_range: null          # ⏸ fill pass (phase 2) → see anna-fill.md
+  conditional_patterns: null     # med ([power_ascends]) · ⏸ fill pass (phase 2) → see anna-fill.md
+  imprint_flexibility: null      # low · ⏸ fill pass (phase 2) → see anna-fill.md
+  secure_base_object: null       # med (the_system) · ⏸ fill pass (phase 2) → see anna-fill.md
+
+L9_EROS:
+  status: n_a_by_design    # (fill 11/4, source: anna-colson-conway Open question 6, ruled 9/23; oxo-telling-profile T2, no POV); every L9 key reads n/a, generic by rule
+
+L10_SHADOW:
+  shadow_density: null     # withheld by design (shown in consequence only) · ⏸ fill pass (phase 2) → see anna-fill.md
+  projection_tendency: null      # ⏸ fill pass (phase 2) → see anna-fill.md
+  regression_pattern: null       # ⏸ fill pass (phase 2) → see anna-fill.md
+  shadow_content: null           # ⏸ fill pass (phase 2) → see anna-fill.md
+  dark_triad: null               # optional dial · ⏸ fill pass (phase 2) → see anna-fill.md
+  light_triad: null              # optional dial · ⏸ fill pass (phase 2) → see anna-fill.md
+  disinhibition_context: null    # ⏸ fill pass (phase 2) → see anna-fill.md
+
+L11_DESTINY:
+  growth_axis: null        # med (inequity, the element she holds) · ⏸ fill pass (phase 2) → see anna-fill.md
+  resistance_index: null   # ⏸ fill pass (phase 2) → see anna-fill.md
+  soul_evolution_archetype: null   # med (establishment_proof_of_concept) · ⏸ fill pass (phase 2) → see anna-fill.md
+  karmic_memory: null      # ⏸ fill pass (phase 2) → see anna-fill.md
+  growth_requirement: null # Steadfast · ⏸ fill pass (phase 2) → see anna-fill.md
+  arc_type: null           # Steadfast, the enum has no value (call C3) · ⏸ fill pass (phase 2) → see anna-fill.md
+  change_cause: null       # Steadfast, the enum has no value (call C3) · ⏸ fill pass (phase 2) → see anna-fill.md
+  catalyst_archetype: null # ⏸ fill pass (phase 2) → see anna-fill.md
+  rail_ref: [R3, R4]       # (fill 11/4, source: ssot_06_theme_system THE RAILS; IF-02-06-04)
+
+L12_FUNCTION:
+  dramatica_archetype: Impact Character   # (fill 11/4, source: oxo-storyform §4, ruled 8/24; anna-colson-conway L12)
+  ic_problem_element: Equity     # (fill 11/4, source: oxo-storyform §9 RS(MvI) column, reassigned to Anna; anna-colson-conway §Structure); the IC key
+  methodology_element: null      # ⏸ fill pass (phase 2) → see anna-fill.md
+  evaluation_element: null       # ⏸ fill pass (phase 2) → see anna-fill.md
+  purpose_element: null          # ⏸ fill pass (phase 2) → see anna-fill.md
+  touchstone: null               # ⏸ fill pass (phase 2) → see anna-fill.md
+  story_outcome: Failure         # (fill 11/4, source: oxo-storyform §9 Dynamics, series-wide)
+  story_judgement: Good          # (fill 11/4, source: oxo-storyform §9 Dynamics, series-wide)
+  limit_type: Optionlock         # (fill 11/4, source: oxo-storyform §9 Dynamics, series-wide)
+  resolve: Steadfast             # (fill 11/4, source: oxo-storyform §9 "IC Resolve Steadfast")
+  convention_role: {genre_role: null, actant_slot: object}   # (fill 11/4, source: ssot_04_fabula actant_role object in all four Colson events; integration protocol 1.2.1); advisory
+  necessity: not_applicable      # (fill 11/4, source: slice L12 rule, call 13, Protagonist-only; BVX.0064 §8)
+
+L12_DRAMATICA_EXTENDED:
+  ic_domain: Fixed Attitude      # (fill 11/4, source: BOLO 150, ruled 11/4; oxo-storyform §4, §9)
+  ic_concern: Memories           # (fill 11/4, source: oxo-storyform §4, ruled 9/23)
+  motivation_quad: null          # ⏸ fill pass (phase 2) → see anna-fill.md
+
+DERIVED:
+  basic_damage_resistance: null  # WILL, WOUND unset · ⏸ fill pass (phase 2) → see anna-fill.md
+  social_legibility: null        # SOCIAL, projection_tendency unset · ⏸ fill pass (phase 2) → see anna-fill.md
+  narrative_momentum: null       # DRIVE, resistance_index unset · ⏸ fill pass (phase 2) → see anna-fill.md
+  stress_threshold: null         # WILL, WOUND unset · ⏸ fill pass (phase 2) → see anna-fill.md
+  collapse_risk: null            # WOUND, shadow_density unset · ⏸ fill pass (phase 2) → see anna-fill.md
+  truth_exposure_index: null     # undefined while L9 is n/a by design · ⏸ fill pass (phase 2) → see anna-fill.md
+  expressive_range: null         # undefined while L9 is n/a by design · ⏸ fill pass (phase 2) → see anna-fill.md
+
+FLAGS:
+  SHADOW_DENIAL: null            # not evaluable, inputs unset · ⏸ fill pass (phase 2) → see anna-fill.md
+  TRUTH_VULNERABILITY: null      # not evaluable, inputs unset · ⏸ fill pass (phase 2) → see anna-fill.md
+  OPTIONLOCK_PROGRESSION: null   # not evaluable, inputs unset · ⏸ fill pass (phase 2) → see anna-fill.md
+  EARNED_JUDGEMENT: INACTIVE     # (fill 11/4, source: slice flag rule, dramatica_archetype = "Protagonist" is false)
+  KINSHIP_COLLAPSE: null         # not evaluable, inputs unset · ⏸ fill pass (phase 2) → see anna-fill.md
+```
+
 **Anna Colson (the copy) · record stub (IF catalog call 5, ruled 2026-10-05).** The fabula gives the copy her own origin event, `backstory_colson_copy_made`. She is a person apart from Anna Colson. She gets her own record, never a state diff on the original. Only L7 is authored. L8, L9 and L10 wait on the author. A relationship record, not either character record, holds the tie between the two Colsons.
 
 ```
@@ -1147,6 +1449,7 @@ Numbered calls surfaced by the five new distills' own "For the character system"
 
 ## Version history
 
+- **3.6.0 · 2026-11-04** — Chief: go (Anna slice, BOLO 176). New section THE INSTANCE · Anna-Colson Conway, the second slice: record `anna_colson_conway` (the IC), status draft, version 0.2.0. Nineteen of 81 layer fields filled from source, each tagged `(fill 11/4, source: …)`: 17 values (`psychology_stack`, `physiology_stack`, `sociology_stack`, `civic_standing` category/by_whom/ref, `voice_sheet`, `origin_class`, `rail_ref`, `dramatica_archetype`, `ic_problem_element`, `story_outcome`, `story_judgement`, `limit_type`, `resolve`, `convention_role`, `necessity`, `ic_domain` Fixed Attitude, `ic_concern`) and 2 held by rule (L9 n/a by design; `system_stance` held open by the 06 rider). The other 62 carry `⏸ fill pass (phase 2) → see anna-fill.md`. The Step 1 gate is red and canon holds no layer number for her, so no derived statistic computes (TEI and Expressive Range are undefined while L9 is n/a), EARNED_JUDGEMENT reads INACTIVE, and the other four flags are not evaluable. Step 3 fails: `want_need.need` is empty (she is Steadfast). The copy keeps her own stub. Proposals and calls: `_tools/bolostatus/work/176/anna-fill.md`.
 - **3.5.2 · 2026-11-04** — Chief: go (Tori med recs, BOLO 176). Thirteen medium-confidence recs applied as written, each tagged `(fill 11/4, med, ruled Chief "go": source …)`: `body_capital`, `assigned_labels`, `pair_register`, `standing`, L3 `disclosure_posture`, `voice_sheet`, `coping_strategy`, `relational_refs` (now `jebb_midnight`, carded at `_CANON_NODES/jebb-midnight.md`), `mentor_state`, `layers`, `life_script`, `deactivating_strategies`, `desire_object`. The low and no-source fields wait for the fabula phase; the three chart fields stay held. No derived statistic changes.
 - **3.5.1 · 2026-11-04** — Chief: go (VM fill pass, BOLO 176). Eleven of Tori's parked fields filled from source, each tagged `(fill 11/4, source: …)`: `psychology_stack`, `physiology_stack`, `sociology_stack`, `civic_standing` (by_whom, catalog_ref), `system_stance`, `wound_work`, `want_need` (need, false_belief), `hereditary_predisposition`, `arc_type`, `change_cause`, `convention_role`. Every other parked field keeps its marker and points to `_tools/bolostatus/work/176/tori-fill.md`, which holds each proposal with its source and confidence. Step 3 (`want_need.need`) passes. No derived statistic changes; TEI 20 and Expressive Range 4 carried into her canon nodes.
 - **3.5.0 · 2026-11-04** — Chief: go recs path cleanup (BOLO 176), and Chief: go (normalized store, BOLO 176). Truth Exposure Index now reads `12 - shame_index` (ruled 10/5 batch D, applied here); Tori's value is 20 · scale column added to the layer table · the normalized store ruled as a design rule, not built · L2b body shape registered as a field module under L2 · the six alias rows that pointed at `venue_belonging` now point at `community_membership`, and its own row is gone (alias table 139 → 138) · IF-02-06-03 points at L3 `knowledge_map` · title and purpose carry the official name LEECHSEED (ruled 11/4) · status line refreshed · the pipeline doc renamed to ssot_02.

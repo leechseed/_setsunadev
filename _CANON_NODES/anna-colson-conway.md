@@ -2,7 +2,7 @@
 id: anna_colson_conway
 entity: Anna Colson Conway
 entity_id: anna_colson_conway
-title: Anna Colson Conway
+title: Anna-Colson Conway
 type: character
 kind: character
 ip: OVEREXITOUT
@@ -13,7 +13,8 @@ resolve: Steadfast
 status: ruled on the recommendations 2026-09-23 (Chief: "take the recs") — the chart is a placeholder until an astrology ingest runs; every ⧗ below stands as the ruled answer
 blocking: none — IC ruling CANON 2026-08-24 ([[oxo-storyform]] §4, BOLO 46 phase 1) and telling-profile ruling CANON 2026-09-23 ([[oxo-telling-profile]] T2). This node's proposed fields (chart, origin, body, voice, handle) are ⧗ and await Chief's ruling — BOLO 46 phase 2.
 created: 2026-09-23
-aliases: [Anna, Colson, "Colson (Red Hills legacy)"]
+aliases: [Anna, Colson, "Anna Colson Conway", "Anna Colson", "Colson (Red Hills legacy)"]
+leechseed_record: "anna_colson_conway — vertical slice 3.6.0, THE INSTANCE · Anna-Colson Conway (draft 0.2.0, 2026-11-04); proposals in _tools/bolostatus/work/176/anna-fill.md"
 links:
   - "[[victoria-midnight]]"
   - "[[oxo-storyform]]"
@@ -25,11 +26,11 @@ feeds:
   - "[[oxo-storyform]] §4 IC throughline, §6 RS throughline, §9 engine pass — the ruled fields this node transcribes"
   - "[[oxo-telling-profile]] T2, T6 — the visibility and register rules this node derives Anna's on-screen presence from"
   - "[[BVX.0064]] Ch.9 (The Dimensional Character), Ch.17 (Cast Design) — the cast-design method behind the IC ruling"
-sources: 5 canon files + BVX.0064 (see Sources)
-last_consolidated: 2026-09-23
+sources: 5 canon files + BVX.0064, widened 11/4 to the fabula origin chain, the theme rails and the LEECHSEED slice (see Sources)
+last_consolidated: 2026-11-04
 ---
 
-# Anna Colson Conway
+# Anna-Colson Conway
 
 > **She is not an argument. She is a demonstration.** — [[oxo-storyform]] §4
 
@@ -56,7 +57,7 @@ Tori has to learn this. Anna has already stopped needing to learn anything.
 | Full name | Anna Colson Conway |
 | Narrative role | Impact Character |
 | Resolve | **Steadfast** — [[oxo-storyform]] §9 Dynamics line ("IC Resolve Steadfast") |
-| IC Domain | **Fixed Attitude** — [[oxo-storyform]] §9, the ruled reassignment of the engine's RS(MvI) slot to Anna |
+| IC Domain | **Fixed Attitude** — [[oxo-storyform]] §9, the ruled reassignment of the engine's RS(MvI) slot to Anna; **re-ruled 2026-11-04 (BOLO 150, the Docket)** over the NCP export, whose IC storypoints still read the engine's IC column (Manipulation) and need a re-export |
 | IC Concern | **Memories** — same reassignment. This supersedes two earlier readings in the record: §4's own VERIFY guess ("Innermost Desires," which the engine actually seats as this throughline's *Signpost 2*, not its Concern) and §2's pre-rotation table ("Developing a Plan," whose content the same ruling sends to **OS — the Factions**, not to Anna) |
 | Problem → Solution | **Equity → Inequity** — identical to the MC and RS columns; [[oxo-storyform]] §9 notes "the story's argument is one argument" |
 | Symptom → Response | Projection → Speculation |
@@ -122,12 +123,33 @@ Every entry below states where Anna and Tori collide or mirror on the RS axis (F
 | L4 WILL | Steadfast | Canon: [[oxo-storyform]] §9 IC Resolve | Tori's L4=14, pressure met and resisted. Anna's WILL never registers pressure as pressure — Fixed Attitude mechanically: she does not argue, because argument needs felt resistance |
 | L5 WOUND | ⧗ open | Not documented for any IC here | Tori's wound: "the knowledge that she chose not to listen." A Steadfast IC may not need one; recommend leaving open, not inventing (Q5) |
 | L6 DRIVE | ascent, undented | Canon-adjacent: [[BVX.0064]] "same beat, two vocabularies," M3 initiation | Tori's DRIVE=12, "the crash dented the tank." Anna's drive is undented ambition — exact inversion, why they read as rivals |
-| L7 ORIGIN | ⧗ legacy-track | Proposed | Tori: working/criminal-adjacent. Anna, proposed: admitted and groomed, not salvaged (Q3) |
+| L7 ORIGIN | legacy-track (ruled 9/23, Q3); origin chain filled 9/29 | Ruled; [ssot_04_fabula](../ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md) §ANNA COLSON'S ORIGIN: an ice-skating death, a rebuild "but better", the scientist's attachment, the father's reclaim | Tori: working/criminal-adjacent. Anna, proposed: admitted and groomed, not salvaged (Q3) |
 | L8 IMPRINT | ⧗ secure-institutional | Proposed | Tori's is anchored to a person (Jebb). Anna's, proposed, is anchored to the system itself (Q4) |
 | L9 EROS | ⧗ open — T2 tension | Not documented | Tori's L9 is AUTHORED, deeply interior. [[oxo-telling-profile]] T2 forbids Anna's interiority — an equivalent L9 may contradict the no-POV ruling. Recommend N/A-by-design (Q6) |
 | L10 SHADOW | ⧗ withheld by design | Reasoned from T2 | Tori's SHADOW is legible through her own interiority. Anna's, if any, only shows externally, in consequence, never confession — the audience is denied the reassurance of her guilt |
 | L11 DESTINY | establishment's proof of concept | Canon-adjacent: [[BVX.0064]] "The Engine — Power/Escalation" | Tori's L11 is "tactical_disruptor." Anna is the inverse: the case the Administration points to when it says the system works |
 | L12 FUNCTION | dramatica_archetype: Impact Character; ic_problem_element: Equity; resolve: Steadfast | Dramatica direct, no astrology feed | Identical Problem element to Tori's L12. [[oxo-storyform]]: "the story's argument is one argument" |
+
+### On record in LEECHSEED (2026-11-04, slice 3.6.0)
+
+Her record is `anna_colson_conway`, in the vertical slice's section **THE INSTANCE · Anna-Colson Conway, the second slice** (draft 0.2.0). Every proposal, its source and its confidence: [anna-fill.md](../_tools/bolostatus/work/176/anna-fill.md).
+
+| What | Value on record | Source |
+|---|---|---|
+| Step 1 gate | **red**: no locked authority document, Dramatica ingest or astrology ingest | the slice, Step 1 protocol |
+| Filled | 19 of 81 layer fields (17 values, 2 held by rule) | anna-fill.md §1 |
+| L7 `origin_class` | legacy_track | this node, Q3 |
+| L7 antecedents | `backstory_colson_skating_death` → `_father_seeks_scientist` → `_scientist_attachment` → `_father_reclaims` | [ssot_04_fabula](../ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md) §ANNA COLSON'S ORIGIN, ruled 9/29 |
+| L3 `civic_standing` | Verified, ascending, by the Administration (WB-INS-0001) | [[oxo-scene-card-M2-row9]], [[oxo-telling-profile]] T5 |
+| L3 `voice_sheet` | the Feed's register (Axiom), adopted as her own | this node, Q7 |
+| L4 `system_stance` | held open: "Anna stays a question (cog, believer or mask)" | ssot_06_theme_system, the rider (IF-02-06-05) |
+| L9 | n/a by design | this node, Q6; [[oxo-telling-profile]] T2 |
+| L11 `rail_ref` | R3, R4 | ssot_06_theme_system THE RAILS |
+| L12 | Impact Character · ic_problem Equity · Steadfast · Failure / Good · Optionlock · actant_slot object · ic_domain **Fixed Attitude** · ic_concern Memories | [[oxo-storyform]] §4, §9; BOLO 150 (11/4) |
+| Derived statistics | **none computable**: no layer number exists for her in canon; TEI and Expressive Range are undefined while L9 is n/a | anna-fill.md §3 |
+| Step 3 (`want_need.need`) | **fails**: she is Steadfast, and the slice has no rule for a character who already holds her solution | anna-fill.md §2, call C3 |
+
+**She is not the copy.** The fabula gives the scientist's secret copy her own record, `anna_colson_copy`, "apart from" this node (IF-02-04-17). This node is the Colson who died, was built back "but better", and was reclaimed by her father.
 
 ---
 
@@ -189,7 +211,7 @@ Every entry below states where Anna and Tori collide or mirror on the RS axis (F
 
 ## Sources
 
-[`victoria-midnight.md`](victoria-midnight.md) · [`oxo-storyform.md`](oxo-storyform.md) §§2, 4, 6, 9 · [`oxo-telling-profile.md`](oxo-telling-profile.md) T2, T5, T6 · [`oxo-scene-card-M2-row9.md`](oxo-scene-card-M2-row9.md) · [`BVX.0064.md`](../_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0064.md) §§1, 3, 4, 8 (McKee, *Character*, distilled from the Introduction, Ch.9 "The Dimensional Character," and Ch.17 "Cast Design")
+[`victoria-midnight.md`](victoria-midnight.md) · [`oxo-storyform.md`](oxo-storyform.md) §§2, 4, 6, 9 · [`oxo-telling-profile.md`](oxo-telling-profile.md) T2, T5, T6 · [`oxo-scene-card-M2-row9.md`](oxo-scene-card-M2-row9.md) · [`BVX.0064.md`](../_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0064.md) §§1, 3, 4, 8 (McKee, *Character*, distilled from the Introduction, Ch.9 "The Dimensional Character," and Ch.17 "Cast Design") · **added 11/4:** [`ssot_04_fabula.md`](../ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md) §ANNA COLSON'S ORIGIN · [`ssot_06_theme_system.md`](../ShroomsQ/_CANON/_SSOT/06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md) THE RAILS, THE SCENE TESTS · [`dcus-standards-body.md`](dcus-standards-body.md) · the M4–M6 skeleton cards · [the LEECHSEED slice](../ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_character_systems_vertical_slice.md) 3.6.0
 
 ---
 
