@@ -1,6 +1,7 @@
 {
  "hotkey": "ctrl+alt+space",
- "model": "distil-large-v3",
+ "model": "large-v3-turbo",
+ "model_note": "Chief 11/4 (the Docket, BOLO 63: \"Yes, swap it\"): turbo replaces distil-large-v3 at JUDY's next launch. Back: set distil-large-v3.",
  "device": "auto",
  "compute_type": "auto",
  "input_device": null,
