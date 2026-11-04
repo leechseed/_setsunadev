@@ -36,7 +36,11 @@ KINDS = {"typed": (300, "gray", True, True), "hand": (300, "color", True, False)
 def next_dir(kind):
     day = time.strftime("%Y-%m-%d")
     os.makedirs(OUT, exist_ok=True)
-    n = 1 + sum(1 for d in os.listdir(OUT) if d.startswith(day))
+    # 11/4: filed scans leave scans/ for the intake bins (file_apply.py), so number past every folder of the day anywhere
+    intake = os.path.dirname(os.path.dirname(OUT))
+    seen = [x for b in ("paper/scans", "paper", "scripts", "shelf", "receipts", "photos", "other")
+            if os.path.isdir(os.path.join(intake, b)) for x in os.listdir(os.path.join(intake, b)) if x.startswith(day + "_")]
+    n = 1 + max([int(x[11:14]) for x in seen if x[11:14].isdigit()] or [0])
     d = os.path.join(OUT, f"{day}_{n:03d}_{kind}")
     os.makedirs(d)
     return d

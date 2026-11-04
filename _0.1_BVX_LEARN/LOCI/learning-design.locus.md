@@ -9,7 +9,7 @@ tier: reference
 
 # Learning design: the charts Chief kept
 
-**Where they came from.** Nine printed sheets Chief kept as visual models that inspired him, scanned 11/4 (Chief: "a bunch of visual models that I was inspired by"). Scan: `_PRIVATE/intake/paper/scans/2026-11-04_015_hand/read.pdf`, page order below. Filed here on Chief's "go", 11/4. Research, not canon.
+**Where they came from.** Nine printed sheets Chief kept as visual models that inspired him, scanned 11/4 (Chief: "a bunch of visual models that I was inspired by"). Scan: `_PRIVATE/intake/other/2026-11-04_015_hand/read.pdf`, page order below. Filed here on Chief's "go", 11/4. Research, not canon.
 
 | Pages | Model | What it says | Where it can work in the Command |
 |---|---|---|---|
