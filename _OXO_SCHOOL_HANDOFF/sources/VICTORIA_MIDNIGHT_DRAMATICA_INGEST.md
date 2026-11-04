@@ -1,3 +1,5 @@
+LINEAGE (ruled 11/4, OXO kickoff call 9): the live Tori record is `_CANON_NODES/victoria-midnight.md` plus the 11/4 cells.
+
 ---
 
 ## type: ingest_template category: dramatica version: 1.0.0 last_updated: 2026-03-03 applies_to: [OVEREXITOUT] status: draft purpose: "Dramatica Ingest for Victoria Midnight. Phase 4 validation run." dependencies: ["ssot_02_character_dramatica_integration"]

@@ -1,7 +1,7 @@
 ---
 type: ssot_01_narrative_frameworks
 category: story_registry
-version: 1.1.0
+version: 1.1.1
 tier: narratology
 last_updated: 2026-10-05
 applies_to: [every story in the LEECHSEED universe]
@@ -25,7 +25,7 @@ rung: standard
 
 | Story | Aliases | Genre | Era | Where | Medium | Status | Storyform | Nodes · data |
 |---|---|---|---|---|---|---|---|---|
-| **OVEREXITOUT** (`oxo`) | *The Outliers* (series title) · OXO · lead Tori was first built as **Ariel** (Apple Notes 2025) | **G1: cultcore** (RULED 2026-09-29, BOLO 91, Apple Notes 2026) | 2 · DCUS | Earth, the Delta Coast (DCUS) | series — ⏸ story rows fill (phase 2) | **active**: storyform locked, systems built, proof scenes ruled | [oxo-storyform.md](../../../../_CANON_NODES/oxo-storyform.md) | `_CANON_NODES/oxo-*` · tracking [oxo.yaml](../../_TRACKING/oxo.yaml) |
+| **OVEREXITOUT** (`oxo`) | *The Outliers* (title; the series design is lineage) · OXO · lead Tori was first built as **Ariel** (Apple Notes 2025) | **G1: cultcore** (RULED 2026-09-29, BOLO 91, Apple Notes 2026) | 2 · DCUS | Earth, the Delta Coast (DCUS) | one feature; M1–M6 as acts (ruled 11/4, OXO kickoff call 1); series design parked as lineage | **active**: storyform locked, systems built, proof scenes ruled | [oxo-storyform.md](../../../../_CANON_NODES/oxo-storyform.md) | `_CANON_NODES/oxo-*` · tracking [oxo.yaml](../../_TRACKING/oxo.yaml) |
 | **EVIL CHECK** (`evil_check`) | — | ⏸ story rows fill (phase 2) | 2 · DCUS | Earth (same universe as OXO) | ⏸ story rows fill (phase 2) | **reports in**: three Dramatica reports held; loads onto the fabula in wave 2 (77-D) | Dramatica reports, `Q:/_PDF_DROP` (Story Guide · Character · Plot and Themes) | none yet |
 | **LAKAD** (`lakad`) | codename, "for now" (2/9) | ⏸ story rows fill (phase 2) | 3 · LAKAD | cislunar space | ⏸ story rows fill (phase 2) | **named only** | none | none |
 | **ASTRO7EX** (`astro7ex`) | — | ⏸ story rows fill (phase 2) | 4 · ASTRO7EX | the Moon | ⏸ story rows fill (phase 2) | **storyform drafted** (legacy Joplin notes); not yet in the SSOT systems | Dramatica reports in `.ASTRO7EX.SYNC.JOPLIN/` (MC Vivian · IC the MODS · Goal Understanding) | `_CANON_NODES/astro7ex-standards-body.md` · `astro7ex-space-cuisine-seed.md` |
@@ -69,7 +69,7 @@ A new story fills: `id` (short, lowercase, used by tracking files and the `stori
 
 Each open item below is parked by name; Chief rules each in its pass.
 
-- **Medium per story** — `⏸ story rows fill (phase 2)`. OXO reads as a series; no ruling fixes the medium.
+- **Medium per story** — `⏸ story rows fill (phase 2)`. OXO's medium is ruled: one feature (11/4, OXO kickoff call 1).
 - **Genre per story** — `⏸ story rows fill (phase 2)`. Only OXO carries a genre (G1: cultcore).
 - **ASTRO7EX into the SSOT systems** — `⏸ story rows fill (phase 2)`. Its Joplin storyform is not yet read into the fabula, the registry, or a tracking file.
 - **The hinge** — `⏸ fabula placements (phase 2)`. The Moon Severance and the AI Collapse wait for Chief to place them on the world clock.
@@ -78,6 +78,7 @@ Each open item below is parked by name; Chief rules each in its pass.
 
 ## Version history
 
+- **1.1.1 — 2026-11-04.** OXO row: medium ruled one feature, M1–M6 as acts; *The Outliers* series design parked as lineage (Chief "go", OXO kickoff call 1).
 - **1.1.0 — 2026-10-05.** BOLO 102 stage 2 (Chief: "My word"): the Sockett's PORTABLE flag lives in the 05 catalog's `portable:` field, and the LEECHSEED row points there (call 3).
 - **1.0.1 — 2026-10-05.** BOLO 102 batch C (Chief: "all recs"): rule for a vignette's next VG ID written under Intake (C30).
 - **1.0.0 — 2026-10-04 (BOLO 100 registers batch 1, Chief "rec").** Three stale marks stripped (TREMOR CULT two readings, era 5, G1 line). Blank-slot rule written into THE ROW. Per-story blanks parked as `⏸ story rows fill (phase 2)`; hinge and Civil War placements parked as `⏸ fabula placements (phase 2)`. OPEN list closed to one line per item.

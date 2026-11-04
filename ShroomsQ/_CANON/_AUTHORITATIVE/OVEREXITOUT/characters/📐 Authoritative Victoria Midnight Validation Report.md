@@ -1,3 +1,5 @@
+LINEAGE (ruled 11/4, OXO kickoff call 9): the live Tori record is `_CANON_NODES/victoria-midnight.md` plus the 11/4 cells.
+
 ---
 
 ## type: validation_report category: pipeline_test version: 1.0.0 last_updated: 2026-03-03 applies_to: [OVEREXITOUT] status: complete purpose: "Phase 4 validation report for the LEECHSEED character pipeline. Tests the complete system against Victoria Midnight's authoritative document and existing Vertical Slice."

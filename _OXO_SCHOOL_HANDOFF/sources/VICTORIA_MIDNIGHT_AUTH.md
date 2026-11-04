@@ -1,3 +1,5 @@
+LINEAGE (ruled 11/4, OXO kickoff call 9): the live Tori record is `_CANON_NODES/victoria-midnight.md` plus the 11/4 cells.
+
 ---
 type: authoritative
 story: OVEREXITOUT
