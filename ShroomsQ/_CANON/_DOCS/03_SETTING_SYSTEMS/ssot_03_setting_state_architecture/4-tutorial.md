@@ -18,7 +18,7 @@ You will write Checkpoint 2 of the Delta Coast Ultra School (DCUS) rename lattic
 
 1. **Know the base.** The DCUS base slice is written at the current era: the Administration, the Bishops and the Feed. Its header says live name "Delta Coast Ultra School (DCUS)".
 2. **Name the moment.** The founding name Skeeter Creek is sanded to Red Hills. Write `state_id: dcus_red_hills_rename` and `place_id: dcus`.
-3. **Write the origin event.** No fabula record exists. Write `backstory_red_hills_rename ⏸ DCUS rename lattice fill pass (phase 2)`. Never leave it blank.
+3. **Write the origin event.** No fabula record exists. Write `skeeter_creek_backstory_red_hills_rename ⏸ DCUS rename lattice fill pass (phase 2)`. Never leave it blank.
 4. **Set the story fields.** `told_at: []`, because the state is true but offstage. `movement: "backstory"`. Add `state_version: "1.0"` and `base_slice_version: "1.4.1"`.
 5. **Write the layer diff.** This checkpoint is earlier than the base, so it diffs backward. Add S5 entry `skeeter_creek_sanded_to_red_hills`. Set S6 to the grandfather-versus-son ownership war, pre-Bishop. Set S8 to the forming alumni-legacy bloc.
 6. **Park what the source parks.** S9 and S10 values carry the `⏸` phase 2 mark. Copy that mark, not an invented value.

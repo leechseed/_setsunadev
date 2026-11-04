@@ -9,7 +9,7 @@
     "narratives": [
       {
         "id": "oxo_primary_v1",
-        "title": "OXO Primary Storyform (v2.0, PROPOSED 11/4 remap frame, BOLO 176; not canon until Chief checks)",
+        "title": "OXO Primary Storyform (v2.0, the 11/4 remap frame, BOLO 176; CLOSED 11/4: the remap is ruled, Dramatica re-entry still to confirm the cells)",
         "subtext": {
           "perspectives": [
             {
@@ -17,7 +17,7 @@
               "pov": "i",
               "author_structural_pov": "i",
               "summary": "Main Character: Victoria \"Tori\" Midnight",
-              "storytelling": "Tori's personal story is Situation / The Past: the engine's OS column, which the 9/23 remap puts on the MC (section 9 table, row 1). The system forecasts her; she intervenes (Interdiction vs. Prediction, section 3). PROPOSED, provisional."
+              "storytelling": "Tori's personal story is Situation / The Past: the engine's OS column, which the 9/23 remap puts on the MC (section 9 table, row 1). The system forecasts her; she intervenes (Interdiction vs. Prediction, section 3). Ruled 11/4 (remap); cells provisional until the Dramatica re-entry."
             },
             {
               "id": "persp_ic_anna",
@@ -31,14 +31,14 @@
               "pov": "we",
               "author_structural_pov": "we",
               "summary": "Relationship Story: Victoria Midnight <-> Anna-Colson Conway",
-              "storytelling": "The rivalry lives in Activity / Understanding: the engine's MC column, which the 9/23 remap puts on the RS (section 9 table, row 4; section 6 'RS in Activity'). The relationship is the competition (section 6). PROPOSED, provisional."
+              "storytelling": "The rivalry lives in Activity / Understanding: the engine's MC column, which the 9/23 remap puts on the RS (section 9 table, row 4; section 6 'RS in Activity'). The relationship is the competition (section 6). Ruled 11/4 (remap); cells provisional until the Dramatica re-entry."
             },
             {
               "id": "persp_os_factions",
               "pov": "they",
               "author_structural_pov": "they",
               "summary": "Objective Story: the Factions",
-              "storytelling": "The world carries Manipulation / Developing a Plan: the engine's IC column, which the 9/23 remap sends to the OS (section 9 table, row 2; anna-colson-conway IC Concern row; section 5 os_domain; intake call 9, 10/9). The Factions rewrite people into Assets (section 5). PROPOSED, provisional."
+              "storytelling": "The world carries Manipulation / Developing a Plan: the engine's IC column, which the 9/23 remap sends to the OS (section 9 table, row 2; anna-colson-conway IC Concern row; section 5 os_domain; intake call 9, 10/9). The Factions rewrite people into Assets (section 5). Ruled 11/4 (remap); cells provisional until the Dramatica re-entry."
             }
           ],
           "players": [
@@ -149,7 +149,7 @@
               "method": "universe",
               "illustration": "",
               "summary": "Situation",
-              "storytelling": "Forced: the MC and IC domains are a dynamic pair, and the IC is Fixed Attitude. Engine OS column (section 9), carried to the MC by the 9/23 remap. PROPOSED.",
+              "storytelling": "Forced: the MC and IC domains are a dynamic pair, and the IC is Fixed Attitude. Engine OS column (section 9), carried to the MC by the 9/23 remap. Ruled 11/4 (remap).",
               "perspectives": [
                 {
                   "perspective_id": "persp_mc_tori"
@@ -162,7 +162,7 @@
               "method": "past",
               "illustration": "",
               "summary": "The Past",
-              "storytelling": "Section 3 mc_concern, corrected 8/24 (chart fact). Engine OS column (section 9), carried to the MC by the 9/23 remap. PROPOSED.",
+              "storytelling": "Section 3 mc_concern, corrected 8/24 (chart fact). Engine OS column (section 9), carried to the MC by the 9/23 remap. Ruled 11/4 (remap).",
               "perspectives": [
                 {
                   "perspective_id": "persp_mc_tori"
@@ -175,7 +175,7 @@
               "method": "interdiction",
               "illustration": "",
               "summary": "Interdiction vs. Prediction",
-              "storytelling": "Section 3 mc_issue and thematic conflict. Engine OS column (section 9), carried to the MC by the 9/23 remap. PROPOSED.",
+              "storytelling": "Section 3 mc_issue and thematic conflict. Engine OS column (section 9), carried to the MC by the 9/23 remap. Ruled 11/4 (remap).",
               "perspectives": [
                 {
                   "perspective_id": "persp_mc_tori"
@@ -188,7 +188,7 @@
               "method": "equity",
               "illustration": "",
               "summary": "Equity",
-              "storytelling": "Section 3 mc_problem LOCKED. Engine OS column (section 9), carried to the MC by the 9/23 remap. PROPOSED.",
+              "storytelling": "Section 3 mc_problem LOCKED. Engine OS column (section 9), carried to the MC by the 9/23 remap. Ruled 11/4 (remap).",
               "perspectives": [
                 {
                   "perspective_id": "persp_mc_tori"
@@ -201,7 +201,7 @@
               "method": "inequity",
               "illustration": "",
               "summary": "Inequity",
-              "storytelling": "Section 3 mc_solution LOCKED. Engine OS column (section 9), carried to the MC by the 9/23 remap. PROPOSED.",
+              "storytelling": "Section 3 mc_solution LOCKED. Engine OS column (section 9), carried to the MC by the 9/23 remap. Ruled 11/4 (remap).",
               "perspectives": [
                 {
                   "perspective_id": "persp_mc_tori"
@@ -214,7 +214,7 @@
               "method": "ability",
               "illustration": "",
               "summary": "Ability (engine Symptom)",
-              "storytelling": "Engine OS column (section 9), carried to the MC by the 9/23 remap. PROPOSED. Reverses section 3's pre-8/24 Desire/Ability order, as section 9 already noted.",
+              "storytelling": "Engine OS column (section 9), carried to the MC by the 9/23 remap. Ruled 11/4 (remap). Reverses section 3's pre-8/24 Desire/Ability order, as section 9 already noted.",
               "perspectives": [
                 {
                   "perspective_id": "persp_mc_tori"
@@ -227,7 +227,7 @@
               "method": "desire",
               "illustration": "",
               "summary": "Desire (engine Response)",
-              "storytelling": "Engine OS column (section 9), carried to the MC by the 9/23 remap. PROPOSED.",
+              "storytelling": "Engine OS column (section 9), carried to the MC by the 9/23 remap. Ruled 11/4 (remap).",
               "perspectives": [
                 {
                   "perspective_id": "persp_mc_tori"
@@ -240,7 +240,7 @@
               "method": "present",
               "illustration": "",
               "summary": "The Present",
-              "storytelling": "Engine OS column (section 9), carried to the MC by the 9/23 remap. PROPOSED.",
+              "storytelling": "Engine OS column (section 9), carried to the MC by the 9/23 remap. Ruled 11/4 (remap).",
               "perspectives": [
                 {
                   "perspective_id": "persp_mc_tori"

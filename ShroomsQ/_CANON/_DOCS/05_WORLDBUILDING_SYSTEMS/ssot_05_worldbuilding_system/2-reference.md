@@ -308,7 +308,7 @@ DCUS narration is marked phase 2. The catalog proved itself on DCUS: filled from
 | WB-INS-0001 The Administration | INS | backstory to M4 | backstory_dcus_rebrand (inferred) | nation-state (inferred) |
 | WB-GRP-0001 The Bishops | GRP | backstory to M4 | backstory_dcus_rebrand | locality |
 | WB-INS-0002 Delta Coast Ultra School | INS | backstory to M4 | backstory_dcus_rebrand | locality |
-| WB-ARC-0001 Southern Gothic prestige brick | ARC | backstory to M4 | backstory_skeeter_creek_founding | locality |
+| WB-ARC-0001 Southern Gothic prestige brick | ARC | backstory to M4 | skeeter_creek_backstory_skeeter_creek_founding | locality |
 | WB-CUS-0001 The Star-Rating | CUS | M2 to M4 | backstory_dcus_rebrand (inferred) | locality |
 | WB-TEC-0001 The Feed (DCUS) | TEC | M2 to M4 | backstory_dcus_rebrand (inferred) | locality |
 | WB-WDR-0001 Feed-linked clothing | WDR | M2 to M4 | none in canon | locality |
