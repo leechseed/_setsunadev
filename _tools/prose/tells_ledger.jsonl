@@ -602,3 +602,4 @@
 {"ts": "2026-11-04 01:27", "sid": "e98f0b1b", "words": 326, "tells": 8, "per_1k": 24.5, "families": {"other": 3, "passive": 5}, "rules": {"long-sentence": 3, "passive": 5}}
 {"ts": "2026-11-04 01:28", "sid": "e98f0b1b", "words": 326, "tells": 8, "per_1k": 24.5, "families": {"other": 3, "passive": 5}, "rules": {"long-sentence": 3, "passive": 5}}
 {"ts": "2026-11-04 01:39", "sid": "e98f0b1b", "words": 242, "tells": 5, "per_1k": 20.7, "families": {"passive": 5}, "rules": {"passive": 5}}
+{"ts": "2026-11-04 01:40", "sid": "e98f0b1b", "words": 247, "tells": 3, "per_1k": 12.1, "families": {"passive": 1, "other": 2}, "rules": {"passive": 1, "long-sentence": 2}}
