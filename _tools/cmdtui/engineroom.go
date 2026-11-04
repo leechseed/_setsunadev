@@ -64,11 +64,14 @@ func engineroomCmd(args []string) {
 			os.Exit(1)
 		}
 	}
-	if err := exec.Command("cmd", "/c", "start", "", engineRoomURL).Start(); err != nil {
-		fmt.Println(sDim.Render("  the Engine Room is up but the browser did not open: " + err.Error()))
-		os.Exit(1)
+	// its own app window, the way the Console opens (msedge --app); a plain browser tab if Edge will not start
+	if err := exec.Command("cmd", "/c", "start", "", "msedge", "--app="+engineRoomURL, "--window-size=1400,950").Start(); err != nil {
+		if err2 := exec.Command("cmd", "/c", "start", "", engineRoomURL).Start(); err2 != nil {
+			fmt.Println(sDim.Render("  the Engine Room is up but no window opened: " + err2.Error()))
+			os.Exit(1)
+		}
 	}
-	fmt.Println(sDim.Render("  the Engine Room · " + engineRoomURL))
+	fmt.Println(sDim.Render("  the Engine Room · its own window · " + engineRoomURL))
 }
 
 func engineRoomUp() bool {

@@ -397,6 +397,10 @@ func main() {
 		fmt.Println(sOK.Render("Wake up, Neo...") + sDim.Render("  (say: wake up, neo)"))
 		return
 	}
+	if strings.TrimSuffix(strings.ToLower(filepath.Base(os.Args[0])), ".exe") == "engineroom" { // the Engine Room as its own .exe (Chief 11/4)
+		engineroomCmd(os.Args[1:])
+		return
+	}
 	if strings.TrimSuffix(strings.ToLower(filepath.Base(os.Args[0])), ".exe") == "kenshi" { // "Kenshi Watanabi" (Chief 10/19)
 		kenshiCmd(os.Args[1:], kenshiWords(os.Args[1:]))
 		return
