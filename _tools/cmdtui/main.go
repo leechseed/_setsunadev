@@ -453,6 +453,8 @@ func main() {
 		tropesCmd(os.Args[2:])
 	case "europatch":
 		europatchCmd(os.Args[2:])
+	case "engineroom":
+		engineroomCmd(os.Args[2:])
 	case leechseedVerb, "leechseed":
 		leechseedCmd(os.Args[2:])
 	case "review":
@@ -479,6 +481,7 @@ func main() {
 		fmt.Fprintln(w, "  "+sAcc.Render("recall")+" ranked search over _CACHE, _LOG, memory, SOP and STATE: where did we rule X (-n N · --source S · --rebuild · --json)")
 		fmt.Fprintln(w, "  "+sAcc.Render("lookalike")+" one page's layout skeleton: landmarks, headings, grid/flex, colors, fonts, components (<url|file> · --json · --out F · --dry-run)")
 		fmt.Fprintln(w, "  "+sAcc.Render("tropes")+" build the trope system glass and open it in the Console's Tropes pane (--json · --print · --dry-run; page in _tools/tropes/glass)")
+		fmt.Fprintln(w, "  "+sAcc.Render("engineroom")+" the Engine Room, the whole Venture Engine: the gate meter on :8796 (--json [--rows] · --print · --dry-run)")
 		fmt.Fprintln(w, "  "+sAcc.Render("europatch")+" the patch bay: open it in the Console · roll <patch|default|preset:NAME> --seed N · modules · presets · check · build (--json)")
 		fmt.Fprintln(w, "  "+sAcc.Render(leechseedVerb)+" the character console (LEECHSEED): open the Console pane · extract (--json: characters, counts, gates · --print · --dry-run)")
 		fmt.Fprintln(w, "  "+sAcc.Render("review")+" the review desk's sent reviews: list · show <id|N|latest> · done <id> · open (the Console pane) (--json · --print · --dry-run)")
