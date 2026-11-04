@@ -616,3 +616,4 @@
 {"ts": "2026-11-04 02:11", "sid": "e98f0b1b", "words": 106, "tells": 4, "per_1k": 37.7, "families": {"passive": 2, "other": 2}, "rules": {"passive": 2, "long-sentence": 2}}
 {"ts": "2026-11-04 02:25", "sid": "e98f0b1b", "words": 37, "tells": 0, "per_1k": 0.0, "families": {}, "rules": {}}
 {"ts": "2026-11-04 02:28", "sid": "e98f0b1b", "words": 37, "tells": 0, "per_1k": 0.0, "families": {}, "rules": {}}
+{"ts": "2026-11-04 02:39", "sid": "e98f0b1b", "words": 158, "tells": 2, "per_1k": 12.7, "families": {"passive": 1, "slop words": 1}, "rules": {"passive": 1, "stock-phrase": 1}}
