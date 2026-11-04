@@ -1,16 +1,16 @@
 ---
 type: ssot_02_character_systems
 category: character_systems
-version: 3.5.1
+version: 3.5.2
 tier: [fabula, narratology]
 last_updated: 2026-11-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
-status: "v3.5.1 2026-11-04: Chief: go (VM fill pass, BOLO 176). Tori's high-confidence fields filled from source; the rest point to tori-fill.md; Step 3 passes. v3.5.0 2026-11-04: Chief: go recs path cleanup (BOLO 176), and Chief: go (normalized store, BOLO 176). Truth Exposure Index is `SOCIAL + max(0, 12 - shame_index)`, Tori = 20 · the layer table gains a scale column · the normalized store is ruled as a design rule, not built · L2b body shape registered under L2 · the venue alias rows re-pointed to community_membership · the pipeline doc renamed to ssot_02. Official name LEECHSEED (ruled 11/4). Earlier versions: see Version history."
+status: "v3.5.2 2026-11-04: Chief: go (Tori med recs, BOLO 176). Her 13 medium-confidence recs applied; Jebb carded, relational_refs points at him. v3.5.1 2026-11-04: Chief: go (VM fill pass, BOLO 176). Tori's high-confidence fields filled from source; the rest point to tori-fill.md; Step 3 passes. v3.5.0 2026-11-04: Chief: go recs path cleanup (BOLO 176), and Chief: go (normalized store, BOLO 176). Truth Exposure Index is `SOCIAL + max(0, 12 - shame_index)`, Tori = 20 · the layer table gains a scale column · the normalized store is ruled as a design rule, not built · L2b body shape registered under L2 · the venue alias rows re-pointed to community_membership · the pipeline doc renamed to ssot_02. Official name LEECHSEED (ruled 11/4). Earlier versions: see Version history."
 rung: standard
 dependencies: ["[[📐_ssot_writing_guide]]", "[[📐_ssot_ai_instruction_protocol]]", "ssot_02_character_astrology_12_layer_mapping", "ssot_02_character_state_architecture", "ssot_02_dramatica_integration_protocol", "ssot_04_plot_system", "ssot_03_setting_system", "ssot_02_l9_eros_synthesis"]
 trunk: BLACK
 sources: [BVX.0064, BVX.0075, BVX.0193, BVX.0089, BVX.0196, BVX.0061, BVX.0209, BVX.0233, BVX.0045, BVX.1123, BVX.1124, BVX.1127, MSX.18, MSX.19, MSX.20, MSX.21, MSX.22, MSX.23, MSX.24, MSX.25, MSX.26, MSX.27, MSX.28, MSX.29, MSX.30, MSX.31, MSX.32, MSX.33, MSX.34, MSX.35, MSX.36, PSY.08, PSY.09, PSY.10, PSY.11, PSY.12, PSY.13, BVX.0054, BVX.0084, BVX.0163, BVX.0175, BVX.0191, BVX.0258, BVX.0273, BVX.0399, BVX.0576, BVX.0596, BVX.0614, BVX.0822, BVX.1125, BVX.1126, BVX.1129, BVX.1130, BVX.1131, BVX.1132, BVX.1133, BVX.1134, BVX.1135, BVX.1148, BVX.1149, BVX.1150, BVX.1151, BVX.1152, BVX.1154, BVX.1155, BVX.1158, BVX.1172, BVX.1175, CRE.05, CRE.07, MSX.37, MSX.38, MSX.39, MSX.40, MSX.41, MSX.42, MSX.43, MSX.44, MSX.45, MSX.47, MSX.48, MSX.49, MSX.50, MSX.51, MSX.52, MSX.53, MSX.54, MSX.55, MSX.56, MSX.57, MSX.58, MSX.59, MSX.60, MSX.61, MSX.62, MSX.63, MSX.64, MSX.65, MSX.66, MSX.69, MSX.70, MSX.71, MSX.72, MSX.74, MSX.75, MSX.76, MSX.77, MSX.78, MSX.79, MSX.81, MSX.82, MSX.83, MSX.85, MSX.86, MSX.87, MSX.88, MSX.SET.01, PHI.03, PHI.04, PSY.14, PSY.15, PSY.16, PSY.17, PSY.18, PSY.19, PSY.20, PSY.23, PSY.24, PSY.25, PSY.26, PSY.27, PSY.28, PSY.29, PSY.30, PSY.31, PSY.32, PSY.33, PSY.35, PSY.36, PSY.37, PSY.38, PSY.39, PSY.40, PSY.49, PSY.51, PSY.52, PSY.55, PSY.60, PSY.61, PSY.62, PSY.67, MSX.11, MSX.12, MSX.13, MSX.14, MSX.15, PSY.02, PSY.03, PSY.05, PSY.06, PSY.07, PHI.01, PHI.02]
-purpose: "THE CHARACTER SYSTEM, v3.5.1: LEECHSEED (the official name, ruled 11/4; the 12-layer character system is its description), the first top-layer model of the lattice. It stores a character as twelve layers in three tiers, with seven derived statistics and five flags computed from them, in one Structured Data Block that changes over story time only through state diffs. Written against the character shelf of the library, which holds nine distills."
+purpose: "THE CHARACTER SYSTEM, v3.5.2: LEECHSEED (the official name, ruled 11/4; the 12-layer character system is its description), the first top-layer model of the lattice. It stores a character as twelve layers in three tiers, with seven derived statistics and five flags computed from them, in one Structured Data Block that changes over story time only through state diffs. Written against the character shelf of the library, which holds nine distills."
 ---
 
 # 📐 SSOT · THE CHARACTER SYSTEM · LEECHSEED (the 12-layer system) · the vertical slice
@@ -355,13 +355,13 @@ Racing driver. Reaction time, spatial processing, mechanical intuition, and phys
 
 `physiology_stack`: heredity points to L7; appearance and health from canon; defects and posture null (fill 11/4, source: AUTH §Outlier Signature, §Signature Imagery; victoria-midnight §THE DIVE).
 
-`body_capital` (adults only): ⏸ VM fill pass (phase 2) — not scored, null. → see tori-fill.md
+`body_capital` (adults only): build and role price her up; the labor-built body is the working-body gap; each hard dive spends the quickened tissue. Window and venue tier stay null (fill 11/4, med, ruled Chief "go": source AUTH §Outlier Signature; WB-CUS-0003; WB-BIO-0002).
 
 **L3 SOCIAL: 10**
 
 Her MC Critical Flaw is Truth — when she speaks truth, it desyncs her hardware and triggers Noise. Her social interface is not weak. It is accurate in a world that cannot process accuracy. She does not lack social intelligence; she lacks the capacity for social dishonesty. Average SOCIAL with a specific catastrophic exploit vector is more precise than a modified score. Point cost: 0 pts.
 
-`sociology_stack`: class, occupation, education, home life and politics from canon (fill 11/4, source: slice L7; ssot_04_fabula family-origin note, RULED 9/29; AUTH §Continuity Bridge, §Core Bond; victoria-midnight §Where she appears, §THE DIVE). `civic_standing`: by_whom the Administration, catalog_ref WB-INS-0001 (fill 11/4, source: victoria-midnight §Relationships; WB-INS-0001); its number stays parked. `circumplex` (call 8): ⏸ VM fill pass (phase 2), null → see tori-fill.md. `standing` (under `community_membership`, CH-3): ⏸ VM fill pass (phase 2) — not documented, null → see tori-fill.md.
+`sociology_stack`: class, occupation, education, home life and politics from canon (fill 11/4, source: slice L7; ssot_04_fabula family-origin note, RULED 9/29; AUTH §Continuity Bridge, §Core Bond; victoria-midnight §Where she appears, §THE DIVE). `civic_standing`: by_whom the Administration, catalog_ref WB-INS-0001 (fill 11/4, source: victoria-midnight §Relationships; WB-INS-0001); its number stays parked. `circumplex` (call 8): ⏸ VM fill pass (phase 2), null → see tori-fill.md. `standing` (under `community_membership`, CH-3): earned in M5, when the Diaspora forms around her (fill 11/4, med, ruled Chief "go": source victoria-midnight §Relationships, §Where she appears).
 
 **Tier 1 Total: 140 pts**
 
@@ -373,7 +373,7 @@ Her MC Critical Flaw is Truth — when she speaks truth, it desyncs her hardware
 
 Resolve is Change — she bends eventually. The story arc requires maximum systemic pressure to achieve that change. She survives the crash, the brother's death, the academy intake, and the Ban before breaking. WILL sits one point above CORE: she is slightly more stubborn than she is intelligent. Buy-up cost: 5 pts. Read under the 2026-09-29 definition (call 13), this is decision-capacity, not hardness — 14 is how much pressure she can absorb before a choice becomes unavoidable, not how much damage she can take.
 
-`coping_strategy`: ⏸ VM fill pass (phase 2) — no documented match to one of Schmidt's five named strategies yet. → see tori-fill.md
+`coping_strategy`: Naive, the belief that the world rewards merit (fill 11/4, med, ruled Chief "go": source BVX.0045 the five strategies; AUTH §System Illusion).
 
 `locus_of_control`: ⏸ VM fill pass (phase 2) — not scored, null. → see tori-fill.md
 
@@ -385,7 +385,7 @@ The wound is the pace-notes. She ignored her brother's guidance during the rally
 
 Active wound triggers: mechanical failure events; guidance she is inclined to refuse; her brother's name; scenes where listening would prevent harm and she does not. Formalized as `triggers`: [mechanical_failure_events, guidance_she_is_inclined_to_refuse, brothers_name, scenes_where_listening_would_prevent_harm].
 
-`relational_refs`: ⏸ VM fill pass (phase 2) — the brother (`brother_deceased`, L8) reads as the ghost this wound orbits, but he carries no formal `character_id` of his own yet in this slice; not populated until that card exists, to avoid inventing one here. → see tori-fill.md
+`relational_refs`: the brother is the ghost this wound orbits, now carded as `jebb_midnight` at [jebb-midnight.md](../../../../_CANON_NODES/jebb-midnight.md) (fill 11/4, med, ruled Chief "go": source slice L8 secure_base_object; ssot_04_fabula m1b_crash_jebb_death; jebb-midnight.md).
 
 `wound_work`: avoided (fill 11/4, source: slice Active Flags SHADOW_DENIAL, the shield against "I chose not to listen and he died"; Villain-Arc Fork path (b)). `terminating` stays null.
 
@@ -414,8 +414,8 @@ Meaning-driven characters burn below their physical ceiling because their fuel s
 |`tech_level`|6|
 |`system_exposure`|early_pre_awareness|
 |`hereditary_predisposition`|moon_blood: belt-born Moon descent, inherited radiation resistance, unknown to her (fill 11/4, source: victoria-midnight §THE DIVE, RULED 10/1, BOLO 96; WB-CUS-0003)|
-|`layers` (under `system_exposure`)|⏸ VM fill pass (phase 2) regimes not yet listed → see tori-fill.md|
-|`life_script`|⏸ VM fill pass (phase 2) not documented → see tori-fill.md|
+|`layers` (under `system_exposure`)|the Power Line belt (WB-INS-0004) · the salvage economy tracker · the Administration / DCUS (WB-INS-0001); years null (fill 11/4, med, ruled Chief "go": source victoria-midnight §THE DIVE; AUTH §First Detection Source, §Continuity Bridge)|
+|`life_script`|source Jebb's dream for her · version succeed "the right way" · stance bend · cost null (fill 11/4, med, ruled Chief "go": source AUTH §Core Bond; jebb-midnight.md)|
 
 Her origin is outside institutional legibility. The salvage economy phase (M1A) precedes system awareness. The Delta Coast racing scene is the first context in which her output becomes visible at scale. The system's attention during M1B is acquisition, not admiration. She does not know the difference until the Ban is already in motion.
 
@@ -429,7 +429,7 @@ Her origin is outside institutional legibility. The salvage economy phase (M1A) 
 |`attachment_style_score`|6|
 |`attachment_dimensions`|⏸ VM fill pass (phase 2) {anxiety, avoidance} not yet scored → see tori-fill.md|
 |`protest_behaviors`|⏸ VM fill pass (phase 2) not yet documented → see tori-fill.md|
-|`deactivating_strategies`|⏸ VM fill pass (phase 2) not yet documented → see tori-fill.md|
+|`deactivating_strategies`|[vow_of_untouchability, control_escalation_under_stress] (fill 11/4, med, ruled Chief "go": source AUTH §Immediate Post-Trauma Decision; victoria-midnight-L9-eros §1; slice L10 regression_pattern)|
 |`appeasement_strategies`|⏸ VM fill pass (phase 2) not yet documented → see tori-fill.md|
 |`emotional_range`|9|
 |`conditional_patterns`|[merit_earns_freedom, loyalty_to_kinship, distrust_of_institution]|
@@ -462,7 +462,8 @@ Her secure base object was her brother. He functioned as navigator to her driver
 |`client_script`|⏸ VM fill pass (phase 2) — not documented, no staged/paid-intimacy register in her canon → see tori-fill.md|
 |`signal_fluency`|⏸ VM fill pass (phase 2) — not documented → see tori-fill.md|
 |`disclosure_posture`|⏸ VM fill pass (phase 2) — not documented → see tori-fill.md|
-|`compersion`, `fantasy_ledger`, `desire_object`, `pleasure_evidence`, `sex_creed`, `touch_rule`, `dissolution`, `compartment_practice`, `attraction_channels`, `risk_role`, `risk_account`|⏸ VM fill pass (phase 2) — none documented → see tori-fill.md|
+|`desire_object` (under `desire_vector`)|activity (fill 11/4, med, ruled Chief "go": source victoria-midnight-chart Step 5; victoria-midnight-L9-eros §3; victoria-midnight §REORIENT)|
+|`compersion`, `fantasy_ledger`, `pleasure_evidence`, `sex_creed`, `touch_rule`, `dissolution`, `compartment_practice`, `attraction_channels`, `risk_role`, `risk_account`|⏸ VM fill pass (phase 2) — none documented → see tori-fill.md|
 |`erotic_craft`|⏸ VM fill pass (phase 2) — not documented, null → see tori-fill.md|
 |`power_exchange`|⏸ VM fill pass (phase 2) — not documented, null → see tori-fill.md|
 |`group_size`, `group_position` (under `desire_vector`)|⏸ VM fill pass (phase 2) — not documented, null → see tori-fill.md|
@@ -623,18 +624,23 @@ TIER_1:
     home_life: "older brother Jebb, primary bond, her navigator"
     political_affiliation: "merit believer inside the system at entry; the Student Diaspora's Radicalizing Spark by M5"
   circumplex: null         # ⏸ VM fill pass (phase 2) optional dial {agency, communion}, each -5..+5 → see tori-fill.md
-  body_capital: null       # ⏸ VM fill pass (phase 2) L2, adults only; structure per CL14 → see tori-fill.md
-  assigned_labels: null    # ⏸ VM fill pass (phase 2) L1, list of {label, by, year, accepted} → see tori-fill.md
+  body_capital: {price_factors: [{factor: build, direction: up}, {factor: role, direction: up}], window: null, venue_tier: null, trust_signal: "nonconforming beauty reads as earned", working_body_gap: "optimized by labor, not institutional training", embodied_cost: "each hard dive spends the quickened tissue"}   # (fill 11/4, med, ruled Chief "go": source AUTH §Outlier Signature; WB-CUS-0003; WB-BIO-0002)
+  assigned_labels:         # (fill 11/4, med, ruled Chief "go": source victoria-midnight §Relationships, §Where she appears M2; ssot_04_fabula m2_grief_outbursts; WB-INS-0001)
+    - {label: Potential, by: state, year: null, accepted: null}             # M1
+    - {label: Proprietary Salvage, by: state, year: null, accepted: null}   # M2-M3
+    - {label: Critical Error, by: state, year: null, accepted: null}        # M4-M5
+    - {label: The Fault Line, by: state, year: null, accepted: null}        # M6
+    - {label: Digital Puberty, by: state, year: null, accepted: null}       # M2, her grief outbursts dismissed
   neurotype: null          # ⏸ VM fill pass (phase 2) L1, {label, known_to_self, masked_by, attention_pattern} → see tori-fill.md
-  pair_register: null      # ⏸ VM fill pass (phase 2) L3, list keyed by character_id → see tori-fill.md
-  standing: null           # ⏸ VM fill pass (phase 2) L3, under community_membership, {earned_by, vouched_by, cost_to_lose} → see tori-fill.md
+  pair_register: [{character_id: anna_colson_conway, attachment_dimensions: null, pacing: goal, rules: [], rule_gap: null}]   # (fill 11/4, med, ruled Chief "go": source oxo-storyform §6, §9 RS pair; anna-colson-conway §Relationships)
+  standing: {earned_by: ["M5: the Diaspora forms around her"], vouched_by: [], cost_to_lose: "the Diaspora's primary bond is to her"}   # under community_membership (fill 11/4, med, ruled Chief "go": source victoria-midnight §Relationships, §Where she appears M5)
   civic_standing: {category: "the Ban; Sync-era standing", by_whom: "the Administration", catalog_ref: [WB-INS-0001], rank_or_score: null}   # by_whom, catalog_ref (fill 11/4, source: victoria-midnight §Relationships; WB-INS-0001) · rank_or_score ⏸ VM fill pass (phase 2) no number documented → see tori-fill.md
-  disclosure_posture: null # ⏸ VM fill pass (phase 2) L3 outness; L9 keeps the sexual-health register → see tori-fill.md
-  voice_sheet: null        # ⏸ VM fill pass (phase 2) L3 → see tori-fill.md
+  disclosure_posture: [{audience: all, concealed_trait: none, strategy: open, stake: "the Ban"}]   # L3 outness (fill 11/4, med, ruled Chief "go": source slice flag TRUTH_VULNERABILITY; victoria-midnight-chart Step 3; victoria-midnight-L9-eros §1); L9 keeps the sexual-health register
+  voice_sheet: {register: "diagnostic, not hopeful", dialect: null, native_pace: null, tic_with_reason: null, noticing_filter: [earned_vs_given, kin, institutional_procedure]}   # (fill 11/4, med, ruled Chief "go": source AUTH §Behavior Under Pressure; slice L3 rule, noticing_filter from L8 conditional_patterns)
 
 TIER_2:
   WILL: 14
-  coping_strategy: null    # ⏸ VM fill pass (phase 2) no documented match to Schmidt's five strategies → see tori-fill.md
+  coping_strategy: Naive   # (fill 11/4, med, ruled Chief "go": source BVX.0045 the five strategies; AUTH §System Illusion)
   locus_of_control: null   # ⏸ VM fill pass (phase 2) L4, -5 internal .. +5 external → see tori-fill.md
   WOUND: 8
   DRIVE: 12
@@ -651,8 +657,8 @@ TIER_2:
 L5_WOUND:
   severity: 8              # same scale as TIER_2.WOUND, named per Puglisi & Ackerman (call 6)
   triggers: [mechanical_failure_events, guidance_she_is_inclined_to_refuse, brothers_name, scenes_where_listening_would_prevent_harm]   # trigger types now include minority_stress (3.0.0); none documented for her
-  relational_refs: []      # ⏸ VM fill pass (phase 2) brother_deceased (L8) is the likely ghost, no character_id carded yet → see tori-fill.md
-  mentor_state: null       # ⏸ VM fill pass (phase 2) L5 → see tori-fill.md
+  relational_refs: [{kind: ghost, character_id: jebb_midnight, note: "brother_deceased; the pace notes"}]   # (fill 11/4, med, ruled Chief "go": source slice L8 secure_base_object; ssot_04_fabula m1b_crash_jebb_death; _CANON_NODES/jebb-midnight.md)
+  mentor_state: absent     # (fill 11/4, med, ruled Chief "go": source victoria-midnight Open question 6, no named faculty; slice flag KINSHIP_COLLAPSE)
   wound_kind: error_committed   # CL22: she chose not to listen
   wound_work: {state: avoided, terminating: null}   # (fill 11/4, source: slice Active Flags SHADOW_DENIAL, the shield; Villain-Arc Fork path (b))
 
@@ -664,8 +670,11 @@ L7_ORIGIN:
   tech_level: 6
   system_exposure: early_pre_awareness
   hereditary_predisposition: "moon_blood: belt-born Moon descent, inherited radiation resistance; unknown to her"   # (fill 11/4, source: victoria-midnight §THE DIVE, RULED 10/1 BOLO 96; WB-CUS-0003; outliers-moon-origin-seed pieces 1, 6)
-  layers: null             # ⏸ VM fill pass (phase 2) under system_exposure, list of {regime, years, trace_still_showing} → see tori-fill.md
-  life_script: null        # ⏸ VM fill pass (phase 2) L7, {source, version, stance, cost} → see tori-fill.md
+  layers:                  # under system_exposure (fill 11/4, med, ruled Chief "go": source victoria-midnight §THE DIVE; AUTH §First Detection Source, §Continuity Bridge; WB-INS-0001; WB-INS-0004)
+    - {regime: "the Power Line belt", catalog_ref: [WB-INS-0004], years: null, trace_still_showing: true}
+    - {regime: "the salvage economy tracker", catalog_ref: null, years: null, trace_still_showing: null}
+    - {regime: "the Administration / DCUS", catalog_ref: [WB-INS-0001], years: null, trace_still_showing: true}
+  life_script: {source: "Jebb's dream for her", version: "succeed the right way; do not ruin your life chasing dreams like he did", stance: bend, cost: null}   # (fill 11/4, med, ruled Chief "go": source AUTH §Core Bond; _CANON_NODES/jebb-midnight.md)
   origin_event: null       # ⏸ VM fill pass (phase 2) L7, a fabula event_id; no origin event is carded for her yet → see tori-fill.md
   # origin_class, origin_disciplinary_formation and triggers entries take an optional setting_ref {setting_id, S-layer}, null
   # community_membership, civic_standing, layers.regime and tech_level take an optional catalog_ref (WB-<TYPE>-<nnnn>), null
@@ -675,7 +684,7 @@ L8_IMPRINT:
   attachment_style_score: 6
   attachment_dimensions: null        # ⏸ VM fill pass (phase 2) {anxiety, avoidance} not yet scored → see tori-fill.md
   protest_behaviors: []              # ⏸ VM fill pass (phase 2) not yet documented → see tori-fill.md
-  deactivating_strategies: []        # ⏸ VM fill pass (phase 2) not yet documented → see tori-fill.md
+  deactivating_strategies: [vow_of_untouchability, control_escalation_under_stress]   # (fill 11/4, med, ruled Chief "go": source AUTH §Immediate Post-Trauma Decision; victoria-midnight-L9-eros §1; slice L10 regression_pattern)
   appeasement_strategies: []         # ⏸ VM fill pass (phase 2) not yet documented → see tori-fill.md
   emotional_range: 9
   conditional_patterns: [merit_earns_freedom, loyalty_to_kinship, distrust_of_institution]
@@ -701,7 +710,7 @@ L9_EROS:
   client_script: null            # ⏸ VM fill pass (phase 2) no staged/paid-intimacy register in her canon → see tori-fill.md
   compersion: null               # ⏸ VM fill pass (phase 2) under desire_vector → see tori-fill.md
   fantasy_ledger: null           # ⏸ VM fill pass (phase 2) under desire_vector → see tori-fill.md
-  desire_object: null            # ⏸ VM fill pass (phase 2) under desire_vector → see tori-fill.md
+  desire_object: activity        # under desire_vector (fill 11/4, med, ruled Chief "go": source victoria-midnight-chart Step 5; victoria-midnight-L9-eros §3; victoria-midnight §REORIENT)
   pleasure_evidence: null        # ⏸ VM fill pass (phase 2) under desire_vector (moved out of resonance_profile, CL12) → see tori-fill.md
   sex_creed: null                # ⏸ VM fill pass (phase 2) under desire_vector → see tori-fill.md
   touch_rule: null               # ⏸ VM fill pass (phase 2) beside polarity_role → see tori-fill.md
@@ -1138,6 +1147,7 @@ Numbered calls surfaced by the five new distills' own "For the character system"
 
 ## Version history
 
+- **3.5.2 · 2026-11-04** — Chief: go (Tori med recs, BOLO 176). Thirteen medium-confidence recs applied as written, each tagged `(fill 11/4, med, ruled Chief "go": source …)`: `body_capital`, `assigned_labels`, `pair_register`, `standing`, L3 `disclosure_posture`, `voice_sheet`, `coping_strategy`, `relational_refs` (now `jebb_midnight`, carded at `_CANON_NODES/jebb-midnight.md`), `mentor_state`, `layers`, `life_script`, `deactivating_strategies`, `desire_object`. The low and no-source fields wait for the fabula phase; the three chart fields stay held. No derived statistic changes.
 - **3.5.1 · 2026-11-04** — Chief: go (VM fill pass, BOLO 176). Eleven of Tori's parked fields filled from source, each tagged `(fill 11/4, source: …)`: `psychology_stack`, `physiology_stack`, `sociology_stack`, `civic_standing` (by_whom, catalog_ref), `system_stance`, `wound_work`, `want_need` (need, false_belief), `hereditary_predisposition`, `arc_type`, `change_cause`, `convention_role`. Every other parked field keeps its marker and points to `_tools/bolostatus/work/176/tori-fill.md`, which holds each proposal with its source and confidence. Step 3 (`want_need.need`) passes. No derived statistic changes; TEI 20 and Expressive Range 4 carried into her canon nodes.
 - **3.5.0 · 2026-11-04** — Chief: go recs path cleanup (BOLO 176), and Chief: go (normalized store, BOLO 176). Truth Exposure Index now reads `12 - shame_index` (ruled 10/5 batch D, applied here); Tori's value is 20 · scale column added to the layer table · the normalized store ruled as a design rule, not built · L2b body shape registered as a field module under L2 · the six alias rows that pointed at `venue_belonging` now point at `community_membership`, and its own row is gone (alias table 139 → 138) · IF-02-06-03 points at L3 `knowledge_map` · title and purpose carry the official name LEECHSEED (ruled 11/4) · status line refreshed · the pipeline doc renamed to ssot_02.
 - **3.4.2 · 2026-10-11** — The four 3.4.0 sub-fields (`event_id` · `story_beat` · `regime` · `catalog_ref`) join "Field tags · every field" (FU-1's rule: no field ships without a tag). The prose already ruled them Static or inherited; the table now carries them, and review 02 reads DONE again.
