@@ -751,3 +751,7 @@
 {"ts": "2026-11-04 10:07", "sid": "0b50d38c", "words": 350, "tells": 2, "per_1k": 5.7, "families": {"passive": 1, "other": 1}, "rules": {"passive": 1, "long-sentence": 1}}
 {"ts": "2026-11-04 10:12", "sid": "0b50d38c", "words": 353, "tells": 4, "per_1k": 11.3, "families": {"passive": 1, "other": 3}, "rules": {"passive": 1, "long-sentence": 3}}
 {"ts": "2026-11-04 10:15", "sid": "0b50d38c", "words": 321, "tells": 7, "per_1k": 21.8, "families": {"other": 7}, "rules": {"long-sentence": 7}}
+{"ts": "2026-11-04 10:17", "sid": "0b50d38c", "words": 378, "tells": 6, "per_1k": 15.9, "families": {"passive": 1, "other": 5}, "rules": {"passive": 1, "long-sentence": 5}}
+{"ts": "2026-11-04 10:19", "sid": "0b50d38c", "words": 378, "tells": 6, "per_1k": 15.9, "families": {"passive": 1, "other": 5}, "rules": {"passive": 1, "long-sentence": 5}}
+{"ts": "2026-11-04 10:20", "sid": "0b50d38c", "words": 378, "tells": 6, "per_1k": 15.9, "families": {"passive": 1, "other": 5}, "rules": {"passive": 1, "long-sentence": 5}}
+{"ts": "2026-11-04 10:21", "sid": "0b50d38c", "words": 378, "tells": 6, "per_1k": 15.9, "families": {"passive": 1, "other": 5}, "rules": {"passive": 1, "long-sentence": 5}}

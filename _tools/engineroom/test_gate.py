@@ -82,5 +82,36 @@ try:
 except (ValueError, KeyError):
     ok = False
 check("the live run: --json parses, ten systems, the sums match", ok)
+
+# phase 2: the answer store never writes canon, and an answer / a skip land where they should
+import answers  # noqa: E402
+import gatepage  # noqa: E402
+for bad in ("ShroomsQ/_CANON/_SSOT/x.md", "ShroomsQ/_CANON/_DOCS/x.md", "_CANON_NODES/x.md", "ShroomsQ/_CANON/_TRACKING/oxo.yaml"):
+    try:
+        answers.safe_write(os.path.join(answers.ROOT, bad), "x")
+        refused = False
+    except PermissionError:
+        refused = True
+    check("the answer store refuses " + bad, refused)
+with tempfile.TemporaryDirectory() as tmp:
+    answers.ANS_DIR = os.path.join(tmp, "answers")
+    answers.ANS_FILE = os.path.join(answers.ANS_DIR, "answers.jsonl")
+    answers.WAIVERS = os.path.join(tmp, "waivers.json")
+    answers.ALLOWED = (os.path.realpath(answers.ANS_DIR), os.path.realpath(answers.WAIVERS))
+    answers.save({"row_id": "a#1", "mode": "answer", "answer": "belt-born"})
+    answers.save({"row_id": "b#2", "mode": "rec", "rec": "wait", "answer": "wait"})
+    answers.save({"row_id": "c#3", "mode": "skip"})
+    got = answers.load_answers()
+    w = json.load(io.open(answers.WAIVERS, encoding="utf-8"))
+    check("an answer and a taken rec queue; a skip does not", len(answers.queue()) == 2 and got["c#3"]["status"] == "skipped")
+    check("a skip writes a waiver (row id, no content)", [x["row_id"] for x in w] == ["c#3"] and "text" not in w[0])
+    try:
+        answers.save({"row_id": "d#4", "mode": "answer", "answer": "  "})
+        empty_ok = False
+    except ValueError:
+        empty_ok = True
+    check("an empty answer is refused", empty_ok)
+html_page = gatepage.page(sources.gate(), {}, {})
+check("the page renders with its answer window and data", "id=\"modal\"" in html_page and "er-data" in html_page)
 print("FAIL" if fails else "PASS")
 sys.exit(1 if fails else 0)

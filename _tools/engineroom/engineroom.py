@@ -120,17 +120,53 @@ class Handler(BaseHTTPRequestHandler):
         if path in ("/", "/gate"):
             import importlib
             import gatepage
+            import answers
             importlib.reload(sources)
+            importlib.reload(answers)
             importlib.reload(gatepage)   # page edits show on the next refresh, no restart
-            return self._send(200, gatepage.page(sources.gate()), "text/html; charset=utf-8")
+            return self._send(200, gatepage.page(sources.gate(), answers.load_answers(), answers.load_recs()),
+                              "text/html; charset=utf-8")
+        if path == "/api/answers":
+            import answers
+            return self._send(200, json.dumps({"answers": answers.load_answers(), "queue": len(answers.queue())}), "application/json")
         if path == "/gate/table":
             return self._send(200, page(sources.gate()), "text/html; charset=utf-8")
         if path == "/api/gate":
             rows = "rows=1" in self.path
             return self._send(200, json.dumps(sources.gate(with_rows=rows)), "application/json")
+        if path == "/bounce":   # the boot's bouncing gif, the same file the Console bounces (_PRIVATE/console/bounce.*)
+            for ext, ctype in (("gif", "image/gif"), ("webp", "image/webp"), ("png", "image/png"), ("jpg", "image/jpeg")):
+                f = os.path.join(sources.ROOT, "_PRIVATE", "console", "bounce." + ext)
+                if os.path.isfile(f):
+                    with open(f, "rb") as fh:
+                        b = fh.read()
+                    self.send_response(200)
+                    self.send_header("Content-Type", ctype)
+                    self.send_header("Content-Length", str(len(b)))
+                    self.end_headers()
+                    self.wfile.write(b)
+                    return
+            return self._send(404, "no bounce file", "text/plain")
         if path == "/health":
             return self._send(200, json.dumps({"ok": True, "app": "engineroom", "port": PORT}), "application/json")
         self._send(404, json.dumps({"error": "no route " + path}), "application/json")
+
+    def do_POST(self):
+        path = self.path.split("?")[0]
+        if path != "/api/answer":
+            return self._send(404, json.dumps({"error": "no route " + path}), "application/json")
+        if self.client_address[0] != "127.0.0.1":
+            return self._send(403, json.dumps({"error": "local only"}), "application/json")
+        import importlib
+        import answers
+        importlib.reload(answers)
+        try:
+            n = int(self.headers.get("Content-Length") or 0)
+            payload = json.loads(self.rfile.read(min(n, 200000)).decode("utf-8") or "{}")
+            rec = answers.save(payload)
+        except (ValueError, PermissionError) as e:
+            return self._send(400, json.dumps({"ok": False, "error": str(e)}), "application/json")
+        return self._send(200, json.dumps({"ok": True, "saved": rec, "queue": len(answers.queue())}), "application/json")
 
     def log_message(self, *a):
         pass
@@ -142,6 +178,11 @@ def main(argv):
         return 0
     if "--print" in argv:
         print(table(sources.gate(with_rows=False)))
+        return 0
+    if argv and argv[0] == "answers":   # the queue waiting for "apply answers" (always JSON)
+        import answers
+        q = answers.queue()
+        print(json.dumps({"queue": q, "count": len(q)}, ensure_ascii=False))
         return 0
     if argv and argv[0] == "serve":
         port = int(argv[argv.index("--port") + 1]) if "--port" in argv else PORT

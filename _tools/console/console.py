@@ -70,6 +70,7 @@ LOCAL = {   # the whitelist: name -> file
 }
 PANES = [   # the rail: six up front (Chief 10/18, rec taken), the rest behind "more"
     {"id": "desk", "title": "Desk", "url": "/local/desk"},
+    {"id": "engineroom", "title": "Engine Room ↗", "url": "/launch/engineroom"},   # BOLO 180 (Chief 11/4): a shortcut; opens the Engine Room in its own window
     {"id": "sitrep", "title": "Sit rep", "url": "/local/sitrep"},
     {"id": "stash", "title": "Stash", "url": "http://127.0.0.1:9999/"},
     {"id": "darkroom", "title": "DARKROOM", "url": "http://127.0.0.1:8484/"},
@@ -746,6 +747,13 @@ class H(http.server.BaseHTTPRequestHandler):
         if path in ("/favicon.svg", "/favicon.ico") and os.path.isfile(MARK):   # the BoldVenture bunny bandit (Chief 10/18)
             with open(MARK, "rb") as fh:
                 return self._send(200, fh.read(), "image/svg+xml")
+        if path == "/launch/engineroom":   # BOLO 180 (Chief 11/4): the rail button starts the Engine Room in its own window
+            exe = os.path.join(os.path.expanduser("~"), "go", "bin", "engineroom.exe")
+            ok = os.path.isfile(exe)
+            if ok:
+                subprocess.Popen([exe], cwd=ROOT, stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            msg = "The Engine Room is opening in its own window." if ok else "engineroom.exe is missing: run _tools/cmdtui/build.cmd"
+            return self._send(200, "<!doctype html><meta charset=utf-8><body style=\"background:#000;color:#FF5A1F;font:16px Consolas,monospace;display:grid;place-items:center;height:100vh;margin:0\">" + msg + "</body>", "text/html; charset=utf-8")
         if path == "/bounce":   # the boot's bouncing mark (Chief 10/31)
             f = bounce_file()
             if os.path.isfile(f):
