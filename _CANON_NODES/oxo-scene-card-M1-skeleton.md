@@ -129,7 +129,7 @@ gap_effect: none ⧗   # this is the original telling of the crash, not a withhe
 
 ### THEME READ (06_THEME_SYSTEMS v0.7.0)
 
-- **Debate tested:** 1 · *the world* — Interdiction vs Prediction, "They already know how you'll turn out. Can you prove them wrong?" ⧗ candidate, riding the tolerated-race idea
+- **Debate tested:** 2 · *Tori* — Interdiction vs Prediction, "They already know how you'll turn out. Can you prove them wrong?" ⧗ candidate, riding the tolerated-race idea
 - **Freedom step:** + *Your life is yours* (racing, pre-crash) falling to −− *You're managed, not free* (the resolve, self-imposed) — ironic charge
 - **Fairness step (world):** ⧗ candidate only, riding the arrest idea — + *Everyone gets a real shot* (the pots) collapsing to −−− *They cheat you and give you a grade for it* (the raid)
 - **Motif:** none of the three ruled motifs (the uniform and the mirror · a door she could walk out of · the Feed) reads cleanly here — all three are campus-era images and M1 predates the Academy ⧗ — see Open question 4
@@ -158,5 +158,6 @@ gap_effect: none ⧗   # this is the original telling of the crash, not a withhe
 5. **P8 collision row, P1 address, P11 duration mode** — all unassigned. *Rec: card the crash as its own R2 SCENE next, mirroring oxo-scene-card-M3-crash-analepsis.md's own worked instance, rather than leave the whole movement at this R4 grain.*
 
 ## Version history
+- **0.1.2 · 2026-11-04.** Chief: GO (storyform remap, BOLO 176): debate tested re-tagged to Tori's rail R2 (the rails follow the pair). Provisional.
 - **0.1.1 · 2026-09-29.** RULED 2026-09-29 (BOLO 77 calls 77-AF and 77-AD, "all recs"). 77-AF: the finish-line arrest promoted from ⧗ candidate to ruled placement — before the crash, the world's own Fairness turn, a separate beat from Tori's crash, same movement; event id `m1b_race_arrest` stays ⧗ as a proposed id only. 77-AD: P10 genre obligation now varies by movement; M1 = opening (Snyder's Opening Image/Catalyst register), cultcore unchanged at story level. Closes Open questions 1 and 2.
 - **0.1.0 ⧗ · 2026-09-29.** First skeleton card for Movement 1, BOLO 77 call 77-AB (Chief: "1.0") — one card for every movement with none. Reads the fabula's own `m1b_crash_jebb_death` / `m1b_untouchable_resolve` pair; offers Chief's Apple Notes tolerated-race/arrest idea as one ⧗ candidate event, `m1b_race_arrest`, never asserted as canon. Five open questions for Chief.

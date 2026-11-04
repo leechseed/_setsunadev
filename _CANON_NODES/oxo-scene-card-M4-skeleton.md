@@ -118,7 +118,7 @@ gap_effect: ⧗ open
 
 ### THEME READ (06_THEME_SYSTEMS v0.7.0)
 
-- **Debate tested:** 2 · *Tori* — Interpretation vs Senses, "Believe the story, or believe your eyes?" (the Feed's file says Noise; her senses say she is still herself)
+- **Debate tested:** 4 · *Tori ↔ Anna* — Interpretation vs Senses, "Believe the story, or believe your eyes?" (⧗ re-read: the scene may test R2 instead) (the Feed's file says Noise; her senses say she is still herself)
 - **Freedom step:** RULED 2026-09-29 (77-AI, rec taken) — holds BOTH readings: Tori reads −− *You're managed, not free*; the audience reads −−− *The cage feels like home*, the ironic charge row 9 already uses
 - **Fairness step (world):** −−− *They cheat you and give you a grade for it* ⧗ interpretive — the classification ladder revised without appeal
 - **Motif:** **the uniform and the mirror** — losing rank/uniform literally, and (per 77-AH, the parallel cyborg thread) a body remade in the mirror at the most literal possible register, in Quinn and Riley's own parallel scene rather than Tori's
@@ -146,6 +146,7 @@ gap_effect: ⧗ open
 5. **RULED 2026-09-29 (77-AD, rec taken).** P10's scene-level genre obligation now varies by movement; M4 = reversal. Full per-movement table in ssot_04_plot_system.md's P10 layer description.
 
 ## Version history
+- **0.1.4 · 2026-11-04.** Chief: GO (storyform remap, BOLO 176): debate tested re-tagged to R4 (the rails follow the pair); re-read. Provisional.
 - **0.1.3 · 2026-10-12.** RULED 2026-10-12 (Chief: 'take all recs'): 77-AM taken, Anna's M4 presence is now the ruled provisional candidate (see ANNA-M4-M6.md §M4); 77-AP held, so the copy of Colson stays off-page through M6. Table rows and Open question updated.
 - **0.1.2 · 2026-09-29.** 77-AE pass landed: `_tools/bolostatus/work/77/ANNA-M4-M6.md` §M4 proposes Anna staged inside the Feed's rank/Sync ceremony (IC Contemplation) intercut with Tori's reclassification, the ledger itself carrying both women's ranks (RS Doing) — both ⧗ candidates, await Chief.
 - **0.1.1 · 2026-09-29.** RULED 2026-09-29 (BOLO 77 calls 77-AD, 77-AE, 77-AH, 77-AI, "all recs"). 77-AH: the Quinn/Riley cyborg turn is a parallel Body-Horror thread crossing Tori's erasure at the campus, not the same event. 77-AI: the erasure's Freedom step holds both Tori's and the audience's readings at once. 77-AD: P10 for M4 = reversal. 77-AE: an Anna M4-M6 presence pass is tasked, not done; IC/RS marked accordingly. 77-AG (the Critical Error trigger) stays open, Chief's fact. Closes Open questions 2, 3, 4, 5.

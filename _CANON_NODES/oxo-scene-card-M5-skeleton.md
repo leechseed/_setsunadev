@@ -136,7 +136,7 @@ causal_edges: []   # RULED 2026-09-29 (77-AJ, rec taken): the Diaspora answers t
 
 ### THEME READ (06_THEME_SYSTEMS v0.7.0)
 
-- **Debate tested:** 1 · *the world* — Interdiction vs Prediction, "They already know how you'll turn out. Can you prove them wrong?" — the coup is the proof attempt at scale
+- **Debate tested:** 2 · *Tori* — Interdiction vs Prediction, "They already know how you'll turn out. Can you prove them wrong?" — the coup is the proof attempt at scale. ⧗ Re-read: the coup may test the world's rail R1 instead
 - **Freedom step:** moving from −− *Control* toward + *Your life is yours*, collectively — ⧗ open, see P5
 - **Fairness step (world):** −− *Injustice*, "They change the rules when you start winning" ⧗ interpretive — fits a coup provoked by the system's own overreach
 - **Motif:** **a door she could walk out of** — the coup company's about-face is the motif's collective, staged form: the door, taken, by someone else first
@@ -164,6 +164,7 @@ causal_edges: []   # RULED 2026-09-29 (77-AJ, rec taken): the Diaspora answers t
 5. **RULED 2026-09-29 (77-AE).** Pass landed 2026-09-29; RULED 2026-10-12 (Chief: 'take all recs'): 77-AN taken; copy of Colson held (77-AP, rec hold) (see `_tools/bolostatus/work/77/ANNA-M4-M6.md` §M5).
 
 ## Version history
+- **0.1.4 · 2026-11-04.** Chief: GO (storyform remap, BOLO 176): debate tested re-tagged to Tori's rail R2 (the rails follow the pair); the coup may test R1, re-read. Provisional.
 - **0.1.3 · 2026-10-12.** RULED 2026-10-12 (Chief: 'take all recs'): 77-AN taken, Anna's M5 presence is now the ruled provisional candidate (see ANNA-M4-M6.md §M5); 77-AP held, so the copy of Colson stays off-page through M6. Table rows and Open question updated.
 - **0.1.2 · 2026-09-29.** 77-AE pass landed: `_tools/bolostatus/work/77/ANNA-M4-M6.md` §M5 proposes a Feed-staged broadcast of Anna's ascent circulating as the Diaspora forms (IC Contemplation, RS Doing) — ⧗ candidate, awaits Chief.
 - **0.1.1 · 2026-09-29.** RULED 2026-09-29 (BOLO 77 calls 77-AD and 77-AJ, "all recs"). 77-AJ: Quinn Bishop's coup at the parade is a world event the Diaspora answers, not Tori's own scene; her own signpost scene is her choice to lead. 77-AD: P10 for M5 = reversal. 77-AK (the Diaspora's first act of resistance) stays open, Chief's fact. Closes Open questions 1 and 2.
