@@ -495,6 +495,7 @@ A claim that work is done, passing, fixed or built carries the fresh evidence li
 | the burning core · burning core (in a naming context) | **the Corps** — SOP §6, the lexicon bootstrap; "derivative of the SOP of the Corps" = a Marine-vocabulary name |
 | TDP · teepee · T T P · sucking (in a creator-case naming context, 9/10 garble) | **TTP** — the lessons block, section 10 of every creator case (RULED 9/10) |
 | our TB · R T B · return to base · sweep (spoken by habit) | **RTB** — return to base: promote the parked keepers, clear `oscar-mike/` (RULED 9/10) |
+| kick off · kickoff · kick-off · new project · start the project · start a new project | **kickoff** — the project-start skill: pull planning-project, mapping-sources, tagging-fabula, drafting-call-sheet, every method sourced from the library (ruled 11/4) |
 | Dorne · a Dorne · adorn | **ADORNED** — the dress-state value (RULED 9/11) |
 | vocab go | the order to apply a DARKROOM vocab edit: edit vocab.json → rerun zeroshot_pass.py → retrain (coded 9/11) |
 | JSON Warren · Jason Warren | **Jason Bourne** (the callsign bench's register) |

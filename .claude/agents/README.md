@@ -1,6 +1,6 @@
 # Agent roster
 
-45 specialist agents: 22 adapted from the ECC repo (MIT, github.com/affaan-m/ECC) on 10/12, plus the BOLO 140 intake agents, the five Bench seats and the five Science Department seats (sci-*) (each file names its source and license at the bottom). Seats: haiku = PS (fetch/extract), sonnet = MS (write/review), opus = planning and architecture only. The CDR decides when to call each one.
+49 specialist agents: 22 adapted from the ECC repo (MIT, github.com/affaan-m/ECC) on 10/12, plus the BOLO 140 intake agents, the five Bench seats and the five Science Department seats (sci-*) (each file names its source and license at the bottom). Seats: haiku = PS (fetch/extract), sonnet = MS (write/review), opus = planning and architecture only. The CDR decides when to call each one.
 
 | Name | Model | Job in plain words | Access |
 |---|---|---|---|
@@ -34,6 +34,12 @@
 | editing-theme-tone | sonnet | Script editor: theme, tone breaks, genre promise, motifs; report only | writes (one report) |
 | reading-cold | sonnet | Script editor: first-time reader's coverage with no canon; report only | writes (one report) |
 | editing-production | sonnet | Script editor: locations, cast, hard scenes, slice candidates, cheapest beats; report only | writes (one report) |
+| planning-project | sonnet | The project manager: phases, owners, gates, decision points, risks and an ETA per step for one project; `kickoff` step 1 | writes (plan.json + plan.md) |
+| mapping-sources | haiku | Maps every place one project's material lives (rows, loose ends, gaps), one seat per disjoint folder set; `kickoff` step 2 | writes (sources.SEAT.json) |
+| tagging-fabula | haiku | Proposes an era + fabula event tag per story file (story or discourse, kernel or satellite); a script applies; `kickoff` step 3 | writes (tags.BATCH.json) |
+| drafting-call-sheet | sonnet | Preps a meeting with Chief: 6–8 calls, one rec each, evidence, dissent and the book behind the rec; `kickoff` step 4 | writes (calls.json + calls.md) |
+
+**The kickoff stack (ruled 11/4, Chief: "build the whole stack"):** the four agents above are fired by the `kickoff` skill whenever a project starts. Every method step in their files cites a library book (BVX / MIL / TEC id + section) or is marked `[organic]`, and every output claim carries `file:line` or is marked `UNSOURCED`. Briefs and the common sourcing rule: `_tools/bolostatus/work/oxo-start/briefs/`.
 
 ## The Command rules
 
