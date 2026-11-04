@@ -5,8 +5,8 @@
   "trunk": "BLACK",
   "issued": "2026-11-04",
   "asof": "2026-11-04",
-  "s": "open",
-  "status": "🟡 **Distill and names done 11/4** · the official name is LEECHSEED · the way forward waits on Chief's ruling.",
+  "s": "hot",
+  "status": "🟢 Path 1 under way 11/4: seams closed (spine 3.5.0), the normalized store ruled, Tori filled and passing Step 3, Anna through the pipeline (slice 3.6.1); the storyform remap check is running.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "BOLO 100 · 102 · 173 · 113 · 142 · 174",
   "related": [
@@ -37,7 +37,7 @@
   ],
   "home": "BOLO.md · row 176",
   "card": "none",
-  "version": "v0.1 · DOPE SHEET"
+  "version": "v0.2 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -214,19 +214,21 @@
     },
     {
      "n": 5,
-     "t": "**Dope sheet and ways forward.** Claude drafts this sheet. Chief rules a way forward.",
-     "s": "open",
+     "t": "**Dope sheet and ways forward.** Claude published this sheet and gave the analysis; Chief ruled the official name LEECHSEED and the spoken code name.",
+     "s": "done",
      "when": "11/4"
     },
     {
      "n": 6,
-     "t": "**Way 1, close the seams (rec).** One writer fixes the seven contradictions and the ruled-never-applied list. One script checks the result.",
-     "s": "open"
+     "t": "**Way 1, close the seams.** One writer fixed the contradictions and the never-applied rulings; the spine went to 3.5.0; a script found 0 stale hits and 256 good links.",
+     "s": "done",
+     "when": "11/4"
     },
     {
      "n": 7,
-     "t": "**Then the proof.** Claude runs the Tori fill pass, then builds Anna's slice as the second proof.",
-     "s": "open"
+     "t": "**Then the proof.** Claude filled Tori from sources (24 high + 21 med fields, markers 105 → 70, Step 3 passes) and ran Anna through the pipeline (43 filled, Step 3 passes, Step 1 still red).",
+     "s": "done",
+     "when": "11/4"
     },
     {
      "n": 8,
@@ -289,6 +291,26 @@
      "path": "_tools/leechseed/",
      "what": "`heritage.py` and `continuity_check.py`",
      "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/176/tori-fill.md",
+     "what": "Tori's field list: value, source, confidence",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/176/anna-fill.md",
+     "what": "Anna's field list and her numbers pass",
+     "s": "done"
+    },
+    {
+     "path": "_CANON_NODES/jebb-midnight.md",
+     "what": "Jebb Midnight, a stub card",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/176/remap-proposal.md",
+     "what": "the four storyline domains, for Chief's check",
+     "s": "open"
     }
    ],
    "cost": [
@@ -387,38 +409,57 @@
      "when": "11/4",
      "who": "Chief",
      "t": "\"LEECHSEED is the official name\" — the code name is SISWET. Claude updated the row and the SOP §5 line."
+    },
+    {
+     "when": "11/4",
+     "who": "Chief",
+     "t": "\"LEECHSEED is the official name\" · the code name rides out loud only."
+    },
+    {
+     "when": "11/4",
+     "who": "Chief",
+     "t": "\"go recs path cleanup\" · then \"go\" on the normalized store, Tori's fill, her med recs, Anna's slice and Anna's recs."
+    },
+    {
+     "when": "11/4",
+     "who": "Claude",
+     "t": "Seams closed, Tori and Anna through the pipeline; one storyform flag found (two storylines in one domain); the remap check deployed."
     }
    ]
   }
  ],
  "frago": {
   "mission": "Read LEECHSEED whole, name it, and close the gaps between its docs, in order to make the character system trusted enough to build the whole cast on.",
-  "order": "**Say \"go 176\": Claude runs path 1's cleanup pass on the contradictions and the rulings never applied.**",
-  "default": "Silence: the system stays proven on Tori alone, and the docs keep two formulas for one score.",
+  "order": "**Check the four storyline domains when the remap proposal lands; your go swaps the corrected export in.**",
+  "default": "Silence: the export keeps two storylines in one domain, and the collision run waits on the two charts.",
   "calls": [
    {
     "q": "Truth Exposure formula: 10 minus shame, or 12 minus shame?",
     "options": "12 minus (rec, the 10/5 batch D fix) · 10 minus",
     "default": "12 minus (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "12 minus shame (Chief: go recs, 11/4). Tori moves to 20."
    },
    {
     "q": "Which scale does a record store?",
     "options": "Each stat on its own scale, plus a scale column (rec) · one 0-100 scale for all",
     "default": "Own scale (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "Each stat keeps its native scale in a scale column; the canonical store is normalized 0–1, pushes added in log-odds (Chief: go, 11/4)."
    },
    {
     "q": "Where does L2b body shape live?",
     "options": "A field module under L2, beside LOOK (rec) · its own layer",
     "default": "Module under L2 (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "A field module under L2, beside LOOK (Chief: go recs, 11/4)."
    },
    {
     "q": "Which path forward?",
     "options": "1 close the seams, then use it (rec) · 2 the patch bay as the front door · 3 trim to a core",
     "default": "Path 1 (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "Path 1, close the seams, then use it (Chief: go recs path cleanup, 11/4)."
    }
   ]
  }
